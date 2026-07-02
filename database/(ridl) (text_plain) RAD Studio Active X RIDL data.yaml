@@ -1,0 +1,41 @@
+Name: RAD Studio Active X RIDL data
+URL: "https://en.wikipedia.org/wiki/Delphi_(programming_language)#RAD_Studio"
+FileNameExtensions: ["ridl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "// ****"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OLEAUTOMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION(1.0)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELPSTRING("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORTLIB("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDISPATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COCLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TLB"
+    CaseSensitive: false

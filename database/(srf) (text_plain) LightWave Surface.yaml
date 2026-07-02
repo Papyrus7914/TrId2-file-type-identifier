@@ -1,0 +1,17 @@
+Name: LightWave Surface
+URL: "http://en.wikipedia.org/wiki/LightWave_3D"
+FileNameExtensions: ["srf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "LWOBSURF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAG"
+    CaseSensitive: false

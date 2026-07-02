@@ -1,0 +1,14 @@
+Name: Okuma CNC program
+URL: "https://en.wikipedia.org/wiki/Okuma_Corporation"
+FileNameExtensions: ["min"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEF WORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MIN%"
+    CaseSensitive: false

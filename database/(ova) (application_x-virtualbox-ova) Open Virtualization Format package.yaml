@@ -1,0 +1,231 @@
+Name: Open Virtualization Format package
+Description: A TAR file with the entire OVF directory inside.
+URL: "http://en.wikipedia.org/wiki/Open_Virtualization_Format"
+FileNameExtensions: ["ova"]
+MimeType: application/x-virtualbox-ova
+DetectionPatterns:
+  - Pos: 257
+    AsciiString: "ustar"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0USTAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E REQUIREMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOMATICALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ING SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAPTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOCAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATING S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AL DIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARE RE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUANTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VELOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALLO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EST O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OF ME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ST OP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-INS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A-IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AL C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALHA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INGD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_RE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false

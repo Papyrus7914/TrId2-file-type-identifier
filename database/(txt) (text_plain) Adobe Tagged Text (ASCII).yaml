@@ -1,0 +1,13 @@
+Name: Adobe Tagged Text (ASCII)
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<ASCII-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLORTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARASTYLE"
+    CaseSensitive: false

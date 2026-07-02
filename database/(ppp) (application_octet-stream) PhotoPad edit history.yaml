@@ -1,0 +1,14 @@
+Name: PhotoPad edit history
+URL: "https://www.nchsoftware.com/photoeditor/index.html"
+FileNameExtensions: ["ppp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "lsdf\x01\0\x02\0"
+    CaseSensitive: true
+  - Pos: 124
+    AsciiString: "original_image"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ORIGINAL_IMAGE"
+    CaseSensitive: false

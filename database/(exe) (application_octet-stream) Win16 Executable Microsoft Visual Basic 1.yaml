@@ -1,0 +1,32 @@
+Name: Win16 Executable Microsoft Visual Basic 1
+URL: "https://en.wikipedia.org/wiki/Visual_Basic"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\xF8\0\x01\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program requires Microsoft Windows.\r\n$\0\0\0\0\0\0\0NE\x05\n"
+    CaseSensitive: true
+  - Pos: 134
+    AsciiString: "\x02\0FERG\x12\x03\x02\0\0\x10\0@\x10\0\x01\0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM REQUIRES MICROSOFT WINDOWS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMMEDIATE WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0\0\0\0\0\0\0NE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBRUN100"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FRM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FERG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Fortune Cite data
+Description: Atari ST tool by Harald Schonfeld and Bernd Spellenberg.
+FileNameExtensions: ["cit"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Fortune V01."
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "DVSM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DVSM"
+    CaseSensitive: false

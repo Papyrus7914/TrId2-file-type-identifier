@@ -1,0 +1,41 @@
+Name: PGE Extendable Level
+URL: "http://engine.wohlnet.ru/"
+FileNameExtensions: ["lvlx"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HEAD\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EVENTS_CLASSIC_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTROYED BLOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P SWITCH - START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P SWITCH - END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTPOINT_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL - START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPAWNED NPCS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false

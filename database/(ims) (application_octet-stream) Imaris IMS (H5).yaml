@@ -1,0 +1,71 @@
+Name: Imaris IMS (H5)
+URL: "https://imaris.oxinst.com/support/imaris-file-format"
+FileNameExtensions: ["ims"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "OHDR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATASETINFODIRECTORYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAILDIRECTORYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASETDIRECTORYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLUTIONLEVEL 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFDATASETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMARISDATASET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMARISVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASETTIMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISTOGRAMMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISTOGRAMMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGESIZEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGESIZEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGESIZEZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNEL 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCHK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREE"
+    CaseSensitive: false

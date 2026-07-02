@@ -1,0 +1,43 @@
+Name: openEHR Archetype Definition Language
+URL: "http://www.openehr.org/FAQs/t_archetypes_FAQ.htm"
+FileNameExtensions: ["adl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "archetype"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TERM_DEFINITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE MATCHES {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENEHR-EHR-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONTOLOGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONCEPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AT0000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

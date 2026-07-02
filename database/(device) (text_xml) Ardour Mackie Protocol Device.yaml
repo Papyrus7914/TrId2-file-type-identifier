@@ -1,0 +1,41 @@
+Name: Ardour Mackie Protocol Device
+URL: "https://en.wikipedia.org/wiki/Ardour_(software)"
+FileNameExtensions: ["device"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TWOCHARACTERDISPLAY VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOUCHSENSEFADERS VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMECODEDISPLAY VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALCONTROLS VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACKIEPROTOCOLDEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTERPOSITION VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTERFADER VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENDERS VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOGWHEEL VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRIPS VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME VALUE"
+    CaseSensitive: false

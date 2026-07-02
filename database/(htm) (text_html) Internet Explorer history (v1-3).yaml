@@ -1,0 +1,20 @@
+Name: Internet Explorer history (v1-3)
+URL: "https://en.wikipedia.org/wiki/Internet_Explorer"
+FileNameExtensions: ["htm"]
+MimeType: text/html
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<title>Global History</title>\r\n\r\n<h1>Global History Page</h1>\r\n<a href=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GLOBAL HISTORY PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

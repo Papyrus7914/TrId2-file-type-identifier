@@ -1,0 +1,15 @@
+Name: Gee! Font
+Description: Used by PrintPartner by Acropolis Software.
+URL: "http://fileformats.archiveteam.org/wiki/PrintPartner"
+FileNameExtensions: ["fon"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Gee! Fonts v"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\r\n"
+    CaseSensitive: true

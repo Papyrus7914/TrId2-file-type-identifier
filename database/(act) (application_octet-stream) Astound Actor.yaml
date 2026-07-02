@@ -1,0 +1,35 @@
+Name: Astound Actor
+Description: Presentations/multimedia authoring program for Windows.
+FileNameExtensions: ["act"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ACTR"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "ps"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DWRB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NNDN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSNM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTRG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WDKD"
+    CaseSensitive: false

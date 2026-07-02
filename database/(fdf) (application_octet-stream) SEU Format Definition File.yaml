@@ -1,0 +1,41 @@
+Name: SEU Format Definition File
+Description: Used with Lattice Source Entry Utility.
+FileNameExtensions: ["fdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "Z"
+    CaseSensitive: true
+  - Pos: 240
+    AsciiString: "FORMAT:FDF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNUSED FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

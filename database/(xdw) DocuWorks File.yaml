@@ -1,0 +1,11 @@
+Name: DocuWorks File
+URL: "http://www.fujixerox.co.jp/eng/index.html"
+FileNameExtensions: ["xdw"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`"
+    CaseSensitive: true
+  - Pos: 2
+    Bytes: [0x82, 0x01]
+  - Pos: 5
+    Bytes: [0x80, 0x03, 0x00, 0xC0, 0x13]

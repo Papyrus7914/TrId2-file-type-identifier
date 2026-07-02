@@ -1,0 +1,44 @@
+Name: Doom 3 MD5 Mesh (with rem)
+URL: "https://en.wikipedia.org/wiki/Doom_3"
+FileNameExtensions: ["md5mesh"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MD5VERSION 10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMANDLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMWEIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMJOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMMESHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOINTS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMVERTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMTRIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERT 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERT 1"
+    CaseSensitive: false

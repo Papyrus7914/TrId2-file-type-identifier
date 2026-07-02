@@ -1,0 +1,42 @@
+Name: WinFellow emulation preset
+Description: Amiga Emulator for Windows.
+URL: "http://petschau.github.io/WinFellow/"
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "config_description="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KICKSTART_ROM_DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KICKSTART_ROM_CRC32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG_DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KICKSTART_ROM_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU_COMPATIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOGOMEM_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHIPMEM_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FASTMEM_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GFX_CHIPSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU_SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU_TYPE"
+    CaseSensitive: false

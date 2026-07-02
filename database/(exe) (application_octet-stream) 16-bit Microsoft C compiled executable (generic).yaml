@@ -1,0 +1,62 @@
+Name: 16-bit Microsoft C compiled executable (generic)
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B#16-bit_versions"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MS RUN-TIME LIBRARY - COPYRIGHT (C) 19"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NULL POINTER ASSIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- INTEGER DIVIDE BY 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- STACK OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT CORP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN-TIME ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T NOT LOADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_FILE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- FLOATING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NULL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6002"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6003"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6009"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NMSG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKGN"
+    CaseSensitive: false

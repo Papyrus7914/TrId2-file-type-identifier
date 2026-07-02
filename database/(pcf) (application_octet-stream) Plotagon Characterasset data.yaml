@@ -1,0 +1,53 @@
+Name: Plotagon Character/asset data
+URL: "https://www.plotagon.com/"
+FileNameExtensions: ["pcf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0\0\0\x01\0\0\0\x80\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BUNDLEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITYVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONMAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONMINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORTDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false

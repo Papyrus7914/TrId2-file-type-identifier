@@ -1,0 +1,20 @@
+Name: Live2D Cubism expression data
+URL: "https://www.live2d.com/en/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LIVE2D EXPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADE_OUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADE_IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

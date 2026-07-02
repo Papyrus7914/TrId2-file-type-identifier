@@ -1,0 +1,17 @@
+Name: Thunderstore Mod package
+URL: "https://thunderstore.io/"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MANIFEST.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "README.MD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON.PNG"
+    CaseSensitive: false

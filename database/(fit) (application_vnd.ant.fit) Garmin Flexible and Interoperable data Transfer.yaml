@@ -1,0 +1,11 @@
+Name: Garmin Flexible and Interoperable data Transfer
+URL: "https://developer.garmin.com/fit/overview/"
+FileNameExtensions: ["fit"]
+MimeType: application/vnd.ant.fit
+DetectionPatterns:
+  - Pos: 8
+    AsciiString: ".FIT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".FIT"
+    CaseSensitive: false

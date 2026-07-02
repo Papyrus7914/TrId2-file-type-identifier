@@ -1,0 +1,25 @@
+Name: KiCad Netlist output
+URL: "http://en.wikipedia.org/wiki/KiCad"
+FileNameExtensions: ["net"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# EESchema Netlist Version "
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "{ ALLOWED FOOTPRINTS BY COMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EESCHEMA NETLIST VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ENDFOOTPRINTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$COMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ENDLIST"
+    CaseSensitive: false

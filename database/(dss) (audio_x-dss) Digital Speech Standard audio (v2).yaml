@@ -1,0 +1,9 @@
+Name: Digital Speech Standard audio (v2)
+Description: The Digital Speech Standard is a compatible digital speech recording standard jointly developed by Grundig, Olympus and Philips.
+URL: "https://en.wikipedia.org/wiki/Digital_Speech_Standard"
+FileNameExtensions: ["dss"]
+MimeType: audio/x-dss
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x02dss"
+    CaseSensitive: true

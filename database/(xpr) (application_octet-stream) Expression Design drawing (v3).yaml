@@ -1,0 +1,23 @@
+Name: Expression Design drawing (v3)
+URL: "http://fileformats.archiveteam.org/wiki/Expression_Design"
+FileNameExtensions: ["xpr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<LCFV:"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: ">\n\xFF$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%%LNKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%OBJS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%PRLG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%RSRC"
+    CaseSensitive: false

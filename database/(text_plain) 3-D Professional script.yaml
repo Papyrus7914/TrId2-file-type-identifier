@@ -1,0 +1,20 @@
+Name: 3-D Professional script
+Description: Amiga 3D software by Cryogenic Software.
+URL: "https://www.atarimagazines.com/compute/issue123/P211_1_REVIEWS_AMIGA_3-D_PROFESSIONAL.php"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CSSCRIPT1\n\nSETDIRECTORY "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINISHANIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT"
+    CaseSensitive: false

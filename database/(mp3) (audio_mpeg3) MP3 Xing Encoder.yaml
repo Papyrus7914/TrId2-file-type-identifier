@@ -1,0 +1,22 @@
+Name: MP3 Xing Encoder
+FileNameExtensions: ["mp3"]
+MimeType: audio/mpeg3
+DetectionPatterns:
+  - Pos: 0
+    #                    0
+    Bytes: [0xFF, 0xFB, 0x30]
+  - Pos: 4
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Xing\0\0\0\x0F\0\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 152
+    AsciiString: "\0\0\02\xFF\xFB"
+    CaseSensitive: true
+  - Pos: 160
+    AsciiString: "\0"
+    CaseSensitive: true

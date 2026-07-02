@@ -1,0 +1,10 @@
+Name: Magellan MapSend
+URL: "http://www.gpsbabel.org/htmldoc-development/fmt_mapsend.html"
+FileNameExtensions: ["trk", "wpt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r4D53333"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: " MS3"
+    CaseSensitive: true

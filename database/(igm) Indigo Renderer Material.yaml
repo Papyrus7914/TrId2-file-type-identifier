@@ -1,0 +1,16 @@
+Name: Indigo Renderer Material
+URL: "http://www.indigorenderer.com"
+FileNameExtensions: ["igm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCENEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

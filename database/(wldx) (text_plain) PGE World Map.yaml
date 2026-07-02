@@ -1,0 +1,11 @@
+Name: PGE World Map
+URL: "http://engine.wohlnet.ru/"
+FileNameExtensions: ["wldx"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HEAD\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEAD_END"
+    CaseSensitive: false

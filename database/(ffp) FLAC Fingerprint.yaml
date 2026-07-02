@@ -1,0 +1,13 @@
+Name: FLAC Fingerprint
+URL: "http://wiki.etree.org/index.php?page=FlacFingerprint"
+FileNameExtensions: ["ffp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "; flac fingerprint"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLAC FINGERPRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FLAC"
+    CaseSensitive: false

@@ -1,0 +1,22 @@
+Name: IBM i (Client) Access Keyboard Map
+FileNameExtensions: ["kmp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Profile]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER"
+    CaseSensitive: false

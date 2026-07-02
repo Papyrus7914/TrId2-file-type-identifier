@@ -1,0 +1,56 @@
+Name: Turboprint driver (v4)
+Description: Amiga print utility.
+FileNameExtensions: ["tpp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Turboprint 4.0 Driver]\nDriver="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PREFERENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DITHERSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DITHERTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: 16bit DOS EXE GRABBER (generic)
+URL: "http://fileformats.archiveteam.org/wiki/GRABBER"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "Created by GRABBER (tm) Version "
+    CaseSensitive: true
+  - Pos: 82
+    AsciiString: "."
+    CaseSensitive: true

@@ -1,0 +1,17 @@
+Name: Apache OpenOffice AutoText configuration
+URL: "https://en.wikipedia.org/wiki/Apache_OpenOffice"
+FileNameExtensions: ["bau"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "BLOCKLIST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false

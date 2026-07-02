@@ -1,0 +1,24 @@
+Name: Design and Print Business Edition document
+FileNameExtensions: ["pvn"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BROC"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "\nDesign & Print, Business Edition Application\n"
+    CaseSensitive: true
+  - Pos: 97
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BUSINESS EDITION APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BROC"
+    CaseSensitive: false

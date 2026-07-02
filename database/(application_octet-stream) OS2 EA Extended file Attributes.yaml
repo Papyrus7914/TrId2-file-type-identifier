@@ -1,0 +1,10 @@
+Name: OS/2 EA Extended file Attributes
+URL: "https://en.wikipedia.org/wiki/Extended_file_attributes"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ED\0\0"
+    CaseSensitive: true
+  - Pos: 1024
+    AsciiString: "EA"
+    CaseSensitive: true

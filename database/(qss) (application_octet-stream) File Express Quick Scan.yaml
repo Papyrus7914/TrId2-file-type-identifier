@@ -1,0 +1,14 @@
+Name: File Express Quick Scan
+Description: Used by the MS-DOS database File Express.
+FileNameExtensions: ["qss"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FE "
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: " Quick Scan   \0\x1A"
+    CaseSensitive: true

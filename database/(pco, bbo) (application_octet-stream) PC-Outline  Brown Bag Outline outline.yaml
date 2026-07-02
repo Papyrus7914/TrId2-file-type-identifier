@@ -1,0 +1,16 @@
+Name: PC-Outline / Brown Bag Outline outline
+FileNameExtensions: ["pco", "bbo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 31
+    #                    O           P                                   M
+    Bytes: [0x00, 0x01, 0x4F, 0x17, 0x50, 0x17, 0x00, 0x00, 0x02, 0x02, 0x4D, 0x15]
+  - Pos: 46
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OUTLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PCO"
+    CaseSensitive: false

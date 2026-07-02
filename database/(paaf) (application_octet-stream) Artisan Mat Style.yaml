@@ -1,0 +1,86 @@
+Name: Artisan Mat Style
+URL: "https://www.forever.com/artisan"
+FileNameExtensions: ["paaf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "ArchiveInfo.txt*** Caspedia Compound Document File ***\r\n \r\nThis is multi-stream document used to group a set of files together.\r\nThe format of this file is a standard ZIP archive format.  It uses\r\nno compression and no encryption.\r\n"
+    CaseSensitive: true
+  - Pos: 331
+    AsciiString: "MainDocument.xml<EffectsArchive>\r\n  <Effect EffectName=\"Mat\" FillColor=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS IS MULTI-STREAM DOCUMENT USED TO GROUP A SET OF FILES TOGETHER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE FORMAT OF THIS FILE IS A STANDARD ZIP ARCHIVE FORMAT.  IT USES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHIVEINFO.TXT*** CASPEDIA COMPOUND DOCUMENT FILE ***"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO COMPRESSION AND NO ENCRYPTION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINDOCUMENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHIVEINFO.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECT EFFECTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPE CLASSNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECTSARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIGURE LOCKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMENT SHAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PADDING LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILLCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISVISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASPECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELIEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

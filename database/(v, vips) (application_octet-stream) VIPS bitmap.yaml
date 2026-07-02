@@ -1,0 +1,8 @@
+Name: VIPS bitmap
+URL: "http://fileformats.archiveteam.org/wiki/VIPS"
+FileNameExtensions: ["v", "vips"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        \b
+    Bytes: [0x08, 0xF2, 0xA6, 0xB6]

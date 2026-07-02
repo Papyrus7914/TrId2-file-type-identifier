@@ -1,0 +1,14 @@
+Name: Dream League Soccer assets
+URL: "https://www.ftgames.com/games#games-dls"
+FileNameExtensions: ["ftc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FTC"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 20
+    #        x
+    Bytes: [0x78, 0xDA]

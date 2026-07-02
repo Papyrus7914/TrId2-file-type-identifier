@@ -1,0 +1,10 @@
+Name: StarOffice Gallery theme
+URL: "http://fileformats.archiveteam.org/wiki/StarOffice_binary_formats"
+FileNameExtensions: ["thm"]
+MimeType: application/x-stargallery-thm
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x04, 0x00]
+  - Pos: any
+    AsciiString: "GALRESRV"
+    CaseSensitive: false

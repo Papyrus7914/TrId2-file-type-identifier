@@ -1,0 +1,14 @@
+Name: Konfabulator widget
+Description: Konfabulator is a JavaScript runtime engine for Windows and Mac OS X that lets you run little files called Widgets that can do pretty much whatever you want them to.
+URL: "http://www.konfabulator.com/"
+FileNameExtensions: ["widget"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".KON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false

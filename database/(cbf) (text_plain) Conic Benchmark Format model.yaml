@@ -1,0 +1,14 @@
+Name: Conic Benchmark Format model
+URL: "https://cblib.zib.de/"
+FileNameExtensions: ["cbf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VER"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBJACOORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJSENSE"
+    CaseSensitive: false

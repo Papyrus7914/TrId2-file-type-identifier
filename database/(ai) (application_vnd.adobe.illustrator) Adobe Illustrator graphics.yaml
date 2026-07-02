@@ -1,0 +1,47 @@
+Name: Adobe Illustrator graphics
+URL: "https://en.wikipedia.org/wiki/Adobe_Illustrator"
+FileNameExtensions: ["ai"]
+MimeType: application/vnd.adobe.illustrator
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%!PS-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADOBE ILLUSTRATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%CREATIONDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%DOCUMENTPROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%BOUNDINGBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%ENDCOMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATEBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PS-ADOBE-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAILER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVI"
+    CaseSensitive: false

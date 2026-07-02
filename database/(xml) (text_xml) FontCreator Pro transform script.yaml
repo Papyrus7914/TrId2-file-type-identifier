@@ -1,0 +1,29 @@
+Name: FontCreator Pro transform script
+Description: Windows font editor by High-Logic.
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\r\n<DATA>\r\n "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSFORMSCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHERCOMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISO-8859-1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

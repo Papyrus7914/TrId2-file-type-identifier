@@ -1,0 +1,23 @@
+Name: Minecraft Fabric Mod
+URL: "https://fabricmc.net/"
+FileNameExtensions: ["jar"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "META-INF/MANIFEST.MF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FABRIC.MOD.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.MF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CLASS"
+    CaseSensitive: false

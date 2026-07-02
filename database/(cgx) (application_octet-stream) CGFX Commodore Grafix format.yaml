@@ -1,0 +1,17 @@
+Name: CGFX Commodore Grafix format
+URL: "https://www.c64os.com/c64os/usersguide/?s=glossary#glos_commodore_grafix"
+FileNameExtensions: ["cgx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CGFXMETA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CGFX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false

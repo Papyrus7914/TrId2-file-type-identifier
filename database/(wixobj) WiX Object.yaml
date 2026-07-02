@@ -1,0 +1,61 @@
+Name: WiX Object
+URL: "http://en.wikipedia.org/wiki/WiX"
+FileNameExtensions: ["wixobj"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCELINENUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIXOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WXS*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

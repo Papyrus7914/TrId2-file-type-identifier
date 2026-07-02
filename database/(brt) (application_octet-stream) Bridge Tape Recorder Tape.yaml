@@ -1,0 +1,17 @@
+Name: Bridge Tape Recorder Tape
+Description: Windows app by SoftBridge, often used to produce tutorials.
+FileNameExtensions: ["brt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "hT\n\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0Be0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RECORDI"
+    CaseSensitive: false

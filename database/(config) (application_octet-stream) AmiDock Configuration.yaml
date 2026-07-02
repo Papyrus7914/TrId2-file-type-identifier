@@ -1,0 +1,11 @@
+Name: AmiDock Configuration
+URL: "https://www.qdev.de/?location=amiga/amidock"
+FileNameExtensions: ["config"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DOCK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BRUSH"
+    CaseSensitive: false

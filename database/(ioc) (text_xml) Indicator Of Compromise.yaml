@@ -1,0 +1,56 @@
+Name: Indicator Of Compromise
+URL: "https://en.wikipedia.org/wiki/Indicator_of_compromise"
+FileNameExtensions: ["ioc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.MANDIANT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORT_DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXT DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHORED_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDICATORITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHORED_BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

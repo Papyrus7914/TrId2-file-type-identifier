@@ -1,0 +1,14 @@
+Name: Psion Series 5 Executable
+URL: "https://en.wikipedia.org/wiki/Psion_Series_5"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "z\0\0\x10\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "EPOC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EPOC"
+    CaseSensitive: false

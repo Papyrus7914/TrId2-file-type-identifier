@@ -1,0 +1,12 @@
+Name: Infinity Engine save Game (generic)
+Description: Infinity Engine GAM files hold game information in save games.
+URL: "http://iesdp.gibberlings3.net/file_formats/ie_formats/gam_v2.0.htm"
+FileNameExtensions: ["gam"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GAMEV"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "."
+    CaseSensitive: true

@@ -1,0 +1,9 @@
+Name: Zstandard compressed data (old/generic)
+Description: Fast real-time compression algorithm.
+URL: "http://facebook.github.io/zstd/"
+FileNameExtensions: ["zst", "zstd"]
+MimeType: application/zstd
+DetectionPatterns:
+  - Pos: 1
+    #              /
+    Bytes: [0xB5, 0x2F, 0xFD]

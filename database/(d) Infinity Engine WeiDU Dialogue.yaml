@@ -1,0 +1,11 @@
+Name: Infinity Engine WeiDU Dialogue
+Description: Infinity Engine WeiDU D file format is a way of describing Infinity Engine dialogues and modifications to Infinity Engine Dialogues in a portable, easy-to-understand format.
+URL: "http://iesdp.gibberlings3.net/file_formats/misc_formats/d.htm"
+FileNameExtensions: ["d"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN ~"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN ~"
+    CaseSensitive: false

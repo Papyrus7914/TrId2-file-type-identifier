@@ -1,0 +1,16 @@
+Name: VocalTec Media File
+URL: "http://www.vocaltec.com/"
+FileNameExtensions: ["vmf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0WAVEfmt"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "Pq"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "data"
+    CaseSensitive: true

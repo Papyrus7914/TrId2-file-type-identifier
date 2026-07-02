@@ -1,0 +1,11 @@
+Name: Heroes of the Storm replay
+URL: "https://en.wikipedia.org/wiki/Heroes_of_the_Storm"
+FileNameExtensions: ["stormreplay"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MPQ\x1B"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: ":Heroes of the Storm replay\x1B"
+    CaseSensitive: true

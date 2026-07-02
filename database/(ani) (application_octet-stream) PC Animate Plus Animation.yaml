@@ -1,0 +1,10 @@
+Name: PC Animate Plus Animation
+Description: Old DOS animation program.
+FileNameExtensions: ["ani"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AN"
+    CaseSensitive: true
+  - Pos: 10
+    Bytes: [0x01, 0x00]

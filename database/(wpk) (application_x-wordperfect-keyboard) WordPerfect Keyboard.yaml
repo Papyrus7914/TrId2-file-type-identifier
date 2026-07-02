@@ -1,0 +1,25 @@
+Name: WordPerfect Keyboard
+URL: "https://github.com/OneWingedShark/WordPerfect/blob/master/doc/SDK_Help/FileFormats/WPFF_DocumentStructure.htm"
+FileNameExtensions: ["wpk"]
+MimeType: application/x-wordperfect-keyboard
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFWPC"
+    CaseSensitive: true
+  - Pos: 8
+    Bytes: [0x01, 0x03]
+  - Pos: 12
+    AsciiString: "\0\0\0\0\xFB\xFF\x05\02\0\0\0\0\0\x01\0\xCE\x02\0\0B\0\0\0"
+    CaseSensitive: true
+  - Pos: 426
+    AsciiString: "\x1B\x80\x1C\x80\x1D\x80\xFF\xFF`\x80 \0!\0\"\0#\0$\0%\0&\0'\0(\0)\0*\0+\0,\0-\0.\0/\00\01\02\03\04\05\06\07\08\09\0:\0;\0<\0=\0>\0?\0@\0A\0B\0C\0D\0E\0F\0G\0H\0I\0J\0K\0L\0M\0N\0O\0P\0Q\0R\0S\0T\0U\0V\0W\0X\0Y\0Z\0"
+    CaseSensitive: true
+  - Pos: 560
+    AsciiString: "^\0_\0`\0a\0b\0c\0d\0e\0f\0g\0h\0i\0j\0k\0l\0m\0n\0o\0p\0q\0r\0s\0t\0u\0v\0w\0x\0y\0z\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "A\0B\0C\0D\0E\0F\0G\0H\0I\0J\0K\0L\0M\0N\0O\0P\0Q\0R\0S\0T\0U\0V\0W\0X\0Y\0Z"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0\01\02\03\04\05\06\07\08\09"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Visionaire Studio game settings
+URL: "https://www.visionaire-studio.net/"
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FILE = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FULLSCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VIS"
+    CaseSensitive: false

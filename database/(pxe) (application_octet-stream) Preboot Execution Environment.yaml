@@ -1,0 +1,71 @@
+Name: Preboot Execution Environment
+URL: "https://en.wikipedia.org/wiki/Preboot_Execution_Environment"
+FileNameExtensions: ["pxe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                \a    f           f     `                                         f     h     L     R     E     T     .
+    Bytes: [0xEA, 0x05, 0x00, 0xC0, 0x07, 0x66, 0x9C, 0x66, 0x60, 0x0F, 0xA8, 0x0F, 0xA0, 0x06, 0x1E, 0x66, 0x68, 0x4C, 0x52, 0x45, 0x54, 0x2E, 0x8C, 0x16]
+  - Pos: any
+    AsciiString: "UNDI DEVICE IS PCI \0         UNABLE TO DETERMINE UNDI PHYSICAL DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KB FREE BASE MEMORY AFTER PXE UNLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PXE AT \0 NO PXE STACK FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE \0 (WORKAROUND ENABLED)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDI API CALL \0 FAILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA SEGMENT \0 (\0KB)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- CANNOT CONTINUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDI CODE SEGMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY POINT AT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PXENV+ AT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPFSFQF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETHEU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PXENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RBOOU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FVF1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FVFW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FVGF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PXE-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PXEU"
+    CaseSensitive: false

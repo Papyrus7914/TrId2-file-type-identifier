@@ -1,0 +1,36 @@
+Name: PSF2 Playstation 2 Sound Format rip (Mini)
+Description: Contains ripped code + audio data.
+URL: "http://fileformats.archiveteam.org/wiki/PSF2"
+FileNameExtensions: ["minipsf2"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSF\x02"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "psf2.ini"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PSF2LIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSF2.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LIB"
+    CaseSensitive: false

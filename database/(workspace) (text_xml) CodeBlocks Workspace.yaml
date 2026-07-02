@@ -1,0 +1,23 @@
+Name: Code::Blocks Workspace
+URL: "https://en.wikipedia.org/wiki/Code::Blocks"
+FileNameExtensions: ["workspace"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\" ?>\n<CodeBlocks_workspace_file>\n\t<Workspace title=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CODEBLOCKS_WORKSPACE_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSPACE TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CBP"
+    CaseSensitive: false

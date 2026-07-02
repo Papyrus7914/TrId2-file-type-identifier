@@ -1,0 +1,56 @@
+Name: Watcom SQL database
+URL: "https://en.wikipedia.org/wiki/Watcom"
+FileNameExtensions: ["db"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0^\xBAz\xDA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TIME_FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_COLUMN_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOMAIN_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TABLE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISQL_LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_KEY_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WATCOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORP."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1987"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

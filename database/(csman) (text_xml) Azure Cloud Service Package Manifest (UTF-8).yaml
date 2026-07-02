@@ -1,0 +1,23 @@
+Name: Azure Cloud Service Package Manifest (UTF-8)
+URL: "https://en.wikipedia.org/wiki/Microsoft_Azure"
+FileNameExtensions: ["csman"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<PackageManifest version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENCRYPTION KEYTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS HASHTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMEDSTREAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

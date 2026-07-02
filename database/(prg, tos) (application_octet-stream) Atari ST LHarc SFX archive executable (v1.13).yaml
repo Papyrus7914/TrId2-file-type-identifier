@@ -1,0 +1,47 @@
+Name: Atari ST LHarc SFX archive executable (v1.13)
+URL: "https://www.atari-wiki.com/index.php?title=LHArc"
+FileNameExtensions: ["prg", "tos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0\0\a\xEA\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0%\xFA\0\0\0\0\0\0\0\0\0\0\0\x01\0\0`6SFX\0\0\0\b\x06LHarc's SFX 1.13S \xBD1990 \xE4-soft, Markus Fritze\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NU%UNKNOWN METHOD\0HEADER$%\0MEMORY$%\0% CRC$\0% OPEN$\0% WRITE ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKUS FRITZE\0$O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S SFX 1.13S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MELTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MELTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-LH1-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-SOFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LHARC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1990"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "6SFX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUIT"
+    CaseSensitive: false

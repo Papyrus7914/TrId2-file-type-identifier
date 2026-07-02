@@ -1,0 +1,11 @@
+Name: Xara drawing
+URL: "http://fileformats.archiveteam.org/wiki/Xar_(vector_graphics)"
+FileNameExtensions: ["xar"]
+MimeType: application/vnd.xara
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XARA\xA3\xA3\r"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "CXN"
+    CaseSensitive: true

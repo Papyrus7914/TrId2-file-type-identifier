@@ -1,0 +1,9 @@
+Name: InstallShield Uninstall Script
+FileNameExtensions: ["isu"]
+DetectionPatterns:
+  - Pos: 0
+    #        q
+    Bytes: [0x71, 0xA8, 0x00, 0x00, 0x01, 0x02]
+  - Pos: 9
+    AsciiString: "\0)\0Stirling Technologies, Inc. (c) 1990-1995"
+    CaseSensitive: true

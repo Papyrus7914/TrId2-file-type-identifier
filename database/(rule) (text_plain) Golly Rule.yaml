@@ -1,0 +1,15 @@
+Name: Golly Rule
+Description: Cellular automata simulator.
+URL: "https://en.wikipedia.org/wiki/Golly_(program)"
+FileNameExtensions: ["rule"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@RULE "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NEIGHBOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STATES"
+    CaseSensitive: false

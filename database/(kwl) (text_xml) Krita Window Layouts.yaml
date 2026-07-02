@@ -1,0 +1,38 @@
+Name: Krita Window Layouts
+URL: "https://en.wikipedia.org/wiki/Krita"
+FileNameExtensions: ["kwl"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<WindowLayout primaryWorkspaceFollowsFocus=\"0\" showImageInAllWindows=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SHOWIMAGEINALLWINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARYWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMIZED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

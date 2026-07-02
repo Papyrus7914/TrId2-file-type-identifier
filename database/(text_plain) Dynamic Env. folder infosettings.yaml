@@ -1,0 +1,16 @@
+Name: Dynamic Env. folder info/settings
+Description: Dynamic Environment was a GUI for MS-DOS by Radarsoft.
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DYNAMIC APARTMENT\r\n:ScreenWide="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCREENHIGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

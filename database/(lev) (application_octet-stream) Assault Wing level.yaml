@@ -1,0 +1,28 @@
+Name: Assault Wing level
+FileNameExtensions: ["lev"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "A-Wing arena "
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\x1AMAIN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

@@ -1,0 +1,50 @@
+Name: Kate language syntax
+URL: "https://en.wikipedia.org/wiki/Kate_(text_editor)"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LINEENDCONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIGHLIGHTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFSTYLENUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KATEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMDATAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

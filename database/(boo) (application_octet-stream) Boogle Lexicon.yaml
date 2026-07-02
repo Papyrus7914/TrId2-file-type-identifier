@@ -1,0 +1,14 @@
+Name: Boogle Lexicon
+Description: A DOS shareware word game by Seabord Software.
+FileNameExtensions: ["boo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Boogle Lexicon File\r\nCopyright (c) 19"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\r\nby Seaboard Software\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BY SEABOARD SOFTWARE"
+    CaseSensitive: false

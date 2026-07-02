@@ -1,0 +1,11 @@
+Name: YM2149 song
+Description: Format for the YM2149 music chip found on Atari ST and Amstrad CPC series. It's baically a sampling of the YM chip registers.
+FileNameExtensions: ["ym", "ymst"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "YMST\x80\0Y"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MR.STYCKX"
+    CaseSensitive: false

@@ -1,0 +1,35 @@
+Name: MS Flight Simulator aircraft configuration file
+Description: That's the main aircraft.cfg file.
+URL: "http://en.wikipedia.org/wiki/Microsoft_Flight_Simulator"
+FileNameExtensions: ["cfg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[fltsim.0]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLTSIM.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUND_B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEAR_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

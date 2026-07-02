@@ -1,0 +1,20 @@
+Name: ENVI Vector template
+URL: "https://en.wikipedia.org/wiki/NV5_Geospatial_Solutions#ENVI"
+FileNameExtensions: ["vec"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ENVI VECTOR TEMPLATE ("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOUNDING RECTANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EVF"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: KEDIT Language Definition
+URL: "https://en.wikipedia.org/wiki/XEDIT#KEDIT"
+FileNameExtensions: ["kld"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LANGUAGE DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* VERSION 1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false

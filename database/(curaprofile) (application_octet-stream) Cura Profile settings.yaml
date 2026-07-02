@@ -1,0 +1,35 @@
+Name: Cura Profile settings
+URL: "https://en.wikipedia.org/wiki/Ultimaker"
+FileNameExtensions: ["curaprofile"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "QUALITY_CHANGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTING_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUALITY_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,8 @@
+Name: SSH Key Revocation List
+URL: "https://en.wikipedia.org/wiki/Secure_Shell"
+FileNameExtensions: ["krl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SSHKRL\n\0"
+    CaseSensitive: true

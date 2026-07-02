@@ -1,0 +1,53 @@
+Name: Autodesk material Library
+URL: "https://en.wikipedia.org/wiki/Autodesk"
+FileNameExtensions: ["adsklib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DEFINITIONITERATORPROPERTIES.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK-DESIGN-PACKAGE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETTABLEOFCONTENTS.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERMATERIALSCHEMA.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCEPROPERTIES.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAMVERSIONTABLE.INFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAMVERSIONTABLE.INFU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMONSCHEMA.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNX.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNX.XMLM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false

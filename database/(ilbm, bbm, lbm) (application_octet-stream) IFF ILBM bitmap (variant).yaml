@@ -1,0 +1,17 @@
+Name: IFF ILBM bitmap (variant)
+URL: "http://fileformats.archiveteam.org/wiki/ILBM"
+FileNameExtensions: ["ilbm", "bbm", "lbm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "BMHD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMAP"
+    CaseSensitive: false

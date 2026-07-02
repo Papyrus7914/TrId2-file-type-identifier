@@ -1,0 +1,17 @@
+Name: QuickDraw 3D Metafile (binary, LE)
+URL: "http://fileformats.archiveteam.org/wiki/3DMF"
+FileNameExtensions: ["3dmf", "3dm"]
+MimeType: x-world/x-3dmf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FMD3\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FIDK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTTA"
+    CaseSensitive: false

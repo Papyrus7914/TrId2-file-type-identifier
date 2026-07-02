@@ -1,0 +1,41 @@
+Name: CADSTAR Report Generator (format 2)
+URL: "https://en.wikipedia.org/wiki/CADSTAR"
+FileNameExtensions: ["rgf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(CADSTAR_RGF\r\n (HEADER\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REPORT GENERATOR VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DESIGN_TYPE PCB)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(LINE_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(FORMAT 2)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(GENERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") (X 1)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(INS ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TITLE"
+    CaseSensitive: false

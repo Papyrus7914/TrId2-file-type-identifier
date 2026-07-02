@@ -1,0 +1,26 @@
+Name: ideCAD Compressed project
+URL: "https://idecad.com/"
+FileNameExtensions: ["cde"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IDE BUILDING DESIGNER PROJECT FILE\r\nVer "
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: " SubVer "
+    CaseSensitive: true
+  - Pos: 145
+    AsciiString: "\0\0x\x9C\xED"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IDE BUILDING DESIGNER PROJECT FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHITECTURAL TEMPLATE PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT IDE YAPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBVER"
+    CaseSensitive: false

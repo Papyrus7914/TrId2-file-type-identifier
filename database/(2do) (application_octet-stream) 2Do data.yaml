@@ -1,0 +1,14 @@
+Name: 2Do data
+Description: Personal Task Manager for Windows, by William P. Anderson.
+FileNameExtensions: ["2do"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x04\0\0\0\0\0\0\0APW*r\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TO DO LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRASH CAN"
+    CaseSensitive: false

@@ -1,0 +1,37 @@
+Name: JW Pubblication
+FileNameExtensions: ["jwpub"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "manifest.json"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CDEFGHIJSTUVWXYZCDEFGHIJSTUVWXYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-120X120.JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-270X270.JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-600X600.JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CVR.JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DBPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

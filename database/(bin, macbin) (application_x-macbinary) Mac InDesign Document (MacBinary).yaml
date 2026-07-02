@@ -1,0 +1,15 @@
+Name: Mac InDesign Document (MacBinary)
+Description: MacBinary is a standard for encoding Macintosh files for file transfer.
+URL: "https://en.wikipedia.org/wiki/Adobe_InDesign"
+FileNameExtensions: ["bin", "macbin"]
+MimeType: application/x-macbinary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "inDd"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INDD"
+    CaseSensitive: false

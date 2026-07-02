@@ -1,0 +1,9 @@
+Name: PKCS #7 Signature
+URL: "http://en.wikipedia.org/wiki/PKCS"
+FileNameExtensions: ["p7s"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "0"
+    CaseSensitive: true
+  - Pos: 7
+    Bytes: [0x86]

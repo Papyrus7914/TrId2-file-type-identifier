@@ -1,0 +1,20 @@
+Name: P-CAD binary Library
+URL: "https://en.wikipedia.org/wiki/P-CAD"
+FileNameExtensions: ["lib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0V\0\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0A\0\0\0L\0\0\0I"
+    CaseSensitive: true
+  - Pos: 92
+    AsciiString: "TangoPRO Library V2.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TANGOPRO LIBRARY V2.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0\0\0L\0\0\0I"
+    CaseSensitive: false

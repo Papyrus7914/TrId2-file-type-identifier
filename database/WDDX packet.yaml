@@ -1,0 +1,12 @@
+Name: WDDX packet
+URL: "http://en.wikipedia.org/wiki/WDDX"
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<wddxPacket version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

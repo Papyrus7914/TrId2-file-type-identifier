@@ -1,0 +1,14 @@
+Name: Gromada Menu data
+URL: "http://fileformats.archiveteam.org/wiki/RES_(Gromada)"
+FileNameExtensions: ["men"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RES "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "MENUHEAD$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MENUHEAD$"
+    CaseSensitive: false

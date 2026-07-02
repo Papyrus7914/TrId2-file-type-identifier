@@ -1,0 +1,10 @@
+Name: Real-Time 3D object
+Description: Amiga 3D software by Hugo Lyppens.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OBJ\n"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\nU3D-View"
+    CaseSensitive: true

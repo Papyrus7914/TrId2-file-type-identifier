@@ -1,0 +1,13 @@
+Name: The Chessmaster 4000 classic games library
+URL: "https://en.wikipedia.org/wiki/Chessmaster"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Classic Games"
+    CaseSensitive: true
+  - Pos: 32
+    Bytes: [0x1A]
+  - Pos: any
+    AsciiString: "THE CHESSMASTER 4000"
+    CaseSensitive: false

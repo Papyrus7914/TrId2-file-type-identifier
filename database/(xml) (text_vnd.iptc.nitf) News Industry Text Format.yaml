@@ -1,0 +1,62 @@
+Name: News Industry Text Format
+URL: "http://fileformats.archiveteam.org/wiki/News_Industry_Text_Format"
+FileNameExtensions: ["xml"]
+MimeType: text/vnd.iptc.nitf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BODY.CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE NITF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE.ISSUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ID-STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOC-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NITF-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORM"
+    CaseSensitive: false

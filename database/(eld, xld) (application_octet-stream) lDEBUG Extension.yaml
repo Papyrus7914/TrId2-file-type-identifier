@@ -1,0 +1,10 @@
+Name: lDEBUG Extension
+URL: "https://pushbx.org/ecm/web/#projects-ldebug"
+FileNameExtensions: ["eld", "xld"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ELD1"
+    CaseSensitive: true
+  - Pos: 7
+    Bytes: [0x1A]

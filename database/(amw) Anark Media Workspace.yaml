@@ -1,0 +1,19 @@
+Name: Anark Media Workspace
+URL: "www.anark.com/"
+FileNameExtensions: ["amw"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xC3\v\n\0\0\0A\0N\0A\0R\0K\0\xC6\v\x04\0\0\0\0\0\0\0\xC4\v\x04\0\0\0\x01\0\0\0\xC5\v\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "\0\0\0\xD5\t"
+    CaseSensitive: true
+  - Pos: 63
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "\0\0\xCB\t"
+    CaseSensitive: true

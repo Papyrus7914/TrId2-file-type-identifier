@@ -1,0 +1,41 @@
+Name: Visual Studio Generic Test (UTF-8)
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+FileNameExtensions: ["generictest"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%TESTOUTPUTDIRECTORY%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKINGDIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARYXMLFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISUALSTUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERICTEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false

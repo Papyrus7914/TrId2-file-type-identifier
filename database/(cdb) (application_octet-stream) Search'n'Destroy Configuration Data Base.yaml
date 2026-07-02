@@ -1,0 +1,41 @@
+Name: Search'n'Destroy Configuration Data Base
+Description: Antivirus by Fifth Generation.
+FileNameExtensions: ["cdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Configuration Database\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONFIGURATION DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLE-BOOT-CHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RT\0VIRUS-HANDLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPEND-TO-REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK-ALL-FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAN-COMPRESSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAN-ARCHIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORT-FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNVIRUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROMPT"
+    CaseSensitive: false

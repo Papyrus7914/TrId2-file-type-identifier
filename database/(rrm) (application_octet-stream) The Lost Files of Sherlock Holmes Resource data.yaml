@@ -1,0 +1,14 @@
+Name: The Lost Files of Sherlock Holmes Resource data
+URL: "https://en.wikipedia.org/wiki/The_Lost_Files_of_Sherlock_Holmes"
+FileNameExtensions: ["rrm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n\nHOLMES RESOURCE FILE V"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\r\n\n\x1A"
+    CaseSensitive: true

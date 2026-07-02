@@ -1,0 +1,14 @@
+Name: Howie Davies module
+URL: "http://www.exotica.org.uk/wiki/Howie_Davies_(format)"
+FileNameExtensions: ["hd"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x03\xF3\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\0\x03\xE9\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "p\xFFNuH.DAVIES\0\0\x01"
+    CaseSensitive: true

@@ -1,0 +1,23 @@
+Name: yum Repository configuration
+URL: "https://en.wikipedia.org/wiki/Yum_(software)"
+FileNameExtensions: ["repo"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GPGCHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASEURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

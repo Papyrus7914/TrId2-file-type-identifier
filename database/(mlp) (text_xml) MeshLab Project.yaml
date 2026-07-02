@@ -1,0 +1,17 @@
+Name: MeshLab Project
+URL: "http://fileformats.archiveteam.org/wiki/MeshLab"
+FileNameExtensions: ["mlp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE MeshLabDocument>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MESHLABPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASTERGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESHGROUP"
+    CaseSensitive: false

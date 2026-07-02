@@ -1,0 +1,19 @@
+Name: SHELX output
+URL: "http://shelx.uni-ac.gwdg.de/SHELX/index.html"
+FileNameExtensions: ["res"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TITL "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFAC"
+    CaseSensitive: false

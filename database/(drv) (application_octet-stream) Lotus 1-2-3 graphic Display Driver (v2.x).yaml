@@ -1,0 +1,69 @@
+Name: Lotus 1-2-3 graphic Display Driver (v2.x)
+URL: "https://en.wikipedia.org/wiki/Lotus_1-2-3"
+FileNameExtensions: ["drv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    Bytes: [0x01, 0x00, 0x02, 0x00]
+  - Pos: 8
+    AsciiString: "Graph Display\0\x01\0"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 69
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 73
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 75
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 77
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 79
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 83
+    Bytes: [0xE9]
+  - Pos: 86
+    Bytes: [0xE9]
+  - Pos: 89
+    Bytes: [0xE9]
+  - Pos: 92
+    Bytes: [0xE9]
+  - Pos: 95
+    Bytes: [0xE9]
+  - Pos: 98
+    Bytes: [0xE9]
+  - Pos: 101
+    Bytes: [0xE9]
+  - Pos: 104
+    Bytes: [0xE9]
+  - Pos: 107
+    Bytes: [0xE9]
+  - Pos: 110
+    Bytes: [0xE9]
+  - Pos: any
+    AsciiString: "GRAPH DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "000000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X00000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "000X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~\0\0~"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Allwinner ARM-based SoC firmware (generic)
+URL: "https://en.wikipedia.org/wiki/Allwinner_Technology"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x06\0\0\xEAeGON.EXE"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "EXEC"
+    CaseSensitive: true

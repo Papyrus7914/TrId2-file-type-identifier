@@ -1,0 +1,44 @@
+Name: Visual Studio Settings
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+FileNameExtensions: ["settings"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version='1.0' encoding='utf-8'?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSFILE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTPROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISUALSTUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DEFAULT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2004"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

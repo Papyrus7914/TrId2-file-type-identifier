@@ -1,0 +1,13 @@
+Name: Visual SourceSafe control file (var 1)
+URL: "http://en.wikipedia.org/wiki/Sourcesafe"
+FileNameExtensions: ["scc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SCC = This is a "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS IS A SOURCE CODE CONTROL FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCC_PROJECT_NAME"
+    CaseSensitive: false

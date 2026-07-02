@@ -1,0 +1,21 @@
+Name: Professional Draw document (v3.x)
+Description: Amiga vector drawing software by Gold Disk.
+URL: "https://en.wikipedia.org/wiki/Amiga_productivity_software#Vector_graphics"
+FileNameExtensions: ["pdraw", "pd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "Professional Draw V3."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROFESSIONAL DRAW V3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PENV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPAG"
+    CaseSensitive: false

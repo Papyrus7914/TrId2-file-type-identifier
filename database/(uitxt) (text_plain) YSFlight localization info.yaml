@@ -1,0 +1,17 @@
+Name: YSFlight localization info
+URL: "https://ysflight.org/"
+FileNameExtensions: ["uitxt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "YSFLIGHT_LOCALIZATION_INFO_FILE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$BGCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FGCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$LABEL"
+    CaseSensitive: false

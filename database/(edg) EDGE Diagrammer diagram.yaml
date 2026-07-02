@@ -1,0 +1,13 @@
+Name: EDGE Diagrammer diagram
+URL: "http://www.pacestar.com/edge/"
+FileNameExtensions: ["edg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EDGE Diagram File\r\nVersion "
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "#"
+    CaseSensitive: true

@@ -1,0 +1,38 @@
+Name: FinalBuilder Wizard
+URL: "https://en.wikipedia.org/wiki/FinalBuilder"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<FBWizard>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROPERTIES WIZARDNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIZARDPAGE NEXTBUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINISHBUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIZARDPAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGENUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVBUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGETITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FBWIZARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEHTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HTML"
+    CaseSensitive: false

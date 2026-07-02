@@ -1,0 +1,46 @@
+Name: SPI Flash 32 firmware
+FileNameExtensions: ["lod"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#$mode=flsh_spi32m"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$FACT_SETTINGS_BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$USER_DATA_BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$USER_DATA_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$RAM_PHY_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CALIB_BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FLASH_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FLSH_MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLSH_SPI32M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CODE_BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$SECTORMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$SPACESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$RAM_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$BASE"
+    CaseSensitive: false

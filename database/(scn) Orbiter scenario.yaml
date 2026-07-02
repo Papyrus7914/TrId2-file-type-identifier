@@ -1,0 +1,56 @@
+Name: Orbiter scenario
+Description: Orbiter is a free space flight simulator by Martin Schweiger.
+URL: "http://www.orbitersim.com"
+FileNameExtensions: ["scn"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN_DESC\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN_ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN_CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN_FOCUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN_SHIPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN_DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM SOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_SHIPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_FOCUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE MJD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EARTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false

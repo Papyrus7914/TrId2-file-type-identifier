@@ -1,0 +1,67 @@
+Name: 16bit COM executable SHOW (v2.0)
+URL: "http://fileformats.archiveteam.org/wiki/SHOW_(Gary_M._Raymond)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "0\0\x1F\xA0\0\0SHOWV20 Copy(c)right, 1992/1993, Simple Software Co., New Orleans, La., 504-288-6550              Show Text Utility - by Gary Raymond, (504) 288-6550\r<Esc> (W)rite (G)o (C)olor/(S) (P)rint, (F)ind, Home,End,PgUpDn,ArUpDn Ln =     \r Is Line Printer READY [y/n] ->\r Enter filename to save as   ->\r Enter search string to find ->\r Search for this again [y/n] ->\r No Match Found!\r             "
+    CaseSensitive: true
+  - Pos: 528
+    AsciiString: "0123456789ABCDEF.COM\0\0\0\0\0\0\0\0\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "504-288-6550              SHOW TEXT UTILITY - BY GARY RAYMOND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER FILENAME TO SAVE AS   -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER SEARCH STRING TO FIND -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS LINE PRINTER READY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH FOR THIS AGAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(W)RITE (G)O (C)OLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789ABCDEF.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWV20 COPY(C)RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLE SOFTWARE CO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(504) 288-6550"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO MATCH FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(S) (P)RINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEW ORLEANS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(F)IND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGUPDN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1992"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1993"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOME"
+    CaseSensitive: false

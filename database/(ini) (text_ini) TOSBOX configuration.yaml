@@ -1,0 +1,41 @@
+Name: TOSBOX configuration
+Description: DOS Atari ST emulator by Mark Slagell.
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# TOSBOX 1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SMOOTH MOUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUSE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREAK KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOSBOX 1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUNT A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUNT C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUP"
+    CaseSensitive: false

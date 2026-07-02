@@ -1,0 +1,22 @@
+Name: MMS Composer File
+URL: "http://www.arcsoft.com/"
+FileNameExtensions: ["mcf"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0\x14MA-MMSComposer (MCF)"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MA-MMSCOMPOSER (MCF)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMP.SMIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".AMR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TXT"
+    CaseSensitive: false

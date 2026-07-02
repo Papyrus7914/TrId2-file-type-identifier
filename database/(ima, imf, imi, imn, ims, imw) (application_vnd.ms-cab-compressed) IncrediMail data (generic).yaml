@@ -1,0 +1,28 @@
+Name: IncrediMail data (generic)
+URL: "http://www.incredimail.com"
+FileNameExtensions: ["ima", "imf", "imi", "imn", "ims", "imw"]
+MimeType: application/vnd.ms-cab-compressed
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0\0,\0\0\0\0\0\0\0\x03\x01\x01\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 42
+    Bytes: [0x03, 0x15]
+  - Pos: 48
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT.INI"
+    CaseSensitive: false

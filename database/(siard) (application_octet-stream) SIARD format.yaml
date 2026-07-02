@@ -1,0 +1,33 @@
+Name: SIARD format
+Description: Software Independent Archiving of Relational Databases.
+URL: "http://fileformats.archiveteam.org/wiki/SIARD"
+FileNameExtensions: ["siard"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "content/PK\x03\x04"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "METADATA.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE0.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE0.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false

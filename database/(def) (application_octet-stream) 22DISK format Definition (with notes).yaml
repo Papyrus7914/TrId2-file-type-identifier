@@ -1,0 +1,35 @@
+Name: 22DISK format Definition (with notes)
+URL: "http://www.sydex.com/"
+FileNameExtensions: ["def"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NOTE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CYLINDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIDE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIDE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTE"
+    CaseSensitive: false

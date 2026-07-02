@@ -1,0 +1,23 @@
+Name: Chess Assistant DB (v3.0) - Chess Data Pro (v1.1)
+URL: "https://en.wikipedia.org/wiki/Chess_Assistant"
+FileNameExtensions: ["cdp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Chess Assistant 3.0 database.\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\nChess Data Pro format. Version 1.1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHESS DATA PRO FORMAT. VERSION 1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER FOLDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEID"
+    CaseSensitive: false

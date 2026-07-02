@@ -1,0 +1,14 @@
+Name: OGG Vorbis audio
+URL: "http://www.xiph.org/ogg/vorbis/"
+FileNameExtensions: ["ogg"]
+MimeType: audio/ogg
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OggS\0\x02\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\x01\x1E\x01vorbis"
+    CaseSensitive: true
+  - Pos: 57
+    AsciiString: "\x01OggS"
+    CaseSensitive: true

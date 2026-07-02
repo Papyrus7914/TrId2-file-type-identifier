@@ -1,0 +1,62 @@
+Name: IBIS model
+Description: I/O Buffer Info Specification
+FileNameExtensions: ["ibs"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[IBIS "
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "er]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANUFACTURER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNAL_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISCLAIMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE REV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBIS VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_PKG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_PKG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_PKG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTE"
+    CaseSensitive: false

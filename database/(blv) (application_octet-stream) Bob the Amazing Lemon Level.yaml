@@ -1,0 +1,14 @@
+Name: Bob the Amazing Lemon Level
+Description: Game by Woogal, for Amiga and other systems.
+FileNameExtensions: ["blv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\"BLUR\"\n\""
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\"\n\":;<=>?@ABCDEFGHIJK\"\n\":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ABCDEFGHIJK"
+    CaseSensitive: false

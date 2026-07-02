@@ -1,0 +1,11 @@
+Name: AutoCAD Fast-load AutoLISP (FAS4)
+URL: "https://en.wikipedia.org/wiki/AutoLISP"
+FileNameExtensions: ["fas"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n FAS4-FILE ; Do not change it!\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FAS4 CRUNCH"
+    CaseSensitive: false

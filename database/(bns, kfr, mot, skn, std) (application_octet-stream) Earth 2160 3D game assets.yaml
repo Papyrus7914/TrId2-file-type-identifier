@@ -1,0 +1,31 @@
+Name: Earth 2160 3D game assets
+URL: "https://www.mobygames.com/game/18726/earth-2160/"
+FileNameExtensions: ["bns", "kfr", "mot", "skn", "std"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    f
+    Bytes: [0x9F, 0x99, 0x66, 0xF6, 0x02]
+  - Pos: 9
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF, 0x02]
+  - Pos: 17
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMOFM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIVOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUNT"
+    CaseSensitive: false

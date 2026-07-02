@@ -1,0 +1,18 @@
+Name: Microsoft Windows CE installation Cabinet Archive
+Description: CAB archive without extra bytes and compression and first member with .000 extension is used for Windows CE installations.
+URL: "https://www.cabextract.org.uk/wince_cab_format/"
+FileNameExtensions: ["cab"]
+MimeType: application/vnd.ms-cab-compressed
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0\0\0\0\0\x03\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MSCE"
+    CaseSensitive: false

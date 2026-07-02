@@ -1,0 +1,11 @@
+Name: MindRender VREK Object File Format
+Description: The ODT file specifies object architecture and also animation node topology.
+URL: "http://www.themekit.com/t_vrek.htm"
+FileNameExtensions: ["odt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#MINDRENDER "
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true

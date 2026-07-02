@@ -1,0 +1,62 @@
+Name: EQATEC Profiler configuration
+URL: "http://www.telerik.com/"
+FileNameExtensions: ["eqconfig"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<config"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAIN ONSTOP APPLICATIONEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIMEMODULELOGLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORTFOLDERNETFULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQATECPROFILERLOGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORTFOLDERNETCF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TINYMETHODACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(SYSTEMROOT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOSNAPSHOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDEFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNACTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(APPDIR)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERRORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMP"
+    CaseSensitive: false

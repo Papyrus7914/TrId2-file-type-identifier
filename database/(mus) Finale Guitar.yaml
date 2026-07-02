@@ -1,0 +1,13 @@
+Name: Finale Guitar
+URL: "http://www.finalemusic.com/finaleguitar/"
+FileNameExtensions: ["mus"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ENIGMA BINARY FILE\0\0\0\0\0\0\0\0\0\0\0\0\0\0Finale(R) Guitar"
+    CaseSensitive: true
+  - Pos: 116
+    AsciiString: "WIN\0\x01\x04\0"
+    CaseSensitive: true
+  - Pos: 150
+    AsciiString: "FJR\0WIN"
+    CaseSensitive: true

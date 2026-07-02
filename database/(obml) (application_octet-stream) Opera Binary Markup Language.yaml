@@ -1,0 +1,29 @@
+Name: Opera Binary Markup Language
+URL: "https://dev.opera.com/articles/opera-binary-markup-language/"
+FileNameExtensions: ["obml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 6
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "S\0\0\xFF\xFF\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

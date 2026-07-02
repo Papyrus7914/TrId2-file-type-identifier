@@ -1,0 +1,29 @@
+Name: Cyberware Digitizer Data
+Description: File format for laser scan data.
+URL: "http://cyberware.com/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Cyberware Digitizer Data"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CYBERWARE DIGITIZER DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYLINDRICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LGINCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LGMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LGMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE"
+    CaseSensitive: false

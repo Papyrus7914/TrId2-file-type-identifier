@@ -1,0 +1,22 @@
+Name: ZGameEditor project
+URL: "http://www.zgameeditor.org"
+FileNameExtensions: ["zgeproj"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"iso-8859-1\" ?>\r\n<ZApplication Name=\"App\" Caption=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ZAPPLICATION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISO-8859-1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTION"
+    CaseSensitive: false

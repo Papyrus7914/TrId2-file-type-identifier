@@ -1,0 +1,11 @@
+Name: JPK1 compressed archive
+URL: "http://fileformats.archiveteam.org/wiki/JPK1_(compressed_archive)"
+FileNameExtensions: ["jpk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JFX1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JPK1"
+    CaseSensitive: false

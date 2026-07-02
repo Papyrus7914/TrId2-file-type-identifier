@@ -1,0 +1,14 @@
+Name: Signed DJI firmware (generic)
+URL: "https://en.wikipedia.org/wiki/DJI"
+FileNameExtensions: ["sig"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IM*H"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0PRAK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRAK"
+    CaseSensitive: false

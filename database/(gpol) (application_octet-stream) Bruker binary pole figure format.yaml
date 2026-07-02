@@ -1,0 +1,28 @@
+Name: Bruker binary pole figure format
+FileNameExtensions: ["gpol"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORMAT :"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "VERSION:"
+    CaseSensitive: true
+  - Pos: 160
+    AsciiString: "HDRBLKS:"
+    CaseSensitive: true
+  - Pos: 240
+    AsciiString: "TYPE   :"
+    CaseSensitive: true
+  - Pos: 320
+    AsciiString: "SITE   :"
+    CaseSensitive: true
+  - Pos: 640
+    AsciiString: "SETNAME:"
+    CaseSensitive: true
+  - Pos: 720
+    AsciiString: "RUN    :"
+    CaseSensitive: true
+  - Pos: 880
+    AsciiString: "TITLE  :"
+    CaseSensitive: true

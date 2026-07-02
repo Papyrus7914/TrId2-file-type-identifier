@@ -1,0 +1,18 @@
+Name: Gothic II save game (world/level state)
+Description: "Filename: SAVEDAT.SAV"
+URL: "https://www.mobygames.com/game/7866/gothic-ii/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZenGin Archive\nver 1\nzCArchiverBinSafe\nBIN_SAFE\nsaveGame 1\ndate "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IRDORATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KHORINIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAGON"
+    CaseSensitive: false

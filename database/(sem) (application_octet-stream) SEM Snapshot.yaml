@@ -1,0 +1,9 @@
+Name: SEM Snapshot
+Description: Old format used by the SpecEm emulator.
+URL: "http://www.zx-modules.de/fileformats/semformat.html"
+FileNameExtensions: ["sem"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x05SPEC1"
+    CaseSensitive: true

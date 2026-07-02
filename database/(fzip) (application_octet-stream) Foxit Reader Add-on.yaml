@@ -1,0 +1,11 @@
+Name: Foxit Reader Add-on
+URL: "http://www.foxitsoftware.com/pdf/reader/"
+FileNameExtensions: ["fzip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        %           x
+    Bytes: [0x25, 0x06, 0x78, 0x19, 0x01, 0x01, 0x00, 0x00]
+  - Pos: any
+    AsciiString: "SETUP.XML"
+    CaseSensitive: false

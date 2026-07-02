@@ -1,0 +1,133 @@
+Name: Microsoft Office XML Flat File Format Excel worksheet (UTF)
+URL: "http://en.wikipedia.org/wiki/Microsoft_Office_XML_formats"
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version="
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "1.0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "?>\r\n<?mso-application progid="
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "Excel.Sheet"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MSO-APPLICATION PROGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS-MICROSOFT-COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTECTSCENARIOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTECTSTRUCTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSHEETOPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTECTOBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTECTWINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKBOOK XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCELWORKBOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIGNMENT S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCEL.SHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPREADSHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSHEET S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWTOPX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWTOPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

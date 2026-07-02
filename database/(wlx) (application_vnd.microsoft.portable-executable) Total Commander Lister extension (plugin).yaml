@@ -1,0 +1,26 @@
+Name: Total Commander Lister extension (plugin)
+URL: "http://www.ghisler.com/plugins.htm#lister"
+FileNameExtensions: ["wlx"]
+MimeType: application/vnd.microsoft.portable-executable
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETP"
+    CaseSensitive: false

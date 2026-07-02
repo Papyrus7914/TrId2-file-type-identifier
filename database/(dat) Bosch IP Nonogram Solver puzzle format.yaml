@@ -1,0 +1,25 @@
+Name: Bosch IP Nonogram Solver puzzle format
+URL: "http://www.oberlin.edu/math/faculty/bosch/pbn-page.html"
+FileNameExtensions: ["dat"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "number_of_rows: "
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\nnumber_of_columns: "
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMBER_OF_COLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER_OF_ROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMN_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROW_1"
+    CaseSensitive: false

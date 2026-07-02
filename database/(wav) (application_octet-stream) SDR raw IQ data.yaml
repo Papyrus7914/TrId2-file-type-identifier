@@ -1,0 +1,20 @@
+Name: SDR raw IQ data
+URL: "https://en.wikipedia.org/wiki/Software-defined_radio"
+FileNameExtensions: ["wav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF\xD0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WAVEfmt"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "auxi"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUXI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

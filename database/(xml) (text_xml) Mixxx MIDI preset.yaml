@@ -1,0 +1,38 @@
+Name: Mixxx MIDI preset
+URL: "https://mixxx.org/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MIXXXMIDIPRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLLER ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIXXXVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

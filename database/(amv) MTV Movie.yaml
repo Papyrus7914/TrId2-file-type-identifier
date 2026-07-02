@@ -1,0 +1,13 @@
+Name: MTV Movie
+URL: "http://en.wikipedia.org/wiki/AMV_video_format"
+FileNameExtensions: ["amv"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "AMV LIST"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "hdrlamvh8"
+    CaseSensitive: true

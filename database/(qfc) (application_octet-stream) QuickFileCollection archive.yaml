@@ -1,0 +1,8 @@
+Name: QuickFileCollection archive
+Description: Non-compressing archive tool by George G.Lyapko.
+FileNameExtensions: ["qfc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              Q     F
+    Bytes: [0x1A, 0x51, 0x46, 0x1A]

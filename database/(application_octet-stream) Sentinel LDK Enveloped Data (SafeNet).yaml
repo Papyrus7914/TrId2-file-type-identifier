@@ -1,0 +1,13 @@
+Name: Sentinel LDK Enveloped Data (SafeNet)
+URL: "https://www.thalesgroup.com/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "b\x14#e"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\0\0\x01E-SafeNet\0\0\0LOCK\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "E-SAFENET\0\0\0LOCK"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: Unity binary serialized Assets (generic)
+URL: "https://en.wikipedia.org/wiki/Unity_(game_engine)"
+FileNameExtensions: ["assets"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 8
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNITY"
+    CaseSensitive: false

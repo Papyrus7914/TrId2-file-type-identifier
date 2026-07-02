@@ -1,0 +1,17 @@
+Name: Delphi Project source (with rem, var.2)
+URL: "https://en.wikipedia.org/wiki/Delphi_(programming_language)"
+FileNameExtensions: ["dpr"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "//"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END."
+    CaseSensitive: false

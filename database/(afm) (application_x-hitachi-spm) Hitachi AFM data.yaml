@@ -1,0 +1,11 @@
+Name: Hitachi AFM data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/hitachi-afm.c"
+FileNameExtensions: ["afm"]
+MimeType: application/x-hitachi-spm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AFM/Ver. "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HITACHI AFM DATA VERSION"
+    CaseSensitive: false

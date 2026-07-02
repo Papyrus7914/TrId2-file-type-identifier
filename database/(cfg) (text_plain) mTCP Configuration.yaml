@@ -1,0 +1,41 @@
+Name: mTCP Configuration
+URL: "http://www.brutman.com/mTCP/"
+FileNameExtensions: ["cfg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DHCPVER DHCP Client version"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TIMESTAMP ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IRCJR_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IRCJR_NICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IRCJR_USER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEASE_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMESERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKETINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GATEWAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPADDR"
+    CaseSensitive: false

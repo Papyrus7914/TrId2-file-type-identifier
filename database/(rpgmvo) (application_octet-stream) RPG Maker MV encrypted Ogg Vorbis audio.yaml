@@ -1,0 +1,20 @@
+Name: RPG Maker MV encrypted Ogg Vorbis audio
+URL: "https://en.wikipedia.org/wiki/RPG_Maker"
+FileNameExtensions: ["rpgmvo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RPGMV"
+    CaseSensitive: true
+  - Pos: 45
+    AsciiString: "vorbis"
+    CaseSensitive: true
+  - Pos: 74
+    AsciiString: "OggS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VORBIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OGGS"
+    CaseSensitive: false

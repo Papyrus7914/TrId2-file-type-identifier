@@ -1,0 +1,23 @@
+Name: Cura quality settings
+URL: "https://en.wikipedia.org/wiki/Ultimaker"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[general]\nversion ="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETTING_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUALITY_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

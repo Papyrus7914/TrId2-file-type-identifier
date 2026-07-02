@@ -1,0 +1,14 @@
+Name: NETGEN Constructive Solid Geometry format (with rem)
+URL: "https://sourceforge.net/projects/netgen-mesher/"
+FileNameExtensions: ["geo"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALGEBRAIC3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLID"
+    CaseSensitive: false

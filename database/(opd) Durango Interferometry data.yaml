@@ -1,0 +1,32 @@
+Name: Durango Interferometry data
+Description: Durango is the Universal Interferometry Software for data acquisition, analysis, evaluation, exchange, import-export and simulation.
+URL: "http://www.diffraction.com/"
+FileNameExtensions: ["opd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x1C\0\0\0\xDDf1\xDC:\b\xD4\x11\xAD\xA1\0\xA0\xCC\xE4VV\0\0\0\0\0\0\0\0\xC4;r"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "CDurangoFileInfo\f\x17\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CDURANGOSAVEASDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDURANGOFILEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURANGO CD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KLO-JPB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OPD"
+    CaseSensitive: false

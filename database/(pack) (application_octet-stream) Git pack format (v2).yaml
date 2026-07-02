@@ -1,0 +1,8 @@
+Name: Git pack format (v2)
+URL: "http://fileformats.archiveteam.org/wiki/Git"
+FileNameExtensions: ["pack"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PACK\0\0\0\x02"
+    CaseSensitive: true

@@ -1,0 +1,38 @@
+Name: Mozilla Spam Filter Definition
+URL: "https://en.wikipedia.org/wiki/Mozilla"
+FileNameExtensions: ["sfd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACTIONVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINS WITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JUNKSCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGGING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

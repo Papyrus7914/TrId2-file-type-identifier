@@ -1,0 +1,14 @@
+Name: RIFF Device Independent Bitmap
+URL: "http://fileformats.archiveteam.org/wiki/RDIB"
+FileNameExtensions: ["rdi", "rib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "RDIB"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RDIB"
+    CaseSensitive: false

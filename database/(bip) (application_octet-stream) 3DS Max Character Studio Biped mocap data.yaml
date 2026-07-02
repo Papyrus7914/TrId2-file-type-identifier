@@ -1,0 +1,24 @@
+Name: 3DS Max Character Studio Biped mocap data
+FileNameExtensions: ["bip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x90, 0x01]
+  - Pos: 3
+    AsciiString: "\0\0\0X\x01\0\0\0\0\0\0\0\0\x05\0\0\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0\0\0\0\n\0\0\0\0\0\0\0\0\0X\0g\0 \b"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUTODESK 3DS MAX\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUEVISION-XFILE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSE1"
+    CaseSensitive: false

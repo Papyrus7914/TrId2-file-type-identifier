@@ -1,0 +1,8 @@
+Name: Hauptwerk copy-protected samples format
+URL: "https://en.wikipedia.org/wiki/Hauptwerk"
+FileNameExtensions: ["hbw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                H     P     W
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF, 0x48, 0x50, 0x57]

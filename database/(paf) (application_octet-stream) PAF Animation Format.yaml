@@ -1,0 +1,16 @@
+Name: PAF Animation Format
+FileNameExtensions: ["paf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF\0\0\0\0ANIM"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "CODE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DLTA"
+    CaseSensitive: false

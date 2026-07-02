@@ -1,0 +1,23 @@
+Name: Linwood Butterfly note
+URL: "https://butterfly.linwood.dev/"
+FileNameExtensions: ["bfly"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "BUTTERFLY.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE.BFLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false

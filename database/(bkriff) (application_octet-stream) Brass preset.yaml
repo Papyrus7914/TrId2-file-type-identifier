@@ -1,0 +1,14 @@
+Name: Brass preset
+URL: "https://en.wikipedia.org/wiki/Arturia"
+FileNameExtensions: ["bkriff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BKRFBKPRwrifVER "
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "CHK prop"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "instrument\0\0\0"
+    CaseSensitive: true

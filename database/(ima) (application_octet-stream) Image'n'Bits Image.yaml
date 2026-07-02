@@ -1,0 +1,11 @@
+Name: Image'n'Bits Image
+Description: Windows imaging program by Alex Lerner, Bananas Software Inc.
+FileNameExtensions: ["ima"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CGCIMAPP"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "BM"
+    CaseSensitive: true

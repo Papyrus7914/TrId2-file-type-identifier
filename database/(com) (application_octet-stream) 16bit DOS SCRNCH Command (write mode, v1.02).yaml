@@ -1,0 +1,26 @@
+Name: 16bit DOS SCRNCH Command (write mode, v1.02)
+URL: "http://fileformats.archiveteam.org/wiki/SCRNCH"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEB\x13sCwf"
+    CaseSensitive: true
+  - Pos: 633
+    AsciiString: "Out of memory.\aBad copy.\aError writing.\aDisk full.\a"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ERROR WRITING."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF MEMORY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK FULL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD COPY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RQSPWV"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: CHDK UBASIC script
+URL: "http://chdk.wikia.com/wiki/CHDK"
+FileNameExtensions: ["bas"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@title "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SHOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT"
+    CaseSensitive: false

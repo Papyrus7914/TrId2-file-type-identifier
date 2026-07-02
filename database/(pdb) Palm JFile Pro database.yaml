@@ -1,0 +1,11 @@
+Name: Palm JFile Pro database
+Description: JFile is an old database format and application from Land-J Technologies.
+URL: "http://www.land-j.com"
+FileNameExtensions: ["pdb"]
+DetectionPatterns:
+  - Pos: 60
+    AsciiString: "JfDbJFil"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JFDBJFIL"
+    CaseSensitive: false

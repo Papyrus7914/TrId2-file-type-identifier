@@ -1,0 +1,14 @@
+Name: PostScript Type 1 Font (generic)
+URL: "https://en.wikipedia.org/wiki/PostScript_fonts#Type_1"
+FileNameExtensions: ["pfa"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%!FontType1-"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: ":"
+    CaseSensitive: true

@@ -1,0 +1,26 @@
+Name: RenderWare 3d model (with rem)
+URL: "https://en.wikipedia.org/wiki/RenderWare"
+FileNameExtensions: ["rwx"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLUMPBEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELBEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLUMPEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false

@@ -1,0 +1,41 @@
+Name: KiCad Work sheet
+URL: "https://en.wikipedia.org/wiki/KiCad"
+FileNameExtensions: ["kicad_wks"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETUP (TEXTSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TEXTLINEWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(LINEWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") (FONT ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") (START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") (END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") (POS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECT ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

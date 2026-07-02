@@ -1,0 +1,65 @@
+Name: DOS/4G DOS Extender Executable
+URL: "https://en.wikipedia.org/wiki/DOS/4G"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0N\0 \0\x01\0\xFF\xFF!\x01@\x03"
+    CaseSensitive: true
+  - Pos: 584
+    AsciiString: "\0\0 \0\xA0\0\x01\0\bp@\0\x01\0\0\0\0\0\0\0DOS/4G  Copyright (C) Rational Systems, Inc. "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DPMI HOST ERROR (CANNOT LOCK STACK)\0$\0THE DOS16M.386 VIRTUAL DEVICE DRIVER WAS NEVER LOADED\0%\0UNABLE TO RESERVE SELECTORS FOR DOS16M.386 WINDOWS DRIVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTECTED MODE ALREADY IN USE IN THIS DPMI VIRTUAL MACHINE\0 \0DPMI HOST ERROR (POSSIBLY INSUFFICIENT MEMORY)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM SOFTWARE DOES NOT FOLLOW VCPI OR DPMI SPECIFICATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENDED MEMORY IS CONFIGURED BUT IT CANNOT BE ALLOCATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM MUST BE BUILT -AUTO FOR DPMI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4G  COPYRIGHT (C) RATIONAL SYSTEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T LOCK EXTENDER KERNEL IN MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DPMI HOST ERROR (NEED 64K XMS)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENDED STARTUP CONDITIONS..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INBOARD\0FAST\0VCPI\0DPMI\0PS2\0PS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT USE EXTENDED MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT ENOUGH EXTENDED MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS4GMAINLOADERVECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS4G_DISPATCH\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATIONAL DOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false

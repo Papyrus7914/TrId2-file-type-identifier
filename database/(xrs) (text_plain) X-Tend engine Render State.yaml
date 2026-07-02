@@ -1,0 +1,14 @@
+Name: X-Tend engine Render State
+URL: "https://www.igdb.com/game_engines/x-tend"
+FileNameExtensions: ["xrs"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XRS\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXTUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASS"
+    CaseSensitive: false

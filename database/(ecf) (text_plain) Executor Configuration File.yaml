@@ -1,0 +1,17 @@
+Name: Executor Configuration File
+URL: "https://en.wikipedia.org/wiki/Executor_(software)"
+FileNameExtensions: ["ecf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "// This Configuration file "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{BLIT"
+    CaseSensitive: false

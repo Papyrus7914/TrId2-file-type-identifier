@@ -1,0 +1,14 @@
+Name: Zipped V-Ray Material
+URL: "https://clara.io/learn/user-guide/lighting_shading/materials/material_types/vismats"
+FileNameExtensions: ["vismatzip"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".VISMATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPGPK"
+    CaseSensitive: false

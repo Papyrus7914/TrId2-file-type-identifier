@@ -1,0 +1,20 @@
+Name: Easy CD Creator disk image
+URL: "https://en.wikipedia.org/wiki/Roxio"
+FileNameExtensions: ["cif"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "imag"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DISC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

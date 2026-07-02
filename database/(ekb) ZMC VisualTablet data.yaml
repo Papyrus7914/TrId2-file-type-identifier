@@ -1,0 +1,16 @@
+Name: ZMC VisualTablet data
+URL: "http://zmc.com"
+FileNameExtensions: ["ekb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NONO"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\a"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INKB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPNK"
+    CaseSensitive: false

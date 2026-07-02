@@ -1,0 +1,323 @@
+Name: Bathymetric Attributed Grid
+URL: "http://fileformats.archiveteam.org/wiki/Bathymetric_Attributed_Grid"
+FileNameExtensions: ["bag"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A\n"
+    CaseSensitive: true
+  - Pos: 136
+    AsciiString: "TREE"
+    CaseSensitive: true
+  - Pos: 680
+    AsciiString: "HEAP"
+    CaseSensitive: true
+  - Pos: 720
+    AsciiString: "BAG_root"
+    CaseSensitive: true
+  - Pos: 840
+    AsciiString: "TREE"
+    CaseSensitive: true
+  - Pos: 1384
+    AsciiString: "HEAP"
+    CaseSensitive: true
+  - Pos: 1504
+    AsciiString: "SNOD"
+    CaseSensitive: true
+  - Pos: 1872
+    AsciiString: "Bag Version"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSFORMATIONPARAMETERAVAILABILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMUM UNCERTAINTY VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINIMUM UNCERTAINTY VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPATIALREPRESENTATIONINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPATIALREPRESENTATIONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EX_GEOGRAPHICBOUNDINGBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXISDIMENSIONPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMUM ELEVATION VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATASTANDARDVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINIMUM ELEVATION VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALUNCERTAINTYTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAG_DATAIDENTIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKPOINTAVAILABILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD_SECURITYCONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CITEDRESPONSIBLEPARTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATASTANDARDNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKING LIST LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CI_RESPONSIBLEPARTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD_LEGALCONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATACONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCESYSTEMINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EASTBOUNDLONGITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFICATIONINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORTHBOUNDLATITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFDIMENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUTHBOUNDLATITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WESTBOUNDLONGITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOGRAPHICELEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHERRESTRICTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHERCONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAG_PROCESSSTEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAQUALITYINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD_GEORECTIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.OPENGIS.NET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DQ_DATAQUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDIVIDUALNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTOFCONTACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USECONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSIONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSIONSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RS_IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPICCATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKING_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLGEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORNERPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD_DIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAG VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CI_CITATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORDINATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST_SERIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LI_LINEAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKINGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK_CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EX_EXTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISO 19115"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LI_SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABSTRACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAG_ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DQ_SCOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CI_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECIMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD_PRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1999"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREE"
+    CaseSensitive: false

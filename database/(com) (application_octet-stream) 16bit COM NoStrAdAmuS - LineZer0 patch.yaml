@@ -1,0 +1,25 @@
+Name: 16bit COM NoStrAdAmuS - LineZer0 patch
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          p     o     m
+    Bytes: [0xEB, 0x04, 0x90, 0x70, 0x6F, 0x6D, 0xBA]
+  - Pos: 8
+    #                    \t          !                 C     3
+    Bytes: [0x01, 0xB4, 0x09, 0xCD, 0x21, 0xB8, 0x01, 0x43, 0x33, 0xC9, 0xBA]
+  - Pos: any
+    AsciiString: "WRONG. PATCH ABORTED - MAYBE FALSE FILENAME - SHOULD BE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE PATCHED. ENJOY THIS LINEZER0 RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRACKED BY NOSTRADAMUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CRACKED-LZ0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOMETHING"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Magick Vector Graphics
+URL: "http://www.imagemagick.org/script/magick-vector-graphics.php"
+FileNameExtensions: ["mvg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "push"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PUSH GRAPHIC-CONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWBOX"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: MP3 audio (RIFF container)
+URL: "https://twitter.com/angealbertini/status/1592459614226092032"
+FileNameExtensions: ["mp3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "RMP3data"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RMP3DATA"
+    CaseSensitive: false

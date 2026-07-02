@@ -1,0 +1,88 @@
+Name: SVGX slicer format
+FileNameExtensions: ["svgx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DLP-II 1.1\n"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "BM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTIONTIME ATTACHLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTPARAMS MATERIALNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTIONADJUST X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTINTENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDINLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTACHTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILL-RULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVG XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENODD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER-0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER-1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

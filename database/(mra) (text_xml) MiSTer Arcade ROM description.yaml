@@ -1,0 +1,26 @@
+Name: MiSTer Arcade ROM description
+URL: "https://github.com/MiSTer-devel/Main_MiSTer/wiki/Arcade-Roms"
+FileNameExtensions: ["mra"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MISTERROMDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROM INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ZIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART"
+    CaseSensitive: false

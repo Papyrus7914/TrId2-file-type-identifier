@@ -1,0 +1,71 @@
+Name: Presonus Studio One Song
+URL: "https://legacy.presonus.com/products/Studio-One"
+FileNameExtensions: ["song"]
+MimeType: application/x.presonus-song
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "metainfo.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUDIOEFFECTMANAGER.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUSICDEVICEMANAGER.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOSYNTHFOLDER.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUSICTRACKDEVICE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSPORTDEVICE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOIOMANAGER.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUSICIOMANAGER.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURFACEMANAGER.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSPORTPANEL.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIXERCONSOLE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERSPECTIVE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOMIXER.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIAPOOL.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METAINFO.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITOR.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTES.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONG.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY"
+    CaseSensitive: false

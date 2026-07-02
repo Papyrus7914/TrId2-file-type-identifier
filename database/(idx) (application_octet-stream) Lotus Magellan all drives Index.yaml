@@ -1,0 +1,14 @@
+Name: Lotus Magellan all drives Index
+URL: "https://en.wikipedia.org/wiki/Lotus_Magellan"
+FileNameExtensions: ["idx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "Files on All Drives\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILES ON ALL DRIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLDRIVE.IX1"
+    CaseSensitive: false

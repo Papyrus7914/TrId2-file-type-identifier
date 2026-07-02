@@ -1,0 +1,13 @@
+Name: BibTeX references
+URL: "http://en.wikipedia.org/wiki/BibTeX"
+FileNameExtensions: ["bib", "bibtex", "txt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false

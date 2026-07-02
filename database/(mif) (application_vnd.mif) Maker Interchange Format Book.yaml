@@ -1,0 +1,11 @@
+Name: Maker Interchange Format Book
+URL: "http://fileformats.archiveteam.org/wiki/Maker_Interchange_Format"
+FileNameExtensions: ["mif"]
+MimeType: application/vnd.mif
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Book"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOOK"
+    CaseSensitive: false

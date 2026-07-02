@@ -1,0 +1,91 @@
+Name: Motion Capture File Format
+Description: Motion Capture data that can be played back (for example in 3DStudio Max's Character Studio).
+FileNameExtensions: ["csm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FIRSTFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$LASTFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$POINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LBHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LBWT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LELB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFWT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LKNE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSHO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LTOE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RBHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RBWT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RFHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RFIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RFWT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RKNE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSHO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTOE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRN"
+    CaseSensitive: false

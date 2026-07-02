@@ -1,0 +1,10 @@
+Name: QuickDraw/PICT bitmap (v1)
+URL: "http://fileformats.archiveteam.org/wiki/PICT"
+FileNameExtensions: ["pct", "pict", "pic"]
+MimeType: image/pict
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 522
+    Bytes: [0x11, 0x01]

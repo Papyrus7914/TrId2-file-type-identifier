@@ -1,0 +1,14 @@
+Name: Raima Data Manager Data Base (generic)
+URL: "http://web.archive.org/web/20161007093345/http://docs.raima.com/rdme/8_1/Content/GS/RelNotes.htm"
+FileNameExtensions: ["db", "dat", "d01", "d02", "d03"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 16
+    AsciiString: "\0\0\0\0Raima Data"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RAIMA DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANAGER"
+    CaseSensitive: false

@@ -1,0 +1,44 @@
+Name: "Star Trek: Armada map"
+URL: "https://www.mobygames.com/game/windows/star-trek-armada"
+FileNameExtensions: ["bzn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "version [1] =\r\n2053\r\nsaveGameDesc = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIRECTIONAL LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(\0\0\0EMPTYMISSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DILITHIUM MOON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEGAMEDESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(\0\0\0DLIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINARYSAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TECH1.TT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEBULA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BZN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SOD"
+    CaseSensitive: false

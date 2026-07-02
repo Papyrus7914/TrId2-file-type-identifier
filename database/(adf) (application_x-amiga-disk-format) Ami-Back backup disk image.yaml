@@ -1,0 +1,15 @@
+Name: Ami-Back backup disk image
+Description: Backup tool for Amiga.
+URL: "https://www.amigareport.com/ar208/p1-4.html"
+FileNameExtensions: ["adf"]
+MimeType: application/x-amiga-disk-format
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AB"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "MIKEDISK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MIKEDISK"
+    CaseSensitive: false

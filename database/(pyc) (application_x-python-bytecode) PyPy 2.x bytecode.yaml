@@ -1,0 +1,8 @@
+Name: PyPy 2.x bytecode
+URL: "https://pypy.org/"
+FileNameExtensions: ["pyc"]
+MimeType: application/x-python-bytecode
+DetectionPatterns:
+  - Pos: 0
+    #                    \r    \n
+    Bytes: [0xE8, 0x03, 0x0D, 0x0A]

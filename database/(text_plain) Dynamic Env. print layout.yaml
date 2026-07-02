@@ -1,0 +1,10 @@
+Name: Dynamic Env. print layout
+Description: Dynamic Environment was a GUI for MS-DOS by Radarsoft.
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DYNAMIC LAYOUT\r\n:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

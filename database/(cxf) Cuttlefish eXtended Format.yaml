@@ -1,0 +1,28 @@
+Name: Cuttlefish eXtended Format
+URL: "http://cuttlefish.sourceforge.net/"
+FileNameExtensions: ["cxf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "configuration: undirected\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDIRECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

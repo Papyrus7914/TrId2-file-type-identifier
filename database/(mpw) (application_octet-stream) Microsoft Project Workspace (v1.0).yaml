@@ -1,0 +1,22 @@
+Name: Microsoft Project Workspace (v1.0)
+URL: "https://en.wikipedia.org/wiki/Microsoft_Project"
+FileNameExtensions: ["mpw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x06\xF2\0JLBM\x01\0>d\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x04\x17Z\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x0E\x80\0\0"
+    CaseSensitive: true
+  - Pos: 79
+    Bytes: [0x10, 0x00, 0xA9]
+  - Pos: 139
+    AsciiString: "sk Entry\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\x01\x01\x01\x01\x01\x01\x01\0\f\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".MPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MPV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JLBM"
+    CaseSensitive: false

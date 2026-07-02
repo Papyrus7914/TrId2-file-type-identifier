@@ -1,0 +1,31 @@
+Name: ProvideX Report
+URL: "http://www.pvx.com/"
+FileNameExtensions: ["rpt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Pvxrpt]\r\nUser="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PVXRPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JSPICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JSGRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JSCOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JSDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

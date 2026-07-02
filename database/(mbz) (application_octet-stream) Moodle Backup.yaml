@@ -1,0 +1,41 @@
+Name: Moodle Backup
+URL: "https://en.wikipedia.org/wiki/Moodle"
+FileNameExtensions: ["mbz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MOODLE_BACKUP.LOGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOODLE_BACKUP.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRADEBOOK.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUESTIONS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTCOMES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOREF.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVITIES"
+    CaseSensitive: false

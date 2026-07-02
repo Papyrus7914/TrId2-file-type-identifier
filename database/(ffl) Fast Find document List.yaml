@@ -1,0 +1,21 @@
+Name: Fast Find document List
+FileNameExtensions: ["ffl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FFL1.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "D\0O\0C\0U\0M\0E\0N\0T\0S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N\0\0\0\0\0\0\0\0\0\0\08"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFICE"
+    CaseSensitive: false

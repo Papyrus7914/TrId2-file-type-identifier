@@ -1,0 +1,10 @@
+Name: Mac OS X Universal Binary (generic)
+URL: "https://en.wikipedia.org/wiki/Mach-O"
+FileNameExtensions: ["o", "dylib", "bundle"]
+MimeType: application/x-mach-binary
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xCA, 0xFE, 0xBA, 0xBE, 0x00, 0x00, 0x00]
+  - Pos: 9
+    AsciiString: "\0\0"
+    CaseSensitive: true

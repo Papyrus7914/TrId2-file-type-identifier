@@ -1,0 +1,23 @@
+Name: IFF MLDF bitmap
+URL: "http://fileformats.archiveteam.org/wiki/MLDF"
+FileNameExtensions: ["mld"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "MLDFBMHD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BMHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLDF"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: Amiga Disk image File (created by exe2adf)
+URL: "https://exe2adf.com/"
+FileNameExtensions: ["adf"]
+MimeType: application/x-amiga-disk-format
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DOS\0\xE3=\x0Es\0\0\x03pC\xFA\0>p%N\xAE\xFD\xD8J\x80g\f\"@\b\xE9\0\x06\0\"N\xAE\xFEbC\xFA\0\x18N\xAE\xFF\xA0J\x80g\n @ h\0\x16p\0Nup\xFFNudos.library\0expansion.library\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXE2ADF\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUDOS.LIBRARY\0EXPANSION.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTUP-SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0NUP"
+    CaseSensitive: false

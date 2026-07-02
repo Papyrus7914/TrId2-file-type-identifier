@@ -1,0 +1,21 @@
+Name: Creative Signal Processor microcode
+Description: CSP or ASP was a signal processor found on Sound Blaster cards.
+URL: "https://en.wikipedia.org/wiki/Sound_Blaster"
+FileNameExtensions: ["csp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CSP iver"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "LIST"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "funcdesc"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "effc"
+    CaseSensitive: true

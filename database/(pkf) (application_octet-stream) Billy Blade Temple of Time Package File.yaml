@@ -1,0 +1,20 @@
+Name: "Billy Blade: Temple of Time Package File"
+URL: "https://www.mobygames.com/game/23534/billy-blade-temple-of-time/"
+FileNameExtensions: ["pkf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                v           4
+    Bytes: [0xAB, 0xEF, 0xCD, 0xAB, 0x76, 0x98, 0x34, 0x12]
+  - Pos: 13
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: 545
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: 1077
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

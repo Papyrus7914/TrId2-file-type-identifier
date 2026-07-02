@@ -1,0 +1,15 @@
+Name: IMSI PagePerfect / Publisher Table
+Description: DTP software for DOS, developed by Beyond Words.
+URL: "https://preservation.tylerthorsted.com/2025/08/22/page-perfect/"
+FileNameExtensions: ["tbl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[BWDB]\0\0\0\0\01.00"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "[BWDOC]"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "2.09"
+    CaseSensitive: true

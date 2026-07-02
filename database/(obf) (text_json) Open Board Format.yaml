@@ -1,0 +1,47 @@
+Name: Open Board Format
+URL: "http://fileformats.archiveteam.org/wiki/Open_Board_Format"
+FileNameExtensions: ["obf"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  \"format\": \"open-board-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION_HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWS"
+    CaseSensitive: false

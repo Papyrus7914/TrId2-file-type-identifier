@@ -1,0 +1,101 @@
+Name: FET Timetable
+URL: "http://lalescu.ro/liviu/fet/"
+FileNameExtensions: ["fet"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONSTRAINTBASICCOMPULSORYTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE_CONSTRAINTS_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME_CONSTRAINTS_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER_OF_PREFERRED_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVITY_TAGS_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER_OF_STUDENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVITY_GROUP_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTRAINTACTIVIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHT_PERCENTAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTITUTION_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVITIES_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDINGS_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL_DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STUDENTS_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECTS_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEACHERS_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVITY_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FET VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOURS_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOMS_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAYS_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TIMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_HOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DAY"
+    CaseSensitive: false

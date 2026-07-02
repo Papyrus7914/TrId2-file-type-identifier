@@ -1,0 +1,44 @@
+Name: MIME HTML archive format
+URL: "https://en.wikipedia.org/wiki/MHTML"
+FileNameExtensions: ["mht"]
+MimeType: application/x-mimearchive
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "From: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRODUCED BY MICROSOFT MIMEOLE V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TRANSFER-ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-MIMEOLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

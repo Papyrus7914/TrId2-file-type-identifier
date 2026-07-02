@@ -1,0 +1,14 @@
+Name: Origin Systems's setup Archive
+URL: "https://en.wikipedia.org/wiki/Origin_Systems"
+FileNameExtensions: ["a01", "flx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(C) 199"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: " Origin Systems Inc.\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ORIGIN SYSTEMS INC."
+    CaseSensitive: false

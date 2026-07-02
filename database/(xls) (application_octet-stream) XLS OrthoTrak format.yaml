@@ -1,0 +1,372 @@
+Name: XLS OrthoTrak format
+Description: A data format by Motion Analysis Corp.
+URL: "http://www.motionanalysis.com/html/movement/orthotrak.html"
+FileNameExtensions: ["xls"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Version\t"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "L_FOOT_ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_FOOT_ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_FOOT_ELEVATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_FOOT_ELEVATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_ANK  FLEX FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_ANK  FLEX MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_KNEE FLEX ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_KNEE FLEX FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_KNEE FLEX MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PELVIS_FWD_TILT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PELVIS_LAT_TILT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PELVIS_ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_ANK  FLEX ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_ANK  FLEX FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_ANK  FLEX MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_KNEE FLEX ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_KNEE FLEX FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_KNEE FLEX MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVG STEP WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_ANK FLEX ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_HIP FLEX ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_HIP FLEX FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_HIP FLEX MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_KNEE ABD ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_KNEE ABD FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_KNEE ABD MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_KNEE ROT ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_KNEE ROT FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_KNEE ROT MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_SHL_FLEX_ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_SUPPORT_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_HIP FLEX ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_HIP FLEX FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_HIP FLEX MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_KNEE ABD ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_KNEE ABD FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_KNEE ABD MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_KNEE ROT ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_KNEE ROT FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_KNEE ROT MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_SHL_FLEX_ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_SUPPORT_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTING FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUNK_FWD_TILT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUNK_LAT_TILT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUNK_ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD_FWD_TILT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD_LAT_TILT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD_ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_ANK ABD ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_ANK ABD FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_ANK ABD MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_ANK ROT ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_ANK ROT FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_ANK ROT MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_DBL_SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_HIP ABD ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_HIP ABD FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_HIP ABD MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_HIP ROT ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_HIP ROT FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_HIP ROT MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_NON_SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_SHL_ADD_ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_ANK ABD ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_ANK ABD FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_ANK ABD MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_ANK ROT ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_ANK ROT FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_ANK ROT MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_DBL_SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_HIP ABD ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_HIP ABD FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_HIP ABD MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_HIP ROT ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_HIP ROT FRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_HIP ROT MOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_NON_SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_SHL_ADD_ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_STRIDE_LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_STRIDE_LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L VASTE EXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_ELBOW_ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_FOOT_NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R VASTE EXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_ELBOW_ANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_FOOT_NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L TIBIALIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_KNEE PWR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_STEP_LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_VELOCITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R TIBIALIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_KNEE PWR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_STEP_LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_VELOCITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L JUM INT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_ANK PWR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_CADENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_GRF_FWD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_GRF_LAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_GRF_VRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_HIP PWR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R JUM INT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_ANK PWR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_CADENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_GRF_FWD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_GRF_LAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_GRF_VRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_HIP PWR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L BICEPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L ISCHIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L RECTUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R BICEPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R ISCHIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R RECTUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LHS FP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RHS FP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L SOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R SOL"
+    CaseSensitive: false

@@ -1,0 +1,9 @@
+Name: eXtended Instrument (generic)
+Description: Used by various audio trackers.
+FileNameExtensions: ["xi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Extended Instrument: "
+    CaseSensitive: true
+  - Pos: 43
+    Bytes: [0x1A]

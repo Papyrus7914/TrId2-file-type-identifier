@@ -1,0 +1,17 @@
+Name: Dorico stage template
+URL: "https://en.wikipedia.org/wiki/Dorico"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<StageTemplate>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STAGETEMPLATE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

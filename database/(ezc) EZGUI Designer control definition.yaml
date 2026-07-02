@@ -1,0 +1,38 @@
+Name: EZGUI Designer control definition
+Description: EZGUI is a GUI engine for use with PowerBASIC compiler.
+URL: "http://www.ezgui.com"
+FileNameExtensions: ["ezc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<<<DESC>>>\r\n\t"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULTTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USECOLORMSG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEFONTMSG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTIFY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false

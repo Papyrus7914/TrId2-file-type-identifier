@@ -1,0 +1,257 @@
+Name: Brazilian Electronic Invoice (NF-e/NFC-e)
+URL: "https://www.nfe.fazenda.gov.br/portal/principal.aspx"
+FileNameExtensions: ["xml"]
+MimeType: application/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CANONICALIZATIONMETHOD ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATUREMETHOD ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.PORTALFISCAL.INF.BR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTORIZADO O USO DA NF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGESTMETHOD ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REC-XML-C14N-20010315"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVELOPED-SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORM ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X509CERTIFICATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTNFE VERSAO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATUREVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE URI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGESTVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNEDINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DET NITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDEREMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CEANTRIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DHRECBTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODFRETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSA-SHA1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERAPLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X509DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICMSTOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPOSTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFADIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFPROT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NFEPROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCEMI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VCOFINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERPROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VUNTRIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XBAIRRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLDSIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMOTIVO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRASIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMUNFG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINNFE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDPAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDTOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFNFE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPEMIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VFRETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOUTRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VUNCOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHNFE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPAIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPROD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSTAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NATOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPROT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QTRIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPAMB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPIMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTRIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBCST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VICMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPROD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XFANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XNOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPAIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPROD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNPJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QCOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPNF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UCOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XLGR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMUN"
+    CaseSensitive: false

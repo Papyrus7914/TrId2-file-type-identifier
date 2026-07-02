@@ -1,0 +1,9 @@
+Name: ANDOS disk image
+Description: Russian operating system for the Electronika BK-0010 computer.
+URL: "https://en.wikipedia.org/wiki/ANDOS"
+FileNameExtensions: ["bkd", "dsk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xA0\0\x1E\x01ANDOS"
+    CaseSensitive: true

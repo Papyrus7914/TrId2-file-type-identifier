@@ -1,0 +1,125 @@
+Name: MediaWiki XML export (v1.x)
+URL: "https://en.wikipedia.org/wiki/MediaWiki"
+FileNameExtensions: ["xml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<mediawiki xmlns=\"http://www.mediawiki.org/xml/export-0."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.MEDIAWIKI.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIAWIKI XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMALOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMESPACE KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST-LETTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIAWIKI 1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTRIBUTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMESPACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORT-0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESERVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SITEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SITENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORK"
+    CaseSensitive: false

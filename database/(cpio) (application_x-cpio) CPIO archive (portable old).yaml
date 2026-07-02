@@ -1,0 +1,9 @@
+Name: CPIO archive (portable old)
+Description: called "ASCII cpio archive (pre-SVR4 or odc)" by file command, "cpio/odc" by GNU cpio and "Cpio/Portable ASCII" by 7-Zip
+URL: "http://fileformats.archiveteam.org/wiki/Cpio"
+FileNameExtensions: ["cpio"]
+MimeType: application/x-cpio
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "070707"
+    CaseSensitive: true

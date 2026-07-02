@@ -1,0 +1,60 @@
+Name: MSX-DOS System kernel
+Description: "Filename: MSXDOS.SYS"
+URL: "https://en.wikipedia.org/wiki/MSX"
+FileNameExtensions: ["sys"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          E           L           P           S                       \b                                  \b          \n          \f
+    Bytes: [0xC3, 0x00, 0x02, 0x45, 0x00, 0x4C, 0x00, 0x50, 0x00, 0x53, 0x00, 0x02, 0x01, 0x08, 0x01, 0x13, 0x01, 0x16, 0x01, 0x08, 0x02, 0x0A, 0x02, 0x0C, 0x02, 0x0E, 0x02, 0x10, 0x02, 0x12, 0x02, 0x14, 0x02]
+  - Pos: 258
+    AsciiString: "\r\nMSX-DOS version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSERT DOS DISK IN DEFAULT DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND STRIKE ANY KEY WHEN READY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK$ ERROR READING DRIVE A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMINATE BATCH FILE (Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0NT\0TT\0ET\0TT\0BT\0NT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSX-DOS VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITE PROTECT$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT 198"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT READY$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$READWRIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD FAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0L\0P\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ABORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGNORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETRY"
+    CaseSensitive: false

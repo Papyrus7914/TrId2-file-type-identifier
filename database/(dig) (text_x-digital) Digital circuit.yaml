@@ -1,0 +1,26 @@
+Name: Digital circuit
+URL: "https://github.com/hneemann/Digital"
+FileNameExtensions: ["dig"]
+MimeType: text/x-digital
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ELEMENTATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISUALELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIRCUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POS X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIRES"
+    CaseSensitive: false

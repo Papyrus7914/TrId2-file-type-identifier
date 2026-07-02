@@ -1,0 +1,21 @@
+Name: MaxonWORD document
+Description: Amiga word processor.
+URL: "https://www.amigafuture.de/asd.php?asd_id=531"
+FileNameExtensions: ["dok"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x01WORD"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\x01PGLK"
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "\0\x01STYL"
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "\0\x01PARA"
+    CaseSensitive: true
+  - Pos: 98
+    AsciiString: "\0\x01STRM"
+    CaseSensitive: true

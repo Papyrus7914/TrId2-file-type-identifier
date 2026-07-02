@@ -1,0 +1,14 @@
+Name: Corel Dream 3D scene
+URL: "http://fileformats.archiveteam.org/wiki/Ray_Dream"
+FileNameExtensions: ["d3d"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "3DC {\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COREL DREAM3D FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIVERS"
+    CaseSensitive: false

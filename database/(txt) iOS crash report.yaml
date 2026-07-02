@@ -1,0 +1,33 @@
+Name: iOS crash report
+FileNameExtensions: ["txt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Incident Identifier: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INCIDENT IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRASHREPORTER KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OS VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAUNCHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPHONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOBILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERV"
+    CaseSensitive: false

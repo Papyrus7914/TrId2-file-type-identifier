@@ -1,0 +1,14 @@
+Name: vCard - Business Card
+URL: "http://www.imc.org/pdi/"
+FileNameExtensions: ["vcf", "vcard"]
+MimeType: text/vcard
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VCARD"
+    CaseSensitive: false

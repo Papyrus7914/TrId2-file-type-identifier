@@ -1,0 +1,19 @@
+Name: CompuCell3D project
+URL: "http://www.compucell3d.org/"
+FileNameExtensions: ["cc3d"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Simulation version=\""
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIMULATION VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PYTHONSCRIPT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE TYPE"
+    CaseSensitive: false

@@ -1,0 +1,8 @@
+Name: BitLocker Disk Encryption volume
+URL: "http://www.forensicswiki.org/wiki/BitLocker_Disk_Encryption"
+FileNameExtensions: ["fve"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEBX\x90-FVE-FS-"
+    CaseSensitive: true

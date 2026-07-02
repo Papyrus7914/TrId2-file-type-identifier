@@ -1,0 +1,38 @@
+Name: YACE64 3D layout
+URL: "http://www.yace64.com"
+FileNameExtensions: ["y3d"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LayerCount="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORLDTRANSLATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLDROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSCOLOR1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSCOLOR2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false

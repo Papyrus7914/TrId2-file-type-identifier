@@ -1,0 +1,13 @@
+Name: VIS bitmap
+FileNameExtensions: ["vis"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VISF="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMS"
+    CaseSensitive: false

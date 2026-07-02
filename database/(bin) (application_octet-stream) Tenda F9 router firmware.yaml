@@ -1,0 +1,50 @@
+Name: Tenda F9 router firmware
+URL: "https://www.tendacn.com/"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RTK0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ\0\0\0\00123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- SYSTEM HALTED\0UNCOMPRESSING...\0\0\0\0LZMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCORRECT STREAM PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOO BIG UNCOMPRESSED STREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DONE DECOMPRESSING KERNEL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XDECOMPRESSING KERNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF MEMORY\0\0\0LZMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOTING THE KERNEL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECODING ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MALLOC ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTK0"
+    CaseSensitive: false

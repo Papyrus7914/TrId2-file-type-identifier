@@ -1,0 +1,10 @@
+Name: Microsoft PCHealth query
+URL: "PCHealth is a Microsoft support and troubleshooting facility present in some Windows versions."
+FileNameExtensions: ["query"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "QRB"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "T\0o\0p\0L\0e\0v\0e\0l\0B\0u\0c\0k\0e\0t"
+    CaseSensitive: true

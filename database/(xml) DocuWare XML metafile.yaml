@@ -1,0 +1,48 @@
+Name: DocuWare XML metafile
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<DWDocument DW5BasketFileName=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DWDOCUMENT DW5BASKETFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEINFO FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEINFO ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DWFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEINFOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEINFOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DWGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

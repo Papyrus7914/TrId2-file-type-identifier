@@ -1,0 +1,231 @@
+Name: Curve drawing
+Description: Previously named Vectornator.
+URL: "https://www.linearity.io/curve/"
+FileNameExtensions: ["curve", "vectornator"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Manifest.json{\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ISCMYKCOLORPREVIEWENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAILIMAGEFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTJSONFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISOLATEACTIVELAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSIONSVISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEFORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVELAYERINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFICATIONDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUNDCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHITEBACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.JSON{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTBOARDPATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYNAMICGUIDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUIDESVISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISGRIDVISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULERSVISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORNERRADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPTOGUIDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPTOPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANCHORPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDSPACING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTLINEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPTOEDGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUIDELAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISEXPANDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPTOGRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STROKETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLENDMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EARTBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISVISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIFMM\0*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILLRULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISHIDDEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISLOCKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.JSON{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRGB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYL"
+    CaseSensitive: false

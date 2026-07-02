@@ -1,0 +1,16 @@
+Name: Ulead Pattern image
+URL: "https://en.wikipedia.org/wiki/Ulead_Systems"
+FileNameExtensions: ["pst"]
+MimeType: image/x-ulead-pst
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFF, 0x01, 0x00]
+  - Pos: 5
+    AsciiString: "\0C"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRESETINFO"
+    CaseSensitive: false

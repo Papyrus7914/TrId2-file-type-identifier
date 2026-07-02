@@ -1,0 +1,11 @@
+Name: MMCDDA Audio CD track descriptor
+Description: By Team MMOS/2 Tokyo - MULTIMEDIA EXTENDER/2.
+FileNameExtensions: ["cda"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[TYPE]\r\nCDDA INFORMATION FILE\r\n[TRACK]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIALOG"
+    CaseSensitive: false

@@ -1,0 +1,9 @@
+Name: SQLite Write-Ahead Log (little endian)
+Description: SQLite is a small public domain C library that implements a self-contained, embeddable, zero-configuration SQL database engine.
+URL: "https://en.wikipedia.org/wiki/SQLite"
+FileNameExtensions: ["sqlite-wal", "db-wal"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        7                             -
+    Bytes: [0x37, 0x7F, 0x06, 0x82, 0x00, 0x2D, 0xE2, 0x18, 0x00, 0x00]

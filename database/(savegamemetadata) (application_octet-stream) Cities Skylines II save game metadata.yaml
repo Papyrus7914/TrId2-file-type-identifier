@@ -1,0 +1,69 @@
+Name: "Cities: Skylines II save game metadata"
+Description: Part of what make a a complete game save, in a zip package.
+URL: "https://www.mobygames.com/game/210740/cities-skylines-ii/"
+FileNameExtensions: ["savegamemetadata"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF{\n    \"preview\": \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENTPREREQUISITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NATURALDISASTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFTHANDTRAFFIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMULATIONDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNLIMITEDMONEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEGAMEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSIONGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POPULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNLOCKALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOSAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CITYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false

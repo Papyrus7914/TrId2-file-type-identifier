@@ -1,0 +1,29 @@
+Name: Train Simulator WorldSound
+URL: "https://en.wikipedia.org/wiki/Microsoft_Train_Simulator"
+FileNameExtensions: ["ws"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFES\0I\0M\0I\0S\0A\0@\0@\0@\0@\0@\0@\0@\0@\0@\0@\0J\0I\0N\0X\00\0W\00\0t\0_\0_\0_\0_\0_\0_\0\r\0\n\0\r\0\n\0T\0r\0_\0W\0o\0r\0l\0d\0s\0o\0u\0n\0d\0f\0i\0l\0e\0 \0(\0\r\0\n\0\t\0S\0o\0u\0n\0d\0s\0o\0u\0r\0c\0e\0 \0(\0\r\0\n\0\t\0\t\0P\0o\0s\0i\0t\0i\0o\0n\0 \0("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "T\0R\0_\0W\0O\0R\0L\0D\0S\0O\0U\0N\0D\0F\0I\0L\0E\0 \0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "J\0I\0N\0X\00\0W\00\0T\0_\0_\0_\0_\0_\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0O\0U\0N\0D\0S\0O\0U\0R\0C\0E\0 \0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0N\0A\0M\0E\0 \0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0O\0S\0I\0T\0I\0O\0N\0 \0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0S\0M\0S\0 \0)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U\0I\0D\0 \0("
+    CaseSensitive: false

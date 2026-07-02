@@ -1,0 +1,13 @@
+Name: Microsoft Visual C Library
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B"
+FileNameExtensions: ["lib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xF0]
+  - Pos: 2
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

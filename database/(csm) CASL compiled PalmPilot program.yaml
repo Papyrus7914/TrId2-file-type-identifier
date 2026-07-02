@@ -1,0 +1,28 @@
+Name: CASL compiled PalmPilot program
+URL: "http://www.caslsoft.com/"
+FileNameExtensions: ["csm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CASL\x02"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0.\0\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 236
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CASL"
+    CaseSensitive: false

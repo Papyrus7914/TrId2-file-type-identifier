@@ -1,0 +1,60 @@
+Name: Lotus 1-2-3 text Display Driver (v2.x)
+URL: "https://en.wikipedia.org/wiki/Lotus_1-2-3"
+FileNameExtensions: ["drv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "Text Display\0\0\x01\x01"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 67
+    Bytes: [0x00, 0x0F, 0xE9]
+  - Pos: 72
+    Bytes: [0xE9]
+  - Pos: 75
+    Bytes: [0xE9]
+  - Pos: 78
+    Bytes: [0xE9]
+  - Pos: 81
+    Bytes: [0xE9]
+  - Pos: 84
+    Bytes: [0xE9]
+  - Pos: 87
+    Bytes: [0xE9]
+  - Pos: 90
+    Bytes: [0xE9]
+  - Pos: 93
+    Bytes: [0xE9]
+  - Pos: 96
+    Bytes: [0xE9]
+  - Pos: 99
+    Bytes: [0xE9]
+  - Pos: 102
+    Bytes: [0xE9]
+  - Pos: 105
+    Bytes: [0xE9]
+  - Pos: 108
+    Bytes: [0xE9]
+  - Pos: 111
+    Bytes: [0xE9]
+  - Pos: 114
+    Bytes: [0xE9]
+  - Pos: 117
+    Bytes: [0xE9]
+  - Pos: 120
+    Bytes: [0xE9]
+  - Pos: 123
+    Bytes: [0xE9]
+  - Pos: 126
+    Bytes: [0xE9]
+  - Pos: any
+    AsciiString: "TEXT DISPLAY"
+    CaseSensitive: false

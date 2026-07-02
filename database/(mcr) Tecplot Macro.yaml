@@ -1,0 +1,10 @@
+Name: Tecplot Macro
+URL: "http://www.tecplot.com/"
+FileNameExtensions: ["mcr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#!MC "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TECPLOT"
+    CaseSensitive: false

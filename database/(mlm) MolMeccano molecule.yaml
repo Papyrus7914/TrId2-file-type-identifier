@@ -1,0 +1,34 @@
+Name: MolMeccano molecule
+URL: "http://sourceforge.net/projects/molmeccano/"
+FileNameExtensions: ["mlm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# MolMeccano format (*.mlm).\r\n\r\n@"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ID ELEMENT X          Y          Z          Q    TYPE           MOL RES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR  STR DOUBLE     DOUBLE     DOUBLE     DOUBLE STR            STR STR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ID1  ID2 ORDER R-EQV    FORCE    COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR  STR  STR   DOUBLE   DOUBLE   STR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAG R*     EPSILON  MASS   COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR  DOUBLE DOUBLE   DOUBLE STR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCE_FIELD  AMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE ATOMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE BONDS"
+    CaseSensitive: false

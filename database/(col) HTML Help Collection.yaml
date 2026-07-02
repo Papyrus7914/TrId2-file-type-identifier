@@ -1,0 +1,30 @@
+Name: HTML Help Collection
+FileNameExtensions: ["col"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<XML>\r\n<HTMLHelpCollection>\r\n<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SAMPLELOCATION VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLECTIONNUM VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTMLHELPCOLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDERORDER VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLESTRING VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFCOUNT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDERS"
+    CaseSensitive: false

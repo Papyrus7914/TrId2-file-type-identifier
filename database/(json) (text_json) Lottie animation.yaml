@@ -1,0 +1,14 @@
+Name: Lottie animation
+URL: "http://fileformats.archiveteam.org/wiki/Lottie"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"v\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS"
+    CaseSensitive: false

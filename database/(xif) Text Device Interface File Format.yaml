@@ -1,0 +1,31 @@
+Name: Text Device Interface File Format
+URL: "http://forum.lonmark.org/products/guides.htm"
+FileNameExtensions: ["xif"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "File: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XIF VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VAR NV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*   1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

@@ -1,0 +1,22 @@
+Name: Z88 Compressed RAM Apps (OZ 5.0)
+URL: "https://en.wikipedia.org/wiki/Cambridge_Z88"
+FileNameExtensions: ["app"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              Z
+    Bytes: [0xA5, 0x5A]
+  - Pos: 3
+    Bytes: [0xFF]
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPL"
+    CaseSensitive: false

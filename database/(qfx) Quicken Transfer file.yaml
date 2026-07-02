@@ -1,0 +1,22 @@
+Name: Quicken Transfer file
+URL: "http://www.quicken.com/"
+FileNameExtensions: ["qfx"]
+DetectionPatterns:
+  - Pos: 12
+    AsciiString: "0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OFXHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFXSGML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

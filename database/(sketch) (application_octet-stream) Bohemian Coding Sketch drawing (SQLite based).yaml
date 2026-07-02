@@ -1,0 +1,405 @@
+Name: Bohemian Coding Sketch drawing (SQLite based)
+Description: Older format.
+URL: "https://en.wikipedia.org/wiki/Sketch_(application)"
+FileNameExtensions: ["sketch"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "YTHICKNESSXFILLTYPEYISENABLEDXPOSITIONUCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASCURVEFROMYCURVEMODEUPOINTYCURVEFROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTRAINPROPORTIONSUWIDTHVHEIGHTQX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X$VERSIONX$OBJECTSY$ARCHIVERT$TOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE METADATA (NAME TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORNERRADIUSWCURVETOZHASCURVETO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE PAYLOAD (NAME TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASCONVERTEDTONEWROUNDCORNERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.BOHEMIANCODING.SKETCH3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLELAYERINTERACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLESLICEINTERACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GTABLEMETADATAMETADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAREDOBJECTCONTAINER_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERLISTEXPANDEDTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SREDUALPHATBLUEUGREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETABLEPAYLOADPAYLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOULDBREAKMASKCHAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z$CLASSNAMEX$CLASSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTALRULERDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISFLIPPEDHORIZONTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSMUTABLEDICTIONARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTDECORATIONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSTYLECONTAINER_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIPPINGMASKMODE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTPAGEINDEXV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMSHAPELAYER_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDDECORATIONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISFLIPPEDVERTICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINALOBJECTID_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALRULERDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOLEANOPERATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASCLICKTHROUGH_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGECOLLECTION_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDEDLAYERIDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERTEXTSTYLES_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATTERNTILESCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASCLIPPINGMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATTERNFILLTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECTANGLESHAPE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPEPATHLAYER_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLEBASICFILL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USTYLEXROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORTOPTIONS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOISEINTENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSMUTABLEARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAREDOBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTDATA_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSMODELOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EZMITERLIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EZNOISEINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIXEDRADIUS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYEROPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERSYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELOBJECT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSDICTIONARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCROLLORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLEBORDER_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBASEVGUIDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEDITEDTPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDINGRULE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO_OBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERSTYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMEISFIXED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONAPPSTORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAMTYPED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLEDLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCOLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZMSARCHIVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZSHOULDTRIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVEPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINBPLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NS.OBJECT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPEGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLEFILL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE BLOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YISVISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YTEXTSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YZOOMVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRADIENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUTABLEPA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUTABLEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLEPART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XISCLOSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XISLOCKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XNSOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WBORDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WNSARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WOBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECOLOR_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LECOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUFILLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UFRAME_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPLOAD_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V$CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VLAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VLAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTIONV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESHARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NS.KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U$NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TGRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPEZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XUSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MSIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XNS."
+    CaseSensitive: false

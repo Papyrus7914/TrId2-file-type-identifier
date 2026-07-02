@@ -1,0 +1,11 @@
+Name: Wwise sound Bank
+URL: "https://www.audiokinetic.com/products/wwise/"
+FileNameExtensions: ["bnk"]
+MimeType: application/vnd.wwise.bnk
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BKHD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HIRC"
+    CaseSensitive: false

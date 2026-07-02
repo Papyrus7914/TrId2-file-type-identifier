@@ -1,0 +1,19 @@
+Name: Pixel Bender bytecode
+URL: "https://en.wikipedia.org/wiki/Adobe_Pixel_Bender"
+FileNameExtensions: ["pbj"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xA5, 0x01, 0x00, 0x00, 0x00, 0xA4]
+  - Pos: any
+    AsciiString: "NAMESPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_OUTCOORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR"
+    CaseSensitive: false

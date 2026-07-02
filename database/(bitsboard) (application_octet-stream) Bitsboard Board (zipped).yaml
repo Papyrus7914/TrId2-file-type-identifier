@@ -1,0 +1,32 @@
+Name: Bitsboard Board (zipped)
+URL: "http://bitsboard.com/"
+FileNameExtensions: ["bitsboard"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 38
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".PLISTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CAFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MP3PK"
+    CaseSensitive: false

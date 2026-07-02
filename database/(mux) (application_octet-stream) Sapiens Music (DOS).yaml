@@ -1,0 +1,25 @@
+Name: Sapiens Music (DOS)
+FileNameExtensions: ["mux"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EXPO\x02\x01"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "Sapiens Partie I"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MUSIQUE DU JEU SAPIENS - JUIN 1986"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAPIENS PARTIE I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGS SAPIENS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GILLES SOULET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONDE\0\0DGIT"
+    CaseSensitive: false

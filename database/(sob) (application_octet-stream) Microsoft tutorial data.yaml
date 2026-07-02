@@ -1,0 +1,9 @@
+Name: Microsoft tutorial data
+Description: Used in various MS-DOS apps/tools like Word, VBDOS.
+FileNameExtensions: ["sob"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xBD, 0x90]
+  - Pos: 4
+    Bytes: [0x06, 0x00]

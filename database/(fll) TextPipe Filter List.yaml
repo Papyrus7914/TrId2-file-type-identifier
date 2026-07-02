@@ -1,0 +1,47 @@
+Name: TextPipe Filter List
+Description: Filter definition for the TextPipe text manipulation program.
+URL: "http://www.datamystic.com/textpipe/pro.html"
+FileNameExtensions: ["fll"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TPF0\vTFilterList\0\nFilterList\x01\bTVersion\0\aVersion\x02"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "\x06\x9F\r\nThis is a TextPipe Pro filter file, an application for manipulating and extracting text files of any size. To find out more go to http://www.datamystic.com\r\n\x06\0\x12"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AN APPLICATION FOR MANIPULATING AND EXTRACTING TEXT FILES OF ANY SIZE. TO FIND OUT MORE GO TO HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS IS A TEXTPIPE PRO FILTER FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFILTERCOMMENTOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.DATAMYSTIC.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOUTPUTOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TINPUTOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFILTERLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U\0S\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPF0"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: MindMup Mindmap
+URL: "https://en.wikipedia.org/wiki/MindMup"
+FileNameExtensions: ["mup"]
+MimeType: application/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDEAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: ZOOM G1Xon patch
+URL: "https://zoomcorp.com/it/it/multi-effects/guitar-effects/g1xon/"
+FileNameExtensions: ["g1xon"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "d\0\0\0PK\x03\x04"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "ToneLib.data"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TONELIB.DATA"
+    CaseSensitive: false

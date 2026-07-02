@@ -1,0 +1,19 @@
+Name: Universe Sandbox simulation
+URL: "http://universesandbox.com/"
+FileNameExtensions: ["ubox"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PK\x03\x04\x14\0\0\0\b\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0$\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".XML"
+    CaseSensitive: false

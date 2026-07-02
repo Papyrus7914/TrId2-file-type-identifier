@@ -1,0 +1,23 @@
+Name: OZvm snapshot
+URL: "https://cambridgez88.jira.com/wiki/display/OZVM"
+FileNameExtensions: ["z88"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "snapshot.png"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SNAPSHOT.SETTINGSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPSHOT.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAM.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROM.BINPK"
+    CaseSensitive: false

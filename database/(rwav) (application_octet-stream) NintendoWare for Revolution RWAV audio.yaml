@@ -1,0 +1,16 @@
+Name: NintendoWare for Revolution RWAV audio
+FileNameExtensions: ["rwav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RWAV"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "INFO"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

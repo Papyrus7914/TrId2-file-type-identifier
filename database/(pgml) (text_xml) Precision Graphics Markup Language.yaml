@@ -1,0 +1,17 @@
+Name: Precision Graphics Markup Language
+URL: "http://en.wikipedia.org/wiki/PGML"
+FileNameExtensions: ["pgml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE PGML SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGML.DTD"
+    CaseSensitive: false

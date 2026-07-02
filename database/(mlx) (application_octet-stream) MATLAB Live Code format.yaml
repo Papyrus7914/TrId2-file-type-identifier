@@ -1,0 +1,38 @@
+Name: MATLAB Live Code format
+URL: "https://en.wikipedia.org/wiki/MATLAB"
+FileNameExtensions: ["mlx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 45
+    AsciiString: ".xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MWCOREPROPERTIESEXTENSION.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MWCOREPROPERTIES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATLAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false

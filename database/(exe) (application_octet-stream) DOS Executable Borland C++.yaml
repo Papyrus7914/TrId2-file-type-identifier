@@ -1,0 +1,27 @@
+Name: DOS Executable Borland C++
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 18
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORLAND C++ -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false

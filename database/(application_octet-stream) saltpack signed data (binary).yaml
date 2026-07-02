@@ -1,0 +1,10 @@
+Name: saltpack signed data (binary)
+URL: "https://saltpack.org/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xC4B\x95\xA8saltpack\x92\x01\0\x01\xC4 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SALTPACK"
+    CaseSensitive: false

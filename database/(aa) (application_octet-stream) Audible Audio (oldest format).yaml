@@ -1,0 +1,14 @@
+Name: Audible Audio (oldest format)
+URL: "https://en.wikipedia.org/wiki/Audible_(store)"
+FileNameExtensions: ["aa"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "W\x90u6\0\0\0\v"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "J\0\0\0\0W"
+    CaseSensitive: false

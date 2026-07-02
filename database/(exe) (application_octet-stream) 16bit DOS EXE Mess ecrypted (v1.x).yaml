@@ -1,0 +1,32 @@
+Name: 16bit DOS EXE Mess ecrypted (v1.x)
+Description: COM encryptor by Stonehead^TPiNC.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\x01\0\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0MESS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REGGED TO UNREGISTERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "386+ REQUIRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S MESS V1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STONEHEAD"
+    CaseSensitive: false

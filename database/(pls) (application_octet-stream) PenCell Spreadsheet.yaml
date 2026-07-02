@@ -1,0 +1,11 @@
+Name: PenCell Spreadsheet
+Description: A spreadsheet for Windows 3.x with Pen Computing extensions.
+FileNameExtensions: ["pls"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x02\0\xEF\a\x06\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "/"
+    CaseSensitive: true

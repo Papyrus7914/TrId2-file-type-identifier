@@ -1,0 +1,268 @@
+Name: iPublish document
+URL: "http://fileformats.archiveteam.org/wiki/IPublish"
+FileNameExtensions: ["did"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1]
+  - Pos: any
+    AsciiString: "I PUBLISH - HEADVERSDIV4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0N\0T\0E\0N\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWEXTCHAR\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWEXTCHILDV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWEXTRUN\0\0W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNFIELDTYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDERWIDTHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREAKABILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTSTATU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPICTUREBIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECOMPOUNDCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEGRAPHICCOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEROOTCOMPON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETEXTCOMPON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWCARETBEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWCARETCHA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWCARETCHI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWCARETRUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWEXTBEFOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWFONTPROP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWLISTDEPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWPOSBEFOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWPOSCHILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWTEXTCOMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHICHALIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICOLORSCHEME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGRAPHICSCHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARASTYLEENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECTBOUNDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNFIELDCONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECOMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWPOSCHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWPOSPICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWTEXTRUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTSCHEMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFONTSCHEME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPARASCHEME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACEHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APHICSCHEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWMARKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWPOSRUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPARASTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUTOPTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICTUREOBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACEWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOBJPROTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECTIMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+MPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJCLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJFACET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+PONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJPROP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+ONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASPECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOUBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KINDOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOPTIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJCHI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+ENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+ORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAIL"
+    CaseSensitive: false

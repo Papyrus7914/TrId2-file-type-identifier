@@ -1,0 +1,8 @@
+Name: FEI Tecnai imaging and analysis (S)TEM data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/tiaser.c"
+FileNameExtensions: ["ser"]
+MimeType: application/x-tiaser-tem
+DetectionPatterns:
+  - Pos: 0
+    #        I     I
+    Bytes: [0x49, 0x49, 0x01, 0x97]

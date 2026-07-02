@@ -1,0 +1,14 @@
+Name: Fontographer Metrics Equivalence data
+URL: "https://en.wikipedia.org/wiki/Fontographer"
+FileNameExtensions: ["meq"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MetricEquData\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "METRICEQUDATAEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWEQUITEM"
+    CaseSensitive: false

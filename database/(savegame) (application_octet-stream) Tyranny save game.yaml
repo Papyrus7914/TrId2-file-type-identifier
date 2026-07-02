@@ -1,0 +1,41 @@
+Name: Tyranny save game
+URL: "https://www.mobygames.com/game/81783/tyranny/"
+FileNameExtensions: ["savegame"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "0.png"
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: "\x89PNG\r\n\x1A\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AR_0801_EDGERINGRUINS.FOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AR_0801_EDGERINGRUINS.LVL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0MOBILEOBJECTS.SAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0SCREENSHOT.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0LIFEPATH.FOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0LIFEPATH.LVL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0SAVEINFO.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0GLOBALS.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\00.PNG"
+    CaseSensitive: false

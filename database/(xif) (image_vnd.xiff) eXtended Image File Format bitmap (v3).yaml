@@ -1,0 +1,15 @@
+Name: eXtended Image File Format bitmap (v3)
+Description: AKA DigiPaper/XIF.
+URL: "http://fileformats.archiveteam.org/wiki/XIFF"
+FileNameExtensions: ["xif"]
+MimeType: image/vnd.xiff
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II*\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: " eXtended "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXTENDED"
+    CaseSensitive: false

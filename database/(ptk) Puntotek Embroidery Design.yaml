@@ -1,0 +1,23 @@
+Name: Puntotek Embroidery Design
+URL: "http://www.puntotek.com/"
+FileNameExtensions: ["ptk"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xD0\a\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    Bytes: [0x01, 0x00, 0x01, 0x00]
+  - Pos: 20
+    Bytes: [0x00, 0x01]
+  - Pos: 24
+    AsciiString: "\0\xFF\xFF\xFF\0\n\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALGOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLARO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIDA"
+    CaseSensitive: false

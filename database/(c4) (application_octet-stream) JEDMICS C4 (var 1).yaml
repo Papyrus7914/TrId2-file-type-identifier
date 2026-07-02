@@ -1,0 +1,10 @@
+Name: JEDMICS C4 (var 1)
+URL: "http://fileformats.archiveteam.org/wiki/JEDMICS_C4"
+FileNameExtensions: ["c4"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x80\0\0\0"
+    CaseSensitive: true
+  - Pos: 36
+    Bytes: [0x04]

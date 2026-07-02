@@ -1,0 +1,21 @@
+Name: Grand Theft Auto 3 Text data
+Description: Used in GTA Vice City, Vice City Stories and Liberty City Stories (VC/VCS/LS).
+URL: "https://gtamods.com/wiki/GXT"
+FileNameExtensions: ["gxt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TABL"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\x03\0\0MAIN\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "G\0T\0A\0 \0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKEY"
+    CaseSensitive: false

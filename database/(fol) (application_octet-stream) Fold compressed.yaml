@@ -1,0 +1,8 @@
+Name: Fold compressed
+URL: "http://fileformats.archiveteam.org/wiki/Fold_(J._Turin)"
+FileNameExtensions: ["fol"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        F                       1
+    Bytes: [0x46, 0xFA, 0xF6, 0xFA, 0x31, 0x80]

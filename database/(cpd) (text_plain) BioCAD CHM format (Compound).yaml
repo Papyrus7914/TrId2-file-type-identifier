@@ -1,0 +1,46 @@
+Name: BioCAD CHM format (Compound)
+FileNameExtensions: ["cpd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!BioCAD CHM format"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONF CONF0 ( FRAGMENT.1 )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOCAD CHM FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAG FRAGMENT.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS ( C )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP ( SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION 1.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AROMATIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPOLOGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDIT"
+    CaseSensitive: false

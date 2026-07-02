@@ -1,0 +1,16 @@
+Name: Tasc Chess CD II saved game
+URL: "http://web.archive.org/web/20031016095959/http://www.tasc.nl/"
+FileNameExtensions: ["gam"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CHSCNAME\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVE"
+    CaseSensitive: false

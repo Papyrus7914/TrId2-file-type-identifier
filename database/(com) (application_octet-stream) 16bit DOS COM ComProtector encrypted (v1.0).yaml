@@ -1,0 +1,31 @@
+Name: 16bit DOS COM ComProtector encrypted (v1.0)
+Description: COM encrypter by Marco Ruhmann.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: any
+    AsciiString: "COMPROTECTOR 1.0 - 1998"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSGMC7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0-GC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5%BW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G7VA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NJQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VFVF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YII)"
+    CaseSensitive: false

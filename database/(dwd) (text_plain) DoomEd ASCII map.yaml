@@ -1,0 +1,23 @@
+Name: DoomEd ASCII map
+URL: "http://doomwiki.org/wiki/DWD_format"
+FileNameExtensions: ["dwd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WorldServer version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ") TO ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAT"
+    CaseSensitive: false

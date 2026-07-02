@@ -1,0 +1,20 @@
+Name: 1dir+ Generate Utility programs list
+URL: "https://www.gerritspeek.nl/computer/pc_mp_filemanagers.html#1dir"
+FileNameExtensions: ["fil"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 11
+    AsciiString: " \\Runs [e]"
+    CaseSensitive: true
+  - Pos: 63
+    AsciiString: "\\"
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "\\"
+    CaseSensitive: true
+  - Pos: 75
+    AsciiString: "\\\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RUNS"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: GLSL shaders Preset (with rem)
+URL: "https://en.wikipedia.org/wiki/OpenGL_Shading_Language"
+FileNameExtensions: ["glslp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SHADER0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GLSL"
+    CaseSensitive: false

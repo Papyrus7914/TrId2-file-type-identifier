@@ -1,0 +1,11 @@
+Name: KuaiZip compressed archive
+URL: "http://www.kuaizip.com/en/"
+FileNameExtensions: ["kz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "kZ\xEA\a\0\0\x01\0*\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "www.KuaiZip.com"
+    CaseSensitive: true

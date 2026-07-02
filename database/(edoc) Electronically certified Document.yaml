@@ -1,0 +1,42 @@
+Name: Electronically certified Document
+FileNameExtensions: ["edoc"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PAPILDUS+%C4%ABPA%C5%A1%C4%ABBAS.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XML.RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN.SGNS.RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE1.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCPROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDOC"
+    CaseSensitive: false

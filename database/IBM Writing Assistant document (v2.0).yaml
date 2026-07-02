@@ -1,0 +1,11 @@
+Name: IBM Writing Assistant document (v2.0)
+URL: "http://en.wikipedia.org/wiki/Pfs:Write"
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "B\0"
+    CaseSensitive: true
+  - Pos: 13
+    Bytes: [0x00, 0x01, 0x00, 0x0F]
+  - Pos: 641
+    AsciiString: "IBM   \0\x042.00"
+    CaseSensitive: true

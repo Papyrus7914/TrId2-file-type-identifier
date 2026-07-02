@@ -1,0 +1,55 @@
+Name: StarOffice Math document
+URL: "http://en.wikipedia.org/wiki/OpenDocument"
+FileNameExtensions: ["sxm"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/vnd.sun.xml.mathPK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.SUN.XML.MATHPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POPUPMENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITMAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOATER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENUBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false

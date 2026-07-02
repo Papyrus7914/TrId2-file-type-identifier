@@ -1,0 +1,9 @@
+Name: Word for DOS screen capture
+URL: "http://fileformats.archiveteam.org/wiki/Word_for_DOS_screen_capture"
+FileNameExtensions: ["mwg", "scr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xCD, 0x05, 0x01, 0x01, 0x00, 0x00, 0x00, 0x00]
+  - Pos: 12
+    Bytes: [0x80, 0x02]

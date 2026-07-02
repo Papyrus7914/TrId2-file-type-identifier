@@ -1,0 +1,40 @@
+Name: Phun scene
+URL: "http://www.acc.umu.se/~emilk/about.html"
+FileNameExtensions: ["phn"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "version = "
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: ";\r\n{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RESTITUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRICTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYGON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECS"
+    CaseSensitive: false

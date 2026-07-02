@@ -1,0 +1,19 @@
+Name: RollerCoaster Tycoon 2 scenario
+URL: "https://en.wikipedia.org/wiki/RollerCoaster_Tycoon"
+FileNameExtensions: ["sc6"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x03 \0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\x83\xA6 \0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\x88`\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x03\x98\x01\0\0\xFF"
+    CaseSensitive: true
+  - Pos: 433
+    Bytes: [0x00, 0xFF]
+  - Pos: 438
+    #                          ,     b                             t     Y     T
+    Bytes: [0xA6, 0xA2, 0xA8, 0x2C, 0x62, 0x01, 0x04, 0x10, 0xFC, 0x74, 0x59, 0x54]

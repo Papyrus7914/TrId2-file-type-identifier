@@ -1,0 +1,11 @@
+Name: SPLASH - Lenex compressed data
+Description: Basically a Zip archive with a "Lenex" XML file.
+URL: "http://www.splash-software.ch"
+FileNameExtensions: ["lxf"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".LEFPK"
+    CaseSensitive: false

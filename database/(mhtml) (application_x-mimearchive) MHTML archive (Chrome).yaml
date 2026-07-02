@@ -1,0 +1,53 @@
+Name: MHTML archive (Chrome)
+URL: "https://en.wikipedia.org/wiki/MHTML"
+FileNameExtensions: ["mhtml"]
+MimeType: application/x-mimearchive
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "From: <Saved by Blink>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "------MULTIPARTBOUNDARY--"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TRANSFER-ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPSHOT-CONTENT-LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVED BY BLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MHTML.BLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

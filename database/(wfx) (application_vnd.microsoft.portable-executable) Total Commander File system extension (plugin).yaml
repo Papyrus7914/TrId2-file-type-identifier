@@ -1,0 +1,38 @@
+Name: Total Commander File system extension (plugin)
+URL: "http://www.ghisler.com/plugins.htm#filesys"
+FileNameExtensions: ["wfx"]
+MimeType: application/vnd.microsoft.portable-executable
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSFINDCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSFINDFIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSFINDNEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSINIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

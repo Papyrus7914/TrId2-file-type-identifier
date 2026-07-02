@@ -1,0 +1,9 @@
+Name: Naive Image format NIA animated bitmaps
+Description: Animated image, in-band frames.
+URL: "http://fileformats.archiveteam.org/wiki/Na%C3%AFve_Image_Formats"
+FileNameExtensions: ["nia"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        n                 A
+    Bytes: [0x6E, 0xC3, 0xAF, 0x41]

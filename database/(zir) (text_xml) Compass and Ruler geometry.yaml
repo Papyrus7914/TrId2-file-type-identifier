@@ -1,0 +1,20 @@
+Name: Compass and Ruler geometry
+URL: "https://en.wikipedia.org/wiki/C.a.R."
+FileNameExtensions: ["zir"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONSTRUCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false

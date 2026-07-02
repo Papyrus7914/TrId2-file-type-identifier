@@ -1,0 +1,11 @@
+Name: Certificate Signing Request
+URL: "http://fileformats.archiveteam.org/wiki/PKCS10"
+FileNameExtensions: ["csr"]
+MimeType: application/pkcs10
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-----BEGIN CERTIFICATE REQUEST-----"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-----END CERTIFICATE REQUEST-----"
+    CaseSensitive: false

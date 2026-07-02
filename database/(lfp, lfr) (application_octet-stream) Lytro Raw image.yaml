@@ -1,0 +1,227 @@
+Name: Lytro Raw image
+URL: "https://en.wikipedia.org/wiki/Lytro"
+FileNameExtensions: ["lfp", "lfr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89LFP\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SENSOROPENAPERTURECLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULATIONEXPOSUREBIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMEEXPOSUREDURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELEXPOSUREDURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOCUSSTEPPEROFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEXUNIFORMROWMAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIVATEMETADATAREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCMRGBTOSRGBARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMITEXPOSUREBIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOMSTEPPEROFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHITEBALANCEGAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPUPILOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULATIONFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFINITYLAMBDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPRESENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPERATUREADC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPPERLEFTPIXEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCELEROMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCELERATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITSPERPIXEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELPACKING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENSOROFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENSORSERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIALNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFECTARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOCALLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLEARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALEFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALOGGAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.LYTRO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DERIVATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIANNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTFIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELPITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAWDETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHTSHIFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DARKFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENSPITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MECHANISM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAWPACKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDFILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZULUTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHUTTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOSAIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

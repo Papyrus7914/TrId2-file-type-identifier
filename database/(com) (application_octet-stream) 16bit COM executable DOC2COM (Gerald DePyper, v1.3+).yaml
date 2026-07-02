@@ -1,0 +1,67 @@
+Name: 16bit COM executable DOC2COM (Gerald DePyper, v1.3+)
+URL: "http://fileformats.archiveteam.org/wiki/DOC2COM_(Gerald_DePyper)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFC]
+  - Pos: 5
+    AsciiString: "I\x8B6"
+    CaseSensitive: true
+  - Pos: 10
+    #                          2                                   4
+    Bytes: [0x8B, 0xFE, 0xAC, 0x32, 0x04, 0xAA, 0xE2, 0xFA, 0xAC, 0x34, 0xFF, 0xAA]
+  - Pos: any
+    AsciiString: "ER NOT READYING TEXT... PRN\0LPT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT CREATE FILECREATED OK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT FILE TO CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALID KEYSTROKES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIT ESC TO QUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKE TXT FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GO TO A LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GO TO A PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GO TO LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F1   QUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGUP PGDN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOME END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BROWSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALT-F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALT-P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false

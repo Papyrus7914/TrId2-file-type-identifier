@@ -1,0 +1,26 @@
+Name: Affinity Photo document
+URL: "https://en.wikipedia.org/wiki/Affinity_Photo"
+FileNameExtensions: ["afphoto"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\xFFKA"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "nsrP#Inf"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C.DA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROT"
+    CaseSensitive: false

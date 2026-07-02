@@ -1,0 +1,11 @@
+Name: Web Clipping/Palm Query Application
+URL: "https://fileformats.archiveteam.org/wiki/PQA"
+FileNameExtensions: ["pqa"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 60
+    AsciiString: "pqa clpr"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PQA CLPR"
+    CaseSensitive: false

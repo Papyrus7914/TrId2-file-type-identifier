@@ -1,0 +1,38 @@
+Name: Unreal Audio package
+URL: "https://en.wikipedia.org/wiki/Unreal_Engine"
+FileNameExtensions: ["uax"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    *
+    Bytes: [0xC1, 0x83, 0x2A, 0x9E]
+  - Pos: 8
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVEFMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIFF"
+    CaseSensitive: false

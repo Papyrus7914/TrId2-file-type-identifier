@@ -1,0 +1,8 @@
+Name: Simple Highspeed Archiver compressed archive
+URL: "http://fileformats.archiveteam.org/wiki/SHARC"
+FileNameExtensions: ["sharc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          q
+    Bytes: [0x1B, 0xF3, 0xB9, 0x71]

@@ -1,0 +1,20 @@
+Name: Altium Designer Layer Pairs export data
+URL: "https://en.wikipedia.org/wiki/Altium_Designer"
+FileNameExtensions: ["ldp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Layer Pairs Export File for PCB: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOP_BOT_THRU_HOLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERSSETNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRILLFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PCBDOC"
+    CaseSensitive: false

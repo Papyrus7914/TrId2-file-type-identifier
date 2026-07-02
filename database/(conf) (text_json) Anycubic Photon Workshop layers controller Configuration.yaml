@@ -1,0 +1,33 @@
+Name: Anycubic Photon Workshop layers controller Configuration
+Description: Found inside a .pwsz file.
+URL: "https://anycubic.biz/"
+FileNameExtensions: ["conf"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n    \"count\": "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LAYER_MINHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER_THICKNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPOSURE_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER_INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZUP_HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZUP_SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAS"
+    CaseSensitive: false

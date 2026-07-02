@@ -1,0 +1,18 @@
+Name: MMC2IEC mapping/container format
+Description: Used by emulators to map PETSCII filenames to ASCII/FAT filenames.
+URL: "https://www.c64-wiki.com/index.php/MMC2IEC"
+FileNameExtensions: ["m2i"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 16
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: " :"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "\r\n"
+    CaseSensitive: true

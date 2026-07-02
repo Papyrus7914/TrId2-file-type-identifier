@@ -1,0 +1,32 @@
+Name: TSPLIB Vehicle Routing Problem data
+URL: "http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/tsp95.pdf"
+FileNameExtensions: ["vrp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NAME"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EDGE_WEIGHT_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEMAND_SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPOT_SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CVRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EOF"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: Dialog source code
+URL: "https://www.linusakesson.net/dialog/index.php"
+FileNameExtensions: ["dg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(story title)"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(STORY AUTHOR)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(STORY RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(STORY TITLE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(STORY IFID)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(ROOM *)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(INTRO)"
+    CaseSensitive: false

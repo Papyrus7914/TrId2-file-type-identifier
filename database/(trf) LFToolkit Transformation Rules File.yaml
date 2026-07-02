@@ -1,0 +1,16 @@
+Name: LFToolkit Transformation Rules File
+URL: "http://www.isi.edu/~hobbs/LFToolkit/"
+FileNameExtensions: ["trf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#Variables"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSFORMATIONRULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRYPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLES"
+    CaseSensitive: false

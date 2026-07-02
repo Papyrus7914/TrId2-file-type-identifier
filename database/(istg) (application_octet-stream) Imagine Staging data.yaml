@@ -1,0 +1,21 @@
+Name: Imagine Staging data
+Description: Amiga 3D software.
+URL: "http://www.ds4u.com/Imagine/isoe/index.shtml"
+FileNameExtensions: ["istg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "ISTG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISTG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXF"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: 16bit COM executable DOC2COM (Gerald DePyper, old '90)
+URL: "http://fileformats.archiveteam.org/wiki/DOC2COM_(Gerald_DePyper)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xBE]
+  - Pos: 2
+    #                                                              ;     6
+    Bytes: [0x04, 0xB9, 0x18, 0x00, 0xE8, 0xB2, 0x01, 0xE2, 0xFB, 0x3B, 0x36]
+  - Pos: 14
+    #              r
+    Bytes: [0x04, 0x72]

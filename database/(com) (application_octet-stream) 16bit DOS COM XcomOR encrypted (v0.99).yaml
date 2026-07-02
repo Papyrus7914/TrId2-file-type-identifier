@@ -1,0 +1,11 @@
+Name: 16bit DOS COM XcomOR encrypted (v0.99)
+Description: DOS enctryptor by madmax!.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        M     M     X     f           6                                                           Z
+    Bytes: [0x4D, 0x4D, 0x58, 0x66, 0x81, 0x36, 0x03, 0x01, 0x92, 0xEB, 0x04, 0x00, 0xEB, 0xF5, 0xD3, 0x5A, 0x81, 0xC2]
+  - Pos: any
+    AsciiString: "XCOMOR"
+    CaseSensitive: false

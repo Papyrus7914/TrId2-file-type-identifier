@@ -1,0 +1,17 @@
+Name: KbdEdit dead table
+URL: "http://www.kbdedit.com/"
+FileNameExtensions: ["kld"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFED\0E\0A\0D\0T\0A\0B\0L\0E\0\r\0\n\0\r\0\n\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "E\0N\0D\0D\0E\0A\0D\0T\0A\0B\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K\0E\0Y\0N\0A\0M\0E\0_\0D\0E\0A\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0E\0A\0D\0K\0E\0Y"
+    CaseSensitive: false

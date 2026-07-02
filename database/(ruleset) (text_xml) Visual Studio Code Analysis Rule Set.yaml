@@ -1,0 +1,53 @@
+Name: Visual Studio Code Analysis Rule Set
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+FileNameExtensions: ["ruleset"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RULES ANALYZERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULENAMESPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODEANALYSIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULESET NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ANALYZERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

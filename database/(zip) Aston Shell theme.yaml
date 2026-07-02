@@ -1,0 +1,59 @@
+Name: Aston Shell theme
+Description: Aston is a Desktop manager and Shell replacement for Windows.
+URL: "http://www.astonshell.com/"
+FileNameExtensions: ["zip"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BARSKIN.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG.TFAPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFTTOPSKIN.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHTTOPSKIN.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASKACTI.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASKINAC.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASKMIN.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLLEFT.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLRIGHT.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAYSKIN.BMPPK"
+    CaseSensitive: false

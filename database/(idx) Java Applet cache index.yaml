@@ -1,0 +1,10 @@
+Name: Java Applet cache index
+Description: With applet caching enabled, performance is improved because once an applet is cached it no longer needs to be downloaded when referenced again. Trought the Java Plug-In control panel it's possibile to manage cache's settings or clear it.
+URL: "http://java.sun.com/j2se/1.4.2/docs/guide/plugin/developer_guide/control_panel.html"
+FileNameExtensions: ["idx"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x10, 0x00]
+  - Pos: 3
+    AsciiString: "http://"
+    CaseSensitive: true

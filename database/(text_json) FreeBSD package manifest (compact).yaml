@@ -1,0 +1,67 @@
+Name: FreeBSD package manifest (compact)
+URL: "https://docs.freebsd.org/en/books/handbook/ports/#pkgng-intro"
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"name\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PORTS_TOP_CHECKOUT_UNCLEAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT_CHECKOUT_UNCLEAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTS_TOP_GIT_HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD_TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT_GIT_HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSELOGIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNOTATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREEBSD.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILT_BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLATSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+0000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: WiziTeX equation
+Description: Equation editor by Micro Systems.
+FileNameExtensions: ["tex"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%WIZITEX Version "
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%WIZITEX VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%PAGESETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%SPACING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%SIZE"
+    CaseSensitive: false

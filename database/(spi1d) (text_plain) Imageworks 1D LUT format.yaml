@@ -1,0 +1,17 @@
+Name: Imageworks 1D LUT format
+URL: "https://en.wikipedia.org/wiki/Sony_Pictures_Imageworks"
+FileNameExtensions: ["spi1d"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Version 1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false

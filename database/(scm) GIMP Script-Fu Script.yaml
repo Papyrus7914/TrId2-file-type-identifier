@@ -1,0 +1,25 @@
+Name: GIMP Script-Fu Script
+URL: "http://en.wikipedia.org/wiki/Script-Fu"
+FileNameExtensions: ["scm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(DEFINE ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-DRAWABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(GIMP-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false

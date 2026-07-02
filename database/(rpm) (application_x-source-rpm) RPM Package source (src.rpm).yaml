@@ -1,0 +1,20 @@
+Name: RPM Package source (src.rpm)
+Description: N.B. The double extension is 'src.rpm'
+URL: "http://en.wikipedia.org/wiki/RPM_Package_Manager"
+FileNameExtensions: ["rpm"]
+MimeType: application/x-source-rpm
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xED, 0xAB, 0xEE, 0xDB]
+  - Pos: 5
+    AsciiString: "\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROOT\0ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINUX"
+    CaseSensitive: false

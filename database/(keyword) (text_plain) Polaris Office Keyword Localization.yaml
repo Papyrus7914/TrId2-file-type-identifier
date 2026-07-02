@@ -1,0 +1,17 @@
+Name: Polaris Office Keyword Localization
+URL: "https://www.polarisoffice.com/"
+FileNameExtensions: ["keyword"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "title_"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TITLE_EN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE_KO"
+    CaseSensitive: false

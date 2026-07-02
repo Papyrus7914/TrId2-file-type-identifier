@@ -1,0 +1,14 @@
+Name: 16bit COM executable Com4Mail
+URL: "http://fileformats.archiveteam.org/wiki/Com4Mail"
+FileNameExtensions: ["c4m", "com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN===tfud#of_Com4Mail_file#\r\nName:"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "\r\nNote:"
+    CaseSensitive: true
+  - Pos: 110
+    AsciiString: "\r\n%00%@@PZ-On-OnPY-O!P_R^!5QX-wPP^15QX-b!PP_R^!5GG!5GG!5GG=\r\n!5GG!5_RX-`K5pPP^15GG15GG15GG15GG-n!5j#P^15QX-M!P_QX-o!P]=\r\nRX3F\"EE<!r!t!=AA=AA=AA-AABlack_holeR^!5P^15G\r\nOLAADAHFCDNODDAMDDCNKIMAGEAIJOBCAIJPFFEHDDHHDPOPFMLIIOLICMLLFFAA\r\nHPDOFJHPDODAFNCABMAIENAADICNAAAINPFACHGNCDNOIIFDHEIIFBHEIIFCHEII\r\nFAHEDDCNDDAMLOCMMPOAHAHFOLMGCAJLKBAADPEKPFPPHOLIPMOFLCOMPLAABAHF\r\nDPEKDDAMLIINLIIMLIANLIAPLIIPLIIODM!\r\n"
+    CaseSensitive: true

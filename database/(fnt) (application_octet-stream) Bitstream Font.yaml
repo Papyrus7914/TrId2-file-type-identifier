@@ -1,0 +1,20 @@
+Name: Bitstream Font
+URL: "https://en.wikipedia.org/wiki/Bitstream_Inc."
+FileNameExtensions: ["fnt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0(c) Copyright Bitstream Inc. "
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: ". All rights reserved.\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITSTREAM INC."
+    CaseSensitive: false

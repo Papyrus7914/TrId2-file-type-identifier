@@ -1,0 +1,68 @@
+Name: Office Live Meeting Connection
+URL: "https://en.wikipedia.org/wiki/Microsoft_Office_Live_Meeting"
+FileNameExtensions: ["rtc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<rtc>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PARAM RECORDINGAGREEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM MEETINGSTARTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM MEETINGPASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM USERDISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM MEETINGENDTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM MEETINGSUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM REQUIRED-MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM CUSTOMAICCSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.LIVEMEETING.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM CUSTOMEXTRA1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM CUSTOMSOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM USERCOMPANY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM AUTHTICKET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM MEETINGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM USEREMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM STARTURI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM ISLOBBY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM ROLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

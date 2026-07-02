@@ -1,0 +1,11 @@
+Name: ONNX Runtime Optimized Model
+URL: "https://onnxruntime.ai/docs/performance/model-optimizations/ort-format-models.html"
+FileNameExtensions: ["ort"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0ORTM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ORTM"
+    CaseSensitive: false

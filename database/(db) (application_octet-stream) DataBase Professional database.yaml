@@ -1,0 +1,26 @@
+Name: DataBase Professional database
+Description: Amiga DB software by Joerg Richter.
+FileNameExtensions: ["db"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DBpro datafile\t"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DECODED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false

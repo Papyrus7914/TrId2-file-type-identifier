@@ -1,0 +1,14 @@
+Name: GIMP Pattern
+URL: "https://en.wikipedia.org/wiki/GIMP"
+FileNameExtensions: ["pat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "GPAT"
+    CaseSensitive: true

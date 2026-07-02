@@ -1,0 +1,11 @@
+Name: Symantec QandA macro
+URL: "https://en.wikipedia.org/wiki/Q%26A_(Symantec)"
+FileNameExtensions: ["asc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<begdef><"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDDEF"
+    CaseSensitive: false

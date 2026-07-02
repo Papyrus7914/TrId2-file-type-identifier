@@ -1,0 +1,73 @@
+Name: Microsoft Fast Find status
+URL: "http://support.microsoft.com/support/kb/articles/Q166/3/02.ASP"
+FileNameExtensions: ["ffa"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          \b
+    Bytes: [0x82, 0x80, 0x82, 0x08, 0x01, 0x00, 0x01, 0x00, 0x00]
+  - Pos: 11
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\x01\0\x03\0"
+    CaseSensitive: true
+  - Pos: 27
+    Bytes: [0x01]
+  - Pos: 35
+    AsciiString: "\x01\0\0\0\0*.doc; *.ht*; *.dot; *.xl*; *.ppt; *.pot; *.pps; *.obd; *.obt; *.txt; *.rtf; *.mpp; *.mpw; *.mpt; *.mpx; *.mpd; *.mdb\0"
+    CaseSensitive: true
+  - Pos: 309
+    AsciiString: "\0:\0\\\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*.DOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.DOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.HT*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.MDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.MPD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.MPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.MPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.MPW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.MPX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.OBD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.OBT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.POT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.PPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.PPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.RTF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.XL*"
+    CaseSensitive: false

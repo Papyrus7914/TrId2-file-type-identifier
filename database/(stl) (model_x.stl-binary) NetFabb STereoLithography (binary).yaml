@@ -1,0 +1,17 @@
+Name: NetFabb STereoLithography (binary)
+URL: "https://en.wikipedia.org/wiki/STL_(file_format)"
+FileNameExtensions: ["stl"]
+MimeType: model/x.stl-binary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "STL File created by "
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "et"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "abb - http://www.netfabb.com "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STL FILE CREATED BY NETFABB"
+    CaseSensitive: false

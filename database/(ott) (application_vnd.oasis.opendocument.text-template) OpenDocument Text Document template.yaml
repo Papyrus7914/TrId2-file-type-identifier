@@ -1,0 +1,39 @@
+Name: OpenDocument Text Document template
+Description: Standard, open, XML based, document file format for office-like documents. It's derived from the format used by OpenOffice.org's suite.
+URL: "http://fileformats.archiveteam.org/wiki/OpenDocument"
+FileNameExtensions: ["ott"]
+MimeType: application/vnd.oasis.opendocument.text-template
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/vnd.oasis.opendocument.text-templatePK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.OASIS.OPENDOCUMENT.TEXT-TEMPLATEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false

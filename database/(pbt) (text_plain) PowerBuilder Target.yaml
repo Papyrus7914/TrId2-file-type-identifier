@@ -1,0 +1,26 @@
+Name: PowerBuilder Target
+URL: "http://en.wikipedia.org/wiki/PowerBuilder"
+FileNameExtensions: ["pbt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Save Format v3.0(19990112)"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SAVE FORMAT V3.0(19990112)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

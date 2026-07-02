@@ -1,0 +1,10 @@
+Name: DiskCopy 4.2 400k GCR disk image
+URL: "https://wiki.68kmla.org/DiskCopy_4.2_format_specification"
+FileNameExtensions: ["dc42", "image"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 64
+    AsciiString: "\0\x06@\0"
+    CaseSensitive: true
+  - Pos: 82
+    Bytes: [0x01, 0x00]

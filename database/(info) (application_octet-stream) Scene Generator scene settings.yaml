@@ -1,0 +1,61 @@
+Name: Scene Generator scene settings
+Description: Fractal scene generator for Amiga by Natural Graphics.
+FileNameExtensions: ["info"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE3\x10\0\x01\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 20
+    Bytes: [0x00, 0x01]
+  - Pos: 30
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 45
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 70
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 1382
+    AsciiString: "SceneGenerator"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WATER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNOW"
+    CaseSensitive: false

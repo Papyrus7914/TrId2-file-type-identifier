@@ -1,0 +1,38 @@
+Name: SequoiaView directory Tree
+URL: "http://www.win.tue.nl/sequoiaview/"
+FileNameExtensions: ["tre"]
+MimeType: text/x-tre
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<node>                // "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMBER OF LEAVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM.SUBNODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM.LEAVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1   NUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSIZE"
+    CaseSensitive: false

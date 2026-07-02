@@ -1,0 +1,41 @@
+Name: Audacity Project
+URL: "https://en.wikipedia.org/wiki/Audacity_(audio_editor)"
+FileNameExtensions: ["aup"]
+MimeType: application/x-audacity-project
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUDACITYPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDACITYVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEL0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOM"
+    CaseSensitive: false

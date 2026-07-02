@@ -1,0 +1,29 @@
+Name: Godot Engine Exported Scene
+URL: "https://en.wikipedia.org/wiki/Godot_(game_engine)"
+FileNameExtensions: ["escn"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[gd_scene load_steps="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GD_SCENE LOAD_STEPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORM("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPATIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: PopCom CP/M compressed executable
+Description: Archiver used on CP/M and MSX platforms.
+URL: "http://fileformats.archiveteam.org/wiki/PopCom!"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 5
+    AsciiString: "-pc1-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-PC1-"
+    CaseSensitive: false

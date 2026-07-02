@@ -1,0 +1,74 @@
+Name: Win16 EDI Install Pro executable
+URL: "Windows Installer program by Robert Salesas."
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\b\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\b\0\0\x01\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xBA\x10\0\x0E\x1F\xB4\t\xCD!\xB8\x01L\xCD!\x90\x90This program requires Microsoft Windows.\r\n$                                                                     NE\x06\x01"
+    CaseSensitive: true
+  - Pos: 287
+    AsciiString: "\0H\0@\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$                                                                     NE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM REQUIRES MICROSOFT WINDOWS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTIONS COPYRIGHT (C) 19"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DINSTWRAP.EXE -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNABLE TO START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROBERT SALESAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT 199"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIME ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0\0\0\0WWP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORLAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWWWWX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RPXZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

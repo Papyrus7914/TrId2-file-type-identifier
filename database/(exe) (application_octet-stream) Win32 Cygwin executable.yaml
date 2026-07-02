@@ -1,0 +1,135 @@
+Name: Win32 Cygwin executable
+Description: Cygwin is a Linux-like environment for Windows
+URL: "http://www.cygwin.com"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0PE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 135
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 140
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 143
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 146
+    AsciiString: "\0\0\xE0\0"
+    CaseSensitive: true
+  - Pos: 152
+    AsciiString: "\v\x01\x028\0"
+    CaseSensitive: true
+  - Pos: 159
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 163
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 167
+    AsciiString: "\0\0\x10\0\0\0\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 179
+    AsciiString: "\0\0\0@\0\0\x10\0\0\0\x02\0\0\x04\0\0\0\x01\0\0\0\x04\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 211
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 214
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 219
+    AsciiString: "\0\x03\0\0\0\0\0 \0\0\x10\0\0\0\0\x10\0\0\x10\0\0\0\0\0\0\x10\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 259
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 262
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0.text\0\0\0"
+    CaseSensitive: true
+  - Pos: 387
+    AsciiString: "\0\0\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 395
+    AsciiString: "\0\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 413
+    AsciiString: "\0\0`.data\0\0\0"
+    CaseSensitive: true
+  - Pos: 426
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 431
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 434
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 439
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\xC0."
+    CaseSensitive: true
+  - Pos: 656
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0U\x89\xE5\x83\xEC"
+    CaseSensitive: true
+  - Pos: 1037
+    #        t                       }
+    Bytes: [0x74, 0x01, 0xCC, 0xD9, 0x7D, 0xFE]
+  - Pos: 1045
+    #        E           %                             f           E
+    Bytes: [0x45, 0xFE, 0x25, 0xC0, 0xF0, 0xFF, 0xFF, 0x66, 0x89, 0x45, 0xFE]
+  - Pos: 1058
+    AsciiString: "E\xFE\r?\x03\0\0f\x89E\xFE\xD9m\xFE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$\0\0\0\0\0\0\0PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYGWIN1.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYGWIN_INTERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DLL_CRT0__FP11PER_PROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEHANDLEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__MAIN"
+    CaseSensitive: false

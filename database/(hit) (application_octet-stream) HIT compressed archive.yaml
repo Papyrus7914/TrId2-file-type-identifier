@@ -1,0 +1,11 @@
+Name: HIT compressed archive
+URL: "http://fileformats.archiveteam.org/wiki/HIT_(compressed_archive)"
+FileNameExtensions: ["hit"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "UB"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true

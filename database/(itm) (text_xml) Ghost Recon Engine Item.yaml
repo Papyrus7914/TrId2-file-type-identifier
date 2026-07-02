@@ -1,0 +1,26 @@
+Name: Ghost Recon Engine Item
+URL: "https://www.mobygames.com/game/5557/tom-clancys-ghost-recon/"
+FileNameExtensions: ["itm"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<HandHeldItemFile>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODELFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMETOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".QOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

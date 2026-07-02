@@ -1,0 +1,65 @@
+Name: DevExpress Chart
+URL: "https://en.wikipedia.org/wiki/DevExpress"
+FileNameExtensions: ["xtrachart"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ChartXmlSerializer version=\"11.2.1.0\">\r\n  <Chart>\r\n    <"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SERIESTEMPLATE ARGUMENTSCALETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARTXMLSERIALIZER VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM1 ARGUMENTSERIALIZABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW TYPENAMESERIALIZABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCATTERLINESERIESVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIESSERIALIZABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUESSERIALIZABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL LINEVISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTSERIESLABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDER VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEGEND VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMERICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: Easy CD Creator Drag to Disk File
+URL: "http://www.sonic.com/"
+FileNameExtensions: ["zl"]
+DetectionPatterns:
+  - Pos: 0
+    #        x                 ;           x
+    Bytes: [0x78, 0xDA, 0xEC, 0x3B, 0x7F, 0x78]
+  - Pos: any
+    AsciiString: "UDFREADR_XP.SYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UDFREADR."
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Mosaic Hotlist
+URL: "https://en.wikipedia.org/wiki/Mosaic_(web_browser)"
+FileNameExtensions: ["hot"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Hotlist"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM"
+    CaseSensitive: false

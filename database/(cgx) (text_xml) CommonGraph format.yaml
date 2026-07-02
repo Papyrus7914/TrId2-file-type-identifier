@@ -1,0 +1,46 @@
+Name: CommonGraph format
+FileNameExtensions: ["cgx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PORT INSTANCEGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMONGRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSTGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRCGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

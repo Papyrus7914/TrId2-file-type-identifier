@@ -1,0 +1,9 @@
+Name: Dragon VDK Disk image format
+FileNameExtensions: ["vdk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "dk"
+    CaseSensitive: true
+  - Pos: 4
+    Bytes: [0x10]

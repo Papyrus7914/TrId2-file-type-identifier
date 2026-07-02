@@ -1,0 +1,31 @@
+Name: Hollywood Plugin (Amiga 68K)
+URL: "https://en.wikipedia.org/wiki/Hollywood_(programming_language)"
+FileNameExtensions: ["hwp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x00, 0x03, 0xF3]
+  - Pos: any
+    AsciiString: "CLOSEPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLLYWOOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLIWOOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HWP 1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN"
+    CaseSensitive: false

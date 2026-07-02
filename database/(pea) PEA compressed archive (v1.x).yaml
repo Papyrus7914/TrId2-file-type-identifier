@@ -1,0 +1,7 @@
+Name: PEA compressed archive (v1.x)
+Description: PEA, Pack Encrypt Authenticate, is a general purpose archiving format, featuring compression and multiple volume output,  aiming  to  offer  a  flexible  security  model  through  Authenticated  Encryption.
+URL: "http://peazip.sourceforge.net/"
+FileNameExtensions: ["pea"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEA, 0x01]

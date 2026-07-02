@@ -1,0 +1,107 @@
+Name: TunerPro Definition (v1.x)
+URL: "https://www.tunerpro.net/"
+FileNameExtensions: ["xdf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XDF\r\n1."
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "0000\r\n\r\nDO NOT HAND EDIT!!!! (Trust me)\r\n\r\n%%HEADER%%\r\n\t001000 FileVers         =\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "001035 BASEOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040352 XLABELTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040362 YLABELTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "001325 MODEFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO NOT HAND EDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "000002 UNIQUEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "001000 FILEVERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "001005 DEFTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "001007 DESCSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "001200 ADSASSOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "001225 ADSCHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "001300 GENFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040011 DESCSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "001030 BINSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040100 ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040350 XLABELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040360 YLABELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "001010 AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040320 XUNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040325 YUNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040330 ZUNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040005 TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "001006 DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040010 DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040300 ROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040305 COLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%HEADER%%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%TABLE%%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040354 X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "040364 Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "50 FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%END%%"
+    CaseSensitive: false

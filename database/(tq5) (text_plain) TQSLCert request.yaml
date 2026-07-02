@@ -1,0 +1,55 @@
+Name: TQSLCert request
+FileNameExtensions: ["tq5"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\ntQSL certificate request\n\n<eoh>\n\n<TQSL_IDENT:2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-----BEGIN CERTIFICATE REQUEST-----"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-----END CERTIFICATE REQUEST-----"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMERICAN RADIO RELAY LEAGUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TQSL_CRQ_QSO_NOT_BEFORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TQSL_CRQ_PROVIDER_UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGBOOK OF THE WORLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TQSL_CRQ_DXCC_ENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TQSL_CRQ_ADDRESS1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TQSL_CRQ_ADDRESS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TQSL_CRQ_COUNTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TQSL_CRQ_REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TQSL_CRQ_POSTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TQSL_CRQ_STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TQSL_CRQ_CITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TQSL_IDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false

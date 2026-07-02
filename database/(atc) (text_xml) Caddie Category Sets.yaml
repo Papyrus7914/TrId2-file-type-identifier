@@ -1,0 +1,68 @@
+Name: Caddie Category Sets
+URL: "https://en.wikipedia.org/wiki/Caddie_(CAD_system)"
+FileNameExtensions: ["atc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<CategorySets "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOOLPALETTECATEGORIES IDVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLPALETTECATEGORY IDVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLPALETTEGROUP IDVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVEPALETTECATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLPALETTE IDVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVEPALETTEGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVEPALETTEINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CADDIE CATEGORIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLPALETTEGROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%AECCONTENT_DIR%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMNAME ALIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL PALETTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEREVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLIMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATCAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ICO"
+    CaseSensitive: false

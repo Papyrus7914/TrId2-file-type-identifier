@@ -1,0 +1,16 @@
+Name: ARJZ compressed archive
+URL: "http://fileformats.archiveteam.org/wiki/ARJZ"
+FileNameExtensions: ["arj"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        `
+    Bytes: [0x60, 0xEA]
+  - Pos: 5
+    AsciiString: "3"
+    CaseSensitive: true
+  - Pos: 10
+    Bytes: [0x02]
+  - Pos: any
+    AsciiString: ".ARJ"
+    CaseSensitive: false

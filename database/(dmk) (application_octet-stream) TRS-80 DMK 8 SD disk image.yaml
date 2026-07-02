@@ -1,0 +1,11 @@
+Name: TRS-80 DMK 8" SD disk image
+Description: Format by David Keil.
+URL: "http://fileformats.archiveteam.org/wiki/DMK"
+FileNameExtensions: ["dmk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 2
+    Bytes: [0xE0, 0x14]

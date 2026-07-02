@@ -1,0 +1,9 @@
+Name: NAPLPS graphics
+Description: North American Presentation Level Protocol Syntax.
+URL: "http://fileformats.archiveteam.org/wiki/NAPLPS"
+FileNameExtensions: ["nap"]
+MimeType: image/naplps
+DetectionPatterns:
+  - Pos: 0
+    #                    \"    F
+    Bytes: [0x18, 0x1B, 0x22, 0x46]

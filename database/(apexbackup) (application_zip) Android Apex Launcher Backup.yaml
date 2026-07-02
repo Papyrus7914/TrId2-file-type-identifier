@@ -1,0 +1,17 @@
+Name: Android Apex Launcher Backup
+URL: "http://www.apexlauncher.com/"
+FileNameExtensions: ["apexbackup"]
+MimeType: application/zip
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PK\x03\x04\x14\0\b\b\b\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\x11\0\0\0apex_settings.bak"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APEX_SETTINGS.BAKPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APEX_DATA.BAKPK"
+    CaseSensitive: false

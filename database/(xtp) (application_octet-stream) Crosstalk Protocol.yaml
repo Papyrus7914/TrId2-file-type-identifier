@@ -1,0 +1,153 @@
+Name: Crosstalk Protocol
+URL: "https://en.wikipedia.org/wiki/Crosstalk_Mk.4"
+FileNameExtensions: ["xtp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x13, 0x18, 0x00, 0x00]
+  - Pos: 6
+    AsciiString: "\0\0\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    Bytes: [0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "NONE\0TIMEOUT\0BAD PACKET\0EXTRA BLOCK\0DUP BLOCK\0NAK RECEIVED\0CANCELLING FILE TRANSFER...\0WAITING TO BEGIN TRANSFER...\0WAITING FOR REMOTE COMMAND...\0LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMALL DELAYS CAUSE TIME OUTS - FOR USE WITH HIGH SPEED DIRECT CONNECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMOUNT OF TIME CROSSTALK WAITS BETWEEN TRANSMITTING BLOCKS OF DATA.  IF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOU ARE COMMUNICATING VIA A DIRECT CONNECTION OR LOCAL PHONE CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0%  10%  20%  30%  40%  50%  60%  70%  80%  90%  100%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODERATE AMOUNTS OF DELAY TOLERATED BETWEEN PACKETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIGHT.  IF CALLING THROUGH A LONG DISTANCE SERVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LARGE AMOUNTS OF DELAY TOLERATED BETWEEN PACKETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERY LONG DELAYS TOLERATED BETWEEN PACKETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO DETERMINE THE OPTIMUM SETTING FOR YOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOU MAY CHANGE SETTINGS WHICH AFFECT HOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMING OFFERS A SELECTION OF TIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOU ARE IN PROTOCOL SETUP.  HERE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOSE OR SLOPPY.  THE ONLY WAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONDITIONS IS TO EXPERIMENT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKING WITH MENUS AND FORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OR CHOOSE ANOTHER PROTOCOL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE TRANSFER IN PROGRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIGHT\0NORMAL\0LOOSE\0SLOPPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOL SETUP SCREEN -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPROXIMATE THROUGHPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND SLOPPY TO SET THE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOU MAY NEED TO USE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CROSSTALK PERFORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESTIMATED TIME \0+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER IS ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMING { TIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OF COMPLETION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES SENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES SENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMAINING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SATELLITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO CANCEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPLETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERRORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALT-P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECV"
+    CaseSensitive: false

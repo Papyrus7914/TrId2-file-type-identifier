@@ -1,0 +1,10 @@
+Name: Visual Paradigm License Key
+URL: "http://www.visual-paradigm.com/"
+FileNameExtensions: ["zvpl"]
+DetectionPatterns:
+  - Pos: 0
+    #                    P     K
+    Bytes: [0x80, 0x7F, 0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".VPLPK"
+    CaseSensitive: false

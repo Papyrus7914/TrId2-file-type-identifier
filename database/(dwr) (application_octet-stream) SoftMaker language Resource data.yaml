@@ -1,0 +1,11 @@
+Name: SoftMaker language Resource data
+URL: "https://en.wikipedia.org/wiki/SoftMaker"
+FileNameExtensions: ["dwr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(c) SoftMaker Software GmbH and its licensors. All rights reserved.\0\0\0\0\0\0\0\0\0\0\0\0\0jklm\0\x02\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 144
+    #        x
+    Bytes: [0x78, 0x9C]

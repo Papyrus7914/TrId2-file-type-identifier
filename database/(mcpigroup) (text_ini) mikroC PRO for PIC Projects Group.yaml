@@ -1,0 +1,20 @@
+Name: mikroC PRO for PIC Projects Group
+URL: "https://www.mikroe.com/mikroc-pic"
+FileNameExtensions: ["mcpigroup"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[PROJECTS]\r\nCount="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACTIVEPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MCPPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false

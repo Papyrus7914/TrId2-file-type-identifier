@@ -1,0 +1,62 @@
+Name: PageStream document
+URL: "http://www.pagestream.org/"
+FileNameExtensions: ["pgs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "DOC "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CMPGHGUI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LMPGHGUI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPAGMPAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RMPGHGUI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IOBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MRGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGDM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VGUI"
+    CaseSensitive: false

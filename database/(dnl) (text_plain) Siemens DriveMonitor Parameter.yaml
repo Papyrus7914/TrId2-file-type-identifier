@@ -1,0 +1,28 @@
+Name: Siemens DriveMonitor Parameter
+FileNameExtensions: ["dnl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";Date:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEVICE IDENTIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TECHNOLOGY TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF PCD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUS ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

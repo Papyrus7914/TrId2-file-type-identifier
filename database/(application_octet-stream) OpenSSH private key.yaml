@@ -1,0 +1,10 @@
+Name: OpenSSH private key
+URL: "https://www.openssh.org/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-----BEGIN OPENSSH PRIVATE KEY-----"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-----END OPENSSH PRIVATE KEY-----"
+    CaseSensitive: false

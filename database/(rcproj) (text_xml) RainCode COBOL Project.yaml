@@ -1,0 +1,56 @@
+Name: RainCode COBOL Project
+URL: "https://www.raincode.com/cobol/"
+FileNameExtensions: ["rcproj"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<Project Sdk=\"Microsoft.NET.Sdk\">\n  <PropertyGroup Label=\"Globals\">\n    <ProjectGuid>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RAINCODELANGUAGESERVICE.TARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYGROUP LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT.NET.SDK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDE INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGETARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETFRAMEWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILE REMOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COBOL INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT SDK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRYPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(RCDIR)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.COB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.CPY"
+    CaseSensitive: false

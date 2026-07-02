@@ -1,0 +1,34 @@
+Name: WinAmp 3.x / modern skin
+URL: "http://www.winamp.com/skins"
+FileNameExtensions: ["wal"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SKIN.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MAKIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false

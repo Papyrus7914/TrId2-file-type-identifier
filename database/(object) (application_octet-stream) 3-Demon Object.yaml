@@ -1,0 +1,20 @@
+Name: 3-Demon Object
+Description: Amiga 3D software.
+FileNameExtensions: ["object"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OBJT\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "TRAN"
+    CaseSensitive: true
+  - Pos: 428
+    AsciiString: "VRTX"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASURF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRNG"
+    CaseSensitive: false

@@ -1,0 +1,138 @@
+Name: EndNote Library
+Description: More than just a reference manager. EndNote moves you through the research process as you search, organize, write, publish and share.
+URL: "http://endnote.com/"
+FileNameExtensions: ["enl"]
+MimeType: application/x-endnote-library
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 25
+    AsciiString: "\0\b\0\0\0refs.MYD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ELECTRONIC_RESOURCE_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINAL_PUBLICATION\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST_MODIFIED_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASE_PROVIDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER_OF_VOLUMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSIDIARY_AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATED_AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCESSION_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME_OF_DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDARY_AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATED_TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTERNATE_TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACE_PUBLISHED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPRINT_EDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDARY_TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERTIARY_AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR_ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESEARCH_NOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERTIARY_TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVIEWED_ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE_OF_WORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCESS_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK_TO_PDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORT_TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT_STYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFS.FRMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFS.MYDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLISHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEARINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABSTRACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOM_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYWORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISBN"
+    CaseSensitive: false

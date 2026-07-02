@@ -1,0 +1,17 @@
+Name: NeoN Grafix 2D Shape/font (ascii)
+Description: 3D graphics and animation software by Ole Dittmann and Jens Stutte, originally on Atari ST.
+FileNameExtensions: ["shp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIP-2D-Shape(ascii)"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGINSHAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDSHAPE"
+    CaseSensitive: false

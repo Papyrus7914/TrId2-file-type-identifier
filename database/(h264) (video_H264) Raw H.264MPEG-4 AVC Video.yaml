@@ -1,0 +1,16 @@
+Name: Raw H.264/MPEG-4 AVC Video
+URL: "http://en.wikipedia.org/wiki/H.264/MPEG-4_AVC"
+FileNameExtensions: ["h264"]
+MimeType: video/H264
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\x01gd\0"
+    CaseSensitive: true
+  - Pos: 8
+    Bytes: [0xAC]
+  - Pos: any
+    AsciiString: "MPEG-4 AVC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H.264"
+    CaseSensitive: false

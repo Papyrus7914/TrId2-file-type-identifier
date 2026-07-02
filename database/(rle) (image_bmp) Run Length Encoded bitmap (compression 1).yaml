@@ -1,0 +1,18 @@
+Name: Run Length Encoded bitmap (compression 1)
+Description: This variant without hotspot, with pixel offset 1078 (436h), with 40 byte DIB header, with 1 color plane, with color depth 8, with RLE-compression (1) and with maximal 256 important colors
+URL: "http://fileformats.archiveteam.org/wiki/BMP"
+FileNameExtensions: ["rle"]
+MimeType: image/bmp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BM"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\06\x04\0\0(\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\x01\0\b\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\0\0"
+    CaseSensitive: true

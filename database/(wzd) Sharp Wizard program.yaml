@@ -1,0 +1,34 @@
+Name: Sharp Wizard program
+URL: "http://dmoz.org/Computers/Systems/Handhelds/Sharp/Wizard/"
+FileNameExtensions: ["wzd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<SHARP WZD DATA>\r\n<DATA TYPE>\r\nMY PROGRAMS\r\n</DATA TYPE>\r\n<TITLE>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SHARP WZD DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MY PROGRAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIN_PROG_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BAS"
+    CaseSensitive: false

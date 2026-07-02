@@ -1,0 +1,13 @@
+Name: Savings Bonds Wizard data
+URL: "http://www.savings-bonds-alert.com/us-savings-bond-wizard.html"
+FileNameExtensions: ["sbw"]
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "CBond"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CBOND"
+    CaseSensitive: false

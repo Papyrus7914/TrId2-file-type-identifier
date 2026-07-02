@@ -1,0 +1,23 @@
+Name: IONTOF SurfaceLab TOF-SIMS Measurement
+URL: "https://www.iontof.com"
+FileNameExtensions: ["itm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ITStrF01"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "root"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STORAGEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAWDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZROI"
+    CaseSensitive: false

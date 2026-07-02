@@ -1,0 +1,22 @@
+Name: HyperText Markup Language with DOCTYPE
+URL: "http://en.wikipedia.org/wiki/Html"
+FileNameExtensions: ["htm", "html"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTML"
+    CaseSensitive: false

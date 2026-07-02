@@ -1,0 +1,68 @@
+Name: Microsoft SQL Server Analysis Services project
+URL: "https://en.wikipedia.org/wiki/Microsoft_Analysis_Services"
+FileNameExtensions: ["asdatabase"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<Database xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:ddl2=\"http://schemas.microsoft.com/analysisservices/2003/engine/2\" xmlns:ddl2_2=\"http://schemas.microsoft.com/analysisservices/2003/engine/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATASOURCEIMPERSONATIONINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPERSONATIONINFOSECURITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPERSONATIONMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSISSERVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDTIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTSCHEMAUPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTPROCESSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0001-01-01T0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNPROCESSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTUPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNCHANGED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

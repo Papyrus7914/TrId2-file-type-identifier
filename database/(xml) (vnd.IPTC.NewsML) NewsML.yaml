@@ -1,0 +1,53 @@
+Name: NewsML
+URL: "https://en.wikipedia.org/wiki/NewsML"
+FileNameExtensions: ["xml"]
+MimeType: vnd.IPTC.NewsML
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THISREVISIONCREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWSIDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWSMANAGEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWSENVELOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWSITEMTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEANDTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMALNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROVIDERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWSML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

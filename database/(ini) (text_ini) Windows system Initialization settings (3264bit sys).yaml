@@ -1,0 +1,44 @@
+Name: Windows system Initialization settings (32/64bit sys)
+Description: Win 3.x system environmen configuration, for compatibility in new 32/64bit systems.
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "; for 16-bit app support\r\n["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CGA40WOA.FON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGA80WOA.FON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EGA40WOA.FON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EGA80WOA.FON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOSAPP.FON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMDRV.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMER.DRV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WOAFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "386ENH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVE"
+    CaseSensitive: false

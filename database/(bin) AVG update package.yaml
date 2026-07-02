@@ -1,0 +1,10 @@
+Name: AVG update package
+URL: "http://www.grisoft.com/"
+FileNameExtensions: ["bin"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ AVG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UPDATEBIN"
+    CaseSensitive: false

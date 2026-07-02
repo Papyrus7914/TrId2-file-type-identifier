@@ -1,0 +1,11 @@
+Name: GeoPackage (v1.2)
+URL: "http://fileformats.archiveteam.org/wiki/GeoPackage"
+FileNameExtensions: ["gpkg"]
+MimeType: application/geopackage+sqlite3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "GPKG"
+    CaseSensitive: true

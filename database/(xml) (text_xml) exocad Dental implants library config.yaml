@@ -1,0 +1,95 @@
+Name: exocad Dental implants library config
+URL: "https://exocad.com/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMPLANTLIBRARYENTRY XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTRATIONCLICKCENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARRANTYINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISWITHROTATIONLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORTORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPLANTTYPECONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACEFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXISSCREWCHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPLANTFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISWITHINTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORTFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXISASYMMETRIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESIGNATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKERFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOSIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXISOCCLUSAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABUTMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".STL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

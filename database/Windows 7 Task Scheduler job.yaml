@@ -1,0 +1,65 @@
+Name: Windows 7 Task Scheduler job
+DetectionPatterns:
+  - Pos: 0
+    #                    <
+    Bytes: [0xFF, 0xFE, 0x3C, 0x00]
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0S\0.\0M\0I\0C\0R\0O\0S\0O\0F\0T\0.\0C\0O\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0G\0I\0S\0T\0R\0A\0T\0I\0O\0N\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0C\0T\0I\0O\0N\0S\0 \0C\0O\0N\0T\0E\0X\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0I\0N\0C\0I\0P\0A\0L\0 \0I\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0L\0L\0O\0W\0S\0T\0A\0R\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0I\0N\0C\0I\0P\0A\0L\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0E\0T\0T\0I\0N\0G\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0N\0A\0B\0L\0E\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0I\0N\0D\0O\0W\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0S\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X\0M\0L\0N\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2\00\00\04"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0T\0T\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0S\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0R\0U\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0N\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0R\0I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0F\0I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0A\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0I\0T"
+    CaseSensitive: false

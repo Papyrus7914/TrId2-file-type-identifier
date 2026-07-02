@@ -1,0 +1,31 @@
+Name: PolyHedral Database
+URL: "http://paulbourke.net/dataformats/phd/"
+FileNameExtensions: ["phd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ":name\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SVERTICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HINGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

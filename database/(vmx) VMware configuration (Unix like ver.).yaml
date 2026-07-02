@@ -1,0 +1,55 @@
+Name: VMware configuration (Unix like ver.)
+URL: "http://www.vmware.com"
+FileNameExtensions: ["vmx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#!/usr/bin/vm"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ETHERNET0.ADDRESSTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETHERNET0.PRESENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALHW.VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG.VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID.LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DEVICETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID.BIOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOPPY0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUESTOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VMDK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

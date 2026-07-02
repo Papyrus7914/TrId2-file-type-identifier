@@ -1,0 +1,17 @@
+Name: Xfer Serum Preset (VST)
+URL: "https://xferrecords.com/products/serum-2"
+FileNameExtensions: ["fxp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CcnK\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FPCh\0\0\0\x01XfsX"
+    CaseSensitive: true
+  - Pos: 60
+    #        x
+    Bytes: [0x78, 0x01, 0xED]
+  - Pos: any
+    AsciiString: "XFSX"
+    CaseSensitive: false

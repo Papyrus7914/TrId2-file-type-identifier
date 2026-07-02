@@ -1,0 +1,332 @@
+Name: KIT Scenarist script
+URL: "https://kitscenarist.ru/"
+FileNameExtensions: ["kitsp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATE TABLE SYSTEM_VARIABLES ( VARIABLE TEXT PRIMARY KEY ON CONFLICT REPLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE CHARACTER_STATES ( ID INTEGER PRIMARY KEY AUTOINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SCENARIO_CHANGES (ID INTEGER PRIMARY KEY AUTOINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SCRIPT_VERSIONS ( ID INTEGER PRIMARY KEY AUTOINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SCENARIO_DATA (ID INTEGER PRIMARY KEY AUTOINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SCENARY_DAYS ( ID INTEGER PRIMARY KEY AUTOINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE TRANSITIONS ( ID INTEGER PRIMARY KEY AUTOINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SCENARIO ( ID INTEGER PRIMARY KEY AUTOINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE RESEARCH (ID INTEGER PRIMARY KEY AUTOINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE PLACES ( ID INTEGER PRIMARY KEY AUTOINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX__DATABASE_HISTORY_1_DATABASE_HISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE TIMES ( ID INTEGER PRIMARY KEY AUTOINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_CHARACTER_STATES_1CHARACTER_STATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_SYSTEM_VARIABLES_1SYSTEM_VARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_SCRIPT_VERSIONS_1SCRIPT_VERSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE _DATABASE_HISTORY ( ID TEXT PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_SCENARIO_DATA_1SCENARIO_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_SCENARY_DAYS_1SCENARY_DAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_TRANSITIONS_1TRANSITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION-VERSION-ON-CREATE0.7.2 RC 15"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORT_ORDER INTEGER NOT NULL DEFAULT(0) )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_DATABASE_HISTORY_DATABASE_HISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_DRAFT INTEGER NOT NULL DEFAULT(0) )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTABLECHARACTER_STATESCHARACTER_STATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STABLESCENARIO_CHANGESSCENARIO_CHANGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTABLESYSTEM_VARIABLESSYSTEM_VARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_PLACES_1PLACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YTABLESQLITE_SEQUENCESQLITE_SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESCRIPT_VERSIONSSCRIPT_VERSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_TIMES_1TIMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9}INSERT INTO  SCENARIO_DATA  (ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SQLITE_SEQUENCE(NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C}INSERT INTO  SCENARIO_DATA  (ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_VALUE TEXT DEFAULT(NULL) )9"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE INTEGER NOT NULL DEFAULT(0)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION-VERSION0.7.2 RC 15+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT_ID INTEGER DEFAULT(NULL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESCENARIO_DATASCENARIO_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_NAME TEXT NOT NULL UNIQUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION TEXT DEFAULT(NULL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GTABLESCENARY_DAYSSCENARY_DAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FK_SCRIPT_ID INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETABLETRANSITIONSTRANSITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME TEXT UNIQUE NOT NULL )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUERY_VALUES TEXT NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT_TEXT TEXT NOT NULL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATETIME TEXT NOT NULL )A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR TEXT DEFAULT(NULL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE BLOB DEFAULT(NULL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDO_PATCH TEXT NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDO_PATCH TEXT NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ")TABLESCENARIOSCENARIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5\0SCENE_NUMBERS_PREFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URL TEXT DEFAULT(NULL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME TEXT NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLERESEARCHRESEARCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE TEXT NOT NULL )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1\0SCENE_START_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_VALUE)  VALUES("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEME TEXT NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUERY TEXT NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE_HEADING UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID TEXT NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+\0ADDITIONAL_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPLACESPLACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9TABLETIMESTIMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENARIO VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%THE NEXT DAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADE TO BLACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOMENTS LATER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%DISSOLVE TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%JUMP CUT TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCH CUT TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST DRAFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUOUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFF CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFF SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOICE OVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AFTERNOON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARDS_XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_FOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTACTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADE OUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNOPSIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACK TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARD ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARDS X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADE IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MORNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQ)P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: PTS-DOS disk image
+URL: "https://en.wikipedia.org/wiki/PTS-DOS"
+FileNameExtensions: ["dsk", "img"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEB]
+  - Pos: 2
+    AsciiString: "\x90PTS"
+    CaseSensitive: true

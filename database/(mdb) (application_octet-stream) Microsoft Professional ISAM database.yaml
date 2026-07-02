@@ -1,0 +1,149 @@
+Name: Microsoft Professional ISAM database
+Description: Used in various MS development tools, like BC7 or VBDOS.
+FileNameExtensions: ["mdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MSYSCOLUMNS\0\0644)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSYSINDEXES\0\0644)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSYSRELATIONSHIPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSYSTEMPINDEXES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSTATCLUSTERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FNEWINDEXES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSYSOBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASE1)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATECREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEUPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FCLUSTERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGNODIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CBFIXED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FBINARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNIQUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDEXTRA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCCOLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOALIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFIXED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLTYP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRJOIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FNULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSTUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBVAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDXID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STIID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COL1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COL2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEST"
+    CaseSensitive: false

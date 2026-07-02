@@ -1,0 +1,20 @@
+Name: Checkup Data Base
+Description: DOS tool for files integrity check.
+FileNameExtensions: ["db"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# "
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: " CHECKUP Database, DO NOT CHANGE THIS FILE! #\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DO NOT CHANGE THIS FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKUP DATABASE"
+    CaseSensitive: false

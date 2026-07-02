@@ -1,0 +1,14 @@
+Name: Rock Band multi track music
+Description: A container for several Ogg streams.
+URL: "http://en.wikipedia.org/wiki/Rock_Band_(video_game)"
+FileNameExtensions: ["mogg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XIPH.ORG LIBVORBIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OGGS"
+    CaseSensitive: false

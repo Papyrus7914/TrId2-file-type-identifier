@@ -1,0 +1,10 @@
+Name: Context tree weighing (CTW) compressed file
+URL: "http://www.ele.tue.nl/ctw/"
+FileNameExtensions: ["ctw"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\f\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    #              ␠
+    Bytes: [0x06, 0x20, 0xB6, 0xAD]

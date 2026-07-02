@@ -1,0 +1,23 @@
+Name: M2000 tape image
+Description: The Portable P2000 Emulator by Marcel de Kogel.
+FileNameExtensions: ["cas"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\042\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "Ge"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: " BASBN"
+    CaseSensitive: true
+  - Pos: 104
+    AsciiString: "Ge"
+    CaseSensitive: true
+  - Pos: 170
+    AsciiString: "BP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BASBN"
+    CaseSensitive: false

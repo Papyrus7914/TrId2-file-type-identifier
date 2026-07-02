@@ -1,0 +1,21 @@
+Name: Windows Icon
+Description: ICO is also used for some non Microsoft icons, which contains DIB PNG images.
+URL: "https://en.wikipedia.org/wiki/ICO_(file_format)"
+FileNameExtensions: ["ico"]
+MimeType: image/x-icon
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true

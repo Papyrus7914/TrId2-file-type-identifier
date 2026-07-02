@@ -1,0 +1,25 @@
+Name: Quicken Win Data
+URL: "http://www.intuit.com/"
+FileNameExtensions: ["qsd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "QW Ver. "
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INETUSERDIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EOF RECORD TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERPREFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACROS V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QW VER."
+    CaseSensitive: false

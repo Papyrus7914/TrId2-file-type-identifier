@@ -1,0 +1,13 @@
+Name: Finale music score
+URL: "http://www.finalemusic.com/"
+FileNameExtensions: ["mus"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ENIGMA BINARY FILE\0\0\0\0\0\0\0\0\0\0\0\0\0\0Finale(R) "
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "FIN\0WIN\0"
+    CaseSensitive: true
+  - Pos: 150
+    AsciiString: "FIN\0WIN\0"
+    CaseSensitive: true

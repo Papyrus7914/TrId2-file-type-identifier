@@ -1,0 +1,34 @@
+Name: Claris Draw Document
+URL: "https://en.wikipedia.org/wiki/Claris"
+FileNameExtensions: ["cdd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01]
+  - Pos: 4
+    AsciiString: "EXPW"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CORRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORTANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URGENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FNTM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

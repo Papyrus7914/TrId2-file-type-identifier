@@ -1,0 +1,16 @@
+Name: Relux structured data (generic)
+URL: "https://relux.com/"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!$Relux "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "START_TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_TABLE"
+    CaseSensitive: false

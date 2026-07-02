@@ -1,0 +1,11 @@
+Name: Simulation Description Format
+URL: "http://sdformat.org/"
+FileNameExtensions: ["sdf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SDF VERSION"
+    CaseSensitive: false

@@ -1,0 +1,42 @@
+Name: Torque particle asset (XML)
+Description: TAML is an acronym of Torque Application Mark-up Language.
+URL: "https://en.wikipedia.org/wiki/Torque_(game_engine)"
+FileNameExtensions: ["taml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<ParticleAsset"
+    CaseSensitive: true
+  - Pos: 281
+    AsciiString: "  "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PARTICLEASSETEMITTER.FIELDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALPHACHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMITTERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIFETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUANTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false

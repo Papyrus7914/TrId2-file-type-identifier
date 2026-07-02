@@ -1,0 +1,15 @@
+Name: Microsoft Math worksheet
+FileNameExtensions: ["gcw"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<CasDocument DocVersion=\"2.0\"><Entries ZoomFactor=\"1\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CASDOCUMENT DOCVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRIES ZOOMFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSIGNMENTS"
+    CaseSensitive: false

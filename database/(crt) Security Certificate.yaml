@@ -1,0 +1,30 @@
+Name: Security Certificate
+FileNameExtensions: ["crt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Bag Attributes\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-----BEGIN CERTIFICATE-----"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-----END CERTIFICATE-----"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAG ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRIENDLYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALKEYID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSUER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false

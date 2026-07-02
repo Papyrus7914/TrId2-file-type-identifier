@@ -1,0 +1,13 @@
+Name: Nintendo DS audio Stream
+FileNameExtensions: ["strm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "STRM\xFF\xFE\0\x01"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "HEAD"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "DATA"
+    CaseSensitive: true

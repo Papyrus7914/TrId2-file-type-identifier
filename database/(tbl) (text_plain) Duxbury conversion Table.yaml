@@ -1,0 +1,14 @@
+Name: Duxbury conversion Table
+URL: "http://www.duxburysystems.com/"
+FileNameExtensions: ["tbl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CONVERSION TABLE.\r\nC/M : "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASCII TO BRAILLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRAILLE TO ASCII"
+    CaseSensitive: false

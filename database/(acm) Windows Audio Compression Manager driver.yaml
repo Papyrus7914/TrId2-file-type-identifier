@@ -1,0 +1,55 @@
+Name: Windows Audio Compression Manager driver
+URL: "http://www.microsoft.com"
+FileNameExtensions: ["acm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETDRIVERMODULEHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFDRIVERPROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINMM.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0E\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false

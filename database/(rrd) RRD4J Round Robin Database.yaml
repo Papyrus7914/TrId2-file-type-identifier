@@ -1,0 +1,10 @@
+Name: RRD4J Round Robin Database
+URL: "http://en.wikipedia.org/wiki/Rrd4j"
+FileNameExtensions: ["rrd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0R\0R\0D\04\0J\0,\0 \0v\0e\0r\0s\0i\0o\0n\0 \0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0.\0"
+    CaseSensitive: true

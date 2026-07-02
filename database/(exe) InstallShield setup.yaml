@@ -1,0 +1,107 @@
+Name: InstallShield setup
+FileNameExtensions: ["exe"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 11
+    Bytes: [0x00, 0xFF, 0xFF]
+  - Pos: 15
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0\0@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 45
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 242
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 247
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 255
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWWWWWW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

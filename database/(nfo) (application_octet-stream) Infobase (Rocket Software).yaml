@@ -1,0 +1,14 @@
+Name: Infobase (Rocket Software)
+URL: "http://fileformats.archiveteam.org/wiki/Folio_Infobase"
+FileNameExtensions: ["nfo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Copyright (c) 2012, Rocket Software, Inc. Infobase "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROCKET SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC. INFOBASE"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: PETSCII Editor screen
+URL: "http://petscii.krissz.hu/"
+FileNameExtensions: ["pe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"app\":\"PETSCII Editor\",\"version\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false

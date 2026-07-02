@@ -1,0 +1,32 @@
+Name: VTK XML HierarchicalBoxDataSet
+URL: "https://en.wikipedia.org/wiki/VTK"
+FileNameExtensions: ["vthb"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VTKHIERARCHICALBOXDATASET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTKFILE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMR_BOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VTI"
+    CaseSensitive: false

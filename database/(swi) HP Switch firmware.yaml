@@ -1,0 +1,207 @@
+Name: HP Switch firmware
+FileNameExtensions: ["swi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@(#) HP "
+    CaseSensitive: true
+  - Pos: 70
+    AsciiString: " HMDL02 \r\n@(#) Download File "
+    CaseSensitive: true
+  - Pos: 101
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: " Build#  "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLASH MEMORY NEEDS REPROGRAMMING OR CHASSIS COULD BE FAULTY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OR DISCLOSURE BY THE GOVERNMENT IS SUBJECT TO RESTRICTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE A PC AS THE CONSOLE AND PERFORM THE UPDATE PROCEDURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONITOR VERSION COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONITOR RESET COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONITOR BOOT COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT HWID COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESS WILL CAUSE THE BOX TO BECOME UNUSABLE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOU HAVE INVOKED THE CONSOLE DOWNLOAD UTILITY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG OFF COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG ON COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFY COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET HWID COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO VALID IMAGE FOUND IN SECONDARY LOCATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETMODE COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWNLOAD WAS UNSUCCESSFUL. FAIL BOOT BURN."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCBOOT COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO VALID IMAGE FOUND IN PRIMARY LOCATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITE COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAUD COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWNLOAD FILE NOT VALID FOR THIS PRODUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILL COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUIT COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ COMMAND RECEIVED AN ILLEGAL REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH SIZE IS TOO SMALL FOR DOWNLOAD."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRC ON COMPLETE OS IMAGE FILE PASSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH DID NOT INITIALIZE CORRECTLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH DID NOT PROGRAM CORRECTLY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNABLE TO MALLOC MEMORY FOR CRB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECOMPRESSION ALGORITHM FAILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWNLOAD FILE NOT AN OS IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS IS A BOOT BLOCK DOWNLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVAILD BOOT IMAGE REQUESTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMMING SUCCESSFUL..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READY FOR CODE EXECUTION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARM BOOTING SYSTEM . . ."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECOMPRESSING...\0\0\0DONE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWNLOAD WAS SUCCESSFUL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- DOWNLOAD COMPLETE --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWNLOAD FAILED ERRCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OS IDENTIFIER FOUND AT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAILED CRC VALIDATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO MASTER IMAGE FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(CTL-C TO ABORT)\0\0%S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAN MONITOR COMMANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO OS IMAGE IN FLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNRECOGNIZED COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HP PROCURVE SWITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROM INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROM BUILD DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALID OS IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG MONITOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MALLOC FAILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T BOOT IMAGE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERIFYING CRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMINATING."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROM VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUS ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRC DOESN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false

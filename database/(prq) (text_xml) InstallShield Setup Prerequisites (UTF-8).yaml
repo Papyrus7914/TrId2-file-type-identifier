@@ -1,0 +1,32 @@
+Name: InstallShield Setup Prerequisites (UTF-8)
+URL: "https://en.wikipedia.org/wiki/InstallShield"
+FileNameExtensions: ["prq"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETUPPREREQUISITES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISPRODUCTFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE LOCALFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMDLINESILENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXECUTE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

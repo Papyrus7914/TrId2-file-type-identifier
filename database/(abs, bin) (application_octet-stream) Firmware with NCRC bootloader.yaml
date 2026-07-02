@@ -1,0 +1,26 @@
+Name: Firmware with NCRC bootloader
+Description: Seems mostly used in DVB-C/DVB-T decoders.
+FileNameExtensions: ["abs", "bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#\x01\0\x10\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0NCRC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STO_SFLASH_0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false

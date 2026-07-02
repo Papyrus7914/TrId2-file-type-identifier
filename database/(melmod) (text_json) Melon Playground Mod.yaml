@@ -1,0 +1,80 @@
+Name: Melon Playground Mod
+URL: "https://modmelonplayground.com/"
+FileNameExtensions: ["melmod"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"convertVersion\":2,\"modType\":"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: ",\"uniqueId\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAINTEXTUREHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINTEXTUREWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMCATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLIDERINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLIDERSJSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELSPERUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRABPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISACTIVATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODFIREARMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANBETAKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANFLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODHUMAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANBURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANGLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOWMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

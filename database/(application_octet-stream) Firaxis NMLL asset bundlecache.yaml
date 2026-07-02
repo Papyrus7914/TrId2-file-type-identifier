@@ -1,0 +1,22 @@
+Name: Firaxis NMLL asset bundle/cache
+URL: "https://en.wikipedia.org/wiki/Firaxis_Games"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NMLL\x02\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "XN"
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "NXIF\x18\0\0\0\x01\0\0\0 \0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NNVR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NXIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PVRT"
+    CaseSensitive: false

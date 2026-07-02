@@ -1,0 +1,11 @@
+Name: JPEG 2000 eXtended bitmap
+URL: "http://fileformats.archiveteam.org/wiki/JPX"
+FileNameExtensions: ["jpf", "jpx"]
+MimeType: image/jpx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\fjP  \r\n\x87\n"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "ftypjpx "
+    CaseSensitive: true

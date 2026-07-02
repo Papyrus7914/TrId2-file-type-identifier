@@ -1,0 +1,52 @@
+Name: Siemens TIA Structured Control Language data block
+FileNameExtensions: ["scl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBFDATA_BLOCK \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "{ S7_OPTIMIZED_ACCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_DATA_BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_STRUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VAR RETAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_VAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAT"
+    CaseSensitive: false

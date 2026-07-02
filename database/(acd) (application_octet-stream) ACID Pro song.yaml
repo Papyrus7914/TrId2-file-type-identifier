@@ -1,0 +1,50 @@
+Name: ACID Pro song
+URL: "http://fileformats.archiveteam.org/wiki/Sonic_Foundry_Acid"
+FileNameExtensions: ["acd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        r     i     f     f     .                                   (
+    Bytes: [0x72, 0x69, 0x66, 0x66, 0x2E, 0x91, 0xCF, 0x11, 0xA5, 0xD6, 0x28, 0xDB, 0x04, 0xC1, 0x00, 0x00]
+  - Pos: any
+    AsciiString: "M\0I\0C\0R\0O\0S\0O\0F\0T\0 \0S\0O\0U\0N\0D\0 \0M\0A\0P\0P\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0A\0S\0T\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0R\0E\0A\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0A\0C\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0W\0A\0V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0C\0I\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIFF."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IENG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WBQE"
+    CaseSensitive: false

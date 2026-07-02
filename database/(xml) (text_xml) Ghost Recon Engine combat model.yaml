@@ -1,0 +1,29 @@
+Name: Ghost Recon Engine combat model
+URL: "https://www.mobygames.com/game/5557/tom-clancys-ghost-recon/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<CombatModelFile>\r\n   <VersionNumber>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BALLISTICLOWERARMFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BALLISTICLOWERLEGFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BALLISTICUPPERARMFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BALLISTICUPPERLEGFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BALLISTICABDOMENFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BALLISTICCHESTFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BALLISTICHEADFACTOR"
+    CaseSensitive: false

@@ -1,0 +1,58 @@
+Name: TrID's Cached definitions data
+URL: "https://mark0.net/soft-trid-e.html"
+FileNameExtensions: ["cache"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x80, 0x05, 0x95]
+  - Pos: 6
+    AsciiString: "\0\0\0\0\0\x8C\b__main__\x94\x8C\rTrIDDefsBlock\x94\x93\x94)\x81\x94}\x94(\x8C\aversion\x94K\x01\x8C\bdefs_num\x94"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRIDDEFSBLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFS_GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TRID.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFS_NUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATTERNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__MAIN__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

@@ -1,0 +1,25 @@
+Name: Apple crash report (generic)
+FileNameExtensions: ["ips"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OS_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPHONE OS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUG_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCIDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

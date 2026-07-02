@@ -1,0 +1,9 @@
+Name: Lotus 123 configuration (V2.4J)
+Description: revision number 0C05h is stored at offset 4.
+URL: "http://fileformats.archiveteam.org/wiki/Lotus_1-2-3"
+FileNameExtensions: ["cnf"]
+MimeType: application/vnd.lotus-1-2-3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x02\0\x05\f"
+    CaseSensitive: true

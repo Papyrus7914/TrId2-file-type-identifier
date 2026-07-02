@@ -1,0 +1,35 @@
+Name: Total Commander Packer extension (plugin)
+URL: "http://www.ghisler.com/plugins.htm"
+FileNameExtensions: ["wcx"]
+MimeType: application/vnd.microsoft.portable-executable
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETPROCESSDATAPROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETCHANGEVOLPROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROC\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ER\0S"
+    CaseSensitive: false

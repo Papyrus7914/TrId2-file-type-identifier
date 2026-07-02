@@ -1,0 +1,12 @@
+Name: LuraDocument Format bitmap
+FileNameExtensions: ["ldf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II*\0\b\0\0\0\x0E\0\0\x01\x04\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 278
+    AsciiString: "\0\0\x05\x93\x02\0\x04\0\0\0thm"
+    CaseSensitive: true
+  - Pos: 469
+    AsciiString: "MV\0\b\0\0\0\xFFDT"
+    CaseSensitive: true

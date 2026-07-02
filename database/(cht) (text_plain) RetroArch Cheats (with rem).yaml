@@ -1,0 +1,17 @@
+Name: RetroArch Cheats (with rem)
+URL: "https://en.wikipedia.org/wiki/RetroArch"
+FileNameExtensions: ["cht"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHEAT0_ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHEAT0_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHEATS"
+    CaseSensitive: false

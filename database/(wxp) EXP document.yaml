@@ -1,0 +1,35 @@
+Name: EXP document
+Description: EXP is scientific word processor for Microsoft Windows.
+URL: "http://www.expswp.com/AboutEXP.htm"
+FileNameExtensions: ["wxp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SLS\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULT PARAGRAPH FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEPACKAGE{EXPTHMI}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR{}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTICLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE{}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE{}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOT"
+    CaseSensitive: false

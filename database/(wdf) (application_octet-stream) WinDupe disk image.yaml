@@ -1,0 +1,8 @@
+Name: WinDupe disk image
+Description: Old floppy imaging tool for Windows 3.x.
+FileNameExtensions: ["wdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x1AWDF"
+    CaseSensitive: true

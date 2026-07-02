@@ -1,0 +1,29 @@
+Name: LUT (LUTCalc)
+URL: "https://cameramanben.github.io/LUTCalc/LUTCalc/index.html"
+FileNameExtensions: ["lut"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Created with LUTCalc v"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATED WITH LUTCALC V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY BEN TURLEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEGAL INPUT -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CINEEI SHIFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLACK LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "% IRE"
+    CaseSensitive: false

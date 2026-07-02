@@ -1,0 +1,11 @@
+Name: World of Warcraft World Map Object
+URL: "https://wowdev.wiki/WMO"
+FileNameExtensions: ["wmo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "REVM\x04\0\0\0\x11\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "OM"
+    CaseSensitive: true

@@ -1,0 +1,20 @@
+Name: Explorations RPG Game Engine resource - Bitmap
+Description: Explorations is a role playing game engine developed by Tyrone W. Lee
+URL: "http://www.explore-rpg.com/default.htm"
+FileNameExtensions: ["gfx"]
+DetectionPatterns:
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "(\0\0\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "\xFF\xFF\x01\0 \0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 79
+    AsciiString: "\0x\x9C"
+    CaseSensitive: true

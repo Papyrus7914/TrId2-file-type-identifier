@@ -1,0 +1,20 @@
+Name: Assetto Corsa Visual Patch
+URL: "https://en.wikipedia.org/wiki/Assetto_Corsa"
+FileNameExtensions: ["vao-patch"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Manifest.json"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANIFEST.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG.INIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCH.DATAPK"
+    CaseSensitive: false

@@ -1,0 +1,58 @@
+Name: ElectrumSV configuration
+URL: "https://electrumsv.io/"
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LAST_UPDATE_CHECK_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPRESS_WELCOME-ESV-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIOUS_START_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST_BLACKLISTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSOLE-HISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECENTLY_OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW_UTXO_TAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVSERVERSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_MAXIMIZED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RPCPASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST_GOOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST_TRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SQLITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RPCUSER"
+    CaseSensitive: false

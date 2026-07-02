@@ -1,0 +1,37 @@
+Name: Auto3DEM output summary
+URL: "http://cryoem.ucsd.edu/programs.shtm"
+FileNameExtensions: ["txt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "------ AUTO3DEM version v"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DELTA ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP UNDAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP DAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFOCUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESTRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPTLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

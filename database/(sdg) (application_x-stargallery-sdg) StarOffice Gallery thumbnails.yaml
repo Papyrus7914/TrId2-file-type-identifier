@@ -1,0 +1,14 @@
+Name: StarOffice Gallery thumbnails
+URL: "http://fileformats.archiveteam.org/wiki/StarOffice_binary_formats"
+FileNameExtensions: ["sdg"]
+MimeType: application/x-stargallery-sdg
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SGA3\x04\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\x01BM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SGA3"
+    CaseSensitive: false

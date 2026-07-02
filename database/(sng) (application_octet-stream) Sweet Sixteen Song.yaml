@@ -1,0 +1,15 @@
+Name: Sweet Sixteen Song
+Description: Sequencer for Atari ST by Roni Music.
+URL: "http://www.ronimusic.com/s16_ata.htm"
+FileNameExtensions: ["sng"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        %
+    Bytes: [0x25, 0xAB, 0xCD, 0xEF, 0x00]
+  - Pos: any
+    AsciiString: "PATTERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SNG"
+    CaseSensitive: false

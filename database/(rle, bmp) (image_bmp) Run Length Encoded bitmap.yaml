@@ -1,0 +1,51 @@
+Name: Run Length Encoded bitmap
+Description: This variant with 40 byte DIB header and RLE-compression (1 or 2)
+URL: "http://fileformats.archiveteam.org/wiki/BMP"
+FileNameExtensions: ["rle", "bmp"]
+MimeType: image/bmp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BM"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0(\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 57
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 73
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 77
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 93
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 109
+    AsciiString: "\0"
+    CaseSensitive: true

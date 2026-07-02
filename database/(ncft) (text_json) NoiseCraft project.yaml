@@ -1,0 +1,41 @@
+Name: NoiseCraft project
+URL: "https://noisecraft.app/"
+FileNameExtensions: ["ncft"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"title\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OUTNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

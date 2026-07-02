@@ -1,0 +1,12 @@
+Name: Hippel COmpressed SOng module
+Description: A variant of the Hippel music format. This also includes Hippel COSO 7V (seven voices) music. COSO means 'crunched datablock', i.e. the music data is compressed. The Hippel-COSO file format can be decrunched into the regular Hippel format.
+URL: "http://www.exotica.org.uk/wiki/Hippel-COSO"
+FileNameExtensions: ["hipc"]
+MimeType: audio/-xmod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "COSO\0\0\0@\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "TFMX\0"
+    CaseSensitive: true

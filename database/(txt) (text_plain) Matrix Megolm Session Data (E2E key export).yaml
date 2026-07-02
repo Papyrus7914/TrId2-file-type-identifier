@@ -1,0 +1,11 @@
+Name: Matrix Megolm Session Data (E2E key export)
+URL: "https://spec.matrix.org/latest/client-server-api/#key-exports"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-----BEGIN MEGOLM SESSION DATA-----"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-----END MEGOLM SESSION DATA-----"
+    CaseSensitive: false

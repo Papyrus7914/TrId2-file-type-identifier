@@ -1,0 +1,17 @@
+Name: XDict Dictionary
+Description: Dictionary by Kingsoft.
+FileNameExtensions: ["dic"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XDAT\xB0\0"
+    CaseSensitive: true
+  - Pos: 125
+    AsciiString: " by Kingsoft "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BY KINGSOFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false

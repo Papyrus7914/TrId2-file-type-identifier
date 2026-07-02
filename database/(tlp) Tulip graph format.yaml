@@ -1,0 +1,19 @@
+Name: Tulip graph format
+URL: "http://tulip.labri.fr/TulipDrupal/"
+FileNameExtensions: ["tlp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(tlp \""
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(EDGE"
+    CaseSensitive: false

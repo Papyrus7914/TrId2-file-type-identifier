@@ -1,0 +1,29 @@
+Name: ACT! contact Map (v3.0)
+URL: "https://en.wikipedia.org/wiki/Act!_LLC"
+FileNameExtensions: ["map"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "4\x12\xCD\xAB\xFF\xFF\x01\0\x0E\0CActFileHeader\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CACTFILEHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMAPARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CITY"
+    CaseSensitive: false

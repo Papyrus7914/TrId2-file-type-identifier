@@ -1,0 +1,14 @@
+Name: Palm MobileDB database
+Description: HANDMARK MobileDB is probably the most common database application for Palm OS devices.
+URL: "http://www.handmark.com/products/detail.php?id=1"
+FileNameExtensions: ["pdb"]
+DetectionPatterns:
+  - Pos: 56
+    AsciiString: "\0\0\0\0Mdb1Mdb1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNFILED\0\0\0\0\0\0\0\0\0FIELDLABELS\0\0\0\0\0DATARECORDS\0\0\0\0\0DATARECORDSFOUT\0PREFERENCES\0\0\0\0\0DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDB1MDB1"
+    CaseSensitive: false

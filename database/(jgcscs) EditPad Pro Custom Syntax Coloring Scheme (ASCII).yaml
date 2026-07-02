@@ -1,0 +1,16 @@
+Name: EditPad Pro Custom Syntax Coloring Scheme (ASCII)
+URL: "http://www.editpadpro.com/"
+FileNameExtensions: ["jgcscs"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JGCSCS\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JGCSCS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

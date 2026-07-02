@@ -1,0 +1,11 @@
+Name: CHITUBOX sliced model
+URL: "https://www.chitubox.com/"
+FileNameExtensions: ["chitubox"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        C           #
+    Bytes: [0x43, 0x12, 0x23, 0xAB]
+  - Pos: any
+    AsciiString: ".STL"
+    CaseSensitive: false

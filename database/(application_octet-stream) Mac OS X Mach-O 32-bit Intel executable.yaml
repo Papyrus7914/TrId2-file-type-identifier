@@ -1,0 +1,7 @@
+Name: Mac OS X Mach-O 32-bit Intel executable
+URL: "https://en.wikipedia.org/wiki/Mach-O"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                \a
+    Bytes: [0xCE, 0xFA, 0xED, 0xFE, 0x07, 0x00, 0x00, 0x00]

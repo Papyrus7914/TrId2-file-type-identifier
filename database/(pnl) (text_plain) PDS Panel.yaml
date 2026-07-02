@@ -1,0 +1,17 @@
+Name: PDS Panel
+Description: Panel Display System, by Rick W. Hodgson.
+FileNameExtensions: ["pnl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ")PANEL NAME="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ")PANEL NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ")END )"
+    CaseSensitive: false

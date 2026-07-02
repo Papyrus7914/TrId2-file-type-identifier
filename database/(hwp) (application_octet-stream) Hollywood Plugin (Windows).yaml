@@ -1,0 +1,233 @@
+Name: Hollywood Plugin (Windows)
+URL: "https://en.wikipedia.org/wiki/Hollywood_(programming_language)"
+FileNameExtensions: ["hwp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUNHANDLEDEXCEPTIONFILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSYSTEMTIMEASFILETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUERYPERFORMANCECOUNTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCURRENTPROCESSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCURRENTTHREADID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISDEBUGGERPRESENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMINATEPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCOMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNEXPECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADLIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLLYWOOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETSTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HWP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAT"
+    CaseSensitive: false

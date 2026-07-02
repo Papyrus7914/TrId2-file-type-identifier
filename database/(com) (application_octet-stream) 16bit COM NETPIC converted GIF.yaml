@@ -1,0 +1,80 @@
+Name: 16bit COM NETPIC converted GIF
+URL: "http://fileformats.archiveteam.org/wiki/NETPIC_(Jim_Tucker)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    /                 t
+    Bytes: [0xF6, 0x06, 0x2F, 0x01, 0xFF, 0x74]
+  - Pos: 7
+    AsciiString: "\xBA\x15\x01\xB4\t\xCD!\xB4\a\xBE/\x01\xEB\bReady: $\xAC\n\xC0t"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROGRAM WAS PRODUCED BY NETPIC VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-V   KEEP GRAPHIC VIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUTH AUSTRALIA 5049"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETPIC IS COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT ENOUGH MEMORY$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "635 BRIGHTON ROAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-TNN DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "10TH SECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JIM TUCKER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PQRSTUVW000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-M   MONO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEACLIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JTUCKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S VGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1995"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: VariCAD Drawing (2020)
+URL: "http://fileformats.archiveteam.org/wiki/DWB"
+FileNameExtensions: ["dwb"]
+MimeType: application/varicad-dwb
+DetectionPatterns:
+  - Pos: 0
+    #        L
+    Bytes: [0x4C, 0x87, 0x01, 0x00]
+  - Pos: any
+    AsciiString: "V\0A\0R\0I\0C\0A\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0D\0W\0B"
+    CaseSensitive: false

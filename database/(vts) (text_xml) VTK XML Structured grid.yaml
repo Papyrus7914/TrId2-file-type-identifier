@@ -1,0 +1,53 @@
+Name: VTK XML Structured grid
+URL: "https://en.wikipedia.org/wiki/VTK"
+FileNameExtensions: ["vts"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\n<VTKFile type=\"StructuredGrid\" version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STRUCTUREDGRID WHOLEEXTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTKZLIBDATACOMPRESSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFCOMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTDATA SCALARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAARRAY TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIECE EXTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTKFILE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

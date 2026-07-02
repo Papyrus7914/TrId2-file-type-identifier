@@ -1,0 +1,89 @@
+Name: Food Data Exchange
+Description: A format for recipes exchange.
+FileNameExtensions: ["fdx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RECIPEINGREDIENT QUANTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECIPEPROCEDURE HEADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COOKBOOKCHAPTER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COOKBOOKCHAPTERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECIPEAUTHORNOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECIPEINGREDIENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COOKBOOKCHAPTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECIPEPROCEDURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENTCHAPTERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COOKBOOK NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCEDURETEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INGREDIENTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECIPE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COOKBOOKID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDX SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COOKBOOKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHICKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECIPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false

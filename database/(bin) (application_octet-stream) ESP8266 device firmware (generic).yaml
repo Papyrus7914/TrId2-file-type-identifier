@@ -1,0 +1,424 @@
+Name: ESP8266 device firmware (generic)
+URL: "https://en.wikipedia.org/wiki/ESP8266"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 6
+    AsciiString: "\x10@\0"
+    CaseSensitive: true
+  - Pos: 10
+    #              @
+    Bytes: [0x10, 0x40]
+  - Pos: 14
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INIT COUNTER\0\0\0\0PAIRWISE KEY EXPANSION\0\0\0\0\0\0\0\0\0\0GROUP KEY EXPANSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEEE80211_ACTION_VENDOR_SPEC_ATTACH REGISTER RECV CALL BACK ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCE SLP DISABLE\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0FORCE SLP ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFERRED FUNC NUMBER IS BIGGER THAN 10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULLDATA_FALSE\0\0\0\0\0\0\0\0\0PM CLOSE %D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULLDATA_TURE\0\0\0\0\0\0\0\0\0\0RF CLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWARE ONLY SUPPORTS ESP8266"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLEEP DISABLE\0\0\0SLEEP ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT_ROUTER_ID IS %D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO BUF FOR ACTION FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESTART TO USE USER BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REBOOT TO USE TEST BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK YOUR STATIC IP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORTED FLASH MAP."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEST ALREADY PASSED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLL_CAL EXCEEDS 2MS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID WEP KEY %S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECONNECT AFTER 1S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM PARAM ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTED WITH %S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DHCP CLIENT START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DHCP SERVER START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TX RTS ERROR 0X%X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789ABCDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO BUF FOR PROBE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASK QUEUE ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR PARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FATAL EXCEPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRC4RC5RCNRCNRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORTED TYPE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX CONNECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEED BOOT 1.4+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TX ERROR 0X%X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR ACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADD MISMATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPM CLOSE %D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PM WAKEUP ST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RXIQ_GET_MIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEC %X ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET_POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%S COMPILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO %S FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_RX_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%02X LEAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNEL %D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXIQ_PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0H\0P\0T\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMPTY OTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEN ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST_NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LMACRXBLK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LMACTXBLK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST PRIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER_OUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASK PRIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL_PWR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXIQ_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%D VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHG IF%D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEL IF%D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCVADDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPM OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP FAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMK NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATE_ATT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RXIQ_REG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANDONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME VAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICPP RC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCFRCFY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDK VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MAIN.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCEPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADD %D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADD IF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEN %D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PF IDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PP VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTRH~2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QPXARH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RM MIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RODATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SASSOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPTRL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%08X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-ENC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIV0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPC2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPC3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LLEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ESP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SEN"
+    CaseSensitive: false

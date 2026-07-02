@@ -1,0 +1,11 @@
+Name: Ensoniq WaveSet Format
+URL: "http://fileformats.archiveteam.org/wiki/Ensoniq_Concert_Wavetable"
+FileNameExtensions: ["ecw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ECLW"
+    CaseSensitive: true
+  - Pos: 184
+    AsciiString: ".ECW"
+    CaseSensitive: true

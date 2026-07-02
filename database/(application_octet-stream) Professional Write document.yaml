@@ -1,0 +1,19 @@
+Name: Professional Write document
+URL: "https://en.wikipedia.org/wiki/Pfs:Write"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "B\0"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "2.00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Spotfire Binary Data Format
+URL: "https://www.spotfire.com/"
+FileNameExtensions: ["sbdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              [                             [
+    Bytes: [0xDF, 0x5B, 0x01, 0x01, 0x00, 0xDF, 0x5B, 0x02]
+  - Pos: any
+    AsciiString: "DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

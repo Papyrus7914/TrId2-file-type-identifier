@@ -1,0 +1,30 @@
+Name: Atari ST FIRDC compressed program/executable
+Description: Compression tool by P. Putnik.
+URL: "https://atari.8bitchip.info/ppastsw.html"
+FileNameExtensions: ["prg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0\0\0\xDC\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0K\xFA\xFF\xFE M\xD1\xFC\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: ",M\xDD\xFC\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "(N$<\0"
+    CaseSensitive: true
+  - Pos: 56
+    #        -     ␠     S           f           &     L     C                 \f    t     ,     (           Q                       N           I                       B           z           |     `     x           B     @                 k     \f    g     \"    S     @                 Q                       `                             E     T     B           F           h                 $     L                             Q                       `           G                       K                       ␠     k                                                                             C                       ␠     \t    $     H     J
+    Bytes: [0x2D, 0x20, 0x53, 0x82, 0x66, 0xFA, 0x26, 0x4C, 0x43, 0xFA, 0x00, 0x0C, 0x74, 0x2C, 0x28, 0xD9, 0x51, 0xCA, 0xFF, 0xFC, 0x4E, 0xD3, 0x49, 0xED, 0xFF, 0xE4, 0x42, 0x80, 0x7A, 0x1F, 0x7C, 0x60, 0x78, 0x03, 0x42, 0x40, 0x10, 0x1E, 0x6B, 0x0C, 0x67, 0x22, 0x53, 0x40, 0x18, 0xDE, 0x51, 0xC8, 0xFF, 0xFC, 0x60, 0xEE, 0x14, 0x00, 0xC4, 0x45, 0x54, 0x42, 0xC0, 0x46, 0xE9, 0x68, 0x10, 0x1E, 0x24, 0x4C, 0x95, 0xC0, 0x18, 0xDA, 0x51, 0xCA, 0xFF, 0xFC, 0x60, 0xD6, 0x47, 0xED, 0xFF, 0xE4, 0x4B, 0xEB, 0xFF, 0x1C, 0x20, 0x6B, 0x00, 0x02, 0xD1, 0xEB, 0x00, 0x06, 0xD0, 0xFC, 0x00, 0x1C, 0xD1, 0xCB, 0x43, 0xEB, 0x00, 0x1C, 0x20, 0x09, 0x24, 0x48, 0x4A, 0x90]
+  - Pos: 165
+    AsciiString: "\x1A\xD3\xD8B\x81\xD1\x91\x12\x18g\x10\xB2<\0\x01f\x06\xD2\xFC\0\xFE`\xF0\xD3\xC1`\xEA+k\0\x02\0\f+k\0\x06\0\x14+k\0\n\0\x1C$-\0\b\"-\0\f\xD2\x82+A\0\x10$-\0\x14\xD2\x82+A\0\x18G\xFA\xFF\xFEB\x9A\xB7\xCAn\xFA @N\xD0"
+    CaseSensitive: true
+  - Pos: 249
+    #        `
+    Bytes: [0x60, 0x1A]

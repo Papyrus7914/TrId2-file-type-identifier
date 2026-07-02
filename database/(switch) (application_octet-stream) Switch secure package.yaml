@@ -1,0 +1,11 @@
+Name: Switch secure package
+URL: "https://en.wikipedia.org/wiki/Egress_Software_Technologies_Ltd"
+FileNameExtensions: ["switch"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SD"
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "s"
+    CaseSensitive: true

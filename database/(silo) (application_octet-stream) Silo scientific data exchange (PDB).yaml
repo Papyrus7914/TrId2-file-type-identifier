@@ -1,0 +1,104 @@
+Name: Silo scientific data exchange (PDB)
+URL: "http://fileformats.archiveteam.org/wiki/Silo"
+FileNameExtensions: ["silo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!<<PDB:II>>!\n$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHAR    **COMP_NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR    **PDB_NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER NCOMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCT-ALIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS-DIRECTORIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMITIVE-TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR    *NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR    *TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MAX_EXTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MIN_EXTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAJOR-ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO-CONV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_COORD0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_COORD1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOUBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CASTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYCLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDIMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL"
+    CaseSensitive: false

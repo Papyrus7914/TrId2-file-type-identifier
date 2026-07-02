@@ -1,0 +1,73 @@
+Name: 16bit DOS PCX2EXE (Mike Williams) Executable (v1.12)
+URL: "http://fileformats.archiveteam.org/wiki/PCX2EXE_(Mike_Williams)"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0 \0b\0\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 16
+    Bytes: [0x00, 0x04]
+  - Pos: 20
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1E\0\0\0\x01\0\x02\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: ";\0\0\0E\0\0\0V\0\0\0u\0\0\0"
+    CaseSensitive: true
+  - Pos: 512
+    AsciiString: "blSTUB0"
+    CaseSensitive: true
+  - Pos: 529
+    AsciiString: "\xEA\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 545
+    AsciiString: "\xEA\0\0\0\0\0\0\0\0\0\0\xFF\xFF\x94\x10\xE9\x14\0XWV\x0EP\xEA"
+    CaseSensitive: true
+  - Pos: 573
+    AsciiString: "XVW\x0EP\xEA"
+    CaseSensitive: true
+  - Pos: 583
+    #                          P
+    Bytes: [0xB8, 0x01, 0x00, 0x50, 0xB8]
+  - Pos: 589
+    AsciiString: "\0P\xB8\x02\0P\x9A"
+    CaseSensitive: true
+  - Pos: 599
+    #                                                              \b          6                       *                             *           P                       P
+    Bytes: [0x00, 0xC7, 0x06, 0x06, 0x00, 0x01, 0x12, 0xC7, 0x06, 0x08, 0x00, 0x36, 0x00, 0xC7, 0x06, 0x2A, 0x00, 0x10, 0x00, 0xB8, 0x2A, 0x00, 0x50, 0xB8, 0x06, 0x00, 0x50, 0x9A]
+  - Pos: any
+    AsciiString: "E\0\0\0V\0\0\0U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLSTUB0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "65LCK4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFIT7W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQRVWU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQRU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZXU*P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IIGG"
+    CaseSensitive: false

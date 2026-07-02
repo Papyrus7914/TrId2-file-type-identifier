@@ -1,0 +1,13 @@
+Name: Speckie Dictionary Installation
+URL: "http://www.speckie.com"
+FileNameExtensions: ["sdinstall"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".AFFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DICPK"
+    CaseSensitive: false

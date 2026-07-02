@@ -1,0 +1,14 @@
+Name: MathScript QuickCode script
+URL: "http://aminet.net/package/misc/math/msextras"
+FileNameExtensions: ["gc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "G4C\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SENDREXX QUICKCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUICKCODE.GC"
+    CaseSensitive: false

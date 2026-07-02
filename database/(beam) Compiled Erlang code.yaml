@@ -1,0 +1,61 @@
+Name: Compiled Erlang code
+URL: "http://en.wikipedia.org/wiki/Erlang_(programming_language)"
+FileNameExtensions: ["beam"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FOR1"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "BEAMAtom"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GET_MODULE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEAMATOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCEK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERLANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOR1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSNL"
+    CaseSensitive: false

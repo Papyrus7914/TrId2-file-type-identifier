@@ -1,0 +1,29 @@
+Name: Siemens NX knowledge-enabled reusable component
+URL: "https://en.wikipedia.org/wiki/Siemens_NX"
+FileNameExtensions: ["krx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KEYPARAMETER DESCRIPTIVENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAILIMAGE LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOWLEDGEREUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PRT"
+    CaseSensitive: false

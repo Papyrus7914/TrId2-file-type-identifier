@@ -1,0 +1,26 @@
+Name: Corel 10 Texture
+Description: Procedural texture format used by Corel.
+URL: "http://www.corel.com"
+FileNameExtensions: ["tex"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TDIPLOOM\x01"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 85
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 93
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TDIPLOOM"
+    CaseSensitive: false

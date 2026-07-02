@@ -1,0 +1,189 @@
+Name: 16bit EXE Bigtext text to Executable (generic)
+URL: "http://fileformats.archiveteam.org/wiki/Bigtext"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 11
+    Bytes: [0x04]
+  - Pos: 13
+    Bytes: [0x04]
+  - Pos: 16
+    AsciiString: "p\x17\0\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0\0\x1C\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII\0IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII\0IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IIIIIIIIIIIIIIIIII\0IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII(- PO BOX 207"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IIIIIIIIIIIIIIIIIIIIIIIIIII\0IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII(-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- REPEAT (GLOBAL) SEARCH UNSUCCESSFUL -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- REPEAT (LOCAL) SEARCH UNSUCCESSFUL -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED AND SUPPLIED BY KEVIN SOLWAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EWLETT PACKARD LASER COMPATIBLE OR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTING (PRESS ESC TO CANCEL)  U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- GLOBAL SEARCH UNSUCCESSFUL -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- LOCAL SEARCH UNSUCCESSFUL -U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUSTRALIA -IIIIIIIIIIIIIIIIII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY THE PROGRAMIIIIIIIIIIIIII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSON DOT MATRIX COMPATIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUE WITH NEXT PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URUNTIME ERROR \0 AT \0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ". . . SENDING TEXT TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSE AFTER EACH PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTING PAGE LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE ALREADY EXISTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME TO SEND TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER NOT READYU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALID COLOURS 0..U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE WRITE ERRORU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHING (    )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLE MANUSCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT 1992"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ST LUCIA 4067"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT TO FIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAS CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARROW KEYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIGTEXT V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(OR ESC)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".  PRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOBAL OR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$456789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQRVU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WVQUSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPT1U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCQRW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(S0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(S0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(S1S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(S5B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".  U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Q\0+F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS"
+    CaseSensitive: false

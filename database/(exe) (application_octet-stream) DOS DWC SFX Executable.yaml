@@ -1,0 +1,182 @@
+Name: DOS DWC SFX Executable
+URL: "http://fileformats.archiveteam.org/wiki/DWC"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "(\0\x06\0 \0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 15
+    AsciiString: "\x05\0\b"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\x14\0\0\x1E\0\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: 33
+    Bytes: [0x04]
+  - Pos: 35
+    AsciiString: "\x14\0\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\x15\0\0"
+    CaseSensitive: true
+  - Pos: 45
+    Bytes: [0x04]
+  - Pos: 47
+    AsciiString: ";\0\0"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0U\x8B\xEC\x83\xEC\x02\x83~\x04\x01~\x10\x8B^\x06\x8B_\x02\x80?!u\x05\xB8\x01\0\xEB\x02+\xC0P\xE8\xB8\0\x83\xC4\x02\x8B^\x06\xFF7\xE8"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SUNMONTUEWEDTHUFRISAT\0JANFEBMARAPRMAYJUNJULAUGSEPOCTNOVDEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM SELF-EXTRACTS TO THE CURRENT DIRECTORY ..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT FIND MYSELF.  PLEASE RENAME PROGRAM TO %S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOULD CORRUPTED FILE OVERWRITE EXISTING FILE (Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNEXPECTED EOF WHILE READING %S ... SKIPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%S NOT AN DWC ARCHIVE FILE OR IS CORRUPTED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLY %D DIRECTORY ENTRIES OUT OF %D FOUND."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MS RUN-TIME LIBRARY - COPYRIGHT (C) 198"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN COMPRESSION METHOD ... SKIPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T CREATE TEMPORARY FILE ... SKIPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTORY OF ARCHIVE %S CORRUPTED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHIVE %S TOO CORRUPTED TO USE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF DISK SPACE ON DRIVE %C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- FLOATING POINT NOT LOADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T OPEN NULL OUTPUT CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NULL POINTER ASSIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRC ERROR\0STACK OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORRUPTED .. IGNORING."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- INTEGER DIVIDE BY 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE %S CORRUPTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NULL)\0(NULL)\0+-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- STACK OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTORY ENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT CORP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN-TIME ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE MISMATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%3D%%\0\0\0\0\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUE (Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_FILE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGNORING..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TZ\0\0PST\0PDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRACTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIVING UP."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DWC\0ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERIFIED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$$XXXXXX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%-12S  -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UWVQS3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0NUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6002"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6003"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6009"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-P\0%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DWC"
+    CaseSensitive: false

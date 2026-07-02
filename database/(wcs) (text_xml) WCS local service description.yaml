@@ -1,0 +1,17 @@
+Name: WCS local service description
+URL: "https://gdal.org/drivers/raster/wcs.html"
+FileNameExtensions: ["wcs"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<WCS_GDAL>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COVERAGENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICEURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

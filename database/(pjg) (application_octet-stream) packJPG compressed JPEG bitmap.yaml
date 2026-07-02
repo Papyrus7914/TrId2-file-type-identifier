@@ -1,0 +1,10 @@
+Name: packJPG compressed JPEG bitmap
+URL: "http://packjpg.encode.ru/"
+FileNameExtensions: ["pjg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JS"
+    CaseSensitive: true
+  - Pos: 3
+    Bytes: [0x01]

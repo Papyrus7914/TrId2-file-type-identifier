@@ -1,0 +1,12 @@
+Name: Superplan spreadsheet (v3.x)
+Description: Amiga spreadsheet by Precision Software.
+URL: "https://archive.org/details/SuperPlan_1988_Precision_Software_Limited"
+FileNameExtensions: ["spp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "v3."
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: " LOGiSTiX DATA FILE\r\n\0\x1A"
+    CaseSensitive: true

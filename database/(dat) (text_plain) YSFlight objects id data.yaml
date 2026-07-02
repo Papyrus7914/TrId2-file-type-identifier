@@ -1,0 +1,32 @@
+Name: YSFlight objects id data
+URL: "https://ysflight.org/"
+FileNameExtensions: ["dat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IDENTIFY "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HTRADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIGUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITISAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXAIMPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXROTAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINAIMPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRENGTH"
+    CaseSensitive: false

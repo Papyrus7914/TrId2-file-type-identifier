@@ -1,0 +1,31 @@
+Name: TrackMania track
+URL: "http://www.trackmaniagame.com"
+FileNameExtensions: ["gbx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GBX\x06\0BUCR\00\0$"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\x02\0\0\0\x020\0$\x15\0\0\0\x030\0$"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0\0\0\x03\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "\0\x03\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BUCR\00\0$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NADEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEHICLESL"
+    CaseSensitive: false

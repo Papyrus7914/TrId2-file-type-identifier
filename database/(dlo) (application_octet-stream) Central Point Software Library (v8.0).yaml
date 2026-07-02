@@ -1,0 +1,36 @@
+Name: Central Point Software Library (v8.0)
+Description: Filename is LIBPCT01.DLO, 00, 02.
+URL: "https://en.wikipedia.org/wiki/PC_Tools_(software)"
+FileNameExtensions: ["dlo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "V80_LIB"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END OF LIBRARY GLOBAL DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTRAL POINT SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA\0SYSTEM\0DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVE BEING READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANCEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false

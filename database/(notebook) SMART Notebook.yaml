@@ -1,0 +1,22 @@
+Name: SMART Notebook
+URL: "http://www.smarttech.com"
+FileNameExtensions: ["notebook"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "IMSMANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SVGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

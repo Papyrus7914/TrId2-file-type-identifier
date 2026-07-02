@@ -1,0 +1,9 @@
+Name: Picture Packer bitmap
+Description: Atari ST format.
+URL: "http://fileformats.archiveteam.org/wiki/Picture_Packer"
+FileNameExtensions: ["pp1", "pp2", "pp3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \a          c
+    Bytes: [0x06, 0x07, 0x19, 0x63]

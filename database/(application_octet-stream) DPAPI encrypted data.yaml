@@ -1,0 +1,8 @@
+Name: DPAPI encrypted data
+Description: Microsoft Windows Data Protection API.
+URL: "https://www.nirsoft.net/utils/dpapi_data_decryptor.html"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                                                                      z                 O
+    Bytes: [0x01, 0x00, 0x00, 0x00, 0xD0, 0x8C, 0x9D, 0xDF, 0x01, 0x15, 0xD1, 0x11, 0x8C, 0x7A, 0x00, 0xC0, 0x4F, 0xC2, 0x97, 0xEB]

@@ -1,0 +1,9 @@
+Name: ZX Spectrum Tape image
+Description: CDT is exactly the same format, but used for Amstrad tapes.
+URL: "http://www.worldofspectrum.org/TZXformat.html"
+FileNameExtensions: ["tzx", "cdt"]
+MimeType: application/x-spectrum-tzx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZXTape!\x1A"
+    CaseSensitive: true

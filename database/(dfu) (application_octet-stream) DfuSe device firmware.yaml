@@ -1,0 +1,11 @@
+Name: DfuSe device firmware
+URL: "http://dfu-util.gnumonks.org/dfuse.html"
+FileNameExtensions: ["dfu"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DfuSe\x01"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\x01Target\0\x01\0\0\0"
+    CaseSensitive: true

@@ -1,0 +1,46 @@
+Name: 16bit COM Factor - FoXCoRe crack
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xBA]
+  - Pos: 3
+    Bytes: [0xE8]
+  - Pos: 6
+    Bytes: [0xBA]
+  - Pos: 9
+    Bytes: [0xE8]
+  - Pos: 12
+    Bytes: [0xB9]
+  - Pos: 14
+    Bytes: [0x00, 0xBA]
+  - Pos: any
+    AsciiString: "$BAD VERSION OR ALREADY PATCHED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FILE NOT FOUND."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACTOR PRESENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRACKED BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCHING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S ERROR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FILE R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOXCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DONE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN95"
+    CaseSensitive: false

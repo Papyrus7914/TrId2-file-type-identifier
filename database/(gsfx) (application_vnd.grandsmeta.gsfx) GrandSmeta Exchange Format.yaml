@@ -1,0 +1,26 @@
+Name: GrandSmeta Exchange Format
+URL: "https://www.grandsmeta.ru/"
+FileNameExtensions: ["gsfx"]
+MimeType: application/vnd.grandsmeta.gsfx
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Properties.txt"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROPERTIES.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA.SIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDTSMETA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE"
+    CaseSensitive: false

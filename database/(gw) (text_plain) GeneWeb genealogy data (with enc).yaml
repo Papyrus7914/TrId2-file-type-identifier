@@ -1,0 +1,20 @@
+Name: GeneWeb genealogy data (with enc)
+URL: "https://geneweb.tuxfamily.org/wiki/GeneWeb"
+FileNameExtensions: ["gw"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "encoding: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAM"
+    CaseSensitive: false

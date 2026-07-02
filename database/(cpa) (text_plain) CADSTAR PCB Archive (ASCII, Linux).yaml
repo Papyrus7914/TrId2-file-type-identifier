@@ -1,0 +1,11 @@
+Name: CADSTAR PCB Archive (ASCII, Linux)
+URL: "https://en.wikipedia.org/wiki/CADSTAR"
+FileNameExtensions: ["cpa"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r(CADSTARPCB\r (HEADER\r  (FORMAT LAYOUT "
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: ")\r  (JOBFILE \""
+    CaseSensitive: true

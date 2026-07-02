@@ -1,0 +1,54 @@
+Name: Gothic II save game (player data)
+Description: "Files have names like: NEWWORLD.SAV, DRAGONISLAND.SAV, OLDWORLD.SAV"
+URL: "https://www.mobygames.com/game/7866/gothic-ii/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZenGin Archive\nver 1\nzCArchiverGeneric\nBINARY\nsaveGame 1\ndate "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VISUAL\0ZCDECAL\0DECAL_MISC_SPIDERWEBHANG.TGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GATE_START\0GATE_STOP\0GATE_LOOP\0GATE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STONE_START\0STONE_STOP\0STONE_LOOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HUMANS_SKELETON.MDS\0HUMANS_CBOWT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHESTBIG_OCCHESTLARGELOCKED.MDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECAL_MISC_SPIDERWEBHANG.TGA\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%\0ZCSKYCONTROLER_OUTDOOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISUAL\0ZCDECAL\0ZFLARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%\0OCTRIGGERSCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%\0ZCPFXCONTROLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MDS\0HUMANS_BOWT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZCWAYPOINT\0WP_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%\0OCMOBSWITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%\0OCMOBDOOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%\0ZCTRIGGER"
+    CaseSensitive: false

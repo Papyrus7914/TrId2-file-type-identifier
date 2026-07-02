@@ -1,0 +1,26 @@
+Name: Clarion Project
+URL: "https://en.wikipedia.org/wiki/Clarion_(programming_language)"
+FileNameExtensions: ["prj"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-- "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRAGMA DEBUG(VID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL CLARION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM WIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOEDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK"
+    CaseSensitive: false

@@ -1,0 +1,9 @@
+Name: MultiArtist bitmap
+Description: Old ZX Spectrum format.
+URL: "http://recoil.sourceforge.net/formats.html"
+FileNameExtensions: ["mg1", "mg2", "mg4", "mg8"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MGH\x01"
+    CaseSensitive: true

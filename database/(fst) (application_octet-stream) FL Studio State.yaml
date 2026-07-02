@@ -1,0 +1,11 @@
+Name: FL Studio State
+URL: "http://fileformats.archiveteam.org/wiki/FL_Studio_State_File"
+FileNameExtensions: ["fst"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FLhd\x06\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "FLdt"
+    CaseSensitive: true

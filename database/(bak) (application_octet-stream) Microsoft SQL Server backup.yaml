@@ -1,0 +1,178 @@
+Name: Microsoft SQL Server backup
+FileNameExtensions: ["bak"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TAPE\0\0\x03\0\x8C\0\x0E\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x02\0\x87\x05"
+    CaseSensitive: true
+  - Pos: 93
+    AsciiString: "\x01M\0i\0c\0r\0o\0s\0o\0f\0t\0 \0S\0Q\0L\0 \0S\0e\0r\0v\0e\0r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "M\0I\0C\0R\0O\0S\0O\0F\0T\0 \0S\0Q\0L\0 \0S\0E\0R\0V\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U\0N\0I\0Q\0U\0E\0I\0D\0E\0N\0T\0I\0F\0I\0E\0R\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0L\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0I\0M\0E\0S\0T\0A\0M\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0A\0C\0K\0U\0P\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0E\0F\0A\0U\0L\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0O\0P\0E\0R\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0_\0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0B\0J\0E\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0D\0M\0I\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0A\0S\0E\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0C\0E\0S\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0S\0Y\0S\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G\0R\0O\0U\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0R\0D\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0W\0N\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0A\0T\0O\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0P\0R\0O\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0Y\0P\0E\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0R\0I\0T\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0L\0D\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0C\0C\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0N\0T\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0R\0T\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0S\0S\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G\0F\0I\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0D\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0R\0I\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0A\0R\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0A\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0N\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0I\0T\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0A\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0O\0R\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0D\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0S\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0U\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0_\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0O\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0L\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0A\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0E\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U\0R\0I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0D\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0S\0E"
+    CaseSensitive: false

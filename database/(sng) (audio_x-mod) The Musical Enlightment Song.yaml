@@ -1,0 +1,14 @@
+Name: The Musical Enlightment Song
+Description: Amiga tracker.
+FileNameExtensions: ["sng"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "TMUSNAME"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SNGSHDR"
+    CaseSensitive: false

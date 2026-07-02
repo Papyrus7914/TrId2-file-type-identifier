@@ -1,0 +1,11 @@
+Name: SmartCat disk Catalog
+Description: Disks organizer tool for Win 3.x by Oakley Data Services.
+FileNameExtensions: ["cat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x02SmartCat"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SMARTCAT"
+    CaseSensitive: false

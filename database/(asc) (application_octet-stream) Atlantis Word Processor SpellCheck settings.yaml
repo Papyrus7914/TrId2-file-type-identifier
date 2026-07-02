@@ -1,0 +1,32 @@
+Name: Atlantis Word Processor SpellCheck settings
+URL: "http://www.atlantiswordprocessor.com/"
+FileNameExtensions: ["asc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[General]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EDITABLE LEXICONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIXED LEXICONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEXICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TLX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ZLX"
+    CaseSensitive: false

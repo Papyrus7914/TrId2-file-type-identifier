@@ -1,0 +1,25 @@
+Name: WinDev Controls' Styles description
+Description: WinDev is a RAD tool by PC Soft.
+URL: "http://www.windev.com"
+FileNameExtensions: ["gab"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PCS\0\x14\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\v\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 19
+    Bytes: [0x04]
+  - Pos: 23
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

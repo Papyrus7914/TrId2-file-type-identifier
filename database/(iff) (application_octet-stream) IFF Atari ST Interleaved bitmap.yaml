@@ -1,0 +1,15 @@
+Name: IFF Atari ST Interleaved bitmap
+Description: Used by the Atari ST version of Deluxe Paint.
+URL: "http://fileformats.archiveteam.org/wiki/ILBM"
+FileNameExtensions: ["iff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "ILBM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VDAT"
+    CaseSensitive: false

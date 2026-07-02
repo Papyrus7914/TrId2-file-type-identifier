@@ -1,0 +1,9 @@
+Name: Game Boy Advance ROM
+URL: "http://www.psproms.com/emulation/gba_roms_emulator.htm"
+FileNameExtensions: ["gba"]
+DetectionPatterns:
+  - Pos: 3
+    Bytes: [0xEA]
+  - Pos: any
+    AsciiString: "$$$$$"
+    CaseSensitive: false

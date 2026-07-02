@@ -1,0 +1,11 @@
+Name: Toshiba Pasopia ROM image
+URL: "https://en.wikipedia.org/wiki/Toshiba_Pasopia"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xAA\x1F\x04\0\x04\x80\0\x01\x04\x04\x01\x03\b\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 776
+    #        \t    \n    \v    \f    \r
+    Bytes: [0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17, 0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E]

@@ -1,0 +1,36 @@
+Name: Django project management script
+Description: "Filename: django.py"
+URL: "https://en.wikipedia.org/wiki/Django_(web_framework)"
+FileNameExtensions: ["py"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#!/usr/bin/env python"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FROM DJANGO.CORE.MANAGEMENT IMPORT EXECUTE_FROM_COMMAND_LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXECUTE_FROM_COMMAND_LINE(SYS.ARGV)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DJANGO_SETTINGS_MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OS.ENVIRON.SETDEFAULT("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IF __NAME__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENV PYTHON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORT SYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORT OS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__MAIN__"
+    CaseSensitive: false

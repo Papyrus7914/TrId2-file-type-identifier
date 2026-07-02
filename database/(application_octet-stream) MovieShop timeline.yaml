@@ -1,0 +1,13 @@
+Name: MovieShop timeline
+Description: Desktop video software for Amiga/DraCo.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                            @
+    Bytes: [0xCB, 0x04, 0xEB, 0x04, 0x00, 0x14, 0x40]
+  - Pos: any
+    AsciiString: "MS_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXT"
+    CaseSensitive: false

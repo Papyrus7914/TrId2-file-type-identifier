@@ -1,0 +1,17 @@
+Name: Xilinx Block Memory Map (with rem)
+URL: "https://www.xilinx.com/itp/xilinx10/help/platform_studio/ps_d_bmm.htm"
+FileNameExtensions: ["bmm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "//"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END_ADDRESS_SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_BUS_BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAMB"
+    CaseSensitive: false

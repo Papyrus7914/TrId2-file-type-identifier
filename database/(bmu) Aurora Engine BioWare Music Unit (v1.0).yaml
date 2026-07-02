@@ -1,0 +1,11 @@
+Name: Aurora Engine BioWare Music Unit (v1.0)
+Description: "Aurora Engine BMU files are MP3 files with an additional header.  Applies to: NWN"
+URL: "http://tinyurl.com/7mjdh3b"
+FileNameExtensions: ["bmu"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BMU V1.0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0"
+    CaseSensitive: true

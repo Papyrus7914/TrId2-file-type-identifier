@@ -1,0 +1,76 @@
+Name: WiX Library
+URL: "http://en.wikipedia.org/wiki/WiX"
+FileNameExtensions: ["wixlib"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?><wixLibrary xmlns=\"http://schemas.microsoft.com/wix/2003/11/libraries\" version=\"2.0.2207.0\"><wixObject xmlns=\"http://schemas.microsoft.com/wix/2003/04/objects\" src=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTALLEXECUTESEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUPLE SOURCELINENUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIXLIBRARY XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIXOBJECT XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELIVERY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAGMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WXS*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIX2"
+    CaseSensitive: false

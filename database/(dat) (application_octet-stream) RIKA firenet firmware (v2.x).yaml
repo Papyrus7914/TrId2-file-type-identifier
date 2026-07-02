@@ -1,0 +1,95 @@
+Name: RIKA firenet firmware (v2.x)
+URL: "https://www.rika-firenet.com/"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "MwLmfN\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\x01h\0e\0\0\0 \0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TINYUSB DEVICE\0\0123456\0\0TINYUSB CDC\0TINYUSB MSC\0TINYUSB HID\0TUSB_CDC_ACM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT\0AT+S.FWUPDATE\0UPGRADE THE ONBOARD FIRMWARE FROM THE SPECIFIED HOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%S\0\0RIKA-STOVE\0\0UPDATE SUCCESSFULLY DOWNLOADED. RESTART NOW."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESP_EVENT_HANDLER_INSTANCE_UNREGISTER(IP_EVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COULD NOT PARSE APP-VERSION FROM FIRMWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST_FIRENET_STATUS\0POST_CDCDEVICE_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789ABCDEFGET_FIRENET_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOVES-V2.RIKA-FIRENET.COM\0\0HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION_FIRENET_ESP32-S3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V%D.%D\0WIFI FIRMWARE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-RIKA-PROTOCOL\0X-RIKA-TOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWARE UPGRADE FAILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOVES.RIKA-FIRENET.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRENET_ESP32_WIFI.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%D.%D.%D.%D.%D.%D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOUND PARTITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIKA FIRENET 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WLANIF_INIT\0U-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRENET_TOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUSB_RUN_TASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRENET_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0\0ESP_E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FHTELAM2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTML\0CON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WLANIF.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%D\0CO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".C\0R"
+    CaseSensitive: false

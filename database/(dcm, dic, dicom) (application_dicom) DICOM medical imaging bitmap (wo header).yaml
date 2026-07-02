@@ -1,0 +1,11 @@
+Name: DICOM medical imaging bitmap (w/o header)
+URL: "https://en.wikipedia.org/wiki/DICOM#Data_format"
+FileNameExtensions: ["dcm", "dic", "dicom"]
+MimeType: application/dicom
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\b\0"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true

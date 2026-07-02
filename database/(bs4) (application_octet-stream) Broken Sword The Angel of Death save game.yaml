@@ -1,0 +1,20 @@
+Name: "Broken Sword: The Angel of Death save game"
+URL: "https://en.wikipedia.org/wiki/Broken_Sword:_The_Angel_of_Death"
+FileNameExtensions: ["bs4"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RGMH"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "B\0r\0o\0k\0e\0n\0 \0S\0w\0o\0r\0d\0:\0 \0T\0h\0e\0 \0A\0n\0g\0e\0l\0 \0o\0f\0 \0D\0e\0a\0t\0h"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "T\0H\0E\0 \0A\0N\0G\0E\0L\0 \0O\0F\0 \0D\0E\0A\0T\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0R\0O\0K\0E\0N\0 \0S\0W\0O\0R\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE_GAME"
+    CaseSensitive: false

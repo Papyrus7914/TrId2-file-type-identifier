@@ -1,0 +1,15 @@
+Name: WatchMaker Watch face
+Description: WatchMaker is an app to create and manage watch faces for Android Wear devices.
+URL: "https://play.google.com/store/apps/details?id=slide.watchFrenzy"
+FileNameExtensions: ["watch"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PREVIEW.JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WATCH.XMLPK"
+    CaseSensitive: false

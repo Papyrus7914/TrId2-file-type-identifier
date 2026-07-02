@@ -1,0 +1,8 @@
+Name: Rocket eBook
+URL: "https://rbmake.sourceforge.io/rb_format.html"
+FileNameExtensions: ["rb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \f          \f
+    Bytes: [0xB0, 0x0C, 0xB0, 0x0C]

@@ -1,0 +1,14 @@
+Name: Visual Studio unit test configuration (UTF-8)
+URL: "https://learn.microsoft.com/en-us/visualstudio/test/configure-unit-tests-by-using-a-dot-runsettings-file?view=vs-2022"
+FileNameExtensions: ["runsettings"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNSETTINGS"
+    CaseSensitive: false

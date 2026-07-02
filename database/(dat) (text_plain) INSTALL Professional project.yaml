@@ -1,0 +1,32 @@
+Name: INSTALL Professional project
+URL: "https://web.archive.org/web/19991110100412/http://www.install.com/install.htm"
+FileNameExtensions: ["dat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@DefineProject"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFINEDISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTDRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDDISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

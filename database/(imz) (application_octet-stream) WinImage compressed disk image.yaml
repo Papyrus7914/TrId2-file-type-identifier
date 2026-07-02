@@ -1,0 +1,14 @@
+Name: WinImage compressed disk image
+URL: "http://www.winimage.com/"
+FileNameExtensions: ["imz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PK\x03\x04\n\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0\b\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".IMA"
+    CaseSensitive: false

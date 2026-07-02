@@ -1,0 +1,32 @@
+Name: MusX Archimedes Tracker module
+URL: "http://fileformats.archiveteam.org/wiki/Archimedes_Tracker_module"
+FileNameExtensions: ["musx"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MUSX"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "TINF"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "MVOX"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "STER"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "MNAM"
+    CaseSensitive: true
+  - Pos: 88
+    AsciiString: "ANAM"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "MLEN"
+    CaseSensitive: true
+  - Pos: 140
+    AsciiString: "PNUM"
+    CaseSensitive: true
+  - Pos: 152
+    AsciiString: "PLEN"
+    CaseSensitive: true

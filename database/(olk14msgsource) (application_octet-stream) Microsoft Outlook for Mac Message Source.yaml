@@ -1,0 +1,86 @@
+Name: Microsoft Outlook for Mac Message Source
+URL: "https://en.wikipedia.org/wiki/Microsoft_Outlook"
+FileNameExtensions: ["olk14msgsource"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSrc"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "Received: from "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "X-MS-EXCHANGE-ORGANIZATION-AUTHSOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-MS-EXCHANGE-ORGANIZATION-AUTHAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TRANSFER-ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-MS-TNEF-CORRELATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCEPT-LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-MS-HAS-ATTACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") WITH MAPI ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREAD-INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREAD-TOPIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTERNATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIPART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LOCAL ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSRC"
+    CaseSensitive: false

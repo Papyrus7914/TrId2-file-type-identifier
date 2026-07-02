@@ -1,0 +1,23 @@
+Name: AOL Modem parameters
+URL: "https://en.wikipedia.org/wiki/AOL"
+FileNameExtensions: ["mdm"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[ID]\r\nName="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RESULTCODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADVALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

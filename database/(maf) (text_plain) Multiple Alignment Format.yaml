@@ -1,0 +1,17 @@
+Name: Multiple Alignment Format
+URL: "http://biopython.org/wiki/Multiple_Alignment_Format"
+FileNameExtensions: ["maf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "##maf version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAF VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A SCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORING"
+    CaseSensitive: false

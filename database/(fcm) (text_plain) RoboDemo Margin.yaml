@@ -1,0 +1,17 @@
+Name: RoboDemo Margin
+URL: "http://fileformats.archiveteam.org/wiki/Captivate"
+FileNameExtensions: ["fcm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Left Margin="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOTTOM MARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT MARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOP MARGIN"
+    CaseSensitive: false

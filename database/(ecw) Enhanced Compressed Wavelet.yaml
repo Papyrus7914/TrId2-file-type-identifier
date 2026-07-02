@@ -1,0 +1,9 @@
+Name: Enhanced Compressed Wavelet
+FileNameExtensions: ["ecw"]
+DetectionPatterns:
+  - Pos: 0
+    #        e
+    Bytes: [0x65, 0x02, 0x01]
+  - Pos: 5
+    AsciiString: "\x04\0\0"
+    CaseSensitive: true

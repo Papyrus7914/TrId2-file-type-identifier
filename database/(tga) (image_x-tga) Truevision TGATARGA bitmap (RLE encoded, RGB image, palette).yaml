@@ -1,0 +1,8 @@
+Name: Truevision TGA/TARGA bitmap (RLE encoded, RGB image, palette)
+URL: "https://en.wikipedia.org/wiki/Truevision_TGA"
+FileNameExtensions: ["tga"]
+MimeType: image/x-tga
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x01\n\0"
+    CaseSensitive: true

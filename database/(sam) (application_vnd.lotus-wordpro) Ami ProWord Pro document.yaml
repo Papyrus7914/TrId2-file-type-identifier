@@ -1,0 +1,17 @@
+Name: Ami Pro/Word Pro document
+URL: "https://en.wikipedia.org/wiki/Am%C3%AD"
+FileNameExtensions: ["sam"]
+MimeType: application/vnd.lotus-wordpro
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[ver]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EDOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANG"
+    CaseSensitive: false

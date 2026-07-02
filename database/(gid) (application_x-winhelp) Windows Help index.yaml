@@ -1,0 +1,31 @@
+Name: Windows Help index
+URL: "https://en.wikipedia.org/wiki/WinHelp"
+FileNameExtensions: ["gid"]
+MimeType: application/x-winhelp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "?_\x03\0"
+    CaseSensitive: true
+  - Pos: 7
+    Bytes: [0x00, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "KWBTREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KWMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HLP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PETE"
+    CaseSensitive: false

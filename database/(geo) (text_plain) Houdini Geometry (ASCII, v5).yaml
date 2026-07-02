@@ -1,0 +1,38 @@
+Name: Houdini Geometry (ASCII, v5)
+URL: "https://en.wikipedia.org/wiki/Houdini_(software)"
+FileNameExtensions: ["geo"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PGEOMETRY V5"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NVERTEXATTRIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPOINTATTRIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPOINTGROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPRIMATTRIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPRIMGROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINEXTRA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDEXTRA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NATTRIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPRIMS"
+    CaseSensitive: false

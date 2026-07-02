@@ -1,0 +1,44 @@
+Name: OS/2 Executable (generic)
+URL: "https://en.wikipedia.org/wiki/OS/2"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 45
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true

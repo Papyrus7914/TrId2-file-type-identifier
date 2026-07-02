@@ -1,0 +1,17 @@
+Name: Rebol source code
+URL: "https://en.wikipedia.org/wiki/Rebol"
+FileNameExtensions: ["r"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "R"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: " ["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

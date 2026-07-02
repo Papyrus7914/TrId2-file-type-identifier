@@ -1,0 +1,10 @@
+Name: Dwarf Fortress save data
+URL: "http://en.wikipedia.org/wiki/Dwarf_Fortress"
+FileNameExtensions: ["dat"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\x05\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0x\xDA"
+    CaseSensitive: true

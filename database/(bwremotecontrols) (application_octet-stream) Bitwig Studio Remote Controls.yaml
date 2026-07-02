@@ -1,0 +1,41 @@
+Name: Bitwig Studio Remote Controls
+URL: "https://www.bitwig.com/"
+FileNameExtensions: ["bwremotecontrols"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BtWg0003000200ba000014"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "meta\0\0\0\x01\0\0\0\x18application_version_name\b\0\0\0\x065.3.13\0\0\0\x01\0\0\0\x06branch\b\0\0\0\breleases\0\0\0\x01\0\0\0\tdevice_id\b\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(4917385AAE57C052754475B14B6F933FBFAD52FD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION_VERSION_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITWIG-REMOTE-CONTROLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION_NO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRANCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

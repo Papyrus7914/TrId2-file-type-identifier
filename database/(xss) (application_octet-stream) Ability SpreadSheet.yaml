@@ -1,0 +1,26 @@
+Name: Ability SpreadSheet
+URL: "https://en.wikipedia.org/wiki/Ability_Plus"
+FileNameExtensions: ["xss"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "--HDR1.0-- "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LIMITRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGBOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGTOP"
+    CaseSensitive: false

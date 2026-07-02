@@ -1,0 +1,11 @@
+Name: Norton Change Directory info
+URL: "https://en.wikipedia.org/wiki/Norton_Utilities"
+FileNameExtensions: ["ncd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PNCI"
+    CaseSensitive: true
+  - Pos: 8
+    #              \\
+    Bytes: [0x01, 0x5C]

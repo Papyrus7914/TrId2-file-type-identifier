@@ -1,0 +1,42 @@
+Name: Bohemian Coding Sketch drawing (JSON based)
+Description: Newer format.
+URL: "https://en.wikipedia.org/wiki/Sketch_(application)"
+FileNameExtensions: ["sketch"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "document.json"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCUMENT.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRGB"
+    CaseSensitive: false

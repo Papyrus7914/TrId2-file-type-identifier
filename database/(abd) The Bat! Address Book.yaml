@@ -1,0 +1,16 @@
+Name: The Bat! Address Book
+URL: "http://www.ritlabs.com/the_bat/index.html"
+FileNameExtensions: ["abd"]
+DetectionPatterns:
+  - Pos: 0
+    #                                D
+    Bytes: [0x91, 0x89, 0x98, 0x19, 0x44, 0x00, 0x00, 0x00]
+  - Pos: 9
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0\0\x01\0\0"
+    CaseSensitive: true

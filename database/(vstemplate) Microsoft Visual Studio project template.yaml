@@ -1,0 +1,43 @@
+Name: Microsoft Visual Studio project template
+URL: "http://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+FileNameExtensions: ["vstemplate"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<VSTemplate Version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSTEMPLATE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATECONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVELOPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2005"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false

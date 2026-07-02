@@ -1,0 +1,26 @@
+Name: SwissMicros DM42 DMCP firmware
+URL: "https://www.swissmicros.com/"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          ␠
+    Bytes: [0xF0, 0x7F, 0x01, 0x20]
+  - Pos: any
+    AsciiString: "FIRMWARE IS NOW IN INCONSISTENT\0STATE. YOU HAVE TO PROCEED WITH\0RESET+PGM AND DM_TOOL OR DFU-UTIL.\0\0SEE USER MANUAL FOR DETAILS.\0\0\0\0PRESSING RESET NOW CAN DRAIN BATTERY\0\0\0\0QUICKLY IF NOT POWERED FROM USB.\0\0\0\0SHUTTING DOWN TO LOW POWER MODE.\0\0\0\0ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOTLOADER MODE\0CONNECT USB TO ENTER BOOTLOADER\0MODE.\0\0\0NOTE THAT RESET IS THE ONLY\0WAY TO EXIT BOOTLOADER MODE.\0\0\0\0BOOTLOADER ACTIVE.\0\0DO NOT DISCONNECT USB.\0\0START THE UPDATE PROCESS OR\0PRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWISSMICROS GMBH\0STANDALONE SYSTEM FIRMWARE.\0 PRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE CALCULATOR STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISSING DISK INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWISSMICDM42"
+    CaseSensitive: false

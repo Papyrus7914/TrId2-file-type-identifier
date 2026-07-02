@@ -1,0 +1,50 @@
+Name: CrossTie profile
+URL: "https://support.codeweavers.com/en_US/crosstie-data-startpage"
+FileNameExtensions: ["tie"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<c4p>\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-- SHA2-256 SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.CODEWEAVERS.C4."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CXVERSION PRODUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION LANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTLETEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPPROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP APPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME LANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CXOFFICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAG"
+    CaseSensitive: false

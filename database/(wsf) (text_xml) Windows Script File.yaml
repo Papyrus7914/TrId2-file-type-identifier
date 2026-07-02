@@ -1,0 +1,13 @@
+Name: Windows Script File
+FileNameExtensions: ["wsf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WSCRIPT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOB ID"
+    CaseSensitive: false

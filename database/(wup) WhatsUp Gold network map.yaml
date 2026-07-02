@@ -1,0 +1,22 @@
+Name: WhatsUp Gold network map
+URL: "http://www.whatsupgold.com/"
+FileNameExtensions: ["wup"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WUP\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "WhatsUp2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WHATSUP2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: virt-viewer configuration
+URL: "https://virt-manager.org"
+FileNameExtensions: ["vv"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[virt-viewer]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOGGLE-FULLSCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE-CURSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

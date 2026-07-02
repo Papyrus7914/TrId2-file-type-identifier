@@ -1,0 +1,11 @@
+Name: ZX spectrum +3 DOS BASIC source
+URL: "https://en.wikipedia.org/wiki/ZX_Spectrum#ZX_Spectrum_+3"
+FileNameExtensions: ["bas"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PLUS3DOS\x1A"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0"
+    CaseSensitive: true

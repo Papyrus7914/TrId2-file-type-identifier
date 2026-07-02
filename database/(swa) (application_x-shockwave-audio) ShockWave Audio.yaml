@@ -1,0 +1,11 @@
+Name: ShockWave Audio
+URL: "https://en.wikipedia.org/wiki/Adobe_Shockwave"
+FileNameExtensions: ["swa"]
+MimeType: application/x-shockwave-audio
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x01@\0\0\0\x03\0\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "MACRZ\b\xCD@S[\x11\xD0\xA8\xBB\0\xA0\xC9\0\x8AH\0"
+    CaseSensitive: true

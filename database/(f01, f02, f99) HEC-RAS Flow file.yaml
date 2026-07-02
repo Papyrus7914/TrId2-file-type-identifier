@@ -1,0 +1,52 @@
+Name: HEC-RAS Flow file
+Description: Extension can range from F01 to F99.
+FileNameExtensions: ["f01", "f02", "f99"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Flow Title="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOUNDARY FOR RIVER RCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSS IMPORT GETINTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSS IMPORT FILLOPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSS IMPORT STARTDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSS IMPORT STARTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSS IMPORT INTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSS IMPORT ENDTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSS IMPORT GETPEAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF PROFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSS IMPORT ENDDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFILE NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOW TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DN TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UP TYPE"
+    CaseSensitive: false

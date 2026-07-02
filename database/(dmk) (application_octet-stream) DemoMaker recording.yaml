@@ -1,0 +1,36 @@
+Name: DemoMaker recording
+URL: "http://fileformats.archiveteam.org/wiki/DemoMaker_(R._Janorkar)"
+FileNameExtensions: ["dmk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x03, 0x19, 0x02, 0x01, 0x00, 0x00, 0x00, 0x00]
+  - Pos: 9
+    Bytes: [0x01]
+  - Pos: 12
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0SCREEN\0\x04"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0DER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLR\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0DER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0DER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0DER"
+    CaseSensitive: false

@@ -1,0 +1,80 @@
+Name: HEAD AFNI medical metadata
+URL: "http://fileformats.archiveteam.org/wiki/BRIK/HEAD"
+FileNameExtensions: ["head"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\ntype = string-attribute\nname = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATASET_DIMENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER-ATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRICK_FLOAT_FACS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTEORDER_STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING-ATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT-ATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENT_SPECIFIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDCODE_STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET_RANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISTORY_NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRICK_STATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRICK_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDCODE_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3DIM_HEAD_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPESTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SB_FIRST~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL_2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFI"
+    CaseSensitive: false

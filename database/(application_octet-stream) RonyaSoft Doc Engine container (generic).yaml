@@ -1,0 +1,13 @@
+Name: RonyaSoft Doc Engine container (generic)
+URL: "https://www.ronyasoft.com/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "STOR\x01\x01"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\r\nCreated with RonyaSoft Doc Engine\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATED WITH RONYASOFT DOC ENGINE"
+    CaseSensitive: false

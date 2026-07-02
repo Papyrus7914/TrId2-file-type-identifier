@@ -1,0 +1,11 @@
+Name: Aldus Zip compressed installation data
+Description: Used for example in PageMaker.
+URL: "https://en.wikipedia.org/wiki/Aldus"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ALDUS PKZP "
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true

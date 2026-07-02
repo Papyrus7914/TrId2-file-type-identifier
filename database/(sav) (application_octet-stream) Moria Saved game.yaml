@@ -1,0 +1,11 @@
+Name: Moria Saved game
+URL: "https://en.wikipedia.org/wiki/Moria_(1983_video_game)"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    E                 }           @
+    Bytes: [0xCB, 0xA1, 0x45, 0xB6, 0xF3, 0x7D, 0x13, 0x40]
+  - Pos: 491
+    AsciiString: "@You"
+    CaseSensitive: true

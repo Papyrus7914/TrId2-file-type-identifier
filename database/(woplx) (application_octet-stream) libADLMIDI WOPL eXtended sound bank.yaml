@@ -1,0 +1,11 @@
+Name: libADLMIDI WOPL eXtended sound bank
+URL: "https://github.com/Wohlstand/libADLMIDI"
+FileNameExtensions: ["woplx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WOPLX-BANK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BANK_INFO_END"
+    CaseSensitive: false

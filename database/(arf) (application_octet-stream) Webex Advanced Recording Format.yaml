@@ -1,0 +1,128 @@
+Name: Webex Advanced Recording Format
+URL: "http://fileformats.archiveteam.org/wiki/Advanced_Recording_Format"
+FileNameExtensions: ["arf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\x01\a\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WBX_SESSION_USER_DATA_EUREKA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBR2_RECORD_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBR_RECORD_DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBR2_PLATFORM_FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBR_STARTTIME_MS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM_STRING1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM_STRING2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM_STRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBRCAPABILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOMSTRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_PDVIDEO_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_SESSION_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH_RSC_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE_RSC_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSION_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBR2EVERRUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBR2STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBR_TOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TA_RSC_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAT VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMGR VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUESTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER FG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UAID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XBW$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XBW*"
+    CaseSensitive: false

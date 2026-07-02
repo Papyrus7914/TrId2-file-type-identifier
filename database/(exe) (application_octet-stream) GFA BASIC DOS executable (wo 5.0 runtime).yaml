@@ -1,0 +1,26 @@
+Name: GFA BASIC DOS executable (w/o 5.0 runtime)
+URL: "https://en.wikipedia.org/wiki/GFA_BASIC"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZk\0\x01\0\0\0\x03\0\x01\0\xFF\xFF\0\0\0\0\0\0\0\0\0\0>\0\0\0\x01\0\xFB0jr\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xE9\x85\0\xCD!\xB8\0K\xBA'\0\xBB\x18\x01\xCD!\xB4M\xCD!\xB4L\xCD!\0\0\x80\0\0\0\\\0\0\0l\0\xA1,\0\x0E\x1F\x8C\x06\x1C\0\x8C\x06 \0\x8C\x06$\0\x8E\xC0\xA3\x18\0\xB40\xCD!<\x03rA\xBA00\xCD\x11$\x02t\x02\xB27\x9CTX;\xC4u\r\xB4pP\x9D\x9CX\x80\xE4pt\x02\xB63\x9D\x89\x16#\x01\xC3\aNeed DOS 3.0+\r\n$Cancel\0\0$\0\0\xBAg\0\xEBb\x06\xE8\x98\xFF+\xDB\xBF'\0\xE8\x98\0sl&\x81?PAuV&\x81\x7F\x02THuN&\x80\x7F\x04=uG\x83\xC3\x05\xBF'\0&\x8A\aC\x88\x05G\x8A\xE0\n\xC0t\x04<;u\xEFO\x80}\xFF\\t\x04\xC6\x05\\G\xE8[\0s/&\x80\x7F\xFF\0u\xD5\xBAIC9\x16#\x01\x89\x16#\x01u\xA5\xBA\x10\x01\xB4\t\xCD!\xB8\xFFL\xCD!&\x8A\aC\n\xC0u\xF8&\n\au\x96\xEB\xD8\a\xB4J\xBB\x19\0\x0E\x17\xBC\x90\0\xE9\xF3\xFE\aCannot find GFABA5IC.OVL\r\n$\x06S\xB9\f\0\xBE\x1D\x01\x8A\x04\x88\x05FG\xE2\xF8\x88\r\xBA'\0\xB8\0=\xCD!r P\xB9\x02\0\xBA\x81\0\x8B\xD8\xB4?\xCD!r\n\x81>\x81\0MZ\xF9u\x01\xF8[\x9C\xB4>\xCD!\x9D[\a\xC3\0\xEA>\xD58"
+    CaseSensitive: true
+  - Pos: 460
+    AsciiString: "PR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CANNOT FIND GFABA5IC.OVL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEED DOS 3.0+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CANCEL\0\0$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUN"
+    CaseSensitive: false

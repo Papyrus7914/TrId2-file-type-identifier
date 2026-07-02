@@ -1,0 +1,11 @@
+Name: Valve Material Type
+URL: "http://fileformats.archiveteam.org/wiki/Valve_Material_Type"
+FileNameExtensions: ["vmt"]
+MimeType: application/vnd.valve.source.material
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$BASETEXTURE"
+    CaseSensitive: false

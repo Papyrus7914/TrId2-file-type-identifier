@@ -1,0 +1,39 @@
+Name: BitDefender plug-in
+URL: "http://en.wikipedia.org/wiki/BitDefender"
+FileNameExtensions: ["xmd"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xC0, 0x01, 0xC0, 0xDE]
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0\0\0\0\0\0\0\x10\0\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 63
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 68
+    #        x
+    Bytes: [0x78, 0xDA]

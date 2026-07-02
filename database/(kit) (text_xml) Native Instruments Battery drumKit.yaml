@@ -1,0 +1,16 @@
+Name: Native Instruments Battery drumKit
+FileNameExtensions: ["kit"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<BatteryPatch name=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BATTERYPATCH NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false

@@ -1,0 +1,59 @@
+Name: "FTL: Faster Than Light save game"
+URL: "https://www.mobygames.com/game/57826/ftl-faster-than-light/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MISSILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DESTROY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MISSILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_UPGRADE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRYSTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_REPAIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENERGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEBULA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DRONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ROCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SHIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACH_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARD"
+    CaseSensitive: false

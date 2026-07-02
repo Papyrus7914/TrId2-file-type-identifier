@@ -1,0 +1,46 @@
+Name: Valve particle storage
+URL: "https://developer.valvesoftware.com/wiki/PCF_File_Format"
+FileNameExtensions: ["pcf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!-- dmx encoding binary "
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: " format "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ELEMENT\0PARTICLESYSTEMDEFINITIONS\0NAME\0DMEPARTICLESYSTEMDEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMEPARTICLECHILD\0DELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIFESPAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAVITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false

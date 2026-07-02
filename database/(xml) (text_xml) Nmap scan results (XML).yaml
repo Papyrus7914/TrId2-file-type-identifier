@@ -1,0 +1,72 @@
+Name: Nmap scan results (XML)
+Description: XML output generated for example by -oX option
+URL: "https://nmap.org/book/output-formats-xml-output.html"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XMLOUTPUTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUGGING LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UP) SCANNED IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINISHED TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERBOSE LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-STYLESHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IP ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NMAP DONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NMAPRUN S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNSTATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTSTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S UP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

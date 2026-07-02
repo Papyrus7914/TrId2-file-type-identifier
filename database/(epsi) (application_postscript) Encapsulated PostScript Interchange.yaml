@@ -1,0 +1,14 @@
+Name: Encapsulated PostScript Interchange
+URL: "http://fileformats.archiveteam.org/wiki/Encapsulated_PostScript"
+FileNameExtensions: ["epsi"]
+MimeType: application/postscript
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%!PS-Adobe-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%%BEGINPREVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%ENDPREVIEW"
+    CaseSensitive: false

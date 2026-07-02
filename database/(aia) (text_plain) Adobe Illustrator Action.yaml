@@ -1,0 +1,62 @@
+Name: Adobe Illustrator Action
+URL: "https://en.wikipedia.org/wiki/Adobe_Illustrator"
+FileNameExtensions: ["aia"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTERNALNAME ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALIZEDNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETER-1 {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIONCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION-1 {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENTCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENT-1 {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASDIALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISON 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISOPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW"
+    CaseSensitive: false

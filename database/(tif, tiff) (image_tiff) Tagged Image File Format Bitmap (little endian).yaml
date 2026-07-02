@@ -1,0 +1,8 @@
+Name: Tagged Image File Format Bitmap (little endian)
+URL: "http://en.wikipedia.org/wiki/Tagged_Image_File_Format"
+FileNameExtensions: ["tif", "tiff"]
+MimeType: image/tiff
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II*\0"
+    CaseSensitive: true

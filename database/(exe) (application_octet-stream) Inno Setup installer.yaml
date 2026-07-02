@@ -1,0 +1,108 @@
+Name: Inno Setup installer
+Description: Inno Setup is a free installer for Windows programs.
+URL: "https://jrsoftware.org/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZP\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\x1A\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "\0\x01\0\0\xBA\x10\0\x0E\x1F\xB4\t\xCD!\xB8\x01L\xCD!\x90\x90This program must be run under Win32\r\n$7\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0PE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 263
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "M\0A\0I\0N\0I\0C\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLEAUT32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTOFMEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCEPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALIDOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLEEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

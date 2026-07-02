@@ -1,0 +1,8 @@
+Name: Windows Clipboard (BK)
+URL: "http://fileformats.archiveteam.org/wiki/Windows_clipboard"
+FileNameExtensions: ["clp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        R
+    Bytes: [0x52, 0xC3]

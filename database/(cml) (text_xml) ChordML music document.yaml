@@ -1,0 +1,29 @@
+Name: ChordML music document
+URL: "http://fileformats.archiveteam.org/wiki/ChordML"
+FileNameExtensions: ["cml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE CHORDML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORDML TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDIOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false

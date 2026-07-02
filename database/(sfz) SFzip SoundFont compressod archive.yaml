@@ -1,0 +1,44 @@
+Name: SFzip SoundFont compressod archive
+Description: SFzip is a Windows program that performs lossless compression/decompression and manages archives of SoundFont files
+URL: "http://futalgo.planetaclix.pt/sfzip/"
+FileNameExtensions: ["sfz"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0SFZA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SF2RIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IENG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOIFIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDTASMPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFBKLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFEDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFZA"
+    CaseSensitive: false

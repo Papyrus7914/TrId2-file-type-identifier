@@ -1,0 +1,50 @@
+Name: Meshmixer SMESH model
+URL: "https://www.meshmixer.com/"
+FileNameExtensions: ["smesh"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#.smesh file produced by meshmixer\r\n### Nodes ###\r\n# node count, 3 dimensions, no attributes, no boundary marker\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SMESH FILE PRODUCED BY MESHMIXER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO BOUNDARY MARKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICES COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3 DIMENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORDINATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACET COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO REGIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO HOLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false

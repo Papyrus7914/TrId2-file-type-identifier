@@ -1,0 +1,22 @@
+Name: OpenFlight 3D file
+Description: OpenFlight is an industry standard realtime 3D scene description format developed, owned and maintained by MultiGen, Inc. It was originally developed by MultiGen in response to a need for database transportability within the visual simulation community.
+URL: "http://www.multigen-paradigm.com/"
+FileNameExtensions: ["flt"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x01, 0x01]
+  - Pos: 4
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: ":"
+    CaseSensitive: true

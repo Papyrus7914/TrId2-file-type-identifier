@@ -1,0 +1,41 @@
+Name: ActiveGS PC configuration
+URL: "http://activegs.freetoolsassociation.com/"
+FileNameExtensions: ["activegsxml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONFIG VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE SLOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRAMPARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOTSLOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false

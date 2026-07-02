@@ -1,0 +1,110 @@
+Name: Amazon Kindle eBook (with DRM)
+URL: "https://en.wikipedia.org/wiki/Amazon_Kindle"
+FileNameExtensions: ["azw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CR!"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0BOOKMOBI\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOOKMOBI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STUVW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$3BR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FCIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RODU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAGX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TURA"
+    CaseSensitive: false

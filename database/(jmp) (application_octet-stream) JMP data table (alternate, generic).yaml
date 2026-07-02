@@ -1,0 +1,13 @@
+Name: JMP data table (alternate, generic)
+URL: "http://fileformats.archiveteam.org/wiki/JMP"
+FileNameExtensions: ["jmp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x00, 0xFF, 0xFF]
+  - Pos: 22
+    AsciiString: "\0\0\0\0\0\0\0\x06\0\0\0\x06utf-8\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

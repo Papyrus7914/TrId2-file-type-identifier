@@ -1,0 +1,32 @@
+Name: Cura variant configuration
+URL: "https://en.wikipedia.org/wiki/Ultimaker"
+FileNameExtensions: ["cfg"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[general]\nname = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETTING_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDWARE_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

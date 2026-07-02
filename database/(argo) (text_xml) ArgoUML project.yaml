@@ -1,0 +1,44 @@
+Name: ArgoUML project
+URL: "http://en.wikipedia.org/wiki/ArgoUML"
+FileNameExtensions: ["argo"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: " version"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HISTORYFILE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHPATH HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT_DIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHORNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

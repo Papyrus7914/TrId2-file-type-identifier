@@ -1,0 +1,28 @@
+Name: GetRight Skin
+URL: "http://www.getright.com/"
+FileNameExtensions: ["grs"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04, 0x14, 0x00]
+  - Pos: 7
+    AsciiString: "\0\b\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKIN"
+    CaseSensitive: false

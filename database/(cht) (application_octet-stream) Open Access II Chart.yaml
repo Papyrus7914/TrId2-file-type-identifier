@@ -1,0 +1,13 @@
+Name: Open Access II Chart
+URL: "https://sparcie.wordpress.com/2018/01/22/open-access-for-dos/"
+FileNameExtensions: ["cht"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01, 0x00]
+  - Pos: any
+    AsciiString: "SOFTWARE PRODUCTS INTERNATIONAL IB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN ACCESS II"
+    CaseSensitive: false

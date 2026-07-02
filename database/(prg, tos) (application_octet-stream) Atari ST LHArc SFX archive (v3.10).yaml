@@ -1,0 +1,40 @@
+Name: Atari ST LHArc SFX archive (v3.10)
+FileNameExtensions: ["prg", "tos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\x01j\0\0\x91\xCC\0\0\0\0\0\0\0\0\0\0\0\a\0\0`\f\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0\0\0 SFX\0A\xFA\0\x10 :\xFF\xEEr\x01\xC2@\xD0\x81\xD1\xC0N\xD0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(\0)\0 ...\0SKIPPED \0OBJECT WITH SAME NAME EXISTS\0NEW OR SAME FILE EXISTS\0FILE IS READ-ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O$_NUUNABLE TO WRITE\0CRC ERROR\0OK\0BAD TABLE\0UNABLE TO CREATE FOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTORY\0METHOD NOT SUPPORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) CHRISTIAN GRUNENBERG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-COM-\0ENCRYPTED FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LHD\0UXHK\0EXTRACTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS KEY...\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZ4\0LH0\0LH5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFX V3.10"
+    CaseSensitive: false

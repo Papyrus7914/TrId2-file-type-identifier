@@ -1,0 +1,11 @@
+Name: STK Facility Network
+URL: "https://en.wikipedia.org/wiki/Systems_Tool_Kit"
+FileNameExtensions: ["fn"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN Network"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END NETWORK"
+    CaseSensitive: false

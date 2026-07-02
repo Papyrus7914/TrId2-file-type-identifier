@@ -1,0 +1,11 @@
+Name: dBASE compiled Label
+URL: "https://en.wikipedia.org/wiki/Dbase"
+FileNameExtensions: ["lbo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x05DBO"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".LBG"
+    CaseSensitive: false

@@ -1,0 +1,125 @@
+Name: SPSS Custom dialog specification
+URL: "https://en.wikipedia.org/wiki/SPSS"
+FileNameExtensions: ["cfe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "app-extension.xml\xFE\xCA\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_PT_BR.PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ZH_CN.PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ZH_TW.PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTPREVIEW.GIFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP-EXTENSION.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTPREVIEW.GIFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DE.PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ES.PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FR.PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_IT.PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_JA.PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_KO.PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PL.PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RU.PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSION.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDB_PEER.JARPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT.GIFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT.GIFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT.GIFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORE.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT.GIFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE.GIFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE.GIFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LE.GIFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LE.GIFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3)PCCD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LG_GM_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SM_GM_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CDB_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAS3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HHBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOP1"
+    CaseSensitive: false

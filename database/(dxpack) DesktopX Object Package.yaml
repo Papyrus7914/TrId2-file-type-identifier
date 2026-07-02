@@ -1,0 +1,13 @@
+Name: DesktopX Object Package
+URL: "http://www.stardock.com/products/desktopx/"
+FileNameExtensions: ["dxpack"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SCREENSHOT.BMPSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE.INISD"
+    CaseSensitive: false

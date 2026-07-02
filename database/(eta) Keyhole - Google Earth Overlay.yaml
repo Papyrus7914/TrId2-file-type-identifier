@@ -1,0 +1,31 @@
+Name: Keyhole - Google Earth Overlay
+URL: "http://www.google.com/earth/"
+FileNameExtensions: ["eta"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Keyhole>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSPARENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERLAYSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYHOLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEST"
+    CaseSensitive: false

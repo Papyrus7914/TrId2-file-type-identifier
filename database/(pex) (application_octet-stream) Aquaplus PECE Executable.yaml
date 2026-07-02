@@ -1,0 +1,13 @@
+Name: Aquaplus P/ECE Executable
+URL: "https://blog.gingerbeardman.com/2021/08/19/aquaplus-piece-vs-panic-playdate/"
+FileNameExtensions: ["pex"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        X
+    Bytes: [0x58, 0x02]
+  - Pos: 3
+    Bytes: [0x01, 0x18, 0x00]
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true

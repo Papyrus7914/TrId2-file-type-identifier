@@ -1,0 +1,38 @@
+Name: MDFourier profile
+URL: "http://junkerhq.net/MDFourier/"
+FileNameExtensions: ["mfn"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MDFourierAudioBlockFile "
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MDFOURIERAUDIOBLOCKFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONOBALANCEBLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOMODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TONELINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SILENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLK N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTSC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC"
+    CaseSensitive: false

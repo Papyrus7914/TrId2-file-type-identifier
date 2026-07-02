@@ -1,0 +1,23 @@
+Name: Kaspersky Anti-Virus signature bases
+Description: Kaspersky Anti-Virus
+URL: "http://www.kaspersky.com/"
+FileNameExtensions: ["kdc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KDC1\0\x01\n"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0(\0\0\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KDC1"
+    CaseSensitive: false

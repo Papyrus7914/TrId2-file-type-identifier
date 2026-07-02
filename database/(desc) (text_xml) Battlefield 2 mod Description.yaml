@@ -1,0 +1,32 @@
+Name: Battlefield 2 mod Description
+URL: "https://en.wikipedia.org/wiki/Battlefield_(series)"
+FileNameExtensions: ["desc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<mod>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULT_SOLDIER_KIT_TEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT_SOLDIER_TEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITORVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUSIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGO"
+    CaseSensitive: false

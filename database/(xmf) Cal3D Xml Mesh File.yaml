@@ -1,0 +1,43 @@
+Name: Cal3D Xml Mesh File
+URL: "http://en.wikipedia.org/wiki/Cal3D"
+FileNameExtensions: ["xmf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FACE VERTEXID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMINFLUENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMTEXCOORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMLODSTEPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMVERTICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMSPRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMSUBMESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH NUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMFACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORM"
+    CaseSensitive: false

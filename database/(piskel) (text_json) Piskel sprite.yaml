@@ -1,0 +1,41 @@
+Name: Piskel sprite
+URL: "http://fileformats.archiveteam.org/wiki/Piskel_canvas#Example"
+FileNameExtensions: ["piskel"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODELVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE64PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PISKEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

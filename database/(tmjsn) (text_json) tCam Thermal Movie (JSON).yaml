@@ -1,0 +1,38 @@
+Name: tCam Thermal Movie (JSON)
+URL: "https://github.com/danjulio/tCam"
+FileNameExtensions: ["tmjsn"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"metadata\":{\"Camera\":\"tCam-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RADIOMETRIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_FRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TELEMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false

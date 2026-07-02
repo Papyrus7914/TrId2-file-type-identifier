@@ -1,0 +1,11 @@
+Name: MDL Reaction format
+URL: "http://help.accelrysonline.com/ulm/onelab/1.0/content/ulm_pdfs/direct/reference/ctfileformats2016.pdf"
+FileNameExtensions: ["rxn"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$RXN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$MOL"
+    CaseSensitive: false

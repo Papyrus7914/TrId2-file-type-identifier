@@ -1,0 +1,58 @@
+Name: OpenMRS Module
+URL: "http://openmrs.org/"
+FileNameExtensions: ["omod"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MODULEAPPLICATIONCONTEXT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGES.PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLLER.CLASSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVATOR.CLASSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.MFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTLETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENMRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JSPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADVI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LK-."
+    CaseSensitive: false

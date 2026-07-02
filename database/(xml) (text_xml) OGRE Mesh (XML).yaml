@@ -1,0 +1,59 @@
+Name: OGRE Mesh (XML)
+URL: "https://en.wikipedia.org/wiki/OGRE"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<mesh>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXTURE_COORD_DIMENSIONS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTEXBUFFER POSITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRY VERTEXCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USESHAREDVERTICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBMESH MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE32BITINDEXES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE_COORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATIONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIANGLE_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACES COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXCOORD U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBMESHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACE V1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT2"
+    CaseSensitive: false

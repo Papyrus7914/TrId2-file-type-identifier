@@ -1,0 +1,59 @@
+Name: Maestro molecular model
+URL: "http://www.schrodinger.com/Maestro"
+FileNameExtensions: ["mae"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "I_M_RESIDUE_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I_M_ATOMIC_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I_M_FORMAL_CHARGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S_M_M2IO_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I_M_MMOD_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_M_X_COORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_M_Y_COORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_M_Z_COORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I_M_COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I_M_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F_M_CT {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I_M_FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I_M_TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_BOND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".0.0"
+    CaseSensitive: false

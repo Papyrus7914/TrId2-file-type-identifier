@@ -1,0 +1,10 @@
+Name: BALZ compressed data
+URL: "http://compressme.net/"
+FileNameExtensions: ["balz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xBA]
+  - Pos: 4
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true

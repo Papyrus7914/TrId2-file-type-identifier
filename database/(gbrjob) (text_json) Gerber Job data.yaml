@@ -1,0 +1,41 @@
+Name: Gerber Job data
+URL: "https://en.wikipedia.org/wiki/Gerber_format"
+FileNameExtensions: ["gbrjob"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GENERATIONSOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOARDTHICKNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATIONDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

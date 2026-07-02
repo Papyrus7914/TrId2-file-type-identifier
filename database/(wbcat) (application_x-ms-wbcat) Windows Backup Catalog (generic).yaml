@@ -1,0 +1,20 @@
+Name: Windows Backup Catalog (generic)
+URL: "https://az4n6.blogspot.com/2012/08/windows-backup-and-restore.html"
+FileNameExtensions: ["wbcat"]
+MimeType: application/x-ms-wbcat
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "C"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0\0\0(\0\0\0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\x01motA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "B\0A\0C\0K\0U\0P\0 \0S\0E\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOTA"
+    CaseSensitive: false

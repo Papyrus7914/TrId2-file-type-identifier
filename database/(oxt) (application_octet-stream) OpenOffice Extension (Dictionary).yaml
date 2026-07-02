@@ -1,0 +1,26 @@
+Name: OpenOffice Extension (Dictionary)
+URL: "https://en.wikipedia.org/wiki/OpenOffice.org"
+FileNameExtensions: ["oxt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DICTIONARIES.XCU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".AFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DIC"
+    CaseSensitive: false

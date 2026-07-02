@@ -1,0 +1,11 @@
+Name: LZMA compressed Tape ARchive
+URL: "https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Markov_chain_algorithm"
+FileNameExtensions: ["tlz", "lzma"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "]\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    #        :           K     w           A     x
+    Bytes: [0x3A, 0x19, 0x4B, 0x77, 0x89, 0x41, 0x78, 0xC1, 0x90, 0xDF, 0x06, 0xB5, 0xCE, 0xC9]

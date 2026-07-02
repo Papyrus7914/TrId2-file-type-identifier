@@ -1,0 +1,12 @@
+Name: AIN compressed DOS Executable
+FileNameExtensions: ["exe"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\x14\0\0\0\0\0\0\0MZ"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "AIN2\xFF\xFF"
+    CaseSensitive: true

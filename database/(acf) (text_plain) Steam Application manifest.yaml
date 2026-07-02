@@ -1,0 +1,47 @@
+Name: Steam Application manifest
+URL: "https://en.wikipedia.org/wiki/Steam_(service)"
+FileNameExtensions: ["acf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\"AppState\"\n{\n\t\"appid\"\t\t\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALLOWOTHERDOWNLOADSWHILERUNNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOUPDATEBEHAVIOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTUPDATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEONDISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATEFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERCONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTOWNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDDEPOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIVERSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

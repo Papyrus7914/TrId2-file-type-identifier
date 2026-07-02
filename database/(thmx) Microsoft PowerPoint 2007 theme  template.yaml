@@ -1,0 +1,25 @@
+Name: Microsoft PowerPoint 2007 theme / template
+URL: "http://en.wikipedia.org/wiki/Powerpoint"
+FileNameExtensions: ["thmx"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "[Content_Types].xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THEMEMANAGER.XML.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEMEMANAGER.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEME1.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false

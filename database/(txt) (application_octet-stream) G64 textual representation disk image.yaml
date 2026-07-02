@@ -1,0 +1,44 @@
+Name: G64 textual representation disk image
+URL: "https://github.com/markusC64/g64conv"
+FileNameExtensions: ["txt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "no-tracks "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN-CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END-CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK-SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END-TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO-TRACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN-AT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC"
+    CaseSensitive: false

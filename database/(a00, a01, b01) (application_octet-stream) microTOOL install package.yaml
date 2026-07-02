@@ -1,0 +1,10 @@
+Name: microTOOL install package
+URL: "https://www.microtool.de/"
+FileNameExtensions: ["a00", "a01", "b01"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "In\r\n(c) Copyright by microTOOL GmbH\r\n"
+    CaseSensitive: true
+  - Pos: 81
+    Bytes: [0x1A]

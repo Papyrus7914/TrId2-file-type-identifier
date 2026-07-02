@@ -1,0 +1,29 @@
+Name: Sony Foundry Video Capture project
+URL: "https://en.wikipedia.org/wiki/Sony_Creative_Software"
+FileNameExtensions: ["sfvidcap"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "riff"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".\0S\0F\0V\0I\0D\0C\0A\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IENG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false

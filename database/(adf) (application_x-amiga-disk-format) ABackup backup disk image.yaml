@@ -1,0 +1,12 @@
+Name: ABackup backup disk image
+Description: Backup tool for Amiga.
+URL: "https://gitlab.com/amigasourcecodepreservation/abackup"
+FileNameExtensions: ["adf"]
+MimeType: application/x-amiga-disk-format
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ABCK\0\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "ABCK"
+    CaseSensitive: true

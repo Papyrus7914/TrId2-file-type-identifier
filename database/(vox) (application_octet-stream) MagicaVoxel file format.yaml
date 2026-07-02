@@ -1,0 +1,20 @@
+Name: MagicaVoxel file format
+URL: "https://ephtracy.github.io/"
+FileNameExtensions: ["vox"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VOX "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "MAIN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XYZI"
+    CaseSensitive: false

@@ -1,0 +1,52 @@
+Name: Adobe Download Manager
+URL: "http://www.adobe.com/products/acrobat/acrrmanager.html"
+FileNameExtensions: ["aom"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?aom version=\"1.0\" encoding=\"UTF-8\"?>\n<AdobeDownloadManager"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADOBEDOWNLOADMANAGER VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARDOWNLOAD.ADOBE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOREINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWNLOADRECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONEXECUTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AOM VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANCELABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADBERDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOREID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

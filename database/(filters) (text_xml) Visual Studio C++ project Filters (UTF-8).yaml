@@ -1,0 +1,38 @@
+Name: Visual Studio C++ project Filters (UTF-8)
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+FileNameExtensions: ["filters"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT TOOLSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUEIDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVELOPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSBUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2003"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

@@ -1,0 +1,9 @@
+Name: 16bit DOS COM Crypt (Alex) encrypted (v1.0)
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: any
+    AsciiString: "CRYPT VERSION 1.0 (C) ALEX 1999"
+    CaseSensitive: false

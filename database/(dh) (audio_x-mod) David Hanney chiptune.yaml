@@ -1,0 +1,15 @@
+Name: David Hanney chiptune
+Description: A music format created by David Hanney.
+URL: "http://www.exotica.org.uk/wiki/David_Hanney_(format)"
+FileNameExtensions: ["dh"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DSNGSEQU"
+    CaseSensitive: true
+  - Pos: 268
+    AsciiString: "INFO"
+    CaseSensitive: true
+  - Pos: 286
+    AsciiString: "BLK"
+    CaseSensitive: true

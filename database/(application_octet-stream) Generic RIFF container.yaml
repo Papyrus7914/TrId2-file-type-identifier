@@ -1,0 +1,8 @@
+Name: Generic RIFF container
+Description: Standard Interchange File Format, with little-endian byte order.
+URL: "http://en.wikipedia.org/wiki/Interchange_File_Format"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true

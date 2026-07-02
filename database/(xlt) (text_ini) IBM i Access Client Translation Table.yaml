@@ -1,0 +1,20 @@
+Name: IBM i Access Client Translation Table
+URL: "https://en.wikipedia.org/wiki/IBM_i"
+FileNameExtensions: ["xlt"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Profile]\r\nid=XLT\r\nDescription="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ERRORMESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SB XLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: FormLabs PreForm job
+URL: "https://formlabs.com/software/#preform"
+FileNameExtensions: ["form"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xAD\x8FFormlabs Form"
+    CaseSensitive: true
+  - Pos: 75
+    AsciiString: "\a\0\0\0PreForm\a\0\0\0release"
+    CaseSensitive: true

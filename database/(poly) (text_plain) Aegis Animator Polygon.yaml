@@ -1,0 +1,12 @@
+Name: Aegis Animator Polygon
+Description: Early animation program for Amiga.
+URL: "http://obligement.free.fr/articles/aegis_animator.php"
+FileNameExtensions: ["poly"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*act "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSERT_POLY"
+    CaseSensitive: false

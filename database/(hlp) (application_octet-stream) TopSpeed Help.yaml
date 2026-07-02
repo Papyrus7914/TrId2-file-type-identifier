@@ -1,0 +1,14 @@
+Name: TopSpeed Help
+Description: Used by TopSpeed developement tools.
+FileNameExtensions: ["hlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TS"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "JPI3\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JPI3"
+    CaseSensitive: false

@@ -1,0 +1,35 @@
+Name: Quest Adventure Script (generic)
+URL: "http://docs.textadventures.co.uk/quest/aslx.html"
+FileNameExtensions: ["asl"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "' \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATED WITH QDK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASL-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINE GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END DEFINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

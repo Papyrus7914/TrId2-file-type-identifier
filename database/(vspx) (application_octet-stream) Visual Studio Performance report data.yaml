@@ -1,0 +1,19 @@
+Name: Visual Studio Performance report data
+FileNameExtensions: ["vspx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "REPORTMETADATA.XSDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSPERFMETADATA.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSPROFILINGDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ETLPK"
+    CaseSensitive: false

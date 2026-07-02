@@ -1,0 +1,29 @@
+Name: .NET portable PDB
+URL: "https://github.com/dotnet/core/blob/master/Documentation/diagnostics/portable_pdb.md"
+FileNameExtensions: ["pdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BSJB"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "PDB v"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDB V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUID"
+    CaseSensitive: false

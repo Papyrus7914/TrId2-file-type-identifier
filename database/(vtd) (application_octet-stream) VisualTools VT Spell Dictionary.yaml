@@ -1,0 +1,25 @@
+Name: VisualTools VT Spell Dictionary
+Description: Later Visual Components.
+FileNameExtensions: ["vtd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xB3, 0xF6, 0x01, 0x00, 0x01, 0x00]
+  - Pos: 64
+    AsciiString: "Copyright (c) 199"
+    CaseSensitive: true
+  - Pos: 82
+    AsciiString: " by Visual"
+    CaseSensitive: true
+  - Pos: 94
+    AsciiString: "o"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INC.  ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 199"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY VISUAL"
+    CaseSensitive: false

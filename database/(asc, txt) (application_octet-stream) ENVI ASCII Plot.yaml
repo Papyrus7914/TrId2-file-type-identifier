@@ -1,0 +1,14 @@
+Name: ENVI ASCII Plot
+URL: "https://en.wikipedia.org/wiki/NV5_Geospatial_Solutions#ENVI"
+FileNameExtensions: ["asc", "txt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ENVI ASCII Plot File"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLUMN 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMN 2"
+    CaseSensitive: false

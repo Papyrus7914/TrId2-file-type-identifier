@@ -1,0 +1,13 @@
+Name: eMule *.part.met data/info
+Description: eMule is one of the biggest and most reliable peer-to-peer file sharing clients.
+URL: "www.emule-project.net"
+FileNameExtensions: ["met"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE0]
+  - Pos: 4
+    AsciiString: "A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".PART"
+    CaseSensitive: false

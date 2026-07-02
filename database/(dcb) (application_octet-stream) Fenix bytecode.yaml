@@ -1,0 +1,20 @@
+Name: Fenix bytecode
+URL: "http://fileformats.archiveteam.org/wiki/DIV_Games_Studio"
+FileNameExtensions: ["dcb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "dcb\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".FNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PRG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false

@@ -1,0 +1,242 @@
+Name: WinImage 32bit SFX disk image
+URL: "http://www.winimage.com/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0D\0E\0S\0C\0R\0I\0P\0T\0I\0O\0N\0\0\0\0\0W\0I\0N\0I\0M\0A\0G\0E\0 \0S\0E\0L\0F\0 \0E\0X\0T\0R\0A\0C\0T\0O\0R\0 \0F\0I\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0R\0I\0G\0I\0N\0A\0L\0F\0I\0L\0E\0N\0A\0M\0E\0\0\0W\0I\0M\0A\0_\0S\0F\0X\0.\0E\0X\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0T\0E\0R\0N\0A\0L\0N\0A\0M\0E\0\0\0W\0I\0N\0I\0M\0A\0G\0E\0\0\0\0\0N\0%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0E\0G\0A\0L\0C\0O\0P\0Y\0R\0I\0G\0H\0T\0\0\0C\0O\0P\0Y\0R\0I\0G\0H\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G\0I\0L\0L\0E\0S\0 \0V\0O\0L\0L\0A\0N\0T\0 \01\09\09\03\0-\02\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4\0\0\0V\0S\0_\0V\0E\0R\0S\0I\0O\0N\0_\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0E\0G\0A\0L\0T\0R\0A\0D\0E\0M\0A\0R\0K\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0P\0A\0N\0Y\0N\0A\0M\0E\0\0\0\0\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0O\0D\0U\0C\0T\0N\0A\0M\0E\0\0\0\0\08"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0O\0D\0U\0C\0T\0V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0R\0I\0N\0G\0F\0I\0L\0E\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0A\0R\0F\0I\0L\0E\0I\0N\0F\0O\0\0\0\0\0$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0J\0A\0U\0G\0E\0T\0E\0M\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0A\0S\0S\0W\0O\0R\0D\0O\0P\0E\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y\0E\0S\0N\0O\0C\0A\0N\0C\0A\0L\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0E\0F\0L\0A\0T\0E\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0R\0A\0N\0S\0L\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ")))\0UUU\0MMM\0BBB\0999"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0D\0D\0_\0D\0D\0L\0I\0S\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0I\0M\0S\0F\0X\0I\0C\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSAVEFILENAMEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0A\0I\0N\0S\0F\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMDLG32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADLIBRARYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIMISED AS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WNETGETUSERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0R\0I\0V\0E\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0F\0X\0D\0L\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRTDLL.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EJAUGETEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GDI32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L32.DLL\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWORDOPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0R\0I\0T\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VC20XC00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINIMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0I\0S\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GVMAT32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0A\0K\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPR.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLLANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITBLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GILLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WSFXPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPDOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RICH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSDL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

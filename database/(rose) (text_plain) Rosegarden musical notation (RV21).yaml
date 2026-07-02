@@ -1,0 +1,32 @@
+Name: Rosegarden musical notation (RV21)
+URL: "https://en.wikipedia.org/wiki/Rosegarden"
+FileNameExtensions: ["rose"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#!Rosegarden"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MUSICAL NOTATION FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEF NAME TREBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RV21"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

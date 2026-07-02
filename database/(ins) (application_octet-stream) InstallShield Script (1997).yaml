@@ -1,0 +1,89 @@
+Name: InstallShield Script (1997)
+URL: "https://en.wikipedia.org/wiki/InstallShield"
+FileNameExtensions: ["ins"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    \f
+    Bytes: [0xB8, 0xC9, 0x0C, 0x00]
+  - Pos: 5
+    AsciiString: "\0\x01\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BATCH_INSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERRORFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HINST_INSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST_RESULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORTDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETDISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINSYSDISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINSYSDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMDVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMDLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRCDISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHARED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRCDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNINST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

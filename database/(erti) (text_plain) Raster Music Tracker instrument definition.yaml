@@ -1,0 +1,11 @@
+Name: Raster Music Tracker instrument definition
+URL: "https://github.com/VinsCool/RASTER-Music-Tracker/"
+FileNameExtensions: ["erti"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[instrument$0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENVELOPEDISTORTION"
+    CaseSensitive: false

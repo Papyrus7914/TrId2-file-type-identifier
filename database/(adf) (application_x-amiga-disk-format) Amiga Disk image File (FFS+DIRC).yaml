@@ -1,0 +1,9 @@
+Name: Amiga Disk image File (FFS+DIRC)
+Description: Fast File System, Directory Cache.
+URL: "https://en.wikipedia.org/wiki/Amiga_Disk_File"
+FileNameExtensions: ["adf"]
+MimeType: application/x-amiga-disk-format
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DOS\x05"
+    CaseSensitive: true

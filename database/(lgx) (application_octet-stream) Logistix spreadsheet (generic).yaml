@@ -1,0 +1,17 @@
+Name: Logistix spreadsheet (generic)
+URL: "https://en.wikipedia.org/wiki/Amiga_productivity_software#Database_and_spreadsheets"
+FileNameExtensions: ["lgx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "v"
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: " LOGiSTiX DATA FILE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOGISTIX DATA FILE"
+    CaseSensitive: false

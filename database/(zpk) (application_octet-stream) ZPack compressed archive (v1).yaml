@@ -1,0 +1,8 @@
+Name: ZPack compressed archive (v1)
+URL: "http://fileformats.archiveteam.org/wiki/ZPack_(LeadRDRK)"
+FileNameExtensions: ["zpk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZPK\x15\x01\0ZPK\x14"
+    CaseSensitive: true

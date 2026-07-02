@@ -1,0 +1,22 @@
+Name: Vox Proxy Macro
+URL: "http://www.voxproxy.com/support/network.htm"
+FileNameExtensions: ["vpm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[script]\r\nkey1="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RUNSLIDESHOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PPT"
+    CaseSensitive: false

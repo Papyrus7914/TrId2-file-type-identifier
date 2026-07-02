@@ -1,0 +1,14 @@
+Name: ARCsolo Host Adapter Configuration
+Description: Multi-platform backup tool by Cheyenne.
+FileNameExtensions: ["hac"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Type]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

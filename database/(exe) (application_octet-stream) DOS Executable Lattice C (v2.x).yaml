@@ -1,0 +1,28 @@
+Name: DOS Executable Lattice C (v2.x)
+URL: "https://en.wikipedia.org/wiki/Lattice_C"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "$*** STACK OVERFLOW ***"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$INSUFFICIENT MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID STACK SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O REDIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATTICE C 2."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$INVALID I"
+    CaseSensitive: false

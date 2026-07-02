@@ -1,0 +1,47 @@
+Name: Software Ideas Modeler Template
+URL: "https://en.wikipedia.org/wiki/Software_Ideas_Modeler"
+FileNameExtensions: ["simt"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<sim-template version=\"1.0\">\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIM-TEMPLATE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMEADJUSTMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTING NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NAME}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false

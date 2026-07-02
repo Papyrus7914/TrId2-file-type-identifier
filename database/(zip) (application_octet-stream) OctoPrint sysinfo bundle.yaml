@@ -1,0 +1,38 @@
+Name: OctoPrint sysinfo bundle
+URL: "https://octoprint.org/"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "terminal.txt"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PLUGIN_SOFTWAREUPDATE_CONSOLE.LOGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGIN_PLUGINMANAGER_CONSOLE.LOGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGIN_SOFTWAREUPDATE_UPDATE.LOGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMINFO.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCTOPRINT.LOGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMINAL.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAPROXY.LOGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBCAMD.LOGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIAL.LOGPK"
+    CaseSensitive: false

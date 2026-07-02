@@ -1,0 +1,18 @@
+Name: DSD Storage Facility audio
+Description: Direct-Stream Digital audio container.
+URL: "http://en.wikipedia.org/wiki/Direct_Stream_Digital"
+FileNameExtensions: ["dsf"]
+MimeType: audio/x-dsf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DSD \x1C\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\0\0\\"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "fmt 4"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "data\f"
+    CaseSensitive: true

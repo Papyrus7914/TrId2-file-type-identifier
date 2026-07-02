@@ -1,0 +1,14 @@
+Name: Visual Basic Form (v1.x)
+URL: "https://en.wikipedia.org/wiki/Visual_Basic"
+FileNameExtensions: ["frm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#\xCC$\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false

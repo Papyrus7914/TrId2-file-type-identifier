@@ -1,0 +1,29 @@
+Name: Tripos Mol2
+Description: A mol2 file (.mol2) is a complete, portable representation of a SYBYL molecule.
+URL: "http://www.tripos.com/custResources/mol2Files/index.html"
+FileNameExtensions: ["mol2"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "0.000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOLECULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CHARGES"
+    CaseSensitive: false

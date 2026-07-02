@@ -1,0 +1,226 @@
+Name: SETI@Home working unit data
+URL: "http://en.wikipedia.org/wiki/SETI@home"
+FileNameExtensions: ["sah"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "<workunit_header>\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GAUSS_NULL_CHI_SQ_THRESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAUSS_PEAK_POWER_THRESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BSMOOTH_BOXCAR_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZEN_CORR_COEFF LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSIS_FFT_LENGTHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AZ_CORR_COEFF LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULSE_DISPLAY_THRESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAUSS_CHI_SQ_THRESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPIKES_PER_SPECTRUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BSMOOTH_CHUNK_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAUSS_POWER_THRESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POT_OVERLAP_FACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIPLET_POT_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHIRP_PARAMETER_T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHIRP_RESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAUSS_POT_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULSE_POT_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME_RECORDED_JD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE_ANGLE_RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITS_PER_SAMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKUNIT_HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AZ_ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIPLET_THRESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFT_LEN_FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULSE_FFT_MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSIS_CFG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORDINATE_T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POT_MAX_SLEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POT_MIN_SLEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POT_T_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULSE_THRESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVER_CFG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORDER_CFG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPIKE_THRESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLITTER_CFG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBBAND_DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER_FREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHIRP_LIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX_SIGNALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULSE_BEAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIPLET_MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIPLET_MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEAM_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEVATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULSE_MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULSE_MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_DEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFFT_LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_RA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_DEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHIRPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_RA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S4_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WELSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-CSV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

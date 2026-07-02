@@ -1,0 +1,35 @@
+Name: JTAG Chain Information
+URL: "https://en.wikipedia.org/wiki/Joint_Test_Action_Group"
+FileNameExtensions: ["jci"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[JTAG-Chain]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEVICE1_BOOT_SECTOR0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE1_MAIN_SECTOR0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE1_USERCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAIN_DEVICE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTORSSIZES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE1_PLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICEID_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JTAG-CHAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OSF"
+    CaseSensitive: false

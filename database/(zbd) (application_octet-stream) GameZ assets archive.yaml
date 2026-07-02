@@ -1,0 +1,20 @@
+Name: GameZ assets archive
+URL: "https://www.pcgamingwiki.com/wiki/Engine:GameZ"
+FileNameExtensions: ["zbd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        \"
+    Bytes: [0x22, 0x12, 0x97, 0x02]
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_NODE_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_POLYS"
+    CaseSensitive: false

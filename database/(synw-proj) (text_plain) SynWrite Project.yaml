@@ -1,0 +1,58 @@
+Name: SynWrite Project
+URL: "https://cudatext.github.io/synwrite/"
+FileNameExtensions: ["synw-proj"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEF, 0xBB, 0xBF]
+  - Pos: any
+    AsciiString: "DEFLINEENDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHDIRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFLEXER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERVARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPANEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFENC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIR1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEX1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAR1"
+    CaseSensitive: false

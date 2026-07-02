@@ -1,0 +1,20 @@
+Name: BASIC8 Sprite
+URL: "https://paladin-t.github.io/b8/"
+FileNameExtensions: ["sprite"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"frames\":[{\"interval\":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Ableton Live crash info
+URL: "https://en.wikipedia.org/wiki/Ableton_Live"
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    V     x
+    Bytes: [0xAB, 0x1E, 0x56, 0x78]
+  - Pos: 10
+    AsciiString: "\x11CrashRecoveryInfo"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CRASHRECOVERYINFO"
+    CaseSensitive: false

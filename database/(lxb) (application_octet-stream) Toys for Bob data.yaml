@@ -1,0 +1,14 @@
+Name: Toys for Bob data
+URL: "https://www.mobygames.com/company/4235/toys-for-bob-inc/"
+FileNameExtensions: ["lxb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x05\0\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CRC32"
+    CaseSensitive: false

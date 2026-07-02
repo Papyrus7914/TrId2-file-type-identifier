@@ -1,0 +1,14 @@
+Name: Wallstreet Raider save game (Win, generic)
+URL: "https://www.roninsoft.com/wsraider.htm"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@EC"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\r\n"
+    CaseSensitive: true

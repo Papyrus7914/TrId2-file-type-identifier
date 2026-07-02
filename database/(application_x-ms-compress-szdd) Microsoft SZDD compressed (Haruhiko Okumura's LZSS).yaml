@@ -1,0 +1,8 @@
+Name: Microsoft SZDD compressed (Haruhiko Okumura's LZSS)
+Description: The extension is like the original one but with underscore as the last char.
+URL: "http://fileformats.archiveteam.org/wiki/MS-DOS_installation_compression"
+MimeType: application/x-ms-compress-szdd
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SZDD\x88\xF0'3A"
+    CaseSensitive: true

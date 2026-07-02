@@ -1,0 +1,14 @@
+Name: IBCards Key (v1.0.x)
+URL: "http://web.archive.org/web/19980121202636/http://www.crtechnologies.com/IBCards/"
+FileNameExtensions: ["key"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x1F\0\0\0\x1EVersion 1.0."
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: " IBCards Key File"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IBCARDS KEY FILE"
+    CaseSensitive: false

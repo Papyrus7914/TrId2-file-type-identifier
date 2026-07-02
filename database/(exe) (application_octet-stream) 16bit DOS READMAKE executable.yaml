@@ -1,0 +1,88 @@
+Name: 16bit DOS READMAKE executable
+URL: "http://fileformats.archiveteam.org/wiki/READMAKE"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 63
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 133
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 141
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 145
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 153
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 169
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 185
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WAYNE SOFTWARE AND U.S. DEPT OF COMMERCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R WRITTEN BY BRUCE GUTHRIE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_C_FILE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLREADINCL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OR W"
+    CaseSensitive: false

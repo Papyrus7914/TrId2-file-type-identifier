@@ -1,0 +1,20 @@
+Name: FileMaker Pro 3 database
+URL: "https://en.wikipedia.org/wiki/FileMaker"
+FileNameExtensions: ["fp3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x01\0\0\0\x02\0\x01\0\x05\0\x02\0\x02\xC0"
+    CaseSensitive: true
+  - Pos: 512
+    AsciiString: "\0\0\0\0\0\0\0\x01\0\x1D\0\x0E\0HBAM2016AUG95\xC1\x02H\aPro 3.0\xC0\xC0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HBAM2016AUG95"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HBAM3016AUG95"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRO 3.0"
+    CaseSensitive: false

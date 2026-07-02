@@ -1,0 +1,34 @@
+Name: ChessBase Archive file
+URL: "http://www.chessbase.com"
+FileNameExtensions: ["cbv"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\b\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".CBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CBC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CBG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CBH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CBP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CBT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITLE"
+    CaseSensitive: false

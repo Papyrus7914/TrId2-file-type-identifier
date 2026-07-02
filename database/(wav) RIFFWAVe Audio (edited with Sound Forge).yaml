@@ -1,0 +1,28 @@
+Name: RIFF/WAVe Audio (edited with Sound Forge)
+URL: "http://www.sonicfoundry.com/"
+FileNameExtensions: ["wav"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WAVEfmt "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICRD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND FORGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVEFMT"
+    CaseSensitive: false

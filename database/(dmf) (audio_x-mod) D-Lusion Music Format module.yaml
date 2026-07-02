@@ -1,0 +1,11 @@
+Name: D-Lusion Music Format module
+URL: "http://fileformats.archiveteam.org/wiki/D-Lusion_Music_File"
+FileNameExtensions: ["dmf"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DDMF"
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "CMSG"
+    CaseSensitive: true

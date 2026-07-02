@@ -1,0 +1,14 @@
+Name: ADRIFT Text Adventure File
+URL: "https://en.wikipedia.org/wiki/ADRIFT"
+FileNameExtensions: ["taf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        <     B     ?           j
+    Bytes: [0x3C, 0x42, 0x3F, 0xC9, 0x6A, 0x87, 0xC2, 0xCF]
+  - Pos: 9
+    AsciiString: "E"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "a9\xFA"
+    CaseSensitive: true

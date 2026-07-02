@@ -1,0 +1,263 @@
+Name: Presto! Wrapper (generic)
+URL: "https://preservation.tylerthorsted.com/2024/01/12/presto/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program "
+    CaseSensitive: true
+  - Pos: 118
+    AsciiString: "\r\n$\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ORIGINALFILENAME\0\0\0\0LZEXPAND.DLL\0\0\0\09\0)\0PRODUCTNAME\0MICROSOFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEDESCRIPTION\0WINDOWS FILE EXPANSION LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTVERSION\0\03.10\0\0\0\0$\0\0\0VARFILEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANYNAME\0MICROSOFT CORPORATION\0\0\03"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- FLOATING-POINT SUPPORT NOT LOADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDEFGHIJSTUVWXYZCDEFGHIJSTUVWXYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT CORP. 1989-1992\0\0\0%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS(TM) OPERATING SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEGALCOPYRIGHT\0\0COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C RUNTIME ERROR \0\0\0R6000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNALNAME\0\0\0\0LZEXPAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- INTEGER DIVIDE BY 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- STACK OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEVERSION\03.10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETEXPANDEDNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VS_VERSION_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "___EXPORTEDSTUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZEXPAND.DLXMZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWSOFT VIEWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMVIEW.EX_SZDD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN-TIME ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGFILEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_C_FILE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYLZFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZOPENFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZSTART\0LZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMVIEW.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER.EX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRAPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".THMBM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZCOPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZDONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZINIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZSEEK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMDMTM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UE 0X%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TOTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") 199"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4MDMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADJUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPVW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBMRM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MJMZM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUMEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6002"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6003"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6009"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THERE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W.EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JPEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVE"
+    CaseSensitive: false

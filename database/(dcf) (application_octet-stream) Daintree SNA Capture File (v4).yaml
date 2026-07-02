@@ -1,0 +1,11 @@
+Name: Daintree SNA Capture File (v4)
+Description: Daintree's Sensor Network Analyzer.
+FileNameExtensions: ["dcf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#Format=4"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SNA V"
+    CaseSensitive: false

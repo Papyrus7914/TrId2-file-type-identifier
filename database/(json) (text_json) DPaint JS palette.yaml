@@ -1,0 +1,14 @@
+Name: DPaint JS palette
+URL: "https://github.com/steffest/DPaint-js"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  \"type\": \"palette\",\n  \"palette\": [\n    [\n      "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

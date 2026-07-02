@@ -1,0 +1,14 @@
+Name: GHOUL Engine model
+URL: "https://en.wikipedia.org/wiki/Soldier_of_Fortune_(video_game)"
+FileNameExtensions: ["ghb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              7
+    Bytes: [0xFE, 0x37, 0x82, 0x19]
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0\xA3\xB1?\x03J\0\0\0\0\0\0\0"
+    CaseSensitive: true

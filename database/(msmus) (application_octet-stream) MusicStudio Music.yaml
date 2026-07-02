@@ -1,0 +1,11 @@
+Name: MusicStudio Music
+URL: "https://martin-piper.itch.io/musicstudio"
+FileNameExtensions: ["msmus"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    #     v
+    Bytes: [0xFE, 0xAB, 0x23, 0x76]
+  - Pos: any
+    AsciiString: "E\0N\0V"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: Jesusonic Preset
+URL: "http://www.jesusonic.com"
+FileNameExtensions: ["jcp"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "jcp-info.txt"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JCP-INFO.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECTS"
+    CaseSensitive: false

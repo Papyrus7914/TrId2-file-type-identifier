@@ -1,0 +1,23 @@
+Name: CursorFX theme
+URL: "https://www.stardock.com/products/cursorfx/"
+FileNameExtensions: ["cursorfx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0\xB8\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\xD2\a\0\0Copyright \xA9 2007-20"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: " Stardock Corporation\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STARDOCK CORPORATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2007-20"
+    CaseSensitive: false

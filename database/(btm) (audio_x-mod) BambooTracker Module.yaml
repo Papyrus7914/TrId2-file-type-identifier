@@ -1,0 +1,23 @@
+Name: BambooTracker Module
+URL: "https://bambootracker.github.io/BambooTracker/"
+FileNameExtensions: ["btm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BambooTrackerMod"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTPROP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTRMNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONG"
+    CaseSensitive: false

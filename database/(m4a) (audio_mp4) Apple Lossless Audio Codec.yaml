@@ -1,0 +1,83 @@
+Name: Apple Lossless Audio Codec
+URL: "https://en.wikipedia.org/wiki/Apple_Lossless"
+FileNameExtensions: ["m4a"]
+MimeType: audio/mp4
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "ftypM4A \0\0\0\0M4A mp42isom"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MEAN\0\0\0\0COM.APPLE.ITUNES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMHD\0\0\0\0\0\0\0\0\0\0\0$DINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDLR\0\0\0\0\0\0\0\0MDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDLR\0\0\0\0\0\0\0\0SOUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDIA\0\0\0 MDHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOOV\0\0\0LMVHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STBL\0\0\0XSTSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ALAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HALAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "----"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UDTA"
+    CaseSensitive: false

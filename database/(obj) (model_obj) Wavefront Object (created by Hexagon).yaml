@@ -1,0 +1,20 @@
+Name: Wavefront Object (created by Hexagon)
+URL: "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
+FileNameExtensions: ["obj"]
+MimeType: model/obj
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#Wavefront OBJ file created by Hexagon"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WAVEFRONT OBJ FILE CREATED BY HEXAGON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTLLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEMTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MTL"
+    CaseSensitive: false

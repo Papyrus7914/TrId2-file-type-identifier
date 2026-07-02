@@ -1,0 +1,446 @@
+Name: Imaris IMS (TIFF)
+URL: "https://imaris.oxinst.com/support/imaris-file-format"
+FileNameExtensions: ["ims"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II*\0\x86"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0ImarisDataSet"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROCESSDURINGPROTOCOLTIMEINTERVALSORFRAMEACQUISITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSONLYDURINGPROTOCOLTIMEINTERVALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMIMMERSIONMEDIUMREFRACTIVEINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDMONTAGEPROTOCOLSPECIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACQUISITIONDISTANCEFROMCOVERSLIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGEMONTAGEPROTOCOLSPECIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSF SETTINGS CONFIGURATION V2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DESCRIPTION NOT SPECIFIED)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEARVIEWCHANNELDETAILSLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINALFORMATFILEIOVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKPROJECTEDPINHOLERADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISMICROPOINTTRIGGERENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROPOINTTRIGGERTIMEPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTIVELENSMAGNIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROPOINTTIMEPOINTREPEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPINNINGDISKPINHOLERADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOL CONFIGURATION V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDSTORAGESTRATEGYKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSMEXCITATIONWAVELENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOLOPTIONSSECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIMENREFRACTIVEINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACQUISITIONDEVICEALIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTENSITYCOLOURMAPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHOTOSTIMULATIONDEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUNDSUBTRACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSPARETRIGGERENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSMEMISSIONWAVELENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIFIELDDEFINITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFNESTEDREPEATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPARETRIGGERTIMEPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESERIESOUTERREPEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLY3DDECONVOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEPERFIELDSTRATEGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPARETIMEPOINTREPEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPINNINGDISKCONFOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACQUISITIONDEVICEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISCHANNELASSIGNABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLETRIGGERDEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOGENERATECOLOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTMONTAGEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASCHANNELACQUIRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISLOOPCONTINUOUSLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISMONTAGEAVAILABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFTIMEPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESAMPLEDIMENSIONX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESAMPLEDIMENSIONY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESAMPLEDIMENSIONZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMPSPERFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_OME_DATA_PROTOCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASETTIMEPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMERICALAPERTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICEIDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICEINSTANCEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISMONTAGEENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFCHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOLINTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPEATSPERSECOND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USESPECIFIEDMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMMACORRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGINGMODALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFZPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTIVELENSNA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STITCHINGMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTUALDURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTUALINTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLYSTITCHING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETIMEPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISCONFIGURABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISVIEWEXPANDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSCOPEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFIMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOLWIZARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNELGROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUSIONVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGINGMODEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMARISDATASET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISOUTERREPEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFLOOPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORDINGDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STITCHINGMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAILMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAILSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOROPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICETYPEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUSIONIMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGINGMODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMARISFILEIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERVALMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MILLISECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOLNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAILMIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONDENSERNA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEANDTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTERWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOKUPTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPEATCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPEATSMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLUTIONX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLUTIONY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLUTIONZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORRANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISDISPOSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISINVERTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISREADONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IXON EMCCD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSMPINHOLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEPOINT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASECOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENSPOWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINNINGX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINNINGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITPLANE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISONDISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXRANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINRANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EIRMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTMAX0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTMIN0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERLAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAMP_0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLAVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false

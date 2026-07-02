@@ -1,0 +1,38 @@
+Name: CrystalOffice Maple database
+Description: Maple is a document manager.
+URL: "https://www.crystaloffice.com/maple/"
+FileNameExtensions: ["mpl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ABS0LUTEDATABASEL\0\x85\xEBQ\xB8\x1E\x85\x14@\0\b\b\0"
+    CaseSensitive: true
+  - Pos: 380
+    AsciiString: "ABSP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ABS0LUTEDATABASEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADERTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONSTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BZH91AY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2\0\0\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0\0\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABSP"
+    CaseSensitive: false

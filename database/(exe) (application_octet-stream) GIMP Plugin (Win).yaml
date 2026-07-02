@@ -1,0 +1,91 @@
+Name: GIMP Plugin (Win)
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIMP_INSTALL_PROCEDURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIMP_DRAWABLE_GET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBGIMP-2.0-0.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBGLIB-2.0-0.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIMP_PROGRESS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIMP_MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_UPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S_INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETMOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SET_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ET_R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N_IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

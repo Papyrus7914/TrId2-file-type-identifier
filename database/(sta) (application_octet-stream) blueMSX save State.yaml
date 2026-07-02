@@ -1,0 +1,86 @@
+Name: blueMSX save State
+URL: "http://bluemsx.msxblue.com/"
+FileNameExtensions: ["sta"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "version"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VDPCOMMANDENGINE_00SLN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDPCOMMANDENGINE_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOMANAGER_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPPERRAMIO_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENSHOT.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOTMANAGER_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPPERRAMIO_00K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AY8910_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSXPPI_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOARD_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE.TXT30"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I8255_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R800_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAPE_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSX_003S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSX_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAM_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTC_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDP_00PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTC_00K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_00E"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: Motorola DSP56000/56001 object module format
+URL: "https://en.wikipedia.org/wiki/Motorola_56000"
+FileNameExtensions: ["lod"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "_START "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DSP5600"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DATA P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_END"
+    CaseSensitive: false

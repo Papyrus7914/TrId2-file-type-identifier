@@ -1,0 +1,11 @@
+Name: MeshCore rx log
+URL: "https://meshcore.io/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[\n  {\n    \"timestamp\": "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PACKET"
+    CaseSensitive: false

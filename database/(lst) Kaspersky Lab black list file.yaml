@@ -1,0 +1,10 @@
+Name: Kaspersky Lab black list file
+URL: "http://www.kaspersky.com/support/sos5/key?qid=193239113"
+FileNameExtensions: ["lst"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KLBL"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "Kaspersky Lab black list file"
+    CaseSensitive: true

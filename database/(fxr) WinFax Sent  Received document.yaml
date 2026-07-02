@@ -1,0 +1,9 @@
+Name: WinFax Sent / Received document
+URL: "http://en.wikipedia.org/wiki/Winfax"
+FileNameExtensions: ["fxr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\v#"
+    CaseSensitive: true
+  - Pos: 3
+    Bytes: [0xC0, 0x06]

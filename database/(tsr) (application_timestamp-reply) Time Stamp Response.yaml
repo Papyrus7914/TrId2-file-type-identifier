@@ -1,0 +1,25 @@
+Name: Time Stamp Response
+FileNameExtensions: ["tsr"]
+MimeType: application/timestamp-reply
+DetectionPatterns:
+  - Pos: 0
+    #        0
+    Bytes: [0x30, 0x82]
+  - Pos: 4
+    AsciiString: "0"
+    CaseSensitive: true
+  - Pos: 6
+    #                          0
+    Bytes: [0x02, 0x01, 0x00, 0x30]
+  - Pos: any
+    AsciiString: "TIME STAMPING AUTHORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

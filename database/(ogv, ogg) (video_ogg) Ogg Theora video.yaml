@@ -1,0 +1,14 @@
+Name: Ogg Theora video
+URL: "https://en.wikipedia.org/wiki/Theora"
+FileNameExtensions: ["ogv", "ogg"]
+MimeType: video/ogg
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OggS"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\x01*\x80theora"
+    CaseSensitive: true
+  - Pos: 70
+    AsciiString: "OggS\0"
+    CaseSensitive: true

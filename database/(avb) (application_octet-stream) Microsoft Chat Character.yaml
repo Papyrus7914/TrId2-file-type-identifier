@@ -1,0 +1,16 @@
+Name: Microsoft Chat Character
+URL: "http://fileformats.archiveteam.org/wiki/Microsoft_Comic_Chat"
+FileNameExtensions: ["avb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x81]
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(\0\0\0(\0\0\0("
+    CaseSensitive: false

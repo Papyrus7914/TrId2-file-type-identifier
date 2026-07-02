@@ -1,0 +1,34 @@
+Name: 16bit COM executable BATtoCOM
+URL: "http://fileformats.archiveteam.org/wiki/BATtoCOM"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "BATtoCOM (c) Clockwork Software 1990"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "T FIND COMMAND$GOSUBS TOO DEEP$MORE RETURNS THAN GOSUB$ENVIRONMENT NOT FOUND$INVALID DIRECTORY$UNABLE TO CREATE DIRECTORY$CANNOT DELETE DIRECTORY$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILLEGAL CALL$STRIKE A KEY WHEN READY . . .$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD IMAGE BLOCK$MEMORY PROBLEM$CTRL_BREAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTOCOM (C) CLOCKWORK SOFTWARE 1990"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERLAY FAILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTRUCTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$NO PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$PATH"
+    CaseSensitive: false

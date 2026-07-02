@@ -1,0 +1,41 @@
+Name: PyTorch serialized model
+URL: "https://en.wikipedia.org/wiki/PyTorch"
+FileNameExtensions: ["pth", "pt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x80\x02\x8A\nl\xFC\x9CF\xF9 j\xA8P\x19.\x80\x02M\xE9\x03.\x80\x02}q\0(X\x10\0\0\0protocol_versionq\x01M\xE9\x03X"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROTOCOL_VERSIONQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_REBUILD_TENSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LITTLE_ENDIANQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTORCH._UTILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCOLLECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDEREDDICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE_SIZESQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORAGEQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORTQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTQ"
+    CaseSensitive: false

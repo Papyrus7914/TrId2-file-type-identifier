@@ -1,0 +1,13 @@
+Name: OGG Media stream
+URL: "http://www.xiph.org/"
+FileNameExtensions: ["ogm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OggS"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\x019\x01video\0\0\0"
+    CaseSensitive: true
+  - Pos: 79
+    AsciiString: "\0\0\0\0\0\0OggS\0"
+    CaseSensitive: true

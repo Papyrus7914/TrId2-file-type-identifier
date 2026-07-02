@@ -1,0 +1,35 @@
+Name: GIF bitmap (hidden by Empty Picture)
+URL: "http://fileformats.archiveteam.org/wiki/Empty_Pic"
+FileNameExtensions: ["gif"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GIF8"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "a"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IL  61364-2940.  XXXXGIF8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE EMPTY PICTURE SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "310 S. VERMILLION ST."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY ROBERT WALLINGFORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT 1997"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P.E."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RET."
+    CaseSensitive: false

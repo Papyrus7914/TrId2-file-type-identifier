@@ -1,0 +1,17 @@
+Name: ULTIboard PCB Design Data File format
+URL: "https://en.wikipedia.org/wiki/NI_Ultiboard"
+FileNameExtensions: ["ddf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*P "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*SBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*T0 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*TS H"
+    CaseSensitive: false

@@ -1,0 +1,45 @@
+Name: Photogenics Fractal
+Description: Amiga image manipulation tool.
+URL: "https://en.wikipedia.org/wiki/Photogenics"
+FileNameExtensions: ["f"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XSTART: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FRACTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXITER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEND"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: EVAfont driver (v2.01A)
+URL: "http://fileformats.archiveteam.org/wiki/EVAfont_driver"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 4
+    AsciiString: "GA text font loader v2.01A\0\r\nCopyright (C) 1988 by Pete I. Kvitek\r\n$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1988 BY PETE I. KVITEK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GA TEXT FONT LOADER V2.01A"
+    CaseSensitive: false

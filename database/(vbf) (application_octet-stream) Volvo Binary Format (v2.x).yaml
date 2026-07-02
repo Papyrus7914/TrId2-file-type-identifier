@@ -1,0 +1,64 @@
+Name: Volvo Binary Format (v2.x)
+FileNameExtensions: ["vbf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "vbf_version = 2."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOFTWARE PART NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE PART TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SW_PART_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAN_STANDARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME_FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SW_PART_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECU_ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBF_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATE"
+    CaseSensitive: false

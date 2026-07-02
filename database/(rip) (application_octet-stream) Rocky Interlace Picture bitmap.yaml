@@ -1,0 +1,14 @@
+Name: Rocky Interlace Picture bitmap
+Description: An old Atari 8-bit graphics format.
+FileNameExtensions: ["rip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIP"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: " "
+    CaseSensitive: true

@@ -1,0 +1,29 @@
+Name: StarDict Info
+URL: "http://fileformats.archiveteam.org/wiki/StarDict"
+FileNameExtensions: ["ifo"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "StarDict's "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SAMETYPESEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DICT IFO FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDXFILESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORDCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

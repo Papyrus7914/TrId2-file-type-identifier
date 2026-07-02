@@ -1,0 +1,14 @@
+Name: Amiga WHDLoad package (lha compressed)
+URL: "https://en.wikipedia.org/wiki/WHDLoad"
+FileNameExtensions: ["lha"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "-lh5-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "README.INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SLAVE"
+    CaseSensitive: false

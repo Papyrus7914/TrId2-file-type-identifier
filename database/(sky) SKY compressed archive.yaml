@@ -1,0 +1,8 @@
+Name: SKY compressed archive
+Description: SKY is an old french DOS archiver by Jean-Michel Herve
+URL: "http://members.cox.net/dos/compress.htm"
+FileNameExtensions: ["sky"]
+DetectionPatterns:
+  - Pos: 0
+    #              @
+    Bytes: [0xBC, 0x40, 0x10, 0x00]

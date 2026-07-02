@@ -1,0 +1,12 @@
+Name: Expert Witness compression Format SMART disk image
+Description: AKA Expert Witness file format.
+URL: "http://www.forensicswiki.org/wiki/ASR_Data%27s_Expert_Witness_Compression_Format"
+FileNameExtensions: ["s01"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EVF\t\r\n\xFF\0"
+    CaseSensitive: true
+  - Pos: 340
+    AsciiString: "SMARTC"
+    CaseSensitive: true

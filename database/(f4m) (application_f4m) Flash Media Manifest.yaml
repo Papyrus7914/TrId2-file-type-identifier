@@ -1,0 +1,23 @@
+Name: Flash Media Manifest
+URL: "http://fileformats.archiveteam.org/wiki/F4M"
+FileNameExtensions: ["f4m"]
+MimeType: application/f4m
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANIFEST XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NS.ADOBE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

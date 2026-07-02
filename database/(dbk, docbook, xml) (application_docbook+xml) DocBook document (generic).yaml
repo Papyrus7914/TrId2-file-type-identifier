@@ -1,0 +1,17 @@
+Name: DocBook document (generic)
+URL: "https://en.wikipedia.org/wiki/DocBook"
+FileNameExtensions: ["dbk", "docbook", "xml"]
+MimeType: application/docbook+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCBOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARA"
+    CaseSensitive: false

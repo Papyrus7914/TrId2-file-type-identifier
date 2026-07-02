@@ -1,0 +1,17 @@
+Name: XX34 encoded data
+URL: "http://fileformats.archiveteam.org/wiki/XX34"
+FileNameExtensions: ["xx"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n\r\n"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "XX34"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false

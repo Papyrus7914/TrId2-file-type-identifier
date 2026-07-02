@@ -1,0 +1,14 @@
+Name: MIDIAN Request Setup
+Description: MIDI System Exclusive Utility, a program for Atari ST by Alexander Weis.
+FileNameExtensions: ["rqs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RQS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NO REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONAME"
+    CaseSensitive: false

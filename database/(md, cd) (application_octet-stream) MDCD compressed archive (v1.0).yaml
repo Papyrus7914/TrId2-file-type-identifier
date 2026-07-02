@@ -1,0 +1,8 @@
+Name: MDCD compressed archive (v1.0)
+URL: "http://fileformats.archiveteam.org/wiki/MDCD"
+FileNameExtensions: ["md", "cd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MDmd\n\x01"
+    CaseSensitive: true

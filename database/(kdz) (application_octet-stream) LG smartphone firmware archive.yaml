@@ -1,0 +1,22 @@
+Name: LG smartphone firmware archive
+FileNameExtensions: ["kdz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(\x05\0\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "_00.dz"
+    CaseSensitive: true
+  - Pos: 275
+    AsciiString: "\0\0\0\0\0LGUP_89"
+    CaseSensitive: true
+  - Pos: 288
+    AsciiString: "4.dll"
+    CaseSensitive: true
+  - Pos: 1320
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@"
+    CaseSensitive: true
+  - Pos: 1382
+    AsciiString: "\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$"
+    CaseSensitive: true

@@ -1,0 +1,32 @@
+Name: 8086 Tiny Plus Configuration
+URL: "https://jaybertsoftware.weebly.com/8086-tiny-plus.html"
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[BIOS]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOUND_SAMPLE_RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND_ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND_VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU_SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM4"
+    CaseSensitive: false

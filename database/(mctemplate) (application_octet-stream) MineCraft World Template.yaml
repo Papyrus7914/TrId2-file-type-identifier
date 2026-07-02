@@ -1,0 +1,56 @@
+Name: MineCraft World Template
+URL: "https://en.wikipedia.org/wiki/Minecraft"
+FileNameExtensions: ["mctemplate"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "WORLD_RESOURCE_PACKS.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL.DAT_OLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELNAME.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST-00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.LDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.LDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3.LDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5.LDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "6.LDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7.LDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8.LDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ICO"
+    CaseSensitive: false

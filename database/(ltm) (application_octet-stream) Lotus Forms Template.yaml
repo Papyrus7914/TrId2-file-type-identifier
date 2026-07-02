@@ -1,0 +1,20 @@
+Name: Lotus Forms Template
+URL: "https://en.wikipedia.org/wiki/IBM_Lotus_Forms"
+FileNameExtensions: ["ltm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LOTUSFORM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FIELD LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LTM"
+    CaseSensitive: false

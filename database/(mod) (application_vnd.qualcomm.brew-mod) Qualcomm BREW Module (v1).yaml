@@ -1,0 +1,12 @@
+Name: Qualcomm BREW Module (v1)
+Description: Executable ARM binary module for Qualcomm BREW runtime; signature at offset 8 skips initial code stub.
+URL: "https://en.wikipedia.org/wiki/Binary_Runtime_Environment_for_Wireless"
+FileNameExtensions: ["mod"]
+MimeType: application/vnd.qualcomm.brew-mod
+DetectionPatterns:
+  - Pos: 8
+    AsciiString: "BREW\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BREW"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: WS_FTP configuration
+URL: "http://fileformats.archiveteam.org/wiki/WS_FTP_configuration_files"
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAILADDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CONFIG_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false

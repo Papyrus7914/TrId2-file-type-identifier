@@ -1,0 +1,14 @@
+Name: RCS/CVS diff output
+URL: "https://en.wikipedia.org/wiki/Diff_utility"
+FileNameExtensions: ["patch"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Index: "
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "========"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false

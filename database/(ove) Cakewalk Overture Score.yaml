@@ -1,0 +1,37 @@
+Name: Cakewalk Overture Score
+URL: "http://www.cakewalk.com/"
+FileNameExtensions: ["ove"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OVSC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAGE\0\0\0*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRKL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BARL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVSC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGL"
+    CaseSensitive: false

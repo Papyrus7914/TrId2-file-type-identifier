@@ -1,0 +1,23 @@
+Name: TpaCAD custom Font definition
+URL: "https://www.tpaspa.com/tpacad"
+FileNameExtensions: ["fcad"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TMDESCENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPAFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIGHTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false

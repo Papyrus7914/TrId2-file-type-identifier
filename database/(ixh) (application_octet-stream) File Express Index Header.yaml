@@ -1,0 +1,14 @@
+Name: File Express Index Header
+Description: Shareware MS-DOS database.
+FileNameExtensions: ["ixh"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FE "
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: " Index Header  \0\x1A"
+    CaseSensitive: true

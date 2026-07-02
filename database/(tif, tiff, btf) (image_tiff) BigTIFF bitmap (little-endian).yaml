@@ -1,0 +1,8 @@
+Name: BigTIFF bitmap (little-endian)
+URL: "http://fileformats.archiveteam.org/wiki/BigTIFF"
+FileNameExtensions: ["tif", "tiff", "btf"]
+MimeType: image/tiff
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II+\0\b\0\0\0"
+    CaseSensitive: true

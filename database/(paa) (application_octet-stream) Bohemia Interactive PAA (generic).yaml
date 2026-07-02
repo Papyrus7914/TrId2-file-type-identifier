@@ -1,0 +1,11 @@
+Name: Bohemia Interactive PAA (generic)
+URL: "https://community.bistudio.com/wiki/PAA_File_Format"
+FileNameExtensions: ["paa"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "GGAT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GGAT"
+    CaseSensitive: false

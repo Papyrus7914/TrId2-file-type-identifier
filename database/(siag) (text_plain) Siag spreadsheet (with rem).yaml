@@ -1,0 +1,18 @@
+Name: Siag spreadsheet (with rem)
+Description: Siag is a spreadsheet based on X and Scheme.
+URL: "https://en.wikipedia.org/wiki/Siag_Office"
+FileNameExtensions: ["siag"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END OF FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIAG"
+    CaseSensitive: false

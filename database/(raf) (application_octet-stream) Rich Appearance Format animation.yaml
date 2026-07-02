@@ -1,0 +1,11 @@
+Name: Rich Appearance Format animation
+URL: "https://www.psdevwiki.com/ps3/Rich_Appearance_Format_(RAF)"
+FileNameExtensions: ["raf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "_RAF"
+    CaseSensitive: true
+  - Pos: 8
+    #        x
+    Bytes: [0x78, 0xDA]

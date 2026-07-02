@@ -1,0 +1,19 @@
+Name: Yenka model
+URL: "http://www.yenka.com/"
+FileNameExtensions: ["yka"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 25
+    AsciiString: "\0\t\0\0\0model.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSLATION.TSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFESTPK"
+    CaseSensitive: false

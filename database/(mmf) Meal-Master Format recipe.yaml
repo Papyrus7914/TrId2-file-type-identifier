@@ -1,0 +1,15 @@
+Name: Meal-Master Format recipe
+FileNameExtensions: ["mmf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MMMMM----- Recipe via Meal-Master (tm) v"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CATEGORIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

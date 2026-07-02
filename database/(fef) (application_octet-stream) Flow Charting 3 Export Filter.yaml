@@ -1,0 +1,32 @@
+Name: Flow Charting 3 Export Filter
+Description: Flow charting tools for DOS by Patton and Patton Software Corp.
+FileNameExtensions: ["fef"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE9\xFF\x02\r\n\nFlow Charting 3 Export Filter\r\nThis device driver cannot be modified in any way!\r\n"
+    CaseSensitive: true
+  - Pos: 164
+    AsciiString: "FEF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS DEVICE DRIVER CANNOT BE MODIFIED IN ANY WAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATTON SOFTWARE CORP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEFCORE-FEFCORE-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FPF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

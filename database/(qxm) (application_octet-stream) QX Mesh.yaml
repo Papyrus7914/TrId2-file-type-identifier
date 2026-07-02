@@ -1,0 +1,17 @@
+Name: QX Mesh
+URL: "https://en.wikipedia.org/wiki/Binary_Runtime_Environment_for_Wireless"
+FileNameExtensions: ["qxm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "QX\0\0QXM"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "PTRD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".QXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTRD"
+    CaseSensitive: false

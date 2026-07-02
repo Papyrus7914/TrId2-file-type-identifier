@@ -1,0 +1,25 @@
+Name: Helix encoded MP3 audio (with LAME tag)
+URL: "https://www.rarewares.org/mp3-others.php#helix_enc"
+FileNameExtensions: ["mp3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFB]
+  - Pos: 4
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LAMEH5.21"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XING\0\0\0O"
+    CaseSensitive: false

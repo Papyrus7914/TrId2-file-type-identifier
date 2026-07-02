@@ -1,0 +1,35 @@
+Name: mIRC Theme
+URL: "https://en.wikipedia.org/wiki/MIRC"
+FileNameExtensions: ["mts"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[mts]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXTCHANSELF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTQUERY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NICK"
+    CaseSensitive: false

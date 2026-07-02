@@ -1,0 +1,11 @@
+Name: Perception Native Recording Format
+URL: "https://www.hbm.com/en/2279/high-speed-data-acquisition-software-perception"
+FileNameExtensions: ["pnrf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Nicolet Structured Storage\x1A"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "$\0R\0o\0o\0t\0$"
+    CaseSensitive: true

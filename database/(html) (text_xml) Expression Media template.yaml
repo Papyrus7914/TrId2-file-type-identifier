@@ -1,0 +1,101 @@
+Name: Expression Media template
+URL: "http://fileformats.archiveteam.org/wiki/Media_Pro"
+FileNameExtensions: ["html"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE "
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IVIEW HTML ENGINE DIRECTIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPRESSION MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META HTTP-EQUIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSITIONAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATALOG)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNNING)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(IVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORD"
+    CaseSensitive: false

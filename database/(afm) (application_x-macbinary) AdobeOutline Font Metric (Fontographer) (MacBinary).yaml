@@ -1,0 +1,44 @@
+Name: Adobe/Outline Font Metric (Fontographer) (MacBinary)
+URL: "http://fileformats.archiveteam.org/wiki/MacBinary"
+FileNameExtensions: ["afm"]
+MimeType: application/x-macbinary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "TEXTaCa2"
+    CaseSensitive: true
+  - Pos: 74
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 82
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "StartFontMetrics "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STARTFONTMETRICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTCHARMETRICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDCHARMETRICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDFONTMETRICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTBBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTACA2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".AFM"
+    CaseSensitive: false

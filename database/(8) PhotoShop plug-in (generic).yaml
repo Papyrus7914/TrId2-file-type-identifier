@@ -1,0 +1,73 @@
+Name: PhotoShop plug-in (generic)
+URL: "http://www.adobe.com/products/photoshop/main.html"
+FileNameExtensions: ["8*"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0R\0I\0G\0I\0N\0A\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIB8EMAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIB8DNIK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIB868XW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIB8SREV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0I\0P\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0E\0R\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RICH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false

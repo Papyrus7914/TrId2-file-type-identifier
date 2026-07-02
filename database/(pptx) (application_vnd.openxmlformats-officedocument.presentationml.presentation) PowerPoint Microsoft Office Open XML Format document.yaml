@@ -1,0 +1,47 @@
+Name: PowerPoint Microsoft Office Open XML Format document
+URL: "https://en.wikipedia.org/wiki/Microsoft_PowerPoint"
+FileNameExtensions: ["pptx"]
+MimeType: application/vnd.openxmlformats-officedocument.presentationml.presentation
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PRESENTATION.XML.RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLIDELAYOUT1.XML.RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLIDEMASTER1.XML.RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLIDE1.XML.RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLIDELAYOUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLIDEMASTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEME1.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCPROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLIDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false

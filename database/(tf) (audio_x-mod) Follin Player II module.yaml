@@ -1,0 +1,48 @@
+Name: Follin Player II module
+Description: This music format used by the Follin brothers with games like Ghouls'n'Ghosts and Puzznic.
+URL: "http://www.exotica.org.uk/wiki/Follin_Player_II"
+FileNameExtensions: ["tf"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "8SVXVHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PWM0"
+    CaseSensitive: false

@@ -1,0 +1,66 @@
+Name: MBTiles tileset
+Description: SQLite 3.x database without specific application id
+URL: "https://github.com/mapbox/mbtiles-spec/tree/master"
+FileNameExtensions: ["mbtiles"]
+MimeType: application/vnd.sqlite3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3\0\x10\0\x01\x01\0@  \0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATE TABLE METADATA ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEMETADATAMETADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE UNIQUE INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILE_COLUMN INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOM_LEVEL INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILE_ROW INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA (NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILE_DATA BLOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(ZOOM_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_INDEX ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILESTILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILE_ROW)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILE_I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

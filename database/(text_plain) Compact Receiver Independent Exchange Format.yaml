@@ -1,0 +1,56 @@
+Name: Compact Receiver Independent Exchange Format
+Description: RINEX is a data interchange format for raw satellite navigation system data.
+URL: "https://en.wikipedia.org/wiki/RINEX"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "1.0                 COMPACT RINEX FORMAT                    CRINEX VERS   / TYPE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPROX POSITION XYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVELENGTH FACT L1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME OF FIRST OBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBSERVATION DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPES OF OBSERV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RINEX VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRINEX PROG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2CRX VER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBSERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANTENNA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELTA H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AGENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

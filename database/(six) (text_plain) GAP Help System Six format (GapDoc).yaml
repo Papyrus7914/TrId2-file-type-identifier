@@ -1,0 +1,32 @@
+Name: GAP Help System Six format (GapDoc)
+URL: "https://docs.gap-system.org/doc/ref/chap84.html"
+FileNameExtensions: ["six"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#SIXFORMAT  GapDocGAP\nHELPBOOKINFOSIXTMP := rec(\nencoding := \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HELPBOOKINFOSIXTMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE OF CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REC("
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Flasm disassembled Flash ActionScript bytecode
+URL: "http://flasm.sourceforge.net/"
+FileNameExtensions: ["flm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "movie '"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFINEMOVIECLIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL FRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SWF"
+    CaseSensitive: false

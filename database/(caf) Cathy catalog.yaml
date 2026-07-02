@@ -1,0 +1,11 @@
+Name: Cathy catalog
+Description: Cathy (version 2.83.3) is a freeware simple media cataloging tool (C) R. Vasicek
+URL: "http://www.mtg.sk/rva/"
+FileNameExtensions: ["caf"]
+DetectionPatterns:
+  - Pos: 0
+    #        \'
+    Bytes: [0x27, 0x06, 0xA4, 0xD0]
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true

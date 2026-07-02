@@ -1,0 +1,23 @@
+Name: Orbiter mesh
+Description: Orbiter is a free space flight simulator by Martin Schweiger.
+URL: "http://www.orbitersim.com"
+FileNameExtensions: ["msh"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSHX1\r\nGROUPS "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MATERIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSHX1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOM"
+    CaseSensitive: false

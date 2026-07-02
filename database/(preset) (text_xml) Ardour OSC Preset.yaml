@@ -1,0 +1,32 @@
+Name: Ardour OSC Preset
+URL: "https://en.wikipedia.org/wiki/Ardour_(software)"
+FileNameExtensions: ["preset"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REMOTE-PORT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRIP-TYPES VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK-SIZE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAIN-MODE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEEDBACK VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTMODE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSCPRESET"
+    CaseSensitive: false

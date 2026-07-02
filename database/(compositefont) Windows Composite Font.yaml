@@ -1,0 +1,445 @@
+Name: Windows Composite Font
+Description: XML file used by Windows applications to display different fonts
+FileNameExtensions: ["compositefont"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<FontFamily"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FONTFAMILY.FAMILYTYPEFACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTFAMILY.FAMILYNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRIKETHROUGHTHICKNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTFAMILY.FAMILYMAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRIKETHROUGHPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANTAGENET CHEROKEE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT HIMALAYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT JHENGHEI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT YI BAITI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINGLIU_HKSCS-EXTB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDERLINETHICKNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESTRANGELO EDESSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDERLINEPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT YAHEI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONGOLIAN BAITI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPOSITE-FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLR-NAMESPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTFAMILYMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MALGUN GOTHIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISKOOLA POTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINGLIU-EXTB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMSUN-18030"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "20000-2A6DF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2F800-2FA1F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINESPACING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMSUN-EXTB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPSHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0000-052F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0530-058F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0590-06FF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0700-074F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0750-077F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0780-07BF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0900-097F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0980-09FF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0A00-0A7F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0A80-0AFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0B00-0B7F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0B80-0BFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0C00-0C7F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0C80-0CFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0D00-0D7F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0D80-0DFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0E00-0E7F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0E80-0EFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0F00-0FFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "10D0-10FF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1100-11FF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1200-137F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "13A0-13FF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1400-167F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1780-17FF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1800-18AF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "19E0-19FF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1D00-1FFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2000-202E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2030-20CF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2100-23FF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2460-27BF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2980-29FF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2E80-2EFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2F00-2FDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2FF0-2FFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3000-30FF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3100-312F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3130-318F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3190-319F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "31A0-31BF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "31C0-31EF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "31F0-31FF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3200-321F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3220-324F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3251-325F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3260-327F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3280-32B0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "32D0-3376"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "337B-337F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3380-33DF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "33E0-33FF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3400-4DBF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4E00-9FBB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A000-A4CF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AC00-D7AF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOKCHAMPA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F900-FAFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FB00-FB0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FB10-FB1C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDF0-FDFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FE10-FE1F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FE20-FE2F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FE30-FE6F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FE70-FEFE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FF00-FF60"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FF61-FF9F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFE0-FFEE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFF0-FFFD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASELINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAUNPENH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EUPHEMIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCORLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "32B1-32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAUTAMI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KALINGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KARTIKA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MV BOLI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRETCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYLFAEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNICODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZH-HANS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZH-HANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FB1D-F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANGAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEIRYO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHRUTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VRINDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-32CB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-FDCF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EN-US"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATHA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NYALA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAAVI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUNGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINFX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZH-HK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-0.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.05"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2006"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "202F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AL S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XAML"
+    CaseSensitive: false

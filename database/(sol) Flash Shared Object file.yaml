@@ -1,0 +1,8 @@
+Name: Flash Shared Object file
+FileNameExtensions: ["sol"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0xBF]
+  - Pos: 6
+    AsciiString: "TCSO"
+    CaseSensitive: true

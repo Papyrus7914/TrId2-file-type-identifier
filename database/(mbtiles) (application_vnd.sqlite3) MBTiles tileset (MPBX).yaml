@@ -1,0 +1,12 @@
+Name: MBTiles tileset (MPBX)
+Description: SQLite 3.x database with application id 0x4d504258
+URL: "https://github.com/mapbox/mbtiles-spec/tree/master"
+FileNameExtensions: ["mbtiles"]
+MimeType: application/vnd.sqlite3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "MPBX"
+    CaseSensitive: true

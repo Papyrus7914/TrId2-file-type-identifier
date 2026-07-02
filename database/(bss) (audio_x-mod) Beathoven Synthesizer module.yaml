@@ -1,0 +1,14 @@
+Name: Beathoven Synthesizer module
+URL: "http://www.exotica.org.uk/wiki/Beathoven_Synthesizer"
+FileNameExtensions: ["bss"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x03\xF3\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\0\x03\xE9\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "p\xFFNuBEATHOVEN"
+    CaseSensitive: true

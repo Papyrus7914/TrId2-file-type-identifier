@@ -1,0 +1,29 @@
+Name: MIME HTML archive format (var 2)
+URL: "https://en.wikipedia.org/wiki/MHTML"
+FileNameExtensions: ["mht", "mhtml"]
+MimeType: application/x-mimearchive
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MIME-Version: 1.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT-TRANSFER-ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

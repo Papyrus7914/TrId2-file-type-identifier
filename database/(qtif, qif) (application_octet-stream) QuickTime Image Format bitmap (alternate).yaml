@@ -1,0 +1,14 @@
+Name: QuickTime Image Format bitmap (alternate)
+URL: "http://fileformats.archiveteam.org/wiki/QTIF"
+FileNameExtensions: ["qtif", "qif"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "idsc"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDSC"
+    CaseSensitive: false

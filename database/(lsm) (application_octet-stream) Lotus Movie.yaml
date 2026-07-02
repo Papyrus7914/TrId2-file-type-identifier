@@ -1,0 +1,16 @@
+Name: Lotus Movie
+FileNameExtensions: ["lsm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0DeoVision Version  C Copyright (c) 19"
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: " Lotus Development Corp. All rights reserved.\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOTUS DEVELOPMENT CORP. ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEOVISION VERSION  C COPYRIGHT (C) 19"
+    CaseSensitive: false

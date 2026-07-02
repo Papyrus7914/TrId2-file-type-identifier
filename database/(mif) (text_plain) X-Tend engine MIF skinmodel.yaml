@@ -1,0 +1,32 @@
+Name: X-Tend engine MIF skin/model
+URL: "https://www.igdb.com/game_engines/x-tend"
+FileNameExtensions: ["mif"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MIF \"$skn\"\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANIMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$SKN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SKN"
+    CaseSensitive: false

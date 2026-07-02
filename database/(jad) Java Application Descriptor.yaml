@@ -1,0 +1,23 @@
+Name: Java Application Descriptor
+Description: This kind of file contains a set of attributes enabling the identification, retrieval, and installation of MIDlets.
+URL: "http://java.sun.com/"
+FileNameExtensions: ["jad"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MIDlet-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MIDLET-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDLET-VENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDLET-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-URL"
+    CaseSensitive: false

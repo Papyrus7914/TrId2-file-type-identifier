@@ -1,0 +1,11 @@
+Name: XWMA audio
+URL: "http://en.wikipedia.org/wiki/XAudio2"
+FileNameExtensions: ["xwma", "xwm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "XWMAfmt "
+    CaseSensitive: true

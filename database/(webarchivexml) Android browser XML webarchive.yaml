@@ -1,0 +1,30 @@
+Name: Android browser XML webarchive
+FileNameExtensions: ["webarchivexml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ARCHIVERESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINRESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBRESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBFRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE"
+    CaseSensitive: false

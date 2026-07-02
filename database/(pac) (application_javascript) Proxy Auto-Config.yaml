@@ -1,0 +1,17 @@
+Name: Proxy Auto-Config
+URL: "https://en.wikipedia.org/wiki/Proxy_auto-config"
+FileNameExtensions: ["pac"]
+MimeType: application/javascript
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "function FindProxyForURL(url, host)"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOST"
+    CaseSensitive: false

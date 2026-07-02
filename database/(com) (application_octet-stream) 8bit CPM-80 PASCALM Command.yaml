@@ -1,0 +1,106 @@
+Name: 8bit CP/M-80 PASCAL/M Command
+URL: "https://en.wikipedia.org/wiki/Sorcim"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xC3]
+  - Pos: 3
+    AsciiString: "PASCAL/M.xxx\r\nCopyright SORCIM Corp. 1981\r\nS/N-"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: ",BCD 2.x"
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MACHINE FILE LOAD ADDRESS TOO LARGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION NOT COMPATIBLE WITH OS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEATURE NOT SUPPORTED BY DEMO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTERING PROC NAME - 12345678"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT SORCIM CORP. 1981"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO MACHINE CODE FILE FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASCAL LIBRARY ILL-FORMED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASCAL LIBRARY NOT FOUND."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "123   LEV 12    12345 -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE FILE ILL-FORMED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT LINKED WITH PASDDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCODE FILE ILL-FORMED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCODE FILE NOT FOUND."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UFFICIENT MEMORY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- LINE EXECUTED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NAME ERROR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$$$     SUB\0*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAMEEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKP\0PSTEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GCONSOLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPRINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCD 2.X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5COMM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5PUNCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5TAPE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5TAPE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABORT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false

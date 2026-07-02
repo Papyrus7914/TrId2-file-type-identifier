@@ -1,0 +1,35 @@
+Name: TRUMPF Laser/Punch Nesting Plan
+URL: "https://www.trumpf.com/en_CA/products/software/programming-software/"
+FileNameExtensions: ["taf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#~TAFEL_NEU\n1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SSHEETLOADSTRATEGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPS INTAKT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~TAFEL_NEU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*TAFEL*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOB-TAF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TAF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~EOF"
+    CaseSensitive: false

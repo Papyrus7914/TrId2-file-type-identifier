@@ -1,0 +1,88 @@
+Name: Notator Logic project
+FileNameExtensions: ["log"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    G
+    Bytes: [0xAB, 0xC0, 0x47, 0x13]
+  - Pos: 6
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GLOBAL OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTRUMENT SET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE NUMBERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAR NUMBERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULT. RESTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*RECORDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORD EXT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORD ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAIN TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(FOLDER)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUPLETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDI"
+    CaseSensitive: false

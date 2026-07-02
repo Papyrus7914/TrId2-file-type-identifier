@@ -1,0 +1,20 @@
+Name: GeoJSON format
+URL: "https://en.wikipedia.org/wiki/GeoJSON"
+FileNameExtensions: ["geojson", "json"]
+MimeType: application/geo+json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COORDINATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

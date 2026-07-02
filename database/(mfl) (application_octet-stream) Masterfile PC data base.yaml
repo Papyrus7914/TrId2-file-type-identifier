@@ -1,0 +1,13 @@
+Name: Masterfile PC data base
+FileNameExtensions: ["mfl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 8
+    AsciiString: "MFPC"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MFPC"
+    CaseSensitive: false

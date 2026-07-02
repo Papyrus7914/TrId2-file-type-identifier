@@ -1,0 +1,20 @@
+Name: EnergyPlus Input Data File (auxiliary)
+URL: "https://energyplus.net/documentation"
+FileNameExtensions: ["idf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "! ***EMS PROGRAM***"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "***EXTERNAL INTERFACE***"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "***GENERAL REPORTING***"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "***REPORT METERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLES***"
+    CaseSensitive: false

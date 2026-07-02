@@ -1,0 +1,13 @@
+Name: Karateka animation script
+URL: "https://www.mobygames.com/game/karateka"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "set_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END_ANIMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_FIG"
+    CaseSensitive: false

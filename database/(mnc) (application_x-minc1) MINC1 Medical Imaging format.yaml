@@ -1,0 +1,41 @@
+Name: MINC1 Medical Imaging format
+URL: "http://fileformats.archiveteam.org/wiki/MINC"
+FileNameExtensions: ["mnc"]
+MimeType: application/x-minc1
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CDF\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MINC STANDARD VARIABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINC VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOTVARIABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARID"
+    CaseSensitive: false

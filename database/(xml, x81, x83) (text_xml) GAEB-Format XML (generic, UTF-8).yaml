@@ -1,0 +1,62 @@
+Name: GAEB-Format XML (generic, UTF-8)
+URL: "https://de.wikipedia.org/wiki/Gemeinsamer_Ausschuss_Elektronik_im_Bauwesen"
+FileNameExtensions: ["xml", "x81", "x83"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPLETETEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAEB_DA_XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.GAEB.DE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAEB XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGSYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAILTXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAEBINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOQBODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RNOPART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AWARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

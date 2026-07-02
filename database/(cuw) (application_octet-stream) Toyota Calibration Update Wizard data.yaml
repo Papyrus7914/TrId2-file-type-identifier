@@ -1,0 +1,65 @@
+Name: Toyota Calibration Update Wizard data
+URL: "https://techinfo.toyota.com/"
+FileNameExtensions: ["cuw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0CALIBRATION\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0\nattach.att\0\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "[Format]\r\nVersion="
+    CaseSensitive: true
+  - Pos: 63
+    AsciiString: "\r\n[Vehicle]\r\nNumber="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "01_TARGETCALIBRATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFCALIBRATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFTARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "01_TARGETDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPUIMAGENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEOFISSUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEHICLENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEHICLETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTACH.ATT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATIONID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELYEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWCID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTYPE"
+    CaseSensitive: false

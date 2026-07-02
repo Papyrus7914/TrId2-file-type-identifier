@@ -1,0 +1,13 @@
+Name: Pixelmator graphic
+URL: "http://www.pixelmator.com/"
+FileNameExtensions: ["pxm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\bPXMT_DOC"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\0\x06HEADER"
+    CaseSensitive: true
+  - Pos: 78
+    AsciiString: "\0\0\0\bMETADATA"
+    CaseSensitive: true

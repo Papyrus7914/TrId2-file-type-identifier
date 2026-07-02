@@ -1,0 +1,19 @@
+Name: Linux LiveCD info
+FileNameExtensions: ["diskdefines"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#define DISKNAME "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFINE TYPEBINARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINE TOTALNUM0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINE DISKNUM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINE ARCH"
+    CaseSensitive: false

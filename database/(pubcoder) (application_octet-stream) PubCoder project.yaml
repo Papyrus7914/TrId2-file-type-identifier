@@ -1,0 +1,644 @@
+Name: PubCoder project
+URL: "https://pubcoder.com/"
+FileNameExtensions: ["pubcoder"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Contents/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CUSTOMPAGEOPFPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USECUSTOMPAGESOUNDTRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOXHORIZONTALALIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSHADOWOUTERENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWBORDERCORNERRADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSHADOWINNERENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSHADOWOUTERENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINEDOBJECTSARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERRIDEDEFAULTPAGEJS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCACTIONHIDE OBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCACTIONLIST OBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCACTIONMOVE OBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCACTIONSHOW OBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCACTIONWAIT OBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSHADOWINNERSPREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSHADOWOUTERSPREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMPAGEJAVASCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGERENDERINGFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASTERIZEVECTORIMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRECTANGLE OBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSHADOWOUTERCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEORIGINALIMAGEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSHADOWINNERCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSHADOWOUTERCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMPAGECSSSTYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSHADOWOUTERBLUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWBACKGROUNDCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSHADOWINNERBLUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSHADOWOUTERBLUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALWAYSCATCHTOUCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMPAGEFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGETEMPLATECOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READALOUDAUDIOFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINED-OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMPAGECONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSHADOWOUTERDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSHADOWOUTERDY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWBORDERENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSHADOWINNERDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSHADOWINNERDY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSHADOWOUTERDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSHADOWOUTERDY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTSCROLLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMCSSCLASSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMPAGEHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATTERNIMAGEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECTCORNERRADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCIMAGE OBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETS.SQLITEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMCSSSTYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEREADALOUD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEISTEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDEINTARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTLINKEDGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECTBORDERCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECTBORDERWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCPAGE OBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCPROPERTY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCTEXT OBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCTEXTVALIGNTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWBORDERCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWBORDERWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATIONFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDTIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECTDURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASCUSTOMLABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDEINPAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTSCOUNTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMINGFUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOXFONTFAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKSELECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTS COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERLAYPAGEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAILFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION-LISTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIONGROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIONROTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIONSARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIONTARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOCROPMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOXTEXTCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT 20"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDEINTOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVEDURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOXFONTSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAPTERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-FAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUIDESARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISTOMAGNIFY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE-HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONBREAKING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTSTREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READALOUDSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSPARENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREADALOUDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORDSTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLSCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOOGLE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAVIGATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGENUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCROLLABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-XL.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-XS.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANDSCAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCONTROLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAGRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBCODER-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTRAIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-XL.JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GOOGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANDROID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PADDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-L.JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-S.JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-S.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGUIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHOPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIDDEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KINDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALPHA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARROW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BELOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMBED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PINCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWIPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-IN-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-OUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TTF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOM"
+    CaseSensitive: false

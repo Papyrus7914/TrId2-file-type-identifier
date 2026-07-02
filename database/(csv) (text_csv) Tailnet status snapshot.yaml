@@ -1,0 +1,11 @@
+Name: Tailnet status snapshot
+URL: "https://tailscale.com/"
+FileNameExtensions: ["csv"]
+MimeType: text/csv
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\"Device name\",\"Device ID\",\"Managed by\",\"Creator\",\"OS\",\"OS Version\",\"Domain\",\"Tailscale version\",\"Tags\",\"Created\",\"Last seen\",\"Key expiry\",\"Tailscale IPs\",\"Endpoints\",\"Subnet router\",\"Approved subnet routes\",\"Unapproved subnet routes\",\"Exit node\",\"Ephemeral\",\"Shared in\",\"Tailscale SSH\",\"Funnel\"\n\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".TS.NET"
+    CaseSensitive: false

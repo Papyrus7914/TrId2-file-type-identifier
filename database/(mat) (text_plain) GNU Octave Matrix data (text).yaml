@@ -1,0 +1,23 @@
+Name: GNU Octave Matrix data (text)
+URL: "https://en.wikipedia.org/wiki/GNU_Octave"
+FileNameExtensions: ["mat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Created by Octave "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

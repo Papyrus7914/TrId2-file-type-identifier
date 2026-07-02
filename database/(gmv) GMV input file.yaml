@@ -1,0 +1,25 @@
+Name: GMV input file
+URL: "http://www-xdiv.lanl.gov/XCM/gmv/"
+FileNameExtensions: ["gmv"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "gmvinput ascii\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GMVINPUT ASCII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDVARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDGMV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false

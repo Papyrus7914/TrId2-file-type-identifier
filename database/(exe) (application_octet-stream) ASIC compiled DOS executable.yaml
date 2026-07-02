@@ -1,0 +1,31 @@
+Name: ASIC compiled DOS executable
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\x01\0\x02\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\x9F\x0F\0\0\0\0\0\0\x1C\0\0\0\x01\0\0\0\xB8"
+    CaseSensitive: true
+  - Pos: 34
+    #                                      3                                               _
+    Bytes: [0x00, 0x8E, 0xD8, 0x8E, 0xC0, 0x33, 0xDB, 0xB4, 0x03, 0xCD, 0x10, 0x89, 0x16, 0x5F, 0x01, 0xCC, 0x90]
+  - Pos: 365
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 420
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 534
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 726
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0P"
+    CaseSensitive: false

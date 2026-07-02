@@ -1,0 +1,9 @@
+Name: TraxPlayer audio floppy image
+Description: MSX2 direct-to-floppy audio recorder.
+URL: "https://www.msx.org/downloads/music/trackers/traxplayer"
+FileNameExtensions: ["dsk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEB\xFE\x90TraxPlay"
+    CaseSensitive: true

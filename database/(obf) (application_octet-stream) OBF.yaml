@@ -1,0 +1,8 @@
+Name: OBF
+URL: "https://imspectordocs.readthedocs.io/en/latest/fileformat.html"
+FileNameExtensions: ["obf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OMAS_BF\n\xFF\xFF"
+    CaseSensitive: true

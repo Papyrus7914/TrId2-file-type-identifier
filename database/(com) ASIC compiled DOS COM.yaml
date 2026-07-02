@@ -1,0 +1,25 @@
+Name: ASIC compiled DOS COM
+FileNameExtensions: ["com"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "\0\0\0\0\0\0\0P\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0P\a\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 109
+    Bytes: [0x01]
+  - Pos: 111
+    Bytes: [0x01]
+  - Pos: 115
+    Bytes: [0x02]
+  - Pos: 117
+    Bytes: [0x02]
+  - Pos: 122
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0mN\xC6A\0\0\0\0\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 222
+    #              \r
+    Bytes: [0xB0, 0x0D]
+  - Pos: any
+    AsciiString: "P\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0P"
+    CaseSensitive: false

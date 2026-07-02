@@ -1,0 +1,29 @@
+Name: KiCad footprint library
+URL: "https://en.wikipedia.org/wiki/KiCad"
+FileNameExtensions: ["kicad_mod"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(FP_TEXT REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(FP_TEXT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(THICKNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(EFFECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SILKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(FONT"
+    CaseSensitive: false

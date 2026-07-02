@@ -1,0 +1,10 @@
+Name: Nintendo DS Sound BaNK
+URL: "http://florian.nouwt.com/wiki/index.php/SBNK_(File_Format)"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SBNK\xFF\xFE\0\x01"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "DATA"
+    CaseSensitive: true

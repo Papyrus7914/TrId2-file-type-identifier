@@ -1,0 +1,20 @@
+Name: amcoustic amray sketch
+Description: https://amcoustics.com/tools/amray
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 14
+    AsciiString: "<settngs>"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "C<spview>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETTNGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKTCHPD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPVIEW"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: Windows Initialization settings (32/64bit sys)
+Description: Win 3.x environment configuration, for compatibility in new 32/64bit systems.
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "; for 16-bit app support\r\n[fonts]\r\n[extensions]\r\n[mci extensions]\r\n[files]\r\n[Mail]\r\nMAPI=1\r\n[MCI Extensions.BAK]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FOR 16-BIT APP SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MCI EXTENSIONS.BAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPEGVIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPI"
+    CaseSensitive: false

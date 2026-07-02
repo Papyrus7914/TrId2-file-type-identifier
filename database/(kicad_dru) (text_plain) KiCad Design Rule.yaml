@@ -1,0 +1,26 @@
+Name: KiCad Design Rule
+URL: "https://en.wikipedia.org/wiki/KiCad"
+FileNameExtensions: ["kicad_dru"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(version 1)"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(CONSTRAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(VERSION 1)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E (MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(RULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MM))"
+    CaseSensitive: false

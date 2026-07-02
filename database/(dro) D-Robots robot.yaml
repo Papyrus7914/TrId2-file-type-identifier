@@ -1,0 +1,17 @@
+Name: D-Robots robot
+Description: D-Robots is a "code-war" game (like the older C-Robots). Bot's are programmed in a Delphi/Pascal like language.
+URL: "http://www.plasmacode.com"
+FileNameExtensions: ["dro"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DR\x03\x04\x14\0\v\0\b\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

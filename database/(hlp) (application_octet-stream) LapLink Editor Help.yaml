@@ -1,0 +1,13 @@
+Name: LapLink Editor Help
+URL: "https://en.wikipedia.org/wiki/Laplink"
+FileNameExtensions: ["hlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Help Version 2\0\0LapLink Editor Help file.  Copyright (c) 1991, Traveling Software, Inc.\n"
+    CaseSensitive: true
+  - Pos: 96
+    Bytes: [0x1A, 0x1A]
+  - Pos: 102
+    AsciiString: "\x04\0LE"
+    CaseSensitive: true

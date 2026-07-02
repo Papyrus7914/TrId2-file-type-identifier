@@ -1,0 +1,14 @@
+Name: WordStar Macro
+URL: "https://en.wikipedia.org/wiki/WordStar"
+FileNameExtensions: ["wsm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Sub Main\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END SUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY("
+    CaseSensitive: false

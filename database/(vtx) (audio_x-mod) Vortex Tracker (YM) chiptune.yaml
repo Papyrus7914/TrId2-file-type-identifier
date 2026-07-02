@@ -1,0 +1,14 @@
+Name: Vortex Tracker (YM) chiptune
+URL: "http://bulba.untergrund.net/vortexold_e.htm"
+FileNameExtensions: ["vtx"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ym\x01"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\02"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0"
+    CaseSensitive: true

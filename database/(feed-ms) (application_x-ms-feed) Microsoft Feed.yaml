@@ -1,0 +1,15 @@
+Name: Microsoft Feed
+FileNameExtensions: ["feed-ms"]
+MimeType: application/x-ms-feed
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1]
+  - Pos: any
+    AsciiString: "H\01\00\0I\0E\0A\0Q\0P\0S\0C\0E\02\0U\0O\04\0B\0F\05\0S\0Z\0L\0Z\0J\0I\0O\0E\0\0\0\0\0\0\0\0\0\0\08"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0T\0T\0P"
+    CaseSensitive: false

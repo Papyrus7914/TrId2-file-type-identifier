@@ -1,0 +1,26 @@
+Name: Glade UI design
+URL: "https://en.wikipedia.org/wiki/Glade_Interface_Designer"
+FileNameExtensions: ["glade"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROPERTY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILD"
+    CaseSensitive: false

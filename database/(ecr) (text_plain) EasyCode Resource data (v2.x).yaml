@@ -1,0 +1,14 @@
+Name: EasyCode Resource data (v2.x)
+URL: "https://www.easycode.cat/"
+FileNameExtensions: ["ecr"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFE;\0D\0o\0 \0n\0o\0t\0 \0m\0o\0d\0i\0f\0y\0 \0t\0h\0i\0s\0 \0f\0i\0l\0e\0!\0!\0!\0\r\0\n\0E\0a\0s\0y\0 \0C\0o\0d\0e\0 \0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "B\0E\0G\0I\0N\0 \0E\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0N\0D"
+    CaseSensitive: false

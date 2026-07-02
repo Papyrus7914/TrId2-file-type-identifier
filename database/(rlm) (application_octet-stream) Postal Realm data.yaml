@@ -1,0 +1,17 @@
+Name: Postal Realm data
+URL: "https://www.mobygames.com/game/2924/postal/"
+FileNameExtensions: ["rlm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ABCD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "__MULTIGRIDINDIRECT__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MULTIGRID_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAVNET"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: GeoTortue project
+URL: "http://geotortue.free.fr/"
+FileNameExtensions: ["trt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "procedures.txt"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROCEDURES.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMANDS.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY.XMLPK"
+    CaseSensitive: false

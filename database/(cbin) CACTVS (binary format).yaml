@@ -1,0 +1,181 @@
+Name: CACTVS (binary format)
+URL: "http://www2.ccc.uni-erlangen.de/software/cactvs/"
+FileNameExtensions: ["cbin"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0\0\x0F\a"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: ":1."
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\n\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\0\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\0\0\0\x01\0\0\0\x01\0\0\0\x02\0\0\0\0\0\0\0\x01\0\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: "\0\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 84
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 88
+    AsciiString: "\0\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 100
+    AsciiString: "\0\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "\0\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 120
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 124
+    AsciiString: "\0\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 132
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 1340
+    AsciiString: "\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0"
+    CaseSensitive: true
+  - Pos: 1532
+    AsciiString: "\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0\x05\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "A_CO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A_ELEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A_FORMAL_CHARGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A_FREE_ELECTRONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A_HCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A_LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A_RADICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A_XY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B_FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B_LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CACTVS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_CAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_HISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_IDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_STDBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LREC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCHLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGMDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P_INT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P_IVEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P_STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P_ZVEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_AROMATIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCLSERVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

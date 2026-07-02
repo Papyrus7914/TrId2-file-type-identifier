@@ -1,0 +1,35 @@
+Name: Icarus Verilog VVP format (with Shebang)
+URL: "https://en.wikipedia.org/wiki/Icarus_Verilog"
+FileNameExtensions: ["vvp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SCOPE MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IVL_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPI_MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%VPI_CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".THREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%END"
+    CaseSensitive: false

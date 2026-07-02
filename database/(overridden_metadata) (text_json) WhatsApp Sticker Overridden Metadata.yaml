@@ -1,0 +1,14 @@
+Name: WhatsApp Sticker Overridden Metadata
+URL: "https://github.com/WhatsApp/stickers"
+FileNameExtensions: ["overridden_metadata"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"sticker-pack-id\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IS-FIRST-PARTY-STICKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMOJIS"
+    CaseSensitive: false

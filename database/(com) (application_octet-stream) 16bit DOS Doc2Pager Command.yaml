@@ -1,0 +1,66 @@
+Name: 16bit DOS Doc2Pager Command
+Description: DOS tool by Ralph Roth.
+URL: "http://rose.rult.at/"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "r"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "t"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BITTE OHNE PARAMETER STARTEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEI WURDE MIT EINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERSTELLT.$$$$$$$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOC2PAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9.1990"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEENDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") 25."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RALPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZEILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ER V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTH"
+    CaseSensitive: false

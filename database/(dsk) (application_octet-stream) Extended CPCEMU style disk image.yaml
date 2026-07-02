@@ -1,0 +1,11 @@
+Name: Extended CPCEMU style disk image
+URL: "http://cpctech.cpc-live.com/docs/extdsk.html"
+FileNameExtensions: ["dsk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EXTENDED CPC DSK F"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\r\nDisk-Info\r\n"
+    CaseSensitive: true

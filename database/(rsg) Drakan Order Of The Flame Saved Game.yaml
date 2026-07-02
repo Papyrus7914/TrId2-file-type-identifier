@@ -1,0 +1,16 @@
+Name: "Drakan: Order Of The Flame Saved Game"
+URL: "http://www.surreal.com/games/index.php?gameID=3"
+FileNameExtensions: ["rsg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SRSC\0\x01"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\x05\0\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0"
+    CaseSensitive: true

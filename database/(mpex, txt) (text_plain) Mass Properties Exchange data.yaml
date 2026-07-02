@@ -1,0 +1,11 @@
+Name: Mass Properties Exchange data
+URL: "http://www.dbmass.com/mpex/"
+FileNameExtensions: ["mpex", "txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MPEX\tDATASET\t"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Gambit Extensive Game File Format
+URL: "http://gambit.sourceforge.net/gambit13/formats.html"
+FileNameExtensions: ["efg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EFG "
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: " \""
+    CaseSensitive: true

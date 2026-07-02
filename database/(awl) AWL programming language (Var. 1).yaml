@@ -1,0 +1,19 @@
+Name: AWL programming language (Var. 1)
+Description: Used for PLC programming.
+FileNameExtensions: ["awl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ORGANIZATION_BLOCK PRINCIPAL:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END_ORGANIZATION_BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

@@ -1,0 +1,41 @@
+Name: eXtensible Data Model and Format
+URL: "https://en.wikipedia.org/wiki/XDMF"
+FileNameExtensions: ["xdmf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GEOMETRY GEOMETRYTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPOLOGYTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOMAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XDMF"
+    CaseSensitive: false

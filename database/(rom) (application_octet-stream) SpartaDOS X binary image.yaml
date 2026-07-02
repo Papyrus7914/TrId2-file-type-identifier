@@ -1,0 +1,12 @@
+Name: SpartaDOS X binary image
+Description: Disk Operating System for Atari 8-bit machines.
+URL: "https://en.wikipedia.org/wiki/SpartaDOS_X"
+FileNameExtensions: ["rom"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SDX"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ATARIDOS\0SPARTADOS\0PSEUDO-FS\0MYDOS\0FAT12\0FAT16"
+    CaseSensitive: false

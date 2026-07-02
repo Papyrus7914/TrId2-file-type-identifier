@@ -1,0 +1,18 @@
+Name: MySQL table Format (v10)
+URL: "https://en.wikipedia.org/wiki/MySQL"
+FileNameExtensions: ["frm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    \n
+    Bytes: [0xFE, 0x01, 0x0A]
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 27
+    Bytes: [0x02]
+  - Pos: 32
+    Bytes: [0x00, 0x05]
+  - Pos: 39
+    AsciiString: "\0"
+    CaseSensitive: true

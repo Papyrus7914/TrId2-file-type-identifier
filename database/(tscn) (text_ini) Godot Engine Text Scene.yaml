@@ -1,0 +1,23 @@
+Name: Godot Engine Text Scene
+URL: "https://en.wikipedia.org/wiki/Godot_(game_engine)"
+FileNameExtensions: ["tscn"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[gd_scene load_steps="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NODE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

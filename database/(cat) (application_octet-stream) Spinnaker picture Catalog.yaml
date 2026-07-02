@@ -1,0 +1,32 @@
+Name: Spinnaker picture Catalog
+URL: "http://fileformats.archiveteam.org/wiki/Picture_Catalog_(Spinnaker_.CAT)"
+FileNameExtensions: ["cat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CAT "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CLIPFORM"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "CLIPINFO"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "PATH"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "DIB "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLIPFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIPINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PCX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false

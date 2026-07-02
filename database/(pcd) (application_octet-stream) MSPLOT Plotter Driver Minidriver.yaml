@@ -1,0 +1,10 @@
+Name: MSPLOT Plotter Driver Minidriver
+URL: "https://docs.microsoft.com/en-us/windows-hardware/drivers/print/plotter-driver-components"
+FileNameExtensions: ["pcd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Plot"
+    CaseSensitive: true
+  - Pos: 8
+    Bytes: [0x00, 0x01]

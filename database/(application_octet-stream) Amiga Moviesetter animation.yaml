@@ -1,0 +1,28 @@
+Name: Amiga Moviesetter animation
+Description: Amiga movie editor by Gold Disk Inc.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "x"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "e"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "t"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "r V1.0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "w"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "v\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GOLD DISK IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R V1.0"
+    CaseSensitive: false

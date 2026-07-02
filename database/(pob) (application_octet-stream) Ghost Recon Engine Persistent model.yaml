@@ -1,0 +1,38 @@
+Name: Ghost Recon Engine Persistent model
+URL: "https://www.mobygames.com/game/5557/tom-clancys-ghost-recon/"
+FileNameExtensions: ["pob"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\t\0\0\0BeginPOB"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "BeginModel\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "Version"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "MaterialList\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GEOMETRYLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPOB"
+    CaseSensitive: false

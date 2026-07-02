@@ -1,0 +1,73 @@
+Name: Microsoft Test compiled P-Code (v3.0)
+FileNameExtensions: ["pcd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        b     R                             -
+    Bytes: [0x62, 0x52, 0x01, 0x01, 0xD7, 0xC6, 0x2D, 0x00]
+  - Pos: any
+    AsciiString: "T3CTRL16.DLL\0T3RUN16.DLL\0T3UI16.DLL\0T3DDE16.DLL\0DDEML.DLL\0T3SCRN16.DLL\0T3DLGS16.DLL\0USER\0T3TRAP16.DLL\0KERNEL\0KEYBOARD.DRV\0GDI\0SOUND.DRV\0SHELL.DLL\0COMMDLG.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT T3UIMICROSOFT T3DDEMICROSOFT T3SCRNMICROSOFT T3DLGSTHIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSYSTEMMETRICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT T3CTRL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECLARES.INC\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSTEST16.INC\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINAPI16.INC\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETEOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSTEST.INC\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINAPI.INC\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINFO.MST\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDDIALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DLGBOXEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DLGITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSTINC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.RES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

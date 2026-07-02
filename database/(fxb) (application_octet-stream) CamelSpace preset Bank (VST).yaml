@@ -1,0 +1,17 @@
+Name: CamelSpace preset Bank (VST)
+URL: "https://www.kvraudio.com/product/camelspace-by-camel-audio"
+FileNameExtensions: ["fxb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CcnK"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FBCh\0\0\0\x01CaS1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CAS1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FBCH"
+    CaseSensitive: false

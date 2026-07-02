@@ -1,0 +1,14 @@
+Name: SuperMap World - AvisMap GIS data
+Description: SMW (SuperMap World) files are a core component of several GIS datasets
+URL: "http://en.wikipedia.org/wiki/SuperMap"
+FileNameExtensions: ["smw"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x05\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0x\xDA"
+    CaseSensitive: true

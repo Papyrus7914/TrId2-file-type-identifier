@@ -1,0 +1,17 @@
+Name: Altera Design Library System list
+URL: "https://en.wikipedia.org/wiki/Altera"
+FileNameExtensions: ["dls"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DLSL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".VHDLVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DLSL"
+    CaseSensitive: false

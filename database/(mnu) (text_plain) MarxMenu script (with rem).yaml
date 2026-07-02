@@ -1,0 +1,17 @@
+Name: MarxMenu script (with rem)
+URL: "http://www.ctyme.com/marx.htm"
+FileNameExtensions: ["mnu"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Comment\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDCOMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU"
+    CaseSensitive: false

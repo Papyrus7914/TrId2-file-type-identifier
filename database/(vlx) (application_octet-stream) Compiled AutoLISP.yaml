@@ -1,0 +1,12 @@
+Name: Compiled AutoLISP
+Description: VLX files are compiled AutoLISP files that were created with Visual LISP.
+URL: "https://en.wikipedia.org/wiki/AutoLISP"
+FileNameExtensions: ["vlx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VRTLIB-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOAD(("
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: Buzzic 2 module
+URL: "http://trackerbase.blogspot.it/2014/02/buzzic-2.html"
+FileNameExtensions: ["buz2"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "buz2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADSR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFS"
+    CaseSensitive: false

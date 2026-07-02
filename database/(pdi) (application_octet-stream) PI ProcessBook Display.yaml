@@ -1,0 +1,220 @@
+Name: PI ProcessBook Display
+URL: "https://www.aveva.com/en/products/aveva-pi-system/"
+FileNameExtensions: ["pdi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1]
+  - Pos: 1152
+    AsciiString: "V\0b\0a\0 \0P\0r\0o\0j\0e\0c\0t"
+    CaseSensitive: true
+  - Pos: 1280
+    AsciiString: "V\0B\0A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "{\00\00\00\02\00\04\03\00\0-\00\00\00\00\0-\00\00\00\00\0-\0C\00\00\00\0-\00\00\00\00\00\00\00\00\00\00\04\06\0}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{\00\00\00\02\00\04\0E\0F\0-\00\00\00\00\0-\00\00\00\00\0-\0C\00\00\00\0-\00\00\00\00\00\00\00\00\00\00\04\06\0}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{\00\0C\0F\08\07\0D\08\00\0-\09\0E\00\07\0-\01\01\0C\0F\0-\08\04\00\0C\0-\00\00\0A\0A\00\00\04\02\02\0A\04\0A\0}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{\0A\0E\07\09\06\0B\00\00\0-\0B\0C\0D\00\0-\01\00\01\0B\0-\08\0D\02\0E\0-\00\04\00\02\01\0C\00\00\09\04\00\02\0}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{\0C\08\0C\06\07\0C\06\02\0-\0C\09\0A\05\0-\01\01\0D\01\0-\0A\04\09\09\0-\00\00\0A\00\0C\09\02\03\06\07\03\07\0}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0I\0-\0P\0R\0O\0C\0E\0S\0S\0B\0O\0O\0K\0 \0S\0Y\0M\0B\0O\0L\0 \0L\0I\0B\0R\0A\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0I\0S\0U\0A\0L\0 \0B\0A\0S\0I\0C\0 \0F\0O\0R\0 \0A\0P\0P\0L\0I\0C\0A\0T\0I\0O\0N\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0I\0-\0P\0R\0O\0C\0E\0S\0S\0B\0O\0O\0K\0 \0T\0Y\0P\0E\0 \0L\0I\0B\0R\0A\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X\0E\0X\0T\0E\0C\0R\0L\0Y\0O\0I\0B\0U\0B\04\0D\0Q\0J\0O\0K\0Q\02\0P\0I\0D\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{3832D640-CF90-11CF-8E43-00A0C911005A}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{46E12E81-0758-11D1-AA98-00A0C923693B}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{AE796B\000-BCD0-\0101B-8D2\0E-04021C(009"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THISDISPLAY\0T\0H\0I\0S\0D\0I\0S\0P\0L\0A\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0L\0E\0 \0A\0U\0T\0O\0M\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF SERVERS REQUIRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF DYNAMIC SYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0Y\0M\0B\0O\0L\0 \0S\0T\0R\0E\0A\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF STATIC SYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0B\0O\0B\0J\0L\0I\0B\0.\0T\0L\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0B\0S\0Y\0M\0L\0I\0B\0.\0E\0X\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0B\0S\0Y\0M\0L\0I\0B\0.\0T\0L\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0V\0B\0A\0_\0P\0R\0O\0J\0E\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0D\0O\0L\0E\02\0.\0T\0L\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0B\0A\0 \0P\0R\0O\0J\0E\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUT\0E VB_NAM\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY FILE FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATIBLE FILE FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONCOMPATIBLE32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOST EXTENDER INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0O\0J\0E\0C\0T\0W\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0O\0C\0B\0O\0O\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0B\0E\06\0.\0D\0L\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF TAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELPCONTEXTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PBOBJLIB.TLB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PBSYMLIB.EXD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PBSYMLIB.TLB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PISYMBOL.FIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINIMUM COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STDOLE2.TLB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBAPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0O\0C\0A\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECTANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_EVALUATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCBOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBE6.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEXPOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREDECL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0E\0M\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0B\0A\06"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0I\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OMATI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0B\03"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0Y\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN16"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBA6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIND"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: STereoLithography (ASCII)
+URL: "http://en.wikipedia.org/wiki/STL_(file_format)"
+FileNameExtensions: ["stl"]
+MimeType: model/x.stl-ascii
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "solid"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDSOLID"
+    CaseSensitive: false

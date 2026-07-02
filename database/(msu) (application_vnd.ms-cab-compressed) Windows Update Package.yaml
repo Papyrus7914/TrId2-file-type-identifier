@@ -1,0 +1,65 @@
+Name: Windows Update Package
+URL: "https://en.wikipedia.org/wiki/Windows_Update"
+FileNameExtensions: ["msu"]
+MimeType: application/vnd.ms-cab-compressed
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MICROSOFT ROOT CERTIFICATE AUTHORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT CORPORATION1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRL.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-PKGPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WSUSSCAN.CAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WASHINGTON1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDMOND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICE0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CRL0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CRT0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CERTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

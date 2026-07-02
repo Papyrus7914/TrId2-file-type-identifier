@@ -1,0 +1,11 @@
+Name: Qualcomm Modem Binary firmware
+URL: "https://en.wikipedia.org/wiki/Qualcomm"
+FileNameExtensions: ["mbn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0GFC"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "BBCFGMBN"
+    CaseSensitive: true

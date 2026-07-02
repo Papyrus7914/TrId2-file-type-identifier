@@ -1,0 +1,21 @@
+Name: NS/Elite Display 3.12 Macro Object Path File
+FileNameExtensions: ["mop"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x06\0\0\0\aMOPFile\x02\05\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0\0\x1CMidrange Workspace.Display "
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 57
+    #                    P
+    Bytes: [0x01, 0x80, 0x50, 0x19, 0x00]
+  - Pos: 63
+    AsciiString: "\t\0"
+    CaseSensitive: true

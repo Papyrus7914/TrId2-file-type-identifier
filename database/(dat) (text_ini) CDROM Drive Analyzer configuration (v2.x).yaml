@@ -1,0 +1,44 @@
+Name: CDROM Drive Analyzer configuration (v2.x)
+Description: Testing tool for CDROMs by Alexander Filippoff.
+FileNameExtensions: ["dat"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Builder]\r\nProgram=CDRom Drive Analyzer 2."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BY ALEXANDER FILIPPOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFERRESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLLABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1998-20"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

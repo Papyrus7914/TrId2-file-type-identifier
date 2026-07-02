@@ -1,0 +1,20 @@
+Name: Z Corp. ZPrint 3D format
+URL: "https://en.wikipedia.org/wiki/Z_Corporation"
+FileNameExtensions: ["zbd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "ZPrint SoftwareVersion "
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZPRINT"
+    CaseSensitive: false

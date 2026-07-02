@@ -1,0 +1,27 @@
+Name: Gerber Photoplot
+FileNameExtensions: ["pho"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ") GENERATED GERBER (RS-274-X) FILE*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G04"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PCB - CIRCUITRY*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PCB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(BUILD NUMBER"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: Wally Beben module
+FileNameExtensions: ["wb"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "H\xE7\xFF\xFEa\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    #        L                       N     u
+    Bytes: [0x4C, 0xDF, 0x7F, 0xFF, 0x4E, 0x75]
+  - Pos: any
+    AsciiString: "MUSIC"
+    CaseSensitive: false

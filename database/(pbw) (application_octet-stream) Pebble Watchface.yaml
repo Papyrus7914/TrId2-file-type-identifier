@@ -1,0 +1,56 @@
+Name: Pebble Watchface
+URL: "http://en.wikipedia.org/wiki/Pebble_%28watch%29"
+FileNameExtensions: ["pbw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "APP_RESOURCES.PBPACKPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEBBLE-APP.BINPBLAPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEBBLE-APP.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFESTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.JSON{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATEDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATEDBY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}}PK"
+    CaseSensitive: false

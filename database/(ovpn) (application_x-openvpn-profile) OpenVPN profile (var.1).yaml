@@ -1,0 +1,17 @@
+Name: OpenVPN profile (var.1)
+URL: "https://en.wikipedia.org/wiki/OpenVPN"
+FileNameExtensions: ["ovpn"]
+MimeType: application/x-openvpn-profile
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "client"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REMOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERB"
+    CaseSensitive: false

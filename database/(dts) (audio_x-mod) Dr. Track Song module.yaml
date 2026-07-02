@@ -1,0 +1,11 @@
+Name: Dr. Track Song module
+Description: DOS Tracker by Alessandro Scotti.
+FileNameExtensions: ["dts"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\t##SONG##\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SMP"
+    CaseSensitive: false

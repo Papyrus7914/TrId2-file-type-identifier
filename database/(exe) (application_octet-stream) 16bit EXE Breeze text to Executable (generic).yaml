@@ -1,0 +1,85 @@
+Name: 16bit EXE Breeze text to Executable (generic)
+URL: "https://www.theabsolute.net/sware/oldfav.html"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 16
+    Bytes: [0xF0, 0xFF, 0x00, 0x00]
+  - Pos: 22
+    AsciiString: "\0\0\x1C\0\0\0\t\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRINTING (PRESS ESC TO CANCEL)  U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE ALREADY EXISTS.  OVERWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUE WITH NEXT PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URUNTIME ERROR \0 AT \0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSE AFTER EACH PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER NOT READY   U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID LINE NUMBERU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTING PAGE LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF DISK SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALID COLOURS 0.."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHING . . ."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDING TO FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT FOUND  U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEND TO FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RINTER OR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MORE.."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPT1"
+    CaseSensitive: false

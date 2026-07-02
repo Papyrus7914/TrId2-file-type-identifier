@@ -1,0 +1,82 @@
+Name: WinZip Job File (XML type)
+URL: "http://en.wikipedia.org/wiki/Winzip"
+FileNameExtensions: ["wjf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: 115
+    AsciiString: "\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WINZIPJOB VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAILITEM OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTION MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIZARD USEVARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDER APPEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDERS MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM EXCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME APPEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLIT UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPAN MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CD SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOG TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECURSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false

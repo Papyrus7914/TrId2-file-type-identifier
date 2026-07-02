@@ -1,0 +1,16 @@
+Name: Amiga Function Description (with rem)
+FileNameExtensions: ["fd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "* "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BASE _"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIAS"
+    CaseSensitive: false

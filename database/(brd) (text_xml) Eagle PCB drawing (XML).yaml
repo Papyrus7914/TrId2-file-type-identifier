@@ -1,0 +1,518 @@
+Name: Eagle PCB drawing (XML)
+URL: "https://en.wikipedia.org/wiki/EAGLE_(program)"
+FileNameExtensions: ["brd"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETTING ALWAYSVECTORFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DPMAXLENGTHDIFFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE EAGLE SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTING VERTICALTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EAGLE DESIGN RULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSELONGATIONOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLMAXMICROVIAINNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLMAXMICROVIAOUTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLMINMICROVIAINNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLMINMICROVIAOUTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDCOPPERDIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDVIAVIASAMELAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLTHERMALSFORVIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MNLAYERSVIAINSMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSELONGATIONLONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLTHERMALISOLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLMAXCREAMFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLMINCREAMFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSBLINDVIARATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RVMICROVIAINNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RVMICROVIAOUTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLMAXSTOPFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLMINSTOPFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLVIASTOPLIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLMAXPADBOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLMINPADBOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRMAXROUNDNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRMINROUNDNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKRESTRICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EAGLE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLMAXPADINNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLMAXVIAINNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLMAXVIAOUTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLMINPADINNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLMINVIAINNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLMINVIAOUTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MNRIPUPLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MNRIPUPSTEPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MNRIPUPTOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVCREAMFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTDISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTUNITDIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFBONUSSTEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFBUSIMPACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFCHANGEDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFMALUSSTEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFPADIMPACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFSMDIMPACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGNRULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DPGAPFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MNEXTDSTEPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVSTOPFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLMAXPADTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLMINPADTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUTINGGRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RVPADBOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRROUNDNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEDIAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANTDEFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOROUTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFDIAGSTEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFEXTDSTEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFORTHSTEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERSETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDWIREWIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MNSEGMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSMICROVIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RVPADINNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RVVIAINNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RVVIAOUTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPVIASHAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRESTRICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFHUGGING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFNONPREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFPOLYGON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EAGLE.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLLOW-ME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXERRORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDSMDSTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDWIREPAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDWIREVIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTISOLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASS NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRESTRICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VRESTRICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKEEPOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORIGINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDPADPAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDPADVIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDSMDPAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDSMDSMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDSMDVIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTCOPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFDIR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSBOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RVPADTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKEEPOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TORIGINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNROUTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BFINISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BVALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFAVOID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFBASE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDDRILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MILLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSDRILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSFIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFINISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TVALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIRE X1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADJUST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BPLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUSSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRILLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MNVIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BDOCU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGLUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BSTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFVIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TDOCU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TGLUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0MIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CKGR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREF"
+    CaseSensitive: false

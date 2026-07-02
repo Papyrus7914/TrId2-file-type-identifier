@@ -1,0 +1,19 @@
+Name: NetCDF (network Common Data Form)
+URL: "www.unidata.ucar.edu/software/netcdf/"
+FileNameExtensions: ["cdl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "netcdf "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIMENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETCDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

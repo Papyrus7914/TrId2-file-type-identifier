@@ -1,0 +1,14 @@
+Name: Digital Integration mission info
+Description: Used in various simulation games by DI.
+FileNameExtensions: ["mis"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ":Game Flow"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CAMPAIGN LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAR ZONE"
+    CaseSensitive: false

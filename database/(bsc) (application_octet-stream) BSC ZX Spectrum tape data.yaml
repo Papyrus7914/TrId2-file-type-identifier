@@ -1,0 +1,9 @@
+Name: BSC ZX Spectrum tape data
+URL: "http://www.zx-modules.de/fileformats/bscformat.html"
+FileNameExtensions: ["bsc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x03]
+  - Pos: 15
+    Bytes: [0x00, 0x80]

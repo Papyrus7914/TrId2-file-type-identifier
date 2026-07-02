@@ -1,0 +1,21 @@
+Name: Safari Web History
+URL: "http://en.wikipedia.org/wiki/Safari_%28web_browser%29"
+FileNameExtensions: ["webhistory"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "bplist00"
+    CaseSensitive: true
+  - Pos: 9
+    Bytes: [0x01, 0x02, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "BPLIST00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURL"
+    CaseSensitive: false

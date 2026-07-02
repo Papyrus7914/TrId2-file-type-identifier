@@ -1,0 +1,13 @@
+Name: GigaSampler Sound bank
+URL: "http://www.tascamgiga.com/"
+FileNameExtensions: ["gig"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0DLS LIST"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0INFOI"
+    CaseSensitive: true

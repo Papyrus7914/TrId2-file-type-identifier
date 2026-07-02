@@ -1,0 +1,52 @@
+Name: DivX Connected Theme
+URL: "http://labs.divx.com/connected/"
+FileNameExtensions: ["zth"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "TEXTSOFTWARE\0PAINT.NET V3."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONN_LOGO.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTED.CTHPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEL.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CK.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATXG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false

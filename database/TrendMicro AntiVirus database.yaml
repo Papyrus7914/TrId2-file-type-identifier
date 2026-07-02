@@ -1,0 +1,19 @@
+Name: TrendMicro AntiVirus database
+Description: These files are most usualy stored as numbered files e.g. lpt$vpn.123 however the extension is only temporarily significant i.e. a file from 2004 or 2011 could be .890 and a file from 1998 or 2008 could be .321
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x1A]
+  - Pos: 2
+    Bytes: [0xBD, 0x1A]
+  - Pos: 13
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 57
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 113
+    AsciiString: "\0"
+    CaseSensitive: true

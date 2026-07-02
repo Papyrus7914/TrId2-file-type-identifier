@@ -1,0 +1,10 @@
+Name: REX2 audio sample loop
+URL: "http://en.wikipedia.org/wiki/REX2"
+FileNameExtensions: ["rx2", "rex"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CAT "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "REX2HEAD"
+    CaseSensitive: true

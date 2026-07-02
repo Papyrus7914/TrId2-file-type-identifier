@@ -1,0 +1,10 @@
+Name: Micrognosis Compression Archiver compressed archive
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xB7]
+  - Pos: 2
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "h0-"
+    CaseSensitive: true

@@ -1,0 +1,14 @@
+Name: Foenix IDE Watch List
+URL: "https://github.com/Trinity-11/FoenixIDE"
+FileNameExtensions: ["wlxml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "--EXPORT OF WATCH LIST FOR C256 FOENIX IDE--"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WATCHES"
+    CaseSensitive: false

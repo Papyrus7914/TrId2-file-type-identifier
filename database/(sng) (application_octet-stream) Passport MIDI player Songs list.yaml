@@ -1,0 +1,19 @@
+Name: Passport MIDI player Songs list
+FileNameExtensions: ["sng"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MPSS"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "PSSh"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".MID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAK"
+    CaseSensitive: false

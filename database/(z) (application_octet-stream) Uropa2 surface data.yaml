@@ -1,0 +1,26 @@
+Name: Uropa2 surface data
+URL: "https://www.mobygames.com/game/82421/uropa2/"
+FileNameExtensions: ["z"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BASE\0\x03\0\x05"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0Uropa"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P\0T\0P\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0X\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UROPA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X\0P\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false

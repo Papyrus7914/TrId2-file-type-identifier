@@ -1,0 +1,11 @@
+Name: WordPerfect Install options
+URL: "https://github.com/OneWingedShark/WordPerfect/blob/master/doc/SDK_Help/FileFormats/WPFF_DocumentStructure.htm"
+FileNameExtensions: ["ins"]
+MimeType: application/x-wordperfect-ins
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFWPC"
+    CaseSensitive: true
+  - Pos: 8
+    #              )
+    Bytes: [0x01, 0x29]

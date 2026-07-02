@@ -1,0 +1,10 @@
+Name: 360desktop 360-degree Desktop image
+URL: "http://www.360desktop.com/"
+FileNameExtensions: ["360"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xED360desktop\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "360DESKTOP"
+    CaseSensitive: false

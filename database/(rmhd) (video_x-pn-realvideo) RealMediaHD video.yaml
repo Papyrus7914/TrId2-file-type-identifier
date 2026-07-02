@@ -1,0 +1,47 @@
+Name: RealMediaHD video
+URL: "https://en.wikipedia.org/wiki/RealVideo"
+FileNameExtensions: ["rmhd"]
+MimeType: video/x-pn-realvideo
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ".RMP\0\0\0\x12\0\x01\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "PROP\0\0\06\0\x02\0"
+    CaseSensitive: true
+  - Pos: 70
+    AsciiString: "\0\x03CONT\0\0\0\x12\0\0\0\0\0\0\0\0\0\0MDPR\0\0\0v\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 130
+    AsciiString: "\fVideo Stream\x14video/x-pn-realvideo\0\0\0(\0\0\0(VIDORV60"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "X-PN-REALVIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO STREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDORV60"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JDDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDPR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP"
+    CaseSensitive: false

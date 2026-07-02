@@ -1,0 +1,46 @@
+Name: TGF chemical test (UNIX)
+URL: "http://www.mdli.com/"
+FileNameExtensions: ["tgf"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "$Version: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$FILL_RGB2COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$PEN_RGB2COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MDLEDITTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$OBJ_COORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ENDSKETCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$TOTOBJS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$RXNATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTTBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTF1"
+    CaseSensitive: false

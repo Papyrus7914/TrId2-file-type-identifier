@@ -1,0 +1,11 @@
+Name: SSH-DSS Public key
+URL: "https://en.wikipedia.org/wiki/Secure_Shell_Protocol"
+FileNameExtensions: ["pub"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ssh-dss "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SSH-DSS"
+    CaseSensitive: false

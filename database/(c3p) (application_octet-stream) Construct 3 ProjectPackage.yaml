@@ -1,0 +1,56 @@
+Name: Construct 3 Project/Package
+URL: "https://www.construct.net/"
+FileNameExtensions: ["c3p"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PROJECT.UISTATE.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT.C3PROJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENTSHEETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTTYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-128.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-256.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-16.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-32.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHRM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false

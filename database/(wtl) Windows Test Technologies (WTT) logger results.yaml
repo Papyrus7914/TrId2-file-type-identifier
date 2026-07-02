@@ -1,0 +1,84 @@
+Name: Windows Test Technologies (WTT) logger results
+FileNameExtensions: ["wtl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STARTTEST TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECURELOG HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOBSWORKINGDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSG USERTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WTT-LOGGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WTTJOBRUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREADID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDTEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3579545"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTI ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTX ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WTTLOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUID"
+    CaseSensitive: false

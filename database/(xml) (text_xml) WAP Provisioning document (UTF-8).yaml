@@ -1,0 +1,23 @@
+Name: WAP Provisioning document (UTF-8)
+Description: Used for software installation and device configuration on Windows CE, Windows Mobile, and via OMA Client Provisioning.
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<wap-provisioningdoc"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHARACTERISTIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

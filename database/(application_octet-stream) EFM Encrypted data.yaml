@@ -1,0 +1,16 @@
+Name: EFM Encrypted data
+URL: "https://www.hwy.com.tw/index.php/product/efm"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 52
+    AsciiString: "the file is encrypted by http://www.hwy.com.tw ,don't modify it!\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THE FILE IS ENCRYPTED BY HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.HWY.COM.TW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T MODIFY IT"
+    CaseSensitive: false

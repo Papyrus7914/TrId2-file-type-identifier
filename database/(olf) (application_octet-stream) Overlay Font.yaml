@@ -1,0 +1,11 @@
+Name: Overlay Font
+Description: Atari ST presentation software.
+FileNameExtensions: ["olf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x06\x86\0\x01\0\x02\x01t\x01t\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "OLF"
+    CaseSensitive: true

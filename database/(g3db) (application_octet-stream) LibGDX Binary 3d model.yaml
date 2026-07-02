@@ -1,0 +1,23 @@
+Name: LibGDX Binary 3d model
+URL: "https://libgdx.com/"
+FileNameExtensions: ["g3db"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{s\aversionai\x02\0\0\0\x01s\x02ids\0s\x06meshes["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDS\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false

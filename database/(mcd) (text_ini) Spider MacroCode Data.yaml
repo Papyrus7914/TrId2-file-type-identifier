@@ -1,0 +1,26 @@
+Name: Spider MacroCode Data
+URL: "https://www.creamsoft.com/en/spider/"
+FileNameExtensions: ["mcd"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[macrocode_data]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VARIABLESCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT_SIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT_SIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

@@ -1,0 +1,18 @@
+Name: Lossless Audio Codec
+Description: Fully vibe-coded lossless codec.
+URL: "https://hydrogenaudio.org/index.php/topic,129307.0.html"
+FileNameExtensions: ["lac"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "LAC fmt "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LAC FMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

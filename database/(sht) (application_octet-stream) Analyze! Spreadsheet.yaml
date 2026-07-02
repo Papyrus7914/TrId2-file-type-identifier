@@ -1,0 +1,12 @@
+Name: Analyze! Spreadsheet
+Description: Amiga spreadsheet by Micro-Systems Software, also part of TheWorks! integrated suite.
+URL: "https://archive.org/details/Analyze_1987_Micro-Systems_Software"
+FileNameExtensions: ["sht"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\x02\0("
+    CaseSensitive: true

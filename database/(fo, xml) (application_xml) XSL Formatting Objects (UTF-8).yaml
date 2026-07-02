@@ -1,0 +1,62 @@
+Name: XSL Formatting Objects (UTF-8)
+URL: "https://en.wikipedia.org/wiki/XSL_Formatting_Objects"
+FileNameExtensions: ["fo", "xml"]
+MimeType: application/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIMPLE-PAGE-MASTER MA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUT-MASTER-SET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTER-REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XSL-REGION-BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOW FLOW-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE-SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCE MASTER-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTER-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE-HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE-WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1999"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

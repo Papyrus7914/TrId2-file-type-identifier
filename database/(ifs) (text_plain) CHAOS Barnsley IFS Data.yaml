@@ -1,0 +1,21 @@
+Name: CHAOS Barnsley IFS Data
+Description: Fractal software for DOS by Autodesk.
+URL: "https://github.com/rudyrucker/chaos"
+FileNameExtensions: ["ifs"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CHAOS Barnsley IFS Data\r\nCreated: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP 1"
+    CaseSensitive: false

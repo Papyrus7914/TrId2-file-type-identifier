@@ -1,0 +1,11 @@
+Name: C64 NBZ disk image
+URL: "http://c64preservation.com/dp.php?pg=nibtools"
+FileNameExtensions: ["nbz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "MNIB-1541-RAW"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MNIB-1541-RAW"
+    CaseSensitive: false

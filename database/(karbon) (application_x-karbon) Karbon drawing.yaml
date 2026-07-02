@@ -1,0 +1,29 @@
+Name: Karbon drawing
+URL: "https://en.wikipedia.org/wiki/Karbon_(software)"
+FileNameExtensions: ["karbon"]
+MimeType: application/x-karbon
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/x-karbonPK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTINFO.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINDOC.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-KARBONPK"
+    CaseSensitive: false

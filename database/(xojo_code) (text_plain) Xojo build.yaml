@@ -1,0 +1,23 @@
+Name: Xojo build
+URL: "https://en.wikipedia.org/wiki/Xojo"
+FileNameExtensions: ["xojo_code"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#tag BuildAutomation"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN BUILDPROJECTSTEP BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN BUILDSTEPLIST MAC OS X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN BUILDSTEPLIST WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN BUILDSTEPLIST LINUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAG ENDBUILDAUTOMATION"
+    CaseSensitive: false

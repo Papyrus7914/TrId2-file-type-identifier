@@ -1,0 +1,17 @@
+Name: MechWarrior 2 mission data
+URL: "https://www.mobygames.com/game/1710/mechwarrior-2-mercenaries/"
+FileNameExtensions: ["bwd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BWD\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0REV\0\f\0\0\01.22DTBL\x1C\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DTBL"
+    CaseSensitive: false

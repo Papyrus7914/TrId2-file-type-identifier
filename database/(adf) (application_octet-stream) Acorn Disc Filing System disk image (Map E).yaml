@@ -1,0 +1,27 @@
+Name: Acorn Disc Filing System disk image (Map E)
+Description: Newer format used on A3000/A4000 and later Risc PCs.
+URL: "https://en.wikipedia.org/wiki/Acorn_Archimedes"
+FileNameExtensions: ["adf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 3
+    #              \n                            \a
+    Bytes: [0xFF, 0x0A, 0x05, 0x02, 0x02, 0x0F, 0x07, 0x01]
+  - Pos: 12
+    AsciiString: "\0\x01 \x05\x03\x02\0\0\0\x80\f\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x02\0\0\x80"
+    CaseSensitive: true
+  - Pos: 1027
+    #              \n                            \a
+    Bytes: [0xFF, 0x0A, 0x05, 0x02, 0x02, 0x0F, 0x07, 0x01]
+  - Pos: 1036
+    AsciiString: "\0\x01 \x05\x03\x02\0\0\0\x80\f\0"
+    CaseSensitive: true
+  - Pos: 1060
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x02\0\0\x80"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NICK"
+    CaseSensitive: false

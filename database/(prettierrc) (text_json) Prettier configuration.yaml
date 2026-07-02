@@ -1,0 +1,20 @@
+Name: Prettier configuration
+URL: "https://prettier.io/docs/en/configuration.html"
+FileNameExtensions: ["prettierrc"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRAILINGCOMMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLEQUOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEMI"
+    CaseSensitive: false

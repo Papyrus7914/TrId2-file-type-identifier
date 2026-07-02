@@ -1,0 +1,17 @@
+Name: Steam install script
+URL: "https://en.wikipedia.org/wiki/Steam_(service)"
+FileNameExtensions: ["vdf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\""
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "nstall"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "cript\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTALLSCRIPT"
+    CaseSensitive: false

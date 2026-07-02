@@ -1,0 +1,35 @@
+Name: Spectral Collection data format
+URL: "http://www.imagelab.at/help/spcoll_format.htm"
+FileNameExtensions: ["scll"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#iscVersion"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "0 CL-000$CLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISCFLAGNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISCILABFNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(UNDEFINED)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISCCLASSIDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISCCATDEFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISCNITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISCCALIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UCLID000"
+    CaseSensitive: false

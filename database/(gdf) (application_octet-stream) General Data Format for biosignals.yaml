@@ -1,0 +1,11 @@
+Name: General Data Format for biosignals
+URL: "http://fileformats.archiveteam.org/wiki/General_Data_Format_for_Biosignals"
+FileNameExtensions: ["gdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GDF "
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "."
+    CaseSensitive: true

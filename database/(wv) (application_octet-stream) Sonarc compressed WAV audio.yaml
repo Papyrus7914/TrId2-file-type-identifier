@@ -1,0 +1,24 @@
+Name: Sonarc compressed WAV audio
+Description: A lossless compressor from 1994!
+URL: "https://www.rarewares.org/rrw/sonarc.php"
+FileNameExtensions: ["wv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WAVEfmt "
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0!\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WAVEFMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACT"
+    CaseSensitive: false

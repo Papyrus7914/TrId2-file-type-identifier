@@ -1,0 +1,7 @@
+Name: Windows Registry Data
+Description: "Contains a list of key-value couples. WARNING: running the REG file will apply modification to the Windows registry!"
+FileNameExtensions: ["reg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "REGEDIT"
+    CaseSensitive: true

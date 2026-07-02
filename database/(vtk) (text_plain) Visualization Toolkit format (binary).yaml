@@ -1,0 +1,17 @@
+Name: Visualization Toolkit format (binary)
+URL: "https://en.wikipedia.org/wiki/VTK"
+FileNameExtensions: ["vtk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# vtk DataFile Version"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATASET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS"
+    CaseSensitive: false

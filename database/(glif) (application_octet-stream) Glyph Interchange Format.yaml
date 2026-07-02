@@ -1,0 +1,29 @@
+Name: Glyph Interchange Format
+URL: "http://fileformats.archiveteam.org/wiki/Glyph_Interchange_Format"
+FileNameExtensions: ["glif"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "1.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLYPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

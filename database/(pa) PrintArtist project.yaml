@@ -1,0 +1,33 @@
+Name: PrintArtist project
+URL: "http://www.printartist.com/"
+FileNameExtensions: ["pa"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: 1024
+    AsciiString: "R\0o\0o\0t\0 \0E\0n\0t\0r\0y"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTERNAL BLANK LAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIERRA ON-LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%\0\0\0COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSVN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC."
+    CaseSensitive: false

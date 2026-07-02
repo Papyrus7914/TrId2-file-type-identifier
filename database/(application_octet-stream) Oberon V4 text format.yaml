@@ -1,0 +1,9 @@
+Name: Oberon V4 text format
+URL: "http://www.oberon.ethz.ch/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 5
+    Bytes: [0x00, 0x01]
+  - Pos: any
+    AsciiString: ".SCN.FNT"
+    CaseSensitive: false

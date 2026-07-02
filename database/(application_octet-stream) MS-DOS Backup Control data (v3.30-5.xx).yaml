@@ -1,0 +1,8 @@
+Name: MS-DOS Backup Control data (v3.30-5.xx)
+Description: "Filename: CONTROL.nnn"
+URL: "http://www.ibiblio.org/pub/micro/pc-stuff/freedos/files/dos/restore/brtecdoc.htm"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x8BBACKUP  "
+    CaseSensitive: true

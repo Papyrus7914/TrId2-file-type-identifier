@@ -1,0 +1,31 @@
+Name: PFS:Publisher for Windows Template
+FileNameExtensions: ["tm1"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0j\0PFS:PUBLISHER T"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0\0\0Copyright \xA9 199"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SPINNAKER SOFTWARE ALL RIGHTS RESERVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLISHER TEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "J\0PFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0\0\0("
+    CaseSensitive: false

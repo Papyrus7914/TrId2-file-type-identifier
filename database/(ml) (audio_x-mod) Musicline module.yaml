@@ -1,0 +1,23 @@
+Name: Musicline module
+URL: "http://www.musicline.org/"
+FileNameExtensions: ["ml"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MLEDMODL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MLEDMODL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

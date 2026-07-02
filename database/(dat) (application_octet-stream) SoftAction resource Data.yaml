@@ -1,0 +1,31 @@
+Name: SoftAction resource Data
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4  (C) SoftAction 1996  \xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\r\nRSC FILE, Latest Update Date: "
+    CaseSensitive: true
+  - Pos: 81
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 84
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 87
+    AsciiString: "("
+    CaseSensitive: true
+  - Pos: 91
+    AsciiString: ")\0\r\nRSC Management System Designed By maxidea ^^'\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RSC MANAGEMENT SYSTEM DESIGNED BY MAXIDEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATEST UPDATE DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) SOFTACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSC FILE"
+    CaseSensitive: false

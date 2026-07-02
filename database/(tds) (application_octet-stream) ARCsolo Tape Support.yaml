@@ -1,0 +1,11 @@
+Name: ARCsolo Tape Support
+Description: Multi-platform backup tool by Cheyenne.
+FileNameExtensions: ["tds"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TDS\x1A"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "ARCsolo for "
+    CaseSensitive: true

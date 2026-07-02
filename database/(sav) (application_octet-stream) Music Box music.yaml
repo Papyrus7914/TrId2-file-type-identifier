@@ -1,0 +1,11 @@
+Name: Music Box music
+Description: GameBoy music and sfx system.
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "w\xFF\0C.M.\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "C.M."
+    CaseSensitive: false

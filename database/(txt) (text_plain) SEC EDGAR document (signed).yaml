@@ -1,0 +1,38 @@
+Name: SEC EDGAR document (signed)
+URL: "http://www.sec.gov/edgar.shtml"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-----BEGIN PRIVACY-ENHANCED MESSAGE-----"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ORIGINATOR-KEY-ASYMMETRIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINATOR-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEC-DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEC-HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROC-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIC-INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

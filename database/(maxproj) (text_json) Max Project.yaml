@@ -1,0 +1,59 @@
+Name: Max Project
+URL: "http://fileformats.archiveteam.org/wiki/Max"
+FileNameExtensions: ["maxproj"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n\t\"name\" : \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HIDEPROJECTWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFICATIONDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWDEPENDENCIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAILSVISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOLOCALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOORGANIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATIONDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCHERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MAXPAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

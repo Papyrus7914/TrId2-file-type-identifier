@@ -1,0 +1,17 @@
+Name: Sac lossless compressed audio (v1 stream)
+Description: "Sac: (State-of-the-Art) Lossless Audio Compression by Sebastian Lehmann."
+URL: "https://github.com/slmdev/sac"
+FileNameExtensions: ["sac"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SAC1"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "WAVEfmt"
+    CaseSensitive: true
+  - Pos: 70
+    AsciiString: "data"
+    CaseSensitive: true

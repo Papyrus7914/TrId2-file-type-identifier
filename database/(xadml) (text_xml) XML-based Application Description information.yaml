@@ -1,0 +1,66 @@
+Name: XML-based Application Description information
+Description: Provide an XML-structured short description of a single application configuration requirements.
+URL: "http://www.amigaforever.com/kb/15-114"
+FileNameExtensions: ["xadml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WWW.AMIGAFOREVER.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMALOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.GIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XADML XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISO-8859-1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XADML.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false

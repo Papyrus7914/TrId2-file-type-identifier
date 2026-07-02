@@ -1,0 +1,9 @@
+Name: Windows Explorer saved search
+FileNameExtensions: ["fnd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DF\x04\0\0\0\0\0\0\0\x10\0$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NTFF"
+    CaseSensitive: false

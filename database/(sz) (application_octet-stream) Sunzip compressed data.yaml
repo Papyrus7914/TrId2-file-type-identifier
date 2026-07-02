@@ -1,0 +1,11 @@
+Name: Sunzip compressed data
+URL: "http://fileformats.archiveteam.org/wiki/Sunzip"
+FileNameExtensions: ["sz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\x04BH"
+    CaseSensitive: true

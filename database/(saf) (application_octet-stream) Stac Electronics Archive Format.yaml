@@ -1,0 +1,18 @@
+Name: Stac Electronics Archive Format
+Description: Used by Stacker setup.
+URL: "https://en.wikipedia.org/wiki/Stac_Electronics"
+FileNameExtensions: ["saf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SAF, (c)199"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: ", Stac Electronics, Version 1.00 \x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STAC ELECTRONICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION 1.00"
+    CaseSensitive: false

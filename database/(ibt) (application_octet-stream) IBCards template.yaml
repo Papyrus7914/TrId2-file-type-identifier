@@ -1,0 +1,17 @@
+Name: IBCards template
+URL: "http://web.archive.org/web/19980121202636/http://www.crtechnologies.com/IBCards/"
+FileNameExtensions: ["ibt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x01\0\0\x14Version 1.0."
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: " IBCard"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWP\0\0\0WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBCARD"
+    CaseSensitive: false

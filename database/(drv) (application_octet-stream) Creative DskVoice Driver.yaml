@@ -1,0 +1,13 @@
+Name: Creative DskVoice Driver
+URL: "https://en.wikipedia.org/wiki/Sound_Blaster"
+FileNameExtensions: ["drv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "CTVDSK\0\0\0Creative Sound Blaster "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATIVE VOICE FILE"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: OMAX Make tool path data (with rem)
+URL: "http://www.omax.com"
+FileNameExtensions: ["omx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "//"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS IS AN OMAX (.OMX) FILE.  DO NOT MODIFY THE FIRST 2 LINES OF THIS FILE. FOR INFORMATION ON THIS FILE FORMAT CONTACT SOFTWAREENGINEERING"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: MPEG-4 BIFS Textual format
+URL: "https://github.com/gpac/gpac/wiki/MPEG-4-BIFS-Textual-Format"
+FileNameExtensions: ["bt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "InitialObjectDescriptor {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INDICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ID 1"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: CompuLog Catalog
+URL: "http://fileformats.archiveteam.org/wiki/CompuLog"
+FileNameExtensions: ["cat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "COMPULOG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPULOG"
+    CaseSensitive: false

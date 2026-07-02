@@ -1,0 +1,13 @@
+Name: Xing encoded MP3 audio
+URL: "https://www.rarewares.org/rrw/xing.php"
+FileNameExtensions: ["mp3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFB]
+  - Pos: 4
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XING"
+    CaseSensitive: false

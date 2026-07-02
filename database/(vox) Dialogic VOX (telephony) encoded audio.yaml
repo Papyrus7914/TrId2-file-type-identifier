@@ -1,0 +1,9 @@
+Name: Dialogic VOX (telephony) encoded audio
+URL: "http://www.voiceinfo.com/"
+FileNameExtensions: ["vox"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "w"
+    CaseSensitive: true
+  - Pos: 4
+    Bytes: [0x90]

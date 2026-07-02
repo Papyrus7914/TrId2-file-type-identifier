@@ -1,0 +1,77 @@
+Name: Garmin FitCSVTool output (UTF-8)
+URL: "https://developer.garmin.com/fit/fitcsvtool/"
+FileNameExtensions: ["csv"]
+MimeType: text/csv
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBFType,Local Number,Message,Field 1,Value 1,Units 1,Field 2,Value 2,Units 2,Field 3,Value 3,Units 3,Field 4,Value 4,Units 4,Field 5,Value 5,Units 5,"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOCAL NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANUFACTURER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD 4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD 5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS 4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS 5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE 4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE 5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

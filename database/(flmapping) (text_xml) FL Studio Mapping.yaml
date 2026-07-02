@@ -1,0 +1,32 @@
+Name: FL Studio Mapping
+URL: "https://en.wikipedia.org/wiki/FL_Studio"
+FileNameExtensions: ["flmapping"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLCONTROLMAP VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWPARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTRLPARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK"
+    CaseSensitive: false

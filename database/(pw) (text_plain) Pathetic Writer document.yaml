@@ -1,0 +1,12 @@
+Name: Pathetic Writer document
+Description: PW (Pathetic Writer) is an X-based word processor for Unix.
+URL: "https://en.wikipedia.org/wiki/Siag_Office"
+FileNameExtensions: ["pw"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Creator: Pathetic Writer "
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "."
+    CaseSensitive: true

@@ -1,0 +1,27 @@
+Name: Cisco Unity Express script
+FileNameExtensions: ["aef"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xAC\xED\0\x05sr\0$com.cisco.wfframework.obj.WFWorkflows"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "compiledJ\0\vnLastUsedIDL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CISCO.WFFRAMEWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMES"
+    CaseSensitive: false

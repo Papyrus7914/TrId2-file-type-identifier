@@ -1,0 +1,13 @@
+Name: The Office Publisher Library (v1.x)
+Description: DTP software for DOS, by Print Tree / Laser Friendly.
+FileNameExtensions: ["lib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\aOP\x04V1."
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\aLIB"
+    CaseSensitive: true
+  - Pos: 13
+    Bytes: [0x1A]

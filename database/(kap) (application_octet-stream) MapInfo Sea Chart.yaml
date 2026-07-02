@@ -1,0 +1,17 @@
+Name: MapInfo Sea Chart
+URL: "http://www.mapinfo.com/"
+FileNameExtensions: ["kap"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFM"
+    CaseSensitive: false

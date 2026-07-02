@@ -1,0 +1,40 @@
+Name: Zen Guard license
+URL: "http://en.wikipedia.org/wiki/Zend_Technologies"
+FileNameExtensions: ["zl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Product-Name = Zend Guard"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERIFICATION-CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDWARE-LOCKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERED-TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANY-KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-ISSUED-ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANY-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZEND GUARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIAL-NO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPIRES"
+    CaseSensitive: false

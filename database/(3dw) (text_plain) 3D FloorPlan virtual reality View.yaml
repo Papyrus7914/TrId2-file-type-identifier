@@ -1,0 +1,62 @@
+Name: 3D FloorPlan virtual reality View
+URL: "http://fileformats.archiveteam.org/wiki/FloorPlan"
+FileNameExtensions: ["3dw"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# 3D FloorPlan File\r\n# ~Version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANYTHING CLOSER THAN THIS GETS CLIPPED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANYTHING FARTHER THAN THIS DOESN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AROUND VERTICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT INTENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T GET RENDERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXAMPLE START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START NOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDSPLITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFF VERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMBIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HITHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOM"
+    CaseSensitive: false

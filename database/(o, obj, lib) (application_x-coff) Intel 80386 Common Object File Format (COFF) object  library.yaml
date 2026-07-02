@@ -1,0 +1,35 @@
+Name: Intel 80386 Common Object File Format (COFF) object / library
+Description: LIB extension is used for libraries
+FileNameExtensions: ["o", "obj", "lib"]
+MimeType: application/x-coff
+DetectionPatterns:
+  - Pos: 0
+    #        L
+    Bytes: [0x4C, 0x01]
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "\0\0"
+    CaseSensitive: true

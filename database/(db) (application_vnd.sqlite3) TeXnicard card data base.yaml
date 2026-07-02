@@ -1,0 +1,12 @@
+Name: TeXnicard card data base
+Description: SQLite 3.x database with application id 0x6A035744
+URL: "http://fileformats.archiveteam.org/wiki/TeXnicard_card_database"
+FileNameExtensions: ["db"]
+MimeType: application/vnd.sqlite3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "j\x03WD"
+    CaseSensitive: true

@@ -1,0 +1,13 @@
+Name: Webcam Video Effects pack
+URL: "http://www.mylivecam.com/"
+FileNameExtensions: ["vfz"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EPG\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".VFX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

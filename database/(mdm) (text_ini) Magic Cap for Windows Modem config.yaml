@@ -1,0 +1,80 @@
+Name: Magic Cap for Windows Modem config
+URL: "http://toastytech.com/guis/mcap.html"
+FileNameExtensions: ["mdm"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[MODEM]\r\nLong Name="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NEEDSINTERCHARACTERDELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDWAREFLOWCONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALIDCONNECTRESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKINTERFACESPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODIALTONERESULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIUMDIALSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOCARRIERRESULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOANSWERRESULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FASTDIALSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLINECOMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOWDIALSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIALTONEWAIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERRORRESULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUSYRESULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEAKEROFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLINDDIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEAKERON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAINIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATARATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SANEINIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAXINIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAXRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATE0V0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false

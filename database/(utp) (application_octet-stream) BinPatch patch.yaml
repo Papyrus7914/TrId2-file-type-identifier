@@ -1,0 +1,8 @@
+Name: BinPatch patch
+URL: "http://fileformats.archiveteam.org/wiki/BinPatch_(Kay_Hayen)"
+FileNameExtensions: ["utp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        C                 >
+    Bytes: [0x43, 0x84, 0x7F, 0x3E]

@@ -1,0 +1,11 @@
+Name: osu! compressed beatmap data
+URL: "https://en.wikipedia.org/wiki/Osu!"
+FileNameExtensions: ["osz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".OSUPK"
+    CaseSensitive: false

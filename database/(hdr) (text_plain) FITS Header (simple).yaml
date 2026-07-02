@@ -1,0 +1,50 @@
+Name: FITS Header (simple)
+URL: "https://en.wikipedia.org/wiki/FITS"
+FileNameExtensions: ["hdr"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SIMPLE  =                    T / Standard FITS format"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THERE MAY BE STANDARD EXTENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS FILE WRITTEN AT THE ADC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO IMAGE DATA ARRAY PRESENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE FILE MAY BE BLOCKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARACTER INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE FILE WRITTEN (DD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARD FITS FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITPIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GSFC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NASA"
+    CaseSensitive: false

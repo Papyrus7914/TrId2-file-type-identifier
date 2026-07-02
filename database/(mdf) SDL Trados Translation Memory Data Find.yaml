@@ -1,0 +1,16 @@
+Name: SDL Trados Translation Memory Data Find
+URL: "http://en.wikipedia.org/wiki/SDL_Trados"
+FileNameExtensions: ["mdf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xAB\xEC\xB1\xFASIGN\x01\0\0\0Copyright ("
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: ") 1995-1999 TRADOS GmbH     "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1995-1999 TRADOS GMBH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGN"
+    CaseSensitive: false

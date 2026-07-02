@@ -1,0 +1,38 @@
+Name: EyesWeb patch
+URL: "http://www.infomus.org/eyesweb_eng.p"
+FileNameExtensions: ["eyw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0\xFF\xFF\x02\0\n\0CPatchView"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NETWORK.OUTPUT.SENDTONETWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OUTPUT.DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CBLOCKLINKVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDTONETWORK_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CBLOCKVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLABELVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPATCHVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALHOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INPUT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false

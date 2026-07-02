@@ -1,0 +1,11 @@
+Name: Nikon NIS-Elements ND2 image
+URL: "https://docs.openmicroscopy.org/bio-formats/5.9.2/formats/nikon-nis-elements-nd2.html"
+FileNameExtensions: ["nd2"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xDA\xCE\xBE\n \0\0\0@\0\0\0\0\0\0\0ND2 FILE SIGNATURE CHUNK NAME01!Ver"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "."
+    CaseSensitive: true

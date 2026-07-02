@@ -1,0 +1,61 @@
+Name: Aston Shell plugin
+Description: Aston is a Desktop manager and Shell replacement for Windows.
+URL: "http://www.astonshell.com/"
+FileNameExtensions: ["plg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 67
+    Bytes: [0x0E]
+  - Pos: 69
+    #              \t          !                 L           !
+    Bytes: [0xB4, 0x09, 0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: 96
+    AsciiString: "t be run "
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".PLG\0DONEMODULE\0GETPLUGININFO\0INITGLOBALMODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTER.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false

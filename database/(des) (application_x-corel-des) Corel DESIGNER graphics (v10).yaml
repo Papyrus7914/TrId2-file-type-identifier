@@ -1,0 +1,35 @@
+Name: Corel DESIGNER graphics (v10)
+URL: "http://fileformats.archiveteam.org/wiki/Corel_Designer"
+FileNameExtensions: ["des"]
+MimeType: application/x-corel-des
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "DESAvrsn\x02\0\0\0~\x04"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "DISP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMPR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOIKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMI"
+    CaseSensitive: false

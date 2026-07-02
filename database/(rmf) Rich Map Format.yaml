@@ -1,0 +1,28 @@
+Name: Rich Map Format
+URL: "http://www.slackiller.com/tutorials/tutorials/worldcraft1.htm"
+FileNameExtensions: ["rmf"]
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "RMF\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "CMapWorld"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "CMap"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORLDSPAWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMAPGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMAPWORLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMAPSOLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCINFO"
+    CaseSensitive: false

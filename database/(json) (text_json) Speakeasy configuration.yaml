@@ -1,0 +1,137 @@
+Name: Speakeasy configuration
+URL: "https://github.com/fireeye/speakeasy/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n    \"config_version\": "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODULES_ALWAYS_EXIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE_DIRECTORY_X64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE_DIRECTORY_X86"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPATCH_HANDLERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY_TRACING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM_MODULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND_LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT_DIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMU_ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCEPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE_ADDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALHOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESPONSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMU_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMLINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMD.EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMSPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNICORN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINSOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OS_VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERB"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: QuizPro quiz data
+URL: "http://www.luziusschneider.com/QuizProHome.htm"
+FileNameExtensions: ["qzd", "qze", "qzs"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "** Questionnaire for Quiz Version "
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: " **\r\n"
+    CaseSensitive: true

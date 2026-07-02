@@ -1,0 +1,17 @@
+Name: MapInfo MapBasic initial data Table
+Description: 1 of 5 dataset linked files, the others are *.DAT, *.ID *.IND and *.MAP
+URL: "http://www.mapinfo.com/"
+FileNameExtensions: ["tab"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!"
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "able"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false

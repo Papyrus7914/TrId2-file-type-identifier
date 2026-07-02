@@ -1,0 +1,16 @@
+Name: Yountel Unicode font
+URL: "http://www.yountel.com"
+FileNameExtensions: ["fnt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "UNICODE FONT\0\0\0\0Ver "
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "Copyright (C) "
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: " by Yountel "
+    CaseSensitive: true

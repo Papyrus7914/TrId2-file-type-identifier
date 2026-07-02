@@ -1,0 +1,37 @@
+Name: Android OpenGL Shaders Cache
+FileNameExtensions: ["shaders_cache"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EGL$"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "$bB_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GL_POINTSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GL_POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXCOORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERT"
+    CaseSensitive: false

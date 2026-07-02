@@ -1,0 +1,55 @@
+Name: Adobe Shared Asset Catalog
+URL: "http://www.adobe.com/"
+FileNameExtensions: ["sac"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "index."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COM.ADOBE.SCHEMA.DUBLIN-CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.ADOBE.SCHEMA.ACTIVESHARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOBE-ASSET-CATALOG VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.ADOBE.ASSET-CATALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DDF CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHOTODELUXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

@@ -1,0 +1,8 @@
+Name: IRCAM Sound Format audio (MIPS SGI)
+URL: "http://web.archive.org/web/20080623061955/http://www-mmsp.ece.mcgill.ca/Documents/AudioFormats/IRCAM/IRCAM.html"
+FileNameExtensions: ["sf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          d
+    Bytes: [0x00, 0x03, 0xA3, 0x64]

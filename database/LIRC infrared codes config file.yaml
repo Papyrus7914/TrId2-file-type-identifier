@@ -1,0 +1,36 @@
+Name: LIRC infrared codes config file
+URL: "http://www.lirc.com/"
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN REMOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN CODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END REMOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END CODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZERO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AEPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

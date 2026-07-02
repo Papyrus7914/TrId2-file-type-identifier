@@ -1,0 +1,11 @@
+Name: IFC-ZIP
+URL: "http://fileformats.archiveteam.org/wiki/IFC"
+FileNameExtensions: ["ifczip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".IFCPK"
+    CaseSensitive: false

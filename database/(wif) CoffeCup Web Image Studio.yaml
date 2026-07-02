@@ -1,0 +1,23 @@
+Name: CoffeCup Web Image Studio
+Description: Web Image Studio lets you customize web graphics or build your own from scratch.
+URL: "http://www.coffeecup.com/help/articles/what-is-a-wif-file/"
+FileNameExtensions: ["wif"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 13
+    AsciiString: ">"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\x16\0\0\0SketchpadFramework.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SKETCHPADFRAMEWORK.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.PNGPK"
+    CaseSensitive: false

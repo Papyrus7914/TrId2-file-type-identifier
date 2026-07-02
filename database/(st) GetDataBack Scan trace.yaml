@@ -1,0 +1,10 @@
+Name: GetDataBack Scan trace
+URL: "http://www.runtime.org/gdb.htm"
+FileNameExtensions: ["st*"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GDB Step"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: " results"
+    CaseSensitive: true

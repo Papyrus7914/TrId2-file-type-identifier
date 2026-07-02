@@ -1,0 +1,26 @@
+Name: ddrescue mapfile/Logfile
+URL: "https://en.wikipedia.org/wiki/Ddrescue"
+FileNameExtensions: ["log"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Mapfile. Created by GNU ddrescue version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CURRENT_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT_POS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASS"
+    CaseSensitive: false

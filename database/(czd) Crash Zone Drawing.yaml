@@ -1,0 +1,13 @@
+Name: Crash Zone Drawing
+URL: "http://www.cadzone.com/Crash_Zone/Crash_Zone.htm"
+FileNameExtensions: ["czd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "P\0\0"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "Crash Zone "
+    CaseSensitive: true
+  - Pos: 92
+    AsciiString: "."
+    CaseSensitive: true

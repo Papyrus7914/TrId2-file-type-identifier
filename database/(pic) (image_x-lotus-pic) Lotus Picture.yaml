@@ -1,0 +1,9 @@
+Name: Lotus Picture
+Description: Vector graphics format, AKA Lotus 1-2-3 Chart.
+URL: "http://fileformats.archiveteam.org/wiki/Lotus_1-2-3_Chart"
+FileNameExtensions: ["pic"]
+MimeType: image/x-lotus-pic
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0\x01\0\b\0D\0\0\0\0\f\x7F\t\x06"
+    CaseSensitive: true

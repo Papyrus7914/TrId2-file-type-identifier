@@ -1,0 +1,20 @@
+Name: ZX ROM Cartridge Creator Compilation
+URL: "http://www.fruitcake.plus.com/Sinclair/Interface2/Cartridges/Interface2_RC_Cartridge_Creator_ZXC4.htm"
+FileNameExtensions: ["zxc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<cartridge>\r\n  <version>1</version>\r\n  <"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARTRIDGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECTRUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false

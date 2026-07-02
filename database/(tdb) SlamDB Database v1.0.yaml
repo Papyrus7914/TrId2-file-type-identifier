@@ -1,0 +1,8 @@
+Name: SlamDB Database v1.0
+Description: SlamDB is a complete custom database and index manager built into one small dynamic link library (DLL).
+URL: "http://www.kgpsoftware.com/slamdb.htm"
+FileNameExtensions: ["tdb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TDBF\x01\0"
+    CaseSensitive: true

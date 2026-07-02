@@ -1,0 +1,25 @@
+Name: StarCraft 2 Unit Localization
+URL: "http://en.wikipedia.org/wiki/StarCraft_II:_Wings_of_Liberty"
+FileNameExtensions: ["s2ql"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?><Locale region=\"enUS\"><e id=\"0\">"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOCALE REGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENUS"
+    CaseSensitive: false

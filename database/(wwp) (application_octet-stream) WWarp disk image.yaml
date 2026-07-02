@@ -1,0 +1,12 @@
+Name: WWarp disk image
+Description: An Amiga disk image format.
+URL: "http://www.whdload.de/"
+FileNameExtensions: ["wwp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WWRP\0\x01WWarp "
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true

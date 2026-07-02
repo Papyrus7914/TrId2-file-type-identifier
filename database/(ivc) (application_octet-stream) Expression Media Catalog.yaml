@@ -1,0 +1,11 @@
+Name: Expression Media Catalog
+URL: "http://fileformats.archiveteam.org/wiki/Media_Pro"
+FileNameExtensions: ["ivc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "025i"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "025I"
+    CaseSensitive: false

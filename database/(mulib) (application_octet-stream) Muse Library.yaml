@@ -1,0 +1,20 @@
+Name: Muse Library
+URL: "https://en.wikipedia.org/wiki/Adobe_Muse"
+FileNameExtensions: ["mulib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "manifest.xml\xDA\xDA\x04\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Flipper Zero Application Manifest
+URL: "https://developer.flipper.net/flipperzero/doxygen/app_manifests.html"
+FileNameExtensions: ["fam"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "App("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLIPPERAPPTYPE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY_POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACK_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

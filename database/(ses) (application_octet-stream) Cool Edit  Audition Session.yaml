@@ -1,0 +1,35 @@
+Name: Cool Edit / Audition Session
+URL: "https://en.wikipedia.org/wiki/Adobe_Audition"
+FileNameExtensions: ["ses"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "COOLNESS"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "hdr "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COOLNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

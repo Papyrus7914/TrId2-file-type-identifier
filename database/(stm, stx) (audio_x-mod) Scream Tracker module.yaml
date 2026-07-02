@@ -1,0 +1,13 @@
+Name: Scream Tracker module
+URL: "http://fileformats.archiveteam.org/wiki/Scream_Tracker_1_%26_2_module"
+FileNameExtensions: ["stm", "stx"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 20
+    AsciiString: "!Scream!"
+    CaseSensitive: true
+  - Pos: 30
+    Bytes: [0x01]
+  - Pos: any
+    AsciiString: "SCREAM"
+    CaseSensitive: false

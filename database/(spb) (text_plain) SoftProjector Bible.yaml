@@ -1,0 +1,23 @@
+Name: SoftProjector Bible
+URL: "http://softprojector.org/"
+FileNameExtensions: ["spb"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "##spDataVersion:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ABBREVIATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false

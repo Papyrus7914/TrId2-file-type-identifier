@@ -1,0 +1,56 @@
+Name: DirectMusic Audio Path
+URL: "https://en.wikipedia.org/wiki/DirectMusic"
+FileNameExtensions: ["aud"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "DMAPguid\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "vers\b\0\0\0\0\0\x01\0\0\0\0\0LIST"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "UNFOUNAM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DBFLDDAH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMAPGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSBCGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSFXFXHR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FXLSRIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCFLPCFH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCHLPCHH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCSLLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNFOUNAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSBD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

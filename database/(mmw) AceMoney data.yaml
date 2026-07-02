@@ -1,0 +1,16 @@
+Name: AceMoney data
+URL: "http://www.mechcad.net/products/acemoney/"
+FileNameExtensions: ["mmw"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TELE"
+    CaseSensitive: false

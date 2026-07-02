@@ -1,0 +1,10 @@
+Name: RISC OS BBC BASIC V source
+URL: "https://en.wikipedia.org/wiki/BBC_BASIC#Acorn_Archimedes_(RISC_OS)"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\0\x01"
+    CaseSensitive: true
+  - Pos: 4
+    #              ␠
+    Bytes: [0xF4, 0x20]

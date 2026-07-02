@@ -1,0 +1,17 @@
+Name: OpenTTD New Graphics Resource File (Container v2)
+URL: "https://newgrf-specs.tt-wiki.net/wiki/Main_Page"
+FileNameExtensions: ["grf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0GRF\x82\r\n\x1A\n"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0\0\x04\0\0\0\xFF"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0\xFF"
+    CaseSensitive: true

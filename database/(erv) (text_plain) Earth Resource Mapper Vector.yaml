@@ -1,0 +1,32 @@
+Name: Earth Resource Mapper Vector
+URL: "http://fileformats.archiveteam.org/wiki/ER_Mapper_Vector"
+FileNameExtensions: ["erv"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DatasetHeader Begin"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOTTOMRIGHTCORNER BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOMRIGHTCORNER END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTORINFO BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTORINFO END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASCII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERVEC"
+    CaseSensitive: false

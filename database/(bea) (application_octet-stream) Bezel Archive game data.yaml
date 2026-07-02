@@ -1,0 +1,14 @@
+Name: Bezel Archive game data
+URL: "https://github-wiki-see.page/m/kinnay/Nintendo-File-Formats/wiki/BEA-File-Format"
+FileNameExtensions: ["bea"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SCNE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DIC"
+    CaseSensitive: false

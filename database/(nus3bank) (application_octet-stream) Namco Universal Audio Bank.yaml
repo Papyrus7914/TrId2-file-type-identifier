@@ -1,0 +1,42 @@
+Name: Namco Universal Audio Bank
+Description: Used in various Namco games, like Super Smash Bros. Ultimate.
+URL: "https://en.wikipedia.org/wiki/Bandai_Namco_Studios"
+FileNameExtensions: ["nus3bank"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NUS3"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "BANKTOC"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "PROP"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "BINF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BANKTOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JUNK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TONE"
+    CaseSensitive: false

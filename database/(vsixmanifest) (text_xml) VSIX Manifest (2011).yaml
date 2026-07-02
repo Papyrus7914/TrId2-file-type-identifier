@@ -1,0 +1,68 @@
+Name: VSIX Manifest (2011)
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+FileNameExtensions: ["vsixmanifest"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MICROSOFT.VISUALSTUDIO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGEMANIFEST VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLATIONTARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPENDENCIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSET TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSX-SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVELOPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLISHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2.0.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2011"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false

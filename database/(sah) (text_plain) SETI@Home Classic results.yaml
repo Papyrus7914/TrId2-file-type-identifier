@@ -1,0 +1,32 @@
+Name: SETI@Home Classic results
+URL: "http://fileformats.archiveteam.org/wiki/SETI@Home_(classic)"
+FileNameExtensions: ["sah"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<ogh ncfft="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHIRP_RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFT_LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIPLET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERIOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

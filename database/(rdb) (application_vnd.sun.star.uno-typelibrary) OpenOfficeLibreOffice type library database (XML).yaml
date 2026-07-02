@@ -1,0 +1,39 @@
+Name: OpenOffice/LibreOffice type library database (XML)
+Description: xml based; contains interface and type description.
+URL: "https://www.openoffice.org/dev_docs/source/file_extensions.html"
+FileNameExtensions: ["rdb"]
+MimeType: application/vnd.sun.star.uno-typelibrary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\n<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COM.SUN.STAR.LOADER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENT LOADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENTS XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPLEMENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENOFFICE.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNO-COMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2010"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

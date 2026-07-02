@@ -1,0 +1,9 @@
+Name: ProCite data (generic)
+Description: Various kind of ProCite data files share the same header.
+URL: "https://fileformats.archiveteam.org/wiki/ProCite"
+FileNameExtensions: ["pdt", "pdx", "pjl", "pos", "pwf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    \\          \f
+    Bytes: [0xB4, 0xF4, 0x5C, 0x00, 0x0C, 0xC1, 0x9A, 0x00]

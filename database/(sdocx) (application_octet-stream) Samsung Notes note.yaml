@@ -1,0 +1,28 @@
+Name: Samsung Notes note
+FileNameExtensions: ["sdocx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "pageIdInfo.dat"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCUMENT FOR S-PEN SDK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEIDINFO.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIAINFO.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_TAG.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTE.NOTEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PAGEPK"
+    CaseSensitive: false

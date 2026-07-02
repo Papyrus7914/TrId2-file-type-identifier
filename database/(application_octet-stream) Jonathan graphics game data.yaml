@@ -1,0 +1,16 @@
+Name: Jonathan graphics game data
+URL: "https://www.mobygames.com/game/jonathan"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PCRH\0\0\0\b"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "PCRC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPKF"
+    CaseSensitive: false

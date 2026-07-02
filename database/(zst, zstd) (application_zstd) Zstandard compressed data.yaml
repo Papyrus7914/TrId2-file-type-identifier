@@ -1,0 +1,8 @@
+Name: Zstandard compressed data
+URL: "https://facebook.github.io/zstd/"
+FileNameExtensions: ["zst", "zstd"]
+MimeType: application/zstd
+DetectionPatterns:
+  - Pos: 0
+    #        (           /
+    Bytes: [0x28, 0xB5, 0x2F, 0xFD]

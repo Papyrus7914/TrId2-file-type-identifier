@@ -1,0 +1,14 @@
+Name: QML JavaScript cached
+URL: "https://en.wikipedia.org/wiki/QML"
+FileNameExtensions: ["jsc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "qv4cdata"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%\0E\0N\0T\0R\0Y"
+    CaseSensitive: false

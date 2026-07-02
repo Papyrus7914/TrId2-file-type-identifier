@@ -1,0 +1,36 @@
+Name: QSF Capcom QSound Format rip (Mini)
+Description: Contains ripped code + audio data.
+URL: "http://fileformats.archiveteam.org/wiki/QSF"
+FileNameExtensions: ["miniqsf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSFA\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".QSFLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPCOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QSFBY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSFA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LIB"
+    CaseSensitive: false

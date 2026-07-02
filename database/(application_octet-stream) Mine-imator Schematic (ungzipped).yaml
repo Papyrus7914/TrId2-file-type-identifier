@@ -1,0 +1,37 @@
+Name: Mine-imator Schematic (ungzipped)
+URL: "https://www.mineimator.com/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n\0\tSchematic\x02\0\x06Height"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "Length\0"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "Width\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TILEENTITIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALPHA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

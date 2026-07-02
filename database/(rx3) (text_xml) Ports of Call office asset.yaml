@@ -1,0 +1,45 @@
+Name: Ports of Call office asset
+Description: Used in modern versions of Ports of Call by Rolf-Dieter Klein, for ships hulls shapes.
+URL: "https://www.mobygames.com/game/184667/ports-of-call-classic-edition/"
+FileNameExtensions: ["rx3"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<building>\r\n<office>\r\n<name>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANGESTELLTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXSHIPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAUFEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOEHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIEFE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

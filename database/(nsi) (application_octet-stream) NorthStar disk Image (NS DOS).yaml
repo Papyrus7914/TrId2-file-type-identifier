@@ -1,0 +1,20 @@
+Name: NorthStar disk Image (NS DOS)
+URL: "https://en.wikipedia.org/wiki/North_Star_Computers"
+FileNameExtensions: ["nsi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DOS     \x04\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT NORTH STAR COMPUTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS RETURN TO CONTINUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK"
+    CaseSensitive: false

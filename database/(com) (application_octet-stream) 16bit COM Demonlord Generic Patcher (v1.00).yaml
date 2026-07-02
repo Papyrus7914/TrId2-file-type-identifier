@@ -1,0 +1,28 @@
+Name: 16bit COM Demonlord Generic Patcher (v1.00)
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xBA\x9D\x01\xB4\t\xCD!\xBE\xD6\x02\xAD\x8B\xD6\x03\xF0\xB4\t\xCD!\xADP\xBAx\x02\xB4\t\xCD!V\xAC\n\xC0t\x04\xCD)\xEB\xF7\xB4\t\xBA\t\x02\xCD!^\x8B\xD6\xB8\x01C\xB9 \0\xCD!rR\xB8\x02=\xCD!\x8B\xD8X\x03\xF0\xAD\x8B\xD0\xAD\x8B\xC8@t/QR\xB8\0B\xCD!\xAD\x8B\xC8\x8B\xE9\xBA\x86\x02\xB4?\xCD!\xBF\x86\x02\x8B\xCD\xF3\xA6ZYu&\xB8\0B\xCD!\x8B\xD6\x8B\xCD\xB4@\xCD!\x03\xF5\xEB\xC8\xB4\t\xBA\f\x02\xCD!\xB4>\xCD!\xB8\0L\xCD!\xBA\xFA\x01\xEB\x03\xBA)\x02\xB4\t\xCD!\xB8\x01L\xCD!Demonlord Generic Patcher v1.00\r\n(C) Diabolical Development 1997, 98. All rights reserved.\r\n$File not found!\r\n$File patched successfully!\r\n$Bytes to patch not found. Program might be wrong version or already patched.\r\n$Opening file $\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$BYTES TO PATCH NOT FOUND. PROGRAM MIGHT BE WRONG VERSION OR ALREADY PATCHED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEMONLORD GENERIC PATCHER V1.00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FILE PATCHED SUCCESSFULLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) DIABOLICAL DEVELOPMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FILE NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$OPENING FILE $"
+    CaseSensitive: false

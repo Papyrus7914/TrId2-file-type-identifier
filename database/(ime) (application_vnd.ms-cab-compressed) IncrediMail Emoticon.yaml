@@ -1,0 +1,20 @@
+Name: IncrediMail Emoticon
+URL: "http://www.incredimail.com"
+FileNameExtensions: ["ime"]
+MimeType: application/vnd.ms-cab-compressed
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GIF\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y.GIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BMP"
+    CaseSensitive: false

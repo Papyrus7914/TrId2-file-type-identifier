@@ -1,0 +1,14 @@
+Name: Annotate Rexx script
+URL: "https://www.onyxsoft.se/annotate.html"
+FileNameExtensions: ["rexx"]
+MimeType: text/x-script.rexx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/* "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPTIONS RESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNOTATE_REXX"
+    CaseSensitive: false

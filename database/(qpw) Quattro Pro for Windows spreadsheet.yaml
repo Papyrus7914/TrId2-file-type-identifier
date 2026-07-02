@@ -1,0 +1,22 @@
+Name: Quattro Pro for Windows spreadsheet
+Description: An ex Borland product, now the spreadsheet component of the Corel WordPerfect Office suite.
+URL: "http://www.corel.com/"
+FileNameExtensions: ["qpw"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1]
+  - Pos: any
+    AsciiString: "S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0A\0T\0I\0V\0E\0C\0O\0N\0T\0E\0N\0T\0_\0M\0A\0I\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUATTRO PRO FOR WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false

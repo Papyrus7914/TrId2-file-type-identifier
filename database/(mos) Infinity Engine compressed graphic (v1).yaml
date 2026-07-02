@@ -1,0 +1,8 @@
+Name: Infinity Engine compressed graphic (v1)
+Description: Infinity Engine MOSC files describe zlib compressed MOS files which describe static graphics in a tile based bitmap format.
+URL: "http://iesdp.gibberlings3.net/file_formats/ie_formats/mos_v1.htm#mosc_v1_Header"
+FileNameExtensions: ["mos"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MOSCV1  "
+    CaseSensitive: true

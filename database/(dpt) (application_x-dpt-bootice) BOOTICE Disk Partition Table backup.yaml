@@ -1,0 +1,11 @@
+Name: BOOTICE Disk Partition Table backup
+URL: "https://www.majorgeeks.com/files/details/bootice_64_bit.html"
+FileNameExtensions: ["dpt"]
+MimeType: application/x-dpt-bootice
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DPT BY BOOTICE\0\0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: ": "
+    CaseSensitive: true

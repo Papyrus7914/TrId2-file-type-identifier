@@ -1,0 +1,67 @@
+Name: "Driver: Parallel Lines savegame"
+URL: "http://en.wikipedia.org/wiki/Driver:_Parallel_Lines"
+FileNameExtensions: ["dplsave"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RGMH\x01\0\0\0( "
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\x01\0E\x13\x87\xBB\xF7\xD1\x1AM\x8A\x9D\xEF\xA6\x18\xFA\xA3|D\0r\0i\0v\0e\0r\0 \0:\0 \0P\0a\0r\0a\0l\0l\0e\0l\0 \0L\0i\0n\0e\0s"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P\0A\0R\0A\0L\0L\0E\0L\0 \0L\0I\0N\0E\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARACTER_SWAPPREVWEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEHICLE_TANK_FIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARACTER_SHOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESTARTMISSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEHICLE_LOCKON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION_STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEHICLE_HORN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0R\0I\0V\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACKFORWARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OOTUP_OVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K_UPDOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1\00\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGMH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~SSS"
+    CaseSensitive: false

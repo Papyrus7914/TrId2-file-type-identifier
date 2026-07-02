@@ -1,0 +1,11 @@
+Name: CICALC spreadsheet (v2.x)
+Description: Simple MS-DOS spreadsheet by Cedar Island.
+FileNameExtensions: ["cic"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CICalc V2."
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: " Spreadsheet\x1A"
+    CaseSensitive: true

@@ -1,0 +1,123 @@
+Name: FreeBASIC 0.11 Win32 executable
+Description: Open-source, free, 32-bit compiler, with the syntax the most compatible possible with MS-QuickBASIC (including the GFX statements), but that adds new features such as pointers, unsigned data types, inline-assembly, a pre-processor and many others.
+URL: "http://www.freebasic.net/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0PE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 135
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 139
+    AsciiString: "B\0"
+    CaseSensitive: true
+  - Pos: 142
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 146
+    AsciiString: "\0\0\xE0\0"
+    CaseSensitive: true
+  - Pos: 152
+    AsciiString: "\v\x01\x028\0"
+    CaseSensitive: true
+  - Pos: 158
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 162
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 167
+    AsciiString: "\0\0\x10\0\0\0\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 178
+    AsciiString: "\0\0\0\0@\0\0\x10\0\0\0\x02\0\0\x04\0\0\0\x01\0\0\0\x04\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 211
+    AsciiString: "\0\0\x04\0\0"
+    CaseSensitive: true
+  - Pos: 219
+    AsciiString: "\0\x03\0\0\0\0\0\x10\0\0\0\x10\0\0\0\x10\0\0\x10\0\0\0\0\0\0\x10\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 259
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 262
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0.text\0\0\0"
+    CaseSensitive: true
+  - Pos: 386
+    AsciiString: "\0\0\0\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 394
+    AsciiString: "\0\0\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0 \0\0`."
+    CaseSensitive: true
+  - Pos: 421
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 426
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 430
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 434
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 438
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 453
+    AsciiString: "\0\0\xC0."
+    CaseSensitive: true
+  - Pos: 462
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 467
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 470
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 474
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 478
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 493
+    AsciiString: "\0\0\xC0"
+    CaseSensitive: true
+  - Pos: 502
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 506
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 511
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 1027
+    AsciiString: "\0\0\xE8\x01\0\0\0\xC3U\x89\xE5"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0\0\0\0\0\0\0PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CONTROLFP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSVCRT.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false

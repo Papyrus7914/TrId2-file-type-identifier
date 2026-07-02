@@ -1,0 +1,11 @@
+Name: Hacha multipart archive (block 0)
+Description: Hacha is an utility to split a file in smaller parts.
+URL: "http://www.hacha.org/"
+FileNameExtensions: ["0"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "?????"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0?????"
+    CaseSensitive: true

@@ -1,0 +1,29 @@
+Name: BASIC8 Map
+URL: "https://paladin-t.github.io/b8/"
+FileNameExtensions: ["map"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"layers\":[{\"type\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OVERLAP_X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERLAP_Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

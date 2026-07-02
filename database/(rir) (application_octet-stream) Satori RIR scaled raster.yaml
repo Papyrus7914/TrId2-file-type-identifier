@@ -1,0 +1,11 @@
+Name: Satori RIR scaled raster
+URL: "http://fileformats.archiveteam.org/wiki/Spaceward_Graphics"
+FileNameExtensions: ["rir"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xA1\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "RIR scaled rasters (c) Spaceward Graphics Ltd.\0"
+    CaseSensitive: true

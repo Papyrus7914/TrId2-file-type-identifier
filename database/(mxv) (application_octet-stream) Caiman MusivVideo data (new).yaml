@@ -1,0 +1,24 @@
+Name: Caiman Musiv/Video data (new)
+Description: Used in games by Caiman Co.
+URL: "https://wiki.multimedia.cx/index.php/MXV"
+FileNameExtensions: ["mxv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Archivo MXV.\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTBL"
+    CaseSensitive: false

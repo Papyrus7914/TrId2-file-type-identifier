@@ -1,0 +1,19 @@
+Name: JAR Signatures File
+URL: "http://docs.oracle.com/javase/7/docs/technotes/tools/windows/jarsigner.html"
+FileNameExtensions: ["sf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Signature-Version: 1.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIGNATURE-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED-BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

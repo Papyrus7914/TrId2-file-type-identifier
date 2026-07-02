@@ -1,0 +1,29 @@
+Name: Battlefield 2 map Description
+URL: "https://en.wikipedia.org/wiki/Battlefield_(series)"
+FileNameExtensions: ["desc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<map"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAPTYPE PLAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRIEFING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUSIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

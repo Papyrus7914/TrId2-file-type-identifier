@@ -1,0 +1,10 @@
+Name: 22DISK format Definition (tokenized)
+URL: "http://www.sydex.com/"
+FileNameExtensions: ["def"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xCA, 0x9E]
+  - Pos: 83
+    AsciiString: "\0"
+    CaseSensitive: true

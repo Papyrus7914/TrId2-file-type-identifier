@@ -1,0 +1,11 @@
+Name: Windows Imaging Format (WIM)
+Description: The Windows Imaging Format (WIM) is a file-based disk image format from Microsoft.
+URL: "https://en.wikipedia.org/wiki/Windows_Imaging_Format"
+FileNameExtensions: ["wim"]
+MimeType: application/x-ms-wim
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSWIM\0\0\0"
+    CaseSensitive: true
+  - Pos: 42
+    Bytes: [0x01, 0x00]

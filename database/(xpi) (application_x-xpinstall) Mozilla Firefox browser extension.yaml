@@ -1,0 +1,11 @@
+Name: Mozilla Firefox browser extension
+URL: "http://fileformats.archiveteam.org/wiki/Cross-Platform_Installer_Module"
+FileNameExtensions: ["xpi"]
+MimeType: application/x-xpinstall
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "INSTALL."
+    CaseSensitive: false

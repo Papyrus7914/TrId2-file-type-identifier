@@ -1,0 +1,11 @@
+Name: Panasonic Network Camera compressed images
+FileNameExtensions: ["pnc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\x01"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "Panasonic Network Camera"
+    CaseSensitive: true
+  - Pos: 132
+    Bytes: [0xFF, 0xD8, 0xFF, 0xFE, 0x00, 0x1A]

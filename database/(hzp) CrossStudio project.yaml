@@ -1,0 +1,46 @@
+Name: CrossStudio project
+URL: "http://www.rowley.co.uk/"
+FileNameExtensions: ["hzp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE CrossStudio_Project_File>\n<solution "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE CROSSSTUDIO_PROJECT_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_PREPROCESSOR_DEFINITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD_DEBUG_INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIMIZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D_CO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP"
+    CaseSensitive: false

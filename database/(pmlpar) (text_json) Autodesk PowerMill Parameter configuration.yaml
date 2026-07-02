@@ -1,0 +1,74 @@
+Name: Autodesk PowerMill Parameter configuration
+URL: "https://en.wikipedia.org/wiki/PowerMILL"
+FileNameExtensions: ["pmlpar"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\r\n\t\"type\" : \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "${PROJECT_PATHNAME(1)}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUSIONPRODUCTIONJOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "${PROJECT.NOTES}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTRUCTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOLERANCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERMILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASKLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLETAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A360"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

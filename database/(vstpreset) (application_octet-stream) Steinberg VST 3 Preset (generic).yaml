@@ -1,0 +1,14 @@
+Name: Steinberg VST 3 Preset (generic)
+URL: "https://steinbergmedia.github.io/vst3_dev_portal/pages/Technical+Documentation/Locations+Format/Preset+Format.html"
+FileNameExtensions: ["vstpreset"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VST3\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMP0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false

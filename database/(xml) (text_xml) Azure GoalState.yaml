@@ -1,0 +1,89 @@
+Name: Azure GoalState
+URL: "https://en.wikipedia.org/wiki/Microsoft_Azure"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<GoalState xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"goalstate10.xsd\">\r\n  <Version>2012-11-30</Version>\r\n  <Incarnation>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NONAMESPACESCHEMALOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTINGENVIRONMENTCONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOPROLESDEADLINEHINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPECTHEALTHREPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSIONSCONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLEINSTANCELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOALSTATE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOALSTATE10.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPECTEDSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CERTIFICATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LBPROBEPORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAREDCONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCARNATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2012-11-30"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLCONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".1.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

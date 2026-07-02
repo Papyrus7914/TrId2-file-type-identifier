@@ -1,0 +1,9 @@
+Name: Debian Linux Package
+Description: DEB packages are just ar archives with first member debian-binary. UDEB is used for micro DEBs, IPK is used by ipk/opk package managers.
+URL: "https://en.wikipedia.org/wiki/Deb_(file_format)"
+FileNameExtensions: ["deb", "udeb", "ipk"]
+MimeType: application/vnd.debian.binary-package
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!<arch>\ndebian-binary"
+    CaseSensitive: true

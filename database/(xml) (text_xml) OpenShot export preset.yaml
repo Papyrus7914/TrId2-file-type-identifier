@@ -1,0 +1,50 @@
+Name: OpenShot export preset
+URL: "http://en.wikipedia.org/wiki/OpenShot_Video_Editor"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<!DOCTYPE openshot-export-option>\n<export-option>\n\t<type translatable=\"True\">"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE OPENSHOT-EXPORT-OPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE TRANSLATABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE TRANSLATABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOCHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOBITRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOBITRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOCODEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOCODEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

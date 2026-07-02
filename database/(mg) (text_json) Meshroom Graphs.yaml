@@ -1,0 +1,491 @@
+Name: Meshroom Graphs
+URL: "https://alicevision.org/#meshroom"
+FileNameExtensions: ["mg"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MINNUMBEROFOBSERVATIONSFORTRIANGULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINNUMOFCONSISTENTCAMSWITHLOWSIMILARITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{FEATUREMATCHING_1.FEATURESFOLDERS}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{IMAGEMATCHING_1.FEATURESFOLDERS}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDLANDMARKSTOTHEDENSEPOINTCLOUD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESTIMATESPACEMINOBSERVATIONANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKSCENEPREVIOUSLYRECONSTRUCTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALIZERESTIMATORMAXITERATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{STRUCTUREFROMMOTION_1.OUTPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEONLYMATCHESFROMINPUTFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESTIMATESPACEMINOBSERVATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXSIZEBALLWITHLOWSIMILARITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{FEATUREEXTRACTION_1.OUTPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{PREPAREDENSESCENE_1.OUTPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOWNPOSESGEOMETRICERRORMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{FEATUREEXTRACTION_1.INPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{PREPAREDENSESCENE_1.INPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{FEATUREMATCHING_1.OUTPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORTINTERMEDIATERESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCHFROMKNOWNCAMERAPOSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHOTOMETRICMATCHINGMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{DEPTHMAPFILTER_1.OUTPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{FEATUREMATCHING_1.INPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINANGLEFORTRIANGULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{DEPTHMAPFILTER_1.INPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{IMAGEMATCHING_1.OUTPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.{OUTPUTFILETYPEVALUE}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALIZERESTIMATORERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{IMAGEMATCHING_1.INPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTRIBUTEMARGINFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXSIZEMARGINFINALCOEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFINEUSETCORRCPIXSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVERAWDENSEPOINTCLOUD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VLFEAT_K80L3.SIFT.TREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBSERVATIONCONSTRAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXSIZEMARGININITCOEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFINENDEPTHSTOREFINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{CAMERAINIT_1.OUTPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESTIMATESPACEFROMSFM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALBAGRAPHDISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXREPROJECTIONERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEMATRICESTXTFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOWEDCAMERAMODELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENSEPOINTCLOUD.ABC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRICFILTERTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPCAMERAFALLBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXANGLEINITIALPAIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINANGLEFORLANDMARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINANGLEINITIALPAIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MININPUTTRACKLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTVIEWSANDPOSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEPUTATIVEMATCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMGAUSSIANSIZEINIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{DEPTHMAP_1.OUTPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTFIELDOFVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCECPUEXTRACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRICESTIMATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFILEEXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXNUMBEROFMATCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINNUMBEROFMATCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFINENSAMPLESHALF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{DEPTHMAP_1.INPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{MESHING_1.OUTPUT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPUTENORMALMAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKALLINTRINSICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXPOINTSPERVOXEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINANGLETHRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTUNDISTORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERASENSORS.DB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORTDEBUGFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTERTRACKFORKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEMATCHES.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERIGCONSTRAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOTEMARGINFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBOXTRANSLATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTHMAPSFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIBERPRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRAINFOFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIRESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARALLELIZATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIPELINEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERAINIT.SFM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORIZEOUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIBERTYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUIDEDMATCHING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEPAIRSLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNALFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCHESFOLDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXDESCRIPTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXINPUTPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFINEMAXTCAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENSORDATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEBOUNDINGBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOCABULARYTREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTANCERATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGESFOLDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODESVERSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBOXROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVCORRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALPAIRA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALPAIRB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXVIEWANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINVIEWANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NNEARESTCAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITIONING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFINEGAMMAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFINEGAMMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFINENITERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEMETADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERBOSELEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWIDMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGLEFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERAS.SFM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINNBIMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBNEIGHBORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFINESIGMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPARTITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SGMMAXTCAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLEBLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWIDREGEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXMATCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXTHREADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTMESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFINEFUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USELOCALBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{NODETYPE}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBOXSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWNSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBMATCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFINEWSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SGMGAMMAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SGMGAMMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACRANSAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH.OBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FISHEYE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINSTEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PINHOLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFM.ABC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{CACHE}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBGPUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SGMWSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{UID0}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BROWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NVERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UIDS"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: OPAL Vector data
+Description: PLD design software by National Semiconductor for MS-DOS.
+FileNameExtensions: ["vec"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$OPAL VECTORS\r\n$VNUM "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$VNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$PIN"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: Quartet samples set
+Description: Tracker for Atari ST by Microdeal.
+FileNameExtensions: ["set"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x10]
+  - Pos: 2
+    AsciiString: " BDRU \0 SNAR \0 HIHA \0 SYN1 \0 SYN2 \0 AHHH \0 PIAN \0 "
+    CaseSensitive: true
+  - Pos: 222
+    AsciiString: "2BIT"
+    CaseSensitive: true

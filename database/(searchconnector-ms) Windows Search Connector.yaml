@@ -1,0 +1,39 @@
+Name: Windows Search Connector
+FileNameExtensions: ["searchconnector-ms"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<searchConnectorDescription"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SEARCHCONNECTORDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSEARCHONLYITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDERTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

@@ -1,0 +1,85 @@
+Name: Zortech C++ 3.0 compiled DOS executable
+URL: "https://en.wikipedia.org/wiki/Digital_Mars"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BAD STACK SIZE PARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITTEN BY WALTER BRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1988-1991"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP IS CORRUPTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT ENOUGH MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NANS\0NAN\0\0INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZORTECH C 3.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGS ALLOWED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0\00X\00X\0\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NULL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3.0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TING"
+    CaseSensitive: false

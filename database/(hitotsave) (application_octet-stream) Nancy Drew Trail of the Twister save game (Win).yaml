@@ -1,0 +1,20 @@
+Name: "Nancy Drew: Trail of the Twister save game (Win)"
+URL: "https://www.mobygames.com/game/47402/nancy-drew-trail-of-the-twister/"
+FileNameExtensions: ["hitotsave"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RGMH"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "T\0r\0a\0i\0l\0 \0o\0f\0 \0t\0h\0e\0 \0T\0w\0i\0s\0t\0e\0r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "T\0R\0A\0I\0L\0 \0O\0F\0 \0T\0H\0E\0 \0T\0W\0I\0S\0T\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAIL OF THE TWISTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NANCY_PLAYERDATA"
+    CaseSensitive: false

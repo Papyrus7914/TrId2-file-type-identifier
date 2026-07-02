@@ -1,0 +1,20 @@
+Name: Extended MIDI
+URL: "http://www.shikadi.net/moddingwiki/XMI_Format"
+FileNameExtensions: ["xmi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "XDIRINFO"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "CAT "
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "XMIDFORM"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "XMID"
+    CaseSensitive: true

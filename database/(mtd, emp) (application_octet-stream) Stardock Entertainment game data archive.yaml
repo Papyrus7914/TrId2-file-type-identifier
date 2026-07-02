@@ -1,0 +1,20 @@
+Name: Stardock Entertainment game data archive
+URL: "https://www.mobygames.com/game/24408/business-tycoon/"
+FileNameExtensions: ["mtd", "emp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MTDLIB\x03\x01"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "LIBBLK"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "SPR1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LIBBLK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPR1"
+    CaseSensitive: false

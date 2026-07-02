@@ -1,0 +1,12 @@
+Name: UMD Photobook
+FileNameExtensions: ["umd"]
+DetectionPatterns:
+  - Pos: 0
+    #                                #                       \b
+    Bytes: [0x89, 0x9B, 0x9A, 0xDE, 0x23, 0x01, 0x00, 0x00, 0x08]
+  - Pos: 12
+    AsciiString: "#\x02\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

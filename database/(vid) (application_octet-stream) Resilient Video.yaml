@@ -1,0 +1,14 @@
+Name: Resilient Video
+Description: Used by some Chinese surveillance sys/NVRs/DVRs, like Hikvision, Dahua, Tiandy
+FileNameExtensions: ["vid"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RES "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "VID HEAD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VID HEAD"
+    CaseSensitive: false

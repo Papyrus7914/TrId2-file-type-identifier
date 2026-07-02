@@ -1,0 +1,41 @@
+Name: Mocha Snapshot
+Description: Java CoCo 2 emulator.
+URL: "http://www.haplessgenius.com/mocha/mocha_original.html"
+FileNameExtensions: ["snp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xAC, 0xED]
+  - Pos: any
+    AsciiString: "JAVA.UTIL.ARRAYLISTX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LJAVA.LANG.OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMOBJECTV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELQ\0~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNSQ\0~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEXP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPPUR"
+    CaseSensitive: false

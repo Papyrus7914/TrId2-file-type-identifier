@@ -1,0 +1,8 @@
+Name: Epson Job Control Language (EJL) print job
+Description: EJL encapsulates ESC/P commands for printer job control, compliant with IEEE 1284.4; common in POS/receipt/portable Epson models (e.g., TM-P series).
+FileNameExtensions: ["prn", "dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\x1B\x01@EJL 1284.4\n@EJL     \n\x1B@\x1B@\x1B(R\b\0\0REMOTE1"
+    CaseSensitive: true

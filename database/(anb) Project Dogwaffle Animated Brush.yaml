@@ -1,0 +1,20 @@
+Name: Project Dogwaffle Animated Brush
+Description: Project Dogwaffle is a paint and animation software.
+URL: "http://www.thebest3d.com/dogwaffle"
+FileNameExtensions: ["anb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ANBR"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0\0\0\x01\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true

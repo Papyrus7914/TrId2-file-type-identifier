@@ -1,0 +1,29 @@
+Name: CP/M-86 library
+URL: "https://en.wikipedia.org/wiki/CP/M-86"
+FileNameExtensions: ["l86"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xA4\a\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RASM-86"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

@@ -1,0 +1,38 @@
+Name: Creality Ender 3 recovery info
+Description: The BIN file is continuously updated in the event of a power loss.
+URL: "https://en.wikipedia.org/wiki/Creality"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0HB"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\xC8\0\0\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0\x04\0"
+    CaseSensitive: true
+  - Pos: 427
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 434
+    AsciiString: "~1.GCO\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0bin\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "G1 X0 Y235 \0F2400"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M106 S0 \0F3000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G90 \02 F2700"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G1 Z10 \0 X"
+    CaseSensitive: false

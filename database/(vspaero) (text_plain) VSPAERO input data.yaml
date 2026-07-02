@@ -1,0 +1,53 @@
+Name: VSPAERO input data
+URL: "https://en.wikipedia.org/wiki/OpenVSP"
+FileNameExtensions: ["vspaero"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Sref = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMBEROFCONTROLGROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXTURNINGANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMWAKENODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAKEITERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARDIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BETA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_CG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y_CG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z_CG"
+    CaseSensitive: false

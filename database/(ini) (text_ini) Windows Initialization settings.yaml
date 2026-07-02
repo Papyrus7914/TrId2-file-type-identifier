@@ -1,0 +1,44 @@
+Name: Windows Initialization settings
+Description: Win 3.x environment configuration.
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[windows]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FONTSUBSTITUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MCI EXTENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMBEDDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESKTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTL"
+    CaseSensitive: false

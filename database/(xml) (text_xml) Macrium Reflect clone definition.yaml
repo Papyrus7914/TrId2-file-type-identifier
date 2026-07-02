@@ -1,0 +1,89 @@
+Name: Macrium Reflect clone definition
+URL: "https://en.wikipedia.org/wiki/Macrium_Reflect"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<clone_definition>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-- ID IS THE DISK SIGNATURE AND IS USED IN PLACE OF THE DISK INDEX IF SPECIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- OPTIONAL. SEARCH FOR SAME FILE ON DIFFERENT DRIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- DISK IS THE 1 BASED INDEX OF THE DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE THE CHS VALUES FROM THE SOURCE DISK."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- OPTIONAL. MATCH IMAGE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITION START_SECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- OPERATION TYPE IS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- DELETE PARTITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE_SOURCE_GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- COPY PARTITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVE_LETTER TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLONE_DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTELLIGENT_COPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITION_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESTORE_TRACK0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE_DISK ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET_DISK ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATION ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "/N OR BLANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERIFY_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELTA_COPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_SECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSD_TRIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- Y/"
+    CaseSensitive: false

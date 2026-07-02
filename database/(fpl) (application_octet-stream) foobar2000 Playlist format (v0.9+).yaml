@@ -1,0 +1,11 @@
+Name: foobar2000 Playlist format (v0.9+)
+URL: "https://www.foobar2000.org/"
+FileNameExtensions: ["fpl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                      <     w     B           ,     ;
+    Bytes: [0xE1, 0xA0, 0x9C, 0x91, 0xF8, 0x3C, 0x77, 0x42, 0x85, 0x2C, 0x3B, 0xCC, 0x14, 0x01, 0xD3, 0xF2]
+  - Pos: 24
+    AsciiString: "://"
+    CaseSensitive: true

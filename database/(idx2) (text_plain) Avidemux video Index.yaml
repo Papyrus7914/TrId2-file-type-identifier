@@ -1,0 +1,17 @@
+Name: Avidemux video Index
+URL: "https://en.wikipedia.org/wiki/Avidemux"
+FileNameExtensions: ["idx2"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSD1\n[System]\nVersion="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

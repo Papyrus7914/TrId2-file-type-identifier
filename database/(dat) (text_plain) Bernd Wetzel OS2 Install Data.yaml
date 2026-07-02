@@ -1,0 +1,34 @@
+Name: Bernd Wetzel OS/2 Install Data
+FileNameExtensions: ["dat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "INSTTITLE = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FOLDERTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNPACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

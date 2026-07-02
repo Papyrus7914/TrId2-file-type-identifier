@@ -1,0 +1,9 @@
+Name: SevenUp bitmap
+Description: Storing ZX-Spectrum compatible bitmaps.
+URL: "http://www.zx-modules.de/fileformats/sevformat.html"
+FileNameExtensions: ["sev"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Sev\0"
+    CaseSensitive: true

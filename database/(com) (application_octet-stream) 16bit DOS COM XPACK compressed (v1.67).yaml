@@ -1,0 +1,13 @@
+Name: 16bit DOS COM XPACK compressed (v1.67)
+Description: DOS executables compressor by JauMing Tseng.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 2
+    #                                                                                      L     L                                                                                         `     m
+    Bytes: [0x00, 0xFF, 0xFD, 0xFF, 0xFB, 0xFF, 0xF9, 0xFF, 0xBC, 0x03, 0x00, 0x8B, 0xE5, 0x4C, 0x4C, 0xC3, 0x00, 0x00, 0x8B, 0xF7, 0x8C, 0xC8, 0x05, 0x00, 0x10, 0x8E, 0xC0, 0xFC, 0xB9, 0x60, 0x6D, 0xF3, 0xA5, 0xC3, 0x0E]
+  - Pos: any
+    AsciiString: "SRVUW"
+    CaseSensitive: false

@@ -1,0 +1,94 @@
+Name: Mozilla search engines info
+FileNameExtensions: ["mozlz4"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "mozLz40\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "{\"version\":1,\"buildID\":\""
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\",\"locale\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VISIBLEDEFAULTENGINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUERYCHARSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BROWSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIREFOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADPAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOZILLA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SHORTN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "API."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUGG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NAM"
+    CaseSensitive: false

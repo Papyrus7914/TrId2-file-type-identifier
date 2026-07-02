@@ -1,0 +1,10 @@
+Name: Gridded Binary data
+URL: "https://en.wikipedia.org/wiki/GRIB"
+FileNameExtensions: ["grb", "grib", "grib1"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GRIB"
+    CaseSensitive: true
+  - Pos: 7
+    Bytes: [0x01]

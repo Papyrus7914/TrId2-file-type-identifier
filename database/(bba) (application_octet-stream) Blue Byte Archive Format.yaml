@@ -1,0 +1,8 @@
+Name: Blue Byte Archive Format
+URL: "https://en.wikipedia.org/wiki/Blue_Byte"
+FileNameExtensions: ["bba"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BAF\x02"
+    CaseSensitive: true

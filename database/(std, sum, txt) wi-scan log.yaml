@@ -1,0 +1,28 @@
+Name: wi-scan log
+URL: "http://www.seattlewireless.net/WarDrivingSoftware"
+FileNameExtensions: ["std", "sum", "txt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# $Creator: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SNR SIG NOISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DATEGMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WI-SCAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BSSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

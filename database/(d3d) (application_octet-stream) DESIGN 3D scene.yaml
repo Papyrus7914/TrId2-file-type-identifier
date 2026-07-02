@@ -1,0 +1,32 @@
+Name: DESIGN 3D scene
+Description: Atari ST 3D software.
+FileNameExtensions: ["d3d"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "D3D.\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "D3D  (C) Vincent Beltrame 199"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: ". OBJ."
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "WORLD  "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "D3D  (C) VINCENT BELTRAME 199"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D3D."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJ."
+    CaseSensitive: false

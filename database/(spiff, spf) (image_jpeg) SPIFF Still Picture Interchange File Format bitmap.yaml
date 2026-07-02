@@ -1,0 +1,10 @@
+Name: SPIFF Still Picture Interchange File Format bitmap
+URL: "http://fileformats.archiveteam.org/wiki/SPIFF"
+FileNameExtensions: ["spiff", "spf"]
+MimeType: image/jpeg
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xD8, 0xFF, 0xE8]
+  - Pos: 6
+    AsciiString: "SPIFF\0"
+    CaseSensitive: true

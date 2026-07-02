@@ -1,0 +1,65 @@
+Name: X.509 Digital Certificate (v3)
+URL: "https://en.wikipedia.org/wiki/X.509"
+FileNameExtensions: ["crt"]
+MimeType: application/pkix-cert
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Certificate:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "X509V3 AUTHORITY KEY IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X509V3 SUBJECT KEY IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X509V3 BASIC CONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECT PUBLIC KEY INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLIC KEY ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WITHRSAENCRYPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X509V3 EXTENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIAL NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CERTIFICATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT BEFORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT AFTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALIDITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSUER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

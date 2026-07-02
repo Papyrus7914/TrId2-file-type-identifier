@@ -1,0 +1,11 @@
+Name: The Office Publisher Font (v1.x)
+Description: DTP software for DOS, by Print Tree / Laser Friendly.
+FileNameExtensions: ["fwt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\aOP\x04V1."
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\aFONT\x1A"
+    CaseSensitive: true

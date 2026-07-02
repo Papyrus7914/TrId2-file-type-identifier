@@ -1,0 +1,27 @@
+Name: Track Row Column markers data format
+Description: A motion capture format by Motion Analysis Corp.
+URL: "http://simtk-confluence.stanford.edu:8080/display/OpenSim/Marker+(.trc)+Files"
+FileNameExtensions: ["trc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PathFileType"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CAMERARATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMMARKERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMFRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATARATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

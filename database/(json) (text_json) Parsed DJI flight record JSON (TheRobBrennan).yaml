@@ -1,0 +1,389 @@
+Name: Parsed DJI flight record JSON (TheRobBrennan)
+URL: "https://github.com/TheRobBrennan/dji-flight-record-review"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"summary\": {\n \"platform\": \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BATTERYPERCENTAGENEEDEDTOLANDFROMCURRENTHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISAVOIDINGACTIVEOBSTACLECOLLISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIOUSLOWBATTERYWARNINGTHRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVAILABLERECORDINGTIMEINSECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERYPERCENTAGENEEDEDTOGOHOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISPERFORMINGPRECISIONLANDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YAWRELATIVETOAIRCRAFTHEADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIGHTCONTROLLERINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISLANDINGCONFIRMATIONNEEDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOTECONTROLLERINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLISIONAVOIDANCEENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASREACHEDMAXFLIGHTHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASREACHEDMAXFLIGHTRADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISASCENTLIMITEDBYOBSTACLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARGEREMAININGINPERCENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUMULATIVEFLIGHTDISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASDOWNLINKSIGNALQUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAKEOFFLOCATIONALTITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASUPLINKSIGNALQUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOMELOCATIONCOORDINATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVAILABLECAPTURECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIGHTCONTROLLERSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISINSINGLEBATTERYMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSHOOTINGSINGLEPHOTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERIESINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIGHTTIMEINSECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMAININGFLIGHTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERASINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLCHARGECAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIMBALSINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTALACCURACY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTALPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXHORIZONTALSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFDISCHARGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMAININGSPACEINMB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETECTIONSTATEMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISFAILSAFEENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISHOMELOCATIONSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIFETIMEREMAINING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOBILEDEVICESTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOTORSJUSTSTARTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMARTRTHCOUNTDOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIRCRAFTLOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIGHTMODESWITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXVIRTICALSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSISTEDTAKEOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWAREVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMETIMESTATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISINVALIDFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCHARDWARESTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTCOORDINATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERIESSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTOFFLIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGNCAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINETUNEDPITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIGHTLOGINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPSSIGNALLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISGPSBEINGUSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISINITIALIZING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SATELLITECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTALSPACEINMB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINETUNEDROLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISPITCHATSTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHUTTERBUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMARTRTHSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTALDISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIRCRAFTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIRLINKSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERYSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERASSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLVOLTAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINETUNEDYAW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIMBALSSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOHOMEBUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISFORMATTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISROLLATSTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORDBUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLINGRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIALNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AREMOTORSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERASTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIMBALSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISFORMATTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISRECORDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISYAWATSTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPERATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIONSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDWARNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISINSERTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISREADONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISVERIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHTSTICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHTWHEEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOOTPHOTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISBRAKING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISCLICKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISPRESENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFTSTICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFTWHEEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTALTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VELOCITYX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VELOCITYY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VELOCITYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YAWFOLLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEHAVIOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISFLYING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISTURNED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPSATTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISFULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false

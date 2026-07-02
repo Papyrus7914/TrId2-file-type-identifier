@@ -1,0 +1,34 @@
+Name: Digistar II VLA geometry
+URL: "http://paulbourke.net/dataformats/vla/"
+FileNameExtensions: ["vla"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "set "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SET PARAMETRIC NON_PARAMETRIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET DEFAULTDRAW STELLAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET INTENSITY EXPLICIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET FILECONTENT LINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET FILETYPE NEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET DEPTHCUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET COORDSYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET SITE"
+    CaseSensitive: false

@@ -1,0 +1,65 @@
+Name: MasterCook recipe
+URL: "https://www.mastercook.com/"
+FileNameExtensions: ["mx2"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" standalone=\"yes\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE MX2 SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRPT ELAPSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTERCOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MX2 SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INGR NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCPE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERV QTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MX2.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false

@@ -1,0 +1,9 @@
+Name: RED installer/archive/library
+Description: Used by some old DOS installer.
+URL: "http://fileformats.archiveteam.org/wiki/RED_(Knowledge_Dynamics)"
+FileNameExtensions: ["red"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RR\x01)"
+    CaseSensitive: true

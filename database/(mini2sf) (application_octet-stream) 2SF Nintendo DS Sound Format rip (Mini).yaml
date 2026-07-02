@@ -1,0 +1,39 @@
+Name: 2SF Nintendo DS Sound Format rip (Mini)
+Description: Contains ripped code + audio data.
+URL: "http://fileformats.archiveteam.org/wiki/2SF"
+FileNameExtensions: ["mini2sf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSF$"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".2SFLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSF$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LIB"
+    CaseSensitive: false

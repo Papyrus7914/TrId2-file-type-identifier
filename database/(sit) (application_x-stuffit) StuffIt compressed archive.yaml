@@ -1,0 +1,14 @@
+Name: StuffIt compressed archive
+URL: "http://en.wikipedia.org/wiki/StuffIt"
+FileNameExtensions: ["sit"]
+MimeType: application/x-stuffit
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "StuffIt (c)1997-"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: " Aladdin Systems, Inc., http://www.aladdinsys.com/StuffIt/"
+    CaseSensitive: true
+  - Pos: 79
+    #        \n
+    Bytes: [0x0A, 0x1A, 0x00, 0x05]

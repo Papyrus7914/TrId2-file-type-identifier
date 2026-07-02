@@ -1,0 +1,15 @@
+Name: UltraTracker Wave File audio
+FileNameExtensions: ["uwf"]
+DetectionPatterns:
+  - Pos: 31
+    AsciiString: "\0\x1A\x10MUWFD\0\0\0.\0\0\0"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 57
+    AsciiString: "\0\x10\0\0\0@\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MUWFD\0\0\0."
+    CaseSensitive: false

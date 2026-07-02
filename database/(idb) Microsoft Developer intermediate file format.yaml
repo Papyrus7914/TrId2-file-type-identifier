@@ -1,0 +1,39 @@
+Name: Microsoft Developer intermediate file format
+FileNameExtensions: ["idb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Microsoft C/C++ "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNKNOWNFILEMODS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUDEFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSMODS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OBJ"
+    CaseSensitive: false

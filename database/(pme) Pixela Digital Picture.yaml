@@ -1,0 +1,10 @@
+Name: Pixela Digital Picture
+URL: "http://www.pixela.co.jp/"
+FileNameExtensions: ["pme"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: " omp\x01\0\x01\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: ":\\"
+    CaseSensitive: true

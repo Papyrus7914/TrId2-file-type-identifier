@@ -1,0 +1,50 @@
+Name: SketchList 3D Cabinet Model
+URL: "https://sketchlist.com/"
+FileNameExtensions: ["scab"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "template.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSFORM_HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META_INFO.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATE_HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORM.XSL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW_HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META_HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

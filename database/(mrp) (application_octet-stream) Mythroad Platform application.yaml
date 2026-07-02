@@ -1,0 +1,17 @@
+Name: Mythroad Platform application
+Description: Software platform by China Mobile.
+FileNameExtensions: ["mrp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MRPG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CFUNCTION.EXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START.MR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MRPG"
+    CaseSensitive: false

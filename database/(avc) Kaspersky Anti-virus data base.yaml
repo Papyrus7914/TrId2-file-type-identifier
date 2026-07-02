@@ -1,0 +1,16 @@
+Name: Kaspersky Anti-virus data base
+URL: "http://www.kaspersky.com"
+FileNameExtensions: ["avc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AVP Antiviral Database. (c)Kaspersky Lab 1997-20"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "Kaspersky Lab. "
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "EK.8\x03\0\0\0"
+    CaseSensitive: true

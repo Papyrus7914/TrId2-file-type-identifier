@@ -1,0 +1,22 @@
+Name: Casio calculator Tape format
+FileNameExtensions: ["cat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%Header Record\r\nFormat:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMMUNICATION SW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%DATA RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

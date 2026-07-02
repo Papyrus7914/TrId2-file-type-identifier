@@ -1,0 +1,26 @@
+Name: Super Smash Bros. Ultimate Parameters (XML)
+URL: "https://smashmodding.oatmealdome.me/wiki/Parameter_Edits"
+FileNameExtensions: ["prcxml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HASH40 INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCT INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DB_ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_INDEX"
+    CaseSensitive: false

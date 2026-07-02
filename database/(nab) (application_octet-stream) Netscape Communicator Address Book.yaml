@@ -1,0 +1,11 @@
+Name: Netscape Communicator Address Book
+URL: "https://en.wikipedia.org/wiki/Netscape"
+FileNameExtensions: ["nab"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x0FBD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false

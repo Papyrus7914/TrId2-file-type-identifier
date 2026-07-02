@@ -1,0 +1,20 @@
+Name: SoftWrap license data
+Description: A DRM system by Softwrap Ltd.
+FileNameExtensions: ["sw2"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<SWFile>\r\n<DataSection Type=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENCODEMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAWSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYP"
+    CaseSensitive: false

@@ -1,0 +1,56 @@
+Name: Yach*PMS module
+URL: "https://shiru.untergrund.net/software.shtml"
+FileNameExtensions: ["ymd"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[YACH-PMS Song]\r\nTitle="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTRUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDERLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDERLOOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVPITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDERLEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVFREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVGATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATTERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVARP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVHF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVLF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVMF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

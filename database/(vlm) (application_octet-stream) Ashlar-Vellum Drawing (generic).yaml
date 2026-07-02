@@ -1,0 +1,37 @@
+Name: Ashlar-Vellum Drawing (generic)
+URL: "https://en.wikipedia.org/wiki/Ashlar-Vellum"
+FileNameExtensions: ["vlm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0xAB, 0xCD]
+  - Pos: 4
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\0\0@"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYMBMAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

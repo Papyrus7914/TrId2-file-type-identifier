@@ -1,0 +1,38 @@
+Name: Chemical Markup Language XML document
+URL: "http://en.wikipedia.org/wiki/Chemical_Markup_Language"
+FileNameExtensions: ["cml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WWW.XML-CML.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOMARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BONDARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOLECULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOM ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

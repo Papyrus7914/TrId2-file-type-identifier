@@ -1,0 +1,11 @@
+Name: NITF National Imagery Transmission Format image (generic)
+URL: "http://fileformats.archiveteam.org/wiki/National_Imagery_Transmission_Format"
+FileNameExtensions: ["nitf", "ntf"]
+MimeType: application/vnd.nitf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NITF0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "."
+    CaseSensitive: true

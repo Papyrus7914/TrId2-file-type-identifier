@@ -1,0 +1,18 @@
+Name: Sega Genesis / Megadrive Rom Image
+FileNameExtensions: ["smd"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\x03\0\0\0\0\0\0\xAA\xBB\x06"
+    CaseSensitive: true
+  - Pos: 640
+    AsciiString: "EA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EAGNSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0$\0$\0$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "****"
+    CaseSensitive: false

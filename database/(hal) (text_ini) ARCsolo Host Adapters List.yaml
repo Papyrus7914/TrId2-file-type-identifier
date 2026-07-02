@@ -1,0 +1,23 @@
+Name: ARCsolo Host Adapters List
+Description: Multi-platform backup tool by Cheyenne.
+FileNameExtensions: ["hal"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Version]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PORT IRQ DMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT SLOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAPTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT BUS"
+    CaseSensitive: false

@@ -1,0 +1,80 @@
+Name: Atari ST HiSoft BASIC compiled program/executable
+URL: "https://en.wikipedia.org/wiki/HiSoft_Systems"
+FileNameExtensions: ["prg", "tos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0&|\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "`\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "Nq"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MID$\0RIGHT$\0ASC\0INSTR\0PALETTE\0MALLOC\0MENU\0SCREEN\0SQRT\0WINDOW\0JOYSTICK\0TIMEDATE\0MOUSE\0LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMC68343 FLOATING POINT FIRMWARE (C) COPYRIGHT 1981 BY MOTOROLA INC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE\0SOUND\0LOCATE\0INKEY$\0GEMDOS\0DIM\0ARRAY\0BLIT\0REDIM\0CVS\0MID$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM TERMINATED - PRESS A KEY TO EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y8 \0RUNTIME ERROR\0 AT LINE\0 IN MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARRAY IS IN USE - CANNOT ERASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) HISOFT 1987\0HZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILED WITH HISOFT BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR - NOT ENOUGH MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY\0STARTUP\0OPEN\0PEEK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PFATAL ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0AP\0NUPDNUH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POKE\0BLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0NU\0\0PRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0NUPDNUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOME CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

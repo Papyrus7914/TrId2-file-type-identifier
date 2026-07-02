@@ -1,0 +1,28 @@
+Name: GeoTIFF metadata
+URL: "http://geotiff.maptools.org/listgeo.html"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Geotiff_Information:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TAGGED_INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_OF_GEOTIFF."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_OF_TAGS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY_REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAG ("
+    CaseSensitive: false

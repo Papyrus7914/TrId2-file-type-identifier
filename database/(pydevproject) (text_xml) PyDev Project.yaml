@@ -1,0 +1,26 @@
+Name: PyDev Project
+URL: "https://www.pydev.org/"
+FileNameExtensions: ["pydevproject"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<?eclipse-pydev version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ORG.PYTHON.PYDEV.PYTHON_PROJECT_INTERPRETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORG.PYTHON.PYDEV.PYTHON_PROJECT_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECLIPSE-PYDEV VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PYDEV_PROPERTY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PYDEV_PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false

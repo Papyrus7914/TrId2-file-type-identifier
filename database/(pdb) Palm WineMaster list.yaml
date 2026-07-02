@@ -1,0 +1,14 @@
+Name: Palm WineMaster list
+Description: WineMaster is a wine management software by Poohbah Industries.
+URL: "http://www.poohbah.com/public_html/pbwine/pbwine.htm"
+FileNameExtensions: ["pdb"]
+DetectionPatterns:
+  - Pos: 56
+    AsciiString: "\0\0\0\0PcWbPbWn"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PCWBPBWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAVORS"
+    CaseSensitive: false

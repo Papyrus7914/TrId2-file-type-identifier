@@ -1,0 +1,16 @@
+Name: infoUSA Network Meter file
+URL: "http://www.infousa.com"
+FileNameExtensions: ["ium"]
+DetectionPatterns:
+  - Pos: 10
+    AsciiString: ", infoUSA Inc.\r\n\x1A"
+    CaseSensitive: true
+  - Pos: 256
+    AsciiString: "Network Meter File v"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NETWORK METER FILE V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOUSA INC."
+    CaseSensitive: false

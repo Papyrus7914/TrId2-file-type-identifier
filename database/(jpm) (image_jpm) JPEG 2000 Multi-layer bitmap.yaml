@@ -1,0 +1,11 @@
+Name: JPEG 2000 Multi-layer bitmap
+URL: "http://fileformats.archiveteam.org/wiki/JPM"
+FileNameExtensions: ["jpm"]
+MimeType: image/jpm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\fjP  \r\n\x87\n"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "ftypjpm "
+    CaseSensitive: true

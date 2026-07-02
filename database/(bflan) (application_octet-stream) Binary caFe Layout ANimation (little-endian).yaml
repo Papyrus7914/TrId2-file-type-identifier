@@ -1,0 +1,17 @@
+Name: Binary caFe Layout ANimation (little-endian)
+URL: "https://github.com/Tyulis/3DSKit/blob/master/doc/BFLAN.md"
+FileNameExtensions: ["bflan"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FLAN\xFF\xFE\x14\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "pat1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAI1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAT1"
+    CaseSensitive: false

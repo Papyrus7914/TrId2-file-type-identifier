@@ -1,0 +1,32 @@
+Name: Dependency Walker Image
+Description: Dependency Walker is a free utility that scans any 32-bit or 64-bit Windows module (exe, dll, ocx, sys, etc.) and builds a hierarchical tree diagram of all dependent modules.
+URL: "http://www.dependencywalker.com/"
+FileNameExtensions: ["dwi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DWI\0"
+    CaseSensitive: true
+  - Pos: 388
+    AsciiString: " Stepping "
+    CaseSensitive: true
+  - Pos: 399
+    AsciiString: "\0e\0l\0 \0"
+    CaseSensitive: true
+  - Pos: 407
+    AsciiString: "\0 \0S\0t\0e\0p\0p\0i\0n\0g\0 \0"
+    CaseSensitive: true
+  - Pos: 828
+    AsciiString: "\0\0\0\0W. Europe Standard Time\0\0\0\0\0\0\0\0\0\xC4\xFF\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 907
+    AsciiString: "\0\x04\0\0\0\x19\0<Side-by-Side Components>\0"
+    CaseSensitive: true
+  - Pos: 1375
+    AsciiString: ":\\windows\\system32\\"
+    CaseSensitive: true
+  - Pos: 1411
+    AsciiString: ":\\windows\\system32\\"
+    CaseSensitive: true
+  - Pos: 1907
+    AsciiString: ":\\windows\\system32\\"
+    CaseSensitive: true

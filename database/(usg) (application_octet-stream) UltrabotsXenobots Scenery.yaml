@@ -1,0 +1,35 @@
+Name: Ultrabots/Xenobots Scenery
+URL: "https://www.mobygames.com/game/1399/ultrabots/"
+FileNameExtensions: ["usg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SHDR\x10\0\x80\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "MAPP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APTHB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HPTHB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DCBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERM"
+    CaseSensitive: false

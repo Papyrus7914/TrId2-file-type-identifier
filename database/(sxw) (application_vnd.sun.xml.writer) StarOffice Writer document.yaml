@@ -1,0 +1,50 @@
+Name: StarOffice Writer document
+URL: "http://en.wikipedia.org/wiki/Oracle_Open_Office"
+FileNameExtensions: ["sxw"]
+MimeType: application/vnd.sun.xml.writer
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/vnd.sun.xml.writerPK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.SUN.XML.WRITERPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAT"
+    CaseSensitive: false

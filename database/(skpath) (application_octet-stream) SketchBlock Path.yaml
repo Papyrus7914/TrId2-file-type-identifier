@@ -1,0 +1,14 @@
+Name: SketchBlock Path
+URL: "https://www.broad.ology.org.uk/amiga/sketchblock/"
+FileNameExtensions: ["skpath"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "path.xml\xD5"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PATH.XMLPK"
+    CaseSensitive: false

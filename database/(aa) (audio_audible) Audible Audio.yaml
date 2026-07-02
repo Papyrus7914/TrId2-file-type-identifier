@@ -1,0 +1,41 @@
+Name: Audible Audio
+URL: "http://en.wikipedia.org/wiki/Audible"
+FileNameExtensions: ["aa"]
+MimeType: audio/audible
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "W\x90u6\0\0\0\f\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENCRYPTEDBLOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADERSEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPUTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATOR"
+    CaseSensitive: false

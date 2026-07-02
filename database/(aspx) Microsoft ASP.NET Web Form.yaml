@@ -1,0 +1,19 @@
+Name: Microsoft ASP.NET Web Form
+URL: "http://www.microsoft.com/net/"
+FileNameExtensions: ["aspx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<%@ Page "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

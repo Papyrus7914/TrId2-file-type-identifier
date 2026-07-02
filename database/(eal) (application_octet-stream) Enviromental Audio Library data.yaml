@@ -1,0 +1,20 @@
+Name: Enviromental Audio Library data
+URL: "https://en.wikipedia.org/wiki/Environmental_Audio_Extensions"
+FileNameExtensions: ["eal"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "eal majv"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "minv"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EAL MAJV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINV"
+    CaseSensitive: false

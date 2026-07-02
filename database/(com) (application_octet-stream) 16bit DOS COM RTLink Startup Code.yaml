@@ -1,0 +1,70 @@
+Name: 16bit DOS COM RTLink Startup Code
+Description: Startup module for the RTLink dynamic linker system by Rational Systems.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 44
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THERE IS NOT ENOUGH FREE MEMORY TO PERFORM .RTLINK LOAD-TIME INITIALIZATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYSICAL EOF BEFORE LOGICAL EOF ON .RTL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RTLINK STARTUP CODE ALREADY INSTALLED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RTLINK STARTUP CODE INTERNAL ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT INSTALL .RTLINK STARTUP CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCORRECT .RTLINK STARTUP VERSION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILLEGAL FORMAT IN LOADABLE FILE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".... .RTLINK STARTUP ABORT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR LOADING REQUIRED .RTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTLINK\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0TSR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCORRECT RTL CHECKSUM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$.RTLINK STARTUP CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RTLINK STARTUP CODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCORRECT RTL TYPE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD MAGIC NUMBER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCORRECT RTL ID."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN FAILED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONT"
+    CaseSensitive: false

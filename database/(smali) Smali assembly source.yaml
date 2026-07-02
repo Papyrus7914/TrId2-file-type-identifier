@@ -1,0 +1,20 @@
+Name: Smali assembly source
+Description: dex format used by Dalvik, Android's Java VM implementation
+URL: "http://code.google.com/p/smali/"
+FileNameExtensions: ["smali"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ".class "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SUPER L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JAVA"
+    CaseSensitive: false

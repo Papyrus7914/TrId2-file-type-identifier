@@ -1,0 +1,77 @@
+Name: iPhoto image data
+Description: Attributes for each image in a library are stored in a correspondent .attr file.
+URL: "http://en.wikipedia.org/wiki/Iphoto"
+FileNameExtensions: ["attr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x04\vtypedstream\x81\x03\xE8\x84\x01@\x84\x84\x84\fAttributeMgr\x01\x84\x84\bNSObject\0\x85\x92\x84\x84\x84\x13NSMutableDictionary\0\x84\x84\fNSDictionary\0\x94\x84\x01i\x02\x92\x84\x84\x84\bNSString\x01\x94\x84\x01+\nAttributes\x86\x92\x84\x96\x97"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ORIGARCHIVEFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSMUTABLEDICTIONARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODICATION_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINCE70INTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSMUTABLEARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEUSERDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTEMGR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSDICTIONARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPEDSTREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNFILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPG"
+    CaseSensitive: false

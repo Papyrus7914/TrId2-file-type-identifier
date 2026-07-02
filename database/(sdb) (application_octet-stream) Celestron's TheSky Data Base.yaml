@@ -1,0 +1,19 @@
+Name: Celestron's TheSky Data Base
+FileNameExtensions: ["sdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0e\0\0\0\xBC\x05\0\0"
+    CaseSensitive: true
+  - Pos: 139
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: 331
+    AsciiString: "prefix\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PREFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TXT"
+    CaseSensitive: false

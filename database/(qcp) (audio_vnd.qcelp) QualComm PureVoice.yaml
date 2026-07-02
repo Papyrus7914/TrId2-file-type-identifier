@@ -1,0 +1,12 @@
+Name: QualComm PureVoice
+Description: PureVoice is a voice codec developed by QualComm
+URL: "https://en.wikipedia.org/wiki/Qualcomm_code-excited_linear_prediction"
+FileNameExtensions: ["qcp"]
+MimeType: audio/vnd.qcelp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "QLCMfmt"
+    CaseSensitive: true

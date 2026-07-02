@@ -1,0 +1,23 @@
+Name: Qt Translation Source
+URL: "http://en.wikipedia.org/wiki/Qt_%28toolkit%29"
+FileNameExtensions: ["ts"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSLATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE TS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

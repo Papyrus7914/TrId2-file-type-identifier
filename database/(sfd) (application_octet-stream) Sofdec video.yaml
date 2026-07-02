@@ -1,0 +1,20 @@
+Name: Sofdec video
+URL: "https://wiki.multimedia.cx/index.php?title=Sofdec"
+FileNameExtensions: ["sfd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x01\xBA!\0\x01\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOFDECSTREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SFA200"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SFD200"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VER."
+    CaseSensitive: false

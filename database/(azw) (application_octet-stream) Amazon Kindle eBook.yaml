@@ -1,0 +1,23 @@
+Name: Amazon Kindle eBook
+URL: "https://en.wikipedia.org/wiki/Amazon_Kindle"
+FileNameExtensions: ["azw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 31
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0BOOKMOBI\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOOKMOBI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FCIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIS"
+    CaseSensitive: false

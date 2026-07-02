@@ -1,0 +1,12 @@
+Name: UUencoded/XXencoded text
+Description: uuencoded data line start with length character 'M' for 60 characters. For xxencoded character 'h'.
+URL: "http://justsolve.archiveteam.org/wiki/Uuencoding"
+FileNameExtensions: ["uue", "uu", "xxe"]
+MimeType: text/x-uuencode
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "begin "
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: " "
+    CaseSensitive: true

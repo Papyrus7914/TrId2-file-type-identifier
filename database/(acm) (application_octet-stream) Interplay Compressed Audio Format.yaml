@@ -1,0 +1,8 @@
+Name: Interplay Compressed Audio Format
+URL: "http://fileformats.archiveteam.org/wiki/Interplay_ACM"
+FileNameExtensions: ["acm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              (
+    Bytes: [0x97, 0x28, 0x03, 0x01]

@@ -1,0 +1,20 @@
+Name: Lotus Agenda Screen Driver
+URL: "https://en.wikipedia.org/wiki/Lotus_Agenda"
+FileNameExtensions: ["sdr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "\0\0\x04\0Display\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "- V1.10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SDR -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RQSP."
+    CaseSensitive: false

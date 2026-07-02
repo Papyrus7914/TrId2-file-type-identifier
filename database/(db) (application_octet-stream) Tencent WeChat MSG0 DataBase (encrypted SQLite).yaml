@@ -1,0 +1,14 @@
+Name: Tencent WeChat MSG0 DataBase (encrypted SQLite)
+URL: "https://en.wikipedia.org/wiki/WeChat"
+FileNameExtensions: ["db"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite header 3\0\x04\0 \0\0\0\0\0\0\0\0\0\0\0\0\0MSG0"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "\0\0\0TD\x01\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MSG0"
+    CaseSensitive: false

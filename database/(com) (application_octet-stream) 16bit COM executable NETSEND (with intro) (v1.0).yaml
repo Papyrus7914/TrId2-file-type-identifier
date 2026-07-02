@@ -1,0 +1,44 @@
+Name: 16bit COM executable NETSEND (with intro) (v1.0)
+URL: "http://fileformats.archiveteam.org/wiki/NETSEND"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "========== NETSEND V1.00 SELF-EXTRACTING DOS PROGRAM ===========\r\n\r\nTHE FOLLOWING text is an executable program. It does NOT require\r\ndecoding. Please follow these three simple steps:\r\n\r\n 1  Use a DOS TEXT EDITOR to clip at the line below\r\n 2  Save the clipped portion as ANYNAME.COM\r\n 3  When you enter ANYNAME the program will create "
+    CaseSensitive: true
+  - Pos: 347
+    AsciiString: " \r\n\r\nBEGIN .... REMOVE THIS LINE AND EVERYTHING ABOVE IT ............\r\nXPPPYZIQD[L-f6-g41GDSXu'@,~P^P_O,!(GU(GZ(Gnu5-NETSEND_V1.00_JRT=\r\nCFFFRX,`,`2$F=@!t.rQ0%IuL0%(%(%GERYAARX2%(%t8-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN .... REMOVE THIS LINE AND EVERYTHING ABOVE IT ............"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END ... YOU MAY REMOVE THIS LINE AND THE FOLLOWING TEXT ........"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE FOLLOWING TEXT IS AN EXECUTABLE PROGRAM. IT DOES NOT REQUIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETSEND IS FREE AND AVAILABLE ON MANY SHAREWARE SITES INCLUDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1  USE A DOS TEXT EDITOR TO CLIP AT THE LINE BELOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3  WHEN YOU ENTER ANYNAME THE PROGRAM WILL CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECODING. PLEASE FOLLOW THESE THREE SIMPLE STEPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2  SAVE THE CLIPPED PORTION AS ANYNAME.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETSEND V1.00 SELF-EXTRACTING DOS PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINES IN THE ABOVE PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETSEND*.ZIP"
+    CaseSensitive: false

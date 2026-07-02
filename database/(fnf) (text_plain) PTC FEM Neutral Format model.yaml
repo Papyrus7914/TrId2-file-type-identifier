@@ -1,0 +1,23 @@
+Name: PTC FEM Neutral Format model
+URL: "http://tinyurl.com/p8bbxjn"
+FileNameExtensions: ["fnf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#PTC_FEM_NEUT "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PTC_FEM_NEUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%START_SECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%END_SECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

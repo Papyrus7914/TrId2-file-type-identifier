@@ -1,0 +1,26 @@
+Name: Microsoft Vista Sidebar Gadget (CAB - Obsolete)
+URL: "http://microsoftgadgets.com/"
+FileNameExtensions: ["gadget"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "O\0B\0S\0O\0L\0E\0T\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS.HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GADGET.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGN"
+    CaseSensitive: false

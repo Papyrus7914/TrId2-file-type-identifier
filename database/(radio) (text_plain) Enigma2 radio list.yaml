@@ -1,0 +1,14 @@
+Name: Enigma2 radio list
+URL: "https://en.wikipedia.org/wiki/Enigma_(DVB)"
+FileNameExtensions: ["radio"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#NAME "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SERVICE 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIO"
+    CaseSensitive: false

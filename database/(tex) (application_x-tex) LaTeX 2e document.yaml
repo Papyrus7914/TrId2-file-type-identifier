@@ -1,0 +1,17 @@
+Name: LaTeX 2e document
+URL: "https://en.wikipedia.org/wiki/LaTeX"
+FileNameExtensions: ["tex"]
+MimeType: application/x-tex
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\documentclass"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END{"
+    CaseSensitive: false

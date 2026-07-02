@@ -1,0 +1,18 @@
+Name: ZSoft scanner driver
+URL: "https://en.wikipedia.org/wiki/ZSoft_Corporation"
+FileNameExtensions: ["sys"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: 5
+    Bytes: [0xC0]
+  - Pos: 10
+    AsciiString: "IMGSCAN$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMGSCAN$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANNER"
+    CaseSensitive: false

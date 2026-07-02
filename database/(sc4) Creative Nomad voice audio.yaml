@@ -1,0 +1,10 @@
+Name: Creative Nomad voice audio
+URL: "http://en.wikipedia.org/wiki/Creative_NOMAD"
+FileNameExtensions: ["sc4"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "dmr1data\xF4\x01"
+    CaseSensitive: true
+  - Pos: 510
+    AsciiString: "U\xAAdmr1data\xF4\x01"
+    CaseSensitive: true

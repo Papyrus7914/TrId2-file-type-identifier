@@ -1,0 +1,21 @@
+Name: Torque animation asset (XML)
+Description: TAML is an acronym of Torque Application Mark-up Language.
+URL: "https://en.wikipedia.org/wiki/Torque_(game_engine)"
+FileNameExtensions: ["taml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<AnimationAsset"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANIMATIONFRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATIONTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false

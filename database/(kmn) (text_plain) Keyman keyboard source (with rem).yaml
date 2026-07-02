@@ -1,0 +1,35 @@
+Name: Keyman keyboard source (with rem)
+URL: "https://keyman.com/"
+FileNameExtensions: ["kmn"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    #                          c     ␠
+    Bytes: [0xEF, 0xBB, 0xBF, 0x63, 0x20]
+  - Pos: any
+    AsciiString: "BEGIN UNICODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") USING KEYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE(MAIN)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME)"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: MetaMorph Stack
+URL: "http://fileformats.archiveteam.org/wiki/MetaMorph_Stack"
+FileNameExtensions: ["stk", "tif", "tiff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II*\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "METAMORPH\02000"
+    CaseSensitive: false

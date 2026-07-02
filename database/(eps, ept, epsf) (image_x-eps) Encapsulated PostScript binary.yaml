@@ -1,0 +1,8 @@
+Name: Encapsulated PostScript binary
+Description: Encapsulated PostScript with TIFF or WMF preview.
+URL: "http://fileformats.archiveteam.org/wiki/Encapsulated_PostScript"
+FileNameExtensions: ["eps", "ept", "epsf"]
+MimeType: image/x-eps
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xC5, 0xD0, 0xD3, 0xC6]

@@ -1,0 +1,14 @@
+Name: LHARK compressed archive
+URL: "http://fileformats.archiveteam.org/wiki/LHARK"
+FileNameExtensions: ["lzh"]
+MimeType: application/x-lzh-compressed
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "-lh"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-LH7-"
+    CaseSensitive: false

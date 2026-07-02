@@ -1,0 +1,175 @@
+Name: PhotoFilter plugin
+URL: "http://photofiltre.free.fr"
+FileNameExtensions: ["pfl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 69
+    #              \t          !                 L           !
+    Bytes: [0xB4, 0x09, 0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: 96
+    AsciiString: "t be run "
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REGISTERCOMPATIBILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERPLUGINGLYPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERPLUGINHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERPLUGINSTRUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0N\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0U\0T\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CESSI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERREUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXECUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0G\0N\0O\0R\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPOSSIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADBITMAPA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADICONA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGEBOXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0R\0I\0G\0I\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PJ\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTMESSAGEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0I\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0E\0U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0Y\0S\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDMESSAGEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0R\0A\0N\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0R\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0A\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y\0KERNEL32.DLL"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: Cadlogic Instinct Drawing
+FileNameExtensions: ["dp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "; DP ver. "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LAYER 1 STANDARD RWO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DP VER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDS"
+    CaseSensitive: false

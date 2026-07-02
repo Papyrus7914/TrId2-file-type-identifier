@@ -1,0 +1,19 @@
+Name: IBM AntiVirus virus signatures
+FileNameExtensions: ["lst"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CRCVMARK"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "MOREROOM"
+    CaseSensitive: true

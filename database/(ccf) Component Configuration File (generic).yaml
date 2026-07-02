@@ -1,0 +1,23 @@
+Name: Component Configuration File (generic)
+Description: CCF are used to customize/configure programmable remotes
+URL: "http://www.remotecentral.com/files/index.html"
+FileNameExtensions: ["ccf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0\0\0@\xA5Z@_CCF\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0\0\0CCF\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CCF"
+    CaseSensitive: false

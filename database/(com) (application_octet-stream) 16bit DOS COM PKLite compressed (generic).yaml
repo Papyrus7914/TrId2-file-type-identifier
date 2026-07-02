@@ -1,0 +1,23 @@
+Name: 16bit DOS COM PKLite compressed (generic)
+URL: "https://en.wikipedia.org/wiki/Executable_compression#MS-DOS_executable"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xB8]
+  - Pos: 3
+    Bytes: [0xBA]
+  - Pos: 6
+    AsciiString: ";\xC4s"
+    CaseSensitive: true
+  - Pos: 10
+    #                    -
+    Bytes: [0x8B, 0xC4, 0x2D]
+  - Pos: 14
+    Bytes: [0x03]
+  - Pos: any
+    AsciiString: "PKWARE INC. ALL RIGHTS RESERVEDNOT ENOUGH MEMORY$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKLITE COPR. 199"
+    CaseSensitive: false

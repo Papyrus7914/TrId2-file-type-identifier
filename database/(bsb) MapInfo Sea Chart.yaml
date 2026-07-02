@@ -1,0 +1,16 @@
+Name: MapInfo Sea Chart
+URL: "http://www.mapinfo.com"
+FileNameExtensions: ["bsb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".KAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VER/"
+    CaseSensitive: false

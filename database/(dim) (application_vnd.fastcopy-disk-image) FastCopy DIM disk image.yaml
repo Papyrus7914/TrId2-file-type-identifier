@@ -1,0 +1,11 @@
+Name: FastCopy DIM disk image
+Description: An image format used for Atari ST floppy disks.
+FileNameExtensions: ["dim"]
+MimeType: application/vnd.fastcopy-disk-image
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BB"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0"
+    CaseSensitive: true

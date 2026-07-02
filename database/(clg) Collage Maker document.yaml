@@ -1,0 +1,31 @@
+Name: Collage Maker document
+URL: "http://www.galleriasoftware.com/collagemaker/collinfo.htm"
+FileNameExtensions: ["clg"]
+DetectionPatterns:
+  - Pos: 29
+    AsciiString: "\0Ver "
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 973
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCUMENTS AND SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPG"
+    CaseSensitive: false

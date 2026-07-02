@@ -1,0 +1,25 @@
+Name: NanoZip Self Extracting archive
+URL: "http://www.nanozip.net/"
+FileNameExtensions: ["exe"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0PE\0\0L\x01\x03\0"
+    CaseSensitive: true
+  - Pos: 376
+    AsciiString: "UPX0"
+    CaseSensitive: true
+  - Pos: 416
+    AsciiString: "UPX1"
+    CaseSensitive: true
+  - Pos: 456
+    AsciiString: "UPX2"
+    CaseSensitive: true
+  - Pos: 501
+    AsciiString: "UPX!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$\0\0\0\0\0\0\0PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NANOZIP"
+    CaseSensitive: false

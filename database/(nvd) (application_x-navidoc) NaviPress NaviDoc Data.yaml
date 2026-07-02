@@ -1,0 +1,38 @@
+Name: NaviPress NaviDoc Data
+URL: "https://en.wikipedia.org/wiki/AOLpress"
+FileNameExtensions: ["nvd"]
+MimeType: application/x-navidoc
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "navidoc 1.0\ngraph="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NAMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GHOSTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HTM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFS"
+    CaseSensitive: false

@@ -1,0 +1,15 @@
+Name: Emacs/XEmacs byte-compiled Lisp (generic)
+Description: Byte compiled from lisp file (*.el) with same main file name by Emacs version 19 or higher
+URL: "https://en.wikipedia.org/wiki/Emacs_Lisp"
+FileNameExtensions: ["elc"]
+MimeType: application/x-bytecode.elisp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";ELC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ")"
+    CaseSensitive: false

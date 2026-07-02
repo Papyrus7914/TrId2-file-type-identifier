@@ -1,0 +1,83 @@
+Name: Digital Log Interchange Standard well format
+URL: "https://wiki.ppdm.org/Well_Logs_Reference_guide#DLIS"
+FileNameExtensions: ["dlis"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "   1V1.00RECORD "
+    CaseSensitive: true
+  - Pos: 90
+    AsciiString: "FILE-HEADER"
+    CaseSensitive: true
+  - Pos: 103
+    AsciiString: "SEQUENCE-NUMBER"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NAME-SPACE-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE-SET-NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME-SPACE-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCE-NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCENT-NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATION-TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE-SET-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCER-CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCER-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1V1.00RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER-NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE-HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE-NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN-NUMBER0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WELL-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WELL-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false

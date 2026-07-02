@@ -1,0 +1,9 @@
+Name: MikroTik RouterOS Upgrade Package
+URL: "http://wiki.mikrotik.com/wiki/Upgrading_RouterOS"
+FileNameExtensions: ["npk"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x1E, 0xF1, 0xD0, 0xBA]
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false

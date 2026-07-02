@@ -1,0 +1,41 @@
+Name: VDA-FS CAD data exchange format
+URL: "http://fileformats.archiveteam.org/wiki/VDAFS"
+FileNameExtensions: ["vda"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 82
+    AsciiString: "**********************************************************************"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "***********************************************************************"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDAFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURF"
+    CaseSensitive: false

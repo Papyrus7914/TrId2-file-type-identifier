@@ -1,0 +1,9 @@
+Name: Starcraft Replay
+FileNameExtensions: ["rep"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xA7~~+\x01\0\0\0\x04\0\0\0reRS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RERS"
+    CaseSensitive: false

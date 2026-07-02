@@ -1,0 +1,26 @@
+Name: JTAG Chain File
+URL: "https://en.wikipedia.org/wiki/Joint_Test_Action_Group"
+FileNameExtensions: ["jcf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<begin>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOTAL_ID_BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION_BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL_ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MA0_MI0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSD8"
+    CaseSensitive: false

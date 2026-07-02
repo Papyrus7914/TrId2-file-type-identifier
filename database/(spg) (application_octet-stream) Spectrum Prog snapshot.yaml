@@ -1,0 +1,11 @@
+Name: Spectrum Prog snapshot
+Description: Format used by Sinclair ZX Spectrum emulators.
+FileNameExtensions: ["spg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 32
+    AsciiString: "SpectrumProg"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SPECTRUMPROG"
+    CaseSensitive: false

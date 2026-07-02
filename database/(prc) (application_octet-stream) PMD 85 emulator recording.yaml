@@ -1,0 +1,11 @@
+Name: PMD 85 emulator recording
+URL: "http://pmd85.borik.net/wiki/Intro"
+FileNameExtensions: ["prc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PRC\x01"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "PSN\x01"
+    CaseSensitive: true

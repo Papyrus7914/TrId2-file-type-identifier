@@ -1,0 +1,14 @@
+Name: Mikogo session video recording
+Description: Audit compliant proprietary format.
+URL: "http://en.wikipedia.org/wiki/Mikogo"
+FileNameExtensions: ["bs4"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xCD\xABw\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true

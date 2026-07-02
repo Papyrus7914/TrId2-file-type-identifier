@@ -1,0 +1,65 @@
+Name: MPEG-4 Simple Aggregation Format (LASeR)
+URL: "https://www.iso.org/standard/40488.html"
+FileNameExtensions: ["xml", "saf", "lsr"]
+MimeType: application/laser+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDOFSAFSESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASERHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENEHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML-EVENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENEUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWSCENE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPEG4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1999"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2005"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

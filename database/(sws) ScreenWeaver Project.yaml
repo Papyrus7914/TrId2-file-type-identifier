@@ -1,0 +1,296 @@
+Name: ScreenWeaver Project
+Description: ScreenWeaver makes screensavers and executables from Flash swf files, providing a lot of options for integration.
+URL: "http://www.screenweaver.com"
+FileNameExtensions: ["sws"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\xBF\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "TCSO\0\x04\0\0\0\0\0\x05TITLE\0\0\0\0\0\x05Saver\x03\0\vMainMovieID\x02\0\x04Main\0\x0EPreviewMovieID\x02\0\aPreview\0\x0FSettingsMovieID\x02\0\bSettings\0\x0EFullScreenMode\0@\0\0\0\0\0\0\0\0\x0FCloseOnKeyPress\x01\x01\0\x10CloseOnMouseMove\x01\x01\0\x11CloseOnRightClick\x01\x01\0\x10CloseOnLeftClick\x01\x01\0\rCloseOnEscape\x01\x01\0\tHideMouse\x01\x01\0\0\t\0\aProject\x03\0\x05Title\x02\0"
+    CaseSensitive: true
+  - Pos: 1710
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".ICO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OCX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDERCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDDATE\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTIONCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTIONMAXIMIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTIONMINIMIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTIONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTIONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEONESCAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEONKEYPRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEONLEFTCLICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEONMOUSEMOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEONRIGHTCLICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTSCALEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXTABOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXTNOMENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXTPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXTPRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXTQUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXTSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXTZOOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESKTOPBACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPIRYDATE\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPIRYRUNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPIRYTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPIRYVAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCEREGIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLSCREENMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIDEMOUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLERAPPEXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLERDEFAULTPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLERLICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLERPACKLICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLERPACKREADME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLERREADME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLERSWFID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLERWINDOWID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISMODAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISVISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINMOVIEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINWINDOWID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTINTASKBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEWMOVIEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTHIS APPLICATION HAS EXPIRED. PLEASE CONTACT THE DISTRIBUTOR FOR MORE INFORMATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALEWINDOWTOMOVIE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENSAVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSMOVIEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFXEXTRACTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWPROPERTIESAFTERINSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLEINSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPRANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLASHIMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLASHSCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPRESSAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPRESSCAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPRESSKEYSTROKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPRESSLEFTCLICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPRESSMOUSEMOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPRESSQUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPRESSRIGHTCLICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPRESSWK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWMX_INSTALLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSMENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCSO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWLESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZORDER"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: FL Studio State - Harmless
+URL: "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Harmless.htm"
+FileNameExtensions: ["fst"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FLhd\x06\0\0\00\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "FLdt"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "H\0A\0R\0M\0L\0E\0S\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLDT"
+    CaseSensitive: false

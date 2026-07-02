@@ -1,0 +1,18 @@
+Name: StarOffice Gallery view (big)
+Description: Variant with streams named dd*.
+URL: "http://fileformats.archiveteam.org/wiki/StarOffice_binary_formats"
+FileNameExtensions: ["sdv"]
+MimeType: application/x-star-sdv
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xD0\xCF\x11\xE0\xA1\xB1\x1A\xE1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0;\0\x03\0\xFE\xFF\t\0\x06\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0D\02"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVRLE"
+    CaseSensitive: false

@@ -1,0 +1,32 @@
+Name: Atari ST Megamax Modula-2 program/executable (v2)
+URL: "https://en.wikipedia.org/wiki/Modula-2"
+FileNameExtensions: ["prg", "acc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "Megamax Modula-2 V2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORAGE ALLOCATION ERROR\0\0$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEGAMAX MODULA-2 V2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORBASE"
+    CaseSensitive: false

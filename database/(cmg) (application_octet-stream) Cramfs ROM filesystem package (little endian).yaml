@@ -1,0 +1,8 @@
+Name: Cramfs ROM filesystem package (little endian)
+URL: "https://en.wikipedia.org/wiki/Cramfs"
+FileNameExtensions: ["cmg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "E=\xCD("
+    CaseSensitive: true

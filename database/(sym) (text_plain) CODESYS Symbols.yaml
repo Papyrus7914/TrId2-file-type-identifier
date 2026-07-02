@@ -1,0 +1,17 @@
+Name: CODESYS Symbols
+URL: "https://en.wikipedia.org/wiki/CODESYS"
+FileNameExtensions: ["sym"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";Version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESIZE"
+    CaseSensitive: false

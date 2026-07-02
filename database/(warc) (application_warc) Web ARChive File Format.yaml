@@ -1,0 +1,23 @@
+Name: Web ARChive File Format
+URL: "https://en.wikipedia.org/wiki/Web_ARChive"
+FileNameExtensions: ["warc"]
+MimeType: application/warc
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WARC/"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT-LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARC-DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARC-TYPE"
+    CaseSensitive: false

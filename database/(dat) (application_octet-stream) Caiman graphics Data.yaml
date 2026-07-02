@@ -1,0 +1,14 @@
+Name: Caiman graphics Data
+Description: Used in games by Caiman Co., like Yo Matias II - Fantasmas y Calabazas.
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GFX Data File.\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

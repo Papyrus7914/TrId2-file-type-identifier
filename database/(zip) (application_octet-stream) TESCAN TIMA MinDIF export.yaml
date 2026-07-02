@@ -1,0 +1,38 @@
+Name: TESCAN TIMA MinDIF export
+URL: "https://en.wikipedia.org/wiki/TESCAN"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mindif/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MEASUREMENT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDS.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASES.TIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASES.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BSE.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINDIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false

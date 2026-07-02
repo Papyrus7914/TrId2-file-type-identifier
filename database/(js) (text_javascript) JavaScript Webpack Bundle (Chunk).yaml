@@ -1,0 +1,17 @@
+Name: JavaScript Webpack Bundle (Chunk)
+URL: "https://en.wikipedia.org/wiki/Webpack"
+FileNameExtensions: ["js"]
+MimeType: text/javascript
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(self.webpackChunk"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ").PUSH("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN"
+    CaseSensitive: false

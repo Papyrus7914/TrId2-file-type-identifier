@@ -1,0 +1,11 @@
+Name: Gerber format
+URL: "https://en.wikipedia.org/wiki/Gerber_format"
+FileNameExtensions: ["gbr"]
+MimeType: application/vnd.gerber
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%ADD"
+    CaseSensitive: false

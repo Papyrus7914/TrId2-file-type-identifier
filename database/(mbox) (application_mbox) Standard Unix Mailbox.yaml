@@ -1,0 +1,26 @@
+Name: Standard Unix Mailbox
+URL: "https://tools.ietf.org/rfc/rfc4155.txt"
+FileNameExtensions: ["mbox"]
+MimeType: application/mbox
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "From "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

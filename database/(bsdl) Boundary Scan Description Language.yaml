@@ -1,0 +1,70 @@
+Name: Boundary Scan Description Language
+URL: "http://en.wikipedia.org/wiki/Boundary_scan_description_language"
+FileNameExtensions: ["bsdl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "entity "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ATTRIBUTE INSTRUCTION_CAPTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTE INSTRUCTION_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTE INSTRUCTION_OPCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTE BOUNDARY_REGISTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTE BOUNDARY_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTE REGISTER_ACCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(PHYSICAL_PIN_MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTE PIN_MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIN_MAP_STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAP_SCAN_CLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAP_SCAN_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAP_SCAN_OUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAP_SCAN_IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITY IS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYPASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ALL"
+    CaseSensitive: false

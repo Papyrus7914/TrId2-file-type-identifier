@@ -1,0 +1,29 @@
+Name: Amazfit WatchFace Zipped
+Description: Seems to be used for the Stratos smartwatch.
+FileNameExtensions: ["wfz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SAMPLE-FACE-LOFI.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION.XMLU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE-FACE.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WATCHFACE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEHAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.PNG"
+    CaseSensitive: false

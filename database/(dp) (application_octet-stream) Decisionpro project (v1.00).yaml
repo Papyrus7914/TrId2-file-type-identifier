@@ -1,0 +1,14 @@
+Name: Decision/pro project (v1.00)
+Description: Decision making software for Windows by Alan Johnson.
+FileNameExtensions: ["dp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "30\030\08\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POOR TO EXCELLENT\00\0POOR\0UNSATISFACTORY\0SATISFACTORY\0ABOVE AVERAGE\0EXCELLENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YES OR NO\00\0NO\0YES"
+    CaseSensitive: false

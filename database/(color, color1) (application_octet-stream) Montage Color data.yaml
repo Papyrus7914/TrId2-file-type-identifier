@@ -1,0 +1,15 @@
+Name: Montage Color data
+Description: Amiga video titler.
+URL: "http://amr.abime.net/review_26804"
+FileNameExtensions: ["color", "color1"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/COLOR_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLUE"
+    CaseSensitive: false

@@ -1,0 +1,8 @@
+Name: Cryptographic Message Syntax encoded data
+URL: "https://en.wikipedia.org/wiki/Cryptographic_Message_Syntax"
+FileNameExtensions: ["cms", "enc", "sig"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-----BEGIN CMS-----"
+    CaseSensitive: true

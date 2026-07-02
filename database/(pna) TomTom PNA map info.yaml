@@ -1,0 +1,10 @@
+Name: TomTom PNA map info
+URL: "http://en.wikipedia.org/wiki/TomTom"
+FileNameExtensions: ["pna"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ID="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".PNA"
+    CaseSensitive: false

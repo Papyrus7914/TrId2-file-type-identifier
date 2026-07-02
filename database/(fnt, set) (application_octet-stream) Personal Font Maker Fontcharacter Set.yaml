@@ -1,0 +1,23 @@
+Name: Personal Font Maker Font/character Set
+URL: "https://www.amigaforever.com/classic/pfm/"
+FileNameExtensions: ["fnt", "set"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CPFMIFHD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSNM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFP"
+    CaseSensitive: false

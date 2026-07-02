@@ -1,0 +1,29 @@
+Name: SequoiaView directory Tree (XML)
+URL: "http://www.win.tue.nl/sequoiaview/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<node name =\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LEAF NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

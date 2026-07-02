@@ -1,0 +1,15 @@
+Name: MPAK game data archive
+Description: Used in Battlestations Midway.
+URL: "http://www.watto.org/specs.html?specs=Archive_MPAK_MPAK"
+FileNameExtensions: ["mpak"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MPAK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RAWD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOC"
+    CaseSensitive: false

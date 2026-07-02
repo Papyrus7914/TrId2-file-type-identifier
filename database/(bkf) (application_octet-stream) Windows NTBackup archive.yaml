@@ -1,0 +1,9 @@
+Name: Windows NTBackup archive
+Description: Backup file created with the backup utility shipped with Windows NT/2K/XP/2003
+URL: "http://en.wikipedia.org/wiki/NTBackup"
+FileNameExtensions: ["bkf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TAPE\0\0"
+    CaseSensitive: true

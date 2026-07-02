@@ -1,0 +1,23 @@
+Name: PCOS bootable disk image
+URL: "https://en.wikipedia.org/wiki/Olivetti_M20"
+FileNameExtensions: ["img"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0#\x02\x10\x01\0\0"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "PCOS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) BY OLIVETTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT PCOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCOS-8000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REV."
+    CaseSensitive: false

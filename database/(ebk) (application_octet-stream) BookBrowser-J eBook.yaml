@@ -1,0 +1,59 @@
+Name: BookBrowser-J eBook
+URL: "https://www.voyager.co.jp/support/FAQ/exbook/exbookans8.html"
+FileNameExtensions: ["ebk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x02\x14\0\0\x02\x10book\0\0\0\x01@"
+    CaseSensitive: true
+  - Pos: 478
+    #        A           A           A
+    Bytes: [0x41, 0xAF, 0x41, 0xAF, 0x41, 0xAF]
+  - Pos: 540
+    AsciiString: "doma"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$DOMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EBLK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRJT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBDM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TDEF"
+    CaseSensitive: false

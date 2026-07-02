@@ -1,0 +1,29 @@
+Name: osu! beatmap note timing data (v14)
+URL: "https://en.wikipedia.org/wiki/Osu!"
+FileNameExtensions: ["osu"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "osu file format v14"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OSU FILE FORMAT V14"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTISTUNICODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMINGPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLEUNICODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false

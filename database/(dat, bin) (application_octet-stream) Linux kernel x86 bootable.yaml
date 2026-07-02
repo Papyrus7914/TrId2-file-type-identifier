@@ -1,0 +1,21 @@
+Name: Linux kernel x86 bootable
+Description: "Typical file names are: vmlinuz, bzimage, kernel.dat"
+URL: "https://www.kernel.org/doc/Documentation/x86/boot.txt"
+FileNameExtensions: ["dat", "bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 510
+    #        U
+    Bytes: [0x55, 0xAA, 0xEB]
+  - Pos: 514
+    AsciiString: "HdrS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDRS"
+    CaseSensitive: false

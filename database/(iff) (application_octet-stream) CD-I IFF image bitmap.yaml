@@ -1,0 +1,17 @@
+Name: CD-I IFF image bitmap
+URL: "http://www.icdia.co.uk/authoring/IFF.docs.pdf"
+FileNameExtensions: ["iff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "IMAGIHDR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMAGIHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false

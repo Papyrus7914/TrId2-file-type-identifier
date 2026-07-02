@@ -1,0 +1,14 @@
+Name: Logitech Modula-2 Overlay (v3.x)
+URL: "http://www.edm2.com/index.php/Logitech_Modula-2"
+FileNameExtensions: ["ovl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "M["
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\xFF\xFF\0\0\0\0\0\0"
+    CaseSensitive: true

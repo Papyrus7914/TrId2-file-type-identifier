@@ -1,0 +1,67 @@
+Name: Zeebo game digital Signature (BREW)
+URL: "https://en.wikipedia.org/wiki/Zeebo"
+FileNameExtensions: ["sig"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01, 0x00, 0x02, 0x00]
+  - Pos: 8
+    AsciiString: "\x02\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERISIGN TIME STAMPING AUTHORITY CA0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERISIGN TIME STAMPING AUTHORITY0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREW CODE AUTHORIZATION0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERISIGN TRUST NETWORK1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2TERMS OF USE AT HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCSP.VERISIGN.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QCOM BREW SIGTOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRL.VERISIGN.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.VERISIGN.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREW ROOT CA0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSACA-G2.CRL0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RPA (C)011)0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUALCOMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC.1 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RPA05"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MOD"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: ESET Smart Security Quarantined file Information
+URL: "http://es.wikipedia.org/wiki/ESET_Smart_Security"
+FileNameExtensions: ["nqi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EQIF\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EQIF"
+    CaseSensitive: false

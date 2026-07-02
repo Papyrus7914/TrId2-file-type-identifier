@@ -1,0 +1,10 @@
+Name: DiskCopy 4.2 non-Mac disk image
+URL: "https://wiki.68kmla.org/DiskCopy_4.2_format_specification"
+FileNameExtensions: ["dc42", "image"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "-not a Macintosh disk"
+    CaseSensitive: true
+  - Pos: 82
+    Bytes: [0x01, 0x00]

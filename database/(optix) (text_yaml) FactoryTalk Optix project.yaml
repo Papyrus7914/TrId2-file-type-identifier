@@ -1,0 +1,59 @@
+Name: FactoryTalk Optix project
+URL: "https://www.rockwellautomation.com/"
+FileNameExtensions: ["optix"]
+MimeType: text/yaml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Project:\n Name: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROJECTNAMESPACEINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTOPTIX.HMIPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTOPTIX.COREBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPENDENCIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COREVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTOPTIX.UI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTOPTIX.N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".YAML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUID"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: Sysinternals Autoruns data
+Description: Old format used til version 13.
+URL: "https://technet.microsoft.com/sysinternals"
+FileNameExtensions: ["arn"]
+MimeType: application/x-ms-arn
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ARN_"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "BM"
+    CaseSensitive: true

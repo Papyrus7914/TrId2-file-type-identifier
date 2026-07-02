@@ -1,0 +1,9 @@
+Name: Syslinux COM32 module (v2)
+Description: version 2+3 run in flat-memory 32-bit protected mode. Start with assembler instructions MOV EAX,21CD4Cffh
+URL: "http://www.syslinux.org/doc/comboot.txt"
+FileNameExtensions: ["c32"]
+MimeType: application/x-c32-comboot-syslinux-exec
+DetectionPatterns:
+  - Pos: 0
+    #                    L           !
+    Bytes: [0xB8, 0xFF, 0x4C, 0xCD, 0x21]

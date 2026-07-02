@@ -1,0 +1,11 @@
+Name: VBScript Encoded script (with rem)
+URL: "http://en.wikipedia.org/wiki/VBScript"
+FileNameExtensions: ["vbe"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "'"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "**START ENCODE**"
+    CaseSensitive: false

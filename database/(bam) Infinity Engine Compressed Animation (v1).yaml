@@ -1,0 +1,11 @@
+Name: Infinity Engine Compressed Animation (v1)
+Description: "Infinity Engine BAMC files describe zlib compressed BAM files which are animated graphics. Such files are used for animations (both creature animations, item and spell animations) and interactive GUI elements (e.g. buttons) and for logical collections of images (e.g. fonts). The format supports multiple animation cycles, each containing multiple frames.  Applies to: BG1, BG1:ToSC, BG2, BG2:ToB, PST, IWD, IWD:HoW, IWD:TotL, IWD2"
+URL: "http://iesdp.gibberlings3.net/file_formats/ie_formats/bam_v1.htm#bamcv1_Header"
+FileNameExtensions: ["bam"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BAMCV1"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0x"
+    CaseSensitive: true

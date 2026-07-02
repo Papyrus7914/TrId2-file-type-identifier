@@ -1,0 +1,30 @@
+Name: XWinPlot layout
+FileNameExtensions: ["xwp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#!XWinPlot "
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRINTERSETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUTSETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEC"
+    CaseSensitive: false

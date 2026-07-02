@@ -1,0 +1,32 @@
+Name: VisualBasic Form (generic)
+URL: "https://en.wikipedia.org/wiki/Visual_Basic"
+FileNameExtensions: ["frm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VERSION "
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: ".00\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false

@@ -1,0 +1,42 @@
+Name: Portable Compiled Format font
+Description: A bitmap font format used by the X Window System.
+URL: "https://en.wikipedia.org/wiki/Portable_Compiled_Format"
+FileNameExtensions: ["pcf", "pmf"]
+MimeType: application/x-font-pcf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01fcp"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PIXEL_SIZE\0POINT_SIZE\0RESOLUTION_X\0RESOLUTION_Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVERAGE_WIDTH\0CHARSET_REGISTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARSET_ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETWIDTH_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAMILY_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHT_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUAD_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false

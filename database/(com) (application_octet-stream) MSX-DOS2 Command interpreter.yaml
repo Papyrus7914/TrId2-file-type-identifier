@@ -1,0 +1,341 @@
+Name: MSX-DOS2 Command interpreter
+Description: "Filename: COMMAND2.COM"
+URL: "https://en.wikipedia.org/wiki/MSX"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xC3]
+  - Pos: 2
+    #              \r
+    Bytes: [0x03, 0x0D]
+  - Pos: any
+    AsciiString: "WILL BE DESTROYED\0      \0 FILE COPIED\0 FILES COPIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP FOR OTHER MSX-DOS FEATURES IS ALSO AVAILABLE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE FOLLOWING STANDARD COMMANDS ARE AVAILABLE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE\0 BYTES\0*** \0\0PRESS ANY KEY TO CONTINUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOR MORE INFORMATION ON A SPECIFIC COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM HALTED\0TERMINATE BATCH FILE (Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSERT COMMAND2.COM DISK IN DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- \0CURRENT DATE IS \0SUN\0MON\0TUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTROY ALL DATA ON RAM DISK (Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSERT BATCH FILE DISK IN DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS THE NUMBER OF DISK BUFFERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IN \0 FREE\0K\0K\0 FILE   \0 FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSX-DOS 2  COMMAND VERSION 2."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS\0PROGRAM\0TEMP\0UPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS THE CURRENT VERIFY STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS THE SIZE OF THE RAM DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS THE COMMAND SEARCH PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE\0TIME\0ON\0OFF\0ECHO\0HELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS THE CURRENT DIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS ENVIRONMENT STRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRONG VERSION OF MSX-DOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND2.COM VERSION 2."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE STANDARD TOPICS ARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIPING AND STANDARD I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS DISK VOLUME NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS THE CURRENT DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS THE CURRENT TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARD OUTPUT ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARD INPUT ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(\0)\0CURRENT TIME IS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YY\0NN\0 DIRECTORY OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".... DELETES FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP  COMMAND NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "... RENAMES FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL DATA ON DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDIRECTION ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATCH FILE ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME IN DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER NEW DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER NEW TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS NO NAME\0IS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSX DISK BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL FILES (Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIPING ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETRY ERRORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%PIPE00.$$$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH\0PROMPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSIGN ..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATDIR ...."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIB ..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASIC ...."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATCH ...."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUFFERS .."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CD ......."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHDIR ...."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHKDSK ..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLS ......"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONCAT ..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPY ....."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE ....."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEL ......"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIR ......"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISKCOPY ."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECHO ....."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITING .."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENV ......"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERRORS ..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT ....."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIXDISK .."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT ..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP ....."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IO ......."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KANJI MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KMODE ...."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD ......."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MKDIR ...."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE ....."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVE ....."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVDIR ...."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH ....."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSE ...."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAMDISK .."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RD ......."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REM ......"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REN ......"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RMDIR ...."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RNDIR ...."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET ......"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTAX ..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME ....."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE ....."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDEL ...."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VER ......"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERIFY ..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOL ......"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XCOPY ...."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XDIR ....."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP\0PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DD-MM-YY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ER\0REDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MM-DD-YY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YY-MM-DD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRI\0SAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHELL\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUB-DIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FWKB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R+S+"
+    CaseSensitive: false

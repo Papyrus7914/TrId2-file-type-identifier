@@ -1,0 +1,29 @@
+Name: Xcode Text Based Definition
+URL: "https://en.wikipedia.org/wiki/Xcode"
+FileNameExtensions: ["tbd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "---"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTALL-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- ARCHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

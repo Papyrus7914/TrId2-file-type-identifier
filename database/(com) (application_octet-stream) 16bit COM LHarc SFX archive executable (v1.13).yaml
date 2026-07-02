@@ -1,0 +1,11 @@
+Name: 16bit COM LHarc SFX archive executable (v1.13)
+URL: "https://en.wikipedia.org/wiki/LHA_(file_format)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEB`\x19\v $LHarc's SFX 1.13"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: " (c)Yoshi, 1989.\r\n"
+    CaseSensitive: true

@@ -1,0 +1,14 @@
+Name: SuperProject Project (v2.x)
+Description: Project management software for DOS by Computer Associates Int.
+FileNameExtensions: ["pj", "spj"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xAA\x86\x80\0(C) "
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: " COMPUTER ASSOCIATES    "
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "VER: 3.00             \x1A"
+    CaseSensitive: true

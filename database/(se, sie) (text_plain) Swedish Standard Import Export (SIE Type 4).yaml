@@ -1,0 +1,29 @@
+Name: Swedish Standard Import Export (SIE Type 4)
+URL: "https://sie.se/format/"
+FileNameExtensions: ["se", "sie"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#FLAGGA "
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\r\n#FORMAT PC8\r\n#SIETYP 4\r\n#PROGRAM \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORMAT PC8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIETYP 4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FNAMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANS"
+    CaseSensitive: false

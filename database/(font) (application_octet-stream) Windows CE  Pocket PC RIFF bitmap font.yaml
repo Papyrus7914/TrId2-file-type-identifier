@@ -1,0 +1,22 @@
+Name: Windows CE / Pocket PC RIFF bitmap font
+FileNameExtensions: ["font"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FONTchrs"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FONTCHRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMGSRIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMG FMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false

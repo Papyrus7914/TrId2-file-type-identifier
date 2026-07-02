@@ -1,0 +1,16 @@
+Name: Bosch ECU Internal EEPROM (TriCore)
+URL: "https://www.bosch-mobility.com/en/solutions/control-units/engine-control-unit/"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFE, 0xCA, 0x02, 0xA5]
+  - Pos: 117
+    AsciiString: "\0\0-Erase-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "((((((((((((((((((((((((((((((((("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-ERASE-"
+    CaseSensitive: false

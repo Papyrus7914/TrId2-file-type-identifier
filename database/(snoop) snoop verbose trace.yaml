@@ -1,0 +1,37 @@
+Name: snoop verbose trace
+URL: "http://en.wikipedia.org/wiki/Snoop_(software)"
+FileNameExtensions: ["snoop"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ETHER: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PACKET SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETHERTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARRIVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(IP)"
+    CaseSensitive: false

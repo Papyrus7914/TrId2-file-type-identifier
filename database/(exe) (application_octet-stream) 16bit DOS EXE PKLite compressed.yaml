@@ -1,0 +1,34 @@
+Name: 16bit DOS EXE PKLite compressed
+URL: "https://en.wikipedia.org/wiki/Executable_compression#DOS_executable"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 20
+    Bytes: [0x00, 0x01]
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "P"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKWARE INC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKLITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPR."
+    CaseSensitive: false

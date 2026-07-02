@@ -1,0 +1,47 @@
+Name: DIGIPAK audio driver
+Description: Audio drivers for DOS by John Ratcliff.
+URL: "http://fileformats.archiveteam.org/wiki/DIGPAK_sound_driver"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "DIGPAK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$UNABLE TO INSTALL SOUND DRIVER INTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND DRIVER IS ALREADY RESIDENT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITTEN BY JOHN W. RATCLIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$INVALID COMMAND LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND DRIVER UNLOADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE AUDIO SOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$SOUND DRIVER ISN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUPT VECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IN MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGPAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNKR"
+    CaseSensitive: false

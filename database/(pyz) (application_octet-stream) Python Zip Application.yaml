@@ -1,0 +1,11 @@
+Name: Python Zip Application
+URL: "https://peps.python.org/pep-0441/"
+FileNameExtensions: ["pyz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "__MAIN__.PYPK"
+    CaseSensitive: false

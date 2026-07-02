@@ -1,0 +1,110 @@
+Name: Visual Studio J# Project (v8)
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+FileNameExtensions: ["vjsproj"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<Project DefaultTargets=\"Build\" xmlns=\"http://schemas.microsoft.com/developer/msbuild/2003\">"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MICROSOFT.VISUALJSHARP.TARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYGROUP CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT DEFAULTTARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(MSBUILDBINPATH)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(CONFIGURATION)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLYINFO.JSL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILE INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINECONSTANTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORT PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOTNAMESPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUGSYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARNINGLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(PLATFORM)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVELOPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIMIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REBUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2003"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

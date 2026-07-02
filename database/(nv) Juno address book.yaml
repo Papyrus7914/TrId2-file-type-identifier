@@ -1,0 +1,58 @@
+Name: Juno address book
+URL: "http://www.juno.com/"
+FileNameExtensions: ["nv"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Type:Version\r\nVersion:"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\r\n\r\nType:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRIMARY PHONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIRTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

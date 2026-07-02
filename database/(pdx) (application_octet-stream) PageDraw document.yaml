@@ -1,0 +1,44 @@
+Name: PageDraw document
+URL: "http://fileformats.archiveteam.org/wiki/Mayura_Draw"
+FileNameExtensions: ["pdx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%!PS-Adobe-3.0 EPSF-3.0\r\n%%Creator: PageDraw, Version"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%%BEGINRESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%CREATIONDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%BEGINPROLOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%BOUNDINGBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%ENDCOMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDXDICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%EOF"
+    CaseSensitive: false

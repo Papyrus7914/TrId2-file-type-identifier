@@ -1,0 +1,11 @@
+Name: Microfox Company PUT compressed archive
+URL: "http://fileformats.archiveteam.org/wiki/PUT"
+FileNameExtensions: ["put", "ins"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "-lZ"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "-"
+    CaseSensitive: true

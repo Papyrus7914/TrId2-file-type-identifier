@@ -1,0 +1,17 @@
+Name: MP Entertainment Animation
+URL: "https://en.wikipedia.org/wiki/Hopkins_FBI"
+FileNameExtensions: ["anm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MPANIM"
+    CaseSensitive: true
+  - Pos: 806
+    AsciiString: "NORM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORM"
+    CaseSensitive: false

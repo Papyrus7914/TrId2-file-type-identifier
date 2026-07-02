@@ -1,0 +1,11 @@
+Name: Delsys EMG format
+URL: "http://www.delsys.com/products/emgworks-software/"
+FileNameExtensions: ["emg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DEMG"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "Delsys Inc."
+    CaseSensitive: true

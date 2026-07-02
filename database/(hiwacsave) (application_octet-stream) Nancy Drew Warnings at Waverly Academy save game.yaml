@@ -1,0 +1,20 @@
+Name: "Nancy Drew: Warnings at Waverly Academy save game"
+URL: "https://www.mobygames.com/game/45381/nancy-drew-warnings-at-waverly-academy/"
+FileNameExtensions: ["hiwacsave"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RGMH"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "W\0a\0r\0n\0i\0n\0g\0s\0 \0a\0t\0 \0W\0a\0v\0e\0r\0l\0y\0 \0A\0c\0a\0d\0e\0m\0y"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "W\0A\0R\0N\0I\0N\0G\0S\0 \0A\0T\0 \0W\0A\0V\0E\0R\0L\0Y\0 \0A\0C\0A\0D\0E\0M\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PLAYERDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERCHAR"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: CanDo Deck (v3)
+Description: Amiga visual programming language.
+FileNameExtensions: ["deck"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "DECKANNO\0\0\0\x10AV-1 Tokens V3\0\0NAME"
+    CaseSensitive: true

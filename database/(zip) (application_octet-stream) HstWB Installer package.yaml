@@ -1,0 +1,29 @@
+Name: HstWB Installer package
+URL: "https://hstwb.firstrealize.com/"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "HSTWB-PACKAGE.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "README.GUIDEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "README.HTMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPPK"
+    CaseSensitive: false

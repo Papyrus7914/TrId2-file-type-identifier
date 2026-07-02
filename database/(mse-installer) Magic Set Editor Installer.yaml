@@ -1,0 +1,16 @@
+Name: Magic Set Editor Installer
+URL: "http://magicseteditor.sourceforge.net/"
+FileNameExtensions: ["mse-installer"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "INSTALLERPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MSE-"
+    CaseSensitive: false

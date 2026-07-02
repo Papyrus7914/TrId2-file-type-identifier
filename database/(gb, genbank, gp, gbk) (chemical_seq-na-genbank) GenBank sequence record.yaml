@@ -1,0 +1,23 @@
+Name: GenBank sequence record
+URL: "http://en.wikipedia.org/wiki/Genbank"
+FileNameExtensions: ["gb", "genbank", "gp", "gbk"]
+MimeType: chemical/seq-na-genbank
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LOCUS "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "QUALIFIERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCUS"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: RaceRender data format (advanced)
+URL: "http://racerender.com/Developer/DataFormat.html"
+FileNameExtensions: ["csv"]
+MimeType: text/csv
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# RaceRender Data"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

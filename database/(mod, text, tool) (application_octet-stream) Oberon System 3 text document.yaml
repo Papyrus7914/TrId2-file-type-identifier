@@ -1,0 +1,18 @@
+Name: Oberon System 3 text document
+Description: See page "Oberon System 3 applications"
+URL: "http://www.ethoberon.ethz.ch/ethoberon/tutorial/Applic.html"
+FileNameExtensions: ["mod", "text", "tool"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xF7\aTextDocs.NewDoc\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXTDOCS.NEWDOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SCN.FNT"
+    CaseSensitive: false

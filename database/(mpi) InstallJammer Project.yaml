@@ -1,0 +1,202 @@
+Name: InstallJammer Project
+URL: "http://en.wikipedia.org/wiki/InstallJammer"
+FileNameExtensions: ["mpi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "array set info {\nAllowLanguageSelection\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-SETUP INSTALL -TYPE PANE -CONDITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-NAME TYPICAL -PARENT SETUPTYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{BEFORE NEXT ACTION IS EXECUTED}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{BEFORE NEXT PANE IS DISPLAYED}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRACTSOLIDARCHIVESONSTARTUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%INSTALLINGAPPLICATIONTEXT%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%TYPICALINSTALLDESCRIPTION%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{BEFORE ACTION IS EXECUTED}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%INSTALLATIONCOMPLETETEXT%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%UNINSTALLAPPLICATIONTEXT%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTDIRECTORYPERMISSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%DIRECTORYPERMISSIONTEXT%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%PROGRAMFILESDESCRIPTION%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%INSTALLAPPLICATIONTEXT%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMANDLINEFAILUREACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%UNINSTALLCOMPLETETEXT%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEANUPCANCELLEDINSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESERVEFILEPERMISSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%UNINSTALLSTARTUPTEXT%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOWLANGUAGESELECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARRAY SET PROPERTIES {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANCELLEDINSTALLACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTFILEPERMISSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMFOLDERALLUSERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%INSTALLSTARTUPTEXT%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEONLYTOPLEVELDIRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKIPUNUSEDFILEGROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNINSTALLMODE CHOICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPGRADEAPPLICATIONID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGEDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMCOMMANDLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSIONMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESKTOPSHORTCUT -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGEMAINTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMEXECUTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMFOLDERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%ERRORSOCCURRED%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSIONLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATIONLABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDEDEBUGGING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLCOMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKINGDIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTLANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLPASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGEPACKAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%MAJORVERSION%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%MINORVERSION%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%PATCHVERSION%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%SHORTAPPNAME%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKCONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAILUREMESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGELICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGERELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGESUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMLICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOTINSTALLDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLJAMMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMREADME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESSVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROMPTFORROOT"
+    CaseSensitive: false

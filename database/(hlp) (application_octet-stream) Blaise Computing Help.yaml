@@ -1,0 +1,14 @@
+Name: Blaise Computing Help
+Description: Used by DOS tools and libraries by Blaise Computing Inc.
+FileNameExtensions: ["hlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Blaise Computing Inc\x1A\0\0\x01"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0\0\0>\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false

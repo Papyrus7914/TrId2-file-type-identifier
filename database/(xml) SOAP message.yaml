@@ -1,0 +1,28 @@
+Name: SOAP message
+URL: "http://en.wikipedia.org/wiki/SOAP_(protocol)"
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVELOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOAP-ENV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

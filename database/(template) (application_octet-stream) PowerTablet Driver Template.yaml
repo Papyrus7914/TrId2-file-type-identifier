@@ -1,0 +1,188 @@
+Name: PowerTablet Driver Template
+Description: Amiga graphic tablet driver by Power Computing.
+FileNameExtensions: ["template"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TMPL\0\0\x02 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POWERTAB_CONFIG_DEFAULT\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\02BUTT\0\0\0DLOAD TEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_CONFIG_LOAD\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\00BUTT\0\0\0DSAVE CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_MACRO_FREE\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0EBUTT\0\0\0DPLAY MACRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_MACRO_LOAD\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0LBUTT\0\0\0DSAVE MACRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_MACRO_PLAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ABUTT\0\0\0DSTOP MACRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_TABLET_CALIB\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0 BUTT\0\0\0DRECONNECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_MACRO_STOP\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0DBUTT\0\0\0DRECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_MACRO_SELECT\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0JBUTT\0\0\0DFIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_CONFIG_SAVE\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\01BUTT\0\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_CONFIG_TEMPLATE\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\03BUTT\0\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_MACRO_FIRST\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0FEVN2\0\0\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_MACRO_PREV\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0GEVN2\0\0\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_MACRO_RECORD\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0BEVN2\0\0\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVN1\0\0\0+\0\0POWERTAB_PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVN1\0\0\0+\0\0POWERTAB_WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVN1\0\0\0+\0\0POWERTAB_CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVN1\0\0\0+\0\0POWERTAB_MACROS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVN1\0\0\0+\0\0POWERTAB_TABLET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVN1\0\0\0+\0\0POWERTAB_MOUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DMOUSE EMULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_WINDOWS_LOOKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_PROGRAM_ABOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_WINDOWS_MACRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_WINDOWS_PREFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DASSIGN BUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DCONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DTOGGLE LOOKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_MOUSE_ASSIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_MOUSE_TOGGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_PROGRAM_HELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DHELP MODE ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DSELECT MACRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DTOGGLE EMUL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DTOGGLE MACRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DTOGGLE PREFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DFINE CALIB."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DLOAD CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DUSE DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HBUTT\0\0\0DLOAD MACRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DFREE MACRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERTAB_MACRO_NEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DNEW MACRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AREA\0\0\0*POWERTAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DPROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AREA\0\0\0*SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DMACROS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DQUIT\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DTABLET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTT\0\0\0DABOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBUTT\0\0\0DPREV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CBUTT\0\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBUTT\0\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMPLATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVN1\0\0\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEND"
+    CaseSensitive: false

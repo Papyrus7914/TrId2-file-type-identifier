@@ -1,0 +1,22 @@
+Name: ESRI ArcGIS Layer
+URL: "https://en.wikipedia.org/wiki/ArcGIS"
+FileNameExtensions: ["lyr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1]
+  - Pos: 1664
+    AsciiString: "L\0a\0y\0e\0r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0A\0Y\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0S\0E"
+    CaseSensitive: false

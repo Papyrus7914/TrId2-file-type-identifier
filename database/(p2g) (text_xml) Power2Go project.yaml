@@ -1,0 +1,78 @@
+Name: Power2Go project
+Description: XML based file used to store CD, DVD, or Blu-ray disc project settings.
+URL: "http://www.cyberlink.com/products/power2go/"
+FileNameExtensions: ["p2g"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Project magic=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFECTMANAGEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIONORMALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT MAGIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOGAPTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERIFYDISC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BURNPROOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BURNSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEDISC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISCTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

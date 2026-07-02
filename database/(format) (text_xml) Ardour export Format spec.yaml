@@ -1,0 +1,92 @@
+Name: Ardour export Format spec.
+URL: "https://en.wikipedia.org/wiki/Ardour_(software)"
+FileNameExtensions: ["format"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXPORTFORMATSPECIFICATION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRCQUALITY QUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS-SAMPLE-FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMALIZE ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODINGOPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLERATE RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BROADCAST-INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNEL-LIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRC_SINCBEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAG-METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIM ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADD ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAG-SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DITHERING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMECODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SILENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOURS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

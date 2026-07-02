@@ -1,0 +1,8 @@
+Name: ANSI escape sequence text
+URL: "https://en.wikipedia.org/wiki/ANSI_escape_code"
+FileNameExtensions: ["ans", "asc"]
+MimeType: text/x-ansi
+DetectionPatterns:
+  - Pos: 0
+    #              [
+    Bytes: [0x1B, 0x5B]

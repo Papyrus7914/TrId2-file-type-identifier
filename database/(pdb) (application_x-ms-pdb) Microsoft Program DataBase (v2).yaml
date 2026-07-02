@@ -1,0 +1,24 @@
+Name: Microsoft Program DataBase (v2)
+Description: Symbol Table / Debug info used by Microsoft's compilers
+URL: "https://en.wikipedia.org/wiki/Program_database"
+FileNameExtensions: ["pdb"]
+MimeType: application/x-ms-pdb
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Microsoft C/C++ "
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "program database 2.00\r\n\x1AJG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BINARIES.X86"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PDB"
+    CaseSensitive: false

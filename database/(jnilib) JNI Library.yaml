@@ -1,0 +1,75 @@
+Name: JNI Library
+URL: "http://en.wikipedia.org/wiki/Java_Native_Interface"
+FileNameExtensions: ["jnilib"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xCA, 0xFE, 0xBA, 0xBE, 0x00, 0x00, 0x00]
+  - Pos: any
+    AsciiString: "__DATA\0\0\0\0\0\0\0\0\0\0__DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__DYLD\0\0\0\0\0\0\0\0\0\0__DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__LA_SYMBOL_PTR\0__DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__TEXT\0\0\0\0\0\0\0\0\0\0__TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBSYSTEM.B.DYLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__LINKEDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYLD_STUB_BIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D_FUNC_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_HELPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_LOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PER\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_JAVA_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DER\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DING_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STUB1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ER\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORK"
+    CaseSensitive: false

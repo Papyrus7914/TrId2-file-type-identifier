@@ -1,0 +1,12 @@
+Name: TSComp compressed data (multi)
+Description: CMP and LIB are the most common used file name suffix for "multi-file" archives; but many have no suffix but $ as last character of file name
+URL: "http://fileformats.archiveteam.org/wiki/TSComp"
+FileNameExtensions: ["cmp", "lib", "$$$", "pak", "tsc", "do$"]
+MimeType: application/x-tscomp-compressed
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "e]\x13\x8C\b\x01\x03\0\x02\0\0\0\0\x12"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0"
+    CaseSensitive: true

@@ -1,0 +1,11 @@
+Name: ScreenCam video
+URL: "https://en.wikipedia.org/wiki/Screencam"
+FileNameExtensions: ["scm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x80SCMOVv"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "."
+    CaseSensitive: true

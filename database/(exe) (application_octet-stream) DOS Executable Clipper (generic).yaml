@@ -1,0 +1,223 @@
+Name: DOS Executable Clipper (generic)
+URL: "https://en.wikipedia.org/wiki/Clipper_(programming_language)"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JANUARY\0FEBRUARY\0MARCH\0APRIL\0MAY\0JUNE\0JULY\0AUGUST\0SEPTEMBER\0OCTOBER\0NOVEMBER\0DECEMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUNDAY\0MONDAY\0TUESDAY\0WEDNESDAY\0THURSDAY\0FRIDAY\0SATURDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT ENOUGH MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMERIC OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIVIDE BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUSIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPLICATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDEFINED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQRVWU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) 19"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMONTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT LO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WVRQSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".AND."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NOT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOG10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PRN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZERO"
+    CaseSensitive: false

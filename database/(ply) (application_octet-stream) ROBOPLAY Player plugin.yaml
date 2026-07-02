@@ -1,0 +1,14 @@
+Name: ROBOPLAY Player plugin
+URL: "https://msxhub.com/ROBOPLAY"
+FileNameExtensions: ["ply"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ROBOPLAY\x01\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BY ROBOSOFT INC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYER"
+    CaseSensitive: false

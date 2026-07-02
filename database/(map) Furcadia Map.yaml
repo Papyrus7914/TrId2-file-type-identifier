@@ -1,0 +1,28 @@
+Name: Furcadia Map
+URL: "http://www.furcadia.com/"
+FileNameExtensions: ["map"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MAP V"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: " Furcadia\nheight="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FURCADIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false

@@ -1,0 +1,53 @@
+Name: Picture It! brush definition
+URL: "https://en.wikipedia.org/wiki/Microsoft_Picture_It!"
+FileNameExtensions: ["txt"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Version = 1\r\nGUID = {"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 57
+    AsciiString: "}\r\nindex = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THUMBNAIL FILE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF BRUSHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUSH FILE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIND"
+    CaseSensitive: false

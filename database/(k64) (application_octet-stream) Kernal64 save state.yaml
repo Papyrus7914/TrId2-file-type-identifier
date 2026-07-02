@@ -1,0 +1,18 @@
+Name: Kernal64 save state
+Description: A Scala Commodore 64 emulator.
+URL: "https://github.com/abbruzze/kernal64"
+FileNameExtensions: ["k64"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xAC\xED\0\x05t\0\fCommodore 64w\x10\0K\0E\0R\0N\0A\0L\06\04"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "t\0\fSystem Clockw"
+    CaseSensitive: true
+  - Pos: 86
+    AsciiString: "t\0\bMain RAMw"
+    CaseSensitive: true
+  - Pos: 114
+    AsciiString: "t\0\x03RAMur"
+    CaseSensitive: true

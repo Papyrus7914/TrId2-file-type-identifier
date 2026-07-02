@@ -1,0 +1,12 @@
+Name: HxC Floppy Emulator Floppy Profile (generic)
+Description: Custom floppy disk format definition.
+URL: "https://hxc2001.com/"
+FileNameExtensions: ["fpf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FPF_V"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "."
+    CaseSensitive: true

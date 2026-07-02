@@ -1,0 +1,13 @@
+Name: ZODB File Storage (2.1)
+URL: "http://en.wikipedia.org/wiki/Zope_Object_Database"
+FileNameExtensions: ["fs"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FS21\x03"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PERSISTENTMAPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

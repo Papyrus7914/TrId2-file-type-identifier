@@ -1,0 +1,23 @@
+Name: tCam Thermal image (JSON)
+URL: "https://github.com/danjulio/tCam"
+FileNameExtensions: ["tjsn"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"metadata\":{\"Camera\":\"tCam-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RADIOMETRIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

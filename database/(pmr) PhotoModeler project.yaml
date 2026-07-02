@@ -1,0 +1,77 @@
+Name: PhotoModeler project
+Description: PhotoModeler is a 3d software product that calculates measurements and constructs 3d models from photographs.
+URL: "http://www.photomodeler.com/"
+FileNameExtensions: ["pmr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BcProject\r\no"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "@BcVString\r\no\0\0\0\0BcCameraLayout\r\noffffff\xF6?BC\x01\0\0\0o\0\0\0\0BcCamera\r\no\0\0\0\0\0\0\0@BC\x01\0\0\0o"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BCCHANGABLECOLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCFEATURECOLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCPHOTOCOLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCRANDOMVARIABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCPOINT3DRANDOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCPOINT3DDOUBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCCAMERASTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCPOINT2DDOUBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCPOINT2DRANDOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCCAMERALAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCVECTORRANDOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCVORDCOLLECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCOBJECTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCPHOTOGRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCVOBJARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCMATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0000000000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0BCCOLOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCVSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCUNITS"
+    CaseSensitive: false

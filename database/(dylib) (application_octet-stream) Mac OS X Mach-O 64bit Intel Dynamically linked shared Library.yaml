@@ -1,0 +1,43 @@
+Name: Mac OS X Mach-O 64bit Intel Dynamically linked shared Library
+FileNameExtensions: ["dylib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xCF\xFA\xED\xFE\a\0\0\x01\x03\0\0\0\x06\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "__CONST\0\0\0\0\0\0\0\0\0__TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__GOT\0\0\0\0\0\0\0\0\0\0\0__DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__LA_SYMBOL_PTR\0__DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__NL_SYMBOL_PTR\0__DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__STUBS\0\0\0\0\0\0\0\0\0__TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__STUB_HELPER\0\0\0__TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__TEXT\0\0\0\0\0\0\0\0\0\0__TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBSYSTEM.B.DYLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYLD_STUB_BINDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__LINKEDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__UN"
+    CaseSensitive: false

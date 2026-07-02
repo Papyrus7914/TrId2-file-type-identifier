@@ -1,0 +1,10 @@
+Name: Quarterdeck Installation Package (v1)
+URL: "http://fileformats.archiveteam.org/wiki/QIP_(Quarterdeck)"
+FileNameExtensions: ["qip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "QD"
+    CaseSensitive: true
+  - Pos: 8
+    Bytes: [0x01, 0x00]

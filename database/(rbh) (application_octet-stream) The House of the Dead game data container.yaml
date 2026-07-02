@@ -1,0 +1,17 @@
+Name: The House of the Dead game data container
+URL: "https://www.mobygames.com/game/windows/house-of-the-dead"
+FileNameExtensions: ["rbh"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "RBHFRBHH"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RBHFRBHH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false

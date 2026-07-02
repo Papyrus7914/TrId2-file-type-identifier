@@ -1,0 +1,29 @@
+Name: CorelDRAW drawing (zipped)
+URL: "http://en.wikipedia.org/wiki/CorelDRAW"
+FileNameExtensions: ["cdr"]
+MimeType: application/x-coreldraw
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "METADATA.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTINFO.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKS.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false

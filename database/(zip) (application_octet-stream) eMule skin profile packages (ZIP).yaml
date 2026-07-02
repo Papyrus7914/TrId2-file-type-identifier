@@ -1,0 +1,17 @@
+Name: eMule skin profile packages (ZIP)
+URL: "http://www.emule-mods.de/?skin=packs"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".EMULESKIN.INIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ICOPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".URLPK"
+    CaseSensitive: false

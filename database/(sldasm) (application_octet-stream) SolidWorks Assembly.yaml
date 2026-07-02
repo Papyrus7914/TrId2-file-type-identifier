@@ -1,0 +1,16 @@
+Name: SolidWorks Assembly
+URL: "https://en.wikipedia.org/wiki/SolidWorks"
+FileNameExtensions: ["sldasm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: 1536
+    AsciiString: "R\0o\0o\0t\0 \0E\0n\0t\0r\0y"
+    CaseSensitive: true
+  - Pos: 1613
+    AsciiString: "\0\0\06=\xA3\x83\xC5'\xCE\x11\xBF\xD4\0@\x05\x13\xBBW\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 1664
+    AsciiString: "_\0M\0O\0_\0V\0E\0R\0S\0I\0O\0N\0_"
+    CaseSensitive: true

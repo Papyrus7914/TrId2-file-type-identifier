@@ -1,0 +1,62 @@
+Name: ACT! Report (v3.0)
+URL: "https://en.wikipedia.org/wiki/Act!_LLC"
+FileNameExtensions: ["rep"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "4\x12\xCD\xAB\xFF\xFF\x01\0\x0E\0CActFileHeaderW\x13\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREPORTSYSTEMFIELDOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREPORTFIELDOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGRANDSUMMARYPART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGSFRAMESTYLELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGSVIEWPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREPORTOBJECTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREPORTTEXTOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGSFILLSTYLELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGSTEXTSTYLELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CACTFILEHEADERW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREPORTLINELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREPORTPARTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGSLINEOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGSTEXTOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGSDIBOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFOOTERPART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHEADERPART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPAGEINFO"
+    CaseSensitive: false

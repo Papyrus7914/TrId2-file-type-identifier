@@ -1,0 +1,47 @@
+Name: KONTAKT Instrument
+URL: "https://en.wikipedia.org/wiki/Kontakt_(software)"
+FileNameExtensions: ["nki"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 3
+    AsciiString: "\0\0\0\0\0\x01\0\0\0hsin"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "DSIN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "K\0O\0N\0T\0A\0K\0T\0I\0N\0S\0T\0R\0U\0M\0E\0N\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0E\0V\0I\0C\0E\0T\0Y\0P\0E\0F\0L\0A\0G\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0O\0U\0N\0D\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0O\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0E\0M\0P\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0I\0S\0I\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0E\0R\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0E\0R\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4KIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HSIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITCH"
+    CaseSensitive: false

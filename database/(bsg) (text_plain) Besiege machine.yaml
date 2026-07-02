@@ -1,0 +1,23 @@
+Name: Besiege machine
+URL: "http://store.steampowered.com/app/346010/"
+FileNameExtensions: ["bsg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PREFAB IDS\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORLD POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY MAP"
+    CaseSensitive: false

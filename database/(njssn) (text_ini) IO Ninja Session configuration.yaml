@@ -1,0 +1,59 @@
+Name: IO Ninja Session configuration
+URL: "https://ioninja.com/"
+FileNameExtensions: ["njssn"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[session]\nmain-plugin-id = serialmon\nlog-file = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCUMENT-SETTINGS-FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PENDINGNOTIFYSIZELIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTIFYREADBUFFERFULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIAL-LINE-ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READPARALLELISM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN-PLUGIN-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READBUFFERSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIAL-CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIAL-SETTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READBLOCKSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIAL-STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOG-FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIALMON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOG-FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NJCFG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NJLOG"
+    CaseSensitive: false

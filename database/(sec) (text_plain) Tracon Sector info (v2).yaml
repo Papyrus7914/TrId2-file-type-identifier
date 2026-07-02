@@ -1,0 +1,38 @@
+Name: Tracon Sector info (v2)
+URL: "https://www.mobygames.com/game/win3x/tracon-for-windows"
+FileNameExtensions: ["sec"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Version 2.00\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPASSPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAGNETICNORTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADARPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTR  ENROUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXALTITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINALTITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORELINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADARMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADARMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK"
+    CaseSensitive: false

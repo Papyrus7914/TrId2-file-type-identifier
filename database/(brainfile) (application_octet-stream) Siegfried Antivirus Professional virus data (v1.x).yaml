@@ -1,0 +1,11 @@
+Name: Siegfried Antivirus Professional virus data (v1.x)
+Description: Amiga antivirus tool.
+FileNameExtensions: ["brainfile"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SBFV1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VIRUS"
+    CaseSensitive: false

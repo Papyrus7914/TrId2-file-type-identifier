@@ -1,0 +1,12 @@
+Name: TKUY map format
+FileNameExtensions: ["tku"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "TKUY"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOH!"
+    CaseSensitive: false

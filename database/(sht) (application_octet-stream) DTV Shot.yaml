@@ -1,0 +1,22 @@
+Name: DTV Shot
+FileNameExtensions: ["sht"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "DTV4NAME"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNKNGFX2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTV4NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPT"
+    CaseSensitive: false

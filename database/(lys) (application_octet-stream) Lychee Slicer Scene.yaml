@@ -1,0 +1,26 @@
+Name: Lychee Slicer Scene
+URL: "https://mango3d.io/lychee-slicer-for-sla-3d-printers/"
+FileNameExtensions: ["lys"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "{\""
+    CaseSensitive: true
+  - Pos: 84
+    AsciiString: "i"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANGOFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE.BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

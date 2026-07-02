@@ -1,0 +1,21 @@
+Name: Mark Cooksey module
+Description: A music format created by Mark Cooksey and Richard Frankish.
+URL: "http://www.exotica.org.uk/wiki/Mark_Cooksey_(format)"
+FileNameExtensions: ["mc"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xD0@\xD0@N\xFB\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "`\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "`\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "`\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "`\0"
+    CaseSensitive: true

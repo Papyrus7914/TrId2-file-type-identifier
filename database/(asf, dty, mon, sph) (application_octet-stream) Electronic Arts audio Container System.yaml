@@ -1,0 +1,11 @@
+Name: Electronic Arts audio Container System
+URL: "https://en.wikipedia.org/wiki/Electronic_Arts"
+FileNameExtensions: ["asf", "dty", "mon", "sph"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EACS"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\x01"
+    CaseSensitive: true

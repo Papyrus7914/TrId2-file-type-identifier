@@ -1,0 +1,26 @@
+Name: MySQL dump
+URL: "https://en.wikipedia.org/wiki/MySQL"
+FileNameExtensions: ["sql"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-- MySQL dump "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-- ------------------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- TABLE STRUCTURE FOR TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- SERVER VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- MYSQL DUMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- HOST"
+    CaseSensitive: false

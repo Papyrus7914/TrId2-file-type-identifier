@@ -1,0 +1,20 @@
+Name: Realm database
+URL: "https://en.wikipedia.org/wiki/Realm_(database)"
+FileNameExtensions: ["realm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 10
+    AsciiString: "\0\0\0\0\0\0T-DB"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T-DB"
+    CaseSensitive: false

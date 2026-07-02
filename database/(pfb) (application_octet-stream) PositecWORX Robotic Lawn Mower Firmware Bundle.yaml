@@ -1,0 +1,83 @@
+Name: Positec/WORX Robotic Lawn Mower Firmware Bundle
+URL: "https://en.wikipedia.org/wiki/Positec"
+FileNameExtensions: ["pfb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "RLM/all.pck"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "<PositecFw>\r\nRLM-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOOTLOADERSENSORSMCUF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I2C_INTERFACETUBEFW V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I2C_INTERFACELCDFW V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMCRAMBOOTLOADER.BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENSORSMCU_FIRMWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.IMG.ENCPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOTORFIRMWARE V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOTOR_FIRMWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.SIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIFI_FIRMWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAN_MODULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESP32BCS V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITECFW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGESTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFS.BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY.RSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLM-HBI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DXDIZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO_V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DF V"
+    CaseSensitive: false

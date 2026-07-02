@@ -1,0 +1,14 @@
+Name: KDDI 3GPP2 EZmovie video
+URL: "https://en.wikipedia.org/wiki/KDDI"
+FileNameExtensions: ["3g2"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\x18ftypkddi"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "kddi"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FTYPKDDI"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Autodesk Design Web Format - Whip 2D stream
+URL: "http://fileformats.archiveteam.org/wiki/DWF"
+FileNameExtensions: ["w2d"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(W2D V0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(ENDOFDWF)"
+    CaseSensitive: false

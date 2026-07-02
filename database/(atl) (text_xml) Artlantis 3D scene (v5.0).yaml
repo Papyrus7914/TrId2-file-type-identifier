@@ -1,0 +1,947 @@
+Name: Artlantis 3D scene (v5.0)
+URL: "http://www.artlantis.com/"
+FileNameExtensions: ["atl"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTERNALCOMPONENTDEFINITION UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCE.DATA COMPONENT.UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNALCOMPONENTDEFINITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL.ILLUMINATION.QUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_2DVIEW_WORKINGVIEW_BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL.ILLUMINATION.POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_2DVIEW_WORKINGVIEW_AXONO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_2DVIEW_WORKINGVIEW_FRONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_2DVIEW_WORKINGVIEW_RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS.INFO ACTIVE.LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_2DVIEW_WORKINGVIEW_BACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_2DVIEW_WORKINGVIEW_LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUND.PICTURE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_2DVIEW_WORKINGVIEW_TOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT.PATH.DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL.ROTATION.MATRIXS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE.SETTINGS.FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPPINGNODE.PARENT.ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARALLEL.VIEW PV.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMP.RENDER.PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUND.INTENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT.PATH.TANGENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUND MATERIAL NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANORAMAV2.NODE UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH.OF.FIELD TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTENSITY.THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERLOAD.PROP.INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATION.BEHAVIOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEARNESS.DIST.INV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEARNESS.SIZE.INV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECT.NEIGHBORING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTING.INTENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACEMENT.PROPERTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKY.LIGHT SKY.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START.VISIBLE.TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGULAR.LOD.SHIFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATED.ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIRROCUMULUS.SEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIRROCUMULUS.SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTOUR.THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT.DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT.LAYER.MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT.DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERSPECTIVE.VIEWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIOSITY.QUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START.NODEID UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATED OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT.SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTANCE.MAXIMUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTANCE.MINIMUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END.VISIBLE.TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELIODON.NAME EN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTAL.ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEAR.LOD.SHIFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT.INSTANCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANORAMAV2.NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIOSITY.FACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECTION.LIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLUTION.LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPORAL.QUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE.TRANSPARENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANCHOR.POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEARNESS.POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTION.ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPOSURE.FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQUENCY.VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HATCHING.FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSERTIONOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENS.FLARE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTS.GROUP ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANORAMAV2 UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIOSITY.LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACIAL.QUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET.DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATEDOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOUD.COVERAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR.BEHAVIOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG.NAME EN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE.AND.PLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENSITY.MEDIUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMITTING.COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMITTING.POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENDED.DATAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQUENCY.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQUENCY.UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRY.LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY.FRAME.RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPPINGNODE.ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL.POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVIE.DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NB.REFLECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NB.REFRACTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARALLEL.VIEWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACEMENT.KIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVE.SHADOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START.DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIANGLE.COORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN_CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICAL.ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIND.DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKING.WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORBLEEDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT.FOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT.FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREGROUNG ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIAL.ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTS.GROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANORAMA NODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARALLEL VIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERER.INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKY.MIX.COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TONE.SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNINITIALIZED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDING.BOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA.LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIPPING.BOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENSITY.HIGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END.DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST.BOUNCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIXED.VERTEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAIN.FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTGROUPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTS.TONES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL.ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVIE.LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT.BOUNCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN.ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANOV2.LINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDER.FIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAFE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECOND.COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADOW.POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHUTTERSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRATUS.SEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRATUS.SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UP.DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW.OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATL LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTENUATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAST.SHADOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIRRUS.SEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIRRUS.SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENSITY.LOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOUBLE1.MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOUBLE1.MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST.COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIN_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORTH.ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT.UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERLOAD.ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANORAMASV2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDER.LAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADER.NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORT.RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START.FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TANSPARENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIRD.COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME.GUIDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSPARENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIANGLE.ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE.DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-ARTLANTIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATMOSPHERE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BILLBOARDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRIGHTNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DARK.TONES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISOSHUTTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENSFLARE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE.POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG.RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LUMINOSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPPING.UV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEON.COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEON.VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL.MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION.X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION.Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAYTRACING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDER.ALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SATURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENARIO 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START.TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW.FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIND.SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3D PLANTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANTIALIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATLOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTACH.ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOMATIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END.FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCELLENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROMPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRADUATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELIODONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX.POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIN.POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIX.VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT.ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENARIOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUN.COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UP.VECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW.INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VR OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATL.FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS EN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMPQTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTRAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAYLIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END.TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H.OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER.ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX.TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATHS.3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYGONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE.ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECULAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUN.BLUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUNSHINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEZONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI.VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URL TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V.OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X.CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X.REPEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y.CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y.REPEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMBIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANT3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR1 EN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR2 EN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR3 EN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR4 EN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UIVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X.DELTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y.DELTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOUDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMPTGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D3D-LO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOSSY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMOOTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X.AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y.AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIVOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THETA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JPEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEAF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PT.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PT.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PT.2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false

@@ -1,0 +1,47 @@
+Name: VTK XML Parallel Unstructured grid
+URL: "https://en.wikipedia.org/wiki/VTK"
+FileNameExtensions: ["pvtu"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMBEROFCOMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUNSTRUCTUREDGRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDATAARRAY TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIECE SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTKFILE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VTU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

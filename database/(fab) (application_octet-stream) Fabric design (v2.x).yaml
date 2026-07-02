@@ -1,0 +1,38 @@
+Name: Fabric design (v2.x)
+Description: A DOS drawdowns CAD by Bjorn and Lisa Jansson.
+FileNameExtensions: ["fab"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "2."
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\nShafts:"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\nTreadles:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THREADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREADLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREADLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAFTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIE UP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDS"
+    CaseSensitive: false

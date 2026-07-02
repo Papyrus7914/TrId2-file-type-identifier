@@ -1,0 +1,10 @@
+Name: RTPACK game data format (zlib comp.)
+URL: "https://wiki.xentax.com/index.php/Dink_Smallwood_RTFONT_RTTEX"
+FileNameExtensions: ["rttex", "rtfont"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RTPACK"
+    CaseSensitive: true
+  - Pos: 16
+    Bytes: [0x01]

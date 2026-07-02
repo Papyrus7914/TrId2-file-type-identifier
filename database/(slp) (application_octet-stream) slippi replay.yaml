@@ -1,0 +1,26 @@
+Name: slippi replay
+URL: "https://slippi.gg/"
+FileNameExtensions: ["slp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{U\x03raw[$U#l\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONSOLENICKSU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTFRAMEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA{U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYEDONSU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTATSU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERS{"
+    CaseSensitive: false

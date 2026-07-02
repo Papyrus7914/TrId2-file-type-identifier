@@ -1,0 +1,30 @@
+Name: WAP Bookmark info
+FileNameExtensions: ["vbm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN:VBKM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTERNETSHORTCUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUOTED-PRINTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-IRMC-URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBKM"
+    CaseSensitive: false

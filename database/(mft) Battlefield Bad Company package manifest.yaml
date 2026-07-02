@@ -1,0 +1,10 @@
+Name: Battlefield Bad Company package manifest
+URL: "http://en.wikipedia.org/wiki/Battlefield:_Bad_Company"
+FileNameExtensions: ["mft"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Signature "
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "\r\nAuthorative\r\n\r\nBundleSource game:"
+    CaseSensitive: true

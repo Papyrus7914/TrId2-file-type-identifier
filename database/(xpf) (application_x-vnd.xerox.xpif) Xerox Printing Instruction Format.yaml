@@ -1,0 +1,50 @@
+Name: Xerox Printing Instruction Format
+URL: "http://tinyurl.com/3drdsxw3"
+FileNameExtensions: ["xpf"]
+MimeType: application/x-vnd.xerox.xpif
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XPIF-OPERATION-ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOB-TEMPLATE-ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE XPIF SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPSS-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPIF VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPIF-V020"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEET-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANG"
+    CaseSensitive: false

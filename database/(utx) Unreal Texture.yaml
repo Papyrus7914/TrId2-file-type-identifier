@@ -1,0 +1,47 @@
+Name: Unreal Texture
+Description: Texture pack for Unreal-engine based games.
+URL: "http://en.wikipedia.org/wiki/Unreal_engine"
+FileNameExtensions: ["utx"]
+DetectionPatterns:
+  - Pos: 0
+    #                    *
+    Bytes: [0xC1, 0x83, 0x2A, 0x9E]
+  - Pos: any
+    AsciiString: "INTERNALTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UCLAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VCLAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UBITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false

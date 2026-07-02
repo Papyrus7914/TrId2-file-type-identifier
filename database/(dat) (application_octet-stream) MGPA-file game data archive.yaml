@@ -1,0 +1,20 @@
+Name: MGPA-file game data archive
+URL: "https://en.wikipedia.org/wiki/Earthworm_Jim_2"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 8
+    AsciiString: "\n\nThis is a MGPA-file. Copyright 199"
+    CaseSensitive: true
+  - Pos: 45
+    AsciiString: " Morten Grouleff.\n\n\0\0\0\0DATA:MG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS IS A MGPA-FILE. COPYRIGHT 199"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MORTEN GROULEFF."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

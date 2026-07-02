@@ -1,0 +1,74 @@
+Name: 16bit DOS Doc2Printer Command (v2.0)
+Description: DOS tool by Ralph Roth.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE9c\x04\n\r$\f\n\r\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$Datei wurde mit einer unregistrierten Sharewareversion erstellt.$$$$$$$$\n\r\n\xD5\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xB8\n\r\xB3  COM-Dateien Druck Utility v2.0, (w) 13.9.90 by Ralph Roth  \xB3\n\r\xB3     Datei wird nun ausgedruckt!   Bitte Papier einlegen.    \xB3\n\r\xD4\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xB5 Copyright by Thomas Edel \xC6\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xBE\n\rAchtung: Es werden insgesamt ca. $ Seite(n) Papier ben\x94tigt.\n\r$Ist Ihr Drucker druckbereit ? <J/N> $\n\rDatei wird nun ausgedruckt - bitte haben Sie etwas Geduld!$\n\r\xD5\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xB8\n\r\xB3 COM-Dateien Druck Utility v2.0 (w) 13.9.90 by Ralph Roth \xB3\n\r\xB3       Installieren mit DOC2PRNT.EXE! - Shareware         \xB3\r\n\xB3   Lesen Sie dazu die Dokumentation DOC2PRNT.DOC durch!   \xB3\n\r\xB3  Exklusivvertrieb:  S.T.E, Fasanenweg 51, D-3500 Kassel  \xB3\n\r\xC6\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xB5\n\r\xB3 -----------  Bitte ohne Argumente starten!  ------------ \xB3\n\r\xD4\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xBE\n\r\a$Doc2Printer: Programm beendet.\n\n\r$\x8A\x0E\x80\02\xED\xE3#\xFC\x8D>\x81\0\xB0 \xF3\xAEt\x18\xB4\t\xBAP\x03\xCD!\xBA`\x01\xCD!\xBA\x1C\x06\xCD!\xB8\0L\xB2\0\xCD!\xE8C\0\xBA\xA8\x01\xB4\t\xCD!\xBA\n\x01\xCD!\xBA\xD1\x02\xCD!\xBA\x10\x01\xB4\t\xCD!\xE8(\0\xBA\xEE\x02\xB4\t\xCD!\xE8&\0<Jt\x06<jt\x02\xEB\x03\xE8(\0\xE8\x0E\0\xBAD\x05\xB4\t\xCD!\xB2\0\xB4L\xCD!\xC3\xB4\t\xBA\x03\x01\xCD!\xC3\xB4\a\xCD!<\0u\x06\xB4\a\xCD!\xB4\0\xC3\xB4\t\xBA\x13\x03\xCD!\x8D6 \x06\x8A\f\x8B\xD6\xBB\x04\0\xB9\x01\0\xB4@\xCD!F\x8A\x04<\x1Bu\xEB\xBB\x04\0\xB9\x01\0\xBA\x06\x01\xB4@\xCD!\xC3\r\n\n$\n\r--------------------------------------------------------\r\n Datei wurde mit einer unregistrierten Version erstellt\r\n--------------------------------------------------------\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$DATEI WURDE MIT EINER UNREGISTRIERTEN SHAREWAREVERSION ERSTELLT.$$$$$$$$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEI WIRD NUN AUSGEDRUCKT - BITTE HABEN SIE ETWAS GEDULD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--------------------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM-DATEIEN DRUCK UTILITY V2.0 (W) 13.9.90 BY RALPH ROTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEI WURDE MIT EINER UNREGISTRIERTEN VERSION ERSTELLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LESEN SIE DAZU DIE DOKUMENTATION DOC2PRNT.DOC DURCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ES WERDEN INSGESAMT CA. $ SEITE(N) PAPIER BEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-----------  BITTE OHNE ARGUMENTE STARTEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLIEREN MIT DOC2PRNT.EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$IST IHR DRUCKER DRUCKBEREIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT BY THOMAS EDEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITTE PAPIER EINLEGEN."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMM BEENDET."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXKLUSIVVERTRIEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D-3500 KASSEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FASANENWEG 51"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DOC2PRINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- SHAREWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACHTUNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S.T.E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIGT."
+    CaseSensitive: false

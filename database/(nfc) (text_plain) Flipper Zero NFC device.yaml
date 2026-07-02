@@ -1,0 +1,23 @@
+Name: Flipper Zero NFC device
+URL: "https://en.wikipedia.org/wiki/Flipper_Zero"
+FileNameExtensions: ["nfc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Filetype: Flipper NFC device"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLIPPER NFC DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIFARE"
+    CaseSensitive: false

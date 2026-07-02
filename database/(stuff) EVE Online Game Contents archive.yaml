@@ -1,0 +1,13 @@
+Name: EVE Online Game Contents archive
+URL: "http://www.eve-online.com/"
+FileNameExtensions: ["stuff"]
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0res\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EMBEDFS 1.0"
+    CaseSensitive: false

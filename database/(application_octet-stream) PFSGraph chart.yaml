@@ -1,0 +1,10 @@
+Name: PFS:Graph chart
+Description: Old MS-DOS charting application.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "graf"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

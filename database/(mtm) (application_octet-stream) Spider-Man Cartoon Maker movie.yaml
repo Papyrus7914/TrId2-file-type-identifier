@@ -1,0 +1,19 @@
+Name: Spider-Man Cartoon Maker movie
+URL: "https://archive.org/details/SPIDEYGOLD"
+FileNameExtensions: ["mtm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x06, 0x00]
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\xFF\xFF\x04\0\a\0CFlixdb"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CFLIXDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BMP"
+    CaseSensitive: false

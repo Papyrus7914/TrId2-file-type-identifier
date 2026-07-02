@@ -1,0 +1,20 @@
+Name: Godot Shader
+URL: "https://en.wikipedia.org/wiki/Godot_(game_engine)"
+FileNameExtensions: ["shader"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "shader_type "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VOID FRAGMENT() {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIFORM FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false

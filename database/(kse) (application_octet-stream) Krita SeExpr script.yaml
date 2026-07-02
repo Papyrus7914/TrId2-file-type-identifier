@@ -1,0 +1,26 @@
+Name: Krita SeExpr script
+URL: "https://en.wikipedia.org/wiki/Krita"
+FileNameExtensions: ["kse"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetype\x01!\0\xDE\xFFapplication/x-krita-seexpr-script"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "X-KRITA-SEEXPR-SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT.SE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE"
+    CaseSensitive: false

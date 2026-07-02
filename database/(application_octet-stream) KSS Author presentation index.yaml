@@ -1,0 +1,19 @@
+Name: "KSS: Author presentation index"
+Description: "DOS tool used to create presentations/tutorials (for ex: WordStar)."
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DMH\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "F1\\=HELP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RET TO DOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false

@@ -1,0 +1,9 @@
+Name: DRM Content Format - Separate delivery file (generic)
+Description: Copy-Protected media files, used in some cellphones.
+FileNameExtensions: ["dcf"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01]
+  - Pos: 8
+    AsciiString: "/"
+    CaseSensitive: true

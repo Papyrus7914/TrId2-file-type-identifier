@@ -1,0 +1,14 @@
+Name: PopNOP crunched data
+URL: "https://nopmsx.nl/"
+FileNameExtensions: ["nop"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "P"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "NOP\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POPNOP"
+    CaseSensitive: false

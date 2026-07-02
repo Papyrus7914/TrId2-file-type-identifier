@@ -1,0 +1,19 @@
+Name: Cartooners Actor
+Description: A 1989 educational game by Electronic Arts.
+FileNameExtensions: ["act"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x10F\0\0\0w\a\x85\f"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "N25600\0--"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NXXXXX\0--"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N28160"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0\0\0W"
+    CaseSensitive: false

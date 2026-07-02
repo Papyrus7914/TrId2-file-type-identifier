@@ -1,0 +1,92 @@
+Name: EFI Capsule
+URL: "https://uefi.org/specs/UEFI/2.10/"
+FileNameExtensions: ["cap"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 17
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P\0L\0A\0T\0F\0O\0R\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0R\0I\0V\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0E\0M\0O\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0E\0T\0U\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U\0P\0D\0A\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0C\0P\0I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0O\0O\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0N\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0I\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0O\0D\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0S\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0A\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0O\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0A\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FVH"
+    CaseSensitive: false

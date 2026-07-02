@@ -1,0 +1,98 @@
+Name: BigBand tune
+Description: Music composition tool for Amiga by Wouter Boeke.
+FileNameExtensions: ["bb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Settings\n  format="
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: " meter="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTRUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWING-INSTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FM_STARTUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERCUSSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWING-PERC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDI_AMPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_AMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSPOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GMIDI-NR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCH_NR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABC-SYM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FM_CTRL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOD_MOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPHONIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLASHED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETUNE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUPQ"
+    CaseSensitive: false

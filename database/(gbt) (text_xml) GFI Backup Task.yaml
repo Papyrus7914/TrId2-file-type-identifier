@@ -1,0 +1,320 @@
+Name: GFI Backup Task
+URL: "https://en.wikipedia.org/wiki/GFI_Software"
+FileNameExtensions: ["gbt"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<XML>\r\n  <GENERAL>\r\n    <Type bCount=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ARCHIVE SELFEXTRACTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDESKTOPSHORTCUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEDULER_DELAYEDTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONSUMMARY-SHOW PLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONWARNING-SHOW PLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC_FOLDERTOFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERTOEXECUTEDOMAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GBT_VERSION SIMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETCOLLISION PURGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOURS_DONEBACKUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC_IGNOREDELETED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC_PROMPTDELETED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHIVEFOLDERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONERROR-SHOW PLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTRUNPATH WAIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC_BYDATEANDCRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERTOEXECUTENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERTOEXECUTEPASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EACHFILECOMPRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEDSCHEDULER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONETIMERUN DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWINDOWSSHUTDOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALSOFOLDERSMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDRUNPATH WAIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWINDOWSSTARTUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC_SYNCACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC_SYNCPROMPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDESYSTEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOURS_BACKUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPLEMENTARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DVDWRITESPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUSIONMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUSIONMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMCOLLISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTRUNSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFOLDERCHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNOTSCHEDULED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNCCOLLISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDWRITESPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOURS_HOURS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERCATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERIFYBACKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERIFYMEDIUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTSTACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDETEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTRUNTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXTRUNTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWEEKS_DAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWEEKS_HOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWEEKS_WHEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASKGROUPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE BCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATDISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTP_SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUICKERASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT DTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDAYS_DAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDAYS_HOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDAYS_WHEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRUNMISSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWORK_DAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKINGNOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCOUNTBIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISKLABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIBERNATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNERUSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROXYHOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROXYMETH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROXYPASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROXYPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXVOLUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATHLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECURITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNCTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASKGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERASECD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROXYUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSVMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVPROX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDBY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWAKEUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POPUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Movie Master Script (v5.0)
+Description: Movie script editor by Ballistic Computing Inc.
+FileNameExtensions: ["scr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x11\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULT PARAGRAPH FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-TECFMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MORE"
+    CaseSensitive: false

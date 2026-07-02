@@ -1,0 +1,92 @@
+Name: ON1 Photo RAW
+URL: "https://www.on1.com/"
+FileNameExtensions: ["on1"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"photos\":{\""
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\":{\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COM.ONONESOFTWARE.VCB.PROCESSPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORPROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATADATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMVYC2LVB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WBGLZDD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHOTOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRGB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

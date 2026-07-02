@@ -1,0 +1,31 @@
+Name: NUnit project
+URL: "http://www.nunit.org/"
+FileNameExtensions: ["nunit"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<NUnitProject>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETTINGS ACTIVECONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLY PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUNITPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINPATHTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false

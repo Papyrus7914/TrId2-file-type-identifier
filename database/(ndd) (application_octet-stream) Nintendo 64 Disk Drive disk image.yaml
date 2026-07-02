@@ -1,0 +1,25 @@
+Name: Nintendo 64 Disk Drive disk image
+FileNameExtensions: ["ndd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              H
+    Bytes: [0xE8, 0x48, 0xD3, 0x16, 0x10]
+  - Pos: any
+    AsciiString: "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUSTW00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789ABCDEF\0\0\0\00123456789ABCDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUUUUUUUUUUUUSVR00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NINTENDO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAN\0INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false

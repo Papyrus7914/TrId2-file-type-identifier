@@ -1,0 +1,36 @@
+Name: StarAm Plan Project
+Description: Amiga spreadsheet by Thorsten Passow.
+URL: "http://aminet.net/package/biz/spread/StarAm_Plan881.lha"
+FileNameExtensions: ["pjkt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "PJCTPFLG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PJCTPFLG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

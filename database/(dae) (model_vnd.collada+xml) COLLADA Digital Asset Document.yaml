@@ -1,0 +1,35 @@
+Name: COLLADA Digital Asset Document
+URL: "https://www.khronos.org/collada/"
+FileNameExtensions: ["dae"]
+MimeType: model/vnd.collada+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WWW.COLLADA.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLADASCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

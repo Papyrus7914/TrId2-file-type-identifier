@@ -1,0 +1,17 @@
+Name: FileLocator Pro Search Criteria (v3.1)
+URL: "http://www.mythicsoft.com/filelocatorpro"
+FileNameExtensions: ["srf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\x03\0\0\x02\0\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WWW.MYTHICSOFT.COM/"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERPRETERCONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILELOCATOR"
+    CaseSensitive: false

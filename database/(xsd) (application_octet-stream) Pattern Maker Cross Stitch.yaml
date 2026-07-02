@@ -1,0 +1,23 @@
+Name: Pattern Maker Cross Stitch
+URL: "https://www.hobbyware.com/"
+FileNameExtensions: ["xsd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                      Q
+    Bytes: [0x10, 0x05, 0x80, 0x03, 0xB4, 0x51]
+  - Pos: any
+    AsciiString: "DEFAULT\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CROSSSTITCH3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIDA"
+    CaseSensitive: false

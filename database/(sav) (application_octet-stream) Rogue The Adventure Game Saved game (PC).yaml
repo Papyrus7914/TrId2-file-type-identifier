@@ -1,0 +1,11 @@
+Name: "Rogue: The Adventure Game Saved game (PC)"
+URL: "https://en.wikipedia.org/wiki/Rogue_(video_game)"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Lattice C 1.02cassis\0mango\0slime mold\0\x0E\0\x15\0\x1B\0\0\0rogue.sav\0"
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "\0Hello %s, Welcome to the Dungeons of Doom\0Ok, if you want to exit that badly, I'll have to allow it\n\0"
+    CaseSensitive: true

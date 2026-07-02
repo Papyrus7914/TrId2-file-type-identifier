@@ -1,0 +1,24 @@
+Name: GPS eXchange format
+Description: GPX (the GPS Exchange Format) is a light-weight XML data format for the interchange of GPS data (waypoints, routes, and tracks) between applications and Web services on the Internet.
+URL: "https://www.topografix.com/gpx.asp"
+FileNameExtensions: ["gpx"]
+MimeType: application/gpx+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WWW.TOPOGRAFIX.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPX"
+    CaseSensitive: false

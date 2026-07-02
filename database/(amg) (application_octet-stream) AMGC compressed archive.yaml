@@ -1,0 +1,8 @@
+Name: AMGC compressed archive
+Description: DOS compressor by Milen Georgiev.
+FileNameExtensions: ["amg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xAD6\"\0\0\0\0\0\0\0\0\0\x94\x1C"
+    CaseSensitive: true

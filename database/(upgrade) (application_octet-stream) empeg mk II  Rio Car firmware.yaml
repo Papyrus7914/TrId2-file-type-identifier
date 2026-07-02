@@ -1,0 +1,11 @@
+Name: empeg mk II / Rio Car firmware
+URL: "https://www.empeg.com/"
+FileNameExtensions: ["upgrade"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 3
+    AsciiString: "\0\xFF\0\0\0\x04\0\0\0\x02\0\0\0\0\0\0\0U\0\0\0This release is suitable for Mark II empeg and Rio Car players (with rotary control)\n\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 114
+    AsciiString: "\0\0\0empegcar "
+    CaseSensitive: true

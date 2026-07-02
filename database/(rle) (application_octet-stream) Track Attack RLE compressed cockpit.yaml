@@ -1,0 +1,14 @@
+Name: Track Attack RLE compressed cockpit
+URL: "https://www.mobygames.com/game/3454/track-attack/"
+FileNameExtensions: ["rle"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RAMRACER COMPRESSED COCKPIT\n---------------------------\nSize     :"
+    CaseSensitive: true
+  - Pos: 73
+    AsciiString: "\nRLE bytes:"
+    CaseSensitive: true
+  - Pos: 89
+    #        \n
+    Bytes: [0x0A, 0x1A]

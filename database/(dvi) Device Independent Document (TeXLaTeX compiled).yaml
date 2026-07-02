@@ -1,0 +1,10 @@
+Name: Device Independent Document (TeX/LaTeX compiled)
+URL: "http://www.tex.ac.uk/cgi-bin/texfaq2html?label=dvi"
+FileNameExtensions: ["dvi"]
+DetectionPatterns:
+  - Pos: 0
+    #                                                  ;
+    Bytes: [0xF7, 0x02, 0x01, 0x83, 0x92, 0xC0, 0x1C, 0x3B, 0x00, 0x00, 0x00, 0x00]
+  - Pos: 14
+    AsciiString: "\x1B TeX output "
+    CaseSensitive: true

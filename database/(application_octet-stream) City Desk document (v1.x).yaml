@@ -1,0 +1,13 @@
+Name: City Desk document (v1.x)
+Description: Amiga DTP software.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CITY"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "PAGE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

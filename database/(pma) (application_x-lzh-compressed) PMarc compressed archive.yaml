@@ -1,0 +1,12 @@
+Name: PMarc compressed archive
+Description: Archiver used on CP/M and MSX platforms.
+URL: "http://en.wikipedia.org/wiki/LHA_(file_format)#PMarc_extensions"
+FileNameExtensions: ["pma"]
+MimeType: application/x-lzh-compressed
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "-pm"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "-"
+    CaseSensitive: true

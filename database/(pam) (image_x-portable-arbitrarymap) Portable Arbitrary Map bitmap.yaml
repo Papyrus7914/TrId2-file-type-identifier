@@ -1,0 +1,26 @@
+Name: Portable Arbitrary Map bitmap
+URL: "http://fileformats.archiveteam.org/wiki/Portable_Arbitrary_Map"
+FileNameExtensions: ["pam"]
+MimeType: image/x-portable-arbitrarymap
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "P7"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TUPLTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false

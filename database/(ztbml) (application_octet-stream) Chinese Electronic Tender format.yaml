@@ -1,0 +1,17 @@
+Name: Chinese Electronic Tender format
+URL: "https://www.ggzy.gov.cn/"
+FileNameExtensions: ["ztbml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "ELECTRONICBIDDINGDOCUMENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKDIGITPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ZK_PK"
+    CaseSensitive: false

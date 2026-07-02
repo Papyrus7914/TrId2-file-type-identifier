@@ -1,0 +1,11 @@
+Name: Amiga Kickstart disk image
+URL: "https://en.wikipedia.org/wiki/Kickstart_(Amiga)"
+FileNameExtensions: ["adf"]
+MimeType: application/x-amiga-disk-format
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KICK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AMIGA ROM OPERATING SYSTEM AND LIBRARIES"
+    CaseSensitive: false

@@ -1,0 +1,9 @@
+Name: unified diff output
+Description: REJ is used for rejected patches
+URL: "https://en.wikipedia.org/wiki/Diff_utility#Unified_format"
+FileNameExtensions: ["diff", "dif", "patch", "pch", "rej"]
+MimeType: text/x-patch
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "--- "
+    CaseSensitive: true

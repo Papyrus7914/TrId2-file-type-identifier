@@ -1,0 +1,34 @@
+Name: Common Data Format (v3)
+Description: version 3 or later; exact version (major number, release, increment) is stored at offset 28, 32 and 52
+URL: "http://fileformats.archiveteam.org/wiki/Common_Data_Format"
+FileNameExtensions: ["cdf"]
+MimeType: application/x-cdf
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xCD, 0xF3, 0x00, 0x01]
+  - Pos: 16
+    AsciiString: "\0\0\0\x01"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0\0\x03"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 56
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "SPACE PHYSICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false

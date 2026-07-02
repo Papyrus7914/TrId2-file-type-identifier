@@ -1,0 +1,14 @@
+Name: QuarkXPress Project (v6)
+URL: "application/vnd.quark.quarkxpress"
+FileNameExtensions: ["qxp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "XPR"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "C"
+    CaseSensitive: true

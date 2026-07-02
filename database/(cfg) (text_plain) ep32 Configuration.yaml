@@ -1,0 +1,24 @@
+Name: ep32 Configuration
+Description: Enterprise 32 emulator.
+URL: "http://web.axelero.hu/egzo/ep/index.html"
+FileNameExtensions: ["cfg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EP_PAGE=#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EP_PAGE_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EP_PAGE_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXOS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROMS"
+    CaseSensitive: false

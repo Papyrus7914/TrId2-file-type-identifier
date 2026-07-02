@@ -1,0 +1,73 @@
+Name: WordPerfect printer data
+URL: "https://github.com/OneWingedShark/WordPerfect/blob/master/doc/SDK_Help/FileFormats/WPFF_DocumentStructure.htm"
+FileNameExtensions: ["all"]
+MimeType: application/x-wordperfect-all
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFWPC"
+    CaseSensitive: true
+  - Pos: 8
+    Bytes: [0x01, 0x13]
+  - Pos: 12
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PRINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "10CPI ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE APP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITALIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "12CPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

@@ -1,0 +1,24 @@
+Name: Call of Duty Modern Warfare 3 DLC
+Description: text/plain
+URL: "https://en.wikipedia.org/wiki/Call_of_Duty"
+FileNameExtensions: ["iw5dlc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "name: Content Collection #"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT COLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LOAD.FF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IWD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,206 @@
+Name: Rasberry Pi EEPROM
+Description: With names like pieeprom-2021-10-04.bin
+URL: "https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#raspberry-pi-4-boot-eeprom"
+FileNameExtensions: ["bin"]
+MimeType: application/x-raspberry-eeprom
+DetectionPatterns:
+  - Pos: 0
+    #        U
+    Bytes: [0x55, 0xAA, 0xF0, 0x0F]
+  - Pos: 8
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xB0\0\x01\xF0\x81\0\xC0\xE0\0\0m\x82\x18\r\x1F\x1D\xC0A\a\x18\xE8\0"
+    CaseSensitive: true
+  - Pos: 545
+    Bytes: [0x80, 0x19, 0xE8]
+  - Pos: 551
+    #              1     h                             -                       @     \a
+    Bytes: [0x80, 0x31, 0x68, 0xF9, 0xC0, 0x01, 0xCF, 0x2D, 0x1F, 0x1D, 0xC0, 0x40, 0x07, 0x18, 0xE8, 0x00]
+  - Pos: 569
+    Bytes: [0x80, 0x19, 0xE8]
+  - Pos: 575
+    #              1     h
+    Bytes: [0x80, 0x31, 0x68, 0xF9, 0xC0, 0x01, 0xCF, 0x80, 0x90]
+  - Pos: 586
+    Bytes: [0x80, 0x90]
+  - Pos: 590
+    Bytes: [0x80, 0x90]
+  - Pos: 594
+    Bytes: [0x80, 0x90]
+  - Pos: 598
+    Bytes: [0x80, 0x90]
+  - Pos: 602
+    Bytes: [0x80, 0x90]
+  - Pos: 606
+    Bytes: [0x80, 0x90]
+  - Pos: 610
+    Bytes: [0x80, 0x90]
+  - Pos: 614
+    Bytes: [0x00, 0xE5]
+  - Pos: 619
+    Bytes: [0x00, 0x80, 0x90]
+  - Pos: 624
+    Bytes: [0x80, 0x90]
+  - Pos: 628
+    #              @           @     (     @
+    Bytes: [0x06, 0x40, 0x17, 0x40, 0x28, 0x40, 0x80, 0x90]
+  - Pos: 638
+    AsciiString: "`@q@\x82@\x80\x90"
+    CaseSensitive: true
+  - Pos: 648
+    AsciiString: "`@q@\x82@\x80\x90"
+    CaseSensitive: true
+  - Pos: 658
+    Bytes: [0x80, 0x90]
+  - Pos: 662
+    AsciiString: "\0\0\x01|\x01|\x01||\x1F\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".TXT\0START.ELF\0FIXUP.DAT\0START4.ELF\0FIXUP4.DAT\0RECOVERY.ELF\0FIXUP_RC.DAT\0RECOVER4.ELF\0FIXUP4RC.DAT\0START_CD.ELF\0FIXUP_CD.DAT\0START4CD.ELF\0FIXUP4CD.DAT\0START_DB.ELF\0FIXUP_DB.DAT\0START4DB.ELF\0FIXUP4DB.DAT\0START_X.ELF\0FIXUP_X.DAT\0START4X.ELF\0FIXUP4X.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMSYS00.BIN\0MEMSYS01.BIN\0MEMSYS02.BIN\0MEMSYS03.BIN\0MEMSYS04.BIN\0MEMSYS05.BIN\0MEMSYS06.BIN\0MEMSYS07.BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IP\0\0OP\0\0A0\0\0A1\0\0A2\0\0A3\0\0A4\0\0A5\0\0DH\0\0DL\0\0PN\0\0NP\0\0PU\0\0PD\0\0INVALID GPIO COMMAND %S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HYNIX\0\0\0MICRON\0\0SAMSUNG\0UNKNOWN\0INITIALISING SDRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT_UART\0WAKE_ON_GPIO\0POWER_OFF_ON_HALT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%S %S %S %S %S BOOTMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL\0PI0\0PI1\0PI2\0PI3\0PI4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOBOOT.TXT\0CONFIG.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4\0NONE\0\0\0\0PI0W\0\0\0\0PI3+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%DGB X%D TOTAL-SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELF LOADER ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD_TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USD VOLTAGE %SV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOTLOADER\0RPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER_OFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOTCODE.BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOTCONF.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAILED TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPIO%D %D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPIO_CMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISSING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NULL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EEPROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0BOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FATAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPU_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HSOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DEV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MEM"
+    CaseSensitive: false

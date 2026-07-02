@@ -1,0 +1,12 @@
+Name: NIfTI-1 data format (little endian)
+Description: NIfTI stand for Neuroimaging Informatics Technology Initiative
+URL: "http://nifti.nimh.nih.gov/nifti-1/"
+FileNameExtensions: ["nii"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\\x01\0\0"
+    CaseSensitive: true
+  - Pos: 344
+    AsciiString: "n+1\0"
+    CaseSensitive: true

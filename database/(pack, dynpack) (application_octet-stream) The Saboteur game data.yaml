@@ -1,0 +1,14 @@
+Name: The Saboteur game data
+URL: "https://www.mobygames.com/game/43902/the-saboteur/"
+FileNameExtensions: ["pack", "dynpack"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ALBS"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALBS"
+    CaseSensitive: false

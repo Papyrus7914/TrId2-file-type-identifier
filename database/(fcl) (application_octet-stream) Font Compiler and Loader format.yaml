@@ -1,0 +1,26 @@
+Name: Font Compiler and Loader format
+Description: DOS font utility by Gilles Kohl.
+FileNameExtensions: ["fcl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "........"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODEPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false

@@ -1,0 +1,56 @@
+Name: KingSoft WPS98 document
+URL: "https://en.wikipedia.org/wiki/Kingsoft"
+FileNameExtensions: ["wps"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x82\xFFWPS98\xAE for WindowsKingsoft\xA9 1998\0\0\0\0\0\0\0\0\0\0X"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CCTRLCODE_LINEMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCTRLCODE_PARAINDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCTRLCODE_PARAMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCTRLCODE_ALIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCTRLCODE_TRACKING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCTRLCODE_FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCTRLCODE_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCTRLCODE_TABS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSTYLE_TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFRAMETEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLESHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COBLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WPSPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WPSTEXT"
+    CaseSensitive: false

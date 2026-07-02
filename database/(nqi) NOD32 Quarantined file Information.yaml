@@ -1,0 +1,10 @@
+Name: NOD32 Quarantined file Information
+URL: "http://en.wikipedia.org/wiki/Nod32"
+FileNameExtensions: ["nqi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NQEN"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\x01\0\0\0\x01\0\0\0\0\0\0T\0\0\0"
+    CaseSensitive: true

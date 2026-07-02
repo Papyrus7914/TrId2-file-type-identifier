@@ -1,0 +1,32 @@
+Name: Phase3 Project (v2.x)
+Description: Desing tool and code generator for Win 3.x DB applications.
+FileNameExtensions: ["p3"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Application]\r\nVersion="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUTO RIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DB OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWITCHES"
+    CaseSensitive: false

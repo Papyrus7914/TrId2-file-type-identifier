@@ -1,0 +1,20 @@
+Name: SyncTeX synchronization data (v1)
+URL: "https://itexmac.sourceforge.net/SyncTeX.html"
+FileNameExtensions: ["synctex"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SyncTeX Version:1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEX"
+    CaseSensitive: false

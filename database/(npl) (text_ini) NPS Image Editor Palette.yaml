@@ -1,0 +1,17 @@
+Name: NPS Image Editor Palette
+URL: "http://nps.nookkin.com/"
+FileNameExtensions: ["npl"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[NPS Palette]\r\nFileVersion"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false

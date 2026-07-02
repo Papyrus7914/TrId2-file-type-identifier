@@ -1,0 +1,14 @@
+Name: ACID Pro project
+URL: "http://fileformats.archiveteam.org/wiki/Sonic_Foundry_Acid"
+FileNameExtensions: ["acd-zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".ACDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAVPK"
+    CaseSensitive: false

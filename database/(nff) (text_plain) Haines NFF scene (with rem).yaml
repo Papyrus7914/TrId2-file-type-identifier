@@ -1,0 +1,20 @@
+Name: Haines NFF scene (with rem)
+URL: "http://fileformats.archiveteam.org/wiki/NFF"
+FileNameExtensions: ["nff"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HITHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false

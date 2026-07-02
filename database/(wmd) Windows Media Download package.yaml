@@ -1,0 +1,10 @@
+Name: Windows Media Download package
+URL: "http://www.microsoft.com/windows/windowsmedia/howto/articles/downpacks.aspx"
+FileNameExtensions: ["wmd"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".ASXPK"
+    CaseSensitive: false

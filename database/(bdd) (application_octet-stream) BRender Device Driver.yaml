@@ -1,0 +1,23 @@
+Name: BRender Device Driver
+URL: "https://en.wikipedia.org/wiki/Argonaut_Games#BRender"
+FileNameExtensions: ["bdd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\x01\0\xFF\xFF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0\0\0@\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS IS A BRENDER DRIVER"
+    CaseSensitive: false

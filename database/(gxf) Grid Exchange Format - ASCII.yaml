@@ -1,0 +1,37 @@
+Name: Grid Exchange Format - ASCII
+Description: GXF (Grid eXchange File) is a standard ASCII file format for exchanging gridded data among different software systems.
+FileNameExtensions: ["gxf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#TITLE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DUMMY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTSEPARATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RWSEPARATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YORIGIN"
+    CaseSensitive: false

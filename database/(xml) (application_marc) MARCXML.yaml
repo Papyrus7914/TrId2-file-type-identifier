@@ -1,0 +1,44 @@
+Name: MARCXML
+URL: "http://fileformats.archiveteam.org/wiki/MARC"
+FileNameExtensions: ["xml"]
+MimeType: application/marc
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLLECTION XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLFIELD TAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAFIELD TAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBFIELD CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.LOC.GOV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARC21"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IND2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLIM"
+    CaseSensitive: false

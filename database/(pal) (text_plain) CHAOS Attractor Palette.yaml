@@ -1,0 +1,12 @@
+Name: CHAOS Attractor Palette
+Description: Fractal software for DOS by Autodesk.
+URL: "https://github.com/rudyrucker/chaos"
+FileNameExtensions: ["pal"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CHAOS Attractor Color Table\r\nCreated: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false

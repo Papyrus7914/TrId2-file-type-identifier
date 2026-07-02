@@ -1,0 +1,119 @@
+Name: Optimized Dalvik Executable
+URL: "http://en.wikipedia.org/wiki/Dalvik_(software)"
+FileNameExtensions: ["odex"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "dey\n036\0("
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "dex\n035\0"
+    CaseSensitive: true
+  - Pos: 75
+    AsciiString: "\0p\0\0\0xV4\x12"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SAVEDINSTANCESTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANDROID.POLICY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCLOSINGMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCESSFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNOTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMEWORK."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INNERCLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETCONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCEPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANDROID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONCREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LDALVIK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUNDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLINIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G FAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS$0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JAVA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAIT"
+    CaseSensitive: false

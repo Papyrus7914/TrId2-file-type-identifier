@@ -1,0 +1,29 @@
+Name: CMake generated
+URL: "https://en.wikipedia.org/wiki/CMake"
+FileNameExtensions: ["cmake"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# CM"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: " generated "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CMAKE GENERATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

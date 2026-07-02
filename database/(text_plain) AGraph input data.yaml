@@ -1,0 +1,13 @@
+Name: AGraph input data
+Description: Amiga graphing software by Denis Gounelle.
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AGRAPH\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

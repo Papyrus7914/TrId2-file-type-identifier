@@ -1,0 +1,13 @@
+Name: Avira AntiVir Virus Database
+URL: "http://www.avira.com"
+FileNameExtensions: ["vdf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Virus Database File\r\nVersion: "
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LICENSE DATE"
+    CaseSensitive: false

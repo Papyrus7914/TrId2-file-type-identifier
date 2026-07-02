@@ -1,0 +1,17 @@
+Name: XLR8 - Sentry Chip Composor Music
+Description: Atari ST tracker by F.v.Nispen.
+FileNameExtensions: ["xms"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "```\0\0\x82\r"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0QXLR8/Sentry Music File by F.v.Nispen (Eagle/Sentry)."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SENTRY MUSIC FILE BY F.V.NISPEN (EAGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XLR8SONG"
+    CaseSensitive: false

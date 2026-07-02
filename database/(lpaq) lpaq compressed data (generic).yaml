@@ -1,0 +1,11 @@
+Name: lpaq compressed data (generic)
+Description: A series of compressors derived from an original by Matt Mahoney.
+URL: "http://cs.fit.edu/~mmahoney/compression/#lpaq"
+FileNameExtensions: ["lpaq"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "pQ"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0"
+    CaseSensitive: true

@@ -1,0 +1,20 @@
+Name: Teardown save game (map quick save)
+URL: "https://www.mobygames.com/game/152216/teardown/"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SD2S"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CUTSCENE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUEST_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOOR_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false

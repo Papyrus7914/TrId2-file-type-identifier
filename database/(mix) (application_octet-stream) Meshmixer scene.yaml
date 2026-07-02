@@ -1,0 +1,77 @@
+Name: Meshmixer scene
+URL: "http://fileformats.archiveteam.org/wiki/MeshMixer"
+FileNameExtensions: ["mix"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "<?xml version=\"1.0\"?>\n<SceneObjects>\n\t<RecordID>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCENEOBJECTSTRINGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLDUNITINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASTOREVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLDUNITSSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENETRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINARYBLOCKID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENEOBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESHPOLYGONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESHBLOCKID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MILLIMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORDTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEMANTICDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBRECORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESHMIXER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORDID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VFMESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GSURF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMGS"
+    CaseSensitive: false

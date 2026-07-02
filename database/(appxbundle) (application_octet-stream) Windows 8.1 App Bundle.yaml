@@ -1,0 +1,55 @@
+Name: Windows 8.1 App Bundle
+FileNameExtensions: ["appxbundle"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "APPXBUNDLEMANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPXBLOCKMAP.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPXMANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES.PRI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPXMETADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".APPXPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SCALE-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION"
+    CaseSensitive: false

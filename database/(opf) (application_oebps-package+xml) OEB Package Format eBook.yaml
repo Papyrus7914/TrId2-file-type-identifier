@@ -1,0 +1,68 @@
+Name: OEB Package Format eBook
+URL: "https://en.wikipedia.org/wiki/Open_eBook"
+FileNameExtensions: ["opf"]
+MimeType: application/oebps-package+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DC-METADATA XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUE-IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFIER ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMREF IDREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENEBOOK.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OEB-PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMESPACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PURL.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OEBP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

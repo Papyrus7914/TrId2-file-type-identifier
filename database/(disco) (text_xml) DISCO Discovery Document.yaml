@@ -1,0 +1,32 @@
+Name: DISCO Discovery Document
+URL: "https://docs.fileformat.com/web/disco/"
+FileNameExtensions: ["disco"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.XMLSOAP.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTRACTREF REF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISCOVERY XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WSDL"
+    CaseSensitive: false

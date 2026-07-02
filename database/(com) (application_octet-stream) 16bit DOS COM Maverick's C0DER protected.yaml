@@ -1,0 +1,12 @@
+Name: 16bit DOS COM Maverick's C0DER protected
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: any
+    AsciiString: "S C0DER V.1.00A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAVERICK"
+    CaseSensitive: false

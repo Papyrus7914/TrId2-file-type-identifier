@@ -1,0 +1,16 @@
+Name: EndNote Style
+URL: "http://en.wikipedia.org/wiki/EndNote"
+FileNameExtensions: ["ens"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\b"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "RSFTSTYL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RSFTSTYL"
+    CaseSensitive: false

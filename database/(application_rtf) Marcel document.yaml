@@ -1,0 +1,22 @@
+Name: Marcel document
+Description: Word processor for Atari ST.
+MimeType: application/rtf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\\rtf1\\ansi {\\*\\marcel Marcel "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MARCEL MARCEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARCELNOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTER }"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER }"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAR }"
+    CaseSensitive: false

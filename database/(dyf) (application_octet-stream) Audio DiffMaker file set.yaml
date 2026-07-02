@@ -1,0 +1,32 @@
+Name: Audio DiffMaker file set
+URL: "http://www.libinst.com/Audio%20DiffMaker.htm"
+FileNameExtensions: ["dyf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0R_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "T_TMP.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WGILJHKM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVEFMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WVPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWGH"
+    CaseSensitive: false

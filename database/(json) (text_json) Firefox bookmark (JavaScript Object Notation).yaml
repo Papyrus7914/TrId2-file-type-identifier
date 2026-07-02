@@ -1,0 +1,57 @@
+Name: Firefox bookmark (JavaScript Object Notation)
+Description: JSON format is also used for other browser/server communication like AJAX.
+URL: "http://fileformats.archiveteam.org/wiki/Firefox_bookmarks"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "X-MOZ-PLACE-CONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKMARKSMENUFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKMARKPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTMODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACESROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEADDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPIRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

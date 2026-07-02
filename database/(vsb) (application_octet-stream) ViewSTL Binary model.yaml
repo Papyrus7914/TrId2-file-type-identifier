@@ -1,0 +1,59 @@
+Name: ViewSTL Binary model
+URL: "https://www.viewstl.com/"
+FileNameExtensions: ["vsb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "json_data.vsj{\"canvas_height\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".STLBINARY STL BY VIEWSTL.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JSON_DATA.VSJPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JSON_DATA.VSJ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANVAS_HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER_MODELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA_STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO_RESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO_ROTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUSE_ZOOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BG_COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".STLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false

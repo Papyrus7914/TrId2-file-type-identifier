@@ -1,0 +1,14 @@
+Name: Pioneer DJ DDJ-1000SRT firmware
+URL: "https://www.pioneerdj.com/en/support/software/controller/ddj-1000srt/"
+FileNameExtensions: ["upd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "UPD 0100"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "DDJ1000S"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DDJ1000S"
+    CaseSensitive: false

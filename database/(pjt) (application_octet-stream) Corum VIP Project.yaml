@@ -1,0 +1,11 @@
+Name: Corum VIP Project
+Description: DOS RDBMS by NovaQuest InfoSystems.
+FileNameExtensions: ["pjt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    5                       5                       4     4     6
+    Bytes: [0x01, 0xEA, 0x35, 0xC7, 0xFC, 0xFC, 0x35, 0xC7, 0xFC, 0xE9, 0x34, 0x34, 0x36, 0xC7, 0xFC, 0xE2]
+  - Pos: any
+    AsciiString: "_MAIN.PGM"
+    CaseSensitive: false

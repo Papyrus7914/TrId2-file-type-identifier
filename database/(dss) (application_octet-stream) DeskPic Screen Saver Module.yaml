@@ -1,0 +1,47 @@
+Name: DeskPic Screen Saver Module
+Description: OS/2 screen saver by John Ridges.
+FileNameExtensions: ["dss"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCREEN SAVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVERDIALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVERSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVERTHREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOSCALLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESKPIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMSHAPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DSS -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANCEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMWIN"
+    CaseSensitive: false

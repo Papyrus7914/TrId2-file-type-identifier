@@ -1,0 +1,14 @@
+Name: SciTech Software UniVBE driver
+URL: "https://en.wikipedia.org/wiki/UniVBE"
+FileNameExtensions: ["drv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Universal VESA VBE "
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCITECH SOFTWARE"
+    CaseSensitive: false

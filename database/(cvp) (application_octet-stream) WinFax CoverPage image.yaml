@@ -1,0 +1,13 @@
+Name: WinFax CoverPage image
+URL: "https://en.wikipedia.org/wiki/WinFax"
+FileNameExtensions: ["cvp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        \f
+    Bytes: [0x0C, 0xBD]
+  - Pos: 17
+    Bytes: [0x00, 0xC0, 0x06]
+  - Pos: any
+    AsciiString: "FAX"
+    CaseSensitive: false

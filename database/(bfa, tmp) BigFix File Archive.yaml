@@ -1,0 +1,14 @@
+Name: BigFix File Archive
+Description: Archives created by the BFArchive tool or the BigFix console. Extraction is natively supported by the BigFix client or the Fixlet Debugger. May also have a BFA file extension, but TMP is typical.
+URL: "https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/Tivoli%20Endpoint%20Manager/page/BFArchive%20Tool"
+FileNameExtensions: ["bfa", "tmp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "##SC001\0"
+    CaseSensitive: true
+  - Pos: 12
+    #        x
+    Bytes: [0x78, 0x9C]
+  - Pos: any
+    AsciiString: "SC001"
+    CaseSensitive: false

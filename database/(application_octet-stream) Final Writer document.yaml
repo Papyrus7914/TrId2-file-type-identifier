@@ -1,0 +1,14 @@
+Name: Final Writer document
+Description: Amiga word processor.
+URL: "https://final-writer.com/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SWRT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SWRT"
+    CaseSensitive: false

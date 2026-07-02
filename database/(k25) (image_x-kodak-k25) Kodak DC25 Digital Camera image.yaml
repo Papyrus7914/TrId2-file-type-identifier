@@ -1,0 +1,26 @@
+Name: Kodak DC25 Digital Camera image
+URL: "http://fileformats.archiveteam.org/wiki/Kodak"
+FileNameExtensions: ["k25"]
+MimeType: image/x-kodak-k25
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MM\0*\0\0\0\b\0"
+    CaseSensitive: true
+  - Pos: 356
+    AsciiString: "DC000"
+    CaseSensitive: true
+  - Pos: 364
+    AsciiString: "Eastman Kodak Company\0KODAK DC25 DIGITAL CAMERA\0\0\0\0H\0\0\0\x01\0\0\0H\0\0\0\x01DC25 Camera V1.1\0\00000:00:00 00:00:00\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0(\0\0\0\n0000:00:00 00:00:00\0\0\x11\0\xFE\0\x04\0\0\0\x01\0\0\0\0\x01\0\0\x03\0\0\0\x01\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EASTMAN KODAK COMPANY\0KODAK DC25 DIGITAL CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC25 CAMERA V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MM\0*"
+    CaseSensitive: false

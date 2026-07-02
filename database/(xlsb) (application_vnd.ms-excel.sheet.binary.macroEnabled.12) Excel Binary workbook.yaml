@@ -1,0 +1,53 @@
+Name: Excel Binary workbook
+URL: "https://en.wikipedia.org/wiki/Microsoft_Excel"
+FileNameExtensions: ["xlsb"]
+MimeType: application/vnd.ms-excel.sheet.binary.macroEnabled.12
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "[Content_Types].xml \xA2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SHAREDSTRINGS.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKBOOK.BIN.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINARYINDEX1.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEET1.BIN.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKBOOK.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEET1.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEME1.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSHEETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCPROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false

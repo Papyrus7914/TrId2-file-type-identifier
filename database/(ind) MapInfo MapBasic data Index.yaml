@@ -1,0 +1,14 @@
+Name: MapInfo MapBasic data Index
+Description: 1 of 5 dataset linked files, the others are *.DAT *.ID *.MAP and *.TAB
+URL: "http://www.mapinfo.com"
+FileNameExtensions: ["ind"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xF8\xE8q\x01d\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0\xE7\x15\n\0\x1Da\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true

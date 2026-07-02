@@ -1,0 +1,86 @@
+Name: Tpa CADnesting nesting job configuration
+URL: "https://www.tpaspa.com/cadnesting"
+FileNameExtensions: ["ncad"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<update version=\"1.0\">\r\n  <params>\r\n    <param name=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UPDATE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER_SHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEET EN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEET_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCTMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZETA"
+    CaseSensitive: false

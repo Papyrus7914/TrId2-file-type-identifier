@@ -1,0 +1,11 @@
+Name: Dr. Halo device dependent bitmap (generic)
+Description: Old MS-DOS Paint program.
+FileNameExtensions: ["pic"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AH"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0\0\0\x02"
+    CaseSensitive: true

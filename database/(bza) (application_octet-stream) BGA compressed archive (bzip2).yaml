@@ -1,0 +1,11 @@
+Name: BGA compressed archive (bzip2)
+URL: "http://fileformats.archiveteam.org/wiki/BGA_Archive"
+FileNameExtensions: ["bza"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "BZ2\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BZ2"
+    CaseSensitive: false

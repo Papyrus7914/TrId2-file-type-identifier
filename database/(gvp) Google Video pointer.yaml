@@ -1,0 +1,43 @@
+Name: Google Video pointer
+URL: "http://video.google.com"
+FileNameExtensions: ["gvp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# download the free Google Video Player from http://video.google.com/\ngvp_version:"
+    CaseSensitive: true
+  - Pos: 83
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 85
+    AsciiString: "\nurl:http://vp.video.google.com/videodownload?version=0&secureurl="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOWNLOAD THE FREE GOOGLE VIDEO PLAYER FROM HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VP.VIDEO.GOOGLE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEODOWNLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GVP_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECUREURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

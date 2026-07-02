@@ -1,0 +1,20 @@
+Name: Sublime Text Keymap
+URL: "https://en.wikipedia.org/wiki/Sublime_Text"
+FileNameExtensions: ["sublime-keymap"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYS"
+    CaseSensitive: false

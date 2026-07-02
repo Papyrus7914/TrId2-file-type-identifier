@@ -1,0 +1,109 @@
+Name: MSX-DOS Command interpreter
+Description: "Filename: COMMAND.COM"
+URL: "https://en.wikipedia.org/wiki/MSX"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xC3]
+  - Pos: 2
+    Bytes: [0x05]
+  - Pos: 4
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 6
+    #                                      \b                      \'          *           .
+    Bytes: [0x00, 0x02, 0x01, 0x05, 0x01, 0x08, 0x01, 0x13, 0x01, 0x27, 0x01, 0x2A, 0x01, 0x2E, 0x01]
+  - Pos: any
+    AsciiString: "$CONTENT OF DESTINATION LOST BEFORE COPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FILE CANNOT BE COPIED ONTO ITSELF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND STRIKE ANY KEY WHEN READY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSERT DISK WITH BATCH FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$BAD COMMAND OR FILE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$INSUFFICIENT DISK SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$STRIKE A KEY WHEN READY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$SUNMONTUEWEDTHUFRISAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FILE CREATION ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CURRENT DATE IS $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CURRENT TIME IS $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$INVALID PARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$PROGRAM TOO BIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE$ BYTES FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FILE NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$INVALID DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER NEW DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ARE YOU SURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID DATE$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID TIME$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$WRITE ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENAME ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOEXECBAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ COPIED$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMBAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAVPW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

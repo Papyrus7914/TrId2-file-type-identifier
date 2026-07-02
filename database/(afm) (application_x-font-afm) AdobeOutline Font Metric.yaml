@@ -1,0 +1,17 @@
+Name: Adobe/Outline Font Metric
+URL: "http://fileformats.archiveteam.org/wiki/Adobe_Type_1"
+FileNameExtensions: ["afm"]
+MimeType: application/x-font-afm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "StartFontMetrics "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STARTCHARMETRICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDCHARMETRICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTNAME"
+    CaseSensitive: false

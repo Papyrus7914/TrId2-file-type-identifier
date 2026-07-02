@@ -1,0 +1,32 @@
+Name: OpenColorIO profile (with rem)
+URL: "http://opencolorio.org"
+FileNameExtensions: ["ocio"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OCIO_PROFILE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRICTPARSING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORSPACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LUMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

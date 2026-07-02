@@ -1,0 +1,13 @@
+Name: Smart Address address book (v1)
+Description: PIM for Windows by Phil Corley and Oakley Data Services.
+FileNameExtensions: ["adr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xF5, 0x01]
+  - Pos: 3
+    AsciiString: "\02\0\n\0\xF4\x01\a\0!LABELS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LABELS"
+    CaseSensitive: false

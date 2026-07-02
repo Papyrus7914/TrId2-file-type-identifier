@@ -1,0 +1,32 @@
+Name: GEM-View Print module
+URL: "http://www.fiebelkorn.net/"
+FileNameExtensions: ["gvp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0N\xF9\0\0\0\x90N\xF9\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "GVWP\x01\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NO IMAGE TO PRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO DATA IN IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANCEL\0OK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGNA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GVWP"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Speech Synthesis Markup Language
+URL: "http://fileformats.archiveteam.org/wiki/Speech_Synthesis_Markup_Language"
+FileNameExtensions: ["ssml"]
+MimeType: application/ssml+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<speak xml:lang=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SPEAK XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANG"
+    CaseSensitive: false

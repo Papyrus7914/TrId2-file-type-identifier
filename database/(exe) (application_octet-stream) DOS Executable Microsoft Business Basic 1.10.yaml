@@ -1,0 +1,56 @@
+Name: DOS Executable Microsoft Business Basic 1.10
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 16
+    Bytes: [0x00, 0x02]
+  - Pos: 20
+    AsciiString: ",\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RUNTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E MOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OF R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R IN"
+    CaseSensitive: false

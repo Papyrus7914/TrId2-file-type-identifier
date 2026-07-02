@@ -1,0 +1,35 @@
+Name: "The Elder Scrolls IV: Oblivion Plugin"
+URL: "https://en.wikipedia.org/wiki/The_Elder_Scrolls_IV:_Oblivion"
+FileNameExtensions: ["esp", "esm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TES4"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "HEDR\f"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "?"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "CNAM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBLIVION.ESM\0DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAST"
+    CaseSensitive: false

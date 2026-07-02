@@ -1,0 +1,50 @@
+Name: XOWA Wiki data
+URL: "http://fileformats.archiveteam.org/wiki/XOWA"
+FileNameExtensions: ["xowa"]
+MimeType: application/vnd.sqlite3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATE UNIQUE INDEX XOWA_CFG__MAIN ON XOWA_CFG (CFG_GRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "( CFG_GRP VARCHAR(255) NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFG_VAL VARCHAR(1024) NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFG_KEY VARCHAR(255) NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXXOWA_CFG__MAINXOWA_CFG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}TABLEXOWA_CFGXOWA_CFG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE XOWA_CFG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ID INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFG_VAL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOMAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WIK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIKI"
+    CaseSensitive: false

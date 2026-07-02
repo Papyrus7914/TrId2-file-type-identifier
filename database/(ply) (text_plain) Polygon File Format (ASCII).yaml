@@ -1,0 +1,14 @@
+Name: Polygon File Format (ASCII)
+URL: "https://en.wikipedia.org/wiki/PLY_(file_format)"
+FileNameExtensions: ["ply"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ply"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "i"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORMAT ASCII"
+    CaseSensitive: false

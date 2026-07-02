@@ -1,0 +1,29 @@
+Name: A'dam Music Composer Script
+Description: BeOS music software.
+FileNameExtensions: ["scr"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "set tempo:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SUSTAIN-WAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START-WAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET RED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

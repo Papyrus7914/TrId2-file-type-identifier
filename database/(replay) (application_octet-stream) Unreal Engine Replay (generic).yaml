@@ -1,0 +1,25 @@
+Name: Unreal Engine Replay (generic)
+URL: "https://en.wikipedia.org/wiki/Unreal_Engine"
+FileNameExtensions: ["replay"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x7F, 0xE2, 0xA2, 0x1C]
+  - Pos: any
+    AsciiString: "R\0E\0P\0L\0A\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

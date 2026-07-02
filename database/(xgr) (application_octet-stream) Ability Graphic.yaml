@@ -1,0 +1,65 @@
+Name: Ability Graphic
+URL: "https://en.wikipedia.org/wiki/Ability_Plus"
+FileNameExtensions: ["xgr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "--HDR1.0-- "
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: " GR;"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "--HDR1.0-- 34 GR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMITRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMITLEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMITBOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMITTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGBOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIE3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIE4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIE5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIE6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIE7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGTOP"
+    CaseSensitive: false

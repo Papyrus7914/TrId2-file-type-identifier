@@ -1,0 +1,74 @@
+Name: TASKING Debugger target Configuration
+URL: "https://www.tasking.com/"
+FileNameExtensions: ["dcf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<config version=\""
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLASH_SECTOR_BUFFER_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH_WORKSPACE_ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RS232_EXCLUSIVE_ACCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RS232_TIMEOUT_FACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH_MONITOR_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RS232_HANDSHAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RS232_BAUDRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DI_SHAREDLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GDI_METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RS232_PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCPIP_HOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCPIP_PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALHOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false

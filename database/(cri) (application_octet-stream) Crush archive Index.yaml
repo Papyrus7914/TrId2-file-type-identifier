@@ -1,0 +1,13 @@
+Name: Crush archive Index
+URL: "http://fileformats.archiveteam.org/wiki/CRUSH"
+FileNameExtensions: ["cri"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CRUSH v"
+    CaseSensitive: true
+  - Pos: 11
+    Bytes: [0x1A]
+  - Pos: 22
+    AsciiString: "\x1A\0\0\0"
+    CaseSensitive: true

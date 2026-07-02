@@ -1,0 +1,17 @@
+Name: TeamSpeak 3 Soundpack
+URL: "https://en.wikipedia.org/wiki/TeamSpeak"
+FileNameExtensions: ["ts3_soundpack"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SETTINGS.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND"
+    CaseSensitive: false

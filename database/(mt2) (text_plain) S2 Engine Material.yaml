@@ -1,0 +1,11 @@
+Name: S2 Engine Material
+URL: "https://www.s2powered.com/"
+FileNameExtensions: ["mt2"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Globals>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CTION"
+    CaseSensitive: false

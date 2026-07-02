@@ -1,0 +1,11 @@
+Name: Dac-Easy Word Printer
+Description: Old MS-DOS budget word processor.
+FileNameExtensions: ["prt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NAME = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false

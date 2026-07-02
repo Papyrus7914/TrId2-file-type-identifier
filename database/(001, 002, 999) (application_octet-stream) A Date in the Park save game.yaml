@@ -1,0 +1,17 @@
+Name: A Date in the Park save game
+URL: "https://www.mobygames.com/game/70196/a-date-in-the-park/"
+FileNameExtensions: ["001", "002", "999"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RGMH"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "A\0 \0D\0a\0t\0e\0 \0i\0n\0 \0t\0h\0e\0 \0P\0a\0r\0k"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "A\0 \0D\0A\0T\0E\0 \0I\0N\0 \0T\0H\0E\0 \0P\0A\0R\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADVENTURE GAME STUDIO SAVED GAME"
+    CaseSensitive: false

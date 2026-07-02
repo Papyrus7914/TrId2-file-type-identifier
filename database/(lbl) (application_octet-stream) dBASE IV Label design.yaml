@@ -1,0 +1,11 @@
+Name: dBASE IV Label design
+URL: "https://en.wikipedia.org/wiki/Dbase"
+FileNameExtensions: ["lbl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "dBASE IV Generic Design File Version 1.0\0\x01\v\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "H\0P\0X"
+    CaseSensitive: false

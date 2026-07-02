@@ -1,0 +1,23 @@
+Name: AmiBlitz3 PED tokens HashMap
+URL: "https://www.amiblitz.de/"
+FileNameExtensions: ["hashmap"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HMAP"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "ORDR"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "ITEM"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "CLSH"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "MAPT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TANK"
+    CaseSensitive: false

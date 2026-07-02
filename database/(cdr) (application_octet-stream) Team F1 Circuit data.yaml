@@ -1,0 +1,32 @@
+Name: Team F1 Circuit data
+URL: "https://www.mobygames.com/game/team-f1"
+FileNameExtensions: ["cdr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Lichtquelle bei 0,0,1000, nicht orientiert]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NICHT ORIENTIERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CDP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".L3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SM2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SQE"
+    CaseSensitive: false

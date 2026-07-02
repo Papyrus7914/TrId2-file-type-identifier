@@ -1,0 +1,23 @@
+Name: iOS Passbook Pass
+URL: "http://en.wikipedia.org/wiki/Passbook_(application)"
+FileNameExtensions: ["pkpass"]
+MimeType: application/vnd.apple.pkpass
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MANIFEST.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASS.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false

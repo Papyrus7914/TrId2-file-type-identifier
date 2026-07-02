@@ -1,0 +1,26 @@
+Name: Vista data format
+URL: "http://fileformats.archiveteam.org/wiki/Vista_data_file"
+FileNameExtensions: ["v"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "V-data 2 {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NCOLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPN"
+    CaseSensitive: false

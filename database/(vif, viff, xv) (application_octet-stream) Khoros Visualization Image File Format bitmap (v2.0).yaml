@@ -1,0 +1,29 @@
+Name: Khoros Visualization Image File Format bitmap (v2.0)
+URL: "http://fileformats.archiveteam.org/wiki/VIFF"
+FileNameExtensions: ["vif", "viff", "xv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    #              W
+    Bytes: [0x13, 0x57, 0x9A]
+  - Pos: any
+    AsciiString: "VIFFMAGICCOOKIE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THISISAVIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

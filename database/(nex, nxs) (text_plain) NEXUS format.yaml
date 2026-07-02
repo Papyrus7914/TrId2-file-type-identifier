@@ -1,0 +1,35 @@
+Name: NEXUS format
+URL: "https://en.wikipedia.org/wiki/Nexus_file"
+FileNameExtensions: ["nex", "nxs"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#NEXUS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIMENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

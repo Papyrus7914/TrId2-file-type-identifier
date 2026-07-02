@@ -1,0 +1,13 @@
+Name: Mnova Publications File Format
+FileNameExtensions: ["mnpub"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "----- MNOVA PUBLICATIONS FILE -----"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PUBKEY_SIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false

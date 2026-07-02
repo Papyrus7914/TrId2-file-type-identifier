@@ -1,0 +1,29 @@
+Name: ArcPad bookmarks
+URL: "http://resources.arcgis.com/en/help/arcpad/10.0/sdk/xml/"
+FileNameExtensions: ["apx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOOKMARK NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKMARKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCPAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINY"
+    CaseSensitive: false

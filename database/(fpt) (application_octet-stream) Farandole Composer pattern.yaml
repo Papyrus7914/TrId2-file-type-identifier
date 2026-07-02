@@ -1,0 +1,11 @@
+Name: Farandole Composer pattern
+URL: "http://justsolve.archiveteam.org/wiki/Farandole_Composer_module"
+FileNameExtensions: ["fpt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FPT\xFE"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\r\n\x1A"
+    CaseSensitive: true

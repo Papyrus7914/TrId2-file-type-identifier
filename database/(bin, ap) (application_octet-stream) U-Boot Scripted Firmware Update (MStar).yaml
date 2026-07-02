@@ -1,0 +1,77 @@
+Name: U-Boot Scripted Firmware Update (MStar)
+URL: "http://www.u-boot.org/"
+FileNameExtensions: ["bin", "ap"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "fatload usb 0 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETENV BL_DFB_FRAMEBUFFER_ADDR 0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENV MSTARUPGRADE_COMPLETE 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENV BL_JPD_INTER_ADDR 0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENV BL_JPD_INTER_SIZE 0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENV BL_JPD_WRITE_ADDR 0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENV BL_JPD_WRITE_SIZE 0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENV BL_JPD_READ_ADDR 0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENV BL_JPD_READ_SIZE 0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENV UPGRADE_MODE NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENV VE_BUFFER_ADDR 0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENV OAD_NEED_UPGRADE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENV OAD_TRIGGER_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0 $(FORCEUPGRADEPATH)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENV USB_COMPLETE 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENV USB_UPGRADE 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENV BOOTCMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FATLOAD USB 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZMADEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEENV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPI_RDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPI_WRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GO 0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESET"
+    CaseSensitive: false

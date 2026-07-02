@@ -1,0 +1,30 @@
+Name: TrID defs package
+Description: A TRD file is a RIFF like container that hold a serie of TrID's definitions.
+URL: "https://mark0.net/soft-trid-e.html"
+FileNameExtensions: ["trd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0TRIDDEFN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRIDDEFN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

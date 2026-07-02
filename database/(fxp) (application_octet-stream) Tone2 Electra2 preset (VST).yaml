@@ -1,0 +1,17 @@
+Name: Tone2 Electra2 preset (VST)
+URL: "https://www.tone2.com/"
+FileNameExtensions: ["fxp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CcnK"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FPCh\0\0\0\x01T2DI"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FPCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T2DI"
+    CaseSensitive: false

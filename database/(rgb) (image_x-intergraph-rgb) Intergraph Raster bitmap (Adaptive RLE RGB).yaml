@@ -1,0 +1,17 @@
+Name: Intergraph Raster bitmap (Adaptive RLE RGB)
+Description: DataTypeCode 27 variant
+URL: "http://fileformats.archiveteam.org/wiki/Intergraph_Raster"
+FileNameExtensions: ["rgb"]
+MimeType: image/x-intergraph-rgb
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\b\t\xFE"
+    CaseSensitive: true
+  - Pos: 4
+    Bytes: [0x1B, 0x00]
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 508
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

@@ -1,0 +1,35 @@
+Name: Point Cloud Data
+URL: "http://pointclouds.org/documentation/tutorials/pcd_file_format.php"
+FileNameExtensions: ["pcd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# .PCD v"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POINT CLOUD DATA FILE FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

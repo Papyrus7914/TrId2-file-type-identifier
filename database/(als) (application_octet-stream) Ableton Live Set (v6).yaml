@@ -1,0 +1,14 @@
+Name: Ableton Live Set (v6)
+URL: "https://en.wikipedia.org/wiki/Ableton_Live"
+FileNameExtensions: ["als"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    V     x           6
+    Bytes: [0xAB, 0x1E, 0x56, 0x78, 0x03, 0x36]
+  - Pos: 11
+    AsciiString: "\fLiveDocument"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LIVEDOCUMENT"
+    CaseSensitive: false

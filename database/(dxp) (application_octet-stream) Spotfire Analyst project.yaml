@@ -1,0 +1,35 @@
+Name: Spotfire Analyst project
+URL: "https://www.spotfire.com/"
+FileNameExtensions: ["dxp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "AnalysisDocument.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EMBEDDEDRESOURCES.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSISDOCUMENT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAACCESSPLAN.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.EMB"
+    CaseSensitive: false

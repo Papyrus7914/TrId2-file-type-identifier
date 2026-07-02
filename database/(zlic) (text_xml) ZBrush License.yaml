@@ -1,0 +1,41 @@
+Name: ZBrush License
+URL: "https://en.wikipedia.org/wiki/ZBrush"
+FileNameExtensions: ["zlic"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<license   uid=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRODUCT     PID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE   UID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIALNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRYPTINGKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRACEPERIOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZBRUSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

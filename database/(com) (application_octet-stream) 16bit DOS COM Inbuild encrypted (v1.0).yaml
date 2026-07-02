@@ -1,0 +1,10 @@
+Name: 16bit DOS COM Inbuild encrypted (v1.0)
+Description: COM encrypter by Christoph Gabler.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xB9]
+  - Pos: 3
+    #                          .           \a    .     (           C
+    Bytes: [0xBB, 0x0F, 0x01, 0x2E, 0xD2, 0x07, 0x2E, 0x28, 0x1F, 0x43, 0xE2, 0xF7]

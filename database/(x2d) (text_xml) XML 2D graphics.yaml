@@ -1,0 +1,14 @@
+Name: XML 2D graphics
+URL: "https://graphics.stanford.edu/projects/iwork/old/x2d/"
+FileNameExtensions: ["x2d"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<x2d "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false

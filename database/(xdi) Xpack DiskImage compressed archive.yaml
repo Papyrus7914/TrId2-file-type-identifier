@@ -1,0 +1,16 @@
+Name: Xpack DiskImage compressed archive
+Description: Xpack compressor by JauMing Tseng 1999
+URL: "ftp://ftp.sac.sk/pub/sac/xpa167r.zip"
+FileNameExtensions: ["xdi"]
+DetectionPatterns:
+  - Pos: 0
+    #        j     m
+    Bytes: [0x6A, 0x6D, 0x02, 0x04]
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    Bytes: [0xB0]

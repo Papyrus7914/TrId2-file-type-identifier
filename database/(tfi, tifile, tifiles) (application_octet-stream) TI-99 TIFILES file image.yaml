@@ -1,0 +1,9 @@
+Name: TI-99 TIFILES file image
+Description: The TIFILES format is used to encode files from a TI file system for transfer and storage on another system.
+URL: "http://www.ninerpedia.org/index.php/Emulators"
+FileNameExtensions: ["tfi", "tifile", "tifiles"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\aTIFILES"
+    CaseSensitive: true

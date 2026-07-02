@@ -1,0 +1,36 @@
+Name: Unified Font Object (compressed)
+Description: FontLab compressed variant.
+URL: "http://unifiedfontobject.org/"
+FileNameExtensions: ["ufoz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "METAINFO.PLISTU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS.PLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTINFO.PLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNING.PLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NOTDEF.GLIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE.GLIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIB.PLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLYPHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".UFO"
+    CaseSensitive: false

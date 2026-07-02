@@ -1,0 +1,17 @@
+Name: LEGO model data
+Description: Usually contained in an .LXF file package, along with one or more preview pictures in PNG format.
+URL: "http://www.lego.com"
+FileNameExtensions: ["model"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x1C'j\t{KK\f\xA8\x8D6\b<5QT\0\0\0\0\xF3\xD6\xB0\xB1>\x87@\xF5\x96\xE6\xC1\xEF\xA5\xCF\x91\xF7"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\x13\xC0\b\x139\x8BL=\x86u\x0FE`\xBC\xC2\xB2 \0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 76
+    #        d                                         @                 A     H
+    Bytes: [0x64, 0x00, 0x00, 0x00, 0xB5, 0xB2, 0x8E, 0x40, 0xD6, 0x15, 0x41, 0x48, 0x90, 0xA6, 0xA6, 0x94, 0x9C, 0xDC, 0x9D, 0xFE]
+  - Pos: any
+    AsciiString: "LEGO"
+    CaseSensitive: false

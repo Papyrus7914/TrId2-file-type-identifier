@@ -1,0 +1,14 @@
+Name: Logos 4 Supplemental Data
+URL: "https://wiki.logos.com/"
+FileNameExtensions: ["lbssd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LRES01\r\nDB:"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "\r\nDB:SD-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SUPPLEMENTALDATA"
+    CaseSensitive: false

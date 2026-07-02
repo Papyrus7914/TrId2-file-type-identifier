@@ -1,0 +1,11 @@
+Name: CADVANCE drawing
+URL: "http://www.cadvance.com/"
+FileNameExtensions: ["vwf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "F I T, Inc.                 \r\nCADVANCE drawing file version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".VWF"
+    CaseSensitive: false

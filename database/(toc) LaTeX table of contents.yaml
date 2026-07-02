@@ -1,0 +1,13 @@
+Name: LaTeX table of contents
+URL: "http://en.wikipedia.org/wiki/LaTeX"
+FileNameExtensions: ["toc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENTSLINE {SUBSECTION}{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTSLINE {SECTION}{"
+    CaseSensitive: false

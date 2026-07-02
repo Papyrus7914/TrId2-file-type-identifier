@@ -1,0 +1,77 @@
+Name: Pixlr Zipped layered image
+URL: "https://en.wikipedia.org/wiki/Pixlr"
+FileNameExtensions: ["pxz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "manifest.json"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "G\0O\0O\0G\0L\0E\0 \0I\0N\0C\0.\0 \02\00\01\06"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0R\0G\0BXYZ \0\0\0\0\0\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.WEBPRIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.WEBPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0\0\0MNTRRGB XYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XYZ \0\0\0\0\0\0$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XYZ \0\0\0\0\0\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0\0\0(BTRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0\0\0(CPRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0\0\0(GTRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBPVP8X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$RXYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-PARA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GXYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLUC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WTPT"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: Viivo encrypted
+URL: "https://viivo.com/"
+FileNameExtensions: ["viivo"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 25
+    AsciiString: "\0\a\0\0\0Content"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "__VIIASSET_.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false

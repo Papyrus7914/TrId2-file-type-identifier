@@ -1,0 +1,12 @@
+Name: DataCAD Drawing
+URL: "http://www.datacad.com/"
+FileNameExtensions: ["dc5"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: 32
+    AsciiString: "$DataCAD drawing file. version "
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "."
+    CaseSensitive: true

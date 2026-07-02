@@ -1,0 +1,11 @@
+Name: PockEmul session
+URL: "https://github.com/pockemul/PockEmul"
+FileNameExtensions: ["pml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n<pml version=\"1.0\" zoom=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SNAPSHOT FORMAT"
+    CaseSensitive: false

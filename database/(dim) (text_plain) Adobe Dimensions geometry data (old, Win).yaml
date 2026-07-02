@@ -1,0 +1,23 @@
+Name: Adobe Dimensions geometry data (old, Win)
+URL: "http://fileformats.archiveteam.org/wiki/Adobe_Dimensions"
+FileNameExtensions: ["dim"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "version \r\n "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LIGHT COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFINITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA"
+    CaseSensitive: false

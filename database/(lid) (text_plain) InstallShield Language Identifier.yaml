@@ -1,0 +1,17 @@
+Name: InstallShield Language Identifier
+URL: "https://en.wikipedia.org/wiki/InstallShield"
+FileNameExtensions: ["lid"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Languages]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY0"
+    CaseSensitive: false

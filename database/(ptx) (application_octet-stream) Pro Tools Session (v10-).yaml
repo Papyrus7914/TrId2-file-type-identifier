@@ -1,0 +1,20 @@
+Name: Pro Tools Session (v10-)
+URL: "http://fileformats.archiveteam.org/wiki/PTX_(Pro_Tools)"
+FileNameExtensions: ["ptx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x030010111100101011\0\x05"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "Z\x01\0\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\0Z"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".PTX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

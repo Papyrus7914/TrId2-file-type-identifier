@@ -1,0 +1,29 @@
+Name: 16bit COM executable Graham's TXT2PAS (v2.03)
+URL: "http://fileformats.archiveteam.org/wiki/TXT2COM_(Keith_P._Graham)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE9] TXT2PAS Conversion utility. Vers 2.3\r\nCopyright 1987 by Keith P. Graham\r\nThis file cannot be distributed for SALE without\r\nexpress written permission from Keith P. Graham\r\n238 Germonds Road, W. Nyack, NY 10994, (914) 623-4161\r\nNext 4 bytes are scan1,shift1,scan2,shift2:\x14\n\x83\f\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENTERING THE NAME OF THIS PROGRAM FOLLOWED BY THE COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS IS A PASS THROUGH PROGRAM. YOU USE IT EXECUTE OTHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY WILL BE IN EFFECT ONLY WHILE THE SECOND PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMS. THE HOT KEY COMBINATION TO START UP THE TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS RUNNING. YOU START THIS PASS THROUGH PROGRAM BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESIDENT TEXT DISPLAY INSTALLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THAT YOU WOULD LIKE TO EXECUTE."
+    CaseSensitive: false

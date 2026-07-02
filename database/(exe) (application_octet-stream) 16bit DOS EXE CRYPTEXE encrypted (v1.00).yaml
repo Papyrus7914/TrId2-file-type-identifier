@@ -1,0 +1,56 @@
+Name: 16bit DOS EXE CRYPTEXE encrypted (v1.00)
+Description: DOS Encryptor/protector by Dmitriy Borisov.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    Bytes: [0x05, 0x00]
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "P3"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "$\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "J\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0CRYPTEXE  1.00 (C) 1994, Dmitriy Borisov\0\"\0"
+    CaseSensitive: true
+  - Pos: 78
+    AsciiString: "{\0"
+    CaseSensitive: true
+  - Pos: 82
+    #        G
+    Bytes: [0x47, 0x01]
+  - Pos: 86
+    Bytes: [0xBD, 0x02]
+  - Pos: 90
+    Bytes: [0xDF, 0x02]
+  - Pos: 94
+    AsciiString: "\0\0MZ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INCORRECT PASSWORD OR DATA IS CORRUPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERIFYING PASSWORD. PLEASE WAIT ...$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLEASE ENTER YOUR PASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRYPTEXE  1.00 (C) 1994"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMITRIY BORISOV"
+    CaseSensitive: false

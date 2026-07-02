@@ -1,0 +1,9 @@
+Name: HoN Modification Manager package
+FileNameExtensions: ["honmod"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MOD.XMLPK"
+    CaseSensitive: false

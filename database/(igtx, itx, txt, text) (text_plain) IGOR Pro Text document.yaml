@@ -1,0 +1,14 @@
+Name: IGOR Pro Text document
+URL: "https://en.wikipedia.org/wiki/IGOR_Pro"
+FileNameExtensions: ["igtx", "itx", "txt", "text"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IGOR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "X SETSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVE"
+    CaseSensitive: false

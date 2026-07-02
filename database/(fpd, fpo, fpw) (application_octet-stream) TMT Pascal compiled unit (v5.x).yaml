@@ -1,0 +1,17 @@
+Name: TMT Pascal compiled unit (v5.x)
+URL: "https://en.wikipedia.org/wiki/Pascal_(programming_language)#Other_variants"
+FileNameExtensions: ["fpd", "fpo", "fpw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE9\x03\0\0TMTP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMTP"
+    CaseSensitive: false

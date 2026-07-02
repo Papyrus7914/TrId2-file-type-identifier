@@ -1,0 +1,32 @@
+Name: Microsoft Media Browser config
+Description: Windows 3.x audio player/browser app, come with MS Sound Bits.
+FileNameExtensions: ["mbr"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Media Browser Config]\r\nTitle="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYALLOWED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUD0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false

@@ -1,0 +1,59 @@
+Name: Canon Printer Job
+URL: "https://www.canon.com/"
+FileNameExtensions: ["prn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\" ?><cmd xmlns:ivec=\"http://www.canon.com/ns/cmd/2008/07/common/\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PARAM_SET SERVICETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.CANON.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IJOPERATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMD XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODESHIFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDORCMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "00000001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTJOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IJMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOBID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2008"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IVEC"
+    CaseSensitive: false

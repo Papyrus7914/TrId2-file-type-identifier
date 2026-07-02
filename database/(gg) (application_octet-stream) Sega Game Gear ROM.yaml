@@ -1,0 +1,10 @@
+Name: Sega Game Gear ROM
+URL: "https://en.wikipedia.org/wiki/Game_Gear"
+FileNameExtensions: ["gg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xF3]
+  - Pos: any
+    AsciiString: "SEGA"
+    CaseSensitive: false

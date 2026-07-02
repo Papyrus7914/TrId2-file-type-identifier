@@ -1,0 +1,33 @@
+Name: Linux kernel ARM boot executable (zImage)
+URL: "https://en.wikipedia.org/wiki/Vmlinux#zImage"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x00, 0xA0, 0xE1, 0x00, 0x00, 0xA0, 0xE1, 0x00, 0x00, 0xA0, 0xE1, 0x00, 0x00, 0xA0, 0xE1, 0x00, 0x00, 0xA0, 0xE1, 0x00, 0x00, 0xA0, 0xE1, 0x00, 0x00, 0xA0, 0xE1, 0x00, 0x00, 0xA0, 0xE1]
+  - Pos: 33
+    AsciiString: "\0\0\xEA\x18(o\x01\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNCOMPRESSING LINUX..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOTING THE KERNEL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- SYSTEM HALTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DONE"
+    CaseSensitive: false

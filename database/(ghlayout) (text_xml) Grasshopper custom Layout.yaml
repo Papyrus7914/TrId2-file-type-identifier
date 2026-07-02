@@ -1,0 +1,32 @@
+Name: Grasshopper custom Layout
+URL: "http://www.grasshopper3d.com/"
+FileNameExtensions: ["ghlayout"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Fragment name=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FRAGMENT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHUNKS COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMS COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHUNK NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE_CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false

@@ -1,0 +1,35 @@
+Name: AVS Field data
+URL: "https://en.wikipedia.org/wiki/AutoDock"
+FileNameExtensions: ["fld"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# AVS field file"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VARIABLE 1 FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVS FIELD FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECLEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKIP"
+    CaseSensitive: false

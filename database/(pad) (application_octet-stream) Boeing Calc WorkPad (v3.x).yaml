@@ -1,0 +1,38 @@
+Name: Boeing Calc WorkPad (v3.x)
+URL: "https://en.wikipedia.org/wiki/Boeing_Calc"
+FileNameExtensions: ["pad"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CALC3."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACCESS INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADMINISTRATOR ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUSIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHARED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE"
+    CaseSensitive: false

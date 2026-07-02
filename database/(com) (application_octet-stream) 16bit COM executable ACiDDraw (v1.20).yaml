@@ -1,0 +1,9 @@
+Name: 16bit COM executable ACiDDraw (v1.20)
+URL: "http://fileformats.archiveteam.org/wiki/ACiDDraw_COM_file"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9, 0x9F, 0x00, 0x19, 0x00]
+  - Pos: 162
+    Bytes: [0xB8]

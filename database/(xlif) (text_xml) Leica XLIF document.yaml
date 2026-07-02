@@ -1,0 +1,50 @@
+Name: Leica XLIF document
+URL: "https://docs.openmicroscopy.org/bio-formats/6.9.0/formats/leica-lof.html"
+FileNameExtensions: ["xlif"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LMSDataContainerHeader Version=\"2\" ApplicationDescription=\"LMSIOManager\" ApplicationVersion=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LMSDATACONTAINERHEADER VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORYBLOCKID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LMSIOMANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYOPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LDESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false

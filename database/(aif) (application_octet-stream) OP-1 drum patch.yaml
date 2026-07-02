@@ -1,0 +1,80 @@
+Name: OP-1 drum patch
+URL: "https://teenage.engineering/products/op-1"
+FileNameExtensions: ["aif"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "AIFFCOMM"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "APPL"
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "op-1{\"drum_version\":1,\"type\":\"drum\",\"name\":\"user\",\"octave\":0,\"pitch\":["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DRUM_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO_ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO_PARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX_ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX_PARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYNA_ENV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREMOLO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCTAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OP-1{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

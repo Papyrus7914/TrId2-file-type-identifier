@@ -1,0 +1,373 @@
+Name: FreeBASIC 0.15 Win32 Executable
+Description: Open-source, free, 32-bit compiler, with the syntax the most compatible possible with MS-QuickBASIC (including the GFX statements), but that adds new features such as pointers, unsigned data types, inline-assembly, a pre-processor and many others.
+URL: "http://www.freebasic.net/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0PE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 135
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 140
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 143
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 146
+    AsciiString: "\0\0\xE0\0"
+    CaseSensitive: true
+  - Pos: 152
+    AsciiString: "\v\x01\x028\0"
+    CaseSensitive: true
+  - Pos: 159
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 163
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 167
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 169
+    AsciiString: "\x12\0\0\0\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 179
+    AsciiString: "\0\0\0@\0\0\x10\0\0\0\x02\0\0\x04\0\0\0\x01\0\0\0\x04\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 211
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 214
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 219
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 221
+    AsciiString: "\0\0\0\0\0\x10\0\0\0\x10\0\0\0\x10\0\0\x10\0\0\0\0\0\0\x10\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 251
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 253
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 259
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 262
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 291
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 294
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 338
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 341
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0.text\0\0\0"
+    CaseSensitive: true
+  - Pos: 387
+    AsciiString: "\0\0\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 395
+    AsciiString: "\0\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0`\0\0`.data\0\0\0"
+    CaseSensitive: true
+  - Pos: 426
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 431
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 434
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 439
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\xC0."
+    CaseSensitive: true
+  - Pos: 463
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 466
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 471
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 474
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 479
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 493
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 496
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 502
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 507
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 511
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 514
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 519
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 533
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 542
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 551
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 559
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 565
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 573
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 582
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 691
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 702
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0U\x89\xE5\x83\xEC(\xC7D$\x04\x04"
+    CaseSensitive: true
+  - Pos: 1037
+    #                    E                 D     $
+    Bytes: [0x00, 0x8D, 0x45, 0xFC, 0x89, 0x44, 0x24, 0x10, 0xA1]
+  - Pos: 1049
+    AsciiString: "\0\xC7E\xFC\0\0\0\0\xC7\x04$\0"
+    CaseSensitive: true
+  - Pos: 1063
+    AsciiString: "\0\x89D$\f\x8DE\xF8\x89D$\b\xE8"
+    CaseSensitive: true
+  - Pos: 1078
+    #                                ]                 t     &           U                             \b
+    Bytes: [0x00, 0x00, 0x89, 0xEC, 0x5D, 0xC3, 0x8D, 0x74, 0x26, 0x00, 0x55, 0x89, 0xE5, 0x83, 0xEC, 0x08, 0xA1]
+  - Pos: 1098
+    #                          t     W
+    Bytes: [0x00, 0x85, 0xC0, 0x74, 0x57, 0xA3]
+  - Pos: 1107
+    Bytes: [0x00, 0xA1]
+  - Pos: 1112
+    #                          u     Z                       t     \"                ␠                 $
+    Bytes: [0x00, 0x85, 0xC0, 0x75, 0x5A, 0x83, 0xF8, 0xE0, 0x74, 0x22, 0x83, 0xC0, 0x20, 0x89, 0x04, 0x24, 0xE8]
+  - Pos: 1131
+    Bytes: [0x00, 0x00, 0x8B, 0x15]
+  - Pos: 1138
+    #                          $           T     $
+    Bytes: [0x00, 0x89, 0x04, 0x24, 0x89, 0x54, 0x24, 0x04, 0xE8]
+  - Pos: 1149
+    AsciiString: "\0\0\xA1"
+    CaseSensitive: true
+  - Pos: 1155
+    #                                t                       @                 $
+    Bytes: [0x00, 0x83, 0xF8, 0xC0, 0x74, 0x1D, 0x83, 0xC0, 0x40, 0x89, 0x04, 0x24, 0xE8]
+  - Pos: 1170
+    Bytes: [0x00, 0x00, 0x8B, 0x15]
+  - Pos: 1177
+    #                          $           T     $
+    Bytes: [0x00, 0x89, 0x04, 0x24, 0x89, 0x54, 0x24, 0x04, 0xE8]
+  - Pos: 1188
+    AsciiString: "\0\0\xE8"
+    CaseSensitive: true
+  - Pos: 1193
+    Bytes: [0x00, 0x00, 0x8B, 0x15]
+  - Pos: 1200
+    #                                      ]                       $
+    Bytes: [0x00, 0x89, 0x10, 0x89, 0xEC, 0x5D, 0xC3, 0x89, 0x04, 0x24, 0xE8]
+  - Pos: 1213
+    Bytes: [0x00, 0x00, 0x8B, 0x15]
+  - Pos: 1220
+    #                          $           T     $
+    Bytes: [0x00, 0x89, 0x04, 0x24, 0x89, 0x54, 0x24, 0x04, 0xE8]
+  - Pos: 1231
+    AsciiString: "\0\0\xA1"
+    CaseSensitive: true
+  - Pos: 1237
+    AsciiString: "\0\xEB\x85\x90\x8D\xB4&\0\0\0\0U\x89\xE5\x83\xEC\x18\x89]\xF8\x8BE\b1\xDB\x89u\xFC1\xF6\x8B\0\x8B\0=\x91\0\0\xC0\x0F\x87\xBE\0\0\0=\x8D\0\0\xC0sg=\x05\0\0\xC0t\x0E\x89\xD8\x8Bu\xFC\x8B]\xF8\x89\xEC]\xC2\x04\0\xC7D$\x04\0\0\0\0\xC7\x04$\v\0\0\0\xE8"
+    CaseSensitive: true
+  - Pos: 1328
+    AsciiString: "\0\0\x83\xF8\x01t\"\x85\xC0t\xD5\xC7\x04$\v\0\0\0\x8D\xB4&\0\0\0\0\x8D\xBC'\0\0\0\0\xFF\xD0\xBB\xFF\xFF\xFF\xFF\xEB\xB7\xC7D$\x04\x01\0\0\0\xC7\x04$\v\0\0\0\xE8"
+    CaseSensitive: true
+  - Pos: 1387
+    AsciiString: "\0\0\xEB\xE3\x90\xBE\x01\0\0\0\xC7D$\x04\0\0\0\0\xC7\x04$\b\0\0\0\xE8"
+    CaseSensitive: true
+  - Pos: 1415
+    #                                      t                                   z                                   $     \b                                        D     $                                               $     \b
+    Bytes: [0x00, 0x00, 0x83, 0xF8, 0x01, 0x74, 0x11, 0x85, 0xC0, 0x0F, 0x84, 0x7A, 0xFF, 0xFF, 0xFF, 0xC7, 0x04, 0x24, 0x08, 0x00, 0x00, 0x00, 0xEB, 0xB1, 0xC7, 0x44, 0x24, 0x04, 0x01, 0x00, 0x00, 0x00, 0xC7, 0x04, 0x24, 0x08, 0x00, 0x00, 0x00, 0xE8]
+  - Pos: 1457
+    #                                t
+    Bytes: [0x00, 0x00, 0x85, 0xF6, 0x74, 0x9B, 0xE8]
+  - Pos: 1466
+    #                                            =                             t           =                             t                 =                                                                       \'                            U                                               $                 @                 ]
+    Bytes: [0x00, 0x00, 0xEB, 0x94, 0x89, 0xF6, 0x3D, 0x93, 0x00, 0x00, 0xC0, 0x74, 0xA9, 0x3D, 0x94, 0x00, 0x00, 0xC0, 0x74, 0xA7, 0xE9, 0x3D, 0xFF, 0xFF, 0xFF, 0x8D, 0xB6, 0x00, 0x00, 0x00, 0x00, 0x8D, 0xBC, 0x27, 0x00, 0x00, 0x00, 0x00, 0x55, 0x89, 0xE5, 0x83, 0xEC, 0x18, 0xC7, 0x04, 0x24, 0xE0, 0x10, 0x40, 0x00, 0x89, 0x5D, 0xFC, 0xE8]
+  - Pos: 1523
+    Bytes: [0x00, 0x00, 0x83, 0xEC, 0x04, 0xE8]
+  - Pos: 1531
+    #                                                        9
+    Bytes: [0x00, 0x00, 0xE8, 0xFE, 0xFD, 0xFF, 0xFF, 0xE8, 0x39, 0xFE, 0xFF, 0xFF, 0xE8]
+  - Pos: 1546
+    AsciiString: "\0\0\xE8"
+    CaseSensitive: true
+  - Pos: 1551
+    AsciiString: "\0\0\x8B\0\x89D$\b\xA1\x04"
+    CaseSensitive: true
+  - Pos: 1563
+    AsciiString: "\0\x89D$\x04\xA1\0"
+    CaseSensitive: true
+  - Pos: 1572
+    #                          $
+    Bytes: [0x00, 0x89, 0x04, 0x24, 0xE8]
+  - Pos: 1579
+    Bytes: [0x00, 0x00, 0x89, 0xC3, 0xE8]
+  - Pos: 1586
+    #                                $
+    Bytes: [0x00, 0x00, 0x89, 0x1C, 0x24, 0xE8]
+  - Pos: 1594
+    AsciiString: "\0\0\x8Dt&\0U\x89\xE5\x83\xEC\b\xC7\x04$\x01\0\0\0\xFF\x15"
+    CaseSensitive: true
+  - Pos: 1618
+    #                                                        1           ]                       U                             \b                $
+    Bytes: [0x00, 0xE8, 0x88, 0xFF, 0xFF, 0xFF, 0x89, 0xEC, 0x31, 0xC0, 0x5D, 0xC3, 0x89, 0xF6, 0x55, 0x89, 0xE5, 0x83, 0xEC, 0x08, 0xC7, 0x04, 0x24, 0x02, 0x00, 0x00, 0x00, 0xFF, 0x15]
+  - Pos: 1650
+    #                    h                                   1           ]                       U                             \b          E     \b                $
+    Bytes: [0x00, 0xE8, 0x68, 0xFF, 0xFF, 0xFF, 0x89, 0xEC, 0x31, 0xC0, 0x5D, 0xC3, 0x89, 0xF6, 0x55, 0x89, 0xE5, 0x83, 0xEC, 0x08, 0x8B, 0x45, 0x08, 0x89, 0x04, 0x24, 0xFF, 0x15]
+  - Pos: 1681
+    #                          ]                 v                       \'                            U                             \b          E     \b                $
+    Bytes: [0x00, 0x89, 0xEC, 0x5D, 0xC3, 0x8D, 0x76, 0x00, 0x8D, 0xBC, 0x27, 0x00, 0x00, 0x00, 0x00, 0x55, 0x89, 0xE5, 0x83, 0xEC, 0x08, 0x8B, 0x45, 0x08, 0x89, 0x04, 0x24, 0xFF, 0x15]
+  - Pos: 1713
+    #                          ]                                                                       U                 ]
+    Bytes: [0x00, 0x89, 0xEC, 0x5D, 0xC3, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x55, 0x89, 0xE5, 0x5D, 0xE9]
+  - Pos: 1735
+    Bytes: [0x00, 0x00, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90, 0x90]
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-LIBGCCW32-EH-SJLJ-GTHR-MINGW32\0U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUNHANDLEDEXCEPTIONFILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBFB_IO_INPUT.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCONSOLEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETCONSOLEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__SET_APP_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0\0\0\0\0\0\0PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__GETMAINARGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETATOMNAMEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTDHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__P__ENVIRON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSVCRT.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CONTROLFP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__P__FMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDATOMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDATOMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SETMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FILENO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ONEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AAAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RT\0W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_IOB"
+    CaseSensitive: false

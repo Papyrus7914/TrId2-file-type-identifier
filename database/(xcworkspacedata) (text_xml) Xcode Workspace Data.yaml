@@ -1,0 +1,17 @@
+Name: Xcode Workspace Data
+URL: "https://en.wikipedia.org/wiki/Xcode"
+FileNameExtensions: ["xcworkspacedata"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<Workspace\n   version = \"1.0\">\n   <"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORKSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEREF"
+    CaseSensitive: false

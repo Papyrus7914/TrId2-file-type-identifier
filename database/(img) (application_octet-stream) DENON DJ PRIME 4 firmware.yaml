@@ -1,0 +1,50 @@
+Name: DENON DJ PRIME 4 firmware
+URL: "https://www.denondj.com/"
+FileNameExtensions: ["img"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \r
+    Bytes: [0xD0, 0x0D, 0xFE, 0xED]
+  - Pos: 92
+    AsciiString: "JC11 upgrade image"
+    CaseSensitive: true
+  - Pos: 124
+    AsciiString: "inmusic,jc11"
+    CaseSensitive: true
+  - Pos: 169
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION\0DATA\0PARTITION\0COMPRESSION\0ALGO\0TIMESTAMP\0VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION\0COMPATIBLE\0INMUSIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATE MODE SPLASH SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JC11 UPGRADE IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICES\0INMUSIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT FILESYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECOVERYSPLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOTFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASH"
+    CaseSensitive: false

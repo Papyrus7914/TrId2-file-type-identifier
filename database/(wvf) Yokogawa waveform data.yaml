@@ -1,0 +1,19 @@
+Name: Yokogawa waveform data
+URL: "http://www.yokogawa.com/"
+FileNameExtensions: ["wvf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%WDF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOKOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATH1"
+    CaseSensitive: false

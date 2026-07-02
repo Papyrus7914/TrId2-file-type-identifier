@@ -1,0 +1,15 @@
+Name: Fighter Bomber Mission (DOS)
+Description: AKA Strike Aces in U.S.A.
+URL: "https://www.mobygames.com/game/strike-aces"
+FileNameExtensions: ["msn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: ".MSN\0\x14\x1E\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".MSN"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: MuPAD Module
+Description: Symbolic and numeric math 32bit software for Windows by SciFace.
+FileNameExtensions: ["mdh"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "M"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-- END-FUNC --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- BEGIN-FUNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTRODUCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false

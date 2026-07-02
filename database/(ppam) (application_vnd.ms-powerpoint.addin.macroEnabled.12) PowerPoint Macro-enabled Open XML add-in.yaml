@@ -1,0 +1,23 @@
+Name: PowerPoint Macro-enabled Open XML add-in
+URL: "https://en.wikipedia.org/wiki/Microsoft_PowerPoint"
+FileNameExtensions: ["ppam"]
+MimeType: application/vnd.ms-powerpoint.addin.macroEnabled.12
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PRESENTATION.XML.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENTATION.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBAPROJECT.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false

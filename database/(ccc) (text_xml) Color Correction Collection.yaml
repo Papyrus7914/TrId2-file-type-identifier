@@ -1,0 +1,16 @@
+Name: Color Correction Collection
+FileNameExtensions: ["ccc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<ColorCorrectionCollection"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLORCORRECTION ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SATNODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOPNODE"
+    CaseSensitive: false

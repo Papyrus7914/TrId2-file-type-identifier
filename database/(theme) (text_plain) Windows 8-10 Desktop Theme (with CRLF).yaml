@@ -1,0 +1,30 @@
+Name: Windows 8-10 Desktop Theme (with CRLF)
+Description: Theme with MTSM=RJSPBS in [MasterThemeSelector] only suited for Windows 8-10
+URL: "http://www.drewkeller.com/content/using-theme-both-windows-7-and-windows-8"
+FileNameExtensions: ["theme"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MASTERTHEMESELECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL PANEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESKTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RJSPBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTSM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

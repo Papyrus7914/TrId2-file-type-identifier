@@ -1,0 +1,41 @@
+Name: Lightworks audio mix
+URL: "https://en.wikipedia.org/wiki/Lightworks"
+FileNameExtensions: ["tmx"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[SimpleMixState]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIMPLEMIXSTATE.MIXCHANNELS.ROUTETOOUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLEMIXSTATE.INPUTCHANNELS.ROUTETOMIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLEMIXSTATE.INPUTCHANNELS.FADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLEMIXSTATE.INPUTCHANNELS.MUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLEMIXSTATE.INPUTCHANNELS.SOLO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLEMIXSTATE.INPUTCHANNELS.PAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLEMIXSTATE.MIXCHANNELS.FADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLEMIXSTATE.MIXCHANNELS.MUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLEMIXSTATE.MIXCHANNELS.SOLO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTWORKS EDITOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHORAPPVERSION"
+    CaseSensitive: false

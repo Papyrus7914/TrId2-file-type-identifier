@@ -1,0 +1,11 @@
+Name: Quadruple D Archiver compressed archive
+URL: "http://fileformats.archiveteam.org/wiki/Quadruple_D_Archiver"
+FileNameExtensions: ["qda"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0QDA0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "QDA0"
+    CaseSensitive: false

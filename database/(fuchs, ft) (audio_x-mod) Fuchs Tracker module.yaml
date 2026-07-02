@@ -1,0 +1,14 @@
+Name: Fuchs Tracker module
+URL: "http://fileformats.archiveteam.org/wiki/Fuchs_Tracker"
+FileNameExtensions: ["fuchs", "ft"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 192
+    AsciiString: "SONG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONG"
+    CaseSensitive: false

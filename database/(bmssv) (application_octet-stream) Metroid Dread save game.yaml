@@ -1,0 +1,17 @@
+Name: Metroid Dread save game
+URL: "https://www.mobygames.com/game/172841/metroid-dread/"
+FileNameExtensions: ["bmssv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 8
+    #                                                  \v          B     f     4
+    Bytes: [0x03, 0x00, 0x01, 0x00, 0xCB, 0xC5, 0xEA, 0x0B, 0xB5, 0x42, 0x66, 0x34]
+  - Pos: 21
+    AsciiString: "\0\0\0\"\xB1kCm\x9E\xC8\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW"
+    CaseSensitive: false

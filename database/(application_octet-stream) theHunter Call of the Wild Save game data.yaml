@@ -1,0 +1,16 @@
+Name: "theHunter: Call of the Wild Save game data"
+URL: "https://www.mobygames.com/game/85258/thehunter-call-of-the-wild/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SAVE"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "COMP\x01\x01\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0\0\0x\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false

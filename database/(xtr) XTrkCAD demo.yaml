@@ -1,0 +1,31 @@
+Name: XTrkCAD demo
+URL: "http://www.xtrkcad.org"
+FileNameExtensions: ["xtr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VERSION "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEMOINIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDRAW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIG"
+    CaseSensitive: false

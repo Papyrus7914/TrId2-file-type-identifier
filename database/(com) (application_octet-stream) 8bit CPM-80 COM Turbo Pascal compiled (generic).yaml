@@ -1,0 +1,37 @@
+Name: 8bit CP/M-80 COM Turbo Pascal compiled (generic)
+URL: "https://en.wikipedia.org/wiki/Turbo_Pascal"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xC3]
+  - Pos: 3
+    AsciiString: "\xCD\xABCopyright (C) 198"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: " BORLAND Inc\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 198"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORLAND INC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER BREAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUEFALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN-TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false

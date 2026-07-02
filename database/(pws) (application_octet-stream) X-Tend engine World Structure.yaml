@@ -1,0 +1,35 @@
+Name: X-Tend engine World Structure
+URL: "https://www.igdb.com/game_engines/x-tend"
+FileNameExtensions: ["pws"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PWS \x80\0\0\0\xCC\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODEL COMPILER V1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XTEND WORLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISSION0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WALL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATE"
+    CaseSensitive: false

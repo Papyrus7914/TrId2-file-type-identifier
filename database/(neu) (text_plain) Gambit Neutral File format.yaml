@@ -1,0 +1,38 @@
+Name: Gambit Neutral File format
+URL: "https://web.stanford.edu/class/me469b/handouts/gambit_write.pdf"
+FileNameExtensions: ["neu"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "        CONTROL INFO "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMNP     NELEM     NGRPS    NBSETS     NDFCD     NDFVL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "** GAMBIT NEUTRAL FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODAL COORDINATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENT GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDOFSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLS"
+    CaseSensitive: false

@@ -1,0 +1,15 @@
+Name: OpenOffice/LibreOffice type library database (UNOIDL)
+Description: binary UNOIDL based; format used since version 4.1
+URL: "https://www.openoffice.org/dev_docs/source/file_extensions.html"
+FileNameExtensions: ["rdb"]
+MimeType: application/vnd.sun.star.uno-typelibrary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "UNOIDL\xFF\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0\0\0\0** Created by LibreOffice "
+    CaseSensitive: true

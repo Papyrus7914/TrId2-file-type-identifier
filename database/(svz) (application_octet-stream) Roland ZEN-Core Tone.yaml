@@ -1,0 +1,20 @@
+Name: Roland ZEN-Core Tone
+URL: "https://www.roland.com/it/promos/zen-core/"
+FileNameExtensions: ["svz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SVZa"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "DIFaZCOR"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "PATaZCOR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIFAZCOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATAZCOR"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Xilam DERF audio
+URL: "https://wiki.multimedia.cx/index.php/Xilam_DERF"
+FileNameExtensions: ["adp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DERF"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

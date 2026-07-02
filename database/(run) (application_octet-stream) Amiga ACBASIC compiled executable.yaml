@@ -1,0 +1,44 @@
+Name: Amiga AC/BASIC compiled executable
+URL: "https://en.wikipedia.org/wiki/Absoft"
+FileNameExtensions: ["run"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x03\xF3\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\x98\0\0\x03\xE9\0\0\0\x98`\0\0\x1E\0\0\xAB\xCD\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x02"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "H\xE7\x80\x80,x\0\x04x\0C\xFA\x02\x02azg\0\x01\xE4/\0*\0C\xFA\x02\x06alf\x06~\x02`\0\0\xAE*@/\0\x93\xC9<<\xFE\xDAa^(@/\0J\xAC\0\xACf\x04a<(\0/\x04C\xFA\xFF\xB8 \x11/\0r\0<<\xFF:a>gj/\0$!\":\xFF\x8Ev\xFF<<\xFF\xBEa0kBL\xD7\0\f<<\xFF\xD6a$o:\"_Hz\0<N\xD1A\xEC\0\\<<\xFE\x80a\f<<\xFE\x8C`\x06p\0<<\xFD\xD8&N`\x02&MH\xE7@\xCE,KN\xB6`\0L\xDFs\x02J\x80Nu~\x01`\x02~\x02HGRG\"_ \x1F<<\xFF.a\xD4`\x06~\x01HGXOO\xEF\0\x18\"M,x\0\x04N\xAE\xFEb,\a\xCE\xFC\0\x18C\xFA\0h\xD3\xC7E\xFA\0\xE6$\x89BFHFg\b\x06\x06\00\x13F\0\x16C\xFA\x018E\xFA\0\xE2$\x89C\xFA\x016E\xFA\0\xEC$\x89\x91\xC8C\xFA\0\xB0E\xFA\0\xD4G\xFA\0\xBCphrh$<\0\0\x01@vB,EN\xAE\xFE\xA4\"N,x\0\x04N\xAE\xFEbJ\x84g\nN\xAE\xFF|\"DN\xAE\xFE\x86pdNuInsufficient memory -  \0i/o error occurred  -  \0Error opening Dos Lib  \0Unable to find bas.dl  \0Unable to find bas.rl  \0\0\x01\x01\0\0\n\0\n\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\x01\0\0\x06\0\x03\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\x01\0\0\x06\0\x03\0\0\0\0\0\0\0\0\0\0\0\0.<\x80\x03\x80\x04POa\x04\0\0\0\x01*_N\xAE\xFF\x94`\0\xFF$intuition.library\0dos.library\0Cancel\0\0Ok\0\0NqNq\0\0\0\x01\0\0\x03\xF2\0\0\x03\xF5\0\0\0"
+    CaseSensitive: true
+  - Pos: 652
+    AsciiString: "\0\0\0\x03\0\0\0\0\0\0\0\0\0\0\0\0\x18\0p\x18(j\x02\xE4\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "O ERROR OCCURRED  -  \0ERROR OPENING DOS LIB  \0UNABLE TO FIND BAS.DL  \0UNABLE TO FIND BAS.RL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$INTUITION.LIBRARY\0DOS.LIBRARY\0CANCEL\0\0OK\0\0NQNQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDNUINSUFFICIENT MEMORY -  \0I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAS.RL\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HGRG.H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A0KBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BFHFG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HGXOO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHRH$"
+    CaseSensitive: false

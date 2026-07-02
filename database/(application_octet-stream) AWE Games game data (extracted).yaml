@@ -1,0 +1,14 @@
+Name: AWE Games game data (extracted)
+Description: Item from an 0MF2 .OMT archive.
+URL: "https://mitchell.fandom.com/wiki/AWE_Games"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OmCv"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "OmGW"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OMGW"
+    CaseSensitive: false

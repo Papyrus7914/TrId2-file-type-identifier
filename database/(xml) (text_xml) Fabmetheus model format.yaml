@@ -1,0 +1,11 @@
+Name: Fabmetheus model format
+URL: "http://fabmetheus.blogspot.com/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version='1.0'"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FABMETHEUS"
+    CaseSensitive: false

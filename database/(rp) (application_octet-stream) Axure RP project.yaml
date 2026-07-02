@@ -1,0 +1,43 @@
+Name: Axure RP project
+URL: "https://www.axure.com/"
+FileNameExtensions: ["rp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xAC, 0xEF]
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THUMBNAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$3BR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false

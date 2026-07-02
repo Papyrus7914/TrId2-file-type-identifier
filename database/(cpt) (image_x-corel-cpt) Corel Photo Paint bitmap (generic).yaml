@@ -1,0 +1,12 @@
+Name: Corel Photo Paint bitmap (generic)
+Description: At offset 3 version "7","8" or "9" is stored. Older use a TIFF like structure.
+URL: "http://fileformats.archiveteam.org/wiki/Corel_Photo-Paint_image"
+FileNameExtensions: ["cpt"]
+MimeType: image/x-corel-cpt
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CPT"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "FILE"
+    CaseSensitive: true

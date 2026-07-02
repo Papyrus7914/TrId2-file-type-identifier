@@ -1,0 +1,32 @@
+Name: 4D Write document
+URL: "https://en.wikipedia.org/wiki/4th_Dimension_(software)"
+FileNameExtensions: ["4wr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "4WRTDOCU\0\0\0%"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "PRNT\0\0\0x\0"
+    CaseSensitive: true
+  - Pos: 186
+    AsciiString: "FORM\0\0\0.PARAPARA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORM\0\0\0.PARAPARA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4WRTDOCU\0\0\0%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT\0\0\0\0STYL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FNTSFNTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRNT\0\0\0X"
+    CaseSensitive: false

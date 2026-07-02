@@ -1,0 +1,10 @@
+Name: Texas Instruments file format (TI-73 series)
+URL: "https://en.wikipedia.org/wiki/TI-73_series"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "**TI73"
+    CaseSensitive: true
+  - Pos: 7
+    #        *
+    Bytes: [0x2A, 0x1A]

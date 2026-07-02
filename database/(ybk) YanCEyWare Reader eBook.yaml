@@ -1,0 +1,28 @@
+Name: YanCEyWare Reader eBook
+URL: "http://www.yanceydesktop.com/eBooks/ebooks.htm"
+FileNameExtensions: ["ybk"]
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "\\BINDING.HTML"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "\\BOOKMETADATA.HTML.GZ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOOKMETADATA.HTML.GZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINDING.HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

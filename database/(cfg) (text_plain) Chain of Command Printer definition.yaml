@@ -1,0 +1,32 @@
+Name: Chain of Command Printer definition
+Description: DOS charting program by Kyocera Unison, Inc.
+FileNameExtensions: ["cfg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "name = \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GRAPHQUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORZQUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTERTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTQUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

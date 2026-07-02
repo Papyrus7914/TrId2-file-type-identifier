@@ -1,0 +1,23 @@
+Name: Isearch Database Info
+Description: Isearch is a full-text searching system published under an open source license.
+URL: "http://www.etymon.com/Isearch/"
+FileNameExtensions: ["dbi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "+DbInfo\n +VersionNumber\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "+VERSIONNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+MAGICNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+BIGENDIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+DOCTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+DBINFO"
+    CaseSensitive: false

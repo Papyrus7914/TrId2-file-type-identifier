@@ -1,0 +1,49 @@
+Name: 16bit DOS EXE GIFEXE (generic)
+URL: "http://fileformats.archiveteam.org/wiki/GIFEXE"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\x80\0\0\0\x0E\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1C\0\0\0PK1\xF5\xFF\xFF\xBA"
+    CaseSensitive: true
+  - Pos: 37
+    #        .
+    Bytes: [0x2E, 0x89, 0x16]
+  - Pos: 41
+    #                    0           !           .                                         ,
+    Bytes: [0x02, 0xB4, 0x30, 0xCD, 0x21, 0x8B, 0x2E, 0x02, 0xFF, 0xFF, 0x00, 0x8B, 0x1E, 0x2C, 0x00, 0x8E, 0xDA, 0xA3, 0x92, 0x00, 0x8C, 0x06, 0x90, 0x00, 0x89, 0x1E, 0xF0]
+  - Pos: 69
+    #                    .
+    Bytes: [0x8C, 0xFC, 0x2E, 0xA8, 0x00, 0xE8]
+  - Pos: any
+    AsciiString: "STACK O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIFEXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*FAB*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIF8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGH"
+    CaseSensitive: false

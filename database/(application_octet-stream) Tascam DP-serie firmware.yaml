@@ -1,0 +1,10 @@
+Name: Tascam DP-serie firmware
+URL: "https://en.wikipedia.org/wiki/TASCAM"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DP-"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true

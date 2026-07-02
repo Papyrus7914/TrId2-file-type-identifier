@@ -1,0 +1,162 @@
+Name: CRIWARE CPK game data container (encrypted)
+URL: "https://www.mobygames.com/company/2247/cri-middleware-co-ltd/"
+FileNameExtensions: ["cpk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CPK \0\0\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0\0\0\0\0\x1F\x9E\xF3\xF5\xAF["
+    CaseSensitive: true
+  - Pos: 24
+    Bytes: [0xFF]
+  - Pos: 26
+    AsciiString: "G"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "O{\x16"
+    CaseSensitive: true
+  - Pos: 32
+    #              \v
+    Bytes: [0x9F, 0x0B]
+  - Pos: 36
+    #                                ?
+    Bytes: [0xEF, 0x9B, 0xB7, 0x04, 0x3F]
+  - Pos: 42
+    Bytes: [0x87]
+  - Pos: 44
+    #                    W     \"          K     \'    3     >                 C           K           S                       5                 g     D
+    Bytes: [0x8F, 0xBB, 0x57, 0x22, 0x89, 0x4B, 0x27, 0x33, 0x3E, 0xCD, 0xF7, 0x43, 0x7F, 0x4B, 0x91, 0x53, 0xCF, 0xFB, 0xBE, 0x35, 0x1F, 0x8B, 0x67, 0x44]
+  - Pos: 69
+    #              7
+    Bytes: [0x1B, 0x37, 0x83, 0xFC]
+  - Pos: 74
+    #        \a                v
+    Bytes: [0x07, 0x93, 0x0F, 0x76]
+  - Pos: 79
+    #              _
+    Bytes: [0xA3, 0x5F, 0xCB, 0xF2]
+  - Pos: 84
+    #              [     w
+    Bytes: [0xAF, 0x5B, 0x77, 0x9F]
+  - Pos: 89
+    #              G           (
+    Bytes: [0xEB, 0x47, 0xD3, 0x28]
+  - Pos: 94
+    #                          {
+    Bytes: [0x17, 0xE3, 0x9F, 0x7B]
+  - Pos: 99
+    Bytes: [0xF3, 0xEF, 0x9B, 0xCC]
+  - Pos: 104
+    #        ?     +
+    Bytes: [0x3F, 0x2B, 0x87, 0x97]
+  - Pos: 109
+    AsciiString: "\xBBW#"
+    CaseSensitive: true
+  - Pos: 114
+    AsciiString: "'3/"
+    CaseSensitive: true
+  - Pos: 119
+    AsciiString: "C\x7Fkg"
+    CaseSensitive: true
+  - Pos: 124
+    Bytes: [0xCF, 0xFB, 0x97]
+  - Pos: 129
+    AsciiString: "\x8Bgs"
+    CaseSensitive: true
+  - Pos: 133
+    #        \r    7
+    Bytes: [0x0D, 0x37, 0x83, 0xBF]
+  - Pos: 139
+    #                    ;
+    Bytes: [0x93, 0x0F, 0x3B]
+  - Pos: 144
+    #        _
+    Bytes: [0x5F, 0xCB, 0xA7]
+  - Pos: 149
+    AsciiString: "[w\xC3"
+    CaseSensitive: true
+  - Pos: 154
+    AsciiString: "G\xD3O"
+    CaseSensitive: true
+  - Pos: 158
+    Bytes: [0x03, 0xE3, 0x9F]
+  - Pos: 164
+    Bytes: [0xEF, 0x9B]
+  - Pos: 169
+    #        +
+    Bytes: [0x2B, 0x87, 0x12]
+  - Pos: 174
+    AsciiString: "W#\xDE"
+    CaseSensitive: true
+  - Pos: 179
+    AsciiString: "3/\xDA"
+    CaseSensitive: true
+  - Pos: 184
+    #              k
+    Bytes: [0x7F, 0x6B, 0xC6]
+  - Pos: 189
+    #                    b
+    Bytes: [0xFB, 0x97, 0x62]
+  - Pos: 194
+    AsciiString: "gsn"
+    CaseSensitive: true
+  - Pos: 199
+    Bytes: [0x83, 0xBF, 0xAA]
+  - Pos: 204
+    #              ;
+    Bytes: [0x0F, 0x3B, 0xD6]
+  - Pos: 209
+    Bytes: [0xCB, 0xA7, 0xB2]
+  - Pos: 214
+    #        w
+    Bytes: [0x77, 0xC3, 0xFE]
+  - Pos: 219
+    AsciiString: "\xD3Oz"
+    CaseSensitive: true
+  - Pos: 224
+    #              \v
+    Bytes: [0x9F, 0x0B]
+  - Pos: 229
+    Bytes: [0x9B]
+  - Pos: 234
+    Bytes: [0x87, 0x13]
+  - Pos: 239
+    #        #
+    Bytes: [0x23, 0xDF]
+  - Pos: 249
+    #        k
+    Bytes: [0x6B, 0xC7]
+  - Pos: 254
+    #              c
+    Bytes: [0x97, 0x63]
+  - Pos: 259
+    AsciiString: "so"
+    CaseSensitive: true
+  - Pos: 270
+    Bytes: [0xD7, 0xA3]
+  - Pos: 278
+    #        w
+    Bytes: [0x77, 0xC3]
+  - Pos: 283
+    AsciiString: "\xD3O{"
+    CaseSensitive: true
+  - Pos: 287
+    Bytes: [0xE3, 0x9F]
+  - Pos: 291
+    Bytes: [0xF3]
+  - Pos: 293
+    Bytes: [0x9B, 0xB7]
+  - Pos: 297
+    AsciiString: "+"
+    CaseSensitive: true
+  - Pos: 303
+    AsciiString: "#\xDFK"
+    CaseSensitive: true
+  - Pos: 315
+    AsciiString: "S"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ITOC"
+    CaseSensitive: false

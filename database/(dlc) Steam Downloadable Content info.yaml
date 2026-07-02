@@ -1,0 +1,24 @@
+Name: Steam Downloadable Content info
+FileNameExtensions: ["dlc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "name = \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AFFECTS_CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMERSGATE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEAM_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

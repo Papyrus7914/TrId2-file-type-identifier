@@ -1,0 +1,56 @@
+Name: 3Shape Dental System Dental Model Exchange library
+URL: "https://www.3shape.com/"
+FileNameExtensions: ["dme"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "ORDERIMPORTCONFIGURATION.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDERFORMCUSTOMIZATION.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARYIMPORTINFO.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANUFACTURERS.3ML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORTEDSYSTEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPLANTSYSTEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALS.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABUTMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPGS.3ML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ANALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DCMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DCMUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3SHAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CONN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAN"
+    CaseSensitive: false

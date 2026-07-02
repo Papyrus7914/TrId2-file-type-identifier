@@ -1,0 +1,11 @@
+Name: Extensible 3D vector graphics (binary)
+URL: "http://fileformats.archiveteam.org/wiki/X3D"
+FileNameExtensions: ["x3db"]
+MimeType: model/x3d+binary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE0\0\0\x01 \x10\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "urn:"
+    CaseSensitive: true

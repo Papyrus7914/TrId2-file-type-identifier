@@ -1,0 +1,97 @@
+Name: Microsoft Windows Installer Patch Creation Properties
+URL: "https://en.wikipedia.org/wiki/Windows_Installer"
+FileNameExtensions: ["pcp"]
+MimeType: application/x-ms-pcp
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1]
+  - Pos: any
+    AsciiString: "TARGETFILES_OPTIONALDATATARGETIMAGESMSIPATHUPGRADEDPRODUCTVALIDATEFLAGSIGNOREMISSINGSRCFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APIPATCHINGSYMBOLFLAGS0X00000000DONTREMOVETEMPFOLDERWHENFINISHEDINCLUDEWHOLEFILESONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEFAMILIESMEDIASRCPROPNAMEMEDIADISKIDFILESEQUENCESTARTDISKPROMPTVOLUMELABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIESALLOWPRODUCTCODEMISMATCHESALLOWPRODUCTVERSIONMAJORMISMATCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORDERRETAINOFFSETSIGNORELENGTHSIGNOREOFFSETSSYMBOLPATHSFILEPATHFTK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPGRADEDFILES_OPTIONALDATAALLOWIGNOREONPATCHERRORINCLUDEWHOLEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCHMETADATACOMPANYPROPERTYVALUEALLOWREMOVAL1CLASSIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTOFPATCHGUIDSTOREPLACELISTOFTARGETPRODUCTCODES*PATCHGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCHSEQUENCEPATCHFAMILYTARGETSEQUENCESUPERSEDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EUPGRADEDIMAGESPATCHMSIPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFILEUPGRADEDFILESTOIGNORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAMILYEXTERNALFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETPRODUCTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS INSTALLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAMILYFILERANGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANUFACTURERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESRETAINLENGTHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCHOUTPUTPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCHSOURCELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCH CREATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOREINFOURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MSPPATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATHC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WELDJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

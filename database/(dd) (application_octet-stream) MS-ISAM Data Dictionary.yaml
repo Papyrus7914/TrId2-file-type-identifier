@@ -1,0 +1,19 @@
+Name: MS-ISAM Data Dictionary
+FileNameExtensions: ["dd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "* Data Dictionary for file: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".DAT -- CREATED BY VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OF MS-ISAM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false

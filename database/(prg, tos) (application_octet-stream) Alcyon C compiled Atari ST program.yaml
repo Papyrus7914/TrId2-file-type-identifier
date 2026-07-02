@@ -1,0 +1,55 @@
+Name: Alcyon C compiled Atari ST program
+Description: Atari's proprietary C compiler from the Atari Developer Kit.
+FileNameExtensions: ["prg", "tos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0`\n"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "E\x1Bf\x1Bv\0\0\0\0*o\0\x04M\xED"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: " m\0\f\xD1\xED\0\x14\xD1\xED\0\x1C\xD0\xFC\x01\0HPHUBg?<\0JNA(m\0\x18)m\0\x10\n\xDE -\0\x14\x04\x80\0\0\0"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "\x12:\0\xB0g\x02S\x80)@\n\xE6 -\0\x1CO\xF4\b\0K\xEC1\xFE\xDB\xFC\0\0\x80\0\xA0\0"
+    CaseSensitive: true
+  - Pos: 136
+    #                    N
+    Bytes: [0x00, 0x02, 0x4E, 0xAE]
+  - Pos: 142
+    AsciiString: "Hx\xFF\xFF?<\0HNA\x04\x80\0\0@\0)@\0l/\0?<\0HNA)@\0h&@)@\0X"
+    CaseSensitive: true
+  - Pos: 266
+    #        N
+    Bytes: [0x4E, 0xAE, 0x01]
+  - Pos: 270
+    #        N
+    Bytes: [0x4E, 0xEE]
+  - Pos: 275
+    Bytes: [0x00, 0xFF, 0xFF, 0x80, 0x00, 0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "NUP\0R\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSNBNUC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HPHUBG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JNA(M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUPEA"
+    CaseSensitive: false

@@ -1,0 +1,47 @@
+Name: GIMP Tool Preset
+URL: "https://en.wikipedia.org/wiki/GIMP"
+FileNameExtensions: ["gtp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# GIMP tool preset file"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END OF GIMP TOOL PRESET FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TOOL-OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(USE-DYNAMICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(USE-GRADIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(USE-PALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(USE-PATTERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(USE-BRUSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(USE-FG-BG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(STOCK-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(USE-FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-TOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIMP-"
+    CaseSensitive: false

@@ -1,0 +1,19 @@
+Name: "\"The Sims\" object"
+URL: "http://thesims.ea.com"
+FileNameExtensions: ["iff"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IFF FILE "
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: ":TYPE FOLLOWED BY SIZE\0 JAMIE DOORNBOS & MAXIS "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IFF FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIS"
+    CaseSensitive: false

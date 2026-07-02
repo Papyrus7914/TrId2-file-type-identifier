@@ -1,0 +1,9 @@
+Name: PhotoChrome bitmap
+Description: Atari ST graphics format.
+URL: "http://fileformats.archiveteam.org/wiki/PhotoChrome"
+FileNameExtensions: ["pcs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              @
+    Bytes: [0x01, 0x40, 0x00, 0xC8]

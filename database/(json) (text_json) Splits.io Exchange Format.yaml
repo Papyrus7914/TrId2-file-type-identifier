@@ -1,0 +1,86 @@
+Name: Splits.io Exchange Format
+URL: "https://splits.io/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  \"_schemaVersion\": \"v"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SPLITS.IO EXCHANGE FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SCHEMAVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BESTDURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMETIMEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GITHUB.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REALTIMEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLITSIOID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISTORIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSKIPPED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLITS-IO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTEMPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLACIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDEDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNNERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBSITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREE"
+    CaseSensitive: false

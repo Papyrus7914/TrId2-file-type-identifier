@@ -1,0 +1,11 @@
+Name: Google Open Buildings data
+URL: "https://sites.research.google/gr/open-buildings/"
+FileNameExtensions: ["csv"]
+MimeType: text/csv
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "latitude,longitude,area_in_meters,confidence,geometry,full_plus_code\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POLYGON(("
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: Microsoft Exchange Server Shortcut
+URL: "http://www.microsoft.com/exchange"
+FileNameExtensions: ["xnk"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x05\0\0\0\x03\0\0\0\0\0\0\0\x05\0\0\0\x01\0\0\0 \0\0\0\x10\0\0\0\0\x02\0\0P\x01\0\0\x80\0\0\0\0\0\0\0\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "\0\0\0\0\0\08\xA1\xBB\x10\x05\xE5\x10\x1A\xA1\xBB\b\0+*V\xC2\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false

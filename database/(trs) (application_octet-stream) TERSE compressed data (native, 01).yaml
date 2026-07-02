@@ -1,0 +1,8 @@
+Name: TERSE compressed data (native, 01)
+URL: "http://fileformats.archiveteam.org/wiki/TERSE"
+FileNameExtensions: ["trs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    i
+    Bytes: [0x01, 0x89, 0x69, 0xA5]

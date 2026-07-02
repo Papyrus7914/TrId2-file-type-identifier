@@ -1,0 +1,14 @@
+Name: PC-Label Label
+URL: "https://en.wikipedia.org/wiki/PC-File"
+FileNameExtensions: ["lbl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE1PC-Label"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PC-LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DBF"
+    CaseSensitive: false

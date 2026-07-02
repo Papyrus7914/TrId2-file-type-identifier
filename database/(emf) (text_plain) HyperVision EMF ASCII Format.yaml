@@ -1,0 +1,36 @@
+Name: HyperVision EMF ASCII Format
+Description: Used in FusionCore software by Ascension Technology Corp.
+URL: "http://www.ascension-tech.com/"
+FileNameExtensions: ["emf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EMF1.0     ## HyperVision EMF ASCII Format"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STARTTIMEOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTICALMARKERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

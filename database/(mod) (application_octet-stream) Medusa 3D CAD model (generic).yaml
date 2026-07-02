@@ -1,0 +1,14 @@
+Name: Medusa 3D CAD model (generic)
+URL: "https://www.cad-schroer.com/"
+FileNameExtensions: ["mod"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(W\x17M3DAPPL"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "MODEL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false

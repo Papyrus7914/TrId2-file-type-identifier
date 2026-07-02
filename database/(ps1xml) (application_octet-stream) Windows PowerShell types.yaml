@@ -1,0 +1,35 @@
+Name: Windows PowerShell types
+URL: "https://en.wikipedia.org/wiki/Windows_PowerShell"
+FileNameExtensions: ["ps1xml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GETSCRIPTBLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTPROPERTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMBERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$THIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

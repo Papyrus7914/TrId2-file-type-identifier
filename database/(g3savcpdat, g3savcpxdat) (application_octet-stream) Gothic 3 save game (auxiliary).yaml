@@ -1,0 +1,11 @@
+Name: Gothic 3 save game (auxiliary)
+URL: "https://www.mobygames.com/game/24456/gothic-3/"
+FileNameExtensions: ["g3savcpdat", "g3savcpxdat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GENOMFLE"
+    CaseSensitive: true
+  - Pos: 16
+    #        x
+    Bytes: [0x78, 0x9C]

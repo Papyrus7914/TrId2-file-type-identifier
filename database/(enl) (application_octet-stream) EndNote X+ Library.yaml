@@ -1,0 +1,11 @@
+Name: EndNote X+ Library
+URL: "http://fileformats.archiveteam.org/wiki/EndNote_Library"
+FileNameExtensions: ["enl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "refs.MYD"
+    CaseSensitive: true

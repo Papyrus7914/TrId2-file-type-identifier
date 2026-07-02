@@ -1,0 +1,17 @@
+Name: Mario Sequencer song
+URL: "http://fileformats.archiveteam.org/wiki/Mario_Sequencer_file"
+FileNameExtensions: ["msq"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SCORE="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

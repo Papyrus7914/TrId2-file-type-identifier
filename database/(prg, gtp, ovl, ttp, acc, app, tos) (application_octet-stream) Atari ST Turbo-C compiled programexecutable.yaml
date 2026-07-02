@@ -1,0 +1,35 @@
+Name: Atari ST Turbo-C compiled program/executable
+URL: "https://www.atariuptodate.de/en/1192/pure-c"
+FileNameExtensions: ["prg", "gtp", "ovl", "ttp", "acc", "app", "tos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0`"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TURBO-C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$_NU"
+    CaseSensitive: false

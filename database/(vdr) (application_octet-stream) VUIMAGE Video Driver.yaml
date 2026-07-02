@@ -1,0 +1,12 @@
+Name: VUIMAGE Video Driver
+FileNameExtensions: ["vdr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "\0\0\0\0\0VGVIDCED"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VGVIDCED"
+    CaseSensitive: false

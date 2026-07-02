@@ -1,0 +1,31 @@
+Name: 16bit COM executable Freeloader
+Description: MS-DOS loader tool by Jeff Tucker.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "flqvzr\x04\0\x01\0P\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xCD \xF3\xA4\x83\xFB\0t\x19\xB9\xF0\xFF\x8C\xD8\x03\xC2\x8E\xD8\x8C\xC0\x03\xC2\xBA\xFF\x0F\x8E\xC03\xFF3\xF6K\xEB\xE0^_YZX\x8E\xD8\x8E\xC0\xFA\x8E\xD2\x8B\xE1\xFBWV\xCB"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".PGM\0NOT ENOUGH MEMORY.  SEE APPENDIX A."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CANNOT READ FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALVINPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLQVZR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEREP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VWQR"
+    CaseSensitive: false

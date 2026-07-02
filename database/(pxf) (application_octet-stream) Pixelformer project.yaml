@@ -1,0 +1,26 @@
+Name: Pixelformer project
+URL: "http://www.qualibyte.com/pixelformer/"
+FileNameExtensions: ["pxf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PFP1"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "CREA"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "Pixelformer "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYR"
+    CaseSensitive: false

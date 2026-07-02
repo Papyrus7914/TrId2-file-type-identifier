@@ -1,0 +1,14 @@
+Name: ODI link driver configuration
+URL: "https://en.wikipedia.org/wiki/Open_Data-Link_Interface"
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LINK DRIVER "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROTOCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME"
+    CaseSensitive: false

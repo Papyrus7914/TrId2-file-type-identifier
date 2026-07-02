@@ -1,0 +1,31 @@
+Name: Amiga ProWrite/QuickWrite document
+Description: Word processors for Amiga.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WORDFONT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORDFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

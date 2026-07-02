@@ -1,0 +1,16 @@
+Name: Source Engine Compiled AI Nodegraph
+URL: "http://en.wikipedia.org/wiki/Source_(game_engine)"
+FileNameExtensions: ["ain"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Version\t"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOTALNUMLINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMNODES"
+    CaseSensitive: false

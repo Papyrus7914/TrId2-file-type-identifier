@@ -1,0 +1,17 @@
+Name: Whatsapp messages Database (Symbian)
+URL: "https://en.wikipedia.org/wiki/WhatsApp"
+FileNameExtensions: ["db"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "P\0\0\x10\xBE\x0E\0\x10\0\0\0\0\x1F#c\xE5"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 192
+    AsciiString: "\0"
+    CaseSensitive: true

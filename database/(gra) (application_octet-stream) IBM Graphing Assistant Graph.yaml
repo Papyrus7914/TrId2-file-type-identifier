@@ -1,0 +1,16 @@
+Name: IBM Graphing Assistant Graph
+FileNameExtensions: ["gra"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "graf"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE\0ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPH"
+    CaseSensitive: false

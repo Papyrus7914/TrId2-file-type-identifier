@@ -1,0 +1,20 @@
+Name: Mesen Recent Game Data
+URL: "https://www.mesen.ca/"
+FileNameExtensions: ["rgd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Screenshot.png"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCREENSHOT.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVESTATE.MSTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROMINFO.TXTPK"
+    CaseSensitive: false

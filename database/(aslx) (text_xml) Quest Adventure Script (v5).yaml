@@ -1,0 +1,23 @@
+Name: Quest Adventure Script (v5)
+URL: "http://docs.textadventures.co.uk/quest/aslx.html"
+FileNameExtensions: ["aslx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INHERIT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASL VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYER"
+    CaseSensitive: false

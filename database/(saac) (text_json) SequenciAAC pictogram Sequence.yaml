@@ -1,0 +1,53 @@
+Name: SequenciAAC pictogram Sequence
+URL: "https://sequenciaac.arasaac.org/"
+FileNameExtensions: ["saac"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"sequence\":[{\"indexSequence\":0,\"img\":{\"searched\":{\"word\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INDEXSEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BESTIDPICTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTEDID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDEROUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDERIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CROSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORD"
+    CaseSensitive: false

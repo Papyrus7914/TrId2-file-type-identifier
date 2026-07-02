@@ -1,0 +1,11 @@
+Name: DynOS compiled geometry (SM64)
+URL: "https://github.com/alex-d-91/sm64-port/tree/dynos"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DYNOSBIN"
+    CaseSensitive: true
+  - Pos: 16
+    #        x
+    Bytes: [0x78, 0xDA]

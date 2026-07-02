@@ -1,0 +1,19 @@
+Name: MagicPlot Project
+URL: "http://magicplot.com"
+FileNameExtensions: ["mppz"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PROJECT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAGICPLOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VER."
+    CaseSensitive: false

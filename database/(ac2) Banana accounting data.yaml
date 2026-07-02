@@ -1,0 +1,29 @@
+Name: Banana accounting data
+URL: "http://www.banana.ch/"
+FileNameExtensions: ["ac2"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0d\0\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\x01\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 78
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0N\x04\0"
+    CaseSensitive: true
+  - Pos: 105
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 121
+    Bytes: [0xFF]
+  - Pos: 123
+    Bytes: [0xFF]

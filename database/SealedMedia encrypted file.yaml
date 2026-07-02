@@ -1,0 +1,21 @@
+Name: SealedMedia encrypted file
+URL: "http://www.sealedmedia.com"
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SoftSEAL "
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\nA SealedMedia Unsealer-enabled browser is required to display this content\n(see http://www.sealedmedia.com/)"
+    CaseSensitive: true

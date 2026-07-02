@@ -1,0 +1,33 @@
+Name: H2testw test data
+Description: test data written/read by h2testw and f3. Can be deleted after testing is done.
+URL: "http://oss.digirati.com.br/f3/"
+FileNameExtensions: ["h2w"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x11\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 16
+    Bytes: [0x10, 0x01, 0x00]
+  - Pos: 22
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 24
+    Bytes: [0x01, 0x10, 0x00]
+  - Pos: 32
+    AsciiString: " \xF0\0"
+    CaseSensitive: true
+  - Pos: 39
+    Bytes: [0x00, 0xF1, 0x11, 0x0E]
+  - Pos: 48
+    AsciiString: "0\r\xD3"
+    CaseSensitive: true
+  - Pos: 56
+    #                    ]
+    Bytes: [0xE1, 0xC5, 0x5D]

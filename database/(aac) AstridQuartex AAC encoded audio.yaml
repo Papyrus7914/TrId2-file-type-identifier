@@ -1,0 +1,13 @@
+Name: Astrid/Quartex AAC encoded audio
+URL: "http://www.rjamorim.com/rrw/astrid.html"
+FileNameExtensions: ["aac"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AAC\0\x01\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0D\xAC"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0`\b"
+    CaseSensitive: true

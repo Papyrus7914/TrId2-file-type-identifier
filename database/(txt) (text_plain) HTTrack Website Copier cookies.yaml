@@ -1,0 +1,11 @@
+Name: HTTrack Website Copier cookies
+URL: "https://en.wikipedia.org/wiki/HTTrack"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# HTTrack Website Copier Cookie File"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS FILE FORMAT IS COMPATIBLE WITH NETSCAPE COOKIES"
+    CaseSensitive: false

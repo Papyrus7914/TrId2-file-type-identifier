@@ -1,0 +1,19 @@
+Name: Odin Partition Information Table
+URL: "http://forum.xda-developers.com/showthread.php?p=9122369"
+FileNameExtensions: ["pit"]
+DetectionPatterns:
+  - Pos: 0
+    #        v           4
+    Bytes: [0x76, 0x98, 0x34, 0x12]
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

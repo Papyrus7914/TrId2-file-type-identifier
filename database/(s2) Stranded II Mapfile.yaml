@@ -1,0 +1,25 @@
+Name: Stranded II Mapfile
+URL: "http://www.stranded.unrealsoftware.de/"
+FileNameExtensions: ["s2"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "### Stranded II Mapfile \xA9by Unreal Software 2004-200"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BY UNREAL SOFTWARE 2004-200"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.UNREALSOFTWARE.DE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRANDED II MAPFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EOF MAP FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false

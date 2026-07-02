@@ -1,0 +1,20 @@
+Name: Open Access III Chart
+URL: "https://sparcie.wordpress.com/2018/01/22/open-access-for-dos/"
+FileNameExtensions: ["cht"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPEN ACCESS III - SPI INC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PCX"
+    CaseSensitive: false

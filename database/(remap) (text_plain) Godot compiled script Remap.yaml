@@ -1,0 +1,20 @@
+Name: Godot compiled script Remap
+URL: "https://en.wikipedia.org/wiki/Godot_(game_engine)"
+FileNameExtensions: ["remap"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[remap]\n\npath=\"res://"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false

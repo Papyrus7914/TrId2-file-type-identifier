@@ -1,0 +1,83 @@
+Name: RealProducer Server Destination
+URL: "https://preservation.tylerthorsted.com/2024/11/15/realvideo/"
+FileNameExtensions: ["rpsd"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<destination xsi:type=\"pushServer\" xmlns=\"http://ns.real.com/tools/server.2.0\" "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STATISTICSUPDATEINTERVAL TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATARESENDINTERVAL TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTICASTADDRESS TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTICASTTTL TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATION XSI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FECPERCENT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINNAME TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER.2.0 HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FECOFFSET TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMALOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER.2.0.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSPORT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHTYPE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RN-SERVER-RBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPORT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NS.REAL.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUSHSERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UINT"
+    CaseSensitive: false

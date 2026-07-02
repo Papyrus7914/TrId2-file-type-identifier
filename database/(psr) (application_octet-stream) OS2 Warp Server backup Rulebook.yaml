@@ -1,0 +1,11 @@
+Name: OS/2 Warp Server backup Rulebook
+URL: "https://en.wikipedia.org/wiki/OS/2#OS/2_Warp"
+FileNameExtensions: ["psr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xBC\0\0\0\xF4\x01\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true

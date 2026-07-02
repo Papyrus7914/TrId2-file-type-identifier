@@ -1,0 +1,29 @@
+Name: Kodi info (generic)
+URL: "https://kodi.wiki/view/NFO_files"
+FileNameExtensions: ["nfo"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "-8\" standalone=\"yes\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEADDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false

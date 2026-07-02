@@ -1,0 +1,23 @@
+Name: Mu Online Navimap
+URL: "https://en.wikipedia.org/wiki/Mu_Online"
+FileNameExtensions: ["ozp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89PNG\x89PNG\r\n\x1A\n\0\0\0\rIHDR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false

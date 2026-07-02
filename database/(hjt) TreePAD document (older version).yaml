@@ -1,0 +1,20 @@
+Name: TreePAD document (older version)
+Description: TreePAD is a program that lets you organize information in a tree/node layout
+URL: "http://www.treepad.com/"
+FileNameExtensions: ["hjt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<hj-Treepad version "
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: ">\r\n<node>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HJ-TREEPAD VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END NODE"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: dGraph chart definition
+Description: Graphing package for dBase by Fox and Geller.
+FileNameExtensions: ["dgf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 28
+    AsciiString: ".DBF\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".DBF"
+    CaseSensitive: false

@@ -1,0 +1,141 @@
+Name: 32bit DOS Executable DosX Extender
+Description: A DOS Extender by Doug Huffman.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 4
+    Bytes: [0x03, 0x00, 0x02, 0x00, 0x03, 0x00]
+  - Pos: 11
+    Bytes: [0x00, 0xFF, 0xFF]
+  - Pos: 15
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\x01\0\0\x1C\0\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GENERAL PROTECTION FAULT$      POSSIBLE ILLEGAL ADDRESS$      POSSIBLE ILLEGAL SEGMENT$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIOUSLY INSTALLED SOFTWARE IS NEITHER VCPI NOR DPMI COMPATIBLE$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DPMI FAILED TO ENTER PROTECTED MODE$DPMI OPERATING SYSTEM ERROR$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A PAGE FAULT HAS OCCURRED DUE TO INSUFFICIENT MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FATAL ERROR READING DISK$DOS EXTENDER COPYRIGHT 1991"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSUFFICIENT CONVENTIONAL MEMORY TO RUN PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMI HOST DOES NOT SUPPORT 32 BIT APPLICATIONS$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSUFFICIENT EXTENDED MEMORY TO RUN PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILLEGAL ADDRESS HAS CAUSED A PAGE FAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FATAL ERROR ALLOCATING DOS MEMORY$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSUFFICIENT CONVENTIONAL MEMORY$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$       DGROUP RELATIVE ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FATAL ERROR MAKING VCPI CALL$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "80386 PROCESSOR IS REQUIRED$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMS MEMORY MANAGER REQUIRED$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT ENABLE THE A20 LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "16 BIT CODE IS TOO LARGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMS MEMORY CORRUPTED$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILLEGAL INTERRUPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL CODE POINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABSOLUTE ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY DOUG HUFFMAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$           FS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$           GS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FXFSFQFRFWFV."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERRUPT 0CH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERRUPT 0DH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$      FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPFPFPFSFPFH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACK FAULT$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$        DS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$      EBP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$      EDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$      EIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$      ESI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$      ESP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALLED"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: OpenCV XML storage
+URL: "https://en.wikipedia.org/wiki/OpenCV"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPENCV_STORAGE"
+    CaseSensitive: false

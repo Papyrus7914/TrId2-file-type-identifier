@@ -1,0 +1,86 @@
+Name: WHDLoad DB
+URL: "https://github.com/BlitterStudio/amiberry/wiki/WHDLoad-Booter-(WHDBooter)-F.A.Q."
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<whdbooter timestamp=\""
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: " at "
+    CaseSensitive: true
+  - Pos: 77
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 83
+    AsciiString: "\">\n\t<game filename=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WHDBOOTER TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN_AUTOHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARY_CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLAVE_LIBRARIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN_CENTERH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN_CENTERV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLAVE_DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLAVE NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT_UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLAVE_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOYSTICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SLAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA1"
+    CaseSensitive: false

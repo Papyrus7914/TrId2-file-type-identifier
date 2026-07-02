@@ -1,0 +1,14 @@
+Name: PC-File mail-merge Letter
+URL: "https://en.wikipedia.org/wiki/PC-File"
+FileNameExtensions: ["ltr"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PCF:dB"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".EGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GROUP"
+    CaseSensitive: false

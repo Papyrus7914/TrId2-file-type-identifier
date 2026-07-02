@@ -1,0 +1,53 @@
+Name: Netedit Configuration
+URL: "https://sumo.dlr.de/docs/Netedit/"
+FileNameExtensions: ["netecfg"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\n<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GUI-TESTING.SETTING-OUTPUT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGNORE-SUPERMODE-QUESTION VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUI-SETTINGS-FILE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUISETTINGSOUTPUT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUI-TESTING VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO-WARNINGS VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW-SIZE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUI-SETTINGS.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW-POS VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR-LOG VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISUALISATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOG.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETEDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORT"
+    CaseSensitive: false

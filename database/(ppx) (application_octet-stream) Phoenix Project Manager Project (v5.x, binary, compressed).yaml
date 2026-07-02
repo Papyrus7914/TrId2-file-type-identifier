@@ -1,0 +1,14 @@
+Name: Phoenix Project Manager Project (v5.x, binary, compressed)
+URL: "https://www.phoenixcpm.com/"
+FileNameExtensions: ["ppx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PPX!!!!|VERSION=5."
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "|COMPRESSION=yes|!!!!XPP\nx\x9C"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPRESSION"
+    CaseSensitive: false

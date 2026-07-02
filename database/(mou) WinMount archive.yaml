@@ -1,0 +1,13 @@
+Name: WinMount archive
+Description: http://www.winmount.com/mount_mou.html
+FileNameExtensions: ["mou"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MOU\0\0\0\0\0\0\0\x05\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "WinMount.com\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WINMOUNT.COM"
+    CaseSensitive: false

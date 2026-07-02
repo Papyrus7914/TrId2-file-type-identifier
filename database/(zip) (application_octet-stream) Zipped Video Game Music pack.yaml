@@ -1,0 +1,20 @@
+Name: Zipped Video Game Music pack
+URL: "http://www.smspower.org/Music/VGMFileFormat?from=Development.VGMFormat"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".M3U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VGM"
+    CaseSensitive: false

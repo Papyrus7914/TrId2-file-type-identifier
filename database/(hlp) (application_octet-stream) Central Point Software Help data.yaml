@@ -1,0 +1,12 @@
+Name: Central Point Software Help data
+Description: Used in some old version of CPS MS-DOS tools.
+URL: "https://en.wikipedia.org/wiki/Central_Point_Software"
+FileNameExtensions: ["hlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FxH!\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CENTRAL POINT SOFTWARE"
+    CaseSensitive: false

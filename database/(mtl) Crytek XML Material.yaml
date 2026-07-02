@@ -1,0 +1,39 @@
+Name: Crytek XML Material
+FileNameExtensions: ["mtl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Material MtlFlags=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MATERIAL MTLFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICPARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURFACETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHININESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMISSIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECULAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADER"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: KAMAS Outline
+Description: DOS outliner by KAMASOFT.
+FileNameExtensions: ["kam"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01, 0x00, 0x1F]
+  - Pos: 346
+    AsciiString: "Page"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

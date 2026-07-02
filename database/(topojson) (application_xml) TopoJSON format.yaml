@@ -1,0 +1,39 @@
+Name: TopoJSON format
+Description: TopoJSON is an extension of GeoJSON that encodes topology.
+URL: "https://en.wikipedia.org/wiki/GeoJSON#TopoJSON"
+FileNameExtensions: ["topojson"]
+MimeType: application/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"type\":\"Topology\",\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GEOMETRYCOLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPOLOGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYGON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

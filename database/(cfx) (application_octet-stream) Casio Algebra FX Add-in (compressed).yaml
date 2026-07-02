@@ -1,0 +1,15 @@
+Name: Casio Algebra FX Add-in (compressed)
+FileNameExtensions: ["cfx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SZDD\x88\xF0'3A"
+    CaseSensitive: true
+  - Pos: 13
+    Bytes: [0x00, 0xFF]
+  - Pos: 19
+    AsciiString: "CASI\xFFO\0\0\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CASI"
+    CaseSensitive: false

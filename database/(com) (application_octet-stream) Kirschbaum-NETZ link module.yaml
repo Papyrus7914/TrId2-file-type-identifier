@@ -1,0 +1,40 @@
+Name: Kirschbaum-NETZ link module
+Description: An old, simple inexpensive DOS network for PC drive access.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "LBL"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\x10\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NET0 NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNELT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNELT2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQRWV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAIT"
+    CaseSensitive: false

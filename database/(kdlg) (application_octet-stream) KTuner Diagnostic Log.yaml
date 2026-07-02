@@ -1,0 +1,11 @@
+Name: KTuner Diagnostic Log
+URL: "http://ktuner.com/"
+FileNameExtensions: ["kdlg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x04KTDL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KTDL"
+    CaseSensitive: false

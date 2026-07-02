@@ -1,0 +1,13 @@
+Name: LotusScript Object code
+URL: "https://en.wikipedia.org/wiki/LotusScript"
+FileNameExtensions: ["lso"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01, 0x00]
+  - Pos: 4
+    AsciiString: "LSOB"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LSOB"
+    CaseSensitive: false

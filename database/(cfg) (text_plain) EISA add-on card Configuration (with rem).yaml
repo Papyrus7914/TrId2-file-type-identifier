@@ -1,0 +1,29 @@
+Name: EISA add-on card Configuration (with rem)
+URL: "https://en.wikipedia.org/wiki/Extended_Industry_Standard_Architecture"
+FileNameExtensions: ["cfg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHOICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EISA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

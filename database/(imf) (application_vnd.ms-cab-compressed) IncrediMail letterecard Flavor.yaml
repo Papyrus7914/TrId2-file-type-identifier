@@ -1,0 +1,14 @@
+Name: IncrediMail letter/ecard Flavor
+URL: "http://www.incredimail.com"
+FileNameExtensions: ["imf"]
+MimeType: application/vnd.ms-cab-compressed
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAVOR.HTM"
+    CaseSensitive: false

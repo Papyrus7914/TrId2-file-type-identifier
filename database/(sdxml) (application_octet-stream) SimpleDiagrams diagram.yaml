@@ -1,0 +1,131 @@
+Name: SimpleDiagrams diagram
+URL: "http://www.simplediagrams.com/"
+FileNameExtensions: ["sdxml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "diagram.xml<sdxml version=\""
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COM.SIMPLEDIAGRAMS.BACKGROUNDLIBRARY.BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.SIMPLEDIAGRAMS.SHAPELIBRARY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTIONPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAGRAM.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDXML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOBACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTAREA ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTFAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTWEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEWEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOLNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOL ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TINTALPHA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TINTCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILLMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

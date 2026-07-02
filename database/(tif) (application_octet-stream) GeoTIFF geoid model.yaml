@@ -1,0 +1,53 @@
+Name: GeoTIFF geoid model
+URL: "https://en.wikipedia.org/wiki/GeoTIFF"
+FileNameExtensions: ["tif"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II*\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERTICAL_OFFSET_GEOGRAPHIC_TO_VERTICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DERIVED FROM WORK BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOID_UNDULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GDALMETADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET_CRS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(EPSG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLE"
+    CaseSensitive: false

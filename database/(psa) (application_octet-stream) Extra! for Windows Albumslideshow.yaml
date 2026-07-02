@@ -1,0 +1,38 @@
+Name: Extra! for Windows Album/slideshow
+Description: Mainframe terminal client for Windows by Attachmate Corp.
+FileNameExtensions: ["psa"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[PhotoAlbum]\r\nVersion=1.00\r\n\r\n[SnapShots]\r\nFILE1="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HOSTSESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSEVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLIDESHOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPSHOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPSHOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.00"
+    CaseSensitive: false

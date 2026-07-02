@@ -1,0 +1,11 @@
+Name: Toast disk image (old)
+URL: "http://fileformats.archiveteam.org/wiki/TOAST"
+FileNameExtensions: ["toast"]
+MimeType: application/x-roxio-toast
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ER\x02\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOAST ISO 9660 BUILDER COPYRIGHT"
+    CaseSensitive: false

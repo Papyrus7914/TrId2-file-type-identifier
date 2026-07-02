@@ -1,0 +1,62 @@
+Name: OMRON NQ-Designer PLC detail
+URL: "https://en.wikipedia.org/wiki/Omron"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" standalone=\"yes\""
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "<ModelInformation>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REGISTERINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOOFREGISTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLCDETAILDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERLENG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOOFPARTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE2"
+    CaseSensitive: false

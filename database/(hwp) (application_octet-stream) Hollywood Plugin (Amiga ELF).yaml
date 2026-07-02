@@ -1,0 +1,38 @@
+Name: Hollywood Plugin (Amiga ELF)
+URL: "https://en.wikipedia.org/wiki/Hollywood_(programming_language)"
+FileNameExtensions: ["hwp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x7FELF\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SYMTAB\0.STRTAB\0.SHSTRTAB\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT\0.REL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RODATA\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLIWOOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HWP 1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false

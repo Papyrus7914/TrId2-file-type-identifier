@@ -1,0 +1,89 @@
+Name: NETPIC ASCII-encoded GIF
+URL: "http://fileformats.archiveteam.org/wiki/NETPIC_(Jim_Tucker)"
+FileNameExtensions: ["npx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "=================="
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "================"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "....... YOU MAY REMOVE THIS LINE AND EVERYTHING BELOW IT ..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOVE THIS LINE AND EVERYTHING ABOVE IT ......."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3   TO DISPLAY THE PICTURE ENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2   SAVE THE REMAINING TEXT AS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1   CLIP AT THE LINE BELOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS A SELF-DISPLAYING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMAINING DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE PICTURE IS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT EXCEED 65"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE FOLLOWING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECODING."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "00 BYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOES NOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICTURE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "320X200"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGNORED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETPIC_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VGA."
+    CaseSensitive: false

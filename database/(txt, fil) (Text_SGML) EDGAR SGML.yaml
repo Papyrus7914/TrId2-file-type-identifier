@@ -1,0 +1,23 @@
+Name: EDGAR SGML
+URL: "https://www.sec.gov/info/edgar/specifications/pds_dissemination_spec.pdf"
+FileNameExtensions: ["txt", "fil"]
+MimeType: Text/SGML
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<DOCUMENT>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: File Maven Encrypted
+Description: File manager by Briggs Softworks.
+URL: "http://www.briggsoft.com"
+FileNameExtensions: ["e01"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x03FME"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "YN \0"
+    CaseSensitive: true

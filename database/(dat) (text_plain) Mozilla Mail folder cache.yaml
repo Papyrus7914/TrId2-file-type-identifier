@@ -1,0 +1,114 @@
+Name: Mozilla Mail folder cache
+Description: panacea.dat
+URL: "https://en.wikipedia.org/wiki/Mork_(file_format)"
+FileNameExtensions: ["dat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "// <!-- <mdb:mork:z "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPLYINCOMINGFILTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PENDINGUNREADMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USESERVERRETENTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTSYNCTIMEINSEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPUNGEDBYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXINGPRIORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTALUNREADMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTPURGETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL FOLDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVERTOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVERUNSEEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLINENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PENDINGMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDERSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOZILLA.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUNDERBIRD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INBOX.MSF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTALMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACLFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAPMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXTUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAFTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MSF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JUNK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MORK"
+    CaseSensitive: false

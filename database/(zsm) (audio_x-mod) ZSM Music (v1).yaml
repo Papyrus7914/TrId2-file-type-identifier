@@ -1,0 +1,11 @@
+Name: ZSM Music (v1)
+URL: "https://github.com/ZeroByteOrg/zsound"
+FileNameExtensions: ["zsm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "zm\x01"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

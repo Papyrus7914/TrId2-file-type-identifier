@@ -1,0 +1,41 @@
+Name: Valve Choreography Data format
+URL: "https://en.wikipedia.org/wiki/Valve_Corporation"
+FileNameExtensions: ["vcd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "// Choreo version 1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXPRESSIONTOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALESETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENERAMPTOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCHOREOVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GESTURETOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAP OFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM"
+    CaseSensitive: false

@@ -1,0 +1,46 @@
+Name: Fluent case
+URL: "http://www.fluent.com/software/fluent/index.htm"
+FileNameExtensions: ["cas"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "("
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: " \""
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRESSURE-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VELOCITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INLET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WALL-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false

@@ -1,0 +1,8 @@
+Name: Transport Neutral Encapsulation Format
+URL: "http://fileformats.archiveteam.org/wiki/Transport_Neutral_Encapsulation_Format"
+FileNameExtensions: ["tnef", "dat"]
+MimeType: application/vnd.ms-tnef
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "x\x9F>\""
+    CaseSensitive: true

@@ -1,0 +1,20 @@
+Name: Kalles Fraktaler parameters
+URL: "http://www.chillheimer.de/kallesfraktaler/"
+FileNameExtensions: ["kfr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Re: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ITERATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITERDIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOM"
+    CaseSensitive: false

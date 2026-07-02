@@ -1,0 +1,40 @@
+Name: Microsoft UCC API Log
+Description: UCC is a Microsoft debugging / logging / tracing API, used for example by Live Messenger.
+FileNameExtensions: ["uccapilog"]
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "|"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAVOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

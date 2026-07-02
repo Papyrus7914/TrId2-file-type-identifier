@@ -1,0 +1,38 @@
+Name: Khoros Visual Programming Workspace (with rem)
+URL: "http://www.idi.ntnu.no/~bilde/download/khoros/"
+FileNameExtensions: ["wk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANNOTATIONSBEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNOTATIONSEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODECONNECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLESBEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSPACEBEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLESEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSPACEEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAMANIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALHOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLYPH"
+    CaseSensitive: false

@@ -1,0 +1,9 @@
+Name: Windows Imaging Format (pipable wimlib)
+Description: Pipable variant not compatible with Microsoft's WIM.
+URL: "https://wimlib.net/man1/wimoptimize.html"
+FileNameExtensions: ["wim"]
+MimeType: application/x-ms-wim
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WLPWM\0\0\0"
+    CaseSensitive: true

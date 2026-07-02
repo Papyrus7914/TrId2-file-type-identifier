@@ -1,0 +1,20 @@
+Name: Emacs Muse project
+Description: An authoring and publishing environment for Emacs.
+URL: "http://mwolson.org/static/doc/muse/Introduction.html"
+FileNameExtensions: ["muse"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(SETQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMACS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISP"
+    CaseSensitive: false

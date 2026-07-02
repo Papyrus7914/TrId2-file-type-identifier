@@ -1,0 +1,14 @@
+Name: Symphonie DSP Plugin
+Description: Amiga tracker by Patrick Meng.
+FileNameExtensions: ["symdsp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Symphonie DSP Plugin\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VP\0N"
+    CaseSensitive: false

@@ -1,0 +1,32 @@
+Name: SPIP ASCII export SPM text
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/spip-asc.c"
+FileNameExtensions: ["asc", "txt"]
+MimeType: application/x-spip-asc
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# File Format = ASCII"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "START OF DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-PIXELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y-LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y-OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y-PIXELS"
+    CaseSensitive: false

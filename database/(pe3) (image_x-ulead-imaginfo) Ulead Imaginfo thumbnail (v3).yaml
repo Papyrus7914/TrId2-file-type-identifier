@@ -1,0 +1,17 @@
+Name: Ulead Imaginfo thumbnail (v3)
+URL: "http://fileformats.archiveteam.org/wiki/Imageiio/imaginfo_(Ulead)"
+FileNameExtensions: ["pe3"]
+MimeType: image/x-ulead-imaginfo
+DetectionPatterns:
+  - Pos: 3
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\xBA\x01\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\0\x01\0\x03\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

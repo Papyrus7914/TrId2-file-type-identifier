@@ -1,0 +1,11 @@
+Name: Atari 8-bit Protected disk image
+URL: "http://www.ataripreservation.org/websites/freddy.offenga/ATP16.htm"
+FileNameExtensions: ["atp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FROM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "ATP1"
+    CaseSensitive: true

@@ -1,0 +1,53 @@
+Name: NETRUN ASCII-encoded COM/EXE
+URL: "http://fileformats.archiveteam.org/wiki/NETRUN"
+FileNameExtensions: ["ntr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "=================="
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "================"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".... REMOVE THIS LINE AND EVERYTHING ABOVE IT ............"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE FOLLOWING TEXT IS AN EXECUTABLE NETRUN PROGRAM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOVE THIS LINE AND THE FOLLOWING TEXT ........"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2  SAVE THE CLIPPED PORTION AS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE LINE BELOW AND END OF TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINES IN THE ABOVE PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYRON.APANA.ORG.AU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IT DOES NOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECODING."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETRUN V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JTUCKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false

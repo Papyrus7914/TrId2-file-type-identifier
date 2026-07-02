@@ -1,0 +1,17 @@
+Name: Mark II Sound-System module
+URL: "http://www.exotica.org.uk/wiki/Mark_II_Sound-System"
+FileNameExtensions: ["mk2", "mkii"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    #        H                       A
+    Bytes: [0x48, 0xE7, 0x00, 0xF0, 0x41, 0xFA]
+  - Pos: 8
+    #        L
+    Bytes: [0x4C, 0xD8, 0x06, 0x00]
+  - Pos: any
+    AsciiString: "P\0R\0T\0V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BPXJ"
+    CaseSensitive: false

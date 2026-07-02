@@ -1,0 +1,14 @@
+Name: Vice HotKeys
+URL: "https://vice-emu.sourceforge.io/"
+FileNameExtensions: ["vhk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HOTKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VICE"
+    CaseSensitive: false

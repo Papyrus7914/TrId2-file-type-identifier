@@ -1,0 +1,14 @@
+Name: Logos 4 Library System data
+URL: "https://wiki.logos.com/"
+FileNameExtensions: ["logos4"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LRES01\r\nLLS:"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "\r\nLLS:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOGOS"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Storyist project
+URL: "https://www.storyist.com/"
+FileNameExtensions: ["story"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PREFERENCES.RDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS.RDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORY.RDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML"
+    CaseSensitive: false

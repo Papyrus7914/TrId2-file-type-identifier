@@ -1,0 +1,65 @@
+Name: GrandMA2 macro (UTF-8)
+URL: "https://www.malighting.com/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<MA xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns=\"http://schemas.malighting.de/grandma2/xml/MA\" xsi:schemaLocation=\"http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.MALIGHTING.DE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACROLINE INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMALOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACRO INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAM_VERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAJOR_VERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINOR_VERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRANDMA2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MA XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MA HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MA.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

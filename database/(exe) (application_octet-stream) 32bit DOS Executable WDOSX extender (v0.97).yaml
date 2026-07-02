@@ -1,0 +1,71 @@
+Name: 32bit DOS Executable WDOSX extender (v0.97)
+URL: "https://tippach.hier-im-netz.de/wdosx/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\xF8\x01\x13\0\0\0\x02\0\xC5\a\xFF\xFF\0\0DW\0\0\xFB\0\0\0>TIPPACH$WdX"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "WDOSX 0.97 DOS extender Copyright (c) 1996-2002 Michael Tippach\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WDOSX 0.97 DOS EXTENDER COPYRIGHT (C) 1996-2002 MICHAEL TIPPACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$KERNEL32.WDL\0ERROR LOADING MODULE KERNEL32.WDL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COULD NOT SET DPMI DESCRIPTORS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ERROR READING EXECUTABLE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODEF\0(MAY BE\0 RUBBISHJ)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCEP\0TION %4 4AT("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VCPI3 $INSU\0FFICIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$NOT ENOUGH MEMORY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TH\0IS PROGR\0AM MUST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$NOT A VALID PE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WDOSX.HOMEIP.NET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WDOSXMAIN\0WFSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIPPACH$LDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIPPACH$WDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DER WI\0N32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GMX.NET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BE RUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

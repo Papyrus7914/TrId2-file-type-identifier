@@ -1,0 +1,14 @@
+Name: C64 Exomizer compressed SFX executable (v2.0+)
+URL: "https://csdb.dk/release/?id=204524"
+FileNameExtensions: ["prg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\b\v\b\x1E\0\x9E2061\0\0\0\xA0"
+    CaseSensitive: true
+  - Pos: 16
+    #        x           0           N
+    Bytes: [0x78, 0xEE, 0x30, 0xD0, 0x4E, 0x11, 0xD0, 0xE6, 0x01, 0xBA, 0xBD]
+  - Pos: 29
+    #                                                        L
+    Bytes: [0x9D, 0xFC, 0x00, 0xCA, 0xD0, 0xF7, 0xA2, 0x05, 0x4C]

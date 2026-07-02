@@ -1,0 +1,14 @@
+Name: GadToolsBox Gadget (v1.0)
+URL: "http://obligement.free.fr/articles/gadtoolsbox.php"
+FileNameExtensions: ["g"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GTED\0\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GADTOOLSBOX V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FONT"
+    CaseSensitive: false

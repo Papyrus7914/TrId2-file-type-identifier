@@ -1,0 +1,14 @@
+Name: After Dark for DOS module
+URL: "https://en.wikipedia.org/wiki/After_Dark_(software)"
+FileNameExtensions: ["add"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AD-DOS Data. \r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false

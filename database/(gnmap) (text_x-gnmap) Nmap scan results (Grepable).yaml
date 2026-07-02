@@ -1,0 +1,57 @@
+Name: Nmap scan results (Grepable)
+Description: for 4-byte version like 7.94; front block characteristics triggered by first line
+URL: "https://nmap.org/book/output-formats-grepable-output.html"
+FileNameExtensions: ["gnmap"]
+MimeType: text/x-gnmap
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Nmap "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: " scan initiated "
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: " as: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCAN INITIATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UP) SCANNED IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NMAP DONE AT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IP ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOST"
+    CaseSensitive: false

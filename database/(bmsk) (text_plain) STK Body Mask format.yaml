@@ -1,0 +1,23 @@
+Name: STK Body Mask format
+URL: "https://en.wikipedia.org/wiki/Systems_Tool_Kit"
+FileNameExtensions: ["bmsk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "stk.v."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN AZELPAIRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN EXCLUSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMAZELPAIRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALZ"
+    CaseSensitive: false

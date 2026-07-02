@@ -1,0 +1,12 @@
+Name: WINDEV HFSQL run-time analysis Description
+Description: WINDEV is a RAD tool by PC Soft.
+URL: "https://windev.com"
+FileNameExtensions: ["wdd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PCS\0\x14\0\0\0\x04\0\a\0\0\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

@@ -1,0 +1,8 @@
+Name: RESOF compressed archive (old)
+URL: "http://fileformats.archiveteam.org/wiki/SOF_(Spectrum_Software)"
+FileNameExtensions: ["sof"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x01, 0x04]

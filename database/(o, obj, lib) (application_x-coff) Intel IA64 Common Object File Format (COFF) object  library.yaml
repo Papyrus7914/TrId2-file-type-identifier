@@ -1,0 +1,34 @@
+Name: Intel IA64 Common Object File Format (COFF) object / library
+URL: "https://en.wikipedia.org/wiki/COFF"
+FileNameExtensions: ["o", "obj", "lib"]
+MimeType: application/x-coff
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x02]
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "\0\0"
+    CaseSensitive: true

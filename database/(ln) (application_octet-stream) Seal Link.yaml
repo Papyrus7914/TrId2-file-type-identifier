@@ -1,0 +1,23 @@
+Name: Seal Link
+URL: "http://sealsystem.sourceforge.net/"
+FileNameExtensions: ["ln"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[definition]\r\nlink=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON16"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK"
+    CaseSensitive: false

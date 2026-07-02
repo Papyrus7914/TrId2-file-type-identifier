@@ -1,0 +1,14 @@
+Name: Across crossword puzzle
+URL: "http://fileformats.archiveteam.org/wiki/PUZ_(crossword_puzzles)"
+FileNameExtensions: ["puz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "ACROSS&DOWN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACROSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWN"
+    CaseSensitive: false

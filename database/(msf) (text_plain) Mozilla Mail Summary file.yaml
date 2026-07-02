@@ -1,0 +1,116 @@
+Name: Mozilla Mail Summary file
+URL: "https://en.wikipedia.org/wiki/Mork_(file_format)"
+FileNameExtensions: ["msf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "// <!-- <mdb:mork:z "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNREADPENDINGMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTPENDINGMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNREADCHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFLINEMSGSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPUNGEDBYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREADSUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIGHWATERKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREADPARENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBFOLDERINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPIREDMARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSGTHREADID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAILBOXNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREADFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UIDVALIDITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUSOFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMNEWMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECIPIENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREADROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLTHREADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDERSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSGCHARSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDERDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSGOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMLINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MORK"
+    CaseSensitive: false

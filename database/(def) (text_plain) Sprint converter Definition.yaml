@@ -1,0 +1,71 @@
+Name: Sprint converter Definition
+URL: "https://en.wikipedia.org/wiki/Sprint_(word_processor)"
+FileNameExtensions: ["def"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*END_PARAMETER_DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*PARAMETER_DESCRIPTION 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*PARAMETER_DESCRIPTION 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*PARAMETER_DESCRIPTION 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*PARAMETER_HELP_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*STRING_PARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*TOGGLE_PARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*APPLICATION_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*CHOICE US"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FILE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARACTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIR.HLP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORD"
+    CaseSensitive: false

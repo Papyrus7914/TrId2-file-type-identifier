@@ -1,0 +1,13 @@
+Name: PalmDraft schematic
+URL: "http://pages.total.net/~hkonstas/palmdraft.html"
+FileNameExtensions: ["pdb"]
+DetectionPatterns:
+  - Pos: 32
+    AsciiString: "\0\b\0\x02"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "dschpDft"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DSCHPDFT"
+    CaseSensitive: false

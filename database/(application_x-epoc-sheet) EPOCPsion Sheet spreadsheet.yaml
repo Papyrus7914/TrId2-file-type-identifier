@@ -1,0 +1,10 @@
+Name: EPOC/Psion Sheet spreadsheet
+URL: "https://en.wikipedia.org/wiki/EPOC_(operating_system)"
+MimeType: application/x-epoc-sheet
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "7\0\0\x10m\0\0\x10\x88\0\0\x10"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SHEET.APP"
+    CaseSensitive: false

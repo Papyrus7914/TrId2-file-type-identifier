@@ -1,0 +1,24 @@
+Name: HMI Sound Operating System Configuration
+Description: Human Machine Interface middleware settings.
+URL: "http://www.vgmpf.com/Wiki/index.php?title=Human_Machine_Interfaces"
+FileNameExtensions: ["cfg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n[DIGITAL]\r\nDeviceName "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEVICEPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICEDMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICEIRQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDI"
+    CaseSensitive: false

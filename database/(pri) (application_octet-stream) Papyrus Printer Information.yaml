@@ -1,0 +1,15 @@
+Name: Papyrus Printer Information
+Description: Atari ST word processor.
+URL: "https://sites.google.com/site/stessential/wordprocessors/papyrus"
+FileNameExtensions: ["pri"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PPRI"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PRI"
+    CaseSensitive: false

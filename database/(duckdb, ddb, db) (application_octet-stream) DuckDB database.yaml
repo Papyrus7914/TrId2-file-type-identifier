@@ -1,0 +1,11 @@
+Name: DuckDB database
+URL: "https://duckdb.org/"
+FileNameExtensions: ["duckdb", "ddb", "db"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 8
+    AsciiString: "DUCK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DUCK"
+    CaseSensitive: false

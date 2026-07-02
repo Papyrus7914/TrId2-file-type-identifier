@@ -1,0 +1,32 @@
+Name: VBOX data
+URL: "https://en.wikipedia.org/wiki/Racelogic"
+FileNameExtensions: ["vbo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "File created on "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SATS TIME LAT LONG VELOCITY HEADING HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE CREATED ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMN NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SATELLITES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

@@ -1,0 +1,38 @@
+Name: QRT Ray Tracer scene description (with rem)
+URL: "http://fileformats.archiveteam.org/wiki/QRT_Ray_Tracer_scene_description"
+FileNameExtensions: ["qrt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBSERVER ( LOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAMP ( LOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DITHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOKAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RAW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_"
+    CaseSensitive: false

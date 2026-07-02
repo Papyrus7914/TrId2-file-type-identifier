@@ -1,0 +1,13 @@
+Name: AVCHD video clips - MPEG Transport Stream
+URL: "http://en.wikipedia.org/wiki/AVCHD"
+FileNameExtensions: ["mts"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "G@"
+    CaseSensitive: true
+  - Pos: 215
+    AsciiString: "HDMV"
+    CaseSensitive: true

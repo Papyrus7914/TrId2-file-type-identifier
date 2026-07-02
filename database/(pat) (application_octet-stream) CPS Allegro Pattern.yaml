@@ -1,0 +1,13 @@
+Name: CPS Allegro Pattern
+Description: DOS music sequencer.
+FileNameExtensions: ["pat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x01]
+  - Pos: 9
+    AsciiString: " Pattern "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PATTERN"
+    CaseSensitive: false

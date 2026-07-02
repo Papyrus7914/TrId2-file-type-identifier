@@ -1,0 +1,8 @@
+Name: FEC electronic filing format
+URL: "https://www.fec.gov/"
+FileNameExtensions: ["fec"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HDR\x1CFEC\x1C"
+    CaseSensitive: true

@@ -1,0 +1,11 @@
+Name: TextMaker document
+Description: TextMaker is a multiplatform wordprocessor, part of the SoftMaker Office suite.
+URL: "http://www.softmaker.de/tm_en.htm"
+FileNameExtensions: ["tmd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MV\0\xFF\f\0\x0E\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0-YA1"
+    CaseSensitive: true

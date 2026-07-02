@@ -1,0 +1,32 @@
+Name: Capture One layer Mask
+URL: "https://en.wikipedia.org/wiki/Capture_One"
+FileNameExtensions: ["comask"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x04XCon\xC0B\x06\xBE\xBA\xFE\xCA\0\x02\x04TYPE\xC0\0\x0FCaptureOne Mask\xFE\x18\x03VER"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0\xFE\n\xFF\xFF\bMaskInfo\0\"\0\x03Hdr\0\"\xFF\x18\x01\0\0\0X-\0\0\x04\"\0\0\f\0\0\0\0\0\0\0\0\0\0\0\xFE!\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 105
+    AsciiString: "In"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CAPTUREONE MASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASKINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP\0\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XCON"
+    CaseSensitive: false

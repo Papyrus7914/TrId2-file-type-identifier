@@ -1,0 +1,37 @@
+Name: Simon Tatham's Portable Puzzle Collection savegame
+URL: "http://www.chiark.greenend.org.uk/~sgtatham/puzzles/"
+FileNameExtensions: ["sav"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SAVEFILE:"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: ":Simon Tatham's Portable Puzzle Collection"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SAVEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATEPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSTATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEED"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: MSX Tape image
+Description: Derived form TZX format.
+FileNameExtensions: ["tsx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZXTape!\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TSX"
+    CaseSensitive: false

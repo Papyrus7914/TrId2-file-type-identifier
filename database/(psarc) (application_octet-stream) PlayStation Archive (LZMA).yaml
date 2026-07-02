@@ -1,0 +1,11 @@
+Name: PlayStation Archive (LZMA)
+URL: "http://www.psdevwiki.com/ps3/PlayStation_archive_(PSARC)"
+FileNameExtensions: ["psarc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSAR"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "lzma"
+    CaseSensitive: true

@@ -1,0 +1,8 @@
+Name: CAR compressed archive
+FileNameExtensions: ["car"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x1F]
+  - Pos: 2
+    AsciiString: "-lh5-"
+    CaseSensitive: true

@@ -1,0 +1,10 @@
+Name: ACPI Machine Language (v1)
+URL: "https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface"
+FileNameExtensions: ["aml"]
+MimeType: application/x-intel-aml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DSDT"
+    CaseSensitive: true
+  - Pos: 7
+    Bytes: [0x00, 0x01]

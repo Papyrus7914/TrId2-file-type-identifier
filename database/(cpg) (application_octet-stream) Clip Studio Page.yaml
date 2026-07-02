@@ -1,0 +1,45 @@
+Name: Clip Studio Page
+Description: AKA Manga Studio.
+URL: "https://en.wikipedia.org/wiki/Clip_Studio_Paint"
+FileNameExtensions: ["cpg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GPSC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "0001.CFL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0001.CGR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0001.CMK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0001.CTB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0001.CTX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CLF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CRA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CT4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CTF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CV4"
+    CaseSensitive: false

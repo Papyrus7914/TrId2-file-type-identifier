@@ -1,0 +1,11 @@
+Name: Compressed TYPO3 extension
+URL: "https://wiki.typo3.org/De:Faq/T3X-files"
+FileNameExtensions: ["t3x"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 32
+    AsciiString: ":gzcompress:x\x9C"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GZCOMPRESS"
+    CaseSensitive: false

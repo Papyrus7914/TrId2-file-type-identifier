@@ -1,0 +1,20 @@
+Name: The Civil War Battle data
+URL: "https://www.mobygames.com/game/279/the-civil-war/"
+FileNameExtensions: ["btl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CFRR\x01\0\x03\0\x01\0\x04\0Battle Game\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0LTAB\\\0\0\0\t\0\0\0PAMBe\0\0\0\x05\x81\0\0TABOj\x81\0\0"
+    CaseSensitive: true
+  - Pos: 79
+    AsciiString: "\0SBOS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ARMY OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IANA"
+    CaseSensitive: false

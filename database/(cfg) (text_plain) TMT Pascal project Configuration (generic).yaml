@@ -1,0 +1,35 @@
+Name: TMT Pascal project Configuration (generic)
+URL: "https://en.wikipedia.org/wiki/Pascal_(programming_language)#Other_variants"
+FileNameExtensions: ["cfg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TARGET "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBJIMPPATH SRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJPATH SRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRCPATH SRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXEMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTFRM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTREG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false

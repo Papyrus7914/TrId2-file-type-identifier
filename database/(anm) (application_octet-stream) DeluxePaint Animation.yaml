@@ -1,0 +1,11 @@
+Name: DeluxePaint Animation
+URL: "https://en.wikipedia.org/wiki/Deluxe_Paint"
+FileNameExtensions: ["anm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LPF \0\x01"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "ANIM"
+    CaseSensitive: true

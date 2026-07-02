@@ -1,0 +1,17 @@
+Name: Scenarist Closed Caption data
+URL: "http://fileformats.archiveteam.org/wiki/Scenarist_Closed_Caption"
+FileNameExtensions: ["scc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "S"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "_SCC V"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCENARIST_SCC V"
+    CaseSensitive: false

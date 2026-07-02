@@ -1,0 +1,13 @@
+Name: 16bit DOS COM GRABBER (generic)
+URL: "http://fileformats.archiveteam.org/wiki/GRABBER"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "\r\nThis file was created by GRABBER.COM Version "
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "."
+    CaseSensitive: true

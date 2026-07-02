@@ -1,0 +1,27 @@
+Name: PPC Organiser Card
+Description: Developed by Clasma Software Inc. and included with Amstrad PPC computers.
+URL: "https://en.wikipedia.org/wiki/PPC_512"
+FileNameExtensions: ["crd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Clasma - A La Carte - Ver. 1  \r\n\x1A"
+    CaseSensitive: true
+  - Pos: 86
+    #        n     S                 n     S
+    Bytes: [0x6E, 0x53, 0x1E, 0x01, 0x6E, 0x53, 0x1E, 0x01]
+  - Pos: 110
+    AsciiString: "SortNext"
+    CaseSensitive: true
+  - Pos: 136
+    AsciiString: "SortPrev"
+    CaseSensitive: true
+  - Pos: 162
+    AsciiString: "SelNext "
+    CaseSensitive: true
+  - Pos: 188
+    AsciiString: "SelPrev "
+    CaseSensitive: true
+  - Pos: 214
+    AsciiString: "Index   "
+    CaseSensitive: true

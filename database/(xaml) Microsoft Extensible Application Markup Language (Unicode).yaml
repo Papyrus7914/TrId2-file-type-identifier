@@ -1,0 +1,19 @@
+Name: Microsoft Extensible Application Markup Language (Unicode)
+URL: "http://en.wikipedia.org/wiki/Xaml"
+FileNameExtensions: ["xaml"]
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XAML"
+    CaseSensitive: false

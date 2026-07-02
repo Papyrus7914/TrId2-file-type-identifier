@@ -1,0 +1,59 @@
+Name: Pages document
+URL: "http://en.wikipedia.org/wiki/Pages"
+FileNameExtensions: ["pages"]
+MimeType: application/vnd.apple.pages
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "BUILDVERSIONHISTORY.PLISTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE PLIST PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYLIST-1.0.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLIST VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.APPLE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTD PLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: AOS File Format
+URL: "http://donat.org/archos/wiki/doku.php?id=aos_file_format"
+FileNameExtensions: ["aos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CCOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGN"
+    CaseSensitive: false

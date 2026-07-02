@@ -1,0 +1,23 @@
+Name: STK Torque format
+URL: "https://en.wikipedia.org/wiki/Systems_Tool_Kit"
+FileNameExtensions: ["tq"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "stk.v."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TORQUESTIMEBODYFIXED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFTORQUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN TORQUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENARIOEPOCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END TORQUES"
+    CaseSensitive: false

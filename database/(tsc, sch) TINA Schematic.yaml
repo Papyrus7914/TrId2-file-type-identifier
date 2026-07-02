@@ -1,0 +1,13 @@
+Name: TINA Schematic
+URL: "http://wiki.xtronics.com/index.php/Tina"
+FileNameExtensions: ["tsc", "sch"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OBSS\x1A"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "Circuit Description"
+    CaseSensitive: true
+  - Pos: 115
+    AsciiString: "TINA "
+    CaseSensitive: true

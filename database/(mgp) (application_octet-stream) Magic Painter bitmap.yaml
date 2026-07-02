@@ -1,0 +1,9 @@
+Name: Magic Painter bitmap
+Description: Old Atari 8-bit format.
+URL: "http://recoil.sourceforge.net/formats.html"
+FileNameExtensions: ["mgp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    6
+    Bytes: [0xF4, 0x0E, 0x36, 0x00]

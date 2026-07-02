@@ -1,0 +1,16 @@
+Name: FreeDOS Code Page Information
+URL: "https://en.wikipedia.org/wiki/Freedos"
+FileNameExtensions: ["cpx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x81, 0xFC]
+  - Pos: 4
+    #        w                 ␠
+    Bytes: [0x77, 0x02, 0xCD, 0x20, 0xB9]
+  - Pos: any
+    AsciiString: "620X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false

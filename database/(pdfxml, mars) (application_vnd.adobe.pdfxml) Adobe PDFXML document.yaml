@@ -1,0 +1,65 @@
+Name: Adobe PDFXML document
+URL: "http://fileformats.archiveteam.org/wiki/PDFXML"
+FileNameExtensions: ["pdfxml", "mars"]
+MimeType: application/vnd.adobe.pdfxml
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "COMPATIBILITY.PDFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JAVASCRIPTS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM_DATA.XFDFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKMARKS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINER.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKBONE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINER.XMLU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM_0.SVGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM_0.SVGM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CS-0.ICCPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PG.CANPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PG.SVGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JS_0PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

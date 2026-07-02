@@ -1,0 +1,21 @@
+Name: PowerBASIC/DOS Compiled Unit
+URL: "http://www.powerbasic.com/products/pbdos/"
+FileNameExtensions: ["pbu"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "kp\x01\0P\x03 P\x03 \0\0"
+    CaseSensitive: true
+  - Pos: 14
+    Bytes: [0x01]
+  - Pos: 16
+    AsciiString: "\x04CODE\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x88\x88\x88\x88\x88\x88"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false

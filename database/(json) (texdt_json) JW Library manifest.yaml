@@ -1,0 +1,35 @@
+Name: JW Library manifest
+Description: Contained in a .jwlibrary file.
+FileNameExtensions: ["json"]
+MimeType: texdt/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LASTMODIFIEDDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERDATABACKUP_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATIONDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERDATA.DB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

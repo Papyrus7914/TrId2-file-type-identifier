@@ -1,0 +1,76 @@
+Name: UPX - NRV compressed Win32 Executable
+URL: "http://upx.sourceforge.net/"
+FileNameExtensions: ["exe"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 71
+    #              !                 L           !
+    Bytes: [0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: 121
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$LICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1996-1999 LASZLO MOLNAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADLIBRARYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKUS OBERHUMER $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NRV 0.61 COPYRIGHT (C) 1996-1999 MARKUS F.X.J. OBERHUMER $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NRV FOR UPX IS DISTRIBUTED UNDER SPECIAL LICENSE $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPX 0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPX0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPX1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPX2"
+    CaseSensitive: false

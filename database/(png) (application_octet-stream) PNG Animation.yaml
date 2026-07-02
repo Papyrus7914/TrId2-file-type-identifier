@@ -1,0 +1,11 @@
+Name: PNG Animation
+URL: "http://www.objreader.com/index.php?topic=69.msg309"
+FileNameExtensions: ["png"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89PNG\r\n\x1A\n\0\0\0\rIHDR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANIM"
+    CaseSensitive: false

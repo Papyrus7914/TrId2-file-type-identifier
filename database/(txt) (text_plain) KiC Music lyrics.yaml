@@ -1,0 +1,14 @@
+Name: KiC Music lyrics
+Description: KiC Music is part of the Keep it Compact line of collection managers.
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@ARTIST: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALBUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONG"
+    CaseSensitive: false

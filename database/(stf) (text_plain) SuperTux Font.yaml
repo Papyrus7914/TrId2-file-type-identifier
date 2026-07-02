@@ -1,0 +1,26 @@
+Name: SuperTux Font
+URL: "https://en.wikipedia.org/wiki/SuperTux"
+FileNameExtensions: ["stf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(supertux-font"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(GLYPH-HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(GLYPH-WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(GLYPHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(SHADOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(CHARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false

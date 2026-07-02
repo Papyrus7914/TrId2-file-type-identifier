@@ -1,0 +1,23 @@
+Name: Boom Box project (v1)
+Description: Amiga audio software by Dr.T's Music Software.
+FileNameExtensions: ["box"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BOX1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOOMBOX_FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRUMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SND0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQD0"
+    CaseSensitive: false

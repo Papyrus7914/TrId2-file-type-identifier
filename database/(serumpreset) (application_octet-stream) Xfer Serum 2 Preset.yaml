@@ -1,0 +1,56 @@
+Name: Xfer Serum 2 Preset
+URL: "https://xferrecords.com/products/serum-2"
+FileNameExtensions: ["serumpreset"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XferJson\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\x01\0\0\0\0\0\0{\"fileType\":\"SerumPreset\",\"hash\":\""
+    CaseSensitive: true
+  - Pos: 83
+    AsciiString: "\",\"presetAuthor\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRESETDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XFERRECORDS.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESETAUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XFER RECORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERUMPRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESETNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVETABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERUM2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAGS"
+    CaseSensitive: false

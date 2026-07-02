@@ -1,0 +1,25 @@
+Name: TAG Printer driver
+URL: "http://fileformats.archiveteam.org/wiki/TAG"
+FileNameExtensions: ["prn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "TAG\xC8P"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "P"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WSZELKIE PRAWA PRODUCENTA ZASTRZEZONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) INFOSERVICE 1988-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIE ZABRONIONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "J.MILCZEK"
+    CaseSensitive: false

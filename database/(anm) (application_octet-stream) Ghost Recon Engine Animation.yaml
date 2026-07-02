@@ -1,0 +1,17 @@
+Name: Ghost Recon Engine Animation
+URL: "https://www.mobygames.com/game/5557/tom-clancys-ghost-recon/"
+FileNameExtensions: ["anm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\t\0\0\0BeginANM\0"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "Version\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDANM"
+    CaseSensitive: false

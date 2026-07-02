@@ -1,0 +1,65 @@
+Name: Peggle replay
+URL: "https://en.wikipedia.org/wiki/Peggle"
+FileNameExtensions: ["peg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "B\0\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\0B\0\0\0\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FREEBALLCOVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATCHERCOVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOBSTERCLAWL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOBSTERCLAWR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BONUSBUMPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUMPERHOLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BONUSHOLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATCHERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATCHERB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUMPERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUMPERB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUMPERC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYER2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XU5B"
+    CaseSensitive: false

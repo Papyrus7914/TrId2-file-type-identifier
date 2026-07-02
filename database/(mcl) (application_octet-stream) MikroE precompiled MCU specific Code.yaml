@@ -1,0 +1,29 @@
+Name: MikroE precompiled MCU specific Code
+URL: "https://www.mikroe.com/"
+FileNameExtensions: ["mcl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MCL"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0\0\0\0\0P1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STATUS\0STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R0\0R0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R1\0R1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R2\0R2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIS"
+    CaseSensitive: false

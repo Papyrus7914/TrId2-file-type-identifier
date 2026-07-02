@@ -1,0 +1,11 @@
+Name: Holtek HT-IDE3000 Options/settings
+URL: "https://www.holtek.com/"
+FileNameExtensions: ["opt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "H\t\0\aHCONFIG\xAA\x88\x17\0\0\0\x13HCONFIGMFC.DLL 1.00"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSVOLT"
+    CaseSensitive: false

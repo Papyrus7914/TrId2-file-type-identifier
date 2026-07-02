@@ -1,0 +1,11 @@
+Name: Corum VIP Table data
+Description: DOS RDBMS by NovaQuest InfoSystems.
+FileNameExtensions: ["tbl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                            D     S     N     =
+    Bytes: [0x01, 0xFC, 0x01, 0x00, 0xC7, 0xA2, 0x44, 0x53, 0x4E, 0x3D]
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false

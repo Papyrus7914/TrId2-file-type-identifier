@@ -1,0 +1,29 @@
+Name: Graphmatica Graph
+URL: "http://www.graphmatica.com/"
+FileNameExtensions: ["gr"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[saved-setup]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EQUATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false

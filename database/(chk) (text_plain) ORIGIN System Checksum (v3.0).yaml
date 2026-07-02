@@ -1,0 +1,14 @@
+Name: ORIGIN System Checksum (v3.0)
+URL: "https://en.wikipedia.org/wiki/Origin_Systems"
+FileNameExtensions: ["chk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CHECKSUM 32 BITS...  v3.0      (C) 1990-1995 Origin Systems"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHECKSUM 32 BITS...  V3.0      (C) 1990-1995 ORIGIN SYSTEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTORY"
+    CaseSensitive: false

@@ -1,0 +1,61 @@
+Name: 16bit DOS Mouse Systems Corp. menu (generic)
+URL: "https://en.wikipedia.org/wiki/Mouse_Systems"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFC, 0xE8]
+  - Pos: 4
+    AsciiString: "\xC3\0\0\0\0\r\nUnable to locate resident "
+    CaseSensitive: true
+  - Pos: 69
+    AsciiString: " menu"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$ BYTES REQUIRED TO USE OPTIONAL VIDEO DRIVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ BYTES OF MENU SPACE AVAILABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU SIZE EXCEEDS CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNABLE TO LOCATE RESIDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNABLE TO LOAD MENUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ MUST BE USED WITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MOUSESET  VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY ALLOCATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUSE SYSTEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M OPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUSE C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIGURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POP-UP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1984"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false

@@ -1,0 +1,35 @@
+Name: Quartus Setting File (generic, with rem)
+URL: "https://en.wikipedia.org/wiki/Intel_Quartus_Prime"
+FileNameExtensions: ["qsf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SET_GLOBAL_ASSIGNMENT -NAME LAST_QUARTUS_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_GLOBAL_ASSIGNMENT -NAME TOP_LEVEL_ENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_GLOBAL_ASSIGNMENT -NAME PROJECT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_GLOBAL_ASSIGNMENT -NAME DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_GLOBAL_ASSIGNMENT -NAME FAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_GLOBAL_ASSIGNMENT -NAME O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_INSTANCE_ASSIGNMENT -NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

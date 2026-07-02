@@ -1,0 +1,8 @@
+Name: CPython 2.7 bytecode
+URL: "https://en.wikipedia.org/wiki/CPython"
+FileNameExtensions: ["pyc"]
+MimeType: application/x-python-bytecode
+DetectionPatterns:
+  - Pos: 0
+    #                    \r    \n
+    Bytes: [0x03, 0xF3, 0x0D, 0x0A]

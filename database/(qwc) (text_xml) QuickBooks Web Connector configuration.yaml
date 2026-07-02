@@ -1,0 +1,44 @@
+Name: QuickBooks Web Connector configuration
+URL: "https://en.wikipedia.org/wiki/QuickBooks"
+FileNameExtensions: ["qwc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPSUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QBWCXML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QBTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QBFS"
+    CaseSensitive: false

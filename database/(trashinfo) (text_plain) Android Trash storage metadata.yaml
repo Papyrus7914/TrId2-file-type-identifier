@@ -1,0 +1,10 @@
+Name: Android Trash storage metadata
+FileNameExtensions: ["trashinfo"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Trash Info]\nPath="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DELETIONDATE"
+    CaseSensitive: false

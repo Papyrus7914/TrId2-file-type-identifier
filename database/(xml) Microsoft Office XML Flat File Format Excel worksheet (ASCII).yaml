@@ -1,0 +1,100 @@
+Name: Microsoft Office XML Flat File Format Excel worksheet (ASCII)
+URL: "http://en.wikipedia.org/wiki/Microsoft_Office_XML_formats"
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<?mso-application progid=\"Excel.Sheet\"?>\r\n<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MSO-APPLICATION PROGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSHEETOPTIONS XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS-MICROSOFT-COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPANDEDCOLUMNCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKBOOK XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSHEET SS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCEL.SHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLCOLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPREADSHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REC-HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE SS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA SS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIND"
+    CaseSensitive: false

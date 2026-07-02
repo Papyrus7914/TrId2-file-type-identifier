@@ -1,0 +1,11 @@
+Name: Google Earth saved working session
+Description: Google Earth puts a planet's worth of imagery and other geographic information right on your desktop.
+URL: "http://earth.google.com/"
+FileNameExtensions: ["kmz"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".KML"
+    CaseSensitive: false

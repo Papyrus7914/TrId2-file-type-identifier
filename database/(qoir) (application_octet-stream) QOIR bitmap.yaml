@@ -1,0 +1,14 @@
+Name: QOIR bitmap
+URL: "http://fileformats.archiveteam.org/wiki/QOIR"
+FileNameExtensions: ["qoir"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "QOIR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "QEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QPIX"
+    CaseSensitive: false

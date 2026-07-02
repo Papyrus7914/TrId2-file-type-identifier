@@ -1,0 +1,21 @@
+Name: Activstudio Flipchart
+FileNameExtensions: ["flp"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PANDA 10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".AO2."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.FPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.THM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

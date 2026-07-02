@@ -1,0 +1,11 @@
+Name: bzip2 compressed archive (old)
+URL: "http://fileformats.archiveteam.org/wiki/Bzip2"
+FileNameExtensions: ["bz2", "bzip2"]
+MimeType: application/x-bzip2
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BZ0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "1AY&SY"
+    CaseSensitive: true

@@ -1,0 +1,26 @@
+Name: Cubase song
+URL: "http://fileformats.archiveteam.org/wiki/ALL"
+FileNameExtensions: ["all"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0H\0\0\x06\x04"
+    CaseSensitive: true
+  - Pos: 208
+    AsciiString: "\0\0Instr End\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTR END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M100"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S000"
+    CaseSensitive: false

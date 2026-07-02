@@ -1,0 +1,12 @@
+Name: Master Tracks Pro Score (old)
+Description: Amiga sequence.
+URL: "https://en.wikipedia.org/wiki/Master_Tracks_Pro"
+FileNameExtensions: ["mts"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SCOR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TK00"
+    CaseSensitive: false

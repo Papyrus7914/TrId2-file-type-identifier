@@ -1,0 +1,9 @@
+Name: Nintendo DS Sound Sequence ARchive
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SSAR\xFF\xFE\0\x01"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "DATA"
+    CaseSensitive: true

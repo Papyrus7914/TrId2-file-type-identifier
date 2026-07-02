@@ -1,0 +1,13 @@
+Name: Data Model eXchange encoding format
+URL: "https://developer.valvesoftware.com/wiki/DMX"
+FileNameExtensions: ["dmx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!-- dmx encoding "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-- DMX ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false

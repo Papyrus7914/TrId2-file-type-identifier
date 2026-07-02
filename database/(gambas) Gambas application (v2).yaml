@@ -1,0 +1,28 @@
+Name: Gambas application (v2)
+URL: "http://en.wikipedia.org/wiki/Gambas"
+FileNameExtensions: ["gambas"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#! /usr/bin/env gbr2\n"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "# Gambas Project File 2.0\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GAMBAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$LOAD"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: MessiahStudio Project
+URL: "http://en.wikipedia.org/wiki/Messiah_%28software%29"
+FileNameExtensions: ["mpj"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MPRJ\0\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "MSCN\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0"
+    CaseSensitive: true

@@ -1,0 +1,10 @@
+Name: CDX compressed Satellite channels DB (Guoxin GX6605)
+FileNameExtensions: ["sdx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CDX\0GXDatabaseV"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SDX"
+    CaseSensitive: false

@@ -1,0 +1,55 @@
+Name: Sony ClickToDvd Project
+URL: "http://www.vaio.net/sonyvaio648.html"
+FileNameExtensions: ["ctd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<ClickToDvdProject version=\""
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACTIVE_CATEGORY_INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORDING_DATE_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM_INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DVD MENU_ASPECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DVDINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE_CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVIE_QUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTION_TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLICK TO DVD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO_CODEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAPTER"
+    CaseSensitive: false

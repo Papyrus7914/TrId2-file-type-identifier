@@ -1,0 +1,12 @@
+Name: Saved HTTP attachment
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "--"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT-DISPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

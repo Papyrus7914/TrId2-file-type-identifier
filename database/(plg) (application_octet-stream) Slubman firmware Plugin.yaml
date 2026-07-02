@@ -1,0 +1,16 @@
+Name: Slubman firmware Plugin
+Description: Slubman is an alternative firmware for the GP32.
+FileNameExtensions: ["plg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PLG\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 68
+    Bytes: [0xEF, 0xEF, 0xEF]

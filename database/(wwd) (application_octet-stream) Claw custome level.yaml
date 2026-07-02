@@ -1,0 +1,32 @@
+Name: Claw custome level
+URL: "https://en.wikipedia.org/wiki/Claw_(video_game)"
+FileNameExtensions: ["wwd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xF4\x05\0\0\0\0\0\0\x03\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLAW.EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLAW.REZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN.PAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME"
+    CaseSensitive: false

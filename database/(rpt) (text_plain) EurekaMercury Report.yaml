@@ -1,0 +1,32 @@
+Name: Eureka/Mercury Report
+URL: "http://archives.math.utk.edu/software/msdos/calculus/mrcry209/"
+FileNameExtensions: ["rpt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xCD\xCD\xCD\xCD\xCD Problem: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RESIDUALS AND DERIVED EQUATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LARGEST RESIDUAL IS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMERIC PROCESSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROBLEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EKA"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: Nokia theme
+URL: "http://www.forum.nokia.com/main/0,,034-301,00.html"
+FileNameExtensions: ["nth"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "THEME_DESCRIPTOR.XMLPK"
+    CaseSensitive: false

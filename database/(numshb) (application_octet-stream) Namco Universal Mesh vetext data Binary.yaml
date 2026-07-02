@@ -1,0 +1,12 @@
+Name: Namco Universal Mesh vetext data Binary
+Description: Used in various Namco games, like Super Smash Bros. Ultimate.
+URL: "https://en.wikipedia.org/wiki/Bandai_Namco_Studios"
+FileNameExtensions: ["numshb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HBSS@\0\0\0\0\0\0\0\0\0\0\0HSEM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HSEM"
+    CaseSensitive: false

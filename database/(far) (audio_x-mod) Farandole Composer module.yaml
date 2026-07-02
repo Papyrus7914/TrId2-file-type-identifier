@@ -1,0 +1,11 @@
+Name: Farandole Composer module
+URL: "http://justsolve.archiveteam.org/wiki/Farandole_Composer_module"
+FileNameExtensions: ["far"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FAR\xFE"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\r\n\x1A"
+    CaseSensitive: true

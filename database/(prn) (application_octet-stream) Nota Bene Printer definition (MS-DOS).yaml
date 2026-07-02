@@ -1,0 +1,80 @@
+Name: Nota Bene Printer definition (MS-DOS)
+URL: "https://en.wikipedia.org/wiki/Nota_Bene_(word_processor)"
+FileNameExtensions: ["prn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";PR;\xAESV"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERTICAL SPACING TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF PRINTER TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSTITUTION TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD MM+MICRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD BO+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD BR+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD BU+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD FN+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD FR+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD NM+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD RV+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD SD+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD SU+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD UL+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DF FF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PRN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDBO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDNM"
+    CaseSensitive: false

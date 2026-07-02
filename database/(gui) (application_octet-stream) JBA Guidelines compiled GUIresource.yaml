@@ -1,0 +1,11 @@
+Name: JBA Guidelines compiled GUI/resource
+URL: "https://www.edm2.com/index.php/JBA_Guidelines"
+FileNameExtensions: ["gui"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GUI files are not in a readable format.\r\n\x1A"
+    CaseSensitive: true
+  - Pos: 575
+    AsciiString: "C) Copyright "
+    CaseSensitive: true

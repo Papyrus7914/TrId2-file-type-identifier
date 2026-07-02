@@ -1,0 +1,10 @@
+Name: MyPhoneExplorer Backup
+URL: "http://www.fjsoft.at/"
+FileNameExtensions: ["mpb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFMyPhoneExplorer_ContentID:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDOFDATA"
+    CaseSensitive: false

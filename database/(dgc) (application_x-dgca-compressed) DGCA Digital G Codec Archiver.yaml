@@ -1,0 +1,12 @@
+Name: DGCA Digital G Codec Archiver
+Description: DGCA is a freeware compression utility created in 2001 by Shin-ichi Tsuruta.
+URL: "https://en.wikipedia.org/wiki/DGCA_(computing)"
+FileNameExtensions: ["dgc"]
+MimeType: application/x-dgca-compressed
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DGCA"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "DATA"
+    CaseSensitive: true

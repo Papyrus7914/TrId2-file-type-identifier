@@ -1,0 +1,355 @@
+Name: FlySky I6X firmware
+URL: "https://www.flysky-cn.com"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0 "
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\b"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\b"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\b\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "\0\b\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "\0\b"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\b"
+    CaseSensitive: true
+  - Pos: 193
+    AsciiString: "H\x85F\0\xF0"
+    CaseSensitive: true
+  - Pos: 200
+    AsciiString: "\0H\0G"
+    CaseSensitive: true
+  - Pos: 206
+    AsciiString: "\0\b"
+    CaseSensitive: true
+  - Pos: 216
+    #              H
+    Bytes: [0x04, 0x48]
+  - Pos: 219
+    AsciiString: "G"
+    CaseSensitive: true
+  - Pos: 224
+    Bytes: [0xFE, 0xE7, 0xFE, 0xE7, 0xFE, 0xE7, 0xFE, 0xE7]
+  - Pos: 238
+    AsciiString: "\0\b"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THRO. HOLD\0\0IDLE MODE\0\0\0FLY MODE\0\0\0\0OFF\0NORMAL\0\0ON\0\0IDLE UP\0SPORT\0\0\0BIND\0\0\0\0DEF STICKS MODE\0SELF CENTERING\0\0AUX SWITCHES\0\0\0\0FLASH RESET\0RESTART\0LCD TEST\0\0\0\0KEY TEST\0\0\0\0VOLTAGE ADJUST\0\0STICKS ADJUST\0\0\0RF FREQUENCY\0\0\0\0TR1\0TR2\0TR3\0TR4\0TR5\0TR6\0TR7\0TR8\0SWA\0SWB\0SWC\0BIND\0\0\0\0SWD\0OK\0\0CANCEL\0\0DOWN\0\0\0\0UP\0\0ENTER\0\0\0MENU\0\0\0\0CARRIER + MODUL.\0\0\0\0LEFT ANT.\0\0\0RIGHT ANT.\0\0WIDE HOPPING\0\0\0\0FREQUENCY SCAN\0\0CARRIER ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXP.\0\0THROTTLE HOLD\0\0\0REVERSE\0THROTTLE CURVE\0\0V TAIL\0\0SUBTRIM\0ELEVON\0\0ASSIGN SWITCHES\0MIXES\0\0\0AUX. CHANNELS\0\0\0END POINTS\0\0DISPLAY\0GYROSCOPE\0\0\0PITCH CURVE\0SWASHPLATE MIX\0\0AIRPLANE\0\0\0\0FIXED PITCH\0VARIABLE PITCH\0\0OR GLIDER\0\0\0HELICOPTER\0\0SWASH 120"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWARE VER.\0\0\0TRAINER MODE\0\0\0\0STICKS MODE\0STUDENT MODE\0\0\0\0MODEL NAME\0\0FIRMWARE UPDATE\0RX SETUP\0\0\0\0LCD BRIGHTNESS\0\0TYPE SELECT\0MODEL SELECT\0\0\0\0MODEL RESET\0FACTORY RESET\0\0\0MODEL COPY\0\0RF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATE MODE\0ACTIVE.TURN THE \0\0\0\0 SYSTEM OFF AND \0\0\0\0ON AGAIN TO EXIT\0\0\0\0THIS WILL ENTER\0FIRMWARE UPDATE\0MODE AND HALT\0\0\0OTHER FUNCTIONS\0ARE YOU SURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I-BUS SETUP\0SERVOS FREQ\0CHOOSE SENSORS\0\0SENSORS LIST\0\0\0\0RX BATTERY\0\0RESET ODOMETER1\0RESET ODOMETER2\0ROTATION LENGTH\0SPEED SENSOR\0\0\0\0DUAL RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PG\0\0\0\0 MOT\0\0\0\0 TEM\0\0\0\0INTV\0\0\0\0EXTV\0\0\0\0ODO2\0\0\0\0ODO1\0\0\0\0 SPE\0\0\0\0TX.V\0\0\0\0SIGS\0\0\0\0 SNR\0\0\0\0NOIS\0\0\0\0RSSI\0\0\0\0PR\0\0ALT\0~(-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PG\0\0\0\0MOT\0TEM\0INTV\0\0\0\0EXTV\0\0\0\0ODO2\0\0\0\0ODO1\0\0\0\0SPE\0TX.V\0\0\0\0SIGS\0\0\0\0SNR\0NOIS\0\0\0\0RSSI\0\0\0\0PR\0\0ALT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON\0\0OFF\0%4S\0MASTER\0\0VR%C\0\0\0\0SLAVE\0\0\0CH%D\0\0\0\0POS. MIX\0\0\0\0%4D%%\0\0\0NEG. MIX\0\0\0\0OFFSET\0\0%+3D%%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH RESET\0FACTORY RESET\0\0\0THIS WILL RESET\0ALL PARAMETERS\0\0TO THEIR\0\0\0\0FACTORY DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSIGNING CH\0\0\0\0%S%D\0\0\0\0PRESS THE\0\0\0CORRESPONDING\0\0\0SERVO INTERFACE\0BUTTON OR\0\0\0PRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL SELECT\0\0\0\0FACTORY RESET\0\0\0MODEL COPY\0\0TYPE SELECT\0MODEL RESET\0FIRMWARE UPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARE YOU SURE\0\0\0\0YES\0NO\0\0THIS WILL ENTER\0ALL SETTINGS\0\0\0\0WILL BE BYPASSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACE ALL\0\0\0SWITCHES IN\0THEIR UP\0\0\0\0POSITION AND\0\0\0\0LOWER THE\0\0\0THROTTLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESET ODOMETER 1\0\0\0\0THIS WILL RESET\0THE ODMETER 1\0\0\0ARE YOU SURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESET ODOMETER 2\0\0\0\0THIS WILL RESET\0THE ODMETER 2\0\0\0ARE YOU SURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RF STANDARD\0SPEED-DISTANCE\0\0OUTPUT MODE\0FAILSAFE\0\0\0\0ASL PRESSURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTERNAL SENSOR\0INTERNAL SENSOR\0LOW\0%U.%U%UV\0\0\0\0ALARM\0\0\0HIGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOR YOUR SAFETY\0PLEASE TURN OFF\0THE RECEIVER\0\0\0\0FIRST\0\0\0OK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACE ALL STICKS\0\0\0\0TO THEIR MIDDLE\0POSITIONS AND\0\0\0PRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLTAGE ADJUST\0\0CURRENT POWER\0\0\0SUPPLY VOLTAGE\0\0%D.%03UV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEVON\0\0V TAIL ENABLED\0\0ELEVON  ON\0\0ELEVON  OFF\0CH1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V TAIL\0\0ELEVON ENABLED\0\0V TAIL  ON\0\0V TAIL  OFF\0CH2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT MODE\0OUTPUT\0\0PWM\0PPM\0SERIAL\0\0I-BUS\0\0\0S.BUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS WILL CHANGE\0\0\0\0THE AFHDS MODE\0\0ARE YOU SURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON\0\0OFF\0SWITCH\0\0%S\0\0ACTIVE\0\0INACTIVE\0\0\0\0NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0%D.%02UV\0\0\0\0-%U.%02UV\0\0\0%U.%02UV\0\0\0\0%URPM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS WILL CANCEL\0\0\0\0STUDENT MODE\0\0\0\0PRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789ABCDEF\0\0\0\00123456789ABCDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNCTIONS SETUP\0SYSTEM SETUP\0\0\0\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVE ALL STICKS\0TO THEIR EXTREME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWARE VER.\0\0\0FLYSKY FS-I6X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLD  ON\0\0\0\0HOLD  OFF\0\0\0VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE\0\0\0\0%S\0\0MOTOR SPEED\0%S %U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO THEIR\0\0\0\0FACTORY DEFAULT\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPORT\0\0\0NORMAL\0\0CH%D\0\0\0\0RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VRA\0SWA\0VRB\0SWB\0SWC\0SWD\0NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEF STICKS MODE\0STICKS MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION LENGTH\0LENGTH(MM)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWASHPLATE MIX\0\0SWASH TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "% 4D%%\0\0ELEVATOR\0\0\0\0PITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH%D\0\0\0\0MODE\0\0\0\0%S %D\0\0\08"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RF FREQUENCY\0\0\0\0FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%D%%\0\0\0\0ACTIVE\0\0INACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON\0\0CHANNEL\0%S %D\0\0\0%S%D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YES\0NO\0\0AFHDS\0\0\0AFHDS 2A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNEL %D\0\0CHANNEL%D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAILSAFE\0\0\0\0THIS WILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDLE UP\0NORMAL\0\0VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGSWA\0SWB\0SWC\0SWD\0CH3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVOS FREQ\0FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO COPY\0\0ARE YOU SURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO RESET\0\0\0MODEL %02D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%D%%\0\0\0\0ALL CHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENSORS LIST\0\0\0\0%S%U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAINER MODE\0\0\0\0MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERSE\0CH\0\0NOR\0REV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%02D\0\0\0\0MODEL %02D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH%D\0\0\0\0%02D\0\0\0\0CH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNEL %D\0\0SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHOOSE SENSORS\0\0%U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.0 %S-%S-%S\0\0\0\01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNEL\0CH%D\0\0\0\08"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "6CA\0\0$$$$$$\0\0AC6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GYROSCOPE\0\0\0GYRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL\0\0\0%S %02D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH%D\0\0\0\0%D\0\0CH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%.1FHPA\0VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HID INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE\0\0\0\0%3D%%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YES\0NO\0\0PRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%3D%%  %3D%%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%DM\0ALTITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%U.%U\0\0\0MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "404 NOT FIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH2+CH1\0\0CH2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH2+CH4\0\0CH2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH2-CH1\0\0CH1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH2-CH4\0\0CH4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE\0\0\0\0\0HPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON\0\0OFF\0MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RX BINDING.."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO\0\0\0CONFIRM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%D%%\0\0\0\0CH2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%D%%\0\0\0\0CH4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON\0\0OFF\0DIY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%D\0\0MIX IS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HID CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE\0\0\0\0%U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RX BIND OK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO CONFIRM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%U\0\0%D.%U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFF\0ON\0\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWASH 140"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%C% 4D%%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%S %S %S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLYSKYI$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWASH 90"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%4D\0EXP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AILERON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPY TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UHF\0X\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USED"
+    CaseSensitive: false

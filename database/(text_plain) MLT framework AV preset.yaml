@@ -1,0 +1,13 @@
+Name: MLT framework AV preset
+URL: "https://github.com/mltframework/mlt"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "f="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "META.PRESET."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODEC"
+    CaseSensitive: false

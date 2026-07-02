@@ -1,0 +1,12 @@
+Name: Sprite Artist Sprite
+Description: DOS sprite designer by Oleg Alexeev.
+URL: "http://www.kis.ru:80/~oa/"
+FileNameExtensions: ["spr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFCDF\r\n\x1A"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "RPS"
+    CaseSensitive: true

@@ -1,0 +1,25 @@
+Name: Wireless Markup Language
+URL: "http://en.wikipedia.org/wiki/Wireless_Markup_Language"
+FileNameExtensions: ["wml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE WML PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.WAPFORUM.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTD WML 1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

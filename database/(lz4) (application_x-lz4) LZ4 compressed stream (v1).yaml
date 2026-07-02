@@ -1,0 +1,9 @@
+Name: LZ4 compressed stream (v1)
+Description: version 1.0 - 1.3
+URL: "http://fileformats.archiveteam.org/wiki/LZ4"
+FileNameExtensions: ["lz4"]
+MimeType: application/x-lz4
+DetectionPatterns:
+  - Pos: 0
+    #              !     L
+    Bytes: [0x03, 0x21, 0x4C, 0x18]

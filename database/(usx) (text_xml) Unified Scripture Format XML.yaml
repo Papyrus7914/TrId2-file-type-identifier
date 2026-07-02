@@ -1,0 +1,20 @@
+Name: Unified Scripture Format XML
+URL: "http://ebible.org/usfx/"
+FileNameExtensions: ["usx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHAPTER NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSE NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USX VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARA STYLE"
+    CaseSensitive: false

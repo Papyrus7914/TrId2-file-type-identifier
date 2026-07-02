@@ -1,0 +1,321 @@
+Name: EasyPrint PictureMate borders
+FileNameExtensions: ["fd2"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EPPIF\0\x02\x01\0\0"
+    CaseSensitive: true
+  - Pos: 228
+    AsciiString: ".xml\0\0\x04\0.\\\0\0"
+    CaseSensitive: true
+  - Pos: 243
+    AsciiString: "\0<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:eppif=\"http://schema.epson.net/pif/3.1\">"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REPEATABLE-PAGE-MASTER-REFERENCE MASTER-REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLE-PAGE-MASTER-REFERENCE MASTER-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE-SEQUENCE-MASTER MASTER-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLE-PAGE-MASTER MASTER-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINER CONTAINER_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-PIF-IMAGE-SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F_DUMMY F_DUMMY_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA.EPSON.NET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMUM-REPEATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE-COUNT-FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CONTAINER_1 {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTILANGTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUTTINGLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUTTINGOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC.IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFCOLORSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE IMAGE_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGIN-BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTERCENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUTTINGCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUTTINGWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREESIZEFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGIN-RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOBLEEDFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALBUMFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC.LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGIN-LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE PAGE_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINDMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC.SUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FITOUTSIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTML XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPOSSIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGIN-TOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOCROPMARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTID_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERCEPTUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST-BLANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLESHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FITALIGNH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FITALIGNV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIV CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAPERSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHOTOID_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRE-BLANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA.DC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTALPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABSOLUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINDLEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEMETA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICTURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PURL.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FITTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCMETA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIFTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EN-US"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPPIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOCMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XHTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".USF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIM"
+    CaseSensitive: false

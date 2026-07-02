@@ -1,0 +1,54 @@
+Name: Windows Recovery Environment configuration
+Description: Filename is ReAgent.xml
+URL: "https://en.wikipedia.org/wiki/Windows_Preinstallation_Environment#Windows_Recovery_Environment"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version='1.0' encoding='utf-8'"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PBRCUSTOMIMAGELOCATION PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMIMAGEAVAILABLE STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSINSTALLAVAILABLE STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEDULEDOPERATION STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PBRIMAGELOCATION PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATIONPARAM PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSBUILDVERSION PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLSTATE STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINRELOCATION PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWSRE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINRESTAGED STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OEMTOOL STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINREBCD ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false

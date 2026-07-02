@@ -1,0 +1,26 @@
+Name: Adobe PageMaker document (v6)
+Description: PageMaker is a Desk Top Publishing (DTP) software.
+URL: "https://en.wikipedia.org/wiki/Adobe_PageMaker"
+FileNameExtensions: ["pm6"]
+MimeType: application/x-pagemaker
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: 25
+    AsciiString: "\0\x03\0\xFE\xFF\t\0\x06\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 1152
+    AsciiString: "P\0a\0g\0e\0M\0a\0k\0e\0r\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADOBE COMPATIBILITY CMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEMAKER 5.0 CMYK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0A\0G\0E\0M\0A\0K\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEMAKER 5.0 RGB"
+    CaseSensitive: false

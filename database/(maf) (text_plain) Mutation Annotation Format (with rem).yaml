@@ -1,0 +1,110 @@
+Name: Mutation Annotation Format (with rem)
+URL: "https://wiki.nci.nih.gov/display/DCC/DCC+Mutation+Annotation+Format+(MAF)+Specification"
+FileNameExtensions: ["maf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MATCH_NORM_VALIDATION_ALLELE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCH_NORM_VALIDATION_ALLELE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCHED_NORM_SAMPLE_BARCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUMOR_VALIDATION_ALLELE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUMOR_VALIDATION_ALLELE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCH_NORM_SEQ_ALLELE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCH_NORM_SEQ_ALLELE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT_CLASSIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUMOR_SAMPLE_BARCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERIFICATION_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISSENSE_MUTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUMOR_SEQ_ALLELE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUMOR_SEQ_ALLELE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALIDATION_METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALIDATION_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBSNP_VAL_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE_ALLELE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCING_PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUTATION_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCE_SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTREZ_GENE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HUGO_SYMBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHROMOSOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCBI_BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAM_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBSNP_RS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SILENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORE"
+    CaseSensitive: false

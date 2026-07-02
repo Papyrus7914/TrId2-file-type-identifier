@@ -1,0 +1,44 @@
+Name: Xcode Privacy Manifest
+URL: "https://en.wikipedia.org/wiki/Xcode"
+FileNameExtensions: ["xcprivacy"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE PLIST PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYLIST-1.0.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTD PLIST 1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLIST VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.APPLE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSPRIVACY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

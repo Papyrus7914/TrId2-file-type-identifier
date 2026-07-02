@@ -1,0 +1,365 @@
+Name: mSIGNA Vault
+URL: "https://ciphrex.com/products/"
+FileNameExtensions: ["vault"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INDEXACCOUNTBIN_SCRIPT_LABEL_MAP_OBJECT_ID_IACCOUNTBIN_SCRIPT_LABEL_MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDEXUSER_TXOUTSCRIPT_WHITELIST_OBJECT_ID_IUSER_TXOUTSCRIPT_WHITELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7INDEXMERKLEBLOCK_HASHES_OBJECT_ID_IMERKLEBLOCK_HASHES6CREATE INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7INDEXSIGNINGSCRIPT_KEYS_OBJECT_ID_ISIGNINGSCRIPT_KEYS-CREATE INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OINDEXKEYCHAIN_DERIVATION_PATH_OBJECT_ID_IKEYCHAIN_DERIVATION_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3INDEXACCOUNT_KEYCHAINS_OBJECT_ID_IACCOUNT_KEYCHAINS(CREATE INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXMERKLEBLOCK_HASHES_INDEX_IMERKLEBLOCK_HASHES7CREATE INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSIGNINGSCRIPT_KEYS_INDEX_ISIGNINGSCRIPT_KEYS.CREATE INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXKEYCHAIN_DERIVATION_PATH_INDEX_IKEYCHAIN_DERIVATION_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STABLEACCOUNTBIN_SCRIPT_LABEL_MAPACCOUNTBIN_SCRIPT_LABEL_MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1TABLEUSER_TXOUTSCRIPT_WHITELISTUSER_TXOUTSCRIPT_WHITELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXACCOUNTBIN_KEYCHAINS_OBJECT_ID_IACCOUNTBIN_KEYCHAINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXBLOCKHEADER_HEIGHT_IBLOCKHEADER2CREATE UNIQUE INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GTABLEMERKLEBLOCK_HASHESMERKLEBLOCK_HASHES4CREATE TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXKEY_DERIVATION_PATH_OBJECT_ID_IKEY_DERIVATION_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KTABLESIGNINGSCRIPT_KEYSSIGNINGSCRIPT_KEYS+CREATE TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXBLOCKHEADER_HASH_IBLOCKHEADER1CREATE UNIQUE INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STABLEKEYCHAIN_DERIVATION_PATHKEYCHAIN_DERIVATION_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+INDEXKEY_DERIVATION_PATH_INDEX_IKEY_DERIVATION_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_SCHEMA_VERSION_1SCHEMA_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXACCOUNT_NAME_IACCOUNT%CREATE UNIQUE INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEACCOUNTBIN_KEYCHAINSACCOUNTBIN_KEYCHAINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESIGNINGSCRIPTSIGNINGSCRIPT*CREATE TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TABLEKEY_DERIVATION_PATHKEY_DERIVATION_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+TABLEMERKLEBLOCKMERKLEBLOCK3CREATE TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEACCOUNT_KEYCHAINSACCOUNT_KEYCHAINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YTABLESQLITE_SEQUENCESQLITE_SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SQLITE_SEQUENCE(NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESCHEMA_VERSIONSCHEMA_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXACCOUNTBIN_HASH_IACCOUNTBIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFERRABLE INITIALLY DEFERRED)B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFERRABLE INITIALLY DEFERRED)J"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXCONTACT_USERNAME_ICONTACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXOUTSCRIPT_WHITELIST_ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXKEYCHAIN_NAME_IKEYCHAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STABLEBLOCKHEADERBLOCKHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTABLETXINTXIN8CREATE TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9TABLEACCOUNTBINACCOUNTBIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXACCOUNT_HASH_IACCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXTX_UNSIGNED_HASH_ITX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT NOT NULL PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXUSER_USERNAME_IUSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEKEYCHAINKEYCHAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPAGATION_PROTOCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVING_ACCOUNT_FK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YTABLENETWORKNETWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TABLEVERSIONVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER NOT NULL)N%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEACCOUNTACCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLECONTACTCONTACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAVE_ALL_OUTPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON DELETE CASCADE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIVKEY_CIPHERTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDING_ACCOUNT_FK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT_SCRIPT_INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT_KEYCHAIN_FK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNINGSCRIPT_FK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNUSED_POOL_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTABLETXOUTTXOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSED_KEYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVING_LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEED_CIPHERTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQLITE FORMAT 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCOUNT_BIN_FK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKHEADER_FK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT NOT NULL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOB NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREIGN KEY ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDING_LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEUSERUSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT_ID_FK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIVKEY_SALT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME_CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFLICTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPOINT_FK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEKEYKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXOUT_TOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXSINSERTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAIN_CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTRAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTACT_FK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_PRIVATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MERKLEROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXINSCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXIN_TOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YTABLETXTX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILD_NUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIGRATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT_FK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT_FP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEED_SALT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVHASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPENT_FK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE_FK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITCOIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINSIGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTHASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER_FK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIDDEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TX_FK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQ)"
+    CaseSensitive: false

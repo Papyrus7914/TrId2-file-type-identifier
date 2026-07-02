@@ -1,0 +1,20 @@
+Name: Playmation Chor data
+Description: Amiga 3D Software.
+FileNameExtensions: ["cho"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CHOR "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FIG"
+    CaseSensitive: false

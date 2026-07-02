@@ -1,0 +1,14 @@
+Name: Actor Windows Description Language - Menu
+URL: "https://en.wikipedia.org/wiki/Actor_(programming_language)"
+FileNameExtensions: ["wdl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Menu "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

@@ -1,0 +1,47 @@
+Name: macOS application in a Zip container
+URL: "https://en.wikipedia.org/wiki/MacOS"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "_CODESIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODERESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO.PLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ICNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".APP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false

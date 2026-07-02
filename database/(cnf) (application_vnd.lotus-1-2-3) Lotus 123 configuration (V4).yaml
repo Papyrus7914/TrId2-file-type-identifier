@@ -1,0 +1,9 @@
+Name: Lotus 123 configuration (V4)
+Description: revision number 1450h is stored at offset 4.
+URL: "http://fileformats.archiveteam.org/wiki/Lotus_1-2-3"
+FileNameExtensions: ["cnf"]
+MimeType: application/vnd.lotus-1-2-3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x02\0P\x14"
+    CaseSensitive: true

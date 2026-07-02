@@ -1,0 +1,50 @@
+Name: Linkages printer Setup
+Description: A family relationship DB for DOS by Vincent C. Jacobson.
+FileNameExtensions: ["set"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ".CPI10"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EVERYTHING AFTER 1ST INTEGER IGNORED KEEP LINE LESS THAN 80"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE 1ST VALUE IS WHAT THIS CHARACTER WILL BE OUTPUT AS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIOUS FORMS OF VERTICAL BARS XLATE TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOW VALUES WILL ALL BE BLANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF FILE MARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARRIAGE RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACK SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM FEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE FEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CPI10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CPI17"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LPI6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LPI8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BELL"
+    CaseSensitive: false

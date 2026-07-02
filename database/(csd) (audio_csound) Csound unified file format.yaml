@@ -1,0 +1,21 @@
+Name: Csound unified file format
+Description: Csound orchestra and score files unified into a single structured XML file.
+URL: "https://en.wikipedia.org/wiki/Csound"
+FileNameExtensions: ["csd"]
+MimeType: audio/csound
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<CsoundSynthesizer>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CSOUNDSYNTHESIZER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSINSTRUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSSCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIN"
+    CaseSensitive: false

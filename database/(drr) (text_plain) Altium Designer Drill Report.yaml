@@ -1,0 +1,47 @@
+Name: Altium Designer Drill Report
+URL: "https://en.wikipedia.org/wiki/Altium_Designer"
+FileNameExtensions: ["drr"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "---------------------------------------------------------------------------"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DRILL FILE REPORT FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL PROCESSING TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOL TRAVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLE COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER PAIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLE SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASCII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PCB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCH"
+    CaseSensitive: false

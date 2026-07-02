@@ -1,0 +1,32 @@
+Name: Spritemate
+URL: "http://www.spritemate.com/"
+FileNameExtensions: ["spm"]
+MimeType: application/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"colors\":{\"t\":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CURRENT_SPRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERLAY_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTICOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOUBLE_X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOUBLE_Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRITES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false

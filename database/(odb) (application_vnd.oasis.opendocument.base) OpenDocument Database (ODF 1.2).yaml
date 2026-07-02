@@ -1,0 +1,45 @@
+Name: OpenDocument Database (ODF 1.2)
+Description: Used in OpenOffice.org 3.x.
+URL: "https://en.wikipedia.org/wiki/OpenDocument"
+FileNameExtensions: ["odb"]
+MimeType: application/vnd.oasis.opendocument.base
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/vnd.oasis.opendocument.base"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.OASIS.OPENDOCUMENT.BASEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATIONS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

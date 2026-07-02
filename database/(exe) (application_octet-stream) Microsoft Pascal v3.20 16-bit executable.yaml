@@ -1,0 +1,226 @@
+Name: Microsoft Pascal v3.20 16-bit executable
+URL: "https://en.wikipedia.org/wiki/Microsoft_Pascal"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 10
+    Bytes: [0x01, 0x00, 0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: ")\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1E\0\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 45
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 57
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REAL ARITHMETIC PROCESSOR INSTRUCTION ILLEGAL OR NOT EMULATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1REAL INDEFINITE (UNINITIALIZED OR PREVIOUS ERROR)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISSING ARITHMETIC PROCESSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL DENORMAL DETECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOCATOR INTERRUPTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL PRECISION LOSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT ENOUGH MEMORY$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISO.PAS    \0\0\0BW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCSIN OR ARCCOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE OFFLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIVIDE BY ZERO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATH UNDERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTECTED FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NOT OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE TOO LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATH OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NON-POSITIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE FULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE IN USE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS INVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO ROOM IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIN OR COS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARD DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOST FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISHM.PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAH.PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISY.PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEGATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSIGNED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCTAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BW\0\0BW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "00000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GZKT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

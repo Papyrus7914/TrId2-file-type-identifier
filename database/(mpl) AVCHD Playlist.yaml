@@ -1,0 +1,16 @@
+Name: AVCHD Playlist
+URL: "http://en.wikipedia.org/wiki/AVCHD"
+FileNameExtensions: ["mpl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MPLS0100\0\0\0:"
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 69
+    AsciiString: "P000"
+    CaseSensitive: true
+  - Pos: 75
+    AsciiString: "M2TS"
+    CaseSensitive: true

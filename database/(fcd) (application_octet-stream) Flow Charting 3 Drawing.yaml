@@ -1,0 +1,14 @@
+Name: Flow Charting 3 Drawing
+Description: Flow charting tools for DOS by Patton and Patton Software Corp.
+FileNameExtensions: ["fcd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<\x02$\0FLOCHT3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLOCHT3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FPD"
+    CaseSensitive: false

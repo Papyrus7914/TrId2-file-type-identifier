@@ -1,0 +1,14 @@
+Name: Bitwig Studio Module/Modulator
+URL: "https://www.bitwig.com/"
+FileNameExtensions: ["bwmodule", "bwmodulator"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BtWg0003000400be00001"
+    CaseSensitive: true
+  - Pos: 75
+    #                                            R     q     n                                         6
+    Bytes: [0x1A, 0xDF, 0x88, 0x06, 0xFC, 0xE4, 0x52, 0x71, 0x6E, 0xCF, 0xEE, 0x13, 0x97, 0x83, 0xF7, 0x36]
+  - Pos: 107
+    AsciiString: "x\vZ\xD8\x9D\xBC\xB4Z\xE1j\v\xE5,>+w"
+    CaseSensitive: true

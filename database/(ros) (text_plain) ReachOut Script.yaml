@@ -1,0 +1,14 @@
+Name: ReachOut Script
+URL: "https://www.computinghistory.org.uk/det/14077/Stac-ReachOut-Users-Guide/"
+FileNameExtensions: ["ros"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DESCRIPTION "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONNECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

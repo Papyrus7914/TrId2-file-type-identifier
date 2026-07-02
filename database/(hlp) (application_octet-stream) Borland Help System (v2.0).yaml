@@ -1,0 +1,26 @@
+Name: Borland Help System (v2.0)
+URL: "https://en.wikipedia.org/wiki/Borland"
+FileNameExtensions: ["hlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Help System Version 2.0 (c) 19"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: " Borland International, Inc.\r\n\r\n\f\x1A"
+    CaseSensitive: true
+  - Pos: 83
+    AsciiString: "BH2.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BORLAND INTERNATIONAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BH2.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false

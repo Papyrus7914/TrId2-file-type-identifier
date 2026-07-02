@@ -1,0 +1,71 @@
+Name: Portable Embosser Format
+Description: PEF is a data format for representing braille books, accurately and unambiguously.
+URL: "http://www.daisy.org/projects/braille/braille_workarea/pef.html"
+FileNameExtensions: ["pef"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WWW.DAISY.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME COLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-PEF+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PURL.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2008-1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUPLEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWGAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWS"
+    CaseSensitive: false

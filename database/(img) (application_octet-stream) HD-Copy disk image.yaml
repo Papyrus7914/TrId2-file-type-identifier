@@ -1,0 +1,8 @@
+Name: HD-Copy disk image
+URL: "https://en.wikipedia.org/wiki/HDCopy"
+FileNameExtensions: ["img"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    \a
+    Bytes: [0xFF, 0x18, 0x07]

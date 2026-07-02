@@ -1,0 +1,17 @@
+Name: BlueCielo Meridian BriefCase - File Archive Library (v1.00)
+Description: This Meridian / InnoCielo CAB file format (formerly Cyco AutoManager BriefCase)
+URL: "http://www.onset.com.au/"
+FileNameExtensions: ["brc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FAL100\x1A\0"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "PRFF203"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION\0100"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRCHEADER"
+    CaseSensitive: false

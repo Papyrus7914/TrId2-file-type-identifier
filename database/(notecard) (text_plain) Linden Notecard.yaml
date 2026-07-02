@@ -1,0 +1,17 @@
+Name: Linden Notecard
+URL: "http://wiki.secondlife.com/wiki/Notecard"
+FileNameExtensions: ["notecard"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Linden text version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LLEMBEDDEDITEMS VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false

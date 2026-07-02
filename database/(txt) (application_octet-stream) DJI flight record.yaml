@@ -1,0 +1,23 @@
+Name: DJI flight record
+URL: "https://en.wikipedia.org/wiki/DJI"
+FileNameExtensions: ["txt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ")\x03\0\0\0\0\0\0\xB4\x01\x0E"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xBB\x02"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "B\0BG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0KV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0WM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0WP"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: AdaProbe debugging info
+Description: Part of ActiveAda by Alsys.
+FileNameExtensions: ["cui"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CUIb"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADAPROBE_SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_VV.VVALSYS"
+    CaseSensitive: false

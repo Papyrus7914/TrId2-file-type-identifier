@@ -1,0 +1,26 @@
+Name: Roxanne animation
+Description: Amiga animation tool.
+FileNameExtensions: ["rox"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "ROXNRXH0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROXNRXH0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RXA0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RXCM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RXI0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RXO0"
+    CaseSensitive: false

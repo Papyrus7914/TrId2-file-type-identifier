@@ -1,0 +1,63 @@
+Name: West Mountain Radio CBA Test (v2)
+Description: Computerized Battery Analyzer is a battery testing tool.
+URL: "https://www.westmountainradio.com/cba.php"
+FileNameExtensions: ["bt2"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n<CBATest>\r\n  <Version>2."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BATTERYCAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERYVOLTAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTEDCAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERYWEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTTYPE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERYCELLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERAMPTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERYTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATESTARTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTCUTOFFV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEST NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CBATEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTS"
+    CaseSensitive: false

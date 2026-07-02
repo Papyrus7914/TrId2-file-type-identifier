@@ -1,0 +1,28 @@
+Name: Panasonic NS-serie PBX audio backup
+FileNameExtensions: ["bkp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VMBK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVEFMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRV0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIFF"
+    CaseSensitive: false

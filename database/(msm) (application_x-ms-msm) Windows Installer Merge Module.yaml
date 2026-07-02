@@ -1,0 +1,112 @@
+Name: Windows Installer Merge Module
+URL: "https://en.wikipedia.org/wiki/Windows_Installer"
+FileNameExtensions: ["msm"]
+MimeType: application/x-ms-msm
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: 1024
+    AsciiString: "R\0o\0o\0t\0 \0E\0n\0t\0r\0y"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALIDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MERGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WELDJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".THE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

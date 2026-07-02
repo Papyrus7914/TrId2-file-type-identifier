@@ -1,0 +1,13 @@
+Name: Quartus DataBase Info
+URL: "http://en.wikipedia.org/wiki/Altera_Quartus"
+FileNameExtensions: ["db_info"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Quartus_Version = Version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATION_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false

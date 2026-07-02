@@ -1,0 +1,20 @@
+Name: WinDS Pro Skin
+URL: "http://windsprocentral.blogspot.it/"
+FileNameExtensions: ["windsproskin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "BUTTON.BTNPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONDO.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIGHLIGHT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKIN.LUAPK"
+    CaseSensitive: false

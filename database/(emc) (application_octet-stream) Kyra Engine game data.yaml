@@ -1,0 +1,14 @@
+Name: Kyra Engine game data
+Description: Used in The Legend of Kyrandia.
+FileNameExtensions: ["emc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "EMC2ORDR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

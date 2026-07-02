@@ -1,0 +1,38 @@
+Name: Lightworks Layout
+URL: "https://en.wikipedia.org/wiki/Lightworks"
+FileNameExtensions: ["lwlayout"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMELINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

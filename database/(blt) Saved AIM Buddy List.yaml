@@ -1,0 +1,19 @@
+Name: Saved AIM Buddy List
+URL: "http://www.aim.com/"
+FileNameExtensions: ["blt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Config {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONFIG {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUDDY {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST {"
+    CaseSensitive: false

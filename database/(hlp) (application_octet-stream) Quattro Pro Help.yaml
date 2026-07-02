@@ -1,0 +1,17 @@
+Name: Quattro Pro Help
+URL: "https://en.wikipedia.org/wiki/Quattro_Pro"
+FileNameExtensions: ["hlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "QUATTRO PRO "
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: " HELP FILE."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HELP FILE"
+    CaseSensitive: false

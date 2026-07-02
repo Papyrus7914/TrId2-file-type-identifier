@@ -1,0 +1,13 @@
+Name: BS-DOS MB-02 disk image
+URL: "https://busy.speccy.cz/tvorba/mb02form.htm"
+FileNameExtensions: ["mb2", "mbd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    Bytes: [0x80, 0x02]
+  - Pos: 20
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0"
+    CaseSensitive: true

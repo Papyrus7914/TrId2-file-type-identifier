@@ -1,0 +1,19 @@
+Name: Advanced Stream Redirector
+URL: "http://en.wikipedia.org/wiki/Advanced_Stream_Redirector"
+FileNameExtensions: ["asx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: " version"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASX VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REF HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY"
+    CaseSensitive: false

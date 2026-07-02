@@ -1,0 +1,14 @@
+Name: K-3D STereoLithography (binary)
+URL: "http://www.k-3d.org/"
+FileNameExtensions: ["stl"]
+MimeType: model/x.stl-binary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "K-3D "
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STL WRITER"
+    CaseSensitive: false

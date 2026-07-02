@@ -1,0 +1,16 @@
+Name: PCSX2 Patch
+URL: "http://pcsx2.net/"
+FileNameExtensions: ["pnach"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "gametitle="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GAMETITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCH"
+    CaseSensitive: false

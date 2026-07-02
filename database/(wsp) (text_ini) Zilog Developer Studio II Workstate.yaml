@@ -1,0 +1,14 @@
+Name: Zilog Developer Studio II Workstate
+URL: "https://en.wikipedia.org/wiki/Zilog"
+FileNameExtensions: ["wsp"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[WorkState_v1_2]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORKSTATE_V1_2.FRAMES.CHILDFRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTN_CHILD1"
+    CaseSensitive: false

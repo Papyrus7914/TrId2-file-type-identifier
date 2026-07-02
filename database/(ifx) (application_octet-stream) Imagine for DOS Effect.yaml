@@ -1,0 +1,14 @@
+Name: Imagine for DOS Effect
+Description: https://en.wikipedia.org/wiki/Imagine_(3D_modeling_software)
+FileNameExtensions: ["ifx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MQ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LWVS"
+    CaseSensitive: false

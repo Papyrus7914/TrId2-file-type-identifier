@@ -1,0 +1,53 @@
+Name: Microsoft Windows AppX package
+URL: "https://en.wikipedia.org/wiki/Universal_Windows_Platform_apps#APPX"
+FileNameExtensions: ["appx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "APPXBLOCKMAP.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPXMANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES.PRI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQUARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTWA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false

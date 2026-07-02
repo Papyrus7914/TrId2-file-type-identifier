@@ -1,0 +1,29 @@
+Name: BioWare Talk table
+URL: "https://me3explorer.fandom.com/wiki/TLK_File_Format"
+FileNameExtensions: ["tlk"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "--FEMALE ENTRIES SECTION BEGIN (ENDS AT POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--MALE ENTRIES SECTION BEGIN (ENDS AT POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--FEMALE ENTRIES SECTION END--"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--MALE ENTRIES SECTION END--"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLKFILE TLKTOOLVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

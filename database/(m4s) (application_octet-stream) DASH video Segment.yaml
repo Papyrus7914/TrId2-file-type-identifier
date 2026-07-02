@@ -1,0 +1,35 @@
+Name: DASH video Segment
+URL: "http://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP"
+FileNameExtensions: ["m4s"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "s"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "4SIDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUN"
+    CaseSensitive: false

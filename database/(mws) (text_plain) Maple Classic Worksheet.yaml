@@ -1,0 +1,35 @@
+Name: Maple Classic Worksheet
+URL: "https://www.maplesoft.com/support/help/maple/view.aspx?path=Formats%2FMWS"
+FileNameExtensions: ["mws"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{VERSION "
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "{EXCHG {PARA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{USTYLETAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{SECT 0 {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}{PSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{CSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

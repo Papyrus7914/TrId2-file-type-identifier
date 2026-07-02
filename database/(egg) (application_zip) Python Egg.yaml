@@ -1,0 +1,29 @@
+Name: Python Egg
+URL: "http://peak.telecommunity.com/DevCenter/PythonEggs"
+FileNameExtensions: ["egg"]
+MimeType: application/zip
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "TOP_LEVEL.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKG-INFOPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZIP-SAFEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EGG-INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PYCPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false

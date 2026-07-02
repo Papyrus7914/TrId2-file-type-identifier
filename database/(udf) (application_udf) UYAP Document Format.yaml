@@ -1,0 +1,23 @@
+Name: UYAP Document Format
+URL: "https://uyap.gov.tr/UYAP-Editor"
+FileNameExtensions: ["udf"]
+MimeType: application/udf
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "documentproperties.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCUMENTPROPERTIES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTPROPERTIES.XMLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGN.SGNPK"
+    CaseSensitive: false

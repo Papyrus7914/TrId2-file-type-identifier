@@ -1,0 +1,11 @@
+Name: Perl script
+Description: Perl is a stable, cross platform programming language by Larry Wall.
+URL: "http://www.perl.org/"
+FileNameExtensions: ["pl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PERL"
+    CaseSensitive: false

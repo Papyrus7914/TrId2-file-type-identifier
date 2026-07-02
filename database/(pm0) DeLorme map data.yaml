@@ -1,0 +1,28 @@
+Name: DeLorme map data
+URL: "http://www.delorme.com"
+FileNameExtensions: ["pm0"]
+DetectionPatterns:
+  - Pos: 60
+    AsciiString: "CMapXMap"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FEATURE TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUTTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELORME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FTB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPO"
+    CaseSensitive: false

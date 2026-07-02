@@ -1,0 +1,26 @@
+Name: Dance With Intensity song
+Description: DWI is a PC simulator of Konami's Dance Dance Revolution.
+URL: "http://dwi.ddruk.com"
+FileNameExtensions: ["dwi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "T"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANOTHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

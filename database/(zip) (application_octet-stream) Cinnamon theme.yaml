@@ -1,0 +1,41 @@
+Name: Cinnamon theme
+URL: "https://en.wikipedia.org/wiki/Cinnamon_(desktop_environment)"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNGUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CINNAMON.CSSUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALENDAR-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-ARROW-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-HOVER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-RIGHT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-LEFT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false

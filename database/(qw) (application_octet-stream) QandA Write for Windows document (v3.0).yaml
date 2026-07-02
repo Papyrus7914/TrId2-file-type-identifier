@@ -1,0 +1,26 @@
+Name: QandA Write for Windows document (v3.0)
+URL: "https://en.wikipedia.org/wiki/Q%26A_(Symantec)"
+FileNameExtensions: ["qw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FFFFIIII\b\0\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0\0\0\x01\0\x01\x01"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\xD0/\xE0="
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\a"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 99
+    AsciiString: "\a"
+    CaseSensitive: true

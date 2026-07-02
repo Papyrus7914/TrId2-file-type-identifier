@@ -1,0 +1,56 @@
+Name: RainCode JCL Project
+URL: "https://www.raincode.com/jcl/"
+FileNameExtensions: ["rcproj"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<Project Sdk=\"Microsoft.NET.Sdk\">\n  <PropertyGroup Label=\"Globals\">\n    <ProjectGuid>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RAINCODELANGUAGESERVICE.TARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYGROUP LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT.NET.SDK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGETARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETFRAMEWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILE REMOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JCLSTARTUPFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JCLLOGLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT SDK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(RCDIR)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JCL00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JCL"
+    CaseSensitive: false

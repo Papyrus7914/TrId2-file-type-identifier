@@ -1,0 +1,106 @@
+Name: 16bit DOS EXE The Patcher (v4.x)
+Description: Game patch tool by Michael Caldwell.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\06\x046\xA4"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0@\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\x0F\0\0\x1C\0\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "\0\0\0\x17\0\0\0"
+    CaseSensitive: true
+  - Pos: 1826
+    Bytes: [0xCD, 0xCD]
+  - Pos: any
+    AsciiString: "DISK IS NOT READY IN DRIVE %C DATA INTEGRITY ERROR ON DRIVE %C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDWARE FAILURE ON DRIVE %C\0 BAD MEMORY IMAGE OF FAT DETECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK IS WRITE-PROTECTED IN DRIVE %C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRITICAL DISK ERROR ON DRIVE %C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN MEDIA TYPE IN DRIVE %C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTOR NOT FOUND ON DRIVE %C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSERT DISKETTE IN DRIVE %C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~ENTER~ RETRY  ~ESC~ CANCEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITE FAULT ON DRIVE %C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTIONS COPYRIGHT (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ FAULT ON DRIVE %C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEEK ERROR ON DRIVE %C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE STATION OBLIVION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIME ERROR \0 AT \0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER OUT OF PAPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE ACCESS ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER GAME TO PATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1991"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICHAEL CALDWELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE PATCHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCHING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORLAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO QUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

@@ -1,0 +1,52 @@
+Name: "{smartassembly} project"
+URL: "http://www.smartassembly.com/"
+FileNameExtensions: ["{sa}proj"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<SmartAssemblyProject ProjectID=\"{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESTINATION DESTINATIONFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMARTASSEMBLYPROJECT PROJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINASSEMBLYFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCEPTIONREPORTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHEROPTIMIZATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRONGNAMESIGNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHERPROTECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGSENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMEMANGLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBFUSCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUGGING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false

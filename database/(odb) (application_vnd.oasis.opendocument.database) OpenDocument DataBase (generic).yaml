@@ -1,0 +1,39 @@
+Name: OpenDocument DataBase (generic)
+Description: Standard, open, XML based, document file format for office-like documents. It's derived from the format used by OpenOffice.org's suite.
+URL: "http://en.wikipedia.org/wiki/OpenDocument"
+FileNameExtensions: ["odb"]
+MimeType: application/vnd.oasis.opendocument.database
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/vnd."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BASEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND."
+    CaseSensitive: false

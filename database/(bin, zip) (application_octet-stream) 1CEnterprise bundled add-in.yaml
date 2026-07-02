@@ -1,0 +1,14 @@
+Name: 1C:Enterprise bundled add-in
+URL: "https://1c-dn.com/"
+FileNameExtensions: ["bin", "zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false

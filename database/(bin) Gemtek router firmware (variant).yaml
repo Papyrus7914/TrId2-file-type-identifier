@@ -1,0 +1,14 @@
+Name: Gemtek router firmware (variant)
+Description: This variant (with 8 extra bytes at start) is used in some Gemtek based product by other manufacturers.
+URL: "http://www.gemtek.com.tw/"
+FileNameExtensions: ["bin"]
+DetectionPatterns:
+  - Pos: 8
+    AsciiString: "GMTK"
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "Linux Kernel Image"
+    CaseSensitive: true
+  - Pos: 114
+    AsciiString: "zImage"
+    CaseSensitive: true

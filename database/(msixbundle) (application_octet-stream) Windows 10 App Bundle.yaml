@@ -1,0 +1,62 @@
+Name: Windows 10 App Bundle
+URL: "https://docs.microsoft.com/en-us/windows/msix/supported-platforms"
+FileNameExtensions: ["msixbundle"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SQUARE150X150LOGO.SCALE-200.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQUARE44X44LOGO.SCALE-200.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDE310X150LOGO.SCALE-200.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQUARE44X44LOGO.TARGETSIZE-24"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLASHSCREEN.SCALE-200.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPXBUNDLEMANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPXSIGNATURE.P7XPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPXBLOCKMAP.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPXMANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTFORM-UNPLATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES.PRIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPXMETADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORELOGO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false

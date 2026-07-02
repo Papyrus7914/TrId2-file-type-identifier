@@ -1,0 +1,14 @@
+Name: Poly disk image
+URL: "http://www.cs.otago.ac.nz/homepages/andrew/poly"
+FileNameExtensions: ["dsk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x86\xE0 ( "
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\x0F\x02\x0E- THIS DISK HAS NOT BEEN LINKED\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "- THIS DISK HAS NOT BEEN LINKED"
+    CaseSensitive: false

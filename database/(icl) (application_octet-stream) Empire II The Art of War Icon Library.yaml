@@ -1,0 +1,23 @@
+Name: "Empire II: The Art of War Icon Library"
+URL: "https://www.mobygames.com/game/873/empire-ii-the-art-of-war/"
+FileNameExtensions: ["icl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ICLB"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "TOC "
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "ICLH"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "IMGD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ICLH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMGD"
+    CaseSensitive: false

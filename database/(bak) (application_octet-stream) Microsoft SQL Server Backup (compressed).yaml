@@ -1,0 +1,14 @@
+Name: Microsoft SQL Server Backup (compressed)
+URL: "https://en.wikipedia.org/wiki/Microsoft_SQL_Server"
+FileNameExtensions: ["bak"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSSQLBAK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MSSQLBAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFMB"
+    CaseSensitive: false

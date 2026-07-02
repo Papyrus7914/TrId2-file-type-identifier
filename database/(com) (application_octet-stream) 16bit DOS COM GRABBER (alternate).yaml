@@ -1,0 +1,28 @@
+Name: 16bit DOS COM GRABBER (alternate)
+URL: "http://fileformats.archiveteam.org/wiki/GRABBER"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 2
+    AsciiString: "\0\r\nAll Code Copyright (C) 1988"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TIMER VALUE OUT OF RANGE (1-999)."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL CODE COPYRIGHT (C) 1988"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A COLOR GRAPHICS ADAPTER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID TIMER VALUE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GERALD A. MONROE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN REQUIRES"
+    CaseSensitive: false

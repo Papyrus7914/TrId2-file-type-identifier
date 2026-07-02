@@ -1,0 +1,44 @@
+Name: Spruce subtitles
+URL: "http://fileformats.archiveteam.org/wiki/Spruce_subtitle_format"
+FileNameExtensions: ["stl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$FontName"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$FORCEDISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$COLORINDEX1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$TAPEOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$HORZALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$VERTALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FONTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FONTSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FADEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$XOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$YOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTRAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FADEIN"
+    CaseSensitive: false

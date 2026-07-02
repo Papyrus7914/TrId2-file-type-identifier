@@ -1,0 +1,11 @@
+Name: IBCards card (v1.0.x)
+URL: "http://web.archive.org/web/19980121202636/http://www.crtechnologies.com/IBCards/"
+FileNameExtensions: ["ibc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x16\0\0\0\x15IBCards Version 1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IBCARDS VERSION 1."
+    CaseSensitive: false

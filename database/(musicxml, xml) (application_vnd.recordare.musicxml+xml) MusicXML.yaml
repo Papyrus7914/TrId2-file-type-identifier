@@ -1,0 +1,65 @@
+Name: MusicXML
+URL: "https://www.w3.org/2021/06/musicxml40/"
+FileNameExtensions: ["musicxml", "xml"]
+MimeType: application/vnd.recordare.musicxml+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE SCORE-PARTWISE PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.MUSICXML.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASURE NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORE-PART ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTD MUSICXML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTWISE.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIVISIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART-LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORDARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCTAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEP"
+    CaseSensitive: false

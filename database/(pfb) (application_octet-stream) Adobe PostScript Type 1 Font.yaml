@@ -1,0 +1,11 @@
+Name: Adobe PostScript Type 1 Font
+Description: PFB stands for Printer Font Binary.
+URL: "https://en.wikipedia.org/wiki/PostScript_fonts"
+FileNameExtensions: ["pfb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x80, 0x01]
+  - Pos: 4
+    AsciiString: "\0\0%!"
+    CaseSensitive: true

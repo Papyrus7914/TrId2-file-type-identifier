@@ -1,0 +1,18 @@
+Name: X-Ray Engine Object Geometry Format 3D model
+Description: Used in the S.T.A.L.K.E.R. games serie.
+URL: "https://www.mobygames.com/group/8424/stalker-series/"
+FileNameExtensions: ["ogf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0,\0\0\0\x04"
+    CaseSensitive: true
+  - Pos: 69
+    AsciiString: "\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELS"
+    CaseSensitive: false

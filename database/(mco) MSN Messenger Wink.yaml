@@ -1,0 +1,20 @@
+Name: MSN Messenger Wink
+Description: Winks are little animation that can be sent to other contacs during a conversation.
+URL: "http://www.imagine-msn.com/Messenger/Post/Communicate/Wink.aspx"
+FileNameExtensions: ["mco"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\0\0\0\0,\0\0\0\0\0\0\0\x03\x01\x01\0"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCF"
+    CaseSensitive: false

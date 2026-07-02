@@ -1,0 +1,32 @@
+Name: Room EQ Wizard measurement data (with asterisks)
+URL: "https://www.roomeqwizard.com/"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "* Measurement data measured by REW V"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "* START FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* FREQUENCY STEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* SMOOTHING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* FREQ(HZ)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* DATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* NOTE"
+    CaseSensitive: false

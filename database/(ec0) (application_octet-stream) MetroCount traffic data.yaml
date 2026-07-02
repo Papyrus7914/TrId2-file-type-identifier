@@ -1,0 +1,11 @@
+Name: MetroCount traffic data
+URL: "https://metrocount.com"
+FileNameExtensions: ["ec0"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MC"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "*** MetroCount Data File - Do Not Edit!***"
+    CaseSensitive: true

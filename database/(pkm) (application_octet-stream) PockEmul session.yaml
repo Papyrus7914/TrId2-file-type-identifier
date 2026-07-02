@@ -1,0 +1,41 @@
+Name: PockEmul session
+URL: "https://github.com/pockemul/PockEmul"
+FileNameExtensions: ["pkm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n<session version=\"2.0\" model=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXTARRAY VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSION VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAHEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMPTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

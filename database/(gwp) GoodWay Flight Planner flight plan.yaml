@@ -1,0 +1,43 @@
+Name: GoodWay Flight Planner flight plan
+URL: "http://www.xpgoodway.com/"
+FileNameExtensions: ["gwp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GW Prefversion;"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GENERAL AVIATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIGHT_COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GW PREFVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIGHT_FROMTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_VERSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIGHT_PLAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIGHT_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTERNATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIRCRAFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAYPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNWAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ACF"
+    CaseSensitive: false

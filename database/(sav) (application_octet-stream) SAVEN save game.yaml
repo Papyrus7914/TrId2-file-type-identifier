@@ -1,0 +1,83 @@
+Name: SAVEN save game
+URL: "https://horrawr.itch.io/saven"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SAVEN\x99\x01\0INFO"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "F_SaveGame_"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 67
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 73
+    AsciiString: "SHOT"
+    CaseSensitive: true
+  - Pos: 81
+    #                                            J     F     I     F
+    Bytes: [0xFF, 0xD8, 0xFF, 0xE0, 0x00, 0x10, 0x4A, 0x46, 0x49, 0x46]
+  - Pos: any
+    AsciiString: "STR_QUESTNOTEELEMENTSAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AFTERTUTORIALDRYIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BP_CLIENTSPAWNER_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BP_GAMEINSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAFFIATRIBUTE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAFIATYPEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAYTAXESTASK_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "/MAFIALOANS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENTTASK_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F_SAVEGAME_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "/GAMEPLAY/"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BP_PRICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ES/MAFIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAXES/"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "/MAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOT"
+    CaseSensitive: false

@@ -1,0 +1,41 @@
+Name: Tools Media Corp. Ambient light (text)
+URL: "https://www.mobygames.com/company/9728/parallax-arts-studio/"
+FileNameExtensions: ["avm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LightZone {\r\n  StartNode: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "{ SPLITCOMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLITPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUBECOLORS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORIDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEGCHILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSCHILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEAFS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEP"
+    CaseSensitive: false

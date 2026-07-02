@@ -1,0 +1,26 @@
+Name: The Sum of All Fears Outfit File
+URL: "https://www.mobygames.com/game/6398/the-sum-of-all-fears/"
+FileNameExtensions: ["off"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<OutfitFile>\r\n\t<VersionNumber>1.000000</VersionNumber>\r\n\t<NameToken>outfit_hrt_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTIONTOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KITFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTFIT_HRT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMETOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".KIT"
+    CaseSensitive: false

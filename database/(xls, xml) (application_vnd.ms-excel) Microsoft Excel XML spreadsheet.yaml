@@ -1,0 +1,53 @@
+Name: Microsoft Excel XML spreadsheet
+URL: "https://en.wikipedia.org/wiki/Microsoft_Excel"
+FileNameExtensions: ["xls", "xml"]
+MimeType: application/vnd.ms-excel
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS-MICROSOFT-COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKBOOK XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSHEET SS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPREADSHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REC-HTML40"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE SS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

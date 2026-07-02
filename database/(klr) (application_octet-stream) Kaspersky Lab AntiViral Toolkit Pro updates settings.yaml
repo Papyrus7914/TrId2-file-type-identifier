@@ -1,0 +1,17 @@
+Name: Kaspersky Lab AntiViral Toolkit Pro updates settings
+URL: "https://en.wikipedia.org/wiki/Kaspersky_Lab"
+FileNameExtensions: ["klr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KLsw\x19\0AVP Updates settings fileKLsw"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VPUPD.REP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

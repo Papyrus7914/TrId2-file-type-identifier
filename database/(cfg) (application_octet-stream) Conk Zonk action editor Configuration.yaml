@@ -1,0 +1,15 @@
+Name: Conk Zonk action editor Configuration
+Description: Action Game Construction Kit for Amiga.
+URL: "https://www.semprini.me/1995/03/20/conk-action-game-construction-kit/"
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CONKZCFG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONKZCFG"
+    CaseSensitive: false

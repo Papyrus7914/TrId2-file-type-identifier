@@ -1,0 +1,11 @@
+Name: OS/2 Bitmap
+URL: "http://fileformats.archiveteam.org/wiki/BMP#OS.2F2_BMP_1.0"
+FileNameExtensions: ["bmp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BA"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "BM"
+    CaseSensitive: true

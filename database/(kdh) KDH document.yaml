@@ -1,0 +1,14 @@
+Name: KDH document
+Description: Files in this format come from the Chinese Academic Journals Online full-text database.
+URL: "http://www.cnki.net/cajview_page/cajviewer.htm"
+FileNameExtensions: ["kdh"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KDH "
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: " Copyright(C) 2000 CAJCD"
+    CaseSensitive: true

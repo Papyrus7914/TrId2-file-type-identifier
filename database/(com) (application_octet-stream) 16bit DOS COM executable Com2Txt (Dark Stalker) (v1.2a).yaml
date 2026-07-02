@@ -1,0 +1,11 @@
+Name: 16bit DOS COM executable Com2Txt (Dark Stalker) (v1.2a)
+URL: "http://fileformats.archiveteam.org/wiki/Com2txt_(Dark_Stalker)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          h                 [                             .           7     E     E     C     C     C     .           7     U     h                 _                             W     ^     h
+    Bytes: [0x90, 0x90, 0x90, 0x68, 0xCB, 0xA1, 0x5B, 0x81, 0xEB, 0xA0, 0xA0, 0x2E, 0x81, 0x37, 0x45, 0x45, 0x43, 0x43, 0x43, 0x2E, 0x80, 0x37, 0x55, 0x68, 0xE5, 0xA2, 0x5F, 0x81, 0xEF, 0xA1, 0xA1, 0x57, 0x5E, 0x68]
+  - Pos: 36
+    AsciiString: "Y\x8300Q\xAD=HOtQ*\xC4\xAAI\x85\xC9u\xF2h1\xE0_\x81\xEF\xED\xDE\xFF\xE7;\r\n7@Rv7@Rv\xCFp\xD7\x80"
+    CaseSensitive: true

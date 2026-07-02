@@ -1,0 +1,9 @@
+Name: Lotus 123/Symphony Worksheet (V2)
+Description: WR1 extension is used by Lotus Symphony. revision number 0406h stored at offset 4.
+URL: "http://fileformats.archiveteam.org/wiki/Lotus_1-2-3"
+FileNameExtensions: ["wk1", "wr1"]
+MimeType: application/vnd.lotus-1-2-3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x02\0\x06\x04\x06\0\b\0"
+    CaseSensitive: true

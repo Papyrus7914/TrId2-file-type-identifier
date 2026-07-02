@@ -1,0 +1,13 @@
+Name: MediaPoint script
+URL: "https://github.com/evaneykelen/mediapoint-amiga"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SCRIPTTALK "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STARTSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDSER"
+    CaseSensitive: false

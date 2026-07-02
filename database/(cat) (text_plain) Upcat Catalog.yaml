@@ -1,0 +1,11 @@
+Name: Upcat Catalog
+Description: Disk catalog program for Amiga by Frans Zuydwijk.
+FileNameExtensions: ["cat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Upcat Catalog\nCategories\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RECORDS"
+    CaseSensitive: false

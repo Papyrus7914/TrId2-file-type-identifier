@@ -1,0 +1,146 @@
+Name: Win16 InstallShield Self-Extracting Executable
+URL: "http://fileformats.archiveteam.org/wiki/InstallShield_Self-Extracting_EXE"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTALLSHIELD SELF-EXTRACTING EXE6COULD NOT FIND ENOUGH DISK SPACE FOR EXTRACTING FILES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLEASE WAIT WHILE INSTALLSHIELD EXTRACTS THE FILES WHICH WILL INSTALL THIS APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOU HAVE ENTERED AN INCORRECT PASSWORD..THIS WILL INSTALL %S. DO YOU WISH TO CONTINUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLEASE ENTER THE PASSWORD REQUIRED TO EXTRACT THE ATTACHED FILES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%D7COULD NOT CREATE DESTINATION FILE %S.  ERROR NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER\0*INSTALLSHIELD SELF-EXTRACTING STUB PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESS\0INSTALLSHIELD SELF-EXTRACTING EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0THIS PROGRAM REQUIRES MICROSOFT WINDOWS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COULD NOT OPEN DESTINATION FILE %S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE DISK SPACE AVAILABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN FROM EXTRACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRACT FAILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINEXEC FAILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MS SANS SERIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_INST32I.EX_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECOMPRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTORY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MYRESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ISDEL.EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SETUP.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUP.EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUP.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUP.INS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUP.LI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTSTUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS NOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTIFY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

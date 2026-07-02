@@ -1,0 +1,11 @@
+Name: KLH10 RAW tape image directory (with rem)
+URL: "http://klh10.trailing-edge.com/"
+FileNameExtensions: ["tdr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TF-FORMAT"
+    CaseSensitive: false

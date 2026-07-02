@@ -1,0 +1,39 @@
+Name: Visual C++ Export Library
+FileNameExtensions: ["exp"]
+DetectionPatterns:
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: ".edata"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "\0\0@\0\0@.debug$S"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MICROSOFT (R) LINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGPV\0\0\0\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DEBUG$S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGSZNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$N00001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP.ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXP"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: FM Towns Graphics Script
+URL: "https://en.wikipedia.org/wiki/FM_Towns"
+FileNameExtensions: ["ft"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 3
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "   \x81\x99"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCONNECT("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPOLYGON("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILL("
+    CaseSensitive: false

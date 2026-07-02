@@ -1,0 +1,43 @@
+Name: Bio-Rad Scan file
+URL: "http://www.bio-rad.com/"
+FileNameExtensions: ["1sc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xAF\xAFStable File Version "
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BIO-RAD SCAN FILE - ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STABLE FILE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANNER_MAXPIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANNER_MAXQTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANNER_UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANNER_BIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAN HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAN_AREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAG"
+    CaseSensitive: false

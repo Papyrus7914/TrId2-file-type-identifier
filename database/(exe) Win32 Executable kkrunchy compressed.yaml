@@ -1,0 +1,16 @@
+Name: Win32 Executable kkrunchy compressed
+URL: "http://www.farbrausch.de/~fg/kkrunchy/"
+FileNameExtensions: ["exe"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZfarbrauschPE\0\0L\x01\x01\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KERNEL32.DLL\0\0LOADLIBRARYA\0\0GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KKRUNCHY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0J\0X"
+    CaseSensitive: false

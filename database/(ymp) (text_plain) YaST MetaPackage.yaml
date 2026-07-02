@@ -1,0 +1,50 @@
+Name: YaST MetaPackage
+URL: "https://en.wikipedia.org/wiki/YaST"
+FileNameExtensions: ["ymp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REPOSITORY RECOMMENDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METAPACKAGE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONE_CLICK_INSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENSUSE.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPOSITORIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWNLOAD."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,50 @@
+Name: git configuration
+Description: the config file in a git repository
+URL: "https://en.wikipedia.org/wiki/Git_(software)"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[core]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REPOSITORYFORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGALLREFUPDATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIDEDOTFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOTGITONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGNORECASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMLINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WMSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

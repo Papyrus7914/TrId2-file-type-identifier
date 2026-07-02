@@ -1,0 +1,32 @@
+Name: naxarco Form Definition
+URL: "http://www.nexacro.com/"
+FileNameExtensions: ["xfdl"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<FDL version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FDL VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

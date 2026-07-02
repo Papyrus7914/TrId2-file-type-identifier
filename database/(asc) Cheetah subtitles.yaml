@@ -1,0 +1,18 @@
+Name: Cheetah subtitles
+FileNameExtensions: ["asc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*NonDropFrame\r\n*Width"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "** CAPTION NUMBER 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*BOTTOMUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*POPON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*WIDTH"
+    CaseSensitive: false

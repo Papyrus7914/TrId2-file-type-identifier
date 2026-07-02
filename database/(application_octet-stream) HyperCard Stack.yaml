@@ -1,0 +1,28 @@
+Name: HyperCard Stack
+URL: "https://en.wikipedia.org/wiki/HyperCard"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    #        S     T     A     K
+    Bytes: [0x53, 0x54, 0x41, 0x4B, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "BKGD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAIL"
+    CaseSensitive: false

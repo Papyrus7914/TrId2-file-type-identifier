@@ -1,0 +1,32 @@
+Name: KGeography Map
+URL: "https://apps.kde.org/en/kgeography/"
+FileNameExtensions: ["kgm"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<map>\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGNORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

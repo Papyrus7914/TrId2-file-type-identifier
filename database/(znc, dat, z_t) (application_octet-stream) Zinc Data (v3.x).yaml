@@ -1,0 +1,10 @@
+Name: Zinc Data (v3.x)
+URL: "https://en.wikipedia.org/wiki/Zinc_Application_Framework"
+FileNameExtensions: ["znc", "dat", "z_t"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Zinc Data File Version 3."
+    CaseSensitive: true
+  - Pos: 26
+    Bytes: [0x1A]

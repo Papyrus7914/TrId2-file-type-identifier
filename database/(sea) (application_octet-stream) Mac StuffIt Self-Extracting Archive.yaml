@@ -1,0 +1,44 @@
+Name: Mac StuffIt Self-Extracting Archive
+URL: "https://en.wikipedia.org/wiki/Stuffit"
+FileNameExtensions: ["sea"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "APPLaust!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THERE IS NOT ENOUGH ROOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALADDIN SYSTEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAS SUCCESSFUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STUFFIT SEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSTUFFING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLAUST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAMAGED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Maple compressed Worksheet
+URL: "https://en.wikipedia.org/wiki/Maple_(software)"
+FileNameExtensions: ["mwz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<compressedworksheet majorversion=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPRESSEDWORKSHEET MAJORVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINORVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

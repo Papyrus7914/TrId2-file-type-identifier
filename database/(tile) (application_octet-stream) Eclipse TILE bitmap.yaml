@@ -1,0 +1,14 @@
+Name: Eclipse TILE bitmap
+URL: "http://fileformats.archiveteam.org/wiki/Eclipse_TILE"
+FileNameExtensions: ["tile"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\a("
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "Eclipse"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ECLIPSE"
+    CaseSensitive: false

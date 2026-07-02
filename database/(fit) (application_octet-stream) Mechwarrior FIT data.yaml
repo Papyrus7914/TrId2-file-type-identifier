@@ -1,0 +1,10 @@
+Name: Mechwarrior FIT data
+FileNameExtensions: ["fit"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FITini"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FITEND"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: LArc compressed archive
+Description: MSDOS archiver from 1988 by K.Miki H.Okumura K.Masuyama.
+URL: "https://en.wikipedia.org/wiki/LHA_(file_format)"
+FileNameExtensions: ["lzs"]
+MimeType: application/x-lzh-compressed
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "-lz"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "-"
+    CaseSensitive: true

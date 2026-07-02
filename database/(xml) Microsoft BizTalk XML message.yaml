@@ -1,0 +1,49 @@
+Name: Microsoft BizTalk XML message
+URL: "http://en.wikipedia.org/wiki/Biztalk"
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BIZTALK_1 XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELIVERY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

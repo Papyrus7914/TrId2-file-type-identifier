@@ -1,0 +1,309 @@
+Name: AppImage Portable Linux App (old)
+Description: Packaged desktop application that run on common Linux-based operating systems.
+URL: "http://portablelinuxapps.org/"
+FileNameExtensions: ["run"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x7FELF"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\x01\x01\0\0\0\0\0\0\0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 45
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 57
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RRIP_1991ATHE ROCK RIDGE INTERCHANGE PROTOCOL PROVIDES SUPPORT FOR POSIX FILE SYSTEM SEMANTICSPLEASE CONTACT DISC PUBLISHER FOR SPECIFICATION SOURCE.  SEE PUBLISHER IDENTIFIER IN PRIMARY VOLUME DESCRIPTOR FOR CONTACT INFORMATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SHSTRTAB\0.INTERP\0.NOTE.ABI-TAG\0.NOTE.GNU.BUILD-ID\0.GNU.HASH\0.DYNSYM\0.DYNSTR\0.GNU.VERSION\0.GNU.VERSION_R\0.REL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PLT\0.INIT\0.TEXT\0.FINI\0.RODATA\0.EH_FRAME_HDR\0.EH_FRAME\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JCR\0.DYNAMIC\0.GOT\0.GOT.PLT\0.DATA\0.BSS\0.COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G_RETURN_IF_FAIL_WARNING\0G_STRDUP\0G_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__GMON_START__\0_JV_REGISTERCLASSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RINDEX\0MKTIME\0ICONV\0ICONV_OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUSE_MAIN_REAL_COMPAT22\0LIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL\0UNSUPPORTED FILE\0CD001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IT\0_EDATA\0__BSS_START\0_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXE\0-O\0RO\0OPEN DIR ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBZ.SO.1\0UNCOMPRESS\0LIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPLIED IMAGE FILE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE MOUNT POINT\0CAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETE MOUNT POINT\0CAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G_HASH_TABLE_INSERT\0G_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G_HASH_TABLE_NEW\0G_STR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UCS-2BE\0DOES NOT EXIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK MOUNT POINT\0CAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTHREAD_MUTEX_LOCK\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTHREAD_MUTEX_UNLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G_HASH_TABLE_LOOKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL_G_STRV_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIPE\0PERROR\0STRNCPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUSE_2.5\0GLIBC_2."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MKDIR\0GETPID\0KILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET EXIT FUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__LIBC_START_MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBGLIB-2.0.SO.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ERRNO_LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBPTHREAD.SO.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN IMAGE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G_STRCONCAT\0G_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G_STR_EQUAL\0G_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTHREAD_CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_IO_STDIN_USED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__CXA_ATEXIT\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORK\0PTHREAD_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G_STRSPLIT\0G_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G_STR_HASH\0G_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBFUSE.SO.2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCK\0LSEEK64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXECV ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONV_CLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REALPATH\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUP2 ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORK ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G_STRFREEV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGNORE\0CAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIPE ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__LXSTAT64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DYN\0.REL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLIBC_2.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLIBC_2.2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLIBC_2.3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G_FREE\0G_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBC.SO.6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR_ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DESKTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DIRICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LD-LINUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPRINTF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MKDTEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPRUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMCPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUNT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STDERR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRCAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ME\0.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RMDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SP\0\0U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FINI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1PX$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2010"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XXXX"
+    CaseSensitive: false

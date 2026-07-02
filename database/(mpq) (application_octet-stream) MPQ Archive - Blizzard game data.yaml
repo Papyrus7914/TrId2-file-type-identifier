@@ -1,0 +1,9 @@
+Name: MPQ Archive - Blizzard game data
+Description: MPQ is an archive file format used by games of Blizzard Entertainment.
+URL: "http://fileformats.archiveteam.org/wiki/MoPaQ"
+FileNameExtensions: ["mpq"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MPQ\x1A"
+    CaseSensitive: true

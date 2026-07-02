@@ -1,0 +1,17 @@
+Name: FruityLoops Humanize Preset
+URL: "http://fileformats.archiveteam.org/wiki/Humanize_Preset"
+FileNameExtensions: ["fpr"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "' FruityLoops preset"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GRAPH EDIT EFFECT NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE FOR EACH NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FXID"
+    CaseSensitive: false

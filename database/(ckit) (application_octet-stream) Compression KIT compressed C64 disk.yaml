@@ -1,0 +1,9 @@
+Name: Compression KIT compressed C64 disk
+Description: CKIT is a C64 tool for whole-disk archiving.
+URL: "https://ist.uwaterloo.ca/~schepers/formats/CKIT.TXT"
+FileNameExtensions: ["ckit"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MMS \0"
+    CaseSensitive: true

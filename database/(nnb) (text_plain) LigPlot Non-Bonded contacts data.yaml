@@ -1,0 +1,17 @@
+Name: LigPlot Non-Bonded contacts data
+URL: "https://www.ebi.ac.uk/thornton-srv/software/LIGPLOT/manual/manappb.html"
+FileNameExtensions: ["nnb"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ligplot.nnb"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOM 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOM 2"
+    CaseSensitive: false

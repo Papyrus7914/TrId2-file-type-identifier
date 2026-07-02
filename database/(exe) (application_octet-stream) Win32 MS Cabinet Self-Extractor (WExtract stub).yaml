@@ -1,0 +1,44 @@
+Name: Win32 MS Cabinet Self-Extractor (WExtract stub)
+URL: "http://technet.microsoft.com/en-us/library/dd346760.aspx"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "W\0I\0N\0D\0O\0W\0S\0 \09\05\0 \0O\0R\0 \0W\0I\0N\0D\0O\0W\0S\0 \0N\0T\0 \0I\0S\0 \0R\0E\0Q\0U\0I\0R\0E\0D\0 \0T\0O\0 \0I\0N\0S\0T\0A\0L\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0M\0A\0N\0D\0 \0L\0I\0N\0E\0 \0O\0P\0T\0I\0O\0N\0 \0S\0Y\0N\0T\0A\0X\0 \0E\0R\0R\0O\0R\0.\0 \0T\0Y\0P\0E\0 \0C\0O\0M\0M\0A\0N\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0D\0E\0S\0C\0R\0I\0P\0T\0I\0O\0N\0\0\0\0\0W\0I\0N\03\02\0 \0C\0A\0B\0I\0N\0E\0T\0 \0S\0E\0L\0F\0-\0E\0X\0T\0R\0A\0C\0T\0O\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0R\0I\0G\0I\0N\0A\0L\0F\0I\0L\0E\0N\0A\0M\0E\0\0\0W\0E\0X\0T\0R\0A\0C\0T\0.\0E\0X\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0A\0B\0I\0N\0E\0T\0 \0I\0S\0 \0N\0O\0T\0 \0V\0A\0L\0I\0D\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0T\0E\0R\0N\0A\0L\0N\0A\0M\0E\0\0\0W\0E\0X\0T\0R\0A\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILERENAMEOPERATIONS\0\0\0WEXTRACT_CLEANUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKINSTSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRACTOPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEXTRACT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCF"
+    CaseSensitive: false

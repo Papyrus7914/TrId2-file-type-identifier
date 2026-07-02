@@ -1,0 +1,89 @@
+Name: Delphi Package
+URL: "http://en.wikipedia.org/wiki/Embarcadero_Delphi"
+FileNameExtensions: ["dpk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "package "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "{$VARSTRINGCHECKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$EXTENDEDSYNTAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$OVERFLOWCHECKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$WRITEABLECONST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$IMPLICITBUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$REFERENCEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$IMPORTEDDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$LOCALSYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$OPTIMIZATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$TYPEDADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$LONGSTRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$MINENUMSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$OPENSTRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$RANGECHECKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$STACKFRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$ASSERTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$SAFEDIVIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$DEBUGINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$IMAGEBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$BOOLEVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$IOCHECKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{$DES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END."
+    CaseSensitive: false

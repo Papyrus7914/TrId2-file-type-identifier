@@ -1,0 +1,12 @@
+Name: Monotone source repository
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "_MTN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_MTN"
+    CaseSensitive: false

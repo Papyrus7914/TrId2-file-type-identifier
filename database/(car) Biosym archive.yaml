@@ -1,0 +1,13 @@
+Name: Biosym archive
+URL: "http://en.wikipedia.org/wiki/Molecular_graphics"
+FileNameExtensions: ["car"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!BIOSYM archive "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

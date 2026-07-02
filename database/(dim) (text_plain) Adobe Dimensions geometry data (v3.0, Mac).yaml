@@ -1,0 +1,23 @@
+Name: Adobe Dimensions geometry data (v3.0, Mac)
+URL: "http://fileformats.archiveteam.org/wiki/Adobe_Dimensions"
+FileNameExtensions: ["dim"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%!Adobe-Dimensions \rversion \r 19\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LIGHT COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFINITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: IDL binary format save file
+URL: "http://en.wikipedia.org/wiki/IDL_%28programming_language%29"
+FileNameExtensions: ["sav"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SR\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0\0\n\0\0"
+    CaseSensitive: true

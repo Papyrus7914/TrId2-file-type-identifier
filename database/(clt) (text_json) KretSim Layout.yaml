@@ -1,0 +1,59 @@
+Name: KretSim Layout
+URL: "https://kretsim.se/"
+FileNameExtensions: ["clt"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n    \"comments\": [\n    "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPONENT_SIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMENT_LAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT_NET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN.H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN.W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

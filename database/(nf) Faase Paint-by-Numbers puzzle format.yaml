@@ -1,0 +1,20 @@
+Name: Faase Paint-by-Numbers puzzle format
+Description: P-b-N format used by Frans Faase's solver
+URL: "http://www.iwriteiam.nl/Dpuzzle.html#nono"
+FileNameExtensions: ["nf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "width "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWS"
+    CaseSensitive: false

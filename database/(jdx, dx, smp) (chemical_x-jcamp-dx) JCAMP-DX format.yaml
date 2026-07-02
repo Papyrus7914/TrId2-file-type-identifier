@@ -1,0 +1,17 @@
+Name: JCAMP-DX format
+URL: "https://en.wikipedia.org/wiki/Joint_Committee_on_Atomic_and_Molecular_Physical_Data"
+FileNameExtensions: ["jdx", "dx", "smp"]
+MimeType: chemical/x-jcamp-dx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "##TITLE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JCAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

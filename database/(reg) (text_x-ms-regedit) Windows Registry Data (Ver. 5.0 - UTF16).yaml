@@ -1,0 +1,9 @@
+Name: Windows Registry Data (Ver. 5.0 - UTF16)
+Description: "Contains a list of key-value couples. WARNING: running the REG file will apply modification to the Windows registry!"
+URL: "https://en.wikipedia.org/wiki/Windows_Registry#.REG_files"
+FileNameExtensions: ["reg"]
+MimeType: text/x-ms-regedit
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFEW\0i\0n\0d\0o\0w\0s\0 \0R\0e\0g\0i\0s\0t\0r\0y\0 \0E\0d\0i\0t\0o\0r\0 \0V\0e\0r\0s\0i\0o\0n\0 \05\0.\00\00\0"
+    CaseSensitive: true

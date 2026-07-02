@@ -1,0 +1,76 @@
+Name: 16bit DOS IBM Professional Fortran 1.00 Executable
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    Bytes: [0x01]
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0 \0"
+    CaseSensitive: true
+  - Pos: 11
+    Bytes: [0x00, 0xFF, 0xFF]
+  - Pos: 17
+    Bytes: [0x01]
+  - Pos: 20
+    AsciiString: "\0\0\0\0\x1E\0\0\0\x01\0\f\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\x01\0\0\0\b\0\0\0"
+    CaseSensitive: true
+  - Pos: 410
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xB8"
+    CaseSensitive: true
+  - Pos: 515
+    Bytes: [0x8E, 0xD8, 0x9A, 0x17, 0x00]
+  - Pos: 521
+    Bytes: [0x00, 0x81, 0xEC]
+  - Pos: 525
+    Bytes: [0x00, 0x8B, 0xEC, 0xFC, 0x8C, 0xDB, 0x8E, 0xC3, 0xBB]
+  - Pos: any
+    AsciiString: ".A\0$TI\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0COMSPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETEDIRECTFORMATTEDKEEPNEWNULLOLDSCRATCHSEQUENTIALUNFORMATTEDUNKNOWNYESZERO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXECUTION TERMINATED BECAUSE OF CTRL-BREAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN READING ERROR MESSAGES FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN DEBUG.  ERROR NUMBER \0\04"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILATION ERROR AT LINE  IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR AT LINE   ERROR NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALLED AT  + 0X\0\0\0\0\0\0\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFORT.ERR   \0\0\0\0\0\0\0\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXECUTION SUSPENDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORT5\0FORT6\0FORT0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN \0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RMFORT.MSG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RMFRT"
+    CaseSensitive: false

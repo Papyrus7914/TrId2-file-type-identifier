@@ -1,0 +1,57 @@
+Name: mzTab format
+Description: Light-weight, tab-delimited file format for proteomics data.
+URL: "https://code.google.com/p/mztab/"
+FileNameExtensions: ["mztab"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MTD\tmzTab-version\t1.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEST_SEARCH_ENGINE_SCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFICATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MZTAB-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLE_MOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MZTAB-MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MZTAB-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIXED_MOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MS_RUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTIFIE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAXID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: MyInfo Topic
+Description: Milenix MyInfo is a personal-reference information manager (PRIM).
+URL: "http://www.milenix.com"
+FileNameExtensions: ["mio"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PROPERTIES.BAKPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCTURE.BAKPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCTURE.BAKC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCTUREPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCTUREC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLESPK"
+    CaseSensitive: false

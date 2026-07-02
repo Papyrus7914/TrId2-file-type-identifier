@@ -1,0 +1,19 @@
+Name: Android compiled View resource
+Description: Usually found inside an APK.
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x03\0\b\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\x01\0\x1C\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0"
+    CaseSensitive: true

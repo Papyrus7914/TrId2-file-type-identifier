@@ -1,0 +1,32 @@
+Name: Simio project
+URL: "https://www.simio.com/"
+FileNameExtensions: ["spfx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PROJECT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".S3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

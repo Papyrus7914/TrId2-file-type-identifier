@@ -1,0 +1,9 @@
+Name: Windows Imaging Format (generic)
+Description: The Windows Imaging Format (WIM) is a file-based disk image format from Microsoft. SWM is used for splitted WIMs.
+URL: "http://fileformats.archiveteam.org/wiki/Windows_Imaging_Format"
+FileNameExtensions: ["wim", "wim2", "swm", "esd", "ppkg"]
+MimeType: application/x-ms-wim
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSWIM\0\0"
+    CaseSensitive: true

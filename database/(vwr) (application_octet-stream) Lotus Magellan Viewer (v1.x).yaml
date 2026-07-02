@@ -1,0 +1,10 @@
+Name: Lotus Magellan Viewer (v1.x)
+URL: "https://en.wikipedia.org/wiki/Lotus_Magellan"
+FileNameExtensions: ["vwr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xDA, 0x9C]
+  - Pos: 4
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true

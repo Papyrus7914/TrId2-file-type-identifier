@@ -1,0 +1,17 @@
+Name: WinHex data structure template
+URL: "https://en.wikipedia.org/wiki/WinHex"
+FileNameExtensions: ["tpl", "txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "template \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false

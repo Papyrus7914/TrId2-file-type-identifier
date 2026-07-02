@@ -1,0 +1,11 @@
+Name: OPAL Help
+Description: PLD design software by National Semiconductor for MS-DOS.
+FileNameExtensions: ["hlp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Help file version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".END"
+    CaseSensitive: false

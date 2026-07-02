@@ -1,0 +1,35 @@
+Name: Pack-Fire compressed Atari ST program
+Description: Atari ST packer by Axe of Superior.
+FileNameExtensions: ["prg", "tos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\xFF\xFF`\nPack-Fire!A\xFA\x02~*H\xDB\xFC\0"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: ",H\xDD\xFC\0"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "a\0\0\x96*o\0\x04M\xFA\xFF\xD6G\xE8\0\x1C"
+    CaseSensitive: true
+  - Pos: 78
+    #                                I           \b                                  ␠           \"          g                       r                                   g           \f                      f                                   `                       `           G                       P     M     $     ]     *           $                       *           *                                   *           *                                                                 <     p     \a    I           G                       $           Q                       C                                   &     N     N           &           &           S           j
+    Bytes: [0x00, 0x0F, 0xFF, 0xE6, 0x49, 0xF3, 0x08, 0x00, 0xD9, 0xC1, 0xD9, 0xC3, 0x20, 0x0E, 0x22, 0x1C, 0x67, 0x1A, 0xD7, 0xC1, 0x72, 0x00, 0xD1, 0x93, 0x12, 0x1C, 0x67, 0x10, 0x0C, 0x01, 0x00, 0x01, 0x66, 0x06, 0xD6, 0xFC, 0x00, 0xFE, 0x60, 0xF0, 0xD7, 0xC1, 0x60, 0xEA, 0x47, 0xE8, 0x00, 0x02, 0x50, 0x4D, 0x24, 0x5D, 0x2A, 0xD3, 0x24, 0x13, 0xD5, 0xDB, 0x2A, 0xCA, 0x2A, 0xD3, 0xD4, 0x93, 0xD5, 0xDB, 0x2A, 0xCA, 0x2A, 0xD3, 0xD5, 0xDB, 0xD4, 0x93, 0xD5, 0xDB, 0xD4, 0xFC, 0x03, 0x3C, 0x70, 0x07, 0x49, 0xD2, 0x47, 0xFA, 0x00, 0x12, 0x24, 0xDB, 0x51, 0xC8, 0xFF, 0xFC, 0x43, 0xE8, 0x00, 0x1C, 0xE6, 0x8A, 0x26, 0x4E, 0x4E, 0xD4, 0x26, 0xD9, 0x26, 0xD9, 0x53, 0x82, 0x6A, 0xF8]
+  - Pos: 192
+    AsciiString: "\xFF\x18\".\xFF\x1C\xE6\x89\x91\xC8&\xC8&\xC8S\x82j\xF8N\xD6H\xE7\xFF\xFE\x1E%I\xFA\x01(|\x01HFz\0a8d r\0a2d\x14\"Lv\x03 !a4H@\xB2@V\xCB\xFF\xF6\xD2\xA9\0\x10\x1D%Q\xC9\xFF\xFC\xBD\xC8n2L\xDF\x7F\xFFNup\x03\xE1\x9F\x1E\x18Q\xC8\xFF\xFANu\xDE\ag\x02Nu\x1E%\xDF\aNur\0\xDE\ag\b\xD3AQ\xC8\xFF\xF8Nu\x1E%\xDF\a`\xF2p\x01a\xE8SAk0gTSAgXa\xD0dBa\xCCd\\`dp\x01a\xD0SAj\bp\0Nup\x01a\xC4\xD2A\xD2AL\xB4\0!\x10\x10a\xB8\xD2\x85Nup\x01a\xB0SAkP\xD2A\xD2AL\xB4\0\x05\x10 a\xA0\xD4Aa\xD40\x02`Np\x02a\x94p\0\x03\xC0`.p\aa\x8Ap\0`>a\xB0J@g\0\0 p\x01`2a\xA4J@g\x12p\x02`(a\x9AJ@g\x04p\x03`\x1Ep\xFF`\x02\x10\x16\x1D\0`\"a\x92g\x1E\x10\x16\x1D\0Q\xC9\xFF\xFC\x92\x86k\x12`\xF4U@C\xF6\x18\x02\xD2\xC0\x1D!\x1D!Q\xC8\xFF\xFC`\0\xFE\xF2\x03\xFF\0\t\0\a\0\x02\0\x03\0\x01\0\x03\0\x01\0\0\0\x0E\0\0\0\a\0\0\0\x04\0\0\0\x01\0\x03\0\0\0\a\0\x10\0\v\x01\x10\0\x0F\x11\x10\0\x03\0\x05\0\x05\0\x15\0\a\0UFIRE\0"
+    CaseSensitive: true
+  - Pos: 572
+    #        `
+    Bytes: [0x60, 0x1A]
+  - Pos: any
+    AsciiString: "PACK-FIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UFIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAKP"
+    CaseSensitive: false

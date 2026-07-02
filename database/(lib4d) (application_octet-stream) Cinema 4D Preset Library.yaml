@@ -1,0 +1,26 @@
+Name: Cinema 4D Preset Library
+URL: "https://en.wikipedia.org/wiki/CINEMA_4D"
+FileNameExtensions: ["lib4d"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "dbfh"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".\0L\0I\0B\04\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0E\0S\0E\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DITM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

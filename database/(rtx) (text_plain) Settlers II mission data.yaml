@@ -1,0 +1,23 @@
+Name: Settlers II mission data
+URL: "https://www.mobygames.com/game/598/the-settlers-ii-veni-vidi-vici/"
+FileNameExtensions: ["rtx"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[GLOBAL_MAP_SETTINGS]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GLOBAL_SET_BOBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL_SET_MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPCOMMANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_HOUSE"
+    CaseSensitive: false

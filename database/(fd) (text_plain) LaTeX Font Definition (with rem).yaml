@@ -1,0 +1,26 @@
+Name: LaTeX Font Definition (with rem)
+URL: "https://en.wikipedia.org/wiki/LaTeX"
+FileNameExtensions: ["fd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DECLAREFONTFAMILY{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECLAREFONTSHAPE{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROVIDESFILE{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSUB *"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}{M}{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FD}"
+    CaseSensitive: false

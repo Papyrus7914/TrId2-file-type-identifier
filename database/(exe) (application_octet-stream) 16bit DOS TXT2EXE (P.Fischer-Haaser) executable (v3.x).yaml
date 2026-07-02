@@ -1,0 +1,79 @@
+Name: 16bit DOS TXT2EXE (P.Fischer-Haaser) executable (v3.x)
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\x80\0\0\0\x0E\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1C\0\0\0W\x9AQP\xFF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P.FISCHER-HAASER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S COPYRIGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMM-ABBRU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LESEFEHLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{F1}-INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) 1991"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INHALTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") 1983"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEHLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRC-F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENUNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSTEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T2EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXT2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V 3."
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Pioneer DJ DDJ-REV5 firmware
+URL: "https://www.pioneerdj.com/en/support/software/controller/ddj-rev5/"
+FileNameExtensions: ["upd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "UPD 0100"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "DDJREV5 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DDJREV5"
+    CaseSensitive: false

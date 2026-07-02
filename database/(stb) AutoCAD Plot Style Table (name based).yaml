@@ -1,0 +1,19 @@
+Name: AutoCAD Plot Style Table (name based)
+URL: "http://en.wikipedia.org/wiki/AutoCAD"
+FileNameExtensions: ["stb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PIAFILEVERSION_2.0,STBVER1,compress\r\npmzlibcodec"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PIAFILEVERSION_2.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMZLIBCODEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STBVER1"
+    CaseSensitive: false

@@ -1,0 +1,8 @@
+Name: Partially Signed Bitcoin Transaction
+URL: "https://github.com/bitcoin/bips/blob/master/bip-0174.mediawiki"
+FileNameExtensions: ["psbt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "psbt\xFF"
+    CaseSensitive: true

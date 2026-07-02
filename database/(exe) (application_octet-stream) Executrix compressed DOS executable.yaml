@@ -1,0 +1,38 @@
+Name: Executrix compressed DOS executable
+URL: "http://fileformats.archiveteam.org/wiki/Executrix"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0\x04\0\x01\0 \0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\x06\0\0\0\0\0\0\"\0\0\0\x01\0\xFB rj\xB5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xE9\x99\0Copyright(C) 1989 "
+    CaseSensitive: true
+  - Pos: 557
+    AsciiString: "All rights reserved worldwide."
+    CaseSensitive: true
+  - Pos: 602
+    AsciiString: "$$$Unable to find $\n\r$\0\0\0\0\0\0\0\0\0\x01\x03\a\x0F\x1F"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED WORLDWIDE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$$$UNABLE TO FIND $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT(C) 1989"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE\0$$$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UVWQR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UVWR"
+    CaseSensitive: false

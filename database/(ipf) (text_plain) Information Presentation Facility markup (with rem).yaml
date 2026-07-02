@@ -1,0 +1,14 @@
+Name: Information Presentation Facility markup (with rem)
+URL: "https://en.wikipedia.org/wiki/Information_Presentation_Facility"
+FileNameExtensions: ["ipf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ".*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EUSERDOC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false

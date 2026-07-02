@@ -1,0 +1,107 @@
+Name: TunerPro datastream definition format
+URL: "https://www.tunerpro.net/"
+FileNameExtensions: ["adx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<ADXFORMAT version=\""
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADXLVENTRY ENTRYTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADXFORMAT VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADXLISTVIEW ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATH EQUATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKETOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADXVALUE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- WRITTEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALARMS LOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRYCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMIDHASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONITORCMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKETSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEINBITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADXHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE LOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VAR VARID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADXC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAUD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIGH"
+    CaseSensitive: false

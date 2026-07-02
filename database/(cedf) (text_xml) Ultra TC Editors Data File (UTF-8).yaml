@@ -1,0 +1,38 @@
+Name: Ultra TC Editors Data File (UTF-8)
+URL: "http://utceditors.totalcmd.net/"
+FileNameExtensions: ["cedf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ULTRA_TC_EDITORS_DATA_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN_CATEGORY TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL COMMANDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINCMD.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: Clangd Index
+URL: "https://clangd.llvm.org/"
+FileNameExtensions: ["idx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CDIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRCS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMB"
+    CaseSensitive: false

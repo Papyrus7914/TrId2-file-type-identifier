@@ -1,0 +1,14 @@
+Name: WarCraft II save game (generic)
+URL: "https://en.wikipedia.org/wiki/Warcraft"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 40
+    AsciiString: "War2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_\0S\0I\0O\0P\0R\0G\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAR2"
+    CaseSensitive: false

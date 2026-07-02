@@ -1,0 +1,17 @@
+Name: Slight Atari Player module
+URL: "http://fileformats.archiveteam.org/wiki/Slight_Atari_Player"
+FileNameExtensions: ["sap"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SAP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

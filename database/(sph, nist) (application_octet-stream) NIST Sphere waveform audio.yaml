@@ -1,0 +1,11 @@
+Name: NIST Sphere waveform audio
+URL: "http://www.nist.gov/speech/tests/sdr/sdr99/pages/faq/SRT_FAQ.htm"
+FileNameExtensions: ["sph", "nist"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NIST_1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END_HEAD"
+    CaseSensitive: false

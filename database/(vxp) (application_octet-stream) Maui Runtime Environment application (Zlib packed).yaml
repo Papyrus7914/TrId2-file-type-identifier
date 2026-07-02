@@ -1,0 +1,20 @@
+Name: Maui Runtime Environment application (Zlib packed)
+URL: "http://web.archive.org/web/20120113010844/http://developer.mediatek.com/mre/en"
+FileNameExtensions: ["vxp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        x
+    Bytes: [0x78, 0xDA]
+  - Pos: any
+    AsciiString: "VREAPPLOGO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIF89A-\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDE10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IMG"
+    CaseSensitive: false

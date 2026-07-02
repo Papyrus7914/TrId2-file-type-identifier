@@ -1,0 +1,11 @@
+Name: Flwrap encoded
+URL: "http://fileformats.archiveteam.org/wiki/Flwrap"
+FileNameExtensions: ["wrap"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[WRAP:beg][WRAP:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHKSUM"
+    CaseSensitive: false

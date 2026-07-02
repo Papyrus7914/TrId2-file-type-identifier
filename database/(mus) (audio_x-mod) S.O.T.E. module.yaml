@@ -1,0 +1,29 @@
+Name: S.O.T.E. module
+Description: Atari tracker by Donald Fakk / S.O.T.E.
+FileNameExtensions: ["mus"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BXBXBXBXBXBXBXBXBXBXBXBXBXBXBXBXBXBXBXNU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BXBXBXBXBXBXBXBXBXBXBXBXBXBXBXBXBXBXBXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0Q\0J\0D\0_\0Y\0T\0P\0K\0G\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRJ1 \0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRJRF84"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F(BRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRNU"
+    CaseSensitive: false

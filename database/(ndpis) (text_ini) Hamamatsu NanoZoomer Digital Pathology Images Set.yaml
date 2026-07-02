@@ -1,0 +1,17 @@
+Name: Hamamatsu NanoZoomer Digital Pathology Images Set
+URL: "https://docs.openmicroscopy.org/bio-formats/6.9.0/formats/hamamatsu-ndpi.html?highlight=hamamatsu"
+FileNameExtensions: ["ndpis"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[NanoZoomer Digital Pathology Image Set]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NOIMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NDPI"
+    CaseSensitive: false

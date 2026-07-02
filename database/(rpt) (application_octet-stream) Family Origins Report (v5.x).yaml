@@ -1,0 +1,28 @@
+Name: Family Origins Report (v5.x)
+FileNameExtensions: ["rpt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FOWIN_REPORT\f4\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BLANK_ROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORT_BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIVEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

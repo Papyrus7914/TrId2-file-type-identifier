@@ -1,0 +1,20 @@
+Name: ReDIF template
+URL: "http://openlib.org/acmes/root/docu/redif_1.html"
+FileNameExtensions: ["redif", "rdf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Template-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEMPLATE-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

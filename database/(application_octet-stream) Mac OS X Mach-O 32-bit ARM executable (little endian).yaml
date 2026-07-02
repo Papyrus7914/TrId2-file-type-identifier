@@ -1,0 +1,7 @@
+Name: Mac OS X Mach-O 32-bit ARM executable (little endian)
+URL: "https://en.wikipedia.org/wiki/Mach-O"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                \f
+    Bytes: [0xCE, 0xFA, 0xED, 0xFE, 0x0C, 0x00, 0x00, 0x00]

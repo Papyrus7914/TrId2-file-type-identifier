@@ -1,0 +1,14 @@
+Name: Lynx Disk Format
+URL: "http://www.russelldavis.org/CamputersLynx/PALE/"
+FileNameExtensions: ["ldf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 20
+    AsciiString: "Lynx disks, Copyright Intelligent Software\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT INTELLIGENT SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LYNX DISKS"
+    CaseSensitive: false

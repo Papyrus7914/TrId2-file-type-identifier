@@ -1,0 +1,13 @@
+Name: PowerDesigner / PowerAMC data (generic)
+URL: "https://en.wikipedia.org/wiki/PowerDesigner"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/BEGIN_TABLE AMCHEAD\r\nNAME "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN_DATA AMCHEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_TABLE AMCHEAD"
+    CaseSensitive: false

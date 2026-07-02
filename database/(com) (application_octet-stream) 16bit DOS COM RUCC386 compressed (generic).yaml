@@ -1,0 +1,22 @@
+Name: 16bit DOS COM RUCC/386 compressed (generic)
+Description: ROSE SWE Ultra COM File Compressor.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                W           \r                =                       +
+    Bytes: [0xFC, 0xBF, 0x00, 0x80, 0x57, 0xBE, 0x0D, 0x01, 0xB5, 0x3D, 0xF3, 0xA5, 0xC3, 0x2B, 0xED, 0xBE]
+  - Pos: 17
+    #                                W
+    Bytes: [0x80, 0xBF, 0x00, 0x01, 0x57, 0x81, 0xFF]
+  - Pos: 26
+    AsciiString: "s"
+    CaseSensitive: true
+  - Pos: 28
+    Bytes: [0xE8]
+  - Pos: 30
+    AsciiString: "\0r"
+    CaseSensitive: true
+  - Pos: 33
+    #              \b
+    Bytes: [0xB1, 0x08, 0x99, 0xE8]

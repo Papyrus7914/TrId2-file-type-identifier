@@ -1,0 +1,39 @@
+Name: DPInst configuration
+Description: Driver Package Installer
+URL: "https://technet.microsoft.com/en-us/ff544842(v=vs.96)"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTALLHEADERTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBDIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WELCOMEINTRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WELCOMETITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DPINSTTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINISHTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINISHTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH"
+    CaseSensitive: false

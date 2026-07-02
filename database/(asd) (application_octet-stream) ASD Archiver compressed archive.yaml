@@ -1,0 +1,11 @@
+Name: ASD Archiver compressed archive
+Description: ASD is an old compression program by Tobias Svensson.
+URL: "https://fileformats.archiveteam.org/wiki/ASD_Archiver"
+FileNameExtensions: ["asd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ASD"
+    CaseSensitive: true
+  - Pos: 5
+    Bytes: [0x1A]

@@ -1,0 +1,38 @@
+Name: Kreed Save game
+URL: "https://www.mobygames.com/game/22646/kreed/"
+FileNameExtensions: ["ksv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x06\0\0\0\f\0\0\0\t\0\0\0\x06\0\0\0\x10\0\0\0\x0F\0\0\0Kreed saved game"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GAME_DIFFICULTY_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME_TEAMSCORE0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME_TEAMSCORE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME_FRAGLIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME_TEAMNAME0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME_TEAMNAME1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME_TIMELIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XSA"
+    CaseSensitive: false

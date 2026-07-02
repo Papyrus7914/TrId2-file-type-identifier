@@ -1,0 +1,32 @@
+Name: Director Cast data
+URL: "https://en.wikipedia.org/wiki/Adobe_Director"
+FileNameExtensions: ["cst"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XFIR"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "59CMpami"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "59CMPAMI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSAC"
+    CaseSensitive: false

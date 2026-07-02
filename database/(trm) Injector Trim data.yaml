@@ -1,0 +1,57 @@
+Name: Injector Trim data
+FileNameExtensions: ["trm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADDITIONALINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETRIMLOCKVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INJECTORSERIALNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INJECTORPARTNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEIDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATACHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONBOARDDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECODE"
+    CaseSensitive: false

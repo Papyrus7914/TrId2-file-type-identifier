@@ -1,0 +1,44 @@
+Name: Azure Service Configuration schema
+URL: "https://en.wikipedia.org/wiki/Microsoft_Azure"
+FileNameExtensions: ["cscfg"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICECONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCES COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICEHOSTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2008"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

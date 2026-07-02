@@ -1,0 +1,10 @@
+Name: FM Towns bootable disk image
+URL: "https://en.wikipedia.org/wiki/FM_Towns"
+FileNameExtensions: ["dsk", "bin", "img", "hdm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IPL"
+    CaseSensitive: true
+  - Pos: 4
+    Bytes: [0xEB]

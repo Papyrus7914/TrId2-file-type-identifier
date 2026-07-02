@@ -1,0 +1,11 @@
+Name: KDE/GNOME desktop entry
+URL: "http://standards.freedesktop.org/desktop-entry-spec/latest/index.html#introduction"
+FileNameExtensions: ["desktop"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Desktop Entry]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

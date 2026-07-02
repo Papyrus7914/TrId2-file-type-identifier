@@ -1,0 +1,58 @@
+Name: OS/2 Dynamic Link Library (with DOS stub)
+URL: "http://en.wikipedia.org/wiki/EXE"
+FileNameExtensions: ["dll"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    Bytes: [0x00, 0xFF, 0xFF]
+  - Pos: 15
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in "
+    CaseSensitive: true
+  - Pos: 115
+    AsciiString: "e"
+    CaseSensitive: true
+  - Pos: 126
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 143
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 146
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 151
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 153
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 159
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 163
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 174
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 179
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 183
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 186
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN"
+    CaseSensitive: false

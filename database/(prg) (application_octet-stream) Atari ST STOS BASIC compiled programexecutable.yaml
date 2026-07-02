@@ -1,0 +1,77 @@
+Name: Atari ST STOS BASIC compiled program/executable
+URL: "https://en.wikipedia.org/wiki/STOS_BASIC"
+FileNameExtensions: ["prg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0`N\0"
+    CaseSensitive: true
+  - Pos: 89
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 97
+    AsciiString: "\0\0\b\xFF\xFF\xA8\x02\x80\0\0\0`\0\x03\bStos basic compiler V 1.0 by Francois Lionet00\0\0\0\0\0\0\x13\x88\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STOS BASIC COMPILER V 1.0 BY FRANCOIS LIONET00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS ANY KEY.\0\00-\0HG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST \0LISTBANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCNEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUSICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPBUFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.BAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULY"
+    CaseSensitive: false

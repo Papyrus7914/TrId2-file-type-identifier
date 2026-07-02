@@ -1,0 +1,32 @@
+Name: SENTRY-Packer compressed Atari ST program
+Description: Atari ST packer by Eagle of Sentry.
+FileNameExtensions: ["prg", "tos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xFF\xFFH\xE7\0\xF0M\xFA\x01\xDCJ\x16g./<\0\x03\0\x04NNTO$@2<\x01]B\x9AQ\xC9\xFF\xFCNNTOJ@g\x06\x06.\0\x14\0\x03HV?<\0\tNA\\O*o\0\x14 m\0\x10,m\0\bG\xEE\x04\0a\0\0\x98NqNq |\0"
+    CaseSensitive: true
+  - Pos: 116
+    AsciiString: "\xD1\xCB -\0\bC\xEB\0\x1CJ\x90g\x1A\xD3\xD8\xD1\x91r\0\x12\x18SAk\x0Ef\x06C\xE9\0\xFE`\xF0C\xF1\x18\x01`\xE8+k\0\x02\0\f+k\0\x06\0\x14+k\0\n\0\x1CL\xED\0\x03\0\b\xD2\x80+A\0\x10 -\0\x14\xD2\x80+A\0\x18t\x13C\xFA\08?!Q\xCA\xFF\xFCC\xEB\0\x1C&NN\xD7O\xEF\0(&\xD9Y\x87d\xFAL\xED\t\0\0\x18G\xF0\xB8\0B\x98\xB1\xCBm\xFA(m\0\x18*m\0\x10L\xDF\x0F\0N\xD6$|\0"
+    CaseSensitive: true
+  - Pos: 262
+    AsciiString: ".\n\xD5\xCBa\0\0\xAEaFedaBe\x06\x15 `\0\0\x98a8e\x04t\x01`\x12I\xFA\0\xC8\"\x1Ca<SBj\x02`\xF6HA\xD4A\x15 Q\xCA\xFF\xFC`\0\0tr\x01a$\x124 \0\xD4BH\x8184 \x04a\x16\xD4DNu\xD0\x80g\x02Nua\\\xD1\x80NuaV\xD1\x80`\x06BB\xD0\x80g\xF4\xD5\x82Q\xC9\xFF\xF8Nua\xDEe\bv\x01r\aa\xE8`(I\xFA\0^a\xCEe\x04v\x02`\x1Ar\x01a\xD6SBk\x06v\x03\xD6B`\fI\xFA\08a\x9E6\x02I\xFA\0$a\x96\x152 \xFFQ\xCB\xFF\xFA\xB7\xCAm\0\xFFXNu|\x03\xE1\x88\x10 Q\xCE\xFF\xFAD\xFC\0\x10Nu\x04\a\b\f\0\x01\0!\x01!\x03!\x01\x02\x04\b\0\x06\0\n\0\x12\02\x03\x04\x06\b\0\x01\0\x11\01\0\xB1\0\x02\0\x01\0\x05\0\x02\0\f\0\x03\0\x1B\0\x04\x1BY *Sentry v2.05 by Eagle\0`\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "Y *SENTRY V2.05 BY EAGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AFEDABE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NNTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NQNQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUAV"
+    CaseSensitive: false

@@ -1,0 +1,50 @@
+Name: MetaMind Machine Sequence
+URL: "http://www.meta-mind.de/"
+FileNameExtensions: ["mmms"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!-- See http://www.meta-mind.de -->\n\n<sequence>\n<metamindmachine_version>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "METAMINDMACHINE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.META-MIND.DE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINBEAT_CONST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINFREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLEEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MP3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAIN"
+    CaseSensitive: false

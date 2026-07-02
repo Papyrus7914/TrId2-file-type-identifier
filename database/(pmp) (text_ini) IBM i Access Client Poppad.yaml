@@ -1,0 +1,20 @@
+Name: IBM i Access Client Poppad
+URL: "https://en.wikipedia.org/wiki/IBM_i"
+FileNameExtensions: ["pmp"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Profile]\r\nid=PMP\r\nDescription="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POPPADINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POP1"
+    CaseSensitive: false

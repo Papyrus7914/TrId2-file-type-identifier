@@ -1,0 +1,11 @@
+Name: Clustal Alignment format
+URL: "https://en.wikipedia.org/wiki/Clustal"
+FileNameExtensions: ["aln"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CLUSTAL "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MULTIPLE SEQUENCE ALIGNMENT"
+    CaseSensitive: false

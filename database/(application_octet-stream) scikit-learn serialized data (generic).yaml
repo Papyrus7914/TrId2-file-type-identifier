@@ -1,0 +1,37 @@
+Name: scikit-learn serialized data (generic)
+URL: "https://scikit-learn.org/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x80\x03csklearn"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CNUMPY.CORE.MULTIARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSKLEARN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOM_STAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM_S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKLEARN_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COEF"
+    CaseSensitive: false

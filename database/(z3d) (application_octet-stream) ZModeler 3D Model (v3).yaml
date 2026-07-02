@@ -1,0 +1,29 @@
+Name: ZModeler 3D Model (v3)
+URL: "https://en.wikipedia.org/wiki/Zmodeler"
+FileNameExtensions: ["z3d"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZM3S"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "THMB"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "JFIF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CZIPSTREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SBST"
+    CaseSensitive: false

@@ -1,0 +1,212 @@
+Name: ISDOC electronic invoice (UTF-8)
+URL: "https://en.wikipedia.org/wiki/Invoice#ISDOC"
+FileNameExtensions: ["isdoc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: any
+    AsciiString: "ALREADYCLAIMEDTAXEXCLUSIVEAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALREADYCLAIMEDTAXINCLUSIVEAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEEXTENSIONAMOUNTTAXINCLUSIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFERENCETAXEXCLUSIVEAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFERENCETAXINCLUSIVEAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALREADYCLAIMEDTAXABLEAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATALOGUEITEMIDENTIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELLERSITEMIDENTIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCOUNTINGCUSTOMERPARTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCOUNTINGSUPPLIERPARTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALREADYCLAIMEDTAXAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFERENCETAXABLEAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEEXTENSIONTAXAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSIFIEDTAXCATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAYABLEROUNDINGAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITPRICETAXINCLUSIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VATCALCULATIONMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFERENCETAXAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTYIDENTIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFICATIONCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEGALMONETARYTOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAIDDEPOSITSAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALCURRENCYCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVOICEDQUANTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAYMENTMEANSCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDINGNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTANTSYMBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELECTRONICMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTYTAXSCHEME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAYMENTDUEDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIFICSYMBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLESYMBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVOICE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENTREFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAYABLEAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTALADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVOICELINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAXPOINTDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFCURRRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAXSUBTOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAIDAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTALZONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREETNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANYID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSUEDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMESPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPUBLIKA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TELEPHONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANKCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CITYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISDOC.CZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAXTOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERCENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VELOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false

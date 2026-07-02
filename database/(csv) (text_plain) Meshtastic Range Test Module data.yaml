@@ -1,0 +1,26 @@
+Name: Meshtastic Range Test Module data
+URL: "https://meshtastic.org/"
+FileNameExtensions: ["csv"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\"date\",\"time\",\"from\",\"sender name\",\"sender lat\",\"sender long\",\"rx lat\",\"rx long\",\"rx elevation\",\"rx snr\",\"distance(m)\",\"hop limit\",\"payload\"\n\""
+    CaseSensitive: true
+  - Pos: 146
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 149
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 152
+    AsciiString: "\",\""
+    CaseSensitive: true
+  - Pos: 157
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 160
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 163
+    AsciiString: "\",\""
+    CaseSensitive: true

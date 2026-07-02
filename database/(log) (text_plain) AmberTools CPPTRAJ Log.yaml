@@ -1,0 +1,41 @@
+Name: AmberTools CPPTRAJ Log
+URL: "https://amberhub.chpc.utah.edu/cpptraj/"
+FileNameExtensions: ["log"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\nCPPTRAJ: Trajectory Analysis. V"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "___  ___  ___  ___"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAJECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPOLOGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAJIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAJ."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARM"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: EditPlus Syntax file
+URL: "http://en.wikipedia.org/wiki/Editplus"
+FileNameExtensions: ["stx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#TITLE="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DELIMITER"
+    CaseSensitive: false

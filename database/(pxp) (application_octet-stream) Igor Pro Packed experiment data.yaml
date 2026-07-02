@@ -1,0 +1,32 @@
+Name: Igor Pro Packed experiment data
+URL: "https://www.wavemetrics.com/products/igorpro"
+FileNameExtensions: ["pxp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "Misc_Start\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULTFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGORVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISC_START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISC_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SILENT"
+    CaseSensitive: false

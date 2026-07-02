@@ -1,0 +1,19 @@
+Name: Silicon Graphics bitmap
+URL: "http://fileformats.archiveteam.org/wiki/SGI_(image_file_format)"
+FileNameExtensions: ["sgi", "bw", "rgb", "rgba"]
+MimeType: image/x-sgi
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01, 0xDA]
+  - Pos: 4
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 103
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true

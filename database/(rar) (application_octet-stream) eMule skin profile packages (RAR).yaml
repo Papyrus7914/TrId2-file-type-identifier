@@ -1,0 +1,32 @@
+Name: eMule skin profile packages (RAR)
+URL: "http://www.emule-mods.de/?skin=packs"
+FileNameExtensions: ["rar"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Rar!\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "805A63972409C401C6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "80A879A62409C40139"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNETSHORTCUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EMULESKIN.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ICO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

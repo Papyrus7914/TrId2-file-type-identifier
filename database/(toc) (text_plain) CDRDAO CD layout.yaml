@@ -1,0 +1,14 @@
+Name: CDRDAO CD layout
+URL: "http://fileformats.archiveteam.org/wiki/TOC"
+FileNameExtensions: ["toc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CD_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

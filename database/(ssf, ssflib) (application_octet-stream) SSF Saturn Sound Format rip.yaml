@@ -1,0 +1,15 @@
+Name: SSF Saturn Sound Format rip
+Description: Contains ripped code + audio data for Sega Saturn.
+URL: "http://fileformats.archiveteam.org/wiki/SSF"
+FileNameExtensions: ["ssf", "ssflib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSF\x11\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 16
+    #        x
+    Bytes: [0x78, 0xDA]

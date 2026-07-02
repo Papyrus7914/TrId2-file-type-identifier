@@ -1,0 +1,37 @@
+Name: Swift 3D 3D Graphic
+URL: "http://www.erain.com/"
+FileNameExtensions: ["t3d"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Begin "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN POLYGON ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN POLYLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END POLYLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END POLYGON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTUREV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTUREU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK"
+    CaseSensitive: false

@@ -1,0 +1,32 @@
+Name: Fujitsu Movie format video
+Description: Used on FM Towns.
+FileNameExtensions: ["mve"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FJMVcftc"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "cftc"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "ver "
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "info"
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "tdir"
+    CaseSensitive: true
+  - Pos: 88
+    AsciiString: "bhdr"
+    CaseSensitive: true
+  - Pos: 104
+    AsciiString: "bctl"
+    CaseSensitive: true
+  - Pos: 248
+    AsciiString: "bmov"
+    CaseSensitive: true

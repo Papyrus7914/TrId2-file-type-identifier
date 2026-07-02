@@ -1,0 +1,37 @@
+Name: SPSS Output Document
+Description: SPSS is a statistical software.
+URL: "http://www.spss.com/"
+FileNameExtensions: ["spo"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: any
+    AsciiString: "SPSS OUTPUT DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAVTREEVIEWITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0N\0T\0E\0N\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSPSIMPLETEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSPSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORTBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAVHEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAVROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false

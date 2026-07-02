@@ -1,0 +1,10 @@
+Name: EncryptOnClick encrypted
+URL: "http://www.2brightsparks.com/onclick/eoc.html"
+FileNameExtensions: ["eoc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PK\x03\x04\x14\0\x01\0c\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUCX"
+    CaseSensitive: false

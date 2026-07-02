@@ -1,0 +1,20 @@
+Name: Arcada floor plan
+URL: "https://github.com/mehanix/arcada"
+FileNameExtensions: ["txt"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"floors\":[{\"furnitureArray\":["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WALLNODELINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FURNITUREID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WALLNODEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WALLNODES"
+    CaseSensitive: false

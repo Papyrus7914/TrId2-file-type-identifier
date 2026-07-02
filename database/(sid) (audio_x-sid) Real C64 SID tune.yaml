@@ -1,0 +1,9 @@
+Name: Real C64 SID tune
+Description: Require a real C64 environment to run/play
+URL: "http://search.cpan.org/src/LALA/Audio-SID-3.02/SID_file_format.txt"
+FileNameExtensions: ["sid"]
+MimeType: audio/x-sid
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RSID"
+    CaseSensitive: true

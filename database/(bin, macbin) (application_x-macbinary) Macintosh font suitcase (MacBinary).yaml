@@ -1,0 +1,27 @@
+Name: Macintosh font suitcase (MacBinary)
+Description: MacBinary is a standard for encoding Macintosh files for file transfer. At position 65 apple type FFIL is stored.
+URL: "http://www.macdisk.com/macsigen.php"
+FileNameExtensions: ["bin", "macbin"]
+MimeType: application/x-macbinary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "FFIL"
+    CaseSensitive: true
+  - Pos: 74
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 82
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 99
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "\0\0\x01\0"
+    CaseSensitive: true

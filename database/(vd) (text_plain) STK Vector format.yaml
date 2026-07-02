@@ -1,0 +1,35 @@
+Name: STK Vector format
+URL: "https://en.wikipedia.org/wiki/Systems_Tool_Kit"
+FileNameExtensions: ["vd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "stk.v."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMBEROFVECTORDATAPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERPOLATIONSAMPLESM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERPOLATIONMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN VECTORDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORDINATEAXES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END VECTORDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSIONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENARIOEPOCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTRALBODY"
+    CaseSensitive: false

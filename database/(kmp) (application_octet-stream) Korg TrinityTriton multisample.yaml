@@ -1,0 +1,17 @@
+Name: Korg Trinity/Triton multisample
+URL: "http://www.fmjsoft.com/fmt/kmp.htm"
+FileNameExtensions: ["kmp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSP1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".KSF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSP1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLP1"
+    CaseSensitive: false

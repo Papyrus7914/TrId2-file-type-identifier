@@ -1,0 +1,11 @@
+Name: EverQuest Effect
+URL: "https://www.mobygames.com/game/275/everquest/"
+FileNameExtensions: ["eff"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EMIT\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOOP"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: Old DOS disk image
+Description: start with x86 near jump (0xE9) instruction instead short jump (0xEB) over BIOS parameter block
+URL: "http://en.wikipedia.org/wiki/Design_of_the_FAT_file_system#Boot_Sector"
+FileNameExtensions: ["ima", "img"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 510
+    #        U
+    Bytes: [0x55, 0xAA]
+  - Pos: 513
+    Bytes: [0xFF, 0xFF]

@@ -1,0 +1,44 @@
+Name: Amiga ADS Interpreter script
+Description: Used in some tutorials / educational products. By Ewout Walraven.
+FileNameExtensions: ["adc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SHORT\n"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RIGHT-ARROW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT-ARROW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(R)- 640"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "02 A0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMIGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(B)-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ADC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

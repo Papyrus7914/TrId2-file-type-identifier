@@ -1,0 +1,22 @@
+Name: SOAP Envelope
+URL: "http://en.wikipedia.org/wiki/Simple_Object_Access_Protocol"
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.XMLSOAP.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVELOPE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOAP-ENV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

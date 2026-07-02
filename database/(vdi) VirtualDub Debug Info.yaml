@@ -1,0 +1,13 @@
+Name: VirtualDub Debug Info
+URL: "http://www.virtualdub.org/"
+FileNameExtensions: ["vdi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[0"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "|0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "] VirtualDub disasm module ("
+    CaseSensitive: true

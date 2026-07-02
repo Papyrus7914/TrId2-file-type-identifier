@@ -1,0 +1,17 @@
+Name: Oberon Text
+URL: "https://en.wikipedia.org/wiki/Oberon_(operating_system)"
+FileNameExtensions: ["tex"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "oB"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "Syntax"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SCN.FNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false

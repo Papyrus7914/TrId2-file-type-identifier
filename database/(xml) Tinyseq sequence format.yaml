@@ -1,0 +1,49 @@
+Name: Tinyseq sequence format
+URL: "http://www.bioperl.org/wiki/Tinyseq_sequence_format"
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE TSEQSET PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.NCBI.NLM.NIH.GOV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSEQ_SEQTYPE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCBI_TSEQ.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSEQ_SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSEQ_DEFLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSEQ_ORGNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSEQ_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUCLEOTIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSEQ_TAXID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCBI TSEQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSEQ_GI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

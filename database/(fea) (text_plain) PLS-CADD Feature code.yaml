@@ -1,0 +1,23 @@
+Name: PLS-CADD Feature code
+URL: "https://www.powline.com"
+FileNameExtensions: ["fea"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TYPE='FEA FILE' VERSION="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INLINEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

@@ -1,0 +1,188 @@
+Name: Microsoft Backup Settings (v6.00)
+Description: Backup tool included with MS-DOS 6.
+FileNameExtensions: ["set"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SETUP FILE\r\n\r\n||\r\n||  "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXCLUDE SPECIFICATIONS FOR BACKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "07 EXCLUDE COPY PROTECTED FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "09 DISKETTE OVERWRITE WARNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "16 PROMPT BEFORE OVERWRITING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "18 RESTORE EMPTY DIRECTORIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "20 SHOW SELECTION STATISTICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "00 KEEP OLD BACKUP CATALOGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "21 RESTORE USING DATE RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "02 BACKUP USING DATE RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "17 AUDIBLE RESTORE PROMPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "21 AUDIBLE COMPARE PROMPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "10 DISKETTE FORMAT OPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "12 AUDIBLE BACKUP PROMPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "08 COPY PROTECTED FILE 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL COMPARE SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL RESTORE SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "02 BACKUP DISKETTE SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "11 RESTORE SYSTEM FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "12 RESTORE HIDDEN FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "23 GROUP SELECTED FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL BACKUP SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "02 RESTORE DEVICE PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "05 BACKUP SYSTEM FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "06 BACKUP HIDDEN FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "14 PROMPT BEFORE CREAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "15 PROMPT BEFORE CREAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+00 BACKUP DATE RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "01 BACKUP DEVICE PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "10 QUIT AFTER RESTORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "48 QUIT AFTER COMPARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK COMPARE SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK RESTORE SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "04 QUIT AFTER BACKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK BACKUP SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "05 DATA COMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3 ERROR CORRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "03 FILE SORT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA VERIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST FULL BACKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SET SETUP FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "13 RESTORE FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "19 RESTORE READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "00 DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "04 BACKUP TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "22 BACKUP READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "36 RESTORE TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MS-DOS COMPAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "01 BACKUP TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPARE FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST BACKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST UPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION 6.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "23 COMPARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "37 COMPARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLY FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "24 PRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRS"
+    CaseSensitive: false

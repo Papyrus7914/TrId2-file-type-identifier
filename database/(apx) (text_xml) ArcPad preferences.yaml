@@ -1,0 +1,14 @@
+Name: ArcPad preferences
+URL: "http://resources.arcgis.com/en/help/arcpad/10.0/sdk/xml/"
+FileNameExtensions: ["apx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PREFERENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCPAD"
+    CaseSensitive: false

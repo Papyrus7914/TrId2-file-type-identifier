@@ -1,0 +1,20 @@
+Name: Mesen Movie
+URL: "https://www.mesen.ca/"
+FileNameExtensions: ["mmo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Input.txt"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GAMESETTINGS.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMESETTINGS.TXTM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT.TXTPK"
+    CaseSensitive: false

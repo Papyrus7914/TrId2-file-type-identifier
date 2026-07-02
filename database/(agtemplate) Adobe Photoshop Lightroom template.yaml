@@ -1,0 +1,31 @@
+Name: Adobe Photoshop Lightroom template
+URL: "http://en.wikipedia.org/wiki/Lightroom"
+FileNameExtensions: ["agtemplate"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "s = {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WHITEBALANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVELOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false

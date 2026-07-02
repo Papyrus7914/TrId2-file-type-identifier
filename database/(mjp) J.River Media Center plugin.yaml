@@ -1,0 +1,16 @@
+Name: J.River Media Center plugin
+URL: "http://www.jrmediacenter.com/"
+FileNameExtensions: ["mjp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Package]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,73 @@
+Name: Maxwell Render Scene
+URL: "http://www.maxwellrender.com/"
+FileNameExtensions: ["mxs"]
+DetectionPatterns:
+  - Pos: 0
+    #                    *
+    Bytes: [0xF9, 0xB2, 0x2A, 0xD1]
+  - Pos: any
+    AsciiString: "$DO INDIRECT REFLECTION CAUSTIC LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DO INDIRECT REFRACTION CAUSTIC LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO DIRECT REFLECTION CAUSTIC LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO DIRECT REFRACTION CAUSTIC LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO ZBUFFER CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO INDIRECT LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO RENDER CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TONEMAPPING BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA THIN LENS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO ALPHA CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO DIRECT LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO COOPERATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLING LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKY PHYSICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM THREADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AL CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MXI RESUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOP TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH"
+    CaseSensitive: false

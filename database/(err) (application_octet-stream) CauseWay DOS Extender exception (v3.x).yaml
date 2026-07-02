@@ -1,0 +1,68 @@
+Name: CauseWay DOS Extender exception (v3.x)
+URL: "https://github.com/amindlost/cw"
+FileNameExtensions: ["err"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CauseWay DOS Extender v3."
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: " Copyright 1992-"
+    CaseSensitive: true
+  - Pos: 45
+    AsciiString: " Michael Devore.\r\nAll rights reserved.\r\n\r\nException: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROTECTED MODE EXCEPTION VECTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTECTED MODE INTERRUPT VECTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL MODE INTERRUPT VECTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-----------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEAR MEMORY LOCKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL LINEAR MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS MEMORY BLOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT 1992-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICHAEL DEVORE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO SEG OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL-BACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO SEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false

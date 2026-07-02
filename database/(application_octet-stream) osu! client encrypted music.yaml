@@ -1,0 +1,13 @@
+Name: osu! client encrypted music
+URL: "https://osu.ppy.sh/wiki/en/Client"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xECHO\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".OSU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ZDP"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: RetroShare Collection
+URL: "https://en.wikipedia.org/wiki/Retroshare"
+FileNameExtensions: ["rscollection"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE RsCollection>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIRECTORY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA1"
+    CaseSensitive: false

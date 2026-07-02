@@ -1,0 +1,9 @@
+Name: VTech MJP video
+URL: "http://wiki.multimedia.cx/index.php?title=MJP"
+FileNameExtensions: ["mjp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MIAV"
+    CaseSensitive: true
+  - Pos: 22
+    Bytes: [0x05]

@@ -1,0 +1,26 @@
+Name: Tesseract OCR Cube Language Model
+URL: "https://en.wikipedia.org/wiki/Tesseract_(software)"
+FileNameExtensions: ["lm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LeadPunc=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMTRAILPUNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMLEADPUNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALPHAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGITS"
+    CaseSensitive: false

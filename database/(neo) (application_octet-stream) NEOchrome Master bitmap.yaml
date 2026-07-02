@@ -1,0 +1,20 @@
+Name: NEOchrome Master bitmap
+URL: "http://fileformats.archiveteam.org/wiki/NEOchrome_Master"
+FileNameExtensions: ["neo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "ILBMBMHD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAST"
+    CaseSensitive: false

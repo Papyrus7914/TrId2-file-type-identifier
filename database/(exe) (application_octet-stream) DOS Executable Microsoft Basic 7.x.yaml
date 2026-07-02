@@ -1,0 +1,198 @@
+Name: DOS Executable Microsoft Basic 7.x
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 24
+    AsciiString: "\x1E\0\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 63
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 73
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 81
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 85
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 93
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 97
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 105
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 109
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 113
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 125
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 129
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 133
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 137
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 141
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 145
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 153
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 169
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 173
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 185
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 257
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 261
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 265
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 273
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 277
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 281
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 289
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 429
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 433
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 441
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 445
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 449
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 453
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 457
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 461
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 465
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 469
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 473
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 477
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 481
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 485
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 489
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 493
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 497
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 501
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 505
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 509
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 533
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 541
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 549
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_C_FILE_INFO"
+    CaseSensitive: false

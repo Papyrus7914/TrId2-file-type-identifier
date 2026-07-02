@@ -1,0 +1,20 @@
+Name: DCTV Paint Palette
+URL: "http://amiga.resource.cx/exp/dctv"
+FileNameExtensions: ["pal"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "DCPA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GRAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VFLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDH"
+    CaseSensitive: false

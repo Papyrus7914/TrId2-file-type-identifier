@@ -1,0 +1,44 @@
+Name: Logic Pro X project
+URL: "https://en.wikipedia.org/wiki/Logic_Pro"
+FileNameExtensions: ["logicx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PROJECTINFORMATION.PLISTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYSTATE.PLISTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWIMAGE.JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.PLISTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDO DATA.NOSYNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTDATAPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTERNATIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DUMMYPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOSAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".UNDOPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: Grand Theft Auto 2 Multiplayer Map Metadata
+URL: "https://en.wikipedia.org/wiki/Grand_Theft_Auto_2"
+FileNameExtensions: ["mmp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[MapFiles]\r\nGMPFile = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".STY"
+    CaseSensitive: false

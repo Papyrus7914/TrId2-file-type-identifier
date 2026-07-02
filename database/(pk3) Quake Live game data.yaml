@@ -1,0 +1,24 @@
+Name: Quake Live game data
+Description: Quake Live (formerly known as Quake Zero) is a first-person shooter web browser-based video game developed by id Software and announced in 2007.
+URL: "http://en.wikipedia.org/wiki/Quake_Zero"
+FileNameExtensions: ["pk3"]
+DetectionPatterns:
+  - Pos: 0
+    #                          H
+    Bytes: [0x9F, 0xC5, 0x8D, 0x48]
+  - Pos: 5
+    #              0
+    Bytes: [0xD9, 0x30, 0xCE]
+  - Pos: 9
+    AsciiString: "2"
+    CaseSensitive: true
+  - Pos: 21
+    Bytes: [0x10]
+  - Pos: 25
+    Bytes: [0xBF]
+  - Pos: 27
+    AsciiString: "\t"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "k"
+    CaseSensitive: true

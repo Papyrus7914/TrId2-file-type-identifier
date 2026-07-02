@@ -1,0 +1,17 @@
+Name: LPAC - Lossless Predictive Audio Compression
+URL: "https://wiki.multimedia.cx/index.php?title=Lossless_Predictive_Audio_Coding"
+FileNameExtensions: ["pac"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LPAC"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0WAVEfmt"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "\0data"
+    CaseSensitive: true

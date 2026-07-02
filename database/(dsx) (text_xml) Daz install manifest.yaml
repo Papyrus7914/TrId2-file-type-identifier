@@ -1,0 +1,32 @@
+Name: Daz install manifest
+URL: "https://en.wikipedia.org/wiki/Daz_Studio"
+FileNameExtensions: ["dsx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<DAZInstallManifest VERSION=\""
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GLOBALID VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false

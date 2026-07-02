@@ -1,0 +1,9 @@
+Name: Microsoft Word for DOS Glossary
+Description: GLX is used in the Unix version.
+URL: "https://en.wikipedia.org/wiki/Microsoft_Word"
+FileNameExtensions: ["gly", "glx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        1
+    Bytes: [0x31, 0xBE, 0x01, 0x00, 0x00, 0xAB]

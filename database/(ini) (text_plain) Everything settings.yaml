@@ -1,0 +1,47 @@
+Name: Everything settings
+URL: "https://www.voidtools.com/"
+FileNameExtensions: ["ini"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "; Please make sure Everything is not running before modifying this file.\r\n[Everything]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PLEASE MAKE SURE EVERYTHING IS NOT RUNNING BEFORE MODIFYING THIS FILE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP_SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ETP_SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN_AS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOW_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OW_E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OW_H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S_AD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DAT"
+    CaseSensitive: false

@@ -1,0 +1,50 @@
+Name: VinylMaster Documet
+URL: "https://uscutter.com/vinylmaster/"
+FileNameExtensions: ["vdoc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "xV4\x12\x01\0\0\0\f<Tag:RawData\v\0\0\0<TPageData>\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TVMDOCINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPAGEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIGTHUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BM32RLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCSTAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRADNTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDXREC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEBMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAWDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMB32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNICLRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

@@ -1,0 +1,233 @@
+Name: Clarion RunTime Library
+URL: "https://en.wikipedia.org/wiki/Clarion_(programming_language)"
+FileNameExtensions: ["rtl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              7     S
+    Bytes: [0xBA, 0x37, 0x53, 0x01]
+  - Pos: 6
+    AsciiString: "#\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DELETE CURRENT DIRECTORY\0NOT SAME DEVICE\0NO MORE FILES\0MODULE NOT FOUND\0PROCEDURE OR FUNCTION NOT FOUND\0SUBSCRIPT OUT OF RANGE\0INCORRECT NUMBER OF PARAMETERS\0DEFINED AS FUNCTION IN BINARY MODULE\0DEFINED AS PROCEDURE IN BINARY MODULE\0EXTERNAL PARAMETER NOT PASSED\0FLOATING POINT EXCEPTION ERROR\0DATA FILE DOES NOT MATCH PROGRAM\0RETURN LOCATION WOULD BE OVERLAID\0ENTRY NOT FOUND\0ENTRY NOT AVAILABLE\0FILE IS ALREADY LOCKED\0RECORD NOT AVAILABLE\0END OF FILE\0RECORD NOT FOUND\0INVALID DATA FILE\0FILE NOT OPEN\0INVALID KEY FILE\0TOO MANY KEYS\0CREATES DUPLICATE KEY\0MODULE NOT COMPILED WITH CURRENT GLOBAL DATA\0INVALID KEY DECLARATION\0RECORD IS ALREADY HELD\0INVALID CLARION PROGRAM\0INVALID FILENAME\0KEY FILE MUST BE REBUILT\0INVALID RECORD DECLARATION\0.SYM FILE NOT FOUND\0UNABLE TO LOG TRANSACTION\0MISSING RETURN\0FILE ALREADY OPEN\0 HAS COMPILE ERRORS\0INVALID CLARION FILE\0NO CREATE ATTRIBUTE\0FILE MUST BE SHARED\0KEY AND FILE MISMATCH\0EXTERNAL PARAMETER TYPE MISMATCH\0NO OPEN SCREEN\0LOGOUT ALREADY ACTIVE\0INVALID MEMO FILE\0EXTERNAL PARAMETER EXPECTED\0ASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID FUNCTION NUMBER\0FILE NOT FOUND\0PATH NOT FOUND\0TOO MANY OPEN FILES\0ACCESS DENIED\0INVALID HANDLE\0MEMORY CORRUPTED\0INSUFFICIENT MEMORY\0INVALID MEMORY BLOCK ADDRESS\0INVALID ENVIRONMENT\0INVALID FORMAT\0INVALID ACCESS CODE\0INVALID DATA\0UNKNOWN DOS ERROR\0INVALID DRIVE\0CAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCEPT IN IDLE PROCEDURE\0EXCLUSIVE ACCESS REQUIRED\0SHARING VIOLATION\0UNABLE TO ROLLBACK TRANSACTION\0INVALID FILE EXTENSION\0FILE OPENED READ-ONLY\0VIRTUAL MEMORY ERROR\0NORMAL END OF PROGRAM\0USER ABORTED BY CONTROL BREAK\0CRITICAL ERROR ABORT\0RUN TIME HALT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(F)AIL   - RETURN ERROR TO PROGRAM\0\0ARIFNO HELP IS AVAILABLE\0HELP FILE CANNOT BE FOUND\0NO HELP FOR THIS TOPIC CAN BE FOUND\0AM\0PM\0   \0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOMAIN\0DENORMAL\0DIVIDE BY 0\0OVERFLOW\0UNDERFLOW\0PARTIAL LOSS OF PRECISION\0FLOATING POINT ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C L A R I O N\0VERSION  \0COPYRIGHT 1989\0CLARION SOFTWARE CORP.\0ALL RIGHTS RESERVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0ERROR IN ADDKEY \0\0ERROR IN GETNODE\0ERROR IN PUTNODE\0UNABLE TO DELETE KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN BUILD\0\0ERROR IN EOF\0\0ERROR IN BOF\0\0ERROR IN STREAM\0ERROR IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN PREVIOUS\0CTRL-BREAK\0\0ERROR IN SKIP\0ERROR IN ADD\0\0ERROR IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JAN\0FEB\0MAR\0APR\0MAY\0JUN\0JUL\0AUG\0SEP\0OCT\0NOV\0DEC\0JANUARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TURBO-C - COPYRIGHT (C) 1988 BORLAND INTL.\0DIVIDE ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN SET\0\0ERROR IN NEXT\0CTRL-BREAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOO MANY ARGUMENTS ON THE COMMAND LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE\0MEMO\0KEY\0INDX\0DOS\0RPT\0OTHR\0%3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUST BE DOS VERSION 2.00 OR GREATER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETER %D\0%D DEFINED - %D PASSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER TO CONTINUE\0PROGRAM STOP  %S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR FROM GET\0CTRL-BREAK\0ERROR IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(I)GNORE - ERROR IS NOT IMPORTANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(R)ETRY  - AFTER CORRECTING ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN OPEN\0.MEM\0.DAT\0.M00\0.LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOATING POINT FORMATS NOT LINKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLARION.DMP\0PROGRAM HALT\0CLARION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ")\0PC-AT\0PC-JR\0PC-XT\0PC\0COMPUTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".KTP\0\0UNABLE TO START LOG\0.LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN FLUSH\0\0ERROR IN CACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR FROM ROLLBACK\0.DAT\0.LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITE TO WRITE PROTECTED DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*** VIRTUAL MEMORY ERROR ***"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABNORMAL PROGRAM TERMINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(A)BORT  - END THIS PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN CREATE\0.MEM\0\0ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS ANY KEY TO CONTINUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS ESC TO QUIT PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD COMMAND GIVEN TO RUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NULL)\00123456789ABCDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN CLOSE\0\0ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE ALLOCATION TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "** INTERNAL ERROR **"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY IMAGE CORRUPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER OUT OF PAPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN DUPLICATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8087\0 \0IBM COMP("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE NOT READY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN POINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER OFF-LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTOR NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$COMSPEC\0CLATMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".K00\0.I00\0ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LOG\0CTRL-BREAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN BUFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN DELETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL FAILURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HLP\0PATH\0RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRC DATA ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH\0.COM\0.EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR ON DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS.CTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT SCANF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPER. SYS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DAT\0.MEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XVBELSMCF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONV MEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK VM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLAVID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLAVM0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAM VM"
+    CaseSensitive: false

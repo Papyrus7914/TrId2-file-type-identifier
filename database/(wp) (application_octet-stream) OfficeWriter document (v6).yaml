@@ -1,0 +1,13 @@
+Name: OfficeWriter document (v6)
+Description: Wang like Word processor from Office Solutions.
+FileNameExtensions: ["wp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "6.0"
+    CaseSensitive: true
+  - Pos: 167
+    AsciiString: "wp"
+    CaseSensitive: true
+  - Pos: 514
+    Bytes: [0xFA]

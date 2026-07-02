@@ -1,0 +1,11 @@
+Name: Palm Pilot-DB database
+Description: Pilot-DB is a freeware (OpenSource) database program for the Palm OS (any version and any hardware) and compares with the best commercial programs available.
+URL: "http://pilot-db.sourceforge.net/"
+FileNameExtensions: ["pdb"]
+DetectionPatterns:
+  - Pos: 56
+    AsciiString: "\0\0\0\0DB00DBOS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DB00DBOS"
+    CaseSensitive: false

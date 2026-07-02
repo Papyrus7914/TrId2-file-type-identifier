@@ -1,0 +1,47 @@
+Name: ipuz puzzle open format
+URL: "http://fileformats.archiveteam.org/wiki/IPUZ"
+FileNameExtensions: ["ipuz"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIMENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CROSSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPUZ.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACROSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUZZLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIND"
+    CaseSensitive: false

@@ -1,0 +1,43 @@
+Name: Exchange Extended Configuration File - Office Add-in
+URL: "http://www.microsoft.com/exchange"
+FileNameExtensions: ["ecf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[General]\r\nDisplay Name="
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "e"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXCHANGE CLIENT COMPATIBILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCHANGE INTERFACE MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCHANGE CONTEXT MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENT VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false

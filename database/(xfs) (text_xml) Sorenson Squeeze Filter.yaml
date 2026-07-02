@@ -1,0 +1,35 @@
+Name: Sorenson Squeeze Filter
+URL: "https://en.wikipedia.org/wiki/Sorenson_Squeeze"
+FileNameExtensions: ["xfs"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE squeeze_filter>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILTER DEFAULTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTERSETTING NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAPTIVE BLEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METHOD VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEINTERLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISCARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XFS"
+    CaseSensitive: false

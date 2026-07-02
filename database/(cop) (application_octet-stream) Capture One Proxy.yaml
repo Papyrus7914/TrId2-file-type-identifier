@@ -1,0 +1,79 @@
+Name: Capture One Proxy
+URL: "https://en.wikipedia.org/wiki/Capture_One"
+FileNameExtensions: ["cop"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0G\xCA\x06\0\x1B"
+    CaseSensitive: true
+  - Pos: 117
+    Bytes: [0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "ETIFFTAGEXIFIFD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPACKET BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPACKET END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMP CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL\01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL\02"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL\03"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL\04"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL\05"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL\06"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL\07"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMPMETA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOBE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMPTK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFD0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFD1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MM F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MQQM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SJPG"
+    CaseSensitive: false

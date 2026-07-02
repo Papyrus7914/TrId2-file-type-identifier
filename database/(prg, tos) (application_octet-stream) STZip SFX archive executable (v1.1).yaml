@@ -1,0 +1,41 @@
+Name: STZip SFX archive executable (v1.1)
+URL: "https://www.atari-wiki.com/index.php?title=STZIP"
+FileNameExtensions: ["prg", "tos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\0\0@\0ZIP!\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STZIP SELF EXTRACTING FILE V1.1 - (C) VINCENT POMEY 1992"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRC ERROR\0\0\0\0   UNSUPPORTED COMPRESSION METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT ENOUGH MEMORY TO EXTRACT. TRY USING STZIP."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR WRITING\0\0\0\0   ERROR WHILE EXTRACTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT FIND CENTRAL DIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT CREATE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTED FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAMAGED FILE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESS RETURN."
+    CaseSensitive: false

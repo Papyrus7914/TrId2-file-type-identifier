@@ -1,0 +1,65 @@
+Name: Flipper Zero Firmware Upgrade config (v2)
+URL: "https://en.wikipedia.org/wiki/Flipper_Zero"
+FileNameExtensions: ["fuf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Filetype: Flipper firmware upgrade configuration\nVersion: 2\nInfo: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NEVER EVER MESS WITH THESE VALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOU WILL BRICK YOUR DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LITTLE-ENDIAN HEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OB WRITE MASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIO ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIO VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWARE.DFU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OB REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLASHSCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATER.BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADER CRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLASH.BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIO CRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIO.BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OB MASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

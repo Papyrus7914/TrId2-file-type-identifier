@@ -1,0 +1,44 @@
+Name: WinDarab telemetry format
+URL: "https://www.bosch-motorsport.com/products-and-services/software-highlights/windarab/"
+FileNameExtensions: ["bmsbin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Darab v"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$FREECLUSTERS$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENTRULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAPSTACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAP_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAP_STK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGGING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE_01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BASE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOSCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_"
+    CaseSensitive: false

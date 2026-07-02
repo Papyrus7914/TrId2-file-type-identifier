@@ -1,0 +1,11 @@
+Name: 10tons compressed container (generic)
+URL: "https://www.mobygames.com/company/4846/10tons-ltd/"
+FileNameExtensions: ["bin", "save", "xml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "10tc"
+    CaseSensitive: true
+  - Pos: 12
+    #        x
+    Bytes: [0x78, 0xDA]

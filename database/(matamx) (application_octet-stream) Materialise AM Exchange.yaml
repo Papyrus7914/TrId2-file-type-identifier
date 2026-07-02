@@ -1,0 +1,44 @@
+Name: Materialise AM Exchange
+URL: "https://www.materialise.com/"
+FileNameExtensions: ["matamx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MT\x03\x04\x14\0\0\b\b\0\0\0 \0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\02\0\0\0Stl{"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 57
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 70
+    AsciiString: "}_vertices"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEADER.XMLMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}_SURFACESMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}_VERTICESMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOB_0000CD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOB_0000MT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STL{"
+    CaseSensitive: false

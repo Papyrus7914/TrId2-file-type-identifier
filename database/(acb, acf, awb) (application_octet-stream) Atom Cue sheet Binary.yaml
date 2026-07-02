@@ -1,0 +1,68 @@
+Name: Atom Cue sheet Binary
+URL: "https://www.criware.com/en/products/adx2.html"
+FileNameExtensions: ["acb", "acf", "awb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@UTF\0"
+    CaseSensitive: true
+  - Pos: 57
+    AsciiString: "[\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LE\0VERSIONSTRING\0CUELIMITWORKTABLE\0NUMCUELIMITLISTWORKS\0NUMCUELIMITNODEWORKS\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER\0FILEIDENTIFIER\0SIZE\0VERSION\0TYPE\0TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AISACTABLE\0GRAPHTABLE\0GLOBALAISAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMETABLE\0AUTOMODULATIONTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE\0AISACCONTROLNAMETABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMAISACCONTROLMAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AISACNAMETABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMANDTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENAMETABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD5HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VER."
+    CaseSensitive: false

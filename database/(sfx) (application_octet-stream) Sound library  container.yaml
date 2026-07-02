@@ -1,0 +1,20 @@
+Name: Sound library / container
+Description: Used by Flanker 2.0.
+FileNameExtensions: ["sfx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SLIBLIST"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "snd NAME"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SLIBLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SND NAME"
+    CaseSensitive: false

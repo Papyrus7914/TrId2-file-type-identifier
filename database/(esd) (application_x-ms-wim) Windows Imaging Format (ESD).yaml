@@ -1,0 +1,11 @@
+Name: Windows Imaging Format (ESD)
+URL: "https://wimlib.net/man1/wimmount.html"
+FileNameExtensions: ["esd"]
+MimeType: application/x-ms-wim
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSWIM\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\x0E\0\0"
+    CaseSensitive: true

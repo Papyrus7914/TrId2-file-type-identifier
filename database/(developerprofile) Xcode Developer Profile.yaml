@@ -1,0 +1,34 @@
+Name: Xcode Developer Profile
+URL: "http://en.wikipedia.org/wiki/Xcode"
+FileNameExtensions: ["developerprofile"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 27
+    AsciiString: "\0\0\0developer/identities/iPhone D"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DTDKDEVELOPERPROFILE CLOSING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MOBILEPROVISIONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPHONE DEVELOPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G\0\0\0DEVELOPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTITIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ").P12PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ").P12U"
+    CaseSensitive: false

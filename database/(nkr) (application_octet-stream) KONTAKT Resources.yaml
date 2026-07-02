@@ -1,0 +1,35 @@
+Name: KONTAKT Resources
+URL: "https://en.wikipedia.org/wiki/Kontakt_(software)"
+FileNameExtensions: ["nkr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "T\xACp^\x10\x01\0\0\0\0\xFF\0\0\0\x01\0\0\0\x01\0\0\0\x1C\02\0\0\0\x01\0R\0e\0s\0o\0u\0r\0c\0e\0s\0"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "T\xACp^\x10\x01\0\0\0\0\xFF\0\0\0\x04\0\0\0\x01\0\0\0\x1A\0\xAA\0\0\0\x01\0p\0i\0c\0t\0u\0r\0e\0s\0"
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "s\0c\0r\0i\0p\0t\0s\0\0\0\x12\0"
+    CaseSensitive: true
+  - Pos: 130
+    AsciiString: "d\0a\0t\0a\0\0\0\x1E\0"
+    CaseSensitive: true
+  - Pos: 148
+    AsciiString: "i\0r\0_\0s\0a\0m\0p\0l\0e\0s\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "I\0R\0_\0S\0A\0M\0P\0L\0E\0S\0\0\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0S\0O\0U\0R\0C\0E\0S\0\0\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0I\0C\0T\0U\0R\0E\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0R\0I\0P\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0A\0T\0A"
+    CaseSensitive: false

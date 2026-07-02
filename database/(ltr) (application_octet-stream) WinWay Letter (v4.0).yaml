@@ -1,0 +1,20 @@
+Name: WinWay Letter (v4.0)
+URL: "https://www.winway.com"
+FileNameExtensions: ["ltr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x0E\0\x01\0&\0\0\0@@\0\0@@\x01\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\0\0\x01\0\x01\0\0\0\t\0\b\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LETTER CONTACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEAR ________"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LETTER BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

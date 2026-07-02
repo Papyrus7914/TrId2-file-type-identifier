@@ -1,0 +1,53 @@
+Name: Microsoft ICE Stitch Project (v2)
+URL: "http://research.microsoft.com/en-us/um/redmond/projects/ice/"
+FileNameExtensions: ["spj"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<stitchProject version=\"2.0\" cameraMotion=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VIGNETTECORRECTION REDFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STITCHPROJECT VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALINTENSITYSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERAMOTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GREENFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLUEFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERAPOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOLERANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWNLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

@@ -1,0 +1,287 @@
+Name: AVM FRITZ!Box firmware
+URL: "https://www.redteam-pentesting.de/de/advisories/rt-sa-2014-010/-avm-fritz-box-firmware-signature-bypass"
+FileNameExtensions: ["image"]
+MimeType: application/x-gtar
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "./"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "/\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\000"
+    CaseSensitive: true
+  - Pos: 103
+    AsciiString: "075"
+    CaseSensitive: true
+  - Pos: 107
+    AsciiString: "\00000000\00000000\000000000000\0"
+    CaseSensitive: true
+  - Pos: 147
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 154
+    AsciiString: "\0 5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ustar  \0"
+    CaseSensitive: true
+  - Pos: 336
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 344
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0./"
+    CaseSensitive: true
+  - Pos: 517
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 540
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\00"
+    CaseSensitive: true
+  - Pos: 614
+    AsciiString: "00"
+    CaseSensitive: true
+  - Pos: 619
+    AsciiString: "\00000000\00000000\0"
+    CaseSensitive: true
+  - Pos: 666
+    AsciiString: "\0 0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ustar  \0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTALL\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0000000\00000000\000000000000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0000000\00000000\000000000200"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWARE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWAREVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOR FURTHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DOWNGRADE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FILESYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRITZ_BOX_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION -V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LED TO M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESERVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0000005"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OF FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URLADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_KERNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_UPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS AVM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASSEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_OTHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USTAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$OEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%.*}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0064"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0075"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECHO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HERE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OHNE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SBIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VER%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VER}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WITH"
+    CaseSensitive: false

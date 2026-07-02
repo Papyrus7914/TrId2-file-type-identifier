@@ -1,0 +1,26 @@
+Name: SPC Deinstall Log/data
+URL: "https://en.wikipedia.org/wiki/Software_Publishing_Corporation"
+FileNameExtensions: ["dlh"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "1"
+    CaseSensitive: true
+  - Pos: 214
+    AsciiString: ".001 1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".001 1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HLP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONF"
+    CaseSensitive: false

@@ -1,0 +1,25 @@
+Name: Amateur Data Interchange Format
+URL: "http://www.hosenose.com/adif/adif.html"
+FileNameExtensions: ["adi", "adif"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ADIF "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "QSO_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false

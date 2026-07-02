@@ -1,0 +1,20 @@
+Name: ASCARON Entertainment Animation
+URL: "https://www.mobygames.com/company/1694/ascaron-entertainment-gmbh/"
+FileNameExtensions: ["anm", "atz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AN15@\0\0\0\0\0\0\0@\0\0\0V0.9"
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: "\0PALT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V0.9"
+    CaseSensitive: false

@@ -1,0 +1,129 @@
+Name: Microsoft security certificate
+FileNameExtensions: ["xrm-ms"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CANONICALIZATIONMETHOD ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATUREMETHOD ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGESTMETHOD ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORM ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSETRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOTABLES XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSECATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHERINFO XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATUREVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOLIST TAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOSTR NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSAKEYVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGESTVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNEDINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSA-SHA1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLDSIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "01-REL-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPEG21"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSUER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LWC14N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XRML2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSFT"
+    CaseSensitive: false

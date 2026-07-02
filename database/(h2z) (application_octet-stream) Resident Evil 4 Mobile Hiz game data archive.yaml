@@ -1,0 +1,13 @@
+Name: Resident Evil 4 Mobile Hiz game data archive
+FileNameExtensions: ["h2z"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "H2Z\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "HIZ\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MCT_"
+    CaseSensitive: false

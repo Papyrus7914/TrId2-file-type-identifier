@@ -1,0 +1,46 @@
+Name: Construct compressed game project
+URL: "http://www.scirra.com/construct2"
+FileNameExtensions: ["capx"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".UISTATE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENT SHEETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CAPROJPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "000.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRGB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

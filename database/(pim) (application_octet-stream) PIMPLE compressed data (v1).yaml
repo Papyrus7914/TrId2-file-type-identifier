@@ -1,0 +1,9 @@
+Name: PIMPLE compressed data (v1)
+Description: High performance single file compressor by Ilia Muraviev. Later replaced by PIM archiver.
+URL: "http://fileformats.archiveteam.org/wiki/PIM"
+FileNameExtensions: ["pim"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01PIM"
+    CaseSensitive: true

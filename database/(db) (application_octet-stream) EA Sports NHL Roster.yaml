@@ -1,0 +1,11 @@
+Name: EA Sports NHL Roster
+URL: "https://www.mobygames.com/group/42/ea-sports-nhl-series/"
+FileNameExtensions: ["db"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RosterFile\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0x\x9C"
+    CaseSensitive: true

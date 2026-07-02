@@ -1,0 +1,38 @@
+Name: Pixel Bender Kernel (with rem)
+URL: "http://en.wikipedia.org/wiki/Adobe_Pixel_Bender"
+FileNameExtensions: ["pbk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EVALUATEPIXEL()"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMESPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUT PIXEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTCOORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOID"
+    CaseSensitive: false

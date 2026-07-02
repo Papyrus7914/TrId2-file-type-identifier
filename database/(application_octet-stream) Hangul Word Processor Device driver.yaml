@@ -1,0 +1,10 @@
+Name: Hangul Word Processor Device driver
+URL: "http://en.wikipedia.org/wiki/Han/Gul"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HWP Device Driver\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HWP DEVICE DRIVER"
+    CaseSensitive: false

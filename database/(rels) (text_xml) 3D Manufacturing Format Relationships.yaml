@@ -1,0 +1,59 @@
+Name: 3D Manufacturing Format Relationships
+URL: "https://en.wikipedia.org/wiki/3D_Manufacturing_Format"
+FileNameExtensions: ["rels"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "1.0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: " encoding="
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "UTF-8"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "?>\n<Relationships xmlns=\"http://schemas.openxmlformats.org/package/2006/relationships\">\n <Relationship Target=\"/3D/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.OPENXMLFORMATS.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIONSHIP TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIONSHIPS XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3DMANUFACTURING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3DMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REL-1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2006"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2013"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

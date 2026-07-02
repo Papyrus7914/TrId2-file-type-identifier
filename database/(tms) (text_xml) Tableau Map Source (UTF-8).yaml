@@ -1,0 +1,59 @@
+Name: Tableau Map Source (UTF-8)
+URL: "https://www.tableau.com/"
+FileNameExtensions: ["tms"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LAYER DISPLAY-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPSOURCE INLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUEST-STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENSTREETMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URL-FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW-UI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

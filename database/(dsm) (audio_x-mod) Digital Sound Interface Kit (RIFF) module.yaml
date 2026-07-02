@@ -1,0 +1,17 @@
+Name: Digital Sound Interface Kit (RIFF) module
+URL: "http://www.shikadi.net/moddingwiki/DSIK_Module_Format"
+FileNameExtensions: ["dsm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "DSMFSONG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATT"
+    CaseSensitive: false

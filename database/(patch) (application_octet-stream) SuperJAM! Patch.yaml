@@ -1,0 +1,36 @@
+Name: SuperJAM! Patch
+Description: Amiga music composition software by The Blue Ribbon SoundWorks.
+URL: "https://archive.org/details/amiga-superjam-manual"
+FileNameExtensions: ["patch"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SUPR\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BRASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIANO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITAR"
+    CaseSensitive: false

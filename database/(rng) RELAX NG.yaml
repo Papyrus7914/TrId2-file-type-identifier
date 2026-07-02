@@ -1,0 +1,26 @@
+Name: RELAX NG
+Description: RELAX NG (Next Generation) is a schema language for XML.
+URL: "http://relaxng.org/"
+FileNameExtensions: ["rng"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RELAXNG.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REF NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAMMAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

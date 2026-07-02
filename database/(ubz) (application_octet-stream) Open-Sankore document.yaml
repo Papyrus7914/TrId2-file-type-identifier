@@ -1,0 +1,17 @@
+Name: Open-Sankore document
+URL: "https://en.wikipedia.org/wiki/Open-Sankor%C3%A9"
+FileNameExtensions: ["ubz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PAGE001.THUMBNAIL.JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.RDFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE001.SVGPK"
+    CaseSensitive: false

@@ -1,0 +1,44 @@
+Name: Apendo user config CONFIG_EPROC_XML (Apendo Enkripsi LKPP Indonesia)
+URL: "https://www.lkpp.go.id/"
+FileNameExtensions: ["apd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE CONFIG_EPROC_XML>\n<config_eproc jenis_aplikasi=\"user\" versi=\"1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONFIG_EPROC JENIS_APLIKASI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KONFIGURASI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERTANYAAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERIKSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PWDLAMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APENDO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KUNCI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

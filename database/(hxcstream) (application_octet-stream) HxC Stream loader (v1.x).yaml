@@ -1,0 +1,104 @@
+Name: HxC Stream loader (v1.x)
+URL: "https://hxc2001.com/"
+FileNameExtensions: ["hxcstream"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CHKH"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "format_version v1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMBER_OF_DATA_SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER_OF_DATA_PULSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER_OF_IOS_SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE_VERSION V1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX_TO_DUMP_DELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-INCH FLOPPY DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT_VERSION V1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY_DUMP_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE_BUILDTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVE_REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOPPY_I_INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_RATE_HZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME_PER_TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT_TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHUNK_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT_SIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUMP_COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOPPY_DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOPPY_I_PIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOPPY_I_WPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX_SYNCED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOUBLE_STEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IO_CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_SIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUMP_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX_TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXT_IO_I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX_SIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATOR"
+    CaseSensitive: false

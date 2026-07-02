@@ -1,0 +1,41 @@
+Name: TrueType Font Collection (v1)
+URL: "https://en.wikipedia.org/wiki/TrueType"
+FileNameExtensions: ["ttc"]
+MimeType: application/font-sfnt
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ttcf\0\x01\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLYF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HHEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HMTX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST"
+    CaseSensitive: false

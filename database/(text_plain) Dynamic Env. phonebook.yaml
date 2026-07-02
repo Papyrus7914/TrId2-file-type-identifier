@@ -1,0 +1,13 @@
+Name: Dynamic Env. phonebook
+Description: Dynamic Environment was a GUI for MS-DOS by Radarsoft.
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DYNAMIC PHONE\r\n>\r\n:Name="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false

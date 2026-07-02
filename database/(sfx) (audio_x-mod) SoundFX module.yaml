@@ -1,0 +1,14 @@
+Name: SoundFX module
+URL: "http://fileformats.archiveteam.org/wiki/SoundFX_module"
+FileNameExtensions: ["sfx"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "SONG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SONG"
+    CaseSensitive: false

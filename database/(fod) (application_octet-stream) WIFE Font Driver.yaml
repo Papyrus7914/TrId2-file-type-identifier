@@ -1,0 +1,70 @@
+Name: WIFE Font Driver
+FileNameExtensions: ["fod"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0\0\0\0\0@\0\0\0"
+    CaseSensitive: true
+  - Pos: 61
+    #                                                              \t          !                 L           !
+    Bytes: [0x00, 0x00, 0x00, 0x0E, 0x1F, 0xBA, 0x0E, 0x00, 0xB4, 0x09, 0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: any
+    AsciiString: "H\0\0\0WIFE FONT DRIVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDCLOSEFONTCONTEXTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDCONVERTFONTFILEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDOPENFONTCONTEXTG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDSETFONTCONTEXTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDUNLOADFONTFILEE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDCLAIMFONTFILEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDQUERYCHARATTRK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDQUERYFACEATTRJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDLOADFONTFILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDQUERYFACESF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT_DRIVER_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDCONTROLN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WFDR"
+    CaseSensitive: false

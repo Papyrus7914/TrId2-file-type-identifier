@@ -1,0 +1,50 @@
+Name: Gyroflow camera preset
+URL: "https://gyroflow.xyz/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CALIBRATOR_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTORTION_COEFFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALIB_DIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FISHEYE_PARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA_MATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA_BRAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA_MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENS_MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RMS_ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SETTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

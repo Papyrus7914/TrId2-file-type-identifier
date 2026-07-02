@@ -1,0 +1,10 @@
+Name: SuperProject graphics drivers
+Description: Project management software for DOS by Computer Associates Int.
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SuperProj Graphics Drivers\r\nCopyright "
+    CaseSensitive: true
+  - Pos: 56
+    Bytes: [0x1A]

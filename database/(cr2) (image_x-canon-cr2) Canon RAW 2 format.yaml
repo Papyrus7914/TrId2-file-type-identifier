@@ -1,0 +1,9 @@
+Name: Canon RAW 2 format
+Description: application/octet-stream
+URL: "http://fileformats.archiveteam.org/wiki/Canon_RAW_2"
+FileNameExtensions: ["cr2"]
+MimeType: image/x-canon-cr2
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II*\0\x10\0\0\0CR"
+    CaseSensitive: true

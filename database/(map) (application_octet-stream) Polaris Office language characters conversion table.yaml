@@ -1,0 +1,17 @@
+Name: Polaris Office language characters conversion table
+URL: "https://www.polarisoffice.com/"
+FileNameExtensions: ["map"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "POLARISOFFICE "
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "2"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: " TABLE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false

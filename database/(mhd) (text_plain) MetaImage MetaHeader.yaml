@@ -1,0 +1,50 @@
+Name: MetaImage MetaHeader
+URL: "http://www.itk.org/Wiki/ITK/MetaIO/Documentation"
+FileNameExtensions: ["mhd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ObjectType = Image"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BINARYDATABYTEORDERMSB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANATOMICALORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTEROFROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTDATAFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORMMATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTSPACING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDIMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MET_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

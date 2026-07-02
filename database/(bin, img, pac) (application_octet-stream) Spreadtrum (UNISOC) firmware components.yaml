@@ -1,0 +1,112 @@
+Name: Spreadtrum (UNISOC) firmware components
+URL: "https://en.wikipedia.org/wiki/UNISOC"
+FileNameExtensions: ["bin", "img", "pac"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x18, 0xF0, 0x9F, 0xE5, 0x18, 0xF0, 0x9F, 0xE5, 0x18, 0xF0, 0x9F, 0xE5, 0x18, 0xF0, 0x9F, 0xE5, 0x18, 0xF0, 0x9F, 0xE5, 0x18, 0xF0, 0x9F, 0xE5, 0x18, 0xF0, 0x9F, 0xE5, 0x18, 0xF0, 0x9F, 0xE5]
+  - Pos: 101
+    AsciiString: "\0\t\0\0\08\0\xFF\02\0\xEB\0u\0z\0\x01\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ZZYYXXWWVVUUUTTSSRRRQQPPPOOONNMMMLLLKKKJJJIIIHHHGGGGFFFEEEDDDDCCCCBBBBAAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ZYXWVVUTSRQQPONNMLLKJJIHHGFFEDDCCBAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789ABCDEF\00123456789ABCDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPREADTRUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HGAM.CFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KF\0 IFXP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPGPGPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0X\0\00X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOIDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HXDZ8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPCYD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFC_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ERR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MID"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: Acu4GL/AcuCOBOL Extended File Descriptor
+URL: "http://www.acucorp.com/"
+FileNameExtensions: ["xfd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACUCOBOL-GT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATED"
+    CaseSensitive: false

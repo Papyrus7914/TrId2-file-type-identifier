@@ -1,0 +1,14 @@
+Name: Kotlin Builtins metadata
+URL: "https://en.wikipedia.org/wiki/Kotlin"
+FileNameExtensions: ["kotlin_builtins"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\x03\0\0\0\x01\0\0\0\0\0\0\0\a\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLONEABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KOTLIN"
+    CaseSensitive: false

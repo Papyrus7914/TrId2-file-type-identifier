@@ -1,0 +1,8 @@
+Name: dockzip format
+Description: dockzip is a format developed by Stardock Corporation for use with ObjectDock, ObjectDock Plus, and licensed applications.
+URL: "http://en.wikipedia.org/wiki/Stardock"
+FileNameExtensions: ["doczip"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE8\x04\0\0.dockzip format "
+    CaseSensitive: true

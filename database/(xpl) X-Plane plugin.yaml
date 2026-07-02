@@ -1,0 +1,48 @@
+Name: X-Plane plugin
+URL: "http://www.xsquawkbox.net/xpsdk/"
+FileNameExtensions: ["xpl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 67
+    Bytes: [0x0E]
+  - Pos: 69
+    #              \t          !                 L           !
+    Bytes: [0xB4, 0x09, 0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: 96
+    AsciiString: "t be run "
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPLUGINDISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPLUGINENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPLUGINSTART\0XPLUGINSTOP"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Sybase Unichar Substitution Table
+URL: "https://en.wikipedia.org/wiki/Sybase"
+FileNameExtensions: ["ust"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "STBL"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "Copyright (c) Sybase, Inc. "
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "SYBASE\0\0\0\0\0\0\0\0\0\0SYBASE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYBASE\0\0\0\0\0\0\0\0\0\0SYBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) SYBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC."
+    CaseSensitive: false

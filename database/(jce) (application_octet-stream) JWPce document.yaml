@@ -1,0 +1,12 @@
+Name: JWPce document
+Description: A free Word Processor for Japanese.
+URL: "https://en.wikipedia.org/wiki/JWPce"
+FileNameExtensions: ["jce"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "g&\x02BJ"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "."
+    CaseSensitive: true

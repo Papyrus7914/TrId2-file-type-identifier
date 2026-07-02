@@ -1,0 +1,8 @@
+Name: SGI volume image
+URL: "http://fileformats.archiveteam.org/wiki/SGI_volume_image"
+FileNameExtensions: ["img", "iso"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        \v                A
+    Bytes: [0x0B, 0xE5, 0xA9, 0x41]

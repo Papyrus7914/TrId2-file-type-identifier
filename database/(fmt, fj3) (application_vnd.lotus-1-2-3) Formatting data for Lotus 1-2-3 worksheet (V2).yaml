@@ -1,0 +1,20 @@
+Name: Formatting data for Lotus 1-2-3 worksheet (V2)
+Description: FMT for style compainion of worksheet "*.WK1" and FJ3 for japan sheet "*.WJ3". revision number 8006h is stored at offset 4.
+URL: "http://fileformats.archiveteam.org/wiki/Lotus_1-2-3"
+FileNameExtensions: ["fmt", "fj3"]
+MimeType: application/vnd.lotus-1-2-3
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x00, 0x02, 0x00, 0x06, 0x80]
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0"
+    CaseSensitive: true

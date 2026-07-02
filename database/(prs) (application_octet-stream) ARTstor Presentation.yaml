@@ -1,0 +1,14 @@
+Name: ARTstor Presentation
+URL: "http://fileformats.archiveteam.org/wiki/ARTstor_Presentation"
+FileNameExtensions: ["prs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OIV"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SLIDE"
+    CaseSensitive: false

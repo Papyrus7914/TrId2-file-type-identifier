@@ -1,0 +1,14 @@
+Name: Fontconfig Configuration
+URL: "https://en.wikipedia.org/wiki/Fontconfig"
+FileNameExtensions: ["conf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\n<!DOCTYPE fontconfig SYSTEM \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE FONTCONFIG SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTS.DTD"
+    CaseSensitive: false

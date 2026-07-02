@@ -1,0 +1,25 @@
+Name: zsync meta data
+URL: "http://zsync.moria.org.uk/"
+FileNameExtensions: ["zsync"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "zsync: "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HASH-LENGTHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA-1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZSYNC"
+    CaseSensitive: false

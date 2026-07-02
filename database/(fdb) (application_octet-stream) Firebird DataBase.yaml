@@ -1,0 +1,11 @@
+Name: Firebird DataBase
+URL: "https://en.wikipedia.org/wiki/Firebird_(database_server)"
+FileNameExtensions: ["fdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\090"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RDB$"
+    CaseSensitive: false

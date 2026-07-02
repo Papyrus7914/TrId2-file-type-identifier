@@ -1,0 +1,37 @@
+Name: Medusa 2D CAD drawing (generic)
+URL: "https://www.cad-schroer.com/"
+FileNameExtensions: ["she"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(W\x17M"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 300
+    Bytes: [0xD8, 0x9B]
+  - Pos: any
+    AsciiString: "M2D.SHEET\0GRID00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M2D.SHEET\0SHEINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSHE"
+    CaseSensitive: false

@@ -1,0 +1,21 @@
+Name: EightyOne snapshot
+Description: EightyOne is Sinclair's (and clones) '80s computers emulator.
+URL: "https://www.aptanet.org/eightyone/"
+FileNameExtensions: ["z81"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[CPU]\r\nPC "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HSYNC 01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMRANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZX81"
+    CaseSensitive: false

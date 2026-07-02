@@ -1,0 +1,26 @@
+Name: Bambu Studio filament profile
+URL: "https://bambulab.com/en/download/studio"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTANTIATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILAMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

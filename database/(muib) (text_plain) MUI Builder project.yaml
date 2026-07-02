@@ -1,0 +1,24 @@
+Name: MUI Builder project
+Description: MUI interface designer for AmigaOS.
+URL: "https://muibuilder.sourceforge.io/"
+FileNameExtensions: ["muib"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BUILDER_SAVE_FILE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END_ENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP_ROOT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT_TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$VER"
+    CaseSensitive: false

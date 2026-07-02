@@ -1,0 +1,10 @@
+Name: Mobipocket eBook Auxiliary data
+URL: "http://en.wikipedia.org/wiki/Mobipocket"
+FileNameExtensions: ["mbp"]
+DetectionPatterns:
+  - Pos: 60
+    AsciiString: "BPARMOBI\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BPARMOBI"
+    CaseSensitive: false

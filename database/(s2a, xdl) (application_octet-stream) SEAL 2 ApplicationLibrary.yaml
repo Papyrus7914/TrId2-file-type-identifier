@@ -1,0 +1,14 @@
+Name: SEAL 2 Application/Library
+URL: "http://sealsystem.sourceforge.net/"
+FileNameExtensions: ["s2a", "xdl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CXDL"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "IBMDOS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IBMDOS"
+    CaseSensitive: false

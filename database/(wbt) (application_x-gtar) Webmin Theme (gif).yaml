@@ -1,0 +1,120 @@
+Name: Webmin Theme (gif)
+Description: GNU tar (ustar magic); first tar entry is directory with name similar to theme name; readable/executable to all and writable to owner; with theme.info and GIF bitmaps (like smallicon.gif type_icon_3.gif icon.gif)
+URL: "https://webmin.com/docs/development/creating-themes/"
+FileNameExtensions: ["wbt"]
+MimeType: application/x-gtar
+DetectionPatterns:
+  - Pos: 100
+    AsciiString: "00"
+    CaseSensitive: true
+  - Pos: 103
+    AsciiString: "07"
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "5\0"
+    CaseSensitive: true
+  - Pos: 115
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 123
+    AsciiString: "\000000000000\0"
+    CaseSensitive: true
+  - Pos: 147
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 154
+    AsciiString: "\0 5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ustar  \0"
+    CaseSensitive: true
+  - Pos: 296
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 329
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 612
+    AsciiString: "0"
+    CaseSensitive: true
+  - Pos: 615
+    AsciiString: "0"
+    CaseSensitive: true
+  - Pos: 619
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 627
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 635
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 647
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 659
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 666
+    AsciiString: "\0 "
+    CaseSensitive: true
+  - Pos: 669
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ustar  \0"
+    CaseSensitive: true
+  - Pos: 808
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 841
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0USTAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0USTAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "00000000000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEME.INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIF8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

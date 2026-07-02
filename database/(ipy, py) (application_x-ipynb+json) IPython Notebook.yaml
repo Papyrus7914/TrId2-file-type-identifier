@@ -1,0 +1,23 @@
+Name: IPython Notebook
+URL: "https://en.wikipedia.org/wiki/IPython"
+FileNameExtensions: ["ipy", "py"]
+MimeType: application/x-ipynb+json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: KISSSlicer Project
+URL: "http://www.kisslicer.com/"
+FileNameExtensions: ["ksp"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";\r\n; *** Printer Settings ***\r\n;\r\n; printer_name ="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*** MATERIAL SETTINGS FOR EXTRUDER 1 ***"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*** PRINTER SETTINGS ***"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*** SUPPORT SETTINGS ***"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*** STYLE SETTINGS ***"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GCODE"
+    CaseSensitive: false

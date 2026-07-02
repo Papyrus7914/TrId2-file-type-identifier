@@ -1,0 +1,44 @@
+Name: Harvard F/X additional graphics/effects
+URL: "https://en.wikipedia.org/wiki/Harvard_Graphics"
+FileNameExtensions: ["hfx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "HDRWDRHD"
+    CaseSensitive: true
+  - Pos: 276
+    AsciiString: "GUDU4"
+    CaseSensitive: true
+  - Pos: 336
+    AsciiString: "GUDV4"
+    CaseSensitive: true
+  - Pos: 396
+    AsciiString: "TBNL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HDRWDRHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUDU4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUDV4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYRH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TTF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHNK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBNL"
+    CaseSensitive: false

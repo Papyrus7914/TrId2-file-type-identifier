@@ -1,0 +1,29 @@
+Name: Krita Paint Op Preset
+URL: "https://en.wikipedia.org/wiki/Krita"
+FileNameExtensions: ["kpp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89PNG\r\n\x1A\n\0\0\0\rIHDR\0\0\0\xC8\0\0\0\xC8\b\x06\0\0\0\xADX\xAE\x9E"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXTVERSION\0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XTPRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZTXT"
+    CaseSensitive: false

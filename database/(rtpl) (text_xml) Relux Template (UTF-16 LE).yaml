@@ -1,0 +1,11 @@
+Name: Relux Template (UTF-16 LE)
+URL: "https://relux.com/"
+FileNameExtensions: ["rtpl"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFE<\0?\0x\0m\0l\0 \0v\0e\0r\0s\0i\0o\0n\0=\0\"\01\0.\00\0\"\0 \0e\0n\0c\0o\0d\0i\0n\0g\0=\0\"\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "R\0L\0X\0T\0E\0M\0P\0L\0A\0T\0E"
+    CaseSensitive: false

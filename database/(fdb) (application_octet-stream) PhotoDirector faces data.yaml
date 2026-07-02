@@ -1,0 +1,32 @@
+Name: PhotoDirector faces data
+URL: "https://en.wikipedia.org/wiki/CyberLink"
+FileNameExtensions: ["fdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_FACE (ID INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACE_NEIGHBOR INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORTANCE INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACE_POSE INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_HEIGHT INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WIDTH INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT)"
+    CaseSensitive: false

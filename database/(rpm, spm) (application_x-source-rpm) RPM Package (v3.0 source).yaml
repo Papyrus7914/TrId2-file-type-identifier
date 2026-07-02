@@ -1,0 +1,23 @@
+Name: RPM Package (v3.0 source)
+Description: at offset 4 version 3.0 is stored; at offset 76 OS number 1; at offset 78 signature type 5; reserved bytes are nil
+URL: "http://fileformats.archiveteam.org/wiki/RPM"
+FileNameExtensions: ["rpm", "spm"]
+MimeType: application/x-source-rpm
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xED, 0xAB, 0xEE, 0xDB, 0x03, 0x00, 0x00, 0x01, 0x00]
+  - Pos: 75
+    AsciiString: "\0\0\x01\0\x05\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x8E\xAD\xE8\x01\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CPIO\0GZIP\09"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TAR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINUX"
+    CaseSensitive: false

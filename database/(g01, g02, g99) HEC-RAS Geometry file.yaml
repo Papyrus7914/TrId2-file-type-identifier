@@ -1,0 +1,49 @@
+Name: HEC-RAS Geometry file
+Description: Extension can range from G01 to G99.
+FileNameExtensions: ["g01", "g02", "g99"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Geom Title="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NODE LAST EDITED TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERSE RIVER TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWING RECTANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE RM LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAN STOP CUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCH TEXT X Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIVER REACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOM TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REACH XY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK STA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEV"
+    CaseSensitive: false

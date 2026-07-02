@@ -1,0 +1,56 @@
+Name: VirtualDJ database
+URL: "https://virtualdj.com/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<VirtualDJ_Database Version=\"1\">"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VIRTUALDJ_DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOS SONGLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOMIX MIXTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAME ISSCANNED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONG FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPOSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADESTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUTSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPOEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BPM BPM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADEEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUTEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

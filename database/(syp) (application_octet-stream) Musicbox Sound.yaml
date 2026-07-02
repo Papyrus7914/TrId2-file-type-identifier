@@ -1,0 +1,11 @@
+Name: Musicbox Sound
+Description: DOS shareware music tool by Jeffrey Fullerton.
+FileNameExtensions: ["syp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MBS "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SYP COPYRIGHT (C)"
+    CaseSensitive: false

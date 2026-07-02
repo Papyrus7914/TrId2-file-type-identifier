@@ -1,0 +1,56 @@
+Name: GDSII stream format layout (text format)
+URL: "https://en.wikipedia.org/wiki/GDSII"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HEADER "
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\nBGNLIB "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRESENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGNLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGNSTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDSTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false

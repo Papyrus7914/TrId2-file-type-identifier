@@ -1,0 +1,31 @@
+Name: LD Linker Script (with rem)
+FileNameExtensions: ["lds"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OUTPUT_FORMAT("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT_ARCH("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(.RODATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*(.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*(.TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*(.BSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_START"
+    CaseSensitive: false

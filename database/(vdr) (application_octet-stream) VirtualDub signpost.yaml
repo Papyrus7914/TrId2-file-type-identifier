@@ -1,0 +1,11 @@
+Name: VirtualDub signpost
+URL: "http://fileformats.archiveteam.org/wiki/VDR_(VirtualDub)"
+FileNameExtensions: ["vdr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "VDRMPATH"
+    CaseSensitive: true

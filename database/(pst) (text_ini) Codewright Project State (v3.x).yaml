@@ -1,0 +1,32 @@
+Name: Codewright Project State (v3.x)
+URL: "https://en.wikipedia.org/wiki/CodeWright"
+FileNameExtensions: ["pst"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n[State]\r\nSideBarControl="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROJSETCONFIGFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLBOXCONTROLPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGSETEXTMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RESTOREPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIDEBARCONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STATEHISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PJT"
+    CaseSensitive: false

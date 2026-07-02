@@ -1,0 +1,7 @@
+Name: MPEG video
+URL: "http://fileformats.archiveteam.org/wiki/MPEG-1"
+FileNameExtensions: ["mpg", "mpeg"]
+MimeType: video/mpeg
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x00, 0x01, 0xBA]

@@ -1,0 +1,8 @@
+Name: MIF disk image
+URL: "http://www.vogonsdrivers.com/getfile.php?fileid=1081"
+FileNameExtensions: ["mif"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    z                       @
+    Bytes: [0xF0, 0xF0, 0x7A, 0xD4, 0xC9, 0xC6, 0x40]

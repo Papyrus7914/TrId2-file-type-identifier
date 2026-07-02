@@ -1,0 +1,14 @@
+Name: ShareX Image Effect
+URL: "https://getsharex.com/"
+FileNameExtensions: ["sxie"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PK\x03\x04\x14\0\0\0\b\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\0\v\0\0\0Config.json"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONFIG.JSONPK"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: 16bit DOS COM HDKPROTC protected (v1.1a)
+Description: COM protector by Mr.HDKiLLeR.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "\xFF \xFFtiTaNiC 1.2\xFF \xFF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HQD."
+    CaseSensitive: false

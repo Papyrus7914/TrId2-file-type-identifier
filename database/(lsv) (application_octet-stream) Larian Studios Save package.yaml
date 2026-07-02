@@ -1,0 +1,23 @@
+Name: Larian Studios Save package
+URL: "https://www.mobygames.com/company/3377/larian-studios-nv/"
+FileNameExtensions: ["lsv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LSPK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LEVELCACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_CC_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LSF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false

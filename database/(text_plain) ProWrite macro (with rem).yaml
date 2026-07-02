@@ -1,0 +1,10 @@
+Name: ProWrite macro (with rem)
+URL: "https://www.atarimagazines.com/compute/issue88/Reviews_Prowrite.php"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/* "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPTIONS RESULTS"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: Cal3D Xml material File
+URL: "http://en.wikipedia.org/wiki/Cal3D"
+FileNameExtensions: ["xrf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SHININESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECULAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMBIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMMAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

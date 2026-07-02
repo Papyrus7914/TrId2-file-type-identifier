@@ -1,0 +1,52 @@
+Name: SMIRT file
+URL: "http://www.smirtware.com/products.htm"
+FileNameExtensions: ["swm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN MFA COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END MFA COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAT TREAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLE"
+    CaseSensitive: false

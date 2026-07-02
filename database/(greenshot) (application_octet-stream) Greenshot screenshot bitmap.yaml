@@ -1,0 +1,69 @@
+Name: Greenshot screenshot bitmap
+Description: Basically a PNG bitmap with custom metadata.
+URL: "https://en.wikipedia.org/wiki/Greenshot"
+FileNameExtensions: ["greenshot"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89PNG\r\n\x1A\n\0\0\0\rIHDR"
+    CaseSensitive: true
+  - Pos: 87
+    AsciiString: "tEXtSoftware\0Greenshot"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSTEM.GUID-GREENSHOT.PLUGIN.DRAWING.IDRAWABLECONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GREENSHOT.DRAWING.DRAWABLECONTAINERLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSOFTWARE\0GREENSHOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FGREENSHOTPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K__BACKINGFIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICKEYTOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1+_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1+_ITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1+_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CULTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEUTRAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRGB"
+    CaseSensitive: false

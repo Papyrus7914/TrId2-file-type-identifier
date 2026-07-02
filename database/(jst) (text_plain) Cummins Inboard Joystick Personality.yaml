@@ -1,0 +1,56 @@
+Name: Cummins Inboard Joystick Personality
+URL: "https://www.cummins.com/en-na/support/digital-products-and-services-support/joystick-config-service-support"
+FileNameExtensions: ["jst"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "***JOYSTICK-CSV"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "FILE***\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE***"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THRUST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFWD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SREV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XAHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YAHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YAST"
+    CaseSensitive: false

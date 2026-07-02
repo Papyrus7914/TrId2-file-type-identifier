@@ -1,0 +1,25 @@
+Name: Zed! encrypted container
+URL: "https://www.zedencrypt.com"
+FileNameExtensions: ["zed"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1]
+  - Pos: any
+    AsciiString: "5\0H\0A\0A\0A\0A\0Q\0A\0I\0E\0K\0Z\0E\0E\0C\0N\0W\0J\03\01\0Z\0X\0H\00\0N\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZONECENTRAL (R)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0C\0A\0T\0A\0L\0O\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0C\0T\0L\0F\0I\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSGR"
+    CaseSensitive: false

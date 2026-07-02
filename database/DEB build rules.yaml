@@ -1,0 +1,39 @@
+Name: DEB build rules
+URL: "http://en.wikipedia.org/wiki/Debian"
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEBHELPER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINARY-IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(CURDIR)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKE -F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RM -"
+    CaseSensitive: false

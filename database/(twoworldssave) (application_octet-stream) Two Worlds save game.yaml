@@ -1,0 +1,14 @@
+Name: Two Worlds save game
+URL: "https://www.mobygames.com/game/28300/two-worlds/"
+FileNameExtensions: ["twoworldssave"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RGMH"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "T\0w\0o\0W\0o\0r\0l\0d\0s"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "T\0W\0O\0W\0O\0R\0L\0D\0S"
+    CaseSensitive: false

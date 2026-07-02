@@ -1,0 +1,47 @@
+Name: nexarco Application Definition
+URL: "http://www.nexacro.com/"
+FileNameExtensions: ["xadl"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<ADL version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPLICATION ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDFRAME ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWSTATUSBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINFRAME ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWTITLEBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADL VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XFDL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false

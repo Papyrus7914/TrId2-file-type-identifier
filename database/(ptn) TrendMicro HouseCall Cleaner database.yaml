@@ -1,0 +1,13 @@
+Name: TrendMicro HouseCall Cleaner database
+Description: Part of TrendMicro House Call DCE (Damage Cleaneup Engine)
+FileNameExtensions: ["ptn"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TREND "
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TREND"
+    CaseSensitive: false

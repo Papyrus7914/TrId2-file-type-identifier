@@ -1,0 +1,37 @@
+Name: ZipGenius configuration
+URL: "http://en.wikipedia.org/wiki/ZipGenius"
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MINMAXPOS_1024X768_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMPOS_1024X768_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZIPGENIUS_CONF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELSPERINCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWCMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false

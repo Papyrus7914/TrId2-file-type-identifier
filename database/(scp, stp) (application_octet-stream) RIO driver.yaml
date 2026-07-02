@@ -1,0 +1,26 @@
+Name: RIO driver
+Description: Video production software for DOS.
+FileNameExtensions: ["scp", "stp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NAME "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETU DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETU FACTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DRX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

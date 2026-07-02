@@ -1,0 +1,11 @@
+Name: Magician vector/plotter driver
+Description: DOS drawing tool by DR GRAPHIC RESEARCH Pty. Ltd.
+FileNameExtensions: ["vdv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DR01="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DR 2"
+    CaseSensitive: false

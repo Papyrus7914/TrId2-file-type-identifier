@@ -1,0 +1,53 @@
+Name: Autodesk 123D 3D model design
+URL: "https://en.wikipedia.org/wiki/Autodesk_123D"
+FileNameExtensions: ["123dx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Fusion[Active]/PK\x03\x04"
+    CaseSensitive: true
+  - Pos: 75
+    AsciiString: "Fusion[Active]/Previews/PK\x03\x04"
+    CaseSensitive: true
+  - Pos: 129
+    AsciiString: "Fusion[Active]/"
+    CaseSensitive: true
+  - Pos: 212
+    AsciiString: "/PK\x03\x04"
+    CaseSensitive: true
+  - Pos: 243
+    AsciiString: "Manifest.dat"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BULKSTREAM.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METASTREAM.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREPS.BLOBPARTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMALL.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIG.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUSION"
+    CaseSensitive: false

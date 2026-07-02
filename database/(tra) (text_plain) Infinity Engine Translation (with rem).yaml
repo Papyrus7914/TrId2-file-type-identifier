@@ -1,0 +1,14 @@
+Name: Infinity Engine Translation (with rem)
+URL: "https://en.wikipedia.org/wiki/BioWare#Infinity_Engine"
+FileNameExtensions: ["tra"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".TRA"
+    CaseSensitive: false

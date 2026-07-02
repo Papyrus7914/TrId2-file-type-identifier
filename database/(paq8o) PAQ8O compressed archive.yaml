@@ -1,0 +1,10 @@
+Name: PAQ8O compressed archive
+URL: "http://www.cs.fit.edu/~mmahoney/compression/"
+FileNameExtensions: ["paq8o"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "paq8o -"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\r\n"
+    CaseSensitive: true

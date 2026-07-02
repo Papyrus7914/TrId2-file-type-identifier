@@ -1,0 +1,43 @@
+Name: Find and Run Robot (FARR) alias
+URL: "http://www.donationcoder.com/Software/Mouser/findrun/index.html"
+FileNameExtensions: ["alias"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WWW.DONATIONCODER.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIASSETDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEFORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARRALIASFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIASENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIASTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDRUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORE"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: DCS LODS info
+URL: "https://en.wikipedia.org/wiki/Digital_Combat_Simulator"
+FileNameExtensions: ["lods"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "model"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".EDM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LODS"
+    CaseSensitive: false

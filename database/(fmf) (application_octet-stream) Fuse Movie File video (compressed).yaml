@@ -1,0 +1,11 @@
+Name: Fuse Movie File video (compressed)
+URL: "https://en.wikipedia.org/wiki/Fuse_(emulator)"
+FileNameExtensions: ["fmf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FMF_"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "Z"
+    CaseSensitive: true

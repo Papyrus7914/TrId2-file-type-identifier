@@ -1,0 +1,17 @@
+Name: Xbox Virtual Disk (XVD)
+URL: "https://xboxoneresearch.github.io/wiki/operating-system/xbox-virtual-drive/"
+FileNameExtensions: ["xvd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 512
+    AsciiString: "msft-xvd"
+    CaseSensitive: true
+  - Pos: 521
+    AsciiString: "\0\0\0\x03\0\0\0"
+    CaseSensitive: true
+  - Pos: 535
+    AsciiString: "\x01\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MSFT-XVD"
+    CaseSensitive: false

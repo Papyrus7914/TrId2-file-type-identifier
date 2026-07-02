@@ -1,0 +1,9 @@
+Name: Naive Image format NIE bitmap
+Description: Still image
+URL: "http://fileformats.archiveteam.org/wiki/Na%C3%AFve_Image_Formats"
+FileNameExtensions: ["nie"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        n                 E
+    Bytes: [0x6E, 0xC3, 0xAF, 0x45]

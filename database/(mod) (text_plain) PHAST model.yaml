@@ -1,0 +1,23 @@
+Name: PHAST model
+URL: "http://compgen.cshl.edu/phast/"
+FileNameExtensions: ["mod"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ALPHABET: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBST_MOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATE_MAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREE"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: SDL Trados Studio Project Package
+URL: "https://en.wikipedia.org/wiki/SDL_Trados"
+FileNameExtensions: ["sdlppx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".SDLXLIFFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SDLPROJPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XMLPK"
+    CaseSensitive: false

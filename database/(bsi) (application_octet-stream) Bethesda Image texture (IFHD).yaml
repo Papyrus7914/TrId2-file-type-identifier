@@ -1,0 +1,11 @@
+Name: Bethesda Image texture (IFHD)
+URL: "https://www.mobygames.com/company/171/bethesda-softworks-llc/"
+FileNameExtensions: ["bsi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IFHD\0\0\0,\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0BHDR\0\0\0\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

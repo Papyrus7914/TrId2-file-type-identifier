@@ -1,0 +1,13 @@
+Name: Windows Metafile
+URL: "https://en.wikipedia.org/wiki/Windows_Metafile"
+FileNameExtensions: ["wmf"]
+MimeType: image/wmf
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD7, 0xCD, 0xC6, 0x9A, 0x00, 0x00]
+  - Pos: 16
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\x01\0\t\0\0"
+    CaseSensitive: true

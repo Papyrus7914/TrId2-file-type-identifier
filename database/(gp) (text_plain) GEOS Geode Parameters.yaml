@@ -1,0 +1,30 @@
+Name: GEOS Geode Parameters
+Description: Contains info for the Glue linker.
+URL: "https://en.wikipedia.org/wiki/GEOS_(16-bit_operating_system)"
+FileNameExtensions: ["gp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "name "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOKENCHARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOKENID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

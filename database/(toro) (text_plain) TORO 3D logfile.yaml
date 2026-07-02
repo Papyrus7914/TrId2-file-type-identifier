@@ -1,0 +1,11 @@
+Name: TORO 3D logfile
+URL: "http://www2.informatik.uni-freiburg.de/~stachnis/toro/"
+FileNameExtensions: ["toro"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VERTEX3 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EDGE3"
+    CaseSensitive: false

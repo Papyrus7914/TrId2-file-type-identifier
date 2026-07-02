@@ -1,0 +1,410 @@
+Name: MAGIX Video Project
+URL: "https://en.wikipedia.org/wiki/Magix"
+FileNameExtensions: ["mvp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0SEKDMVPH\b\0\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0\0\0\0\0\0LIST"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0MVPLLIST"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0VIPLSVIP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MVPLLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJSOBJC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREDELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUALHIGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUALMID1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDIPDPIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEKDMVPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAIL MIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRCKTRCI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRKSLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIPLSVIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLBAND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLBAND2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLBAND3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLBAND4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLLEFT2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTACK1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTACK2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTACK4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYLR2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAINLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVLEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUALLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALEX1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALEY1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WET MIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRPAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F11OLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F12OLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F21OLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F22OLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F31OLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F32OLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0ACMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0ARGM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0BGRD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0CLST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0CMNL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0FRLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0MNMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0WDLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLDVIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AAAAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0\0HB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQ1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQ2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQ3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAAAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAAAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAGIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OAAAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAAAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MVD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGVD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNSM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTVD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIPR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DPLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTYP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FMID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FXUD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAOU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LTIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVFN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NMLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NMOV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OEFA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OEFC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OEFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSCI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTRN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLVD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEQ1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEQ2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEQ3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEQ4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEQ5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPQ1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPQ2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPQ3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPQ4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPQ5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXVD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYP1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYP2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYP3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USGR"
+    CaseSensitive: false

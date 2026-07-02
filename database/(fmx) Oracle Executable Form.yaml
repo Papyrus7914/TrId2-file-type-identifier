@@ -1,0 +1,28 @@
+Name: Oracle Executable Form
+URL: "http://www.oracle.com/"
+FileNameExtensions: ["fmx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "'\x1B\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANONYMOUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POPUPHINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKG INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQLFORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

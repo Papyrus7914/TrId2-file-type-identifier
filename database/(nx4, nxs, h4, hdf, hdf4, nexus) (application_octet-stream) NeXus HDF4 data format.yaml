@@ -1,0 +1,52 @@
+Name: NeXus HDF4 data format
+URL: "http://fileformats.archiveteam.org/wiki/NeXus"
+FileNameExtensions: ["nx4", "nxs", "h4", "hdf", "hdf4", "nexus"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x0E, 0x03, 0x13, 0x01]
+  - Pos: any
+    AsciiString: "NCSA HDF VERSION 4."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXUS_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMVAL0.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAKEDIM0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAKEDIM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTR0.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDF0.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM0.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VAR0.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

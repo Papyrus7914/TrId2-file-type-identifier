@@ -1,0 +1,43 @@
+Name: WiNGs OS application
+URL: "http://wingsos.org"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x02\bJos\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_XMLLOADFILE\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_XMLGETATTR\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_XMLGETNODE\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FPATHNAME\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_GETAPPDIR\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STRDUP\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLDOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IT\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBC"
+    CaseSensitive: false

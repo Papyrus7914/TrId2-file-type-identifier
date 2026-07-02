@@ -1,0 +1,12 @@
+Name: zTXT eBook
+URL: "http://wiki.mobileread.com/wiki/ZTXT"
+FileNameExtensions: ["pdb"]
+DetectionPatterns:
+  - Pos: 34
+    Bytes: [0x01]
+  - Pos: 60
+    AsciiString: "zTXTGPlm"
+    CaseSensitive: true
+  - Pos: 82
+    AsciiString: "@BB"
+    CaseSensitive: true

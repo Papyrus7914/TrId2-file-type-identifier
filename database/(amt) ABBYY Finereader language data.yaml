@@ -1,0 +1,19 @@
+Name: ABBYY Finereader language data
+URL: "http://www.abbyy.com/"
+FileNameExtensions: ["amt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TFBM"
+    CaseSensitive: true
+  - Pos: 98
+    AsciiString: "Language data file. Do not edit!\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BUILD VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINEREADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDTL"
+    CaseSensitive: false

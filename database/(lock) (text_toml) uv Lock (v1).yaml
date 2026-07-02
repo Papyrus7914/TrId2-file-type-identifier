@@ -1,0 +1,68 @@
+Name: uv Lock (v1)
+URL: "https://docs.astral.sh/uv/concepts/projects/layout/#the-lockfile"
+FileNameExtensions: ["lock"]
+MimeType: text/toml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "version = 1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILES.PYTHONHOSTED.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE.METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRES-PYTHON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRES-DIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPENDENCIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ REGISTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PYPI.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TAR.GZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA256"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

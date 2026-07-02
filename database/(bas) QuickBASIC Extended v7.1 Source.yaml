@@ -1,0 +1,22 @@
+Name: QuickBASIC Extended v7.1 Source
+FileNameExtensions: ["bas"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFC]
+  - Pos: 2
+    AsciiString: "\x01\0\r\0"
+    CaseSensitive: true
+  - Pos: 7
+    Bytes: [0x01]
+  - Pos: 9
+    #              \a                                              \b
+    Bytes: [0x01, 0x07, 0x00, 0x01, 0x02, 0x03, 0x04, 0x06, 0x05, 0x08]
+  - Pos: 21
+    #                    $
+    Bytes: [0xFF, 0xFF, 0x24, 0x00]
+  - Pos: 109
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 113
+    AsciiString: "R\0"
+    CaseSensitive: true

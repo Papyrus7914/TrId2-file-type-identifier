@@ -1,0 +1,20 @@
+Name: Nintendo 3DS Bitmap Font Format
+URL: "https://www.3dbrew.org/wiki/BCFNT"
+FileNameExtensions: ["bffnt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FFNT"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "FINF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CWDH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TGLP"
+    CaseSensitive: false

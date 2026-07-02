@@ -1,0 +1,36 @@
+Name: Lotus Notes Encapsulated Memo
+URL: "http://en.wikipedia.org/wiki/IBM_Lotus_Notes"
+FileNameExtensions: ["ond"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x1A]
+  - Pos: 16
+    AsciiString: "%"
+    CaseSensitive: true
+  - Pos: 200
+    AsciiString: "Encapsulated Note "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENCAPSULATED NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROMDOMAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

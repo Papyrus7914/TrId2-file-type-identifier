@@ -1,0 +1,38 @@
+Name: Geometry Dash Replay
+URL: "https://en.wikipedia.org/wiki/Geometry_Dash"
+FileNameExtensions: ["gdr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\xA6author"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEED"
+    CaseSensitive: false

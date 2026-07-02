@@ -1,0 +1,11 @@
+Name: IBM CAD/3X drawing
+Description: A CAD software for OS/2.
+FileNameExtensions: ["dwg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "ACCORD          IBM CAD                         VER. "
+    CaseSensitive: true

@@ -1,0 +1,34 @@
+Name: Circuit Diagram Component (compiled)
+URL: "http://www.circuit-diagram.org/"
+FileNameExtensions: ["cdcom"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xB8CDCOM\r\n\x01\xD4\x1D\x8C\xD9\x8F\0\xB2\x04\xE9\x80\t\x98\xEC\xF8B~\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".CIRCUIT-DIAGRAM.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR\0\0\0-\0\0\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDCOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW."
+    CaseSensitive: false

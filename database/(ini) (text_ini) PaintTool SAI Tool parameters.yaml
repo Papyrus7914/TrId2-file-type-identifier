@@ -1,0 +1,14 @@
+Name: PaintTool SAI Tool parameters
+URL: "https://en.wikipedia.org/wiki/Paint_Tool_SAI"
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[ToolParam]\r\nid="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

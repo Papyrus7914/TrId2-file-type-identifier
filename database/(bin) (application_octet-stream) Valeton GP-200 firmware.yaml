@@ -1,0 +1,50 @@
+Name: Valeton GP-200 firmware
+URL: "https://www.valeton.net/firmware/"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FRMW"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0GP-200\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VALETON ALL RIGHTS RESERVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWARE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDWARE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACTORY RESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GP-200"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Sony Network Walkman MP3 file storage
+Description: Basically an obfuscated MP3 in a custom container.
+URL: "http://www.livejournal.com/users/waider/415461.html"
+FileNameExtensions: ["dat"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WMMP"
+    CaseSensitive: true
+  - Pos: 16
+    #        \b
+    Bytes: [0x08, 0x9F, 0x9E, 0xFF]

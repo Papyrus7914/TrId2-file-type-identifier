@@ -1,0 +1,17 @@
+Name: Verilog source code
+URL: "https://en.wikipedia.org/wiki/Verilog"
+FileNameExtensions: ["v"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "module "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDMODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT"
+    CaseSensitive: false

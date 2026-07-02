@@ -1,0 +1,14 @@
+Name: Harvard Total Project Manager Calendar (v2)
+Description: Project planning tool for MS-DOS.
+FileNameExtensions: ["cnd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\"\0\x01\x80\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".CND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDAR"
+    CaseSensitive: false

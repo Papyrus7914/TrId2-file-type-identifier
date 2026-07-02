@@ -1,0 +1,11 @@
+Name: Xamarin LZ4 compressed DLL
+URL: "https://x41-dsec.de/security/news/working/research/2020/09/22/xamarin-dll-decompression/"
+FileNameExtensions: ["dll"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XALZ"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "MZ"
+    CaseSensitive: true

@@ -1,0 +1,20 @@
+Name: Protext Character Printer Driver
+URL: "https://en.wikipedia.org/wiki/Protext"
+FileNameExtensions: ["cpd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "Protext CPD file. "
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROTEXT CPD FILE."
+    CaseSensitive: false

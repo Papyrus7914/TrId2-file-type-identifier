@@ -1,0 +1,14 @@
+Name: Atari LZF0 compressed archive
+Description: Used in some Atari ST software.
+FileNameExtensions: ["pax"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LZF0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".RSC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TXT"
+    CaseSensitive: false

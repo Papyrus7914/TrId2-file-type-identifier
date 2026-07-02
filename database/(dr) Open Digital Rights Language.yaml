@@ -1,0 +1,43 @@
+Name: Open Digital Rights Language
+URL: "http://odrl.net/"
+FileNameExtensions: ["dr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONSTRAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERMISSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ODRL.NET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ODRL-EX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ODRL-DD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O-DD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O-EX"
+    CaseSensitive: false

@@ -1,0 +1,83 @@
+Name: DROID Signature File Format
+URL: "https://en.wikipedia.org/wiki/PRONOM#DROID"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTERNALSIGNATURECOLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.NATIONALARCHIVES.GOV.UK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSEQUENCE MINFRAGLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEFORMATCOLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNALSIGNATURE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNALSIGNATUREID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFSIGNATUREFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSEQMAXOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSEQMINOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEFORMAT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTESEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATECREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIFICITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOFOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRONOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUID"
+    CaseSensitive: false

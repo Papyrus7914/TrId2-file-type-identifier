@@ -1,0 +1,24 @@
+Name: OpalVision IFF InterLeaved BitMap
+Description: Contains a custom OVTN chunk.
+URL: "https://amiga.resource.cx/exp/opalvision"
+FileNameExtensions: ["ilbm", "lbm", "iff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "ILBMOVTN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ILBMOVTN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BMHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false

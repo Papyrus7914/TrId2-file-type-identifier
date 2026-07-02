@@ -1,0 +1,17 @@
+Name: Neophyte Item
+URL: "https://www.mobygames.com/game/120174/neophyte-the-journey-begins/"
+FileNameExtensions: ["item"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "itemfile"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VSP"
+    CaseSensitive: false

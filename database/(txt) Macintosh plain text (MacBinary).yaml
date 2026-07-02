@@ -1,0 +1,20 @@
+Name: Macintosh plain text (MacBinary)
+Description: MacBinary is a standard for encoding Macintosh files for file transfer
+URL: "http://www.macdisk.com/macsigen.php3"
+FileNameExtensions: ["txt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "TEXT"
+    CaseSensitive: true
+  - Pos: 74
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 82
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

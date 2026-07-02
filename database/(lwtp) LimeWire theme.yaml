@@ -1,0 +1,58 @@
+Name: LimeWire theme
+URL: "http://www.limewire.com/"
+FileNameExtensions: ["lwtp"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "NOTSEARCHING.GIFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIR_CLOSED.GIFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIR_CLOSED.GIFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIR_OPEN.GIFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIR_OPEN.GIFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N.GIFGIF89A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEME.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_UP.GIFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DN.GIFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORWARD_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REWIND_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KILL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOP_"
+    CaseSensitive: false

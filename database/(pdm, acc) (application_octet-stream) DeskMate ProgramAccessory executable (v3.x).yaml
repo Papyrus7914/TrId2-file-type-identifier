@@ -1,0 +1,26 @@
+Name: DeskMate Program/Accessory executable (v3.x)
+URL: "https://en.wikipedia.org/wiki/DeskMate"
+FileNameExtensions: ["pdm", "acc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "DM89"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DMCSR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMGUF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRGUF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DM89"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

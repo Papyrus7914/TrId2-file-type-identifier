@@ -1,0 +1,14 @@
+Name: Nuendo Project
+URL: "http://fileformats.archiveteam.org/wiki/NPR"
+FileNameExtensions: ["npr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "NUNDROOT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUENDO PROJECT FILE"
+    CaseSensitive: false

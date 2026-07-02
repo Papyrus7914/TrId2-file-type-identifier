@@ -1,0 +1,12 @@
+Name: NMEA GPS log data
+FileNameExtensions: ["nmea", "nma"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$GP"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: ","
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$GPGGA"
+    CaseSensitive: false

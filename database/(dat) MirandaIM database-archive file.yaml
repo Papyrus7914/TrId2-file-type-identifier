@@ -1,0 +1,113 @@
+Name: MirandaIM database-archive file
+Description: "Miranda is pluginable Instant Messaging client. It's data base contains: application configuration data nad all messaging history (incoming/outgoing, system/user, etc.)."
+URL: "http://www.miranda-im.org"
+FileNameExtensions: ["dat"]
+DetectionPatterns:
+  - Pos: 14
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "USERINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIRANDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIST_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGNORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AWAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SYS"
+    CaseSensitive: false

@@ -1,0 +1,44 @@
+Name: Substance 3D metadata
+URL: "https://en.wikipedia.org/wiki/Substance_3D_Modeler"
+FileNameExtensions: ["sbsmeta"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<sbsmeta sbsarcontent=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SBSMETA SBSARCONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTIDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESETINPUT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SBSARFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMGFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SBSPRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKGURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASH"
+    CaseSensitive: false

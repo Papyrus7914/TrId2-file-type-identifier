@@ -1,0 +1,20 @@
+Name: Acronis True Image (v13)
+Description: Format of True Image 2013 Build 5962 (see http://www.acronis.com/) has changed compared to older version from about 2007
+URL: "http://en.wikipedia.org/wiki/TIB_(file_format)"
+FileNameExtensions: ["tib"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xCE$\xB9\xA2 \0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: " \0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HARDDISKVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false

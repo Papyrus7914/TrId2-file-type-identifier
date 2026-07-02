@@ -1,0 +1,8 @@
+Name: Wavelet Scalar Quantization bitmap
+Description: WSQ is a compression algorithm used for gray-scale fingerprint images.
+URL: "http://en.wikipedia.org/wiki/Wavelet_Scalar_Quantization"
+FileNameExtensions: ["wsq"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xA0, 0xFF, 0xA8, 0x00]

@@ -1,0 +1,14 @@
+Name: GRC SpinRite Hypertext/Help format
+URL: "https://en.wikipedia.org/wiki/SpinRite"
+FileNameExtensions: ["xdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FxH!\r\nFN"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "Spin"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: " Hypertext\0\r\n\x1A"
+    CaseSensitive: true

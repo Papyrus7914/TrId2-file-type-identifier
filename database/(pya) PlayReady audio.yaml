@@ -1,0 +1,143 @@
+Name: PlayReady audio
+URL: "http://en.wikipedia.org/wiki/PlayReady"
+FileNameExtensions: ["pya"]
+DetectionPatterns:
+  - Pos: 0
+    #        0     &           u           f                                               b           l
+    Bytes: [0x30, 0x26, 0xB2, 0x75, 0x8E, 0x66, 0xCF, 0x11, 0xA6, 0xD9, 0x00, 0xAA, 0x00, 0x62, 0xCE, 0x6C]
+  - Pos: 18
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0\x01\x02\xA1\xDC\xAB\x8CG\xA9\xCF\x11\x8E\xE4\0\xC0\f Seh\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 73
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 84
+    Bytes: [0xCC, 0x01]
+  - Pos: 88
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 98
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "\0\0\0\0\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 124
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 133
+    #                    \a                                                                \f    ␠     S     e
+    Bytes: [0x00, 0x91, 0x07, 0xDC, 0xB7, 0xB7, 0xA9, 0xCF, 0x11, 0x8E, 0xE6, 0x00, 0xC0, 0x0C, 0x20, 0x53, 0x65]
+  - Pos: 151
+    AsciiString: "\0\0\0\0\0\0\0@\x9Ei\xF8M[\xCF\x11\xA8\xFD\0\x80_\\D+"
+    CaseSensitive: true
+  - Pos: 181
+    Bytes: [0x11]
+  - Pos: 184
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 190
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 199
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 203
+    AsciiString: "\0\0\0\x01\0\0\0\0\0RP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P\0L\0A\0Y\0R\0E\0A\0D\0Y\0.\0D\0I\0R\0E\0C\0T\0T\0A\0P\0S\0.\0N\0E\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0M\0E\0D\0I\0A\0F\0O\0U\0N\0D\0A\0T\0I\0O\0N\0V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0S\0.\0M\0I\0C\0R\0O\0S\0O\0F\0T\0.\0C\0O\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0I\0G\0H\0T\0S\0M\0A\0N\0A\0G\0E\0R\0.\0A\0S\0M\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0H\0+\00\03\0J\0U\0K\0B\0U\0G\0B\0H\0L\01\0V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0L\0A\0Y\0R\0E\0A\0D\0Y\0H\0E\0A\0D\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0R\0M\0H\0E\0A\0D\0E\0R\0 \0X\0M\0L\0N\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0M\0F\0S\0D\0K\0V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0M\0F\0S\0D\0K\0N\0E\0E\0D\0E\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0O\0T\0E\0C\0T\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0\0.\00\0.\00\0.\00\00\00\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0H\0E\0C\0K\0S\0U\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1\0.\01\01\02\0\0\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4\0.\00\0.\00\0.\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0U\0I\0_\0U\0R\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0E\0S\0C\0T\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K\0E\0Y\0L\0E\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0A\0_\0U\0R\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0L\0G\0I\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0S\0_\0I\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0N\0-\0U\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Q\0I\0W\0R\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2\00\00\07"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0T\0T\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0R\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0A\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K\0I\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0V\0C"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: EPOC Word document
+URL: "https://en.wikipedia.org/wiki/EPOC_(operating_system)"
+FileNameExtensions: ["wrd"]
+MimeType: application/x-epoc-word
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "7\0\0\x10m\0\0\x10\x7F\0\0\x10"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORD.APP"
+    CaseSensitive: false

@@ -1,0 +1,74 @@
+Name: VASCO DIGIPASS
+URL: "https://en.wikipedia.org/wiki/VASCO_Data_Security_International,_Inc."
+FileNameExtensions: ["dpx"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZZ ----------------<        DPSOFT   DPX   File             >-----------------------------"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DF I0 A_APPLNAME A_RSPCHK A_RSPTY A_RSPLNG A_TDESFLAG A_DTFNUMB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DF A0 SERNUMB10 A_CODEWORD A_DES64KEY A_TDES64KEY A_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DF AC SERNUMB10 A_ACTVCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOKEN INDEPENDANT FIELDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOKEN DEPENDANT FIELDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DPSOFT   DPX   FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZZ ----------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DE DEF_RECORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A0 VDP0000000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AC VDP0000000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_RECORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DF GL TKTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED_BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DA A_HOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GL DPVTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESPONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DH FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC HSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOKENS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DPX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

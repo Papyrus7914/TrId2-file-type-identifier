@@ -1,0 +1,15 @@
+Name: Atari ST JEK Packer compressed program/executable (v1.x)
+Description: Compression tool by Sharaz Jek/Automation.
+URL: "https://www.atarimania.com/utility-atari-st-jek-packer_45092.html"
+FileNameExtensions: ["prg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JEK PACKER V1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- DECRUNCHING"
+    CaseSensitive: false

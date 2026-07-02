@@ -1,0 +1,11 @@
+Name: Grauw's GAIA Tool patch
+URL: "https://www.grauw.nl/projects/gaia-tool/"
+FileNameExtensions: ["gaia"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GAIATOOLPAT\0=\0"
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: "\x7F\x7F\x7F@@@PAT\x01>"
+    CaseSensitive: true

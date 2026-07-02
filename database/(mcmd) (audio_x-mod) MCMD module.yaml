@@ -1,0 +1,16 @@
+Name: MCMD module
+FileNameExtensions: ["mcmd"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MCMD\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FRECT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MC-01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MCMD"
+    CaseSensitive: false

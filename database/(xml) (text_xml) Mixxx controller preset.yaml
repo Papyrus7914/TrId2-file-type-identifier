@@ -1,0 +1,32 @@
+Name: Mixxx controller preset
+URL: "https://mixxx.org/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MIXXXCONTROLLERPRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNCTIONPREFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

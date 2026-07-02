@@ -1,0 +1,25 @@
+Name: AutoCAD Plotter Configuration
+URL: "http://en.wikipedia.org/wiki/AutoCAD"
+FileNameExtensions: ["pc3"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PIAFILEVERSION_2.0,PC3VER1,compress\r\npmzlibcodec"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "\0\0x\xDA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PIAFILEVERSION_2.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMZLIBCODEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PC3VER1"
+    CaseSensitive: false

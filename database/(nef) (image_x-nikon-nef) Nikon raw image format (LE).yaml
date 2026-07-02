@@ -1,0 +1,11 @@
+Name: Nikon raw image format (LE)
+URL: "http://fileformats.archiveteam.org/wiki/Nikon"
+FileNameExtensions: ["nef"]
+MimeType: image/x-nikon-nef
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MM\0*\0\0\0\b\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NIKON CORPORATION"
+    CaseSensitive: false

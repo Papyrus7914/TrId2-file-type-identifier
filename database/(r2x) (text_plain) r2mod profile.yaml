@@ -1,0 +1,10 @@
+Name: r2mod profile
+FileNameExtensions: ["r2x"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "profileName: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODS"
+    CaseSensitive: false

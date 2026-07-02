@@ -1,0 +1,8 @@
+Name: Raptor GLB encrypted container
+URL: "http://www.shikadi.net/moddingwiki/GLB_Format_(Raptor)"
+FileNameExtensions: ["glb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        d                 \t
+    Bytes: [0x64, 0x9B, 0xD1, 0x09]

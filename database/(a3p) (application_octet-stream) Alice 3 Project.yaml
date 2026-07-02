@@ -1,0 +1,41 @@
+Name: Alice 3 Project
+URL: "http://www.alice.org/"
+FileNameExtensions: ["a3p"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 14
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\v\0\0\0version.txt3\xD63\xD4"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "3\xD03\0\0PK\a\b"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\f\0\0\0\n\0\0\0PK\x03\x04\x14\0\b"
+    CaseSensitive: true
+  - Pos: 77
+    AsciiString: "\b\0"
+    CaseSensitive: true
+  - Pos: 83
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\x0F\0\0\0programType.xml\xEC"
+    CaseSensitive: true
+  - Pos: 118
+    #        \\
+    Bytes: [0x5C, 0xC7]
+  - Pos: any
+    AsciiString: "E\0\0\0PROGRAMTYPE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION.TXT3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3\0\0PK"
+    CaseSensitive: false

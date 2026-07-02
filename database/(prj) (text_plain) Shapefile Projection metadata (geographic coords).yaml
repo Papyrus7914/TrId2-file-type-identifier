@@ -1,0 +1,26 @@
+Name: Shapefile Projection metadata (geographic coords)
+URL: "http://en.wikipedia.org/wiki/Shapefile"
+FileNameExtensions: ["prj"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GEOGCS[\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SPHEROID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEGREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOGCS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false

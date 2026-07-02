@@ -1,0 +1,12 @@
+Name: Microtan 65 dump (low 8K)
+Description: Contains memory, device and processor data.
+URL: "https://www.geoff.org.uk/microtan/index.htm"
+FileNameExtensions: ["m65"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    #        L
+    Bytes: [0x4C, 0xC3]
+  - Pos: 7
+    AsciiString: "Ld\xFF"
+    CaseSensitive: true

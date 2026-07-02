@@ -1,0 +1,9 @@
+Name: Android app cache data
+Description: Filename start with cache_vts_ and app id.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x00, 0x00, 0x18, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "DRAT"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Portable Network Graphics (Apple variant)
+Description: PNG bitmap with an additional Apple's special chunk of data.
+URL: "http://modmyi.com/wiki/index.php/Iphone_PNG_images"
+FileNameExtensions: ["png"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89PNG"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "CgBI"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "IHDR"
+    CaseSensitive: true

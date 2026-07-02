@@ -1,0 +1,11 @@
+Name: ADX lossy compressed audio
+Description: Used in the Sega Dreamcast console.
+URL: "https://en.wikipedia.org/wiki/ADX_(file_format)"
+FileNameExtensions: ["adx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x80, 0x00]
+  - Pos: any
+    AsciiString: "(C)CRI"
+    CaseSensitive: false

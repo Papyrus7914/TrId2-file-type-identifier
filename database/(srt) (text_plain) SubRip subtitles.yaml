@@ -1,0 +1,11 @@
+Name: SubRip subtitles
+URL: "http://en.wikipedia.org/wiki/Subrip"
+FileNameExtensions: ["srt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "1\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "0 --"
+    CaseSensitive: false

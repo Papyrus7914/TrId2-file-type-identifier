@@ -1,0 +1,10 @@
+Name: "ReStory: Chill Electronic Repairs save game"
+URL: "https://store.steampowered.com/app/3812600/ReStory_Chill_Electronics_Repairs/"
+FileNameExtensions: ["restory"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RST\xFA"
+    CaseSensitive: true
+  - Pos: 11
+    Bytes: [0x1F, 0x8B]

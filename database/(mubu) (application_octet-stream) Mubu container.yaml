@@ -1,0 +1,77 @@
+Name: Mubu container
+URL: "https://forum.ircam.fr/projects/detail/mubu/"
+FileNameExtensions: ["mubu"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SDIF\0\0\0\b\0\0\0\x03\0\0\0\x011NVT\0\0\0x\xFF\xEF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFD\0\0\0\x011NVT\0\0\x03\x01\0\0\0S\0\0\0\x01MuBu.Container.NumTracks\t"
+    CaseSensitive: true
+  - Pos: 82
+    AsciiString: "\nMuBu.Container.Version\t1."
+    CaseSensitive: true
+  - Pos: 109
+    AsciiString: "\nMuBu.Container.NumBuffers\t"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MUBU.CONTAINER.NUMBUFFERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.CONTAINER.NUMTRACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.TRACK.SAMPLEOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.CONTAINER.VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.TRACK.BUFFERINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.TRACK.NONNUMTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.TRACK.SAMPLERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.TRACK.MXVARROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.TRACK.ENDTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.TRACK.MAXSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK-0-MATRIXDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.BUFFER.INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.TRACK.MXCOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.TRACK.MXROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.TRACK.INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.TRACK.NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUBU.TRACK.SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1FTD  M000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1MTD  M000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1NVT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1TYP"
+    CaseSensitive: false

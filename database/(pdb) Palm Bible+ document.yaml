@@ -1,0 +1,11 @@
+Name: Palm Bible+ document
+Description: Bible+ is a free (GPL-licensed) Bible reader for Palm OS derived from the original BibleReader that was created by Poetry Poon.
+URL: "http://palmbibleplus.sourceforge.net/"
+FileNameExtensions: ["pdb"]
+DetectionPatterns:
+  - Pos: 56
+    AsciiString: "\0\0\0\0biblPPBL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BIBLPPBL"
+    CaseSensitive: false

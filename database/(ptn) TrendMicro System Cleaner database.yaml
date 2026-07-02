@@ -1,0 +1,12 @@
+Name: TrendMicro System Cleaner database
+Description: Newer style tsc.ptn. Part of TrendMicro House Call DCE (Damage Cleaneup Engine)
+FileNameExtensions: ["ptn"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Ver "
+    CaseSensitive: true
+  - Pos: 10
+    Bytes: [0x00, 0x00, 0x00, 0x00, 0x1A, 0xE2, 0xBD, 0x1A, 0x01, 0x00]
+  - Pos: 27
+    #                                                                          ~
+    Bytes: [0x01, 0xFD, 0x00, 0x00, 0xFF, 0x9F, 0xFA, 0xF7, 0xFF, 0xFE, 0xFF, 0x7E, 0xFF]

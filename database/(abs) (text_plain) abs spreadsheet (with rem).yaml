@@ -1,0 +1,14 @@
+Name: abs spreadsheet (with rem)
+URL: "http://web.archive.org/web/20040208143321/http://www.ping.be/bertin/abs.shtml"
+FileNameExtensions: ["abs"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "'===================ABV "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SUB MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END SUB"
+    CaseSensitive: false

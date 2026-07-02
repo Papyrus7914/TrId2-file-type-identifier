@@ -1,0 +1,14 @@
+Name: Slide saved game (v1.x)
+Description: Puzzle game by David A. Feinleib.
+FileNameExtensions: ["sld"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\nSlide 1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDOFVARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEFILE"
+    CaseSensitive: false

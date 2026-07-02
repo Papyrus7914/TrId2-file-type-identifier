@@ -1,0 +1,15 @@
+Name: context diff output
+Description: created with --context option of GNU diff for example
+URL: "https://en.wikipedia.org/wiki/Diff_utility#Context_format"
+FileNameExtensions: ["diff", "patch"]
+MimeType: text/x-patch
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*** "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "***************"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "----"
+    CaseSensitive: false

@@ -1,0 +1,8 @@
+Name: DiskDoubler compressed data
+URL: "https://fileformats.archiveteam.org/wiki/DiskDoubler"
+FileNameExtensions: ["dd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          T
+    Bytes: [0xAB, 0xCD, 0x00, 0x54]

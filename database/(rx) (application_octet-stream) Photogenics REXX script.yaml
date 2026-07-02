@@ -1,0 +1,15 @@
+Name: Photogenics REXX script
+Description: Amiga image manipulation tool.
+URL: "https://en.wikipedia.org/wiki/Photogenics"
+FileNameExtensions: ["rx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADDRESS PHOTOGENICS.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$VER"
+    CaseSensitive: false

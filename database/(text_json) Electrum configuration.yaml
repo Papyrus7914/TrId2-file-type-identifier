@@ -1,0 +1,50 @@
+Name: Electrum configuration
+Description: Electrum is a Bitcoin Wallet.
+URL: "https://electrum.org"
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "   "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONSOLE-HISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUI_LAST_WALLET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK_EXPLORER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT_WALLET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECENTLY_OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO_CONNECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_MAXIMIZED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELECTRUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WALLETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

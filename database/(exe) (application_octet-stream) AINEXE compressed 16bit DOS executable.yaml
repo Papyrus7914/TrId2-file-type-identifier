@@ -1,0 +1,17 @@
+Name: AINEXE compressed 16bit DOS executable
+Description: EXE compressor by Transas Marine (UK) Ltd.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\0\0\0MZ"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "AIN2\xFF\xFF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AIN2"
+    CaseSensitive: false

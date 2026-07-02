@@ -1,0 +1,14 @@
+Name: SuperCollider Class
+URL: "http://fileformats.archiveteam.org/wiki/SuperCollider"
+FileNameExtensions: ["sc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".AR("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEF("
+    CaseSensitive: false

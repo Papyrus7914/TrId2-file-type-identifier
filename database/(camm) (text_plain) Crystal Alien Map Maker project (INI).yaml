@@ -1,0 +1,59 @@
+Name: Crystal Alien Map Maker project (INI)
+URL: "https://github.com/leveleditor/CAMM-Crystal-Alien-Map-Maker"
+FileNameExtensions: ["camm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF[CAMM]\nvFormat = "
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "[Level]\nTitle = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAP CREATED USING CAMM CRYSTAL ALIEN MAP MAKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDING FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERRAIN FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F_DAMAGE}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F_ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I_POSY}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{STR_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I_POSX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEAM"
+    CaseSensitive: false

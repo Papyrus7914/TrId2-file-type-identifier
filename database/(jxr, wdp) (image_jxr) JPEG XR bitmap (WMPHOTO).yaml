@@ -1,0 +1,12 @@
+Name: JPEG XR bitmap (WMPHOTO)
+Description: standardized variant with WMPHOTO signature
+URL: "http://fileformats.archiveteam.org/wiki/JPEG_XR"
+FileNameExtensions: ["jxr", "wdp"]
+MimeType: image/jxr
+DetectionPatterns:
+  - Pos: 0
+    #        I     I
+    Bytes: [0x49, 0x49, 0xBC, 0x01]
+  - Pos: any
+    AsciiString: "WMPHOTO"
+    CaseSensitive: false

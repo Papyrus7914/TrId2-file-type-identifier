@@ -1,0 +1,22 @@
+Name: Virtual Skipper skin
+URL: "http://membres.lycos.fr/vsk2/index.php"
+FileNameExtensions: ["zip"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "COQUE.DDSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON.DDSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKIPPER.DDSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPI.DDSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOILES.DDSPK"
+    CaseSensitive: false

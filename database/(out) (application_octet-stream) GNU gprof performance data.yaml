@@ -1,0 +1,11 @@
+Name: GNU gprof performance data
+URL: "https://en.wikipedia.org/wiki/Gprof"
+FileNameExtensions: ["out"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "gmon"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SECONDS"
+    CaseSensitive: false

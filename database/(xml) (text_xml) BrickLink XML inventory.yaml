@@ -1,0 +1,20 @@
+Name: BrickLink XML inventory
+URL: "https://www.bricklink.com/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<INVENTORY>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ITEMTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINQTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false

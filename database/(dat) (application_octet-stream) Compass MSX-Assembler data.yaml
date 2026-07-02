@@ -1,0 +1,32 @@
+Name: Compass MSX-Assembler data
+URL: "https://msxhub.com/COMPASS"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\nCompass #"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: " DATfile\r\n(C)19"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: " Compjoetania The Next Generation\r\n\nDO NOT DISTRIBUTE!\r\n\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPJOETANIA THE NEXT GENERATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO NOT DISTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C)19"
+    CaseSensitive: false

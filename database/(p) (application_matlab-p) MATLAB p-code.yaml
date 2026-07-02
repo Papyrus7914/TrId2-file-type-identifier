@@ -1,0 +1,14 @@
+Name: MATLAB p-code
+URL: "https://en.wikipedia.org/wiki/MATLAB"
+FileNameExtensions: ["p"]
+MimeType: application/matlab-p
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "P-file  "
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P-FILE"
+    CaseSensitive: false

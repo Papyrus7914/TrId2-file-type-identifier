@@ -1,0 +1,14 @@
+Name: MathCAD Font
+URL: "https://en.wikipedia.org/wiki/Mathcad"
+FileNameExtensions: ["mcf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "vPixels: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HPIXELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false

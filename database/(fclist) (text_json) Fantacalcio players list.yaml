@@ -1,0 +1,13 @@
+Name: Fantacalcio players list
+FileNameExtensions: ["fclist"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"name\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PLAYERSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

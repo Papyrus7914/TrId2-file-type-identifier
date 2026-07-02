@@ -1,0 +1,22 @@
+Name: Samsung Memo App memo
+FileNameExtensions: ["memo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "media/PK"
+    CaseSensitive: true
+  - Pos: 52
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 82
+    AsciiString: "memo_content.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MEMO_CONTENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false

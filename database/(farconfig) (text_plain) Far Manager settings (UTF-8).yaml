@@ -1,0 +1,14 @@
+Name: Far Manager settings (UTF-8)
+URL: "https://en.wikipedia.org/wiki/Far_Manager"
+FileNameExtensions: ["farconfig"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"UTF-8\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FARCONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,31 @@
+Name: Grid 2 Bundle
+URL: "http://www.sensorysoftware.com/"
+FileNameExtensions: ["bdl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "S\0e\0n\0s\0o\0r\0y\0A\0r\0c\0h\0i\0v\0e\0 \02"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THUMBNAIL.JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID BUNDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE GRID 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMP"
+    CaseSensitive: false

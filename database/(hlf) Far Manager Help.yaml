@@ -1,0 +1,11 @@
+Name: Far Manager Help
+Description: Far is a text mode file and archive manager for Windows.
+URL: "https://farmanager.com/"
+FileNameExtensions: ["hlf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ".Language="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false

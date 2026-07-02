@@ -1,0 +1,11 @@
+Name: VirusExecutor Patch Brain
+URL: "https://www.vht-dk.dk/amiga/ve/ve.htm"
+FileNameExtensions: ["patchbrain"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VEPA$VER: PatchBrain "
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "."
+    CaseSensitive: true

@@ -1,0 +1,75 @@
+Name: VirtualBox machine definition
+Description: Settings used by Oracle VM VirtualBox saved in XML format. Backup has VBOX-PREV extension.
+URL: "https://www.virtualbox.org/"
+FileNameExtensions: ["vbox", "vbox-prev"]
+MimeType: application/x-virtualbox-vbox
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\n<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HARDWAREVIRTEXLARGEPAGES ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORAGECONTROLLER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORAGECONTROLLERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALBOX XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTSTATECHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY RAMSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPSHOTFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEHOSTIOCACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAPTER SLOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOADAPTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAE ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPSHOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW."
+    CaseSensitive: false

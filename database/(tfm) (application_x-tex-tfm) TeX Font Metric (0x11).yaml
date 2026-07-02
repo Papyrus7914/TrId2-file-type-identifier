@@ -1,0 +1,29 @@
+Name: TeX Font Metric (0x11)
+Description: Variant with header size 11h words
+URL: "http://fileformats.archiveteam.org/wiki/TeX_Font_Metrics"
+FileNameExtensions: ["tfm"]
+MimeType: application/x-tex-tfm
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\x11\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\0\0\0\0\0\x06"
+    CaseSensitive: true
+  - Pos: 92
+    Bytes: [0x01]

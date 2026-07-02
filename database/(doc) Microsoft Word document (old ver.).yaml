@@ -1,0 +1,12 @@
+Name: Microsoft Word document (old ver.)
+URL: "http://office.microsoft.com"
+FileNameExtensions: ["doc"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1]
+  - Pos: any
+    AsciiString: "MICROSOFT WORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT"
+    CaseSensitive: false

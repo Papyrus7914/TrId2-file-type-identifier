@@ -1,0 +1,17 @@
+Name: Jigsaws Galore Pieces
+URL: "https://www.dgray.com/index.html"
+FileNameExtensions: ["asc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Jigwin piece template version 1.0\r\nTitle: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CORNERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

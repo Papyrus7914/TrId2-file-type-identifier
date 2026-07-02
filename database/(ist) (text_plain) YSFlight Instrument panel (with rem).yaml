@@ -1,0 +1,35 @@
+Name: YSFlight Instrument panel (with rem)
+URL: "https://ysflight.org/"
+FileNameExtensions: ["ist"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "REM "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AIRSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRAKE___"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAP____"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUEL____"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PNLRANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R____"
+    CaseSensitive: false

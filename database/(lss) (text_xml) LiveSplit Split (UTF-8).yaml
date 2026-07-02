@@ -1,0 +1,71 @@
+Name: LiveSplit Split (UTF-8)
+URL: "https://livesplit.org/"
+FileNameExtensions: ["lss"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PLATFORM USESEMULATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOSPLITTERSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BESTSEGMENTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTEMPTHISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMENTHISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLITTIME NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERSONAL BEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTEMPTCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLITTIMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECKB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNC"
+    CaseSensitive: false

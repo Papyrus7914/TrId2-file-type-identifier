@@ -1,0 +1,11 @@
+Name: Autodesk - Kaydara FBX 3D format (Binary)
+Description: FBX is open-standard, platform-independent 3D file format.
+URL: "https://en.wikipedia.org/wiki/FBX"
+FileNameExtensions: ["fbx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Kaydara FBX Binary  "
+    CaseSensitive: true
+  - Pos: 21
+    Bytes: [0x1A]

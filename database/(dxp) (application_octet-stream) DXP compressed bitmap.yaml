@@ -1,0 +1,12 @@
+Name: DXP compressed bitmap
+Description: Seems to share the same developer with the DXA video format.
+URL: "https://wiki.multimedia.cx/index.php/DXA"
+FileNameExtensions: ["dxp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DXP1\x01\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "x"
+    CaseSensitive: true

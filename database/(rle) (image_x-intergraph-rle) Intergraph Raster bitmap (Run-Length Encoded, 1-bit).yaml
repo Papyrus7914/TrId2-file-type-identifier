@@ -1,0 +1,18 @@
+Name: Intergraph Raster bitmap (Run-Length Encoded, 1-bit)
+Description: DataTypeCode 9 variant
+URL: "http://fileformats.archiveteam.org/wiki/Intergraph_Raster"
+FileNameExtensions: ["rle"]
+MimeType: image/x-intergraph-rle
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\b\t\xFE"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\t\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 508
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

@@ -1,0 +1,17 @@
+Name: ParaView Data
+URL: "https://www.paraview.org/Wiki/ParaView/Data_formats#PVD_File_Format"
+FileNameExtensions: ["pvd"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VTKFILE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET"
+    CaseSensitive: false

@@ -1,0 +1,21 @@
+Name: Canvas drawing (v6)
+Description: Drawing tool by ACD Systems.
+URL: "https://en.wikipedia.org/wiki/Canvas_X"
+FileNameExtensions: ["cnv", "tpl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 25
+    AsciiString: "CANVAS6\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CANVAS6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false

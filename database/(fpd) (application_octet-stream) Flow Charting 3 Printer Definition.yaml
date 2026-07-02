@@ -1,0 +1,29 @@
+Name: Flow Charting 3 Printer Definition
+Description: Flow charting tools for DOS by Patton and Patton Software Corp.
+FileNameExtensions: ["fpd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE9/\x03\r\n\nFlow Charting 3 Printer Device\r\nThis device driver cannot be modified in any way!\r\n"
+    CaseSensitive: true
+  - Pos: 164
+    AsciiString: "FPD."
+    CaseSensitive: true
+  - Pos: 183
+    AsciiString: "INFO"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PATTON SOFTWARE CORP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPDCORE-FPDCORE-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

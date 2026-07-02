@@ -1,0 +1,17 @@
+Name: Intergraph Raster bitmap (CCITT Group 4, 1-bit)
+Description: DataTypeCode 24 variant
+URL: "http://fileformats.archiveteam.org/wiki/Intergraph_Raster"
+FileNameExtensions: ["cit"]
+MimeType: image/x-intergraph-cit
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\b\t\xFE"
+    CaseSensitive: true
+  - Pos: 4
+    Bytes: [0x18, 0x00]
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 508
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

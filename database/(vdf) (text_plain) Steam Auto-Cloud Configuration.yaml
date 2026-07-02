@@ -1,0 +1,11 @@
+Name: Steam Auto-Cloud Configuration
+URL: "https://partner.steamgames.com/doc/features/cloud"
+FileNameExtensions: ["vdf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\"steam_autocloud.vdf\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACCOUNTID"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: Directory Opus settings
+URL: "https://en.wikipedia.org/wiki/Directory_Opus"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "OPUSSETS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPUSSETS"
+    CaseSensitive: false

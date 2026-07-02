@@ -1,0 +1,157 @@
+Name: Photoshop filter plug-in
+URL: "http://en.wikipedia.org/wiki/Adobe_Photoshop"
+FileNameExtensions: ["8bf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@"
+    CaseSensitive: true
+  - Pos: 62
+    #                                                        \t          !                 L           !
+    Bytes: [0x00, 0x00, 0x0E, 0x1F, 0xBA, 0x0E, 0x00, 0xB4, 0x09, 0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: 79
+    AsciiString: "his "
+    CaseSensitive: true
+  - Pos: 111
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 122
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIALOGBOXPARAMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCLIENTRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETEOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0T\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRYPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETDLGITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDDIALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GDI32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFB8MIB8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIB868XW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIB8DNIK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIB8EDOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIB8EMAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIB8GTAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIB8ICIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIB8SREV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT BE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETD"
+    CaseSensitive: false

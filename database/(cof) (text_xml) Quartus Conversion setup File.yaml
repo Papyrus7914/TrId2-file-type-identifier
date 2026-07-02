@@ -1,0 +1,32 @@
+Name: Quartus Conversion setup File
+URL: "https://en.wikipedia.org/wiki/Intel_Quartus_Prime"
+FileNameExtensions: ["cof"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"US-ASCII\" standalone=\"yes\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OUTPUT_FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N_PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false

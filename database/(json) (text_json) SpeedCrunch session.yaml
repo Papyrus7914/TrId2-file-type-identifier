@@ -1,0 +1,32 @@
+Name: SpeedCrunch session
+URL: "https://heldercorreia.bitbucket.io/speedcrunch"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n    \"functions\": [\n    ],\n    \"history\": [\n    "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMERIC_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNCTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILTIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

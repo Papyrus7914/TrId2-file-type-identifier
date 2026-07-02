@@ -1,0 +1,26 @@
+Name: Simplify3D Factory session data
+URL: "https://www.simplify3d.com"
+FileNameExtensions: ["factory"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0/\0M\0o\0d\0e\0l\0s\0/\0M\0o\0d\0e\0l\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P\0R\0O\0C\0E\0S\0S\0E\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0O\0D\0E\0L\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0F\0F\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0S\0T\0L"
+    CaseSensitive: false

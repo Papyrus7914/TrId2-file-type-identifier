@@ -1,0 +1,80 @@
+Name: 16bit Borland DPMI Executable
+URL: "https://en.wikipedia.org/wiki/Borland"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ>\0\b\0\x01\0 \0\0\0\xFF\xFF\0\0\xC8\0\0\0\x01\t\r\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0>\x0E\0\0\x02\t\r\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\016STUB"
+    CaseSensitive: true
+  - Pos: 720
+    AsciiString: "QRVW"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RUN DPMIINST$UNRECOGNIZED ENVIRONMENT PARAMETERS$UNABLE TO INITIALIZE PAGE TABLES$BAD A20 OFF PARAMETER$BAD A20 ON PARAMETER$BAD SWITCH PARAMETER$INSUFFICIENT EXTENDED MEMORY$CANNOT CREATE FRET$CANNOT CREATE LINEAR ADDRESS SPACE$CANNOT CREATE SYSTEM LINEAR SPACE$CANNOT COPY KERNEL TO HIGH MEMORY$UNDEFINED ERROR$UNABLE TO COPY DOSX$UNABLE TO COPY IDT$UNABLE TO CREATE INT CHAIN TABLE$UNABLE TO CREATE PM STACK$UNABLE TO INITIALIZE SWAPPING$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSUFFICIENT MEMORY FOR INITIALIZATION$MEMORY MANAGER DOES NOT SUPPORT DPMI OR VCPI$MUST BE RUN ON A 386 PROCESSOR$UNRECOGNIZED HARDWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$UNRECOGNIZED ERROR$INTERNAL ERROR$OUT OF MEMORY$OUT OF SELECTORS$OUT OF INTERNAL TABLES$INVALID DYNAMIC LINK$COULDN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T OPEN FILE$INVALID EXE FORMAT$WRONG VERSION$CANNOT INITIALIZE$DLL INITIALIZATION ERROR$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$NOT ENOUGH MEMORY TO LOAD $INVALID ENVIRONMENT$INVALID FILE $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STUB ERROR (\0\0\0\0)$DPMI ERROR (\0\0\0\0)$LOADER ERROR (\0\0\0\0)$\0\0J"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T FIND $UNEXPECTED DOS ERROR$FILE NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTM.EXE\0DPMI16BI.OVL\0\0\0\0\0\0\0$*$*$*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTIONS COPYRIGHT (C) 1983"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIME ERROR 000 AT 0000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$NEEDS AT LEAST 286$CAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789ABCDEFXXXP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$PATH NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ACCESS DENIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "92 BORLANDEU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PM STUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "16STUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%\0Z3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QRVW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPUS"
+    CaseSensitive: false

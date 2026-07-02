@@ -1,0 +1,13 @@
+Name: ComCryptor 98 encrypted 16bit COM DOS executable
+Description: Encryptor by Jozsef Hidasi.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "b"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: " ComCrypt '98."
+    CaseSensitive: true

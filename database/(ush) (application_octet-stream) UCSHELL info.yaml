@@ -1,0 +1,13 @@
+Name: UCSHELL info
+FileNameExtensions: ["ush"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "UH"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UCDOS"
+    CaseSensitive: false

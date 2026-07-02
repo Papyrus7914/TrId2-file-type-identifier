@@ -1,0 +1,32 @@
+Name: ZCT Systems Group video Driver
+FileNameExtensions: ["drv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 2
+    Bytes: [0x00, 0xE9]
+  - Pos: 5
+    Bytes: [0x00, 0xE9]
+  - Pos: 8
+    Bytes: [0x01, 0xE9]
+  - Pos: 11
+    Bytes: [0x01, 0xE9]
+  - Pos: 14
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY ZCT SYSTEMS GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 19"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GREG L. ZUMWALT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DRV"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Timex Datalink WristApp config
+URL: "https://en.wikipedia.org/wiki/Timex_Datalink"
+FileNameExtensions: ["app"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[WristApp]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PASSWORD SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION REQUIRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

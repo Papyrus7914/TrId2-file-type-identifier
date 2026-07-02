@@ -1,0 +1,40 @@
+Name: Comic Book DS
+URL: "http://gnese.free.fr/NDS/ComicBookDS"
+FileNameExtensions: ["cbds"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "COMICBOOKDS_BOOK.INIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREDITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMALL_N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMALL_R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THMB_N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THMB_R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: XEDT music
+Description: MSX sound editor.
+URL: "https://msxhub.com/XEDT"
+FileNameExtensions: ["txf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "INFO:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DRVMODE"
+    CaseSensitive: false

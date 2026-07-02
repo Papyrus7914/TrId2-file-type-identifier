@@ -1,0 +1,14 @@
+Name: HTTP cookies (generic)
+URL: "https://en.wikipedia.org/wiki/HTTP_cookie"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# HTTP "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "ookie "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HTTP COOKIE FILE"
+    CaseSensitive: false

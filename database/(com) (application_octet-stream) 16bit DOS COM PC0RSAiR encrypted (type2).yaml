@@ -1,0 +1,12 @@
+Name: 16bit DOS COM PC0RSAiR encrypted (type2)
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xB8]
+  - Pos: 3
+    AsciiString: "VP\xC3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GGCCF"
+    CaseSensitive: false

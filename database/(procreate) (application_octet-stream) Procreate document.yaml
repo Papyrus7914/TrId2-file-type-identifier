@@ -1,0 +1,29 @@
+Name: Procreate document
+URL: "https://apps.apple.com/us/app/procreate/id425073498"
+FileNameExtensions: ["procreate"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DOCUMENT.ARCHIVEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMENT-1.MP4PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUICKLOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.LZ4PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false

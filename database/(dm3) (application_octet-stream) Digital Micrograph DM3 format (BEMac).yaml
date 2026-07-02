@@ -1,0 +1,11 @@
+Name: Digital Micrograph DM3 format (BE/Mac)
+URL: "http://www.er-c.org/cbb/info/dmformat/#dm3"
+FileNameExtensions: ["dm3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\x03"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\0\0\0\x01\0"
+    CaseSensitive: true

@@ -1,0 +1,13 @@
+Name: AmiCAD symbols library (v1.1)
+Description: Vector schematic drawing tool for Amiga by Roland Florac.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AmiCADLib 1.1"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "$VER: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$VER"
+    CaseSensitive: false

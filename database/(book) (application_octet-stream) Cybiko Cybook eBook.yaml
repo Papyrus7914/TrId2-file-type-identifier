@@ -1,0 +1,20 @@
+Name: Cybiko Cybook eBook
+URL: "https://en.wikipedia.org/wiki/Cybiko"
+FileNameExtensions: ["book"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Cy\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOOKMARK.BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.TXT"
+    CaseSensitive: false

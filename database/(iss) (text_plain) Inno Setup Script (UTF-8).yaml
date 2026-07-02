@@ -1,0 +1,58 @@
+Name: Inno Setup Script (UTF-8)
+URL: "https://en.wikipedia.org/wiki/Inno_Setup"
+FileNameExtensions: ["iss"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEF, 0xBB, 0xBF]
+  - Pos: any
+    AsciiString: "UNINSTALLDISPLAYICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIZARDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{APP}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Red Alert replay
+URL: "https://en.wikipedia.org/wiki/Command_%26_Conquer#Red_Alert_series"
+FileNameExtensions: ["xif"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XIF\x1A\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    #        x
+    Bytes: [0x78, 0x9C]

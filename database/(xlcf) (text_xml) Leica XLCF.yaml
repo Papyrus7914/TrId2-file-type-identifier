@@ -1,0 +1,58 @@
+Name: Leica XLCF
+FileNameExtensions: ["xlcf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LMSDataContainerHeader Version=\"2\" ApplicationDescription=\"LMSIOManager\" ApplicationVersion=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LMSDATACONTAINERHEADER VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLECTION CHILDTYPETEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDTYPELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORYBLOCKID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LMSIOMANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYOPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCEPTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XLIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false

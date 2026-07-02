@@ -1,0 +1,23 @@
+Name: eed patch
+Description: Patching tool by Richard Gordon Faika, RGF Software.
+FileNameExtensions: ["eed"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[eed v"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

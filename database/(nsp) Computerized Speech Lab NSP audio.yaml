@@ -1,0 +1,10 @@
+Name: Computerized Speech Lab NSP audio
+URL: "http://www.tsp.ece.mcgill.ca/MMSP/Documents/AudioFormats/CSL/CSL.html"
+FileNameExtensions: ["nsp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORMDS16"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0HEDR"
+    CaseSensitive: true

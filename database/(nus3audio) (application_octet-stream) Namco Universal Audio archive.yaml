@@ -1,0 +1,39 @@
+Name: Namco Universal Audio archive
+Description: Used in various Namco games, like Super Smash Bros. Ultimate.
+URL: "https://en.wikipedia.org/wiki/Bandai_Namco_Studios"
+FileNameExtensions: ["nus3audio"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NUS3"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "AUDIINDX"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "TNID"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUDIINDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JUNK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NMOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TNID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TNNM"
+    CaseSensitive: false

@@ -1,0 +1,53 @@
+Name: RTFGEN Help Source
+Description: Win 3.x tool to create Help files from text, by L. David Baldwin.
+FileNameExtensions: ["hps"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[OPTIONS]\r\n  COMPRESS = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PASCALINCLUDENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASCALINCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CINCLUDENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLDKEYPHRASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXTSENS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDTAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HC30NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HC31NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAGGAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITMAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false

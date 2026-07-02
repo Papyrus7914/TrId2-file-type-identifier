@@ -1,0 +1,33 @@
+Name: IAFA Package info
+Description: A info file named IAFA.PKG or IAFA-PKG.
+URL: "https://www.w3.org/Conferences/WWW4/Papers/52/"
+FileNameExtensions: ["pkg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Title:          "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYING-POLICY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINTAINED-AT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINTAINED-BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYWORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false

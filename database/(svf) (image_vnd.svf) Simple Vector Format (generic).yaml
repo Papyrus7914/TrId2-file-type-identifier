@@ -1,0 +1,11 @@
+Name: Simple Vector Format (generic)
+URL: "http://fileformats.archiveteam.org/wiki/Simple_Vector_Format"
+FileNameExtensions: ["svf"]
+MimeType: image/vnd.svf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SVF v"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "."
+    CaseSensitive: true

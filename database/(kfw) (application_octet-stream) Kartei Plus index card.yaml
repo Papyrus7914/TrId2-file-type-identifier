@@ -1,0 +1,14 @@
+Name: Kartei Plus index card
+Description: Windows software by Norbert Riechel.
+FileNameExtensions: ["kfw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Kplus"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXTFELD"
+    CaseSensitive: false

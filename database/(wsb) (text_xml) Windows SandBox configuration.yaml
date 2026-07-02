@@ -1,0 +1,26 @@
+Name: Windows SandBox configuration
+URL: "https://learn.microsoft.com/en-us/windows/security/threat-protection/windows-sandbox/windows-sandbox-configure-using-wsb-file"
+FileNameExtensions: ["wsb"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPPEDFOLDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGONCOMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SANDBOX"
+    CaseSensitive: false

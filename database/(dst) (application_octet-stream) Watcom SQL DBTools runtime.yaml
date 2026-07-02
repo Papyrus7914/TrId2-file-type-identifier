@@ -1,0 +1,284 @@
+Name: Watcom SQL DBTools runtime
+URL: "https://en.wikipedia.org/wiki/Watcom"
+FileNameExtensions: ["dst"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0RUNTIME"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0WATCOM SQL\0ols\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\xF5\xFF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "7\0CONNECTION PARAMETERS HAVE NOT BEEN PROPERLY SPECIFIED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4. TRANSLATE TRANSACTION LOG TO SQL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO COMMAND LINE HAS BEEN SPECIFIED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDE TRANSACTIONS NOT COMMITTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8. EXPAND A COMPRESSED DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME OF UNCOMPRESSED DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATE EXCEPT FOR (USERS)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSED DATABASE NAME\0\0Q"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME OF COMPRESSED DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3. SPECIFY TRANSACTION LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CASE SENSITIVE COMPARISONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATE ANSI STANDARD SQL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE WRITE FILE (ALWAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGINE START COMMAND LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE CONNECTION PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2. INITIALIZE A DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9. ERASE A DATABASE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "6. SPECIFY A WRITE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND TO START ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME OF TRANSACTION LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROMPT FOR CONFIRMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DEFAULT QUERY WINDOW)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DEFAULT RADIO BUTTON)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5. VALIDATE A DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7. COMPRESS A DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTION PARMAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGNORE TRAILING BLANKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DEFAULT PUSH BUTTON)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0CANNOT SPECIFY BOTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R. REBUILD A DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAN COMMANDS BUT DON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATE FOR (USERS)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U. UNLOAD A DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT DIRECTORY\0\0Q"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE TRANSACTION LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALIDATE ALL TABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DEFAULT CHECKBOX)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1. INTERACTIVE SQL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTORY FOR DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME OF WRITE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORT STATUS ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUST BE SPECIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START ENGINE WITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE TO VALIDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPT DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL VARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME OF DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DEFAULT FIELD)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DEFAULT TEXT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASE TOOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT SQL LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL COPIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEW DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLD DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-T TEST.LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBSTARTW %D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELOAD.SQL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITE_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISQLW.HLP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANS_LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMD_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBERASEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBEXPAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBEXPANW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBSHRINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBSHRINW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBVALIDW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBWRITEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBINITW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBTOOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBTRANW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXECUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Q. QUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQL_LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-C DBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANCEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBLOGW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEVER)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLDDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUIET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false

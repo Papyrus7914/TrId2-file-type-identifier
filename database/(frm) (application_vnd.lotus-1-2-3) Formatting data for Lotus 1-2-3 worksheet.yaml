@@ -1,0 +1,15 @@
+Name: Formatting data for Lotus 1-2-3 worksheet
+Description: revision number 8007h is stored at offset 4.
+URL: "http://www.aboutvb.de/bas/formate/pdf/wk3.pdf"
+FileNameExtensions: ["frm"]
+MimeType: application/vnd.lotus-1-2-3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x02\0\a\x80"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true

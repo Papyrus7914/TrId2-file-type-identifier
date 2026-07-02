@@ -1,0 +1,43 @@
+Name: BluffTitler Effect
+URL: "http://www.outerspace-software.com/"
+FileNameExtensions: ["fx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "// "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STRING DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCT VS_OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCT VS_INPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VS_OUTPUT OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT.POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VS_OUTPUT VS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTEXSHADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILE VS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT.TEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TECHNIQUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false

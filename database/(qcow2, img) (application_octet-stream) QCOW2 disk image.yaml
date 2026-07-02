@@ -1,0 +1,9 @@
+Name: QCOW2 disk image
+Description: QCOW is QEMU specific image format.
+URL: "http://www.qemu.com/"
+FileNameExtensions: ["qcow2", "img"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "QFI\xFB\0\0\0\x02"
+    CaseSensitive: true

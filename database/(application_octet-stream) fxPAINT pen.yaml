@@ -1,0 +1,16 @@
+Name: fxPAINT pen
+Description: Amiga paint/image processing program by Felix Schwarz.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FXPPEN\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUSHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORAGE"
+    CaseSensitive: false

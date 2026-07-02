@@ -1,0 +1,463 @@
+Name: Microsoft VBDOS Quick library
+URL: "https://en.wikipedia.org/wiki/Visual_Basic"
+FileNameExtensions: ["qlb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 10
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 20
+    Bytes: [0x04, 0x00]
+  - Pos: 24
+    AsciiString: "\x1E\0\0\0\x01\0(\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "0\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "8\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "@\0"
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "H\0"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "P\0"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "X\0"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "`\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "h\0"
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "p\0"
+    CaseSensitive: true
+  - Pos: 70
+    AsciiString: "x\0"
+    CaseSensitive: true
+  - Pos: 74
+    Bytes: [0x80, 0x00]
+  - Pos: 78
+    Bytes: [0x88, 0x00]
+  - Pos: 82
+    Bytes: [0x90, 0x00]
+  - Pos: 86
+    Bytes: [0x98, 0x00]
+  - Pos: 90
+    Bytes: [0xA0, 0x00]
+  - Pos: 94
+    Bytes: [0xA8, 0x00]
+  - Pos: 98
+    Bytes: [0xB0, 0x00]
+  - Pos: 102
+    Bytes: [0xB8, 0x00]
+  - Pos: 106
+    Bytes: [0xC0, 0x00]
+  - Pos: 110
+    Bytes: [0xC8, 0x00]
+  - Pos: 114
+    Bytes: [0xD0, 0x00]
+  - Pos: 118
+    Bytes: [0xD8, 0x00]
+  - Pos: 122
+    Bytes: [0xE0, 0x00]
+  - Pos: 126
+    Bytes: [0xE8, 0x00]
+  - Pos: any
+    AsciiString: "CDATA\0XIQC\0XIB\0XI\0XIE\0XPB\0XP\0XPE\0XCB\0XC\0XCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XOB\0XO\0XOE\0STACK\0SYMBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0NMALLOC\0ENMALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__BPBC_SAB\0__CHILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XECIB\0XECI\0XECIE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ANULLSIZE\0__AS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__DOSVERMAJOR\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0___ADBSWPCHK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__EXITFLAG\0__F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__NHEAP_DESC\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGRELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__DOSERRNO\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__DOSVERMINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BC_SAB\0BC_SA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVOKEMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGASSIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0__AULSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__AALTSTKOVR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__FPTASKDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "___ADBCALLBK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "___ADBPTRCHK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "___ADBSWPFLG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FO_TEXT_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROPERTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVOKEEVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETPROPERTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__AEXIT_RTN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__AMSG_EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__FMSG_TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__NULLCHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__OSFILE\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__OSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "___ADBRTERR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B_ULSYMSEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ACRTUSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ADBDOSWP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__AFCHKSTK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__FHEAP\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__FPSIGNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__QCZRINIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__UMASKVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "___ADBEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_ETEXT\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUEVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ACFINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ACMDSEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__AENVSEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__AINTDIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__CINTDIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__DATASEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ENVIRON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__FPRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__OSMAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__OSMINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__SPAWNVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B_ULVARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0DBDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAR_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STKHQQ\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ACMDLN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ASEGHI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ASEGLO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ASIZDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ATOPSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__CHKSTK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__EXECVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__FPMATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__FPTRAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__OSMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__PGMPTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__PSPADR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5PPPPP+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7PPPPP+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAR_BSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DATA\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_EXIT\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MAIN\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STKHQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__BHEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__CEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__NFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__OSERR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "___ARGC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "___ARGV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERR\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIARQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FICRQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIDRQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIERQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FISRQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIWRQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FJARQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FJCRQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FJSRQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSHHUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSP\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQRVW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RQQ\0FI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RQQ\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0FAR_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UBHTCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMSSEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_EDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ERRNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K\0__A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0__A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0__A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEG\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0__C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ULL\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VE\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__FAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AC\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PQRW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0SE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U8XZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ZYX"
+    CaseSensitive: false

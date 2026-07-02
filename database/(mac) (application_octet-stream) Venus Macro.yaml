@@ -1,0 +1,83 @@
+Name: Venus Macro
+Description: GUI DOS word processor.
+FileNameExtensions: ["mac"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x06MACROS\x05Scrap4unit ;\rinterface\ruses ;\rimplementation\r{begin}\rend.\r\x1AIndent one line two spaces\b\0G  \0P\0G\x1CUnindent one line two spaces\b\0G\0S\0S\0P\x0FProcedure shell0procedure ;\r  {-}\r\0K\0Kbegin {}\rend; {}\0H\0H\0H\0O\0K\x0EFunction shell2function :;\r  {-}\r\0K\0Kbegin {}\rend; {}\0H\0H\0H\0O\0K\0K\rProgram shell5program ;\r  {-}\r\0K\0Ktype\rvar\rbegin\rend.\0H\0H\0H\0H\0H\0O\0K\nUnit shellJunit ;\rinterface\ruses ;\rimplementation\r{begin}\rend.\r\0H\0H\0H\0H\0H\0H\0M\0M\0M\0M\0M\vPrint block\x06\v\x17PRN\r\x1EIndent marked block two spaces\v\x11\r\x10\r\x10\n\r1ln\r Unindent marked block two spaces\v\x11\r\x10\r\x10\n\r2ln\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNINDENT MARKED BLOCK TWO SPACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDENT MARKED BLOCK TWO SPACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNINDENT ONE LINE TWO SPACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDENT ONE LINE TWO SPACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCEDURE SHELL0PROCEDURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNCTION SHELL2FUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0H\0H\0H\0H\0H\0M\0M\0M\0M\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM SHELL5PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END.\0H\0H\0H\0H\0H\0O\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT SHELLJUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPLEMENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{}\0H\0H\0H\0O\0K\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{}\0H\0H\0H\0O\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K\0KBEGIN {}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRAP4UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G  \0P\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G\0S\0S\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K\0KTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{BEGIN}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACROS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USES"
+    CaseSensitive: false

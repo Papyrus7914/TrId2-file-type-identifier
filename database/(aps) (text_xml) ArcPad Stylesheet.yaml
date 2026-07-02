@@ -1,0 +1,20 @@
+Name: ArcPad Stylesheet
+URL: "http://resources.arcgis.com/en/help/arcpad/10.0/sdk/xml/"
+FileNameExtensions: ["aps"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STYLESHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCPAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

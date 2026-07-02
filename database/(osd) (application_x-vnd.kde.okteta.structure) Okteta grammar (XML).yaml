@@ -1,0 +1,23 @@
+Name: Okteta grammar (XML)
+URL: "http://fileformats.archiveteam.org/wiki/Okteta_grammar_file"
+FileNameExtensions: ["osd"]
+MimeType: application/x-vnd.kde.okteta.structure
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STRUCT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMITIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: 16bit COM FL2COM reader
+URL: "http://fileformats.archiveteam.org/wiki/FL2COM"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 3
+    AsciiString: "FL2COM  "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(C)C.P.WHITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGUP PGDN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FL2COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "87-9"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOME"
+    CaseSensitive: false

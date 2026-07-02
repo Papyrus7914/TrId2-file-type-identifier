@@ -1,0 +1,19 @@
+Name: X-Plane Draped Polygon
+URL: "http://developer.x-plane.com/?article=draped-polygon-polfac-file-format-specification"
+FileNameExtensions: ["pol"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\n850\nDRAPED_POLYGON\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DRAPED_POLYGON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false

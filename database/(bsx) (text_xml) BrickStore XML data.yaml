@@ -1,0 +1,26 @@
+Name: BrickStore XML data
+URL: "http://www.brickforge.de/software/brickstore/"
+FileNameExtensions: ["bsx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BRICKSTOREXML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMTYPEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVENTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMID"
+    CaseSensitive: false

@@ -1,0 +1,22 @@
+Name: Adobe FontList
+FileNameExtensions: ["lst"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%!Adobe-FontList "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIRECTORYHANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTLINEFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%BEGINFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%ENDFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTTYPE"
+    CaseSensitive: false

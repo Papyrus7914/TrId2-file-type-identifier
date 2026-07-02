@@ -1,0 +1,11 @@
+Name: Visual Basic 3 source (tokenized)
+URL: "https://en.wikipedia.org/wiki/Visual_Basic"
+FileNameExtensions: ["bas"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                            _           _           \t                                        \v          \b    \n
+    Bytes: [0xFC, 0x05, 0x02, 0x00, 0x0F, 0x00, 0x5F, 0x01, 0x5F, 0x01, 0x09, 0x00, 0x01, 0x02, 0x03, 0x04, 0x06, 0x0B, 0x05, 0x08, 0x0A]
+  - Pos: 27
+    AsciiString: "\0\0\x1A"
+    CaseSensitive: true

@@ -1,0 +1,14 @@
+Name: Pegasus JPEG bitmap
+URL: "http://fileformats.archiveteam.org/wiki/Pegasus_PIC"
+FileNameExtensions: ["jpg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                            J     F     I     F
+    Bytes: [0xFF, 0xD8, 0xFF, 0xE0, 0x00, 0x10, 0x4A, 0x46, 0x49, 0x46, 0x00, 0x01]
+  - Pos: 18
+    AsciiString: "\0\0\xFF\xE1\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "PIC\0"
+    CaseSensitive: true

@@ -1,0 +1,15 @@
+Name: Space Engineers Compressed Blueprint
+Description: Lower numbers are obsoletes versions.
+URL: "https://en.wikipedia.org/wiki/Space_Engineers"
+FileNameExtensions: ["sbcb5", "sbcb1", "sbcb2", "sbcb3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    4
+    Bytes: [0xEA, 0xC2, 0x34]
+  - Pos: any
+    AsciiString: "MYOBJECTBUILDER_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINITION"
+    CaseSensitive: false

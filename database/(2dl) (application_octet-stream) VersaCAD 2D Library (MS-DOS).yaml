@@ -1,0 +1,14 @@
+Name: VersaCAD 2D Library (MS-DOS)
+URL: "https://www.versacad.com/"
+FileNameExtensions: ["2dl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\b4"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTES"
+    CaseSensitive: false

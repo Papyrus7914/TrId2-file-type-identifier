@@ -1,0 +1,25 @@
+Name: IMS Content Package
+URL: "http://en.wikipedia.org/wiki/Scorm"
+FileNameExtensions: ["ims"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "imsmanifest.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMSMANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMSPAGE.HTMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEMES.CSSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHARED"
+    CaseSensitive: false

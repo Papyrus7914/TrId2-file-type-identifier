@@ -1,0 +1,11 @@
+Name: SSH-ecdsa Public key
+URL: "https://www.rfc-editor.org/rfc/rfc5656#section-6.2"
+FileNameExtensions: ["pub"]
+MimeType: text/x-ssh-public-key
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ecdsa-sha2-nistp"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ECDSA-SHA2-NISTP"
+    CaseSensitive: false

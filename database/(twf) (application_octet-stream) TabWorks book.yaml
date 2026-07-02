@@ -1,0 +1,39 @@
+Name: TabWorks book
+Description: Windows replacement shell by XSoft.
+URL: "https://en.wikipedia.org/wiki/TabWorks"
+FileNameExtensions: ["twf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\"Class Book\"<"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\x04BOOK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLASS IDXPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS TOCPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS IDXTAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS TOCTAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS BOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS TAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false

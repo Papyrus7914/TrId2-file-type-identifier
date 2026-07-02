@@ -1,0 +1,12 @@
+Name: Vermont Database Corporation database
+URL: "http://www.stowe8miler.org/mymail.htm"
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!@DB V("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERMONT DATABASE CORP."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT(C)"
+    CaseSensitive: false

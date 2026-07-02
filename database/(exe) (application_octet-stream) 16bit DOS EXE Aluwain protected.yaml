@@ -1,0 +1,30 @@
+Name: 16bit DOS EXE Aluwain protected
+Description: Protector by Tequila, The Temple of Sin!
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 18
+    Bytes: [0xFF, 0xFF]
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "aLuWaIn!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALUWAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQRW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".04F"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Amiga bitmap Font
+URL: "http://fileformats.archiveteam.org/wiki/Amiga_bitmap_font"
+FileNameExtensions: ["font"]
+MimeType: font/x-amiga-font
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x0F\0\0"
+    CaseSensitive: true
+  - Pos: 240
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true

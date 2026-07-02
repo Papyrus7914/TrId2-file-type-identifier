@@ -1,0 +1,11 @@
+Name: SymbOS Printer Daemon Driver
+URL: "https://www.symbos.org/"
+FileNameExtensions: ["drv"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Driver;"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END"
+    CaseSensitive: false

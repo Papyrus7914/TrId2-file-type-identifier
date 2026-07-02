@@ -1,0 +1,33 @@
+Name: PSF1 Playstation Sound Format rip (Mini)
+Description: Contains ripped code + audio data.
+URL: "http://fileformats.archiveteam.org/wiki/PSF1"
+FileNameExtensions: ["minipsf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSF\x01\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 16
+    #        x
+    Bytes: [0x78, 0xDA]
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PSFLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LIB"
+    CaseSensitive: false

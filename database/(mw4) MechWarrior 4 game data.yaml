@@ -1,0 +1,25 @@
+Name: MechWarrior 4 game data
+URL: "http://en.wikipedia.org/wiki/MechWarrior_%28video_games%29"
+FileNameExtensions: ["mw4"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#VBD"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "Resource\\Variants"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "{SUBSYSTEM}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICUEDBDII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{MECH}"
+    CaseSensitive: false

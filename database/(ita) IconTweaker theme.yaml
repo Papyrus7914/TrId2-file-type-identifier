@@ -1,0 +1,20 @@
+Name: IconTweaker theme
+Description: IconTweaker is a freeware application for customizing Windows icons.
+URL: "http://joost.endoria.net/icontweaker/home/"
+FileNameExtensions: ["ita"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DOWNLOAD ICONTWEAKER AT WWW.ICONTWEAKER.COM TO APPLY THIS THEME TO YOUR SYSTEM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0ICONTWEAKER 1.0 THEME ARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ITTSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ICLSD"
+    CaseSensitive: false

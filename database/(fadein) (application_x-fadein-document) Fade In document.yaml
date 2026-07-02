@@ -1,0 +1,14 @@
+Name: Fade In document
+URL: "https://www.fadeinpro.com/"
+FileNameExtensions: ["fadein"]
+MimeType: application/x-fadein-document
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "document.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCUMENT.XMLPK"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: XMind Workbook
+URL: "http://www.xmind.net"
+FileNameExtensions: ["xmind"]
+MimeType: application/x-xmind
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false

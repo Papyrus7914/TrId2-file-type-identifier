@@ -1,0 +1,18 @@
+Name: Cobra Adress Plus Format (generic)
+Description: Last letter of the extension varies.
+URL: "https://adress-plus.cobra.de/"
+FileNameExtensions: ["fm-"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "obra Adress P"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: ", Format-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COBRA ADRESS PLUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT-"
+    CaseSensitive: false

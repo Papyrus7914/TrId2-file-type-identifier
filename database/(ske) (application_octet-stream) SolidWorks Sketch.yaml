@@ -1,0 +1,17 @@
+Name: SolidWorks Sketch
+URL: "https://en.wikipedia.org/wiki/SolidWorks"
+FileNameExtensions: ["ske"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\x04\0\0\xFF\xFF\x01\0\b\0sgSketch"
+    CaseSensitive: true
+  - Pos: 103
+    AsciiString: "sgLineHandle"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SGLINEHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SGSKETCH"
+    CaseSensitive: false

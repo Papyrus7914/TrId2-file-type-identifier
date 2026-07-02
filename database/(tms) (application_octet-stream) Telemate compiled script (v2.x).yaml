@@ -1,0 +1,11 @@
+Name: Telemate compiled script (v2.x)
+Description: Telemate is a DOS communication program (used for example for accessing a BBS using a modem).
+URL: "https://www.thealmightyguru.com/Wiki/index.php?title=Telemate"
+FileNameExtensions: ["tms"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TMScript 2."
+    CaseSensitive: true
+  - Pos: 13
+    Bytes: [0x1A]

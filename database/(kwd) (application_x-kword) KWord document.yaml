@@ -1,0 +1,26 @@
+Name: KWord document
+URL: "http://www.koffice.org/kword/"
+FileNameExtensions: ["kwd"]
+MimeType: application/x-kword
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DOCUMENTINFO.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINDOC.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-KWORDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE"
+    CaseSensitive: false

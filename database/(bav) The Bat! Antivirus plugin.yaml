@@ -1,0 +1,79 @@
+Name: The Bat! Antivirus plugin
+URL: "http://www.ritlabs.com"
+FileNameExtensions: ["bav"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BAV_FILECHECKING\0BAV_GET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAV_CUREFILE\0BAV_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEHANDLEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAV_GETVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAV_GETSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAV_CHECKFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADVAPI32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNINITIALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGEBOXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAV_GETNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS"
+    CaseSensitive: false

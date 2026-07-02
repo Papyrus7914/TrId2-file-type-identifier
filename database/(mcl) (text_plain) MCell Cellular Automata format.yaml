@@ -1,0 +1,23 @@
+Name: MCell Cellular Automata format
+URL: "http://psoup.math.wisc.edu/mcell/ca_files_formats.html"
+FileNameExtensions: ["mcl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#MCell "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRAP"
+    CaseSensitive: false

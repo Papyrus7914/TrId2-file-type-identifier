@@ -1,0 +1,17 @@
+Name: Pro Pixel Demo Image
+URL: "https://archive.org/details/pro-pixel-2-d"
+FileNameExtensions: ["pp2d"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PP2D"
+    CaseSensitive: false

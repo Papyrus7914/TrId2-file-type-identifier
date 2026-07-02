@@ -1,0 +1,41 @@
+Name: Wave/MIDI composition
+URL: "https://winworldpc.com/product/roland-audio-tools/1993"
+FileNameExtensions: ["wam"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WAMIvers"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "WAMIwmid"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WBNK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WMAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WMSC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WMSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WSNP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWSE"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Doom SaveGame
+URL: "https://en.wikipedia.org/wiki/Doom_(1993_video_game)"
+FileNameExtensions: ["dsg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 24
+    AsciiString: "version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

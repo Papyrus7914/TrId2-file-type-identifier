@@ -1,0 +1,18 @@
+Name: Intergraph Raster bitmap
+Description: DataTypeCode at offset 4 indicates format, depth of the pixel data, used compression and file name extension
+URL: "http://fileformats.archiveteam.org/wiki/Intergraph_Raster"
+FileNameExtensions: ["itg", "ing", "cot", "cit", "rgb", "rle"]
+MimeType: image/x-intergraph
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\b\t\xFE"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 508
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

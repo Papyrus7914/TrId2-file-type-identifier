@@ -1,0 +1,14 @@
+Name: Gemsylk graph
+Description: Business graphic software for Amiga.7
+FileNameExtensions: ["svw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[VERSION]ID/PGS/A."
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "/AMIGA\n[DIM]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AMIGA"
+    CaseSensitive: false

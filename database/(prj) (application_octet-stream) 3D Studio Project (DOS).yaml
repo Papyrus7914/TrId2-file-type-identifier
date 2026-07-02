@@ -1,0 +1,35 @@
+Name: 3D Studio Project (DOS)
+URL: "https://en.wikipedia.org/wiki/Autodesk_3ds_Max"
+FileNameExtensions: ["prj"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        =
+    Bytes: [0x3D, 0xC2]
+  - Pos: 13
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MATLIBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3DS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPS"
+    CaseSensitive: false

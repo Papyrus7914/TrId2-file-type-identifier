@@ -1,0 +1,47 @@
+Name: Live2D Cubism 3 motion data
+URL: "https://www.live2d.com/en/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  \"Version\": 3,"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOTALSEGMENTCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTALUSERDATASIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTALPOINTCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERDATACOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false

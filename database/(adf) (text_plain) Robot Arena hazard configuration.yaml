@@ -1,0 +1,11 @@
+Name: Robot Arena hazard configuration
+URL: "https://en.wikipedia.org/wiki/Robot_Arena#Robot_Arena"
+FileNameExtensions: ["adf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ADF\r\n\r\n[Hazard Configuration]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HAZARDPOINT01"
+    CaseSensitive: false

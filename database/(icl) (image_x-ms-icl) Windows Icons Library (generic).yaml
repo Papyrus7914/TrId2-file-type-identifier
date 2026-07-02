@@ -1,0 +1,32 @@
+Name: Windows Icons Library (generic)
+URL: "http://fileformats.archiveteam.org/wiki/Icon_library"
+FileNameExtensions: ["icl"]
+MimeType: image/x-ms-icl
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true

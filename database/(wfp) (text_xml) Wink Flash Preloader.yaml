@@ -1,0 +1,53 @@
+Name: Wink Flash Preloader
+URL: "https://www.debugmode.com/wink.html"
+FileNameExtensions: ["wfp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<FlashPreloader>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROGRESSBARBACKGROUNDCOLOUR VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESSBAROUTLINECOLOUR VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWPROGRESSBAROUTLINE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKIMAGEFILENAME VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESSBARCOLOUR VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMOOTHPROGRESSBAR VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESSBARRECT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWPROGRESSBAR VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWTEXTLABEL VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWPERCENT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTCOLOUR VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSTRING VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTFONT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTRECT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADING"
+    CaseSensitive: false

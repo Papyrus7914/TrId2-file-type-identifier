@@ -1,0 +1,41 @@
+Name: Alan 2 Code
+Description: Alan stand for Adventure LANguage.
+URL: "https://www.alanif.se"
+FileNameExtensions: ["acd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x02]
+  - Pos: 4
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EVERYTHING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXAMINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESTORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCEPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DROP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE"
+    CaseSensitive: false

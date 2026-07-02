@@ -1,0 +1,11 @@
+Name: Visual Tools Spreadsheet
+Description: Format used by Formula One and various other Windows 3.x spreadsheet based on it.
+FileNameExtensions: ["vts"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\t\x04\x06\0\0\0\x10\0\0\0\xF7~\x18\0\x92\0\xFF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

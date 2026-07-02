@@ -1,0 +1,14 @@
+Name: 16bit COM executable LDIFF SFX (v2.0)
+URL: "http://fileformats.archiveteam.org/wiki/LDArc_and_LDIFF"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1021
+    AsciiString: "SFX by LDiff"
+    CaseSensitive: true
+  - Pos: 1181
+    AsciiString: "LZ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SFX BY LDIFF"
+    CaseSensitive: false

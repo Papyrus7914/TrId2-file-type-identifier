@@ -1,0 +1,11 @@
+Name: Telvox CODEC (compressed) archive
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "v\xFF1"
+    CaseSensitive: true
+  - Pos: 5
+    #              ?
+    Bytes: [0x15, 0x3F]
+  - Pos: 9
+    #              ?
+    Bytes: [0x15, 0x3F]

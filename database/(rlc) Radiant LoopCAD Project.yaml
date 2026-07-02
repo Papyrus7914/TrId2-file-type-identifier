@@ -1,0 +1,21 @@
+Name: Radiant LoopCAD Project
+URL: "http://www.loopcad.com"
+FileNameExtensions: ["rlc"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x93, 0xB2, 0x00, 0x00]
+  - Pos: 7
+    AsciiString: "\0\x03\0\f\0\xED\x1F\xC3\xE7(\0\0\0o\0r\0i\0g\0i\0n\0a\0l\0s\0i\0z\0e\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0\x11 \x0E\0oP$\xE4\xD8\xFF\xFF\xFFc\0o\0m\0p\0r\0e\0s\0s\0e\0d\0d\0a\0t\0a\0\x01\0"
+    CaseSensitive: true
+  - Pos: 93
+    AsciiString: "\0\0\0\0\0x\x9C"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(\0\0\0O\0R\0I\0G\0I\0N\0A\0L\0S\0I\0Z\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0P\0R\0E\0S\0S\0E\0D\0D\0A\0T\0A"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: Morpheus layout - project
+URL: "http://www.morpheussoftware.net"
+FileNameExtensions: ["aml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ARKS_MORPHEUS_LAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MORPHS"
+    CaseSensitive: false

@@ -1,0 +1,73 @@
+Name: Fattz Announcement
+URL: "http://www.kencast.com/specs.html"
+FileNameExtensions: ["fza"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<FazztAnnouncement version='1.0'>\r\n<entry name='EonZNetwork\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SFV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTION METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAZZTANNOUNCEMENT VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEFETCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FZAINFO METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMING SYNCHRONISATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSPONDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWOFISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: Matroska Video stream
+Description: Matroska is an extensible opensource A/V container
+URL: "http://www.matroska.org"
+FileNameExtensions: ["mkv"]
+MimeType: video/x-matroska
+DetectionPatterns:
+  - Pos: 0
+    #              E
+    Bytes: [0x1A, 0x45, 0xDF, 0xA3]
+  - Pos: any
+    AsciiString: "MATROSKA"
+    CaseSensitive: false

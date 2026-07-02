@@ -1,0 +1,20 @@
+Name: Softree Terrain
+URL: "https://www.softree.com/"
+FileNameExtensions: ["terx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Terrain1.te"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TERRAIN1.TE1PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERRAIN1.TERPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERRAIN1.TLTPK"
+    CaseSensitive: false

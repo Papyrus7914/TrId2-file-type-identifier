@@ -1,0 +1,27 @@
+Name: RichView Format (Unicode)
+Description: The native ascii and binary unicode format as used by TRichEdit based products.
+URL: "http://www.trichview.com/help/index.html?rvf_specification.html"
+FileNameExtensions: ["rvf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-8 1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

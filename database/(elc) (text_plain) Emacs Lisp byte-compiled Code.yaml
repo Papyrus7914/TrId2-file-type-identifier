@@ -1,0 +1,14 @@
+Name: Emacs Lisp byte-compiled Code
+URL: "https://en.wikipedia.org/wiki/Emacs_Lisp#Byte_code"
+FileNameExtensions: ["elc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ") (BYTE-CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DEFUN"
+    CaseSensitive: false

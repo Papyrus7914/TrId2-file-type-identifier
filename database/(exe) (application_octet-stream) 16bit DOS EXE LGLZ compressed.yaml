@@ -1,0 +1,18 @@
+Name: 16bit DOS EXE LGLZ compressed
+Description: LGLZ is a DOS COM/EXE compressor (C) 1994-97 George Lyapko.
+URL: "https://en.wikipedia.org/wiki/Executable_compression#DOS_executable"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "LGL"
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "HJy"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KHJY"
+    CaseSensitive: false

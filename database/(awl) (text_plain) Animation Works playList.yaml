@@ -1,0 +1,32 @@
+Name: Animation Works playList
+URL: "https://archive.org/details/TNM_Animation_Works_software_-_Gold_Disk_20170827_0311"
+FileNameExtensions: ["awl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[awmlist]\r\n0="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DISABLEINPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLACKONLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLSCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*MOVIE*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".AWM"
+    CaseSensitive: false

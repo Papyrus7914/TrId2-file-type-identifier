@@ -1,0 +1,12 @@
+Name: Winamp EQ Settings File
+URL: "http://www.winamp.com/"
+FileNameExtensions: ["eqf", "q1"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Winamp EQ library file v"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 27
+    Bytes: [0x1A]

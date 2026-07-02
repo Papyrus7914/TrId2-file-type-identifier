@@ -1,0 +1,17 @@
+Name: PLBM Games Rhythm loop Data base
+URL: "http://plbm.com/oldsite/index2.htm"
+FileNameExtensions: ["drl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Rhythm loop database file\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGINRL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDRL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_END"
+    CaseSensitive: false

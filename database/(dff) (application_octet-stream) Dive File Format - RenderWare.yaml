@@ -1,0 +1,24 @@
+Name: Dive File Format - RenderWare
+Description: Used in Sub Culture.
+URL: "https://en.wikipedia.org/wiki/RenderWare"
+FileNameExtensions: ["dff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "pmlc"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "trts"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LMRF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LTAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSLM"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: Process Monitor Log (native format)
+URL: "http://technet.microsoft.com/en-us/sysinternals"
+FileNameExtensions: ["pml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PML_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "M\0I\0C\0R\0O\0S\0O\0F\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0I\0N\0D\0O\0W\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0D\0L\0L"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: asar Electron Archive
+URL: "https://github.com/electron/asar"
+FileNameExtensions: ["asar"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0{\"files\":{\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

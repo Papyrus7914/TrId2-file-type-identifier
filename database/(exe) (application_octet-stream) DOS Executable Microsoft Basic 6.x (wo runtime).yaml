@@ -1,0 +1,115 @@
+Name: DOS Executable Microsoft Basic 6.x (w/o runtime)
+URL: "https://en.wikipedia.org/wiki/QuickBASIC#History"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1E\0\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 84
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 88
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 92
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 100
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 104
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 116
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 120
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 124
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "O ERROR$INVALID FORMAT$OUT OF MEMORY$DOS MEMORY-ARENA ERROR$INCOMPATIBLE EXTENDED RUN-TIME MODULE$."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MEMORY ALLOCATION ERROR$CANNOT FIND FILE IN PATH$DISK I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$INPUT RUN-TIME MODULE PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN LOADING RTM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO RETURN TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_FILE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R.EXE - $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$BRUN6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false

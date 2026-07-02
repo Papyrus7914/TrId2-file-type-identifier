@@ -1,0 +1,26 @@
+Name: PlayStation 2 BD/HD Audio
+URL: "https://wiki.xentax.com/index.php/PlayStation_2_BD_HD_Audio"
+FileNameExtensions: ["bd", "hd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IECSsreV"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "IECSdaeH"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IECSDAEH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IECSGORP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IECSIGAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IECSLPMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IECSTESS"
+    CaseSensitive: false

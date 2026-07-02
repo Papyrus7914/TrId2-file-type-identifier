@@ -1,0 +1,62 @@
+Name: FAR TC.Packer PlugIn
+Description: FAR Manager is a program for managing files and archives in Windows operating systems (9x/Me/NT/2000/XP).
+URL: "http://farmanager.com/"
+FileNameExtensions: ["wcx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 69
+    #              \t          !                 L           !
+    Bytes: [0xB4, 0x09, 0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: any
+    AsciiString: "SETPROCESSDATAPROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETCHANGEVOLPROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPACKERCAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEFILEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: General eXchange Format video
+URL: "http://en.wikipedia.org/wiki/General_Exchange_Format"
+FileNameExtensions: ["gxf"]
+MimeType: application/gxf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\x01\xBC"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0\0\0\xE1\xE2"
+    CaseSensitive: true

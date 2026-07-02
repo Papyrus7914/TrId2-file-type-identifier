@@ -1,0 +1,33 @@
+Name: Microsoft DirectMusic Segments Type
+Description: SGT files are created with Microsoft DirectMusic Producer.
+URL: "https://en.wikipedia.org/wiki/DirectMusic"
+FileNameExtensions: ["sgt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "DMSGsegh"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DMSGSEGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMTKTRKH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRKLRIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

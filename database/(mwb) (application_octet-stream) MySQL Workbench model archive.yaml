@@ -1,0 +1,11 @@
+Name: MySQL Workbench model archive
+URL: "https://en.wikipedia.org/wiki/MySQL_Workbench"
+FileNameExtensions: ["mwb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DOCUMENT.MWB.XMLPK"
+    CaseSensitive: false

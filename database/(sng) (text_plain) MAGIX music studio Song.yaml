@@ -1,0 +1,26 @@
+Name: MAGIX music studio Song
+URL: "https://en.wikipedia.org/wiki/Magix"
+FileNameExtensions: ["sng"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "s"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "A: "
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "B: "
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: "C: "
+    CaseSensitive: true
+  - Pos: 532
+    AsciiString: "00:00:00:00"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MIDI MAPPER"
+    CaseSensitive: false

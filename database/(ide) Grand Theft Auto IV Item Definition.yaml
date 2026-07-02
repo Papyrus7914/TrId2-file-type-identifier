@@ -1,0 +1,19 @@
+Name: Grand Theft Auto IV Item Definition
+URL: "http://en.wikipedia.org/wiki/Grand_Theft_Auto_(video_game)"
+FileNameExtensions: ["ide"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "objs\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "2DFX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOBJ"
+    CaseSensitive: false

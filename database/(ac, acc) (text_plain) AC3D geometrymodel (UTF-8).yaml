@@ -1,0 +1,14 @@
+Name: AC3D geometry/model (UTF-8)
+URL: "https://en.wikipedia.org/wiki/AC3D"
+FileNameExtensions: ["ac", "acc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBFAC3D"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLY"
+    CaseSensitive: false

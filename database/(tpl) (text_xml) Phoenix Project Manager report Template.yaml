@@ -1,0 +1,89 @@
+Name: Phoenix Project Manager report Template
+URL: "https://www.phoenixcpm.com/"
+FileNameExtensions: ["tpl"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\">\n<html>\n<head>\n\t<title>{{project_title:h}} - "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REPORT-DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{{PROJECT_FINISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{{PROJECT_START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{{PROJECT_TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT FINISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTD HTML 4.01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORT-TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLPADDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLSPACING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{{DATA_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRICT.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{{RUN_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TD ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTML4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false

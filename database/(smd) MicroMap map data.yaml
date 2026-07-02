@@ -1,0 +1,77 @@
+Name: MicroMap map data
+Description: Highly compressed vector map format, used by MapDroyd.
+URL: "http://www.mapdroyd.com/"
+FileNameExtensions: ["smd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SMD"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "version\x03"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\tprecision"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "bounds"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OSM ADMIN_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM TRACKTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM WATERWAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM RELIGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM BOUNDARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM RAILWAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM TOURISM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM AEROWAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM AMENITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM SERVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM BICYCLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM NATURAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM LEISURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM LANDUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM BARRIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM PLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM FOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSM SHOP"
+    CaseSensitive: false

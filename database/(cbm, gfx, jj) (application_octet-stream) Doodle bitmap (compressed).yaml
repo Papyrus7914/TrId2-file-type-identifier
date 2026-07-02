@@ -1,0 +1,9 @@
+Name: Doodle bitmap (compressed)
+Description: C64 graphic format.
+URL: "https://www.c64-wiki.com/wiki/Doodle"
+FileNameExtensions: ["cbm", "gfx", "jj"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\\\xFE"
+    CaseSensitive: true

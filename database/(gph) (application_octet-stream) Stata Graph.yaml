@@ -1,0 +1,182 @@
+Name: Stata Graph
+URL: "https://en.wikipedia.org/wiki/Stata"
+FileNameExtensions: ["gph"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "StataFileTM:00001:01000:LiveGPH: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".CAPTION.STYLE.EDITSTYLE BOX_ALIGNMENT("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") STYLE(SCHEME R1TITLE) ORIENTATION("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICAL)) RIGHTOF PLOTREGION1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") STYLE(SCHEME SUBTITLE) )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SUBTITLE.STYLE.EDITSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INSERT (PLOTREGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SIZED_TEXTBOX.NEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INSERT (SUBTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INSERT (TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INSERT (NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PLOTREGION1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAFILE_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CATEGORIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINSERIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINSERSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLOTREGIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATAFILETM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SETSCHEME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WEIGHT_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DTA_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DTA_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TYPE.SET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDSERIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDSERSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USESCHEME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DECLARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITCOPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MEDIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIVEGPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEME("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEGEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RING("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PLOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".REF"
+    CaseSensitive: false

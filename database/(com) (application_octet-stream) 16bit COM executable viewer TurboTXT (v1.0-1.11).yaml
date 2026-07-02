@@ -1,0 +1,13 @@
+Name: 16bit COM executable viewer TurboTXT (v1.0-1.11)
+URL: "http://fileformats.archiveteam.org/wiki/TurboTXT"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 9
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PGUP  PGDN  END  HOME   ESC TO EXIT"
+    CaseSensitive: false

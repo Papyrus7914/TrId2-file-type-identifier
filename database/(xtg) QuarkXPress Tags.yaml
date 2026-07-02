@@ -1,0 +1,28 @@
+Name: QuarkXPress Tags
+URL: "http://www.quark.com"
+FileNameExtensions: ["xtg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<v"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "><e"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: ">"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IONS"
+    CaseSensitive: false

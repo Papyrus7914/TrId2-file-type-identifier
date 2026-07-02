@@ -1,0 +1,14 @@
+Name: AmiCAD keys/macro definition (v2.0)
+Description: Vector schematic drawing tool for Amiga by Roland Florac.
+FileNameExtensions: ["keys"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AmiCADKeys 2.0\n[Macro]\nKey="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDMACRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND"
+    CaseSensitive: false

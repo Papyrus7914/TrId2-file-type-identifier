@@ -1,0 +1,14 @@
+Name: AUPEC encoded audio
+Description: Auckland University Perceptual Entropy Coder By Mark Vinton
+URL: "http://www.rjamorim.com/rrw/aupec.html"
+FileNameExtensions: ["mv3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VARg"
+    CaseSensitive: true
+  - Pos: 5
+    Bytes: [0x01]
+  - Pos: 7
+    #        D
+    Bytes: [0x44, 0xAC, 0x02]

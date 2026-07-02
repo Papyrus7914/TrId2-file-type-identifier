@@ -1,0 +1,29 @@
+Name: ERI (Lashade Entis) raster graphics
+URL: "http://fileformats.archiveteam.org/wiki/ERI_(Lashade_Entis)"
+FileNameExtensions: ["eri"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Entis\x1A"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "Entis Rasterized Image"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENTIS RASTERIZED IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEINFD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEFRM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAM"
+    CaseSensitive: false

@@ -1,0 +1,73 @@
+Name: MIDIPAK audio driver
+Description: Audio drivers for DOS by John Ratcliff.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "MIDPAK\r\n\0MIDI Sound Package\0\r\nThe Audio Solution, Copyright (c) 1992\r\nWritten by John W. Ratcliff\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$UNABLE TO INSTALL SOUND DRIVER INTERUPT VECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MUSIC BUFFER VALID BETWEEN 1 AND 64K ONLY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$THE SOUND DRIVER IS ALREADY RESIDENT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDI SOUND PACKAGE - COPYRIGHT (C) 199"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$UNABLE TO INITIALIZE AUDIO HARDWARE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MILES DESIGN INC. MIDI MUSIC DRIVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$UNABLE TO REGISTER MUSIC DRIVER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDPAK.ADV\0MIDPAK.AD\0MIDPAK.XMI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DRIVER IS NOT AN XMI DRIVER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$UNIDENTIFIED BOOTSTRAP ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITTEN BY JOHN W. RATCLIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO DEFINE SOUND HARDWARE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$INVALID COMMAND LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND DRIVER UNLOADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DEFAULT TIMBRE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE AUDIO SOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$SOUND DRIVER ISN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT FOUND."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IN MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN SETM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDIKR"
+    CaseSensitive: false

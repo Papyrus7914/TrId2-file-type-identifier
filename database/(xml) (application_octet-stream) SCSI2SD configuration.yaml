@@ -1,0 +1,65 @@
+Name: SCSI2SD configuration
+URL: "http://www.codesrc.com/mediawiki/index.php/SCSI2SD"
+FileNameExtensions: ["xml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<SCSI2SD>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEVICETYPEMODIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADSPERCYLINDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTORSPERTRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTESPERSECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCSITARGET ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDSECTORSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITATTENTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLESCSI2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCSISECTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODESRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUIRKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACHE"
+    CaseSensitive: false

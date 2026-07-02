@@ -1,0 +1,9 @@
+Name: Dzip compressed archive (v1.x)
+Description: A file compressor by Nolan Pflug, Stefan Schwoon and others.
+URL: "http://speeddemosarchive.com/dzip/"
+FileNameExtensions: ["dz"]
+MimeType: application/x-dzip
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DZ\x01"
+    CaseSensitive: true

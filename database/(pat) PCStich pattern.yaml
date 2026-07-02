@@ -1,0 +1,16 @@
+Name: PCStich pattern
+URL: "http://www.pcstitch.com"
+FileNameExtensions: ["pat"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PCStitch "
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: " Pattern File "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PATTERN FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCSTITCH"
+    CaseSensitive: false

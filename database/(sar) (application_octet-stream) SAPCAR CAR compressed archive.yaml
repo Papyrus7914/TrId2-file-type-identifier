@@ -1,0 +1,9 @@
+Name: SAPCAR CAR compressed archive
+Description: ZIP like archiver for SAP.
+URL: "http://fileformats.archiveteam.org/wiki/SAR"
+FileNameExtensions: ["sar"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# CAR archive header"
+    CaseSensitive: true

@@ -1,0 +1,18 @@
+Name: Win 3.x Installed TrueType Font
+FileNameExtensions: ["fot"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 78
+    AsciiString: "This is a TrueType font, not a program."
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "NE"
+    CaseSensitive: true
+  - Pos: 237
+    AsciiString: "FONTDIR"
+    CaseSensitive: true
+  - Pos: 1162
+    AsciiString: "Windows! Windows! Windows!"
+    CaseSensitive: true

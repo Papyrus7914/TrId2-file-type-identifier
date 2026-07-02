@@ -1,0 +1,32 @@
+Name: COLLADA Digital Asset Document (UTF-16 LE)
+URL: "https://www.khronos.org/collada/"
+FileNameExtensions: ["dae"]
+MimeType: model/vnd.collada+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFE<\0?\0x\0m\0l\0 \0v\0e\0r\0s\0i\0o\0n\0=\0\"\01\0.\00\0\"\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "W\0W\0W\0.\0C\0O\0L\0L\0A\0D\0A\0.\0O\0R\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0L\0A\0D\0A\0S\0C\0H\0E\0M\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0S\0T\0A\0N\0C\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0E\0N\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X\0M\0L\0N\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0T\0T\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0A\0M\0E"
+    CaseSensitive: false

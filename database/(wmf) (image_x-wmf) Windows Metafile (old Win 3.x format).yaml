@@ -1,0 +1,9 @@
+Name: Windows Metafile (old Win 3.x format)
+Description: Metafile from old 16bit Windows versions have a different header structure. The format had to be changed with Win32 due to alignment issues.
+URL: "http://en.wikipedia.org/wiki/Windows_Metafile"
+FileNameExtensions: ["wmf"]
+MimeType: image/x-wmf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\t\0"
+    CaseSensitive: true

@@ -1,0 +1,25 @@
+Name: Windows application Manifest (generic)
+FileNameExtensions: ["manifest"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS-MICROSOFT-COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLYIDENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFESTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASM.V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,19 @@
+Name: Text602 printer Driver
+FileNameExtensions: ["dst"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POSUN1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSUN2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KOD"
+    CaseSensitive: false

@@ -1,0 +1,77 @@
+Name: Origin Function Plot
+URL: "https://en.wikipedia.org/wiki/Origin_(software)"
+FileNameExtensions: ["ofp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<Settings NodeID=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETTINGS NODEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR1STFORMULA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRPRESCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAUTORANGE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NADDTOGRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE1 LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR1STPARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR2NDPARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRXCOMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRYCOMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRZCOMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR1STFROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR1STTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRXUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRYUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRZUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BSHOWLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRXLN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRYLN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRZLN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NROWS"
+    CaseSensitive: false

@@ -1,0 +1,583 @@
+Name: FAST input
+Description: FAST is a tool for the analysis of large or even infinite systems.
+FileNameExtensions: ["fst"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "--------------------------------------------------------------------------------"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "------- FAST INPUT FILE --------------------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- ADAMS ---------------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- AERODYN -------------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- BLADE ---------------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- DRIVETRAIN ----------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- ENVIRONMENTAL CONDITIONS --------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- FEATURE FLAGS -------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- FURLING -------------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- INITIAL CONDITIONS --------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- LINEARIZATION CONTROL -----------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- MASS AND INERTIA ----------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- NACELLE-YAW ---------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- NOISE ---------------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- OUTPUT --------------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- ROTOR-TEETER --------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- SIMPLE INDUCTION GENERATOR ------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- SIMULATION CONTROL --------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- THEVENIN-EQUIVALENT INDUCTION GENERATOR -----------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- TIP-BRAKE -----------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- TOWER ---------------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- TURBINE CONFIGURATION -----------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---------------------- TURBINE CONTROL -----------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--------------------------------------------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF FAST INPUT FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TATIONAL ACCELERATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOP DISPLACEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATOR POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATOR SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIP DEFLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RING FORCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATIONAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAMSFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAMSPREP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLADE TIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPNOISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HSSBRMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOISEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTFMMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VS_RTGNSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YAWBRMASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AZIMB1UP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLDGAGND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPAERO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTTORDMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTTORSPR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYNBRKFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FURLFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GBREVERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENTISTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENTISTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HSSBRTQF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NACYINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBLGAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTWGAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERHANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTFMFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHFTGAGL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHFTTILT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIG_PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIG_RTTQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIG_SLPC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIG_SYSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPDGENON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIFIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STTSTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMPRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABDELIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBDEPISP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBDRCOND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBDRCONN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEC_FREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEC_NPOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEC_RRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEC_SRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEETCDMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEETDEFL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEETDMPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEETHSSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEETHSTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEETSSSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEETSSTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THSSBRDP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIDYNBRK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMGENOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMGENON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPITMANE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPITMANS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWFADOF1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWFADOF2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWR2SHFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWRGAGND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWRNODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWSSDOF1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWSSDOF2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYAWMANE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYAWMANS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDSLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSCONTRL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VS_RGN2K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AZIMUTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEARING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BENDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLDFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLPITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECFACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRTRDOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGEDOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAPDOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GBOXEFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GBRATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAVITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HSSBRDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HUBINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HUBMASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NACCMXN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NACCMYN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NACCMZN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NACMASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NACYAWF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCIMUXN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCIMUYN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCIMUZN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OOPDEFL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRECONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSPNELN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEC_RLR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEC_SLR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEC_VLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEETDOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEETMOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIPMASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TORSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOWERHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTDSPFA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTDSPSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTPBRDP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWRFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWRRBHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VS_RTTQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VS_SLPC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YAWDAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YAWNEUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELTA3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E WITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ER AND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ER FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENDOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENEFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HUBRAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPDEFL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTFMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCHF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEC_MR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIPRAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TORQUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPBRDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YAW AN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YAWDOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YAWSPR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YCMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIXED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HUBCM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPCON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYCON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECHO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIND"
+    CaseSensitive: false

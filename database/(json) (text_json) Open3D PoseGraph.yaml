@@ -1,0 +1,23 @@
+Name: Open3D PoseGraph
+URL: "http://www.open3d.org/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POSEGRAPHEDGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSEGRAPHNODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false

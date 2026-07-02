@@ -1,0 +1,21 @@
+Name: MASH script
+Description: Microsoft Agent Scripting Helper.
+URL: "http://fileformats.archiveteam.org/wiki/MASH"
+FileNameExtensions: ["msh"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[MASH Script]\r\nVersion="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LANGUAGEIDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARACTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ACS"
+    CaseSensitive: false

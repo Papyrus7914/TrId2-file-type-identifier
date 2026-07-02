@@ -1,0 +1,65 @@
+Name: World of Warships Replay
+URL: "https://en.wikipedia.org/wiki/World_of_Warships"
+FileNameExtensions: ["wowsreplay"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              2     4
+    Bytes: [0x12, 0x32, 0x34, 0x11]
+  - Pos: any
+    AsciiString: "CLIENTVERSIONFROMEXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENTVERSIONFROMXML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENARIOCONFIGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPDISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERSPERTEAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERVEHICLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCHGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEAMSCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEHICLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHIPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPID"
+    CaseSensitive: false

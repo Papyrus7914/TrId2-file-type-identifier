@@ -1,0 +1,14 @@
+Name: Infinity Engine compressed Tileset
+Description: Infinity Engine TIZ files are TIS files that have been compressed with TISPack for transport in a mod.
+URL: "http://tinyurl.com/cgng44"
+FileNameExtensions: ["tiz"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TIZ0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0TIL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

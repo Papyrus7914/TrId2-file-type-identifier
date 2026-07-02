@@ -1,0 +1,24 @@
+Name: Esri grid (ASCII)
+Description: AKA ARC/INFO ASCII GRID.
+URL: "https://en.wikipedia.org/wiki/Esri_grid"
+FileNameExtensions: ["asc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ncols "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NODATA_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XLLCORNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YLLCORNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NROWS"
+    CaseSensitive: false

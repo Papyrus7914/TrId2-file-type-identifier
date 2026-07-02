@@ -1,0 +1,11 @@
+Name: EZScreen File (v2.x)
+Description: DOS screen designer tool by Micronix Inc.
+FileNameExtensions: ["ezf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EZSCR V2."
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: " EZF\x1A"
+    CaseSensitive: true

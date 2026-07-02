@@ -1,0 +1,12 @@
+Name: Colorado Memory System tape backup
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HEADER FRAME"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "CMS"
+    CaseSensitive: true
+  - Pos: 512
+    AsciiString: "HEADER FRAME"
+    CaseSensitive: true

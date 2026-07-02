@@ -1,0 +1,63 @@
+Name: Biovision Hierarchy character animation format
+Description: Motion Capture data that can be played back in Character Studio.
+URL: "https://en.wikipedia.org/wiki/Biovision_Hierarchy"
+FileNameExtensions: ["bvh"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HIERARCHY"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FRAME TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOINT HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOINT NECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIERARCHY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END SITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT HIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOINT L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOINT R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false

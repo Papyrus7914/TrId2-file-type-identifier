@@ -1,0 +1,49 @@
+Name: SimpleFormat Changeables Graphic
+FileNameExtensions: ["lca"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "nFBaLIST"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "CED"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "cedi"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROTATION\0NEXC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X OFFSET\0NEXC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y OFFSET\0NEXC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X SCALE\0NEXC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y SCALE\0NEXC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CEDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NFBA"
+    CaseSensitive: false

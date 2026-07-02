@@ -1,0 +1,86 @@
+Name: T'SoundSystem Data
+URL: "https://code.google.com/p/tss/"
+FileNameExtensions: ["tsd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "T'SoundSystem\0\0<\0"
+    CaseSensitive: true
+  - Pos: 18
+    #                          ]                                   K                       ^
+    Bytes: [0x93, 0xAA, 0x94, 0x5D, 0x90, 0xED, 0x8A, 0xCD, 0x83, 0x4B, 0x83, 0x8B, 0x81, 0x5E, 0x83]
+  - Pos: 34
+    #              C
+    Bytes: [0x83, 0x43, 0x83]
+  - Pos: 40
+    Bytes: [0x82]
+  - Pos: 42
+    Bytes: [0x82]
+  - Pos: 46
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 84
+    AsciiString: "\f"
+    CaseSensitive: true
+  - Pos: 86
+    AsciiString: "\f"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "\f"
+    CaseSensitive: true
+  - Pos: 104
+    AsciiString: "\f"
+    CaseSensitive: true
+  - Pos: 116
+    AsciiString: "\f"
+    CaseSensitive: true
+  - Pos: 124
+    AsciiString: "\f"
+    CaseSensitive: true
+  - Pos: 126
+    AsciiString: "\f"
+    CaseSensitive: true
+  - Pos: 151
+    AsciiString: "L"
+    CaseSensitive: true
+  - Pos: 171
+    AsciiString: "L"
+    CaseSensitive: true
+  - Pos: 191
+    AsciiString: "L"
+    CaseSensitive: true
+  - Pos: 197
+    AsciiString: "Q"
+    CaseSensitive: true
+  - Pos: 373
+    AsciiString: "\f"
+    CaseSensitive: true
+  - Pos: 459
+    AsciiString: "\f"
+    CaseSensitive: true
+  - Pos: 478
+    Bytes: [0x80]
+  - Pos: 506
+    Bytes: [0x80]
+  - Pos: 510
+    Bytes: [0x80]
+  - Pos: 514
+    Bytes: [0x80]
+  - Pos: 516
+    #              \f
+    Bytes: [0x80, 0x0C]
+  - Pos: any
+    AsciiString: "SOUNDSYSTEM"
+    CaseSensitive: false

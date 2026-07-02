@@ -1,0 +1,38 @@
+Name: KMBOX B+/B Pro firmware
+URL: "https://www.kmbox.top/productIntro-en.html"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE9\x04\x02 ,\a\b@\xEE\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\x18\0\xFF?\x04\0\0\0\xFF\xFF\xFF\xFF\x1C\0\xFF?\0\x18\0\0\0\0\0\0\0\0\0\x80\0\0\0\xA0\0\0\0\xC0\0\0\0\xE0\0P\x04\xFF\xAC\0\0\0boot\0\x1B[0;31mE (%d) %s: load partition table error!\x1B[0m\n\0PRO\0APP\0\x1B[0;33mW (%d) %s: WDT reset info: %s CPU PC=0x%x (waiti mode)\x1B[0m\n\0\x1B[0;33mW (%d) %s: WDT reset info: %s CPU PC=0x%x\x1B[0m\n\0\x1B[0;31mE (%d) %s: Assert failed in %s, %s:%d (%s)\x1B[0m\n\0QIO\0QOUT\0DIO\0DOUT\0FAST READ\0SLOW READ\02MB\0&_bss_start <= &_bss_end\0/home/esp32/esp/esp-idf/components/bootloader_support/src/bootloader_init.c\0&_data_start <= &_data_end\0sp < &_bss_start\0sp < &_data_start\0\x1B[0;31mE (%d) %s: failed to load bootloader header!\x1B[0m\n\0\x1B[0;31mE (%d) %s: Chip CPU frequency rated for 160MHz. Modify CPU frequency in menuconfig\x1B[0m\n\0\x1B[0;33mW (%d) %s: PRO CPU has been reset by WDT.\x1B[0m\n\0\x1B[0;33mW (%d) %s: APP CPU has been reset by WDT.\x1B[0m\n\0v3.3-beta1-694-g6b3da6b18\0\x1B[0;32mI (%d) %s: ESP-IDF %s 2nd stage bootloader\x1B[0m\n\0\x1B[0;32mI (%d) %s: compile time "
+    CaseSensitive: true
+  - Pos: 891
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 894
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 897
+    AsciiString: "\x1B[0m\n\0\x1B[0;32mI (%d) %s: Enabling RNG early entropy source...\x1B[0m\n\0\x1B[0;32mI (%d) %s: SPI Speed      : %s\x1B[0m\n\0\x1B[0;32mI (%d) %s: SPI Mode       : %s\x1B[0m\n\0\x1B[0;32mI (%d) %s: SPI Flash Size : %s\x1B[0m\n\0abort() was called at PC 0x%08x\r\n\01MB\04MB\08MB\016MB\040MHz\026.7MHz\020MHz\080MHz\0\x01\x02\x04\b\x10\0\0V\x04\xFF?N\x01\xFF?Z\x04\xFF?^\x04\xFF?b\x04\xFF?g\x04\xFF?m\x04\xFF?u\x04\xFF?u\x04\xFF?u\x04\xFF?u\x04\xFF?u\x04\xFF?u\x04\xFF?u\x04\xFF?u\x04\xFF?u\x04\xFF?u\x04\xFF?u\x04\xFF?u\x04\xFF?u\x04\xFF?{\x04\xFF?bootloader_init\0buffer != NULL\0/home/esp32/esp/esp-idf/components/bootloader_support/src/bootloader_random.c\0bootloader_fill_random\0\x1B[0;32mI (%d) %s: Disabling RNG early entropy source...\x1B[0m\n\0DROM\0\x1B[0;31mE (%d) %s: Image contains multiple %s segments. Only the last one will be mapped.\x1B[0m\n\0IROM\0 is not bootable\0\x1B[0;31mE (%d) %s: Factory app partition%s\x1B[0m\n\0\x1B[0;31mE (%d) %s: Factory test app partition%s\x1B[0m\n\0\x1B[0;31mE (%d) %s: OTA app partition slot %d%s\x1B[0m\n\0\x1B[0;31mE (%d) %s: Error in write_otadata operation. err = 0x%x\x1B[0m\n\0\x1B[0;32mI (%d) %s: Set actual ota_seq=%d in otadata[0]\x1B[0m\n\0\x1B[0;32mI (%d) %s: Loaded app from partition at offset 0x%x\x1B[0m\n\0RF data\0test app\0WiFi data\0NVS keys\0efuse\0Unknown data\0OTA data\0Unknown app\0OTA app\0factory app\0unknown\0\x1B[0;31mE (%d) %s: bootloader_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KMBOX(WWW.CLION.TOP)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KMBOX VERB---------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KMBOX WITH ESP32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1000HZ\0  KMBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.KMBOX.TOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KMBOX-RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KMBOX B PRO"
+    CaseSensitive: false

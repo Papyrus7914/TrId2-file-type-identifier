@@ -1,0 +1,35 @@
+Name: Fetch Script
+URL: "https://en.wikipedia.org/wiki/Fetch_(FTP_client)"
+FileNameExtensions: ["scpt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FasdUAS "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "F\0E\0T\0C\0H\0.\0A\0P\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FETCH.APP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false

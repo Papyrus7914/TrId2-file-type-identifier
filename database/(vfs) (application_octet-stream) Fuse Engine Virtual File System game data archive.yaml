@@ -1,0 +1,14 @@
+Name: Fuse Engine Virtual File System game data archive
+URL: "https://www.gamesindustry.biz/polarbit"
+FileNameExtensions: ["vfs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FUFS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FUFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLZP"
+    CaseSensitive: false

@@ -1,0 +1,46 @@
+Name: Storm C++ Debug strings
+FileNameExtensions: ["debug"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SDBGSTRG"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "Storm C++ V "
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0Written by JMFGB 19"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WRITTEN BY JMFGB 1996"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORM C++ V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDBGSTRG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRCS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

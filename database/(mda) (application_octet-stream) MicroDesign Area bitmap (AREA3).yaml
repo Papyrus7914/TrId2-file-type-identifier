@@ -1,0 +1,14 @@
+Name: MicroDesign Area bitmap (AREA3)
+URL: "http://www.chiark.greenend.org.uk/~jacobn/cpm/mdaspec.html"
+FileNameExtensions: ["mda"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ".MDA"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "v1.30\r\n"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\r\n"
+    CaseSensitive: true

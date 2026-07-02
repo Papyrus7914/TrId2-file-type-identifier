@@ -1,0 +1,28 @@
+Name: Native Instruments GENERATOR Ensemble
+FileNameExtensions: ["ens"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ":\x01\x01\0\0[\t\0\0\0KEnsemble\x01\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\b\0\0\0Ensemble"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "\0\0][\a\0\0\0KSModul\x01\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "\x06\0\0\0Module"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KOUTPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KINPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KSMODUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false

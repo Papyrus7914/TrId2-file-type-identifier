@@ -1,0 +1,11 @@
+Name: Ports of Call savegame (v2.0/PC)
+URL: "https://www.portsofcall.de"
+FileNameExtensions: ["trp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RDK  POC  2.0 (C) 1994, Muenchen\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "--RDK--"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Sega CPK video
+Description: Video format used on many Sega CD/Saturn games
+URL: "https://wiki.multimedia.cx/index.php?title=CPK"
+FileNameExtensions: ["cpk", "cak", "film"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FILM"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "FDSC"
+    CaseSensitive: true

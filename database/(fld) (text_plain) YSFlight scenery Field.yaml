@@ -1,0 +1,20 @@
+Name: YSFlight scenery Field
+URL: "https://wwwe.ysflight.com/"
+FileNameExtensions: ["fld"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FIELD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDPICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ID 0"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: GLAMUS DOI-Structure
+URL: "https://www.mobygames.com/company/9027/glamus-gesellschaft-fur-moderne-kommunikation-mbh/"
+FileNameExtensions: ["doi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n\rDOI-Structure (c)9"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: " by GLAMUS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BY GLAMUS"
+    CaseSensitive: false

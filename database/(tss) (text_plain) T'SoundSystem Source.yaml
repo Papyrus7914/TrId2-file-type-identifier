@@ -1,0 +1,14 @@
+Name: T'SoundSystem Source
+URL: "https://code.google.com/p/tss/"
+FileNameExtensions: ["tss"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#TITLE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

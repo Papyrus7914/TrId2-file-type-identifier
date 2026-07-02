@@ -1,0 +1,38 @@
+Name: ISO/IEC 19770 SWID Tag (UTF-8)
+URL: "https://en.wikipedia.org/wiki/ISO/IEC_19770"
+FileNameExtensions: ["swidtag"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STANDARDS.ISO.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMERIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "19770"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

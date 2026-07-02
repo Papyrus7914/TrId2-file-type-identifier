@@ -1,0 +1,34 @@
+Name: Dia sheet
+URL: "http://en.wikipedia.org/wiki/Dia_(software)"
+FileNameExtensions: ["sheet"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WWW.LYSATOR.LIU.SE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIA-SHEET-NS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEET XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

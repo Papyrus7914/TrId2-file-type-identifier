@@ -1,0 +1,18 @@
+Name: Math Studio (generic)
+Description: Math tool for Windows by David Sehnal.
+URL: "https://www.flipcode.com/archives/01-29-2003.shtml"
+FileNameExtensions: ["mts"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#MATHSTUDIO"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "FILEFORMAT#\0 "
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0>> "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILEFORMAT"
+    CaseSensitive: false

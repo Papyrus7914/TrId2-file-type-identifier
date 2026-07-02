@@ -1,0 +1,13 @@
+Name: Boost serialization archive (binary, 64bit)
+URL: "https://en.wikipedia.org/wiki/Boost_(C%2B%2B_libraries)"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x16\0\0\0\0\0\0\0serialization::archive"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SERIALIZATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHIVE"
+    CaseSensitive: false

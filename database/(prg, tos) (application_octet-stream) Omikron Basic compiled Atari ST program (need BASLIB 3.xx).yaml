@@ -1,0 +1,145 @@
+Name: Omikron Basic compiled Atari ST program (need BASLIB 3.xx)
+FileNameExtensions: ["prg", "tos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    #        M                       A
+    Bytes: [0x4D, 0xFA, 0xFF, 0xFE, 0x41, 0xFA]
+  - Pos: 36
+    #        \"    <                             ␠     .
+    Bytes: [0x22, 0x3C, 0x00, 0x00, 0x13, 0x80, 0x20, 0x2E, 0xFF, 0x18, 0xD3, 0xAE, 0xFF, 0x10]
+  - Pos: any
+    AsciiString: "OUT OF MEMORY OR ODD MALLOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILLEGAL FUNCTION CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK WRITE PROTECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESUME WITHOUT ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN WITHOUT GOSUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE ALREADY EXISTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIVILEGE VIOLATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDEFINED STATEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE TYPE MISMATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIX NOT REGULAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD RECORD NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE ALREADY OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OMIKRON.BASLIB 3."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNPRINTABLE ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIVISION BY ZERO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD FILE NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISSING OPERAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING TOO LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT PAST END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOO MANY FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN OPCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD FILE MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD FILE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NOT OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADRESS ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OM-BASIC.INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTAX ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAPV ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITE ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUS ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHK ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK FULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOS ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE"
+    CaseSensitive: false

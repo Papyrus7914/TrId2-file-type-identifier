@@ -1,0 +1,50 @@
+Name: Windows Manifest - Visual Stylesheet XML file (UTF)
+URL: "http://www.microsoft.com"
+FileNameExtensions: ["manifest"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROCESSORARCHITECTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS-MICROSOFT-COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLYIDENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFESTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICKEYTOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASM.V1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

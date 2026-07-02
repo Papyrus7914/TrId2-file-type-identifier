@@ -1,0 +1,30 @@
+Name: Sahaviriya Word document (v2.0)
+Description: DOS Thai-English WYSIWYG word processor.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0x05, 0x02, 0x02]
+  - Pos: 430
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 433
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 438
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 441
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 446
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 449
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 454
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 457
+    AsciiString: ":"
+    CaseSensitive: true

@@ -1,0 +1,35 @@
+Name: Gravis GrIP Library
+URL: "https://en.wikipedia.org/wiki/Advanced_Gravis_Computer_Technology"
+FileNameExtensions: ["gll"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DB000="
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\bGrIP Hardware Interface Engine v "
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 69
+    AsciiString: "          by "
+    CaseSensitive: true
+  - Pos: 93
+    AsciiString: "\r\nCopyright (c) "
+    CaseSensitive: true
+  - Pos: 113
+    AsciiString: " by Advanced Gravis Computer Technology Ltd\r\nAll Rights Reserved.  Patent Pending.\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BY ADVANCED GRAVIS COMPUTER TECHNOLOGY LTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED.  PATENT PENDING."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIP HARDWARE INTERFACE ENGINE V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false

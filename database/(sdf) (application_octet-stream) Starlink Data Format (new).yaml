@@ -1,0 +1,125 @@
+Name: Starlink Data Format (new)
+URL: "http://fileformats.archiveteam.org/wiki/Starlink_Data_Format"
+FileNameExtensions: ["sdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A"
+    CaseSensitive: true
+  - Pos: 136
+    AsciiString: "TREE"
+    CaseSensitive: true
+  - Pos: 680
+    AsciiString: "HEAP\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 840
+    AsciiString: "HDS_ROOT_NAME"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN FRAMESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN UNITMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDS_ROOT_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END FRAMESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ET_DATA\0DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END UNITMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISA MAPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPERATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISA FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOMAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSIMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAXES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ND SP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREE"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: CyberLink PowerProducer Project
+URL: "http://www.cyberlink.com/products/powerproducer"
+FileNameExtensions: ["ppp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PPP_0001.000DBGNVIDEO_BURN\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POWERPRODUCER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYBERLINK"
+    CaseSensitive: false

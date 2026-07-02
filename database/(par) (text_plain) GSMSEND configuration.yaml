@@ -1,0 +1,41 @@
+Name: GSMSEND configuration
+Description: SMS sender tool by Andreas Niggemann.
+FileNameExtensions: ["par"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "; Parameter f\x81r GSMSSEND "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SP_DELETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GSMSSEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SP_START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S_FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SP_ENDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPAUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UWAIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMSC"
+    CaseSensitive: false

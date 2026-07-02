@@ -1,0 +1,15 @@
+Name: OpenSSL PEM private key
+Description: Base64 encoded without password; verified for example by "openssl asn1parse -i -in format_gen.key"
+URL: "https://www.rfc-editor.org/rfc/rfc5958"
+FileNameExtensions: ["key"]
+MimeType: text/x-ssl-private-key
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-----BEGIN PRIVATE KEY-----"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-----BEGIN PRIVATE KEY-----"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-----END PRIVATE KEY-----"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: Traces scene
+URL: "https://en.wikipedia.org/wiki/Blender_(software)#History"
+FileNameExtensions: ["trace"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "TRa2TOBL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

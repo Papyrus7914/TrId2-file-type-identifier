@@ -1,0 +1,25 @@
+Name: Millewin patient data Export
+URL: "https://www.millewin.it/index.php/prodotti/millewin/"
+FileNameExtensions: ["exp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "1.00 SPLIT EXPWIN\r\nDisco nr.001\r\n"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 52
+    Bytes: [0x1A]

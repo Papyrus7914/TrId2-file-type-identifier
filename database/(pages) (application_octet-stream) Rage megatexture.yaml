@@ -1,0 +1,11 @@
+Name: Rage megatexture
+URL: "https://en.wikipedia.org/wiki/Rage_Software"
+FileNameExtensions: ["pages"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    3     w
+    Bytes: [0x04, 0x99, 0x33, 0x77]
+  - Pos: 16
+    AsciiString: "UU"
+    CaseSensitive: true

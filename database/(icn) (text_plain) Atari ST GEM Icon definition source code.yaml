@@ -1,0 +1,28 @@
+Name: Atari ST GEM Icon definition source code
+FileNameExtensions: ["icn"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/* GEM Icon Definition: */\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "* GEM ICON DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINE DATASIZE 0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINE ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H 0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W 0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ 0X"
+    CaseSensitive: false

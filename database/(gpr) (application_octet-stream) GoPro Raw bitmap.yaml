@@ -1,0 +1,65 @@
+Name: GoPro Raw bitmap
+URL: "http://fileformats.archiveteam.org/wiki/GoPro_GPR"
+FileNameExtensions: ["gpr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II*\0\b\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "D\0\0\0D\0\0\0D\0\0\0D\0\0\0D\0\0\0D\0\0\0D\0\0\0C3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W5M0MPCEHIHZRESZNTCZKC9D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "22-RDF-SYNTAX-NS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION RDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMPMETA XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPACKET BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NS.ADOBE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPACKET END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GPR\0GOPRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFYDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDF XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAW FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMP CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMPTK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DCIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VC-5"
+    CaseSensitive: false

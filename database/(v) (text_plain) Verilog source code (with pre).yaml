@@ -1,0 +1,18 @@
+Name: Verilog source code (with pre)
+Description: For sources that start with a preprocessor directive.
+URL: "https://en.wikipedia.org/wiki/Verilog"
+FileNameExtensions: ["v"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDMODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT"
+    CaseSensitive: false

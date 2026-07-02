@@ -1,0 +1,11 @@
+Name: EEDraw Drawing
+Description: MS-DOS simple parametric drawing program by Gershon Elber.
+FileNameExtensions: ["eed"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EEDraw EEDRAW PROGRAM "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LIBS"
+    CaseSensitive: false

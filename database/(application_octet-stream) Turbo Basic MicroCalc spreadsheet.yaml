@@ -1,0 +1,16 @@
+Name: Turbo Basic MicroCalc spreadsheet
+Description: Demo app from TurboBasic.
+URL: "https://it.wikipedia.org/wiki/Turbo_Basic"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFD]
+  - Pos: 3
+    AsciiString: "\0\0\xBAZ"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\x04\0\x04\0\x04\0"
+    CaseSensitive: true

@@ -1,0 +1,59 @@
+Name: 16bit DOS EXE DaRKSToP encrypted
+Description: DOS encryptor/protector by DaRK DeSTRoYeR.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 16
+    #        @
+    Bytes: [0x40, 0x01]
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REGISTERED TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZIJQPXXQ}FB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTROYER)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMHNK{O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W55B555"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTE5G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEKJV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V1.O)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRJI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G~~C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XI+X"
+    CaseSensitive: false

@@ -1,0 +1,19 @@
+Name: GameHouse Jigsaw Game
+URL: "http://www.gamehouse.com"
+FileNameExtensions: ["jig"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JIGC"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "JVER"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "DNAM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STORE.GAMEHOUSE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.GAMEHOUSE.COM"
+    CaseSensitive: false

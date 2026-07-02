@@ -1,0 +1,62 @@
+Name: SimulIDE circuit (v0.x, old)
+URL: "https://simulide.com/"
+FileNameExtensions: ["simu"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<circuit "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIMULIDE_0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTOR-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTPINID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALLABELX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALLABELY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALLABROT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPINID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELROT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIRCUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENODEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENODE-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HFLIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VFLIP"
+    CaseSensitive: false

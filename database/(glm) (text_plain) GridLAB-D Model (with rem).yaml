@@ -1,0 +1,26 @@
+Name: GridLAB-D Model (with rem)
+URL: "https://www.gridlabd.org/"
+FileNameExtensions: ["glm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "//"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STOPTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEZONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

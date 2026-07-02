@@ -1,0 +1,17 @@
+Name: TMT Pascal for OS/2 object code
+URL: "http://www.edm2.com/index.php/TMT_Pascal"
+FileNameExtensions: ["fpd", "fpl", "fpu"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xC8\0\0\0SPFP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPFP"
+    CaseSensitive: false

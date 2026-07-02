@@ -1,0 +1,38 @@
+Name: Drishti Processed Volume (header)
+URL: "http://paulbourke.net/dataformats/pvl/"
+FileNameExtensions: ["nc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE Drishti_Header>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PVLDOTNCFILEHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOXELSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOXELTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOXELUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLABSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAWFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PVLMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAWMAP"
+    CaseSensitive: false

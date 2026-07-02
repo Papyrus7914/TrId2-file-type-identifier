@@ -1,0 +1,62 @@
+Name: Relux Open Luminaire Format
+URL: "https://relux.com/"
+FileNameExtensions: ["rolf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "1.0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: " encoding="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANUFACTURER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORTEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LUMINAIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

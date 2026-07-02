@@ -1,0 +1,8 @@
+Name: Oric Tape image
+URL: "http://en.wikipedia.org/wiki/Oric"
+FileNameExtensions: ["tap", "dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          $
+    Bytes: [0x16, 0x16, 0x16, 0x24]

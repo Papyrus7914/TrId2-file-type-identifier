@@ -1,0 +1,22 @@
+Name: XBMC Smart Playlist
+URL: "http://en.wikipedia.org/wiki/XBMC"
+FileNameExtensions: ["xsp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SMARTPLAYLIST TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULE FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

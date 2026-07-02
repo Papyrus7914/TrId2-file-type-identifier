@@ -1,0 +1,23 @@
+Name: Forte Agent Character Set Mapping
+URL: "https://en.wikipedia.org/w/index.php?title=Forte_Agent"
+FileNameExtensions: ["csm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Name: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS TABLE MAPS BETWEEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARSET."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODEPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME"
+    CaseSensitive: false

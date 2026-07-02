@@ -1,0 +1,10 @@
+Name: Windows 9x Registry Hive
+Description: A Hive file is the Windows Registry's on-disk storage format.
+FileNameExtensions: ["dat"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CREG"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "RGKN\0"
+    CaseSensitive: true

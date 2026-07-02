@@ -1,0 +1,40 @@
+Name: Visual Basic eXtension/Custom Control
+URL: "https://en.wikipedia.org/wiki/Visual_Basic"
+FileNameExtensions: ["vbx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 11
+    Bytes: [0x00, 0xFF, 0xFF]
+  - Pos: 15
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0\0\0@\0\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VBINITCC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

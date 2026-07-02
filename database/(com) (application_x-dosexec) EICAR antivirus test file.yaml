@@ -1,0 +1,21 @@
+Name: EICAR antivirus test file
+Description: recognize the standard antivirus test file, a COM executable entirely made of printable chars
+URL: "http://tinyurl.com/7bl8ojk"
+FileNameExtensions: ["com"]
+MimeType: application/x-dosexec
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "X5O!P%@"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "P[4\\PZX54(P^)7CC)7}$E"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "CAR-STA"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "DARD-ANTI"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "IRUS-TEST-FILE!$H+H*"
+    CaseSensitive: true

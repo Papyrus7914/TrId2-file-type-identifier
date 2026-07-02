@@ -1,0 +1,47 @@
+Name: SunVox module
+URL: "http://www.warmplace.ru/soft/sunvox/"
+FileNameExtensions: ["sunvox"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SVOX\0\0\0\0VERS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCHN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLNK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SREL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYP"
+    CaseSensitive: false

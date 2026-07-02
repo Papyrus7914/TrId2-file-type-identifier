@@ -1,0 +1,14 @@
+Name: PageRender3D facet/object
+Description: Amiga animation/rendering package.
+FileNameExtensions: ["facet"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "facet   cart   "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AXIS  THETA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER"
+    CaseSensitive: false

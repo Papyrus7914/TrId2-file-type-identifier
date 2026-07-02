@@ -1,0 +1,13 @@
+Name: Tiger Electronics Game.com cartridge image (var.2)
+URL: "https://en.wikipedia.org/wiki/Game.com"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "TIGERDMGC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUUV"
+    CaseSensitive: false

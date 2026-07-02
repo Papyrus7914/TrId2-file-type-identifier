@@ -1,0 +1,35 @@
+Name: VST SkinRack skin settings (v1.0)
+Description: Tool by SpinAudio.
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[General]\r\nSkinType="
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FONTCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTIONDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTIONDY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELS"
+    CaseSensitive: false

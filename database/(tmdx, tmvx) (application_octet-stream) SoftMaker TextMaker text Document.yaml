@@ -1,0 +1,50 @@
+Name: SoftMaker TextMaker text Document
+URL: "https://en.wikipedia.org/wiki/SoftMaker"
+FileNameExtensions: ["tmdx", "tmvx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "[Content_Types].xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STYLESWITHEFFECTS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XML.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBSETTINGS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTTABLE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEME1.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCPROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORD"
+    CaseSensitive: false

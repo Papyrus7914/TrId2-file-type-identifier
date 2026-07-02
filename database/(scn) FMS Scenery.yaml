@@ -1,0 +1,28 @@
+Name: FMS Scenery
+URL: "http://en.wikipedia.org/wiki/Flying_Model_Simulator"
+FileNameExtensions: ["scn"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SKY "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AIRCRAFT_POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PILOT_POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3D_LANDSCAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUADRANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE"
+    CaseSensitive: false

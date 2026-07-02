@@ -1,0 +1,33 @@
+Name: Datamat mask/form
+Description: Amiga database.
+URL: "http://www.amigafuture.de/asd.php?asd_id=308"
+FileNameExtensions: ["msk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "MASK"
+    CaseSensitive: true
+  - Pos: 134
+    AsciiString: "Datei: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EINGABE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATENS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK"
+    CaseSensitive: false

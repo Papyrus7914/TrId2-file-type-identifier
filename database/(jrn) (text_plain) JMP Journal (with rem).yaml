@@ -1,0 +1,17 @@
+Name: JMP Journal (with rem)
+URL: "https://en.wikipedia.org/wiki/JMP_(statistical_software)"
+FileNameExtensions: ["jrn"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF/* JMP 1"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "* PREVIEW IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUB("
+    CaseSensitive: false

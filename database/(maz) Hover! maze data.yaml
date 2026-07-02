@@ -1,0 +1,34 @@
+Name: Hover! maze data
+URL: "http://en.wikipedia.org/wiki/Hover!"
+FileNameExtensions: ["maz"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\xFF\xFF\x01\0\r\0CMerlinStatic"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CMERLINLOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMERLINSTATIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMERLINBSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HUMAN_00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FBASE"
+    CaseSensitive: false

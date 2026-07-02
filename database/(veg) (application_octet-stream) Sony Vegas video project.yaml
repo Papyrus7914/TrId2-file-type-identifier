@@ -1,0 +1,32 @@
+Name: Sony Vegas video project
+URL: "http://en.wikipedia.org/wiki/Sony_Vegas_Pro"
+FileNameExtensions: ["veg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "riff"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RIFF."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0E\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IENG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false

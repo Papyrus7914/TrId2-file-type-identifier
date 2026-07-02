@@ -1,0 +1,21 @@
+Name: Altair Binary Format
+FileNameExtensions: ["abf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MOTIONPLOT EXTERNAL XY READER "
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "BNRY"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "SECONDS"
+    CaseSensitive: true
+  - Pos: 103
+    AsciiString: "Time"
+    CaseSensitive: true
+  - Pos: 113
+    AsciiString: "Time (Seconds)"
+    CaseSensitive: true

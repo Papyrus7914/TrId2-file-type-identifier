@@ -1,0 +1,35 @@
+Name: DKBtrace scene (with rem)
+Description: Ray-Tracer for Amiga by David K. Buck.
+FileNameExtensions: ["dat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END_VIEW_POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT_SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_SPHERE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false

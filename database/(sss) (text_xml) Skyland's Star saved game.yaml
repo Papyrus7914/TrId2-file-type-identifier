@@ -1,0 +1,59 @@
+Name: Skyland's Star saved game
+URL: "http://excelsior-rpg.com/ss.htm"
+FileNameExtensions: ["sss"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"Windows-1252\"?>\r\n<SkylandData>\r\n    <CurRoomNum>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CURROOMNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUZZLE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKYLANDDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURROOMNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEREDESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMMOVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOM NUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUZZLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERBOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEEN"
+    CaseSensitive: false

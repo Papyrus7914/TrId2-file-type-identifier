@@ -1,0 +1,17 @@
+Name: TS Online modems definitions
+Description: Terminal emulator for Windows 3.x, part of the CommWorks suite.
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MDM!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NO DIALTONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO CARRIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RING"
+    CaseSensitive: false

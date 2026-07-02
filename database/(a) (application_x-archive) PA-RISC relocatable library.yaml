@@ -1,0 +1,21 @@
+Name: PA-RISC relocatable library
+Description: a_magic=0619h means relocatable library. version_id=05124000h=85082112 means YYMMDDHH time stamp.
+URL: "https://parisc.wiki.kernel.org/images-parisc/b/b2/Rad_11_0_32.pdf"
+FileNameExtensions: ["a"]
+MimeType: application/x-archive
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!<arch>\n/               "
+    CaseSensitive: true
+  - Pos: 70
+    #                                @
+    Bytes: [0x06, 0x19, 0x05, 0x12, 0x40, 0x00]
+  - Pos: any
+    AsciiString: "$PRIVATE$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CODE$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$TEXT$"
+    CaseSensitive: false

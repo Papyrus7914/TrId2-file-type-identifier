@@ -1,0 +1,11 @@
+Name: Steem SSE Ghost disk image
+URL: "https://sourceforge.net/projects/steemsse/"
+FileNameExtensions: ["stg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "STG\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SEC"
+    CaseSensitive: true

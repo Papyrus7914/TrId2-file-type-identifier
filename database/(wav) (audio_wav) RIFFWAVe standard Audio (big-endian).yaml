@@ -1,0 +1,11 @@
+Name: RIFF/WAVe standard Audio (big-endian)
+URL: "https://en.wikipedia.org/wiki/WAV"
+FileNameExtensions: ["wav"]
+MimeType: audio/wav
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFX"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WAVEfmt "
+    CaseSensitive: true

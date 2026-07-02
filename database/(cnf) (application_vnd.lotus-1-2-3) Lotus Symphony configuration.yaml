@@ -1,0 +1,9 @@
+Name: Lotus Symphony configuration
+Description: revision number 0802h is stored at offset 4.
+URL: "http://fileformats.archiveteam.org/wiki/Lotus_1-2-3"
+FileNameExtensions: ["cnf"]
+MimeType: application/vnd.lotus-1-2-3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x02\0\x02\b"
+    CaseSensitive: true

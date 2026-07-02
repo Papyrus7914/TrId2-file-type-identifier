@@ -1,0 +1,23 @@
+Name: "Empire II: The Art of War Technology"
+URL: "https://www.mobygames.com/game/873/empire-ii-the-art-of-war/"
+FileNameExtensions: ["tec"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TECF"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "TOC "
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "TECH"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "IMGD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMGD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TECH"
+    CaseSensitive: false

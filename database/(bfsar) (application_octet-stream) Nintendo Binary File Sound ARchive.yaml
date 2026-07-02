@@ -1,0 +1,17 @@
+Name: Nintendo Binary File Sound ARchive
+URL: "http://mk8.tockdom.com/wiki/BFSAR_(File_Format)"
+FileNameExtensions: ["bfsar"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FSAR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRG"
+    CaseSensitive: false

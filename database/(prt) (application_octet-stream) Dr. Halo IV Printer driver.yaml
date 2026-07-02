@@ -1,0 +1,18 @@
+Name: Dr. Halo IV Printer driver
+URL: "https://en.wikipedia.org/wiki/Dr._Halo"
+FileNameExtensions: ["prt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AH6\x01"
+    CaseSensitive: true
+  - Pos: 6
+    Bytes: [0x04, 0x00]
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: ".\xFF&\x05\0K\0{ Copyright (C) 1991, Media Cybernetics, Inc.}"
+    CaseSensitive: true
+  - Pos: 70
+    Bytes: [0x0F, 0xAB, 0x00]

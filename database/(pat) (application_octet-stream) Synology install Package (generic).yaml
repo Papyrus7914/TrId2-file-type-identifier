@@ -1,0 +1,10 @@
+Name: Synology install Package (generic)
+URL: "https://en.wikipedia.org/wiki/Synology"
+FileNameExtensions: ["pat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    Bytes: [0xAD, 0xBE, 0xEF]
+  - Pos: 6
+    AsciiString: "\0\0\x95\xC4 "
+    CaseSensitive: true

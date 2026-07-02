@@ -1,0 +1,95 @@
+Name: MICROMED Brain-Quick EEG Trace
+URL: "https://micromedgroup.com/products/brainquick/software/"
+FileNameExtensions: ["trc", "vwr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "* MICROMED  Brain-Quick file *\0\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MARKER HEADBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEAT+\0BEAT-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECG1+\0ECG1-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMG1+\0EMG1-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EOG1+\0EOG1-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OX01+\0OX01-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA01+\0PA01-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PNG1+\0PNG1-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULS+\0PULS-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESPIRATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPO2+\0SPO2-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARDIOGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIOGRAPHY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSVERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELA01\0G2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM98"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENT A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPED_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABCOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC1+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC1-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC2+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC2-"
+    CaseSensitive: false

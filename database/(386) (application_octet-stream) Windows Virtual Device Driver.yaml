@@ -1,0 +1,69 @@
+Name: Windows Virtual Device Driver
+FileNameExtensions: ["386"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\0\0\0\0\0\0\0LE\0\0\0\0\0\0\x02\0\x04\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 145
+    Bytes: [0x80]
+  - Pos: 147
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 149
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 153
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 158
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 170
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 174
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 178
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 186
+    AsciiString: "\0\0\0\0\0\0\xC4\0\0\0"
+    CaseSensitive: true
+  - Pos: 197
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 202
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 218
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 222
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 234
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 238
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 242
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 250
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DDB"
+    CaseSensitive: false

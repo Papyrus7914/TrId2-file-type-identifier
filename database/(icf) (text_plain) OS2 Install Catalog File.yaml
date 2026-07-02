@@ -1,0 +1,41 @@
+Name: OS/2 Install Catalog File
+URL: "https://en.wikipedia.org/wiki/OS/2"
+FileNameExtensions: ["icf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CATALOG\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UPDATECONFIGSYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKGDESCRFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DSC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PKG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

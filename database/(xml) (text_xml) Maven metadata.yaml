@@ -1,0 +1,32 @@
+Name: Maven metadata
+URL: "https://en.wikipedia.org/wiki/Apache_Maven"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LASTUPDATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTIFACTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATEST"
+    CaseSensitive: false

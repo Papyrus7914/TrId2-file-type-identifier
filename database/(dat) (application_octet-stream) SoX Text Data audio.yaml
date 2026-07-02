@@ -1,0 +1,14 @@
+Name: SoX Text Data audio
+Description: Textual representation of samples data.
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "; Sample Rate "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SAMPLE RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNELS"
+    CaseSensitive: false

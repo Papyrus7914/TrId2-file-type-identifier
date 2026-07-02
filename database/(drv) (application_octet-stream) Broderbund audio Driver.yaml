@@ -1,0 +1,27 @@
+Name: Broderbund audio Driver
+Description: Used in games like Where in Space is Carmen Sandiego?, Prince of Persia 2.
+URL: "https://en.wikipedia.org/wiki/Broderbund"
+FileNameExtensions: ["drv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 30
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "                      \r\nCopyright (c) 1989-1993 Broderbund Software, Inc.                            \r\n\x1Av\x984\x12"
+    CaseSensitive: true
+  - Pos: 149
+    AsciiString: "0V\0\0\x01"
+    CaseSensitive: true
+  - Pos: 161
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 197
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1989-1993 BRODERBUND SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC."
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: CandyFactory Material
+Description: Amiga graphics software.
+FileNameExtensions: ["cmt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM\0\0\x01\x1CCMATMTRL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CMATMTRL"
+    CaseSensitive: false

@@ -1,0 +1,15 @@
+Name: Mac Type 1 Font (MacBinary)
+Description: MacBinary is a standard for encoding Macintosh files for file transfer.
+URL: "https://en.wikipedia.org/wiki/PostScript_fonts#Type_1"
+FileNameExtensions: ["bin", "macbin"]
+MimeType: application/x-macbinary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "LWFN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LWFN"
+    CaseSensitive: false

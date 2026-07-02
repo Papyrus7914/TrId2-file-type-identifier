@@ -1,0 +1,15 @@
+Name: Mini Office II Document
+Description: Old office suite for Amstrad CPC.
+URL: "http://www.cpcwiki.eu/index.php/Mini_Office_II"
+FileNameExtensions: ["doc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "DOC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_%MXT"
+    CaseSensitive: false

@@ -1,0 +1,35 @@
+Name: ZBrush GoZ export template
+URL: "http://en.wikipedia.org/wiki/ZBrush"
+FileNameExtensions: ["goz"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[ZBrush,GOZ_TAG_HEADER]\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GOZ_TAG_DISPLACEMENT_MAP_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOZ_TAG_FACE4_LIST_FORMAT_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOZ_TAG_TEXTURE_MAP_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOZ_TAG_NORMAL_MAP_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOZ_TAG_END_OF_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOZ_TAG_POINT_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOZ_TAG_UV4_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOZ_TAG_MESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOZ_TAG_MA"
+    CaseSensitive: false

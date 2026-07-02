@@ -1,0 +1,77 @@
+Name: RHVoice data
+URL: "https://github.com/Olga-Yakovleva/RHVoice"
+FileNameExtensions: ["data"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[GLOBAL]\nHTS_VOICE_VERSION:1.0\nSAMPLING_FREQUENCY:24000\nFRAME_PERIOD:120\nNUM_STATES:5\nNUM_STREAMS:3\nSTREAM_TYPE:MCP,LF0,LPF\nFULLCONTEXT_FORMAT:HTS_TTS_ENG\nFULLCONTEXT_VERSION:1.0\nGV_OFF_CONTEXT:\"*-pau+*\",\"*-h#+*\",\"*-brth+*\"\nCOMMENT:\n[STREAM]\nVECTOR_LENGTH[MCP]:31\nVECTOR_LENGTH[LF0]:1\nVECTOR_LENGTH[LPF]:31\nIS_MSD[MCP]:0\nIS_MSD[LF0]:1\nIS_MSD[LPF]:0\nNUM_WINDOWS[MCP]:3\nNUM_WINDOWS[LF0]:3\nNUM_WINDOWS[LPF]:1\nUSE_GV[MCP]:0\nUSE_GV[LF0]:0\nUSE_GV[LPF]:0\nOPTION[MCP]:ALPHA=0.466\nOPTION[LF0]:\nOPTION[LPF]:\n[POSITION]\nDURATION_PDF:0-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FULLCONTEXT_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLCONTEXT_FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLING_FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTS_VOICE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GV_OFF_CONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION_TREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTOR_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION_PDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME_PERIOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTS_TTS_ENG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_STREAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAM_TREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAM_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_STATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAM_PDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAM_WIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_MSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE_GV"
+    CaseSensitive: false

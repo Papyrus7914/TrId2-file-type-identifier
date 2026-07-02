@@ -1,0 +1,26 @@
+Name: CloudFront Log
+URL: "https://en.wikipedia.org/wiki/Amazon_CloudFront"
+FileNameExtensions: ["log"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#Version: 1.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATE TIME X-EDGE-LOCATION SC-BYTES C-IP CS-METHOD CS(HOST) CS-URI-STEM SC-STATUS CS(REFERER) CS(USER-AGENT) CS-URI-QUERY CS(COOKIE) X-EDGE-RESULT-TYPE X-EDGE-REQUEST-ID X-HOST-HEADER CS-PROTOCOL CS-BYTES TIME-TAKEN X-FORWARDED-FOR SSL-PROTOCOL SSL-CIPHER X-EDGE-RESPONSE-RESULT-TYPE CS-PROTOCOL-VERSION FLE-STATUS FLE-ENCRYPTED-FIELDS C-PORT TIME-TO-FIRST-BYTE X-EDGE-DETAILED-RESULT-TYPE SC-CONTENT-TYPE SC-CONTENT-LEN SC-RANGE-START SC-RANGE-END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECDHE-RSA-AES128-GCM-SHA256"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CLOUDFRONT.NET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLSV1.2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

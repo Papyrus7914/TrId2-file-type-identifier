@@ -1,0 +1,41 @@
+Name: Construct 3 Add-On
+URL: "https://www.construct.net/"
+FileNameExtensions: ["c3addon"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "EXPRESSIONS.JS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONDITIONS.JS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCE.JS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIONS.JS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDON.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACES.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C3RUNTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGIN.JS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON.SVG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE.JS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANG"
+    CaseSensitive: false

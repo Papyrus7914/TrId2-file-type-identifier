@@ -1,0 +1,35 @@
+Name: GFA BASIC Win 3.x compiled Executable
+URL: "https://en.wikipedia.org/wiki/GFA_BASIC"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ`\0\x01\0\0\0\x04\0\x10\0\xFF\xFF\0\0\xFE\0\0\0\x12\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0`\0\0\0Not a DOS Program$\x16\x1F3\xD2\xB4\t\xCD!\xB8\x01L\xCD!\0NE\n\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GFA-BASIC\0\0\0\0\0GFA-BASIC RUNTIME ERROR 0000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1234GC\0\01234GF\0\01234GW\0\01234GX\0%04X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT A DOS PROGRAM$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATIC\0BUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPT0\0COM0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWWWWWWWW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN87EM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WNHH"
+    CaseSensitive: false

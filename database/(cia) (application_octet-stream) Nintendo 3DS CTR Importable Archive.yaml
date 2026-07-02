@@ -1,0 +1,17 @@
+Name: Nintendo 3DS CTR Importable Archive
+URL: "https://www.3dbrew.org/wiki/CIA"
+FileNameExtensions: ["cia"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "  \0\0\0\0\0\0\0\n\0\0P\x03\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROOT-CA0000000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-CP0000000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-XS0000000"
+    CaseSensitive: false

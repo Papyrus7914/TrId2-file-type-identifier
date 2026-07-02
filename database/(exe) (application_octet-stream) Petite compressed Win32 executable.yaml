@@ -1,0 +1,83 @@
+Name: Petite compressed Win32 executable
+URL: "http://www.un4seen.com/petite/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 125
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".DLL\0USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALPROTECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORRUPT DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADLIBRARYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGEBOXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WSPRINTFA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PETITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%\0\0\0\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5\0\0\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false

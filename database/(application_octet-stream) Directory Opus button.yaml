@@ -1,0 +1,19 @@
+Name: Directory Opus button
+URL: "https://en.wikipedia.org/wiki/Directory_Opus"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "OPUSBTNW"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPUSBTNW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNC"
+    CaseSensitive: false

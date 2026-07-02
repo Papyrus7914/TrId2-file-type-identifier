@@ -1,0 +1,9 @@
+Name: NetHack saved game 3.4.x
+URL: "http://www.nethack.org/"
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 2
+    #                    F     \f                }                 !
+    Bytes: [0x04, 0x03, 0x46, 0x0C, 0x1E, 0x18, 0x7D, 0x01, 0x1B, 0x21, 0xCC, 0x95, 0x81, 0xA4]

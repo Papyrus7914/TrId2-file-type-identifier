@@ -1,0 +1,19 @@
+Name: macOS extended attributes dump (quarantined)
+FileNameExtensions: ["xattr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x05\x16\a\0\x02\0\0Mac OS X        \0\x02\0\0\0\t\0\0\02\0\0"
+    CaseSensitive: true
+  - Pos: 75
+    AsciiString: "\0\0\0\0\0\0\0\0\0ATTR"
+    CaseSensitive: true
+  - Pos: 131
+    AsciiString: "com.apple."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COM.APPLE.QUARANTINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTR"
+    CaseSensitive: false

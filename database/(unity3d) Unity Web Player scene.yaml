@@ -1,0 +1,19 @@
+Name: Unity Web Player scene
+URL: "http://unity3d.com/webplayer/"
+FileNameExtensions: ["unity3d"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "UnityWeb\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: ".x.x\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0\0\0\x01\0\0\0"
+    CaseSensitive: true

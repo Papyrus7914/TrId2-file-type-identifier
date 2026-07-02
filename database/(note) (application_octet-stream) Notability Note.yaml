@@ -1,0 +1,44 @@
+Name: Notability Note
+URL: "http://fileformats.archiveteam.org/wiki/Notability"
+FileNameExtensions: ["note"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "METADATA.PLISTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY.PLISTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSION.PLISTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMB2X.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMB3X.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMB6X.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL2XPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMB.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAILPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORDINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false

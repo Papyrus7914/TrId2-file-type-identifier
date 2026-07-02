@@ -1,0 +1,25 @@
+Name: Model4D Object
+Description: Amiga 3D modeler by Sean P.Turner.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Model4D_Object\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POLYGONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGES"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: ArcPad Graphics layer
+URL: "http://resources.arcgis.com/en/help/arcpad/10.0/sdk/xml/"
+FileNameExtensions: ["apg"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FEATURESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCPAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: TM-MARS compiled Redcode program
+Description: Format used by a MARS from 1994 by T.Mengotti.
+URL: "http://www.reocities.com/CapeCanaveral/Hall/2027/programmi.html"
+FileNameExtensions: ["prg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "REDCODE PROGRAM\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "255 0 0 0 0"
+    CaseSensitive: false

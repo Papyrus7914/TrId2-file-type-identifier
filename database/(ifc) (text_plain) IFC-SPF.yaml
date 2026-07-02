@@ -1,0 +1,65 @@
+Name: IFC-SPF
+URL: "http://fileformats.archiveteam.org/wiki/IFC"
+FileNameExtensions: ["ifc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ISO-10303-21;"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IFCAXIS2PLACEMENT3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFCCARTESIANPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFCLOCALPLACEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFCUNITASSIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END-ISO-10303-21"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPRESENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LENGTHUNIT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFCDIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFCPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFCSIUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDSEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METRIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

@@ -1,0 +1,19 @@
+Name: XML AGTable
+FileNameExtensions: ["xagt"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<AGTable>\r\n<Name>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBJECTDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AGTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

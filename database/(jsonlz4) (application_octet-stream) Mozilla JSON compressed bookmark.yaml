@@ -1,0 +1,77 @@
+Name: Mozilla JSON compressed bookmark
+URL: "https://en.wikipedia.org/wiki/Mozilla"
+FileNameExtensions: ["jsonlz4"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "mozLz40\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "{\"guid\":\"root_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "X-MOZ-PLACE-CONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKMARKS MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKMARKS_MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDEQUERIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTMODIFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXRESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOST VISIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEADDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUERYTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TOOLBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECENTLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPIRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMARTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Aegis Lights! Camera! Action! script (v1)
+Description: Amiga animation/presentation program.
+FileNameExtensions: ["script", "scrpt", "txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORMAT1\nLIST\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCRIPTPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false

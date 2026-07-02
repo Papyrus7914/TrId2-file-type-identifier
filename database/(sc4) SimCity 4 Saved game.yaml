@@ -1,0 +1,28 @@
+Name: SimCity 4 Saved game
+URL: "http://simcity.ea.com/"
+FileNameExtensions: ["sc4"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DBPF"
+    CaseSensitive: true
+  - Pos: 97
+    AsciiString: "PNG"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "IHDR"
+    CaseSensitive: true
+  - Pos: 134
+    AsciiString: "DAT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEMP.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANS"
+    CaseSensitive: false

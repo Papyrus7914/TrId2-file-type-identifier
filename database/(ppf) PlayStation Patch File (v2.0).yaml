@@ -1,0 +1,9 @@
+Name: PlayStation Patch File (v2.0)
+URL: "http://www.paradogs.com/pdx_ppf2.htm"
+FileNameExtensions: ["ppf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PPF"
+    CaseSensitive: true
+  - Pos: 5
+    Bytes: [0x01]

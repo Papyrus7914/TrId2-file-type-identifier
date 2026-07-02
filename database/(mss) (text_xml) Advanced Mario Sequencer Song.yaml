@@ -1,0 +1,38 @@
+Name: Advanced Mario Sequencer Song
+URL: "http://fileformats.archiveteam.org/wiki/Advanced_Mario_Sequencer_file"
+FileNameExtensions: ["mss"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\r\n\r\n<MarioSequencerSong tempo=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MARIOPAINTORIGINAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARIOSEQUENCERSONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORD VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUNDFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

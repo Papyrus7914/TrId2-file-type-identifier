@@ -1,0 +1,13 @@
+Name: Ivy module descriptor
+URL: "http://en.wikipedia.org/wiki/Apache_Ivy"
+FileNameExtensions: ["ivy"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IVY-MODULE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO ORGANISATION"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: Genetec G64x Omnicast video archive
+URL: "https://www.genetec.com/products/video-management"
+FileNameExtensions: ["g64x"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "GLOBALEVENTS.BOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEINFO.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MS.G64"
+    CaseSensitive: false

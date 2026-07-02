@@ -1,0 +1,26 @@
+Name: Altera Quartus IP
+URL: "https://en.wikipedia.org/wiki/Altera_Quartus"
+FileNameExtensions: ["qip"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "set_global_assignment -"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SET_GLOBAL_ASSIGNMENT -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUARTUS(QIP_PATH)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE JOIN $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-NAME V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERI"
+    CaseSensitive: false

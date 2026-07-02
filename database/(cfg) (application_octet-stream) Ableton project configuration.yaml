@@ -1,0 +1,26 @@
+Name: Ableton project configuration
+URL: "https://en.wikipedia.org/wiki/Ableton"
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    V     x
+    Bytes: [0xAB, 0x1E, 0x56, 0x78, 0x04]
+  - Pos: 11
+    AsciiString: "ProjectInfo"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "ProjectInfo"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "C\0r\0e\0a\0t\0i\0o\0n\0D\0a\0t\0e\0\x11\x1D\0\0\0L\0a\0s\0t\0P\0a\0c\0k\0I\0n\0s\0t\0a\0l\0l\0a\0t\0i\0o\0n\0A\0t\0V\0e\0r\0s\0i\0o\0n"
+    CaseSensitive: true
+  - Pos: 139
+    AsciiString: "L\0a\0s\0t\0P\0a\0c\0k\0I\0n\0s\0t\0a\0l\0l\0a\0t\0i\0o\0n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "O\0V\0E\0R\0W\0R\0I\0T\0E\0P\0R\0O\0T\0E\0C\0T\0I\0O\0N\0N\0U\0M\0B\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0U\0I\0L\0D"
+    CaseSensitive: false

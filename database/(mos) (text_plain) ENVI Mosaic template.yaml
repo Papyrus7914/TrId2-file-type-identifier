@@ -1,0 +1,23 @@
+Name: ENVI Mosaic template
+URL: "https://en.wikipedia.org/wiki/NV5_Geospatial_Solutions#ENVI"
+FileNameExtensions: ["mos"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ENVI MOSAIC TEMPLATE ("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OUTPUT SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

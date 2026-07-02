@@ -1,0 +1,47 @@
+Name: Rockwell Automation License
+URL: "https://en.wikipedia.org/wiki/Rockwell_Automation"
+FileNameExtensions: ["lic"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Rockwell Automation License File\r\n# Copyright (C) 2003-20"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: " All Rights Reserved\r\n\r\nSERVER this_host ANY\r\nUSE_SERVER\r\nVENDOR flexsvr\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROCKWELL AUTOMATION LICENSE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER THIS_HOST ANY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 2003-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR FLEXSVR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR_STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLEXSVR 1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE_SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERMANENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGN"
+    CaseSensitive: false

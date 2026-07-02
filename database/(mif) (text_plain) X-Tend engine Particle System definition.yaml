@@ -1,0 +1,50 @@
+Name: X-Tend engine Particle System definition
+URL: "https://www.igdb.com/game_engines/x-tend"
+FileNameExtensions: ["mif"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MIF \"$pts\"\r\n\r\nsetup\r\n{\r\n\tnumsubsystems\t\t"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "E_SPRITESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXPARTICLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMPARTICLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V_SPRITESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_VELOCITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V_LIFETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V_VELOCITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V_WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_SPIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V_SPIN"
+    CaseSensitive: false

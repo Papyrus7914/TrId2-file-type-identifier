@@ -1,0 +1,8 @@
+Name: PC64 flexible container format
+Description: Used by the PC64 emulator.
+URL: "https://ist.uwaterloo.ca/~schepers/formats/PC64.TXT"
+FileNameExtensions: ["p00", "s00", "r00", "u00"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "C64File\0"
+    CaseSensitive: true

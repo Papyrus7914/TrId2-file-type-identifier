@@ -1,0 +1,26 @@
+Name: Tracon Simulation data
+URL: "https://www.mobygames.com/game-group/traconrapcon-series"
+FileNameExtensions: ["sim"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Sector   "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AIRCRAFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWR END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEED"
+    CaseSensitive: false

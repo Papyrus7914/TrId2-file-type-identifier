@@ -1,0 +1,14 @@
+Name: Legato SpreadSheet
+URL: "https://en.wikipedia.org/wiki/IBM_Works"
+FileNameExtensions: ["lss"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LEGATO"
+    CaseSensitive: true
+  - Pos: 424
+    AsciiString: "MBSS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MBSS"
+    CaseSensitive: false

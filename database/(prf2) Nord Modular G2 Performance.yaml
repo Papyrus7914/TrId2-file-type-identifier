@@ -1,0 +1,29 @@
+Name: Nord Modular G2 Performance
+Description: Nord Modular G2 is a synth by Clavia.
+URL: "http://www.clavia.se/G2/"
+FileNameExtensions: ["prf2"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Version=Nord Modular G2 File Format 1\r\nType=Performance\r\nVersion="
+    CaseSensitive: true
+  - Pos: 67
+    AsciiString: "\r\nInfo=BUILD "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NORD MODULAR G2 FILE FORMAT 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERFORMANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

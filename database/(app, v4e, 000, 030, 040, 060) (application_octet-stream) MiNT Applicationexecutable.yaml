@@ -1,0 +1,56 @@
+Name: MiNT Application/executable
+URL: "https://en.wikipedia.org/wiki/MiNT"
+FileNameExtensions: ["app", "v4e", "000", "030", "040", "060"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\0MiNT\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0 :\0\x1AN\xFB\b\xFA\0\0\x01\b\0"
+    CaseSensitive: true
+  - Pos: 340
+    AsciiString: "B\xA7B\xA7?<\xFF\xFF?<\x01TNAO\xEF\0\f#\xC0\0"
+    CaseSensitive: true
+  - Pos: 364
+    AsciiString: "NuNu"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TPA_INITIALMEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINT.CNF."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACKSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINTLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUNU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TNAO"
+    CaseSensitive: false

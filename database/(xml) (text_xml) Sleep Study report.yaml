@@ -1,0 +1,116 @@
+Name: Sleep Study report
+URL: "https://blogs.windows.com/windowsexperience/2014/06/26/sleep-study-diagnose-whats-draining-your-battery-while-the-system-sleeps/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STARTFULLCHARGECAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDFULLCHARGECAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALREPORTSTARTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALSTARTTIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTCHARGECAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML-STYLESHEET TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMMANUFACTURER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDCHARGECAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALENDTIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORTINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMPRODUCTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTEDSTANDBY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLEEPSTUDY XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLETRACEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORTDURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALSCANTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPUTERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENERGYDRAINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORMROLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORTGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTCOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOSDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSBUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XSL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2012"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

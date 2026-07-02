@@ -1,0 +1,260 @@
+Name: MBAL program
+URL: "https://www.petex.com/pe-engineering/ipm-suite/mbal/"
+FileNameExtensions: ["mbi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x05\0PetEx"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0MBAL Program|"
+    CaseSensitive: true
+  - Pos: 490
+    #        @                 x
+    Bytes: [0x40, 0x8C, 0xB5, 0x78, 0x1D, 0xAF, 0x15]
+  - Pos: any
+    AsciiString: "MB.MB PDTANKRESULT0SW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB PDTANKRESULT1SW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB PDTANKRESULT2SW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB PDTANKRESULT3SW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START OF PREDICTION\0$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START OF SIMULATION\0$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC.MB DC PRODUCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB PDTANKRESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB PDWELLRESULT0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB PDWELLRESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA.MB PDTANKRESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA.MB PDWELLRESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.MB PDTANKRESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.MB PDWELLRESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BL.PVT CALCULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB PDCONSTRAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB WELLTIGHTGAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.PVT CALCULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MC.MB MONTECARLOK6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MC.PVT CALCULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA.MB PDCONSTRAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA.MB WELLTIGHTGAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA.PVT CALCULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.MB PDCONSTRAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.MB WELLTIGHTGAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.PVT CALCULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF PREDICTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF SIMULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MC.MB MCRESULT0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC.MB DC RESULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB UNITS SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB GENERALZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB MATCHING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB WELLHIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB WELLPRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA.MB GENERALZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA.MB MATCHING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA.MB WELLHIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA.MB WELLPRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.MB GENERALZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.MB MATCHING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.MB WELLHIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.MB WELLPRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BL.BL RESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB TANK0CD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB TANK1CD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA.MB TANK0CD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAILER BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBAL PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BL.PVTSETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB SYSTEMEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB LEAK0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.PVTSETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MC.PVTSETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA.PVTSETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.PVTSETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BL.PVT COL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC.MB DCRI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.MB PDEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB.PVT COL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MC.PVT COL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA.MB LEAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA.MB PDEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA.PVT COL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.MB LEAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.MB PDEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.MB TANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.PVT COL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1D.MB 1D)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ML.MB ML2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BL.MB BL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAS CAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAS INJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OIL LEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAT INJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BALREG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TANK01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PETEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PVT01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG.EI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANS"
+    CaseSensitive: false

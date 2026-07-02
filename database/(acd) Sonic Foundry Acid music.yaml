@@ -1,0 +1,40 @@
+Name: Sonic Foundry Acid music
+URL: "http://www.sonymediasoftware.com/Default.asp"
+FileNameExtensions: ["acd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "riff"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "M\0A\0D\0E\0 \0W\0I\0T\0H\0 \0S\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0A\0S\0T\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0A\0C\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0C\0I\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIFF."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IENG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INAM"
+    CaseSensitive: false

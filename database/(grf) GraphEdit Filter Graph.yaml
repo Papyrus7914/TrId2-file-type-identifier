@@ -1,0 +1,31 @@
+Name: GraphEdit Filter Graph
+Description: GraphEdit is part of Microsoft DirectX SDK.
+URL: "http://tinyurl.com/yyhrzx"
+FileNameExtensions: ["grf"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: 1664
+    AsciiString: "A\0c\0t\0i\0v\0e\0M\0o\0v\0i\0e\0G\0r\0a\0p\0h"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "C\0O\0N\0N\0E\0C\0T\0I\0O\0N\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0T\0E\0R\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0L\0O\0C\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0I\0D\0E\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0N\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0U\0T"
+    CaseSensitive: false

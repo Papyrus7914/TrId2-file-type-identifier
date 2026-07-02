@@ -1,0 +1,10 @@
+Name: Generic PC disk image (NTFS)
+FileNameExtensions: ["dsk", "img"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEBR\x90NTFS    "
+    CaseSensitive: true
+  - Pos: 510
+    #        U
+    Bytes: [0x55, 0xAA]

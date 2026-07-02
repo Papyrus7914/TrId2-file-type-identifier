@@ -1,0 +1,11 @@
+Name: ASPRS Lidar Data Exchange Format (compressed)
+URL: "http://fileformats.archiveteam.org/wiki/LAS-LAZ"
+FileNameExtensions: ["laz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LASF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LASZIP ENCODED"
+    CaseSensitive: false

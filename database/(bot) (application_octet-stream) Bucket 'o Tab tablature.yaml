@@ -1,0 +1,14 @@
+Name: Bucket 'o Tab tablature
+Description: Tablature Creation Software for Windows 3.x.
+FileNameExtensions: ["bot"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TAB DATAFILE\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END OF COMMENTS1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF DATABASE"
+    CaseSensitive: false

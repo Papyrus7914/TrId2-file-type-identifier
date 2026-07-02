@@ -1,0 +1,14 @@
+Name: ThunderByte Antivirus Signature
+URL: "https://en.wikipedia.org/wiki/ThunderByte_Antivirus"
+FileNameExtensions: ["sig"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TBAV "
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: " compressed signature / AVR file.\r\n(C) Copyright "
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: " Thunderbyte B.V.\r\n\x1A"
+    CaseSensitive: true

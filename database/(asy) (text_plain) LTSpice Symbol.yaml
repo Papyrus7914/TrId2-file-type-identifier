@@ -1,0 +1,20 @@
+Name: LTSpice Symbol
+URL: "http://www.linear.com/designtools/software/"
+FileNameExtensions: ["asy"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Version 4\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PINATTR PINNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOLTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false

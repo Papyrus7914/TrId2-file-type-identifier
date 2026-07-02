@@ -1,0 +1,14 @@
+Name: Scrivener writing History
+URL: "http://fileformats.archiveteam.org/wiki/Scrivener"
+FileNameExtensions: ["history"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WRITINGHISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAY DWC"
+    CaseSensitive: false

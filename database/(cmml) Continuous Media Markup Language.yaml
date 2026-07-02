@@ -1,0 +1,25 @@
+Name: Continuous Media Markup Language
+URL: "http://en.wikipedia.org/wiki/Continuous_Media_Markup_Language"
+FileNameExtensions: ["cmml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "ml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false

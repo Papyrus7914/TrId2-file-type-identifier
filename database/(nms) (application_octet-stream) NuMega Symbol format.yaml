@@ -1,0 +1,14 @@
+Name: NuMega Symbol format
+URL: "https://en.wikipedia.org/wiki/SoftICE"
+FileNameExtensions: ["nms"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NM32"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NM32 SYMBOL FORMAT - (C) COPYRIGHT NUMEGA TECHNOLOGIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED."
+    CaseSensitive: false

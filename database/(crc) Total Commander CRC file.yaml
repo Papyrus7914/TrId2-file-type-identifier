@@ -1,0 +1,17 @@
+Name: Total Commander CRC file
+Description: Total Commander use this for checking the integrity of a file resulting from the combination of various splitted parts.
+URL: "http://www.ghisler.com/"
+FileNameExtensions: ["crc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "filename="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRC32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

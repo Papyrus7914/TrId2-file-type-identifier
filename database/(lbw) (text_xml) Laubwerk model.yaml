@@ -1,0 +1,26 @@
+Name: Laubwerk model
+URL: "http://fileformats.archiveteam.org/wiki/Laubwerk"
+FileNameExtensions: ["lbw"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LAUBWERK VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

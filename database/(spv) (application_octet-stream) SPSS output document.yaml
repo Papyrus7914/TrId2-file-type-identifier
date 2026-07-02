@@ -1,0 +1,26 @@
+Name: SPSS output document
+URL: "https://en.wikipedia.org/wiki/SPSS"
+FileNameExtensions: ["spv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "OUTPUTVIEWER0000000001_HEADING.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTVIEWER0000000000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEDATA.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.MFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.MFK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false

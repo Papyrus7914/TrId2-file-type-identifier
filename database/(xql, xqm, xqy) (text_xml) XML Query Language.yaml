@@ -1,0 +1,17 @@
+Name: XML Query Language
+URL: "https://en.wikipedia.org/wiki/XQuery"
+FileNameExtensions: ["xql", "xqm", "xqy"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "xquery version \""
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XQUERY VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECLARE"
+    CaseSensitive: false

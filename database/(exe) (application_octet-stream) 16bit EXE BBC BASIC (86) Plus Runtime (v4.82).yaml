@@ -1,0 +1,290 @@
+Name: 16bit EXE BBC BASIC (86) Plus Runtime (v4.82)
+URL: "https://www.bbcbasic.co.uk/bbcbasic/bbcdos.html"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0 \0\xB0\0\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0\0\0\x1E\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xEB\x19\x90\xE9"
+    CaseSensitive: true
+  - Pos: 538
+    #        \n                                        6           \a    \n    \t                      2           6           \a                u           6                             7     6
+    Bytes: [0x0A, 0xBB, 0x00, 0x00, 0xBC, 0x00, 0x03, 0x36, 0xC7, 0x07, 0x0A, 0x09, 0x83, 0xC3, 0x02, 0x32, 0xC0, 0x36, 0x88, 0x07, 0xFE, 0xC3, 0x75, 0xF9, 0x36, 0xC6, 0x06, 0xFE, 0x00, 0x37, 0x36, 0xC7, 0x06, 0xEE, 0x00]
+  - Pos: 591
+    AsciiString: "\nby  Richard Russell, Jeffrey Raynor and Brandon Butterworth\r\n("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ARRAY\0SUBSCRIPT\0SYNTAX ERROR\0ESCAPE\0DIVISION BY ZERO\0STRING TOO LONG\0TOO BIG\0-VE ROOT\0LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JANFEBMARAPRMAYJUNJULAUGSEPOCTNOVDECSUNMONTUEWEDTHUFRISAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JEFFREY RAYNOR AND BRANDON BUTTERWORTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789PC BBC BASIC VERSION 4.82"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE NEEDED\0MULTIPLE LABEL\0MISTAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCOMPATIBLE HARDWARE OR BAD FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) COPYRIGHT R.T.RUSSELL 2000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY  RICHARD RUSSELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCURACY LOST\0EXP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL\0ARGUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE MISMATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVELOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING$("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISSING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO SUCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESTORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT$("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T MATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INKEY$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTR("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT$("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOSUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIMEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOMEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MID$("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSCLI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNTIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHR$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GET$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAB("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPOS"
+    CaseSensitive: false

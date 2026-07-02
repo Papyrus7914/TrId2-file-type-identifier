@@ -1,0 +1,22 @@
+Name: OpenStreetMap Change data
+URL: "http://www.openstreetmap.org/"
+FileNameExtensions: ["osc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OSMCHANGE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSMOSIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAG K"
+    CaseSensitive: false

@@ -1,0 +1,131 @@
+Name: Lib TAS LTM capture (ungzipped)
+URL: "https://tasvideos.org/EmulatorResources/LibTAS/LTMFormat"
+FileNameExtensions: ["ltm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "inputs\0"
+    CaseSensitive: true
+  - Pos: 257
+    AsciiString: "ustar  \0"
+    CaseSensitive: true
+  - Pos: 512
+    AsciiString: "|K|"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INITIAL_MONOTONIC_TIME_NSEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIAL_MONOTONIC_TIME_SEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDL_GETPERFORMANCECOUNTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOCK_GETTIME_MONOTONIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUERYPERFORMANCECOUNTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVESTATE_FRAME_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBTAS_MAJOR_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBTAS_MINOR_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBTAS_PATCH_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINTHREAD_TIMETRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOCK_GETTIME_REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLE_FRAMERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIAL_TIME_NSEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIAL_TIME_SEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNOTATIONS.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETTICKCOUNT64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NB_CONTROLLERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONDRAW_FRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RERECORD_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMERATE_DEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMERATE_NUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUSE_SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO_RESTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSINGLEINPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETTIMEOFDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDL_GETTICKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT_NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH_NSEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITOR.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH_SEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USTAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

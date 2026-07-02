@@ -1,0 +1,36 @@
+Name: XML Schema
+FileNameExtensions: ["xsd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ELEMENT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPLEXTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINOCCURS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXOCCURS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

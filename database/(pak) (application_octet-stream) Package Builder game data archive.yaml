@@ -1,0 +1,12 @@
+Name: Package Builder game data archive
+Description: Used in games by BlitPop Games.
+URL: "https://www.mobygames.com/company/14560/blitpop-games/"
+FileNameExtensions: ["pak"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x05$PAK$"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "*Package Builder v1.0 Coded by Rui Barbosa."
+    CaseSensitive: true

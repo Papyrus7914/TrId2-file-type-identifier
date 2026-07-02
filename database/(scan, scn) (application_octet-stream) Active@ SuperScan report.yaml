@@ -1,0 +1,11 @@
+Name: Active@ SuperScan report
+URL: "https://www.file-recovery.com/recovery.html"
+FileNameExtensions: ["scan", "scn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FwSI]\0\0\0"
+    CaseSensitive: true
+  - Pos: 105
+    AsciiString: "x^"
+    CaseSensitive: true

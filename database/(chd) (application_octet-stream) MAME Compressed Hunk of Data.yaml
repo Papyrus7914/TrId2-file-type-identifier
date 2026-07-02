@@ -1,0 +1,9 @@
+Name: MAME Compressed Hunk of Data
+Description: Can contain data from CDs, DVDs, HDs, etc.
+URL: "https://docs.mamedev.org/tools/chdman.html"
+FileNameExtensions: ["chd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MComprHD"
+    CaseSensitive: true

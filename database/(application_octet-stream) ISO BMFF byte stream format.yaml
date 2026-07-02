@@ -1,0 +1,28 @@
+Name: ISO BMFF byte stream format
+URL: "https://w3c.github.io/media-source/isobmff-byte-stream-format.html"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "moof"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "mfhd"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "traf"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "tfhd\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUN"
+    CaseSensitive: false

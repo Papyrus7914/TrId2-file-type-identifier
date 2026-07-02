@@ -1,0 +1,27 @@
+Name: zCalc data
+URL: "http://www.zcalc.com"
+DetectionPatterns:
+  - Pos: 0
+    #              E
+    Bytes: [0xC0, 0x45]
+  - Pos: 3
+    AsciiString: "d"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ZCALCPERSISTENTDEPENDENCIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false

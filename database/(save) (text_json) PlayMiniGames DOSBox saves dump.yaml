@@ -1,0 +1,23 @@
+Name: PlayMiniGames DOSBox saves dump
+URL: "https://playminigames.net/"
+FileNameExtensions: ["save"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"https://playminigames.net/content/gamebinary/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IYBUAGLZIGLZIHROZSBJB25MAWD1CMF0AW9UZMLSZSBMB3IGRE9TQM94IDAUNZQUICHQBGVHC2UGDXNLIHROZSBSYXRLC3QGDMVYC2LVBIBVZIBET1NCB3GPDQOJIEXPBMVZIHN0YXJ0AW5NIHDPDGGGYSAJIGFYZSBJB21TZW50BGLUZXMGYW5KIGFYZSBPZ25VCMVKIGJ5IERPU0JVEC4NCIMGVGHLESBHCMUGDXNLZCB0BYAOYNJPZWZSESKG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYMINIGAMES.NET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEBINARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ZIP"
+    CaseSensitive: false

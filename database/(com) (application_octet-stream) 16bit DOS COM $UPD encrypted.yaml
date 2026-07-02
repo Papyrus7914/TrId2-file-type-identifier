@@ -1,0 +1,13 @@
+Name: 16bit DOS COM $UPD encrypted
+Description: Night $pirit's polymorphic executable files encryptor.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "[$UPD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$UPD"
+    CaseSensitive: false

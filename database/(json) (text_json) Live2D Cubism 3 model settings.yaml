@@ -1,0 +1,29 @@
+Name: Live2D Cubism 3 model settings
+URL: "https://www.live2d.com/en/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".PHYSICS3.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEREFERENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE_00.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MOC3"
+    CaseSensitive: false

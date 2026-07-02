@@ -1,0 +1,17 @@
+Name: DoReMIX song
+Description: Old Roland composing software for Windows 3.x.
+FileNameExtensions: ["dmx"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@ "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPQN"
+    CaseSensitive: false

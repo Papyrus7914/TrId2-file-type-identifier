@@ -1,0 +1,29 @@
+Name: ENVI Header
+URL: "https://en.wikipedia.org/wiki/NV5_Geospatial_Solutions#ENVI"
+FileNameExtensions: ["hdr"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ENVI"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEADER OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERLEAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

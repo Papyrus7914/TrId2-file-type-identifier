@@ -1,0 +1,41 @@
+Name: LightWave 3D Object (LWO2)
+URL: "https://en.wikipedia.org/wiki/LightWave_3D"
+FileNameExtensions: ["lwo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "LWO2TAGS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LWO2TAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PNTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURF"
+    CaseSensitive: false

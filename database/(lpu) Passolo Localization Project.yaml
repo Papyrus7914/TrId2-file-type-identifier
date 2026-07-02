@@ -1,0 +1,13 @@
+Name: Passolo Localization Project
+URL: "http://www.passolo.com/"
+FileNameExtensions: ["lpu"]
+DetectionPatterns:
+  - Pos: 0
+    #        Q     K
+    Bytes: [0x51, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "LOGFILE.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT.TXTPK"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: TacOps Map
+URL: "https://www.mobygames.com/game/203672/tacops/"
+FileNameExtensions: ["map"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "ap"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT I.L. HOLDRIDGE 199"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TACOPS TERRAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPOMATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GNRL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

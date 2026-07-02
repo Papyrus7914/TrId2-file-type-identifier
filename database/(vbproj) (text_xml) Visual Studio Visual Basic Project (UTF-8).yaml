@@ -1,0 +1,74 @@
+Name: Visual Studio Visual Basic Project (UTF-8)
+URL: "https://visualstudio.microsoft.com/"
+FileNameExtensions: ["vbproj"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: any
+    AsciiString: "CONFIGURATION CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYGROUP CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT.VISUALBASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VISUALBASIC.TARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(CONFIGURATION)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORT INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORT PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOTNAMESPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUGSYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(PLATFORM)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(MSBUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUGTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVELOPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE"
+    CaseSensitive: false

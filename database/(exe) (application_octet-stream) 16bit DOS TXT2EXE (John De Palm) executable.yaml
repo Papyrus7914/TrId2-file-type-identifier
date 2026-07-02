@@ -1,0 +1,37 @@
+Name: 16bit DOS TXT2EXE (John De Palm) executable
+URL: "http://fileformats.archiveteam.org/wiki/TXT2EXE.COM_(John_De_Palma)"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    Bytes: [0x01]
+  - Pos: 5
+    AsciiString: "\0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\x01\x80\0\0\0\x0E\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1C\0\0\0LZ91\xFF?blTXT2EXE \0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BLTXT2EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "65LCK4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OS 3.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*FAB*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZ91"
+    CaseSensitive: false

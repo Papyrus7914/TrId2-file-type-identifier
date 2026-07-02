@@ -1,0 +1,22 @@
+Name: Easy CD Creator 5 Layout
+URL: "http://www.sonic.com/"
+FileNameExtensions: ["cl5"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x01\0\0\0\x11\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "D\0I\0S\0C\0.\0C\0I\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0O\0C\0U\0M\0E\0~\01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0O\0C\0A\0L\0S\0~\01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0E\0M\0P"
+    CaseSensitive: false

@@ -1,0 +1,78 @@
+Name: 3Shape Dental System DME - library import info
+Description: Contained in a DME package.
+URL: "https://www.3shape.com/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<LibraryImportInfo version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LIBRARYIMPORTINFO VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLIBRARYMATERIALINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLIBRARYMATERIALLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLIBRARIESINFOFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARYINFOLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTCHECKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATIONDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARYTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILTIMPLANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROVIDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false

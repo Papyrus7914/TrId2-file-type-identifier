@@ -1,0 +1,26 @@
+Name: IBrowse Hotlist / bookmark (v2)
+URL: "https://en.wikipedia.org/wiki/IBrowse"
+FileNameExtensions: ["html"]
+MimeType: text/html
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!-- IBrowse Hotlist V2 -->\n<HTML>\n<HEAD><TITLE>IBrowse Hotlist</TITLE></HEAD>\n<BODY>\n<H2><P ALIGN=CENTER>IBrowse Hotlist</P></H2>\n<HR>\n<UL>\n<LI><B>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS HOTLIST HAS BEEN CREATED USING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.OMNIPRESENCE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

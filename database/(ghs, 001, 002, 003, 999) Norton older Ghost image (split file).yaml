@@ -1,0 +1,151 @@
+Name: Norton older Ghost image (split file)
+Description: FILE??[1-9].GHS or with Ghost -cns option FILE.??[1-9]
+URL: "http://us.norton.com/ghost/"
+FileNameExtensions: ["ghs", "001", "002", "003", "999"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFE, 0xEF]
+  - Pos: 2
+    AsciiString: "\t"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 83
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 87
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 91
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 143
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 152
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 159
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 163
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 171
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 199
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 203
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 207
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 215
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 219
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 225
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 231
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 237
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 239
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 242
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 247
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 249
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 253
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 261
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 267
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 289
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 291
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 298
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 303
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 319
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 339
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 343
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 367
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 375
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 403
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 411
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 415
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 419
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 427
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 467
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 475
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 479
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 483
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 491
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 495
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 503
+    AsciiString: "\0"
+    CaseSensitive: true

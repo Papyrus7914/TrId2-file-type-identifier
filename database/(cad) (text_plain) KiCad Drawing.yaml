@@ -1,0 +1,47 @@
+Name: KiCad Drawing
+URL: "https://en.wikipedia.org/wiki/KiCad"
+FileNameExtensions: ["cad"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$HEADER"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$ENDHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ENDBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PADSTACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$BOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENCAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ENDP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: Management Information Format (UCase)
+URL: "https://en.wikipedia.org/wiki/Management_Information_Format"
+FileNameExtensions: ["mif"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "S"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: " C"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "START ATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START COMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END ATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END COMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END GROUP"
+    CaseSensitive: false

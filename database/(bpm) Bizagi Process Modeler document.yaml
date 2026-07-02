@@ -1,0 +1,43 @@
+Name: Bizagi Process Modeler document
+URL: "http://en.wikipedia.org/wiki/Bizagi"
+FileNameExtensions: ["bpm"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DOCUMENTATIONSETTINGS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTINGPREFERENCES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERPREFERENCES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTICIPANTS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFERENCES.BPPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFERENCES.BPPM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIZAGIARTIFACTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELINFO.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERINFO.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DIAGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERS"
+    CaseSensitive: false

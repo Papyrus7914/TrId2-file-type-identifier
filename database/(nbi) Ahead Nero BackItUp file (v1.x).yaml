@@ -1,0 +1,22 @@
+Name: Ahead Nero BackItUp file (v1.x)
+URL: "http://www.ahead.de"
+FileNameExtensions: ["nbi"]
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MICROSOFT WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NB.INFO.FILE.1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NERO BACKITUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NBI"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: SGA archive - Home World 2 game data
+Description: SGA Archives are used in various games from Relic Entertainment Inc.
+URL: "http://www.relic.com/"
+FileNameExtensions: ["big"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "_ARCHIVE\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "H\0W\02\0"
+    CaseSensitive: true

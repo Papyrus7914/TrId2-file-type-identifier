@@ -1,0 +1,47 @@
+Name: 1tracker Module
+URL: "http://fileformats.archiveteam.org/wiki/1tracker_module"
+FileNameExtensions: ["1tm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[1tracker module]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "1TRACKER MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATTERNFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTRUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".1TE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONG"
+    CaseSensitive: false

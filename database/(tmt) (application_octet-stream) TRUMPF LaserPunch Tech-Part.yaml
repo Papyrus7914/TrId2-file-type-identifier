@@ -1,0 +1,50 @@
+Name: TRUMPF Laser/Punch Tech-Part
+URL: "https://www.trumpf.com/en_CA/products/software/programming-software/"
+FileNameExtensions: ["tmt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "bereich Kopf {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEREICH INFO {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEREICH KOPF {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEREICH GEO {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUTOPS LASER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~KONT_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO_STR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ID_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DB_GEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~EOF"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Programmer's Notepad text Clips (UTF-8)
+URL: "http://www.pnotepad.org/"
+FileNameExtensions: ["clips"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: any
+    AsciiString: "CLIPS NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIP NAME"
+    CaseSensitive: false

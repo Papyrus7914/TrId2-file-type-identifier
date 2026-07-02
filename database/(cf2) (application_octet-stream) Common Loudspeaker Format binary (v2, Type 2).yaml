@@ -1,0 +1,9 @@
+Name: Common Loudspeaker Format binary (v2, Type 2)
+Description: CLF Type 2 file contains Third Octave/5 degree data.
+URL: "http://www.clfgroup.org"
+FileNameExtensions: ["cf2"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "A\xBD\n\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0v2."
+    CaseSensitive: true

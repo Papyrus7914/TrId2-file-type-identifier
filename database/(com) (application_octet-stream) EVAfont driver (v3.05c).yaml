@@ -1,0 +1,19 @@
+Name: EVAfont driver (v3.05c)
+URL: "http://fileformats.archiveteam.org/wiki/EVAfont_driver"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 7
+    AsciiString: " font driver v3.05c\0\r\nCopyright (C) 1988-1990 by Pete I. Kvitek\r\n$Driver not loaded - strange video card\r\n$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1988-1990 BY PETE I. KVITEK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DRIVER NOT LOADED - STRANGE VIDEO CARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT DRIVER V3.05C"
+    CaseSensitive: false

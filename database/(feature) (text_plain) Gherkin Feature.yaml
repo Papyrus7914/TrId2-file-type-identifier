@@ -1,0 +1,23 @@
+Name: Gherkin Feature
+URL: "https://cucumber.io/docs/reference#gherkin"
+FileNameExtensions: ["feature"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Feature:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCENARIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIVEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHEN"
+    CaseSensitive: false

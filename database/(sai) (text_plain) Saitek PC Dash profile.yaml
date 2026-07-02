@@ -1,0 +1,29 @@
+Name: Saitek PC Dash profile
+URL: "https://www.saitek.com/manuals/pcdash1.pdf"
+FileNameExtensions: ["sai"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PCDCOMPILED0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCDCOMPILED1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCDCOMPILED2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCDCOMPILED3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*DESCOLOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*DESCR"
+    CaseSensitive: false

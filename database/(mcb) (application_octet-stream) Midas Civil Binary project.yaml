@@ -1,0 +1,26 @@
+Name: Midas Civil Binary project
+URL: "http://en.midasuser.com/product/civil_overview.asp"
+FileNameExtensions: ["mcb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MCVL\x01\0\0\0\0\0\x80?\x14\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "HEAD\x01\0\0\0\x02\0\0\0\x15\0\0\0\x05\0\0\0VERS\0\0\0\0j\0\0\0j\0\0\0\x01\0\0\0UNIT\0\0\0\0\x1C\0\0\0\x1C\0\0\0\x04\0\0\0PJCF\0\0\0\0\x02\0\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PJCF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

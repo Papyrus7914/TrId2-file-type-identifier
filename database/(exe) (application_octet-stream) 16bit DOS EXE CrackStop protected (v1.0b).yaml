@@ -1,0 +1,26 @@
+Name: 16bit DOS EXE CrackStop protected (v1.0b)
+Description: Exe protector by Stefan Esser.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 16
+    #              \t
+    Bytes: [0xC6, 0x09]
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CRACKSTOP V1.0B - (C) 1997 BY STEFAN ESSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBER BUSCHWEG 9A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D 50999 K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0$Z"
+    CaseSensitive: false

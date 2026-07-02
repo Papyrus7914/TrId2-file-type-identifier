@@ -1,0 +1,18 @@
+Name: Chip's Challenge level pack
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xAC, 0xAA, 0x02, 0x00, 0x95, 0x00]
+  - Pos: any
+    AsciiString: "TOGGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHIPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false

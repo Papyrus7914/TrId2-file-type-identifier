@@ -1,0 +1,59 @@
+Name: APKMirror Bundle
+URL: "https://www.apkmirror.com/"
+FileNameExtensions: ["apkm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "APKM_INSTALLER.URLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.APKMIRROR.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNETSHORTCUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APKMIRRO.RSA3HB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APKMIRRO.RSAPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APKMIRRO.SFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.MFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLIT_CONFIG."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLERPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE.APKPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KOYLA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWWWW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CP3"
+    CaseSensitive: false

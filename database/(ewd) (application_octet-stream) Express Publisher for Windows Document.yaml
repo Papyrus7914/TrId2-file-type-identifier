@@ -1,0 +1,50 @@
+Name: Express Publisher for Windows Document
+Description: DTP software for Windows by Power Up Software Corp.
+URL: "http://fileformats.archiveteam.org/wiki/Express_Publisher"
+FileNameExtensions: ["ewd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xCA, 0xFE, 0xBE, 0xEF]
+  - Pos: any
+    AsciiString: "DESIGNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LAYNODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LOGICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SECSUBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SPLTTYP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGNODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARACON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TABSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SET"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: FL Studio Speech Preset
+URL: "http://fileformats.archiveteam.org/wiki/Speech_Preset"
+FileNameExtensions: ["speech"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Speaker Settings]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PERSONALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOICINGMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

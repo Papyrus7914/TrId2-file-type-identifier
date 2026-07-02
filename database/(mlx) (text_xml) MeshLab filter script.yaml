@@ -1,0 +1,11 @@
+Name: MeshLab filter script
+URL: "https://en.wikipedia.org/wiki/MeshLab"
+FileNameExtensions: ["mlx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE FilterScript>\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILTER NAME"
+    CaseSensitive: false

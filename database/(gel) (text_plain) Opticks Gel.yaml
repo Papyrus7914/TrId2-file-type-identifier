@@ -1,0 +1,14 @@
+Name: Opticks Gel
+Description: Amiga ray-trace Software.
+FileNameExtensions: ["gel"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\nGELv1.0\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WAVELENGTHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false

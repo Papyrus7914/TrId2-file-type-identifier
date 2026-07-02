@@ -1,0 +1,38 @@
+Name: BibTeX Style
+URL: "https://en.wikipedia.org/wiki/BibTeX"
+FileNameExtensions: ["bst"]
+MimeType: application/x-bibtex
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ENTRY"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FUNCTION {ARTICLE}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL.TYPE$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITERATE {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TYPE}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIBI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM"
+    CaseSensitive: false

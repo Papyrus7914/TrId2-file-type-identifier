@@ -1,0 +1,20 @@
+Name: Jose SciEditor Project
+Description: SED is a public domain editor for PowerBASIC. It's a community project driven by Jose Roca.
+URL: "http://csdsoft.com/josescied.htm"
+FileNameExtensions: ["spf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[BAS Files]\r\nPrimary Source File="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BAS FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARY SOURCE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RC FILES"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: Gravity Force Map
+Description: Game by Jens Hassler.
+FileNameExtensions: ["fmp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FMAPMPHD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BGFX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDHD"
+    CaseSensitive: false

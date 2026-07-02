@@ -1,0 +1,13 @@
+Name: Git Large File Storage pointer
+URL: "https://git-lfs.github.com/"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "version https://git-lfs.github.com/spec/v1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OID SHA256"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

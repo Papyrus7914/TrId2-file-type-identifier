@@ -1,0 +1,53 @@
+Name: Zipped GameMaker project
+URL: "https://en.wikipedia.org/wiki/GameMaker"
+FileNameExtensions: ["yyz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "OPTIONS_WINDOWS.YY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS_LINUX.YY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS_MAC.YY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS_MAIN."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE_0.GML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INHERITED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRITES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TED.YY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".YYP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.YY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

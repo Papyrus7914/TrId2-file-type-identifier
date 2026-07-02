@@ -1,0 +1,8 @@
+Name: Famicom Disk System disk image (header-less)
+URL: "https://www.nesdev.org/wiki/FDS_file_format"
+FileNameExtensions: ["fds"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01*NINTENDO-HVC*"
+    CaseSensitive: true

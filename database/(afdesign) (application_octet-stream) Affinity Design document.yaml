@@ -1,0 +1,44 @@
+Name: Affinity Design document
+URL: "https://affinity.serif.com/en-gb/designer/"
+FileNameExtensions: ["afdesign"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\xFFKA"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0nsrP#Inf"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "Prot"
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "#Fil"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOC.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THMB"
+    CaseSensitive: false

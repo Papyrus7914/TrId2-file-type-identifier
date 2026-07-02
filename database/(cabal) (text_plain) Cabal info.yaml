@@ -1,0 +1,35 @@
+Name: Cabal info
+URL: "https://en.wikipedia.org/wiki/Cabal_(software)"
+FileNameExtensions: ["cabal"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "ame:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BUILD-DEPENDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

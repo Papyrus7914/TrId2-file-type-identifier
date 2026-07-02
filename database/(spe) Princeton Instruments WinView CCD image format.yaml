@@ -1,0 +1,73 @@
+Name: Princeton Instruments WinView CCD image format
+URL: "http://www.piacton.com/products/versarray/software.aspx#1"
+FileNameExtensions: ["spe"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SOFH"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\nTechnique: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOURCEANALYSERANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEUTRALIZERCURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEUTRALIZERENERGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTENSITYRECAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECTRALREGDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPATIALAREADEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOSPATIALAREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOSPECTRALREG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSERMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACQFILEDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENERGYRECAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XRAYSOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TECHNIQUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XRAYPOWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEDESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EOFH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false

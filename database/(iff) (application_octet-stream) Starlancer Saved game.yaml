@@ -1,0 +1,29 @@
+Name: Starlancer Saved game
+URL: "https://en.wikipedia.org/wiki/Starlancer"
+FileNameExtensions: ["iff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SAVENAME"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SAVENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PILO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

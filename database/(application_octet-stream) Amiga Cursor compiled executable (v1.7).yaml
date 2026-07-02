@@ -1,0 +1,52 @@
+Name: Amiga Cursor compiled executable (v1.7)
+Description: Shareware Amiga BASIC compiler by Jorgen Forster.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x03\xF3\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "A\xEB\0\\N\xAE\xFE"
+    CaseSensitive: true
+  - Pos: 79
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 118
+    AsciiString: "N"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".LIBRARY\0INTUITION.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COULD NOT OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LIBRARY\0CO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V1.7"
+    CaseSensitive: false

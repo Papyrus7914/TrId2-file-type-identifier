@@ -1,0 +1,25 @@
+Name: TAG Screen/video driver
+URL: "http://fileformats.archiveteam.org/wiki/TAG"
+FileNameExtensions: ["scr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEB]
+  - Pos: 3
+    AsciiString: "TAG"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "S"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "Edytor TAG \n\r sterownik karty "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(C) INFOSERVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEROWNIK KARTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDYTOR TAG"
+    CaseSensitive: false

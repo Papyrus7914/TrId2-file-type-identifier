@@ -1,0 +1,35 @@
+Name: Blitzkrieg Map data
+URL: "https://www.mobygames.com/game/11329/blitzkrieg/"
+FileNameExtensions: ["bzm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01]
+  - Pos: 4
+    Bytes: [0x00, 0x01]
+  - Pos: 9
+    Bytes: [0x00, 0x01]
+  - Pos: 14
+    AsciiString: "\0\x01<\x01\b\x16\0\0\0\x02,terrain\\sets\\"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\\tileset\x02<\x01\b\x16\0\0\0\x02,terrain\\sets\\"
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: "\\crosset"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(TERRAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CROSSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS"
+    CaseSensitive: false

@@ -1,0 +1,31 @@
+Name: LiteWave compressed audio
+URL: "http://www.clearjump.com/products/LiteWave.html"
+FileNameExtensions: ["lw"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0WAVEfmt <\0\0\0\xAE\b"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0\0\x04\0\0*\0\x02\a\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 79
+    AsciiString: "\0fact\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 91
+    AsciiString: "\0data"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVEFMT"
+    CaseSensitive: false

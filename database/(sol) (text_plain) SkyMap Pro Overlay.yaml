@@ -1,0 +1,20 @@
+Name: SkyMap Pro Overlay
+URL: "http://web.archive.org/web/20200329060057/http://www.skymap.com/"
+FileNameExtensions: ["sol"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TITLE "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFINE LINE EDGE SOLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT LINE EDGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVE"
+    CaseSensitive: false

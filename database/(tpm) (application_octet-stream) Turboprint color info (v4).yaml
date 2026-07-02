@@ -1,0 +1,17 @@
+Name: Turboprint color info (v4)
+Description: Amiga print utility.
+FileNameExtensions: ["tpm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Turboprint 4.0 Color]\n\nnumtables\n\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PATTERN X DENS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLES"
+    CaseSensitive: false

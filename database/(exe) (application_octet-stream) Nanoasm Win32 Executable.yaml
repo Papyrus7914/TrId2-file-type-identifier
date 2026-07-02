@@ -1,0 +1,41 @@
+Name: Nanoasm Win32 Executable
+URL: "http://mrhx.ucoz.com/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@"
+    CaseSensitive: true
+  - Pos: 200
+    AsciiString: "PE\0\0L"
+    CaseSensitive: true
+  - Pos: 448
+    AsciiString: ".text"
+    CaseSensitive: true
+  - Pos: 536
+    AsciiString: "[nanoasm]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOADLIBRARYA\0\0}\0EXITPROCESS\0KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COULD NOT GET ADDRESS OF PROCEDURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COULD NOT LOAD LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NANOASM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false

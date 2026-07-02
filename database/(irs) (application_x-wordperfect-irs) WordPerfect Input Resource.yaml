@@ -1,0 +1,11 @@
+Name: WordPerfect Input Resource
+URL: "https://github.com/OneWingedShark/WordPerfect/blob/master/doc/SDK_Help/FileFormats/WPFF_DocumentStructure.htm"
+FileNameExtensions: ["irs"]
+MimeType: application/x-wordperfect-irs
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFWPC"
+    CaseSensitive: true
+  - Pos: 8
+    #              *
+    Bytes: [0x01, 0x2A]

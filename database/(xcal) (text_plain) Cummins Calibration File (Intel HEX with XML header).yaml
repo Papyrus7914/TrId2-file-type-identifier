@@ -1,0 +1,26 @@
+Name: Cummins Calibration File (Intel HEX with XML header)
+URL: "https://www.cummins.com/en-na/support/digital-products-and-services-support/incal-support"
+FileNameExtensions: ["xcal"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "F440\r\n<compatibility_header>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CALIBRATION_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_DESCRIPTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIAN"
+    CaseSensitive: false

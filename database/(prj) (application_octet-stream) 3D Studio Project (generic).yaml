@@ -1,0 +1,25 @@
+Name: 3D Studio Project (generic)
+URL: "https://en.wikipedia.org/wiki/Autodesk_3ds_Max"
+FileNameExtensions: ["prj"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        =
+    Bytes: [0x3D, 0xC2]
+  - Pos: 5
+    Bytes: [0x00, 0x10, 0xC0]
+  - Pos: 9
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FONTS\0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBS\0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MLI"
+    CaseSensitive: false

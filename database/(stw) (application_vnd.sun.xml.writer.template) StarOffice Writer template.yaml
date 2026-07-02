@@ -1,0 +1,41 @@
+Name: StarOffice Writer template
+URL: "http://fileformats.archiveteam.org/wiki/OpenOffice.org_XML"
+FileNameExtensions: ["stw"]
+MimeType: application/vnd.sun.xml.writer.template
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/vnd.sun.xml.writer.template"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.SUN.XML.WRITER.TEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.SUN.XML.WRITER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false

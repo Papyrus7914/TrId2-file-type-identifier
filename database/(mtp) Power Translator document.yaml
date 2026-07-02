@@ -1,0 +1,58 @@
+Name: Power Translator document
+URL: "http://www.lec.com/power-translator-software.asp"
+FileNameExtensions: ["mtp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CVmListMDF0001\r\n{\r\nHeader\r\n{\r\n\r\n0\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCUMENT_OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DE0N1024N1024N0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CVMLISTMDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDF FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SI0V+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CG1N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DA0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DH0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CI1N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CK1N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PA1N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PK1V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SV0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DX0S"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: FastRay scene
+Description: Amiga 3D software.
+URL: "http://www.amigafuture.de/asd.php?asd_id=518"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FRAYVERS"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "OB"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LICHTQUELLEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJEKTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHICHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBERFL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SZENEN"
+    CaseSensitive: false

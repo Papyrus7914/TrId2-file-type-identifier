@@ -1,0 +1,15 @@
+Name: LuraWave Format bitmap
+FileNameExtensions: ["lwf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WV\x02\0GE\0\x0E\0\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "CB"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "QU\0\x06"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "ST"
+    CaseSensitive: true

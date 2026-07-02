@@ -1,0 +1,21 @@
+Name: IFF binary Patch
+Description: Patch format used on Amiga.
+URL: "https://wiki.amigaos.net/wiki/IFF_FORM_and_Chunk_Registry"
+FileNameExtensions: ["pch", "patch"]
+MimeType: application/x-iff
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "PTCHVERS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INPF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSEQ"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: GROMACS Residue Topology
+URL: "https://en.wikipedia.org/wiki/GROMACS"
+FileNameExtensions: ["rtp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[ bondedtypes ]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BONDS  ANGLES  DIHEDRALS  IMPROPERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCL"
+    CaseSensitive: false

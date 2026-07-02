@@ -1,0 +1,20 @@
+Name: "Prince of Persia: The Two Thrones save game"
+URL: "https://www.mobygames.com/game/23338/prince-of-persia-the-two-thrones/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SAV4"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\a"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\\\xCA\0\0"
+    CaseSensitive: true

@@ -1,0 +1,70 @@
+Name: Broadcast Exchange Format (UTF-8)
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRIVATEINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTMETADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMCONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMPTE-RA.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USAGEPOLICY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BXFMESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BXFDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false

@@ -1,0 +1,15 @@
+Name: Mac PageMaker 6 document (MacBinary)
+Description: MacBinary is a standard for encoding Macintosh files for file transfer.
+URL: "https://en.wikipedia.org/wiki/Adobe_PageMaker"
+FileNameExtensions: ["bin", "macbin"]
+MimeType: application/x-macbinary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "ALB6"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALB6"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: TAG document (v3.x)
+URL: "http://fileformats.archiveteam.org/wiki/TAG"
+FileNameExtensions: ["tag"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0TAG\0\0\0\x03"
+    CaseSensitive: true
+  - Pos: 256
+    AsciiString: "HIERARCHIA TEKSTU"
+    CaseSensitive: true
+  - Pos: 356
+    AsciiString: "ROZDZIA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HIERARCHIA TEKSTU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROZDZIA"
+    CaseSensitive: false

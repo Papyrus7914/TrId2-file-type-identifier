@@ -1,0 +1,14 @@
+Name: Ability DataBase
+URL: "https://en.wikipedia.org/wiki/Ability_Plus"
+FileNameExtensions: ["xdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "--HDR--     "
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: " DB;DB   "
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\r\n"
+    CaseSensitive: true

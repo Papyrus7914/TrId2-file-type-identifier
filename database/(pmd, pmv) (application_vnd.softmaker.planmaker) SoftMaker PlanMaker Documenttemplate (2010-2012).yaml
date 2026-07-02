@@ -1,0 +1,25 @@
+Name: SoftMaker PlanMaker Document/template (2010-2012)
+Description: PMV for template
+URL: "https://en.wikipedia.org/wiki/SoftMaker"
+FileNameExtensions: ["pmd", "pmv"]
+MimeType: application/vnd.softmaker.planmaker
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1]
+  - Pos: 28
+    Bytes: [0xFE, 0xFF]
+  - Pos: any
+    AsciiString: "S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N\0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0M\0W\0 \0O\0B\0J\0E\0C\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0L\0A\0N\0M\0A\0K\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0O\0R\0K\0B\0O\0O\0K"
+    CaseSensitive: false

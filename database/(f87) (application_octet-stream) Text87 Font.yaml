@@ -1,0 +1,14 @@
+Name: Text87 Font
+URL: "https://www.timexsinclair.com/article/text87-an-advanced-ql-wordprocessor/index.html"
+FileNameExtensions: ["f87"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "TFFO"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TFFO"
+    CaseSensitive: false

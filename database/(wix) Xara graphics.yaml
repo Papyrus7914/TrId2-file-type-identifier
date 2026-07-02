@@ -1,0 +1,26 @@
+Name: Xara graphics
+Description: An ASCII based internal use format.
+URL: "http://en.wikipedia.org/wiki/Xara"
+FileNameExtensions: ["wix"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FLARETEXT\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBJECTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLARETEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINH("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNC("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XARA"
+    CaseSensitive: false

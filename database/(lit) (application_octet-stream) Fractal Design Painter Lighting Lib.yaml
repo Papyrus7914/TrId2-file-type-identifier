@@ -1,0 +1,14 @@
+Name: Fractal Design Painter Lighting Lib
+URL: "https://winworldpc.com/product/fractal-design-painter"
+FileNameExtensions: ["lit"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "\0\0FSLZFSX3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FSLZFSX3"
+    CaseSensitive: false

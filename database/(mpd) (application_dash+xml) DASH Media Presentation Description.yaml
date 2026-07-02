@@ -1,0 +1,50 @@
+Name: DASH Media Presentation Description
+URL: "http://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP"
+FileNameExtensions: ["mpd"]
+MimeType: application/dash+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REPRESENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAPTATIONSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINBUFFERTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENTATIOND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANDWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERIOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPEG"
+    CaseSensitive: false

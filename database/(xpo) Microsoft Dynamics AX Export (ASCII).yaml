@@ -1,0 +1,58 @@
+Name: Microsoft Dynamics AX Export (ASCII)
+URL: "http://en.wikipedia.org/wiki/Axapta"
+FileNameExtensions: ["xpo"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Exportfile for AOT version 1.0 or later\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXPORTFILE FOR AOT VERSION 1.0 OR LATER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTILOBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "***ELEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINNODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDSOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNLOADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTILTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDNODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IC VOID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: VisiForm form
+URL: "http://www.visiform.net/"
+FileNameExtensions: ["vft"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x0E---VISIFORM---"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "Version"
+    CaseSensitive: true
+  - Pos: 92
+    AsciiString: "Header"
+    CaseSensitive: true

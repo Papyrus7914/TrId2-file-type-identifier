@@ -1,0 +1,35 @@
+Name: AmiraMesh (ASCII)
+URL: "https://en.wikipedia.org/wiki/Amira_(software)"
+FileNameExtensions: ["am"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# AmiraMesh "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COORDINATES }"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINE VERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMIRAMESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASCII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ INT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: Dolby TrueHD audio
+Description: Dolby TrueHD is a lossless, multi-channel audio codec developed by Dolby Laboratories for home video, used principally in Blu-ray Disc and compatible hardware.
+URL: "https://en.wikipedia.org/wiki/Dolby_Atmos"
+FileNameExtensions: ["thd"]
+MimeType: audio/true-hd
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "\xF8ro\xBA\0"
+    CaseSensitive: true
+  - Pos: 12
+    #              R
+    Bytes: [0xB7, 0x52]

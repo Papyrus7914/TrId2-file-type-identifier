@@ -1,0 +1,11 @@
+Name: FoxPro compressed dist. archive
+URL: "https://en.wikipedia.org/wiki/FoxPro"
+FileNameExtensions: ["pak"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FPAK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FPPF"
+    CaseSensitive: false

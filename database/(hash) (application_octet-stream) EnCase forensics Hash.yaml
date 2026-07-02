@@ -1,0 +1,9 @@
+Name: EnCase forensics Hash
+Description: These are Forensic Drive Image Hashes created with EnCase by Guidance Software Inc.  They are used to identify Known System files which have been found in the EnCase drive image. The known system files can be downloaded from NIST.GOV and are updated quarterly.
+URL: "http://www.guidancesoftware.com/"
+FileNameExtensions: ["hash"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HASH\r\n\xFF\0"
+    CaseSensitive: true

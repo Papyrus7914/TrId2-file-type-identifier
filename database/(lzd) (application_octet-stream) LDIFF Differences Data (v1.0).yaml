@@ -1,0 +1,11 @@
+Name: LDIFF Differences Data (v1.0)
+URL: "http://fileformats.archiveteam.org/wiki/LDIFF_LZD"
+FileNameExtensions: ["lzd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "-LD6-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-LD6-"
+    CaseSensitive: false

@@ -1,0 +1,22 @@
+Name: MovieShop Preferences
+FileNameExtensions: ["prefs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "MSPRPRHD"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "FVER"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "$VER: MovieShopPrefs"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false

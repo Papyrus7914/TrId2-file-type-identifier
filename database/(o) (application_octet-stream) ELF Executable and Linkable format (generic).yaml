@@ -1,0 +1,8 @@
+Name: ELF Executable and Linkable format (generic)
+URL: "https://en.wikipedia.org/wiki/Executable_and_Linkable_Format"
+FileNameExtensions: ["o"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x7FELF"
+    CaseSensitive: true

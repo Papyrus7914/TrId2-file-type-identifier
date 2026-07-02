@@ -1,0 +1,17 @@
+Name: CAD6 Library
+URL: "http://www.cad6.com/"
+FileNameExtensions: ["mkl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Malz++Kassner CAD"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: ";\r\n\r\n=LIBRARY=;\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false

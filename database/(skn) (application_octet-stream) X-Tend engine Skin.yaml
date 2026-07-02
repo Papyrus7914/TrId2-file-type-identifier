@@ -1,0 +1,14 @@
+Name: X-Tend engine Skin
+URL: "https://www.igdb.com/game_engines/x-tend"
+FileNameExtensions: ["skn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SKIN\x03\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TAG_ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SKN"
+    CaseSensitive: false

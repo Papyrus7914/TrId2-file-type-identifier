@@ -1,0 +1,23 @@
+Name: Cinema 4D settings
+URL: "https://en.wikipedia.org/wiki/Cinema_4D"
+FileNameExtensions: ["prefs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM\0\0\x03"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FRAYPRE5\0\0\x03"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FRAYPRE5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RPER"
+    CaseSensitive: false

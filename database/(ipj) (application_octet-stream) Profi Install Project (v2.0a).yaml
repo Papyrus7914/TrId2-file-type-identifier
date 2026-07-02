@@ -1,0 +1,14 @@
+Name: Profi Install Project (v2.0a)
+Description: Installation tool by Adontec Computer Systems Ltd.
+FileNameExtensions: ["ipj"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "C7Z\x04"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0IPJ20a \0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IPJ20A"
+    CaseSensitive: false

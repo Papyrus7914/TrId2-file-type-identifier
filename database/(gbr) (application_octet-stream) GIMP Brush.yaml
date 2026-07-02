@@ -1,0 +1,14 @@
+Name: GIMP Brush
+URL: "https://en.wikipedia.org/wiki/GIMP"
+FileNameExtensions: ["gbr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "GIMP\0\0\0"
+    CaseSensitive: true

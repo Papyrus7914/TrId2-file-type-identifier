@@ -1,0 +1,39 @@
+Name: File-Type Rule
+FileNameExtensions: ["ftr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TYPE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IF (OPENED)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OPEN.FTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMD OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$LEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEGEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELSE"
+    CaseSensitive: false

@@ -1,0 +1,40 @@
+Name: Leica RAW image
+Description: http://en.wikipedia.org/wiki/Leica_Camera
+FileNameExtensions: ["rwl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IIU\0"
+    CaseSensitive: true
+  - Pos: 883
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 886
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 903
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 906
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 1540
+    AsciiString: "}\xFEExif\0\0II*"
+    CaseSensitive: true
+  - Pos: 1730
+    AsciiString: "LEICA\0"
+    CaseSensitive: true
+  - Pos: 1760
+    AsciiString: "Ver."
+    CaseSensitive: true
+  - Pos: 1765
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 1767
+    AsciiString: "  "
+    CaseSensitive: true
+  - Pos: 1774
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 1777
+    AsciiString: ":"
+    CaseSensitive: true

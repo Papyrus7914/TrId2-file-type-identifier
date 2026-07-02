@@ -1,0 +1,11 @@
+Name: AllyCAD Drawing
+URL: "https://en.wikipedia.org/wiki/AllyCAD"
+FileNameExtensions: ["drg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xAC\x01\0\0\x01\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0c"
+    CaseSensitive: true

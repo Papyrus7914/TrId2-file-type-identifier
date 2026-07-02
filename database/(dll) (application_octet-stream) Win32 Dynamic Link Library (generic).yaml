@@ -1,0 +1,36 @@
+Name: Win32 Dynamic Link Library (generic)
+FileNameExtensions: ["dll"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program requires Microsoft Windows.\r\n$\0\0\0\0\0\0\0NE\x05"
+    CaseSensitive: true
+  - Pos: 136
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 141
+    Bytes: [0x83]
+  - Pos: 143
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 146
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 151
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$\0\0\0\0\0\0\0NE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM REQUIRES MICROSOFT WINDOWS."
+    CaseSensitive: false

@@ -1,0 +1,27 @@
+Name: Windows precompiled INF (v1.1)
+URL: "http://en.verysource.com/code/10350344_1/inf.h.html"
+FileNameExtensions: ["pnf"]
+MimeType: application/x-pnf
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01, 0x01]
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    Bytes: [0x01, 0x00]
+  - Pos: 11
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "X\0\0\0"
+    CaseSensitive: true
+  - Pos: 73
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 89
+    AsciiString: "\0:\0\\\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false

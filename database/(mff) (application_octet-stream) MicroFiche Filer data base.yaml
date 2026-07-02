@@ -1,0 +1,23 @@
+Name: MicroFiche Filer data base
+URL: "https://www.retro-commodore.eu/2015/12/26/microfiche-manual-from-software-vision-inc/"
+FileNameExtensions: ["mff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VERSION "
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMS"
+    CaseSensitive: false

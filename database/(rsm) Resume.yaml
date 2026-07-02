@@ -1,0 +1,18 @@
+Name: Resume
+FileNameExtensions: ["rsm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x0E\0\x01\0%\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EDUCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

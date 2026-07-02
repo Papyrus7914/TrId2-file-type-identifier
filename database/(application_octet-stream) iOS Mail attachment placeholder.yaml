@@ -1,0 +1,39 @@
+Name: iOS Mail attachment placeholder
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          {     {     \"
+    Bytes: [0xFA, 0xCA, 0xDE, 0x7B, 0x7B, 0x22]
+  - Pos: any
+    AsciiString: "TPLACEHOLDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTACHME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIVATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOBILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIL"
+    CaseSensitive: false

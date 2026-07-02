@@ -1,0 +1,14 @@
+Name: Windows NT4 OPL3 driver Patch bank
+URL: "https://github.com/Wohlstand/OPL3BankEditor/blob/master/Specifications/RIFF%20FM4%20PAT%20specification.txt"
+FileNameExtensions: ["pat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "Ptchfm4 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PTCHFM4"
+    CaseSensitive: false

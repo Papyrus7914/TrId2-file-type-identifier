@@ -1,0 +1,77 @@
+Name: PyTorch Tensor (zip format)
+URL: "https://en.wikipedia.org/wiki/PyTorch"
+FileNameExtensions: ["pt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PRODUCERVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRESGRAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINMODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBMODULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONFB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISBUFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIMIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TENSORID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PYTORCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRIDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TENSORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMS"
+    CaseSensitive: false

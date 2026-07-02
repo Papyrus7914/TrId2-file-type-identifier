@@ -1,0 +1,12 @@
+Name: 16bit DOS COM MSCC protected
+Description: COM protector by MScientist.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    Bytes: [0x8E, 0xF8]
+  - Pos: any
+    AsciiString: "SPXLL"
+    CaseSensitive: false

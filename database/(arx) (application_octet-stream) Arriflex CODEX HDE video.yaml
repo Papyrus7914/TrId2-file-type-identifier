@@ -1,0 +1,11 @@
+Name: Arriflex CODEX HDE video
+URL: "https://en.wikipedia.org/wiki/Arri"
+FileNameExtensions: ["arx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CDXA\x124Vx"
+    CaseSensitive: true
+  - Pos: 204
+    AsciiString: "ARRI "
+    CaseSensitive: true

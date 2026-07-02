@@ -1,0 +1,91 @@
+Name: Mew compressed Win32 Executable
+Description: Mew is an exe-packer program, based on LZMA and ApPack methods, written in MASM 32 and Visual C++ by Northfox.
+URL: "http://northfox.uw.hu"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\0\0\0\0\0\0\0\0\0\0PE\0\0L\x01\x02\0\0\0\0\0\0\0\0\0\0\0\0\0\xE0\0\x0F\x01\v\x01"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\0\x02\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "\0\0\f\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "\0\x10\0\0\0\x02\0\0\x04\0\0\0\0\0\0\0\x04\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "\0\x02\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 105
+    AsciiString: "\0\0\0\0\0\x10\0\0"
+    CaseSensitive: true
+  - Pos: 114
+    AsciiString: "\0\0\0\0\x10\0\0\x10\0\0\0\0\0\0\x10\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 145
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 155
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 207
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 209
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 268
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 272
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 274
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 297
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 308
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 311
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 319
+    AsciiString: "\0\0\x02\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 337
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 348
+    Bytes: [0xAD]
+  - Pos: 350
+    Bytes: [0xAD]
+  - Pos: 361
+    AsciiString: "3"
+    CaseSensitive: true
+  - Pos: 447
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MZ\0\0\0\0\0\0\0\0\0\0PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADLIBRARYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}\0\0S"
+    CaseSensitive: false

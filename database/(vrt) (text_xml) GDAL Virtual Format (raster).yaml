@@ -1,0 +1,17 @@
+Name: GDAL Virtual Format (raster)
+URL: "https://gdal.org/drivers/raster/vrt.html"
+FileNameExtensions: ["vrt"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<VRTDataset rasterXSize=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VRTRASTERBAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASTERYSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Programmer's Notepad text Clips
+URL: "http://www.pnotepad.org/"
+FileNameExtensions: ["clips"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLIPS NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIP NAME"
+    CaseSensitive: false

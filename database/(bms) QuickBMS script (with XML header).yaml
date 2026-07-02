@@ -1,0 +1,22 @@
+Name: QuickBMS script (with XML header)
+URL: "http://aluigi.altervista.org/quickbms.htm"
+FileNameExtensions: ["bms"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<bms "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PLATFORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOTO"
+    CaseSensitive: false

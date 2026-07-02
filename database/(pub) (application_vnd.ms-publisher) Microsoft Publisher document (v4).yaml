@@ -1,0 +1,44 @@
+Name: Microsoft Publisher document (v4)
+Description: for version 97-2013 (estimated 4.0-11.0).
+URL: "http://fileformats.archiveteam.org/wiki/Microsoft_Publisher"
+FileNameExtensions: ["pub"]
+MimeType: application/vnd.ms-publisher
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: 26
+    #                                \t
+    Bytes: [0x03, 0x00, 0xFE, 0xFF, 0x09, 0x00]
+  - Pos: 48
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 1024
+    AsciiString: "R\0o\0o\0t\0 \0E\0n\0t\0r\0y\0"
+    CaseSensitive: true
+  - Pos: 1104
+    AsciiString: "\x01\x12\x02\0\0\0\0\0\0\xC0\0\0\0\0\0F"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT PUBLISHER 3.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0N\0T\0E\0N\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0T\0E\0R\0N\0A\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0P\0O\0B\0J"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSPUBLISHER.3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0B\0J\0E\0C\0T\0S"
+    CaseSensitive: false

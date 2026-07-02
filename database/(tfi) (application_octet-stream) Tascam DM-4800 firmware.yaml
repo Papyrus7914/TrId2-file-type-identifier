@@ -1,0 +1,62 @@
+Name: Tascam DM-4800 firmware
+URL: "https://en.wikipedia.org/wiki/TASCAM"
+FileNameExtensions: ["tfi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "tfi1head"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "vers"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "cbra"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "year"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "mnth"
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "mday"
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: "hour"
+    CaseSensitive: true
+  - Pos: 86
+    AsciiString: "minu"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "secd"
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "tnam"
+    CaseSensitive: true
+  - Pos: 114
+    AsciiString: "D\0M\0-\04\08\00\00"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "smid"
+    CaseSensitive: true
+  - Pos: 138
+    AsciiString: "fcms"
+    CaseSensitive: true
+  - Pos: 148
+    AsciiString: "fcls\x01\0\0\0\x01"
+    CaseSensitive: true
+  - Pos: 158
+    AsciiString: "fmcm\x01\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 168
+    AsciiString: "fmcl"
+    CaseSensitive: true
+  - Pos: 178
+    AsciiString: "osb#"
+    CaseSensitive: true
+  - Pos: 190
+    AsciiString: "osvn"
+    CaseSensitive: true

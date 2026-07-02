@@ -1,0 +1,49 @@
+Name: klickTel Routenplanner route
+URL: "http://www.klicktel.de"
+FileNameExtensions: ["krt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROUTEOPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KDROUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW."
+    CaseSensitive: false

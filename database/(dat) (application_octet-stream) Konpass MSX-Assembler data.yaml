@@ -1,0 +1,35 @@
+Name: Konpass MSX-Assembler data
+URL: "https://msxhub.com/COMPASS"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\rKonpass #"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: " DATfile\r\n(C) 2022 by Konamiman\r\n\nBased on Compass #"
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: ", (C)1998 by Compjoetania TNG\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(C)1998 BY COMPJOETANIA TNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) 2022 BY KONAMIMAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASED ON COMPASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATFILE"
+    CaseSensitive: false

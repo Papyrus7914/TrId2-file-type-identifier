@@ -1,0 +1,23 @@
+Name: Marvin's Marvellous Adventure Map
+URL: "https://www.mobygames.com/game/13016/marvins-marvellous-adventure/"
+FileNameExtensions: ["mlev"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Puzzle V2.0 \0\0\0\b\0\x01\0\x10"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0\rMAP \0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPSKYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MPLX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MAP"
+    CaseSensitive: false

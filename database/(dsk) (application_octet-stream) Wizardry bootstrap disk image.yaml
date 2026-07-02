@@ -1,0 +1,238 @@
+Name: Wizardry bootstrap disk image
+URL: "https://en.wikipedia.org/wiki/Wizardry"
+FileNameExtensions: ["dsk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEB]
+  - Pos: 2
+    AsciiString: "\x90\x80\b\0\0\0\0System "
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "ootstrap v2."
+    CaseSensitive: true
+  - Pos: 1030
+    AsciiString: "\aWIZBOOT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "X07NOT ENOUGH MEMORY.  WIZARDRY REQUIRES 128K OR MORE OF \0AVAILABLE MEMORY.\0SWITCH TO YOUR COLOR OR COMPOSITE MONITOR NOW...."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O ERROR\0UNIMPLEMENTED INSTRUCTION\0STRING TOO LONG\0HLT INSTRUCTION ENCOUNTERED\0CALL UNLINKED SEGMENT\0BAD VIRTUAL DISK I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%HA2\0%HA2 -ILLIGAL CSP\0 UNIMPLEMENTED FLOAT.\0(%HA2) -- UNIMPLEMENTED CSP\0UNIMPLEMENTED COMPARATION TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O REQUEST\0SYSTEM TRAP ERROR\0DISK ERROR RETURNED DURING CACHE READ\0PROCESSOR TRAP ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O ERROR\0EXIT TO UNCALLED PROCEDURE\0RANGE ERROR\0NO BOOT-UP FILE EXISTS\0VOLUME I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0  A HERCULES MONOCHROME GRAPHICS CARD WITH A TTL MONITOR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIVIDED BY TAKE\0USER BREAK\0STACK OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0WIZARDRY REQUIRES ONE OF THE FOLLOWING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPLEASE INSERT DISK %HA1 AND PRESS SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHICS ADAPTER CARD WITH ANY MONITOR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK READ ERROR\0NO FILE SYSTEM.INTERP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0  AN EGA CARD WITH AN RGB MONITOR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X07ILLIGAL INSTRUCTION AT %HA4 CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X07FLOATING POINT NOT SUPPORTED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0(STATUS %HA4 %HB4 %HC4 %HD4)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0PRESS SPACE TO RETRY\0}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF CODE ENCOUNTERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIZARDRY FOR THE IBM-PC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CASTASPESWINGASWCINIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KANJIREAUTILITIESHOPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM BOOTSTRAP V2."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPLEMEN4\0IN      )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE    .\0FORWARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET     *\0SEGMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIZARDRYCOMBAT  C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0}\0~{DISK ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O ERROR\0SYSTEM I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "200.CHARSET\0\0VG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "200.MONSTERS\0VG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KANA.KEYMAP\0\0VG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.INTERPVG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.PASCALVG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENARIO.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%HB2 AT %HA4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACEGHIJKLNR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS.STROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON LOADSEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASCII.KRN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTERNAL5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS.CACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFAC3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KANJI.KRN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS.APPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KANA.KRN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINES.24"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXECERR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) 198"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "**ERR**"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIZBOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUTIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOOPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNTIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false

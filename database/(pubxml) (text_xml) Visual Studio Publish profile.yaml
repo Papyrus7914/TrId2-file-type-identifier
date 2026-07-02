@@ -1,0 +1,29 @@
+Name: Visual Studio Publish profile
+URL: "https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/visual-studio-publish-profiles"
+FileNameExtensions: ["pubxml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

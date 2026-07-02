@@ -1,0 +1,14 @@
+Name: Molden Format
+URL: "http://www.cmbi.ru.nl/molden/molden_format.html"
+FileNameExtensions: ["molden", "mold"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MOLDEN FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOMS"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: Smith Corona Personal Word Processor
+Description: A classic electronic typewriter...
+FileNameExtensions: ["pwp"]
+DetectionPatterns:
+  - Pos: 13
+    AsciiString: "ML4D"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "'92\x01\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ML4D"
+    CaseSensitive: false

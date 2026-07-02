@@ -1,0 +1,26 @@
+Name: sK1 vector graphic
+URL: "http://en.wikipedia.org/wiki/SK1_(program)"
+FileNameExtensions: ["sk1"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "##sK1 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MASTERLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUIDELAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUT("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

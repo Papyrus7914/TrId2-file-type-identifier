@@ -1,0 +1,25 @@
+Name: PaddlePaddle PreTrain Data
+URL: "https://github.com/PaddlePaddle/Paddle"
+FileNameExtensions: ["pdparams"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x80]
+  - Pos: 8
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMPY.CORE.MULTIARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RECONSTRUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTYPE"
+    CaseSensitive: false

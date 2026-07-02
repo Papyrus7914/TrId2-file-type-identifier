@@ -1,0 +1,22 @@
+Name: VocalTec Media Descriptor
+URL: "http://www.vocaltec.com/"
+FileNameExtensions: ["vmd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[VMD]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VMF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOOD"
+    CaseSensitive: false

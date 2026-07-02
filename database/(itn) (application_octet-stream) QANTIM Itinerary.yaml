@@ -1,0 +1,17 @@
+Name: QANTIM Itinerary
+Description: Quantas Travel Itinerary Manager for Windows 3.x.
+FileNameExtensions: ["itn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ITN\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "CTitleInfo"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CTITLEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITINERARY"
+    CaseSensitive: false

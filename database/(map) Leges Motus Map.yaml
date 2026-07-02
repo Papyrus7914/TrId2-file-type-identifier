@@ -1,0 +1,25 @@
+Name: Leges Motus Map
+URL: "http://legesmotus.endrift.com"
+FileNameExtensions: ["map"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "name "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METAL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPAWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

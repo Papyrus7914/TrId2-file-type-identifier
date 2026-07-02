@@ -1,0 +1,12 @@
+Name: foobar2000 Playlist format (old, up to v0.8)
+Description: Foobar2000 is an advanced audio player for the Windows platform.
+URL: "https://www.foobar2000.org/"
+FileNameExtensions: ["fpl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x82h\xD0\xE3K\x87\xE3C\x98%NB\x02\n\xF5C\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "://"
+    CaseSensitive: true

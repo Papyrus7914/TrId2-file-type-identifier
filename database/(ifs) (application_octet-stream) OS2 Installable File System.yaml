@@ -1,0 +1,179 @@
+Name: OS/2 Installable File System
+URL: "https://en.wikipedia.org/wiki/OS/2"
+FileNameExtensions: ["ifs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 45
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FS_FINDNOTIFYCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_FINDNOTIFYFIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_FINDNOTIFYNEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_FILEATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_FINDFROMNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_PROCESSNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_CHGFILEPTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_OPENCREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_ATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_FINDCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_FINDFIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_FILEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_FINDNEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_FLUSHBUF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_PATHINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_SHUTDOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_NEWSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_SETSWAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_ATTACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_COMMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_DELETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_FILEIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_FSINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_NMPIPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOSCALLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSHELPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_CHDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_CLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_FSCTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_IOCTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_MKDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_MOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_RMDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_WRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_COPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_MOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCK"
+    CaseSensitive: false

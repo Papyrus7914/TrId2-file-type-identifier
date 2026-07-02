@@ -1,0 +1,27 @@
+Name: "KSS: Author presentation settings"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Bookdir  "
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOOKWIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENV"
+    CaseSensitive: false

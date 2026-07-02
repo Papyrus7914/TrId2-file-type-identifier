@@ -1,0 +1,11 @@
+Name: Euphoria Database System (EDS)
+Description: EDS provides a simple, extremely flexible, database system for use by Euphoria programs. In EDS, a database is a single file with .edb file type/extension.
+URL: "http://www.rapideuphoria.com/database.htm"
+FileNameExtensions: ["edb"]
+DetectionPatterns:
+  - Pos: 0
+    #        M
+    Bytes: [0x4D, 0x02]
+  - Pos: 14
+    AsciiString: "\0X\0\0\0"
+    CaseSensitive: true

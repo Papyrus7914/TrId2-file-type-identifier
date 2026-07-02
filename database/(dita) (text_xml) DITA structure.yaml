@@ -1,0 +1,23 @@
+Name: DITA structure
+URL: "https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture"
+FileNameExtensions: ["dita"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DTD DITA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OASIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

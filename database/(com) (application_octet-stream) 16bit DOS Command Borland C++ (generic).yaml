@@ -1,0 +1,32 @@
+Name: 16bit DOS Command Borland C++ (generic)
+URL: "https://en.wikipedia.org/wiki/Borland_C%2B%2B"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    .
+    Bytes: [0x8C, 0xCA, 0x2E, 0x89, 0x16]
+  - Pos: any
+    AsciiString: "BORLAND C++ - COPYRIGHT 1991 BORLAND INTL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOATING POINT FORMATS NOT LINKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABNORMAL PROGRAM TERMINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIVIDE ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT SCANF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NULL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPQP"
+    CaseSensitive: false

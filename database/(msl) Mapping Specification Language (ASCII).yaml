@@ -1,0 +1,46 @@
+Name: Mapping Specification Language (ASCII)
+URL: "http://msdn.microsoft.com/en-us/library/ff953006.aspx"
+FileNameExtensions: ["msl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENTITYCONTAINERMAPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORAGEENTITYCONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPEMAPPING TYPENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALARPROPERTY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDMENTITYCONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPPING SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMAPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false

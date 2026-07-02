@@ -1,0 +1,31 @@
+Name: Windows Media Player playlist
+URL: "http://www.microsoft.com/windows/windowsmedia/"
+FileNameExtensions: ["wpl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?wpl version=\"1.0\"?>\r\n<smil>\r\n    <head>\r\n        <meta name=\"Generator\" content=\"Microsoft Windows Media Player -- "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MICROSOFT WINDOWS MEDIA PLAYER --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WPL VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMIL"
+    CaseSensitive: false

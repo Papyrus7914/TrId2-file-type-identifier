@@ -1,0 +1,52 @@
+Name: JAM Packer compressed Atari ST program (v4.0)
+Description: Atari ST compressor by Andrew and Tim Knipe.
+FileNameExtensions: ["prg", "tos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0H\xE7\x7F\xFE?<\0\x02NNT\x8F/\0$@?<\0\x04NNT\x8F2<\0\x9F\xB0<\0\x02g\x042<\x01g"
+    CaseSensitive: true
+  - Pos: 68
+    #        Q                       C
+    Bytes: [0x51, 0xC9, 0xFF, 0xFC, 0x43, 0xFA]
+  - Pos: 76
+    AsciiString: "\x13|\0<\0\x05\xB0<\0\0f\x06\x13|\0(\0\x05Hz"
+    CaseSensitive: true
+  - Pos: 98
+    AsciiString: "?<\0\tN"
+    CaseSensitive: true
+  - Pos: 104
+    AsciiString: "\\\x8FB\xA7?<\0 NA\\\x8F/\0?8\x82@"
+    CaseSensitive: true
+  - Pos: 123
+    Bytes: [0xFA]
+  - Pos: 129
+    AsciiString: "\xFC\0\0\x01\0/"
+    CaseSensitive: true
+  - Pos: 136
+    AsciiString: "\0\x04a\0"
+    CaseSensitive: true
+  - Pos: 142
+    AsciiString: ",_1\xDF\x82@?<\0 NA\\\x8FG\xFA"
+    CaseSensitive: true
+  - Pos: 160
+    AsciiString: "\xD7\xFC\0\0\x01\0\"K k\0\x02\xD1\xEB\0\x06\xD1\xEB\0\x0E\xD1\xFC\0\0\0\x1C\xD1\xCBK\xFA\xFF^ \r\xD3\xFC\0\0\0\x1CJ\x90g\x1E\xD3\xD8\xD1\x91B\x81\x12\x18JAg\x12\xB2<\0\x01f\b\xD3\xFC\0\0\0\xFE`\xEA\xD3\xC1`\xE4\x9B\xFC\0\0\x01\0+k\0\x02\0\f+k\0\x06\0\x14+k\0\n\0\x1C -\0\b\"-\0\f\xD2\x80+A\0\x10 -\0\x14\xD2\x80+A\0\x18 \x1F\xD0\xBC\0\0\x7F\0$@*@t_C\xFA\0\x18\x14\xD9Q\xCA\xFF\xFC\"K\xD3\xFC\0\0\0\x1CA\xFA\xFE\xE0$HN\xD5M\xFA\0@,\x88$\xD9$\xD9$\xD9$\xD9\xB5\xC1o\xF4C\xE8\xFF\0&i\0\x18\")\0\x1C\xB2\xBC\0\0"
+    CaseSensitive: true
+  - Pos: 357
+    AsciiString: "\0n\x06\"<\0\0"
+    CaseSensitive: true
+  - Pos: 365
+    AsciiString: "\0\xE8\x89B\x9BB\x9BB\x9BB\x9BS\x81l\xF4L\xDF\x7F\xFEB\x80N\xF9\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "Y  JAM PACKER DECRUNCH V4.0"
+    CaseSensitive: false

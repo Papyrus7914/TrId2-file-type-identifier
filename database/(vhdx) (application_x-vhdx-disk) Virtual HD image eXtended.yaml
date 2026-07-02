@@ -1,0 +1,24 @@
+Name: Virtual HD image eXtended
+Description: VHD format extended with new capabilities such as 16 TB maximum size. Version 1 is stored at offset 65602 and 512 bytes for creator name at 8 as UTF-16.
+URL: "https://en.wikipedia.org/wiki/VHD_(file_format)"
+FileNameExtensions: ["vhdx"]
+MimeType: application/x-vhdx-disk
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "vhdxfile"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGI"
+    CaseSensitive: false

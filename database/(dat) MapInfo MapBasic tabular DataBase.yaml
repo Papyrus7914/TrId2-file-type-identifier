@@ -1,0 +1,19 @@
+Name: MapInfo MapBasic tabular DataBase
+Description: 1 of 5 dataset linked files, the others are *.DAT, *.ID *.IND and *.MAP
+URL: "http://www.mapinfo.com/"
+FileNameExtensions: ["dat"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x03]
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "\0C\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true

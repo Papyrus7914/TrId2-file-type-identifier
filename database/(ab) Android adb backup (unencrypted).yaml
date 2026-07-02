@@ -1,0 +1,14 @@
+Name: Android adb backup (unencrypted)
+Description: adb backup instructions at xda-developers.com
+URL: "http://forum.xda-developers.com/showthread.php?t=1420351"
+FileNameExtensions: ["ab"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ANDROID BACKUP\n1\n1\nnone\nx\xDA\xEC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANDROID BACKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false

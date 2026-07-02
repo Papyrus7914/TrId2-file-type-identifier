@@ -1,0 +1,67 @@
+Name: Xindian tender document package
+FileNameExtensions: ["jxcf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<DYFile xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n<DYGuid"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ZBRENCRYPTPUBLICKEY CATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYFILEDIGITALSIGNALHASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZBRPUBLICKEY CATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORMCODEHASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTVERSIONHASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERIDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYFILECONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIAODUANNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYFILE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIAODUANNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISHAVECAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

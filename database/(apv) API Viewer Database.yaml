@@ -1,0 +1,11 @@
+Name: API Viewer Database
+Description: API Viewer 2004 is an expandable plugin-based Win32 API syntax viewer/converter, supports many languages (C/MASM/.NET/VB/PowerBASIC/PureBASIC/IBasic/PyxiaBASIC/LibertyBASIC/Borland Delphi)
+URL: "http://www.activevb.de/rubriken/apiviewer/index-apiviewereng.html"
+FileNameExtensions: ["apv"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VBAPI"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true

@@ -1,0 +1,18 @@
+Name: Professional Draw document (generic)
+Description: Amiga drawing program from Gold Disk.
+URL: "https://en.wikipedia.org/wiki/Amiga_productivity_software#Vector_graphics"
+FileNameExtensions: ["pdraw", "pd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "Professional Draw V"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROFESSIONAL DRAW V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPAG"
+    CaseSensitive: false

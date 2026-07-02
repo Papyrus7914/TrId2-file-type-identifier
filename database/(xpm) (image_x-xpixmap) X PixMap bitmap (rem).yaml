@@ -1,0 +1,15 @@
+Name: X PixMap bitmap (rem)
+Description: If 9 byte c-comment /* XPM */ is not at the beginning or is missing then it is non standard; These can only be handled by some viewers like IrfanView, ImageMagick
+URL: "http://fileformats.archiveteam.org/wiki/XPM"
+FileNameExtensions: ["xpm"]
+MimeType: image/x-xpixmap
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/* "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STATIC CHAR *"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* PIXELS *"
+    CaseSensitive: false

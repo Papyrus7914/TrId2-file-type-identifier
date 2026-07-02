@@ -1,0 +1,10 @@
+Name: pSX compressed CD image
+URL: "http://psxemulator.gazaxian.com/"
+FileNameExtensions: ["cdz"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CDZ\x01"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "ZLIB"
+    CaseSensitive: true

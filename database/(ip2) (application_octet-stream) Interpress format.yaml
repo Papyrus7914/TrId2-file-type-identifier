@@ -1,0 +1,12 @@
+Name: Interpress format
+Description: Interpress is an old Xerox Page Description Language.
+URL: "https://en.wikipedia.org/wiki/Interpress"
+FileNameExtensions: ["ip2"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Interpress/Xerox/"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "."
+    CaseSensitive: true

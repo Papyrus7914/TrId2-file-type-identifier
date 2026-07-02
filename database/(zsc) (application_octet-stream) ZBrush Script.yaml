@@ -1,0 +1,14 @@
+Name: ZBrush Script
+URL: "https://en.wikipedia.org/wiki/ZBrush"
+FileNameExtensions: ["zsc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZBrush File.Copyright 1977-20"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: ".PIXOLOGIC INC\0"
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: "csz\0"
+    CaseSensitive: true

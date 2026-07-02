@@ -1,0 +1,11 @@
+Name: eMule Collection file
+Description: A text file that contain a list of related files to be downloaded with eMule.
+URL: "http://www.emule-project.net"
+FileNameExtensions: ["emulecollection"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x02\x01\0\x01"
+    CaseSensitive: true

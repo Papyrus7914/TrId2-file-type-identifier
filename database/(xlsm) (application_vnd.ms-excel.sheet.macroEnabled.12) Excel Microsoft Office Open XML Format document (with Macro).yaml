@@ -1,0 +1,44 @@
+Name: Excel Microsoft Office Open XML Format document (with Macro)
+URL: "http://www.microsoft.com/office/preview/fileguide.mspx"
+FileNameExtensions: ["xlsm"]
+MimeType: application/vnd.ms-excel.sheet.macroEnabled.12
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "VBAPROJECT.BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEME1.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSHEETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML.RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKBOOK."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCPROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEET1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false

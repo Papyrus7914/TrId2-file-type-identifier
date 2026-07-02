@@ -1,0 +1,17 @@
+Name: BushTracker 2 Song
+Description: Tracker for Windows by Gordon Stryph.
+FileNameExtensions: ["b2s"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BushTracker 2.0 Song\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DRUMCHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDICHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRUMPRESET"
+    CaseSensitive: false

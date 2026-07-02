@@ -1,0 +1,11 @@
+Name: Hipix bitmap
+URL: "http://fileformats.archiveteam.org/wiki/Hipix"
+FileNameExtensions: ["hpx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0,ftyp3gp4\0\0\x03\03gp43gp6isomavc13g2a3g2b3g2c"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "mdat"
+    CaseSensitive: true

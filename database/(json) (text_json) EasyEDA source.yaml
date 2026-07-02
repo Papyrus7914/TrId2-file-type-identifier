@@ -1,0 +1,53 @@
+Name: EasyEDA source
+URL: "https://en.wikipedia.org/wiki/EasyEDA"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EDITORVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANVAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_PARA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENT~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIB~"
+    CaseSensitive: false

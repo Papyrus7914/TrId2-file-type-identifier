@@ -1,0 +1,22 @@
+Name: Koustracker module
+Description: MSX tracker by Soksoft.
+URL: "https://www.msx.org/wiki/Soksoft"
+FileNameExtensions: ["sok"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFE, 0x00, 0x82]
+  - Pos: 5
+    Bytes: [0x00, 0x82]
+  - Pos: 30
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "     \0\0"
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "   \0\0\f\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOKSOFT"
+    CaseSensitive: false

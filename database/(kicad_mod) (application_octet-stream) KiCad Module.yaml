@@ -1,0 +1,23 @@
+Name: KiCad Module
+URL: "https://en.wikipedia.org/wiki/KiCad"
+FileNameExtensions: ["kicad_mod"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(module "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(FP_TEXT REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(EFFECTS (FONT ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(FP_TEXT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(THICKNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(LAYER"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: Vega visualization
+URL: "https://vega.github.io/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VEGA.GITHUB.IO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARK"
+    CaseSensitive: false

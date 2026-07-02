@@ -1,0 +1,26 @@
+Name: JCreator Workspace (v1.0)
+URL: "https://en.wikipedia.org/wiki/JCreator"
+FileNameExtensions: ["jcw"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "! ** JCreator Workspace File (C)2000\r\n! ********** DO NOT EDIT *********\r\n\r\nVERSION := \"1.00\"\r\nLABEL := \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "START LAST DOCUMENT STRUCTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START PROJECT STRUCTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JCP"
+    CaseSensitive: false

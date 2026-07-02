@@ -1,0 +1,35 @@
+Name: MikroTik RouterOS configuration
+URL: "https://en.wikipedia.org/wiki/MikroTik"
+FileNameExtensions: ["rsc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTERFACE BRIDGE PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY ROUTEROS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIKROTIK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

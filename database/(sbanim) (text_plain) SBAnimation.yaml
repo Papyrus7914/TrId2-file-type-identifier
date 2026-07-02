@@ -1,0 +1,18 @@
+Name: SBAnimation
+Description: Used in Super Smash Bros. Ultimate.
+URL: "https://en.wikipedia.org/wiki/Super_Smash_Bros._Ultimate"
+FileNameExtensions: ["sbanim"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#SBAnimation Version 1\r\nFrameCount "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SBANIMATION VERSION 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL"
+    CaseSensitive: false

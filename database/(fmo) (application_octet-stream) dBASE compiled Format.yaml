@@ -1,0 +1,11 @@
+Name: dBASE compiled Format
+URL: "https://en.wikipedia.org/wiki/Dbase"
+FileNameExtensions: ["fmo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x05DBO"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".FMT"
+    CaseSensitive: false

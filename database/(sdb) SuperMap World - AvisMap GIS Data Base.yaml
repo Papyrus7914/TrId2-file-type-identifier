@@ -1,0 +1,38 @@
+Name: SuperMap World - AvisMap GIS Data Base
+Description: SMMD (SuperMap MetaData) files are a core component of several GIS datasets
+URL: "http://en.wikipedia.org/wiki/SuperMap"
+FileNameExtensions: ["sdb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x83\x83w\x83,\xA61\x01\0 \0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0A\0T\0A\0S\0E\0T\0V\0E\0C\0T\0O\0R\0P\0R\0O\0J\0E\0C\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0A\0T\0A\0S\0E\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0E\0T\0A\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0D\0B\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMSIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMINO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMMD"
+    CaseSensitive: false

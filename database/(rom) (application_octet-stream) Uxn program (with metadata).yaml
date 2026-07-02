@@ -1,0 +1,10 @@
+Name: Uxn program (with metadata)
+URL: "http://fileformats.archiveteam.org/wiki/Uxn_program_file"
+FileNameExtensions: ["rom"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xA0]
+  - Pos: 3
+    #                    7
+    Bytes: [0x80, 0x06, 0x37]

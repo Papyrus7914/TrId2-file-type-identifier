@@ -1,0 +1,23 @@
+Name: QGIS GRASS module definition
+URL: "https://docs.qgis.org/3.40/en/docs/user_manual/grass_integration/grass_integration.html"
+FileNameExtensions: ["xml"]
+MimeType: application/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE QGISGRASSMODULE SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QGISGRASSMODULE LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MRCC.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

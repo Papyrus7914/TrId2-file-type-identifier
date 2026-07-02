@@ -1,0 +1,11 @@
+Name: LMMS Project Zipped
+Description: Linux MultiMedia Studio is a free cross-platform music production software.
+URL: "http://en.wikipedia.org/wiki/LMMS"
+FileNameExtensions: ["mmpz"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 4
+    #        x
+    Bytes: [0x78, 0x9C]

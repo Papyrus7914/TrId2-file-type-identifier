@@ -1,0 +1,16 @@
+Name: Wii sound data (PCM)
+URL: "https://wiki.tockdom.com/wiki/AST_(File_Format)"
+FileNameExtensions: ["ast"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "STRM"
+    CaseSensitive: true
+  - Pos: 8
+    Bytes: [0x00, 0x01]
+  - Pos: 64
+    AsciiString: "BLCK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BLCK"
+    CaseSensitive: false

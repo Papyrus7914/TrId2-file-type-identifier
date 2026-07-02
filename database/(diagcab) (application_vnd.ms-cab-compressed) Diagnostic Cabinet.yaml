@@ -1,0 +1,12 @@
+Name: Diagnostic Cabinet
+Description: Microsoft Cabinet Archive with *.{diagcfg,diagpkg} and filename extension DIAGCAB is used by Microsoft Support Diagnostic Tool MSDT.EXE with /cab option.
+URL: "https://en.wikipedia.org/wiki/Cabinet_(file_format)"
+FileNameExtensions: ["diagcab"]
+MimeType: application/vnd.ms-cab-compressed
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".DIAG"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: Autoread format (v2.0)
+Description: A text reading program by Rightword Enterprises.
+FileNameExtensions: ["ard"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#[SCREEN]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PREFERENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAPTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISCDONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES"
+    CaseSensitive: false

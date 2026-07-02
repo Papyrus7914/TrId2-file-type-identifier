@@ -1,0 +1,14 @@
+Name: osu! Collection Manager collection
+URL: "https://github.com/Piotrekol/CollectionManager"
+FileNameExtensions: ["osdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x05o!dm8\x1F\x8B\b\b"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "qg\0\xFFcollection.osdb\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLLECTION.OSDB"
+    CaseSensitive: false

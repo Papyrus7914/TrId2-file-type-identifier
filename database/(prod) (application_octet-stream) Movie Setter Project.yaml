@@ -1,0 +1,29 @@
+Name: Movie Setter Project
+Description: Amiga video editor.
+FileNameExtensions: ["prod"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "xSceneEditor "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BACKGROUNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOLD DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SET 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BKGD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS"
+    CaseSensitive: false

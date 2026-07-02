@@ -1,0 +1,11 @@
+Name: ImageMagick Machine independent File Format bitmap
+URL: "http://imagemagick.sourceforge.net/http/www/miff.html"
+FileNameExtensions: ["mif", "miff"]
+MimeType: image/x-miff
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "d=ImageMagick"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ID=IMAGEMAGICK"
+    CaseSensitive: false

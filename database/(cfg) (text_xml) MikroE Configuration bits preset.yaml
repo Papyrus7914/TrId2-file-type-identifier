@@ -1,0 +1,29 @@
+Name: MikroE Configuration bits preset
+URL: "http://www.mikroe.com/"
+FileNameExtensions: ["cfg"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 203
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MCU_DEVICE_FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false

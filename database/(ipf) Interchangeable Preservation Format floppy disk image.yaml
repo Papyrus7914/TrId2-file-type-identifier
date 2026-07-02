@@ -1,0 +1,13 @@
+Name: Interchangeable Preservation Format floppy disk image
+URL: "http://www.softpres.org/glossary:ipf"
+FileNameExtensions: ["ipf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CAPS"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "INFO"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "IMGE"
+    CaseSensitive: true

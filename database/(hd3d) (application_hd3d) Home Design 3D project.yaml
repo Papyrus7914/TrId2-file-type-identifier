@@ -1,0 +1,20 @@
+Name: Home Design 3D project
+URL: "https://en.homedesign3d.net"
+FileNameExtensions: ["hd3d"]
+MimeType: application/hd3d
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/hd3d"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROJECT.PROTO.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT.PROTOPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT.METAPK"
+    CaseSensitive: false

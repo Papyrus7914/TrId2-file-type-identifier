@@ -1,0 +1,10 @@
+Name: Bitwig Studio Device
+URL: "https://www.bitwig.com/"
+FileNameExtensions: ["bwdevice"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BtWg0003000400c5000016"
+    CaseSensitive: true
+  - Pos: 75
+    Bytes: [0x1A, 0xDF, 0x88]

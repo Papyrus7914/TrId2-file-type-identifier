@@ -1,0 +1,35 @@
+Name: Gupta SQLBase database
+URL: "https://en.wikipedia.org/wiki/Gupta_Technologies"
+FileNameExtensions: ["dbs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSSQLSYSINDEXES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSADMSYSTABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLUSTERRULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERCENTFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSSYNONYMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSCOLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTABAUTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUERULE"
+    CaseSensitive: false

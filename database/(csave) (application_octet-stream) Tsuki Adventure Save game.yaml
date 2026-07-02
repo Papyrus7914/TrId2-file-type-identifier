@@ -1,0 +1,14 @@
+Name: Tsuki Adventure Save game
+URL: "https://tsuki-adventure.fandom.com/wiki/Tsuki_Adventure_Wiki"
+FileNameExtensions: ["csave"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x02/\0\0\0\0\x01"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "T\0s\0u\0k\0i\0S\0a\0v\0e"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "T\0S\0U\0K\0I\0S\0A\0V\0E"
+    CaseSensitive: false

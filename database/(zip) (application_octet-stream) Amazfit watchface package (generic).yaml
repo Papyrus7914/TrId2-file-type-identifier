@@ -1,0 +1,44 @@
+Name: Amazfit watchface package (generic)
+URL: "https://amazfitwatchfaces.com/"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "WATCHFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "6.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9.PNG"
+    CaseSensitive: false

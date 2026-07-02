@@ -1,0 +1,119 @@
+Name: ASQ info snapshot (v1.x)
+Description: DOS diagnostic by Qualitas.
+FileNameExtensions: ["asq"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "; "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASQVER     1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AT CMOS XMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISKROMSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOSDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOSSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENFCBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASEMEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOSMFR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOTDRV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHIPSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPUPARM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOSNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVUSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IOSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROMLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DDLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOSVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTMEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IONAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGDRV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWMEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROMSEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ASQ"
+    CaseSensitive: false

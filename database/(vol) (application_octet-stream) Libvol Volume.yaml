@@ -1,0 +1,19 @@
+Name: Libvol Volume
+FileNameExtensions: ["vol"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "X: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VOXEL-ENDIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALPHA-COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INT-ENDIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOXEL-SIZE"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Annke camera video
+URL: "https://www.annke.com/"
+FileNameExtensions: ["epv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HKV\0\x01"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\xFE\xFE\xFE\xF1\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true

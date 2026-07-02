@@ -1,0 +1,25 @@
+Name: XML-Data Reduced
+URL: "http://www.ltg.ed.ac.uk/~ht/XMLData-Reduced.htm"
+FileNameExtensions: ["xdr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS-MICROSOFT-COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTTYPE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML-DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELTONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false

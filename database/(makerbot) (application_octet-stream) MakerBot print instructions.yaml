@@ -1,0 +1,104 @@
+Name: MakerBot print instructions
+URL: "http://fileformats.archiveteam.org/wiki/MakerBot_instruction_file"
+FileNameExtensions: ["makerbot"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "THUMBNAIL_320X200.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL_110X80.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRUDER_TEMPERATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL_55X40.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT.JSONTOOLPATHPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRUSION_DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRUSION_MASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL_COMMANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKERBOT FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIRACLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHELLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false

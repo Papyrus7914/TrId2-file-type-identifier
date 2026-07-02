@@ -1,0 +1,17 @@
+Name: Lucid 3-D Help (v1.x)
+Description: Old DOS TSR spreadsheet by PCSG, Inc.
+FileNameExtensions: ["hlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PCSG V 1."
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: " help\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(C) COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LUCID 3-D"
+    CaseSensitive: false

@@ -1,0 +1,15 @@
+Name: SQX compressed archive
+Description: Used by SpeedProject's Squeez program.
+URL: "http://fileformats.archiveteam.org/wiki/SQX"
+FileNameExtensions: ["sqx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "R"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "-sqx-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-SQX-"
+    CaseSensitive: false

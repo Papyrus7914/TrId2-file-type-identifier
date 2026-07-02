@@ -1,0 +1,233 @@
+Name: Blackmagic RAW video
+URL: "https://www.blackmagicdesign.com/au/products/blackmagicraw"
+FileNameExtensions: ["braw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\bwide"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\xF8mdat\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$MDTATONE_CURVE_VIDEO_BLACK_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTABRAW_COMPRESSION_RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLE VIDEO MEDIA HANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTATONE_CURVE_HIGHLIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTATONE_CURVE_SATURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLE ALIAS DATA HANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META\0\0\0 HDLR\0\0\0\0\0\0\0\0MDTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTATONE_CURVE_CONTRAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTATONE_CURVE_MIDPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME CODE MEDIA HANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLACKMAGIC DESIGN FILM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTATONE_CURVE_SHADOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8HDLR\0\0\0\0MHLRTMCDAPPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDLR\0\0\0\0DHLRALISAPPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDLR\0\0\0\0MHLRVIDEAPPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTAFIRMWARE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTAVIEWING_BMDGEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTACAMERA_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTADATE_RECORDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTAVIEWING_GAMMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTAVIEWING_GAMUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPO\0\0\0\0\0\0\0 FCLN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTAASPECT_RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTAMANUFACTURER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTACAMERA_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTACLIP_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTACROP_ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTAENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LUCIDA GRANDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTACAMERA_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTACROP_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTADAY_NIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTAGOOD_TAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTAREEL_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTASCENE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTATAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERIOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$EDTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LMVHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BMDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GMHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISOE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOOV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMCI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WKEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WTIN"
+    CaseSensitive: false

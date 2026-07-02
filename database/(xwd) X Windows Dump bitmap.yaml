@@ -1,0 +1,12 @@
+Name: X Windows Dump bitmap
+FileNameExtensions: ["xwd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0\0\a\0\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 100
+    AsciiString: "bitmap"
+    CaseSensitive: true

@@ -1,0 +1,17 @@
+Name: "Empire II: The Art of War Map"
+URL: "https://www.mobygames.com/game/873/empire-ii-the-art-of-war/"
+FileNameExtensions: ["map"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MAPF"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "TOC "
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "MAP2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAP2"
+    CaseSensitive: false

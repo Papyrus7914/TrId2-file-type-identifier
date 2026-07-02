@@ -1,0 +1,62 @@
+Name: Simulink Cache
+URL: "https://en.wikipedia.org/wiki/Simulink"
+FileNameExtensions: ["slxc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MWCOREPROPERTIESEXTENSION.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTFOLDERBROWSER.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTFOLDERBROWSER.XMLM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTERINFORMATION.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRAINFORMATION.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTERINFORMATION.XMLU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MWCOREPROPERTIES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUMOFCACHE.MATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRAINFORMATION.XMLM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MWCOREPROPERTIES.XMLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTSIGNATURES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARINFO.MATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARCACHE_R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ALL"
+    CaseSensitive: false

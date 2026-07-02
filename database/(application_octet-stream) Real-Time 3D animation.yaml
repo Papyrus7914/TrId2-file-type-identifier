@@ -1,0 +1,10 @@
+Name: Real-Time 3D animation
+Description: Amiga 3D software by Hugo Lyppens.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MOV\n\0"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "\nU3D-View"
+    CaseSensitive: true

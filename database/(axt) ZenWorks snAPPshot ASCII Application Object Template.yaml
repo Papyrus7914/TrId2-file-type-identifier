@@ -1,0 +1,25 @@
+Name: ZenWorks snAPPshot ASCII Application Object Template
+URL: "http://www.novell.com/products/zenworks/desktops/"
+FileNameExtensions: ["axt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AXT_FILE "
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPLICATION CAPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false

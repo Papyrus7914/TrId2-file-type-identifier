@@ -1,0 +1,26 @@
+Name: BRL-CAD Geometry (ASCII)
+URL: "http://fileformats.archiveteam.org/wiki/ASC_(BRL-CAD_Geometry)"
+FileNameExtensions: ["asc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "title {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "{MATERIAL_ID}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMB REGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{REGION_ID}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTR SET {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{REGION}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREE {"
+    CaseSensitive: false

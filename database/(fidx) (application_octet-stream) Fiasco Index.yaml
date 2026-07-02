@@ -1,0 +1,14 @@
+Name: Fiasco Index
+Description: Amiga DB by Nils Bandener.
+FileNameExtensions: ["fidx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FDBH\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "FIDX\0\x05\0\x02"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FIDX"
+    CaseSensitive: false

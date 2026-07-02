@@ -1,0 +1,16 @@
+Name: Flirc Configuration (v1)
+URL: "https://flirc.gitbooks.io/flirc-instructions/content/graphical-user-interface-guide/saving-a-configuration.html"
+FileNameExtensions: ["fcfg"]
+MimeType: application/x-flirc-configuration
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEF, 0xBE, 0xAD, 0xDE, 0x01, 0x00, 0x00, 0x00]
+  - Pos: 9
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\xFF\xFF\xFF\xFF\x0F\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true

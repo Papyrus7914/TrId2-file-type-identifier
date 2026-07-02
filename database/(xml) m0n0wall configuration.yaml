@@ -1,0 +1,224 @@
+Name: m0n0wall configuration
+Description: m0n0wall is a project aimed at creating a complete, embedded firewall appliance.
+URL: "http://m0n0.ch/wall/"
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\n<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TIME-UPDATE-INTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTLEASETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT LAN -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTERNAL-PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXLEASETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATICROUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSLOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROCOMMUNITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETQUEUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESERVERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSCONTACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL-PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETPIPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTCHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANDWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKPRIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DNSSERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DNSUPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIAOPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEZONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOTEIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCPFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROXYARP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M0N0WALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIASES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPV6NAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GATEWAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DNSMASQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIGPOND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRIDGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBGUI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBNET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYNDNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOMAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPADDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSLOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DHCPD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNMPD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPPOE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPSEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPTPD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPLEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

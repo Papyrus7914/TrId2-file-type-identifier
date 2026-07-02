@@ -1,0 +1,41 @@
+Name: Robot Arena 2 bot
+URL: "https://en.wikipedia.org/wiki/Robot_Arena#Robot_Arena_2:_Design_and_Destroy"
+FileNameExtensions: ["bot"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "1."
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\nName: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTROLBOARD.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPIN CLOCKWISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPIN COUNTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPINMOTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHASSIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHEEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

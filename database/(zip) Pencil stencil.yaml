@@ -1,0 +1,40 @@
+Name: Pencil stencil
+URL: "http://pencil.evolus.vn/"
+FileNameExtensions: ["zip"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DEFINITION.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOX.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAB.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: Brother PowerNote spreadsheet
+URL: "http://www.8bit-micro.com/download.htm"
+FileNameExtensions: ["spr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    Bytes: [0x85, 0x01]
+  - Pos: 4
+    AsciiString: "\0\0BR"
+    CaseSensitive: true

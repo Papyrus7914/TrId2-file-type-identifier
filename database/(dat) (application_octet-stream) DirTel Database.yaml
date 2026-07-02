@@ -1,0 +1,11 @@
+Name: DirTel Database
+Description: Address book MS-DOS software by Jorge Franganillo
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01DT3"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\r"
+    CaseSensitive: true

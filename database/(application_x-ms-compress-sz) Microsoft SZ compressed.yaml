@@ -1,0 +1,8 @@
+Name: Microsoft SZ compressed
+Description: Last char of the extension is changed to $. Can be extracted by UNPACK.EXE.
+URL: "http://fileformats.archiveteam.org/wiki/MS-DOS_installation_compression"
+MimeType: application/x-ms-compress-sz
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SZ \x88\xF0'3\xD1"
+    CaseSensitive: true

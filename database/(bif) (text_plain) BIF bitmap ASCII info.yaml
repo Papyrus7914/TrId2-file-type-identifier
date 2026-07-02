@@ -1,0 +1,35 @@
+Name: BIF bitmap ASCII info
+Description: Part of the Binary Information Files format. Point to a corresponding .raw file with the actual image data.
+FileNameExtensions: ["bif"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BIF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RIGHTPADDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFTPADDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RAW"
+    CaseSensitive: false

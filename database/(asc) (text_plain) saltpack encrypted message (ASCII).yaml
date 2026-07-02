@@ -1,0 +1,14 @@
+Name: saltpack encrypted message (ASCII)
+URL: "https://saltpack.org/"
+FileNameExtensions: ["asc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SALTPACK ENCRYPTED MESSAGE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ". END"
+    CaseSensitive: false

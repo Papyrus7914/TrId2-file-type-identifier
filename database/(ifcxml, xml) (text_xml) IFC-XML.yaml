@@ -1,0 +1,65 @@
+Name: IFC-XML
+URL: "http://fileformats.archiveteam.org/wiki/IFC"
+FileNameExtensions: ["ifcxml", "xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-WRAPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFCPRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFCREL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFCXML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW."
+    CaseSensitive: false

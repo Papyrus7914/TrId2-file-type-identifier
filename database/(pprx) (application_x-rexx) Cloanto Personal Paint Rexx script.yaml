@@ -1,0 +1,26 @@
+Name: Cloanto Personal Paint Rexx script
+URL: "https://www.amigaforever.com/classic/ppaint/"
+FileNameExtensions: ["pprx"]
+MimeType: application/x-rexx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/* P"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAINT AMIGA REXX SCRIPT - COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOANTO ITALIA SRL *"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERSONAL PAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PPRX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$VER"
+    CaseSensitive: false

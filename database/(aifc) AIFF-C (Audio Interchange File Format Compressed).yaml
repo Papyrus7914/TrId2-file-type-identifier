@@ -1,0 +1,10 @@
+Name: AIFF-C (Audio Interchange File Format Compressed)
+URL: "http://www.tsp.ece.mcgill.ca/MMSP/Documents/AudioFormats/AIFF/AIFF.html"
+FileNameExtensions: ["aifc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "AIFCFVER"
+    CaseSensitive: true

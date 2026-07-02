@@ -1,0 +1,24 @@
+Name: Python Wheel package
+Description: A built-package format for Python.
+URL: "https://wheel.readthedocs.org"
+FileNameExtensions: ["whl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "TOP_LEVEL.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DIST-INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHEEL"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: Sleeping Dogs save game
+URL: "https://www.mobygames.com/game/57297/sleeping-dogs/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TC01\x01\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "$SGTITLE_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$SGTITLE_"
+    CaseSensitive: false

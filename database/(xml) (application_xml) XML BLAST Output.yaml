@@ -1,0 +1,89 @@
+Name: XML BLAST Output
+URL: "https://en.wikipedia.org/wiki/BLAST"
+FileNameExtensions: ["xml"]
+MimeType: application/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE BLASTOUTPUT PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLASTOUTPUT_ITERATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLASTOUTPUT_QUERY-DEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLASTOUTPUT_QUERY-LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLASTOUTPUT_REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS_GAP-EXTEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLASTOUTPUT_QUERY-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCBI_BLASTOUTPUT.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATISTICS_EFF-SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLASTOUTPUT_PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLASTOUTPUT_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS_GAP-OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITERATION_ITER-NUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATISTICS_ENTROPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATISTICS_HSP-LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLASTOUTPUT_PARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS_EXPECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS_FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS_MATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATISTICS_DB-LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATISTICS_DB-NUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATISTICS_LAMBDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCBI BLASTOUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATISTICS_KAPPA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLASTOUTPUT_DB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITERATION_STAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false

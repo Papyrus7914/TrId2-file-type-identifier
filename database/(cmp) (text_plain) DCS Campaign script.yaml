@@ -1,0 +1,38 @@
+Name: DCS Campaign script
+URL: "https://en.wikipedia.org/wiki/Digital_Combat_Simulator"
+FileNameExtensions: ["cmp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "campaign = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTSTAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MIZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

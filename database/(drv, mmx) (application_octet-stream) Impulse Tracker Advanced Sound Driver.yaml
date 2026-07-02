@@ -1,0 +1,17 @@
+Name: Impulse Tracker Advanced Sound Driver
+URL: "https://en.wikipedia.org/wiki/Impulse_Tracker"
+FileNameExtensions: ["drv", "mmx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Impulse Tracker Advanced Sound Driver\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REINITIALIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFEJ"
+    CaseSensitive: false

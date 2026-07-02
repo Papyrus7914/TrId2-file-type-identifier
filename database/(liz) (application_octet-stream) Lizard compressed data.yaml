@@ -1,0 +1,9 @@
+Name: Lizard compressed data
+Description: Compressor by Przemyslaw Skibinski.
+URL: "https://github.com/inikep/lizard"
+FileNameExtensions: ["liz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \"    M
+    Bytes: [0x06, 0x22, 0x4D, 0x18]

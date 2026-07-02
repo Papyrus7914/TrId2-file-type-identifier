@@ -1,0 +1,10 @@
+Name: Audytor data (generic)
+URL: "http://en.sankom.net/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PWFILEVERINF"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "AUDYTOR "
+    CaseSensitive: true

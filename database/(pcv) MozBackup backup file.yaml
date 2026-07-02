@@ -1,0 +1,31 @@
+Name: MozBackup backup file
+URL: "http://mozbackup.jasnapaka.com/"
+FileNameExtensions: ["pcv"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "LOCALSTORE.RDFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXFILE.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPES.RDFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH.RDFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFERENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS.JSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTS"
+    CaseSensitive: false

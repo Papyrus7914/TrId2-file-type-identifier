@@ -1,0 +1,14 @@
+Name: S2 Engine Font definition
+URL: "https://www.s2powered.com/"
+FileNameExtensions: ["ft2"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Font>\r\nCharRes="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FULLASCII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE"
+    CaseSensitive: false

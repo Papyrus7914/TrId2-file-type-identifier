@@ -1,0 +1,16 @@
+Name: MICROCAD Drawing
+Description: Very small drawing program by Dave Dunfield.
+FileNameExtensions: ["dwg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n\0"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    Bytes: [0x00, 0x01]

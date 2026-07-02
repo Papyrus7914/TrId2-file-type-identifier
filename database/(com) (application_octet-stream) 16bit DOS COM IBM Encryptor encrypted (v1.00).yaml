@@ -1,0 +1,14 @@
+Name: 16bit DOS COM IBM Encryptor encrypted (v1.00)
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xB8]
+  - Pos: 3
+    Bytes: [0xFF, 0xE0]
+  - Pos: any
+    AsciiString: "0U ST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- WH"
+    CaseSensitive: false

@@ -1,0 +1,9 @@
+Name: OpenTimestamps proof
+Description: OpenTimestamps is a standard format for blockchain timestamping.
+URL: "https://opentimestamps.org/"
+FileNameExtensions: ["ots"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0OpenTimestamps\0\0Proof"
+    CaseSensitive: true

@@ -1,0 +1,16 @@
+Name: Pencil template
+URL: "http://pencil.evolus.vn/"
+FileNameExtensions: ["zip"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "TEMPLATE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T.XSLT"
+    CaseSensitive: false

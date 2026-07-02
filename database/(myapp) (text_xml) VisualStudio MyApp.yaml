@@ -1,0 +1,38 @@
+Name: VisualStudio MyApp
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+FileNameExtensions: ["myapp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MYAPPLICATIONDATA XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEMYSETTINGSONEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHENTICATIONMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEVISUALSTYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLEINSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHUTDOWNMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MYSUBMAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

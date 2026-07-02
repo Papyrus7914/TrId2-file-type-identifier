@@ -1,0 +1,73 @@
+Name: Microsoft Office SmartArt Graphics Layout
+URL: "http://office.microsoft.com"
+FileNameExtensions: ["glox"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 24
+    AsciiString: "\0\0\x1A\0\x1C\0diagrams/layoutHeader1.xml "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.OPENXMLFORMATS.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAGRAMLAYOUTHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUTHEADER1.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIONSHIPS XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIONSHIP TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFICEDOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUT1.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAGRAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E~WOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-AW0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2006"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RID1"
+    CaseSensitive: false

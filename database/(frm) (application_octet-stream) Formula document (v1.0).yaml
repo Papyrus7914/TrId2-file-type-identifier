@@ -1,0 +1,11 @@
+Name: Formula document (v1.0)
+Description: Formulae editor for Atari ST.
+FileNameExtensions: ["frm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    d
+    Bytes: [0x02, 0x10, 0x64, 0x84, 0x00, 0x01, 0x01, 0x00, 0x01]
+  - Pos: any
+    AsciiString: ".FRM"
+    CaseSensitive: false

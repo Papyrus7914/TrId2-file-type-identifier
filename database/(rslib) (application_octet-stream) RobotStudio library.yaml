@@ -1,0 +1,26 @@
+Name: RobotStudio library
+URL: "https://new.abb.com/products/robotics/robotstudio"
+FileNameExtensions: ["rslib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "GEODATASTREAM.SABPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GFXDATASTREAM.GFXPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIM.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAMS"
+    CaseSensitive: false

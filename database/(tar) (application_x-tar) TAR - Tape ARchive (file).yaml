@@ -1,0 +1,15 @@
+Name: TAR - Tape ARchive (file)
+Description: Variant at offset 156 '0' indicates normal file as 1st member.
+URL: "https://en.wikipedia.org/wiki/Tar_(computing)"
+FileNameExtensions: ["tar"]
+MimeType: application/x-tar
+DetectionPatterns:
+  - Pos: 156
+    AsciiString: "0"
+    CaseSensitive: true
+  - Pos: 500
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 511
+    AsciiString: "\0"
+    CaseSensitive: true

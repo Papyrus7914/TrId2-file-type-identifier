@@ -1,0 +1,14 @@
+Name: WAFERMAP map (v3.0)
+URL: "https://www.boin-gmbh.com/wafermap.html"
+FileNameExtensions: ["map"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WAFERMAP 3.0 Data File\r\n\r\nFile: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MAP"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Xerox Rooms settings
+URL: "http://toastytech.com/guis/xrmw.html"
+FileNameExtensions: ["ini"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(window-type \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XG_SCALED YG_SCALED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOMS CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOOR CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WTFS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WTSM"
+    CaseSensitive: false

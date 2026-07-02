@@ -1,0 +1,29 @@
+Name: mlocate database
+URL: "https://manned.org/updatedb.8"
+FileNameExtensions: ["db"]
+MimeType: application/x-mlocate
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0mlocate\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRUNE_BIND_MOUNTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRUNENAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRUNEPATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLOCATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRUNEFS"
+    CaseSensitive: false

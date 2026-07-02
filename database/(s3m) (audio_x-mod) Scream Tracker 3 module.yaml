@@ -1,0 +1,11 @@
+Name: Scream Tracker 3 module
+URL: "http://en.wikipedia.org/wiki/Scream_Tracker"
+FileNameExtensions: ["s3m"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 43
+    AsciiString: "\0SCRM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCRM"
+    CaseSensitive: false

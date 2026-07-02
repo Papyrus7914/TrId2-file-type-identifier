@@ -1,0 +1,11 @@
+Name: Texas Instruments file format (generic)
+Description: Used to transfer data with TI calculators.
+URL: "http://fileformats.archiveteam.org/wiki/TI_variable_file"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "**TI"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "*"
+    CaseSensitive: true

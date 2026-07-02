@@ -1,0 +1,11 @@
+Name: Starcat disks catalogue
+Description: Amiga disk archiving utility by Daniel Fowler.
+FileNameExtensions: ["cat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "StarCat "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: MySQL MyISAM tables index
+URL: "http://www.mysql.org"
+FileNameExtensions: ["myi"]
+DetectionPatterns:
+  - Pos: 0
+    #                    \a
+    Bytes: [0xFE, 0xFE, 0x07, 0x01, 0x00]
+  - Pos: 8
+    AsciiString: "\0\xB0\0d\0"
+    CaseSensitive: true

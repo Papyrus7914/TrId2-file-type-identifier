@@ -1,0 +1,17 @@
+Name: PC-Animation video
+Description: Used in the Hugo videogame by ITE Media ApS.
+FileNameExtensions: ["ani"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PC-Animation Version "
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\n\rCopyright "
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: " By Kaare Siesing.\0\x1A"
+    CaseSensitive: true

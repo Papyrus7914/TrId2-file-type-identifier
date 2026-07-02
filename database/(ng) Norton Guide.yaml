@@ -1,0 +1,36 @@
+Name: Norton Guide
+URL: "http://en.wikipedia.org/wiki/Norton_Guides"
+FileNameExtensions: ["ng"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NG"
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 113
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 179
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 244
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 310
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 376
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 379
+    Bytes: [0x1A]
+  - Pos: 383
+    Bytes: [0x1A]
+  - Pos: 385
+    Bytes: [0x1A]
+  - Pos: 396
+    Bytes: [0x1A, 0x1A, 0x1A, 0x1A, 0x1A, 0x1A, 0x1A, 0x1A]

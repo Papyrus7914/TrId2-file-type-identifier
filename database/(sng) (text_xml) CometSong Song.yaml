@@ -1,0 +1,25 @@
+Name: CometSong Song
+FileNameExtensions: ["sng"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<cometSong songName=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTERVAL TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMCHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONGLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONGDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MP3FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MP3"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: Exported Anki Flashcard Deck
+URL: "http://en.wikipedia.org/wiki/Anki_(software)"
+FileNameExtensions: ["apkg"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 25
+    AsciiString: "\0\x10\0\0\0collection.anki2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLLECTION.ANKI2PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIAPK"
+    CaseSensitive: false

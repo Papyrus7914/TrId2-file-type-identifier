@@ -1,0 +1,20 @@
+Name: ISO CDImage cue/description - Data (with CATALOG)
+URL: "https://fileformats.archiveteam.org/wiki/CUE_and_BIN"
+FileNameExtensions: ["cue"]
+MimeType: application/x-cue
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CATALOG 0000000000000"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CATALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

@@ -1,0 +1,30 @@
+Name: Kingsoft Presentation template
+URL: "http://en.wikipedia.org/wiki/Kingsoft_Office"
+FileNameExtensions: ["dpt"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: any
+    AsciiString: "P\0O\0W\0E\0R\0P\0O\0I\0N\0T\0 \0D\0O\0C\0U\0M\0E\0N\0T\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0U\0R\0R\0E\0N\0T\0 \0U\0S\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0O\0F\0T\0 \0O\0F\0F\0I\0C\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K\0I\0N\0G\0S\0O\0F\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DB\0MO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0P\0S"
+    CaseSensitive: false

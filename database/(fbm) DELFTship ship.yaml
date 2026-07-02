@@ -1,0 +1,19 @@
+Name: DELFTship ship
+URL: "http://www.delftship.net/"
+FileNameExtensions: ["fbm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\t"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "FREE!ship"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHIP"
+    CaseSensitive: false

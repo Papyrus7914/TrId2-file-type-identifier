@@ -1,0 +1,17 @@
+Name: TMT Pascal compiled unit (v2.x)
+URL: "https://en.wikipedia.org/wiki/Pascal_(programming_language)#Other_variants"
+FileNameExtensions: ["fpd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xF1\0\0\0SPFP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPFP"
+    CaseSensitive: false

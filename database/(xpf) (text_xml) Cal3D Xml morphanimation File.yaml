@@ -1,0 +1,44 @@
+Name: Cal3D Xml morphanimation File
+URL: "http://en.wikipedia.org/wiki/Cal3D"
+FileNameExtensions: ["xpf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANIMATION MAGIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYFRAME TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMKEYFRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMSUBTARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK MESHID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBMESH  ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMTRACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MORPHID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT"
+    CaseSensitive: false

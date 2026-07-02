@@ -1,0 +1,20 @@
+Name: 16bit DOS EXE PGMPAK compressed (v0.15)
+Description: DOS Executable compressor by Todor Todorov
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\x01\0\x02\0\0\0\0\0\xF0\xFF\0\x01\0\0\xCE\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1C\0\0\0U\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PGMPAK 0.15"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "89J{L"
+    CaseSensitive: false

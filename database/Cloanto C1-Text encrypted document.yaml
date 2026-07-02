@@ -1,0 +1,16 @@
+Name: Cloanto C1-Text encrypted document
+Description: An Italian Amiga Word Processor.
+URL: "http://www.cloanto.com/"
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "C100C1K0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "C100C1K0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C1F0"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: TAG Keyboard table
+URL: "http://fileformats.archiveteam.org/wiki/TAG"
+FileNameExtensions: ["kbd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0TAG"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "K"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "Tablica konwersji klawiatury"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TABLICA KONWERSJI KLAWIATURY"
+    CaseSensitive: false

@@ -1,0 +1,22 @@
+Name: X-Plane Painted Line
+URL: "http://scenery.x-plane.com/library.php?doc=linspec.php"
+FileNameExtensions: ["lin"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LINE_PAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false

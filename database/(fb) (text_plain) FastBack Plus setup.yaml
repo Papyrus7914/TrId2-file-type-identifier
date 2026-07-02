@@ -1,0 +1,12 @@
+Name: FastBack Plus setup
+Description: Backup software for DOS by Fifth Generation Systems Inc.
+URL: "https://en.wikipedia.org/wiki/FastBack"
+FileNameExtensions: ["fb"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BeginSetup(\"True\")\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDSETUP()"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: Adobe Application Manager Package Signature
+URL: "https://en.wikipedia.org/wiki/Adobe_Inc."
+FileNameExtensions: ["sig"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIGNATURE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PIMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PIMX"
+    CaseSensitive: false

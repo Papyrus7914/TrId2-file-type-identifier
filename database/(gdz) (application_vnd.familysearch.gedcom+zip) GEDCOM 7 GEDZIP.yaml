@@ -1,0 +1,17 @@
+Name: GEDCOM 7 GEDZIP
+URL: "http://fileformats.archiveteam.org/wiki/GEDCOM"
+FileNameExtensions: ["gdz"]
+MimeType: application/vnd.familysearch.gedcom+zip
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "gedcom.ged"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GEDCOM.GEDGEDCOM FILEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false

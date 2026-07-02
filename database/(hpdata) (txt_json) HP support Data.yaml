@@ -1,0 +1,67 @@
+Name: HP support Data
+FileNameExtensions: ["hpdata"]
+MimeType: txt/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"SysProperties\":{\"platform\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSTEMBOARDPRODUCTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINOSPRODUCTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDWARETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORMCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIALNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINOSSPMAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINOSSPMINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINOSBUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINOSMAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINOSMINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVSELLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCSELLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSBIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false

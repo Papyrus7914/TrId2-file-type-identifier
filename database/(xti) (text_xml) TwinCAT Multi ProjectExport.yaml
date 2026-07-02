@@ -1,0 +1,41 @@
+Name: TwinCAT Multi Project/Export
+URL: "https://www.beckhoff.com/en-en/products/automation/twincat/"
+FileNameExtensions: ["xti"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NONAMESPACESCHEMALOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.BECKHOFF.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCSMITEM XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCSMVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

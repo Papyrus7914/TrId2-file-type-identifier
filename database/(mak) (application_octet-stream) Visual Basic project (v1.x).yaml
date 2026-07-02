@@ -1,0 +1,10 @@
+Name: Visual Basic project (v1.x)
+URL: "https://en.wikipedia.org/wiki/Visual_Basic"
+FileNameExtensions: ["mak"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xBE, 0xBA, 0x02, 0x00, 0x00, 0x00]
+  - Pos: any
+    AsciiString: ".FRM"
+    CaseSensitive: false

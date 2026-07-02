@@ -1,0 +1,24 @@
+Name: Microsoft Basic compiled library (generic)
+FileNameExtensions: ["lib"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xF0\r\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B$SEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: Eclipse Maven Launch configuration
+URL: "https://en.wikipedia.org/wiki/Eclipse_(software)"
+FileNameExtensions: ["launch"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LAUNCHCONFIGURATION TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGATTRIBUTE KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORG.ECLIPSE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false

@@ -1,0 +1,65 @@
+Name: ISO/IEC 19770 SWID Tag (2009 Legacy)
+URL: "https://en.wikipedia.org/wiki/ISO/IEC_19770"
+FileNameExtensions: ["swidtag"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version='1.0' encoding="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOFTWARE_IDENTIFICATION_TAG XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITLEMENT_REQUIRED_INDICATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE_LICENSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARDS.ISO.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAG_CREATOR_REGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE_CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT_TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMERIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "19770"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2009"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: MegaZeux game
+URL: "https://en.wikipedia.org/wiki/MegaZeux"
+FileNameExtensions: ["mzx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 24
+    AsciiString: "\0\0M"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRES"
+    CaseSensitive: false

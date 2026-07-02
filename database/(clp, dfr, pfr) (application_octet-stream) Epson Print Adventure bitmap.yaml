@@ -1,0 +1,17 @@
+Name: Epson Print Adventure bitmap
+Description: Format developed by O2 Interactive.
+FileNameExtensions: ["clp", "dfr", "pfr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Imc@"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "BMPV"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BMPV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNL"
+    CaseSensitive: false

@@ -1,0 +1,31 @@
+Name: C64 Studio project
+URL: "https://github.com/GeorgRottensteiner/C64Studio/"
+FileNameExtensions: ["c64"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x10]
+  - Pos: 4
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "C64STUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJEKTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".C64N"
+    CaseSensitive: false

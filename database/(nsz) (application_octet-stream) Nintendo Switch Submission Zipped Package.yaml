@@ -1,0 +1,15 @@
+Name: Nintendo Switch Submission Zipped Package
+Description: Compressed and optimized version of NSP.
+URL: "https://switchbrew.org/wiki/Glossary"
+FileNameExtensions: ["nsz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PFS0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCZSECTN"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: GetRight File List
+URL: "http://en.wikipedia.org/wiki/Getright"
+FileNameExtensions: ["grx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "URL: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".GETRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE:"
+    CaseSensitive: false

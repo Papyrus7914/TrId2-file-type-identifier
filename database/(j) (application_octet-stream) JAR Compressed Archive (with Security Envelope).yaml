@@ -1,0 +1,27 @@
+Name: JAR Compressed Archive (with Security Envelope)
+URL: "https://en.wikipedia.org/wiki/JAR_(software)"
+FileNameExtensions: ["j"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "@\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\0\0\x1AJar\x1B\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0\a\0"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x19\x96\x050\x160"
+    CaseSensitive: true
+  - Pos: 71
+    Bytes: [0x01]
+  - Pos: 73
+    Bytes: [0x10, 0x10]
+  - Pos: 77
+    AsciiString: "\0\0\0\0\0\0\x01"
+    CaseSensitive: true

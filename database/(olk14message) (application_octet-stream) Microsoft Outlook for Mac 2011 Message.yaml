@@ -1,0 +1,26 @@
+Name: Microsoft Outlook for Mac 2011 Message
+URL: "https://en.wikipedia.org/wiki/Microsoft_Outlook"
+FileNameExtensions: ["olk14message"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MLRC\0\0\x04"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\0\x04"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HTMLUTF-8MULTIPART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTERNATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAINUTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POPM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

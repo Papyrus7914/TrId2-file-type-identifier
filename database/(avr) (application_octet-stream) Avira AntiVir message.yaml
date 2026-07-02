@@ -1,0 +1,9 @@
+Name: Avira AntiVir message
+Description: seems to contain information for update process
+URL: "http://www.avira.com"
+FileNameExtensions: ["avr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0AVR\x01\0\0\0"
+    CaseSensitive: true

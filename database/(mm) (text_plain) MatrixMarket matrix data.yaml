@@ -1,0 +1,17 @@
+Name: MatrixMarket matrix data
+URL: "https://en.wikipedia.org/wiki/Matrix_Market_exchange_formats"
+FileNameExtensions: ["mm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%%"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "atrix"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "arket matrix coordinate "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%%MATRIXMARKET MATRIX COORDINATE"
+    CaseSensitive: false

@@ -1,0 +1,52 @@
+Name: Mapping Specification Language (UTF-8)
+URL: "http://msdn.microsoft.com/en-us/library/ff953006.aspx"
+FileNameExtensions: ["msl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENTITYCONTAINERMAPPING STORAGEENTITYCONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPEMAPPING TYPENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALARPROPERTY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDMENTITYCONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTORECONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPPING SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMAPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

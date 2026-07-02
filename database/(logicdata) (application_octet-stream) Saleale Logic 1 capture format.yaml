@@ -1,0 +1,14 @@
+Name: Saleale Logic 1 capture format
+URL: "https://www.saleae.com/"
+FileNameExtensions: ["logicdata"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x7F\x01\n\x01\nData save2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TIMING MARKER PAIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNEL"
+    CaseSensitive: false

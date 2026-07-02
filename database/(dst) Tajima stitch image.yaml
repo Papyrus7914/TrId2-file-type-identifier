@@ -1,0 +1,54 @@
+Name: Tajima stitch image
+FileNameExtensions: ["dst"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LA:"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\rST:  "
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\rCO: "
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "\r+X:  "
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "\r-X:  "
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "\r+Y:  "
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "\r-Y:  "
+    CaseSensitive: true
+  - Pos: 73
+    AsciiString: "\rAX:"
+    CaseSensitive: true
+  - Pos: 78
+    AsciiString: "   "
+    CaseSensitive: true
+  - Pos: 82
+    AsciiString: "0\rAY:"
+    CaseSensitive: true
+  - Pos: 88
+    AsciiString: "   "
+    CaseSensitive: true
+  - Pos: 92
+    AsciiString: "0\rMX:"
+    CaseSensitive: true
+  - Pos: 98
+    AsciiString: "   "
+    CaseSensitive: true
+  - Pos: 102
+    AsciiString: "0\rMY:"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "   "
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "0\rPD:"
+    CaseSensitive: true
+  - Pos: 123
+    #        \r
+    Bytes: [0x0D, 0x1A]

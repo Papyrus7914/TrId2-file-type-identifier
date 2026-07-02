@@ -1,0 +1,17 @@
+Name: iTunes Cover Flow Data (v2)
+URL: "http://en.wikipedia.org/wiki/Coverflow"
+FileNameExtensions: ["itc2"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x01\x1Citch"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "artw"
+    CaseSensitive: true
+  - Pos: 288
+    AsciiString: "item"
+    CaseSensitive: true
+  - Pos: 488
+    AsciiString: "data"
+    CaseSensitive: true

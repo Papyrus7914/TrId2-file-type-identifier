@@ -1,0 +1,41 @@
+Name: UltraEdit Template
+URL: "https://en.wikipedia.org/wiki/UltraEdit"
+FileNameExtensions: ["te1"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Template ID:"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: ":EndIDUETMPNAME~:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDIDUETMPNAME~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~END TEMPLATE~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATION DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST MODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

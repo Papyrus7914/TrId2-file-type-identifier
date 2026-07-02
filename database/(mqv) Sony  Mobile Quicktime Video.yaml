@@ -1,0 +1,10 @@
+Name: Sony / Mobile Quicktime Video
+URL: "http://www.sony.com/"
+FileNameExtensions: ["mqv"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\x18ftypmqt "
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "mqt qt  "
+    CaseSensitive: true

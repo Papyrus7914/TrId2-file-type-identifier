@@ -1,0 +1,20 @@
+Name: PowerBase database (v3.x)
+Description: Amiga database.
+FileNameExtensions: ["pb"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Powerbase "
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "3."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENCODED POWERBASE FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERBASE V3."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

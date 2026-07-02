@@ -1,0 +1,17 @@
+Name: Premiere Title data
+URL: "https://en.wikipedia.org/wiki/Adobe_Premiere_Pro"
+FileNameExtensions: ["ptl"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[TTL5]\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TL_L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TL_O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTL5"
+    CaseSensitive: false

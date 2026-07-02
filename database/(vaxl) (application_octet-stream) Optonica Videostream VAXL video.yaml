@@ -1,0 +1,32 @@
+Name: Optonica Videostream VAXL video
+URL: "http://fileformats.archiveteam.org/wiki/VAXL"
+FileNameExtensions: ["vaxl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "VAXLVXHD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VAXLVXHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMCD"
+    CaseSensitive: false

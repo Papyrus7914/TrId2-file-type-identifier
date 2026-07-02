@@ -1,0 +1,20 @@
+Name: REDway DER (Dynamic Elements Resource)
+Description: A multi platform hybrid 3D model and ray-trace/rendering file format
+URL: "http://www.redway3d.com/pages/redsdk.php"
+FileNameExtensions: ["red"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\0\0\0\0DER\0\0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "edsdk\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REDSDK"
+    CaseSensitive: false

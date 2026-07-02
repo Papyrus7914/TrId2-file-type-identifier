@@ -1,0 +1,14 @@
+Name: The Witcher 2 Entity
+URL: "https://en.wikipedia.org/wiki/The_Witcher_2:_Assassins_of_Kings"
+FileNameExtensions: ["w2ent"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CR2W"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CGUID\0NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTITY"
+    CaseSensitive: false

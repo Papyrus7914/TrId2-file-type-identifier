@@ -1,0 +1,28 @@
+Name: Steam package data
+URL: "http://en.wikipedia.org/wiki/Steam_%28content_delivery%29"
+FileNameExtensions: ["pkv"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0app"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "name"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "METAURL\0HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METASCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

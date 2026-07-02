@@ -1,0 +1,10 @@
+Name: Sprint Layout Printed Circuit Design (v6.0)
+URL: "http://www.abacom-online.de/uk/html/sprint-layout.html"
+FileNameExtensions: ["lay"]
+DetectionPatterns:
+  - Pos: 0
+    #              3
+    Bytes: [0x05, 0x33, 0xAA, 0xFF]
+  - Pos: any
+    AsciiString: "EIA\0CODE"
+    CaseSensitive: false

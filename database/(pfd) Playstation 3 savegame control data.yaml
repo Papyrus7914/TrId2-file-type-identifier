@@ -1,0 +1,12 @@
+Name: Playstation 3 savegame control data
+FileNameExtensions: ["pfd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0PFDB"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RPARAM.SFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PFDB"
+    CaseSensitive: false

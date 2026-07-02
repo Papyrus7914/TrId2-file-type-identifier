@@ -1,0 +1,35 @@
+Name: Signum! Document
+URL: "https://sdo.dseiler.eu/"
+FileNameExtensions: ["sdo"]
+MimeType: application/x-atari-signum-document
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "sdoc0001"
+    CaseSensitive: true
+  - Pos: 140
+    AsciiString: "cset"
+    CaseSensitive: true
+  - Pos: 228
+    AsciiString: "sysp"
+    CaseSensitive: true
+  - Pos: 346
+    AsciiString: "pbuf"
+    CaseSensitive: true
+  - Pos: 366
+    AsciiString: "undeundeundeundeunde\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNDEUNDEUNDEUNDEUNDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PBUF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEBU"
+    CaseSensitive: false

@@ -1,0 +1,664 @@
+Name: Combustion 2 Particle Library
+URL: "http://www.discreet.com/combustion"
+FileNameExtensions: ["elc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\rcomb_em_lib_1"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0\xFF\xFF\x02\0\r\0CTextureGroup"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "u"
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 117
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$$$$$$$$$$$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$$%%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(+.147"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(+.148"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%$$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%(+-0368"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%(+.1469"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%(+.1479"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%(+.158"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "())****+++++****))("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "())***++++++****))("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "())*++"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "()*+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(*+-.012456789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(+-0357"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ")+-.024578"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*-0258"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*-0369"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*-037"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*-047"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*-147"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.147"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "++*)("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "++*))("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "---.......---"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--........---"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".01245689"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".01245789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".024679"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".1358"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "00011111111100"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "001223344444444444332110"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0012233444444444443322100"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123345566777788877776655432210"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123345566777788877776655433210"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "123456678899"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "135689"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "13579"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1368"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1468"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2579"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "730-*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "740-*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "741.*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7530-+("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "841.+($"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "852.+(%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8520-*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8531."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8630-+(%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8631"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8641"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "875420.-+)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9630-*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9641.+(%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9741.+(%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9752"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "97531"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "976420."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "986531"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "98654210."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9875421"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "987654210.-+*("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "998765421"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "998876654321"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0\0 A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AAAAAAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABBCCCDDDDDDDCCCBBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABBCDDDEEEDDDCBBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABCCDEEFFFGGGGGGGFFFEEDCCBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKKLLMMMMMMMMMLLKKJIHGFEDCBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACDEEFGHHIIJJJJJJJJJIIHHGFEEDCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACDFGHIJKLLMMMMMLLKJIHGFDCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACDFGIJKMNOPQRSTTUUVVVWWWVVVUUTTSRQPONMKJIGFDCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACEFHJKLMNOPQQRRRQQPONMLKJHFECA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACEFHJLNOQRTUWXYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACEGIKMNPRSUWXZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACEGIKMNPRTUWXZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACEGIKMOQSUVXZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACEGJLNPRTUWY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACEGJLNPRTVXZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACFHKMPRTWY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACFHKNQSVY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACFHKNQTVY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACFIKNQSVY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACFIKNQTVY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADFILORUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADGJMPRUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADGJMPSVY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADGJMPSVZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADGJMPSWZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADGJNQUY}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADGJNRUY}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADHLPUY~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADHLQUZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADHMQV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AEHLOSX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AEHLPTX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AEHLPUY~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AEIMQW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AEIMRW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASIC BLUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCDEEFGHHIIJJJJJJJJJIIHHGFEEDCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCEFGHIJKLMNNOOPPPPPPPPPOONNMLKJIHGFECB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCEFGIJKLMNOPQQRRSSSSSSSSSRRQQPONMLKJIGFECB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCEGHJKMNPQRSTUVWWXYYYZZZZZYYYXWWVUTSRQPNMKJHGECB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BDFHIKMNPQRTUVWXYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BDFHJLNPRTUWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BDFIKNPRUWY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BDGILNQTVY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGILNPRUWYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGJMORUWZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGJMPRUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGJMPSVY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEHKNQTWZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEHLORVY}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEIMRW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALPHAPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCOLORPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATAKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATAOVERLIFEKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CEGJLNPRTWY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CEHJMORTWY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CEHJMPRUWY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CEHKNQTWZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CEMITTERGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CEMITTERTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CEMPARTICLETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFHKNPSUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFIKNQTWZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFILOQUX{~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFILORUX{~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFILORUY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFIMQUY}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFJMPSVY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFJNRV{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGJMPSVY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGKOTY~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMULTITEXTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMB_EM_LIB_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTEXTUREGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DHLPUZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DHLQV{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEW PARTICLE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEW SHAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VQMHDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRMIEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRMIEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRNJFB_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRNJFC_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XSOLHEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XTPLHEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XUROLIFDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XURPMJGDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XURPMJGDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XURPMJGEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XUSPNKHFCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YTOKGC_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YUROLIFC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YVSPMJFC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YVSPMJGC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YVSPMJGDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YVSPMJGEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YVSQNKHFCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YVTQNKHFCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YVTQNKIFCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YVTQNLIGDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YVTQOLIGDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YWTROMJHEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YWTRPMKHFCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YWTRPNLJGEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YWURPMJHEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YWURPNKIFDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YWUTRPNLJGECA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZUPLHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZUQLHDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZVSPMJGDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZWSPMJGDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZWTQNKHEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZWTQNKHEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZWTQNKIFC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZWTQNLIFC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZWUROMJGEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZXVTRPNLJGECA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZXVUSQOMKIGECA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZXWUSRPNMKIGECA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZXWUTRPNMKIGECA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZYWURPNLIGEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZYXWUTRQONLJHFECA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZYXWVUTRQPNMKIHFDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ABCDEFGHHHIIIHHHGFEDCBA_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ACEFHJLNOQRSTUVVWWWVVUTSRQONLJHFECA_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BEHKORVZ}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BFJNRW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BFJNSX~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CFJNRW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CGKOTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{VQLHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{VRNJFC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{VRNJGC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ZYXWUTRPNLJHFDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}YUQMIFC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}YUQMJFC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}YUQNJGDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}YURNJGDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}YVROLHEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}ZVROKHEB_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~XSNJFB_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~YTOKGC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~YTPLHEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~YUPLHDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~YUPLHEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~{XUQOLIFC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~{XUROLIFC"
+    CaseSensitive: false

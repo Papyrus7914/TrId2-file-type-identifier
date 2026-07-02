@@ -1,0 +1,13 @@
+Name: Gemtek router firmware
+URL: "http://www.gemtek.com.tw/"
+FileNameExtensions: ["bin"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GMTK"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "Linux Kernel Image"
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "zImage"
+    CaseSensitive: true

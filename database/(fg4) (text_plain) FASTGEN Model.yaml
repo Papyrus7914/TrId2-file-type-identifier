@@ -1,0 +1,28 @@
+Name: FASTGEN Model
+FileNameExtensions: ["fg4"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$COMMENT "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CQUAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTRI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false

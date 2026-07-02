@@ -1,0 +1,80 @@
+Name: 16bit DOS Mouse Systems Corp. compiled menu (v5.01)
+URL: "https://en.wikipedia.org/wiki/Mouse_Systems"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFC\xE8!\x01\xC3\0\0\0\0\r\nUnable to locate resident mouse driver.$\r\n\r\nUnable to load menus: menu version does not\r\nmatch resident mouse driver version.\r\n$\r\nUnable to load menus: menu size exceeds current\r\nresident mouse driver memory allocation.\r\n$MOUSESET  Version 5.01\r\nCopyright (c)-1984 Mouse Systems\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$ BYTES REQUIRED TO USE OPTIONAL VIDEO DRIVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ BYTES REQUIRED TO USE STANDARD VIDEO DRIVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMD D\0\0\0\0\0\0\0\0CARD13\0\0\0\0\0\0\0\0CARD24MOUSESYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESIDENT MOUSE DRIVER MEMORY ALLOCATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNABLE TO LOCATE RESIDENT MOUSE DRIVER.$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C1   - FORCE ASSIGNMENT TO MOUSE CARD 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C2   - FORCE ASSIGNMENT TO MOUSE CARD 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCH RESIDENT MOUSE DRIVER VERSION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)-1984 MOUSE SYSTEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ BYTES OF MENU SPACE AVAILABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1    - FORCE ASSIGNMENT TO COM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2    - FORCE ASSIGNMENT TO COM2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU SIZE EXCEEDS CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MOUSESET  VERSION 5.01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D    - FORCE TO DAVONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU VERSION DOES NOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNABLE TO LOAD MENUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ MUST BE USED WITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789ABCDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURED FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT POP-UP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M OPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM1 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM2 2"
+    CaseSensitive: false

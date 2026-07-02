@@ -1,0 +1,281 @@
+Name: SCATT Basic data
+URL: "https://www.scatt.com/scatt-expert-software"
+FileNameExtensions: ["scatt-basic"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3\0\x10\0\x01\x01\0@  \0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATE INDEX SESSIONS_PERSON_ID_IX ON SESSIONS (PERSON_ID)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE INDEX TRACES_SESSION_ID_IX ON TRACES (SESSION_ID)S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREIGN KEY(SESSION_ID) REFERENCES SESSION (SESSION_ID) )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE INDEX SESSIONS_TIMER_IX ON SESSIONS (TIMER ASC)D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE UNIQUE INDEX SESSIONS_UUID_IX ON SESSIONS (UUID)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREIGN KEY(PERSON_ID) REFERENCES PERSONS (PERSON_ID))"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE INDEX SHOTS_TRACE_ID_IX ON SHOTS (TRACE_ID)O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE INDEX TRACES_TIMER_IX ON TRACES (TIMER ASC)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREIGN KEY(TRACE_ID) REFERENCES TRACES (TRACE_ID)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE INDEX SHOTS_TIMER_IX ON SHOTS (TIMER ASC)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTANCEUNITS INTEGER NOT NULL DEFAULT 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_SESSIONS_1SESSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALIBERUNITS INTEGER NOT NULL DEFAULT 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMER_ENTER INTEGER NOT NULL DEFAULT -1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_PERSONS_1PERSONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCH_SHOT INTEGER NOT NULL DEFAULT 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(PHASE ISNULL OR (TYPEOF(PHASE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE UNIQUE INDEX PERSONS_NAME_IX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAVORITE INTEGER NOT NULL DEFAULT 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETED INTEGER NOT NULL DEFAULT 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSESSIONS_PERSON_ID_IXSESSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCH_SHOT_COUNT INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}INDEXTRACES_SESSION_ID_IXTRACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YINDEXSESSIONS_TIMER_IXSESSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(MATCH_SHOT_COUNT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSION_ID INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{INDEXSESSIONS_UUID_IXSESSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERSON_ID INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE_OFFSET INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(NAME_UPPERCASE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F INTEGER NOT NULL DEFAULT 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME_UPPERCASE TEXT NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QINDEXSHOTS_TRACE_ID_IXSHOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_RATE INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE_ID INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXPERSONS_NAME_IXPERSONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON PERSONS (NAME_UPPERCASE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QINDEXTRACES_TIMER_IXTRACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSION_ID INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOT_ID INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(TRACE_OFFSET)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERSON_ID INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUE (NAME_UPPERCASE) )-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(SAMPLE_RATE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(TARGET_UUID)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(TIMER_ENTER)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINDEXSHOTS_TIMER_IXSHOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE_ID INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(MATCH_SHOT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(SHOT_COUNT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES BLOB NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND LENGTH(TARGET_UUID)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SESSIONS ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISSED INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET_UUID VARCHAR(38)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(DISTANCE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(FAVORITE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(POSITION)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE PERSONS ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTANCE REAL NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMER INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALIBER REAL NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(CALIBER)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(DELETED)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE TRACES ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESESSIONSSESSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND MATCH_SHOT_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(MISSED)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(RESULT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SHOTS ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTABLEPERSONSPERSONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(TIMER)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND POSITION IN (0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(NAME)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(UUID)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA BLOB NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME TEXT NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTABLETRACESTRACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND LENGTH(UUID)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND TRACE_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND SAMPLE_RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK(TYPEOF(F)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESHOTSSHOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND SHOT_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESULT INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUE(UUID)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0 AND PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND TIMER"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: RcCad model
+URL: "http://www.rccad.com/"
+FileNameExtensions: ["rcd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# RCCAD File Format V "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ELECTROBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WING TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUSELAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUDDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

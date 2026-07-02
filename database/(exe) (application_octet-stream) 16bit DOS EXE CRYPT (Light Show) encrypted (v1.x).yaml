@@ -1,0 +1,34 @@
+Name: 16bit DOS EXE CRYPT (Light Show) encrypted (v1.x)
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0L.S.    Crypt By    -- LIGHT SHOW --       of            ECLIPSE    V1."
+    CaseSensitive: true
+  - Pos: 101
+    AsciiString: "   \x871994-"
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "Good Luck Ripper"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "L.S.    CRYPT BY    -- LIGHT SHOW --       OF            ECLIPSE    V1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOOD LUCK RIPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1994-"
+    CaseSensitive: false

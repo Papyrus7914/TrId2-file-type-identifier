@@ -1,0 +1,11 @@
+Name: Sony Compressed Voice File
+URL: "http://fileformats.archiveteam.org/wiki/Memory_Stick_Voice"
+FileNameExtensions: ["dvf", "msv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MS_VOICE"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "SONY CORPORATION"
+    CaseSensitive: true

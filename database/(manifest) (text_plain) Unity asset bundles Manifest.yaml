@@ -1,0 +1,23 @@
+Name: Unity asset bundles Manifest
+URL: "https://en.wikipedia.org/wiki/Unity_(game_engine)"
+FileNameExtensions: ["manifest"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ManifestFileVersion: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASSETBUNDLEMANIFEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETBUNDLEINFOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPENDENCIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO_0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

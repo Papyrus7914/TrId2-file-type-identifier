@@ -1,0 +1,12 @@
+Name: Symantec compressed install Package
+Description: Used by some Symantec DOS installers.
+URL: "https://en.wikipedia.org/wiki/Symantec"
+FileNameExtensions: ["pk$"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        d     m
+    Bytes: [0x64, 0x6D, 0x10, 0x11]
+  - Pos: 26
+    AsciiString: "PAKPAK\0*"
+    CaseSensitive: true

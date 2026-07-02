@@ -1,0 +1,56 @@
+Name: Macintosh Disk image (BZ2 compressed)
+URL: "https://en.wikipedia.org/wiki/Apple_Disk_Image"
+FileNameExtensions: ["dmg"]
+MimeType: application/x-apple-diskimage
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BZh"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "1AY&SY"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE PLIST PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYLIST-1.0.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTD PLIST 1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLIST VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE-FORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.APPLE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(APPLE_HFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0X0050"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLST"
+    CaseSensitive: false

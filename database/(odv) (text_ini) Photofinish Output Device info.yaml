@@ -1,0 +1,19 @@
+Name: Photofinish Output Device info
+FileNameExtensions: ["odv"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Header]\r\nDescription="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PHOTO RESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE RESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICAL"
+    CaseSensitive: false

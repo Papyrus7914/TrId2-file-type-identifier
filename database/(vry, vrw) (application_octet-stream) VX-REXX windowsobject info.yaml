@@ -1,0 +1,26 @@
+Name: VX-REXX windows/object info
+URL: "https://en.wikipedia.org/wiki/VX-REXX"
+FileNameExtensions: ["vry", "vrw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VRX   OS/2 v"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VRWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VRX   OS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL"
+    CaseSensitive: false

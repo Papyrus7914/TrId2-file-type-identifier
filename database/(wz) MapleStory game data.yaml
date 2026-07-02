@@ -1,0 +1,19 @@
+Name: MapleStory game data
+URL: "http://en.wikipedia.org/wiki/MapleStory"
+FileNameExtensions: ["wz"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PKG1"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "Package file v"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: " Copyright "
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: " Wizet, ZMS"
+    CaseSensitive: true

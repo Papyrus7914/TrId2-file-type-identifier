@@ -1,0 +1,8 @@
+Name: WhatsApp Messenger messages storage
+URL: "https://en.wikipedia.org/wiki/WhatsApp"
+FileNameExtensions: ["crypt14"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    #              \b                M     \n                                  2           ␠
+    Bytes: [0x01, 0x08, 0x00, 0x12, 0x4D, 0x0A, 0x02, 0x00, 0x01, 0x12, 0x01, 0x32, 0x1A, 0x20]

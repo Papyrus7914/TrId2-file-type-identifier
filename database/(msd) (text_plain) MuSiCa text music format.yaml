@@ -1,0 +1,35 @@
+Name: MuSiCa text music format
+Description: An MSX music format.
+FileNameExtensions: ["msd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FM"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PSG1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSG2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSG3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCC1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCC2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCC3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCC4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCC5"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Protel PAD macro
+URL: "https://en.wikipedia.org/wiki/Protel"
+FileNameExtensions: ["pad"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PADMACROFILE\r\nROUND"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PADMACROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQUARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUND"
+    CaseSensitive: false

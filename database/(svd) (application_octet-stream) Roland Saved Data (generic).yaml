@@ -1,0 +1,14 @@
+Name: Roland Saved Data (generic)
+URL: "https://www.roland.com/"
+FileNameExtensions: ["svd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "SVD"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "P"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PATA"
+    CaseSensitive: false

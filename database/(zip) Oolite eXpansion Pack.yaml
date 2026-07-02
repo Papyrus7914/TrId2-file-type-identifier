@@ -1,0 +1,23 @@
+Name: Oolite eXpansion Pack
+Description: Oolite is a space sim game, inspired by Elite.
+URL: "http://wiki.alioth.net/index.php/OXP"
+FileNameExtensions: ["zip"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "EQUIPMENT.PLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRES.PLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OXP"
+    CaseSensitive: false

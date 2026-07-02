@@ -1,0 +1,11 @@
+Name: Western Digital ROYL drive firmware
+URL: "https://en.wikipedia.org/wiki/Western_Digital"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ROYL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WDC WD"
+    CaseSensitive: false

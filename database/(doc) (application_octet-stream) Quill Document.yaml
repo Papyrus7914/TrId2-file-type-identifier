@@ -1,0 +1,12 @@
+Name: Quill Document
+Description: Sinclair QL's Word Processor, later ported to PC and other systems.
+URL: "http://www.rwapadventures.com/ql_wiki/index.php?title=Quill"
+FileNameExtensions: ["doc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "vrm1qdf0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VRM1QDF0"
+    CaseSensitive: false

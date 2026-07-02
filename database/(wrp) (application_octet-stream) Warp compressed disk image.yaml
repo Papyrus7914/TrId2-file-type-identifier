@@ -1,0 +1,11 @@
+Name: Warp compressed disk image
+Description: Amiga image format by SDS Software.
+FileNameExtensions: ["wrp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Warp v"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "."
+    CaseSensitive: true

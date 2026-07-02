@@ -1,0 +1,9 @@
+Name: JPEG Network Graphics bitmap
+Description: JNG is the lossy sub-format for MNG objects.
+URL: "http://fileformats.archiveteam.org/wiki/JNG"
+FileNameExtensions: ["jng"]
+MimeType: image/jng
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x8BJNG\r\n\x1A\n"
+    CaseSensitive: true

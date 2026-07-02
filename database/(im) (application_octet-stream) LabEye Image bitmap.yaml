@@ -1,0 +1,13 @@
+Name: LabEye Image bitmap
+FileNameExtensions: ["im"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Image type: RGB image\r\nName: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILE SIZE (NO OF IMAGES)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE SIZE (X*Y)"
+    CaseSensitive: false

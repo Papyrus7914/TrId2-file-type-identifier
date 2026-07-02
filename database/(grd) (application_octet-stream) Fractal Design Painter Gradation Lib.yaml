@@ -1,0 +1,14 @@
+Name: Fractal Design Painter Gradation Lib
+URL: "https://winworldpc.com/product/fractal-design-painter"
+FileNameExtensions: ["grd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "\0\0FSGZFSX3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FSGZFSX3"
+    CaseSensitive: false

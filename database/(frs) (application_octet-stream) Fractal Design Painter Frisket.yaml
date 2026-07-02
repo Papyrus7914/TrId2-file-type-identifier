@@ -1,0 +1,32 @@
+Name: Fractal Design Painter Frisket
+URL: "https://winworldpc.com/product/fractal-design-painter"
+FileNameExtensions: ["frs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\x10Painter Frisketsi\x02\0\0\0FSPFFS"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "\0\0FSPFFS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAINTER FRISKETSI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIRCLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSPFFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSKT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAR"
+    CaseSensitive: false

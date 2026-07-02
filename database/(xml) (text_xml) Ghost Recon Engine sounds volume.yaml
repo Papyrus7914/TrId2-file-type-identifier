@@ -1,0 +1,20 @@
+Name: Ghost Recon Engine sounds volume
+URL: "https://www.mobygames.com/game/5557/tom-clancys-ghost-recon/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<SoundVolFile>\r\n\t<VersionNumber>1.000000</VersionNumber>\r\n\t<Count>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENTRY FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLLOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false

@@ -1,0 +1,37 @@
+Name: Garmin PCX5 waypoint file
+URL: "http://www.eagleglobesoftware.com/formatsrd/Garmin-PCX5.htm"
+FileNameExtensions: ["wpt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "H "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COORDINATE SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "00000E+00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCX5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDNT"
+    CaseSensitive: false

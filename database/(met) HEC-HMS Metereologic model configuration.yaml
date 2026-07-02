@@ -1,0 +1,43 @@
+Name: HEC-HMS Metereologic model configuration
+URL: "http://www.hec.usace.army.mil/software/hec-hms/"
+FileNameExtensions: ["met"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Meteorology: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRECIP METHOD PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRECIPITATION METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST MODIFIED TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST MODIFIED DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASIN MODEL LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METEOROLOGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBBASIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGLISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORM"
+    CaseSensitive: false

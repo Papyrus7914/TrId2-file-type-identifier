@@ -1,0 +1,45 @@
+Name: 16bit COM executable Graham's TXT2COM (generic)
+Description: Text to COM converter tool by Keith P. Graham.
+URL: "http://fileformats.archiveteam.org/wiki/TXT2COM_(Keith_P._Graham)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 523
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IF YOU WANT TO WRITE TO A FILE ENTER THE FILE NAME."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IF YOU WANT TO PRINT THE FILE ENTER LPT1 OR LPT2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS FILE CANNOT BE DISTRIBUTED FOR SALE WITHOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER THE NAME OF THE FILE FROM THE DOS PROMPT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO VIEW THE CONTENTS OF THIS FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXT2COM CONVERSION UTILITY. VERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPRESS WRITTEN PERMISSION FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT 198"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IQPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KMGO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUIT"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Nanosurf PLT SPM text data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/pltfile.c"
+FileNameExtensions: ["plt"]
+MimeType: x-nanosurf-plt-spm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#Channel: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FRAME"
+    CaseSensitive: false

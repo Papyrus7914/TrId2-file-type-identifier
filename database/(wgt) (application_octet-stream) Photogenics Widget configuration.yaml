@@ -1,0 +1,23 @@
+Name: Photogenics Widget configuration
+Description: Amiga image manipulation tool.
+URL: "https://en.wikipedia.org/wiki/Photogenics"
+FileNameExtensions: ["wgt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x00, 0x03, 0xF3]
+  - Pos: any
+    AsciiString: "VERSION 1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WGTGFX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GFX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WGT"
+    CaseSensitive: false

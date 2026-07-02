@@ -1,0 +1,10 @@
+Name: C-Dilla protected
+URL: "http://fileformats.archiveteam.org/wiki/C-Dilla_protected_file"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        G           b                 Q
+    Bytes: [0x47, 0xF4, 0x62, 0xAF, 0xC2, 0x51, 0x05, 0xF4]
+  - Pos: 10
+    AsciiString: "$\0\0\0\0\0"
+    CaseSensitive: true

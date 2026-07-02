@@ -1,0 +1,51 @@
+Name: Ports of Call RDK Point Of Contact Curve eXport
+Description: Used in modern versions of Ports of Call by Rolf-Dieter Klein, for ships hulls shapes.
+URL: "https://www.mobygames.com/game/184667/ports-of-call-classic-edition/"
+FileNameExtensions: ["rx1"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\n<rdkpoccurve>\n<comment> POC Curve export RDK (C) 20"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POC CURVE EXPORT RDK (C) 20"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF POC EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDKPOCCURVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERIODIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUNICH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCURVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMCVS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POCVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false

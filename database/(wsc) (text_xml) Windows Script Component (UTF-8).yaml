@@ -1,0 +1,62 @@
+Name: Windows Script Component (UTF-8)
+URL: "http://web.archive.org/web/20140613051221/http://msdn.microsoft.com/en-us/library/ms974602.aspx"
+FileNameExtensions: ["wsc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    #                          <     ?
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C, 0x3F]
+  - Pos: 8
+    AsciiString: " version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPONENT ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTRATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METHOD NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP"
+    CaseSensitive: false

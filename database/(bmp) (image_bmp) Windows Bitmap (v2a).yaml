@@ -1,0 +1,12 @@
+Name: Windows Bitmap (v2a)
+Description: This variant with 52 byte DIB header (Adobe)
+URL: "https://en.wikipedia.org/wiki/BMP_file_format"
+FileNameExtensions: ["bmp"]
+MimeType: image/bmp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BM"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "4\0\0\0"
+    CaseSensitive: true

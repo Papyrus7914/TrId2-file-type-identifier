@@ -1,0 +1,11 @@
+Name: MPEG2 Video File recorded by ProgDVB
+Description: incomplete header - confuses some players
+URL: "http://www.progdvb.com/index.html"
+FileNameExtensions: ["mpg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x01\xBAD"
+    CaseSensitive: true
+  - Pos: 10
+    #                    c
+    Bytes: [0x03, 0x10, 0x63, 0xF8, 0x00, 0x00, 0x01]

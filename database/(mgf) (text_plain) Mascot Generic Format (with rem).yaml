@@ -1,0 +1,20 @@
+Name: Mascot Generic Format (with rem)
+URL: "https://fiehnlab.ucdavis.edu/projects/lipidblast/mgf-files"
+FileNameExtensions: ["mgf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN IONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END IONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEPMASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARGE"
+    CaseSensitive: false

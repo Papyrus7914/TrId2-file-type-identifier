@@ -1,0 +1,25 @@
+Name: 16bit DOS EXE EXETOOLS encrypted (v2.1)
+Description: Executable tools by DISMEMBER.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 24
+    Bytes: [0x1C, 0x00]
+  - Pos: 27
+    AsciiString: "\0\x05\0\x06\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ET21"
+    CaseSensitive: false

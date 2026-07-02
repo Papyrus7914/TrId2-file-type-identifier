@@ -1,0 +1,17 @@
+Name: DDP Image checksums
+URL: "https://en.wikipedia.org/wiki/Disc_Description_Protocol"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[CRC32 Checksum]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMAGE.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DDPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DDPMS"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: "Nancy Drew: Message in a Haunted Mansion save game"
+URL: "https://www.mobygames.com/game/4908/nancy-drew-message-in-a-haunted-mansion/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0Nancy Drew Case Files:\0\0\0\0\0\0\0\0The Message In The\0\0\0\0\0\0\0\0\0\0\0\0Haunted Mansion"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HDVIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".AVF"
+    CaseSensitive: false

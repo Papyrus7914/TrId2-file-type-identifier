@@ -1,0 +1,14 @@
+Name: QGIS Zipped project
+URL: "https://en.wikipedia.org/wiki/QGIS"
+FileNameExtensions: ["qgz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".QGDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".QGSPK"
+    CaseSensitive: false

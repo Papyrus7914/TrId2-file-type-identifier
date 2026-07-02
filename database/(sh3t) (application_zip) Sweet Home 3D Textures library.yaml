@@ -1,0 +1,11 @@
+Name: Sweet Home 3D Textures library
+URL: "http://www.sweethome3d.com/importTextures.jsp"
+FileNameExtensions: ["sh3t"]
+MimeType: application/zip
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PLUGINTEXTURESCATALOG.PROPERTIESPK"
+    CaseSensitive: false

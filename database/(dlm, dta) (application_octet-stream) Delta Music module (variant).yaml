@@ -1,0 +1,14 @@
+Name: Delta Music module (variant)
+URL: "https://www.pouet.net/prod.php?which=95980"
+FileNameExtensions: ["dlm", "dta"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DLTATRAC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATT"
+    CaseSensitive: false

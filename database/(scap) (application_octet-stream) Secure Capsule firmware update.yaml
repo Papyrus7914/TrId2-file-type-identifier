@@ -1,0 +1,17 @@
+Name: Secure Capsule firmware update
+URL: "https://trmm.net/Thunderstrike_FAQ#What_are_SCAP_files.3F"
+FileNameExtensions: ["scap"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xBD\x86f;v\r0@\xB7\x0E\xB5Q\x9E/\xC5\xA0P\0\0\0\0\0\0\0p\x02"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0P"
+    CaseSensitive: true
+  - Pos: 95
+    #                    T           z     h           J     D                 \v
+    Bytes: [0x00, 0xD9, 0x54, 0x93, 0x7A, 0x68, 0x04, 0x4A, 0x44, 0x81, 0xCE, 0x0B, 0xF6, 0x17, 0xD8, 0x90, 0xDF, 0x00, 0x00]
+  - Pos: 115
+    AsciiString: "\0\0\0\0\0_FVH"
+    CaseSensitive: true

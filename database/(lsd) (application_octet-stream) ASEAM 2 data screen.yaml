@@ -1,0 +1,11 @@
+Name: ASEAM 2 data screen
+Description: A Simplified Energy Analysis Method, for DOS.
+FileNameExtensions: ["lsd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AS2 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".LSD"
+    CaseSensitive: false

@@ -1,0 +1,55 @@
+Name: Group Policy Administrative Template (UTF-8)
+FileNameExtensions: ["admx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: any
+    AsciiString: "RESOURCES MINREQUIREDREVISIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT.POLICIES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLICYDEFINITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLICYNAMESPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAVERSIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORTEDON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYNAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORTED_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTE"
+    CaseSensitive: false

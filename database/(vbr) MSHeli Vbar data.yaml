@@ -1,0 +1,9 @@
+Name: MSHeli Vbar data
+FileNameExtensions: ["vbr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<REGISTER>\r\n    <VALUE Register=\"0\" "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VALUE REGISTER"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Scream Tracker 2 song/module (BMOD2STM)
+Description: Produced by a MOD 2 STM conversion tool.
+URL: "https://wiki.multimedia.cx/index.php/Scream_Tracker_2_Module"
+FileNameExtensions: ["stm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 20
+    AsciiString: "BMOD2STM"
+    CaseSensitive: true
+  - Pos: 30
+    Bytes: [0x02]
+  - Pos: any
+    AsciiString: "BMOD2STM"
+    CaseSensitive: false

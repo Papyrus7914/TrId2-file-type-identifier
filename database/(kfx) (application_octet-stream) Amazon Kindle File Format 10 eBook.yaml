@@ -1,0 +1,104 @@
+Name: Amazon Kindle File Format 10 eBook
+URL: "https://en.wikipedia.org/wiki/Amazon_Kindle"
+FileNameExtensions: ["kfx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CONT\x02\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KFXGEN_APPLICATION_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.AMAZON.YJCONVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KFXGEN_PACKAGE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KINDLE_AUDIT_METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KINDLE_TITLE_METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KFXGEN_PAYLOAD_SHA1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDE_CONTENT_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANONICALFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COVER-NAV-UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COVER_IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KFXGEN_ACR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDK.MARKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YJ_SYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_SAMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLISHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSET_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOK_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KFXGEN."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EBOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UCIE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{KEY"
+    CaseSensitive: false

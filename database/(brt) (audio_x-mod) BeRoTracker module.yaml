@@ -1,0 +1,27 @@
+Name: BeRoTracker module
+Description: Tracker by Benjamin 'BeRo' Rosseaux.
+URL: "http://www.berotracker.de/"
+FileNameExtensions: ["brt"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BRTF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BPMI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATT"
+    CaseSensitive: false

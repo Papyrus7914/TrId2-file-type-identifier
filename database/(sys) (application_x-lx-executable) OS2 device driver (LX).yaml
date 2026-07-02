@@ -1,0 +1,53 @@
+Name: OS/2 device driver (LX)
+Description: little endian, module flag xX02yYzZh, level=0, stack_obj=0, ESP=0, page_size (4K) lower 64 MiB, page_shift (0 9 12) lower 256, fixup_cksum=0, loader_cksum=0, moddir_off=0, num_moddirs=0, cksum_off=0, num_preload=0, nonres_cksum=0, heapsize=0, stacksize=0
+URL: "https://en.wikipedia.org/wiki/.exe#LX"
+FileNameExtensions: ["sys"]
+MimeType: application/x-lx-executable
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LX\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\x01\0"
+    CaseSensitive: true
+  - Pos: 18
+    Bytes: [0x02]
+  - Pos: 32
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 45
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 124
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 132
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 144
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 168
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOSCALLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVIC"
+    CaseSensitive: false

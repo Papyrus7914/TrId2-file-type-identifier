@@ -1,0 +1,13 @@
+Name: KiCad Documentation
+URL: "http://en.wikipedia.org/wiki/KiCad"
+FileNameExtensions: ["dcm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EESchema-DOCLIB  Version "
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END DOC LIBRARY"
+    CaseSensitive: false

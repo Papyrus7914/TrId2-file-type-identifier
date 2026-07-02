@@ -1,0 +1,14 @@
+Name: RIFF/WAVe standard Audio
+URL: "http://fileformats.archiveteam.org/wiki/WAV"
+FileNameExtensions: ["wav"]
+MimeType: audio/wav
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WAVE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

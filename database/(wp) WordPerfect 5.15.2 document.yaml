@@ -1,0 +1,12 @@
+Name: WordPerfect 5.1/5.2 document
+FileNameExtensions: ["wp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFWPC"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\x01\n\0\x01"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0"
+    CaseSensitive: true

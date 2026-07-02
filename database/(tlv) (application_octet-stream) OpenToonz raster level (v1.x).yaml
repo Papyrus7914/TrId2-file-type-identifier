@@ -1,0 +1,11 @@
+Name: OpenToonz raster level (v1.x)
+URL: "https://github.com/opentoonz/opentoonz"
+FileNameExtensions: ["tlv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TLV14B1aOpenToonz 1."
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: "\0LZO "
+    CaseSensitive: true

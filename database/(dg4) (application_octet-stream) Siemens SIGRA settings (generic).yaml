@@ -1,0 +1,17 @@
+Name: Siemens SIGRA settings (generic)
+URL: "https://www.siemens.com/global/en/products/energy/energy-automation-and-smart-grid/protection-relays-and-control/engineering-tools-for-protection/fault-record-evaluation-sigra.html"
+FileNameExtensions: ["dg4"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x0ESIGRA "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: " File"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

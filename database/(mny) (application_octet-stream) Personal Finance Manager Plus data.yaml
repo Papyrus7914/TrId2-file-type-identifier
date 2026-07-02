@@ -1,0 +1,17 @@
+Name: Personal Finance Manager Plus data
+Description: Amiga accounting software.
+FileNameExtensions: ["mny"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PFM.PLUS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STATEMENT AT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: Macromedia Director project (Big-endian)
+URL: "http://fileformats.archiveteam.org/wiki/Shockwave_(Director)"
+FileNameExtensions: ["dir"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFX"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "MV93imap"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMAP"
+    CaseSensitive: false

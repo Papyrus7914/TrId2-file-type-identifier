@@ -1,0 +1,20 @@
+Name: Wwise Encoded Media audio
+URL: "https://www.audiokinetic.com/"
+FileNameExtensions: ["wem"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WAVEfmt "
+    CaseSensitive: true
+  - Pos: 86
+    AsciiString: "hash"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WAVEFMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASH"
+    CaseSensitive: false

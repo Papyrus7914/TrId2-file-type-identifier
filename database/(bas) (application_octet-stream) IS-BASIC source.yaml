@@ -1,0 +1,13 @@
+Name: IS-BASIC source
+URL: "https://en.wikipedia.org/wiki/Enterprise_(computer)"
+FileNameExtensions: ["bas"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x04]
+  - Pos: 5
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0`"
+    CaseSensitive: true

@@ -1,0 +1,22 @@
+Name: Gerber Scientific plot
+URL: "http://www.gerberscientific.com/"
+FileNameExtensions: ["plt"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\x01Gerber Scientific Products GRAPHIX ADVANTAGE\xAE "
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GERBER SCIENTIFIC PRODUCTS GRAPHIX ADVANTAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOB PRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOB PAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ICM"
+    CaseSensitive: false

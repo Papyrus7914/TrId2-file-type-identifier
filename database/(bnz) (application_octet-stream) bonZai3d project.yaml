@@ -1,0 +1,14 @@
+Name: bonZai3d project
+URL: "http://www.formz.com/products/formzjr.html"
+FileNameExtensions: ["bnz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xC9P\x81Q\xD5:O\xF7\x9BZ\\-\x87\nb7\x1C\0\0\0\0\0\x01\x01"
+    CaseSensitive: true
+  - Pos: 26
+    #                          a     C                 #     J                             t                 0
+    Bytes: [0x00, 0x00, 0xA6, 0x61, 0x43, 0xC1, 0xEE, 0x23, 0x4A, 0x04, 0x90, 0xC3, 0xE3, 0x74, 0xF2, 0xF0, 0x30, 0xD8]
+  - Pos: 48
+    #                                &     <           \t                G     E                                               g
+    Bytes: [0x00, 0x00, 0x00, 0x00, 0x26, 0x3C, 0x8D, 0x09, 0xFD, 0x03, 0x47, 0x45, 0x90, 0xA0, 0xD4, 0x19, 0xEC, 0xE3, 0xC5, 0x67, 0x91]

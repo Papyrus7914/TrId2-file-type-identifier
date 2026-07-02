@@ -1,0 +1,17 @@
+Name: CADIF format (v7)
+URL: "https://en.wikipedia.org/wiki/EDIF"
+FileNameExtensions: ["paf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(cadif\r\n (format CADIF 7 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(FORMAT CADIF 7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(CADIF"
+    CaseSensitive: false

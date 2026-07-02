@@ -1,0 +1,23 @@
+Name: xmlman manpage generation language
+URL: "https://opensource.apple.com/source/headerdoc/headerdoc-8.5.10/xmlman/Syntax.auto.html"
+FileNameExtensions: ["mxml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<manpage>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false

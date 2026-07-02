@@ -1,0 +1,14 @@
+Name: Blueprint markup language (GTK 4.0, with rem)
+URL: "https://gnome.pages.gitlab.gnome.org/blueprint-compiler/"
+FileNameExtensions: ["blp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "USING GTK 4.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BLP"
+    CaseSensitive: false

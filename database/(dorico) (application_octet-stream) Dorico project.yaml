@@ -1,0 +1,38 @@
+Name: Dorico project
+URL: "https://www.steinberg.net/dorico/"
+FileNameExtensions: ["dorico"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SCORELIBRARYRESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHICMANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPLEMENTARY_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSTAUDIOENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINER.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORELIBRARY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSPACE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORE."
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Pen Pal document
+Description: Word processor for Amiga.
+FileNameExtensions: ["wtr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\x02\0\0\0\x05alpha\0\x0E\0\0\0\n\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "opaz\0\0\n\0\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BTOPAZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALPHA"
+    CaseSensitive: false

@@ -1,0 +1,77 @@
+Name: KEA Image
+URL: "http://fileformats.archiveteam.org/wiki/KEA"
+FileNameExtensions: ["kea"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A\n"
+    CaseSensitive: true
+  - Pos: 136
+    AsciiString: "TREE"
+    CaseSensitive: true
+  - Pos: 680
+    AsciiString: "HEAP"
+    CaseSensitive: true
+  - Pos: 720
+    AsciiString: "HEADER\0\0METADATA"
+    CaseSensitive: true
+  - Pos: 744
+    AsciiString: "GCPS"
+    CaseSensitive: true
+  - Pos: 752
+    AsciiString: "BAND1"
+    CaseSensitive: true
+  - Pos: 1384
+    AsciiString: "HEAP"
+    CaseSensitive: true
+  - Pos: 1504
+    AsciiString: "SNOD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA\0\0\0\0DESCRIPTION\0\0\0\0\0DATATYPE\0\0\0\0\0\0\0\0LAYER_TYPE\0\0\0\0\0\0LAYER_USAGE\0\0\0\0\0METADATA\0\0\0\0\0\0\0\0OVERVIEWS\0\0\0\0\0\0\0ATT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBANDS\0\0\0\0\0\0\0\0TL\0\0\0\0\0\0RES\0\0\0\0\0ROT\0\0\0\0\0SIZE\0\0\0\0WKT\0\0\0\0\0FILETYPE\0\0\0\0\0\0\0\0GENERATOR\0\0\0\0\0\0\0VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER\0\0METADATA\0\0\0\0\0\0\0\0GCPS\0\0\0\0BAND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA\0\0\0\0NEIGHBOURS\0\0\0\0\0\0HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHUNKSIZE\0\0\0\0\0\0\0SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHUFFLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAND 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBKEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREE"
+    CaseSensitive: false

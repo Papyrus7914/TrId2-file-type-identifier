@@ -1,0 +1,11 @@
+Name: Lotus Approach Database index
+URL: "https://en.wikipedia.org/wiki/IBM_Lotus_Approach"
+FileNameExtensions: ["adx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x03\0\0\0APPR"
+    CaseSensitive: true
+  - Pos: 84
+    AsciiString: "enu"
+    CaseSensitive: true

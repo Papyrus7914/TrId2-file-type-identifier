@@ -1,0 +1,17 @@
+Name: Cypress PSoC top-level Creator Symbol
+URL: "https://en.wikipedia.org/wiki/Cypress_Semiconductor"
+FileNameExtensions: ["cysym"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x84\x1C\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\xFE\x01\0\0\0\0\0\0\0\0!\xDE\x05\xFA\x01\0\0\0\x04\xFB\x01\0\0\0\x05\xFA\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "C\0y\0D\0e\0s\0i\0g\0n\0e\0r\0.\0C\0o\0m\0m\0o\0n\0.\0B\0a\0s\0e\0.\0C\0y\0A\0r\0c\0h\0i\0v\0e\0V\0e\0r\0s\0i\0o\0n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "C\0Y\0D\0E\0S\0I\0G\0N\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0Y\0S\0Y\0M\0B\0O\0L"
+    CaseSensitive: false

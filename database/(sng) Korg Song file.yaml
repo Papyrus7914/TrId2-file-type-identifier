@@ -1,0 +1,13 @@
+Name: Korg Song file
+URL: "http://www.korg.com/"
+FileNameExtensions: ["sng"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KORG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NEW SONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KORG"
+    CaseSensitive: false

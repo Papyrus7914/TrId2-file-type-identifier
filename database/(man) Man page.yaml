@@ -1,0 +1,10 @@
+Name: Man page
+URL: "http://en.wikipedia.org/wiki/Man_page"
+FileNameExtensions: ["man"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ".TH "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

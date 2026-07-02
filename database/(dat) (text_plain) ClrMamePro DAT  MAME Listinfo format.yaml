@@ -1,0 +1,30 @@
+Name: ClrMamePro DAT / MAME Listinfo format
+Description: Info for MAME Rom Managers.
+URL: "https://mamedev.emulab.it/clrmamepro/"
+FileNameExtensions: ["dat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "clrmamepro ("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROM ( NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

@@ -1,0 +1,74 @@
+Name: XPS FixedPage object
+URL: "https://en.wikipedia.org/wiki/Open_XML_Paper_Specification"
+FileNameExtensions: ["fpage"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<FixedPage "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FONTRENDERINGEMSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNICODESTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIXEDPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FF000000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTURI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ODTTF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLYPHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIONA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANG"
+    CaseSensitive: false

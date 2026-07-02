@@ -1,0 +1,12 @@
+Name: Meridian song
+Description: MSX music editor.
+URL: "https://www.msx.org/news/development/en/meridian-source-code-added-downloads"
+FileNameExtensions: ["mer"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%MERIDIAN "
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "."
+    CaseSensitive: true

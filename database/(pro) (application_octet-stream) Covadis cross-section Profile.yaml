@@ -1,0 +1,11 @@
+Name: Covadis cross-section Profile
+URL: "https://www.sogelink.com/solution/covadis/"
+FileNameExtensions: ["pro"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0-\xE6\0\x02\0\0\x12H"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".PTX"
+    CaseSensitive: false

@@ -1,0 +1,19 @@
+Name: MSN Messenger Saved Contact List
+URL: "http://messenger.msn.com/"
+FileNameExtensions: ["ctt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<messenger>\r\n  <service name=\".NET Messenger Service\">\r\n    <contactlist>\r\n      <contact"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".NET MESSENGER SERVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTACTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false

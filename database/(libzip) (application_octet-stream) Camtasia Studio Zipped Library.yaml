@@ -1,0 +1,23 @@
+Name: Camtasia Studio Zipped Library
+URL: "https://en.wikipedia.org/wiki/Camtasia_Studio"
+FileNameExtensions: ["libzip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".\0L\0I\0B\0P\0K\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0P\0N\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LIBPKG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUCX"
+    CaseSensitive: false

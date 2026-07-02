@@ -1,0 +1,11 @@
+Name: Ami Pro/Word Pro encrypted document
+URL: "https://en.wikipedia.org/wiki/IBM_Lotus_Word_Pro"
+FileNameExtensions: ["sam"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[encrypt]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EMBEDDED"
+    CaseSensitive: false

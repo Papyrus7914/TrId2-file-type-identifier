@@ -1,0 +1,41 @@
+Name: TeamViewer Session
+URL: "https://en.wikipedia.org/wiki/TeamViewer"
+FileNameExtensions: ["tvs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TVS\r\nVersion\t"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOCALPARTICIPANTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATAPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENFEATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAMTYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TVVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TVSERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUID"
+    CaseSensitive: false

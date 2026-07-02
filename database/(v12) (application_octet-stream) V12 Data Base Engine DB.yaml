@@ -1,0 +1,39 @@
+Name: V12 Data Base Engine DB
+Description: A database engine for Macromedia Director.
+URL: "https://manualzilla.com/doc/5734514/v12-database-engine"
+FileNameExtensions: ["v12"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "v\x01\x04\0A\0\0\x04\0L\0\0\0 IM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MONTHS\0JANUARY FEBRUARY MARCH APRIL MAY JUNE JULY AUGUST SEPTEMBER OCTOBER NOVEMBER DECEMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEEKDAYS\0SUNDAY MONDAY TUESDAY WEDNESDAY THURSDAY FRIDAY SATURDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORTMONTHS\0JAN FEB MAR APR MAY JUN JUL AUG SEP OCT NOV DEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORTWEEKDAYS\0SUN MON TUE WED THU FRI SAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFICATION-DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESSINDICATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXLOGGEDERRORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATION-DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBE-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGERROR"
+    CaseSensitive: false

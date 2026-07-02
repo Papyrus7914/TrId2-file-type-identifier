@@ -1,0 +1,32 @@
+Name: Music Encoding Initiative format (UTF-8)
+URL: "http://fileformats.archiveteam.org/wiki/MEI"
+FileNameExtensions: ["mei"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: any
+    AsciiString: "WWW.MUSIC-ENCODING.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEIVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEIHEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

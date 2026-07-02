@@ -1,0 +1,26 @@
+Name: Arxel game data container
+Description: Used in some Arxel's games.
+FileNameExtensions: ["at3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ATIII\0\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ARXEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATIII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$I$I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BMP"
+    CaseSensitive: false

@@ -1,0 +1,22 @@
+Name: 16bit DOS COM MASK encrypted (v2.x)
+Description: Executabe encryptor by Jose M. L. Lopes.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE8]
+  - Pos: any
+    AsciiString: ". EXECUTABLE ENCRYPTOR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M. L. LOPES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) 1994-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK 2."
+    CaseSensitive: false

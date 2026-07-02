@@ -1,0 +1,37 @@
+Name: Pencil project
+URL: "http://pencil-animation.org/"
+FileNameExtensions: ["pcl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE PencilDocument>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE PENCILDOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTFRAME VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTLAYER VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER VISIBILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTVIEW DX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE TOPLEFTX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPLEFTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

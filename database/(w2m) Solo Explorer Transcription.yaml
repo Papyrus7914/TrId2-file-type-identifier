@@ -1,0 +1,14 @@
+Name: Solo Explorer Transcription
+Description: Solo Explorer is a WAV to Midi conversion, automatic music transcription (recognition), and music notation software for Windows.
+URL: "http://www.recognisoft.com/"
+FileNameExtensions: ["w2m"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0dCreated by Solo Explorer "
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: ":\\"
+    CaseSensitive: true

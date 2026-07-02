@@ -1,0 +1,102 @@
+Name: VMWare Scoreboard
+Description: VM performance info - usually in VMWare VMs folders.
+URL: "https://en.wikipedia.org/wiki/VMware"
+FileNameExtensions: ["scoreboard"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "_vmxStats/v"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VMX.CONFIGWRITEMINMAXTIME\0US\0MINMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.DISKLIBDIGESTFILEDATAGROWTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.LOGWRITEMINMAXTIME\0US\0MINMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.DISKLIBCHILDVMDKCREATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.DISKLIBDIGESTVMDKCLOSETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.FILTLIBAPPLYDISKCONFIGTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.SNAPSHOTCREATEQUIESCEDTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.DISKLIBDIGESTVMDKGROWTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.DISKLIBDIGESTVMDKOPENTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.DISKLIBDATAVMDKCLOSETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.DISKLIBDIGESTGETINFOTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.SNAPSHOTCREATEMEMORYTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.DISKLIBDATAVMDKGROWTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.DISKLIBDATAVMDKOPENTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.SNAPSHOTCONSOLIDATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.CONFIGWRITEAVGTIME\0US"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.DISKLIBVMDKCREATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.LOGBYTESDROPPED\0BYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.LOGMSGSDROPPED\0NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.DIGESTLIBOPENINTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.LOGBYTESLOGGED\0BYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.CHECKPOINTSTUNTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.DISKLIBGETINFOTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.LOGWRITEAVGTIME\0US"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.SNAPSHOTCREATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.SNAPSHOTDELETETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMWARE WORKSTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMX.SETPOLICYTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVERAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD-"
+    CaseSensitive: false

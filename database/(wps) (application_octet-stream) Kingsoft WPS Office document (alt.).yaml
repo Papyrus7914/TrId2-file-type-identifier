@@ -1,0 +1,19 @@
+Name: Kingsoft WPS Office document (alt.)
+URL: "https://en.wikipedia.org/wiki/Kingsoft"
+FileNameExtensions: ["wps"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1]
+  - Pos: 1025
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1029
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KSKS"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: Algor FEMPRO model
+URL: "https://en.wikipedia.org/wiki/Autodesk_Simulation"
+FileNameExtensions: ["fem"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FEM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALGORMESHRESULTS VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESHSIZETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESHTYPE"
+    CaseSensitive: false

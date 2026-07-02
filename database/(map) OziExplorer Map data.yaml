@@ -1,0 +1,46 @@
+Name: OziExplorer Map data
+URL: "http://www.oziexplorer.com/"
+FileNameExtensions: ["map"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OziExplorer Map Data File Version "
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OZIEXPLORER MAP DATA FILE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THESE FOLLOW IF THEY EXIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAGNETIC VARIATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTION SETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP PROJECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP FEATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVING MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESERVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false

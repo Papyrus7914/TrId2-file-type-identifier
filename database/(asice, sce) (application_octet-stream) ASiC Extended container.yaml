@@ -1,0 +1,11 @@
+Name: ASiC Extended container
+URL: "https://en.wikipedia.org/wiki/Associated_Signature_Containers"
+FileNameExtensions: ["asice", "sce"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/vnd.etsi.asic-e+zip"
+    CaseSensitive: true

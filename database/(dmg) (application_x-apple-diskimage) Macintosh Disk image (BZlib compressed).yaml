@@ -1,0 +1,68 @@
+Name: Macintosh Disk image (BZlib compressed)
+URL: "https://en.wikipedia.org/wiki/Apple_Disk_Image"
+FileNameExtensions: ["dmg"]
+MimeType: application/x-apple-diskimage
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "x"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE PLIST PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYLIST-1.0.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTD PLIST 1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLIST VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE-FORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.APPLE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0X0050"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLKX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KOLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLST"
+    CaseSensitive: false

@@ -1,0 +1,9 @@
+Name: HP Printer Command Language (UEL)
+Description: starts with "ESCape %-12345X" for "Universal Exit Language" command
+URL: "https://en.wikipedia.org/wiki/Printer_Command_Language"
+FileNameExtensions: ["pcl", "prn", "pxl", "px3"]
+MimeType: application/vnd.hp-PCL
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x1B%-12345X"
+    CaseSensitive: true

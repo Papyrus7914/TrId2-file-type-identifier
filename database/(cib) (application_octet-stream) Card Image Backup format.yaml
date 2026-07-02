@@ -1,0 +1,8 @@
+Name: Card Image Backup format
+URL: "http://www.datarescue.com/photorescue/v3/drdd.htm"
+FileNameExtensions: ["cib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<CIB>\xC1\xB0"
+    CaseSensitive: true

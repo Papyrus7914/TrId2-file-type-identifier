@@ -1,0 +1,44 @@
+Name: Krita input Profile
+URL: "https://en.wikipedia.org/wiki/Krita"
+FileNameExtensions: ["profile"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Alternate Invocation]\n0={"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHANGE PRIMARY SETTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPOSURE OR GAMMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW POPUP WIDGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOL INVOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATE CANVAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWITCH TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOM CANVAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAN CANVAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

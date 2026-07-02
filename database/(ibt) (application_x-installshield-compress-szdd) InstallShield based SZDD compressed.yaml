@@ -1,0 +1,92 @@
+Name: InstallShield based SZDD compressed
+URL: "http://fileformats.archiveteam.org/wiki/MS-DOS_installation_compression"
+FileNameExtensions: ["ibt"]
+MimeType: application/x-installshield-compress-szdd
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "setup.dl_\0setup.dll\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CABINET.DL_\0CABINET.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGDI.DL_\0IGDI.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DL_\0_SETUP.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BE RUN I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIS PROG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IN DOS M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M CANNOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N DOS MO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N IN DOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S PROGRA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETDLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICROS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHIE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SZDD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIND"
+    CaseSensitive: false

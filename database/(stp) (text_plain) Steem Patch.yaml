@@ -1,0 +1,26 @@
+Name: Steem Patch
+URL: "http://steem.atari.st/patches.htm"
+FileNameExtensions: ["stp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Text]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCHAUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLYWHEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEEM V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

@@ -1,0 +1,45 @@
+Name: Towns OS Executable (P3)
+Description: Used by Fujitsu FM Towns computer.
+URL: "http://fileformats.archiveteam.org/wiki/Towns_OS_EXP"
+FileNameExtensions: ["exp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     3
+    Bytes: [0x50, 0x33, 0x01, 0x00, 0x80, 0x01]
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\x80\x01\0\0\x80\0\0\0\0\x02\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x02\0\0"
+    CaseSensitive: true
+  - Pos: 45
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 89
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 94
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 101
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 107
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 115
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 119
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 127
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0DX\0"
+    CaseSensitive: true

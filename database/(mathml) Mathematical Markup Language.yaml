@@ -1,0 +1,13 @@
+Name: Mathematical Markup Language
+URL: "http://www.w3.org/TR/MathML/"
+FileNameExtensions: ["mathml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HTTP://WWW.W3.ORG/"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "/MATHML"
+    CaseSensitive: false

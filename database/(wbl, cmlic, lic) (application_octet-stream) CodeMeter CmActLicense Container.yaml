@@ -1,0 +1,14 @@
+Name: CodeMeter CmActLicense Container
+URL: "https://www.wibu.com/products/codemeter/codemeter-act-license.html"
+FileNameExtensions: ["wbl", "cmlic", "lic"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x1A\xFF\x01\0\x18\0\0\0WIBUBIFF"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "C\0m\0A\0c\0t\0 \0L\0i\0c\0e\0n\0s\0e\0 \0F\0i\0l\0e"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "C\0M\0A\0C\0T\0 \0L\0I\0C\0E\0N\0S\0E\0 \0F\0I\0L\0E"
+    CaseSensitive: false

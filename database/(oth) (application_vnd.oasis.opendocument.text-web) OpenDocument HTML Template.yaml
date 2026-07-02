@@ -1,0 +1,92 @@
+Name: OpenDocument HTML Template
+URL: "http://fileformats.archiveteam.org/wiki/OpenDocument"
+FileNameExtensions: ["oth"]
+MimeType: application/vnd.oasis.opendocument.text-web
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/vnd.oasis.opendocument.text-web"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.OASIS.OPENDOCUMENT.TEXT-WEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATIONS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.RDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCELERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESSBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POPUPMENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUSBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLPANEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITMAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOATER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENUBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FWQT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false

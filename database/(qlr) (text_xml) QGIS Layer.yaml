@@ -1,0 +1,35 @@
+Name: QGIS Layer
+URL: "https://en.wikipedia.org/wiki/QGIS"
+FileNameExtensions: ["qlr"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE qgis-layer-definition>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE QGIS-LAYER-DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASSCALEBASEDVISIBILITYFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPLAYER MINIMUMSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMUMSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYWORDLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRA"
+    CaseSensitive: false

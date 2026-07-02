@@ -1,0 +1,12 @@
+Name: Atari Falcon Video Descriptor
+Description: See falclib6.
+URL: "https://www.nic.funet.fi/pub/atari/falcon/programming/0index"
+FileNameExtensions: ["fv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FVD2"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true

@@ -1,0 +1,34 @@
+Name: SubViewer 1.0 subtitles
+URL: "http://en.wikipedia.org/wiki/SubViewer"
+FileNameExtensions: ["sub"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[TITLE]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "******** START SCRIPT ********"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "******** END SCRIPT ********"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CD TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

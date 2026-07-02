@@ -1,0 +1,19 @@
+Name: Picasa album info
+URL: "http://en.wikipedia.org/wiki/Picasa"
+FileNameExtensions: ["ini"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Picasa]\r\nname="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FOLDERS ON DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICASA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: BAR game data archive
+Description: Used in some NoSense games like Katapult.
+FileNameExtensions: ["bar", "dfw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BAR!"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0"
+    CaseSensitive: true

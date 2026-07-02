@@ -1,0 +1,842 @@
+Name: OpenVSP v3 Model
+URL: "https://en.wikipedia.org/wiki/OpenVSP"
+FileNameExtensions: ["vsp3"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "M_CONVERGENCEXMAXISMANUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_CONVERGENCEXMINISMANUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_CONVERGENCEYMAXISMANUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_CONVERGENCEYMINISMANUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLSURFACEGROUPCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYM_ANCESTOR_ORIGIN_FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_LOADDISTXMAXISMANUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_LOADDISTXMINISMANUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_LOADDISTYMAXISMANUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_LOADDISTYMINISMANUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEGATIVE_VOLUME_PROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABS_OR_RELITIVE_FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEGENGEOM_CSV_EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEGATIVE_VOLUME_FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARASITEDRAGSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOMRIGHTROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPGEOM_CSV_EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTSETTINGINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWFARFIELDPREVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_SWEEPXMAXISMANUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_SWEEPXMINISMANUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_SWEEPYMAXISMANUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_SWEEPYMINISMANUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMSETTINGSPERGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOMLEFTROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEGENGEOM_M_EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPDISPLAYSUFFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTGROUPINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWSYMMETRYPLANE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DXFPROJECTIONFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERSECTSUBSURFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARASITEDRAGPROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIFICHEATRATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVGPROJECTIONFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMMETRYSPLITTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANS_ATTACH_FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERPARMCONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U_ATTACH_LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V_ATTACH_LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPUMAXSWEEPFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPUMINSWEEPFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMPARMSPERGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTS_ATTACH_FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPRIGHTROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVEDRAGSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOMRIGHTVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPUMAXSTRENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPUMINSTRENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFDMESHSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCORPORATEDGEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARASITEDRAGMGR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCEGEOMID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRF_XYZINTCURVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYM_PLANAR_FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPLEFTROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLEPRESETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSPAEROSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSISMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOMLEFTVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFDGRIDDENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWSOURCEWAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DXFALLXSECFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREESTREAMTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTORDISKCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVGALLXSECFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYM_AXIAL_FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITE2DFEMFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_REL_LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_REL_ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y_REL_LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y_REL_ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z_REL_LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z_REL_ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTLENGTHUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPUMAXLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPUMAXOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPUMAXOPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPUMINLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPUMINOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPUMINOPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORTAGSFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DXFTESSFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARDISTTOGGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFBODYEQNTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFWINGEQNTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXTURNTOGGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_OF_LIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTPLOTFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLITSUBSURFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVGTESSFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TURBCFEQNTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AREAPLOTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DXFCOLORFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPANDEDLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACET_EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARMANUALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARXLOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARYLOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARZLOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGESSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAMCFEQNTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXTURNANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMMASSSLICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMUSERPARMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRECONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELBODYINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEPSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPRIGHTVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSTEADYTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VINFUNITTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSP_GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPUMINTESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIPPINGMGR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLMAXTOGGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DXFSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCRESCENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARNCIRCSEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWSS_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GMSH_EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MERGEPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMROTSECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLY_EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELSETINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STLSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSURFACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVGSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKEY_EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPLEFTVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAKENUMITER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVEDRAGMGR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XGTCLIPFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XLTCLIPFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YGTCLIPFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YLTCLIPFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZGTCLIPFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZLTCLIPFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVEFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADVLINKMGR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALPHASTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXISLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILD_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR_PARM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAT_EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCRESTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORTFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARABSSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT_PARM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWERLIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASS_PRIOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASS_PROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTISOLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_OF_TEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJ_EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGORLIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHELL_FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLICINGLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLITSURFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRF_EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STL_EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAWTWRATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THETAINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOCUBICTOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRI_EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPPERLIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER_GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIRE_COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y_LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y_ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z_LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z_ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALPHANPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BETASTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELTATEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCRESVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORTCFD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARXSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARYSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARZSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROWRATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASS_AREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXFARGAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT_SHOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMEXCRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMGROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMSLICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANEFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUGHNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYM_ROT_N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TETWRATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOLERANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPEFIXED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAKEANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAKESCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALPHAEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BETANPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALCFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWMESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWWAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYNAVISC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HALFMESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHNPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECULAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMMFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIRFOIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMBIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASELEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BETAEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DGEOMID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWBAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARCOMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARMESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASSSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERCLAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEHICLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDCAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFUSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LCURVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXGAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORTBY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESS_U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESS_W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIMTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER_0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y_LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y_MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z_LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z_MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECTT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCPU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECT"
+    CaseSensitive: false

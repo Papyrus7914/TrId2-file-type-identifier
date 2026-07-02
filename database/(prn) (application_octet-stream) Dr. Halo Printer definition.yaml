@@ -1,0 +1,22 @@
+Name: Dr. Halo Printer definition
+Description: Old MS-DOS Paint program.
+FileNameExtensions: ["prn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AH\xE3\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    Bytes: [0x04, 0x00]
+  - Pos: 9
+    AsciiString: "\0\xEBN{ Copyright (C) 1987, Media Cybernetics, Inc. - Written by Karl A. Hessinger }\x8B\xC8\x8B\xC4.\xA3"
+    CaseSensitive: true
+  - Pos: 98
+    #                    .
+    Bytes: [0x8C, 0xD8, 0x2E, 0xA3]
+  - Pos: 104
+    AsciiString: "[X.\xA3"
+    CaseSensitive: true
+  - Pos: 110
+    AsciiString: "PS\v\xC9t\tIu\x03"
+    CaseSensitive: true

@@ -1,0 +1,10 @@
+Name: Crytek asset
+URL: "https://en.wikipedia.org/wiki/Crytek"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CryTek\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GLOBALRANGE"
+    CaseSensitive: false

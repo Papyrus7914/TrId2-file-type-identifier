@@ -1,0 +1,17 @@
+Name: Kaspersky Lab Key
+URL: "https://www.kaspersky.com/"
+FileNameExtensions: ["key"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KLsw"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\r\nSerial "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KASPERSKY LAB KEY FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIAL NUMBER"
+    CaseSensitive: false

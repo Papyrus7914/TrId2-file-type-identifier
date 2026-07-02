@@ -1,0 +1,41 @@
+Name: Central Point Anti-Virus search report
+URL: "https://en.wikipedia.org/wiki/Central_Point_Software"
+FileNameExtensions: ["rpt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Central Point Anti-Virus.\r\nVirus search report for date: "
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: ", Time "
+    CaseSensitive: true
+  - Pos: 74
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 77
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: ".\r\n\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOTAL BOOT SECTOR VIRUSES   REMOVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL FILE VIRUSES          REMOVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL FILES                 CHECKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL BOOT SECTOR VIRUSES   FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL FILE VIRUSES          FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF REPORT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

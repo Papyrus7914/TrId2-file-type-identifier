@@ -1,0 +1,12 @@
+Name: Windows Bitmap (v3a)
+Description: This variant with 56 byte DIB header and alpha channel (Adobe)
+URL: "https://en.wikipedia.org/wiki/BMP_file_format"
+FileNameExtensions: ["bmp"]
+MimeType: image/bmp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BM"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "8\0\0\0"
+    CaseSensitive: true

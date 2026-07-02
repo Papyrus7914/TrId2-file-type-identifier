@@ -1,0 +1,247 @@
+Name: PC-BSD Installer Package
+URL: "http://www.pcbsd.org/"
+FileNameExtensions: ["pbi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x7FELF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FRAME_DUMMY\0__CTOR_END__\0__DTOR_END__\0__FRAME_END__\0__JCR_END__\0__DO_GLOBAL_CTORS_AUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA\0.EH_FRAME\0.DYNAMIC\0.CTORS\0.DTORS\0.JCR\0.GOT\0.BSS\0.COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRTSTUFF.C\0__CTOR_LIST__\0__DTOR_LIST__\0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_EDATA\0__BSS_START\0_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRTN.S\0PBISTART.C\0STRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORT LD_LIBRARY_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__DO_GLOBAL_DTORS_AUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_GLOBAL_OFFSET_TABLE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_JV_REGISTERCLASSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__PBI_ARCHIVE__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ PRINT NR + 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXP $\0$FREEBSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__DSO_HANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__JCR_LIST__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LD-ELF.SO.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KDESU -D -C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TMPPBIPWD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRTBRAND.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KDIALOG --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PBIDIALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__PROGNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRACTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TMPPBIAWK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PBISTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXP $\0GCC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SHSTRTAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCBSDLANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_INIT_TLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHMOD 755"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBC.SO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILT-IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DYNAMIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPLETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".STRTAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DYNSYM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBEXEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PBITMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SYMTAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DYNSTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RODATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PBITEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R EXP $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVIRON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INTERP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRCAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRTI.S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRCMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRT1.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAR XV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PC-BSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRCPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHOAMI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAIL +"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RM -RF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LIBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(GNU)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FINI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FINI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECHO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DERE"
+    CaseSensitive: false

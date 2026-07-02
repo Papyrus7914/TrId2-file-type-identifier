@@ -1,0 +1,17 @@
+Name: InterActual Disc.id
+URL: "http://fileformats.archiveteam.org/wiki/Disc.id"
+FileNameExtensions: ["id"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[InterActual]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

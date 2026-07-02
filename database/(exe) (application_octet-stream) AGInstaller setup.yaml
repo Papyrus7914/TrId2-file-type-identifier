@@ -1,0 +1,215 @@
+Name: AGInstaller setup
+URL: "http://www.agentix.org/aginstaller.php"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 71
+    #              !                 L           !
+    Bytes: [0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: 121
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%INSTALLPATH%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.0.0.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "\0UPX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "\0 \0A\0L\0E\0X\0E\0Y\0 \0P\0.\0 \0G\0U\0S\0E\0V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4\0\0\0V\0S\0_\0V\0E\0R\0S\0I\0O\0N\0_\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0G\0E\0N\0T\0I\0X\0 \0S\0O\0F\0T\0W\0A\0R\0E\0\0\0\0\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AGENTIX_SOFTWARE.AGINSTALLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASM.V1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLY XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLYIDENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0M\0E\0N\0T\0S\0\0\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0P\0A\0N\0Y\0N\0A\0M\0E\0\0\0\0\0A\0G\0E\0N\0T\0I\0X\0 \0S\0O\0F\0T\0W\0A\0R\0E\0\0\0\0\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPENDENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPENDENTASSEMBLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTTOQUICKLAUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESKTOCOMM*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0D\0E\0S\0C\0R\0I\0P\0T\0I\0O\0N\0\0\0\0\0I\0N\0S\0T\0A\0L\0L\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0V\0E\0R\0S\0I\0O\0N\0\0\0\0\01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0T\0E\0R\0N\0A\0L\0N\0A\0M\0E\0\0\0A\0G\0I\0N\0S\0T\0A\0L\0L\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL\0ADVAPI32.DLL\0COMCTL32.DLL\0GDI32.DLL\0OLE32.DLL\0SHELL32.DLL\0USER32.DLL\0VERSION.DLL\0\0\0LOADLIBRARYA\0\0GETPROCADDRESS\0\0EXITPROCESS\0\0\0FREESID\0\0\0POLYGON\0\0\0COINITIALIZE\0\0SHELLEXECUTEA\0\0\0GETDC\0\0\0VERQUERYVALUEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0E\0G\0A\0L\0C\0O\0P\0Y\0R\0I\0G\0H\0T\0\0\0C\0O\0P\0Y\0R\0I\0G\0H\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0E\0G\0A\0L\0T\0R\0A\0D\0E\0M\0A\0R\0K\0S\0\0\0\0\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEAUT32.DL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFESTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT.WINDOWS.COMMON-CONTROLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0R\0I\0G\0I\0N\0A\0L\0F\0I\0L\0E\0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0I\0V\0A\0T\0E\0B\0U\0I\0L\0D\0\0\08"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0O\0D\0U\0C\0T\0N\0A\0M\0E\0\0\0\0\0A\0G\0I\0N\0S\0T\0A\0L\0L\0E\0R\0\0\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0O\0D\0U\0C\0T\0V\0E\0R\0S\0I\0O\0N\0\0\01\0.\00\07"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSORARCHITECTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICKEYTOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "README.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RMR READING THE DUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0P\0E\0C\0I\0A\0L\0B\0U\0I\0L\0D\0\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0R\0I\0N\0G\0F\0I\0L\0E\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS-MICROSOFT-COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUP TOOL FOR DEVELOPERS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S_ROOTKH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0R\0A\0N\0S\0L\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U\0N\0I\0N\0S\0T\0A\0L\0L\0E\0R\0\0\06"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPX0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPX1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0A\0R\0F\0I\0L\0E\0I\0N\0F\0O\0\0\0\0\0$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUEV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false

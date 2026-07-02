@@ -1,0 +1,31 @@
+Name: Calendar Creator Plus Workspace (v2.0)
+Description: Calendar printing tool by Spinnaker Software.
+FileNameExtensions: ["ccw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xCC]
+  - Pos: 4
+    AsciiString: "("
+    CaseSensitive: true
+  - Pos: 133
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FIRSTWEEKDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCWIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CCW"
+    CaseSensitive: false

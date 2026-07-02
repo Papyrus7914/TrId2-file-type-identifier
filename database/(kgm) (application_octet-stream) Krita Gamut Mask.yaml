@@ -1,0 +1,41 @@
+Name: Krita Gamut Mask
+URL: "https://en.wikipedia.org/wiki/Krita"
+FileNameExtensions: ["kgm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/x-krita-gamutmaskPK\x03\x04"
+    CaseSensitive: true
+  - Pos: 97
+    AsciiString: "gamutmask.svg"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-KRITA-GAMUTMASKPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMUTMASK.SVG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false

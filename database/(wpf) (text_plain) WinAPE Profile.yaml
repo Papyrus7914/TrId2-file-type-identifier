@@ -1,0 +1,38 @@
+Name: WinAPE Profile
+URL: "http://www.winape.net/"
+FileNameExtensions: ["wpf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[ROMS]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CARTRIDGE ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENDED RAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SILICON DISC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLE PLUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRTC TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPPER(0)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPPER(7)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROMS"
+    CaseSensitive: false

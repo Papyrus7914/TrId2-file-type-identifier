@@ -1,0 +1,22 @@
+Name: Python optimized code
+URL: "http://www.python.org/"
+FileNameExtensions: ["pyo"]
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "c\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(\0\0\0\0S"
+    CaseSensitive: false

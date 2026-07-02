@@ -1,0 +1,11 @@
+Name: TextGrid annotation
+URL: "https://www.fon.hum.uva.nl/praat/manual/TextGrid_file_formats.html"
+FileNameExtensions: ["textgrid"]
+MimeType: text/praat-textgrid
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "File type = \"ooTextFile"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXTGRID"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: BlackBox StdCoded archive
+URL: "http://en.wikipedia.org/wiki/BlackBox_Component_Builder"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "StdCoder.Decode ..,1 .."
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "...."
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "T"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "--- END OF ENCODING ---"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STDCODER.DECODE .."
+    CaseSensitive: false

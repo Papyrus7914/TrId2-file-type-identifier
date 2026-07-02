@@ -1,0 +1,64 @@
+Name: 16bit DOS EXE The Builder (v2.0)
+Description: DOS compiler by Hyperkinetix.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 18
+    AsciiString: "\0\0\0\0\0\0\x1E\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BLACK\0BLINK\0BLUE\0BOLD\0BRIGHT BLUE\0BRIGHT CYAN\0BRIGHT GREEN\0BRIGHT MAGENTA\0BRIGHT RED\0BRIGHT WHITE\0BROWN\0CYAN\0GRAY\0GREEN\0HIGHLIGHT\0MAGENTA\0NORMAL\0RED\0REVERSE\0UNDERLINE\0WHITE\0YELLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDER ALLOCATION ERROR$\0U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z\0YYYYY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9W %"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GG9F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PQRW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YXX_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ZYX"
+    CaseSensitive: false

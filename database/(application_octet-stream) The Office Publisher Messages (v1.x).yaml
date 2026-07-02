@@ -1,0 +1,10 @@
+Name: The Office Publisher Messages (v1.x)
+Description: DTP software for DOS, by Print Tree / Laser Friendly.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\aOP\x04V1."
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\aMSGS\x1A"
+    CaseSensitive: true

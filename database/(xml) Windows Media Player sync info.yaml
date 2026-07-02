@@ -1,0 +1,15 @@
+Name: Windows Media Player sync info
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFE<\0D\0e\0v\0i\0c\0e\0I\0n\0f\0o\0>\0\r\0\n\0 \0 \0 \0 \0<\0W\0M\0P\0 \0D\0e\0v\0i\0c\0e\0I\0D\0=\0\"\0{\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "R\0E\0L\0A\0T\0I\0O\0N\0S\0H\0I\0P\0I\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0M\0P\0 \0D\0E\0V\0I\0C\0E\0I\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0E\0V\0I\0C\0E\0I\0N\0F\0O"
+    CaseSensitive: false

@@ -1,0 +1,19 @@
+Name: DICOM Images zipped archive
+URL: "http://en.wikipedia.org/wiki/DICOM"
+FileNameExtensions: ["cdrzip"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "DICOMDIR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DICOMDIRPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false

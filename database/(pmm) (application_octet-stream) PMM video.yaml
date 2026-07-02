@@ -1,0 +1,12 @@
+Name: PMM video
+Description: May stand for Psygnosis MultiMedia. Used in the Krazy Ivan game.
+URL: "https://wiki.multimedia.cx/index.php?title=PMM"
+FileNameExtensions: ["pmm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "PXMTPXMH"
+    CaseSensitive: true

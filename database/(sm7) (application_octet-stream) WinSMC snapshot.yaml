@@ -1,0 +1,12 @@
+Name: WinSMC snapshot
+Description: SMC-777 emulator by Yoshihiro Sato.
+URL: "http://www.smc777.com/winsmc.htm"
+FileNameExtensions: ["sm7"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WinSMC SNAP\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true

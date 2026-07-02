@@ -1,0 +1,8 @@
+Name: Snzip compressed (snzip format)
+URL: "https://github.com/kubo/snzip"
+FileNameExtensions: ["snz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SNZ\x01"
+    CaseSensitive: true

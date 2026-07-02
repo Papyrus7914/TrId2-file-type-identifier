@@ -1,0 +1,26 @@
+Name: BeamNG scenario
+URL: "https://www.beamng.com"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "INFO.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON.JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PREFABPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENARIOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOD_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELS"
+    CaseSensitive: false

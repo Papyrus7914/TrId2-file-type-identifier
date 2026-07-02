@@ -1,0 +1,38 @@
+Name: Symbian Application
+FileNameExtensions: ["app"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\x10\xCE9\0\x10"
+    CaseSensitive: true
+  - Pos: 11
+    Bytes: [0x10]
+  - Pos: 16
+    AsciiString: "EPOC\0 \0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".DLL\0EIKCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL\0FBSCLI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL\0EFSRV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL\0EUSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL\0CONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL\0EST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPARC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IKCTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPOC"
+    CaseSensitive: false

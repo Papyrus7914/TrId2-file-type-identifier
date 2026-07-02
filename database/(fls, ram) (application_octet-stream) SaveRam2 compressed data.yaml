@@ -1,0 +1,17 @@
+Name: SaveRam2 compressed data
+Description: IBM file compression utility.
+FileNameExtensions: ["fls", "ram"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x02\0\xFE\0\0\0\x01\0\0\xFF\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 90
+    AsciiString: "\xFF\xFFSaveRam2 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PACKED ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVERAM2"
+    CaseSensitive: false

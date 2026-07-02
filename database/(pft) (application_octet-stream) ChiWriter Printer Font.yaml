@@ -1,0 +1,15 @@
+Name: ChiWriter Printer Font
+URL: "https://en.wikipedia.org/wiki/ChiWriter"
+FileNameExtensions: ["pft"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x10]
+  - Pos: 13
+    Bytes: [0x00, 0xBA, 0x10]
+  - Pos: 18
+    AsciiString: "\0\x10\x18\0\x10\0\f"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".PFT"
+    CaseSensitive: false

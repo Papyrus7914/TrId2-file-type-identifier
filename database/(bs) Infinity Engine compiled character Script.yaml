@@ -1,0 +1,11 @@
+Name: Infinity Engine compiled character Script
+Description: Infinity Engine BS files are scripts which drive a character's actions automatically (AI scripts) based on criteria in the environment.
+URL: "http://iesdp.gibberlings3.net/file_formats/ie_formats/bcs.htm"
+FileNameExtensions: ["bs"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SC\n"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\n"
+    CaseSensitive: true

@@ -1,0 +1,40 @@
+Name: Synology DSM install Package (new, v7)
+URL: "https://en.wikipedia.org/wiki/Synology"
+FileNameExtensions: ["pat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    Bytes: [0xAD, 0xBE, 0xEF]
+  - Pos: 6
+    AsciiString: "\0\0\x95\xC4 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRODUCTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHIVE_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMALLFIXNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATE_PACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNOLOGY_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINOR"
+    CaseSensitive: false

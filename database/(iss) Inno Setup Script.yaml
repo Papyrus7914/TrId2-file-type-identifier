@@ -1,0 +1,31 @@
+Name: Inno Setup Script
+URL: "http://en.wikipedia.org/wiki/Inno_Setup"
+FileNameExtensions: ["iss"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Setup]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPVERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SION"
+    CaseSensitive: false

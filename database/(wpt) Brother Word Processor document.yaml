@@ -1,0 +1,9 @@
+Name: Brother Word Processor document
+Description: Document from an old Brother electronic typewriter / text system.
+FileNameExtensions: ["wpt"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x8F, 0x81, 0x01]
+  - Pos: 4
+    AsciiString: "\0\0BR"
+    CaseSensitive: true

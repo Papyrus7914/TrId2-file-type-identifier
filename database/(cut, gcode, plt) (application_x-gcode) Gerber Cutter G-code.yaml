@@ -1,0 +1,11 @@
+Name: Gerber Cutter G-code
+URL: "https://en.wikipedia.org/wiki/G-code"
+FileNameExtensions: ["cut", "gcode", "plt"]
+MimeType: application/x-gcode
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "H1*"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "*D2*M15*"
+    CaseSensitive: true

@@ -1,0 +1,16 @@
+Name: BeOS installation package
+URL: "http://www.bebits.org"
+FileNameExtensions: ["pkg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AlB\x1A\xFF\n\r\0PhIn\0\0\x04FVer\0\x01\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "AFla\0\x02\x01\0\0\0\0\0\0\0\x02FSiz\0\x02\x01\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "COff\0\x02\x01\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: "AOff\0\x02\x01\0\0\0\0"
+    CaseSensitive: true

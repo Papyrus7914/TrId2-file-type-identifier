@@ -1,0 +1,20 @@
+Name: YSFlight mission
+URL: "https://ysflight.org/"
+FileNameExtensions: ["yfs"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "YFSVERSI "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AIRPLANE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDNAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMTITLE"
+    CaseSensitive: false

@@ -1,0 +1,32 @@
+Name: Compak / Bytekiller ST compressed Atari ST program (v2.00)
+Description: Atari ST packer by Mike Coates.
+FileNameExtensions: ["prg", "tos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\xFF\xFFH\xE7\xFF\x1EG\xFA\x01\x88&<\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "I\xFA\xFF\xB0,LK\xFA\xFF\xCEA\xFA\0\x16\"|\0\a\xFD\0pW\"\xD8Q\xC8\xFF\xFCN\xF9\0\a\xFD\0\x18\xDBS\x83j\xFAB\xA7?<\0 NA/@\0\x02a\0\0\x86NA\\\x8FA\xEE\xFF@C\xEE\0@ \tC\xE9\xFF\xE4$I!i\0\x02\0\f\xD0\xA8\0\f!@\0\x10!i\0\x06\0\x14\xD0\xA8\0\x14!@\0\x18!i\0\n\0\x1C *\0\x02\xD0\xAA\0\x06Jj\0\x1Af:C\xEA\0\x1C I\xD1\xEA\0\x02\xD1\xEA\0\x06\xD1\xEA\0\x0E&HB\x81$\t \x18\xD5\xB1\b\0\x12\x18J\x01g\x10\xD0\x81\xB2<\0\x01f\xEE\x06\x80\0\0\0\xFD`\xEAB \xB7\xC8f\xFAL\xDFx\xFFN\xD1>8\x82@ N\"M \x18\"\x18*\x18$I\xD1\xC0\xD5\xC1  \xB1\x85\xE2\x88f\x04a\0\0\x80e2r\bv\x01\xE2\x88f\x02areLr\x03BDav6\x02\xD6Dr\a\xE2\x88f\x02a^\xE3\x92Q\xC9\xFF\xF6\x15\x02Q\xCB\xFF\xEE`8r\bx\b`\xDEr\x02aR\f\x02\0\x02m\x12\f\x02\0\x03g\xEAr\baB6\x022<\0\f`\n2<\0\t\xD2BTB6\x02a.SJ\x14\xB2 \0Q\xCB\xFF\xF81\xC8\x82@\xB3\xCAm\x8A1\xC7\x82@J\x85g\x061\xFC\a\0\x82@Nu  \xB1\x85D\xFC\0\x10\xE2\x90NuSABB\xE2\x88f\n  \xB1\x85D\xFC\0\x10\xE2\x90\xE3\x92Q\xC9\xFF\xEENu\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUSABB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARELR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BDAV6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTB6"
+    CaseSensitive: false

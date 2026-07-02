@@ -1,0 +1,25 @@
+Name: Aston 2 Menu
+URL: "http://www.astonshell.com/aston2/"
+FileNameExtensions: ["a2menu"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "A2MENU.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANEL.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNGPK"
+    CaseSensitive: false

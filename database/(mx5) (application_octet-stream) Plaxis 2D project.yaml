@@ -1,0 +1,35 @@
+Name: Plaxis 2D project
+URL: "https://www.bentley.com/software/plaxis-2d/"
+FileNameExtensions: ["mx5"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*** PLAXIS BINARY XML ***\r\nFileFormatVersion=1\r\nMinimumReaderVersion=1\r\nApplicationName=Plaxis2DXInput.exe\r\nApplicationDirectory="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPLICATIONDIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINIMUMREADERVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAXIS2DXINPUT.EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEFORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2024"
+    CaseSensitive: false

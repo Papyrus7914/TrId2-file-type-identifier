@@ -1,0 +1,20 @@
+Name: OmniRush eXtended Package
+URL: "http://www.shiprush.com/support/omnirush_sunset.shtml"
+FileNameExtensions: ["oxp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXTENDEDNOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCELINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false

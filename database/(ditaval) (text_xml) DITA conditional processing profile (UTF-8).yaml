@@ -1,0 +1,11 @@
+Name: DITA conditional processing profile (UTF-8)
+URL: "https://en.wikipedia.org/wiki/Darwin_Information_Typing_Architecture"
+FileNameExtensions: ["ditaval"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROP ACTION"
+    CaseSensitive: false

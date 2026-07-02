@@ -1,0 +1,12 @@
+Name: IFF ANimated BitMap
+Description: An Amiga graphic format.
+URL: "http://wiki.amigaos.net/wiki/ANBM_IFF_Animated_Bitmap"
+FileNameExtensions: ["anbm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Form"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "ANBM"
+    CaseSensitive: true

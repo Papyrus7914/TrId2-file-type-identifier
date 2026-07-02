@@ -1,0 +1,17 @@
+Name: Embedded OpenType font
+Description: application/vnd.ms-fontobject
+URL: "http://en.wikipedia.org/wiki/Embedded_OpenType"
+FileNameExtensions: ["eot", "fntdata"]
+DetectionPatterns:
+  - Pos: 9
+    AsciiString: "\0\x02\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0LP"
+    CaseSensitive: true

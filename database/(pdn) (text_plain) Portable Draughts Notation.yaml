@@ -1,0 +1,29 @@
+Name: Portable Draughts Notation
+URL: "https://en.wikipedia.org/wiki/Portable_Draughts_Notation"
+FileNameExtensions: ["pdn"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Event \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RESULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SITE"
+    CaseSensitive: false

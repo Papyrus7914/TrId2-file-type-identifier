@@ -1,0 +1,15 @@
+Name: Siemens mobile theme
+FileNameExtensions: ["sdt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PK\x03"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONFIG.STCPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GIFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SCSPK"
+    CaseSensitive: false

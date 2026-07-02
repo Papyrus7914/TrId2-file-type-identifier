@@ -1,0 +1,44 @@
+Name: PixiTracker Module
+URL: "https://www.warmplace.ru/soft/pixitracker/"
+FileNameExtensions: ["piximod"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PIXIMOD1BPM "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNDN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOF2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVOL"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: GENSCAN output results
+URL: "https://en.wikipedia.org/wiki/GENSCAN"
+FileNameExtensions: ["report", "txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GENSCAN 1.0\tDate run: "
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "-10"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\tTime: "
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: ":"
+    CaseSensitive: true

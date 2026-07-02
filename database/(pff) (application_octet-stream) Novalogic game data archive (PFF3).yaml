@@ -1,0 +1,14 @@
+Name: Novalogic game data archive (PFF3)
+URL: "https://en.wikipedia.org/wiki/NovaLogic"
+FileNameExtensions: ["pff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "PFF3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PFF3"
+    CaseSensitive: false

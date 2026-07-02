@@ -1,0 +1,47 @@
+Name: DOS Executable Borland Turbo Pascal 4.0
+URL: "https://en.wikipedia.org/wiki/Turbo_Pascal"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0\0\x1C\0\0\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 63
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RUNTIME ERROR \0 AT \0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K\0Z3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}0\0T"
+    CaseSensitive: false

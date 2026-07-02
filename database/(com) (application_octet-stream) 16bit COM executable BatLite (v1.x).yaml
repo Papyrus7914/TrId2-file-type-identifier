@@ -1,0 +1,19 @@
+Name: 16bit COM executable BatLite (v1.x)
+URL: "https://en.wikipedia.org/wiki/COM_file"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEB]
+  - Pos: 2
+    AsciiString: "\xB0\xB1\xB2 BatLite 1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PIETER A. HINTJENS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$LABEL NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN BATLITE$"
+    CaseSensitive: false

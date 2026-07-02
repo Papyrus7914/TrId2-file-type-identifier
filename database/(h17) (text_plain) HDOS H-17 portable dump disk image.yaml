@@ -1,0 +1,11 @@
+Name: HDOS H-17 portable dump disk image
+Description: Format used by DISKDUMP by David A. Shaw.
+FileNameExtensions: ["h17"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "377"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "00"
+    CaseSensitive: true

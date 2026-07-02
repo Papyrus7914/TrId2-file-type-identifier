@@ -1,0 +1,9 @@
+Name: CAN embroidery format
+FileNameExtensions: ["can"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xAA, 0xFF]
+  - Pos: any
+    AsciiString: "SCOLOURSTITCH"
+    CaseSensitive: false

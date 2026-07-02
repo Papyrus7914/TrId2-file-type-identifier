@@ -1,0 +1,11 @@
+Name: TechnoSound Turbo II Track
+Description: Amiga sampler.
+FileNameExtensions: ["track"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TT2!\0\0\0\0\0\x1A"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "SONG"
+    CaseSensitive: true

@@ -1,0 +1,8 @@
+Name: PC-98 Music
+FileNameExtensions: ["m2"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x1A\0"
+    CaseSensitive: true
+  - Pos: 27
+    Bytes: [0xCA, 0x01, 0xBB, 0x01]

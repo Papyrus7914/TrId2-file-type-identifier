@@ -1,0 +1,11 @@
+Name: Java Manifest
+URL: "https://en.wikipedia.org/wiki/Java_(programming_language)"
+FileNameExtensions: ["mf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Manifest-Version: "
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "."
+    CaseSensitive: true

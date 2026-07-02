@@ -1,0 +1,168 @@
+Name: West Mountain Radio CBA Test (v3)
+Description: Computerized Battery Analyzer is a battery testing tool.
+URL: "https://www.westmountainradio.com/cba.php"
+FileNameExtensions: ["bt2"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\n<CBATest>\n  <Version>3."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ISINTERNALRESISTANCETEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISMISSIONPROFILETEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERYMANUFACTURER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STALLEDMILLISECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWCUTOFFVOLTAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLREADERSERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWVOLTAGENOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERYCAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARTPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XAXISPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YAXISPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERYVOLTAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARTGRAPHTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTEDCAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERYWEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARGERSERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERCAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWGRIDLINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTTYPE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THRESHOLDTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERYCELLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERYNOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERAMPTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERYTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLSAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATESTARTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEPATTERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECOVERYDUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTCUTOFFV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERYAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWVOLTAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWLEGEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOPREASON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISCHARGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHTEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINECOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCROLLBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEST NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSFAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CBATEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMPHRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINAH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIDE"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: FloorPlan 3D project
+URL: "http://imsidesign.com/"
+FileNameExtensions: ["bmf"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0FloorPlan3D (cr: \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLOORPLAN3D (CR"
+    CaseSensitive: false

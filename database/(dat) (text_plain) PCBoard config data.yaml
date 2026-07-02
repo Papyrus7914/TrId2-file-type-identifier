@@ -1,0 +1,11 @@
+Name: PCBoard config data
+URL: "https://en.wikipedia.org/wiki/PCBoard"
+FileNameExtensions: ["dat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*** PCBoard Version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA FILE ***"
+    CaseSensitive: false

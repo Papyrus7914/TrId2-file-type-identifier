@@ -1,0 +1,14 @@
+Name: ZOO compressed archive
+URL: "https://en.wikipedia.org/wiki/Zoo_(file_format)"
+FileNameExtensions: ["zoo"]
+MimeType: application/x-zoo
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZOO "
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "Archive.\x1A\0\0\xDC\xA7\xC4\xFD"
+    CaseSensitive: true

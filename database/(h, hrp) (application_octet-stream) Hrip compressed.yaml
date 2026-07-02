@@ -1,0 +1,11 @@
+Name: Hrip compressed
+Description: A popular ZX Sinclair compressor.
+FileNameExtensions: ["h", "hrp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HRi"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "Hrst2"
+    CaseSensitive: true

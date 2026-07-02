@@ -1,0 +1,26 @@
+Name: InstallShield Script (1993)
+URL: "http://fileformats.archiveteam.org/wiki/InstallShield_INS"
+FileNameExtensions: ["ins"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    \f
+    Bytes: [0xFF, 0xFF, 0x0C, 0x00]
+  - Pos: 5
+    AsciiString: "\04\x12"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

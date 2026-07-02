@@ -1,0 +1,14 @@
+Name: Rust Game engine 3D Scene
+URL: "https://rg3d.rs/"
+FileNameExtensions: ["rgs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RG3D\b\0\0\0__ROOT__"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "Scene"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCENE"
+    CaseSensitive: false

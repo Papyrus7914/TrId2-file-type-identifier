@@ -1,0 +1,20 @@
+Name: FOnline Engine GUI Scheme
+URL: "http://falloutmods.wikia.com/wiki/FOnline_Engine"
+FileNameExtensions: ["foguischeme"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CLIENT_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLIENT_MAIN_SCREEN_LOGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENT_MAIN_SCREEN_GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENT_SCREEN_CURSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOGUI"
+    CaseSensitive: false

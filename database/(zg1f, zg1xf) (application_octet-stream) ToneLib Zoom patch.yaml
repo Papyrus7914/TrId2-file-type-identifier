@@ -1,0 +1,14 @@
+Name: ToneLib Zoom patch
+URL: "https://tonelib.net/tonelib-zoom.html"
+FileNameExtensions: ["zg1f", "zg1xf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "n\0\0\0PK\x03\x04"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "ToneLib.data\xEDU"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TONELIB.DATA"
+    CaseSensitive: false

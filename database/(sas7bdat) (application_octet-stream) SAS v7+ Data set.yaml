@@ -1,0 +1,14 @@
+Name: SAS v7+ Data set
+URL: "http://fileformats.archiveteam.org/wiki/SAS"
+FileNameExtensions: ["sas7bdat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\xC2\xEA\x81`\xB3\x14\x11\xCF\xBD\x92\b\0\t\xC71\x8C\x18\x1F\x10\x11"
+    CaseSensitive: true
+  - Pos: 84
+    AsciiString: "SAS FILE"
+    CaseSensitive: true
+  - Pos: 156
+    AsciiString: "DATA"
+    CaseSensitive: true

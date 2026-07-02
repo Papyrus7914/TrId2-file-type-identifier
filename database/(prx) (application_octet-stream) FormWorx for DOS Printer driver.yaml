@@ -1,0 +1,22 @@
+Name: FormWorx for DOS Printer driver
+FileNameExtensions: ["prx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[PR001] =\\001\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PR001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PR002"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PR003"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PR004"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PR005"
+    CaseSensitive: false

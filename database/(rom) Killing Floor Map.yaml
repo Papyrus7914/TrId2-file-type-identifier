@@ -1,0 +1,274 @@
+Name: Killing Floor Map
+URL: "http://en.wikipedia.org/wiki/Killing_Floor_(video_game)"
+FileNameExtensions: ["rom"]
+DetectionPatterns:
+  - Pos: 0
+    #                    *
+    Bytes: [0xC2, 0x83, 0x2A, 0x9E, 0x80, 0x00, 0x1D, 0x00]
+  - Pos: 14
+    AsciiString: "\0\0@\0\0\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "None"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CAMERALOCATIONDYNAMIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERAROTATIONDYNAMIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTPHYSICSVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERALOCATIONFRONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDEALPLAYERCOUNTMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDEALPLAYERCOUNTMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAVIGATIONPOINTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXTNAVIGATIONPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERALOCATIONSIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATICMESHINSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTUREBROWSERUSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERALOCATIONTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATINEESUBACTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATICMESHBROWSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERRAINDECOLAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTUREBROWSERMRU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERRAINHEIGHTMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLISIONHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLISIONRADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTGAMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BHIDDENEDGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATINEEACTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BHASPATHNODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATINEESCENES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERRAINLAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KILLINGFLOOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELSUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTREGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESHVIEWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REACHFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENSHOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOPVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U2VIEWPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWTARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZONENUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BNODELETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORTHOZOOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REACHSPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEERAXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEERRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATHLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOUCHING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BSTATIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSGOPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOVBIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MYLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOMBIE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILEAF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KFMOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPAWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMMO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RYSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENT"
+    CaseSensitive: false

@@ -1,0 +1,31 @@
+Name: HEC-HMS Control specifications data
+URL: "http://www.hec.usace.army.mil/software/hec-hms/"
+FileNameExtensions: ["control"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Control: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LAST MODIFIED DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST MODIFIED TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME INTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL"
+    CaseSensitive: false

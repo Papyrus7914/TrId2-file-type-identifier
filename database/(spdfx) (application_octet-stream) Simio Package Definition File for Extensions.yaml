@@ -1,0 +1,20 @@
+Name: Simio Package Definition File for Extensions
+URL: "https://www.simio.com/"
+FileNameExtensions: ["spdfx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PATHDECORATOR.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

@@ -1,0 +1,21 @@
+Name: Express Publisher Document
+Description: DTP software for MS-DOS by Power Up Software Corp.
+URL: "http://fileformats.archiveteam.org/wiki/Express_Publisher"
+FileNameExtensions: ["epd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "PAGES"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SUBHEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PRD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

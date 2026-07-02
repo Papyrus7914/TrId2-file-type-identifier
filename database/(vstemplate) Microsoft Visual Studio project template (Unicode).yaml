@@ -1,0 +1,58 @@
+Name: Microsoft Visual Studio project template (Unicode)
+URL: "http://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+FileNameExtensions: ["vstemplate"]
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSTEMPLATE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPLACEPARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATECONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVELOPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORTORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2005"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

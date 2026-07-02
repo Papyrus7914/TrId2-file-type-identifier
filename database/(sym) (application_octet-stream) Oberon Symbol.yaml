@@ -1,0 +1,13 @@
+Name: Oberon Symbol
+URL: "https://en.wikipedia.org/wiki/Oberon_(operating_system)"
+FileNameExtensions: ["sym"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "oB"
+    CaseSensitive: true
+  - Pos: 34
+    Bytes: [0xF7, 0x16]
+  - Pos: any
+    AsciiString: ".SYM"
+    CaseSensitive: false

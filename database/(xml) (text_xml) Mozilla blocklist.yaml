@@ -1,0 +1,23 @@
+Name: Mozilla blocklist
+URL: "http://kb.mozillazine.org/Blocklist.xml"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADDONS-BLOCKLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.MOZILLA.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

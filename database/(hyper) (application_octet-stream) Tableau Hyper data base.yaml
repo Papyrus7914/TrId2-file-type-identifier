@@ -1,0 +1,20 @@
+Name: Tableau Hyper data base
+URL: "https://www.tableau.com/"
+FileNameExtensions: ["hyper"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Hyper\b\0\0\x01\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TABLEAU_INTERNAL_USER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HYPERDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

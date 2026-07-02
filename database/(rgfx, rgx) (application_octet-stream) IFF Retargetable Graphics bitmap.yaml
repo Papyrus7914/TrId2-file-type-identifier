@@ -1,0 +1,21 @@
+Name: IFF Retargetable Graphics bitmap
+Description: An Amiga graphic format.
+URL: "http://aminet.net/package/dev/misc/IFF-RGFX"
+FileNameExtensions: ["rgfx", "rgx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "RGFXRGHD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RGFXRGHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RBOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSCM"
+    CaseSensitive: false

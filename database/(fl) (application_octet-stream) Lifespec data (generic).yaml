@@ -1,0 +1,14 @@
+Name: Lifespec data (generic)
+URL: "https://www.edinst.com/product/lifespec-ii-lifetime-spectrometer/"
+FileNameExtensions: ["fl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EAI "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TIME SCAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIPLE"
+    CaseSensitive: false

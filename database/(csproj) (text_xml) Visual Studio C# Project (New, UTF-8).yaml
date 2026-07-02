@@ -1,0 +1,23 @@
+Name: Visual Studio C# Project (New, UTF-8)
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+FileNameExtensions: ["csproj"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: any
+    AsciiString: "TARGETFRAMEWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT SDK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T.NET.SDK"
+    CaseSensitive: false

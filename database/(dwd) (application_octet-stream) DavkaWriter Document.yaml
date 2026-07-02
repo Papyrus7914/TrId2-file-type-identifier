@@ -1,0 +1,35 @@
+Name: DavkaWriter Document
+URL: "http://fileformats.archiveteam.org/wiki/DavkaWriter"
+FileNameExtensions: ["dwd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CPARAGLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPARAGRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDOCRULER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDOCSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSTYLERUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAVKA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: skincrafter skin
+URL: "http://www.skincrafter.com/"
+FileNameExtensions: ["skf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\aSKF"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKINS"
+    CaseSensitive: false

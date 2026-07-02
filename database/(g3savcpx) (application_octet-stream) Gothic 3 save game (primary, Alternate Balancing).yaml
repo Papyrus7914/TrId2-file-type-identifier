@@ -1,0 +1,17 @@
+Name: Gothic 3 save game (primary, Alternate Balancing)
+URL: "https://www.mobygames.com/game/24456/gothic-3/"
+FileNameExtensions: ["g3savcpx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GENOMESG\xB0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "G3_WORLD_01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENOMESG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G3IMG"
+    CaseSensitive: false

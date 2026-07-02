@@ -1,0 +1,22 @@
+Name: 16bit DOS COM CC286 encrypted (v2.1)
+Description: Coded by Dark Stalker / UCF.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: any
+    AsciiString: "V2.1  C0DED  BY DARK STALKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERED TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CC286X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSDOS"
+    CaseSensitive: false

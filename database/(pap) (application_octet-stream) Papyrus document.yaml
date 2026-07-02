@@ -1,0 +1,12 @@
+Name: Papyrus document
+Description: Atari ST word processor.
+URL: "https://sites.google.com/site/stessential/wordprocessors/papyrus"
+FileNameExtensions: ["pap"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PAP1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FRMT"
+    CaseSensitive: false

@@ -1,0 +1,37 @@
+Name: SVGAVESA configuration
+FileNameExtensions: ["svc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Configuration file for SVGAVESA VESA_A, for card "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BYTE 2 OF VESA MODE INFO (WIN A ATTRIBUTES)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE 3 OF VESA MODE INFO (WIN B ATTRIBUTES)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE 9 OF VESA MODE INFO (WIN A SEG HIGH)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK COUNT TO DISPLAY PAGE 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE 11D OF VESA MODE INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERICAL INTERLACE MODE ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN 2 X OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN 2 Y OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX SCAN LINES ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VESA MODE ("
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: SmartList To Go database
+Description: Previously knowed as ThinkDB.
+URL: "http://www.dataviz.com/products/smartlisttogo/index.html"
+FileNameExtensions: ["pdb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TD2_"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\0\0\0\0\0\0\0\0dataTHNK\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATATHNK"
+    CaseSensitive: false

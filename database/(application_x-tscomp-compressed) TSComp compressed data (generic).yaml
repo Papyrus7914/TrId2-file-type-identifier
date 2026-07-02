@@ -1,0 +1,8 @@
+Name: TSComp compressed data (generic)
+Description: DOS shareware compressor by The Stirling Group.
+URL: "http://fileformats.archiveteam.org/wiki/TSComp"
+MimeType: application/x-tscomp-compressed
+DetectionPatterns:
+  - Pos: 0
+    #        e     ]                 \b
+    Bytes: [0x65, 0x5D, 0x13, 0x8C, 0x08, 0x01]

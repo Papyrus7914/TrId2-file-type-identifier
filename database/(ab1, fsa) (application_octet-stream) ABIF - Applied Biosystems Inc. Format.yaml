@@ -1,0 +1,11 @@
+Name: ABIF - Applied Biosystems Inc. Format
+URL: "http://fileformats.archiveteam.org/wiki/ABIF"
+FileNameExtensions: ["ab1", "fsa"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ABIF"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "tdir"
+    CaseSensitive: true

@@ -1,0 +1,50 @@
+Name: SimulIDE circuit
+URL: "https://simulide.com/"
+FileNameExtensions: ["sim1"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<circuit "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VALLABROT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELROT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINCOMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW_VAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEPSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIRCUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NLSTEPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEPSPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HFLIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VFLIP"
+    CaseSensitive: false

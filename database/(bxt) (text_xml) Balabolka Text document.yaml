@@ -1,0 +1,44 @@
+Name: Balabolka Text document
+URL: "http://www.cross-plus-a.com/balabolka.htm"
+FileNameExtensions: ["bxt"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<BXTDocument>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BXTDOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOICE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKMARKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QBOOKMARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAPI"
+    CaseSensitive: false

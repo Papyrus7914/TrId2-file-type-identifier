@@ -1,0 +1,14 @@
+Name: DentalCAD STereoLithography
+URL: "https://exocad.com/"
+FileNameExtensions: ["stl"]
+MimeType: model/x.stl-binary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "exocad "
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xFF\xA1\xB2\xC3\xD4\xE5\xF6\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "- DENTALCAD\0V"
+    CaseSensitive: false

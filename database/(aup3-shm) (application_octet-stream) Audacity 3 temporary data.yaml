@@ -1,0 +1,14 @@
+Name: Audacity 3 temporary data
+URL: "https://en.wikipedia.org/wiki/Audacity_(audio_editor)"
+FileNameExtensions: ["aup3-shm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x18\xE2-\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0\x01\0\x01\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

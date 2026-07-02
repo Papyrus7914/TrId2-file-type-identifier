@@ -1,0 +1,18 @@
+Name: PageSetter III page
+Description: Amiga DTP program by Gold Disk.
+URL: "https://en.wikipedia.org/wiki/Amiga_productivity_software#Word_processing_and_page_layout"
+FileNameExtensions: ["doc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x12\x19\x18\x17PageSetter\xB3 \xA91992 Gold Disk Inc."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPNV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTAG"
+    CaseSensitive: false

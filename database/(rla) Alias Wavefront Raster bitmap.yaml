@@ -1,0 +1,18 @@
+Name: Alias Wavefront Raster bitmap
+FileNameExtensions: ["rla"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 576
+    AsciiString: "\0\0\0\0rgb"
+    CaseSensitive: true

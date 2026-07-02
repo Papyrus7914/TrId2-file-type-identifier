@@ -1,0 +1,62 @@
+Name: E-Mail message (Var. 13)
+URL: "http://fileformats.archiveteam.org/wiki/Internet_e-mail_message_format"
+FileNameExtensions: ["eml"]
+MimeType: message/rfc822
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ARC-Seal:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ARC-AUTHENTICATION-RESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARC-MESSAGE-SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M-MESSAGE-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSA-SHA256"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIPART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELAXED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DKIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMTP"
+    CaseSensitive: false

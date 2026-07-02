@@ -1,0 +1,23 @@
+Name: QMK keymap (UTF-8)
+URL: "https://github.com/qmk"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    #                          {
+    Bytes: [0xEF, 0xBB, 0xBF, 0x7B]
+  - Pos: any
+    AsciiString: "KEYBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KC_"
+    CaseSensitive: false

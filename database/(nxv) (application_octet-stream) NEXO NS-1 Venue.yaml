@@ -1,0 +1,11 @@
+Name: NEXO NS-1 Venue
+URL: "https://www.nexo-sa.com/systems/software/"
+FileNameExtensions: ["nxv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".NXVPK"
+    CaseSensitive: false

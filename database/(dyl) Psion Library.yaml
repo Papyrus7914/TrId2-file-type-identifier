@@ -1,0 +1,11 @@
+Name: Psion Library
+FileNameExtensions: ["dyl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LIBFileType****\0\x0F @\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0A\xDD\0\xCB\0\0"
+    CaseSensitive: true
+  - Pos: 74
+    Bytes: [0x00, 0x00, 0x00, 0x00, 0xCD, 0xD3, 0xCD, 0xD7]

@@ -1,0 +1,14 @@
+Name: MultiFax FAX
+URL: "https://www.amigafuture.de/asd.php?asd_id=559"
+FileNameExtensions: ["fax"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FAXXTELE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MULTIFAX"
+    CaseSensitive: false

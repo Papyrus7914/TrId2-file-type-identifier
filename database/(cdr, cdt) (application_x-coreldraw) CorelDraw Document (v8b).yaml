@@ -1,0 +1,33 @@
+Name: CorelDraw Document (v8b)
+Description: CDT is used for template
+URL: "http://fileformats.archiveteam.org/wiki/CorelDRAW"
+FileNameExtensions: ["cdr", "cdt"]
+MimeType: application/x-coreldraw
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "cdr8vrsn\x02\0\0\0!\x03"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CDR8VRSN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOIKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMPR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMI"
+    CaseSensitive: false

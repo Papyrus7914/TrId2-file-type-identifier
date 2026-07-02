@@ -1,0 +1,37 @@
+Name: Line 6 Tone
+URL: "http://www.line6.com/"
+FileNameExtensions: ["l6t"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "L6PAPINF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "L6PAPINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODLMINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IAPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IAPV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false

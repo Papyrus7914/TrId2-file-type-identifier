@@ -1,0 +1,49 @@
+Name: DigitalPhono A2B Player Playlist
+URL: "http://www.digitalphono.com"
+FileNameExtensions: ["a2b"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MIME-Version: 1.0\r\nContent-Type: multipart/mixed; charset=us-ascii; name=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "--A2B UNIQUE BOUNDARY--"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".A2B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A2BPLAYLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL-FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIXED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIPART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "US-ASCII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-ATT-A2BMUSIC ACCESS-TYPE"
+    CaseSensitive: false

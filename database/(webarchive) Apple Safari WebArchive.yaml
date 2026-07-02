@@ -1,0 +1,38 @@
+Name: Apple Safari WebArchive
+Description: Safari browser use this format to keep a webpage including all resources embedded in one file.
+URL: "http://www.apple.com"
+FileNameExtensions: ["webarchive"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "bplist00"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WEBRESOURCETEXTENCODINGNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBRESOURCEMIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBRESOURCEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBMAINRESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBRESOURCEURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BPLIST00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false

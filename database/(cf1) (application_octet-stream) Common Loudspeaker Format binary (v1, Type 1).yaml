@@ -1,0 +1,9 @@
+Name: Common Loudspeaker Format binary (v1, Type 1)
+Description: CLF Type 1 file contains Octave/10 degree data.
+URL: "http://www.clfgroup.org"
+FileNameExtensions: ["cf1"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@\xBD\n\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0v1."
+    CaseSensitive: true

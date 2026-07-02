@@ -1,0 +1,31 @@
+Name: Lotus 1-2-3 Add-In Application
+URL: "https://en.wikipedia.org/wiki/Lotus_1-2-3"
+FileNameExtensions: ["adn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    Bytes: [0x11, 0x00, 0x02, 0x00]
+  - Pos: any
+    AsciiString: "1-2-3 ADD-IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

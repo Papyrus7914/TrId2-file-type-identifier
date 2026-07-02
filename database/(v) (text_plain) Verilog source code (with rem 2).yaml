@@ -1,0 +1,18 @@
+Name: Verilog source code (with rem 2)
+Description: For sources that start with a multiline comment.
+URL: "https://en.wikipedia.org/wiki/Verilog"
+FileNameExtensions: ["v"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDMODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT"
+    CaseSensitive: false

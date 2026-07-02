@@ -1,0 +1,11 @@
+Name: MicroTik Router Information support output
+URL: "https://wiki.mikrotik.com/wiki/Manual:Support_Output_File"
+FileNameExtensions: ["rif"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "--BEGIN ROUTEROS SUPOUT SECTION\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "--END ROUTEROS SUPOUT SECTION"
+    CaseSensitive: false

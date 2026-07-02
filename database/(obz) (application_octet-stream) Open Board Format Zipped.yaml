@@ -1,0 +1,17 @@
+Name: Open Board Format Zipped
+URL: "http://fileformats.archiveteam.org/wiki/Open_Board_Format"
+FileNameExtensions: ["obz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MANIFEST.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OBF"
+    CaseSensitive: false

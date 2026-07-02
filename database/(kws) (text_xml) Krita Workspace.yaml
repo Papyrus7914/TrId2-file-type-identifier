@@ -1,0 +1,29 @@
+Name: Krita Workspace
+URL: "https://en.wikipedia.org/wiki/Krita"
+FileNameExtensions: ["kws"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Workspace "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORKSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IVBORW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

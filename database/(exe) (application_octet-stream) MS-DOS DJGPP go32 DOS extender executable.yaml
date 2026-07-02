@@ -1,0 +1,68 @@
+Name: MS-DOS DJGPP go32 DOS extender executable
+URL: "https://en.wikipedia.org/wiki/DJGPP"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0 \0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0T\0\0\0"
+    CaseSensitive: true
+  - Pos: 512
+    AsciiString: "go32stub, v 2.0"
+    CaseSensitive: true
+  - Pos: 528
+    AsciiString: "T\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 535
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 561
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 591
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PERMISSION GRANTED TO USE FOR ANY PURPOSE PROVIDED THIS COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E STUB LOADER IS COPYRIGHT (C) 1993"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMAINS PRESENT AND UNMODIFIED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS ONLY APPLIES TO THE STUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CESSARILY THE WHOLE PROGRAM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND NOT NEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DJ DELORIE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CWSDPMI."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GO32STUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V 2.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false

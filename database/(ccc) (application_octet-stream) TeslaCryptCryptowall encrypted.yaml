@@ -1,0 +1,8 @@
+Name: TeslaCrypt/Cryptowall encrypted
+Description: Possibly valid for other ransomwares too. Extension may vary.
+URL: "https://en.wikipedia.org/wiki/Ransomware"
+FileNameExtensions: ["ccc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xDE, 0xAD, 0xBE, 0xEF]

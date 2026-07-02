@@ -1,0 +1,9 @@
+Name: SafeGuard encrypted
+URL: "http://www.sophos.com/"
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SafeGuard FileEncryption\r\nCopyright \xA9 1998-20"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: " Sophos Group and Utimaco Safeware AG\r\n\r\nENCRYPTED FILE.\r\n\x1A"
+    CaseSensitive: true

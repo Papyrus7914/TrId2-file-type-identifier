@@ -1,0 +1,20 @@
+Name: SWiSHMax 4 movie
+URL: "https://en.wikipedia.org/wiki/SWiSH_Max"
+FileNameExtensions: ["swi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x1C\xFF\xFE\xFF\x17S\0W\0i\0S\0H\0 \0M\0a\0x\04\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "S\0W\0I\0S\0H\0 \0M\0A\0X\04"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSCENEOBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0S\0W\0I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CVID"
+    CaseSensitive: false

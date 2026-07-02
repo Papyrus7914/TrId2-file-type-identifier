@@ -1,0 +1,26 @@
+Name: STK Interval List format
+URL: "https://en.wikipedia.org/wiki/Systems_Tool_Kit"
+FileNameExtensions: ["int"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "stk.v."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN INTERVALLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEUNITABRV UTCG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END INTERVALLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN INTERVALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END INTERVALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STK.V."
+    CaseSensitive: false

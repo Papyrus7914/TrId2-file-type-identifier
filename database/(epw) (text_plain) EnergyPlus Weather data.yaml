@@ -1,0 +1,38 @@
+Name: EnergyPlus Weather data
+URL: "https://energyplus.net/documentation"
+FileNameExtensions: ["epw"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LOCATION,"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GROUND TEMPERATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN CONDITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAYLIGHT SAVINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTREME PERIODS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA PERIODS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLIDAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUNDAY"
+    CaseSensitive: false

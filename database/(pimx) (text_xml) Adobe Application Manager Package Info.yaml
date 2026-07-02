@@ -1,0 +1,26 @@
+Name: Adobe Application Manager Package Info
+URL: "https://en.wikipedia.org/wiki/Adobe_Inc."
+FileNameExtensions: ["pimx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<package_installation_info>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PACKAGE_UPGRADE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET_LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLD_PACKAGEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETS_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

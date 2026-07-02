@@ -1,0 +1,9 @@
+Name: Intel Indeo Video File
+FileNameExtensions: ["ivf"]
+DetectionPatterns:
+  - Pos: 0
+    #        P                                                                             $     D     7
+    Bytes: [0x50, 0xEF, 0x81, 0x19, 0xB3, 0xBD, 0xD0, 0x11, 0xA3, 0xE5, 0x00, 0xA0, 0xC9, 0x24, 0x44, 0x37]
+  - Pos: 176
+    AsciiString: "vids"
+    CaseSensitive: true

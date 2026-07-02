@@ -1,0 +1,10 @@
+Name: Microsoft QuickBASIC 4.0 tokenized source
+URL: "https://en.wikipedia.org/wiki/QuickBASIC"
+FileNameExtensions: ["bas"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFC, 0x13, 0x00, 0x00]
+  - Pos: 6
+    #                    ␠
+    Bytes: [0xFF, 0xFF, 0x20, 0x00, 0xFF, 0xFF]

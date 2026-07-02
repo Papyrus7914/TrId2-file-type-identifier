@@ -1,0 +1,17 @@
+Name: Corel Catalog
+URL: "https://en.wikipedia.org/wiki/CorelDRAW"
+FileNameExtensions: ["clc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CLCzcath"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLCZCATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATE"
+    CaseSensitive: false

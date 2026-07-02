@@ -1,0 +1,9 @@
+Name: Flymaster B1 Nav firmware
+URL: "http://www.flymaster-avionics.com/"
+FileNameExtensions: ["b1n"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Flymaster B1nav firmware "
+    CaseSensitive: true
+  - Pos: 32
+    Bytes: [0x1A]

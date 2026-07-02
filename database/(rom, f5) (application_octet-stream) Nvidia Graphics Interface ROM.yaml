@@ -1,0 +1,11 @@
+Name: Nvidia Graphics Interface ROM
+URL: "https://en.wikipedia.org/wiki/Nvidia"
+FileNameExtensions: ["rom", "f5"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NVGI"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NVIDIA CORP"
+    CaseSensitive: false

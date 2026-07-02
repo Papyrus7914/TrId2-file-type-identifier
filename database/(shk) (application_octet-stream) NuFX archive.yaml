@@ -1,0 +1,11 @@
+Name: NuFX archive
+Description: Old Apple II compression format.
+FileNameExtensions: ["shk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        N           F           l
+    Bytes: [0x4E, 0xF5, 0x46, 0xE9, 0x6C, 0xE5]
+  - Pos: 48
+    #        N           F
+    Bytes: [0x4E, 0xF5, 0x46, 0xD8]

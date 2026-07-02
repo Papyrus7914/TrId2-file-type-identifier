@@ -1,0 +1,188 @@
+Name: DIZ2EXE Win32 executable (v1.0)
+URL: "http://fileformats.archiveteam.org/wiki/DIZ2EXE"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0PE"
+    CaseSensitive: true
+  - Pos: 376
+    AsciiString: ".text\0"
+    CaseSensitive: true
+  - Pos: 416
+    AsciiString: ".bss\0"
+    CaseSensitive: true
+  - Pos: 456
+    AsciiString: ".rdata\0"
+    CaseSensitive: true
+  - Pos: 496
+    AsciiString: ".data\0"
+    CaseSensitive: true
+  - Pos: 536
+    AsciiString: ".idata\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LCC RUNTIME ERROR\0ESI %08X EDI %08X EBP %08X EIP %08X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EAX %08X EBX %08X ECX %08X EDX %08X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATEWINDOW\0\0S\0CREATEWINDOWEXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTOUTA\0\0S\0_EXIT\0X\0_FDOPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRNCAT\0KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEFILENAMEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_OPEN_OSFHANDLE\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPATCHMESSAGEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEHANDLEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSYSTEMMETRICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATEMESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCOMMANDLINEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTARTUPINFOA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETTEXTMETRICSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTQUITMESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFWINDOWPROCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOPEN\04\0_CEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTOCKOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERCLASSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AT ADDRESS %X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCLIENTRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALIDATERGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__GETMAINARGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCEPTION %X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMESSAGEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADCURSORA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGEBOXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINPAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRTDLL.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D2E2\0ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVEWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FMODE_DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GDI32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADICONA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMMOVE\0%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASEDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTLUNWIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETBKMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FLUSHALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SETMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D2E1\0RB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRINTF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETBUF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRCMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRLEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FGETC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAISE"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: Internet Explorer for Mac cached data
+URL: "https://en.wikipedia.org/wiki/Internet_Explorer"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ".WAF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

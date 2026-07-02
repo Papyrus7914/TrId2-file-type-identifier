@@ -1,0 +1,17 @@
+Name: TMT Pascal Compiler 3.90 DOS executable
+URL: "https://www.frameworkpascal.com/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\xE0\0\x19\0\0\0\x04\0\xB4\x06\xFF\xFF\xD7\x03\0\x01\0\0^\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\0\0\b\0\x01@\0\x80\0\b\b \x01\x01\0\0\x01\xFF\xFF\xFF\x7F\0\x02PMODE/W v1.33 DOS extender - Copyright 1994-1997, Daredevil and Tran.}"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "W V1.33 DOS EXTENDER - COPYRIGHT 1994-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0\0NOT ENOUGH MEMOR\0\0Y AVAILABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMT PASCAL RUNTIME LIBRARY\0R"
+    CaseSensitive: false

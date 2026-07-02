@@ -1,0 +1,19 @@
+Name: Headspace Sound Banks
+FileNameExtensions: ["hsb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IREZ\0\0\0\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

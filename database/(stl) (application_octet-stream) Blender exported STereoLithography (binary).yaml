@@ -1,0 +1,14 @@
+Name: Blender exported STereoLithography (binary)
+URL: "https://en.wikipedia.org/wiki/STL_(file_format)"
+FileNameExtensions: ["stl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Exported from "
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "lender"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXPORTED FROM BLENDER"
+    CaseSensitive: false

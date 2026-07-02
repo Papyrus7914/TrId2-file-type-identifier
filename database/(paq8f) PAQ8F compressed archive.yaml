@@ -1,0 +1,10 @@
+Name: PAQ8F compressed archive
+URL: "http://en.wikipedia.org/wiki/PAQ"
+FileNameExtensions: ["paq8f"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "paq8f -"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\r\n"
+    CaseSensitive: true

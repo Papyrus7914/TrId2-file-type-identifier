@@ -1,0 +1,14 @@
+Name: Infobase (NextPage)
+URL: "http://fileformats.archiveteam.org/wiki/Folio_Infobase"
+FileNameExtensions: ["nfo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Copyright (c) 2004, NextPage Inc., All Rights Reserved. Infobase "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED. INFOBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXTPAGE INC."
+    CaseSensitive: false

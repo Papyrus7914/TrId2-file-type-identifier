@@ -1,0 +1,44 @@
+Name: Meshmixer printers configuration
+URL: "https://www.meshmixer.com/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\n<PrinterList>\n\t<Printer>\n\t\t<UUID>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ISPRINTSERVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANUFACTURER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTERLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEDSHAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false

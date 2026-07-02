@@ -1,0 +1,8 @@
+Name: Microsoft PowerPoint (v3.0)
+URL: "https://en.wikipedia.org/wiki/Microsoft_PowerPoint"
+FileNameExtensions: ["ppt"]
+MimeType: application/vnd.ms-powerpoint
+DetectionPatterns:
+  - Pos: 0
+    #                          \v
+    Bytes: [0xED, 0xDE, 0xAD, 0x0B, 0x03, 0x00, 0x00, 0x00]

@@ -1,0 +1,8 @@
+Name: WebP2 bitmap
+URL: "https://chromium.googlesource.com/codecs/libwebp2/"
+FileNameExtensions: ["wp2"]
+MimeType: image/webp2
+DetectionPatterns:
+  - Pos: 0
+    #                    o
+    Bytes: [0xF4, 0xFF, 0x6F]

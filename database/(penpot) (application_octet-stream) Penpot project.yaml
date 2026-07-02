@@ -1,0 +1,92 @@
+Name: Penpot project
+URL: "https://penpot.app/"
+FileNameExtensions: ["penpot"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "manifest.json{\"teamId\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HASTYPOGRAPHIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.JSON{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASCOMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVG VIEWBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PENPOT.APP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASCOLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASMEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SVGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHARED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEAMID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

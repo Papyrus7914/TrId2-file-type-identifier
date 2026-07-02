@@ -1,0 +1,29 @@
+Name: Qt Assistant Documentation Profile
+URL: "https://en.wikipedia.org/wiki/Qt_(software)"
+FileNameExtensions: ["adp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE DCF>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASSISTANTCONFIG VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DCF REF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

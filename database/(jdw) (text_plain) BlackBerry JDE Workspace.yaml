@@ -1,0 +1,17 @@
+Name: BlackBerry JDE Workspace
+URL: "https://en.wikipedia.org/wiki/BlackBerry_Limited"
+FileNameExtensions: ["jdw"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "## RIM Java Development Environment\r\n# RIM Workspace file\r\n[BuildConfigurations\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RELEASEACTIVEPROJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JDP"
+    CaseSensitive: false

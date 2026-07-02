@@ -1,0 +1,14 @@
+Name: Papagayo lipsync info
+URL: "http://www.lostmarble.com/papagayo/"
+FileNameExtensions: ["pgo"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "lipsync version 1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VOICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false

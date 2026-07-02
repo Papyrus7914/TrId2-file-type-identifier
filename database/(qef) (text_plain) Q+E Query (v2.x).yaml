@@ -1,0 +1,17 @@
+Name: Q+E Query (v2.x)
+Description: Database utility by Pioneer Software.
+FileNameExtensions: ["qef"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Q+E 2."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false

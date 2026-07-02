@@ -1,0 +1,14 @@
+Name: Kiri:Moto workspace Zip
+URL: "https://grid.space/kiri/"
+FileNameExtensions: ["kmz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "workspace.json"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORKSPACE.JSON"
+    CaseSensitive: false

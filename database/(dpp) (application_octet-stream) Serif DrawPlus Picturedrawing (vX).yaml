@@ -1,0 +1,56 @@
+Name: Serif DrawPlus Picture/drawing (vX)
+URL: "http://fileformats.archiveteam.org/wiki/DrawPlus"
+FileNameExtensions: ["dpp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "STYLESHEET.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTINFO.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUSHES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOURS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARY.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORY.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT.XMLM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPREADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false

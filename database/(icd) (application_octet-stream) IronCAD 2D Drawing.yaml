@@ -1,0 +1,199 @@
+Name: IronCAD 2D Drawing
+URL: "http://fileformats.archiveteam.org/wiki/ICD"
+FileNameExtensions: ["icd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1]
+  - Pos: any
+    AsciiString: "P\0U\0B\0L\0I\0C\0 \0A\0C\0C\0E\0S\0S\0 \0C\0A\0C\0H\0E\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0O\0C\0U\0M\0E\0N\0T\0S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N\0\0\0\0\0\0\0\0\0\0\08"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0N\0S\0I\0 \0R\0E\0V\0I\0S\0I\0O\0N\0 \0T\0A\0G\0 \0S\0T\0Y\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0E\0N\0D\0 \0L\0I\0N\0E\0 \0C\0A\0L\0L\0O\0U\0T\0 \0S\0T\0Y\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0I\0L\0L\0 \0O\0F\0 \0M\0A\0T\0E\0R\0I\0A\0L\0S\0 \0L\0A\0Y\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0I\0D\0D\0E\0D\0 \0A\0N\0N\0O\0T\0A\0T\0I\0O\0N\0 \0L\0A\0Y\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0L\0L\0 \0O\0B\0J\0E\0C\0T\0S\0 \0A\0R\0E\0 \0B\0L\0U\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0U\0B\0L\0I\0C\0 \0A\0C\0C\0E\0S\0S\0 \0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0E\0S\0T\0 \0D\0E\0F\0A\0U\0L\0T\0 \0H\0A\0T\0C\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0I\0D\0D\0E\0N\0A\0N\0N\0O\0T\0A\0T\0I\0O\0N\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0O\0C\0U\0M\0E\0N\0T\0V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0A\0S\0T\0 \0S\0A\0V\0E\0D\0 \0D\0A\0T\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0I\0M\0P\0L\0E\0 \0L\0I\0N\0E\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0B\0J\0E\0C\0T\0 \0M\0A\0N\0A\0G\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0H\0A\0P\0E\0 \0C\0O\0N\0T\0E\0N\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0H\0A\0R\0E\0D\0 \0O\0B\0J\0E\0C\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0A\0R\0L\0I\0N\0E\0 \0S\0T\0Y\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0O\0C\0U\0M\0E\0N\0T\0 \0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0A\0S\0T\0 \0S\0A\0V\0E\0D\0 \0I\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0F\0L\0I\0N\0E\0 \0S\0T\0Y\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0O\0U\0B\0L\0E\0 \0C\0H\0A\0I\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0E\0R\0V\0I\0C\0E\0 \0P\0A\0C\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0H\0E\0E\0T\0 \0C\0U\0R\0V\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0A\0C\0K\0G\0R\0O\0U\0N\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0H\0A\0P\0E\0 \0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0N\0I\0M\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0U\0X\0I\0L\0I\0A\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0R\0E\0P\0 \0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0 \0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0E\0T\0A\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0A\0N\0D\0A\0R\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0E\0M\0P\0L\0A\0T\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0I\0E\0W\0A\0B\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0E\0G\0R\0E\0E\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0R\0O\0N\0C\0A\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0E\0V\0I\0E\0W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0E\0C\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(\0B\0U\0I\0L\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0E\0T\0A\0I\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0O\0R\0M\0A\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0R\0I\0G\0I\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0N\0D\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0O\0L\0I\0D\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0L\0O\0C\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0R\0A\0S\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0O\0N\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0I\0T\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0I\0C\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0A\0S\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0E\0N\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0A\0S\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0O\0C\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0O\0W\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0A\0N\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0A\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0E\0X\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0R\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0O\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0O\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0O\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0A\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0I\0T"
+    CaseSensitive: false

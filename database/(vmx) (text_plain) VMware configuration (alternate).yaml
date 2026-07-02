@@ -1,0 +1,47 @@
+Name: VMware configuration (alternate)
+URL: "https://www.vmware.com"
+FileNameExtensions: ["vmx"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ".encoding = \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VIRTUALHW.VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG.VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DEVICETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VIRTUALDEV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ET0.PRESENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETHERNET0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOPPY0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUESTOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false

@@ -1,0 +1,42 @@
+Name: Flash authoring source (CS5)
+FileNameExtensions: ["fla"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PUBLISHSETTINGS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOBILESETTINGS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMDEPEND.CACHEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOMDOCUMENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMDEPEND.CACHEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XFLPROXY-CS5PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.ADOBE.XFLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false

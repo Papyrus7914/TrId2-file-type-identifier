@@ -1,0 +1,72 @@
+Name: Syslinux module (v5 64-bit)
+Description: since version 5.00 use ELF object format
+URL: "http://www.syslinux.org/wiki/index.php/Comboot_API"
+FileNameExtensions: ["c32"]
+MimeType: application/x-sharedlib
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x7FELF\x02\x01\x01\0\0\0\0\0\0\0\0\0\x03\0>\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0\0\0\0\0@\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0\0\0\0\0\0\0\0\0@\08\0\x03\0@\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 63
+    AsciiString: "\0\x01\0\0\0\a\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 99
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 107
+    AsciiString: "\0\0\0\0\0\0\0 \0\0\0\0\0\x02\0\0\0\x06\0\0\0"
+    CaseSensitive: true
+  - Pos: 131
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 139
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 147
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 154
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 162
+    AsciiString: "\0\0\0\0\0\0\b\0\0\0\0\0\0\0Q\xE5td"
+    CaseSensitive: true
+  - Pos: 181
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\b\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 234
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 237
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 241
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 245
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "__CTORS_START\0__CTORS_END\0__DTORS_START\0__DTORS_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELA.PLT\0.TEXT\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DYNAMIC\0.GOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GOT.PLT\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COMMENT"
+    CaseSensitive: false

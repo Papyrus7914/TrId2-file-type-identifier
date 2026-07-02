@@ -1,0 +1,17 @@
+Name: STK Azimuth-Elevation Mask format
+URL: "https://en.wikipedia.org/wiki/Systems_Tool_Kit"
+FileNameExtensions: ["aem"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "stk.v."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN AZELMASKDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END AZELMASK"
+    CaseSensitive: false

@@ -1,0 +1,128 @@
+Name: OME-TIFF bitmap (big endian)
+URL: "http://justsolve.archiveteam.org/wiki/OME-TIFF"
+FileNameExtensions: ["tif", "tiff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MM\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WHICH CONTAINS CRUCIAL DIMENSIONAL PARAMETERS AND OTHER IMPORTANT METADATA. PLEASE EDIT CAUTIOUSLY (IF AT ALL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND BACK UP THE ORIGINAL DATA BEFORE DOING SO. FOR MORE INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS COMMENT IS AN OME-XML METADATA BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEE THE OME-TIFF WEB SITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.OPENMICROSCOPY.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OME BIO-FORMATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLESPERPIXEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIFFDATA FIRSTC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSIONORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMALOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OME-XML.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OMETIFF. --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- WARNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OME XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OME.TIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OME.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRSTT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRSTZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INT8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIKI"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: Sweet Home 3D Design (generic)
+URL: "https://en.wikipedia.org/wiki/Sweet_Home_3D"
+FileNameExtensions: ["sh3d"]
+MimeType: application/zip
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

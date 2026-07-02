@@ -1,0 +1,41 @@
+Name: 8bit CP/M-80 COM BASCOM compiled (v5.30)
+URL: "https://en.wikipedia.org/wiki/MBASIC#BASCOM"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!"
+    CaseSensitive: true
+  - Pos: 2
+    #        @
+    Bytes: [0x40, 0x01]
+  - Pos: 6
+    #                          \t          \t          ~           +           \v    x                 \r
+    Bytes: [0x11, 0x80, 0x01, 0x09, 0xEB, 0x09, 0x03, 0x7E, 0x12, 0x2B, 0x1B, 0x0B, 0x78, 0xB1, 0xC2, 0x0D, 0x01, 0xC3]
+  - Pos: 25
+    AsciiString: "@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0!"
+    CaseSensitive: true
+  - Pos: 130
+    #        @
+    Bytes: [0x40, 0xC3]
+  - Pos: 136
+    AsciiString: "\0\0\0\0\0@"
+    CaseSensitive: true
+  - Pos: 143
+    AsciiString: "@\0\0"
+    CaseSensitive: true
+  - Pos: 147
+    #        @
+    Bytes: [0x40, 0xCD, 0xA3, 0x02]
+  - Pos: any
+    AsciiString: "$BRUN.COM TOO LARGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUN.COM NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION MISMATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0BRUN    COM"
+    CaseSensitive: false

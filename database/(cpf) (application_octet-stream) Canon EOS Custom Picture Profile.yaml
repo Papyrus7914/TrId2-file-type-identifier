@@ -1,0 +1,11 @@
+Name: Canon EOS Custom Picture Profile
+URL: "http://fileformats.archiveteam.org/wiki/Canon_EOS_C300_Custom_Picture_Profile"
+FileNameExtensions: ["cpf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 4
+    #              P           J
+    Bytes: [0x01, 0x50, 0x02, 0x4A, 0x03]

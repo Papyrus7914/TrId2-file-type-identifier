@@ -1,0 +1,11 @@
+Name: CPC Plus Cartridge image
+URL: "http://cpctech.cpc-live.com/docs/cprdef.html"
+FileNameExtensions: ["cpr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0AMS!"
+    CaseSensitive: true

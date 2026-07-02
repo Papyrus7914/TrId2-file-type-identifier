@@ -1,0 +1,9 @@
+Name: CPIO archive (byte swapped binary)
+Description: called "byte-swapped cpio archive" by file command and "Cpio/Binary BE" by 7-Zip
+URL: "http://fileformats.archiveteam.org/wiki/Cpio"
+FileNameExtensions: ["cpio"]
+MimeType: application/x-cpio
+DetectionPatterns:
+  - Pos: 0
+    #        q
+    Bytes: [0x71, 0xC7]

@@ -1,0 +1,20 @@
+Name: Nakalyne Grape script
+URL: "http://www.nakalyne.com/"
+FileNameExtensions: ["grape"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NKG1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*INTERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUB MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDSUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false

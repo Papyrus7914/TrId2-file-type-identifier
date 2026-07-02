@@ -1,0 +1,12 @@
+Name: Windows Bitmap (v1)
+Description: This variant with 12 byte DIB header (OS/2 1.x)
+URL: "https://en.wikipedia.org/wiki/BMP_file_format"
+FileNameExtensions: ["bmp", "os2"]
+MimeType: image/bmp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BM"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\f\0\0\0"
+    CaseSensitive: true

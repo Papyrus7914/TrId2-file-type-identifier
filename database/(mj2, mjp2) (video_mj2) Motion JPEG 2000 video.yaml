@@ -1,0 +1,11 @@
+Name: Motion JPEG 2000 video
+URL: "http://fileformats.archiveteam.org/wiki/MJ2"
+FileNameExtensions: ["mj2", "mjp2"]
+MimeType: video/mj2
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\fjP  \r\n\x87\n"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "ftypmjp2"
+    CaseSensitive: true

@@ -1,0 +1,71 @@
+Name: ESU LokSound (v3)
+URL: "https://www.esu.eu/"
+FileNameExtensions: ["esu"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INITDATA DECNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHUNK TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE STD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOT INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASHSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOKSOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOP MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CVDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false

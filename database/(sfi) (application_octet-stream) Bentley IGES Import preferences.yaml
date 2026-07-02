@@ -1,0 +1,11 @@
+Name: Bentley IGES Import preferences
+URL: "https://en.wikipedia.org/wiki/Bentley_Systems"
+FileNameExtensions: ["sfi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IGES Preferences\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IGES INPUT PREFERENCES"
+    CaseSensitive: false

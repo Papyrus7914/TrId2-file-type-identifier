@@ -1,0 +1,11 @@
+Name: HP ASII GROB bitmap (embedded)
+URL: "http://fileformats.archiveteam.org/wiki/GROB"
+FileNameExtensions: ["grb", "gro", "asc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%%HP: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GROB"
+    CaseSensitive: false

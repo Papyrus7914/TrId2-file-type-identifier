@@ -1,0 +1,52 @@
+Name: OpenChrom chromatogram
+URL: "http://www.openchrom.net/"
+FileNameExtensions: ["ocb"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "IDENTIFICATIONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFICATIONC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHROMATOGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISTORYPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISTORYC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEAKSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AREAPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISCPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AREAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISCC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TICPK"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: eDrawings part (ZIP container)
+URL: "http://fileformats.archiveteam.org/wiki/EDrawing"
+FileNameExtensions: ["edrw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "eModel"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MATERIALS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMODELPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLEPK"
+    CaseSensitive: false

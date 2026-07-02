@@ -1,0 +1,14 @@
+Name: Delitracker Customplay module
+URL: "http://www.exotica.org.uk/wiki/DeliTracker"
+FileNameExtensions: ["cus"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x03\xF3\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUDELIRIUM"
+    CaseSensitive: false

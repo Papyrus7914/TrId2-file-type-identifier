@@ -1,0 +1,14 @@
+Name: Sony PlayStation 3 XVAG audio
+URL: "https://vgmstream.github.io/vgmstream/"
+FileNameExtensions: ["xvag"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XVAG"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "fmat"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FMAT"
+    CaseSensitive: false

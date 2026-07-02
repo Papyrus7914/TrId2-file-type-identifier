@@ -1,0 +1,47 @@
+Name: CD Architect Project (v5)
+URL: "http://fileformats.archiveteam.org/wiki/CD_Architect"
+FileNameExtensions: ["cdp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        r     i     f     f     .                                   (
+    Bytes: [0x72, 0x69, 0x66, 0x66, 0x2E, 0x91, 0xCF, 0x11, 0xA5, 0xD6, 0x28, 0xDB, 0x04, 0xC1, 0x00, 0x00]
+  - Pos: any
+    AsciiString: "C\0D\0 \0A\0R\0C\0H\0I\0T\0E\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0U\0D\0I\0O\0\0\0LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0E\0V\0I\0E\0W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0A\0S\0T\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0O\0U\0N\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0C\0D\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0O\0N\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IENG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INAM"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: AlbumWrap archive
+URL: "http://www.infamus.com/albumwrap/"
+FileNameExtensions: ["mp3"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ID3\x03"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "#TIT2"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "AlbumWrap AlbumTALB"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "AlbumWrap -"
+    CaseSensitive: true

@@ -1,0 +1,58 @@
+Name: BitCom Emulation settings
+FileNameExtensions: ["emu"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "INITIAL\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CODEBUFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INBUFFER2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTBUFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSCUR("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETATT("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETINS("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AWRAP("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLREOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLREOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABCLR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DNARR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFARR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIARR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPARR"
+    CaseSensitive: false

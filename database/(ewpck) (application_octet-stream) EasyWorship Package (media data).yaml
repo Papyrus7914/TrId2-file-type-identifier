@@ -1,0 +1,56 @@
+Name: EasyWorship Package (media data)
+URL: "https://www.easyworship.com/"
+FileNameExtensions: ["ewpck"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Data/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRESENTATIONLAYOUTS.DBPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENTATIONS.DBPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONGWORDS.DBPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAREDMEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEMES.DBPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBS.DBPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA.DBPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONGS.DBPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEDULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

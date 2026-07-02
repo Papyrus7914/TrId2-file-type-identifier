@@ -1,0 +1,26 @@
+Name: LightWave 3D Scene
+URL: "https://en.wikipedia.org/wiki/Lightwave"
+FileNameExtensions: ["lws", "scn"]
+MimeType: image/x-lws
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LWSC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBJECTMOTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRSTFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMESTEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

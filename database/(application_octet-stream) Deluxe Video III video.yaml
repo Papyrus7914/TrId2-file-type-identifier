@@ -1,0 +1,47 @@
+Name: Deluxe Video III video
+Description: Amiga Desk Top Video software.
+URL: "http://www.amigafuture.de/asd.php?asd_id=339"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "VDEOFORM\0\0\0pVID PSIZ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRTSNEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSCRNEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSCRNEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAK"
+    CaseSensitive: false

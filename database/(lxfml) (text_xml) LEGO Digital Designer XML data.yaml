@@ -1,0 +1,60 @@
+Name: LEGO Digital Designer XML data
+Description: Usually contained in an .LXF file package, along with one or more preview pictures in PNG format.
+URL: "http://www.lego.com/eng/factory/design/ldd.asp"
+FileNameExtensions: ["lxfml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LEGO DIGITAL DESIGNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDINGINSTRUCTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LXFML VERSIONMAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONMINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDOFVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERAREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGNID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: Palm TealInfo
+Description: TealPoint Software TealInfo is an information presentation program.
+URL: "http://www.tealpoint.com/softinfo.htm"
+FileNameExtensions: ["pdb"]
+DetectionPatterns:
+  - Pos: 56
+    AsciiString: "\0\0\0\0InfoTlIf"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INFOTLIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOFF"
+    CaseSensitive: false

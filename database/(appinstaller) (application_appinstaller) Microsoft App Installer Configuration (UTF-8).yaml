@@ -1,0 +1,53 @@
+Name: Microsoft App Installer Configuration (UTF-8)
+URL: "https://learn.microsoft.com/en-us/windows/msix/app-installer/app-installer-file-overview"
+FileNameExtensions: ["appinstaller"]
+MimeType: application/appinstaller
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HOURSBETWEENUPDATECHECKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSORARCHITECTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATESETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".APPINSTALLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLISHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DESKTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLAUNCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MSIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

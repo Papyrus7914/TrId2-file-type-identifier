@@ -1,0 +1,17 @@
+Name: BioWare Aurora Format script
+URL: "https://en.wikipedia.org/wiki/BioWare#Technology"
+FileNameExtensions: ["baf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IF\r\n\t"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(NEARESTENEMYOF(MYSELF)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESPONSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEN"
+    CaseSensitive: false

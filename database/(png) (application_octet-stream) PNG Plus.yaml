@@ -1,0 +1,95 @@
+Name: PNG Plus
+URL: "http://fileformats.archiveteam.org/wiki/PNG_Plus"
+FileNameExtensions: ["png"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89PNG\r\n\x1A\n\0\0\0\rIHDR"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0\0\0\x01sRGB\0\xAE\xCE\x1C\xE9\0\0\0\x04gAMA\0\0\xB1\x8F\v\xFCa\x05\0\0\0 cHRM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "QUILL96 STORY GROUP CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0A\0T\0A\0S\0T\0O\0R\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0N\0T\0E\0N\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0P\0O\0B\0J"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITXTTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHNKINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0E\0X\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMODN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHRM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDPC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTYP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRGB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THMS"
+    CaseSensitive: false

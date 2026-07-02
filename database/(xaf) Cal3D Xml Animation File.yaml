@@ -1,0 +1,34 @@
+Name: Cal3D Xml Animation File
+URL: "http://en.wikipedia.org/wiki/Cal3D"
+FileNameExtensions: ["xaf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANIMATION DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYFRAME TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER MAGIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMKEYFRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK BONEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMTRACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

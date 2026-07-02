@@ -1,0 +1,56 @@
+Name: ESU LokSound (v4/5)
+URL: "https://www.esu.eu/"
+FileNameExtensions: ["esux"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ESU "
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?><meta xmlns=\"http://www.esu.eu/2010/LOKPROGRAMMER/Metadata\"><name>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SPECIFICATION.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOKPROGRAMMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANUFACTURER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.ESU.EU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECODER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2010"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

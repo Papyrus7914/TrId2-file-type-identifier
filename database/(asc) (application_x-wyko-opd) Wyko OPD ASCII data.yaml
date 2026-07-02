@@ -1,0 +1,11 @@
+Name: Wyko OPD ASCII data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/opdfile.c"
+FileNameExtensions: ["asc"]
+MimeType: application/x-wyko-opd
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Wyko ASCII Data File Format "
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: ","
+    CaseSensitive: true

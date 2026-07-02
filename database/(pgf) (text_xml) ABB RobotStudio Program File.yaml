@@ -1,0 +1,14 @@
+Name: ABB RobotStudio Program File
+URL: "https://new.abb.com/products/robotics/robotstudio"
+FileNameExtensions: ["pgf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAINMODULE.MOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false

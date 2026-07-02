@@ -1,0 +1,49 @@
+Name: ALi-chipset based DVB devices bootloader firmware
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE3\0\0\x10\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0NCRCbootloader\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NCRCUSERDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCRCBOOTLOADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "28B838C848D8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STO_SFLASH_0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EST\0MOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".1BS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEST"
+    CaseSensitive: false

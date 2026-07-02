@@ -1,0 +1,32 @@
+Name: Atomic Bomberman Animation
+URL: "https://www.mobygames.com/game/windows/atomic-bomberman"
+FileNameExtensions: ["ani"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CHFILEANI "
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "HEAD0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEAD."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIMG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPAL"
+    CaseSensitive: false

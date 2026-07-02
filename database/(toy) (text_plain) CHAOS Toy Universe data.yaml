@@ -1,0 +1,12 @@
+Name: CHAOS Toy Universe data
+Description: Fractal software for DOS by Autodesk.
+URL: "https://github.com/rudyrucker/chaos"
+FileNameExtensions: ["toy"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CHAOS Toy Universe Data\r\nCreated: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

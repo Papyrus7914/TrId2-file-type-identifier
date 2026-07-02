@@ -1,0 +1,18 @@
+Name: Macintosh Clipping file - Sound
+URL: "http://developer.apple.com/technotes/tn/tn1142.html"
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "clps"
+    CaseSensitive: true
+  - Pos: 74
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 82
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLPS"
+    CaseSensitive: false

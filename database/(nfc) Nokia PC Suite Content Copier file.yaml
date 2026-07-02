@@ -1,0 +1,22 @@
+Name: Nokia PC Suite Content Copier file
+URL: "http://www.nokia.com/"
+FileNameExtensions: ["nfc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x03\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "L\0E\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0A\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0D\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0M\0A"
+    CaseSensitive: false

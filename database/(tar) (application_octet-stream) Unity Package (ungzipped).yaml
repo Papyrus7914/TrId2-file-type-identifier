@@ -1,0 +1,69 @@
+Name: Unity Package (ungzipped)
+Description: "Usual filename: archtemp.tar"
+URL: "http://fileformats.archiveteam.org/wiki/Unity_package_file"
+FileNameExtensions: ["tar"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 32
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 104
+    AsciiString: "77"
+    CaseSensitive: true
+  - Pos: 544
+    AsciiString: "/asset"
+    CaseSensitive: true
+  - Pos: 616
+    AsciiString: "77"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PATHNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

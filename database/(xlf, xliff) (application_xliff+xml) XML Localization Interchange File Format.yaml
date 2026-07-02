@@ -1,0 +1,32 @@
+Name: XML Localization Interchange File Format
+URL: "http://en.wikipedia.org/wiki/Xliff"
+FileNameExtensions: ["xlf", "xliff"]
+MimeType: application/xliff+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOURCE-LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANS-UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XLIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IT I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

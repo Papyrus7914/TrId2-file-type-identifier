@@ -1,0 +1,14 @@
+Name: SAP2000 DataBase
+URL: "https://www.csiamerica.com/products/sap2000"
+FileNameExtensions: ["sdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SAP2000         "
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "."
+    CaseSensitive: true

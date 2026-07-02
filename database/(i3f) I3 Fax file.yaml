@@ -1,0 +1,19 @@
+Name: I3 Fax file
+Description: A proprietary file format that contains faxes.
+URL: "http://www.inin.com/"
+FileNameExtensions: ["i3f"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: 1024
+    AsciiString: "R\0o\0o\0t\0 \0E\0n\0t\0r\0y"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P\0A\0G\0E\0 \0S\0T\0R\0E\0A\0M\0 \0L\0I\0S\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0\00\00\00\00\00\00\00\0.\0T\0I\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0A\0G\0E\0 \0I\0M\0A\0G\0E\0S"
+    CaseSensitive: false

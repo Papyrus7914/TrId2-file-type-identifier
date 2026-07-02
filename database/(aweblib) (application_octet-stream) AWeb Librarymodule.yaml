@@ -1,0 +1,13 @@
+Name: AWeb Library/module
+URL: "https://en.wikipedia.org/wiki/AWeb"
+FileNameExtensions: ["aweblib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x00, 0x03, 0xF3]
+  - Pos: any
+    AsciiString: ".AWEBLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LIBRARY"
+    CaseSensitive: false

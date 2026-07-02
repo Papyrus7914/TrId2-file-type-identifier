@@ -1,0 +1,11 @@
+Name: Adlib instruments/sound bank
+URL: "http://www.descent2.com/ddn/specs/bnk/"
+FileNameExtensions: ["bnk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "ADLIB-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADLIB-"
+    CaseSensitive: false

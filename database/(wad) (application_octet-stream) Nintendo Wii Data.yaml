@@ -1,0 +1,14 @@
+Name: Nintendo Wii Data
+URL: "https://wiibrew.org/wiki/WAD_files"
+FileNameExtensions: ["wad"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0 Is\0\0\0\0\n\0\0\0\0\0\0\0\x02\xA4\0\0"
+    CaseSensitive: true
+  - Pos: 1408
+    AsciiString: "Root"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROOT-CA00000001"
+    CaseSensitive: false

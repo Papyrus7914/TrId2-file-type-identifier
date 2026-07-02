@@ -1,0 +1,14 @@
+Name: Blender 3D object
+URL: "https://www.blender.org"
+FileNameExtensions: ["obj"]
+MimeType: model/obj
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Blender"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MTLLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MTL"
+    CaseSensitive: false

@@ -1,0 +1,56 @@
+Name: ESET NOD32 Antivirus License data
+URL: "https://en.wikipedia.org/wiki/ESET_NOD32"
+FileNameExtensions: ["lic"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \r
+    Bytes: [0x90, 0x0D, 0x03]
+  - Pos: 4
+    #                                                  {
+    Bytes: [0x02, 0x11, 0xC8, 0xFC, 0xA0, 0x02, 0x06, 0x7B, 0x03, 0xC9, 0x01, 0xAD]
+  - Pos: any
+    AsciiString: "PRODUCT_NAME_SHORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT_NAME_LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMER_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOD32LICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

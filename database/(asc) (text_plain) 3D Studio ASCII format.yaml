@@ -1,0 +1,32 @@
+Name: 3D Studio ASCII format
+URL: "https://en.wikipedia.org/wiki/Autodesk_3ds_Max"
+FileNameExtensions: ["asc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Ambient light color:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NAMED OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTEX LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACE LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRI-MESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTEX 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACE 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACES"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: TRUMPF Laser/Punch Geometry
+URL: "https://www.trumpf.com/en_INT/products/software/programming-software/"
+FileNameExtensions: ["geo"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#~1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "~KONT_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~EOF"
+    CaseSensitive: false

@@ -1,0 +1,31 @@
+Name: NetBeans Module
+URL: "http://en.wikipedia.org/wiki/Netbeans"
+FileNameExtensions: ["nbm"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 29
+    AsciiString: "\0META-INF/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANIFEST.MFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETBEANS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JAR"
+    CaseSensitive: false

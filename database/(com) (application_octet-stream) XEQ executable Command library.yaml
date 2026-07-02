@@ -1,0 +1,37 @@
+Name: XEQ executable Command library
+URL: "http://fileformats.archiveteam.org/wiki/XEQ"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 5
+    AsciiString: "XEQ.COM\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HARDWOOD SOFTWARE ASSOCIATES. ALL RIGHTS RESERVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JANFEBMARAPRMAYJUNJULAUGSEPOCTNOVDEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY EMPTYFREE STORAGE BYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM FILE LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XEQ VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM_LIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XEQ.COM"
+    CaseSensitive: false

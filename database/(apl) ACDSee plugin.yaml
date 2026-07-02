@@ -1,0 +1,640 @@
+Name: ACDSee plugin
+URL: "http://www.acdsee.com/"
+FileNameExtensions: ["apl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 291
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(\0(\0(\0(\0(\0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0 \0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(\0C\0)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+TTHHTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- FLOATING POINT NOT LOADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR ARGUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR LOWIO INITIALIZATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR STDIO INITIALIZATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR THREAD DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR _ONEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- PURE VIRTUAL FUNCTION CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- UNABLE TO INITIALIZE HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- UNABLE TO OPEN CONSOLE DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- UNEXPECTED HEAP ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- UNEXPECTED MULTITHREAD LOCK ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-64OS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0A\0P\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0\09\00\04\0B\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2\0\0\0YY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4\0\0\0V\0S\0_\0V\0E\0R\0S\0I\0O\0N\0_\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4\0\0\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5\0\0\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8MZU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9} U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0\0J"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABNORMAL PROGRAM TERMINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APRIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATEXIT TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUGUST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0\0\0C\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0\0\0YYH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0M\0E\0N\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0P\0A\0N\0Y\0N\0A\0M\0E\0\0\0\0\0A\0C\0D\0 \0S\0Y\0S\0T\0E\0M\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D$\03"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECEMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETECRITICALSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOMAIN ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E WW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E+000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDDIALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0D\0E\0S\0C\0R\0I\0P\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0V\0E\0R\0S\0I\0O\0N\0\0\0\0\01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEBRUARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FGQPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREEENVIRONMENTSTRINGSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREEENVIRONMENTSTRINGSW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRIDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G\0\0\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAISPROCESSORFEATUREPRESENT\0\0\0KERNEL32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETACP\0\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCOMMANDLINEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCPINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCURRENTPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCURRENTTHREADID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETENVIRONMENTSTRINGSW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETENVIRONMENTVARIABLEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETFILETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETLASTACTIVEPOPUP\0\0GETACTIVEWINDOW\0MESSAGEBOXA\0USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETLASTERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEFILENAMEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEHANDLEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETOEMCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTARTUPINFOA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTDHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTRINGTYPEA\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTRINGTYPEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETTICKCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETVERSIONEXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIT%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0 \0\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H  \0\0J"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAPALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAPCREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAPDESTROY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAPFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAPREALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HKML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HMXB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HSVWH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0T\0E\0R\0N\0A\0L\0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IND\0\0\01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INF\0\0\01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALIZECRITICALSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERLOCKEDDECREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERLOCKEDINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "J\09D$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "J\0J\0QP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "J\0PV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JANUARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JULY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JUNE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0\0\09"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0E\0G\0A\0L\0C\0O\0P\0Y\0R\0I\0G\0H\0T\0\0\0C\0O\0P\0Y\0R\0I\0G\0H\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0E\0G\0A\0L\0T\0R\0A\0D\0E\0M\0A\0R\0K\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L$\0~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LCMAPSTRINGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LCMAPSTRINGW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LE\0\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEAVECRITICALSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADLIBRARYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADSTRINGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0\0\0 \0\0\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0S\0 \0S\0A\0N\0S\0 \0S\0E\0R\0I\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT VISUAL C++ RUNTIME LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMMM DD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIBYTETOWIDECHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NKEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOVEMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NWVS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0ENTERCRITICALSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0R\0I\0G\0I\0N\0A\0L\0F\0I\0L\0E\0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCTOBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0I\0V\0A\0T\0E\0B\0U\0I\0L\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0O\0D\0U\0C\0T\0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0O\0D\0U\0C\0T\0V\0E\0R\0S\0I\0O\0N\0\0\01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PJ\0J"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPPPPPPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM NAME UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSSW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PST\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0PDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P_SHOWPLUGINDIALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QNAN\0\01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QQS3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QQSV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6002"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6008"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6009"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6016"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6017"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6018"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6019"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6024"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6025"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6026"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6027"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6028"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RICH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTLUNWIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIME ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0P\0E\0C\0I\0A\0L\0B\0U\0I\0L\0D\0\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0R\0I\0N\0G\0F\0I\0L\0E\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SATURDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEPTEMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETHANDLECOUNT\0\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETLASTERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SING ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SJ\0W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SS\0DDDD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSPVSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUNDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUNMONTUEWEDTHUFRISAT\0\0\0JANFEBMARAPRMAYJUNJULAUGSEPOCTNOVDEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUVWU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVWF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVWJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVWUJ\0J\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0R\0A\0N\0S\0L\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T$$T("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T$$VSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T7SW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T9UW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAVW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMINATEPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEVU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THURSDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLOSS ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLSALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLSFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLSGETVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLSSETVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMWWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUESDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TZVS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U7WPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UFWWJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UISJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0A\0R\0F\0I\0L\0E\0I\0N\0F\0O\0\0\0\0\0$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VC20XC00U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VWUBH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEDNESDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDECHARTOMULTIBYTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WUFS3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y\0\0\0W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YC\0U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YT)V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YYYY\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z\0\0\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZC%C1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__GLOBAL_HEAP_SELECTED\0\0__MSVCRT_HEAP_SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "} \0T*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}%95"
+    CaseSensitive: false

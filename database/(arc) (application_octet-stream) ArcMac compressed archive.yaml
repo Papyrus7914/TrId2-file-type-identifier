@@ -1,0 +1,9 @@
+Name: ArcMac compressed archive
+URL: "http://fileformats.archiveteam.org/wiki/ArcMac"
+FileNameExtensions: ["arc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x1B]
+  - Pos: 59
+    Bytes: [0x1A]

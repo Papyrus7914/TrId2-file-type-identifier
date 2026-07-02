@@ -1,0 +1,17 @@
+Name: TuneUp Styler Icon pack
+Description: Used by TuneUp Utilities Software
+URL: "http://www.tune-up.com/services/styler/"
+FileNameExtensions: ["tip"]
+DetectionPatterns:
+  - Pos: 0
+    #        T     K
+    Bytes: [0x54, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DESCRIPTION.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ICL"
+    CaseSensitive: false

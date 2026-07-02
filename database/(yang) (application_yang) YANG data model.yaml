@@ -1,0 +1,33 @@
+Name: YANG data model
+Description: Data modeling language for the NETCONF network configuration protocol.
+URL: "https://en.wikipedia.org/wiki/YANG"
+FileNameExtensions: ["yang"]
+MimeType: application/yang
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "module "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMESPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

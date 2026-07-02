@@ -1,0 +1,11 @@
+Name: OCPlay Configuration
+Description: Koren DOS FM tunes player.
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OCPlay Configuration File Ver "
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "."
+    CaseSensitive: true

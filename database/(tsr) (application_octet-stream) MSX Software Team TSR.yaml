@@ -1,0 +1,10 @@
+Name: MSX Software Team TSR
+URL: "http://map.grauw.nl/resources/tsrdev_en.php"
+FileNameExtensions: ["tsr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MST TSR\r\n"
+    CaseSensitive: true
+  - Pos: 21
+    Bytes: [0x1A]

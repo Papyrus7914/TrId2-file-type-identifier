@@ -1,0 +1,8 @@
+Name: WordPerfect 4.2 document
+FileNameExtensions: ["wp"]
+DetectionPatterns:
+  - Pos: 0
+    #              \n
+    Bytes: [0xCB, 0x0A, 0x01]
+  - Pos: 5
+    Bytes: [0xCB]

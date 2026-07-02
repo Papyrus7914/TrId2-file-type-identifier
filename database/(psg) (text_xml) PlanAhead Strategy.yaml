@@ -1,0 +1,32 @@
+Name: PlanAhead Strategy
+URL: "https://en.wikipedia.org/wiki/Xilinx_ISE"
+FileNameExtensions: ["psg"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STRATEGY VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRATHANDLE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEP ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOW"
+    CaseSensitive: false

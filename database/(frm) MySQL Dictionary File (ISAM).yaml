@@ -1,0 +1,14 @@
+Name: MySQL Dictionary File (ISAM)
+Description: Used with the MySQL database when using the ISAM table handler.
+URL: "http://www.mysql.com/"
+FileNameExtensions: ["frm"]
+DetectionPatterns:
+  - Pos: 0
+    #                    \a    \a
+    Bytes: [0xFE, 0x01, 0x07, 0x07]
+  - Pos: any
+    AsciiString: "PRIMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYID"
+    CaseSensitive: false

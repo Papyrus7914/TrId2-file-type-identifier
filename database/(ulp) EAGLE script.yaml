@@ -1,0 +1,14 @@
+Name: EAGLE script
+Description: EAGLE is a CAD tool for electronic schematic drawing and circuit board manufacturing.
+URL: "http://www.cadsoft.de"
+FileNameExtensions: ["ulp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CADSOFT.DE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USAGE"
+    CaseSensitive: false

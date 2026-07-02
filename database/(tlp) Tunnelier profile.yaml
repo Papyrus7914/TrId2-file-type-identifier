@@ -1,0 +1,16 @@
+Name: Tunnelier profile
+URL: "http://www.bitvise.com/tunnelier"
+FileNameExtensions: ["tlp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "Tunnelier "
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TUNNELIER"
+    CaseSensitive: false

@@ -1,0 +1,62 @@
+Name: MatrixREDUCE 2.0 PSAM XML format
+URL: "http://affinitydatabank.com/matrixreduce-2-0-psam-xml-format/"
+FileNameExtensions: ["mxr"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXPERIMENT_COLUMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASUREMENT_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIMAL_SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPERIMENT_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTIONALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIX_REDUCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSAM_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BONFERRONI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEED_MOTIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPOLOGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARD"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: LapLink 5 Help
+URL: "https://en.wikipedia.org/wiki/Laplink"
+FileNameExtensions: ["hlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Help Version 3\0\0LapLink V Help file.  Copyright (c) 1991, Traveling Software, Inc.\n"
+    CaseSensitive: true
+  - Pos: 96
+    Bytes: [0x1A, 0x1A]
+  - Pos: 104
+    AsciiString: "LLPRO"
+    CaseSensitive: true

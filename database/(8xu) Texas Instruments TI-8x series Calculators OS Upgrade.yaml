@@ -1,0 +1,10 @@
+Name: Texas Instruments TI-8x series Calculators OS Upgrade
+URL: "http://www.ticalc.org/"
+FileNameExtensions: ["8xu"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "**TIFL**"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\bbasecode\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0s#"
+    CaseSensitive: true

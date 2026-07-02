@@ -1,0 +1,31 @@
+Name: Spazio3D drawing
+URL: "http://www.spazio3d.com"
+FileNameExtensions: ["s3d"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ":\x01\x01\0\0\r\0\0\0BrainSoftware\x11\0\0\0Windows Spazio 3D\x06\0\0\0ver2.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BRAINSOFTWARE TEAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS SPAZIO 3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLAYERCON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PB\0\0PB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TENTDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWS"
+    CaseSensitive: false

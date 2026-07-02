@@ -1,0 +1,19 @@
+Name: 16bit COM executable EXE2COM (v2.00)
+URL: "http://fileformats.archiveteam.org/wiki/EXE2COM_(PSP_Soft)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "EXE2COM 200"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1991-1995 BY PSP SOFT. ALL RIGHTS RESERVED. WRITTEN BY PAUL SHPILSHER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXE2COM 200"
+    CaseSensitive: false

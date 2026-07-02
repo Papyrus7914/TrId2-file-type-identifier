@@ -1,0 +1,18 @@
+Name: vCard - Business Card (v3)
+Description: VERSION:3.0 as 2nd line
+URL: "https://en.wikipedia.org/wiki/VCard"
+FileNameExtensions: ["vcf"]
+MimeType: text/vcard
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN:VCARD\r\nVERSION:3.0\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VCARD"
+    CaseSensitive: false

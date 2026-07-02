@@ -1,0 +1,531 @@
+Name: Navratil Software System Information Report
+Description: AKA NSSI.
+URL: "https://www.navsoft.cz/products.htm"
+FileNameExtensions: ["rpt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\t\t     Navr\xA0til Software System Information\r\n\t\t\t\tVersion "
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COM PORT  UART    TIMEOUT RATE       DATA STOP  PARITY CD  RI  DSR CTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPT PORT  EPP  TIMEOUT TIM IOE SEL OOP ACK NBZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOY POSITION X POSITION Y BUTTON 1 BUTTON 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCI IRQ ROUTING TABLE  NOT PRESENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUG AND PLAY SUPPORT  NOT PRESENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS IS NOT PLUG AND PLAY SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIL SOFTWARE SYSTEM INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MHZ (MULTIPLIER 1.0X) (METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPER. SYSTEM   MS-DOS VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDITIONAL VIDEO INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3D GRAPHICS ACCELERATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATING SYSTEM DETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CO-PROCESSOR   INTERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTERNAL 3D ACCELERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNAL 3D ACCELERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDARY VIDEO ADAPTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO BIOS MANUFACTURER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMUNICATION PROTOCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDARY MONITOR TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCELERATOR FUNCTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CO-PROCESSOR EMULATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHICS SYSTEM CONF."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARD NOT DETECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUG AND PLAY DEVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VESA POWER MANAGEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO SEGMENT ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGA CURSOR EMULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CO-PROCESSOR DETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY DATA CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAT PANEL INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX. HORIZONTAL SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT OR PHOENIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OEM SOFTWARE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE OF MANUFACTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONITOR INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PC-AT OR COMPATIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT VIDEO MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMULATION SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX. VERTICAL SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER SERIAL NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO BIOS SEGMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO BIOS VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CO-PROCESSOR TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU SERIAL NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT SIGNAL TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASED RELEASED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDARY  MASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VESA MANUFACTURER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO MEMORY SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO RAMDAC TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPUTER DETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURSOR INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY OVER 1 MB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM BUS SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE DOS VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VESA INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VESA VBE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VGA ANALOG COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO BIOS MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1ST LEVEL CACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2ND LEVEL CACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3RD LEVEL CACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIO INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOS32 SERVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL HARD DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO BIOS DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO BIOS SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO PAGE SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARACTER SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVES DETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN PROCESSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY DETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO KNOWN FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NON-IDE DRIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO CARD BUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWABLE IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOS FEATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPUTER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPUTER TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT DEVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTS DETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO CHIPSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO DETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLTAGE LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACFG SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACPI SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOS DETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONVENTIONAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DPMS SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EGA SWITCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMMA FACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONITOR NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VESA SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APM SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARDS FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMI SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENERGY STAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISA DEVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOYSTICK(S)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORT FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROM MODULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USED BY DOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARY MASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU VENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH BIOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HMA EXISTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIMEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO DEVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUATERNARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAN LINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND CARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARY SLAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOS TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRTC PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GREEN PC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARALLEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYSICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIFIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERTIARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VGA BIOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUS(ES)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS OEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS IS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCMCIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERIFY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-BIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDD1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDD2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDD1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KB ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAVR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMS("
+    CaseSensitive: false

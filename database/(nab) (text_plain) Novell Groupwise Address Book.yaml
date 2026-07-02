@@ -1,0 +1,14 @@
+Name: Novell Groupwise Address Book
+URL: "http://fileformats.archiveteam.org/wiki/Novell_GroupWise_Address_Book"
+FileNameExtensions: ["nab"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ":::TAGMAP:::0FFE0003:***"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FIRST NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST NAME"
+    CaseSensitive: false

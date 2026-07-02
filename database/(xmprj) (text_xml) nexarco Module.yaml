@@ -1,0 +1,113 @@
+Name: nexarco Module
+URL: "http://www.nexacro.com/"
+FileNameExtensions: ["xmprj"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<Project version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODULEDEFINITION URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINNEXACROVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPLOYINFO NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTINFO URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGNSCRIPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRESHINFOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENUMINFO ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMONINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_METAINFO_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RESOURCE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPOSITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENUM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENUMINFOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONS URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITINFOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LICENSE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XCSS URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDL URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEMEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ICONS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_HELP_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_XCSS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XCDL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XCSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML"
+    CaseSensitive: false

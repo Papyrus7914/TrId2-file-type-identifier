@@ -1,0 +1,11 @@
+Name: CCS64 Freeze saved state
+URL: "https://en.wikipedia.org/wiki/CCS64"
+FileNameExtensions: ["c64"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "C64\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "rastercy"
+    CaseSensitive: true

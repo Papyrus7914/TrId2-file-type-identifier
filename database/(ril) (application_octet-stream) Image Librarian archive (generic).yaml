@@ -1,0 +1,14 @@
+Name: Image Librarian archive (generic)
+URL: "http://fileformats.archiveteam.org/wiki/Image_Librarian"
+FileNameExtensions: ["ril"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIL"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "RIL"
+    CaseSensitive: true

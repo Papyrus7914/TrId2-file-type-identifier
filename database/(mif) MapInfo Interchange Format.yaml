@@ -1,0 +1,25 @@
+Name: MapInfo Interchange Format
+URL: "http://www.mapinfo.com/"
+FileNameExtensions: ["mif"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "V"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COORDSYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

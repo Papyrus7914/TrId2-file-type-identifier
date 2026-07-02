@@ -1,0 +1,35 @@
+Name: MUSICompress encoded audio
+Description: MUSICompress(TM) Soundspace Audio's lossless audio compression algorithm
+URL: "http://www.rjamorim.com/rrw/wavezip.html"
+FileNameExtensions: ["mcp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0WAVEfmt \x12\0\0\0\0\x15"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0\0\0FACT"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0"
+    CaseSensitive: true

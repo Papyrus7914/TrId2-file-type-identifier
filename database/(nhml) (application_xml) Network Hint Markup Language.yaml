@@ -1,0 +1,29 @@
+Name: Network Hint Markup Language
+URL: "https://wiki.gpac.io/xmlformats/NHML-Format/"
+FileNameExtensions: ["nhml"]
+MimeType: application/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NHNTSTREAM VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NHNTSAMPLE DTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIASUBTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISRAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

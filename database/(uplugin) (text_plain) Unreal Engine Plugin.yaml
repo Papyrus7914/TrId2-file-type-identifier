@@ -1,0 +1,41 @@
+Name: Unreal Engine Plugin
+URL: "https://en.wikipedia.org/wiki/Unreal_Engine"
+FileNameExtensions: ["uplugin"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATEDBYURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRIENDLYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

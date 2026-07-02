@@ -1,0 +1,46 @@
+Name: Super ZZT Game Creation System data format
+URL: "http://fileformats.archiveteam.org/wiki/ZZT"
+FileNameExtensions: ["szt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFE, 0xFF]
+  - Pos: 3
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0d\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 69
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 90
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 111
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 132
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 153
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 174
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 195
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 216
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 237
+    AsciiString: "\0"
+    CaseSensitive: true

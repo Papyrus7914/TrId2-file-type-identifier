@@ -1,0 +1,11 @@
+Name: East Side Story save game
+URL: "https://www.mobygames.com/game/31651/east-side-story/"
+FileNameExtensions: ["dsv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xDE\xAD\xC0\xDEZCMP\x14\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    #        x
+    Bytes: [0x78, 0x9C]

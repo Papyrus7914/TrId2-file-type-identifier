@@ -1,0 +1,17 @@
+Name: YouTube Timed Text subtitles
+URL: "https://github.com/arcusmaximus/YTSubConverter/blob/master/ytt.ytt"
+FileNameExtensions: ["ytt"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TIMEDTEXT FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false

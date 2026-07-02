@@ -1,0 +1,29 @@
+Name: Sound Master II module (v3)
+FileNameExtensions: ["sm3"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "`\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "`\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 21
+    Bytes: [0xFA]
+  - Pos: 26
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 28
+    Bytes: [0xFF]
+  - Pos: any
+    AsciiString: "NUP\0I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUP\0V"
+    CaseSensitive: false

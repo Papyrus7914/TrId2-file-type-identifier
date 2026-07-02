@@ -1,0 +1,10 @@
+Name: Yamaha RS7000 - Sample data
+URL: "http://www.yamahasynth.com/products/rs7000/index.html"
+FileNameExtensions: ["r3a", "r3p"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "A0532 SAMPLE    Ver 0"
+    CaseSensitive: true
+  - Pos: 22
+    #        .     0     0     ␠     ␠     ␠     ␠     ␠     ␠     ␠                                                                                                     Y     S     F     C
+    Bytes: [0x2E, 0x30, 0x30, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x59, 0x53, 0x46, 0x43]

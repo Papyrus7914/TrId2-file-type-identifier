@@ -1,0 +1,53 @@
+Name: PostScript Printer Description File
+URL: "https://en.wikipedia.org/wiki/PostScript"
+FileNameExtensions: ["pdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*% "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRINTER DESCRIPTION FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*PAGESIZE LETTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*FORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAPER HANDLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*DEFAULTPA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*PSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*PRODUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOBE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORD"
+    CaseSensitive: false

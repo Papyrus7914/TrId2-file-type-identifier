@@ -1,0 +1,37 @@
+Name: Job Definition Format Job File
+URL: "http://www.cip4.org/index.html"
+FileNameExtensions: ["jdf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOBDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUTELEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JDFSCHEMA_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUTREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JDF ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false

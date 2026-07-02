@@ -1,0 +1,13 @@
+Name: Dr. Halo IV Display driver
+URL: "https://en.wikipedia.org/wiki/Dr._Halo"
+FileNameExtensions: ["dsp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AH6\x01"
+    CaseSensitive: true
+  - Pos: 6
+    Bytes: [0x03, 0x00]
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true

@@ -1,0 +1,26 @@
+Name: Forever Dates
+URL: "https://www.forever.com/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Holidays>\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KEYWORD ENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLIDAY ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false

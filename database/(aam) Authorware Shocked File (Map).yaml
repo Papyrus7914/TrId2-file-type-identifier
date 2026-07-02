@@ -1,0 +1,16 @@
+Name: Authorware Shocked File (Map)
+URL: "http://en.wikipedia.org/wiki/Authorware"
+FileNameExtensions: ["aam"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ver\t0\t"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BYPASSSECURITYDIALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".AAS"
+    CaseSensitive: false

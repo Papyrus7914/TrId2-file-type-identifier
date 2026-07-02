@@ -1,0 +1,18 @@
+Name: Fred Editor module
+Description: AKA Fredmon or Fred Monitor.
+URL: "http://www.exotica.org.uk/wiki/Fred_Editor"
+FileNameExtensions: ["fred"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "N\xFA\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "N\xFA\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "N\xFA\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "N\xFA\0"
+    CaseSensitive: true

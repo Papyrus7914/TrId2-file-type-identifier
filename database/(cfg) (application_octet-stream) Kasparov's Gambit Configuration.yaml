@@ -1,0 +1,14 @@
+Name: Kasparov's Gambit Configuration
+URL: "https://www.mobygames.com/game/dos/kasparovs-gambit"
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CFG"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "Gambit"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GAMBIT"
+    CaseSensitive: false

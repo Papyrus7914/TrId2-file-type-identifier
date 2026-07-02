@@ -1,0 +1,32 @@
+Name: Ruby RDoc Options
+Description: RDoc is a Ruby documentation tool.
+URL: "https://github.com/rdoc/rdoc"
+FileNameExtensions: ["rdoc_options"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "--- !ruby/object:RDoc::Options"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RDOC_INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATIC_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUBY"
+    CaseSensitive: false

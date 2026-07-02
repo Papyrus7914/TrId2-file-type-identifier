@@ -1,0 +1,10 @@
+Name: Flash file with debug info
+URL: "http://www.adobe.com/"
+FileNameExtensions: ["swd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FWD"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\x03\0\0\0"
+    CaseSensitive: true

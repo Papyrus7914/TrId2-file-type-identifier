@@ -1,0 +1,39 @@
+Name: Oberon/F Document
+Description: ODC is a compound document which can contain rich text, references, folding and embedded active content. It can also store a metadata for user interface elements. This format is a successor of Oberon Text format.
+URL: "http://en.wikipedia.org/wiki/BlackBox_Component_Builder"
+FileNameExtensions: ["odc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CDOo\0\0\0\0\x82\xF1Documents.StdDocument"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTROLLERS.CONTROLLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINERS.CONTROLLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTS.CONTROLLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTS.DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINERS.MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINERS.VIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTS.MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELS.MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORES.STORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWS.VIEW"
+    CaseSensitive: false

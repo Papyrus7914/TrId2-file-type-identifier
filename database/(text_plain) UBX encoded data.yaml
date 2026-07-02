@@ -1,0 +1,10 @@
+Name: UBX encoded data
+URL: "http://fileformats.archiveteam.org/wiki/UBX"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "START\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FINISH"
+    CaseSensitive: false

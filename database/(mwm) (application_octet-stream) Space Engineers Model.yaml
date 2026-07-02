@@ -1,0 +1,50 @@
+Name: Space Engineers Model
+URL: "https://en.wikipedia.org/wiki/Space_Engineers"
+FileNameExtensions: ["mwm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x05Debug\x01\0\0\0\x10Version:"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "Dummies"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "Vertices"
+    CaseSensitive: true
+  - Pos: 57
+    AsciiString: "Normals"
+    CaseSensitive: true
+  - Pos: 69
+    AsciiString: "TexCoords0"
+    CaseSensitive: true
+  - Pos: 84
+    AsciiString: "Binormals"
+    CaseSensitive: true
+  - Pos: 98
+    AsciiString: "Tangents"
+    CaseSensitive: true
+  - Pos: 111
+    AsciiString: "TexCoords1"
+    CaseSensitive: true
+  - Pos: 126
+    AsciiString: "Rescale"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SWAPWINDINGORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTEXTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOTNODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DDS"
+    CaseSensitive: false

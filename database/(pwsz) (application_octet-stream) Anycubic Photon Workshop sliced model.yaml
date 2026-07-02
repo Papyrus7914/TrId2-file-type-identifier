@@ -1,0 +1,41 @@
+Name: Anycubic Photon Workshop sliced model
+URL: "https://anycubic.biz/"
+FileNameExtensions: ["pwsz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 24
+    AsciiString: "\0\0\x1B\0\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "anycubic_photon_resins.pwsp\xBDX"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANYCUBIC_PHOTON_RESINS.PWSPQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS_CONTROLLER.CONFQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE_INFO.CONFQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER_0.PWSZIMGQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT_INFO.JSONQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW_0.PNGQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW_IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER_IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE.SLICEQ"
+    CaseSensitive: false

@@ -1,0 +1,41 @@
+Name: TCIA Manifest
+URL: "https://wiki.cancerimagingarchive.net/display/NBIA/Downloading+TCIA+Images"
+FileNameExtensions: ["tcia"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "downloadServerUrl=https://"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LISTOFSERIESTODOWNLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWNLOADSERVERURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDEANNOTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWNLOADSERVLET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFESTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBIA-DOWNLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASKETID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOOFRRETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TCIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Liquid Executable bytecode
+Description: Executable for the Liquid Virtual Machine.
+URL: "http://www.globalheavyindustries.com/"
+FileNameExtensions: ["ldx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LDv"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "."
+    CaseSensitive: true

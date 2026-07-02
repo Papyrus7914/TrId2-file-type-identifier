@@ -1,0 +1,9 @@
+Name: CPIO archive (binary)
+Description: called "cpio archive" by file command and "Cpio/Binary LE" by 7-Zip
+URL: "http://fileformats.archiveteam.org/wiki/Cpio"
+FileNameExtensions: ["cpio"]
+MimeType: application/x-cpio
+DetectionPatterns:
+  - Pos: 0
+    #              q
+    Bytes: [0xC7, 0x71]

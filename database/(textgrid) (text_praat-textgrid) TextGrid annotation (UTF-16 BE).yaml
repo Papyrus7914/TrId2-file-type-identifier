@@ -1,0 +1,11 @@
+Name: TextGrid annotation (UTF-16 BE)
+URL: "https://www.fon.hum.uva.nl/praat/manual/TextGrid_file_formats.html"
+FileNameExtensions: ["textgrid"]
+MimeType: text/praat-textgrid
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFE\xFF\0F\0i\0l\0e\0 \0t\0y\0p\0e\0 \0=\0 \0\"\0o\0o\0T\0e\0x\0t\0F\0i\0l\0e\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "T\0E\0X\0T\0G\0R\0I\0D"
+    CaseSensitive: false

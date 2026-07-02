@@ -1,0 +1,230 @@
+Name: Wyko OPD binary data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/opdfile.c"
+FileNameExtensions: ["opd"]
+MimeType: application/x-wyko-opd
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0Directory"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCANNER STEP PER SECOND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASUREMENTDIAGNOSTICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTIVEMAGNIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASUREMENTFILTERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOVLENSMAGNIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF TAG FRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANNERSTARTPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASUREMENTSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESTORABLEPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANNERENDPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBTRACTREFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASUREMENTDIA~0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASUREMENTSET~0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANNERENDPOSI~0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANNERSTARTPO~0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEDEFAULTFILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMEBUFFERSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPAGEDPOOLUSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANNERPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAG FRAME INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALMEMAVAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATIONTHRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKSCANLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURFACE HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEDONLYFILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEFILEUSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARYDATA2D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTFRAMERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMETIMEAVG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMETIMEMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMETIMEMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODTHRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEMEMAVAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYSMEMAVAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANNERDELTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANNERSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2D_CHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVERAGEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASETNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMAVERAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEROBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTERTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GDIOBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTRUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTENSITYB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORYUSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXEL_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVELENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NANOMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WYKO.OPD1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XTENDEDKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAKIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACQUIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHTB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IACUITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IONDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASPECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENUM V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

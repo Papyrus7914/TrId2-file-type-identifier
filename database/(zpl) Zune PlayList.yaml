@@ -1,0 +1,49 @@
+Name: Zune PlayList
+URL: "http://en.wikipedia.org/wiki/Zune"
+FileNameExtensions: ["zpl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?zpl version=\"2.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AVERAGERATING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTALDURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZPL VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATORID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZUNE"
+    CaseSensitive: false

@@ -1,0 +1,125 @@
+Name: HyperReader! Videodisc player Driver
+Description: Hypertext/media viewer by NTERGAID Inc.
+FileNameExtensions: ["vdr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@Player = \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WILL RETURN 5 BYTES OF DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAPTERMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMENTMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUSINQR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOGGLEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDOFSTMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMEINQR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JUMPFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYUNTIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEEDFAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEEDNORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEEDSCAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEEDSLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEEDSTEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIO1ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIO2ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEINQR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FWDFAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FWDNORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FWDSCAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FWDSLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FWDSTEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVFAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVNORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVSCAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVSLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVSTEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOP"
+    CaseSensitive: false

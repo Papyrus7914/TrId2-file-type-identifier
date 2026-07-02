@@ -1,0 +1,38 @@
+Name: Inform 7/Glulxe Save Data
+URL: "https://en.wikipedia.org/wiki/Glulx"
+FileNameExtensions: ["glksave"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "IFZSIFhd"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "Glul"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "Info"
+    CaseSensitive: true
+  - Pos: 148
+    AsciiString: "Stks"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "S\0\0A\0\0V\0\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STKS"
+    CaseSensitive: false

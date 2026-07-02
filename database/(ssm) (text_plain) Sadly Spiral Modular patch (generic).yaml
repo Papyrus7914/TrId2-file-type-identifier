@@ -1,0 +1,20 @@
+Name: Sadly Spiral Modular patch (generic)
+URL: "https://www.pawfal.org/Software/SSM/"
+FileNameExtensions: ["ssm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SpiralSynthModular File Ver "
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SECTIONLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGIN"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: SPSS Table Look
+URL: "http://www.spss.com/"
+FileNameExtensions: ["tlo"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFF\0\0\v\0PTTableLook\0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0\0\06\0\0\0\x12\0\0\0\xFF\xFF\0\0\x10\0PVSeparatorStyle\0"
+    CaseSensitive: true

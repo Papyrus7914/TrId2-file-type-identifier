@@ -1,0 +1,10 @@
+Name: IFF-Text document (generic)
+Description: Standard Amiga Text format.
+FileNameExtensions: ["ftxt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FTXT"
+    CaseSensitive: true

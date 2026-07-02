@@ -1,0 +1,15 @@
+Name: Low Bitrate Packer compressed audio
+Description: By Dmitrij V. Shmunk
+URL: "http://www.rarewares.org/rrw/lbpack.php"
+FileNameExtensions: ["lb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "LBitfmt"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "file"
+    CaseSensitive: true

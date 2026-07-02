@@ -1,0 +1,22 @@
+Name: Tor state
+URL: "https://en.wikipedia.org/wiki/Tor_(anonymity_network)"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Tor state file last generated on "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "YOU *DO NOT* NEED TO EDIT THIS FILE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHER TIMES BELOW ARE IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TORVERSION TOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTWRITTEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL TIME"
+    CaseSensitive: false

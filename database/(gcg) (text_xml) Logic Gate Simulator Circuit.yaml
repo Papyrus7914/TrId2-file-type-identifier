@@ -1,0 +1,50 @@
+Name: Logic Gate Simulator Circuit
+URL: "https://www.kolls.net/gatesim/"
+FileNameExtensions: ["gcg"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CIRCUITGROUP VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIRCUITGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GATE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIRCUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIRE"
+    CaseSensitive: false

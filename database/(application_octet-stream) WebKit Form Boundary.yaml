@@ -1,0 +1,19 @@
+Name: WebKit Form Boundary
+URL: "https://en.wikipedia.org/wiki/WebKit"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "------WebKitFormBoundary"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT-DISPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM-DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false

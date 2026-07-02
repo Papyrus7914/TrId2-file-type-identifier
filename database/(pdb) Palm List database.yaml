@@ -1,0 +1,11 @@
+Name: Palm List database
+Description: List its a simple freeware database for Palm.
+URL: "http://www.quux.net/list/"
+FileNameExtensions: ["pdb"]
+DetectionPatterns:
+  - Pos: 60
+    AsciiString: "DATALSdb"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATALSDB"
+    CaseSensitive: false

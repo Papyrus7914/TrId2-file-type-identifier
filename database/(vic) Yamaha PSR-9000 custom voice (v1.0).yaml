@@ -1,0 +1,10 @@
+Name: Yamaha PSR-9000 custom voice (v1.0)
+URL: "http://www.yamaha.com/"
+FileNameExtensions: ["vic"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSR-9000 ver1.0 CUSTOM VOICE"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "\x0FCUSTOMVOICE\0\0\0"
+    CaseSensitive: true

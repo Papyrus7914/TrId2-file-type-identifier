@@ -1,0 +1,13 @@
+Name: Microsoft Word document
+URL: "https://en.wikipedia.org/wiki/Microsoft_Word"
+FileNameExtensions: ["doc"]
+MimeType: application/msword
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: any
+    AsciiString: "W\0O\0R\0D\0D\0O\0C\0U\0M\0E\0N\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false

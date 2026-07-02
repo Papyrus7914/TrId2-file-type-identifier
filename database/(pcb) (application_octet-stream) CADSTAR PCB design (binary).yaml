@@ -1,0 +1,23 @@
+Name: CADSTAR PCB design (binary)
+URL: "https://en.wikipedia.org/wiki/CADSTAR"
+FileNameExtensions: ["pcb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PCB\r\nData Structure Access Version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(PARTDEFINITIONALTERNATENAME)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(PARTDEFINITIONREFERENCENAME)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(THROUGH HOLE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(CONNECTIONS)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(OLDCTFNAME)"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: DESQview/X Group
+URL: "https://en.wikipedia.org/wiki/DESQview#DESQview/X"
+FileNameExtensions: ["grp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GROUP \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BUTTON_SPACING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID_SPACING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAP"
+    CaseSensitive: false

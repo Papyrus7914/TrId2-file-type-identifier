@@ -1,0 +1,11 @@
+Name: WordPerfect dictionary advise
+URL: "https://en.wikipedia.org/wiki/WordPerfect"
+FileNameExtensions: ["adv"]
+MimeType: application/x-wordperfect-adv
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFWPC\x10\0\0\0\"\v\x06\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0"
+    CaseSensitive: true

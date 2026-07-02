@@ -1,0 +1,39 @@
+Name: MOZART Music Document
+Description: MOZART is a music notation software.
+URL: "http://www.mozart.co.uk/"
+FileNameExtensions: ["mz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DMWMZ:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMWMZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITL"
+    CaseSensitive: false

@@ -1,0 +1,236 @@
+Name: 32bit Windows Shrinker compressed Executable (v3.4)
+URL: "http://fileformats.archiveteam.org/wiki/Shrinker"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 1052
+    AsciiString: "\0\0\0\0SHRINK34.LDR\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 1619
+    AsciiString: "\0USER32\0\0MessageBoxA\0xV4\x12\xF8"
+    CaseSensitive: true
+  - Pos: 1972
+    AsciiString: "\0\0\0\0\0\0\0\0\xFF\xFF\xFF\xFF\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Unable to access memory block\0\0\0Error decompress"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNABLE TO ACCESS MEMORY BLOCK\0\0\0ERROR DECOMPRESSING BLOCK\0\0\0\0\0\0\0UNABLE TO WRITE TO MEMORY BLOCK \0\0\0\0\0\0\0\0DISPATCHER INITIALISATION ERROR \0\0\0\0\0\0\0\0UNABLE TO RUN WITH A PROGRAM COMPRESSED WITH AN OLDER VERSION OF SHRINKER (\0\0\0\0\0ERROR LOADING DEPENDENT DLL \0\0\0\0IMAGE DECOMPRESSION ERROR \0\0\0\0\0\0UNABLE TO FIND OR OPEN FILE \0\0\0\0ERROR READING INPUT FILE\0\0\0\0\0\0\0\0NOT ENOUGH MEMORY TO PERFORM DECOMPRESSION\0\0\0\0\0\0UNABLE TO WRITE FILE \0\0\0PAGER INITIALISATION ERROR \0\0\0\0\0UNDETERMINED ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDRESOURCEA\0W\0ENTERCRITICALSECTION\0\0U\0ENDUPDATERESOURCEA\0\0K\0DELETECRITICALSECTION\0F\0DEBUGACTIVEPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "000\0WB\0\0PATH\0\0\0\01\0\0\02\0\0\0 - PLEASE RESTART YOUR SYSTEM AND RETRY\03\0\0\04\0\0\05"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H AT \0\0\0H IN MODULE AT \08\0\0\09\0\0\0RB\0\01\0\0\0.SHRINK\02\0\0\03\0\0\06\0\0\0KERNEL32\0\0\0\07"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHRINKER.ERR\0\0\0\0\0\0\0\08\0\0\09\0\0\01\0\0\02\0\0\03\0\0\04\0\0\05\0\0\0 \0\0\0(3.4) \0\0 \0\0\0 - \0 - \0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATESEMAPHOREA\0\07\0CREATEMUTEXA\0\01\0CREATEFILEMAPPINGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETTEMPFILENAMEA\0\0O\0DEVICEIOCONTROL\0M\0DELETEFILEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETFILEPOINTER\0\00\0CREATEFILEA\0V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALIZECRITICALSECTION\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUNHANDLEDEXCEPTIONFILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETLOCALTIME\0\0KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETENVIRONMENTVARIABLEA\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32\0\0MESSAGEBOXA\0XV4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINUPDATERESOURCEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETWINDOWSDIRECTORYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEAVECRITICALSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAPPING EXCEPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUEDEBUGEVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEFILENAMEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITEPROCESSMEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCURRENTPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READPROCESSMEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAITFORDEBUGEVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTNAMEDPIPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEHANDLEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENFILEMAPPINGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASESEMAPHORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDRESOURCEW\0~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALREALLOC\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATMESSAGEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENSEMAPHOREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAISEEXCEPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALPROTECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPVIEWOFFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALUNLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETLASTERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALUNWIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADLIBRARYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASEMUTEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETLASTERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHRINK34.LDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALQUERY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALWIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTLUNWIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SHRINK0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SHRINK1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHR3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS"
+    CaseSensitive: false

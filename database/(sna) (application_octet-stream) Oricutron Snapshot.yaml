@@ -1,0 +1,11 @@
+Name: Oricutron Snapshot
+URL: "http://www.petergordon.org.uk/oricutron/"
+FileNameExtensions: ["sna"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OSN\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "DATA"
+    CaseSensitive: true

@@ -1,0 +1,18 @@
+Name: Konami Picno cartridge image
+URL: "https://konami.fandom.com/wiki/Picno"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZPJ"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 24
+    Bytes: [0x00, 0x03]
+  - Pos: 28
+    Bytes: [0x00, 0x03]

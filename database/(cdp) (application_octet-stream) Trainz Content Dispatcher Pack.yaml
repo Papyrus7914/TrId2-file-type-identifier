@@ -1,0 +1,56 @@
+Name: Trainz Content Dispatcher Pack
+URL: "https://en.wikipedia.org/wiki/Trainz"
+FileNameExtensions: ["cdp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ACS$"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "assets"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "<kuid"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PACKAGE-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS-TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBSOLETE-TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KUID-TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACS$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZSS"
+    CaseSensitive: false

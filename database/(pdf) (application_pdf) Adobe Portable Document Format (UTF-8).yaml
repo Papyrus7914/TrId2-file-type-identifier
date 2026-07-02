@@ -1,0 +1,9 @@
+Name: Adobe Portable Document Format (UTF-8)
+Description: Malformed PDF file with UTF-8 BOM.
+URL: "http://en.wikipedia.org/wiki/Pdf"
+FileNameExtensions: ["pdf"]
+MimeType: application/pdf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF%PDF-"
+    CaseSensitive: true

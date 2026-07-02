@@ -1,0 +1,10 @@
+Name: FineCrypt encrypted (v2.0)
+Description: SecureTask is a valuable and multi-algorithm encryption and decryption software.
+URL: "http://web.archive.org/web/20080511101147/http://securetask.net/"
+FileNameExtensions: ["fcp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "("
+    CaseSensitive: true
+  - Pos: 4
+    Bytes: [0x00, 0x02]

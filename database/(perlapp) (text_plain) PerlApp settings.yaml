@@ -1,0 +1,38 @@
+Name: PerlApp settings
+URL: "https://en.wikipedia.org/wiki/ActivePerl"
+FileNameExtensions: ["perlapp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAP-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERLAPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYNDLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

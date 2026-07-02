@@ -1,0 +1,13 @@
+Name: GammaCAD drawing/symbol
+FileNameExtensions: ["gc1", "sym"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GammaCAD "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false

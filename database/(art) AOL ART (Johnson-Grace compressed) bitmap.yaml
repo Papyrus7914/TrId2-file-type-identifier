@@ -1,0 +1,10 @@
+Name: AOL ART (Johnson-Grace compressed) bitmap
+URL: "http://www.dwightblackburn.com/aol.htm"
+FileNameExtensions: ["art"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JG"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\x0E\0\0\0"
+    CaseSensitive: true

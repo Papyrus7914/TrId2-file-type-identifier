@@ -1,0 +1,14 @@
+Name: QX Animation
+URL: "https://en.wikipedia.org/wiki/Binary_Runtime_Environment_for_Wireless"
+FileNameExtensions: ["qxa"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "QX\0\0QXA"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "PTRD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PTRD"
+    CaseSensitive: false

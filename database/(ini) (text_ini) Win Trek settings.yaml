@@ -1,0 +1,17 @@
+Name: Win Trek settings
+URL: "https://www.mobygames.com/game/win-trek"
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Win Trek]\r\nStoryline="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BUBBLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false

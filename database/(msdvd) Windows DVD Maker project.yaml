@@ -1,0 +1,64 @@
+Name: Windows DVD Maker project
+URL: "http://www.microsoft.com/windows/products/windowsvista/features/details/dvdmaker.mspx"
+FileNameExtensions: ["msdvd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<BurnWizard><Content><ContentFile Filename=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENTFILE FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLIDESHOW TRANSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENEBUTTONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUNDVIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON PLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSETVIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BURNWIZARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCHMUSIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENUAUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANZOOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITALIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOLD"
+    CaseSensitive: false

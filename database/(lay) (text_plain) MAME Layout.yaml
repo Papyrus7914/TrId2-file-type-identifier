@@ -1,0 +1,23 @@
+Name: MAME Layout
+URL: "https://en.wikipedia.org/wiki/MAME"
+FileNameExtensions: ["lay"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAMELAYOUT VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDS LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false

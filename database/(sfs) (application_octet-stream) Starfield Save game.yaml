@@ -1,0 +1,14 @@
+Name: Starfield Save game
+URL: "https://www.mobygames.com/game/208288/starfield/"
+FileNameExtensions: ["sfs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BCPS\x01\0\0\0H\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0\0\0\0\0\0\0\0@\0\0\0\0\0\0\x04\0\0\0\0\0\x10\0\0\0\0\0\0\0\x03"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "ZIP "
+    CaseSensitive: true

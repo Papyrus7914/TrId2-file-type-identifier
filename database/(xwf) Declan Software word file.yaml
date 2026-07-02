@@ -1,0 +1,16 @@
+Name: Declan Software word file
+URL: "http://www.declan-software.com"
+FileNameExtensions: ["xwf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "W\0o\0r\0d\0F\0i\0l\0e\0N\0a\0m\0e"
+    CaseSensitive: true
+  - Pos: 512
+    AsciiString: "W\0o\0r\0d"
+    CaseSensitive: true
+  - Pos: 1024
+    AsciiString: "M\0e\0a\0n\0i\0n\0g"
+    CaseSensitive: true
+  - Pos: 1536
+    AsciiString: "W\0o\0r\0d\0 \0T\0y\0p\0e"
+    CaseSensitive: true

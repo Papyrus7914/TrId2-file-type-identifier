@@ -1,0 +1,25 @@
+Name: Post-It Software Note Template
+FileNameExtensions: ["psntemplate"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<note><clsid>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

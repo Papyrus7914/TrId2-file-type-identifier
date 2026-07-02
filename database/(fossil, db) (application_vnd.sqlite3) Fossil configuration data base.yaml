@@ -1,0 +1,12 @@
+Name: Fossil configuration data base
+Description: SQLite 3.x database with application id 0x0F055113; filename _fossil, .fossil or fossil.db
+URL: "http://fileformats.archiveteam.org/wiki/Fossil_configuration_database"
+FileNameExtensions: ["fossil", "db"]
+MimeType: application/vnd.sqlite3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: 68
+    #                    Q
+    Bytes: [0x0F, 0x05, 0x51, 0x13]

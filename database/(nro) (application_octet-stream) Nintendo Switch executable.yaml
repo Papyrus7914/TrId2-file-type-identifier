@@ -1,0 +1,14 @@
+Name: Nintendo Switch executable
+URL: "https://switchbrew.org/wiki/NRO"
+FileNameExtensions: ["nro"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "NRO0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NRO0"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: "Star Trek: Elite Force II save game"
+URL: "https://www.mobygames.com/game/10170/star-trek-elite-force-ii/"
+FileNameExtensions: ["sav", "sub"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EF2\0\x02\0\0\0\x15\0\0\0EF2 Archive Version 2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REDSHIRT\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0MODELS"
+    CaseSensitive: false

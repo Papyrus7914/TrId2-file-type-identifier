@@ -1,0 +1,13 @@
+Name: DMIS input data
+Description: DMIS stand for Dimensional Measuring Interface Standard.
+FileNameExtensions: ["dmi"]
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "M"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDFIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMISM"
+    CaseSensitive: false

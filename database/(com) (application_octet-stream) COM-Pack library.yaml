@@ -1,0 +1,8 @@
+Name: COM-Pack library
+Description: Old DOS tool to pack multiple COM executables into one.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE9F\x01\n\r  COM-Pack v1.0 \xFE Copr. 1989 by Jack A. Orman       \n\r"
+    CaseSensitive: true

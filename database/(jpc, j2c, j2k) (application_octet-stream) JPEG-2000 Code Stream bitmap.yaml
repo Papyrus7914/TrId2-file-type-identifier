@@ -1,0 +1,8 @@
+Name: JPEG-2000 Code Stream bitmap
+URL: "http://fileformats.archiveteam.org/wiki/JPEG_2000_codestream"
+FileNameExtensions: ["jpc", "j2c", "j2k"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              O           Q
+    Bytes: [0xFF, 0x4F, 0xFF, 0x51]

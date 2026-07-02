@@ -1,0 +1,11 @@
+Name: Macromedia Flash SWF/Scaleform GFX Video (ZLIB compressed)
+URL: "https://wiki.xentax.com/index.php/Macromedia_Flash_SWF_/_Scaleform_GFX"
+FileNameExtensions: ["gfx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CFX"
+    CaseSensitive: true
+  - Pos: 8
+    #        x
+    Bytes: [0x78, 0xDA]

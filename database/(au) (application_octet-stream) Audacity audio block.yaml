@@ -1,0 +1,11 @@
+Name: Audacity audio block
+URL: "https://en.wikipedia.org/wiki/Audacity_(audio_editor)"
+FileNameExtensions: ["au"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "dns."
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0\0\0D\xAC\0\0\x01\0\0\0AudacityBlockFile"
+    CaseSensitive: true

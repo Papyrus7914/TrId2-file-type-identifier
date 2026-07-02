@@ -1,0 +1,61 @@
+Name: EAD - Encoded Archival Description
+URL: "http://en.wikipedia.org/wiki/Encoded_Archival_Description"
+FileNameExtensions: ["sgm", "sgml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PUBLICATIONSTMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODINGANALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLEPROPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPOSITORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EADHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLISHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLESTMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHDESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEDESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

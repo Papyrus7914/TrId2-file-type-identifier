@@ -1,0 +1,106 @@
+Name: Thrustmaster TARGET script
+URL: "http://en.wikipedia.org/wiki/Thrustmaster"
+FileNameExtensions: ["tmc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "include \"target.tmh\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INT EVENTHANDLE(INT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENTHANDLE)) RETURN 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTMAPPING("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETKBLAYOUT(KB_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETSHIFTBUTTON("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DX_SLIDER_AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP_ABSOLUTE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DX_XROT_AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DX_YROT_AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DX_ZROT_AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPKEYIOUMD("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXIS_NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INT MAIN()"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETKBRATE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETSCURVE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET.TMH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DX_X_AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DX_Y_AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DX_Z_AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IF(INIT("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOYSTICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPAXIS("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THROTTLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIAS O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HCOUGAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INT X)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULSE+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOYX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOYY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LMFD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RMFD"
+    CaseSensitive: false

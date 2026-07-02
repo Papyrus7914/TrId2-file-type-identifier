@@ -1,0 +1,38 @@
+Name: Fresh Paint Painting
+URL: "https://en.wikipedia.org/wiki/Microsoft_Fresh_Paint"
+FileNameExtensions: ["fppx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Artwork.paint"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ARTWORK.PAINTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTWORK.UIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XMLU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BP-U2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false

@@ -1,0 +1,37 @@
+Name: PageMagic document
+URL: "http://fileformats.archiveteam.org/wiki/PageMagic"
+FileNameExtensions: ["dtp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: any
+    AsciiString: "PAGE MAGIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EODF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTXT"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Fold(ed) compressed archive
+Description: Created with the Fold tool by Island Systems. Used in DOS installers.
+FileNameExtensions: ["fld"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\f"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "$"
+    CaseSensitive: true

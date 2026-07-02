@@ -1,0 +1,16 @@
+Name: ZPanel Package
+URL: "http://www.zpanelcp.com/"
+FileNameExtensions: ["zpp"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "CONTROLLER.EXT.PHP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false

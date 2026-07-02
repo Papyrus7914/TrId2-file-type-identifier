@@ -1,0 +1,23 @@
+Name: Cabri 3D Figure
+URL: "https://en.wikipedia.org/wiki/List_of_interactive_geometry_software#Cabri_3D"
+FileNameExtensions: ["fig"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "F"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: " Cabri"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FIGURE CABRI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXES"
+    CaseSensitive: false

@@ -1,0 +1,47 @@
+Name: MATLAB Toolbox package
+URL: "https://en.wikipedia.org/wiki/MATLAB"
+FileNameExtensions: ["mltbx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "[Content_Types].xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MWCOREPROPERTIESEXTENSION.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESYSTEMMANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMREQUIREMENTS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MWCOREPROPERTIES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDONPROPERTIES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MPK"
+    CaseSensitive: false

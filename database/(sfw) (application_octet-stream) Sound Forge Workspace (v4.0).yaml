@@ -1,0 +1,14 @@
+Name: Sound Forge Workspace (v4.0)
+URL: "https://en.wikipedia.org/wiki/Sound_Forge"
+FileNameExtensions: ["sfw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SFSSfmt "
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "Sound Forge 4.0 Workspace File"
+    CaseSensitive: true

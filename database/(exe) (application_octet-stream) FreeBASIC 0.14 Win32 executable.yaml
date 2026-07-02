@@ -1,0 +1,240 @@
+Name: FreeBASIC 0.14 Win32 executable
+Description: Open-source, free, 32-bit compiler, with the syntax the most compatible possible with MS-QuickBASIC (including the GFX statements), but that adds new features such as pointers, unsigned data types, inline-assembly, a pre-processor and many others.
+URL: "http://www.freebasic.net/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0PE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 135
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 139
+    AsciiString: "B\0\0\0\0\0\0\0\0\xE0\0"
+    CaseSensitive: true
+  - Pos: 151
+    #              \v                8
+    Bytes: [0x03, 0x0B, 0x01, 0x02, 0x38, 0x00]
+  - Pos: 159
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 163
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 167
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 169
+    AsciiString: "\x12\0\0\0\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 179
+    AsciiString: "\0\0\0@\0\0\x10\0\0\0\x02\0\0\x04\0\0\0\x01\0\0\0\x04\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 211
+    AsciiString: "\0\0\x04\0\0"
+    CaseSensitive: true
+  - Pos: 219
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 221
+    AsciiString: "\0\0\0\0\0\x10\0\0\0\x10\0\0\0\x10\0\0\x10\0\0\0\0\0\0\x10\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 250
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 253
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 259
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 262
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 290
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 293
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0.text\0\0\0"
+    CaseSensitive: true
+  - Pos: 387
+    AsciiString: "\0\0\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 395
+    AsciiString: "\0\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0`\0\0`.data\0\0\0"
+    CaseSensitive: true
+  - Pos: 426
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 431
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 434
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 439
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\xC0."
+    CaseSensitive: true
+  - Pos: 463
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 467
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 471
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 474
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 478
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 493
+    AsciiString: "\0\0\xC0."
+    CaseSensitive: true
+  - Pos: 502
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 506
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 511
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 514
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 519
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 533
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 542
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 546
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 550
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 554
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 558
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 573
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 582
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 585
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 590
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 594
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 598
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 613
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 616
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0U\x89\xE5\x83\xEC(\xC7D$\x04\x04"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "R\0__P__ENVIRON\0\0T\0__P__FMODE\0\0\0\0I\0__SET_APP_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-LIBGCCW32-EH-SJLJ-GTHR-MINGW32\0U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUNHANDLEDEXCEPTIONFILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0\0\0\0\0\0\0PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__GETMAINARGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTDHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETATOMNAMEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSVCRT.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CONTROLFP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDATOMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDATOMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SETMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FILENO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABORT\0W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ONEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_IOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AAAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false

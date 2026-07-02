@@ -1,0 +1,10 @@
+Name: Inset PIX bitmap
+URL: "http://fileformats.archiveteam.org/wiki/Inset_PIX"
+FileNameExtensions: ["pix"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x03, 0x00]
+  - Pos: 4
+    AsciiString: "\0\0"
+    CaseSensitive: true

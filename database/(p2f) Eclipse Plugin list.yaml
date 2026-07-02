@@ -1,0 +1,26 @@
+Name: Eclipse Plugin list
+Description: Used to export/import a list of plugins and their configurations.
+URL: "http://en.wikipedia.org/wiki/Eclipse_(software)"
+FileNameExtensions: ["p2f"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version='1.0' encoding='UTF-8'?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P2F VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IUS SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.0.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

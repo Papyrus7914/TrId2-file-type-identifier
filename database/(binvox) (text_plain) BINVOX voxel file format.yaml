@@ -1,0 +1,17 @@
+Name: BINVOX voxel file format
+URL: "http://www.cs.princeton.edu/~min/binvox/binvox.html"
+FileNameExtensions: ["binvox"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#binvox "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

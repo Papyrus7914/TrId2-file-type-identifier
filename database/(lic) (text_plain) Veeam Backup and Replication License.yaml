@@ -1,0 +1,68 @@
+Name: Veeam Backup and Replication License
+URL: "https://en.wikipedia.org/wiki/Veeam"
+FileNameExtensions: ["lic"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<Licenses>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VEEAM BACKUP AND REPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORT EXPIRATION DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCPU SOCKETS (VSPHERE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU SOCKETS (HYPER-V)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCONTACT PERSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NLICENSED TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E-MAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EULA"
+    CaseSensitive: false

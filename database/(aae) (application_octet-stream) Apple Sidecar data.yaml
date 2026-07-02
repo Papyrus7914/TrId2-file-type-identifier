@@ -1,0 +1,65 @@
+Name: Apple Sidecar data
+URL: "http://justsolve.archiveteam.org/wiki/AAE_sidecar_format"
+FileNameExtensions: ["aae"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADJUSTMENTFORMATIDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADJUSTMENTEDITORBUNDLEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADJUSTMENTFORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADJUSTMENTBASEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE PLIST PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYLIST-1.0.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.APPLE.PHOTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADJUSTMENTDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTD PLIST 1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLIST VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.APPLE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

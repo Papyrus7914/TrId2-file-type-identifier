@@ -1,0 +1,9 @@
+Name: byLight Image Format bitmap
+URL: "http://fileformats.archiveteam.org/wiki/BIF_(byLight)"
+FileNameExtensions: ["bif"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFA, 0xBA]
+  - Pos: 3
+    Bytes: [0x04]

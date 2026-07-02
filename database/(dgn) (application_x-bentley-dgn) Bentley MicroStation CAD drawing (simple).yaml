@@ -1,0 +1,9 @@
+Name: Bentley MicroStation CAD drawing (simple)
+Description: variant with complex and reserved bit not set in Element header
+URL: "http://dgnlib.maptools.org/"
+FileNameExtensions: ["dgn"]
+MimeType: application/x-bentley-dgn
+DetectionPatterns:
+  - Pos: 0
+    #        \b    \t
+    Bytes: [0x08, 0x09, 0xFE, 0x02]

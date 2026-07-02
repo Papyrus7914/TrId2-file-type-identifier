@@ -1,0 +1,26 @@
+Name: LabVIEW project Library (UTF-8)
+URL: "https://en.wikipedia.org/wiki/LabVIEW"
+FileNameExtensions: ["lvlib"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version='1.0' encoding='UTF-8'?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LIBRARY LVVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NI.LIB.VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NI.LIB.ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

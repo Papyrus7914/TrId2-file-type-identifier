@@ -1,0 +1,29 @@
+Name: "AGON: The Mysterious Codex save game"
+URL: "https://www.mobygames.com/game/21898/agon-the-mysterious-codex/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SAV1"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "level_0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTEL(R) JPEG LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL_0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE_0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAV1"
+    CaseSensitive: false

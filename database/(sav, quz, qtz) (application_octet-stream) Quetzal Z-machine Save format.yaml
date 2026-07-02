@@ -1,0 +1,15 @@
+Name: Quetzal Z-machine Save format
+Description: AKA Quetzal.
+URL: "https://en.wikipedia.org/wiki/Quetzal_file_format"
+FileNameExtensions: ["sav", "quz", "qtz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "IFZS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IFZS"
+    CaseSensitive: false

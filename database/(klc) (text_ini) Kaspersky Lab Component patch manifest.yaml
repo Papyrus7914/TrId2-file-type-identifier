@@ -1,0 +1,53 @@
+Name: Kaspersky Lab Component patch manifest
+URL: "https://en.wikipedia.org/wiki/Kaspersky_Lab"
+FileNameExtensions: ["klc"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Component]\r\nTargetComponentID=0x"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "0XLSZNPDI71FB300E7UWJ1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETOSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETLANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROMVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXECUTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEVERITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERBUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERMAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERMINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERPATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

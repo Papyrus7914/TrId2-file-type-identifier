@@ -1,0 +1,16 @@
+Name: Nero MP3 ISO Compilation
+URL: "http://www.nero.com/"
+FileNameExtensions: ["nr3"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x0ENeroISO"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "NERO"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".MP3FSIZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONG"
+    CaseSensitive: false

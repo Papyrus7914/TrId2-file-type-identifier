@@ -1,0 +1,32 @@
+Name: Avatar Studio BRZ
+Description: French game by Canal+ Multimedia.
+FileNameExtensions: ["brz"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[TYPE]\r\nLILI FILE\r\n[VERSION]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LE COMPTOIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LILI FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BROZER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PCX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

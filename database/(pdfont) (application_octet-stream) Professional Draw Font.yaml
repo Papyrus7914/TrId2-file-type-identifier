@@ -1,0 +1,32 @@
+Name: Professional Draw Font
+Description: Amiga drawing program from Gold Disk.
+FileNameExtensions: ["pdfont"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PDFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CLIP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLFN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBOX"
+    CaseSensitive: false

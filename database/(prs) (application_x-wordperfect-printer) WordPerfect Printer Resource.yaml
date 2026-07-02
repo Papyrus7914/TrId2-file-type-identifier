@@ -1,0 +1,13 @@
+Name: WordPerfect Printer Resource
+URL: "https://github.com/OneWingedShark/WordPerfect/blob/master/doc/SDK_Help/FileFormats/WPFF_DocumentStructure.htm"
+FileNameExtensions: ["prs"]
+MimeType: application/x-wordperfect-printer
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFWPC"
+    CaseSensitive: true
+  - Pos: 8
+    Bytes: [0x01, 0x10]
+  - Pos: any
+    AsciiString: "PRINTER"
+    CaseSensitive: false

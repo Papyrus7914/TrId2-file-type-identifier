@@ -1,0 +1,38 @@
+Name: SuperDOS Adapter File
+URL: "https://en.wikipedia.org/wiki/Data_General_Business_Basic#SuperDOS"
+FileNameExtensions: ["adf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AdapterId "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADAPTERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RT ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERRUPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMEDITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHOICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROMPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false

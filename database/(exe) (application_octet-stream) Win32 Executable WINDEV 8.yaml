@@ -1,0 +1,174 @@
+Name: Win32 Executable WINDEV 8
+Description: WINDEV is a RAD tool for Windows by PC SOFT.
+URL: "http://www.windev.com"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0h\xF9\xE2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "YY\0\0PM\0\0AM\0\0DECEMBER\0\0\0\0NOVEMBER\0\0\0\0OCTOBER\0SEPTEMBER\0\0\0AUGUST\0\0JULY\0\0\0\0JUNE\0\0\0\0APRIL\0\0\0MARCH\0\0\0FEBRUARY\0\0\0\0JANUARY\0DEC\0NOV\0OCT\0SEP\0AUG\0JUL\0JUN\0MAY\0APR\0MAR\0FEB\0JAN\0SATURDAY\0\0\0\0FRIDAY\0\0THURSDAY\0\0\0\0WEDNESDAY\0\0\0TUESDAY\0MONDAY\0\0SUNDAY\0\0SAT\0FRI\0THU\0WED\0TUE\0MON\0SUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCLQUERYIMGFACTORY\0\0(EMPTY)\0COMMON\0\0WINDEV\0\08.0\0PC SOFT\0SOFTWARE\0\0\0\0...\0WL_SETPARAM\0WL_LISTEWDL\0WL_INITGOREQUETE\0\0\0\0WL_DONNEFININIT\0WL_DONNEGPU\0WL_DONNEREP\0WL_DONNEWDL\0WL_LISTEDLL\0WL_TEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK WHETHER DLLS USED TO OPERATE THE EXECUTABLE CAN BE ACCESSED BY PATH.\0\0\0\0WD80VM.DLL\0\0LE FICHIER EX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAISPROCESSORFEATUREPRESENT\0\0\0KERNEL32\0\0\0\0E+000\0\0\0__GLOBAL_HEAP_SELECTED\0\0__MSVCRT_HEAP_SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAILURE INITIALIZING WD80VM.DLL DLL.\0\0IMPOSSIBLE DE TROUVER LA DLL WD80VM.DLL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD INFORMATION ON EXTERNAL LIBRARIES.\0\0INFOEXE\0CETTE APPLICATION NE PEUT PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL\0Y\0\0\0\0GDI32.DLL\0\0\0\0\0\0\0SHELL32.DLL\0\0\0\0\0MPR.DLL\0\0\0\0\0\0\0\0\0ADVAPI32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WDUPDATE VERSION IS NOT COMPATIBLE WITH THIS APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALIZECRITICALSECTION\0U\0DELETECRITICALSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR STDIO INITIALIZATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR LOWIO INITIALIZATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALISATION DE LA DLL WD80VM.DLL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT VISUAL C++ RUNTIME LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR THREAD DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR ARGUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR _ONEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNABLE TO FIND WD80VM.DLL DLL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATING SYSTEM ERROR MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0D\0V\0E\0R\0S\0I\0O\0N\0\0\0\0\08\0.\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0E\0G\0A\0L\0C\0O\0P\0Y\0R\0I\0G\0H\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0R\0I\0N\0G\0F\0I\0L\0E\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0P\0A\0N\0Y\0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0A\0R\0F\0I\0L\0E\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM NAME UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION RUNNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKRESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80OLDB.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WDP80MEM.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDEVOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80HTML.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80ETAT.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80AGT.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80CPL.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80GRF.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80JAV.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80RPL.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80COM.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80GPU.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD553HF.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80OLE.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80PLM.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80PRN.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80MAT.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80RTF.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80SQL.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80STD.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80TRS.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80XML.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD553DB.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80NET.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80OBJ.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80DB.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WD80HF.DLL"
+    CaseSensitive: false

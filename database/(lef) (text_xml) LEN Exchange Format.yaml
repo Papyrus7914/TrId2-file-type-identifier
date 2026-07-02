@@ -1,0 +1,45 @@
+Name: LEN Exchange Format
+Description: Exchange format for swim rankings.
+URL: "http://www.lenex.de/lenex.html"
+FileNameExtensions: ["lef"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONSTRUCTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERNE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

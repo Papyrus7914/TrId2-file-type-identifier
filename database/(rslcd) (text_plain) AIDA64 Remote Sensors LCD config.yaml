@@ -1,0 +1,32 @@
+Name: AIDA64 Remote Sensors LCD config
+URL: "https://en.wikipedia.org/wiki/AIDA64"
+FileNameExtensions: ["rslcd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<LCDVER>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LCDBGCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LCDPAGE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FNTNAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LCDVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXTSIZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITMX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITMY"
+    CaseSensitive: false

@@ -1,0 +1,53 @@
+Name: Opticks Scene
+Description: Amiga ray-trace Software.
+FileNameExtensions: ["sce"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\nSCENEv1.0 {\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SUBDIRECTORIES {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALLIGHTS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURFACEATTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA  ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POS     ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICTURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAMPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRFS"
+    CaseSensitive: false

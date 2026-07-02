@@ -1,0 +1,10 @@
+Name: SNAP Archive Data File
+FileNameExtensions: ["adf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Survey"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "A\0R\0C\0H\0I\0V\0E\0 \0F\0I\0L\0E"
+    CaseSensitive: false

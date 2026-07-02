@@ -1,0 +1,10 @@
+Name: Macromedia Flash Color Table File
+URL: "http://www.macromedia.com"
+FileNameExtensions: ["clr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFF\0\0\n\0CColorList"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\xFF\xFF\0\0\t\0CColorDef\x03"
+    CaseSensitive: true

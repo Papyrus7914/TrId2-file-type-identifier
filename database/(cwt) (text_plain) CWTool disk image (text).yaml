@@ -1,0 +1,14 @@
+Name: CWTool disk image (text)
+URL: "http://discferret.com/wiki/CWTool_image_format"
+FileNameExtensions: ["cwt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# cwtool raw text"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRACK CLOCK FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK_DATA"
+    CaseSensitive: false

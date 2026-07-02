@@ -1,0 +1,23 @@
+Name: Muzip audio (v4)
+URL: "https://wiki.multimedia.cx/index.php/Muzip"
+FileNameExtensions: ["mzp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WAVEfmt"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "MZIP1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WAVEFMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MZIP1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

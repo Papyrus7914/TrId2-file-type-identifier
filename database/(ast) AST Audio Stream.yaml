@@ -1,0 +1,10 @@
+Name: AST Audio Stream
+Description: Nintendo Wii / Gamecube
+FileNameExtensions: ["ast"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "STRM"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "BLCK"
+    CaseSensitive: true

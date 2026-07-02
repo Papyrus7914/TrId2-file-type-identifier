@@ -1,0 +1,14 @@
+Name: Kv design language
+URL: "http://en.wikipedia.org/wiki/Kivy"
+FileNameExtensions: ["kv"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#:kivy 1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

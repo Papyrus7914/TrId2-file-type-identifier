@@ -1,0 +1,14 @@
+Name: FoxGraph Graph
+Description: 3D graphing app by Fox Software.
+FileNameExtensions: ["3gr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JRtest\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\x1BTest file of new graph type\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEST FILE OF NEW GRAPH TYPE"
+    CaseSensitive: false

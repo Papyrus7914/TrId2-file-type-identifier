@@ -1,0 +1,9 @@
+Name: CPIO archive (portable)
+Description: called "ASCII cpio archive" by file command and "Cpio/Portable ASCII" by 7-Zip
+URL: "http://fileformats.archiveteam.org/wiki/Cpio"
+FileNameExtensions: ["cpio"]
+MimeType: application/x-cpio
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "07070"
+    CaseSensitive: true

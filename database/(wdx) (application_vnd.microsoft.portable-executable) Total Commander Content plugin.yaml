@@ -1,0 +1,44 @@
+Name: Total Commander Content plugin
+URL: "http://www.ghisler.com/plugins.htm#content"
+FileNameExtensions: ["wdx"]
+MimeType: application/vnd.microsoft.portable-executable
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENTGETSUPPORTEDFIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTGETVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADLI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

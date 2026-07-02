@@ -1,0 +1,29 @@
+Name: Image Packaging System Manifest (with transform)
+URL: "http://fileformats.archiveteam.org/wiki/IPS_manifest"
+FileNameExtensions: ["p5m"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<transform file path="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PKG.SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

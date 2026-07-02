@@ -1,0 +1,25 @@
+Name: TomTom info (generic)
+URL: "http://www.tomtom.com"
+FileNameExtensions: ["bif"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[TomTom"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPLICATIONVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICEVERSIONHW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICEUNIQUEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOMTOM"
+    CaseSensitive: false

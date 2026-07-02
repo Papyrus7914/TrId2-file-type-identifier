@@ -1,0 +1,41 @@
+Name: Spready spreadsheet
+Description: Amiga spreadsheet by Carsten Siegner.
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!---  Scriba/table -->\n<tabel name=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BORDER_BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDER_RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDER_LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDER_TOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROW FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false

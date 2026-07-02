@@ -1,0 +1,12 @@
+Name: Pumpkin Shop stencil
+URL: "http://www.canucarve.com"
+FileNameExtensions: ["pumpkin"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xAC, 0xED]
+  - Pos: 6
+    AsciiString: "\x0FPSHOP"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true

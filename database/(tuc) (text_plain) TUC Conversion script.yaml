@@ -1,0 +1,11 @@
+Name: TUC Conversion script
+Description: Atari ST converion tool by Kevin Millican.
+FileNameExtensions: ["tuc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TUC: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REPLACE"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: Corel saved find/search
+URL: "http://www.corel.com"
+FileNameExtensions: ["fin"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FRW COREL DRAW\0\0\0\0\0\0\t\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\x01\0\0SRCHTOOL_RLS\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true

@@ -1,0 +1,32 @@
+Name: Kaspersky Anti-Virus reports
+Description: Kaspersky Anti-Virus
+URL: "http://www.kaspersky.com/"
+FileNameExtensions: ["rpt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RPD2\x02\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "X"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "X"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XSTRM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RPD2"
+    CaseSensitive: false

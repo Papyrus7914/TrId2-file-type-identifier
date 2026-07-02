@@ -1,0 +1,104 @@
+Name: TCC Win32 executable
+URL: "http://bellard.org/tcc/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0PE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 135
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\xE0\0\x0F\x03\v\x01\x06\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 170
+    AsciiString: "\0\0\0\x10\0\0\0 \0\0\0\0@\0\0\x10\0\0\0\x02\0\0\x04\0\0\0\0\0\0\0\x04\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 210
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 214
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 221
+    AsciiString: "\0\0\0\0\0\x10\0\0\x10\0\0\0\0\x10\0\0\x10\0\0\0\0\0\0\x10\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 257
+    AsciiString: " \0\0"
+    CaseSensitive: true
+  - Pos: 261
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 345
+    AsciiString: " \0\0"
+    CaseSensitive: true
+  - Pos: 349
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0.text\0\0\0"
+    CaseSensitive: true
+  - Pos: 386
+    AsciiString: "\0\0\0\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 394
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 398
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0 \0\0`.data\0\0\0"
+    CaseSensitive: true
+  - Pos: 426
+    AsciiString: "\0\0\0 \0\0\0"
+    CaseSensitive: true
+  - Pos: 434
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 438
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\xC0"
+    CaseSensitive: true
+  - Pos: 461
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 466
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 470
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 474
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 478
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 494
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 505
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 510
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__SET_APP_TYPE\0\0\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0\0\0\0\0\0\0PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSVCRT.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CONTROLFP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETM"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: Tpa Albatros Language/translation
+URL: "https://www.tpaspa.com/albatros"
+FileNameExtensions: ["xmlng"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<tpalanguage>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LANGUAGE LONGNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE MSGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPALANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISONAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDICAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNC90"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUP"
+    CaseSensitive: false

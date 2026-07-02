@@ -1,0 +1,19 @@
+Name: KChess saved match
+URL: "http://www.arkangles.com/kchess/"
+FileNameExtensions: ["kch"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[KChess Game]\r\nWhiteTime: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BLACKTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHITETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDGAME"
+    CaseSensitive: false

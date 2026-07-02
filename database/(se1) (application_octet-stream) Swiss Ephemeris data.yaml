@@ -1,0 +1,17 @@
+Name: Swiss Ephemeris data
+URL: "https://github.com/astrorigin/pyswisseph/blob/master/docs/ephemerides/planetary_and_lunar/three_ephemerides/swiss_ephemeris.rst"
+FileNameExtensions: ["se1"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SWISSEPH  1\r\n"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\r\nCopyright Astrodienst "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT ASTRODIENST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SE1"
+    CaseSensitive: false

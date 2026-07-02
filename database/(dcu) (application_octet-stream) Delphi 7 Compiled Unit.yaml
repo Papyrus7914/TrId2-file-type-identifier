@@ -1,0 +1,16 @@
+Name: Delphi 7 Compiled Unit
+URL: "https://en.wikipedia.org/wiki/Delphi_(software)"
+FileNameExtensions: ["dcu"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xDF, 0x00, 0x00, 0x0F]
+  - Pos: any
+    AsciiString: "FINALIZATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSINIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false

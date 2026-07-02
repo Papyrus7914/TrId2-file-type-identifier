@@ -1,0 +1,38 @@
+Name: Modaris Macro
+URL: "https://en.wikipedia.org/wiki/Lectra"
+FileNameExtensions: ["mac"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xF5\xFFSEQUENCEFID\xF5\xFFDescription\xF5\xFFcommentaire\xFB\xFFtitre\xF6\xFFscreenview"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\xFFcommande_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TAB_DESCR_STEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMANDE_STEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTAIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAB_ACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM_"
+    CaseSensitive: false

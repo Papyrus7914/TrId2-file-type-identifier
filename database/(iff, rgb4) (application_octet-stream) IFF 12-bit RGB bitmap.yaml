@@ -1,0 +1,12 @@
+Name: IFF 12-bit RGB bitmap
+Description: Amiga format, used by Impulse's software.
+URL: "http://fileformats.archiveteam.org/wiki/ILBM"
+FileNameExtensions: ["iff", "rgb4"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LIST"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "RGB4"
+    CaseSensitive: true

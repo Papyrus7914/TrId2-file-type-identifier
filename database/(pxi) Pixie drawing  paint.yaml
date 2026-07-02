@@ -1,0 +1,12 @@
+Name: Pixie drawing / paint
+FileNameExtensions: ["pxi"]
+DetectionPatterns:
+  - Pos: 0
+    #        O     K
+    Bytes: [0x4F, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PREVIEW.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN.XMLPK"
+    CaseSensitive: false

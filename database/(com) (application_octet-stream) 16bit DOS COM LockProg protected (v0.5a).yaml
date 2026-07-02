@@ -1,0 +1,13 @@
+Name: 16bit DOS COM LockProg protected (v0.5a)
+Description: COM encrypter by Myrlochar^Kryst^TPD^PDL.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE8]
+  - Pos: 3
+    AsciiString: "P"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOPRO"
+    CaseSensitive: false

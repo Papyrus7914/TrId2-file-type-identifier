@@ -1,0 +1,8 @@
+Name: EPOC Installation package (rel. 2,3,5)
+URL: "http://www.pdaanaesthetic.com/install.asp"
+FileNameExtensions: ["sis"]
+MimeType: x-epoc/x-sisx-app
+DetectionPatterns:
+  - Pos: 4
+    #        m
+    Bytes: [0x6D, 0x00, 0x00, 0x10, 0x19, 0x04, 0x00, 0x10]

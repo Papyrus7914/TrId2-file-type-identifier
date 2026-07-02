@@ -1,0 +1,17 @@
+Name: TMT Pascal for DOS object code (v3.5)
+URL: "https://www.frameworkpascal.com/"
+FileNameExtensions: ["fpd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Y\x02\0\0TMTP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMTP"
+    CaseSensitive: false

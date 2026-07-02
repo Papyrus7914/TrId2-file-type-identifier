@@ -1,0 +1,11 @@
+Name: Tacview recording (UTF-8 BOM)
+URL: "https://www.tacview.net/documentation/acmi/en/"
+FileNameExtensions: ["acmi"]
+MimeType: text/acmi
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBFFileType=text/acmi/tacview"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILEVERSION"
+    CaseSensitive: false

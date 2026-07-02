@@ -1,0 +1,11 @@
+Name: Monu-Cad Drawing
+URL: "http://fileformats.archiveteam.org/wiki/Monu-CAD"
+FileNameExtensions: ["mcd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x1F\x8B\b\0\0\0\0\0\0\vMCD2"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "Created with MONU-CAD "
+    CaseSensitive: true

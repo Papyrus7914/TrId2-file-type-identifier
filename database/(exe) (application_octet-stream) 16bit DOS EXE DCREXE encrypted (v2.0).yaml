@@ -1,0 +1,32 @@
+Name: 16bit DOS EXE DCREXE encrypted (v2.0)
+Description: DOS Executable encryptor by LuCe.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x06\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\v"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\x80\0\0\0\x0F\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1C\0\0\0DCREXE v2.0 - (C) LuCe '97 - E-MAIL:LuCe_tHb@Hotmail.com\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DCREXE V2.0 - (C) LUCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "97 - E-MAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOTMAIL.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LUCE_THB"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: Expert Chess for Windows saved game (v1.x)
+FileNameExtensions: ["gam"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 8
+    AsciiString: "CMove\n\x01\0\x1A"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CMOVE"
+    CaseSensitive: false

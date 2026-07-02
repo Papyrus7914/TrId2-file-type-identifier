@@ -1,0 +1,17 @@
+Name: Kaitai Struct language
+URL: "http://kaitai.io/"
+FileNameExtensions: ["ksy"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "meta:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

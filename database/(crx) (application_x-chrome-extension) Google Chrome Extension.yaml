@@ -1,0 +1,11 @@
+Name: Google Chrome Extension
+URL: "http://en.wikipedia.org/wiki/Google_Chrome"
+FileNameExtensions: ["crx"]
+MimeType: application/x-chrome-extension
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Cr24"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANIFEST.JSON"
+    CaseSensitive: false

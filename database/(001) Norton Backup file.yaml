@@ -1,0 +1,10 @@
+Name: Norton Backup file
+Description: Backup files created by an old DOS backup tool. 1 file for each disk, with progressive file extension.
+FileNameExtensions: ["001"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0NORTON Ver "
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\r\n"
+    CaseSensitive: true

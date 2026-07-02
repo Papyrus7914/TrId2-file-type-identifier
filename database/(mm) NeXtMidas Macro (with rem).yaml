@@ -1,0 +1,13 @@
+Name: NeXtMidas Macro (with rem)
+URL: "http://nextmidas.techma.com/"
+FileNameExtensions: ["mm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STARTMACRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDMACRO"
+    CaseSensitive: false

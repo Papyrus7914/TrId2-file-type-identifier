@@ -1,0 +1,26 @@
+Name: MuJoCo model
+URL: "https://mujoco.org/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORLDBODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUJOCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

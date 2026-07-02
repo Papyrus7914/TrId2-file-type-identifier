@@ -1,0 +1,14 @@
+Name: 1DM Backup
+URL: "https://www.apkmirror.com/apk/vicky-bonick/idm-download-video-movie-music-anime-torrent/"
+FileNameExtensions: ["1dmbak"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 33
+    AsciiString: "_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KEY_BOOKMARKS.JSONPK"
+    CaseSensitive: false

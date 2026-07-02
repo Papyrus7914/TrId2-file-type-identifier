@@ -1,0 +1,44 @@
+Name: Ultimaker format package
+URL: "https://en.wikipedia.org/wiki/Ultimaker"
+FileNameExtensions: ["ufp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".XML.FDM_MATERIALPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL.GCODE.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL.GCODEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERIC_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false

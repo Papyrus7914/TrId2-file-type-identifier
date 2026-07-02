@@ -1,0 +1,47 @@
+Name: Holtek HT-IDE3000 Project Workspace
+URL: "https://www.holtek.com/"
+FileNameExtensions: ["pjw"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<HTIDE><WorkSpace><CWorkSpace m_uSchemaVersion=\"0\"><m_listOfChildState Count=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CWORKSPACE M_USCHEMAVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_LISTOFCHILDSTATE COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_WNDPLMAINFRAME FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCNORMALPOSITIONBOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCNORMALPOSITIONRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCNORMALPOSITIONLEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCNORMALPOSITIONTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTMAXPOSITIONX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTMAXPOSITIONY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTMINPOSITIONX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTMINPOSITIONY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWCMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false

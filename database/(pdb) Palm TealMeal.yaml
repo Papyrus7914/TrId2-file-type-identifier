@@ -1,0 +1,14 @@
+Name: Palm TealMeal
+Description: TealMeal is a restaurant information database program from TealPoint Software.
+URL: "http://www.tealpoint.com/softmeal.htm"
+FileNameExtensions: ["pdb"]
+DetectionPatterns:
+  - Pos: 56
+    AsciiString: "\0\0\0\0DataTlMl"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RESTAURANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATLML"
+    CaseSensitive: false

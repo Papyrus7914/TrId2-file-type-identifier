@@ -1,0 +1,287 @@
+Name: Microsoft PhoneBook (UTF-8)
+Description: Phone books provide a standard way to collect and specify the information that the Remote Access Connection Manager needs to establish a remote connection.
+FileNameExtensions: ["pbk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    #                          [
+    Bytes: [0xEF, 0xBB, 0xBF, 0x5B]
+  - Pos: any
+    AsciiString: "DISABLECLASSBASEDDEFAULTROUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEGOTIATEMULTILINKALWAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWMONITORICONINTASKBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLEIKENAMEEKUCHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCESECURECOMPARTMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRYNEXTALTERNATEONFAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDLEDISCONNECTSECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALDEVICESETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPV6PRIORITIZEREMOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFERREDCOMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFERREDMDMPROTOCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKIPDOUBLEDIALDIALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPHEADERCOMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPV6INTERFACEMETRIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDIALONLINKFAILURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWDIALINGPROGRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHENTICATESERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPPRIORITIZEREMOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEWPHONENUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAREDPHONENUMBERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDEDPROTOCOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPINTERFACEMETRIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTSELECTEDPHONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORKOUTAGETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFERREDPROTOCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREREQUISITEENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROMOTEALTERNATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERASCREDENTIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHRESTRICTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMRASDIALDLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPV6PREFIXLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFERREDSPEAKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAREMSFILEPRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINDMSNETCLIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLEMOBILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPV6DNS2ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPV6INTERFACEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFERREDDEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFERREDHWFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREREQUISITEPBK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEDIALINGRULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMDIALFUNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAENCRYPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPV6DNSADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPV6NAMEASSIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPWINS2ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDIALATTEMPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAN MINIPORT ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMAUTHKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMDIALDLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIALPARAMSUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPDNS2ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPWINSADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LCPEXTENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETCOMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFERREDPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEWDOMAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEWUSERPW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROVISIONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDIALSECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWCOMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCPWINDOWSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALLBACKMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRIENDLYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIGHDATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPDNSADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPNAMEASSIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERRIDEPREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFERREDBPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESHAREDKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTRYCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPDNSSUFFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPV6ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWDATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MS_MSCLIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPNSTRATEGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPDNSFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPNBTFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPSECFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPV6ASSIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOLOGON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTRYID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MS_SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PBVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AREACODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIALMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPASSIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASTAPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false

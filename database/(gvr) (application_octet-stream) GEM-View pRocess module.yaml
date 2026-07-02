@@ -1,0 +1,32 @@
+Name: GEM-View pRocess module
+URL: "http://www.fiebelkorn.net/"
+FileNameExtensions: ["gvr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0N\xF9\0\0\0\x90N\xF9\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "GVWR\x01\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NO IMAGE FOR PROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO DATA IN IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENOUGH MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DONE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGNA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GVWR"
+    CaseSensitive: false

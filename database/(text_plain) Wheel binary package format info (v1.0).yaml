@@ -1,0 +1,13 @@
+Name: Wheel binary package format info (v1.0)
+URL: "https://peps.python.org/pep-0427/"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Wheel-Version: 1.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROOT-IS-PURELIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATOR"
+    CaseSensitive: false

@@ -1,0 +1,121 @@
+Name: Microsoft Pascal 16-bit executable (generic)
+URL: "https://en.wikipedia.org/wiki/Microsoft_Pascal"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALLOCATOR INTERRUPTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCSIN OR ARCCOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIVIDE BY ZERO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATH OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NON-POSITIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS INVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO ROOM IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIN OR COS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEGATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSIGNED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQRT"
+    CaseSensitive: false

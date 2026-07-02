@@ -1,0 +1,195 @@
+Name: 32bit DOS Executable Watcom C + CauseWay
+URL: "https://github.com/amindlost/cw"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 11
+    #        \f
+    Bytes: [0x0C, 0xFF, 0xFF]
+  - Pos: 15
+    Bytes: [0x00, 0xF0]
+  - Pos: 18
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 127
+    Bytes: [0x8E]
+  - Pos: 175
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT 1992-96 MICHAEL DEVORE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UCAUSEWAY DOS EXTENDER V3."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FGHIJKLMNOPQRSTUVWXYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789ABCDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "32 RUN-TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "56789ABCDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM. (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNABLE TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WATCOM C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NG DETA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REATEPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XECMODU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAM ME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RE-SIZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UEXCEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1988-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIMET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWITC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_KERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ERR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CBU4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDMF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EBIU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FA8F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FQGF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IQUV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IUFR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MZUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOVM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PNMY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QRV3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RVWU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCTU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFRF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRU"
+    CaseSensitive: false

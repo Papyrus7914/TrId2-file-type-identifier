@@ -1,0 +1,28 @@
+Name: 16bit DOS EXE CRYPACK protected (v3.0)
+Description: DOS Executable protector by GEORGE STARK/YAKUZA.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 18
+    Bytes: [0x0F, 0x0F, 0x00, 0x00]
+  - Pos: 25
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNPACKER + LAMER PROTECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY GEORGE STARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRYPACK V3.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YAKUZA"
+    CaseSensitive: false

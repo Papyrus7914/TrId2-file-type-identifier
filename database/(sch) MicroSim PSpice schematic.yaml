@@ -1,0 +1,76 @@
+Name: MicroSim PSpice schematic
+Description: PSpice is a schematics editor and simulator.
+FileNameExtensions: ["sch"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*version "
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSLATORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGETITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLEBLK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGENO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSPICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKGREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONN"
+    CaseSensitive: false

@@ -1,0 +1,62 @@
+Name: eXtensible Business Reporting Language (UTF-8)
+URL: "https://en.wikipedia.org/wiki/XBRL"
+FileNameExtensions: ["xbrl"]
+MimeType: application/xml
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: any
+    AsciiString: "WWW.XBRL.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISO4217"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERIOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

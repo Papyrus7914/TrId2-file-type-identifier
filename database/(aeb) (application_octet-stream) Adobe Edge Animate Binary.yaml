@@ -1,0 +1,17 @@
+Name: Adobe Edge Animate Binary
+URL: "https://en.wikipedia.org/wiki/Adobe_Edge_Animate"
+FileNameExtensions: ["aeb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AEBX"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_NESTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: CollaNote Note
+URL: "https://www.collanote.com/"
+FileNameExtensions: ["cnote"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "0.cpage"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "0.CPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNOTE"
+    CaseSensitive: false

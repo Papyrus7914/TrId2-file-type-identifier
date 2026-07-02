@@ -1,0 +1,24 @@
+Name: athtune script
+Description: A scripting based music composition for win32.
+URL: "http://battleofthebits.org/lyceum/View/athtune/"
+FileNameExtensions: ["athtune"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "##synth\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INCLUDE HELPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM TICK()"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUNE"
+    CaseSensitive: false

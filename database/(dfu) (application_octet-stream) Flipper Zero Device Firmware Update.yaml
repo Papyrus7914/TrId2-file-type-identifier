@@ -1,0 +1,17 @@
+Name: Flipper Zero Device Firmware Update
+URL: "https://en.wikipedia.org/wiki/Flipper_Zero"
+FileNameExtensions: ["dfu"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DfuSe\x01"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "Target\0\x01\0\0\0Flipper Zero"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLIPPER ZERO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false

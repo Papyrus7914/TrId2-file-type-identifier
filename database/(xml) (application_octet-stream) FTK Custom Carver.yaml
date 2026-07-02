@@ -1,0 +1,53 @@
+Name: FTK Custom Carver
+URL: "https://en.wikipedia.org/wiki/Forensic_Toolkit"
+FileNameExtensions: ["xml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATACARVER VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMCARVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_BYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXT_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN_SIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIN_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXT_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

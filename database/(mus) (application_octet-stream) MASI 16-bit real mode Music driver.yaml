@@ -1,0 +1,21 @@
+Name: MASI 16-bit real mode Music driver
+FileNameExtensions: ["mus"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFEREAL16\xFEM"
+    CaseSensitive: true
+  - Pos: 20
+    Bytes: [0x1A]
+  - Pos: any
+    AsciiString: "16-BIT REAL MODE MASI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOSHUA C. JENSEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILED ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false

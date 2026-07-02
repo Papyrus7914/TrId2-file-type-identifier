@@ -1,0 +1,17 @@
+Name: LogicLab Explorer Circuit Description
+Description: Circuit board design tool for DOS by K.E. Ayers and Associates.
+FileNameExtensions: ["ckt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# V2 -- LogicLab Explorer Circuit Description\r\n\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRIGGER OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYZER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Krez 3D ultrasound image
+Description: A 3D medical image format.
+URL: "http://www.tomovision.com/products/tomovision.htm"
+FileNameExtensions: ["v00"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KRETZFILE "
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "."
+    CaseSensitive: true

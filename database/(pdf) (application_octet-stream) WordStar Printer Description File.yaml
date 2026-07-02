@@ -1,0 +1,14 @@
+Name: WordStar Printer Description File
+URL: "https://en.wikipedia.org/wiki/WordStar"
+FileNameExtensions: ["pdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WORDSTAR PDF "
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: "\r\nDRIVER"
+    CaseSensitive: true

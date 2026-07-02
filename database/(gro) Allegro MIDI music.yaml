@@ -1,0 +1,21 @@
+Name: Allegro MIDI music
+FileNameExtensions: ["gro"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#track 0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-TIMESIG_DENR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-TIMESIG_NUMR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-PROGRAMI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-TEMPOR"
+    CaseSensitive: false

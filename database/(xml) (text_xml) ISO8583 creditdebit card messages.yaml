@@ -1,0 +1,76 @@
+Name: ISO8583 credit/debit card messages
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORWARDINGINSTITUTIONIDENTIFICATIONCODE_033 X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACQUIRINGINSTITUTIONIDENTIFICATIONCODE_032 X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETRIEVALREFERENCENUMBER_037 X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMELOCALTRANSACTION_012 X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMOUNTTRANSACTION_004 X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTI_MESSAGEFUNCTION X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSINGCODE_003 X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTI_MESSAGEORIGIN X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTI_MESSAGECLASS X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTI_VERSION X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARYBITMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARDACCEPTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISO8583_19"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECIMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

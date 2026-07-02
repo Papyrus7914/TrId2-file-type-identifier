@@ -1,0 +1,12 @@
+Name: Pretty Good Privacy (PGP) Public Keyring (v3)
+URL: "https://tools.ietf.org/html/rfc4880#section-5.5.2"
+FileNameExtensions: ["gpg", "pgp"]
+MimeType: application/pgp-keys
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x99]
+  - Pos: 3
+    Bytes: [0x03]
+  - Pos: 8
+    AsciiString: "\0\0\x01"
+    CaseSensitive: true

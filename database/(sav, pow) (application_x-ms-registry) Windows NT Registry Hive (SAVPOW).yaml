@@ -1,0 +1,27 @@
+Name: Windows NT Registry Hive (SAV/POW)
+Description: A Hive file is the Windows Registry's on-disk storage format. Extensions for SAVed, POWer scheme
+URL: "http://fileformats.archiveteam.org/wiki/Windows_Registry"
+FileNameExtensions: ["sav", "pow"]
+MimeType: application/x-ms-registry
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "regf"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 4096
+    AsciiString: "hbin"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HBIN"
+    CaseSensitive: false

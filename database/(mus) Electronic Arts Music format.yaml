@@ -1,0 +1,9 @@
+Name: Electronic Arts Music format
+FileNameExtensions: ["mus"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "}\0\0"
+    CaseSensitive: true
+  - Pos: 109
+    AsciiString: "rsx"
+    CaseSensitive: true

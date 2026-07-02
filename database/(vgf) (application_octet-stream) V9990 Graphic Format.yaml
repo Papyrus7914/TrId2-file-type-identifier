@@ -1,0 +1,11 @@
+Name: V9990 Graphic Format
+Description: Basically a memory dump of a Yamaha V9990 Video Display Processor.
+FileNameExtensions: ["vgf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VGF:"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\r\n$"
+    CaseSensitive: true

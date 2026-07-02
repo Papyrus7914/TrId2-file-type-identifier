@@ -1,0 +1,22 @@
+Name: Zero-X BeatSlicer Groove
+FileNameExtensions: ["zgr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "3\0\0\0Zero-X Grid"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "Positions"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POSITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAV PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false

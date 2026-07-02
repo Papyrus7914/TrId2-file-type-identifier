@@ -1,0 +1,8 @@
+Name: RAR Recovery Volume
+URL: "http://fileformats.archiveteam.org/wiki/RAR"
+FileNameExtensions: ["rev"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Rar!\x1ARev"
+    CaseSensitive: true

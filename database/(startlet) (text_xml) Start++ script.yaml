@@ -1,0 +1,38 @@
+Name: Start++ script
+URL: "http://brandonlive.com/2007/02/22/new-tool-i-made-for-vista-start/"
+FileNameExtensions: ["startlet"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<Startlet Author=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STARTSHORTCUTCOLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTLET AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNELEVATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ASPX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

@@ -1,0 +1,18 @@
+Name: Stream SubText Script subtitles
+FileNameExtensions: ["ssts"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SST 2."
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBRIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLES"
+    CaseSensitive: false

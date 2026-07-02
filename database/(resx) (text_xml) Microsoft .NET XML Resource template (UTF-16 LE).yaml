@@ -1,0 +1,47 @@
+Name: Microsoft .NET XML Resource template (UTF-16 LE)
+URL: "https://learn.microsoft.com/en-us/dotnet/core/extensions/work-with-resx-files-programmatically"
+FileNameExtensions: ["resx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    #                    <
+    Bytes: [0xFF, 0xFE, 0x3C, 0x00]
+  - Pos: any
+    AsciiString: "S\0Y\0S\0T\0E\0M\0.\0R\0E\0S\0O\0U\0R\0C\0E\0S\0.\0R\0E\0S\0X\0R\0E\0S\0O\0U\0R\0C\0E\0R\0E\0A\0D\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0Y\0S\0T\0E\0M\0.\0R\0E\0S\0O\0U\0R\0C\0E\0S\0.\0R\0E\0S\0X\0R\0E\0S\0O\0U\0R\0C\0E\0W\0R\0I\0T\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0I\0C\0R\0O\0S\0O\0F\0T\0-\0R\0E\0S\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0U\0B\0L\0I\0C\0K\0E\0Y\0T\0O\0K\0E\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0S\0H\0E\0A\0D\0E\0R\0 \0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0S\0M\0I\0M\0E\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0U\0L\0T\0U\0R\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0E\0U\0T\0R\0A\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0A\0L\0U\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0E\0X\0T"
+    CaseSensitive: false

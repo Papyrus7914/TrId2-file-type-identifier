@@ -1,0 +1,191 @@
+Name: GameZ interpreter script
+URL: "https://www.pcgamingwiki.com/wiki/Engine:GameZ"
+FileNameExtensions: ["zbd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x19\x11\x97\b\a\0\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "upport\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORLDPARTITIONINCLUSIONTOLERANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETECHILD\0%AFTER_MORPH_NODE%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDCHILD\0%AFTER_MORPH_NODE%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEGENSETWORLD\0%WORLDNAME%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETPERSPECTIVETEXTUREDELTAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERASETWORLD\0%WORLDNAME%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERASETWINDOW\0%WINNAME%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETPERSPECTIVETEXTUREFARZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYCLETEXTURESETLOOPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLDADDLIGHT\0SUNLIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDCHILD\0%MORPH_NODE%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWDISPLAY\0%DISPNAME%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTEXTUREDIRECTORY\0%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYCLETEXTURESETSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWWORLD\0%WORLDNAME%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETINVERSEZTOLERANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWCAMERA\0%CAMNAME%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWWINDOW\0%WINNAME%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETINTERSECTSURFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYCLETEXTURESETMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEZREADZBDFILE\0%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETALTITUDESURFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYCLETEXTURESETON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYRESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEZWRITEZBDFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT3DSETSCROLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT3DTRANSLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETMODELDIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMSETZBDFILE\0%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWRESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLDSETFOGSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERASETACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADGAMEGEN\0%DB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT3DROTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOSETDITHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET\0WORLDNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLDORIGIN\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET\0DISPNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLDEXTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWOBJECT3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET\0CAMNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET\0WINNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDRSETPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEZ.ZBD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIM.ZBD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDNODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTNEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZRDR"
+    CaseSensitive: false

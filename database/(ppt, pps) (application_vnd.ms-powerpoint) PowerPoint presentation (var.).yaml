@@ -1,0 +1,16 @@
+Name: PowerPoint presentation (var.)
+URL: "https://en.wikipedia.org/wiki/Microsoft_PowerPoint"
+FileNameExtensions: ["ppt", "pps"]
+MimeType: application/vnd.ms-powerpoint
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1]
+  - Pos: any
+    AsciiString: "P\0O\0W\0E\0R\0P\0O\0I\0N\0T\0 \0D\0O\0C\0U\0M\0E\0N\0T\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false

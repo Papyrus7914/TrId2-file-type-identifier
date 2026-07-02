@@ -1,0 +1,66 @@
+Name: Buero Plus NexT FlashFiler database file
+URL: "http://www.microtech.de"
+FileNameExtensions: ["bpd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FFFH\xFF\xFF\xFF\xFF\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 76
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: 83
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 85
+    AsciiString: "\0\0\0\x01\0\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 98
+    AsciiString: "\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 1013
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 1021
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFIH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATADICT FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFFH"
+    CaseSensitive: false

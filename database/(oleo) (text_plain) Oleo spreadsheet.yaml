@@ -1,0 +1,15 @@
+Name: Oleo spreadsheet
+Description: Light free software spreadsheet.
+URL: "http://en.wikipedia.org/wiki/GNU_Oleo"
+FileNameExtensions: ["oleo"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# This file was "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATED BY GNU OLEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false

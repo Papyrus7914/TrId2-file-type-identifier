@@ -1,0 +1,13 @@
+Name: DUNE Shot
+Description: Developers Universal Non-programming Environment, for Amiga.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VER2SHOTSCNF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SXTR"
+    CaseSensitive: false

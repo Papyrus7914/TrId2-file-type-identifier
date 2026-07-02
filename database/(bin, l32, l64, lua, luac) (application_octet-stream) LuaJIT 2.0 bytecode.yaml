@@ -1,0 +1,8 @@
+Name: LuaJIT 2.0 bytecode
+URL: "https://luajit.org/"
+FileNameExtensions: ["bin", "l32", "l64", "lua", "luac"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              L     J
+    Bytes: [0x1B, 0x4C, 0x4A, 0x02]

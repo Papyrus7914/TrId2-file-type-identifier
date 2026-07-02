@@ -1,0 +1,17 @@
+Name: DosCapture video card Modes info
+Description: Part of Professional Capture Systems by JASC.
+FileNameExtensions: ["mod"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";The following line is the text description of the video card\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THE FOLLOWING TABLE IS INFORMATION THAT IS USED BY DOSCAPTURE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE    HRES    VRES   BPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: Amiga NewIcon
+URL: "http://fileformats.archiveteam.org/wiki/NewIcons"
+FileNameExtensions: ["info"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE3, 0x10]
+  - Pos: any
+    AsciiString: "T EDIT THE FOLLOWING LINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*** DON"
+    CaseSensitive: false

@@ -1,0 +1,32 @@
+Name: Autodesk Alias 2015 model
+URL: "https://en.wikipedia.org/wiki/Autodesk_Alias"
+FileNameExtensions: ["wire"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x8FStudioPacketFile\neliFtekcaPoidutS\n1\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RELEASE 2015"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUMMED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITTEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORD"
+    CaseSensitive: false

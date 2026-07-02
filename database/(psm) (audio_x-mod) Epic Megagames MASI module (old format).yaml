@@ -1,0 +1,11 @@
+Name: Epic Megagames MASI module (old format)
+Description: AKA ProTracker Studio Module.
+URL: "http://justsolve.archiveteam.org/wiki/Epic_Megagames_MASI"
+FileNameExtensions: ["psm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSM\xFE"
+    CaseSensitive: true
+  - Pos: 63
+    Bytes: [0x1A]

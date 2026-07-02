@@ -1,0 +1,8 @@
+Name: Health Level-7 data (pipe delimited)
+Description: application/x-hl7
+URL: "http://en.wikipedia.org/wiki/Health_Level_7"
+FileNameExtensions: ["hl7"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSH|^~\\&|"
+    CaseSensitive: true

@@ -1,0 +1,17 @@
+Name: BioForge IFF objects
+URL: "https://en.wikipedia.org/wiki/BioForge"
+FileNameExtensions: ["iff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "OBJSVERS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CAMR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false

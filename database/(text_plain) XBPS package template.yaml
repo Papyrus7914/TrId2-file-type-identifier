@@ -1,0 +1,35 @@
+Name: XBPS package template
+Description: "Filename: template"
+URL: "https://en.wikipedia.org/wiki/Void_Linux"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Template "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAINTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORT_DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOMEPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKGNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

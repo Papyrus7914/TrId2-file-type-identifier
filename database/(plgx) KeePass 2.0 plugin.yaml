@@ -1,0 +1,24 @@
+Name: KeePass 2.0 plugin
+URL: "https://keepass.info/help/v2/plugins.html"
+FileNameExtensions: ["plgx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x19\a\xD9e\x03\x05\xDD=\0\0\x01\0\x01\0\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 34
+    Bytes: [0x02, 0x00]
+  - Pos: 37
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASSEMBLYINFO.CS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEEPASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CSPROJ"
+    CaseSensitive: false

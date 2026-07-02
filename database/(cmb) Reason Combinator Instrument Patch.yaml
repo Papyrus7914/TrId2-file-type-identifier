@@ -1,0 +1,22 @@
+Name: Reason Combinator Instrument Patch
+URL: "http://www.propellerheads.se/"
+FileNameExtensions: ["cmb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "PTCHCAT"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "REFS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INIT PATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVLFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARM"
+    CaseSensitive: false

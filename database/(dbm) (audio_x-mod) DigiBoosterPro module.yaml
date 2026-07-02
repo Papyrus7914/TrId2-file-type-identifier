@@ -1,0 +1,23 @@
+Name: DigiBoosterPro module
+URL: "http://www.digibooster.de/"
+FileNameExtensions: ["dbm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DBM0\x02"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "NAME"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "INFO"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONG"
+    CaseSensitive: false

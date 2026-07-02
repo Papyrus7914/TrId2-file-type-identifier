@@ -1,0 +1,23 @@
+Name: FortiClient Configuration
+URL: "https://en.wikipedia.org/wiki/Fortinet"
+FileNameExtensions: ["conf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORTICLIENT_CONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPSECVPN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSLVPN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

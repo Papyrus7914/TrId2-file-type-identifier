@@ -1,0 +1,35 @@
+Name: XaoS Position File
+Description: XaoS is a fast interactive real-time fractal zoomer and morpher.
+URL: "http://xaos.sourceforge.net/"
+FileNameExtensions: ["xpf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";Pos"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REALTIME INTERACTIVE FRACTAL ZOOMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE XAOS -LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO DISPLAY IT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOMATICALLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(INITSTATE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(FORMULA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(VIEW"
+    CaseSensitive: false

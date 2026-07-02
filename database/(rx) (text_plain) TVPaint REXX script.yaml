@@ -1,0 +1,14 @@
+Name: TVPaint REXX script
+URL: "https://en.wikipedia.org/wiki/TVPaint_Animation"
+FileNameExtensions: ["rx"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REXX_TVPAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Zyzzyva Search
+URL: "http://www.scrabbleplayers.org/w/NASPA_Zyzzyva:_The_Last_Word_in_Word_Study"
+FileNameExtensions: ["zzs"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE ZYZZYVA-SEARCH SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZYZZYVA-SEARCH.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOSHVARK.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONDITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

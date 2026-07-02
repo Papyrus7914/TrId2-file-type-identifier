@@ -1,0 +1,20 @@
+Name: Ghost Recon Engine model
+URL: "https://www.mobygames.com/game/5557/tom-clancys-ghost-recon/"
+FileNameExtensions: ["qob"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\v\0\0\0BeginModel\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GEOMETRYLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

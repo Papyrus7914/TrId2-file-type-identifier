@@ -1,0 +1,71 @@
+Name: Alice 2 World
+URL: "http://www.alice.org/"
+FileNameExtensions: ["a2w"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 23
+    AsciiString: "\0\0\0\x14\0\0\0elementCountHint.txt"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ELEMENTCOUNTHINT.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTDATA.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTDATA.XMLM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICES.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDICES.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDICES.BIN%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERTARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__UNNAMED0__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__UNNAMED1__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT.PYPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1\0\0 \0IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MY FIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ITA__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THOD"
+    CaseSensitive: false

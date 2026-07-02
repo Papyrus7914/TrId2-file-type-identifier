@@ -1,0 +1,20 @@
+Name: MilkShape 3D model (ASCII)
+URL: "http://fileformats.archiveteam.org/wiki/MilkShape_ASCII"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "// MilkShape 3D ASCII"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MATERIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BONES"
+    CaseSensitive: false

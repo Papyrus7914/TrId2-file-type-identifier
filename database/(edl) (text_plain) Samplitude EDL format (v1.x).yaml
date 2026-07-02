@@ -1,0 +1,25 @@
+Name: Samplitude EDL format (v1.x)
+FileNameExtensions: ["edl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Samplitude EDL File Format Version 1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOURCE TABLE ENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT CHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAN CURVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

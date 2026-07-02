@@ -1,0 +1,62 @@
+Name: Private Wars Material script
+Description: Russian game by TS Group Entertainment.
+FileNameExtensions: ["mat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";\r\n; Materials library script.\r\n; Automatically updated by 3ds2sco at "
+    CaseSensitive: true
+  - Pos: 94
+    AsciiString: "\r\n;\r\nSIGNATURE = R3D_MATLIB\r\nVERSION   = 1\r\nONE_CLASS_OBJECTS = TRUE\r\nTOTAL_OBJECTS = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUTOMATICALLY UPDATED BY 3DS2SCO AT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALS LIBRARY SCRIPT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONE_CLASS_OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALBEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL_OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R3D_MATLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECULAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMBIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR24"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

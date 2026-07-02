@@ -1,0 +1,41 @@
+Name: "Star Trek: Elite Force II save game (game state/vars)"
+URL: "https://www.mobygames.com/game/10170/star-trek-elite-force-ii/"
+FileNameExtensions: ["spv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EF2\0\x02\0\0\0\x15\0\0\0EF2 Archive Version 2"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "ScriptVariableList\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PLAYERITEM_UNKNOWN ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERITEM_TRICORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTVARIABLELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTERPRISEALT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDRYLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUNRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false

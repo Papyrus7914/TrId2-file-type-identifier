@@ -1,0 +1,10 @@
+Name: Framework II document
+URL: "https://en.wikipedia.org/wiki/Framework_(office_suite)"
+FileNameExtensions: ["fw2"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x03, 0x00]
+  - Pos: 5
+    AsciiString: "\0\xED\xFB\0\0\0\0"
+    CaseSensitive: true

@@ -1,0 +1,29 @@
+Name: Animated Portable Network Graphics
+URL: "http://fileformats.archiveteam.org/wiki/APNG"
+FileNameExtensions: ["apng", "png"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89PNG\r\n\x1A\n\0\0\0\rIHDR"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0\0\0\bacTL\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FCTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false

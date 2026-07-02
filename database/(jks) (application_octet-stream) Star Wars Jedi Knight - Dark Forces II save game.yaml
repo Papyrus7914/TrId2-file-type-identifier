@@ -1,0 +1,23 @@
+Name: "Star Wars: Jedi Knight - Dark Forces II save game"
+URL: "https://www.mobygames.com/game/372/star-wars-jedi-knight-dark-forces-ii/"
+FileNameExtensions: ["jks"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x06\0\0\0JK1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KY.3DO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KY.SND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SABER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JKL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MAT"
+    CaseSensitive: false

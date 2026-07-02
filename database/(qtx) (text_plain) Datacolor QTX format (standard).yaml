@@ -1,0 +1,29 @@
+Name: Datacolor QTX format (standard)
+URL: "http://knowledgebase.datacolor.com/article-609.html"
+FileNameExtensions: ["qtx"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[STANDARD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_REFLINTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_REFLPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STD_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_REFLLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_VIEWING"
+    CaseSensitive: false

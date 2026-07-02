@@ -1,0 +1,13 @@
+Name: XACT Global Settings
+URL: "http://en.wikipedia.org/wiki/Cross-platform_Audio_Creation_Tool"
+FileNameExtensions: ["xgs"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XGSF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMCUEINSTANCES\0ATTACKTIME\0RELEASETIME\0ORIENTATIONANGLE\0DOPPLERPITCHSCALAR\0SPEEDOFSOUND\0DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL\0DEFAULT\0MUSIC"
+    CaseSensitive: false

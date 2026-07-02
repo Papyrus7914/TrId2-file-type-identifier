@@ -1,0 +1,294 @@
+Name: Win32 EXE Euphoria (Watcom compiled)
+Description: Euphoria  is a simple, flexible, and easy-to-learn programming language.
+URL: "http://www.rapideuphoria.com"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x80\0\x01\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!this is a Windows NT windowed executable\r\n$\0\0\0\0\0\0\0PE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 140
+    AsciiString: "\0\0\0\0\0\0\0\0\xE0\0"
+    CaseSensitive: true
+  - Pos: 151
+    #              \v
+    Bytes: [0x81, 0x0B, 0x01, 0x02, 0x12, 0x00]
+  - Pos: 294
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0BEGTEXT\0\0"
+    CaseSensitive: true
+  - Pos: 394
+    AsciiString: "\x01\0\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0 \0\0`DGROUP\0\0\0"
+    CaseSensitive: true
+  - Pos: 438
+    AsciiString: "\x01\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\xC0.bss\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 474
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\xC0.idata\0\0\0"
+    CaseSensitive: true
+  - Pos: 518
+    AsciiString: "\x02\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\xC0.reloc\0\0\0"
+    CaseSensitive: true
+  - Pos: 558
+    AsciiString: "\x02\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0B"
+    CaseSensitive: true
+  - Pos: 616
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xCC\xEB\xFD\x90\x90\x90\x90\0\0\0\0\0\0\0\0\0SQRVW"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$\0\0\0\0\0\0\0PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%D ARGUMENT%S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%LD)\0\0\0\0FILE NUMBER MUST BE AN ATOM\0BAD FILE NUMBER (%LD)\0\0\0FILE NUMBER %D IS NOT OPEN\0\0WRONG FILE MODE FOR ATTEMPTED OPERATION\0OPEN MODE MUST BE A SEQUENCE\0\0\0\0DEVICE OR FILE NAME MUST BE A SEQUENCE\0\0FILE NAME FOR OPEN() IS TOO LONG\0\0\0\0INVALID OPEN MODE\0\0\0R\0\0\0RB\0\0W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%LD)\0\0\0SLICE ENDS PAST END OF SEQUENCE (%LD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%LD)\0\0SECOND ARGUMENT OF FIND() MUST BE A SEQUENCE\0\0\0\0FIRST ARGUMENT OF MATCH() MUST BE A SEQUENCE\0\0\0\0SECOND ARGUMENT OF MATCH() MUST BE A SEQUENCE\0\0\0FIRST ARGUMENT OF MATCH() MUST BE A NON-EMPTY SEQUENCE\0\0ATTEMPT TO SLICE AN ATOM\0\0\0\0SLICE LOWER INDEX IS LESS THAN 1 (%LD)\0\0SLICE UPPER INDEX IS LESS THAN 0 (%LD)\0\0SLICE LENGTH IS LESS THAN 0 (%LD)\0\0\0SLICE STARTS PAST END OF SEQUENCE (%LD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%LD)\0SLICE LOWER INDEX IS NOT AN ATOM\0\0\0\0SLICE UPPER INDEX IS NOT AN ATOM\0\0\0\0SLICE LOWER INDEX IS NOT AN ATOM\0\0\0\0SLICE UPPER INDEX IS NOT AN ATOM\0\0\0\0LENGTHS DO NOT MATCH ON ASSIGNMENT TO SLICE (%LD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(ASSIGNING TO IT)\0\0SUBSCRIPT MUST BE AN ATOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(ASSIGNING TO SUBSCRIPT OF A SEQUENCE)\0\0\0\0SUBSCRIPT VALUE %"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(READING AN ELEMENT OF A SEQUENCE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(READING FROM IT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(SKIPPING %D LEVELS)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT DEFINED AT THIS POINT\0PROCEDURE\0\0\0FUNCTION\0\0\0\0TYPE\0\0\0\0%S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ". IF YOU PURCHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "... CALLED FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "...) NOT SUPPORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABNORMAL TERMINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOCCONSOLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANY SIZE OF PROGRAM. SEE REGISTER.DOC OR VISIT HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGUMENT LIST MUST BE A SEQUENCE\0%S DOES NOT RETURN A VALUE\0\0%S RETURNS A VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGUMENT TO ABORT() MUST BE AN ATOM\0ATTEMPT TO SUBSCRIPT AN ATOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGUMENT TO TRACE() MUST BE AN ATOM\0ARGUMENT TO TRACE() MUST BE 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGUMENTS TO C ROUTINES MUST BE ATOMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BADLY-FORMED LIST OF PARAMETERS - EXPECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILT-IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C++32 RUN-TIME SYSTEM. (C) COPYRIGHT BY WATCOM INTERNATIONAL CORP. 1988-1995. ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL_BACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL_FUNC\0INVALID ROUTINE ID\0\0%S() DOES NOT RETURN A VALUE\0\0\0\0THE VALUE RETURNED BY %S() MUST BE ASSIGNED OR USED\0ARGUMENT LIST MUST BE A SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEAR_SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLICK ON OK TO TERMINATE THE APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND_LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMSPEC\0CMD.EXE\0COMMAND.COM\0CMD\0COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CON\0READ FROM\0WRITTEN\0THE INSTRUCTION AT %08LX REFERENCED MEMORY AT %08LX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONIN$\0CONOUT$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) RAPID DEPLOYMENT SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_FUNC\0\0\0C_PROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOMAIN ERROR\0ARGUMENT SINGULARITY\0OVERFLOW RANGE ERROR\0UNDERFLOW RANGE ERROR\0TOTAL LOSS OF SIGNIFICANCE\0PARTIAL LOSS OF SIGNIFICANCE\0 IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EST\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0EDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EUDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EUPHORIA\0\0\0EX.ERR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXW.EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE CONDITION MUST BE AN ATOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST ARGUMENT TO POKE4 MUST BE AN ATOM\0POKE4 IS LIMITED TO 32-BIT NUMBERS\0\0POKE4 IS LIMITED TO 32-BIT NUMBERS\0\0SEQUENCE TO BE POKED MUST ONLY CONTAIN ATOMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOATING-POINT SUPPORT NOT LOADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOR 32-BIT WINDOWS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREECONSOLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEX NUMBER NOT FORMED CORRECTLY\0TAB CHARACTER FOUND IN STRING - USE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDES ARE NESTED TOO DEEPLY\0\0PROGRAM INCLUDES TOO MANY FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH OF AN ATOM IS NOT DEFINED\0\0\0\0ARGUMENT TO RAND() MUST BE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE_PROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEEDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT %S\0\0\0\0MAY NOT ASSIGN TO A FOR-LOOP VARIABLE\0\0\0MAY NOT CHANGE THE VALUE OF A CONSTANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT %S\0\0%S HAS NOT BEEN DECLARED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT ENOUGH MEMORY TO ALLOCATE FILE STRUCTURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OF EUPHORIA CANNOT PROVIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONE MOMENT PLEASE...\0\0\0\0THE COMPILER HAS RUN OUT OF MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLY ONE DECIMAL POINT ALLOWED\0\0FRACTIONAL PART OF NUMBER IS MISSING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDISTRIBUTE THIS PUBLIC DOMAIN EDITION OF EUPHORIA."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCE HAS WRONG LENGTH\0\0\0IN MACHINE_FUNC AN ATOM WAS EXPECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTAX ERROR - EXPECTED TO SEE AN EXPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTAX ERROR - EXPECTED TO SEE POSSIBLY %S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE COMPLETE EDITION OF EUPHORIA YOU WILL GET FULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE END OF FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE MEMORY COULD NOT BE %S\0AN PRIVILEGED INSTRUCTION WAS EXECUTED AT ADDRESS %08LX\0AN ILLEGAL INSTRUCTION WAS EXECUTED AT ADDRESS %08LX\0AN INTEGER DIVIDE BY ZERO WAS ENCOUNTERED AT ADDRESS %08LX\0A STACK OVERFLOW WAS ENCOUNTERED AT ADDRESS %08LX\0THE PROGRAM ENCOUNTERED A PROBLEM AT ADDRESS %08LX AND CANNOT CONTINUE\0USER32.DLL\0MESSAGEBOXEXA\0APPLICATION ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS IS A WINDOWS NT WINDOWED EXECUTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE  ENTER  DOWN-ARROW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACED LINES LEADING UP TO THE FAILURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPES MUST HAVE EXACTLY ONE PARAMETER\0\0\0NO VALUE RETURNED FROM FUNCTION\0TYPE MUST RETURN TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE_CHECK FAILURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN ESCAPE CHARACTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN WITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WATCOM C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOUR PROGRAM EXCEEDS %D STATEMENTS IN SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOUR PROGRAM HAS RUN OUT OF MEMORY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TOPLEVEL_"
+    CaseSensitive: false

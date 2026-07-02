@@ -1,0 +1,14 @@
+Name: ORTIM Zeit data
+Description: Processing, Evaluation and Management of Time Studies.
+URL: "http://www.ortim.de"
+FileNameExtensions: ["ob3"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ORTIM PRO ZStud "
+    CaseSensitive: true
+  - Pos: 18
+    #              \f
+    Bytes: [0x01, 0x0C, 0x01]
+  - Pos: any
+    AsciiString: "ORTIM PRO ZSTUD"
+    CaseSensitive: false

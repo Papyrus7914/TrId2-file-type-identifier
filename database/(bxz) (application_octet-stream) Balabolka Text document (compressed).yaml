@@ -1,0 +1,17 @@
+Name: Balabolka Text document (compressed)
+URL: "http://www.cross-plus-a.com/balabolka.htm"
+FileNameExtensions: ["bxz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "content.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEK"
+    CaseSensitive: false

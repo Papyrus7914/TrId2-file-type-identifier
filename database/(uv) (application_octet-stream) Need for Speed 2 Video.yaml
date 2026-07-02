@@ -1,0 +1,14 @@
+Name: Need for Speed 2 Video
+URL: "https://wiki.multimedia.cx/index.php/Electronic_Arts_TGQ"
+FileNameExtensions: ["uv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SCHl(\0\0\0PT\0\0\0\x01\x02\x06\x01e\xFD\x85\x03"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "pQGT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PQGT"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: Automatic Mouse and Keyboard script
+URL: "https://www.robot-soft.com/automatic-mouse-keyboard.html"
+FileNameExtensions: ["amk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SMA\0D\0\0\0Automatic Mouse and Keyboard Script File, http://www.robot-soft.com\0REV"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUTOMATIC MOUSE AND KEYBOARD SCRIPT FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.ROBOT-SOFT.COM\0REV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

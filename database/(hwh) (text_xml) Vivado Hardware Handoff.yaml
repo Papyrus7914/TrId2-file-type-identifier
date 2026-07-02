@@ -1,0 +1,605 @@
+Name: Vivado Hardware Handoff
+URL: "https://en.wikipedia.org/wiki/Vivado"
+FileNameExtensions: ["hwh"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<EDKSYSTEM EDWVERSION=\"1.2\" TIMESTAMP=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUM_WRITE_OUTSTANDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORTS_NARROW_BURST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUSINTERFACE BUSNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDKSYSTEM EDWVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_READ_OUTSTANDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTION INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTERNALINTERFACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT CLKFREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX_BURST_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BOARD_INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTMAP LOGICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ_WRITE_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMINFO ARCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENT_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.XILINX.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUSINTERFACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTERNALPORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIVADOVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARUSER_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AWUSER_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUSER_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERIPHERALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERIPHERAL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDR_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLK_DOMAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDK_IPTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS_REGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEEDGRADE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PIPELINE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PROTOCOL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS_BRESP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS_BURST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS_CACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS_RRESP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS_WSTRB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HWVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORYMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE CO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_BOARD_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS_LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS_PROT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ID_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYSICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT DIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTMAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T_BOARD_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ARBURST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ARCACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ARREADY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ARVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AWBURST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AWCACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AWREADY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AWVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ENABLE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_S_AXI_A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WRITE_T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGI-BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQ_HZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS_QOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_RESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERNAL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ARADDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ARLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ARPROT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ARSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ARUSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AUX_RE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AWADDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AWLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AWPROT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AWSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AWUSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BREADY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DEBUG_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_M_AXI_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RESET_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RREADY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SECURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_THREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WREADY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__NOC__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_NUM_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESETN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ADDR_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ARLEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ARQOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AWLEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AWQOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BUS_R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FIFO_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RLAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TRANS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WLAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-PROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AL_RE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXIMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLK_I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_TRA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_USE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPDOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_INT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROC_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ACLK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ARID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AWID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BYTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CLK_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_HAS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_HIGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MAX_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-SYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ART0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXI4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_CL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_EN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_RE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_DE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_LE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_PI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ING_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_LO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_SI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N_RE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ODE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SE_B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T_RE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VLNV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_EXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_IMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_VAL"
+    CaseSensitive: false

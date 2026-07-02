@@ -1,0 +1,17 @@
+Name: Abuse Level cached data
+URL: "https://en.wikipedia.org/wiki/Abuse_(video_game)"
+FileNameExtensions: ["cpf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SPEC1.0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\x13cache profile info"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CACHE PROFILE INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LCACHE00.TMP"
+    CaseSensitive: false

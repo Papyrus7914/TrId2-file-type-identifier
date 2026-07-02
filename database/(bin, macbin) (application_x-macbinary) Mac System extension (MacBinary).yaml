@@ -1,0 +1,15 @@
+Name: Mac System extension (MacBinary)
+Description: MacBinary is a standard for encoding Macintosh files for file transfer.
+URL: "https://en.wikipedia.org/wiki/Classic_Mac_OS"
+FileNameExtensions: ["bin", "macbin"]
+MimeType: application/x-macbinary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "INIT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INIT"
+    CaseSensitive: false

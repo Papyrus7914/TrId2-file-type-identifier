@@ -1,0 +1,19 @@
+Name: Desktop Sidebar skin
+URL: "http://www.desktopsidebar.com"
+FileNameExtensions: ["dspackage"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "BACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACKACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACKINA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XMLPK"
+    CaseSensitive: false

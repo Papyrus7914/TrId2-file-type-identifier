@@ -1,0 +1,43 @@
+Name: Newzbin Usenet Index
+URL: "http://www.newzbin.com/"
+FileNameExtensions: ["nzb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "1.0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: " encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALT.BINARIES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

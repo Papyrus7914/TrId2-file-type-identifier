@@ -1,0 +1,14 @@
+Name: Assassins Creed Unity save game
+URL: "https://en.wikipedia.org/wiki/Assassin%27s_Creed"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x04\x02\0\0\0\0\0\0AC4BF["
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "]-tm_"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "_"
+    CaseSensitive: true

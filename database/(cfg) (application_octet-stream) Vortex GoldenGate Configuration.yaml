@@ -1,0 +1,23 @@
+Name: Vortex GoldenGate Configuration
+URL: "https://amiga.resource.cx/exp/goldengate"
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Nu"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 464
+    AsciiString: "vector.device\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0xt.device\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0scsi.device"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VECTOR.DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCSI.DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XT.DEVICE"
+    CaseSensitive: false

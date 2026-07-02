@@ -1,0 +1,13 @@
+Name: Modern ListGeo Output
+URL: "http://www.remotesensing.org/geotiff/geotiff.html"
+FileNameExtensions: ["lgo"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Geotiff_Information:\n   Version: 1\n   Key_Revision: "
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "\n   Tagged_Information:\n      ModelT"
+    CaseSensitive: true

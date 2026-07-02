@@ -1,0 +1,19 @@
+Name: Lucasfilm Games MIDI music
+FileNameExtensions: ["gmd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MIDI\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "MDpg"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MDPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTRK"
+    CaseSensitive: false

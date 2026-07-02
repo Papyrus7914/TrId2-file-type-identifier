@@ -1,0 +1,13 @@
+Name: GoldMine report
+URL: "https://www.goldmine.com/"
+FileNameExtensions: ["fp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xBA, 0xDE, 0x00, 0x00]
+  - Pos: 5
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".DRV"
+    CaseSensitive: false

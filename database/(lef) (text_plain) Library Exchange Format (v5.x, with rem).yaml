@@ -1,0 +1,32 @@
+Name: Library Exchange Format (v5.x, with rem)
+URL: "https://en.wikipedia.org/wiki/Library_Exchange_Format"
+FileNameExtensions: ["lef"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BUSBITCHARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION 5."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER MET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

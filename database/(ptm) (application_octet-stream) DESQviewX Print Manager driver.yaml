@@ -1,0 +1,16 @@
+Name: DESQview/X Print Manager driver
+URL: "https://en.wikipedia.org/wiki/DESQview#DESQview/X"
+FileNameExtensions: ["ptm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEB]
+  - Pos: 2
+    AsciiString: "NETPTM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NETPTM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DVR"
+    CaseSensitive: false

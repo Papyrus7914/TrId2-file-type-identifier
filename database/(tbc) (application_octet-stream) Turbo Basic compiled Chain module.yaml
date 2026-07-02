@@ -1,0 +1,11 @@
+Name: Turbo Basic compiled Chain module
+URL: "https://en.wikipedia.org/wiki/PowerBASIC#Turbo_Basic"
+FileNameExtensions: ["tbc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "rz\x01\0"
+    CaseSensitive: true
+  - Pos: 15
+    #              @
+    Bytes: [0x00, 0x40, 0x04, 0xFF, 0xFF]

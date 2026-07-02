@@ -1,0 +1,14 @@
+Name: Tencent QQ NT DataBase (encrypted SQLite)
+URL: "https://en.wikipedia.org/wiki/Tencent_QQ"
+FileNameExtensions: ["db"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite header 3\0\x04\0\x10\0\0\0\0\0\0\0\0\0\0\0\0\0QQ_NT DB"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SQLITE HEADER 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QQ_NT DB"
+    CaseSensitive: false

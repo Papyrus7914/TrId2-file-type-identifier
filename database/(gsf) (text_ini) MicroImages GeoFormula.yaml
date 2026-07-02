@@ -1,0 +1,29 @@
+Name: MicroImages GeoFormula
+URL: "http://www.microimages.com"
+FileNameExtensions: ["gsf"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n\r\n\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBJECT0_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT0_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENTSMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOFORMULA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMOBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMVALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false

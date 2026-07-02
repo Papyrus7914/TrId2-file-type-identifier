@@ -1,0 +1,38 @@
+Name: Blzzard Manifest
+Description: (used for downloading patches / updates)
+URL: "http://en.wikipedia.org/wiki/Blizzard_Entertainment"
+FileNameExtensions: ["mfil"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "version="
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\r\nserver="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANIFEST_PARTIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DIRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MFIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-POD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

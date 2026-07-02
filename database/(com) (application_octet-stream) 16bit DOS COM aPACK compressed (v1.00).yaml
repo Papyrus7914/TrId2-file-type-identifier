@@ -1,0 +1,9 @@
+Name: 16bit DOS COM aPACK compressed (v1.00)
+Description: aPACK is a compressor for 16-bit DOS executables.
+URL: "http://ibsensoftware.com/products_aPACK.html"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \r                                              W                                         W
+    Bytes: [0xBE, 0x0D, 0x01, 0xBF, 0x00, 0x7F, 0x8B, 0xCF, 0xFC, 0x57, 0xF3, 0xA4, 0xC3, 0xBF, 0x00, 0x01, 0x57]

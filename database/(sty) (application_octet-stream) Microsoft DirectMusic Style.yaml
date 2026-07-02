@@ -1,0 +1,44 @@
+Name: Microsoft DirectMusic Style
+URL: "http://msdn.microsoft.com/library/en-us/directx9_c/directx/htm/styles.asp"
+FileNameExtensions: ["sty"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "DMSTstyh"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "@guid"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "LIST"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "UNFO"
+    CaseSensitive: true
+  - Pos: 69
+    AsciiString: "NAM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LBILLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LBINBINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTTNPTNH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMBD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RHTM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

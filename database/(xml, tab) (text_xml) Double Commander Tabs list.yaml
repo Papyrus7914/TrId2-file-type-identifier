@@ -1,0 +1,41 @@
+Name: Double Commander Tabs list
+URL: "https://doublecmd.sourceforge.io/"
+FileNameExtensions: ["xml", "tab"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILESOURCE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEVIEW TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENEDTABS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVETAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOUBLECMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false

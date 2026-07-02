@@ -1,0 +1,23 @@
+Name: VTK XML format (generic)
+URL: "https://vtk.org/Wiki/VTK_XML_Formats"
+FileNameExtensions: ["vtk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTKFILE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Binary TerraGear - FlightGear scenary data
+Description: The FlightGear flight simulator project is an open-source, multi-platform, cooperative flight simulator development project.
+URL: "http://www.flightgear.org"
+FileNameExtensions: ["btg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x06\0GS"
+    CaseSensitive: true
+  - Pos: 6
+    #              @
+    Bytes: [0xC0, 0x40]
+  - Pos: 9
+    AsciiString: "\0\0\0\0\x01\0\x1C\0\0\0"
+    CaseSensitive: true

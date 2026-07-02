@@ -1,0 +1,42 @@
+Name: E-Mail message (Var. 14)
+Description: Generated my Mozilla Thunderbird.
+URL: "http://fileformats.archiveteam.org/wiki/Internet_e-mail_message_format"
+FileNameExtensions: ["eml"]
+MimeType: message/rfc822
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "X-Mozilla-Status"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT-DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-DISPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-MOZILLA-STATUS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-ENC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: Intuit QuickBooks Backup
+URL: "http://quickbooks.intuit.com/"
+FileNameExtensions: ["qbb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "E\x86\0\0\x06\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0\x01\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "E\x86\x01\0\n\0\x01\0"
+    CaseSensitive: true

@@ -1,0 +1,23 @@
+Name: Buzzic 1.x module
+URL: "http://fileformats.archiveteam.org/wiki/Buzzic_v1.x"
+FileNameExtensions: ["buz"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 9
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xFF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUT0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TICK"
+    CaseSensitive: false

@@ -1,0 +1,24 @@
+Name: TagInfo data
+FileNameExtensions: ["tag"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[TagInfo]\r\nCompany="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAGINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISC"
+    CaseSensitive: false

@@ -1,0 +1,19 @@
+Name: Dynamic Env. data
+Description: Dynamic Environment was a GUI for MS-DOS by Radarsoft.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "( Dynamic Desk )( Design )"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "( OPTIONS )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "( FIELDS )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "( CARDS )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "( STACK )"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Olitext Font
+Description: Word processor from Olivetti.
+FileNameExtensions: ["fnt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "version:OTX2."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PITCH"
+    CaseSensitive: false

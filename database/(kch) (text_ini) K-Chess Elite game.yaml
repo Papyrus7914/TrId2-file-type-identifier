@@ -1,0 +1,17 @@
+Name: K-Chess Elite game
+Description: Shareware Chess for Windows by Rob McDonell, ARK ANGLES.
+FileNameExtensions: ["kch"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[K-Chess Game]\r\n["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDGAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVES"
+    CaseSensitive: false

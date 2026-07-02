@@ -1,0 +1,14 @@
+Name: Dynamic Auto-Painter Material
+URL: "https://www.mediachance.com/dap/"
+FileNameExtensions: ["mat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\0\0\xF0?\0\0\0\0\0\x88\xC3@"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "?\0\0\0\0\0\0\b@\xFF\xFF\xFF\0\xFF\xFF\xFF\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 120
+    AsciiString: "\0\0\0\0\0\0\xE0?P}[\x06(\x15\xEC?\0\0\0\0\0\0\xE0?"
+    CaseSensitive: true

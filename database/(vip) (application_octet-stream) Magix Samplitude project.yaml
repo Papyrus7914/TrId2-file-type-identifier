@@ -1,0 +1,38 @@
+Name: Magix Samplitude project
+URL: "https://en.wikipedia.org/wiki/Magix_Samplitude"
+FileNameExtensions: ["vip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0SEKDSVIP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RNGSLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRCKTRCI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRKSLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HDP"
+    CaseSensitive: false

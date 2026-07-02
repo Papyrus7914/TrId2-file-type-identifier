@@ -1,0 +1,11 @@
+Name: Express Burn Project
+URL: "https://www.nch.com.au/burn/"
+FileNameExtensions: ["ebp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?><ExpressBurnProject type=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

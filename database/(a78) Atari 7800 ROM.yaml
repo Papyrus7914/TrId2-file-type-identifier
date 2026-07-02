@@ -1,0 +1,10 @@
+Name: Atari 7800 ROM
+URL: "http://www.atariage.com/software_search.html?SystemID=7800"
+FileNameExtensions: ["a78"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01ATARI7800"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACTUAL CART DATA STARTS HERE"
+    CaseSensitive: false

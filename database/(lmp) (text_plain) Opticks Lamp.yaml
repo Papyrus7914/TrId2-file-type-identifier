@@ -1,0 +1,29 @@
+Name: Opticks Lamp
+Description: Amiga ray-trace Software.
+FileNameExtensions: ["lmp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\nLAMPv1.0\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COEFFICIENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSMITTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVELENGTHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECULAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALLOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

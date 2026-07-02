@@ -1,0 +1,11 @@
+Name: X68000 Floppy Disk image
+URL: "https://en.wikipedia.org/wiki/X68000"
+FileNameExtensions: ["xdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`<\x90X68IPL30"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "FAT12"
+    CaseSensitive: true

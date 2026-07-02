@@ -1,0 +1,97 @@
+Name: MicroFocus COBOL DOS Executable
+URL: "https://en.wikipedia.org/wiki/Micro_Focus_International"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0 \0\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 16
+    Bytes: [0x00, 0x02]
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1E\0\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 84
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 88
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 92
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 100
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 104
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 116
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COBOL RUN TIME LIBRARY NOT INSTALLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COBLIB\0COBLIB.DLE\0PATH\0\0MF RTE DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQRV"
+    CaseSensitive: false

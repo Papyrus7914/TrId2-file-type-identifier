@@ -1,0 +1,17 @@
+Name: DESQview/X Layout
+URL: "https://en.wikipedia.org/wiki/DESQview#DESQview/X"
+FileNameExtensions: ["lyt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LAYOUT \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LYT"
+    CaseSensitive: false

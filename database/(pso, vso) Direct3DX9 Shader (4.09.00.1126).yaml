@@ -1,0 +1,42 @@
+Name: Direct3DX9 Shader (4.09.00.1126)
+Description: DirectX Pre-Assembled Pixel/Vertix Shader
+FileNameExtensions: ["pso", "vso"]
+DetectionPatterns:
+  - Pos: 3
+    Bytes: [0xFF]
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 45
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MICROSOFT (R) D3DX9 SHADER ASSEMBLER 4.09.00.1126"
+    CaseSensitive: false

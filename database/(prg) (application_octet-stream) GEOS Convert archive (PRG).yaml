@@ -1,0 +1,13 @@
+Name: GEOS Convert archive (PRG)
+URL: "http://fileformats.archiveteam.org/wiki/GEOS_Convert"
+FileNameExtensions: ["prg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x83]
+  - Pos: 29
+    AsciiString: "\0PRG formatted GEOS file V1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRG FORMATTED GEOS FILE V1."
+    CaseSensitive: false

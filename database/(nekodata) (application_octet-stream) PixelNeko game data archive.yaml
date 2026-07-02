@@ -1,0 +1,12 @@
+Name: PixelNeko game data archive
+Description: Used in Revived Witch.
+URL: "https://www.mobygames.com/company/47750/pixelneko/"
+FileNameExtensions: ["nekodata"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "pixelneko filesystem\0\0\0\0\x01"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "UnityFS"
+    CaseSensitive: true

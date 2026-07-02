@@ -1,0 +1,14 @@
+Name: SuperKey Macro
+Description: Old DOS keyboard macro tool by Borland.
+FileNameExtensions: ["mac"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<BEGD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDDEF"
+    CaseSensitive: false

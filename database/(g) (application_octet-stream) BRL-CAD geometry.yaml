@@ -1,0 +1,17 @@
+Name: BRL-CAD geometry
+URL: "http://fileformats.archiveteam.org/wiki/BRL-CAD_geometry"
+FileNameExtensions: ["g"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "v\x01\0\0\0\0\x015v"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_GLOBAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false

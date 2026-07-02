@@ -1,0 +1,50 @@
+Name: Substance 3D Modeler project
+URL: "https://www.adobe.com/products/substance3d.html"
+FileNameExtensions: ["smod"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "0.clay"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$\0METADATA.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNAL_SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRED_SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0SCENE.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.CLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDEH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VLPK"
+    CaseSensitive: false

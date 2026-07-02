@@ -1,0 +1,13 @@
+Name: Real Time File
+Description: Used in titles by Philips Sidewalk Studio.
+FileNameExtensions: ["rtf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x10]
+  - Pos: 4
+    AsciiString: "RTF1\0\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RTF1"
+    CaseSensitive: false

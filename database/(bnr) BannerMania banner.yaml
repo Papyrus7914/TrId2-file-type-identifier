@@ -1,0 +1,9 @@
+Name: BannerMania banner
+URL: "http://www.goodolddays.net/apps/id,34/"
+FileNameExtensions: ["bnr"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD1, 0xBA, 0x01, 0x00]
+  - Pos: any
+    AsciiString: ".FNT"
+    CaseSensitive: false

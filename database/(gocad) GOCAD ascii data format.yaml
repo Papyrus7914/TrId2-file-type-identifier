@@ -1,0 +1,16 @@
+Name: GOCAD ascii data format
+URL: "http://paulbourke.net/dataformats/gocad/"
+FileNameExtensions: ["gocad"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GOCAD "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEADER {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOCAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

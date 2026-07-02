@@ -1,0 +1,14 @@
+Name: SBStudio II sounds
+URL: "http://fileformats.archiveteam.org/wiki/SBStudio_module"
+FileNameExtensions: ["sou"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SND "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SNDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNIN"
+    CaseSensitive: false

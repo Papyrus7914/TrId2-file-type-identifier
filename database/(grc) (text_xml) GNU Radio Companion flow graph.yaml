@@ -1,0 +1,38 @@
+Name: GNU Radio Companion flow graph
+URL: "https://en.wikipedia.org/wiki/GNU_Radio"
+FileNameExtensions: ["grc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_COORDINATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOW_GRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATE"
+    CaseSensitive: false

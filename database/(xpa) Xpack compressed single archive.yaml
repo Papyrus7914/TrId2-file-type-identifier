@@ -1,0 +1,11 @@
+Name: Xpack compressed single archive
+Description: Xpack compressor by JauMing Tseng 1999
+URL: "ftp://ftp.sac.sk/pub/sac/xpa167r.zip"
+FileNameExtensions: ["xpa"]
+DetectionPatterns:
+  - Pos: 0
+    #              ␠     j     m
+    Bytes: [0xCD, 0x20, 0x6A, 0x6D, 0x04, 0x05]
+  - Pos: 8
+    AsciiString: "\0\0"
+    CaseSensitive: true

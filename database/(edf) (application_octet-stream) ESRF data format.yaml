@@ -1,0 +1,38 @@
+Name: ESRF data format
+URL: "https://www.esrf.fr/computing/scientific/data_format/esrf_format.pdf"
+FileNameExtensions: ["edf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\nEDF_DataBlockID = 0.Image.Psd ;\nEDF_BinarySize = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EDF_DATABLOCKID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDF_BINARYSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDF_HEADERSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWBYTEFIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.IMAGE.PSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTEORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM_2"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: PiXCL source (with rem)
+URL: "https://sourceforge.net/projects/pixcl/"
+FileNameExtensions: ["pxl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "USECOORDINATES("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAIT_FOR_INPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAITINPUT("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINLOCATE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETMENU("
+    CaseSensitive: false

@@ -1,0 +1,156 @@
+Name: ZDoom savegame
+Description: Use metadata in a standard PNG bitmap.
+URL: "https://en.wikipedia.org/wiki/List_of_Doom_source_ports"
+FileNameExtensions: ["zds"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89PNG\r\n\x1A\n\0\0\0\rIHDR\0\0\0\xD8"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0\0\0\x04gAMA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXTZDOOM SAVE VERSION\0ZDOOMSAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SV_DISABLEAUTOHEALTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SV_UNLIMITED_PICKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTIMPORTANT CVARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALWAYSAPPLYDMFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SV_CORPSEQUEUESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTCREATION TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTCURRENT MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SV_FASTWEAPONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPATFLAGS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLASHFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SV_DROPSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTGAME WAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VAR_FRICTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENBLOCKMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SV_SMARTAIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTCOMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VAR_PUSHERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEATHMATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCEWATER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENGLNODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFIGHTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEAMDAMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAGLIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SV_CHEATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMELIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMFLAGS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENNODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEAMPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HUBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HZ0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

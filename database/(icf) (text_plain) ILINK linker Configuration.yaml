@@ -1,0 +1,47 @@
+Name: ILINK linker Configuration
+URL: "https://en.wikipedia.org/wiki/IAR_Systems"
+FileNameExtensions: ["icf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFINE MEMORY MEM WITH SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALIZE BY COPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINE BLOCK HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO NOT INITIALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ SECTION .NOINIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WITH ALIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINE REGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ READWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ READONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACE IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: BCR-STM SPM data (32bit FP, UTF-16)
+FileNameExtensions: ["bcrf"]
+MimeType: application/x-bcr-spm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "f\0i\0l\0e\0f\0o\0r\0m\0a\0t\0 \0=\0 \0b\0c\0r\0f\0"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0"
+    CaseSensitive: true

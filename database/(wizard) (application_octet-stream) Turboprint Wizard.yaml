@@ -1,0 +1,11 @@
+Name: Turboprint Wizard
+Description: Amiga print utility.
+FileNameExtensions: ["wizard"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WZRDFVER\0\0\04$VER: wizardTurbo"
+    CaseSensitive: true

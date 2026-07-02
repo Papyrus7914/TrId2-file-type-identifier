@@ -1,0 +1,86 @@
+Name: 32bit BBC BASIC For Windows Executable
+URL: "https://www.bbcbasic.co.uk/bbcwin/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0PE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 376
+    AsciiString: ".text\0\0\0"
+    CaseSensitive: true
+  - Pos: 416
+    AsciiString: ".data\0\0\0"
+    CaseSensitive: true
+  - Pos: 438
+    AsciiString: "\x01\0\0\0\0\0\0\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 1024
+    #        U
+    Bytes: [0x55, 0x89, 0xE5, 0x83, 0xEC]
+  - Pos: any
+    AsciiString: "PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32\0USER32\0GDI32\0COMCTL32\0WINMM\0ADVAPI32\0COMDLG32\0SHELL32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBCWRUN\0BBCPROG\0BBCWIN\0COMCTL32\0ADVAPI32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT.WINDOWS.COMMON-CONTROLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) COPYRIGHT R.T.RUSSELL 20"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBC BASIC FOR WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBC BASIC OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTRUSSELL.CO.UK0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0B\0C\0W\0I\0N\0\0\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFESTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R T RUSSELL0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BBC\0BBC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BBCU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDU%"
+    CaseSensitive: false

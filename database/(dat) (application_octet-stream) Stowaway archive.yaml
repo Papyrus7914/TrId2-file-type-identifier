@@ -1,0 +1,11 @@
+Name: Stowaway archive
+Description: DOS archival tool by Patri-Soft.
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0ASTARTqw"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STARTQW"
+    CaseSensitive: false

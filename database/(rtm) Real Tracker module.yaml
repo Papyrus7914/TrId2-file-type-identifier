@@ -1,0 +1,24 @@
+Name: Real Tracker module
+URL: "http://fileformats.archiveteam.org/wiki/Real_Tracker_module"
+FileNameExtensions: ["rtm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RTMM"
+    CaseSensitive: true
+  - Pos: 37
+    Bytes: [0x1A]
+  - Pos: any
+    AsciiString: "REAL TRACKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTSM"
+    CaseSensitive: false

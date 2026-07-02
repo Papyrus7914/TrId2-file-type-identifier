@@ -1,0 +1,37 @@
+Name: IBM Private Tutor lesson (v1.x)
+FileNameExtensions: ["cbt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "r="
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "  .rcd \xFF                        mc cfmx \xFF                               \x01\060240"
+    CaseSensitive: true
+  - Pos: 89
+    AsciiString: " (C) COPYRIGHT IBM "
+    CaseSensitive: true
+  - Pos: 119
+    AsciiString: " \x02\0LICENSED MATERIAL - PROPERTY OF IBM \xFF gen \xFF                                   mc text \xFF                               "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LICENSED MATERIAL - PROPERTY OF IBM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) COPYRIGHT IBM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MC CFMX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MC QUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MC TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "60240"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RCD"
+    CaseSensitive: false

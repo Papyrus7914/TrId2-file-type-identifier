@@ -1,0 +1,9 @@
+Name: Novell Packed data
+Description: Extension last character is usually underscore.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Packed File "
+    CaseSensitive: true
+  - Pos: 24
+    Bytes: [0x1A]

@@ -1,0 +1,48 @@
+Name: Crosstalk Terminal
+URL: "https://en.wikipedia.org/wiki/Crosstalk_Mk.4"
+FileNameExtensions: ["xtt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x13, 0x18, 0x00, 0x00]
+  - Pos: 6
+    AsciiString: "\0\0\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    Bytes: [0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "YOU MAY CHANGE SETTINGS WHICH AFFECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOU ARE IN TERMINAL SETUP.  HERE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKING WITH MENUS AND FORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OR CHOOSE ANOTHER TERMINAL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMINAL SETUP SCREEN -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMINAL MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CROSSTALK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALT-T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACK"
+    CaseSensitive: false

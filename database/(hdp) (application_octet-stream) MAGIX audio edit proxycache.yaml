@@ -1,0 +1,32 @@
+Name: MAGIX audio edit proxy/cache
+URL: "https://en.wikipedia.org/wiki/Magix"
+FileNameExtensions: ["hdp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SEKDSHDP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SEKDSHDP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RNGS"
+    CaseSensitive: false

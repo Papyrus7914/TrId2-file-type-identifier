@@ -1,0 +1,34 @@
+Name: Optical Simulation Rendering VMD format
+URL: "http://paulbourke.net/dataformats/vmd/"
+FileNameExtensions: ["vmd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VMODEL VERSION "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOVANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

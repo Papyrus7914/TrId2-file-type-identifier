@@ -1,0 +1,80 @@
+Name: Hollywood Plugin (MacOS PPC)
+URL: "https://en.wikipedia.org/wiki/Hollywood_(programming_language)"
+FileNameExtensions: ["hwp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFE\xED\xFA\xCE\0\0\0\x12\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "__CSTRING\0\0\0\0\0\0\0__TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__DATA\0\0\0\0\0\0\0\0\0\0__DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__DYLD\0\0\0\0\0\0\0\0\0\0__DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__LA_SYMBOL_PTR\0__DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__NL_SYMBOL_PTR\0__DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__PICSYMBOLSTUB1__TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__TEXT\0\0\0\0\0\0\0\0\0\0__TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBSYSTEM.B.DYLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CLOSEPLUGIN\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_INITPLUGIN\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__LINKEDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLLYWOOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HWP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_GET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MOD"
+    CaseSensitive: false

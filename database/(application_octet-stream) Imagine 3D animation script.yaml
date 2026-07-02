@@ -1,0 +1,31 @@
+Name: Imagine 3D animation script
+Description: Animation format used by the Imagine 3D rendered, on Amiga.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "IANMANNO"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "BMHD"
+    CaseSensitive: true
+  - Pos: 88
+    AsciiString: "CAMG"
+    CaseSensitive: true
+  - Pos: 100
+    AsciiString: "BODY"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IANMANNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BMHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMG"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: CompDisk compressed disk image
+Description: Amiga disk image format by Olaf Barthel.
+URL: "https://aminet.net/package/util/pack/CompDisk"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "COMP\0\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

@@ -1,0 +1,11 @@
+Name: Digitrekker module
+URL: "http://fileformats.archiveteam.org/wiki/DTM_(DigiTrekker)"
+FileNameExtensions: ["dtm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SONG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INIT"
+    CaseSensitive: false

@@ -1,0 +1,28 @@
+Name: Lightscape View
+FileNameExtensions: ["dv"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VIEW\nprojection: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASPECT ZOOM SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAN OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A I T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIP"
+    CaseSensitive: false

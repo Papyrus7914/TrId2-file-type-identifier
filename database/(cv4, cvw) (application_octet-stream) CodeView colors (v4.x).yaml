@@ -1,0 +1,14 @@
+Name: CodeView colors (v4.x)
+URL: "https://en.wikipedia.org/wiki/CodeView"
+FileNameExtensions: ["cv4", "cvw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CodeView4."
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "--colorfile"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "--COLORFILE"
+    CaseSensitive: false

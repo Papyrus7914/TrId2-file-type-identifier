@@ -1,0 +1,59 @@
+Name: Papyrus X report XML
+URL: "https://exxosforum.co.uk/atari/mirror/myatari/issues/feb2004/papyrusx.htm"
+FileNameExtensions: ["set"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" standalone=\"yes\"?>\n<PAPBASE_OPT VERSION=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAPBASE_OPT VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABVIEW_COORDS X1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASCII_OPT EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORT_OPT PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM_COORDS X1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_OPT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER_RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORT_OPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REORG_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCOL FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER_FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER_QUOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORT_OPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIDE"
+    CaseSensitive: false

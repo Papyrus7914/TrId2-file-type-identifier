@@ -1,0 +1,14 @@
+Name: Applause Picture
+Description: MS-DOS graphic/presentation software by Ashton-Tate.
+FileNameExtensions: ["p"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PICTURE FILE"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "               "
+    CaseSensitive: true

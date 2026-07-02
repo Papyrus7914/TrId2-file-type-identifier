@@ -1,0 +1,7 @@
+Name: Windows Minidump
+URL: "http://support.microsoft.com/?kbid=314103"
+FileNameExtensions: ["dmp", "mdmp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MDMP\x93\xA7"
+    CaseSensitive: true

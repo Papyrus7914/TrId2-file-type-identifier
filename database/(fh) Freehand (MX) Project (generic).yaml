@@ -1,0 +1,100 @@
+Name: Freehand (MX) Project (generic)
+Description: Freehand files can contain animations in addition to vector and bitmapped graphics.
+URL: "http://www.macromedia.com/software/freehand/?promoid=home_prod_fh_082403"
+FileNameExtensions: ["fh*"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x1C, 0x01, 0x00, 0x00, 0x02, 0x00, 0x04, 0x1C, 0x01, 0x14, 0x00, 0x02, 0x00, 0x14, 0x1C, 0x01, 0x16, 0x00, 0x02, 0x00]
+  - Pos: 21
+    AsciiString: "\x1C\x01\x1E\0\nFreeHand"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYMBOLLIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLEPROPLST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FHDOCHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLATEDECODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPOTCOLOR6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASICLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARROWPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREEHAND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCEDURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASICFILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AGDFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEPAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIGURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUIDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMPOBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false

@@ -1,0 +1,22 @@
+Name: Xilinx Serial Vector Format
+URL: "https://en.wikipedia.org/wiki/Serial_Vector_Format"
+FileNameExtensions: ["xsvf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\a"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 22
+    Bytes: [0xFF]
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

@@ -1,0 +1,10 @@
+Name: DTS encoded audio (14bit, LE)
+URL: "https://wiki.multimedia.cx/index.php/DTS"
+FileNameExtensions: ["dts"]
+MimeType: audio/vnd.dts
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0x1F, 0x00, 0x8E]
+  - Pos: 5
+    AsciiString: "\a"
+    CaseSensitive: true

@@ -1,0 +1,25 @@
+Name: Vue D'Esprit function definition (generic)
+Description: Vue functions can be used to model objects and terrains on a procedural basis, adding fractal/regular patterns.
+URL: "http://www.e-onsoftware.com"
+FileNameExtensions: ["fnc"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFF, 0xFF]
+  - Pos: 4
+    AsciiString: "\0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0\0\xFC\xFF"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\0\t\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0\0\0Vue "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "E-ON SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC."
+    CaseSensitive: false

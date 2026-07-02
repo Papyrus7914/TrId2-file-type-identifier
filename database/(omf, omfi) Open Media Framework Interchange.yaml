@@ -1,0 +1,748 @@
+Name: Open Media Framework Interchange
+URL: "http://en.wikipedia.org/wiki/Open_Media_Framework_Interchange"
+FileNameExtensions: ["omf", "omfi"]
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "\0omfi:data:NoDatakind\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "omfi:data:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HORIZONTALSUBSAMPLING\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULLDOWNDIRECTIONTYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEALIGNMENTFACTOR\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSETTOFRAMEINDEXES\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERFORATIONSPERFRAME\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTVERSIONSTRING\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLACKREFERENCELEVEL\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMEINDEXBYTEORDER\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALSUBSAMPLING\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHITEREFERENCELEVEL\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFICATIONLIST\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALPHATRANSPARENCY\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINITIONOBJECTS\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIDCOMPRESSMETHOD\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECTDESCRIPTION\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULLDOWNDIRECTION\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRSTFRAMEOFFSET\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEASPECTRATIO\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIADESCRIPTION\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTESTRUCTURE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULLDOWNKINDTYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKINGRENDERING\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSDICTIONARY\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENTFILLSTART\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORSITINGTYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFFADEEDITUNIT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIDRESOLUTIONID\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILMASPECTRATIO\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JPEGTABLEIDTYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGATTRIBUTE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYPASSOVERRIDE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENTWIDTH\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYXOFFSET\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYYOFFSET\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINALRENDERING\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASEFRAMETYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELSTRUCTURE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTVERSION\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLEDXOFFSET\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLEDYOFFSET\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAPEFORMATTYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLKITVERSION\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERATTRIBUTES\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENTFILLEND\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPCODEARRAY\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPSIZEARRAY\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFFADELENGTH\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTIONCODE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYHEIGHT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADEOUTLENGTH\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMEINDEXEXT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUTEDITRATE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERPOLATION\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTELAYOUT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYSICALTRACK\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIVESCOPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLEDHEIGHT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCETRACKID\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAILINGLINES\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATIONTIME\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYWIDTH\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITHINTTYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADEINLENGTH\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUTSEGMENT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTATTRIBUTE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISCONTIGUOUS\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KITCODECDESC\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTMODIFIED\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEADINGLINES\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANUFACTURER\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJATTRIBUTE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULLDOWNKIND\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIVESLOT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESULTOFFSET\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLEDWIDTH\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOREDHEIGHT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAPECASETYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOLINEMAP\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORSITING\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANYNAME\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFFADETYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECTSLOTS\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADEOUTTYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FP16QTABLES\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMELAYOUT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDBYTEORDER\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUTOFFSET\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JPEGTABLEID\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJREFARRAY\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PADDINGBITS\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENTCLASS\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICTUREWITHMATTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELLAYOUT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARYMOBS\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTNAME\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOREDWIDTH\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONTYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOSIGNAL\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIFC\0AIFC CODEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTERNATES\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODEFORMAT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORRANGE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORSPACE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENTS\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAKINDID\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECTKIND\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECTNAME\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADEINTYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILMFORMAT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMFACTOR\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMEINDEX\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INT32ARRAY\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERPKIND\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISTIMEWARP\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KITCODECID\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUTTYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASEFRAME\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION32\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION64\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLERATE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STILLFRAME\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAPEFORMAT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUENAME\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOSIGNALTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGIDTYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIODATA\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAVALUE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMERATE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEDATA\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISUNIFORM\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIADATA\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT COMPRESSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTLIST\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTID\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTTIME\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKDESC\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKNAME\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URLSTRING\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGVALUE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRKIND\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRREFS\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUTPOINT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAKIND\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGETYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITHINT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECTID\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILMKIND\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILMTYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH32\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH64\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJCLASS\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATHNAME\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATIONAL\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTED\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORTCUT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCEID\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOLEAN\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHOICES\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSID\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATOR\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARY\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYPASS\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECT\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISOMFI\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTYPE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJREF\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEREOSOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UINT16\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UINT32\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGID\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRID\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMMA\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INT64\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOBID\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODATAKIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJID\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYNOMIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UINT8\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VNAME\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAIFCCOMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DROP\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGECODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPS\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMECODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UID\0OMFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIFD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDCI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTLP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIDD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOSL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JPED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDFL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDFM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MGRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OOBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCLP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIFD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRKD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNXL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINL"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Cubic IDE Interface preset
+URL: "https://en.wikipedia.org/wiki/Cubic_IDE"
+FileNameExtensions: ["interface"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OOP\0[\xE8"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".INTERFACE"
+    CaseSensitive: false

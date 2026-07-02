@@ -1,0 +1,32 @@
+Name: DSC EDM Model/shape
+URL: "https://en.wikipedia.org/wiki/Digital_Combat_Simulator"
+FileNameExtensions: ["edm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EDM\n"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0\0model::"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNSIGNED INT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__VERSION__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE\0MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOTNODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DER_"
+    CaseSensitive: false

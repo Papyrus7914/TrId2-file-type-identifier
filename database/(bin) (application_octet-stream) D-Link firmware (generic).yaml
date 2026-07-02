@@ -1,0 +1,14 @@
+Name: D-Link firmware (generic)
+URL: "https://en.wikipedia.org/wiki/D-Link"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DLK"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "001\0\0"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "BH\x02\0\0\0"
+    CaseSensitive: true

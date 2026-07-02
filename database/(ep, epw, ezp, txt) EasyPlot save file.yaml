@@ -1,0 +1,22 @@
+Name: EasyPlot save file
+URL: "http://www.amion.com/ep/eplot.html"
+FileNameExtensions: ["ep", "epw", "ezp", "txt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "******** EasyPlot save file ********\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "******** EASYPLOT SAVE FILE ********"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "******** GRAPH ATTRIBUTES   ********"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "******** OPEN NEW GRAPH     ********"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "******** X-AXIS ********"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "******** Y-AXIS ********"
+    CaseSensitive: false

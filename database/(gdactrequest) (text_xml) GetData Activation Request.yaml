@@ -1,0 +1,23 @@
+Name: GetData Activation Request
+URL: "https://getdata.com/recovermyfiles/data-recovery-help/activation.php"
+FileNameExtensions: ["gdactrequest"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<getdatarequest ver=\"1.0\">\r<hardware><![CDATA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROGRAM ABBR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUYNOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANG"
+    CaseSensitive: false

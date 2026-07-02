@@ -1,0 +1,41 @@
+Name: Windows NT Registry Hive (Boot Configuration Data)
+URL: "https://de.wikipedia.org/wiki/Boot_Configuration_Data"
+FileNameExtensions: ["bcd"]
+MimeType: application/x-ms-registry
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "regf"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\x01\0\0\0\x03\0\0\0\0\0\0\0\x01\0\0\0 \0\0\0\0"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 110
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 145
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 147
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "B\0C\0D\00\00\00\00\00\00\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HBIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGF"
+    CaseSensitive: false

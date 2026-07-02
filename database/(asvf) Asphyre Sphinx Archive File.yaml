@@ -1,0 +1,16 @@
+Name: Asphyre Sphinx Archive File
+URL: "http://www.afterwarp.net/"
+FileNameExtensions: ["asvf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ASVF"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: CHEMICAL molecule Data
+Description: CHEMICAL is a DOS molecular modeling program by Larry Puhl.
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "chemical_name(\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMMANDACTIVE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOM_COUNT("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSHOWN("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID("
+    CaseSensitive: false

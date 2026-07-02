@@ -1,0 +1,95 @@
+Name: Business Plan data
+Description: Business Plan Pro is a business planning software by PaloAlto Software.
+URL: "http://www.paloalto.com/ps/"
+FileNameExtensions: ["bpd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<plandata "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOCKCOLUMNHEADERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTCHARTYLABELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTCHARTXLABELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTFORMAT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRYCELLFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWCOLHEADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWROWHEADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHERSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARTSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPICSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLEPLAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTING ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

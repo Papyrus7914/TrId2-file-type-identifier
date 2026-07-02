@@ -1,0 +1,20 @@
+Name: IncrediMail Notifier (with Flash)
+URL: "http://www.incredimail.com"
+FileNameExtensions: ["imn"]
+MimeType: application/vnd.ms-cab-compressed
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOTMAIL.SWF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL.SWF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAVEMAIL"
+    CaseSensitive: false

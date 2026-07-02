@@ -1,0 +1,36 @@
+Name: Symantec Guard Header
+FileNameExtensions: ["grd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[GuardHeader]\r\nLegal=Copyright "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BY SYMANTEC CORPORATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTMODIFIEDGMTFORMATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTMODIFIEDUTCSECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUARDHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEGAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SPM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA1"
+    CaseSensitive: false

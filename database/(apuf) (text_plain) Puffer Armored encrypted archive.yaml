@@ -1,0 +1,11 @@
+Name: Puffer Armored encrypted archive
+URL: "https://www.briggsoft.com/puffer.htm"
+FileNameExtensions: ["apuf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Begin Puffer Data\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END PUFFER DATA"
+    CaseSensitive: false

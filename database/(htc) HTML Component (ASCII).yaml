@@ -1,0 +1,27 @@
+Name: HTML Component (ASCII)
+FileNameExtensions: ["htc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ATTACH EVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

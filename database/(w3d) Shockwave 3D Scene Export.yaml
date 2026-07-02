@@ -1,0 +1,19 @@
+Name: Shockwave 3D Scene Export
+URL: "http://en.wikipedia.org/wiki/Adobe_Shockwave"
+FileNameExtensions: ["w3d"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IFX\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULT LAYER MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTSHADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: X-Windows screen dump (X11)
+URL: "http://fileformats.archiveteam.org/wiki/XWD"
+FileNameExtensions: ["xdm", "xwd", "dmp", "x11"]
+MimeType: image/x-xwindowdump
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0\0\a\0\0\0"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

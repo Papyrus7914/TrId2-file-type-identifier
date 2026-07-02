@@ -1,0 +1,59 @@
+Name: Azure Package
+URL: "https://en.wikipedia.org/wiki/Microsoft_Azure"
+FileNameExtensions: ["cspkg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MICROSOFT.DATA.SERVICES.CLIENT.RESOURCES.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT.DATA.ODATA.RESOURCES.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMEDSTREAMPACKAGE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDPACKAGE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMPACKAGE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SITESROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CSMANPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CSNSXPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CSDXPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CSMXPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CSSXPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false

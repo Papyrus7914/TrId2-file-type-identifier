@@ -1,0 +1,593 @@
+Name: Adobe Dimension project
+URL: "https://en.wikipedia.org/wiki/Adobe_Dimension"
+FileNameExtensions: ["dn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetype3d/vnd.adobe.dn+dcxucfPK\x03\x04"
+    CaseSensitive: true
+  - Pos: 90
+    AsciiString: "manifest{\"state\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GROUND_PLANE_GRID_EVERY_UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH_OF_FIELD_FOCUS_POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_PROJECTION_ORTHOGRAPHIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXPORT MATERIAL MATERIAL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTAL_FIELD_OF_VIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE_COORDINATE_INFO("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERACTIVE_LAYER_STACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST-FORMAT-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_EULER_ANGLES_DEGREES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH_OF_FIELD_ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERSTACKASSETMANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTION_LAYER_STACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECTIONS_ROUGHNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORMABLE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORM_COORDINATE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRYASSETMANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERED_IMAGE_WRITER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALASSETMANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURENORMALSAMPLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE_BACKGROUND_COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBL_TEXTURE_SAMPLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT_UV_TRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW_LAYER_STACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECTIONS_ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECTIONS_FRESNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECTIONS_OPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE_TRANSFORMABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTUREASSETMANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURECOLORSAMPLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOBE DIMENSION CC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUND_SAMPLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERAASSETMANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREGROUND_SAMPLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_TRACKING_CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL_INDICESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINALDOCUMENTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDER_CAMERA_N3D2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENETRANSFORMABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORASSETMANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBLTEXTURESAMPLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEASSETMANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE_BASED_LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXOFREFRACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTASSETMANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDL_MATERIAL_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENEASSETMANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE_TANGENT_U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE_TANGENT_V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE_AS_BACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "22-RDF-SYNTAX-NS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUND_LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA_TRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMONIMAGEVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREGROUND_LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL_TRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUND_PLANE_N3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOMEBOOKMARKPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERSTACKWRITER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION RDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEBASEDLIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_SCALE_LINKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL_TRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDLMATERIALNODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDL_MODULE_TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIVOT_ALIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIVOT_TRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADOWS_ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADOWS_OPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOBE XMP CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOCAL_DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCESERIALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERIOR COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTMODIFYDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TECH_INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE_RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT_GAMMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERIORCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCEEVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWAREAGENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMPMETA XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOCAL_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATADATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONO_AVERAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NS.ADOBE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCTET-STREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTORNODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIALIZABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADER_USAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLUCENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMP-METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNOTATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATORTOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DERIVEDFROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUNDPLANE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHTSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT_COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PR_GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDER_NODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCEREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE_STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKY_ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUN_ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UV_ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRAP_REPEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BASECOLOR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ROUGHNESS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPCURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOUDINESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMMA_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFESTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N_GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P_ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P_GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNMODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSPACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKMARKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIP_NEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORIZED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAY_LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEVATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EUCLIDAPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGENODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_LOCKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL_N3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDF XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TURBIDITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UV_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRAP_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APERTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIP_FAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAYLIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMISSIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARD_MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARD_MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBLIMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IN_GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDL_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFT_MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFT_MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDOABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UV_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BASE64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AZIMUTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDF+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Macromedia Extension Package
+Description: Extensions add new capabilities, actions and commands to Macromedia programs such as Flash, Dreamweaver, Freehand and Fireworks.
+URL: "http://exchange.macromedia.com"
+FileNameExtensions: ["mxp"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".MXI"
+    CaseSensitive: false

@@ -1,0 +1,37 @@
+Name: Lotus Approach (generic)
+URL: "https://en.wikipedia.org/wiki/IBM_Lotus_Approach"
+FileNameExtensions: ["apr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: 1024
+    AsciiString: "R\0o\0o\0t\0 \0E\0n\0t\0r\0y"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "D\0O\0C\0U\0M\0E\0N\0T\0W\0I\0N\0D\0O\0W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0P\0P\0R\0O\0A\0C\0H\0D\0O\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0B\0J\0T\0E\0X\0T\0.\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0O\0D\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false

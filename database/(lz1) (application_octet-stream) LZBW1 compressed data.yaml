@@ -1,0 +1,9 @@
+Name: LZBW1 compressed data
+Description: Compressor by Bruno Wyttenbach.
+URL: "http://mattmahoney.net/dc/text.html#5902"
+FileNameExtensions: ["lz1"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    0
+    Bytes: [0xD2, 0xCC, 0x30, 0x00]

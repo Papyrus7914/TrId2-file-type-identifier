@@ -1,0 +1,8 @@
+Name: PASTI disk image
+Description: An image format used for Atari ST floppy disks.
+FileNameExtensions: ["stx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RSY\0"
+    CaseSensitive: true

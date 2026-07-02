@@ -1,0 +1,16 @@
+Name: Video Creator CD32 project
+FileNameExtensions: ["vid"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VC10\xA9 Almathera Ltd 19"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NOTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VC10"
+    CaseSensitive: false

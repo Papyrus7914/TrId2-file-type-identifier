@@ -1,0 +1,34 @@
+Name: MDL Transportable Graphics Format
+URL: "http://www.mdli.com/"
+FileNameExtensions: ["tgf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$Version: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$FILL_RGB2COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$PEN_RGB2COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ENDSKETCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$RXNATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$TOTOBJS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_COORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$OBJ"
+    CaseSensitive: false

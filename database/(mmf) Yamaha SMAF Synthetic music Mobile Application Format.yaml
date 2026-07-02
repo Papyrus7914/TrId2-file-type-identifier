@@ -1,0 +1,10 @@
+Name: Yamaha SMAF Synthetic music Mobile Application Format
+URL: "http://smaf-yamaha.com/what/about.html"
+FileNameExtensions: ["mmf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MMMD"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CNTI"
+    CaseSensitive: true

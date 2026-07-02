@@ -1,0 +1,53 @@
+Name: Lazarus Package
+URL: "http://en.wikipedia.org/wiki/Lazarus_(IDE)"
+FileNameExtensions: ["lpk"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNITOUTPUTDIRECTORY VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(TARGETCPU)-$(TARGETOS)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIREDPKGS COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGENAME VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILEROPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLISHOPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITPATH VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(PKGOUTDIR)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USAGEOPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHPATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM"
+    CaseSensitive: false

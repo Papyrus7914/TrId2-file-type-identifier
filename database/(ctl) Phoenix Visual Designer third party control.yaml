@@ -1,0 +1,44 @@
+Name: Phoenix Visual Designer third party control
+Description: Phoenix is a complete self-contained Rapid Application Development (RAD) environment featuring an advanced form designer, code generator and editor for the PowerBASIC Windows compiler.
+URL: "http://www.phnxthunder.com/"
+FileNameExtensions: ["ctl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "'"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN VPB_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDSYMBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWCL"
+    CaseSensitive: false

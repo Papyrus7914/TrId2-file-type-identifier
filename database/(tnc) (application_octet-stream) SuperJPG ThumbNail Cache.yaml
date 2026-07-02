@@ -1,0 +1,23 @@
+Name: SuperJPG ThumbNail Cache
+URL: "http://fileformats.archiveteam.org/wiki/SuperJPG_thumbnail_cache"
+FileNameExtensions: ["tnc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\a\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%.DIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0A149"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$3BR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

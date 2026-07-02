@@ -1,0 +1,15 @@
+Name: Microsoft DirectInput Force Feedback Effect
+Description: FFE are created using FEdit from the DirectX SDK
+URL: "http://msdn.microsoft.com/library/en-us/directx9_c/directx/input/tips/programmingtipstools.asp#force_editor_dinput"
+FileNameExtensions: ["ffe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF\0\0\0\0FORC\\w~\x19\xBA4\xD3\x11\xAB\xD5\0\xC0O\x8E\xC6'LIST"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0\0\0efct"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

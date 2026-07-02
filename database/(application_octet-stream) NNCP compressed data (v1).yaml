@@ -1,0 +1,8 @@
+Name: NNCP compressed data (v1)
+Description: Neural Networks lossless Compressor by Fabrice Bellard.
+URL: "https://bellard.org/nncp/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \'          W
+    Bytes: [0xB7, 0x27, 0xAC, 0x57, 0x00, 0x01]

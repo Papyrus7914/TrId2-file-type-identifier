@@ -1,0 +1,11 @@
+Name: Wolfenstein save game (full)
+URL: "https://www.mobygames.com/game/42151/wolfenstein/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFF\xFF\xFF\x05\0\0\0Wolf2>\0\0\0\x04\0\0\0full\xFF\xFF\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "game/"
+    CaseSensitive: true

@@ -1,0 +1,32 @@
+Name: Ghost Recon Engine Kit restriction List
+URL: "https://www.mobygames.com/game/5557/tom-clancys-ghost-recon/"
+FileNameExtensions: ["kil"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<KitRestriction Name=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACTOR NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MP_PLT1_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MP_PLT2_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MP_PLT3_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MP_PLT4_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ATR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".KIT"
+    CaseSensitive: false

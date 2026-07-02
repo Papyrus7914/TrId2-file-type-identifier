@@ -1,0 +1,23 @@
+Name: Puppy Linux DotPup installer package
+URL: "https://en.wikipedia.org/wiki/Puppy_Linux#Package_and_distribution_management"
+FileNameExtensions: ["pup"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 24
+    AsciiString: "\0\0\t\0\x15\0dotpup.shUT"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "Ux"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MD5SUM.TXTUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOTPUP.SHUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UX\0\0PK"
+    CaseSensitive: false

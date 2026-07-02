@@ -1,0 +1,39 @@
+Name: RomCenter format
+Description: Info for MAME Rom Managers.
+URL: "http://www.logiqx.com/DatFAQs/RomCenter.php"
+FileNameExtensions: ["dat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[CREDITS]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EMULATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREDITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Ipaint bitmap
+Description: C128 paint program.
+FileNameExtensions: ["ip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0BRUS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLR"
+    CaseSensitive: false

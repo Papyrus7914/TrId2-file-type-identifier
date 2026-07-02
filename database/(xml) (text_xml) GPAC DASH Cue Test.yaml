@@ -1,0 +1,23 @@
+Name: GPAC DASH Cue Test
+URL: "https://github.com/gpac/testsuite"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<DASHCues xmlns=\"urn:gpac:dash:schema:cues:2018\">\n<Stream id=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DASHCUES XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAM ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2018"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPAC"
+    CaseSensitive: false

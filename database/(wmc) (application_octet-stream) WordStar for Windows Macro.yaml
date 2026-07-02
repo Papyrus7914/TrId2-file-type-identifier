@@ -1,0 +1,23 @@
+Name: WordStar for Windows Macro
+URL: "https://en.wikipedia.org/wiki/WordStar#WordStar_for_Windows"
+FileNameExtensions: ["wmc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "REM Description"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SUBSEQUENT DATA IS BINARY INFORMATION AND SHOULD NOT BE MODIFIED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS IS A WSWIN MACRO FILE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*****  WARNING *****"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REM CREATED BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WMC"
+    CaseSensitive: false

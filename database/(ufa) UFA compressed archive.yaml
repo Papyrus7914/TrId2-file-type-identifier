@@ -1,0 +1,6 @@
+Name: UFA compressed archive
+FileNameExtensions: ["ufa"]
+DetectionPatterns:
+  - Pos: 0
+    #        U     F     A
+    Bytes: [0x55, 0x46, 0x41, 0xC6, 0xD2, 0xC1]

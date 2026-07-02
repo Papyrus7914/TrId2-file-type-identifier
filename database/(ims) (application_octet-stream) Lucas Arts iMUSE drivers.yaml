@@ -1,0 +1,113 @@
+Name: Lucas Arts iMUSE drivers
+URL: "https://en.wikipedia.org/wiki/IMUSE"
+FileNameExtensions: ["ims"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0 \0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\xFF\xFF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0\0\0\x1E\0\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 84
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 88
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 92
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 100
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 104
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xC8"
+    CaseSensitive: true
+  - Pos: 514
+    AsciiString: "\0\0WV\xE8"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MDHD\0MDHD\0MTRK\0MTRK\0MTRK\0MTRK\0MTRK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LUCASARTS ENTERTAINMENT COMPANY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT 199"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQRUWV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G*\0\0+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D09D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D29D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PJ\0W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PQR."
+    CaseSensitive: false

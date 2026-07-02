@@ -1,0 +1,38 @@
+Name: OpenMPT module
+URL: "https://en.wikipedia.org/wiki/OpenMPT"
+FileNameExtensions: ["mptm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IMPM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MPTSEQC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".APS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPTM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STPM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTSV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VWSL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XTPM"
+    CaseSensitive: false

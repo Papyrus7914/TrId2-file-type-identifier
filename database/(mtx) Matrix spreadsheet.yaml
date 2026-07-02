@@ -1,0 +1,14 @@
+Name: Matrix spreadsheet
+Description: Matrix is a free spreadsheet for DOS.
+URL: "http://short.stop.home.att.net/freesoft/dbase.htm#matrix"
+FileNameExtensions: ["mtx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Matrix spreadsheet v"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\n"
+    CaseSensitive: true

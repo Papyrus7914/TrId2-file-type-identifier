@@ -1,0 +1,31 @@
+Name: Mitsubishi S340-10 bitmap
+URL: "Format used by Mitsubishi color sublimation printers."
+FileNameExtensions: ["mitsu"]
+DetectionPatterns:
+  - Pos: 0
+    #                    Z           #     P
+    Bytes: [0x11, 0x1B, 0x5A, 0x1B, 0x23, 0x50]
+  - Pos: 9
+    AsciiString: "P"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "Q"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "W0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "#C"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "S"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "T"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "C0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "A"
+    CaseSensitive: true

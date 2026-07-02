@@ -1,0 +1,26 @@
+Name: High Voltage SID Collection update info
+URL: "http://www.hvsc.c64.org/"
+FileNameExtensions: ["hvs"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# High Voltage SID Collection"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RESULTING VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIOUS VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVE"
+    CaseSensitive: false

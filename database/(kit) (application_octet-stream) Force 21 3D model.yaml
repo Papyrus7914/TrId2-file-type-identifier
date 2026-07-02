@@ -1,0 +1,26 @@
+Name: Force 21 3D model
+URL: "https://www.mobygames.com/game/2770/force-21/"
+FileNameExtensions: ["kit"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x03\0\0\0KT\0\0\0\x80?\v\0\0\0BeginModel\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "MaterialList\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HIERARCHYLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRYLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDMODEL"
+    CaseSensitive: false

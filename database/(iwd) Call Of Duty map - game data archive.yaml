@@ -1,0 +1,12 @@
+Name: Call Of Duty map - game data archive
+FileNameExtensions: ["iwd"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SOUNDALIASES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CSVPK"
+    CaseSensitive: false

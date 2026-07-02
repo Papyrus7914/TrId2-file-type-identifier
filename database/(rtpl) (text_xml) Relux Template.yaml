@@ -1,0 +1,11 @@
+Name: Relux Template
+URL: "https://relux.com/"
+FileNameExtensions: ["rtpl"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<rlxTemplate>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RLXTEMPLATE"
+    CaseSensitive: false

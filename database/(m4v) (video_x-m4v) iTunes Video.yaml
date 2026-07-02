@@ -1,0 +1,92 @@
+Name: iTunes Video
+URL: "http://en.wikipedia.org/wiki/M4v"
+FileNameExtensions: ["m4v"]
+MimeType: video/x-m4v
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "ftypM4V "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HDLR\0\0\0\0\0\0\0\0VIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDIA\0\0\0 MDHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOOV\0\0\0LMVHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTYPM4V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUIDKH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0\0\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVC1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVCC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMHD"
+    CaseSensitive: false

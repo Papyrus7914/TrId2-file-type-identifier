@@ -1,0 +1,13 @@
+Name: Rockbox Theme package
+URL: "http://www.rockbox.org"
+FileNameExtensions: ["zip"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".ROCKBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEMES"
+    CaseSensitive: false

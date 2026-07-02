@@ -1,0 +1,23 @@
+Name: Flipper Zero SubGhz Key data
+URL: "https://en.wikipedia.org/wiki/Flipper_Zero"
+FileNameExtensions: ["sub"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Filetype: Flipper SubGhz Key File\r\nVersion: 1\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FURIHALSUBGHZPRESETOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0ASYNC"
+    CaseSensitive: false

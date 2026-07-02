@@ -1,0 +1,32 @@
+Name: Bentley MicroStation CAD drawing (v8)
+Description: DGNLIB and CEL extensions are used for library
+URL: "http://fileformats.archiveteam.org/wiki/DGN"
+FileNameExtensions: ["dgn", "dgnlib", "cel"]
+MimeType: application/x-bentley-dgn
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: any
+    AsciiString: "S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0G\0N\0-\0M\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0G\0N\0~\0M\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0G\0N\0~\0M\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0\00\00\00\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0G\0N\0~\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0G\0N\0~\0S"
+    CaseSensitive: false

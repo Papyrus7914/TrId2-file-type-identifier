@@ -1,0 +1,236 @@
+Name: JAJC plugin
+Description: Just Another Jabber Client (JAJC) is a ICQ-like Jabber client designed to run in any Windows (32 bit) environment.
+URL: "http://jajc.ksn.ru/index.shtml"
+FileNameExtensions: ["dll"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZP\0\x02\0\0\0\x04\0\x0F\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\x1A\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\xBA\x10\0\x0E\x1F\xB4\t\xCD!\xB8\x01L\xCD!\x90\x90This program must be run under Win32\r\n$7\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0PE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 263
+    AsciiString: "\0\x19^B*\0\0\0\0\0\0\0\0\xE0\0\x8E"
+    CaseSensitive: true
+  - Pos: 280
+    #        \v
+    Bytes: [0x0B, 0x01, 0x02, 0x19, 0x00]
+  - Pos: 287
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 291
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 299
+    AsciiString: "\0\0\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 307
+    AsciiString: "\0\0\0@\0\0\x10\0\0\0\x02\0\0\x04\0\0\0\0\0\0\0\x04\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 339
+    AsciiString: "\0\0\x04\0\0\0\0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 351
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 356
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 358
+    AsciiString: "\0\0\0\0\x10\0\0\x10\0\0\0\0\0\0\x10\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 379
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 381
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 387
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 390
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 395
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 399
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 419
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 423
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 451
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 453
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0CODE\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 515
+    AsciiString: "\0\0\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 523
+    AsciiString: "\0\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0 \0\0`DATA\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 555
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 559
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 563
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 567
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\xC0BSS\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 594
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 599
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 607
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xC0.idata\0\0"
+    CaseSensitive: true
+  - Pos: 634
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 639
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 642
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 647
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\xC0.edata\0\0"
+    CaseSensitive: true
+  - Pos: 673
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 679
+    AsciiString: "\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 687
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0P."
+    CaseSensitive: true
+  - Pos: 710
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 714
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 719
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 722
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 727
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 741
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 744
+    AsciiString: ".r"
+    CaseSensitive: true
+  - Pos: 750
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 755
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 759
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 763
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 767
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0P"
+    CaseSensitive: true
+  - Pos: 790
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 795
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 799
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 803
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 807
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0P"
+    CaseSensitive: true
+  - Pos: 829
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 835
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 839
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 843
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 847
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 861
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 864
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 879
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 887
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 901
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 904
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x04\x10@\0\x03\aBoolean\x01\0\0\0\0\x01\0\0\0\0\x10@\0\x05False\x04True\x8D@\0,\x10@\0"
+    CaseSensitive: true
+  - Pos: 1078
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1080
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1099
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1103
+    Bytes: [0xFF]
+  - Pos: 1108
+    AsciiString: "X\x10@\0\x01"
+    CaseSensitive: true
+  - Pos: 1122
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GJCLSTRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JAJCPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JCLBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JCLLOGIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JCLRESOURCES"
+    CaseSensitive: false

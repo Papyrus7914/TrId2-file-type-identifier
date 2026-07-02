@@ -1,0 +1,32 @@
+Name: Program Manager Eternity Theme
+URL: "https://up.lod.bz/PGME"
+FileNameExtensions: ["thm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "]\r\n\t"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PGM.PROGRAMS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGM.MENUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BUTTON."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

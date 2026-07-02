@@ -1,0 +1,14 @@
+Name: HiJaak video card configuration
+URL: "https://en.wikipedia.org/wiki/HiJaak"
+FileNameExtensions: ["cfg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CARD="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODE0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHIP"
+    CaseSensitive: false

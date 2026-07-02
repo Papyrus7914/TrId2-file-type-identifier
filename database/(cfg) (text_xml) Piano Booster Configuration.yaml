@@ -1,0 +1,29 @@
+Name: Piano Booster Configuration
+URL: "https://www.pianobooster.org/"
+FileNameExtensions: ["cfg"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!--Piano Booster Configuration file-->"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOOK LASTSONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIANOBOOSTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAND NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONG HAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTH"
+    CaseSensitive: false

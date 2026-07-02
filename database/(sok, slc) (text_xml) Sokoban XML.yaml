@@ -1,0 +1,47 @@
+Name: Sokoban XML
+URL: "http://fileformats.archiveteam.org/wiki/Kallmarks_XML_format"
+FileNameExtensions: ["sok", "slc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LEVELCOLLECTION COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOKOBANLEVELS XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMALOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOKOBANLEV.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

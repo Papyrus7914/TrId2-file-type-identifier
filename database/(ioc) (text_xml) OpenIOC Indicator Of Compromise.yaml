@@ -1,0 +1,89 @@
+Name: OpenIOC Indicator Of Compromise
+URL: "http://openioc.org/"
+FileNameExtensions: ["ioc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INDICATOR OPERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORT_DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXT DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDICATORITEM ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLISHED-DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHORED_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST-MODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENIOC XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENIOC.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENIOC_1.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRITERIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRES"
+    CaseSensitive: false

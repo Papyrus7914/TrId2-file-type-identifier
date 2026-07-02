@@ -1,0 +1,23 @@
+Name: Satisfactory game Save
+URL: "https://www.mobygames.com/game/123992/satisfactory/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PERSISTENT_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSION"
+    CaseSensitive: false

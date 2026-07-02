@@ -1,0 +1,55 @@
+Name: Audio Calibration DataBase
+FileNameExtensions: ["acdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "QCMSNDDB"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "DB"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "A\0D\0S\0P\0.\0B\0F\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACSWVERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADSPVERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAPOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QCMSNDDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDCNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OEMINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPLUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWPNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWPVERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LLUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LUT0"
+    CaseSensitive: false

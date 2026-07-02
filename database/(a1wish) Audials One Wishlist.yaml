@@ -1,0 +1,37 @@
+Name: Audials One Wishlist
+URL: "http://audials.com"
+FileNameExtensions: ["a1wish"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version='1.0' encoding='UTF-8'?>\n<Exported_Wishes name=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXPORTED_WISHES NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIOTRACKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDBY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEASER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

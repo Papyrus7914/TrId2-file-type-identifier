@@ -1,0 +1,79 @@
+Name: VIP Organizer DB
+URL: "http://www.todolistsoft.com/organizer/"
+FileNameExtensions: ["vpdb"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0\x01\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\0\0&\0\0\0{"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ")\0\0\0GRIDTASKVIEWCOLUMNTASKRESOURCESDEPARTMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0\0\0GRIDTASKVIEWCOLUMNTASKDATECOMPLLETED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0\0\0GRIDTASKVIEWCOLUMNTASKSLEFTDAYSSHORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKDATELASTMODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKSDUEDATESHORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKSREMINDERTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKSDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKDATECREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKDATEOPENED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKGROUPIMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKSDUE_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKSPRIORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKCOMPLETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKLEFTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKFILEURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKSDONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKSNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDTASKVIEWCOLUMNTASKSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT TASK VIEW LAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM"
+    CaseSensitive: false

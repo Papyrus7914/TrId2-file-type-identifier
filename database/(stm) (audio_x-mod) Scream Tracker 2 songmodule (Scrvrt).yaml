@@ -1,0 +1,14 @@
+Name: Scream Tracker 2 song/module (Scrvrt)
+Description: Created by RepellantMold's S3M to STM converter.
+URL: "https://wiki.multimedia.cx/index.php/Scream_Tracker_2_Module"
+FileNameExtensions: ["stm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 20
+    AsciiString: "!Scrvrt!"
+    CaseSensitive: true
+  - Pos: 30
+    Bytes: [0x02]
+  - Pos: any
+    AsciiString: "SCRVRT"
+    CaseSensitive: false

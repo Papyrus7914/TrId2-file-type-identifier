@@ -1,0 +1,26 @@
+Name: WordStar 2000 Printer definition (v3.xx)
+URL: "https://en.wikipedia.org/wiki/WordStar"
+FileNameExtensions: ["prn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WS2000_PDF_03."
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: "\r\nDRIVER"
+    CaseSensitive: true
+  - Pos: 87
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: 91
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 94
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 107
+    AsciiString: "\r\n\x1A"
+    CaseSensitive: true

@@ -1,0 +1,23 @@
+Name: Medi8or Project (v4-)
+URL: "http://fileformats.archiveteam.org/wiki/Mediator"
+FileNameExtensions: ["md8"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JSOS W\xBB{B\xCF\xCF\x11\xA7\x99DEST\0\0\0\x01SOS Standard filesystem 1.0\0\0\0\0\0MatchWare"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOS STANDARD FILESYSTEM 1.0\0\0\0\0\0MATCHWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLWORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JSOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

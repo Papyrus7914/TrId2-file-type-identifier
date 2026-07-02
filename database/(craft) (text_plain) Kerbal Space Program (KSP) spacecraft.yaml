@@ -1,0 +1,38 @@
+Name: Kerbal Space Program (KSP) spacecraft
+URL: "http://en.wikipedia.org/wiki/Kerbal_Space_Program"
+FileNameExtensions: ["craft"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ship = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIQUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISTG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQOR"
+    CaseSensitive: false

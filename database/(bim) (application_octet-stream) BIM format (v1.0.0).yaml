@@ -1,0 +1,47 @@
+Name: BIM format (v1.0.0)
+URL: "https://www.dotbim.net/"
+FileNameExtensions: ["bim"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMA_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORDINATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.0.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

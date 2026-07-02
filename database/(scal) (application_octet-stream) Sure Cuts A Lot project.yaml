@@ -1,0 +1,20 @@
+Name: Sure Cuts A Lot project
+URL: "https://surecutsalot.com/software/software_scal.php"
+FileNameExtensions: ["scal"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "SCAL\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false

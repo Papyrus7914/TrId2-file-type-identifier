@@ -1,0 +1,9 @@
+Name: GameCubeZip image
+Description: Dolphin native compressed image format.
+URL: "https://en.wikipedia.org/wiki/Dolphin_(emulator)"
+FileNameExtensions: ["gcz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    \v
+    Bytes: [0x01, 0xC0, 0x0B, 0xB1]

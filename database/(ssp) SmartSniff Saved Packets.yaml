@@ -1,0 +1,8 @@
+Name: SmartSniff Saved Packets
+Description: A Sniffer that captures TCP/IP packets that pass through the network adapter.
+URL: "http://www.nirsoft.net/utils/smsniff.html"
+FileNameExtensions: ["ssp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SMSNF200\x04\0\xC0\xA8{\xC8\x18\0"
+    CaseSensitive: true

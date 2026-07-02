@@ -1,0 +1,10 @@
+Name: 16bit DOS COM Ryptor encrypted
+URL: "1999 Encryptor by ShadE."
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: any
+    AsciiString: "EEE2"
+    CaseSensitive: false

@@ -1,0 +1,77 @@
+Name: SQR script
+Description: SQR is a programming language designed for generating reports from database management systems.
+URL: "http://en.wikipedia.org/wiki/SQR"
+FileNameExtensions: ["sqr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "***********************************************************************"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN-PROCEDURE IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END-PROCEDURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN-SE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END-IF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END-SE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO GET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LET $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: SuperTux Sprite
+URL: "https://en.wikipedia.org/wiki/SuperTux"
+FileNameExtensions: ["sprite"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(s"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(ACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false

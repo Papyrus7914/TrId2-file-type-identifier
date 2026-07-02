@@ -1,0 +1,17 @@
+Name: Mesen Game Database
+URL: "https://www.mesen.ca/"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "###################################################################################\r\n#\r\n# Mesen Game Database\r\n#\r\n# Automatically generated database"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GENERATED ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USING"
+    CaseSensitive: false

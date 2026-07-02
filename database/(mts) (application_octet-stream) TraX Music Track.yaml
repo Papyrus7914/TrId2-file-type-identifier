@@ -1,0 +1,14 @@
+Name: TraX Music Track
+Description: Sequencer for Windows 3.x by Passport Designs.
+FileNameExtensions: ["mts"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RO\0\0@\0\0\0"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "TK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".MTS"
+    CaseSensitive: false

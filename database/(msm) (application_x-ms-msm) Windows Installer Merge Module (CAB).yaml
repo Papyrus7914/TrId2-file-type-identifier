@@ -1,0 +1,23 @@
+Name: Windows Installer Merge Module (CAB)
+URL: "https://en.wikipedia.org/wiki/Windows_Installer"
+FileNameExtensions: ["msm"]
+MimeType: application/x-ms-msm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANIFEST."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATALOG."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UL_MANIFEST."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UL_CATALOG."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCF"
+    CaseSensitive: false

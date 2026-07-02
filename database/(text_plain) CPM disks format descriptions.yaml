@@ -1,0 +1,25 @@
+Name: CP/M disks format descriptions
+URL: "https://www.mankier.com/5/diskdefs"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "diskdef "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BLOCKSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOTTRK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECLEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTRK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKS"
+    CaseSensitive: false

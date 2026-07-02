@@ -1,0 +1,18 @@
+Name: FlexRadio Systems TURF data
+Description: TURF stand for Tool for Updating Radio Frequencies.
+URL: "https://flexradio.it/"
+FileNameExtensions: ["turf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#\r\n# (C) FlexRadio Systems 2010-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(C) FLEXRADIO SYSTEMS 2010-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPGRADE FILE FOR FLEX-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALID ONLY FOR SERIAL"
+    CaseSensitive: false

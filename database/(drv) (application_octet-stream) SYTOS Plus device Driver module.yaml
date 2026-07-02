@@ -1,0 +1,11 @@
+Name: SYTOS Plus device Driver module
+Description: Backup software by Sytron Corporation.
+FileNameExtensions: ["drv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SYTOS Plus Device Driver Module "
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\r\n"
+    CaseSensitive: true

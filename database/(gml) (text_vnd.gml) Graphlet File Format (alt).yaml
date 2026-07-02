@@ -1,0 +1,29 @@
+Name: Graphlet File Format (alt)
+URL: "https://en.wikipedia.org/wiki/Graph_Modelling_Language"
+FileNameExtensions: ["gml"]
+MimeType: text/vnd.gml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Creator"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIRECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE"
+    CaseSensitive: false

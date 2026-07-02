@@ -1,0 +1,14 @@
+Name: 3D Studio mesh
+URL: "http://fileformats.archiveteam.org/wiki/3DS"
+FileNameExtensions: ["3ds"]
+MimeType: application/x-3ds
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MM"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\x02\0\n\0\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0\0\0=="
+    CaseSensitive: true

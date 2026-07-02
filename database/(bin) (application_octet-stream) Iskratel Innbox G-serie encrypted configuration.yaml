@@ -1,0 +1,12 @@
+Name: Iskratel Innbox G-serie encrypted configuration
+Description: Iskratel changed name to Kontron.
+URL: "https://kontron-slovenia.com/"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SdIskratel_InnboxG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SALTED"
+    CaseSensitive: false

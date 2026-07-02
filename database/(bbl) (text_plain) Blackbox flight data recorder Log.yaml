@@ -1,0 +1,20 @@
+Name: Blackbox flight data recorder Log
+URL: "https://github.com/cleanflight/cleanflight/blob/master/docs/Blackbox.md"
+FileNameExtensions: ["bbl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "H Product:Blackbox flight data recorder by Nicholas Sherlock"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "H DATA VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H FIRMWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H PRODUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H FIELD"
+    CaseSensitive: false

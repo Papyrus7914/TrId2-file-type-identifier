@@ -1,0 +1,38 @@
+Name: Cabbage script (with rem)
+URL: "http://cabbageaudio.com/"
+FileNameExtensions: ["csd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CSOUNDSYNTHESIZER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSINSTRUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSOPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDS("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CABBAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCHNLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KSMPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false

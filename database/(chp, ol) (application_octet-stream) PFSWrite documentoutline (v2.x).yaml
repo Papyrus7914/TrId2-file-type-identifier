@@ -1,0 +1,11 @@
+Name: PFS:Write document/outline (v2.x)
+URL: "https://winworldpc.com/product/pfswrite/2x"
+FileNameExtensions: ["chp", "ol"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFEB\n"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\ndn"
+    CaseSensitive: true

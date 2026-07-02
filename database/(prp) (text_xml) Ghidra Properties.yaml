@@ -1,0 +1,26 @@
+Name: Ghidra Properties
+URL: "https://en.wikipedia.org/wiki/Ghidra"
+FileNameExtensions: ["prp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BASIC_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

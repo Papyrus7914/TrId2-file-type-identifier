@@ -1,0 +1,37 @@
+Name: Dia shape
+URL: "http://en.wikipedia.org/wiki/Dia_(software)"
+FileNameExtensions: ["shape"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WWW.DAA.COM.AU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIA-SHAPE-NS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

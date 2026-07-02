@@ -1,0 +1,38 @@
+Name: Apple Interface Builder NIB archive (XML)
+Description: Nib files are a statically stored representation of the set of interface objects used by the application and their relationships.
+URL: "http://developer.apple.com/tools/interfacebuilder/"
+FileNameExtensions: ["nib"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE PLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLIST VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTDS"
+    CaseSensitive: false

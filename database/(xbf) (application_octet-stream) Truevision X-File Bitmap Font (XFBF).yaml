@@ -1,0 +1,11 @@
+Name: Truevision X-File Bitmap Font (XFBF)
+Description: Legacy font/bitmap format.
+FileNameExtensions: ["xbf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XFBF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRUEVISION-XFILE."
+    CaseSensitive: false

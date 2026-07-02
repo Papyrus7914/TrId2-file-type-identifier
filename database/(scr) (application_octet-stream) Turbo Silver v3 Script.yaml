@@ -1,0 +1,21 @@
+Name: Turbo Silver v3 Script
+Description: text/plain
+URL: "https://en.wikipedia.org/wiki/TurboSilver"
+FileNameExtensions: ["scr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SILVER 3\nSCRP\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".ANI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".STL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRP"
+    CaseSensitive: false

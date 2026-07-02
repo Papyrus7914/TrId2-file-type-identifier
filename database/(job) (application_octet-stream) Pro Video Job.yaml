@@ -1,0 +1,17 @@
+Name: Pro Video Job
+Description: Amiga video software by Shereff Systems.
+FileNameExtensions: ["job"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PVCGHEADFONT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALT"
+    CaseSensitive: false

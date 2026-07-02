@@ -1,0 +1,17 @@
+Name: Virtual CD v4 log
+Description: Log file containing any messages output during creation of the virtual CD
+URL: "http://www.virtualcd-online.de"
+FileNameExtensions: ["vbl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VBL\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VIRTUAL CD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VC4"
+    CaseSensitive: false

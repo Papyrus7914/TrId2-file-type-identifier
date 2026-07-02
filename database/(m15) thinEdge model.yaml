@@ -1,0 +1,11 @@
+Name: thinEdge model
+Description: thinEdge is a low-poly modeller designed to be tightly cooperating with thinBASIC interpreter.
+URL: "http://psch.thinbasic.com/thinedge.html"
+FileNameExtensions: ["m15"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "'thinEdge datafile "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERTEXNUM"
+    CaseSensitive: false

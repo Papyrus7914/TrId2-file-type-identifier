@@ -1,0 +1,26 @@
+Name: LeapFrog Package
+URL: "https://en.wikipedia.org/wiki/Leapster"
+FileNameExtensions: ["lfp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "META.INFUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HTMLUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPGUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNGUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TILE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Actor Library Definition Language
+URL: "https://en.wikipedia.org/wiki/Actor_(programming_language)"
+FileNameExtensions: ["ldl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Library \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

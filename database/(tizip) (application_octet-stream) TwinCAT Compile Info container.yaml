@@ -1,0 +1,26 @@
+Name: TwinCAT Compile Info container
+URL: "https://www.beckhoff.com/en-en/products/automation/twincat/"
+FileNameExtensions: ["tizip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 38
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: ".compileinfo"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".COMPILEINFOPK"
+    CaseSensitive: false

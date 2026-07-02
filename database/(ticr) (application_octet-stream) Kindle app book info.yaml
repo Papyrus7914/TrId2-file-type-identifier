@@ -1,0 +1,68 @@
+Name: Kindle app book info
+URL: "https://en.wikipedia.org/wiki/Amazon_Kindle"
+FileNameExtensions: ["ticr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xAC\xED\0\x05sr\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "com.amazon.ebook.booklet.reader.plugin.timer.model.TICR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XSR\0ICOM.AMAZON.EBOOK.BOOKLET.READER.PLUGIN.TIMER.CALCULATOR.AVERAGECALCULATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.AMAZON.EBOOK.BOOKLET.READER.PLUGIN.TIMER.MODEL.BOOKINFOSTORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNNINGTHRESHOLDEXCEEDERSSUML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERCENTOFBOOKFORKNOWNWORDSXP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNNINGSUMINSAMPLESETD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THRESHOLDEXCEEDERSSETQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAININGLENGTHINWORDSL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JAVA.UTIL.ARRAYLISTX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVGCALCULATORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTRIBUTIONST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMWORDSKNOWND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTALTIMEREADI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMWORDSREADD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAVERSIONJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTLIERLISTQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERCENTREADJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLESETQ\0~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKINFOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEXP"
+    CaseSensitive: false

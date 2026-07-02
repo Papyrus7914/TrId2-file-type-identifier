@@ -1,0 +1,100 @@
+Name: 32bit DOS Executable Watcom C + DOS/4G(W)
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLOATING-POINT SUPPORT NOT LOADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT ENOUGH MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789ABCDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACK OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE\0DOS4G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS4GW.EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN-TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOO MANY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESERVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WATCOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WVRQ"
+    CaseSensitive: false

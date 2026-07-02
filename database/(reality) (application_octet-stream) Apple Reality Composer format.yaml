@@ -1,0 +1,98 @@
+Name: Apple Reality Composer format
+URL: "https://developer.apple.com/augmented-reality/tools/"
+FileNameExtensions: ["reality"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "header.jsonUX"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".COMPILEDMESHDEFORMATION.ARZUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COMPILEDPHYSICSMATERIAL.ARZUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COMPILEDCOLLISIONSHAPE.ARZUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COMPILEDMATERIAL.ARZUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COMPILEDTEXTURE.ARZUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYSICSMATERIALASSETI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.APPLE.REALITYKIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COMPILEDMESH.ARZUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMEWORKVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETMAP.JSONUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENEIDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER.JSONUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESTITUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE.ARZUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NODE_D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TEX"
+    CaseSensitive: false

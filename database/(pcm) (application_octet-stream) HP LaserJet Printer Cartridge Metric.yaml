@@ -1,0 +1,16 @@
+Name: HP LaserJet Printer Cartridge Metric
+FileNameExtensions: ["pcm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \f
+    Bytes: [0xAC, 0x0C, 0x10, 0x03]
+  - Pos: any
+    AsciiString: "(C) COPYRIGHT HEWLETT PACKARD CORPORATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASERJET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B0S1"
+    CaseSensitive: false

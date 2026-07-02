@@ -1,0 +1,10 @@
+Name: SharkPort file
+URL: "http://www.gameshark.com/"
+FileNameExtensions: ["sps"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\0\0\0SharkPortSave"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SHARKPORTSAVE"
+    CaseSensitive: false

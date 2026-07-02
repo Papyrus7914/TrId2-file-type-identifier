@@ -1,0 +1,610 @@
+Name: OpenDocument Flat XML Spreadsheet
+URL: "http://en.wikipedia.org/wiki/OpenDocument"
+FileNameExtensions: ["fods"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.OASIS.OPENDOCUMENT.SPREADSHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG-ITEM-MAP-INDEXED CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG-ITEM-MAP-ENTRY CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG-ITEM-MAP-NAMED CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE-LAYOUT-PROPERTIES STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER-FOOTER-PROPERTIES FO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE-CELL-PROPERTIES STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAGRAPH-PROPERTIES STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE-COLUMN-PROPERTIES FO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE-ROW-PROPERTIES STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARACTERCOMPRESSIONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTALSCROLLBARWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISRASTERAXISSYNCHRONIZED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT-CELL-STYLE-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT-STATISTIC META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTALSPLITPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER-COLUMNS-REPEATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAGRAPH-PROPERTIES FO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG-ITEM-SET CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION-SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENCY-SYMBOL NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISKERNASIANPUNCTUATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE-PROPERTIES TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE-OPTIMAL-ROW-HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT-PROPERTIES STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALSPLITPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENCY-STYLE STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWPAGEBREAKPREVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT-UNDERLINE-COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT-UNDERLINE-STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT-UNDERLINE-WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOWPRINTJOBCANCEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT-STYLE STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-FAMILY-GENERIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASCOLUMNROWHEADERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTALSPLITMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISOUTLINESYMBOLSSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG-ITEM CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIN-INTEGER-DIGITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER-STYLE STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASTERSUBDIVISIONX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASTERSUBDIVISIONY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEVERSIONONCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE-COLUMN TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT-PROPERTIES FO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATEFROMTEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-NAME-COMPLEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTER-LEFT STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER-LEFT STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTER-PAGE STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OOXML-ODF-INTEROP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE-LAYOUT STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEVIEWZOOMVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT-STYLE-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASTERRESOLUTIONX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASTERRESOLUTIONY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAB-STOP-DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT-ALIGN-SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALSPLITMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLEAREAHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XSL-FO-COMPATIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVESPLITRANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLY-STYLE-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOMATIC-STYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUND-COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUND-IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE-COMPLEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTER-PAGE-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE-LAYOUT-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE-CELL TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLEAREAWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTRY-COMPLEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURSORPOSITIONX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURSORPOSITIONY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA-STYLE-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-FACE STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-FACE-DECLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-NAME-ASIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASTERISVISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE-ROW TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLEAREALEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECIMAL-PLACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSNAPTORASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE-ASIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKUPDATEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENOFFICE.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITIONBOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPEAT-CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION-ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWPAGEBREAKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWZEROVALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVG-COMPATIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLEAREATOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLYUSERDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOCALCULATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTRY-ASIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATION-DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGIN-BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTER-STYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITIONRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW-SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE64BINARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREAK-BEFORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMN-WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPERIMENTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTER-STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASSHEETTABS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER-STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADREADONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGIN-RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITIONLEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTERSETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGION-RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITING-MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVETABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGIN-LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE-NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITIONTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGION-LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE-COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL-COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE-VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-PITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGIN-TOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIN-HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE-COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEET-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML-EVENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWNOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADING1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PURL.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWGRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLATILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOMTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$BUILD-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOLEAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PADDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESULT2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE()"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATHML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XFORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LR-TB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWISS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "16PT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

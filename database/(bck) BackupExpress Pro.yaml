@@ -1,0 +1,29 @@
+Name: BackupExpress Pro
+Description: backup file for versions 1.x through 2.x; can be read by version 3.x
+URL: "http://english.xpertdesign.de/info_bxp.php"
+FileNameExtensions: ["bck"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "5.01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false

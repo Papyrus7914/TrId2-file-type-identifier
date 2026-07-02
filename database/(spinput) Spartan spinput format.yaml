@@ -1,0 +1,25 @@
+Name: Spartan spinput format
+Description: A chemistry format.
+FileNameExtensions: ["spinput"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: " OPT "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDATOMLABELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINPROPIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPROPIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDCART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDHESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HESSIAN"
+    CaseSensitive: false

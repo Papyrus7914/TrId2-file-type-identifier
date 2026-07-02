@@ -1,0 +1,41 @@
+Name: MixMeister Playlist
+URL: "https://www.mixmeister.com/"
+FileNameExtensions: ["mmp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "MXMPLIST"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "TRKLLIST"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "TRKITRKH"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MXMPLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKLYTRKM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKLYTRKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRKITRKH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRKLLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLBLG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMVR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRKF"
+    CaseSensitive: false

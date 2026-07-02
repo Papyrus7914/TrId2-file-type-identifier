@@ -1,0 +1,17 @@
+Name: Text Plus document (v3.0)
+Description: Shareware text editor / word process for Amiga.
+FileNameExtensions: ["txp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TP30"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXTPLUS3."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TXP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TP30"
+    CaseSensitive: false

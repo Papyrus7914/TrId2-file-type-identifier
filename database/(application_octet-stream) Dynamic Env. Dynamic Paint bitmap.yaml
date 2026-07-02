@@ -1,0 +1,13 @@
+Name: Dynamic Env. Dynamic Paint bitmap
+Description: Dynamic Environment was a GUI for MS-DOS by Radarsoft.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DYNAMIC PAINT\r\n:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HIGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDE"
+    CaseSensitive: false

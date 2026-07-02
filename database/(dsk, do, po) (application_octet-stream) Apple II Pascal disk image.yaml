@@ -1,0 +1,22 @@
+Name: Apple II Pascal disk image
+URL: "https://en.wikipedia.org/wiki/Apple_Pascal"
+FileNameExtensions: ["dsk", "do", "po"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01, 0xE0]
+  - Pos: 19
+    AsciiString: "\b"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSTEM.APPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

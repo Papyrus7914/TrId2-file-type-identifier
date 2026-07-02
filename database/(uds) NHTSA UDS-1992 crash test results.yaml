@@ -1,0 +1,25 @@
+Name: NHTSA UDS-1992 crash test results
+URL: "http://en.wikipedia.org/wiki/NHTSA"
+FileNameExtensions: ["uds"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "UDS-1992"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "MET"
+    CaseSensitive: true
+  - Pos: 512
+    AsciiString: "CURVE HDR"
+    CaseSensitive: true
+  - Pos: 640
+    AsciiString: "TIME"
+    CaseSensitive: true
+  - Pos: 660
+    AsciiString: "SECONDS"
+    CaseSensitive: true
+  - Pos: 700
+    AsciiString: "TIME SERIES"
+    CaseSensitive: true
+  - Pos: 1024
+    AsciiString: "Y DATA"
+    CaseSensitive: true

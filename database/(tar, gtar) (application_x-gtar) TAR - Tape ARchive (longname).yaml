@@ -1,0 +1,15 @@
+Name: TAR - Tape ARchive (longname)
+Description: Variant at offset 156 'L' indicates long name as 1st member.
+URL: "https://www.gnu.org/software/tar/manual/html_node/Standard.html"
+FileNameExtensions: ["tar", "gtar"]
+MimeType: application/x-gtar
+DetectionPatterns:
+  - Pos: 156
+    AsciiString: "L"
+    CaseSensitive: true
+  - Pos: 500
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 511
+    AsciiString: "\0"
+    CaseSensitive: true

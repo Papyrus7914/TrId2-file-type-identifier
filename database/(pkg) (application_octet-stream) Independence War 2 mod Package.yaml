@@ -1,0 +1,29 @@
+Name: Independence War 2 mod Package
+URL: "https://www.i-war2.com"
+FileNameExtensions: ["pkg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "PKG PKHD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEXP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIMP"
+    CaseSensitive: false

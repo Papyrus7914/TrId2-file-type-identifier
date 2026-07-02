@@ -1,0 +1,26 @@
+Name: X-Tend engine Sound definition
+URL: "https://www.igdb.com/game_engines/x-tend"
+FileNameExtensions: ["xsa"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XSAMPLE 1.00\r\n{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XSAMPLE 1.00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONO_DIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX_DIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIN_DIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false

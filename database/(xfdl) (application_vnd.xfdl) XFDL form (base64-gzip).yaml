@@ -1,0 +1,24 @@
+Name: XFDL form (base64-gzip)
+Description: XFDL stand for Extensible Forms Description Language.
+URL: "http://www.w3.org/TR/NOTE-XFDL"
+FileNameExtensions: ["xfdl"]
+MimeType: application/vnd.xfdl
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "application/vnd.xfdl;"
+    CaseSensitive: true
+  - Pos: 57
+    AsciiString: "AAAAA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT-ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H4SIAAAAAAAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE64-GZIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.XFDL"
+    CaseSensitive: false

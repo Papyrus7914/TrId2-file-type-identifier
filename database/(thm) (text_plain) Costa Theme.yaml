@@ -1,0 +1,35 @@
+Name: Costa Theme
+URL: "https://costa.jacobpalm.dk/"
+FileNameExtensions: ["thm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$ThemeName,\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$CLRTITLEBARTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CLRDESKTOPTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CLRTEXTBOXTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CLRSELECTTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CLRWINDOWTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CLR3DSHADOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$THEMEAUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CLR3DLIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CLRBUTTON"
+    CaseSensitive: false

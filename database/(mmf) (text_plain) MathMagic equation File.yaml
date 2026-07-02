@@ -1,0 +1,41 @@
+Name: MathMagic equation File
+URL: "https://en.wikipedia.org/wiki/MathMagic"
+FileNameExtensions: ["mmf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\INFORMATION"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATOR(MATHMAGIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPLAIN()"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMTIMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE("
+    CaseSensitive: false

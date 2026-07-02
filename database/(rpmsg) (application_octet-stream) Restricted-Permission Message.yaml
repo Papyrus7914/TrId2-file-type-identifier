@@ -1,0 +1,8 @@
+Name: Restricted-Permission Message
+URL: "https://en.wikipedia.org/wiki/Rpmsg"
+FileNameExtensions: ["rpmsg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        v                 `
+    Bytes: [0x76, 0xE8, 0x04, 0x60, 0xC4, 0x11, 0xE3, 0x86]

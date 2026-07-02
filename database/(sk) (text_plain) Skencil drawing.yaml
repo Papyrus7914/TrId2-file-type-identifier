@@ -1,0 +1,11 @@
+Name: Skencil drawing
+URL: "https://en.wikipedia.org/wiki/Skencil"
+FileNameExtensions: ["sk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "##Sketch "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCUMENT("
+    CaseSensitive: false

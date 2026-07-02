@@ -1,0 +1,38 @@
+Name: Painter 3D model
+URL: "http://obligement.free.fr/articles/painter3d.php"
+FileNameExtensions: ["d"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Palette:\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SATURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMBIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPE"
+    CaseSensitive: false

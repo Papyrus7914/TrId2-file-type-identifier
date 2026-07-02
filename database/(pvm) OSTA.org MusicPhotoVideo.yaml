@@ -1,0 +1,38 @@
+Name: OSTA.org MusicPhotoVideo
+Description: OSTA stand for Optical Storage Technology Association. PVM files are, for example, part of images 'albums' created with software that come with some HP products, among others.
+URL: "http://www.osta.org/mpv/public/index.htm"
+FileNameExtensions: ["pvm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "1.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NS.OSTA.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PURL.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

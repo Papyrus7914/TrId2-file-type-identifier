@@ -1,0 +1,11 @@
+Name: Immaginaria TNG 3D scene
+Description: A cross-platform Web (and standalone) 3D View format
+URL: "http://tng3d.com/index.php"
+FileNameExtensions: ["tngz"]
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    #        x
+    Bytes: [0x78, 0x9C]

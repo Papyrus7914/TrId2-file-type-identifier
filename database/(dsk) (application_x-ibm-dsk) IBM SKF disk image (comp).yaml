@@ -1,0 +1,24 @@
+Name: IBM SKF disk image (comp)
+Description: new and compressed; possible comment offset is 28h
+URL: "http://fileformats.archiveteam.org/wiki/LoadDskF/SaveDskF"
+FileNameExtensions: ["dsk"]
+MimeType: application/x-ibm-dsk
+DetectionPatterns:
+  - Pos: 0
+    #              Z
+    Bytes: [0xAA, 0x5A]
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "(\0"
+    CaseSensitive: true

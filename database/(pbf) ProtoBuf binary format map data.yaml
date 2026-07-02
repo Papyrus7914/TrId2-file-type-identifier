@@ -1,0 +1,13 @@
+Name: ProtoBuf binary format map data
+URL: "http://wiki.openstreetmap.org/wiki/ProtocolBufBinary#File_format"
+FileNameExtensions: ["pbf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\r\n\tOSMHeader\x18"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OSMHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSMDATA"
+    CaseSensitive: false

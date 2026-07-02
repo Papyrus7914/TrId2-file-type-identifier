@@ -1,0 +1,14 @@
+Name: GammaCAD Symbol Library
+Description: CAD for Windows by Gamma Software.
+FileNameExtensions: ["syl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Symbol_Library 100\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SYM"
+    CaseSensitive: false

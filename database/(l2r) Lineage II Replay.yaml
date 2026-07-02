@@ -1,0 +1,10 @@
+Name: Lineage II Replay
+URL: "http://www.lineage2.com/"
+FileNameExtensions: ["l2r"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x17LineageII Replay File "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SAFEPACKAGE"
+    CaseSensitive: false

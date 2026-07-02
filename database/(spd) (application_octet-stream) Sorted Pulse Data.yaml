@@ -1,0 +1,128 @@
+Name: Sorted Pulse Data
+URL: "http://fileformats.archiveteam.org/wiki/Sorted_Pulse_Data"
+FileNameExtensions: ["spd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A"
+    CaseSensitive: true
+  - Pos: 136
+    AsciiString: "TREE"
+    CaseSensitive: true
+  - Pos: 680
+    AsciiString: "HEAP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMBER_OF_WAVEFORM_TRANSMITTED_BINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER_OF_WAVEFORM_RECEIVED_BINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVE_WAVE_NOISE_THRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANS_WAVE_NOISE_THRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSMITTED_START_IDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVE_PACKET_DESC_IDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVE_WAVE_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER_OF_RETURNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVE_WAVE_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANS_WAVE_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMPLITUDE_RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMPLITUDE_PULSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANS_WAVE_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVEFORM_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTS_START_IDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANLINE_IDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH_RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH_PULSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER_FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVELENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPS_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULSE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y_ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AZIMUTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHUFFLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZENITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNOD"
+    CaseSensitive: false

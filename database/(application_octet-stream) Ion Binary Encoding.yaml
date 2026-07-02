@@ -1,0 +1,7 @@
+Name: Ion Binary Encoding
+Description: Amazon Ion data serialization format.
+URL: "https://amazon-ion.github.io/ion-docs/docs/binary.html"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE0, 0x01, 0x00, 0xEA]

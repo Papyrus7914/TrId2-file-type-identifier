@@ -1,0 +1,36 @@
+Name: "Need for Speed: Underground audio"
+URL: "http://www.eagames.com/official/nfs/underground/en/home.jsp"
+FileNameExtensions: ["abk"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ABKC\x01\x01"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0\\\0\0\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 59
+    Bytes: [0x00, 0x00, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF]

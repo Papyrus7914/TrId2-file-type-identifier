@@ -1,0 +1,20 @@
+Name: Detached PDS Label info (v3)
+URL: "http://fileformats.archiveteam.org/wiki/PDS"
+FileNameExtensions: ["lbl", "cat", "dim", "mdm3", "mos", "slp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PDS_VERSION_ID"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END_OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDS3"
+    CaseSensitive: false

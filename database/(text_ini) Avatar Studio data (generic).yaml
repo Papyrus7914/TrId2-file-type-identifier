@@ -1,0 +1,13 @@
+Name: Avatar Studio data (generic)
+Description: French game by Canal+ Multimedia.
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[TYPE]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

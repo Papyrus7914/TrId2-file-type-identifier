@@ -1,0 +1,34 @@
+Name: TomTom Navigator info
+URL: "http://www.tomtom.com"
+FileNameExtensions: ["bif"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[TomTom NAVIGATOR]\r\nDeviceName="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPLICATIONBUILDNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICESERIALNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOMTOM NAVIGATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICEVERSIONHW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICEUNIQUEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERPASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME"
+    CaseSensitive: false

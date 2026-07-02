@@ -1,0 +1,13 @@
+Name: M99 compressed data
+URL: "http://www.michael-maniscalco.com/compression.htm"
+FileNameExtensions: ["m99"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x80\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true

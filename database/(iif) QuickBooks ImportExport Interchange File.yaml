@@ -1,0 +1,10 @@
+Name: QuickBooks Import/Export Interchange File
+URL: "http://www.intuit.com/"
+FileNameExtensions: ["iif"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACCNT"
+    CaseSensitive: false

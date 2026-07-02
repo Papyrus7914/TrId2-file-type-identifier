@@ -1,0 +1,26 @@
+Name: T98-Next snapshot
+URL: "NEC PC-98 emulator."
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: " PC-9821 Emulator T98-Next SaveData\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PC-9821 EMULATOR T98-NEXT SAVEDATA"
+    CaseSensitive: false

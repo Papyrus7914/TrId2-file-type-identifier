@@ -1,0 +1,33 @@
+Name: WordPerfect graphics
+URL: "http://www.corel.com/"
+FileNameExtensions: ["wpg"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: 1024
+    AsciiString: "R\0o\0o\0t\0 \0E\0n\0t\0r\0y"
+    CaseSensitive: true
+  - Pos: 1152
+    AsciiString: "P\0e\0r\0f\0e\0c\0t\0O\0f\0f\0i\0c\0e\0_\0M\0A\0I\0N"
+    CaseSensitive: true
+  - Pos: 1280
+    AsciiString: "P\0e\0r\0f\0e\0c\0t\0O\0f\0f\0i\0c\0e\0_\0O\0B\0J\0E\0C\0T\0S"
+    CaseSensitive: true
+  - Pos: 1410
+    AsciiString: "S\0u\0m\0m\0a\0r\0y\0I\0n\0f\0o\0r\0m\0a\0t\0i\0o\0n"
+    CaseSensitive: true
+  - Pos: 1537
+    AsciiString: "WPC\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P\0E\0R\0F\0E\0C\0T\0O\0F\0F\0I\0C\0E\0_\0O\0B\0J\0E\0C\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0E\0R\0F\0E\0C\0T\0O\0F\0F\0I\0C\0E\0_\0M\0A\0I\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false

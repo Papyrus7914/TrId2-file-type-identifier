@@ -1,0 +1,35 @@
+Name: Oracle TPX Template
+Description: Related to Oracle Database Designer.
+URL: "https://en.wikipedia.org/wiki/Oracle_Corporation"
+FileNameExtensions: ["tpx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    Bytes: [0x00, 0xFF, 0xFF, 0x01, 0x00]
+  - Pos: 11
+    AsciiString: "\0OLT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OLTTEMPLATEGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLTTOKENUSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLTTEXTUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPLCOMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPL_"
+    CaseSensitive: false

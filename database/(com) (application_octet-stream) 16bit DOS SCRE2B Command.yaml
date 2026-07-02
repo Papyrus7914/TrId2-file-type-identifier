@@ -1,0 +1,8 @@
+Name: 16bit DOS SCRE2B Command
+URL: "http://fileformats.archiveteam.org/wiki/SCRE2B"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                \f                .     \n
+    Bytes: [0x8C, 0xDA, 0x01, 0x16, 0x0C, 0x01, 0xFF, 0x2E, 0x0A, 0x01, 0x00, 0x00]

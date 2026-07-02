@@ -1,0 +1,11 @@
+Name: Pegasus PIC2 bitmap
+URL: "http://fileformats.archiveteam.org/wiki/Pegasus_PIC"
+FileNameExtensions: ["kqp", "pic"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PIC2\x01\b\0\0\0d\0\x01\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

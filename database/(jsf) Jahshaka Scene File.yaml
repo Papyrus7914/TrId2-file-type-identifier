@@ -1,0 +1,26 @@
+Name: Jahshaka Scene File
+Description: Jahshaka is an OpenSource Realtime Editing and Effects System.
+URL: "http://www.jahshaka.org"
+FileNameExtensions: ["jsf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version='1.0' encoding='utf-8"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-- JAHSHAKA SCENE FILE --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JAHSHAKA JAH_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML_FILE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE_FILE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JAHLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false

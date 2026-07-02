@@ -1,0 +1,58 @@
+Name: Win32 EXE RosAsm
+URL: "http://betov.free.fr/"
+FileNameExtensions: ["exe"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!Spindoz 32 spit PEfile made wiz"
+    CaseSensitive: true
+  - Pos: 113
+    AsciiString: "Asm Assembler.$PE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 350
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0.idata\0\0"
+    CaseSensitive: true
+  - Pos: 394
+    AsciiString: "\0\0\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\xC0."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SPINDOZ 32 SPIT PEFILE MADE WIZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASM ASSEMBLER.$PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION"
+    CaseSensitive: false

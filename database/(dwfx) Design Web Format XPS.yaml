@@ -1,0 +1,55 @@
+Name: Design Web Format XPS
+URL: "http://en.wikipedia.org/wiki/Design_Web_Format"
+FileNameExtensions: ["dwfx"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 24
+    AsciiString: "\0\0\v\0\0\0_rels/.rels"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DWFDOCUMENTSEQUENCE.DWFSEQ.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DWFDOCUMENTSEQUENCE.DWFSEQ.RELSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DWFDOCUMENTSEQUENCE.DWFSEQPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DWFDOCUMENTSEQUENCE.DWFSEQM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTOR.XML.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DWFPROPERTIES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COREPROPERTIES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XML.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.AUTODESK.DWF.E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTOR.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENT."
+    CaseSensitive: false

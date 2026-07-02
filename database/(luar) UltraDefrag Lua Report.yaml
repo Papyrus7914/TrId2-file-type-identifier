@@ -1,0 +1,22 @@
+Name: UltraDefrag Lua Report
+URL: "http://ultradefrag.sourceforge.net/en/index.html"
+FileNameExtensions: ["luar"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-- UltraDefrag report for "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VOLUME_LETTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{FRAGMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

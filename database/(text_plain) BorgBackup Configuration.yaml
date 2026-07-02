@@ -1,0 +1,22 @@
+Name: BorgBackup Configuration
+URL: "https://borgbackup.readthedocs.io"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[repository]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADDITIONAL_FREE_SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX_SEGMENT_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMENTS_PER_DIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPEND_ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

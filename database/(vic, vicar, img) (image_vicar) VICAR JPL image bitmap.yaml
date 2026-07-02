@@ -1,0 +1,18 @@
+Name: VICAR JPL image bitmap
+Description: "VICAR stand for: Video Image Communication and Retrieval."
+URL: "https://en.wikipedia.org/wiki/VICAR_file_format"
+FileNameExtensions: ["vic", "vicar", "img"]
+MimeType: image/vicar
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LBLSIZE="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BUFSIZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

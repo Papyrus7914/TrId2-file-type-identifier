@@ -1,0 +1,17 @@
+Name: 16bit DOS COM Vacuum compressed (v0.01c)
+Description: Compressor by Dark Fiber.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                0           _
+    Bytes: [0x8B, 0xFC, 0x83, 0xEF, 0x30, 0xB9, 0x5F, 0x00, 0xBE]
+  - Pos: 11
+    #                          W
+    Bytes: [0xFD, 0xF3, 0xA4, 0x57, 0xB9]
+  - Pos: 18
+    #                                                                                            V     A     C     U     U     M
+    Bytes: [0xF3, 0xA4, 0xFC, 0x87, 0xF7, 0xAC, 0xAD, 0x95, 0xB2, 0x10, 0xBF, 0x00, 0x01, 0xC3, 0x56, 0x41, 0x43, 0x55, 0x55, 0x4D, 0x00, 0x10]
+  - Pos: any
+    AsciiString: "VACUUM"
+    CaseSensitive: false

@@ -1,0 +1,80 @@
+Name: CloneCD CDImage (description)
+URL: "https://en.wikipedia.org/wiki/CloneCD"
+FileNameExtensions: ["ccd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[CloneCD]\r\nVersion="
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATATRACKSSCRAMBLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDTEXTLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREGAPMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREGAPSUBC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOCENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLONECD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZERO"
+    CaseSensitive: false

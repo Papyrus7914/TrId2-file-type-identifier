@@ -1,0 +1,17 @@
+Name: Valve Studiomdl Data
+URL: "http://developer.valvesoftware.com/wiki/Studiomdl"
+FileNameExtensions: ["smd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "version 1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SKELETON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

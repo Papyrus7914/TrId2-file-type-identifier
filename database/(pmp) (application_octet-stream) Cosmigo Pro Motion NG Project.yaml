@@ -1,0 +1,23 @@
+Name: Cosmigo Pro Motion NG Project
+URL: "https://cosmigopm.itch.io/pro-motion-ng"
+FileNameExtensions: ["pmp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "~pmotion.pmp\xE5"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "~PMOTION.LAYER-0.PMDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~PMOTION.BRCPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~PMOTION.PMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~PMOTION.BRCS"
+    CaseSensitive: false

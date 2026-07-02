@@ -1,0 +1,38 @@
+Name: Amiga Blitz Basic Extension
+URL: "https://en.wikipedia.org/wiki/Blitz_BASIC"
+FileNameExtensions: ["xtra"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\x80\0\x80\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\x80\0\x80\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\x80\0\x80\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "\0\0 \0\0\0(\0"
+    CaseSensitive: true

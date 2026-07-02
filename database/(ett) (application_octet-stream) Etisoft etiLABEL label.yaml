@@ -1,0 +1,26 @@
+Name: Etisoft etiLABEL label
+URL: "https://etisoft.com.pl/pd/projektowanie-etykiet-etilabel/"
+FileNameExtensions: ["ett"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 6
+    AsciiString: "\xF5?\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\x01\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KOMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADEN"
+    CaseSensitive: false

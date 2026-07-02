@@ -1,0 +1,17 @@
+Name: 16bit DOS COM DCCrypt encrypted
+URL: "DREAMMASTER's COM Crypt."
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          `           \a          V
+    Bytes: [0xB0, 0xB0, 0xFF, 0x60, 0x05, 0x07, 0x01, 0x56, 0x83, 0xC6, 0x18, 0xB9]
+  - Pos: 14
+    AsciiString: ","
+    CaseSensitive: true
+  - Pos: 16
+    #                          C
+    Bytes: [0x82, 0x00, 0x00, 0x43, 0xE2, 0xFB, 0xE9]
+  - Pos: any
+    AsciiString: "DREAMMASTER"
+    CaseSensitive: false

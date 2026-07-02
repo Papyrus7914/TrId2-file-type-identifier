@@ -1,0 +1,46 @@
+Name: Ability Write document
+URL: "http://fileformats.archiveteam.org/wiki/Ability_Write"
+FileNameExtensions: ["aww"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1]
+  - Pos: 640
+    AsciiString: "C\0o\0n\0t\0e\0n\0t\0s\0"
+    CaseSensitive: true
+  - Pos: 770
+    AsciiString: "S\0u\0m\0m\0a\0r\0y\0I\0n\0f\0o\0r\0m\0a\0t\0i\0o\0n\0"
+    CaseSensitive: true
+  - Pos: 898
+    AsciiString: "D\0o\0c\0u\0m\0e\0n\0t\0S\0u\0m\0m\0a\0r\0y\0I\0n\0f\0o\0r\0m\0a\0t\0i\0o\0n\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "D\0O\0C\0U\0M\0E\0N\0T\0S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0A\0C\0R\0O\0M\0O\0D\0U\0L\0E\0C\0O\0L\0L\0E\0C\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0\0\0\01\0\0\02\0\0\03\0\0\04\0\0\05\0\0\06\0\0\07\0\0\08\0\0\09"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0E\0W\0D\0A\0T\0A\0S\0T\0R\0E\0A\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0A\0C\0R\0O\0M\0O\0D\0U\0L\0E\01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0A\0C\0R\0O\0F\0O\0R\0M\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0N\0T\0E\0N\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0R\0I\0T\0E\0F\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HPYH"
+    CaseSensitive: false

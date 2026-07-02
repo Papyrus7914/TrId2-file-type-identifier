@@ -1,0 +1,17 @@
+Name: Danish Micro Engineering Rasterscope SPM data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/dmefile.c"
+FileNameExtensions: ["img"]
+MimeType: application/x-dme-spm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RSCOPE"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: " Danish Micro Engineering Rasterscope SPM data"
+    CaseSensitive: true

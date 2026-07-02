@@ -1,0 +1,14 @@
+Name: IFF Facsimile image
+URL: "http://wiki.amigaos.net/wiki/FAXX_IFF_Facsimile_Image"
+FileNameExtensions: ["faxx", "fax", "iff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FAXX"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FXHD"
+    CaseSensitive: false

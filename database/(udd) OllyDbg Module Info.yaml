@@ -1,0 +1,13 @@
+Name: OllyDbg Module Info
+URL: "http://home.t-online.de/home/Ollydbg/"
+FileNameExtensions: ["udd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Mod\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0Module info file v"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "."
+    CaseSensitive: true

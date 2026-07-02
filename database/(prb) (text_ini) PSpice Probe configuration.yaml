@@ -1,0 +1,65 @@
+Name: PSpice Probe configuration
+URL: "https://en.wikipedia.org/wiki/OrCAD#OrCAD_EE_PSpice"
+FileNameExtensions: ["prb"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN ANAPLOT 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN DISPLAY L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGEFLAG AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN YAXIS 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END ANAPLOT 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END DISPLAY L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN XAXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END YAXIS 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE LINEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACECOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END XAXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false

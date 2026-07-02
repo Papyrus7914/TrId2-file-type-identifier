@@ -1,0 +1,47 @@
+Name: TermBase eXchange Format (UTF-8)
+URL: "https://en.wikipedia.org/wiki/TermBase_eXchange"
+FileNameExtensions: ["tbx"]
+MimeType: application/x-tbx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE MARTIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARTIFHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGSET XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARTIF TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCEDESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEDESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

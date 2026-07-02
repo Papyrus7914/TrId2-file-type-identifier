@@ -1,0 +1,10 @@
+Name: id Software Doom 3 savegame
+URL: "http://www.doom3.com"
+FileNameExtensions: ["save"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x06\0\0\0DOOM 3\x10\0\0\0\x13\0\0\0game/"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "\0\0\0armor\0"
+    CaseSensitive: true

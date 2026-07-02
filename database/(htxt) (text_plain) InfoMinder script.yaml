@@ -1,0 +1,11 @@
+Name: InfoMinder script
+Description: Amiga information system by Terrapin Software.
+FileNameExtensions: ["htxt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$HEADER "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$SECTION 1"
+    CaseSensitive: false

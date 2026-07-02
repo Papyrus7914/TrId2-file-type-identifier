@@ -1,0 +1,16 @@
+Name: Arcsoft MultiMedia Email 3.0 message
+URL: "http://www.arcsoft.com/en/products/multimediaemail/"
+FileNameExtensions: ["me3"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "0\0\0\0 \0\0\0P\0\0\0\xE4%\0\04&\0\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0ArcsoftMultiMediaEmail3.0"
+    CaseSensitive: true
+  - Pos: 109
+    AsciiString: ":\\"
+    CaseSensitive: true

@@ -1,0 +1,14 @@
+Name: Adventure Game Toolkit Messages
+URL: "https://en.wikipedia.org/wiki/Adventure_Game_Toolkit"
+FileNameExtensions: ["msg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MESSAGE 1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END_MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE 2"
+    CaseSensitive: false

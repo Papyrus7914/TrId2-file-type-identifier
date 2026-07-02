@@ -1,0 +1,50 @@
+Name: XML Signature
+URL: "https://en.wikipedia.org/wiki/XML_Signature"
+FileNameExtensions: ["xsig"]
+MimeType: application/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CANONICALIZATIONMETHOD ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATUREMETHOD ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNEDSIGNATUREPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGESTMETHOD ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNEDPROPERTIES ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATUREVALUE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGESTVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYINFO ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X509DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLDSIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

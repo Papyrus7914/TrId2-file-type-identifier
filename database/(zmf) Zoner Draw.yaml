@@ -1,0 +1,11 @@
+Name: Zoner Draw
+Description: Should be named content.zmf
+URL: "http://www.zoner.com/"
+FileNameExtensions: ["zmf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\\0\0\0\xDDZ\x01\xD4xV"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BASE_LAYER"
+    CaseSensitive: false

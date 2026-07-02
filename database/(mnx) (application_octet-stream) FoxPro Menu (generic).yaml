@@ -1,0 +1,100 @@
+Name: FoxPro Menu (generic)
+URL: "https://en.wikipedia.org/wiki/FoxPro"
+FileNameExtensions: ["mnx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xF5]
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "OBJTYPE"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "OBJCODE"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "NAME"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "PROMPT"
+    CaseSensitive: true
+  - Pos: 160
+    AsciiString: "COMMAND"
+    CaseSensitive: true
+  - Pos: 224
+    AsciiString: "PROC"
+    CaseSensitive: true
+  - Pos: 288
+    AsciiString: "SETUP"
+    CaseSensitive: true
+  - Pos: 352
+    AsciiString: "CLEAN"
+    CaseSensitive: true
+  - Pos: 448
+    AsciiString: "KEY"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NAMECHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEANTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCEDURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUPTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MSYSMENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYLABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEANUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKIPFOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROMPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARK"
+    CaseSensitive: false

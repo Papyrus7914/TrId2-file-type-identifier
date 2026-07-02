@@ -1,0 +1,17 @@
+Name: NetWars Shape
+URL: "https://en.wikipedia.org/wiki/NetWars"
+FileNameExtensions: ["nsh"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VECTOR "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_VERTEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SHAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SPOLY"
+    CaseSensitive: false

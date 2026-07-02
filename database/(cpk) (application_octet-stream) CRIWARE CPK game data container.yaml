@@ -1,0 +1,56 @@
+Name: CRIWARE CPK game data container
+URL: "https://www.mobygames.com/company/2247/cri-middleware-co-ltd/"
+FileNameExtensions: ["cpk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CPK \xFF\0\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0\0\0\0\0@UTF"
+    CaseSensitive: true
+  - Pos: 2042
+    AsciiString: "(c)CRI"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CPKHEADER\0UPDATEDATETIME\0FILESIZE\0CONTENTOFFSET\0CONTENTSIZE\0TOCOFFSET\0TOCSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0TOTALFILES\0DIRECTORIES\0UPDATES\0VERSION\0REVISION\0ALIGN\0SORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEDPACKEDSIZE\0ENABLEDDATASIZE\0TOTALDATASIZE\0TOCS\0FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME\0FILESIZE\0EXTRACTSIZE\0FILEOFFSET\0I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETOCOFFSET\0ETOCSIZE\0ITOCOFFSET\0ITOCSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPKETOCINFO\0UPDATEDATETIME\0LOCALDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TVERS\0COMMENT\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPKTOCINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C)CRI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPKM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false

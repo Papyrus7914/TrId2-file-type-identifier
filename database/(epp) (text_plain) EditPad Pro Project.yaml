@@ -1,0 +1,29 @@
+Name: EditPad Pro Project
+URL: "https://www.editpadpro.com/"
+FileNameExtensions: ["epp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    #                          [
+    Bytes: [0xEF, 0xBB, 0xBF, 0x5B]
+  - Pos: any
+    AsciiString: "BOOKMARKSPROJECTWIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITPAD PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRSTFILETAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOVEDCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANAGED"
+    CaseSensitive: false

@@ -1,0 +1,62 @@
+Name: TESCAN TIMA Measurements
+URL: "https://en.wikipedia.org/wiki/TESCAN"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXPORTEDMEASUREMENTDATA REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLEDIAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.TESCAN.CZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLESHAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLEDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEMIMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWFIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BSE.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIRCLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMA"
+    CaseSensitive: false

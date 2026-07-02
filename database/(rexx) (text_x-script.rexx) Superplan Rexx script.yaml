@@ -1,0 +1,17 @@
+Name: Superplan Rexx script
+Description: Amiga spreadsheet by Precision Software Ltd.
+FileNameExtensions: ["rexx"]
+MimeType: text/x-script.rexx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/* "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPTIONS RESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPREXX"
+    CaseSensitive: false

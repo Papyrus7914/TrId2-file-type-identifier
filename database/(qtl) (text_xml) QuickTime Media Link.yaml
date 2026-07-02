@@ -1,0 +1,29 @@
+Name: QuickTime Media Link
+URL: "https://en.wikipedia.org/wiki/QuickTime"
+FileNameExtensions: ["qtl"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "X-QUICKTIME-MEDIA-LINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMBED SRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

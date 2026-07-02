@@ -1,0 +1,7 @@
+Name: Mac OS X Mach-O 64-bit ARM executable
+Description: Apple new M1, a.k.a. Apple Silicon
+URL: "https://en.wikipedia.org/wiki/Mach-O"
+DetectionPatterns:
+  - Pos: 0
+    #                                \f
+    Bytes: [0xCF, 0xFA, 0xED, 0xFE, 0x0C, 0x00, 0x00, 0x01]

@@ -1,0 +1,46 @@
+Name: Chrome Bookmarks
+URL: "https://en.wikipedia.org/wiki/Google_Chrome"
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATE_MODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKMARK_BAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE_ADDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNCED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

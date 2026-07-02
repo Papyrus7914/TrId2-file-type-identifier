@@ -1,0 +1,32 @@
+Name: Watcom C/C++ Project
+URL: "https://en.wikipedia.org/wiki/Watcom_C/C%2B%2B"
+FileNameExtensions: ["wpj"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "40\r\nprojectIdent\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VCOMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MCOMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPEMAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WVLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TGT"
+    CaseSensitive: false

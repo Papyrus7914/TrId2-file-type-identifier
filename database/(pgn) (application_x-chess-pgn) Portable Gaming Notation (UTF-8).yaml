@@ -1,0 +1,21 @@
+Name: Portable Gaming Notation (UTF-8)
+Description: PGN is "Portable Game Notation", a standard designed for the representation of chess game data using ASCII text files.
+URL: "https://en.wikipedia.org/wiki/Portable_Game_Notation"
+FileNameExtensions: ["pgn"]
+MimeType: application/x-chess-pgn
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF[Event \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RESULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

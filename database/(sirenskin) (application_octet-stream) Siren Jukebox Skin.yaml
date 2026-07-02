@@ -1,0 +1,14 @@
+Name: Siren Jukebox Skin
+Description: Jukebox software by Sonic Foundry.
+FileNameExtensions: ["sirenskin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SIRENSKIN.INIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BMPPK"
+    CaseSensitive: false

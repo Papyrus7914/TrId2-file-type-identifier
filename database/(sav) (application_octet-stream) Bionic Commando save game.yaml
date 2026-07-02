@@ -1,0 +1,49 @@
+Name: Bionic Commando save game
+URL: "https://www.mobygames.com/game/41784/bionic-commando/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xDE, 0xE1, 0xB9, 0xAA]
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CUTSCENE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUTORIAL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FISSURE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_SWING_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARBOR_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOOD_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VAULT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CITY_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOSS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARK_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NEW"
+    CaseSensitive: false

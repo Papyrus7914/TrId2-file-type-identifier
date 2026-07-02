@@ -1,0 +1,9 @@
+Name: Variant Call Format (binary) (v1)
+Description: Obsolete.
+URL: "https://en.wikipedia.org/wiki/Variant_Call_Format"
+FileNameExtensions: ["bcf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BCF\x04"
+    CaseSensitive: true

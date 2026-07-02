@@ -1,0 +1,28 @@
+Name: Xilinx Integrated Software Environment Project
+URL: "http://www.xilinx.com/"
+FileNameExtensions: ["npl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JDF "
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATED BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VER 1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATE"
+    CaseSensitive: false

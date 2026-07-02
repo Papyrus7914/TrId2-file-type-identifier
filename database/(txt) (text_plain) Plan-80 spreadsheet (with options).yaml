@@ -1,0 +1,11 @@
+Name: Plan-80 spreadsheet (with options)
+Description: Old spreadsheet for CP/M.
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ":OPTIONS\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TITLES"
+    CaseSensitive: false

@@ -1,0 +1,85 @@
+Name: StepMania music package
+URL: "http://www.stepmania.com"
+FileNameExtensions: ["smzip"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Songs/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "---------------DANCE-SINGLE - ----------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBTITLETRANSLIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTISTTRANSLIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLELENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLESTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LYRICSPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGCHANGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUSIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BPMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EASY"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: StatCrew Roster
+URL: "http://www.statcrew.com/"
+FileNameExtensions: ["vro"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "  00"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: " "
+    CaseSensitive: true

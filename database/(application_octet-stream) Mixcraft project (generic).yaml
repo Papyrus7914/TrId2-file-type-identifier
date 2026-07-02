@@ -1,0 +1,34 @@
+Name: Mixcraft project (generic)
+URL: "https://en.wikipedia.org/wiki/Mixcraft"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "MXC3PROJ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MXC3PROJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFXL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARK"
+    CaseSensitive: false

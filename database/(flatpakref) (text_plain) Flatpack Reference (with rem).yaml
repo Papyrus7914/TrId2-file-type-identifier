@@ -1,0 +1,29 @@
+Name: Flatpack Reference (with rem)
+URL: "https://en.wikipedia.org/wiki/Flatpak"
+FileNameExtensions: ["flatpakref"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLATPAK REF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIMEREPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISRUNTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRANCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

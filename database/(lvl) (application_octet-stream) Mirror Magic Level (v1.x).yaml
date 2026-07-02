@@ -1,0 +1,14 @@
+Name: Mirror Magic Level (v1.x)
+URL: "https://www.artsoft.org/mirrormagic/"
+FileNameExtensions: ["lvl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MIRRORMAGIC_LEVEL_FILE_VERSION_1."
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\nHEAD"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "BODY"
+    CaseSensitive: true

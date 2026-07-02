@@ -1,0 +1,17 @@
+Name: GTA4 save game
+Description: Save usually named like SGTA4nn.
+URL: "https://www.mobygames.com/game/33867/grand-theft-auto-iv/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "9\0\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0SAVE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE"
+    CaseSensitive: false

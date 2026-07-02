@@ -1,0 +1,20 @@
+Name: Sentry Spelling-Checker Engine Lexicon
+URL: "https://www.wintertree-software.com/support/ssce/"
+FileNameExtensions: ["clx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SSCE Lexicon "
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "\n\rCopyright (c) "
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: " Wintertree Software Inc.\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WINTERTREE SOFTWARE INC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false

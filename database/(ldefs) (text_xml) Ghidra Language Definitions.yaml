@@ -1,0 +1,50 @@
+Name: Ghidra Language Definitions
+URL: "https://en.wikipedia.org/wiki/Ghidra"
+FileNameExtensions: ["ldefs"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1."
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LANGUAGE_DEFINITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE PROCESSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSORSPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLAFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CSPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PSPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SLA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

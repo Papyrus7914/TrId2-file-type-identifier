@@ -1,0 +1,32 @@
+Name: GS-Calc workbook
+URL: "http://www.citadel5.com/gs-calc.htm"
+FileNameExtensions: ["gsc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "THIS-VERSION.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIN-VERSION.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKBOOK.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false

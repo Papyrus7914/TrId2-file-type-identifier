@@ -1,0 +1,27 @@
+Name: Primos Sound format audio
+Description: Used by Primos hunting devices.
+URL: "http://converter.primos.com/"
+FileNameExtensions: ["stl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PRIMOS\x01"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "Copyright (c)2013, Primos Hunting, All Rights Reserved.  http://www.primos.com                                                                                                                                                                  "
+    CaseSensitive: true
+  - Pos: 282
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED.  HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)2013"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMOS HUNTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.PRIMOS.COM"
+    CaseSensitive: false

@@ -1,0 +1,66 @@
+Name: ACUCOBOL object
+URL: "http://www.microfocus.com/products/extend/Datasheets/ACUCOBOL-GT.asp"
+DetectionPatterns:
+  - Pos: 0
+    #                          ␠           4
+    Bytes: [0x10, 0x12, 0x14, 0x20, 0x00, 0x34]
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0\0\0\x80\0\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\0\x01\0"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 110
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 230
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 236
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 242
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 246
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 250
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 252
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSACTION-STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN-CODE"
+    CaseSensitive: false

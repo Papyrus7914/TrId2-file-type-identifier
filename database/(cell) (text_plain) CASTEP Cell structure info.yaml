@@ -1,0 +1,35 @@
+Name: CASTEP Cell structure info
+URL: "http://fileformats.archiveteam.org/wiki/CASTEP"
+FileNameExtensions: ["cell"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%ENDBLOCK POSITIONS_FRAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%BLOCK POSITIONS_FRAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%ENDBLOCK SPECIES_POT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%BLOCK SPECIES_POT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%ENDBLOCK LATTICE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%BLOCK LATTICE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MP_GRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KPOINT"
+    CaseSensitive: false

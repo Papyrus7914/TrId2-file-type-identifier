@@ -1,0 +1,17 @@
+Name: Google Drive Document link
+URL: "http://en.wikipedia.org/wiki/Google_Drive"
+FileNameExtensions: ["gdoc"]
+MimeType: application/vnd.google-apps.document
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"url\": \"https://docs.google.com/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCS.GOOGLE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOC_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false

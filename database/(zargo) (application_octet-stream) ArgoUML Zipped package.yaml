@@ -1,0 +1,23 @@
+Name: ArgoUML Zipped package
+URL: "http://en.wikipedia.org/wiki/ArgoUML"
+FileNameExtensions: ["zargo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "_PROFILE.PROFILEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAGRAM.PGMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ARGOPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TODOPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XMIPK"
+    CaseSensitive: false

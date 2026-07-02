@@ -1,0 +1,17 @@
+Name: Cricket Audio XML Bank Description
+URL: "http://www.crickettechnology.com"
+FileNameExtensions: ["ckbx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOUND NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false

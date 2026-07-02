@@ -1,0 +1,29 @@
+Name: Finale Music notation
+URL: "https://en.wikipedia.org/wiki/Finale_(software)"
+FileNameExtensions: ["musx"]
+MimeType: application/vnd.makemusic.notation
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/vnd.makemusic.notation"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NOTATIONMETADATA.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINER.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINER.XMLM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORE.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false

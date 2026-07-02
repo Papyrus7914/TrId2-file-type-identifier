@@ -1,0 +1,9 @@
+Name: BSA Packing program compressed archive
+FileNameExtensions: ["bsn"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFBSG\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\xFFBSA\0"
+    CaseSensitive: true

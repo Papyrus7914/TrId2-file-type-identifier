@@ -1,0 +1,20 @@
+Name: Advanced Civilization saved game
+URL: "https://www.mobygames.com/game/advanced-civilization"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "8\0A"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: " C"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "8\0ADVANCED CIVILIZATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDFD"
+    CaseSensitive: false

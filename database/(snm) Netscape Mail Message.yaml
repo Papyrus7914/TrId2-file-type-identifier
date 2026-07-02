@@ -1,0 +1,12 @@
+Name: Netscape Mail Message
+URL: "http://en.wikipedia.org/wiki/Netscape"
+FileNameExtensions: ["snm"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x1E, 0x84, 0x90, 0x00, 0x00]
+  - Pos: 295
+    AsciiString: "null"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false

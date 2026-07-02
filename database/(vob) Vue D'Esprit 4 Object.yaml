@@ -1,0 +1,62 @@
+Name: Vue D'Esprit 4 Object
+Description: E-on Soft 3D format.
+URL: "http://www.e-onsoftware.com"
+FileNameExtensions: ["vob"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFF\xFF]\0\0\0\x02\0\x01\0\0\0\xFC\xFF5\0\0\0\t\0)\0\0\0Vue d'Esprit - \xA92001 e-on software, inc.\0\xFE\xFF\f\0\0\0\x02\0\x90\x01\0\0\xFD\xFF\x10\0\0\0\t\0\x04\0\0\0vob\0\0\xFF"
+    CaseSensitive: true
+  - Pos: 97
+    AsciiString: "\0\0\0P\xFF"
+    CaseSensitive: true
+  - Pos: 103
+    AsciiString: "\0\0\0\x01\xFF"
+    CaseSensitive: true
+  - Pos: 109
+    AsciiString: "\0\0\0\t\0"
+    CaseSensitive: true
+  - Pos: 115
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 119
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 123
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 125
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 127
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 141
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 147
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 149
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 151
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ")\0\0\0VUE D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001 E-ON SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0\0\0D\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESPRIT -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC."
+    CaseSensitive: false

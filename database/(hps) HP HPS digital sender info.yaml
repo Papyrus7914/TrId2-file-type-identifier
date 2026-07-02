@@ -1,0 +1,59 @@
+Name: HP HPS digital sender info
+Description: An HP-designed file format that carries the interface parameters for digital senders, this file contains, in text format, all of the index information that users enter at the front panel of the digital sender.
+URL: "http://www.hp.com"
+FileNameExtensions: ["hps"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Info]\r\nVersion="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCANNERMODELNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONTAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCNSETTINGTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCNSETTINGNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANNERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUPLEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

@@ -1,0 +1,49 @@
+Name: Tracks and Fields Miditracker
+Description: Amiga tracker by Kicko.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SPRODEFS\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "SLEN"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "PONS"
+    CaseSensitive: true
+  - Pos: 572
+    AsciiString: "PTCH"
+    CaseSensitive: true
+  - Pos: 708
+    AsciiString: "PTCX"
+    CaseSensitive: true
+  - Pos: 1292
+    AsciiString: "PTCC"
+    CaseSensitive: true
+  - Pos: 1844
+    AsciiString: "PATP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CURR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTCC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTCX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEAU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLEN"
+    CaseSensitive: false

@@ -1,0 +1,44 @@
+Name: 16bit COM executable SHOW (v1.0)
+URL: "http://fileformats.archiveteam.org/wiki/SHOW_(Gary_M._Raymond)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE9\xD7\x010\0\x1F\xA0\0\0SHOW Copy(c)right, 1992/1993, Simple Software Co., New Orleans, La., 504-288-6550           Show Text Utility - by Simple Software Co. (504) 288-6550\r<Esc> (W)rite (G)o (C)olor/(S) (P)rint, Home-End-ArUp-ArDn-PgUp-PgDn,  Ln =     \r Is LPT1 Printer READY [y/n] ->\r Enter filename to save as   ->\r                 "
+    CaseSensitive: true
+  - Pos: 417
+    AsciiString: "0123456789ABCDEF.COM\0\0\0\0\0\0\0\0\0\0\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "504-288-6550           SHOW TEXT UTILITY - BY SIMPLE SOFTWARE CO. (504) 288-6550"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER FILENAME TO SAVE AS   -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOME-END-ARUP-ARDN-PGUP-PGDN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS LPT1 PRINTER READY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(W)RITE (G)O (C)OLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789ABCDEF.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW COPY(C)RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(S) (P)RINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEW ORLEANS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1992"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1993"
+    CaseSensitive: false

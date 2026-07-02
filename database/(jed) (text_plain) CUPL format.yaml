@@ -1,0 +1,12 @@
+Name: CUPL format
+Description: Compiler for Universal Programmable Logic.
+URL: "https://en.wikipedia.org/wiki/Programmable_Array_Logic#CUPL"
+FileNameExtensions: ["jed"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x02\r\nCUPL"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "."
+    CaseSensitive: true

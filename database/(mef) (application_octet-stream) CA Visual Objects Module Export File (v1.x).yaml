@@ -1,0 +1,14 @@
+Name: CA Visual Objects Module Export File (v1.x)
+URL: "https://en.wikipedia.org/wiki/Visual_Objects"
+FileNameExtensions: ["mef"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\x1B\0\0\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\x01CA-VO Module Export File\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CA-VO MODULE EXPORT FILE"
+    CaseSensitive: false

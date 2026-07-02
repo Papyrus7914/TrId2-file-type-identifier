@@ -1,0 +1,45 @@
+Name: Glyph Bitmap Distribution Format font
+Description: A plain text font format by Adobe used by the X Window System.
+URL: "https://en.wikipedia.org/wiki/Glyph_Bitmap_Distribution_Format"
+FileNameExtensions: ["bdf"]
+MimeType: application/x-font-bdf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "STARTFONT "
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STARTPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTCHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDCHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

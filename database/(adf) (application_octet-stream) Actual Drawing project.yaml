@@ -1,0 +1,20 @@
+Name: Actual Drawing project
+URL: "http://fileformats.archiveteam.org/wiki/Actual_Drawing"
+FileNameExtensions: ["adf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "Actual Drawing v."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PREVIEW JPEG IMAGE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTUAL DRAWING V."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

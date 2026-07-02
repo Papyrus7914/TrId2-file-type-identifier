@@ -1,0 +1,8 @@
+Name: Microsoft KWAJ compressed (MS-ZIP)
+Description: Last char of extension is changed to underscore.
+URL: "http://fileformats.archiveteam.org/wiki/MS-DOS_installation_compression"
+MimeType: application/x-ms-compress-kwaj
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KWAJ\x88\xF0'\xD1\x04\0"
+    CaseSensitive: true

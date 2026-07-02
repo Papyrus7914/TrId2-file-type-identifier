@@ -1,0 +1,23 @@
+Name: "Nancy Drew: Danger by Design Save game"
+URL: "https://www.mobygames.com/game/23291/nancy-drew-danger-by-design/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Nancy Drew Mystery Stories:\0\0\0Danger \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0by Design\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DANGER BY DESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BIK"
+    CaseSensitive: false

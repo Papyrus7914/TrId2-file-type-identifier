@@ -1,0 +1,24 @@
+Name: RealTime subtitles
+FileNameExtensions: ["rt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TIME BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

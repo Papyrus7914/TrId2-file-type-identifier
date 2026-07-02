@@ -1,0 +1,87 @@
+Name: Palm Pilot executable HB++
+Description: Handheld Basic is a development environment for Palm Powered handhelds. It sports VB-like language with a real Compiler and native support of PalmOS APIs.
+URL: "http://www.handheld-basic.com"
+FileNameExtensions: ["prc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 14
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0HB"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0appl"
+    CaseSensitive: true
+  - Pos: 78
+    AsciiString: "code\0"
+    CaseSensitive: true
+  - Pos: 88
+    AsciiString: "code\0"
+    CaseSensitive: true
+  - Pos: 238
+    AsciiString: "clut\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "F%S\0OUT OF MEMORY.\0SYSTEM VERSION 3.0 OR GREATER IS REQUIRED TO RUN THIS APPLICATION.\0INVALID OPERATION FOR CURRENT LAUNCH CODE.\0TYPE MISMATCH.\0INVALID PARAMETER.\0OBJECT VARIABLE NOT SET.\0OBJECT CANNOT BE CLONED.\0CANNOT LAUNCH APPLICATION.\0ARRAY EXCEEDS 64 KO.\0SUBSCRIPT OUT OF BOUNDS.\0FLOATING POINT INVALID OPERATION.\0FLOATING POINT OVERFLOW.\0FLOATING POINT UNDERFLOW.\0FLOATING POINT DIVIDE BY ZERO.\0DATE OVERFLOW.\0DATE UNDERFLOW.\0DUPLICATE KEY IN COLLECTION.\0TOO MANY ITEMS IN COLLECTION.\0INVALID STREAM OPERATION.\0ATTEMPT TO READ BEYOND END OF STREAM.\0OBJECT CANNOT BE SERIALIZED\0TIMEOUT ERROR.\0CONNECTION FAILED.\0NOT CONNECTED.\0TRANSMISSION ERROR.\0DNS ERROR.\0CONNECTION CLOSED BY REMOTE HOST.\0STRING TOO LONG.\0INVALID FORMAT SPECIFICATION.\0ATTEMPT TO MODIFY STRING CONSTANT.\0TOO MANY ITEMS IN LIST OR POPUP.\0UNINITIALIZED BITMAP.\0UNSUPPORTED BITMAP FORMAT.\0SYNTAX ERROR IN SQL QUERY.\0TOO COMPLEXE SQL QUERY.\0TYPE MISMATCH IN SQL QUERY.\0INVALID CURSOR OPERATION.\0NO CURRENT RECORD.\0WRONG DATABASE TYPE.\0DATABASE NOT OPENED.\0CANNOT OPEN DATABASE.\0DATABASE IS CORRUPTED.\0DATABASE NOT FOUND.\0SHARING VIOLATION.\0DATABASE IS READ-ONLY.\0RECORD IS ARCHIVED.\0RECORD IS BUSY.\0RECORD IS DELETED.\0RECORD OR RESOURCE NOT FOUND.\0MAXIMUM NUMBER OF RECORDS REACHED.\0GENERIC DATABASE ERROR.\0FILE SYSTEM LIBRARY NOT OPENED.\0INVALID FILE REFERENCE.\0FILE STILL OPENED.\0PERMISSION DENIED.\0FILE ALREADY EXISTS.\0FILE OR DIRECTORY NOT FOUND.\0INVALID VOLUME REFERENCE.\0DIRECTORY IS NOT EMPTY.\0INVALID NAME.\0VOLUME FULL.\0FILE IS NOT A DIRECTORY.\0FILE IS A DIRECTORY.\0GENERIC VFS ERROR.\0UNIMPLEMENTED VFS FONCTION.\0LIBRARY NOT FOUND.\0UNABLE TO LOAD LIBRARY.\0SYNTAX ERROR IN REGEXP.\0TOO COMPLEX REGEXP."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+DONE\0OK\0CANCEL\0YES\0NO\0SUNDAY\0MONDAY\0TUESDAY\0WEDNESDAY\0THURSDAY\0FRIDAY\0SATURDAY\0SUN\0MON\0TUE\0WND\0THU\0FRI\0SAT\0JANUARY\0FEBRUARY\0MARCH\0APRIL\0MAY\0JUNE\0JULY\0AUGUST\0SEPTEMBER\0OCTOBER\0NOVEMBER\0DECEMBER\0JAN\0FEB\0MAR\0APR\0MAY\0JUN\0JUL\0AUG\0SEP\0OCT\0NOV\0DEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASICSTARTUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAMRECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAMMEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTMETRICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UICOMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASICGC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCEDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE\0FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERICDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR %D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOLEAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOUBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE"
+    CaseSensitive: false

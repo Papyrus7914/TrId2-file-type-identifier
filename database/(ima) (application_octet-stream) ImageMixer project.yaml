@@ -1,0 +1,14 @@
+Name: ImageMixer project
+URL: "https://en.wikipedia.org/wiki/ImageMixer"
+FileNameExtensions: ["ima"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: " ami\0\0\x01\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMAGEMIXER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELA"
+    CaseSensitive: false

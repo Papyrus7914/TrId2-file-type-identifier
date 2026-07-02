@@ -1,0 +1,15 @@
+Name: DosStart color scheme
+Description: Graphical DOS menuing/filing program by Daniel L. Nice.
+URL: "http://web.archive.org/web/20020203031901/http://www.icdc.com/~dnice/dosstart.html"
+FileNameExtensions: ["scm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DOS Start color scheme file\r\n[COLORS]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BINARY ICONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING ICONS"
+    CaseSensitive: false

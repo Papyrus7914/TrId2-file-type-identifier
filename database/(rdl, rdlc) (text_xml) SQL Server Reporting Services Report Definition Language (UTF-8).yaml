@@ -1,0 +1,74 @@
+Name: SQL Server Reporting Services Report Definition Language (UTF-8)
+URL: "http://en.wikipedia.org/wiki/Microsoft_SQL_Server"
+FileNameExtensions: ["rdl", "rdlc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: any
+    AsciiString: "DATASOURCE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASOURCENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOMMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAFIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUERY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

@@ -1,0 +1,38 @@
+Name: Gateway Music
+Description: "Used in Frederik Pohl's Gateway and Gateway II: Homeworld."
+URL: "https://en.wikipedia.org/wiki/Gateway_(video_game)"
+FileNameExtensions: ["mus"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xA1, 0x05, 0x00, 0x00]
+  - Pos: any
+    AsciiString: "SYN BRASS 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEC PIANO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR SECT 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRUMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPANI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAIKO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMTRK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIBE"
+    CaseSensitive: false

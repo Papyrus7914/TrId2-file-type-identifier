@@ -1,0 +1,17 @@
+Name: Caligari TrueSpace Object
+URL: "https://en.wikipedia.org/wiki/TrueSpace"
+FileNameExtensions: ["cob"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Caligari V00.01BLH             \nBitM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CALIGARI V00.01BLH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false

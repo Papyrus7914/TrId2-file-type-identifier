@@ -1,0 +1,50 @@
+Name: Cura theme
+URL: "https://en.wikipedia.org/wiki/Ultimaker"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n    \"metadata\": {\n        \"name\": \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LAYERVIEW_MOVE_RETRACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERVIEW_SUPPORT_INFILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERVIEW_INSET_0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERVIEW_INSET_X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERVIEW_INFILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERVIEW_SKIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL_OVERHANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL_DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XRAY_ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y_AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

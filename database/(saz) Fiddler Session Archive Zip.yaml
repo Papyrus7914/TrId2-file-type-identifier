@@ -1,0 +1,44 @@
+Name: Fiddler Session Archive Zip
+Description: Fiddler is a free HTTP Debugging Proxy.
+URL: "http://www.fiddlertool.com/fiddler/"
+FileNameExtensions: ["saz"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SESSION ARCHIVE. SEE HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0I\0N\0D\0E\0X\0.\0H\0T\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_C.TXTNU$\0NUCX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_M.XMLNU$\0NUCX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_S.TXTNU$\0NUCX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_INDEX.HTMNU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.FIDDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0C\0.\0T\0X\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0M\0.\0X\0M\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0S\0.\0T\0X\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0A\0W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false

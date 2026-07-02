@@ -1,0 +1,11 @@
+Name: Sage 50 accounts Backup
+URL: "https://www.sage.com/"
+FileNameExtensions: ["001", "002", "003"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SAGEBACKUP"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\0Backup of : \r\n  "
+    CaseSensitive: true

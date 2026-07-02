@@ -1,0 +1,10 @@
+Name: Atari ST TOS executable
+URL: "http://en.wikipedia.org/wiki/Atari_TOS"
+FileNameExtensions: ["tos"]
+DetectionPatterns:
+  - Pos: 0
+    #        `
+    Bytes: [0x60, 0x1A]
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

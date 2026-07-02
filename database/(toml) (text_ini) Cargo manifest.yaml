@@ -1,0 +1,17 @@
+Name: Cargo manifest
+URL: "https://doc.rust-lang.org/cargo/getting-started/first-steps.html"
+FileNameExtensions: ["toml"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[package]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEPENDENCIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

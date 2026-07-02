@@ -1,0 +1,74 @@
+Name: Oracle Trace Metadata
+URL: "https://en.wikipedia.org/wiki/Oracle_Database"
+FileNameExtensions: ["trm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Trace file "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REDO THREAD MOUNTED BY THIS INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUMPING SORTED MASTER TRIGGER LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUMPING TRIGGER SUBLISTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORACLE PROCESS NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIX PROCESS PID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORACLE DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIGGER OWNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIGGER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORACLE_HOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSION ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TRC"
+    CaseSensitive: false

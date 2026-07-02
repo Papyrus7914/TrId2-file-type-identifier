@@ -1,0 +1,29 @@
+Name: Open XML Paper Specification
+URL: "http://en.wikipedia.org/wiki/Open_XML_Paper_Specification"
+FileNameExtensions: ["oxps", "xps"]
+MimeType: application/vnd.ms-xpsdocument
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIXEDDOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML"
+    CaseSensitive: false

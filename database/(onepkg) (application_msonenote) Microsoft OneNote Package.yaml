@@ -1,0 +1,20 @@
+Name: Microsoft OneNote Package
+URL: "http://en.wikipedia.org/wiki/Microsoft_OneNote"
+FileNameExtensions: ["onepkg"]
+MimeType: application/msonenote
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0\0\0\0\0\x03\x01\x01\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".ONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCF"
+    CaseSensitive: false

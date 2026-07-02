@@ -1,0 +1,8 @@
+Name: DCMO5 emulator tape image
+URL: "http://dcmoto.free.fr/"
+FileNameExtensions: ["k7"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        D     C     M     O     5                                                                       <     Z
+    Bytes: [0x44, 0x43, 0x4D, 0x4F, 0x35, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x3C, 0x5A, 0x00]

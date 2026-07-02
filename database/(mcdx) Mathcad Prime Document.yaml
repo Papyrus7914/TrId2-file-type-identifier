@@ -1,0 +1,424 @@
+Name: Mathcad Prime Document
+URL: "http://en.wikipedia.org/wiki/Mathcad"
+FileNameExtensions: ["mcdx"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mathcad/worksheet.xml \xA2\x18\0(\xA0"
+    CaseSensitive: true
+  - Pos: 152
+    AsciiString: "=\"http://schemas."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.MATHPROCESSINGML.MATHCAD.SETTINGS.PRESENTATION+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.MATHPROCESSINGML.MATHCAD.SETTINGS.CALCULATION+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.MATHPROCESSINGML.MATHCAD.INTEGRATION+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.MATHPROCESSINGML.MATHCAD.RESULT+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.MATHPROCESSINGML.MATHCAD.MAIN+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-PACKAGE.CORE-PROPERTIES+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-PACKAGE.RELATIONSHIPS+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALCULATIONBEHAVIOR AUTOMATIC-RECALCULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATHCAD.EXTENDED-PROPERTIES+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIX-STRICT-SINGULARITY-CHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILTINVARIABLES ARRAY-ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALCULATION CACHE-WORKSHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.OPENXMLFORMATS.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTUNITSYSTEM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONVERGENCE-TOLERANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATHCAD UNIMATH PRIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAPROPERTIES NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTRAINT-TOLERANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COREPROPERTIES XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPAND-NESTED-ARRAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKUP-COMPATIBILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEMODEL PAPER-CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLOT-BACKGROUND-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESULTDATA RESULT-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAPROPERTIESLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MATHSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIALIZATIONVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIONSHIPS XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW-TRAILING-ZEROS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT SIMPLIFY-UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALCULATION-STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENTATION XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENTATION.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGS-USE-ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALCULATION.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTERLAYOUTSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADERLAYOUTSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGRATION.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERRIDE PARTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIONSHIP TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESULTSLIST XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AREALAYOUTSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGINARY-VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.PTC.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSHEET XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSHEET.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTMODIFIEDBY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATH RESULTREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATHSTYLE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENTATION10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSTYLE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALCULATION10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXACT-BOOLEAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGRATION10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATHRENDERING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRN-COL-WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRN-PRECISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGIONS XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTRENDERING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AL PRECISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-STRETCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTER XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTER.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROVENANCE10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESULT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW-HF-GRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW-INDICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNCHRONIZED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-FAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGIN-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIX ROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIX SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM-SEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLETYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPES XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSHEET50"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATHSTYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSTYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID-SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGION-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW-GRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDEFINED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCPROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ID LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESERVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PURL.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESULT10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITALIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATH50"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAHOMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

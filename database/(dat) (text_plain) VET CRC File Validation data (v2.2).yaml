@@ -1,0 +1,11 @@
+Name: VET CRC File Validation data (v2.2)
+Description: Part of VET antivirus by Cybec.
+FileNameExtensions: ["dat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n\r\n\r\n   CYBEC Pty Ltd, PO Box 205, Hampton Vic 3188, AUSTRALIA. (03/613) 9521-0655\r\n           VCRC %2.2 File Validation Program. (C) R.H.Riordan, 1990-96.\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LENGTH  CRC1  CRC2    DATE     TIME   ATTS  FILE NAME."
+    CaseSensitive: false

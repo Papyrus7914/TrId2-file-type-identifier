@@ -1,0 +1,56 @@
+Name: Auto-lead Data Format
+URL: "https://en.wikipedia.org/wiki/Auto-lead_Data_Format"
+FileNameExtensions: ["xml", "adf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADF VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME PART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROSPECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEHICLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false

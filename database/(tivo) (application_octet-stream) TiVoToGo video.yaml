@@ -1,0 +1,11 @@
+Name: TiVoToGo video
+URL: "https://en.wikipedia.org/wiki/TiVo"
+FileNameExtensions: ["tivo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TiVo"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "<?xml version=\""
+    CaseSensitive: true

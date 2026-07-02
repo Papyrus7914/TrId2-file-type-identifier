@@ -1,0 +1,44 @@
+Name: Meta Raster Format XML metadata
+URL: "http://fileformats.archiveteam.org/wiki/Meta_Raster_Format"
+FileNameExtensions: ["mrf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<MRF_META>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOUNDINGBOX M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSETS MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MRF_META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOTAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINY"
+    CaseSensitive: false

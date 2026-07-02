@@ -1,0 +1,30 @@
+Name: SuperJAM! Toot
+Description: Amiga music composition software by The Blue Ribbon SoundWorks.
+URL: "https://archive.org/details/amiga-superjam-manual"
+FileNameExtensions: ["toot"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TOOT\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TURBTURBOSOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KYBDINPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDI IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XSRE"
+    CaseSensitive: false

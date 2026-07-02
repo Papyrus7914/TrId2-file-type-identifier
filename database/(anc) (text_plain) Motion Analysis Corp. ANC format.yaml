@@ -1,0 +1,59 @@
+Name: Motion Analysis Corp. ANC format
+Description: A ANC file contains analog channels data stored in ASCII format.
+FileNameExtensions: ["anc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "File_Type:\tAnalog R/C ASCII\tGeneration#:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DURATION(SEC.)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRECISERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOARD_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L TIBIALIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R TIBIALIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIAL_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITDEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L RECTUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLARITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R RECTUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L VAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R VAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L SOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R SOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE"
+    CaseSensitive: false

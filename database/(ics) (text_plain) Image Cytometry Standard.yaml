@@ -1,0 +1,14 @@
+Name: Image Cytometry Standard
+URL: "https://docs.openmicroscopy.org/bio-formats/6.9.0/formats/ics.html"
+FileNameExtensions: ["ics"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ics_version"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITS"
+    CaseSensitive: false

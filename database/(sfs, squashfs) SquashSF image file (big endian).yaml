@@ -1,0 +1,8 @@
+Name: SquashSF image file (big endian)
+Description: Squashfs (.sfs) is a free (GPL) compressed read-only file system for the Linux kernel.
+URL: "http://en.wikipedia.org/wiki/Squashfs"
+FileNameExtensions: ["sfs", "squashfs"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "sqsh"
+    CaseSensitive: true

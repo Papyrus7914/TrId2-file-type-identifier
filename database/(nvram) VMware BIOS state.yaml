@@ -1,0 +1,10 @@
+Name: VMware BIOS state
+URL: "http://www.vmware.com/"
+FileNameExtensions: ["nvram"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MRVN"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CMOS"
+    CaseSensitive: true

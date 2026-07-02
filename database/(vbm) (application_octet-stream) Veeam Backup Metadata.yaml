@@ -1,0 +1,557 @@
+Name: Veeam Backup Metadata
+URL: "https://en.wikipedia.org/wiki/Veeam_Software"
+FileNameExtensions: ["vbm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><BackupMeta Version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MICROSOFT SQL SERVER LOCAL DB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESKTOPOIBAUXDATA OSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADOWVOLUME ORIGINALVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVELAYOUT PARTITIONSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASELOCALCREATIONTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDDISKVOLUMESHADOWCOPY2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDDISKVOLUMESHADOWCOPY3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITION PARTITIONSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS64BITOPERATINGSYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQLINFO LOGSTRUNCATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASECREATIONTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVSETUPINFO DEVPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPSHOTCREATIONTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTINGUSABLEOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALIDPROCESSEDOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK EMULATEDVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECOGNIZEDPARTITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADOWVOLUMESLAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEEAMBACKUP_LOG.LDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKUPCREATIONTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKUPMETA VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPATIBILITYLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEEAMDISKID VENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASE INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENT DISKNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGICALSECTORSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME MOUNTPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUESTVOLUMEINFOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTIALINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDSOFFLINESTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATIONTIMEUTC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXEDDISKINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUNTPOINT PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITIONLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITIONNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEEAMBACKUP.MDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDEFOLDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXISTSINBACKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESYSTEMTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDEFOLDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISEXTERNALDISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSECHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKSTATEFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTINGOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOTINDICATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSRATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVEEAMOSOTHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASSHAREPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIDDENSECTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISVIRTUALDISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOBSOURCETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIVEVOLUME ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITIONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READONLYSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECOVERYMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPSHOTSETID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMPROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDS_VT_SIMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEEAMENDPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKUPLAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CBACKUPSTATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLLERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATIONMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDEFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENTLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRIENDLYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDEFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISCONSISTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISFILEBACKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELLOG.LDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSDBDATA.MDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBM KEYSETID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BURMANIFEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COIBAUXDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK DISKID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVEEAMAMD64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASEXCHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISCORRUPTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISREMOVABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KBBLOCKSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIVEVOLUMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTLOG.LDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUNTPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSDBLOG.LDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OS PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEN_SAMSUNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWSINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPROXSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKUPSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEDUPRATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISTEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REALVMSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOTNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPSHOTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORAGE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUSNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GFSPERIOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUESTINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSIDEDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISDYNAMIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL.MDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMOBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKUPED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEDSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUSTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOST ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOBNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOBTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETBIOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDSTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASSQL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PNT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASKID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBM ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOBID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSSQL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OIJID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VM ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VBK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FQDN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCSI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMID"
+    CaseSensitive: false

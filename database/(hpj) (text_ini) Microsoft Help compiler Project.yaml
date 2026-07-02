@@ -1,0 +1,13 @@
+Name: Microsoft Help compiler Project
+FileNameExtensions: ["hpj"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[OPTIONS]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RTF"
+    CaseSensitive: false

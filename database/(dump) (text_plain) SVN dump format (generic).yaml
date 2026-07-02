@@ -1,0 +1,9 @@
+Name: SVN dump format (generic)
+Description: The SVN dumpfile format is a serialized description of the actions required to (re)build a version history from scratch.
+URL: "https://en.wikipedia.org/wiki/Apache_Subversion"
+FileNameExtensions: ["dump"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SVN-fs-dump-format-version:"
+    CaseSensitive: true

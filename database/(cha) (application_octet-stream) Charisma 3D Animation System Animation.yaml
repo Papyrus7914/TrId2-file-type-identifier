@@ -1,0 +1,18 @@
+Name: Charisma 3D Animation System Animation
+Description: Skeletal animation subsystem, part of Extreme Vision engine by Blue Byte.
+URL: "https://www.mobygames.com/group/17276/3d-engine-extreme-vision/"
+FileNameExtensions: ["cha"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0\x16\0\0\0KeyFramedAnimationDesc"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SKELETONDESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKELETONNODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false

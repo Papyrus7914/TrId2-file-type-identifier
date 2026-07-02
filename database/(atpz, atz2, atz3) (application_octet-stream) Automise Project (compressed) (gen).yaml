@@ -1,0 +1,16 @@
+Name: Automise Project (compressed) (gen)
+URL: "https://en.wikipedia.org/wiki/Automise"
+FileNameExtensions: ["atpz", "atz2", "atz3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "project.fbp"
+    CaseSensitive: true
+  - Pos: 42
+    Bytes: [0xED]
+  - Pos: any
+    AsciiString: "PROJECT.FBP"
+    CaseSensitive: false

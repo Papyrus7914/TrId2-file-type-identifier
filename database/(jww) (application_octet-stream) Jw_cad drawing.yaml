@@ -1,0 +1,11 @@
+Name: Jw_cad drawing
+URL: "https://www.jwcad.net/"
+FileNameExtensions: ["jww"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JwwData."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false

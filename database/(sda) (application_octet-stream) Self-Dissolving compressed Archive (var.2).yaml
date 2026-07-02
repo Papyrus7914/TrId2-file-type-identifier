@@ -1,0 +1,12 @@
+Name: Self-Dissolving compressed Archive (var.2)
+Description: Old Commodore 64 format.
+URL: "http://fileformats.archiveteam.org/wiki/SDA"
+FileNameExtensions: ["sda"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\x1C\r\x1C\x0F\0\x9E(2063)\0\0\0\xA9\0\x8D \xD0\xA9\0\x8D!\xD0LD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(2063)"
+    CaseSensitive: false

@@ -1,0 +1,65 @@
+Name: Earth Resource Mapping Raster
+URL: "http://fileformats.archiveteam.org/wiki/ER_Mapper_Raster"
+FileNameExtensions: ["ers"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DatasetHeader Begin"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COORDINATESPACE BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORDINATESPACE END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASETHEADER BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASETHEADER END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NROFCELLSPERLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASTERINFO BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORDINATETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASTERINFO END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASETTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTEORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NROFBANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NROFLINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SBFIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATUM"
+    CaseSensitive: false

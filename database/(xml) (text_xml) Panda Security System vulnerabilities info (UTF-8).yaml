@@ -1,0 +1,68 @@
+Name: Panda Security System vulnerabilities info (UTF-8)
+URL: "https://en.wikipedia.org/wiki/Panda_Security"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: any
+    AsciiString: "NONAMESPACESCHEMALOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VULNERABILIDADES XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGTOSEARCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ID_DETECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAJORVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINORVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSSYSCHK.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPLOITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEVERITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN2000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN98SE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINXP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

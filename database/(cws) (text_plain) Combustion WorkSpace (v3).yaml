@@ -1,0 +1,62 @@
+Name: Combustion WorkSpace (v3)
+URL: "https://en.wikipedia.org/wiki/Autodesk"
+FileNameExtensions: ["cws"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\t"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETCURRENTOPERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ". WORKSPACE FILE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETOPERATORNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETCURRENTVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTINFO 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWOPERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOSETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMBUSTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYRANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPOSIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYE"
+    CaseSensitive: false

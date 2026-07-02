@@ -1,0 +1,18 @@
+Name: SMS ASCII Dataset
+Description: Surface-water Modeling System.
+URL: "https://www.xmswiki.com/wiki/SMS:SMS"
+FileNameExtensions: ["dat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DATASET"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBJTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

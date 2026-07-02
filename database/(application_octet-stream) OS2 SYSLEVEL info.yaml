@@ -1,0 +1,11 @@
+Name: OS/2 SYSLEVEL info
+Description: Used packages versioning.
+URL: "http://www.edm2.com/index.php/Using_SYSLEVEL_Files_in_Your_Applications"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFFSYSLEVEL\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0%\0\0\0"
+    CaseSensitive: true

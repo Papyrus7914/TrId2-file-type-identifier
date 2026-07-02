@@ -1,0 +1,425 @@
+Name: Anritsu Spectral Analyzer data
+URL: "https://en.wikipedia.org/wiki/Anritsu"
+FileNameExtensions: ["spa"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<ANRITSU>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEBUG_TG_MODULATION_TRIGGER_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACPR_LOWER_CH_LINE_MARKER_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACPR_UPPER_CH_LINE_MARKER_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACPR_MAIN_CH_LINE_MARKER_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEAT_FREQUENCY_OSC_FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG_TG_SET_DIGITAL_PATTERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG_TG_DELAY_TRIGGER_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMIT_ENVELOPE_OFFSET_LOWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMIT_ENVELOPE_OFFSET_UPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMIT_ENVELOPE_POINTS_LOWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMIT_ENVELOPE_POINTS_UPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMIT_ENVELOPE_SHAPE_LOWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMIT_ENVELOPE_SHAPE_UPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG_TG_MODULATION_PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTURE_TRIGGER_POLARITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMIT_OFFSET_FROM_MARKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_PWR_LINE_MARKER_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCC_BW_LINE_MARKER_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCC_BW_MEASURED_PERCENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG_S21_NORMALIZE_ON_OFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTURE_TRIGGER_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AM_FM_DEMOD_FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACPR_CHANNEL_SPACING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER_FREQ_PREVIOUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTURE_SAMPLE_RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPS_FIX_TEMPERATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE_FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG_REF_LEVEL_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG_SET_OUTPUT_POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO_TRIGGER_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE_MEASUREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPS_FIX_DECAY_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKER_1_REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCC_BW_MEASURED_DB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG_REFERENCE_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACPR_LOWER_CH_PWR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACPR_UPPER_CH_PWR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AM_FM_LINE_MARKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTURE_FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACPR_MAIN_CH_PWR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AM_FM_DEMOD_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AM_FM_DEMOD_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN SPA MARKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTURE_LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIGGER_POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACPR_ADJC_CH_BW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACPR_MAIN_CH_BW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AM_FM_DEMOD_VOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN SPA SETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT_CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMIT_LINE_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKER_SELECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCXO_REF_SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG_IL_ABS_STATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG_TRACE_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN SPA DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTURE_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_PWR_DENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT_SIGNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPEDANCE_LOSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCC_BW_PERCENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEAK_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_SWEEP_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPAN_RBW_RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_DATA_POINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CI_I_BB_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CI_I_NB_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CI_I_WB_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCC_BW_METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RBW_VBW_RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPAN_PREVIOUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG_SET_ON_OFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE_AVERAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP_DATA_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_PWR_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_PWR_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END SPA DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPS_FIX_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMIT_MIRROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKER_STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKER_TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCC_BW_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPA MARKER D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CI_BB_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CI_NB_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CI_WB_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULL_SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT_ATTEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWER LIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPPER LIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP_CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTEN_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CI_C_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPS_ON_OFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCC_BW_DBC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREAMP_SET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_FREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWEEP_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STOP_FREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP_SETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVERAGING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CI_C_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQ_STEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_OFFSET_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CURRENT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE_VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RBW_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TG_UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T_POINT0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T_POINT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBW_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANRITSU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANTENNA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP_VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMIT D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FLAGS0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FREQM0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FREQN0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MAGNT0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PRCNT0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T_FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARD0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PWR_M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CAL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MKR_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S_AV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MIN"
+    CaseSensitive: false

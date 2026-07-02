@@ -1,0 +1,21 @@
+Name: ProTracker IFF module
+Description: Used starting from v3.6.
+URL: "http://www.pouet.net/prod.php?which=13364"
+FileNameExtensions: ["ptm", "pt36"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "MODLVERS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CMNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTDT"
+    CaseSensitive: false

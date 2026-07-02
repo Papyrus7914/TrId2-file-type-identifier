@@ -1,0 +1,8 @@
+Name: Sun Raster bitmap
+URL: "http://fileformats.archiveteam.org/wiki/Sun_Raster"
+FileNameExtensions: ["ras", "im1", "im24", "im32", "im8", "rast", "rs", "sr", "sun"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        Y           j
+    Bytes: [0x59, 0xA6, 0x6A, 0x95]

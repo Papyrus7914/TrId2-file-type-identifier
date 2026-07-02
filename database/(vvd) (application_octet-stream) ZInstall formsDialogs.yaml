@@ -1,0 +1,17 @@
+Name: Z/Install forms/Dialogs
+URL: "http://fileformats.archiveteam.org/wiki/Zilite"
+FileNameExtensions: ["vvd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFFF\0\0\0VG"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "\0\0\0\0\0\xFD\xFF(\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FM_BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FM_END"
+    CaseSensitive: false

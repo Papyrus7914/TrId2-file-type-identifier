@@ -1,0 +1,212 @@
+Name: EBP Mon Budget Perso account data export/backup
+URL: "https://www.ebp.com/arret-logiciel-ebp-mon-budget-perso"
+FileNameExtensions: ["cpf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\r\n<EBP_CB_V4><INFOSDATA><Version>1</Version><CRYPT>False</CRYPT><IDC></IDC><GROUP>Comptes "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALERTEBUDGETDETAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALERTEDECAUTORISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECOUVERTAUTORISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALERTEMONTANTMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALERTEECHEANCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENCYSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECHEANCEDAYMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECHEANCEINSERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECHEANCESDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLDEAUTORISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTREVALEUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATECREATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORDCOMPTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLDEINITIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADRESSBANK1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADRESSBANK2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADRESSBANK3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOCATAIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSEILLERB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTREMONEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIVATEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESERVEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDINCOLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUDGETDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPTEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTRETAUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_CHEQUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENTILECAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTREOPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EBP_CB_V4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDGUICHET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOSDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRECEDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TELEPHONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CITYBANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODEBANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDCLERIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDCOMPTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SITEBANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADRESS1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADRESS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADRESS3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPARGNE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAXBANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ID_LIEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIAISON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OKSOLDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TELBANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDIBAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRYPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDBIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDRIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAILB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X20AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

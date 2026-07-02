@@ -1,0 +1,10 @@
+Name: 16bit DOS COM COMLOCK encrypted (v0.10)
+Description: Encryptor by BoRZoM.(C) 1994 Trouble Makers.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: any
+    AsciiString: "-COMLOCK-"
+    CaseSensitive: false

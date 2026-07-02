@@ -1,0 +1,20 @@
+Name: Native Instruments Preset Bank
+URL: "https://en.wikipedia.org/wiki/Native_Instruments"
+FileNameExtensions: ["bnk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x03\0\0\0\x1E\0\0\0Native Instruments Preset Bank"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTAP"
+    CaseSensitive: false

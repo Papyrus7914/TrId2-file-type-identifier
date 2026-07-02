@@ -1,0 +1,89 @@
+Name: Nintendo DS ROM
+URL: "http://fileformats.archiveteam.org/wiki/NDS"
+FileNameExtensions: ["nds"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 19
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0\0@\0\0\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "\0\x02\0"
+    CaseSensitive: true
+  - Pos: 42
+    Bytes: [0x00, 0x02]
+  - Pos: 47
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "\0\0\08\x02\0\08\x02"
+    CaseSensitive: true
+  - Pos: 62
+    Bytes: [0x02, 0x00]
+  - Pos: 67
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 75
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 79
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 83
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 86
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 99
+    #                    \b
+    Bytes: [0x00, 0xF8, 0x08, 0x18]
+  - Pos: 104
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 107
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 114
+    Bytes: [0x00, 0x02]
+  - Pos: 118
+    AsciiString: "8\x02\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 132
+    AsciiString: "\0@\0\0"
+    CaseSensitive: true
+  - Pos: 138
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 142
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 148
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0$\xFF\xAEQi\x9A\xA2!=\x84\x82\n\x84\xE4\t\xAD\x11$\x8B\x98\xC0\x81\x7F!\xA3R\xBE\x19\x93\t\xCE \x10FJJ\xF8'1\xECX\xC7\xE83\x82\xE3\xCE\xBF\x85\xF4\xDF\x94\xCEK\t\xC1\x94V\x8A\xC0\x13r\xA7\xFC\x9F\x84Ms\xA3\xCA\x9AaX\x97\xA3'\xFC\x03\x98v#\x1D\xC7a\x03\x04\xAEV\xBF8\x84\0@\xA7\x0E\xFD\xFFR\xFE\x03o\x950\xF1\x97\xFB\xC0\x85`\xD6\x80%\xA9c\xBE\x03\x01N8\xE2\xF9\xA24\xFF\xBB>\x03Dx\0\x90\xCB\x88\x11:\x94e\xC0|c\x87\xF0<\xAF\xD6%\xE4\x8B8\n\xACr!\xD4\xF8\aV\xCF"
+    CaseSensitive: true
+  - Pos: 352
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NINT"
+    CaseSensitive: false

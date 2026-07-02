@@ -1,0 +1,44 @@
+Name: Standard ACIS Text
+URL: "https://en.wikipedia.org/wiki/ACIS"
+FileNameExtensions: ["sat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "0"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END-OF-ACIS-DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-SURFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORWARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-CURVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COEDGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LUMP"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: 16bit DOS COM USCC encrypted
+Description: UniquE's Shitty COM Crypter.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: any
+    AsciiString: "CFWP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HSL6"
+    CaseSensitive: false

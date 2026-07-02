@@ -1,0 +1,14 @@
+Name: DeHackEd patch (v3.x)
+URL: "https://doomwiki.org/wiki/DeHackEd"
+FileNameExtensions: ["deh"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Patch File for DeHackEd v3."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOOM VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCH FORMAT"
+    CaseSensitive: false

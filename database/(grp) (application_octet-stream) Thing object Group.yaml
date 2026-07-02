@@ -1,0 +1,17 @@
+Name: Thing object Group
+URL: "https://arnowelzel.de/en/projects/thing"
+FileNameExtensions: ["grp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Thing object group ("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".GRP)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFIL"
+    CaseSensitive: false

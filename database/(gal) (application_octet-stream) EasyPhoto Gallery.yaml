@@ -1,0 +1,41 @@
+Name: EasyPhoto Gallery
+URL: "https://archive.org/details/EasyPhoto_Storm"
+FileNameExtensions: ["gal"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ASTR\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "CONT\0\x01\0\0LIST"
+    CaseSensitive: true
+  - Pos: 148
+    AsciiString: "FLDSPROPPRIV"
+    CaseSensitive: true
+  - Pos: 184
+    AsciiString: "CONT\0\x01\0\0DBAS\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPRESSION BY STORM TECHNOLOGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLDSPROPPRIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$3BR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORT"
+    CaseSensitive: false

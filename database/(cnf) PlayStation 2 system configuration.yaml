@@ -1,0 +1,9 @@
+Name: PlayStation 2 system configuration
+FileNameExtensions: ["cnf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BOOT2 = cdrom0:\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VMODE"
+    CaseSensitive: false

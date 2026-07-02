@@ -1,0 +1,92 @@
+Name: BehaviorSearch protocol
+URL: "http://www.behaviorsearch.org/"
+FileNameExtensions: ["bsearch"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHROMOSOMEREPRESENTATION TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BESTCHECKINGNUMREPLICATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FITNESSSAMPLINGREPLICATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FITNESSCOMBINEREPLICATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHMETHODPARAMETER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE SEARCH SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BSEARCHVERSIONNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELMETRICREPORTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEHAVIORSEARCH.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELSETUPCOMMANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELSTOPCONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FITNESSCOLLECTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELSTEPCOMMANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHMETHOD TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FITNESSMINIMIZED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVALUATIONLIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELMEASUREIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELSTEPLIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUTATION-RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FITNESSINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMSPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CACHING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NLOGO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STEP"
+    CaseSensitive: false

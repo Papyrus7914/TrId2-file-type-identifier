@@ -1,0 +1,11 @@
+Name: EnergyPlus Input Data Dictionary
+URL: "https://energyplus.net/documentation"
+FileNameExtensions: ["idd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!IDD_Version"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IDD_BUILD"
+    CaseSensitive: false

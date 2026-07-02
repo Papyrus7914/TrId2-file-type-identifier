@@ -1,0 +1,19 @@
+Name: Nokia S60 Web Runtime Widget Package
+URL: "http://www.forum.nokia.com/Technology_Topics/Web_Technologies/Web_Runtime/"
+FileNameExtensions: ["wgz"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "INFO.PLISTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HTMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JSPK"
+    CaseSensitive: false

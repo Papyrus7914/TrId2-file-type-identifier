@@ -1,0 +1,18 @@
+Name: Windows NT Registry Hive (transaction 2)
+Description: A Hive file is the Windows Registry's on-disk storage format. Extensions LOG, LOG1 and LOG2 for transaction registry
+URL: "http://fileformats.archiveteam.org/wiki/Windows_Registry"
+FileNameExtensions: ["log", "log1", "log2"]
+MimeType: application/x-ms-registry
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "regf"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\x02\0\0\0"
+    CaseSensitive: true

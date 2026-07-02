@@ -1,0 +1,17 @@
+Name: BusinessCards MX project
+URL: "http://www.businesscards-mx.com/"
+FileNameExtensions: ["bcw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "STOR"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "thumb"
+    CaseSensitive: true
+  - Pos: 63
+    AsciiString: "page"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

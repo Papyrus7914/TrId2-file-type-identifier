@@ -1,0 +1,35 @@
+Name: Agat Emulator Configuration
+URL: "http://agatemulator.sourceforge.net/"
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              g
+    Bytes: [0xD4, 0x67, 0x01, 0x00]
+  - Pos: any
+    AsciiString: "TAPE.WAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FNTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROMS"
+    CaseSensitive: false

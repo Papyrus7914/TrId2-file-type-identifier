@@ -1,0 +1,11 @@
+Name: HyperText Markup Language
+URL: "http://en.wikipedia.org/wiki/Html"
+FileNameExtensions: ["html"]
+MimeType: text/html
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HTML"
+    CaseSensitive: false

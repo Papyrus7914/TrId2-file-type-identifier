@@ -1,0 +1,15 @@
+Name: Haptek Compressed file
+FileNameExtensions: ["htr", "haptar"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#Haptek CompressedFile "
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: " Name= "
+    CaseSensitive: true

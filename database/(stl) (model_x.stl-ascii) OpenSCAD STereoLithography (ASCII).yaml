@@ -1,0 +1,11 @@
+Name: OpenSCAD STereoLithography (ASCII)
+URL: "https://en.wikipedia.org/wiki/OpenSCAD"
+FileNameExtensions: ["stl"]
+MimeType: model/x.stl-ascii
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "solid OpenSCAD_Model"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDSOLID OPENSCAD_MODEL"
+    CaseSensitive: false

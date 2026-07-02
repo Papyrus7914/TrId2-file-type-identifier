@@ -1,0 +1,8 @@
+Name: Xilinx Bitstream
+URL: "https://en.wikipedia.org/wiki/Xilinx"
+FileNameExtensions: ["bit"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \t                                                                      a
+    Bytes: [0x00, 0x09, 0x0F, 0xF0, 0x0F, 0xF0, 0x0F, 0xF0, 0x0F, 0xF0, 0x00, 0x00, 0x01, 0x61, 0x00]

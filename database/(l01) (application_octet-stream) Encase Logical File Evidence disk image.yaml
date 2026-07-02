@@ -1,0 +1,9 @@
+Name: Encase Logical File Evidence disk image
+Description: Expert Witness Compression Format derivative.
+URL: "https://forensics.wiki/encase_image_file_format/"
+FileNameExtensions: ["l01"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LVF\t\r\n\xFF\0"
+    CaseSensitive: true

@@ -1,0 +1,20 @@
+Name: XXBUG encoded data (v2.x)
+URL: "http://fileformats.archiveteam.org/wiki/XXBUG"
+FileNameExtensions: ["scr"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: " N"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "---------------"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*XXBUG VERSION 2."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY CHAD WAGNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*XXBUG2"
+    CaseSensitive: false

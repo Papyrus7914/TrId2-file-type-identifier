@@ -1,0 +1,14 @@
+Name: maxYMiser Voice
+URL: "http://www.preromanbritain.com/maxymiser/"
+FileNameExtensions: ["myv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "MYM1INST"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MYM1INST"
+    CaseSensitive: false

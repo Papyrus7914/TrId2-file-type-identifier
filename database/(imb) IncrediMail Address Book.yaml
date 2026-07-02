@@ -1,0 +1,10 @@
+Name: IncrediMail Address Book
+URL: "http://www.incredimail.com"
+FileNameExtensions: ["imb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ".\0\0\0Incredimail AB version "
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "."
+    CaseSensitive: true

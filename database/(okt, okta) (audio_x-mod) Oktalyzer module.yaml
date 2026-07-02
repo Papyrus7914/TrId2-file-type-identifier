@@ -1,0 +1,20 @@
+Name: Oktalyzer module
+URL: "http://en.wikipedia.org/wiki/Module_file"
+FileNameExtensions: ["okt", "okta"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OKTASONGCMOD"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "SAMP\0\0\x04\x80"
+    CaseSensitive: true
+  - Pos: 1194
+    AsciiString: "SLEN"
+    CaseSensitive: true
+  - Pos: 1204
+    AsciiString: "PLEN"
+    CaseSensitive: true
+  - Pos: 1214
+    AsciiString: "PATT"
+    CaseSensitive: true

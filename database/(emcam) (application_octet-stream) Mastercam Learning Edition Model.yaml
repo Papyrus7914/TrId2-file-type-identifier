@@ -1,0 +1,26 @@
+Name: Mastercam Learning Edition Model
+URL: "https://en.wikipedia.org/wiki/Mastercam"
+FileNameExtensions: ["emcam"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 8
+    AsciiString: "])*@U;A|$\xA1\x13`\a\0nn>n qiJQ\x1A4"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MASTERCAMPLANES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMPLANES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANEPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANEBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIX33"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANEID"
+    CaseSensitive: false

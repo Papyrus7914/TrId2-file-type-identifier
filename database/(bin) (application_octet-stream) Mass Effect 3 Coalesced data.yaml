@@ -1,0 +1,11 @@
+Name: Mass Effect 3 Coalesced data
+URL: "https://me3explorer.fandom.com/wiki/Coalesced_Tools"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "mrmf\x01\0\0\0b\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONFIGCOALESCEFILTER"
+    CaseSensitive: false

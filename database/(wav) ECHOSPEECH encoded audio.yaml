@@ -1,0 +1,16 @@
+Name: ECHOSPEECH encoded audio
+URL: "http://www.echospeech.com/"
+FileNameExtensions: ["wav"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0WAVEfact\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0fmt \x14\0\0\0:\0\x01\0\x11+\0\0r\x06\0\0\x16\0\0\0\x02\0\x93\0data"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "\0\0"
+    CaseSensitive: true

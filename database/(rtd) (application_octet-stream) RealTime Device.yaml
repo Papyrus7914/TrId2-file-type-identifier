@@ -1,0 +1,26 @@
+Name: RealTime Device
+Description: Algorithmic Sequencer for Atari ST by Eric Ameres.
+FileNameExtensions: ["rtd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "sdvc\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIDE"
+    CaseSensitive: false

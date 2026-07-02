@@ -1,0 +1,8 @@
+Name: Flipper Zero RAW RFID format
+URL: "https://en.wikipedia.org/wiki/Flipper_Zero"
+FileNameExtensions: ["raw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFL\x01\0\0\0\0$"
+    CaseSensitive: true

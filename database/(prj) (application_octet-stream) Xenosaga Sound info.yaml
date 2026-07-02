@@ -1,0 +1,14 @@
+Name: Xenosaga Sound info
+URL: "https://en.wikipedia.org/wiki/Xenosaga"
+FileNameExtensions: ["prj"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PRJp"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "KEYp"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KEYP"
+    CaseSensitive: false

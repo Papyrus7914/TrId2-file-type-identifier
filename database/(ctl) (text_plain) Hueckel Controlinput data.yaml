@@ -1,0 +1,20 @@
+Name: Hueckel Control/input data
+Description: Atari ST chemical tool by Uwe Schneider.
+FileNameExtensions: ["ctl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$ATOMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$TOPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$END"
+    CaseSensitive: false

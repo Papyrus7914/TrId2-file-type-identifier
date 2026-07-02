@@ -1,0 +1,45 @@
+Name: Compaq Diagnostics
+FileNameExtensions: ["cva"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[CVA File Information]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "US.SOFTWARE DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAILFILEINFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CVA FILE INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORTEDLANGUAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL EXECUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATING SYSTEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SILENTINSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENTS"
+    CaseSensitive: false

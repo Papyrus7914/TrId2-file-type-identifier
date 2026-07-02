@@ -1,0 +1,41 @@
+Name: PageFlipper Plus F/X script
+Description: Amiga animation program by Mindware.
+FileNameExtensions: ["script", "txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "INIT(\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BITP("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUN("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURA("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAM("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOC("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOV("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALL("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XDIM("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YDIM("
+    CaseSensitive: false

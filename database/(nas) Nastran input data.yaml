@@ -1,0 +1,25 @@
+Name: Nastran input data
+URL: "http://en.wikipedia.org/wiki/Nastran"
+FileNameExtensions: ["nas"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ELEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NASTRAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BULK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Softimage Picture bitmap
+URL: "http://fileformats.archiveteam.org/wiki/Softimage_PIC"
+FileNameExtensions: ["pic"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        S                 4
+    Bytes: [0x53, 0x80, 0xF6, 0x34]
+  - Pos: 88
+    AsciiString: "PICT"
+    CaseSensitive: true

@@ -1,0 +1,17 @@
+Name: Bochs keymap
+URL: "http://bochs.sourceforge.net/"
+FileNameExtensions: ["map"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Bochs Keymap file"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BX_KEY_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false

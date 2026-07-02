@@ -1,0 +1,125 @@
+Name: JMeter XML test plan (v1.x)
+URL: "https://en.wikipedia.org/wiki/Apache_JMeter"
+FileNameExtensions: ["jmx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<jmeterTestPlan version=\"1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOOPCONTROLLER.CONTINUE_FOREVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTPLAN.SERIALIZE_THREADGROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTPLAN.USER_DEFINED_VARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTPLAN.USER_DEFINE_CLASSPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREADGROUP.MAIN_CONTROLLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREADGROUP.ON_SAMPLE_ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTPLAN.FUNCTIONAL_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JMETERTESTPLAN VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPCONTROLLER.LOOPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREADGROUP GUICLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGUMENTS.ARGUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLECTIONPROP NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTPLAN GUICLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTPLAN.COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTPROP NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPCONTROLPANEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGPROP NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGUMENTSPANEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREADGROUPGUI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOLPROP NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGPROP NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTPLANGUI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTCLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASHTREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEDULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERGUI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ART_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAMP"
+    CaseSensitive: false

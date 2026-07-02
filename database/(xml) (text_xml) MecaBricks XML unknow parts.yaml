@@ -1,0 +1,23 @@
+Name: MecaBricks XML unknow parts
+URL: "https://mecabricks.com/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<UNKNOW_PARTS>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NO BRICKLINK ID FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MECABRICKS_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MECABRICKSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REASON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM"
+    CaseSensitive: false

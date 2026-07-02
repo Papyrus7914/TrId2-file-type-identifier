@@ -1,0 +1,12 @@
+Name: SuperJAM! Instrument
+Description: Amiga music composition software by The Blue Ribbon SoundWorks.
+URL: "https://archive.org/details/amiga-superjam-manual"
+FileNameExtensions: ["instrument"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "INST\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SMPL"
+    CaseSensitive: false

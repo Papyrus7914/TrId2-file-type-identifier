@@ -1,0 +1,12 @@
+Name: RJP / Vectordean module
+Description: Music editor written by Alan McCarthy and Andi Smithers. Also known as the Vectordean format.
+URL: "http://www.exotica.org.uk/wiki/Richard_Joseph_(format)"
+FileNameExtensions: ["rjp", "sng"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RJP"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "SMOD"
+    CaseSensitive: true

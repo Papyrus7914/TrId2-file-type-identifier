@@ -1,0 +1,10 @@
+Name: Advanced Floppy Image
+FileNameExtensions: ["afi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AFI_FLOPPY_IMG"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "TRACKLIST"
+    CaseSensitive: true

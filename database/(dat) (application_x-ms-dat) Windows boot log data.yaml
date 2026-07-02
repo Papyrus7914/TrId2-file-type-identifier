@@ -1,0 +1,20 @@
+Name: Windows boot log data
+URL: "https://www.geoffchappell.com/notes/windows/boot/bsd.htm"
+FileNameExtensions: ["dat"]
+MimeType: application/x-ms-dat
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "S\0Y\0S\0T\0E\0M\03\02"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0I\0N\0D\0O\0W\0S"
+    CaseSensitive: false

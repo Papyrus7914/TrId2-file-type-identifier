@@ -1,0 +1,11 @@
+Name: JOC-Configuration data
+Description: Used by various programs by Jose Olive Civit.
+FileNameExtensions: ["cnf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x1A CNFJOC"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "CNF"
+    CaseSensitive: true

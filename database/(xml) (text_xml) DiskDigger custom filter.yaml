@@ -1,0 +1,23 @@
+Name: DiskDigger custom filter
+URL: "https://diskdigger.org/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGINBYTES TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMFILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISKDIGGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSION"
+    CaseSensitive: false

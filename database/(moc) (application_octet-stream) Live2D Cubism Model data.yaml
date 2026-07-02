@@ -1,0 +1,38 @@
+Name: Live2D Cubism Model data
+URL: "https://www.live2d.com/en/"
+FileNameExtensions: ["moc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "moc"
+    CaseSensitive: true
+  - Pos: 4
+    #              \b          \t
+    Bytes: [0x81, 0x08, 0x81, 0x09, 0x0F]
+  - Pos: any
+    AsciiString: "PARAM_ANGLE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DST_BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BROW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EYE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: Microsoft Management Console Snap-in control file
+FileNameExtensions: ["msc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<MMC_ConsoleFile ConsoleVersion=\""
+    CaseSensitive: true
+  - Pos: 57
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\" ProgramMode=\""
+    CaseSensitive: true

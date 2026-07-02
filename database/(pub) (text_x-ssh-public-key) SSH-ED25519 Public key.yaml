@@ -1,0 +1,11 @@
+Name: SSH-ED25519 Public key
+URL: "https://www.rfc-editor.org/rfc/rfc8709"
+FileNameExtensions: ["pub"]
+MimeType: text/x-ssh-public-key
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ssh-ed25519 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SSH-ED25519"
+    CaseSensitive: false

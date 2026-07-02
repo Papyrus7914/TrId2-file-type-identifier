@@ -1,0 +1,11 @@
+Name: SuperStar Digital eBook
+URL: "https://www.chaoxing.com/"
+FileNameExtensions: ["pdg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HH\x02"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\f\0\0\0\x80\0"
+    CaseSensitive: true

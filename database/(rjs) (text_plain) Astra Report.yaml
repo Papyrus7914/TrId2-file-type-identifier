@@ -1,0 +1,35 @@
+Name: Astra Report
+URL: "http://www.sysinfolab.com/"
+FileNameExtensions: ["rjs"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[ASTRA]\r\nASTRAVersion ="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DMIMOTHERBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASTRAVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORTDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMISYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONITOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOS"
+    CaseSensitive: false

@@ -1,0 +1,284 @@
+Name: GFA-BASIC runtime (Atari ST)
+URL: "https://en.wikipedia.org/wiki/GFA_BASIC"
+FileNameExtensions: ["prg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-2147483648 .. 2147483647"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- PRIVILEGE VIOLATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCEDURE\0RESUME IN F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LL - EDITOR FEHLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESUME IN FOR-NEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GFA SYSTEMTECHNIK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- DIVIDE BY ZERO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- ILLEGAL INSTRU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- TRACE EXEPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVE NOT READY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESUME (NEXT) N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT 1986"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCEDURE IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- BUS ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD REQUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRESS ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX. 32767"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEEK ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOR-NEXT-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GFA-BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGARITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(VERIFY)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0T\0NU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYFILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASIC V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOTO IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUP\0NUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEMDOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HPHQ0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUHSHP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OMPLEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSNBNU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QRBNUA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NUHPA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(_NUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- CHK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "68000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASCII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DPEEK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DPOKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FATAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOSUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JANUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPOKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MERGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEW -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAPV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNTIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOMB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEND"
+    CaseSensitive: false

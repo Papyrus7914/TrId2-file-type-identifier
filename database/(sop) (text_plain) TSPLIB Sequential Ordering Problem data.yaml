@@ -1,0 +1,38 @@
+Name: TSPLIB Sequential Ordering Problem data
+URL: "http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/tsp95.pdf"
+FileNameExtensions: ["sop"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NAME"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EDGE_WEIGHT_SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGE_WEIGHT_FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGE_WEIGHT_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULL_MATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASCHEUER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPLICIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EOF"
+    CaseSensitive: false

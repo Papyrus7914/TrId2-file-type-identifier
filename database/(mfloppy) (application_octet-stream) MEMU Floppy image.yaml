@@ -1,0 +1,9 @@
+Name: MEMU Floppy image
+Description: MEMU is a Memotech MTX/FDX/SDX emulator.
+URL: "http://www.nyangau.org/memu/memu.htm"
+FileNameExtensions: ["mfloppy"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              @
+    Bytes: [0xC3, 0x40, 0x01]

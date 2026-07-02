@@ -1,0 +1,9 @@
+Name: Mozilla ARchive
+Description: MAR is the format used by Mozilla's update system to deliver update packages. It is basically a series of files with an index tacked on to the end.
+URL: "http://wiki.mozilla.org/Software_Update:MAR"
+FileNameExtensions: ["mar"]
+MimeType: application/x-mozilla-mar
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MAR1\0"
+    CaseSensitive: true

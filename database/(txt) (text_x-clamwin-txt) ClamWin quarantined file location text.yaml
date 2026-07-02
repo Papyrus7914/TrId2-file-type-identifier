@@ -1,0 +1,15 @@
+Name: ClamWin quarantined file location text
+Description: Describes original location of files (*.infected,*.000,...) quarantined by ClamWin.
+URL: "http://forums.clamwin.com/viewtopic.php?t=4648"
+FileNameExtensions: ["txt"]
+MimeType: text/x-clamwin-txt
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\\\?\\"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".INFECTED"
+    CaseSensitive: false

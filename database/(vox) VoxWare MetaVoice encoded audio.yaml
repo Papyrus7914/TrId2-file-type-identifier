@@ -1,0 +1,20 @@
+Name: VoxWare MetaVoice encoded audio
+Description: MetaVoice is a patent pending system that creates an accurate mathematical model of human speech.
+URL: "http://www.rjamorim.com/rrw/metavoice/metavoice.html"
+FileNameExtensions: ["vox"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0WAVEfmt "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOXD"
+    CaseSensitive: false

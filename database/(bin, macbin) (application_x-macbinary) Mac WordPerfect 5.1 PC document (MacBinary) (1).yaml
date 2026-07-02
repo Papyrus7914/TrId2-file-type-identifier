@@ -1,0 +1,15 @@
+Name: Mac WordPerfect 5.1 PC document (MacBinary)
+Description: MacBinary is a standard for encoding Macintosh files for file transfer.
+URL: "https://en.wikipedia.org/wiki/WordPerfect"
+FileNameExtensions: ["bin", "macbin"]
+MimeType: application/x-macbinary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "WP50"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WP50"
+    CaseSensitive: false

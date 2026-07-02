@@ -1,0 +1,17 @@
+Name: VLC media player log
+URL: "https://en.wikipedia.org/wiki/VLC_media_player"
+FileNameExtensions: ["log", "txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF-- logger module started --"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-- LOGGER MODULE STOPPED --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN ERROR"
+    CaseSensitive: false

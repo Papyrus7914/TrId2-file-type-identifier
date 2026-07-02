@@ -1,0 +1,68 @@
+Name: DROID Container Signature Mapping (UTF-8)
+URL: "https://en.wikipedia.org/wiki/PRONOM#DROID"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTAINERSIGNATUREMAPPING SCHEMAVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEFORMATMAPPING SIGNATUREID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNALSIGNATURECOLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIGGERPUID CONTAINERTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTESEQUENCE REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINERSIGNATURE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNALSIGNATURE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSEQUENCE POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINERSIGNATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEFORMATMAPPINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINARYSIGNATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATUREVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSEQMAXOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSEQMINOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIGGERPUIDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOFOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-FMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false

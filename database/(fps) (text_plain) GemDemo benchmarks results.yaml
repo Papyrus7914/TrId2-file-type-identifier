@@ -1,0 +1,23 @@
+Name: GemDemo benchmarks results
+URL: "https://gemdemo.atari.org/"
+FileNameExtensions: ["fps"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GemDemo benchmarks."
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VIDEOMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DMO"
+    CaseSensitive: false

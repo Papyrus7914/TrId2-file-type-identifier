@@ -1,0 +1,30 @@
+Name: GCS World data
+Description: Pie In The Sky 3D Game Creation System.
+URL: "https://www.mobygames.com/game-group/3d-engine-pie-in-the-sky"
+FileNameExtensions: ["wld"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GCS World File Version "
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GCS WORLD FILE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASICLIB.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEF_ENEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEF_WEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VGR"
+    CaseSensitive: false

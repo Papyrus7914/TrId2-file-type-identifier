@@ -1,0 +1,47 @@
+Name: VTK XML Image data
+URL: "https://en.wikipedia.org/wiki/VTK"
+FileNameExtensions: ["vti"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMAGEDATA WHOLEEXTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAARRAY TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIECE EXTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTKFILE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

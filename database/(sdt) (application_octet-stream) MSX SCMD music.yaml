@@ -1,0 +1,11 @@
+Name: MSX SCMD music
+URL: "https://www.msx.org/forum/msx-talk/general-discussion/scmd-v2-released"
+FileNameExtensions: ["sdt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 138
+    AsciiString: "\0SCMD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCMD"
+    CaseSensitive: false

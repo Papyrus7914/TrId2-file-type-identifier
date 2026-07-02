@@ -1,0 +1,17 @@
+Name: Vice Keyboard Mapping
+URL: "https://vice-emu.sourceforge.io/"
+FileNameExtensions: ["vkm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KEYBOARD MAPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDE"
+    CaseSensitive: false

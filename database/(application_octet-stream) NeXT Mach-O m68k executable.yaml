@@ -1,0 +1,55 @@
+Name: NeXT Mach-O m68k executable
+URL: "https://en.wikipedia.org/wiki/NeXT"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFE\xED\xFA\xCE\0\0\0\x06\0\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "__BSS\0\0\0\0\0\0\0\0\0\0\0__DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__DATA\0\0\0\0\0\0\0\0\0\0__DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__TEXT\0\0\0\0\0\0\0\0\0\0__TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUNV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZERO"
+    CaseSensitive: false

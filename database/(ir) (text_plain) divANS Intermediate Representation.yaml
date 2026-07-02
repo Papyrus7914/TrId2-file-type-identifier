@@ -1,0 +1,11 @@
+Name: divANS Intermediate Representation
+URL: "http://fileformats.archiveteam.org/wiki/DivANS"
+FileNameExtensions: ["ir"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "window "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSERT"
+    CaseSensitive: false

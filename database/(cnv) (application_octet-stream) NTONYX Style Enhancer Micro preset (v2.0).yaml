@@ -1,0 +1,23 @@
+Name: NTONYX Style Enhancer Micro preset (v2.0)
+URL: "http://www.ntonyx.com/se.htm"
+FileNameExtensions: ["cnv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SACS\xC2\x02SELT"
+    CaseSensitive: true
+  - Pos: 199
+    AsciiString: "\0V-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "USE VARIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VELOCITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ULAT"
+    CaseSensitive: false

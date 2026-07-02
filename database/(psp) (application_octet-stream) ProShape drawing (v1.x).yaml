@@ -1,0 +1,11 @@
+Name: ProShape drawing (v1.x)
+URL: "http://fileformats.archiveteam.org/wiki/ProShape"
+FileNameExtensions: ["psp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ProShape V1."
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: " Drawing\r\n\x1A"
+    CaseSensitive: true

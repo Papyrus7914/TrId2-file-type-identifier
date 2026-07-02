@@ -1,0 +1,20 @@
+Name: Gentoo Linux ebuild package
+URL: "https://en.wikipedia.org/wiki/Ebuild"
+FileNameExtensions: ["ebuild"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Copyright 1999-"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: " Gentoo Foundation\n# Distributed under the terms of the GNU General Public License v2\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KEYWORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EAPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IUSE"
+    CaseSensitive: false

@@ -1,0 +1,50 @@
+Name: Netedit network
+URL: "https://sumo.dlr.de/docs/Netedit/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NONAMESPACESCHEMALOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJPARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONVBOUNDARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NET_FILE.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGBOUNDARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMO"
+    CaseSensitive: false

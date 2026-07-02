@@ -1,0 +1,13 @@
+Name: CardSoft PCMCIA Card Library
+FileNameExtensions: ["clb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    $
+    Bytes: [0xE5, 0x00, 0x24, 0x00, 0xDD, 0x88]
+  - Pos: 25
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "/"
+    CaseSensitive: true

@@ -1,0 +1,11 @@
+Name: SmartDraw template
+Description: SmartDraw is a software for creating diagram and charts.
+URL: "http://www.smartdraw.com"
+FileNameExtensions: ["sdt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SMARTDRW\x01\x80"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0d\0X\x02"
+    CaseSensitive: true

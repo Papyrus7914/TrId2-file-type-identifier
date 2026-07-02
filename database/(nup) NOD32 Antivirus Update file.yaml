@@ -1,0 +1,31 @@
+Name: NOD32 Antivirus Update file
+URL: "http://www.eset.com/"
+FileNameExtensions: ["nup"]
+DetectionPatterns:
+  - Pos: 0
+    #              \r                                                          {
+    Bytes: [0x90, 0x0D, 0x03, 0x00, 0x02, 0x11, 0xC8, 0xFC, 0xA0, 0x02, 0x06, 0x7B, 0x03, 0xC9, 0x01]
+  - Pos: any
+    AsciiString: "UPDATE_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOD32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

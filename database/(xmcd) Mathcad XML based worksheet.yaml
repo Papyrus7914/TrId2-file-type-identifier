@@ -1,0 +1,382 @@
+Name: Mathcad XML based worksheet
+URL: "http://en.wikipedia.org/wiki/Mathcad"
+FileNameExtensions: ["xmcd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CAN-DELETE-ORIGINAL-HANDBOOK-REGIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOLICS DERIVATION-STEPS-STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIX-STRICT-SINGULARITY-CHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDBOOK HANDBOOK-REGION-TAG-UB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILTINVARIABLES ARRAY-ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATHRENDERING EQUATION-COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORMODEL BACKGROUND-COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER USE-FULL-PAGE-WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTER USE-FULL-PAGE-WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEMODEL SHOW-PAGE-FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATORS MULTIPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER-FOOTER-START-PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAN-DELETE-USER-REGIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT-HIGHLIGHT-COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INLINEATTR FONT-FAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKATTR MARGIN-LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEFORMAT IMAGE-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONVERGENCE-TOLERANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIX DISPLAY-STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTRAINT-TOLERANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE-PERMISSION-MASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MATHSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE-NUMERIC-RESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATHCAD PROFESSIONAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIMIZE-EXPRESSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPAND-NESTED-ARRAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALCULATIONBEHAVIOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSIONNAMES MASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW-TRAILING-ZEROS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID GRANULARITY-X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGS-USE-ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL-DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVALUATE-IN-PLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LITERAL-SUBSCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT FORMAT-UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW-HEADER-FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW-FOOTER-FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSHEET VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPLEX-THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE-TEXT-IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW-ANNOTATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL-DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULER IS-VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICAL-INSERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENTVERSIONID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGINARY-VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMES NEW ROMAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST-STYLE-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLIFY-UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICAL-ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZERO-THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATHSTYLE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSTYLE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISCELLANEOUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRANULARITY-Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXACT-BOOLEAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRN-COL-WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTRENDERING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRN-PRECISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE-QUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW-COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW-REGIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIPLE-EQUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-CHARSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTITYINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGINS LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGIN-RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE-THROUGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPERATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM-SEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE-HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT-INDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT-ARROW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATHSTYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DERIVATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSTYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT-ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAPER-CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULER-UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISEDBY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAN-PRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDERLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASELINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRANCHID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAN-SAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAN-COPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYWORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COURIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INHERIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LUMINO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

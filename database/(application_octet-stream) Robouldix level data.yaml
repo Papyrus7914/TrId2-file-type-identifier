@@ -1,0 +1,37 @@
+Name: Robouldix level data
+Description: Action puzzle game for Amiga by Svante Berglund and Patrik Grip-Jansson.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MULTNOCR"
+    CaseSensitive: true
+  - Pos: 140
+    AsciiString: "MAP4NOCR\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLSTNOCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP4NOCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MHEANOCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANXY0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANXY1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAMO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPNA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NXMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMER"
+    CaseSensitive: false

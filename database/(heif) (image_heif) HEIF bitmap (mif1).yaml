@@ -1,0 +1,14 @@
+Name: HEIF bitmap (mif1)
+URL: "https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format"
+FileNameExtensions: ["heif"]
+MimeType: image/heif
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "ftypmif1\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FTYPMIF1"
+    CaseSensitive: false

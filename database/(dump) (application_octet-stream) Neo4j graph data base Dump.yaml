@@ -1,0 +1,14 @@
+Name: Neo4j graph data base Dump
+URL: "https://en.wikipedia.org/wiki/Neo4j"
+FileNameExtensions: ["dump"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DZV1(\xB5/\xFD\x04X"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

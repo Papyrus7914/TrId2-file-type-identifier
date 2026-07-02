@@ -1,0 +1,14 @@
+Name: Timberborn map
+URL: "https://store.steampowered.com/app/1062090/Timberborn/"
+FileNameExtensions: ["timber"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "world.json"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORLD.JSONPK"
+    CaseSensitive: false

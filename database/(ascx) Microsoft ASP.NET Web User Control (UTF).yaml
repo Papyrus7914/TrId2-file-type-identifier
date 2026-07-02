@@ -1,0 +1,13 @@
+Name: Microsoft ASP.NET Web User Control (UTF)
+URL: "http://www.microsoft.com/net/"
+FileNameExtensions: ["ascx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<%@ "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTROL LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INHERITS"
+    CaseSensitive: false

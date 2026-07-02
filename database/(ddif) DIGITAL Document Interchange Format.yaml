@@ -1,0 +1,7 @@
+Name: DIGITAL Document Interchange Format
+Description: An old file format for storing both documents and images.
+URL: "http://tinyurl.com/fd5tx"
+FileNameExtensions: ["ddif"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFF, 0x7F, 0x80, 0xA0, 0x80, 0x80, 0x01, 0x01, 0x81, 0x01]

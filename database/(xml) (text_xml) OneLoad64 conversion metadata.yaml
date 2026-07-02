@@ -1,0 +1,59 @@
+Name: OneLoad64 conversion metadata
+URL: "https://www.lemon64.com/forum/viewtopic.php?t=76305"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<Metadata>\r\n  <DumpFile>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BIT $D011 BMI W2 JSR $FDA3 ROL $D011"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIT $D011 BPL W1 W2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUMPFILELOADADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC $D030 LSR $D011"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERRUPTSENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXOMIZERCOMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCEFILESHA1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JUMPADDRESSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-DI_IRQ_EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUMPFILESHA1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXOMIZER SFX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORYCONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEBASICRUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEC $D030"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC $D020"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PRG"
+    CaseSensitive: false

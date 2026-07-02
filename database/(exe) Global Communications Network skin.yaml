@@ -1,0 +1,377 @@
+Name: Global Communications Network skin
+Description: GCN is a Jabber based chat program
+URL: "http://www.gcn.cx/"
+FileNameExtensions: ["exe"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-INFO\0\0\0SHGETPATHFROMIDLIST\0SHGETMALLOC\0SHBROWSEFORFOLDER\0\0\0SHELL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD DISK OR FILE TRANSFER ERROR\0.ZIP\0\0\0\0.EXE\0\0\0\0PKBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBHU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINPAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRANDED.INIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARNEXTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND\0\0\0MS S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDIRECTORYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEFONTINDIRECTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFWINDOWPROCA\0\0USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETEDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETEOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTROYWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIALOGBOXINDIRECTPARAMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPATCHMESSAGEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOSDATETIMETOFILETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDDIALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTTEXTOUTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDEXECUTABLEA\0SHELL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDFIRSTFILEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOYU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREELIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETBKCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCLIENTRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCOMMANDLINEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCURRENTDIRECTORYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETDEVICECAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETDLGITEMTEXTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETDRIVETYPEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETENVIRONMENTVARIABLEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETKEYSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETLASTACTIVEPOPUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEFILENAMEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEHANDLEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPARENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSYSCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSYSTEMMETRICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETTEXTEXTENTPOINT32A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETVOLUMEINFORMATIONA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETWINDOWRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETWINDOWSDIRECTORYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETWINDOWWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALUNLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC.                   WWW.WINZIP.COM\0\0\0-WIN32 -LE -D* -OVERWRITE\0PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALIDATERECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KILLTIMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADCURSORA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADLIBRARYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALFILETIMETOFILETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTRCATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTRCMPIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTRCPYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTRLENA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M F9"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGEBOXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METER\0\0\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT ENOUGH MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OEMTOCHARBUFFA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE32E.SFX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEEKMESSAGEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTMESSAGEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERCLASSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGQUERYVALUEA\0\0ADVAPI32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTLUNWIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDDLGITEMMESSAGEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDMESSAGEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETACTIVEWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETBKCOLOR\0\0GDI32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETCURRENTDIRECTORYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETCURSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETDLGITEMTEXTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETERRORMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETFILETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETFOREGROUNDWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTEXTALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTEXTCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTIMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETWINDOWPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETWINDOWTEXTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETWINDOWWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHELLEXECUTEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATEMESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATEWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINEXEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINZIP COMPUTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINZIP SELF-EXTRACTOR HEADER CORRUPT.  POSSIBLE CAUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LCREAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LLSEEK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LOPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WINZIP_"
+    CaseSensitive: false

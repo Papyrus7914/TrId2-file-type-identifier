@@ -1,0 +1,20 @@
+Name: Opticks Global light
+Description: Amiga ray-trace Software.
+FileNameExtensions: ["glo"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\nGLOBALLIGHTv1.0\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COEFFICIENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVELENGTHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: "Vampire: The Masquerade - Redemption save game"
+URL: "https://www.mobygames.com/game/1709/vampire-the-masquerade-redemption/"
+FileNameExtensions: ["nsw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x12\0\0\0\x15\0\0\0\x16\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".NAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NSD"
+    CaseSensitive: false

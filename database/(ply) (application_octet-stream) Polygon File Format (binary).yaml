@@ -1,0 +1,14 @@
+Name: Polygon File Format (binary)
+URL: "https://en.wikipedia.org/wiki/PLY_(file_format)"
+FileNameExtensions: ["ply"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ply"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORMAT BINARY_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ENDIAN"
+    CaseSensitive: false

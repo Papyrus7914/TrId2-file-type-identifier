@@ -1,0 +1,15 @@
+Name: 16bit DOS COM T-PACK compressed (v0.5)
+URL: "COM compressor by Max and Blair / Tuscon."
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        h                       `
+    Bytes: [0x68, 0x00, 0x01, 0xFD, 0x60, 0xBE]
+  - Pos: 8
+    Bytes: [0xBF]
+  - Pos: 10
+    Bytes: [0xFF, 0xB9]
+  - Pos: 14
+    #                                                        F
+    Bytes: [0xF3, 0xA4, 0x8B, 0xF7, 0xBF, 0x00, 0x01, 0xFC, 0x46, 0xE9]

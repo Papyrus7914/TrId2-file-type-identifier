@@ -1,0 +1,11 @@
+Name: BSD library
+URL: "https://en.wikipedia.org/wiki/Ar_(Unix)"
+FileNameExtensions: ["a"]
+MimeType: application/x-archive
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!<arch>\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "__.SYMDEF"
+    CaseSensitive: false

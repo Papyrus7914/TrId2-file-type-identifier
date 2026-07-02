@@ -1,0 +1,24 @@
+Name: Simutrans object package
+URL: "http://en.wikipedia.org/wiki/Simutrans"
+FileNameExtensions: ["pak"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Simutrans object file\n"
+    CaseSensitive: true
+  - Pos: 56
+    Bytes: [0x1A]
+  - Pos: 61
+    AsciiString: "ROOT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIMUTRANS OBJECT FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMG1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

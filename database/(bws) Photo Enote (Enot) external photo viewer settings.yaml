@@ -1,0 +1,37 @@
+Name: Photo Enote (Enot) external photo viewer settings
+URL: "http://acritum.com/pe"
+FileNameExtensions: ["bws"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[PHOTOVIEWERSETTINGS]\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PHOTOVIEWERSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%ALBUM%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSTUPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSTUPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPAR"
+    CaseSensitive: false

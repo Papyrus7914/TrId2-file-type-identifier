@@ -1,0 +1,8 @@
+Name: Video Station Metadata (v1)
+URL: "https://www.synology.com/en-global/dsm/feature/video_station"
+FileNameExtensions: ["vsmeta"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        \b
+    Bytes: [0x08, 0x01, 0x12]

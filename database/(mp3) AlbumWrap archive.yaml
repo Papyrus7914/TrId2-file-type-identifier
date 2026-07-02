@@ -1,0 +1,11 @@
+Name: AlbumWrap archive
+Description: AlbumWrap archives wrap a serie of MP3 files in a single file album that is still playable by any standard MP3 player.
+URL: "http://www.infamus.com/albumwrap/"
+FileNameExtensions: ["mp3"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ID3\x03\0\0\0\0\n#TIT2\0\0\0\x10\0\0\0AlbumWrap AlbumTALB\0\0\0"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\0\0\0AlbumWrap - "
+    CaseSensitive: true

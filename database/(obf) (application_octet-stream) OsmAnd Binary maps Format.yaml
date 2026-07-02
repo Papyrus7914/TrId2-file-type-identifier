@@ -1,0 +1,11 @@
+Name: OsmAnd Binary maps Format
+URL: "https://en.wikipedia.org/wiki/OsmAnd"
+FileNameExtensions: ["obf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        \b
+    Bytes: [0x08, 0x02, 0x90, 0x01]
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

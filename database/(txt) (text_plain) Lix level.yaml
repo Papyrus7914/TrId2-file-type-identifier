@@ -1,0 +1,26 @@
+Name: Lix level
+URL: "https://www.lixgame.com/"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$BUILT "
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$ENGLISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE_X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE_Y"
+    CaseSensitive: false

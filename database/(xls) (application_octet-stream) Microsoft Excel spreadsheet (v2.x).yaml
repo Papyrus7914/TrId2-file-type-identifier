@@ -1,0 +1,29 @@
+Name: Microsoft Excel spreadsheet (v2.x)
+URL: "https://en.wikipedia.org/wiki/Microsoft_Excel"
+FileNameExtensions: ["xls"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\t\0\x04\0\x02\0\x10\0\v\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRINT_TITLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT_AREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRITERIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL"
+    CaseSensitive: false

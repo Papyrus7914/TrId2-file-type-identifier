@@ -1,0 +1,42 @@
+Name: Microsoft SQL Server log (generic)
+FileNameExtensions: ["ldf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\x0F\0\0\b"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x02\0c\0\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0\0\0\0\x02\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\00\0\b\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 105
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 110
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 223
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 231
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 235
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 251
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 263
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

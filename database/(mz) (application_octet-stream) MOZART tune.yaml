@@ -1,0 +1,83 @@
+Name: MOZART tune
+Description: Music software for Win 3.x by David Webber.
+FileNameExtensions: ["mz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END OF HEADER INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY--SIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUT_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUT_2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGFONTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCOREKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME-SIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BARS_AT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ED_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL"
+    CaseSensitive: false

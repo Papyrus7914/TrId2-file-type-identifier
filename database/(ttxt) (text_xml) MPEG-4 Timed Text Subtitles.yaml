@@ -1,0 +1,79 @@
+Name: MPEG-4 Timed Text Subtitles
+FileNameExtensions: ["ttxt"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXTSAMPLEDESCRIPTION HORIZONTALJUSTIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTTABLEENTRY FONTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSTREAMHEADER WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSAMPLE SAMPLETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALJUSTIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSTREAM VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUOUSKARAOKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILLTEXTREGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATION_X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATION_Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE STYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTBOX TOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCROLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false

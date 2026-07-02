@@ -1,0 +1,34 @@
+Name: Game Description Language (with rem)
+URL: "http://en.wikipedia.org/wiki/Game_Description_Language"
+FileNameExtensions: ["gdl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TERMINAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(INIT ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NEXT ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TRUE ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(LEGAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NOT ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DOES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(GOAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(ROLE"
+    CaseSensitive: false

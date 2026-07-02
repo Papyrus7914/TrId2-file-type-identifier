@@ -1,0 +1,11 @@
+Name: Handy savestate (v3)
+URL: "http://handy.sourceforge.net/"
+FileNameExtensions: ["lss"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LSS3"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CSystem::ContextSave"
+    CaseSensitive: true

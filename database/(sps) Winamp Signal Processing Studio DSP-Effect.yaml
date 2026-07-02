@@ -1,0 +1,19 @@
+Name: Winamp Signal Processing Studio DSP-Effect
+URL: "http://www.winamp.com/plugins/"
+FileNameExtensions: ["sps"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[SPS PRESET]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CODE0_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE0_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLIDER"
+    CaseSensitive: false

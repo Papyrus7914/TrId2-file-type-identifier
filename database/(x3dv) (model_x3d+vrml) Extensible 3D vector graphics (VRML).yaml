@@ -1,0 +1,23 @@
+Name: Extensible 3D vector graphics (VRML)
+URL: "http://fileformats.archiveteam.org/wiki/X3D"
+FileNameExtensions: ["x3dv"]
+MimeType: model/x3d+vrml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#X3D V"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INFO {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X3D V"
+    CaseSensitive: false

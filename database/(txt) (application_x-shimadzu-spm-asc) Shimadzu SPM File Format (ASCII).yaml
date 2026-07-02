@@ -1,0 +1,11 @@
+Name: Shimadzu SPM File Format (ASCII)
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/shimadzu.c"
+FileNameExtensions: ["txt"]
+MimeType: application/x-shimadzu-spm-asc
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ASCII:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SHIMADZU SPM FILE FORMAT VERSION"
+    CaseSensitive: false

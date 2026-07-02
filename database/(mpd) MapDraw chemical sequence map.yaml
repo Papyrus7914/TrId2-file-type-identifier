@@ -1,0 +1,40 @@
+Name: MapDraw chemical sequence map
+URL: "http://www.bimcore.emory.edu/Services/Lasergene/modules.html"
+FileNameExtensions: ["mpd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\x01\0\0\0e\0\0\0\x10\0\0\0\x03\0\0\0e"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MPDDDNAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPDDDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPDRAW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UVSI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDMI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UVSQ"
+    CaseSensitive: false

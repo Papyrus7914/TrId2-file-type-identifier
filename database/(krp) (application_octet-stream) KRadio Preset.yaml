@@ -1,0 +1,38 @@
+Name: KRadio Preset
+URL: "https://kradio.sourceforge.net/presets.html"
+FileNameExtensions: ["krp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STATIONLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KRADIO-1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KRADIORC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANGED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

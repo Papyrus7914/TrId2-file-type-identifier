@@ -1,0 +1,98 @@
+Name: AmiBlitz3 source code
+URL: "https://www.amiblitz.de/"
+FileNameExtensions: ["ab3"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "; XTRA\n; Embedded .xtra Header\n; \n; General Info\n; -------------------------------------------------------\n; ExePath         = \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-------------------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLERCHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERRUPTCHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFBUILDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLITZ OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDBGFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERFLOWCHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURSORCOLUMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKESMALLEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIMEDEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGBUFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELREMARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELSEARCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURSORLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUGINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESIDENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACKSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUGGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTORUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIARGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXEPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNC"
+    CaseSensitive: false

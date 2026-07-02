@@ -1,0 +1,21 @@
+Name: Finale ETF Enigma Tansportable File
+Description: Basically a clear text export format, opposed to the standard binary one.
+URL: "http://fileformats.archiveteam.org/wiki/Finale"
+FileNameExtensions: ["mus", "etf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ENIGMA "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENIGMA TRANSPORTABLE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHERS"
+    CaseSensitive: false

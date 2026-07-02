@@ -1,0 +1,34 @@
+Name: MSI/Accelrys Cerius II
+URL: "http://www.accelrys.com/cerius2/"
+FileNameExtensions: ["cer", "msi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MSI CERIUS2 DATAMODEL FILE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(A C LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(A O ATOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(1 MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(A C ACL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(A I ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(1 ATOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(A D"
+    CaseSensitive: false

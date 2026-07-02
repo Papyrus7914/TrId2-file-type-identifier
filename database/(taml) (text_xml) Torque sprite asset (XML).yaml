@@ -1,0 +1,12 @@
+Name: Torque sprite asset (XML)
+Description: TAML is an acronym of Torque Application Mark-up Language.
+URL: "https://en.wikipedia.org/wiki/Torque_(game_engine)"
+FileNameExtensions: ["taml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Sprite"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

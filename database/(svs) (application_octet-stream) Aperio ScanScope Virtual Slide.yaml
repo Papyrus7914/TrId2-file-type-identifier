@@ -1,0 +1,11 @@
+Name: Aperio ScanScope Virtual Slide
+URL: "http://www.leicabiosystems.com/pathology-imaging/aperio-digital-pathology/"
+FileNameExtensions: ["svs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II*\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APERIO IMAGE LIBRARY V"
+    CaseSensitive: false

@@ -1,0 +1,79 @@
+Name: IBM/Toshiba 4690 POS Transaction Log
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSACTIONNUMBER X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSACTIONRECORD00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSACTIONS XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFSTRINGS X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSACTIONTYPE X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMINALNUMBER X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROSSNEGATIVE X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROSSPOSITIVE X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INACTIVETIME X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITS_31_0 XSI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TENDERTIME X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATETIME X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATOR X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RINGTIME X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEXBINARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDICAT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECIMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRICE X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG"
+    CaseSensitive: false

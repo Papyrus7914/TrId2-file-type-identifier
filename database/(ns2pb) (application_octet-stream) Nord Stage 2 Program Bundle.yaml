@@ -1,0 +1,50 @@
+Name: Nord Stage 2 Program Bundle
+URL: "http://www.nordkeyboards.com/products/nord-stage-2"
+FileNameExtensions: ["ns2pb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".NPNOCBIN\0\0\0\0NPNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUNDLE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCBIN\0\0\0\0NS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPCNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NS2P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIANO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

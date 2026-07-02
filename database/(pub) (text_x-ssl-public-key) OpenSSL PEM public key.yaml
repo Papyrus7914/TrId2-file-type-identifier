@@ -1,0 +1,15 @@
+Name: OpenSSL PEM public key
+Description: probably Base64 encoded PEM; verified for example by "openssl asn1parse -i -in format_gen.pub"
+URL: "https://www.rfc-editor.org/rfc/rfc7468"
+FileNameExtensions: ["pub"]
+MimeType: text/x-ssl-public-key
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-----BEGIN PUBLIC KEY-----"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-----BEGIN PUBLIC KEY-----"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-----END PUBLIC KEY-----"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Microsoft Access report Snapshot
+URL: "https://en.wikipedia.org/wiki/SNP_file_format"
+FileNameExtensions: ["snp"]
+MimeType: application/vnd.ms-cab-compressed
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "_AccRpt_.snp"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_ACCRPT_.SNP"
+    CaseSensitive: false

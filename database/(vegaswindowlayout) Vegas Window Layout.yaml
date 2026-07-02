@@ -1,0 +1,43 @@
+Name: Vegas Window Layout
+URL: "http://en.wikipedia.org/wiki/Sony_Vegas"
+FileNameExtensions: ["vegaswindowlayout"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<Preferences>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WINDOWLAYOUTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFERENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AS_BINARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AS_LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREF ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AS_INT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

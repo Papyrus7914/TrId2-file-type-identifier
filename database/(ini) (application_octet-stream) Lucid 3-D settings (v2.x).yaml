@@ -1,0 +1,11 @@
+Name: Lucid 3-D settings (v2.x)
+Description: Old DOS TSR spreadsheet by PCSG, Inc.
+FileNameExtensions: ["ini"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PCSG V 2."
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: " Defaults\r\n\x1A"
+    CaseSensitive: true

@@ -1,0 +1,299 @@
+Name: Move animation
+URL: "https://www.linearity.io/move/"
+FileNameExtensions: ["move"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Manifest.json{\""
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "i"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "\""
+    CaseSensitive: true
+  - Pos: 86
+    AsciiString: "a"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STROKEPOSITIONANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTALIGNMENTANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATIONJSONFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DASHPATTERNANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYANIMATIONSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STROKEJOINANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTDOUBLEANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSTRINGANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLENDMODEANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STROKECAPANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTCOLORANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATIONCURVETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTBOOLANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATIONELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGPOINTANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEFORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATION.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTBOARDSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALTRANSFORMID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGLEANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATION.JSON{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATIONSCENES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARROWANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALTRANSFORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.JSON{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATHANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATHGEOMETRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABSTRACTPATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABSTRACTTEXTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUSHPROFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPOUNDPATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUSHSTROKES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORNERRADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STROKESTYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANCHORPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUTPARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLEDTEXTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTIDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRYID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUIDELINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEDATAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENEPATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STROKETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBELEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EASEINOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYFRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTPATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIFMM\0*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILLRULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISHIDDEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISLOCKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.JSON{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEITHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUBIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRGB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false

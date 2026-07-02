@@ -1,0 +1,18 @@
+Name: Resonite Package
+Description: Object or world exported from Resonite, with all the assets and scripts (Protoflux).
+URL: "https://en.wikipedia.org/wiki/Resonite"
+FileNameExtensions: ["resonitepackage"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Assets/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "R-MAIN.RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETS"
+    CaseSensitive: false

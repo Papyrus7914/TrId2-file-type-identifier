@@ -1,0 +1,24 @@
+Name: "Code-Name: Iceman saved game"
+Description: Files are named ICEMANSG.000, 001, etc.
+URL: "https://www.mobygames.com/game/code-name-iceman"
+FileNameExtensions: ["000"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "N\0`\xD31."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DISK CAN HOLD NO MORE SAVED GAMES. YOU MUST REPLACE ONE OF YOUR SAVED GAMES OR USE CHANGE DIRECTORY TO SAVE ON A DIFFERENT DIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESTORE\0  SAVE  \0REPLACE\0SELECT THE GAME THAT YOU WOULD LIKE TO RESTORE.\0TYPE THE DESCRIPTION OF THIS SAVED GAME.\0THIS DIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK.\0SYSWINDOW\0SRDIALOG\0RESTORE A GAME\0SAVE A GAME\0SAVE\0GETREPLACENAME\0OK\0CANCEL\0SELECTORI\0EDITI\0OKI\0 CANCEL \0CANCELI\0CHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAST\0FEATURES\0SFEATURES\0SOUNDS\0REGIONS\0LOCALES\0ADDTOPICS\0CONTROLS\0TIMERS\0OK\0FREE HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICEMAN CREDITS  \0RESTART\0CONTINUE\0QUIT\0GAME PAUSED\0RESUME\0CURRENT SPEED"
+    CaseSensitive: false

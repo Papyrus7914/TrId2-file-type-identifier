@@ -1,0 +1,64 @@
+Name: Valve Source map
+Description: "Usend in Counter-Strike: Source, Half-Life 2, etc."
+FileNameExtensions: ["bsp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VBSP\x13\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MATERIALTABLE {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATICSOLID {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VTFVTF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VTFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONCRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IVPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRPD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPHY"
+    CaseSensitive: false

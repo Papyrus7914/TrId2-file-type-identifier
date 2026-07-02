@@ -1,0 +1,126 @@
+Name: CExe compressed Win32 executable
+Description: CExe is a Win32 based .exe compressor.
+URL: "http://www.scottlu.com/Content/CExe.html"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xC0\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0%Wo\xC1a6\x01\x92a6\x01\x92a6\x01\x92a6\0\x92{6\x01\x92\x03)\x12\x92f6\x01\x92\x89)\n\x92`6\x01\x92\xD90\a\x92`6\x01\x92Richa6\x01\x92\0\0\0\0\0\0\0\0PE\0\0L\x01\x02\0!\x88a7\0\0\0\0\0\0\0\0\xE0\0\x0F\x01\v\x01\x06\0\0\b\0\0\0"
+    CaseSensitive: true
+  - Pos: 227
+    AsciiString: "\0\0\0\0\0\x04\x14\0\0\0\x10\0\0\0 \0\0\0\0@\0\0\x10\0\0\0\x02\0\0\x04\0\0\0\0\0\0\0\x04\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 275
+    AsciiString: "\0\0\x04\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 285
+    AsciiString: "\0\0\0\0\0\x10\0\0\x10\0\0\0\0\x10\0\0\x10\0\0\0\0\0\0\x10\0\0\0\0\0\0\0\0\0\0\0\xBC\x14\0\0P\0\0\0\0 \0\0"
+    CaseSensitive: true
+  - Pos: 335
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x10\0\0t\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0.text\0\0\0@\a\0\0\0\x10\0\0\0\b\0\0\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0 \0\0`.rsrc\0\0\0"
+    CaseSensitive: true
+  - Pos: 491
+    AsciiString: "\0\0 \0\0\0"
+    CaseSensitive: true
+  - Pos: 499
+    AsciiString: "\0\0\f\0\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0d\x16\0\0\x90\x15\0\0\xA0\x15\0\0\xB2\x15\0\0\xC2\x15\0\0\xD0\x15\0\0\xDC\x15\0\0\xEA\x15\0\0\xFE\x15\0\0\f\x16\0\0\x14\x16\0\0*\x16\0\0@\x16\0\0R\x16\0\0\x80\x15\0\0p\x16\0\0|\x16\0\0\x8E\x16\0\0\x9C\x16\0\0\xAE\x16\0\0\xBE\x16\0\0\xD6\x16\0\0\0\0\0\0\x04\x17\0\0\x0E\x17\0\0\xFA\x16\0\0\0\0\0\0&\x17\0\0\0\0\0\0sxe\0\" \0\0\"\0\0\0DllInflate\0\0An error has occured while executing this program. Free up harddrive space and try again.\0\0\0Error\0\x0F\xB7D$\x04VjcPj\0\xFF\x15\f\x10@\0\x8B\xF0\x85\xF6u\x02^\xC3Vj\0\xFF\x15\b\x10@\0\x8BL$\fVj\0\x89\x01\xFF\x15\x04\x10@\0P\xFF\x158\x10@\0^\xC3U\x8B\xECV3\xF6WVh\x80\0\0\0j\x02VVh\0\0\0@\xFFu\x10\xFF\x15\x18\x10@\0\x8B\xF8\x83\xFF\xFFt*\x89u\x10V\x8Bu\f\x8DE\x10PV\xFFu\bW\xFF\x15\x14\x10@\0\x85\xC0t\x10;u\x10u\vW\xFF\x15\x10\x10@\0\xB0\x01\xEB\x022\xC0_^]\xC3\xFFt$\bj\0ht\x10@\0\xFFt$\x10\xFF\x15\x1C\x10@\0\xC3U\x8B\xEC\x81\xEC\x8C\x01\0\0V\x8D\x85\xFC\xFE\xFF\xFFWP\xFFu\x10\xE8\xD0\xFF\xFF\xFF\x8D\x85\xFC\xFE\xFF\xFFP\xFFu\f\xFFu\b\xE8h\xFF\xFF\xFF\x83\xC4\x14\x84\xC0t@\x8D\x85t\xFE\xFF\xFFj\0P\x8D\x85\xFC\xFE\xFF\xFFP\xE8\xD8\x02\0\0\x8B\xF8\x85\xFF|%\x8D\x85t\xFE\xFF\xFFh\x02\x10\0\0P\xFFu\x14\xE8\xBE\x02\0\0\x8B\xF0\x85\xF6|\vVW\xE8\xAB\x02\0\0\x85\xC0}\x043\xC0\xEB\x1CW\xE8\x97\x02\0\0V\xE8\x91\x02\0\0\x8D\x85\xFC\xFE\xFF\xFFP\xFF\x15 \x10@\0j\x01X_^\xC9\xC3U\x8B\xEC\x81\xECd\x03\0\0SV\x8DE\xFCWPj\x013\xF6\xBB\x94\x11@\0\xE8\xA5\xFE\xFF\xFF\x8B\xF8Y\x85\xFFYtV\x8D\x85\xA0\xFD\xFF\xFFP\xFFu\b\xE8\x1E\xFF\xFF\xFF\x8D\x85\xA0\xFD\xFF\xFFP\xFFu\b\xFFu\xFCW\xE8!\xFF\xFF\xFF\x83\xC4\x18\x85\xC0\x0F\x849\x01\0\0\x8D\x85\xA0\xFD\xFF\xFFP\xFF\x15L\x10@\0\x8B\xF0\x85\xF6\x0F\x84\"\x01\0\0h\x80\x10@\0V\xFF\x15H\x10@\0\x8B\xD8\x85\xDBt9\x8DE\xFCPj\x02\xE8<\xFE\xFF\xFF\x8B\xF8Y\x85\xFFYt&\x8D\x85\x9C\xFC\xFF\xFFP\xFFu\b\xE8\xB5\xFE\xFF\xFF\x8D\x85\x9C\xFC\xFF\xFFP\xFFu\b\xFFu\xFCW\xFF\xD3\x83\xC4\x18\x85\xC0u!\x85\xF6\x0F\x84\xCF\0\0\0V\xFF\x15D\x10@\0\x8D\x85\xA0\xFD\xFF\xFFP\xFF\x15 \x10@\0\xE9\xB6\0\0\0\x8B\x1D \x10@\0\x85\xF6t\x10V\xFF\x15D\x10@\0\x8D\x85\xA0\xFD\xFF\xFFP\xFF\xD3\xFF\x15@\x10@\0\x8B\xF82\xC9\x80?\"u\x03\xFE\xC1G\x8A\a\x84\xC0t\r< u\x04\x84\xC9t\x05<\"u\xEDG\x8D\x85\xA4\xFE\xFF\xFFh|\x10@\0P\xFF\x15<\x10@\0\x8B5\0\x10@\0\x8D\x85\x9C\xFC\xFF\xFFP\x8D\x85\xA4\xFE\xFF\xFFP\xFF\xD6\x8D\x85\xA4\xFE\xFF\xFFhx\x10@\0P\xFF\xD6\x8D\x85\xA4\xFE\xFF\xFFWP\xFF\xD6\x8DE\xA8P\xFF\x154\x10@\0\x8DE\xEC3\xFFP\x8DE\xA8PWWj j\x01W\x8D\x85\xA4\xFE\xFF\xFFWPW\xFF\x150\x10@\0\x85\xC0u\r\x8D\x85\x9C\xFC\xFF\xFFP\xFF\xD32\xC0\xEBD\xFFu\xF0\x8B5\x10\x10@\0\xFF\xD6j\xFF\xFFu\xEC\xFF\x15,\x10@\0\xFFu\f\xFFu\xEC\xFF\x15(\x10@\0\xFFu\xEC\xFF\xD6\x8D\x85\x9C\xFC\xFF\xFFP\xFF\xD3\x85\xC0u\x0Ejd\xFF\x15$\x10@\0G\x83\xFFd|\xE5\xB0\x01_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DLLINFLATE\0\0AN ERROR HAS OCCURED WHILE EXECUTING THIS PROGRAM. FREE UP HARDDRIVE SPACE AND TRY AGAIN.\0\0\0ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDRESOURCEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREELIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCOMMANDLINEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETEXITCODEPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEFILENAMEA\0\0KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTARTUPINFOA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETTEMPFILENAMEA\0\0W\0DELETEFILEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETWINDOWSDIRECTORYA\0\0$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADLIBRARYA\0\0}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADRESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKRESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTRCATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTRCPYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZCOPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZOPENFILEA\0LZ32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGEBOXA\0USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PADDINGXXPADDINGPADD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PWWJ J"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RICHA6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEOFRESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLEEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SZDD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0.TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VJCPJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAITFORSINGLEOBJECT\0D\0CREATEPROCESSA\0\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITEFILE\04\0CREATEFILEA\0C"
+    CaseSensitive: false

@@ -1,0 +1,53 @@
+Name: Ghidra Compiler Specification
+URL: "https://en.wikipedia.org/wiki/Ghidra"
+FileNameExtensions: ["cspec"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1."
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STACKPOINTER REGISTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOTYPE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILER_SPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT_PROTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACKSHIFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRAPOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PENTRY M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT"
+    CaseSensitive: false

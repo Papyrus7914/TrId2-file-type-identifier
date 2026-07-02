@@ -1,0 +1,40 @@
+Name: 16bit DOS LM-T2E executable (v2.0)
+Description: DOS tool by LANDMARK.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\x01\0\x06\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\x02\0\0\0\x01\xF0\xFFR\0\0\0\r"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "This File Is Prepared by RKT-LANDMARK (tm) 1992/3\xFF\xFF\xFF\a\0\0\0\0\0\0\0\0\0\0\0\0\0\xB8"
+    CaseSensitive: true
+  - Pos: 99
+    Bytes: [0xBA]
+  - Pos: 102
+    AsciiString: "\x05\0\0;\x06\x02\0s\x1A- \0\xFA\x8E\xD0\xFB-"
+    CaseSensitive: true
+  - Pos: 120
+    #                          P
+    Bytes: [0x00, 0x8E, 0xC0, 0x50, 0xB9]
+  - Pos: 127
+    AsciiString: "3\xFFW\xBED\x01\xFC\xF3\xA5\xCB\xB4\t\xBA2\x01\xCD!\xCD Not enough memory$\xFD\x8C\xDBS\x83\xC3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS FILE IS PREPARED BY RKT-LANDMARK (TM) 1992"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT ENOUGH MEMORY$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "93 RKT-LANDMARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) 1992"
+    CaseSensitive: false

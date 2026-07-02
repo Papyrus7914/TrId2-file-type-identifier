@@ -1,0 +1,8 @@
+Name: PPMD compressed data
+URL: "https://en.wikipedia.org/wiki/Dmitry_Shkarin"
+FileNameExtensions: ["pmd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                ␠
+    Bytes: [0x8F, 0xAF, 0xAC, 0x84, 0x20, 0x00, 0x00, 0x00, 0x93, 0x80]

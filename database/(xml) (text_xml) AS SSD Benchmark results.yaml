@@ -1,0 +1,62 @@
+Name: AS SSD Benchmark results
+URL: "https://www.alex-is.de"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<ASSSDBenchmark\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BENCHMARKVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM4K64TTEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM4K1TTEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCTIMETEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQTEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

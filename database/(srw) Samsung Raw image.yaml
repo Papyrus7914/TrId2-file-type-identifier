@@ -1,0 +1,21 @@
+Name: Samsung Raw image
+FileNameExtensions: ["srw"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MM\0*\0\0\0\b\0\x06\x01\x0F\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0\0V\x01\x10\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 86
+    AsciiString: "SAMSUNG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SAMSUNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$3BR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MM\0*"
+    CaseSensitive: false

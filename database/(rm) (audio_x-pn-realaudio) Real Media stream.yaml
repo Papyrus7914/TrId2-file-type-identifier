@@ -1,0 +1,14 @@
+Name: Real Media stream
+URL: "http://en.wikipedia.org/wiki/RealAudio"
+FileNameExtensions: ["rm"]
+MimeType: audio/x-pn-realaudio
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ".RMF\0\0\0\x12\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "PROP\0\0\02\0\0\0"
+    CaseSensitive: true

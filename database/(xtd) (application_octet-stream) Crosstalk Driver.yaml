@@ -1,0 +1,99 @@
+Name: Crosstalk Driver
+URL: "https://en.wikipedia.org/wiki/Crosstalk_Mk.4"
+FileNameExtensions: ["xtd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x13, 0x18, 0x00, 0x00]
+  - Pos: 6
+    AsciiString: "\0\0\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    Bytes: [0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "YOU MAY CHANGE SETTINGS WHICH AFFECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOU ARE IN DEVICE SETUP.  HERE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANGE THIS SETTING ONLY WHEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKING WITH MENUS AND FORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OR CHOOSE ANOTHER DEVICE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE SETUP SCREEN -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BE USED WITH THE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMINAL MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMUNICATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOU WANT TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOUR SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARACTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CROSSTALK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALT-D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALT-S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIGH-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

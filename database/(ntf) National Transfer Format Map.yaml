@@ -1,0 +1,10 @@
+Name: National Transfer Format Map
+URL: "http://www.ordnancesurvey.co.uk/oswebsite/products/landline/techinfo.html"
+FileNameExtensions: ["ntf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "01ORDNANCE SURVEY                         "
+    CaseSensitive: true
+  - Pos: 160
+    AsciiString: "(NTF)       "
+    CaseSensitive: true

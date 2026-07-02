@@ -1,0 +1,11 @@
+Name: Wikireader Forth program
+URL: "https://en.wikipedia.org/wiki/WikiReader"
+FileNameExtensions: ["4mu"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "include "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".4TH"
+    CaseSensitive: false

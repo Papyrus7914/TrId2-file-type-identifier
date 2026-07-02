@@ -1,0 +1,35 @@
+Name: Libretro core Information
+URL: "https://en.wikipedia.org/wiki/RetroArch"
+FileNameExtensions: ["info"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "display_name = \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SUPPORTED_EXTENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORTS_NO_GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERMISSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: CorelSHOW player data (v5)
+URL: "http://fileformats.archiveteam.org/wiki/SHW_(Corel)"
+FileNameExtensions: ["shr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "shr5LIST"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "INFO"
+    CaseSensitive: true

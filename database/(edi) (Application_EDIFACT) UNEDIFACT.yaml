@@ -1,0 +1,21 @@
+Name: UN/EDIFACT
+Description: UN/EDIFACT (ISO 9735) is a global standard for the presentation of business and commercial data destined for electronic exchange data between companies.
+URL: "http://en.wikipedia.org/wiki/EDIFACT"
+FileNameExtensions: ["edi"]
+MimeType: Application/EDIFACT
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "UN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNB+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNH+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNT+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNZ+"
+    CaseSensitive: false

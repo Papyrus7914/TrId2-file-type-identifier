@@ -1,0 +1,11 @@
+Name: DFF format (v1.0, LE)
+URL: "https://github.com/kreativekorp/ksfl/wiki/DFF-1.0-File-Format"
+FileNameExtensions: ["dff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FFD%"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FFD%"
+    CaseSensitive: false

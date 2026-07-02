@@ -1,0 +1,20 @@
+Name: TSPLIB Tour Solution data
+URL: "http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/tsp95.pdf"
+FileNameExtensions: ["tour"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NAME"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOUR_SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EOF"
+    CaseSensitive: false

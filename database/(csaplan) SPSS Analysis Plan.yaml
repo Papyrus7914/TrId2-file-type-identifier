@@ -1,0 +1,46 @@
+Name: SPSS Analysis Plan
+URL: "http://en.wikipedia.org/wiki/SPSS"
+FileNameExtensions: ["csaplan"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANALYSISSTAGE ESTIMATIONMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPSSCOMPLEXSAMPLES VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSISDESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFSTAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAGENUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPSS INC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

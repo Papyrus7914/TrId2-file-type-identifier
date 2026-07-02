@@ -1,0 +1,7 @@
+Name: Master Boot Record dump
+URL: "https://en.wikipedia.org/wiki/Master_boot_record"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 510
+    #        U
+    Bytes: [0x55, 0xAA]

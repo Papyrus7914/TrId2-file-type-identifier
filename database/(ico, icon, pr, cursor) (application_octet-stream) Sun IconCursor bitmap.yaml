@@ -1,0 +1,23 @@
+Name: Sun Icon/Cursor bitmap
+URL: "http://fileformats.archiveteam.org/wiki/Sun_icon"
+FileNameExtensions: ["ico", "icon", "pr", "cursor"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/* Format_version=1, Width="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VALID_BITS_PER_ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* FORMAT_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false

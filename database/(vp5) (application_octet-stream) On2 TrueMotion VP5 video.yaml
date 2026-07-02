@@ -1,0 +1,29 @@
+Name: On2 TrueMotion VP5 video
+URL: "https://en.wikipedia.org/wiki/On2_Technologies"
+FileNameExtensions: ["vp5"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ON2 "
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0ON2fLIST"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "hdrlON2h8"
+    CaseSensitive: true
+  - Pos: 88
+    AsciiString: "LIST"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "strlstrh8"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "vidsVP50"
+    CaseSensitive: true
+  - Pos: 164
+    AsciiString: "strf"
+    CaseSensitive: true
+  - Pos: 188
+    AsciiString: "VP50"
+    CaseSensitive: true

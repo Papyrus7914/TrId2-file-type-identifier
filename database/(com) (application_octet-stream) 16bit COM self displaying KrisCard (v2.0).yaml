@@ -1,0 +1,15 @@
+Name: 16bit COM self displaying KrisCard (v2.0)
+Description: DOS executable Greeting Cards creator by Duckbill Group LLC.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xB8]
+  - Pos: 2
+    Bytes: [0x01, 0xBB]
+  - Pos: 6
+    AsciiString: "\xBE\x81\0\xAC<?t1<\ru\xF7\xB8KC;\au<\xB8\0\x1A\xCD\x10<\x1Au\n\x80\xFB\bt2\x80\xFB\x04"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KRISCARD - NEEDS COLOR EGA"
+    CaseSensitive: false

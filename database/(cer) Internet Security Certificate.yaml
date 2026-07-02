@@ -1,0 +1,9 @@
+Name: Internet Security Certificate
+FileNameExtensions: ["cer"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-----BEGIN CERTIFICATE-----"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-----END CERTIFICATE-----"
+    CaseSensitive: false

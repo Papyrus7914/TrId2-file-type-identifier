@@ -1,0 +1,30 @@
+Name: Astound / Animation Works Movie
+Description: Presentations/multimedia authoring program for Windows.
+URL: "https://wiki.multimedia.cx/index.php/Gold_Disk_Animation"
+FileNameExtensions: ["awm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GDAW"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "VERS:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".AWM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: Visual Home object
+FileNameExtensions: ["bte"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "e\0\0\0\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0BTW"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BTWGLYPHGROBJ"
+    CaseSensitive: false

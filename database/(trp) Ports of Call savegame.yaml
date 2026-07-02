@@ -1,0 +1,11 @@
+Name: Ports of Call savegame
+Description: (This was verified for the classic Amiga version)
+URL: "http://www.portsofcall.de/"
+FileNameExtensions: ["trp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RDK TRAMP 1.0 (C) 1987,Muenchen\0\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "--RDK--"
+    CaseSensitive: false

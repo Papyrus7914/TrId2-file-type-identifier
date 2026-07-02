@@ -1,0 +1,35 @@
+Name: Caddie Catalog Package
+URL: "https://en.wikipedia.org/wiki/Caddie_(CAD_system)"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "CATEGORIES.ATCPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATALOGUE.ATCPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLS.ATCPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLIMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ICOPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATCAT"
+    CaseSensitive: false

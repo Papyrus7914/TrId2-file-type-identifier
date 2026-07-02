@@ -1,0 +1,11 @@
+Name: Quintessential Player Family Skin
+Description: A Family Skin is a package of various Kid Skins.
+URL: "http://www.quinnware.com/"
+FileNameExtensions: ["qsf"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SKINFAMILY.INIPK"
+    CaseSensitive: false

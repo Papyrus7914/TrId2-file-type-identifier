@@ -1,0 +1,23 @@
+Name: IRIDAS Composite playlist
+URL: "http://doc.iridas.com/index.php/IRCP"
+FileNameExtensions: ["ircp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" ?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IRIDASCOMPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMELINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASEFPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL"
+    CaseSensitive: false

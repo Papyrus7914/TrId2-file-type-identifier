@@ -1,0 +1,41 @@
+Name: SMART Table Activity Pack
+URL: "http://home.smarttech.com/"
+FileNameExtensions: ["tablecontent"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "imsmanifest.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMSMANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUND.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOTSPACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUR(K-*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false

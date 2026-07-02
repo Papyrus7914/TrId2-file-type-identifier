@@ -1,0 +1,14 @@
+Name: MapInfo MapBasic application eXtension (generic)
+Description: Support files for MapInfo Professional GIS.
+URL: "http://www.mapinfo.com/"
+FileNameExtensions: ["mbx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!App\n!Version "
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "!Charset "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAPBASIC.DEF"
+    CaseSensitive: false

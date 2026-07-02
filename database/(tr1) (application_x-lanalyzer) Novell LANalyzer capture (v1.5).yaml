@@ -1,0 +1,9 @@
+Name: Novell LANalyzer capture (v1.5)
+URL: "https://github.com/wireshark/wireshark/blob/master/wiretap/lanalyzer.c"
+FileNameExtensions: ["tr1"]
+MimeType: application/x-lanalyzer
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01, 0x10]
+  - Pos: 4
+    Bytes: [0x01, 0x05]

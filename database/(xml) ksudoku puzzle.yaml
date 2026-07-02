@@ -1,0 +1,34 @@
+Name: ksudoku puzzle
+URL: "http://ksudoku.sourceforge.net/"
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE ksudoku-graph>\n<ksudoku-graph"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE KSUDOKU-GRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPH SIZEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIQUE SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCLIQUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

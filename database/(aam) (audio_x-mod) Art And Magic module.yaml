@@ -1,0 +1,27 @@
+Name: Art And Magic module
+Description: Used in Agony, an Amiga game published by Psygnosis.
+URL: "http://www.exotica.org.uk/wiki/Art_%26_Magic_(format)"
+FileNameExtensions: ["aam"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    #        H                       K                                   A
+    Bytes: [0x48, 0xE7, 0xFF, 0xFE, 0x4B, 0xF9, 0x00, 0xDF, 0xF0, 0x00, 0x41, 0xFA]
+  - Pos: 26
+    AsciiString: "EXIT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROTRACKER 1.1B\0BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8SVXVHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

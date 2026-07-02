@@ -1,0 +1,62 @@
+Name: Vixen 2 Timed sequence
+URL: "http://www.vixenlights.com/"
+FileNameExtensions: ["vix"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EVENTPERIODINMILLISECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMUMLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINIMUMLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIODEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENTVALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGINETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

@@ -1,0 +1,180 @@
+Name: DOS Metaware Professional Pascal Executable
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "METAWARE PROFESSIONAL PASCAL RUN-TIME LIBRARY COPYRIGHT (C) 1983-198"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METAWARE INCORPORATED.."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSERT_INTO_FREE_CHAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOVE_FROM_FREE_CHAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK_HEAP_INTEGRITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH_FREE_CHAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EACH_FREE_ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP OVERFLOW."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADD_NEW_CHUNK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MWFINIT_IMPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABORTING..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCOUNTERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FCLOSE_ALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAPMGMT -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACK DUMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUMP_HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EACH_ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP DUMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EACH_ARG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINITPIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FNEWLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAPCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MWHEAP1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HMALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKE_FT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MALLOC2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUTCHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MWPIO1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MWPIO2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "***NEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFLUSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPUTC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTERM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LDISP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MWST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FERR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LNEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WSTR"
+    CaseSensitive: false

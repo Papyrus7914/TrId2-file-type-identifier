@@ -1,0 +1,38 @@
+Name: KDevelop Session
+URL: "https://en.wikipedia.org/wiki/KDevelop"
+FileNameExtensions: ["kdevses"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCSANDVIEWS NUMBEROFDOCUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE KDEVPRJSESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFVIEWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOC0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false

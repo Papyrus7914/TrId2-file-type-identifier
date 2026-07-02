@@ -1,0 +1,18 @@
+Name: Corel Metafile Exchange Image (v16)
+Description: A proprietary vector graphics file format.
+URL: "http://product.corel.com/help/CorelDRAW/540238885/Main/EN/Documentation/wwhelp/wwhimpl/common/html/wwhelp.htm#href=CorelDRAW-Corel-Presentation-Exchange-CMX.html"
+FileNameExtensions: ["cmx"]
+MimeType: image/x-cmx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CMX3\x1B\0\0\0\x16\0\0\0Corel Binary Meta File\x01\0\0\0\0\0\0\0\0\nr\x0E\nff``\0\0\0\0\xFF\xFF\x84"
+    CaseSensitive: true
+  - Pos: 62
+    #        0
+    Bytes: [0x30, 0x10]
+  - Pos: any
+    AsciiString: "COREL BINARY META FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMX3"
+    CaseSensitive: false

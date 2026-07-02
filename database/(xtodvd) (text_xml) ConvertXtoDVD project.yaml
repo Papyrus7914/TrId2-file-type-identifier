@@ -1,0 +1,11 @@
+Name: ConvertXtoDVD project
+URL: "http://www.vso-software.fr/products/convert_x_to_dvd/"
+FileNameExtensions: ["xtodvd"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONVERTXTODVD"
+    CaseSensitive: false

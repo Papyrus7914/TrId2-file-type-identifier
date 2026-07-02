@@ -1,0 +1,707 @@
+Name: Tableau Data Extract
+URL: "https://www.tableau.com/"
+FileNameExtensions: ["tde"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        ␠                 b                       \a
+    Bytes: [0x20, 0x02, 0x01, 0x62, 0xA0, 0x1E, 0xAB, 0x07, 0x02, 0x00, 0x00, 0x00]
+  - Pos: 23
+    AsciiString: "\0\0\0\0\0\xFF\xFF\xFF\xFFversion-fix:0\nversion-major:1\nversion-minor:0\n\xFF\xFF\xF0\xCA\x12x \0\0\0\0\0\0\0N\0\0\0\0\0\0\0\x01\0\0\0\0\0\xFF\xFF\xFF\xFF\xFF\xFF\0\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xF0\xCA\x12xp\0\0\0\0\0\0\0q\0\0\0\0\0\0\0\x01\0\0\0\0\0\xFF\xFF\xFF\xFF\xFF\xFF\x03tds\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xF0\xCA\x12x\xA0\0\0\0\0\0\0\0\xA4\0\0\0\0\0\0\0\x01\0\0\0\0\0\xFF\xFF\xFF\xFF\xFF\xFF\0\0\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xF0\xCA\x12x\xD0\0\0\0\0\0\0\0\xD2\0\0\0\0\0\0\0\x01\0\0\0\0\0\xFF\xFF\xFF\xFF\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 260
+    AsciiString: "<?xml version='1.0' encoding='utf-8' ?>\n\n<datasource formatted-name='"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0K\0E\0Y\0(\0C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0K\0E\0Y\0.\0D\0A\0T\0A\0(\0C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0K\0E\0Y\0.\0D\0I\0C\0T\0(\0C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0K\0E\0Y\0.\0T\0Y\0P\0E\0$\0C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0P\0A\0R\0E\0N\0T\0.\0C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0P\0A\0R\0E\0N\0T\0.\0D\0A\0T\0A\0.\0C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0P\0A\0R\0E\0N\0T\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0K\0E\0Y\0(\0S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0K\0E\0Y\0.\0D\0A\0T\0A\0(\0S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0K\0E\0Y\0.\0D\0I\0C\0T\0(\0S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0K\0E\0Y\0.\0T\0Y\0P\0E\0$\0S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0P\0A\0R\0E\0N\0T\0.\0S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0P\0A\0R\0E\0N\0T\0.\0D\0A\0T\0A\0.\0S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0P\0A\0R\0E\0N\0T\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0P\0A\0R\0E\0N\0T\0.\0T\0Y\0P\0E\0 \0T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0V\0A\0L\0U\0E\0*\0T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0V\0A\0L\0U\0E\0.\0D\0A\0T\0A\0*\0T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0V\0A\0L\0U\0E\0.\0D\0I\0C\0T\0*\0T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0V\0A\0L\0U\0E\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0A\0C\0T\0I\0V\0E\0.\0C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0A\0C\0T\0I\0V\0E\0.\0D\0A\0T\0A\0.\0C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0A\0C\0T\0I\0V\0E\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0A\0C\0T\0I\0V\0E\0.\0S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0A\0C\0T\0I\0V\0E\0.\0D\0A\0T\0A\0.\0S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0A\0C\0T\0I\0V\0E\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0L\0E\0S\0_\0N\0A\0M\0E\0 \0T\0A\0B\0L\0E\0S\0_\0N\0A\0M\0E\0.\0D\0A\0T\0A\0 \0T\0A\0B\0L\0E\0S\0_\0N\0A\0M\0E\0.\0D\0I\0C\0T\0 \0T\0A\0B\0L\0E\0S\0_\0N\0A\0M\0E\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0I\0D\0$\0T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0I\0D\0.\0D\0A\0T\0A\0$\0T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0I\0D\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0L\0E\0S\0_\0A\0C\0T\0I\0V\0E\0$\0T\0A\0B\0L\0E\0S\0_\0A\0C\0T\0I\0V\0E\0.\0D\0A\0T\0A\0$\0T\0A\0B\0L\0E\0S\0_\0A\0C\0T\0I\0V\0E\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0L\0E\0S\0_\0P\0A\0R\0E\0N\0T\0$\0T\0A\0B\0L\0E\0S\0_\0P\0A\0R\0E\0N\0T\0.\0D\0A\0T\0A\0$\0T\0A\0B\0L\0E\0S\0_\0P\0A\0R\0E\0N\0T\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0K\0E\0Y\0$\0C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0P\0A\0R\0E\0N\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0K\0E\0Y\0$\0S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0P\0A\0R\0E\0N\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0P\0A\0R\0E\0N\0T\0 \0T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0V\0A\0L\0U\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0A\0T\0A\0S\0O\0U\0R\0C\0E\0 \0F\0O\0R\0M\0A\0T\0T\0E\0D\0-\0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0L\0A\0T\0E\0 \0B\0I\0N\0A\0R\0Y   V\0A\0R\0C\0H\0A\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0V\0A\0L\0U\0E\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0V\0A\0L\0U\0E\0.\0D\0I\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0V\0A\0L\0U\0E\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0V\0A\0L\0U\0E\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0V\0A\0L\0U\0E\0.\0D\0I\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0V\0A\0L\0U\0E\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0A\0C\0T\0I\0V\0E\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0A\0C\0T\0I\0V\0E\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0P\0A\0R\0E\0N\0T\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0D\0A\0T\0A\0B\0A\0S\0E\0.\0T\0Y\0P\0E\0\0\0P\0\0\0\0\0\0\0J"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0I\0D\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0P\0R\0O\0P\0S\0_\0I\0D\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0S\0_\0A\0C\0T\0I\0V\0E\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0S\0_\0A\0C\0T\0I\0V\0E\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0S\0_\0P\0A\0R\0E\0N\0T\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0S\0_\0P\0A\0R\0E\0N\0T\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0I\0D\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0P\0R\0O\0P\0S\0_\0I\0D\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0S\0_\0A\0C\0T\0I\0V\0E\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0S\0_\0A\0C\0T\0I\0V\0E\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0K\0E\0Y\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0K\0E\0Y\0.\0D\0I\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0L\0E\0P\0R\0O\0P\0S\0_\0K\0E\0Y\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0S\0_\0N\0A\0M\0E\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0S\0_\0N\0A\0M\0E\0.\0D\0I\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0S\0_\0N\0A\0M\0E\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0S\0_\0N\0A\0M\0E\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0S\0_\0N\0A\0M\0E\0.\0D\0I\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0S\0_\0N\0A\0M\0E\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0T\0A\0B\0L\0E\0A\0U\0M\0E\0T\0A\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0S\0_\0I\0D\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0U\0M\0N\0S\0_\0I\0D\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0S\0_\0I\0D\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0H\0E\0M\0A\0S\0_\0I\0D\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0_\0A\0C\0T\0I\0V\0E\0.\0T\0Y\0P\0E\0\0\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0L\0E\0S\0_\0I\0D\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0L\0E\0S\0_\0I\0D\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0E\0F\0A\0U\0L\0T\0-\0V\0A\0L\0U\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASOURCE FORMATTED-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0O\0R\0T\0-\0P\0O\0S\0I\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNPROPS_ACTIVE.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNPROPS_ACTIVE.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNPROPS_PARENT.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNPROPS_PARENT.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0U\0A\0L\0_\0I\0D\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0U\0A\0L\0_\0I\0D\0.\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0O\0R\0A\0G\0E\0W\0I\0D\0T\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAPROPS_ACTIVE.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAPROPS_ACTIVE.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAPROPS_PARENT.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAPROPS_PARENT.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0A\0L\0U\0E\0.\01\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0A\0L\0U\0E\0.\01\0.\0D\0I\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.TABLEAUSOFTWARE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNPROPS_VALUE.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNPROPS_VALUE.DICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNPROPS_VALUE.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAPROPS_VALUE.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAPROPS_VALUE.DICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAPROPS_VALUE.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPROPS_ACTIVE.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPROPS_ACTIVE.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPROPS_PARENT.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPROPS_PARENT.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0A\0R\0D\0I\0N\0A\0L\0I\0T\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0P\0R\0E\0S\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0A\0M\0I\0L\0Y\0-\0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPROPS_VALUE.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPROPS_VALUE.DICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPROPS_VALUE.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0A\0R\0C\0H\0A\0R\0(\01\02\07"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X\0M\0L\0 \0V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNPROPS_KEY.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNPROPS_KEY.DICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNPROPS_KEY.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAPROPS_KEY.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAPROPS_KEY.DICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAPROPS_KEY.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0P\0A\0R\0A\0B\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNPROPS_ID.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNPROPS_ID.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS_ACTIVE.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS_ACTIVE.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS_PARENT.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS_PARENT.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K\0E\0Y\0.\01\0.\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K\0E\0Y\0.\01\0.\0D\0I\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUT DIM-ORDERING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0O\0R\0T\0-\0S\0E\0N\0S\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAPROPS_ID.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAPROPS_ID.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS_ACTIVE.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS_ACTIVE.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPROPS_KEY.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPROPS_KEY.DICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPROPS_KEY.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASURE-PERCENTAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEMANTIC-VALUE KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPROPS_ID.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPROPS_ID.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLES_ACTIVE.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLES_ACTIVE.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLES_PARENT.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLES_PARENT.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0L\0L\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALCULATION CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS_NAME.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS_NAME.DICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS_NAME.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0A\0T\0A\0-\0F\0I\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0I\0C\0T\0-\0F\0I\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0A\0X\0-\0V\0A\0L\0U\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0I\0N\0-\0V\0A\0L\0U\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF RECORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0E\0C\0I\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS_NAME.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS_NAME.DICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS_NAME.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0Y\0P\0E\0-\0F\0I\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTION CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASURE-ORDERING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLES_NAME.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLES_NAME.DICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLES_NAME.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMN DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS_ID.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS_ID.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0A\0T\0A\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0I\0S\0T\0I\0N\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0N\0C\0O\0D\0I\0N\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0O\0T\0-\0N\0U\0L\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS_ID.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS_ID.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEMANTIC-VALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLATE BINARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM-PERCENTAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW-STRUCTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLES_ID.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLES_ID.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0O\0O\0L\0E\0A\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0U\0I\0L\0T\0I\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT-VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0X\0T\0R\0A\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0A\0C\0T\0O\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0T\0E\0G\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0R\0D\0E\0R\0E\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0R\0D\0I\0N\0A\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITED STATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION-MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION-MINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUAL_ID.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUAL_ID.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUANTITATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORAGEWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO-COLUMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0I\0G\0I\0N\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0L\0I\0N\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U\0N\0I\0Q\0U\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION-FIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALPHABETIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPARABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0R\0R\0A\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0E\0N\0S\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA-FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DICT-FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0A\0L\0S\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0X\0E\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0D\0E\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRECISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0A\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE-FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U\0T\0F\0-\08"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTINCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT-NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARCHAR("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOLEAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILTIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMULA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0E\0A\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOMINAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0I\0Z\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0R\0U\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMREC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIXED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0I\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0Y\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0D\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U\0S\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

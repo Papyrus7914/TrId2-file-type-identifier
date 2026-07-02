@@ -1,0 +1,11 @@
+Name: Microsoft Excel worksheet (generic older format)
+URL: "https://en.wikipedia.org/wiki/Microsoft_Excel"
+FileNameExtensions: ["xls", "xlb"]
+MimeType: application/vnd.ms-excel
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\t\b"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true

@@ -1,0 +1,34 @@
+Name: RemObjects Definition Language
+URL: "http://www.remobjects.com/"
+FileNameExtensions: ["rodl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTERFACE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RODL"
+    CaseSensitive: false

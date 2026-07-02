@@ -1,0 +1,15 @@
+Name: PBIT disk image
+Description: Disk image format used by the PCE PC Emulator.
+URL: "http://www.hampa.ch/pce/pce-ibmpc.html"
+FileNameExtensions: ["pbit"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PBIT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAK"
+    CaseSensitive: false

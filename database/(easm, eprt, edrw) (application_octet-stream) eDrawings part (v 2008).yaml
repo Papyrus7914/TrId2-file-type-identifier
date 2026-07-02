@@ -1,0 +1,23 @@
+Name: eDrawings part (v 2008)
+URL: "http://fileformats.archiveteam.org/wiki/EDrawing"
+FileNameExtensions: ["easm", "eprt", "edrw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[\x01\0\0\0\xBE\r2008+ archive"
+    CaseSensitive: true
+  - Pos: 92
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 122
+    AsciiString: "eModel"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "2008+ ARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMODELPK"
+    CaseSensitive: false

@@ -1,0 +1,53 @@
+Name: TOPBENCH database
+URL: "https://github.com/MobyGamer/TOPBENCH"
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";This file contains fingerprinting information about various computers for\r\n;the TOPBENCH benchmark.  Hand-edit at your peril!  If you add new systems,\r\n;please consider sending this file to trixter@oldskool.org.\r\n\r\n["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VIDEOADAPTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOSYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3DGAMETEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORYTEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPCODETEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDRAMTEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOSCRC16"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMEATEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBMITTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOSDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOSINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPUSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORE"
+    CaseSensitive: false

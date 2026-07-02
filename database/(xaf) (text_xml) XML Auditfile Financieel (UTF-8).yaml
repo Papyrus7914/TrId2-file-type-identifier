@@ -1,0 +1,71 @@
+Name: XML Auditfile Financieel (UTF-8)
+URL: "https://odb.belastingdienst.nl/auditfiles/"
+FileNameExtensions: ["xaf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TAXREGISTRATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERALLEDGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSACTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FISCALYEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDITFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANYID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOURNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW."
+    CaseSensitive: false

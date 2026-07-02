@@ -1,0 +1,404 @@
+Name: OpenToonz scene
+URL: "https://github.com/opentoonz/opentoonz"
+FileNameExtensions: ["tnz"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<tnz framecount=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CCITT MODIFIED HUFFMAN RUN-LENGTH ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUNDERSCAN RUN-LENGTH ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACINTOSH RUN-LENGTH ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEPROCESSING AUTOADJUST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATPROPERTIES EXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTORIZERPARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLYSHRINKTOVIEWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THICKNESSRATIOFIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSESTFIELD VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THICKNESSRATIOLAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERAXPREVALENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEANUPPARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESPECKLING VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATSPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEGBAR ACTIVEBOTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOONZ_COLUMNFX ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOONZ_OUTPUTFX ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOONZ_XSHEETFX ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JPEG COMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXTILESIZEINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSPARENTCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDPREVALENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITS PER PIXEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEANUPPALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID_DIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELCOLUMN ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANPARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TNZ FRAMECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBILITYBITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WELCH ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AAVALUE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE ORDERING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEANUPCAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT HANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBCAMERAPREV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TONETHRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$SCENEFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8(GREYTONES)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOM RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAX ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO DPITYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERESTRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXTHICKNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENTHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEREOSCOPIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREADSINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOM LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCITT GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSAMPLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTRETCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERASIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTERLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDGUIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEMPEL-ZIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIMEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTECOLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESQUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLEPAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADHERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERARES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKEFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXCOLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAASOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENTOONZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAINTFILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAPER FMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEGBAR ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT TOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHARPNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORTCUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOP RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+OUTPUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCURACY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDG NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISOPENED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT TOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMINAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOP LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR_0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FXNODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODEPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEGBARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(RGBM)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBM PC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SGILOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(RGB)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COL1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FXID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEP"
+    CaseSensitive: false

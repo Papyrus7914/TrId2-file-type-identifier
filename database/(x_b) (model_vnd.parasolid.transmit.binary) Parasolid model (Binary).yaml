@@ -1,0 +1,38 @@
+Name: Parasolid model (Binary)
+URL: "https://en.wikipedia.org/wiki/Parasolid"
+FileNameExtensions: ["x_b"]
+MimeType: model/vnd.parasolid.transmit.binary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "**ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSMIT FILE CREATED BY MODELLER VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "**END_OF_HEADER**"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "**PARASOLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USFLD_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "**PART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCH_"
+    CaseSensitive: false

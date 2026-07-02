@@ -1,0 +1,38 @@
+Name: Minecraft World
+URL: "https://en.wikipedia.org/wiki/Minecraft"
+FileNameExtensions: ["mcworld"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "WORLD_BEHAVIOR_PACKS.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD_RESOURCE_PACKS.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL.DAT_OLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELNAME.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST-00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ICON."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LOG"
+    CaseSensitive: false

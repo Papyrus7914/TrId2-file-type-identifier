@@ -1,0 +1,13 @@
+Name: Windows Terminal Configuration Settings (v3.3)
+FileNameExtensions: ["trm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DCS 3.30"
+    CaseSensitive: true
+  - Pos: 260
+    AsciiString: "Terminal"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TERMINAL"
+    CaseSensitive: false

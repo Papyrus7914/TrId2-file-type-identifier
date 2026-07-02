@@ -1,0 +1,50 @@
+Name: Xilinx ISE Simulator Waveform DataBase
+URL: "https://en.wikipedia.org/wiki/Xilinx_ISE"
+FileNameExtensions: ["wdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              I                 @           9     >           f     #                       !
+    Bytes: [0xEF, 0x49, 0xBD, 0x87, 0x40, 0xA6, 0x39, 0x3E, 0xDC, 0x66, 0x23, 0xAA, 0x9E, 0xE1, 0x21]
+  - Pos: any
+    AsciiString: "JTAG_CAPTURE_GLBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JTAG_RUNTEST_GLBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JTAG_UPDATE_GLBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JTAG_RESET_GLBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JTAG_SHIFT_GLBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLBL\0INITIAL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLBL\0CONT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLBL\0JTAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETDECL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALWAYS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERILOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISE_DS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XILINX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERS"
+    CaseSensitive: false

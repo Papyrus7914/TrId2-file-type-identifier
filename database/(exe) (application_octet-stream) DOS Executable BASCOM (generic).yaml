@@ -1,0 +1,30 @@
+Name: DOS Executable BASCOM (generic)
+Description: IBM BASIC Compiler.
+URL: "http://www.edm2.com/index.php/IBM_PC_BASIC"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROGRAM TOO LARGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R IN"
+    CaseSensitive: false

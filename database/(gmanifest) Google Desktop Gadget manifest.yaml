@@ -1,0 +1,28 @@
+Name: Google Desktop Gadget manifest
+URL: "http://desktop.google.com/plugins/"
+FileNameExtensions: ["gmanifest"]
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "g"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GADGET MINIMUMGOOGLEDESKTOPVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHORWEBSITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABOUTTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

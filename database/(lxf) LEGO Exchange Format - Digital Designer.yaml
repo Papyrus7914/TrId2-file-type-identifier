@@ -1,0 +1,13 @@
+Name: LEGO Exchange Format - Digital Designer
+URL: "http://ldd.lego.com/en-us/gallery/"
+FileNameExtensions: ["lxf"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "IMAGE100.LXFMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE100.PNGPK"
+    CaseSensitive: false

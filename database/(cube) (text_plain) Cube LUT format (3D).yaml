@@ -1,0 +1,11 @@
+Name: Cube LUT format (3D)
+URL: "https://affinityspotlight.com/article/1d-vs-3d-luts/"
+FileNameExtensions: ["cube"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TITLE \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LUT_3D_SIZE"
+    CaseSensitive: false

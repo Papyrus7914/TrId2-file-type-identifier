@@ -1,0 +1,57 @@
+Name: WINDEV HFSQL DB XML analysis
+Description: WINDEV is a RAD tool by PC Soft.
+URL: "https://windev.com"
+FileNameExtensions: ["xdd"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"ISO-8859-1\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INDICERUBRIQUE INDICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOMLOGIQUEDATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPERTOIREDEFAUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONSTRUCTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FICNULLSUPPORTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSE GENNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOS_ETENDUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENS_PARCOURS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUBRIQUE NOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABREVIATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FICHIER NOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOMPHYSIQUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISO-8859-1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE_CLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAILLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALEUR"
+    CaseSensitive: false

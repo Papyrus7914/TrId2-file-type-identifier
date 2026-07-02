@@ -1,0 +1,8 @@
+Name: B6Zip compressed archive
+URL: "http://justsolve.archiveteam.org/wiki/B6Z"
+FileNameExtensions: ["b6z"]
+MimeType: application/x-b6z-compressed
+DetectionPatterns:
+  - Pos: 0
+    #        B     6
+    Bytes: [0x42, 0x36, 0x03, 0x04]

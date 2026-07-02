@@ -1,0 +1,104 @@
+Name: Flexible Image Transport System bitmap (compressed)
+URL: "http://heasarc.nasa.gov/fitsio/fpack/"
+FileNameExtensions: ["fz"]
+MimeType: image/fits
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SIMPLE  = "
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "BITPIX  = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIZE OF TILES TO BE COMPRESSED                 ZCMPTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINARY TABLE EXTENSION                         BITPIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF FIELDS IN EACH ROW                   TTYPE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF ROWS IN TABLE                        PCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE OF TILES TO BE COMPRESSED                 ZTILE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH OF TABLE IN BYTES                        NAXIS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSION CONTAINS COMPRESSED IMAGE            ZT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLE LENGTH ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA FORMAT OF FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSED_IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO FITS STANDARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSED_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL FOR FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFIELDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZBITPIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZNAXIS1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZNAXIS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFORM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZIMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZTILE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXEL"
+    CaseSensitive: false

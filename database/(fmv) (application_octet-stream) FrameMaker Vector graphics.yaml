@@ -1,0 +1,11 @@
+Name: FrameMaker Vector graphics
+URL: "https://en.wikipedia.org/wiki/Adobe_FrameMaker"
+FileNameExtensions: ["fmv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<MakerVector"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true

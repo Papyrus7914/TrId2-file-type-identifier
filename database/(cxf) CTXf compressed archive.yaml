@@ -1,0 +1,11 @@
+Name: CTXf compressed archive
+Description: CTX is a free file archiver by Nikita Lesnikov.
+URL: "http://www.nlo-one.narod.ru/ctx/index.html"
+FileNameExtensions: ["cxf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CXF\x1Au"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true

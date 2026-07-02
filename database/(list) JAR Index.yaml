@@ -1,0 +1,13 @@
+Name: JAR Index
+URL: "http://en.wikipedia.org/wiki/JAR_(file_format)"
+FileNameExtensions: ["list"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JarIndex-Version: 1.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JARINDEX-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JAR"
+    CaseSensitive: false

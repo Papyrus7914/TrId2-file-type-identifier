@@ -1,0 +1,8 @@
+Name: BTSnoop capture format
+URL: "http://www.fte.com/webhelp/bpa600/Content/Technical_Information/BT_Snoop_File_Format.htm"
+FileNameExtensions: ["log"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "btsnoop\0"
+    CaseSensitive: true

@@ -1,0 +1,10 @@
+Name: Cromemco RDOS disk image
+URL: "https://en.wikipedia.org/wiki/Cromemco"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 122
+    AsciiString: "DSDD\xE5\xE5"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CROMEMCO"
+    CaseSensitive: false

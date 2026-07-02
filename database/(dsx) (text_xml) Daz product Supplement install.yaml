@@ -1,0 +1,26 @@
+Name: Daz product Supplement install
+URL: "https://en.wikipedia.org/wiki/Daz_Studio"
+FileNameExtensions: ["dsx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<ProductSupplement VERSION=\""
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTALLTYPES VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTNAME VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTTAGS VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAZSTUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Microsoft Visual Basic Form
+FileNameExtensions: ["frx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LB\b\0"
+    CaseSensitive: true
+  - Pos: 24
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: any
+    AsciiString: "MICROSOFT FORMS 2.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMBEDDED OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0P\0O\0B\0J"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMS.FORM."
+    CaseSensitive: false

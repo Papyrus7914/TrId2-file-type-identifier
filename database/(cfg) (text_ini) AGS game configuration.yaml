@@ -1,0 +1,29 @@
+Name: AGS game configuration
+URL: "https://en.wikipedia.org/wiki/Adventure_Game_Studio"
+FileNameExtensions: ["cfg"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GAMECOLORDEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGIWININDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDIWININDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGIID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDIID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISC"
+    CaseSensitive: false

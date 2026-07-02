@@ -1,0 +1,8 @@
+Name: Proxmox Virtual Machine Archive format
+URL: "https://pve.proxmox.com/wiki/VMA"
+FileNameExtensions: ["vma"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VMA\0\0\0\0\x01"
+    CaseSensitive: true

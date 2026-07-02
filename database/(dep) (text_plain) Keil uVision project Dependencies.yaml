@@ -1,0 +1,56 @@
+Name: Keil uVision project Dependencies
+URL: "https://www.keil.com/support/"
+FileNameExtensions: ["dep"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Dependencies for Project '"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(DO NOT MODIFY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--XREF -O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--DEPEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-C --CPU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--APCS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".C)(0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".S)(0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETA 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--PD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-D__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEIL"
+    CaseSensitive: false

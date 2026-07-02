@@ -1,0 +1,31 @@
+Name: ASHRAE Design Conditions Design Day data
+URL: "http://en.wikipedia.org/wiki/Ashrae"
+FileNameExtensions: ["ddy"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: " ! The following Location and Design Day data are produced as possible from the indicated data source."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "- LONGITUDE {W- E+}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- LATITUDE {N+ S-}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN_CONDITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- ELEVATION {M}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- LOCATION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COOLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEATING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIMATE"
+    CaseSensitive: false

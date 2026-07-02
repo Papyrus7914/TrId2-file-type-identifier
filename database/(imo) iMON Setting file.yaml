@@ -1,0 +1,16 @@
+Name: iMON Setting file
+URL: "http://www.soundgraph.com"
+FileNameExtensions: ["imo"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false

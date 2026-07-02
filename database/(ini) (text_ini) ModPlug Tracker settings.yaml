@@ -1,0 +1,17 @@
+Name: ModPlug Tracker settings
+URL: "https://en.wikipedia.org/wiki/OpenMPT"
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Chords]\r\nC-0="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VST PLUGINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMPLUGINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZXX MACROS"
+    CaseSensitive: false

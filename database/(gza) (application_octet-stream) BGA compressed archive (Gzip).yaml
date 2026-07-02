@@ -1,0 +1,11 @@
+Name: BGA compressed archive (Gzip)
+URL: "http://fileformats.archiveteam.org/wiki/BGA_Archive"
+FileNameExtensions: ["gza"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "GZIP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GZIP"
+    CaseSensitive: false

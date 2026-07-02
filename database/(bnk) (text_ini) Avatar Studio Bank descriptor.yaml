@@ -1,0 +1,41 @@
+Name: Avatar Studio Bank descriptor
+Description: French game by Canal+ Multimedia.
+FileNameExtensions: ["bnk"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[TYPE]\r\nBank Descriptor\r\n[VERSION]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BANK DESCRIPTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANOWAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBPATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PCX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

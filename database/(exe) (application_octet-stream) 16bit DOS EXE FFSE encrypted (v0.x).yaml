@@ -1,0 +1,40 @@
+Name: 16bit DOS EXE FFSE encrypted (v0.x)
+Description: Final Fantasy Security Envelope encryptor by Zenix Yang.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\x17\0"
+    CaseSensitive: true
+  - Pos: 16
+    Bytes: [0x90, 0x02]
+  - Pos: 25
+    #                                [     2     J     \n    \n    ␠     ␠     ␠     ␠     ␠
+    Bytes: [0x00, 0x00, 0x00, 0x1B, 0x5B, 0x32, 0x4A, 0x0A, 0x0A, 0x20, 0x20, 0x20, 0x20, 0x20, 0xDA, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4, 0xC4]
+  - Pos: 93
+    AsciiString: " \xC4\xB7\n     \xB3 Final Fantasy Security Envelope               V0."
+    CaseSensitive: true
+  - Pos: 155
+    AsciiString: "   \xBA\n     \xB3 \xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4                       \xBA\n     \xB3 (c) 199"
+    CaseSensitive: true
+  - Pos: 238
+    AsciiString: " by Zenix Yang            Date: 199"
+    CaseSensitive: true
+  - Pos: 280
+    AsciiString: "    \xBA\n     \xD4\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD [ \xFE zenix@ms10.hinet.net ] \xCD\xCD\xBC\n\n\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FINAL FANTASY SECURITY ENVELOPE               V0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY ZENIX YANG            DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MS10.HINET.NET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) 199"
+    CaseSensitive: false

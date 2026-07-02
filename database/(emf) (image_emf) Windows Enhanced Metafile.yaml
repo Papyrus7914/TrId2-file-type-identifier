@@ -1,0 +1,11 @@
+Name: Windows Enhanced Metafile
+URL: "https://en.wikipedia.org/wiki/Windows_Metafile"
+FileNameExtensions: ["emf"]
+MimeType: image/emf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: " EMF"
+    CaseSensitive: true

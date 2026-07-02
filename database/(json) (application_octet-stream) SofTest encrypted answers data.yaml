@@ -1,0 +1,22 @@
+Name: SofTest encrypted answers data
+URL: "https://examsoft.com/"
+FileNameExtensions: ["json"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\0\0\x01"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\n@643BC4F80B6A78577BDB81A8739853E2C498C1EC3F83F6EE8B8E1DC74B315588\x12@D0FA0B62F5944A2CB872BB0DE3F35E4D8A1BF8897371B46A38F75CA8524F9488\x1A\x10"
+    CaseSensitive: true
+  - Pos: 158
+    AsciiString: "\""
+    CaseSensitive: true
+  - Pos: 160
+    Bytes: [0x01]
+  - Pos: any
+    AsciiString: "643BC4F80B6A78577BDB81A8739853E2C498C1EC3F83F6EE8B8E1DC74B315588"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D0FA0B62F5944A2CB872BB0DE3F35E4D8A1BF8897371B46A38F75CA8524F9488"
+    CaseSensitive: false

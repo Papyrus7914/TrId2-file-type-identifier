@@ -1,0 +1,9 @@
+Name: Siemens syngo encrypted diagnose data (v1)
+Description: Filename is diagnose_enc.tar - an encrypted TAR archive.
+URL: "https://www.siemens-healthineers.com/"
+FileNameExtensions: ["tar"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x05\x05F\b\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true

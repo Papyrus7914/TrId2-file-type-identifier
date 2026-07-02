@@ -1,0 +1,11 @@
+Name: Extensible Image Serialization Format (v1.0)
+URL: "https://pixinsight.com/doc/docs/XISF-1.0-spec/XISF-1.0-spec.html"
+FileNameExtensions: ["xisf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XISF0100"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XISF0100"
+    CaseSensitive: false

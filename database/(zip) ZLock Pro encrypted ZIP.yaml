@@ -1,0 +1,13 @@
+Name: ZLock Pro encrypted ZIP
+URL: "http://www.zcureit.com/products.html"
+FileNameExtensions: ["zip"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PK\x03\x04\x14\0\x01\0c\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\x12\0\v\08BD103FFFFFFFE.zip\x01\x99\a\0\x01\0AE\x01\0\0"
+    CaseSensitive: true

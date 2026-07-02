@@ -1,0 +1,23 @@
+Name: Creative Commons Module music
+URL: "http://fileformats.archiveteam.org/wiki/Creative_Commons_Module"
+FileNameExtensions: ["ccm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "TRAC.ZEITHERRSCHAFT.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONG.XMIXPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CPPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HPK"
+    CaseSensitive: false

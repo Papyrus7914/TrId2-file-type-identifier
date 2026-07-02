@@ -1,0 +1,10 @@
+Name: Acrobat Forms Data Format
+URL: "http://www.adobe.com"
+FileNameExtensions: ["fdf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%FDF-"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "."
+    CaseSensitive: true

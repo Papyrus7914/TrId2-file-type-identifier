@@ -1,0 +1,38 @@
+Name: Deep Zoom Image
+URL: "https://en.wikipedia.org/wiki/Deep_Zoom"
+FileNameExtensions: ["dzi"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEEPZOOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERLAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2008"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

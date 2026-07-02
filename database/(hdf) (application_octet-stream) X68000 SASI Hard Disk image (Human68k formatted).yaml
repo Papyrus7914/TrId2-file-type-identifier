@@ -1,0 +1,14 @@
+Name: X68000 SASI Hard Disk image (Human68k formatted)
+URL: "https://en.wikipedia.org/wiki/X68000"
+FileNameExtensions: ["hdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\0\0\xCA\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x1A\x1B[6;32HX68000 HARD DISK IPL MENU\x1B"
+    CaseSensitive: true
+  - Pos: 1024
+    AsciiString: "X68K\0"
+    CaseSensitive: true
+  - Pos: 1040
+    AsciiString: "Human68k\0"
+    CaseSensitive: true

@@ -1,0 +1,14 @@
+Name: Xbox Virtual Disk (MSIXVC/XVC)
+Description: MSIXVC is used on Windows, while XVC is used on Xbox consoles.
+URL: "https://xboxoneresearch.github.io/wiki/operating-system/xbox-virtual-drive/"
+FileNameExtensions: ["msixvc", "xvc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 512
+    AsciiString: "msft-xvdA\0\0\0\x03\0\0\0"
+    CaseSensitive: true
+  - Pos: 535
+    Bytes: [0x01, 0x00]
+  - Pos: any
+    AsciiString: "MSFT-XVDA"
+    CaseSensitive: false

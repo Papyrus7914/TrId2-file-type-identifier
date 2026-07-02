@@ -1,0 +1,10 @@
+Name: Personal Media Suite encoded file
+URL: "http://www.freecom.com"
+FileNameExtensions: ["pms"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PK\x03\x04\x14\0\t\0\b\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FREECOM -"
+    CaseSensitive: false

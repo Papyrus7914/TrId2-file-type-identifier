@@ -1,0 +1,11 @@
+Name: CDX compressed Satellite channels DB (CaptiveWorks)
+URL: "http://www.captiveworks.com/"
+FileNameExtensions: ["sdx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CDX\0CXDatabaseV"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SDX"
+    CaseSensitive: false

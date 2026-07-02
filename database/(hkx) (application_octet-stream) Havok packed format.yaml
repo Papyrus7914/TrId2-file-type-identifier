@@ -1,0 +1,8 @@
+Name: Havok packed format
+URL: "https://en.wikipedia.org/wiki/Havok_(software)"
+FileNameExtensions: ["hkx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        W                 W
+    Bytes: [0x57, 0xE0, 0xE0, 0x57, 0x10, 0xC0, 0xC0, 0x10]

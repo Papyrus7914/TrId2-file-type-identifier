@@ -1,0 +1,13 @@
+Name: Miva Script
+URL: "http://en.wikipedia.org/wiki/MIVA_Script"
+FileNameExtensions: ["mv"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<M"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIVA"
+    CaseSensitive: false

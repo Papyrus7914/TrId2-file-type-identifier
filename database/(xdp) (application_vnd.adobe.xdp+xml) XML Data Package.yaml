@@ -1,0 +1,126 @@
+Name: XML Data Package
+Description: PDF content and/or Adobe XML Forms Architecture (XFA) resources packaged within an XML container.
+URL: "https://en.wikipedia.org/wiki/XML_Data_Package"
+FileNameExtensions: ["xdp"]
+MimeType: application/vnd.adobe.xdp+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEMPLATEDESIGNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XFA GENERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NS.ADOBE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XFA-TEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTAREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.XFA.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APIVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XDP XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEAREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1999"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERT"
+    CaseSensitive: false

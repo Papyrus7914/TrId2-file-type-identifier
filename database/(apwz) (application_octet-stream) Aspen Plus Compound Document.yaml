@@ -1,0 +1,20 @@
+Name: Aspen Plus Compound Document
+URL: "https://www.aspentech.com/en/products/engineering/aspen-plus"
+FileNameExtensions: ["apwz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".\0A\0P\0W\0A\0S\0P\0E\0N\0_\0C\0O\0M\0P\0O\0U\0N\0D\0_\0F\0I\0L\0E\0_\0S\0E\0T\0T\0I\0N\0G\0S\0_\0V\01\0.\00\0-\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASPEN_COMPOUND_FILE_SETTINGS_V1.0--"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".APWNU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUCX"
+    CaseSensitive: false

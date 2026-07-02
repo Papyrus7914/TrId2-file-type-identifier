@@ -1,0 +1,67 @@
+Name: OrCAD Project
+URL: "http://en.wikipedia.org/wiki/ORCAD"
+FileNameExtensions: ["opj"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(ExpressProject \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(COMPILEFILEADDEDORDELETED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(BUILDFILEADDEDORDELETED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORCAPTUREPMDOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(EXPRESSPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(HIERARCHYVIEW)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(GLOBALSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(PROJECTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(PLACEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NOMODIFY)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(FILEVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMATIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TAB 0))"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(FOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DOC"
+    CaseSensitive: false

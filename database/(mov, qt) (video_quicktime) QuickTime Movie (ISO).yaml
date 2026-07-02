@@ -1,0 +1,14 @@
+Name: QuickTime Movie (ISO)
+URL: "https://en.wikipedia.org/wiki/QuickTime"
+FileNameExtensions: ["mov", "qt"]
+MimeType: video/quicktime
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "ftypqt  "
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "qt  "
+    CaseSensitive: true

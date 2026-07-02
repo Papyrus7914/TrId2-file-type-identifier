@@ -1,0 +1,8 @@
+Name: Infinity Engine sound (v1.0)
+Description: Infinity Engine WAV files are ACM (Infinity Engine Music) files with an additional header attached to simplify buffer estimation during file decompression.
+URL: "http://iesdp.gibberlings3.net/file_formats/ie_formats/wavc_v1.htm"
+FileNameExtensions: ["wav"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WAVCV1.0"
+    CaseSensitive: true

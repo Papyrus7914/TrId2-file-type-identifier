@@ -1,0 +1,49 @@
+Name: 16bit COM executable Easy Fix patcher (v1.4)
+Description: Crack/patch tool by NoP.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\x03\0\0\0\a\0\0\0\xFF\xFF\xF0\xFF\0\0\0\0\0\x01\xF0\xFF\x1C\0\0\0\0\0\0\0\xFE\xDF\xDF\xDF\xDF\xDF\xDF\xDF\xDF\xDF\xDF\xDF\xDF\xDF\xDF\xFE\xDDProg 100% done\xDE\xDD -> by NoP <- \xDE\xFE\xDC\xDC\xDC\xDC\xDC\xDC\xDC\xDC\xDC\xDC\xDC\xDC\xDC\xDC\xFE Easy Fix  v1.4 `\xBEb\x01\xBF\x10{\x8B\x0E\x1A\x01\xF3\xA4\xBE\x1C\x01\xBF\0\xEEW\xB9\0\x01\xF3\xA4\xC3"
+    CaseSensitive: true
+  - Pos: 140
+    #                                ␠                                               {                             .                                         3           3                                   3                                   2                                         u                                                                                   s                 \f    F     M     u           a                                                                                                                 \a
+    Bytes: [0xBF, 0x00, 0xEF, 0xB0, 0x20, 0xB9, 0x00, 0x10, 0xF3, 0xAA, 0xBE, 0x10, 0x7B, 0xBF, 0x00, 0x01, 0x8B, 0x2E, 0x1A, 0x01, 0xAC, 0x91, 0xB5, 0x80, 0x33, 0xC0, 0x33, 0xD2, 0x8A, 0xF2, 0x8A, 0xD0, 0x33, 0xDB, 0x8A, 0xFE, 0xD1, 0xEB, 0x32, 0xDA, 0x80, 0xE7, 0x0F, 0x84, 0xCD, 0x75, 0x05, 0xAC, 0x88, 0x87, 0x00, 0xEF, 0x8A, 0x87, 0x00, 0xEF, 0xAA, 0xD0, 0xCD, 0x73, 0x03, 0x8A, 0x0C, 0x46, 0x4D, 0x75, 0xD9, 0x61, 0xFF, 0xE6, 0x00, 0xB8, 0x10, 0x11, 0xB7, 0x10, 0xB3, 0x00, 0xB9, 0x00, 0x02, 0x00, 0xBA, 0xDD, 0x00, 0x1E, 0x07, 0xBD, 0x00]
+  - Pos: 231
+    #                          \t
+    Bytes: [0xCD, 0x10, 0xB4, 0x09, 0xBA]
+  - Pos: 264
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 280
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 366
+    #              \t
+    Bytes: [0xB4, 0x09]
+  - Pos: 389
+    Bytes: [0x8B]
+  - Pos: any
+    AsciiString: "EASY FIX  V1.4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROG 100% DONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY NOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$NOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--\0U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUND"
+    CaseSensitive: false

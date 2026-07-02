@@ -1,0 +1,1550 @@
+Name: NI Controller Configuration
+URL: "https://en.wikipedia.org/wiki/Native_Instruments"
+FileNameExtensions: ["ncc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<ni-controller-midi-map version=\""
+    CaseSensitive: true
+  - Pos: 90
+    AsciiString: "\">\n\n  <controller type=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NI-CONTROLLER-MIDI-MAP VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLEGROUPCONTROLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASCHINE CONTROLLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAKTOR KONTROL S4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAKTOR KONTROL X1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KORE CONTROLLER 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KORE CONTROLLER 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDS TRACKS 1-4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDS TRACKS 5-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAKTORKONTROLS4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAKTORKONTROLX1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLETON - RACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIO KONTROL 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLLER MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLLER TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECK A - BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECK A - SHIFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECK B - BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECK B - SHIFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECK C - BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECK C - SHIFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECK D - BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECK D - SHIFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACKIE CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACRO CONTROLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOKONTROL1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT_INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY_STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTSWITCH ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDI LEARN  1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDI LEARN  2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDI-MAP NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIG KONTROL 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK VOLUMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VELOCITYCURVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLETON LIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT RACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSCILLATOR A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT BROWSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADVANCED FX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELTA-TICKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOB PAGE 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOB PAGE 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT BROWSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MCU-CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEDALSWITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAKTOR PRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAINED FX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVELOPE 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVELOPE 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVELOPE 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVELOPE 4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUITAR RIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOGMODE_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOGMODE_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOGPUSH_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOGPUSH_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOGTURN_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOGTURN_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPOUT_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPOUT_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MCU-BUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD PAGE A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD PAGE B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD PAGE C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD PAGE D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD PAGE E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD PAGE F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD PAGE G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD PAGE H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEDALPLUG1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEDALPLUG2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCHDN_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCHDN_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCHUP_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCHUP_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE11"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE12"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE13"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE14"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE15"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE16"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT BEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT FX 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT FX 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT PLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT SYNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATE 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPOT PRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMPLIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSIGN_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSIGN_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTNLOWERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTNLOWERB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTNUPPERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTNUPPERB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECKSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRUM RACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUPLICATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOT SW 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOT SW 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOB_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST BANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT BEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT FX 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT FX 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT PLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT SYNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO NOISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPIN_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPIN_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPMP_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPMP_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPMT_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPMT_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPSP_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPSP_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPST_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPST_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MCU-WHEEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOD OSC ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESLEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCHBEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCHF_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCHF_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE9"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT CUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT CUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT OUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHIFTMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TR SEL. 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPOT MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHEEL-MOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEHAVIOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY FX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENV TRIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQFILT_A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQFILT_B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQFILT_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQFILT_D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEEDBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILT ENV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT CUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT CUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT OUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO FREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MCU-VPOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAVIGATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NXT BANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC1 AMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC2 AMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC3 AMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEDAL ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY1_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY1_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY2_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY2_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY3_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY3_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY4_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY4_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLY-MOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT P1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT P2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT P3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHIFT_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHIFT_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHEEL ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRAPMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIPOLAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUE1_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUE1_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUE2_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUE2_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUE3_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUE3_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUE4_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUE4_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUTOFF)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENV AMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQLOW_A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQLOW_B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQLOW_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQLOW_D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQMID_A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQMID_B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQMID_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQMID_D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADER_A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADER_B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADER_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADER_D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILT FM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1 MIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2 MIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAINP_A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAINP_B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAINP_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAINP_D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAINT_A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAINT_B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAINT_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAINT_D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOB ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT P1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT P2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT P3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACRO 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACRO 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACRO 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACRO 4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACRO 5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACRO 6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACRO 7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACRO 8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASSIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDELETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MRECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATTERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREHEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RINGMOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUSTAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIGGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1 SND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1 SND2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2 SND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2 SND2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3 SND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3 SND2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4 SND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4 SND2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5 SND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5 SND2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "6 SND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "6 SND2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7 SND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7 SND2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8 SND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8 SND2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK 4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK 5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK 6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK 7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK 8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUE_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUE_BD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQHI_A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQHI_B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQHI_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQHI_D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXT IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILT 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILT 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQ A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQ B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX MIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1 B1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1 FB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1 P1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2 B1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2 FB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2 P1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HI CUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOTCUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTENS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LO CUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LO FRQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICVOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUTE 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONDOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEDAL1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEDAL2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRO-53"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REL ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REWIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOP C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOUCH1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOUCH2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOUCH3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOUCH4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOUCH5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOUCH6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOUCH7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOUCH8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNISON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPOT 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WT POS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XFADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "16383"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARM 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARM 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARM 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARM 4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARM 5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARM 6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARM 7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARM 8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CC 74"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CC 75"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUE_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUE_D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUT 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUT 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ HI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ LO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1B1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1B2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1B3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1K1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1K2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1K3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1P2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1P3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1P4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1_A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1_B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1_D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2B1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2B2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2B3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2K1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2K2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2K3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2P2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2P3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2P4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2_A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2_B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2_D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HPMIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOB1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOB2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOB3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOB4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOB5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOB6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOB7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOB8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LED_A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LED_B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LED_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LED_D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MCOPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIX 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIXER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOD 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOD 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MORPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD11"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD12"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD13"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD14"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD15"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD16"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREV."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RES 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RES 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLO1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOL 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOL 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOL 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOL 4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOL 5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOL 6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOL 7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOL 8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8192"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFWD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSW1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSW2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSW3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSW4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSW5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSW6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSW7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSW8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX1D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX2D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD9"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PW A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PW B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUNE"
+    CaseSensitive: false

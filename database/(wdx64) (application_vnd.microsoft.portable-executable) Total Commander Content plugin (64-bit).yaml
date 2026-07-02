@@ -1,0 +1,296 @@
+Name: Total Commander Content plugin (64-bit)
+Description: Double Commander can also use the same plugins, with ext .WDX
+URL: "http://www.ghisler.com/plugins.htm#content"
+FileNameExtensions: ["wdx64"]
+MimeType: application/vnd.microsoft.portable-executable
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 67
+    Bytes: [0x0E]
+  - Pos: 69
+    #              \t          !                 L           !
+    Bytes: [0xB4, 0x09, 0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: 96
+    AsciiString: "t be run "
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "n"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 350
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 462
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 744
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 746
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 783
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 810
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 823
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 845
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 863
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 880
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 895
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 903
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 920
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INITIALIZECRITICALSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTGETSUPPORTEDFIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETECRITICALSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTERCRITICALSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEAVECRITICALSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIBYTETOWIDECHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDECHARTOMULTIBYTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCURRENTTHREADID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTGETVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCOMMANDLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTARTUPINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETLASTERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTDHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSGETVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSSETVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGEBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTRUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCEPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAPALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNHANDLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPOINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAPFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T BE RUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABCDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALIDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLEEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADLI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEXC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NFIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NFOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTLC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

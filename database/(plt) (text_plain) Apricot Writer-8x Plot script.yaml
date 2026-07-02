@@ -1,0 +1,14 @@
+Name: Apricot Writer-8x Plot script
+URL: "https://en.wikipedia.org/wiki/Apricot_Computers"
+FileNameExtensions: ["plt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WRITER-8"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEVEND"
+    CaseSensitive: false

@@ -1,0 +1,41 @@
+Name: KryoFlux Raw stream
+URL: "https://en.wikipedia.org/wiki/KryoFlux"
+FileNameExtensions: ["raw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        \r
+    Bytes: [0x0D, 0x04]
+  - Pos: 3
+    AsciiString: "\0host_date="
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: ", host_time="
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KRYOFLUX DISKSYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOST_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOST_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

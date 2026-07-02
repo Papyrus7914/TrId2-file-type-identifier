@@ -1,0 +1,29 @@
+Name: MIDI Instrument Definition File
+URL: "https://en.wikipedia.org/wiki/MIDI"
+FileNameExtensions: ["idf"]
+MimeType: audio/x-idf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0IDF LIST"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0MMAPhdr "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IDF LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMAPHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INST"
+    CaseSensitive: false

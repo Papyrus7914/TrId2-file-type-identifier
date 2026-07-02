@@ -1,0 +1,10 @@
+Name: MacWrite document (v5.0)
+URL: "https://en.wikipedia.org/wiki/MacWrite"
+FileNameExtensions: ["mcw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x06\0"
+    CaseSensitive: true
+  - Pos: 4
+    Bytes: [0x00, 0x02, 0x00, 0x02]

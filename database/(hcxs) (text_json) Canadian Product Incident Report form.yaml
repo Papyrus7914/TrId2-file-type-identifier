@@ -1,0 +1,56 @@
+Name: Canadian Product Incident Report form
+URL: "https://www.canada.ca/en/health-canada/services/consumer-product-safety/advisories-warnings-recalls/report-incident-involving-consumer-product/help-forms.html"
+FileNameExtensions: ["hcxs"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"form\":{\"formIdentifier\":\"CPS-SPC-0001."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOTALAFFECTEDPERSONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LKPCONTACTCONTEXTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LKPSUBMISSIONTYPEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LKPREPORTTYPEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMIDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LKPCASETYPEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTALFILESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPS-SPC-0001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LKPPURPOSEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTLABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECTDEFID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBMITTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMLANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCIDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRGRMID"
+    CaseSensitive: false

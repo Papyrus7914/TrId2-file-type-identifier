@@ -1,0 +1,17 @@
+Name: Interactive AVI data
+Description: Seems to be used by the IAVI.VBX custom control.
+FileNameExtensions: ["ivd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "IAVIobjl"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IAVIOBJL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRML"
+    CaseSensitive: false

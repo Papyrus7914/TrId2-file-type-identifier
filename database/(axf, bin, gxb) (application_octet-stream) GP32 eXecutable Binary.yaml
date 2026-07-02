@@ -1,0 +1,23 @@
+Name: GP32 eXecutable Binary
+URL: "https://en.wikipedia.org/wiki/GP32"
+FileNameExtensions: ["axf", "bin", "gxb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\xEA\0\0\0\f"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\f"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\f"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\f"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\f"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\f\x11\0ED\x11\0ED"
+    CaseSensitive: true

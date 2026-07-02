@@ -1,0 +1,23 @@
+Name: Golem model
+Description: Amiga business software.
+URL: "https://golem-amiga.sourceforge.net/"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@{cond_on}"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_KONTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BANK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ADR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NAZ"
+    CaseSensitive: false

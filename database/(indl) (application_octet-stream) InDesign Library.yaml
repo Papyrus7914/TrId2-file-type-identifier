@@ -1,0 +1,13 @@
+Name: InDesign Library
+URL: "http://fileformats.archiveteam.org/wiki/InDesign_Library"
+FileNameExtensions: ["indl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x06, 0x06]
+  - Pos: 16
+    AsciiString: "LIBRARY"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false

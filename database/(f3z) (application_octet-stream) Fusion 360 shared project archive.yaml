@@ -1,0 +1,17 @@
+Name: Fusion 360 shared project archive
+URL: "https://en.wikipedia.org/wiki/Autodesk"
+FileNameExtensions: ["f3z"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DESIGNDESCRIPTION.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".F3DPK"
+    CaseSensitive: false

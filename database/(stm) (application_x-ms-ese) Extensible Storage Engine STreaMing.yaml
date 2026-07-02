@@ -1,0 +1,11 @@
+Name: Extensible Storage Engine STreaMing
+Description: STM is used for streaming files.
+URL: "http://fileformats.archiveteam.org/wiki/Extensible_Storage_Engine"
+FileNameExtensions: ["stm"]
+MimeType: application/x-ms-ese
+DetectionPatterns:
+  - Pos: 4
+    Bytes: [0xEF, 0xCD, 0xAB, 0x89]
+  - Pos: 12
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true

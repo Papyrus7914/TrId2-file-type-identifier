@@ -1,0 +1,14 @@
+Name: iCalendar - vCalendar
+Description: vCalendar defines a transport and platform-independent format for exchanging calendaring and scheduling information in an easy, automated, and consistent manner.
+URL: "http://www.imc.org/pdi/"
+FileNameExtensions: ["ics", "vcs"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VCALENDAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false

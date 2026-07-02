@@ -1,0 +1,20 @@
+Name: EGO Engine Resources Package
+URL: "https://en.wikipedia.org/wiki/Codemasters#Technology"
+FileNameExtensions: ["erp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ERPK"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "eaid://"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EAID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMP"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: 5th Generation Sys. Patch
+Description: Valid only for patch file with no text/remarks.
+FileNameExtensions: ["pat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Patch 1."
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: " - by 5th Generation Sys.\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHECKSUM"
+    CaseSensitive: false

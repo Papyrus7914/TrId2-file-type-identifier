@@ -1,0 +1,23 @@
+Name: Turbo Rascal Syntax Error Packing and disk info
+URL: "https://lemonspawn.com/turbo-rascal-syntax-error-expected-but-begin/"
+FileNameExtensions: ["paw"]
+MimeType: text/plai
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ras_include_file = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PACKED_ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS_FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE_EXOMIZER3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT_DIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

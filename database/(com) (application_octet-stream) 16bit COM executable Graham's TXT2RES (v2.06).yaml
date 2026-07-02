@@ -1,0 +1,11 @@
+Name: 16bit COM executable Graham's TXT2RES (v2.06)
+URL: "http://fileformats.archiveteam.org/wiki/TXT2COM_(Keith_P._Graham)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE9\xD1#TXT2RES Conversion utility. Vers 2.06\r\nCopyright 1988 by Keith P. Graham\r\nThis file cannot be distributed for SALE without\r\nexpress written permission from Keith P. Graham\r\n238 Germonds Road, W. Nyack, NY 10994, (914) 623-4161\r\nNext 4 bytes are scan1,shift1,scan2,shift2:\x14\n\x83\f\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RESIDENT TEXT DISPLAY INSTALLED"
+    CaseSensitive: false

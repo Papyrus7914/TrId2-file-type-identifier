@@ -1,0 +1,11 @@
+Name: WordPerfect Video Resource
+URL: "https://github.com/OneWingedShark/WordPerfect/blob/master/doc/SDK_Help/FileFormats/WPFF_DocumentStructure.htm"
+FileNameExtensions: ["vrs"]
+MimeType: application/x-wordperfect-vrs
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFWPC"
+    CaseSensitive: true
+  - Pos: 8
+    #              $
+    Bytes: [0x01, 0x24]

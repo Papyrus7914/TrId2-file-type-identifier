@@ -1,0 +1,25 @@
+Name: Font Specifications
+FileNameExtensions: ["fontspec"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\defaultfontfeatures["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULTFONTFEATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOLDITALICFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPRIGHTFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOLDFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OTF"
+    CaseSensitive: false

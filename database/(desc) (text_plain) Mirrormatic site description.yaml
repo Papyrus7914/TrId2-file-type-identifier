@@ -1,0 +1,23 @@
+Name: Mirrormatic site description
+Description: Tool for mirroring web/ftp sites.
+FileNameExtensions: ["desc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#\n# This is a Mirrormatic site description.\n#\n\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ARCHIVE_DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDE_DIRECTORIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHIVE_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WGET_OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URLS"
+    CaseSensitive: false

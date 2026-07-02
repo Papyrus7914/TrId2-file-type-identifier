@@ -1,0 +1,67 @@
+Name: SIMPL Windows source
+URL: "http://www.crestron.com"
+FileNameExtensions: ["smw"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[\r\nVersion="
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\r\n]\r\n[\r\nObjTp=FSgntr\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CENTRAL CONTROL MODULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK MODULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINEARGUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTSTRVRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETHERNET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSGNTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELVRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBVR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMN1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DVVR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMVR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPN1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S0ND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRNM"
+    CaseSensitive: false

@@ -1,0 +1,35 @@
+Name: BRender Light data (CRLF + rem)
+URL: "https://en.wikipedia.org/wiki/Argonaut_Games#BRender"
+FileNameExtensions: ["lig"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUM_INSTANCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_LIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULL PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRENDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOM"
+    CaseSensitive: false

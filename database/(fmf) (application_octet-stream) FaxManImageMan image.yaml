@@ -1,0 +1,12 @@
+Name: FaxMan/ImageMan image
+Description: An image format by Data Techniques Inc.
+URL: "http://fileformats.archiveteam.org/wiki/FaxManager"
+FileNameExtensions: ["fmf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FF*\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAN BY DATA TECHNIQUES"
+    CaseSensitive: false

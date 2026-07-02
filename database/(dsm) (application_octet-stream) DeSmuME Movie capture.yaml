@@ -1,0 +1,26 @@
+Name: DeSmuME Movie capture
+URL: "https://en.wikipedia.org/wiki/DeSmuME"
+FileNameExtensions: ["dsm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RERECORDCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMUVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROMCHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROMFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUID"
+    CaseSensitive: false

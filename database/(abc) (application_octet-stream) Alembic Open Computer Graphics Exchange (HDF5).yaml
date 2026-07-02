@@ -1,0 +1,146 @@
+Name: Alembic Open Computer Graphics Exchange (HDF5)
+URL: "http://fileformats.archiveteam.org/wiki/Alembic"
+FileNameExtensions: ["abc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A\n"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "OHDR"
+    CaseSensitive: true
+  - Pos: 132
+    AsciiString: "abc_version\0"
+    CaseSensitive: true
+  - Pos: 193
+    AsciiString: "abc_release_version\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ISNOTCONSTANTIDENTITY.INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISNOTCONSTANTIDENTITY.SMP0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABC_RELEASE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AI_ALEMBICVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ANIMCHANS.INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ANIMCHANS.SMP0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CHILDBNDS.META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CHILDBNDS.SMP0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATISTICS.INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATISTICS.SMP0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AI_APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AI_DATEWRITTEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AI_DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INHERITS.INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INHERITS.SMP0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABCGEOM_XFORM_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERPRETATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAOBJTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORTED FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSANIMNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XFORM.INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XFORM.META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABC_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PROP.META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VALS.INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VALS.SMP0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALEMBIC 1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OPS.INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OPS.SMP0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BNDS.INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUUUUU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SMPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TTPC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTLF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FHDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FHIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCHK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OHDR"
+    CaseSensitive: false

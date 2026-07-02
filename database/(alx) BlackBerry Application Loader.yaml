@@ -1,0 +1,31 @@
+Name: BlackBerry Application Loader
+URL: "http://en.wikipedia.org/wiki/BlackBerry"
+FileNameExtensions: ["alx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<loader version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOADER VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESET JAVA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,366 @@
+Name: Win32 Executable Watcom C++ (generic)
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 67
+    Bytes: [0x0E]
+  - Pos: 69
+    #              \t          !                 L           !
+    Bytes: [0xB4, 0x09, 0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: 108
+    AsciiString: "e"
+    CaseSensitive: true
+  - Pos: 124
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 130
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 140
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 143
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 146
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 156
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 159
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 163
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 167
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 171
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 174
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 179
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 183
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 186
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 190
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 195
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 198
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 201
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 203
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 205
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 211
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 215
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 218
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 222
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 227
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 229
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 231
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 235
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 238
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 243
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 246
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 251
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 254
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 259
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 262
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 267
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 270
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 275
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 278
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 291
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 294
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 364
+    AsciiString: "\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 374
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 383
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 387
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 390
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 395
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 398
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 406
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 423
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 426
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 431
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 434
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 446
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 463
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 466
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 471
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 474
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 478
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 484
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 502
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 506
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 511
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 514
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 526
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 543
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 546
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 551
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 554
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 567
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 570
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 583
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 586
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 591
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 595
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 605
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 611
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 623
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 631
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 634
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 640
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 643
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 646
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 651
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 654
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 656
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 765
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 771
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 774
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 779
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 782
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 797
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 805
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 810
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 815
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 818
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 823
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 837
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 846
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 850
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 855
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 858
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 863
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 877
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 885
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 890
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 895
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 898
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 903
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 917
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 920
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 1031
+    AsciiString: "\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true

@@ -1,0 +1,9 @@
+Name: Big Flexible Line Interpretation bitmap
+Description: An extension of the C64 FFLI bitmap format.
+URL: "http://fileformats.archiveteam.org/wiki/BFLI"
+FileNameExtensions: ["bfli"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF;b"
+    CaseSensitive: true

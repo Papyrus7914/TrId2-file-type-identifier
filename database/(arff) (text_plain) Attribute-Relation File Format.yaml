@@ -1,0 +1,17 @@
+Name: Attribute-Relation File Format
+URL: "http://www.cs.waikato.ac.nz/~ml/weka/arff.html"
+FileNameExtensions: ["arff"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: CopyControl I.C.A. disk image
+FileNameExtensions: ["ica"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CCONTROL\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CCONTROLCCC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCONTROLSYS"
+    CaseSensitive: false

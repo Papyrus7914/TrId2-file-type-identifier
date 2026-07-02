@@ -1,0 +1,17 @@
+Name: Softerm codepage
+Description: Terminal emulator for DOS by Softronics, Inc.
+FileNameExtensions: ["xvd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFE\x02Video Code Page "
+    CaseSensitive: true
+  - Pos: 196
+    AsciiString: "Video Code Page "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789"
+    CaseSensitive: false

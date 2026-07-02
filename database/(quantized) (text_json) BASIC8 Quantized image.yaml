@@ -1,0 +1,17 @@
+Name: BASIC8 Quantized image
+URL: "https://paladin-t.github.io/b8/"
+FileNameExtensions: ["quantized"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"quantized\":{\"width\":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

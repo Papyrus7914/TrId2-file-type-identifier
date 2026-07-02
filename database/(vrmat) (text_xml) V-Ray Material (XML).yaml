@@ -1,0 +1,419 @@
+Name: V-Ray Material (XML)
+URL: "http://fileformats.archiveteam.org/wiki/V-Ray"
+FileNameExtensions: ["vrmat"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<vismat>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANISOTROPY_ROTATION_TEX_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECT_DIM_DISTANCE_FALLOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HILIGHT_GLOSSINESS_TEX_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECT_GLOSSINESS_TEX_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_GLOSSINESS_TEX_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLUCENCY_COLOR_TEX_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANISOTROPY_ROTATION_TEX_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLUCENCY_SCATTER_COEFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANISOTROPY_ROTATION_FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HILIGHT_GLOSSINESS_TEX_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION_USE_IRRADIANCE_MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECT_GLOSSINESS_TEX_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_GLOSSINESS_TEX_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLUCENCY_COLOR_TEX_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HILIGHT_GLOSSINESS_FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION_GLOSSY_RAYS_AS_GI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECT_GLOSSINESS_FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_GLOSSINESS_FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLUCENCY_COLOR_COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLUCENCY_SCATTER_DIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HILIGHT_GLOSSINESS_LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECT_DIM_DISTANCE_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURETRANSFORMHANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE_MULTIPLIER_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLUCENCY_LIGHT_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION_REFLECT_ON_BACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETER GAMMACORRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFL_IMAP_COLOR_THRESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_AFFECT_SHADOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFR_IMAP_COLOR_THRESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLUCENCY_THICKNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANISOTROPY_DERIVATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION_FIX_DARK_EDGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFL_IMAP_NORM_THRESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFL_INTERPOLATION_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_EXIT_COLOR_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFR_IMAP_NORM_THRESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFR_INTERPOLATION_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORTEXFRAMEHANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVIRONMENT_PRIORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOATTEXFRAMEHANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRESNEL_IOR_TEX_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETER ISUSERDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECT_AFFECT_ALPHA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_AFFECT_ALPHA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_IOR_TEX_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANISOTROPY_TEX_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION_DOUBLE_SIDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENTTRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEBROWSERHANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRESNEL_IOR_TEX_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION_ENERGY_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECT_EXIT_COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFL_IMAP_MAX_RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFL_IMAP_MIN_RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_IOR_TEX_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFR_IMAP_MAX_RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFR_IMAP_MIN_RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUGHNESS_TEX_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANISOTROPY_TEX_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANISOTROPY_UVWGEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRDFVRAYMTLLAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOG_UNIT_SCALE_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRESNEL_IOR_FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETER HANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFL_IMAP_SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_IOR_FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFR_IMAP_SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANISOTROPY_FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFUSE_TEX_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRESNEL_IOR_LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECT_TEX_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_TEX_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUGHNESS_TEX_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANISOTROPY_AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMBOBOXHANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECT_SUBDIVS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_SUBDIVS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUGHNESS_FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXCOMBINECOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VRAYPLUGIN NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACOLOR TEXTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFUSE_TEX_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HILIGHT_SOFTEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACEMENT_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECT_TEX_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_TEX_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTUREHANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFUSE_COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPERSION_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT TEXTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION_CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECT_COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECT_DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECT_TRACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_TRACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UVWGENCHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UVW_TRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITMAPBUFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANISOUVWGEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR_SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_BLUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UVW_CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z_ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSET URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRDF_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOG_COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXBITMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOG_BIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOG_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_MIRROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y_MIRROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z_MIRROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VRAY_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false

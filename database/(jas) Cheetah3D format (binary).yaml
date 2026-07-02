@@ -1,0 +1,183 @@
+Name: Cheetah3D format (binary)
+URL: "http://en.wikipedia.org/wiki/Cheetah3D"
+FileNameExtensions: ["jas"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "bplist00"
+    CaseSensitive: true
+  - Pos: 9
+    Bytes: [0x00, 0x01, 0x00, 0x02, 0x00, 0x03, 0x00, 0x04, 0x00, 0x05, 0x00, 0x06]
+  - Pos: any
+    AsciiString: "RENDERSETTINGREFRACTIONON_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERSETTINGREFLECTIONON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODETAGPNTRIANGLESTEPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERSETTINGPATHDIFFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERSETTINGTEXTUREON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERABACKGROUNDCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERSETTINGRAYDEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODETAGEDITORSHADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODETAGEDITORACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODETAGRENDERACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERASHADOWSONOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERSETTINGHDRI_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERAFIELDOFVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERARESOLUTIONX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERARESOLUTIONY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODETAGMODENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERSETTINGEPIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERALIGHTONOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERAPROJECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERATOLERANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERAANTIMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERACLIPNEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODETAGENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMTIMERPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERACLIPFAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVECAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZMODIFIERON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZPROPWINTAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZSCRIPTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YANIMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YPARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZMATERIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XDISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XRENDERER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BPLIST00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLED_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RACTIVE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WANIMFPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WMODETAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WOBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VCAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VCHILDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YDEPTH_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATION_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTAGON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERSI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INGS"
+    CaseSensitive: false

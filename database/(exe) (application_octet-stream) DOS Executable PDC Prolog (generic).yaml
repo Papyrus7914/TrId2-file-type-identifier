@@ -1,0 +1,266 @@
+Name: DOS Executable PDC Prolog (generic)
+Description: Prolog Development Center compiler later become Borland Prolog.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    Bytes: [0x01]
+  - Pos: 10
+    Bytes: [0x00, 0x00, 0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\x86\0\0\0\x02\0\0\0\x1E\0\0\0\x01\0\x03\0\0\0\x0E\0\0\06\0\0\0>\0\0\0F\0\0\0N\0\0\0X\0\0\0\x06\0\x06\0"
+    CaseSensitive: true
+  - Pos: 64
+    Bytes: [0x06, 0x00]
+  - Pos: any
+    AsciiString: "DISK IS WRITE PROTECTED.\0DRIVE DOOR MAY BE OPEN.\0THE DISK MEDIA SEEMS TO BE FLAWED.\0GENERAL FAILURE OF THE DRIVE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL FAILURE ON \0PRINTER OUT OF PAPER ON \0ERROR READING FROM \0ERROR WRITING TO \0DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(\0 CAN NOT BE OPENED)\0 )\0 NO ERROR MESSAGES\0 + MEMORY OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON\0OFF\0 FILE NAME \0 ENTER FILE MASK \0FILE DOES NOT EXIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM\0CON\0STDIN\0STDOUT\0STDERR\0COM1\0PRN\0LPT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK READ \0DISK WRITE \0ERROR ON DRIVE A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS THE SPACE BAR\0ARE YOU SURE (Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE \0 DIALOG \0 EDITOR \0 MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY PROLOG DEVELOPMENT CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM TERMINATED WITH FAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789ABCDEF\0CDFRSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE CURRENT TEXT (Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANCEL OR IGNORE (R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE ALREADY EXIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 19"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO FILES FOUND."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOTO POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS ANY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERWRITE (Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRN\0LPT\0COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROLOG.ERR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPPER CASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE (Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENYWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IN_MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENYNONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULLDOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENYALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IN_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IN_EMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R EXP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERNA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTRL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NIL$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGDN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

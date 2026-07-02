@@ -1,0 +1,35 @@
+Name: Heretic II save game
+URL: "https://www.mobygames.com/game/673/heretic-ii/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                      \b
+    Bytes: [0x90, 0x06, 0x00, 0x00, 0xC0, 0x08, 0xF8, 0x10]
+  - Pos: any
+    AsciiString: "INFO_PLAYER_START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIGGER_MULTIPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLDSPAWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNC_DOOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODYQUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIS.FM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJ_"
+    CaseSensitive: false

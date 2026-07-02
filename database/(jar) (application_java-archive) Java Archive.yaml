@@ -1,0 +1,14 @@
+Name: Java Archive
+URL: "https://en.wikipedia.org/wiki/JAR_(file_format)"
+FileNameExtensions: ["jar"]
+MimeType: application/java-archive
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MANIFEST.MF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false

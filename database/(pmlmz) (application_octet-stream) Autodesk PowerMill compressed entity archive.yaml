@@ -1,0 +1,38 @@
+Name: Autodesk PowerMill compressed entity archive
+URL: "https://en.wikipedia.org/wiki/PowerMILL"
+FileNameExtensions: ["pmlmz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetype\x01\0\x10\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0model/x.vnd.delcam.ddzPK\x03\x04"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "X.VND.DELCAM.DDZPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE MIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DDX DDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DDXPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false

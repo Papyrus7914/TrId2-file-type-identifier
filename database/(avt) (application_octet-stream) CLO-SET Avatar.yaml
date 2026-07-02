@@ -1,0 +1,17 @@
+Name: CLO-SET Avatar
+URL: "https://clo-set.com/"
+FileNameExtensions: ["avt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: " AVT        CLO "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLOSETIDLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPGPK"
+    CaseSensitive: false

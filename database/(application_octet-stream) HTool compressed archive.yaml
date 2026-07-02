@@ -1,0 +1,12 @@
+Name: HTool compressed archive
+Description: Used by some DOS setup programs.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HTool archive - v"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 20
+    Bytes: [0x1A]

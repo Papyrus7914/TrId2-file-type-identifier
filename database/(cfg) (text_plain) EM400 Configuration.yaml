@@ -1,0 +1,42 @@
+Name: EM400 Configuration
+Description: Mera 400 emulator.
+URL: "https://github.com/jakubfi/em400"
+FileNameExtensions: ["cfg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "computer {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MEM_OS_SEGMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMER_START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED_REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEM_ELWRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEM_MEGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU_MOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOG {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPGA"
+    CaseSensitive: false

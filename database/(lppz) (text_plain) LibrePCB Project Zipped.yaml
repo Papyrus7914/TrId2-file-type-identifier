@@ -1,0 +1,50 @@
+Name: LibrePCB Project Zipped
+URL: "https://librepcb.org/"
+FileNameExtensions: ["lppz"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".LIBREPCB-PROJECTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LIBREPCB-PROJECT3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMATICS.LPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.LPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS.LPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIRCUIT.LPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS.LPM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOARDS.LPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "README.MDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOBS.LPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERC.LPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BENEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LPPPK"
+    CaseSensitive: false

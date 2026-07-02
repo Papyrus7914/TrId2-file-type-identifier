@@ -1,0 +1,41 @@
+Name: Lame Patcher Patch
+URL: "https://aluigi.altervista.org/mytoolz.htm#lpatch"
+FileNameExtensions: ["lpatch"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "===================================================================================="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS FILE HAS BEEN CREATED FOR THE LAME PATCHER PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY LUIGI AURIEMMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES_ORIGINAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES_PATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MYTOOLZ.HTM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALUIGI.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E-MAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

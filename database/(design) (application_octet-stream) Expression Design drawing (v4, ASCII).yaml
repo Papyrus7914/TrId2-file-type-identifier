@@ -1,0 +1,29 @@
+Name: Expression Design drawing (v4, ASCII)
+URL: "http://fileformats.archiveteam.org/wiki/Expression_Design"
+FileNameExtensions: ["design"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<XDFV:4>\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ORIENTATN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%LNKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%OBJS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%PRLG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

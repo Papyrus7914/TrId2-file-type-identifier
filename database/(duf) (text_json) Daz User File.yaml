@@ -1,0 +1,53 @@
+Name: Daz User File
+URL: "https://en.wikipedia.org/wiki/Daz_Studio"
+FileNameExtensions: ["duf"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n\t\"file_version\" : \""
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTRIBUTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSET_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APRILYSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBSITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DUF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

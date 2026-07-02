@@ -1,0 +1,20 @@
+Name: Blizzard 3D Model (binary)
+URL: "https://wowdev.wiki/MDX"
+FileNameExtensions: ["mdx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MDLXVERS"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "MODL"
+    CaseSensitive: true
+  - Pos: 396
+    AsciiString: "SEQS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQS"
+    CaseSensitive: false

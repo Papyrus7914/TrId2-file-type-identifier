@@ -1,0 +1,35 @@
+Name: NETGEN Volume format
+URL: "https://sourceforge.net/projects/netgen-mesher/"
+FileNameExtensions: ["vol"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "mesh3d"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SURFNR    BCNR   DOMIN  DOMOUT      NP      P1      P2      P3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATNR      NP      P1      P2      P3      P4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X             Y             Z"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGESEGMENTSGI2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURFACEELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUMEELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS"
+    CaseSensitive: false

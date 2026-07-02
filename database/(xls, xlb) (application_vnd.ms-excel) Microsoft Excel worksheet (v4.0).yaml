@@ -1,0 +1,9 @@
+Name: Microsoft Excel worksheet (v4.0)
+Description: BIFF4 format.
+URL: "https://en.wikipedia.org/wiki/Microsoft_Excel"
+FileNameExtensions: ["xls", "xlb"]
+MimeType: application/vnd.ms-excel
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\t\x04\x06\0\0"
+    CaseSensitive: true

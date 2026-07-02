@@ -1,0 +1,38 @@
+Name: Notaro document
+URL: "https://www.wolterskluwer.com/it-it/solutions/suite-notaro"
+FileNameExtensions: ["oad"]
+MimeType: text/rtf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SILLABAZIONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FCHARSET0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINCATURA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAPERW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

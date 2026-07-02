@@ -1,0 +1,18 @@
+Name: Darius Zendeh module
+Description: A music format created by Darius Zendeh (Mark II/Quadlite).
+URL: "http://www.exotica.org.uk/wiki/Darius_Zendeh_(format)"
+FileNameExtensions: ["dz"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    #        H
+    Bytes: [0x48, 0xE7]
+  - Pos: 3
+    #              A
+    Bytes: [0xF0, 0x41, 0xFA]
+  - Pos: any
+    AsciiString: "P\0R\0T\0V\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BH\0\0BH"
+    CaseSensitive: false

@@ -1,0 +1,53 @@
+Name: MiAmiga Ledger data
+Description: Amiga accounting software.
+FileNameExtensions: ["lgr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "72250"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACCOUNT\0COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCOUNT\0DESCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE\0ACCOUNT\0COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBIT\0CREDIT\0POS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION\0TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE\0DEBIT\0CRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAN\0DATE\0ACCOUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS\0SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT\0BALANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOURNAL ENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENING\0CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIOR\0  JOURNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE OF ACCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BALANCE\0PRIOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREDIT\0POSTED"
+    CaseSensitive: false

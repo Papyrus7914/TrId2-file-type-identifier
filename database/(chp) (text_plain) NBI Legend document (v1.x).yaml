@@ -1,0 +1,12 @@
+Name: NBI Legend document (v1.x)
+Description: Windows 2.x DTP/word processor from NBI.
+URL: "https://winworldpc.com/product/nbi-legend/1x"
+FileNameExtensions: ["chp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# VE # 2.00\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".CHP"
+    CaseSensitive: false

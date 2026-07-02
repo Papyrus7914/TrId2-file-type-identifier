@@ -1,0 +1,29 @@
+Name: Metashape project
+URL: "http://fileformats.archiveteam.org/wiki/Agisoft"
+FileNameExtensions: ["psz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "doc.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROJECTIONS0.PLYPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS0.PLYPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOC.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMB0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWWW"
+    CaseSensitive: false

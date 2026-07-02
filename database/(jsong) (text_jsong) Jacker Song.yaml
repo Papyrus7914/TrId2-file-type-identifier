@@ -1,0 +1,50 @@
+Name: Jacker Song
+URL: "http://fileformats.archiveteam.org/wiki/Jacker_song"
+FileNameExtensions: ["jsong"]
+MimeType: text/jsong
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n\t\"beats_per_bar\" : "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEATS_PER_MINUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMES_PER_BEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEATS_PER_BAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDI_CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLE_LOOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JACKER-SONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDI_PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_CUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

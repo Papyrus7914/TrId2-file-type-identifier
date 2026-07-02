@@ -1,0 +1,17 @@
+Name: Windows Help Full-Text Search index
+URL: "https://en.wikipedia.org/wiki/WinHelp"
+FileNameExtensions: ["fts"]
+MimeType: application/x-winhelp-fts
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "tfMR"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0"
+    CaseSensitive: true

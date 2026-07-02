@@ -1,0 +1,187 @@
+Name: Maya plug-in (generic)
+URL: "http://en.wikipedia.org/wiki/Autodesk_Maya"
+FileNameExtensions: ["mll"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNINITIALIZEPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOUNDATION.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W4MSTATUSCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENMAYA.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPIVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0MFNPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1MFNPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEREGISTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVMOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVMSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BVMSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0MOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0MSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0MSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1MOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1MSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPENDEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W4TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVMDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BD11P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0MPX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1MPX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXXZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0MA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OULD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P6AP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RICH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NXZ"
+    CaseSensitive: false

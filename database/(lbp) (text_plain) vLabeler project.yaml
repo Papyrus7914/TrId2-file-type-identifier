@@ -1,0 +1,386 @@
+Name: vLabeler project
+URL: "https://vlabeler.com/"
+FileNameExtensions: ["lbp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n    \"version\": 2,\n    \"rootSampleDirectory\": \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GETNAMEWITHOUTEXTENSION(SAMPLE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELER.LOCKEDDRAG.USEDRAGBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELER.LOCKEDDRAG.USESTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS.PUSH(FIXED + LEFT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS.PUSH(PREU + LEFT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAN SAMPLES RECURSIVELY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARSEFLOAT(ENTRY.EXTRAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS.PUSH(OVL + LEFT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOW NEGATIVE OVERLAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-VALUE + ENTRY.POINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRAS.PUSH(RAWRIGHT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE NAME IS EMPTY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTINPUTFILEPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONDISPLAYEDNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE FOR FIXED-DRAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERFLOWBEFORESTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOTSAMPLEDIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTAU SINGER LABELER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTAU-SINGER.DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOWSAMENAMEENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTMODULEINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTCONSTRUCTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRACTIONPATTERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IF(ENTRY.NEEDSYNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARSEFLOAT(FIXED)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARSEFLOAT(RIGHT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS.PUSH(LEFT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIPLEEDITMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEW ENTRY(SAMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERFLOWAFTEREND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARSEFLOAT(LEFT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARSEFLOAT(PREU)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEROOTDIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE.TOSTRING()"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKINGDIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRAFIELDNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARSEFLOAT(OVL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- ENTRY.POINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CACHEDIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCERECURSIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELER.FIELDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUTFOLDER(ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USENEGATIVEOVL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTEXTRAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTVALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELERPARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT - OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORTCUTINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLENAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADJUSTBORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECIMALDIGIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY.START)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT - RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREUTTERANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPLACESTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- ENTRY.END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADJUSTPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRYFILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELERCONF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEW NOTES()"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAWFILEPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUEGETTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUESETTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOEXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUOUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GITHUB.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWOVERLAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPLACEEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDER.COLIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DRAGBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GMAIL.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEEDSYNC)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE) {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDERCOLIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHIFT-JIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_VLABELER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INJECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{SAMPLE}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOLEAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME) {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTO.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBSITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{FIXED}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{RIGHT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{LEFT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{NAME}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{PREU}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{OVL}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(.*)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-OVL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

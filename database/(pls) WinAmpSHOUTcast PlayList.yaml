@@ -1,0 +1,13 @@
+Name: WinAmp/SHOUTcast PlayList
+URL: "http://www.winamp.com/"
+FileNameExtensions: ["pls"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[playlist]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMBEROFENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYLIST"
+    CaseSensitive: false

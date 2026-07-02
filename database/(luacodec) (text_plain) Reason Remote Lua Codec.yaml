@@ -1,0 +1,47 @@
+Name: Reason Remote Lua Codec
+URL: "https://www.propellerheads.se/blog/control-remote"
+FileNameExtensions: ["luacodec"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "version={"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FUNCTION REMOTE_SUPPORTED_CONTROL_SURFACES()"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN SURFACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL SURFACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS_KEYBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANUFACTURER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT_PORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IN_PORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IN PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LUA"
+    CaseSensitive: false

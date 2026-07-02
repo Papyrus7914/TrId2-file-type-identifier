@@ -1,0 +1,20 @@
+Name: Gofin form
+URL: "https://druki.gofin.pl/"
+FileNameExtensions: ["gofin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "798798462132165498121355888684654234234242423453453489534895739457384573894572034254641321648987974321321654987956333254654049230492PK\x03\x04"
+    CaseSensitive: true
+  - Pos: 162
+    AsciiString: "druk.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DRUK.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRONY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XAML"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: Nero Audio-CD Compilation (Unicode)
+URL: "http://www.nero.com/"
+FileNameExtensions: ["nra"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFE\xFF\rN\0e\0r\0o\0C\0D\0A\0V\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: ".\0"
+    CaseSensitive: true

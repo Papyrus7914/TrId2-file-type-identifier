@@ -1,0 +1,76 @@
+Name: Duxbury Braille document
+URL: "http://www.duxburysystems.com/"
+FileNameExtensions: ["dxb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFDSI\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\x01\0\x01\0\b\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NOTE.\0OUTLINE.\0PARA.\0PARA.CONTINUE.\0POEM.\0POEM.2LEVEL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRLDISPLAY.\0BRLINLINE\0COMPDISPLAY.\0COMPINLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TP.AUTHOR.\0TP.GENERAL.\0TP.TITLE.\0\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACRONYM\0BOX\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REF.PG.NO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DXP\0\0EN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGDXB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISH\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTYS1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WB-CB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IND1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IND5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KPE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LNG~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTYE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAB7"
+    CaseSensitive: false

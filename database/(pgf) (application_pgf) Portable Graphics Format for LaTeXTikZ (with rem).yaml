@@ -1,0 +1,20 @@
+Name: Portable Graphics Format for LaTeX/TikZ (with rem)
+URL: "https://ctan.org/pkg/pgf"
+FileNameExtensions: ["pgf"]
+MimeType: application/pgf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%%"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN{PGFPICTURE}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEPACKAGE{PGF}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END{PGF"
+    CaseSensitive: false

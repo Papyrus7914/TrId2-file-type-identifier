@@ -1,0 +1,23 @@
+Name: Proteus Project
+URL: "http://www.labcenter.com/"
+FileNameExtensions: ["pdsprj"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PWRRAILS.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT.CDBPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT.DSNPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTS"
+    CaseSensitive: false

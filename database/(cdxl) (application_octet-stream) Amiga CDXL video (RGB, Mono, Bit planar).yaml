@@ -1,0 +1,16 @@
+Name: Amiga CDXL video (RGB, Mono, Bit planar)
+URL: "https://en.wikipedia.org/wiki/CDXL"
+FileNameExtensions: ["cdxl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0x00, 0x01]
+  - Pos: 18
+    AsciiString: "\0"
+    CaseSensitive: true

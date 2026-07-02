@@ -1,0 +1,78 @@
+Name: Workshare DeltaView Deltafile
+URL: "http://www.workshare.com/products/wsdeltaview/"
+FileNameExtensions: ["wdf"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERING_SET_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_SZFILEEXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_DWFILESIZEHIGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_SZFILELOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_FTLASTMODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_DWFILESIZELOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_SZDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_SZAUTHORNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKMARKEDFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONVERTEDFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_SZFILETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_SZOPERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPOSITEDOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINALDOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARYINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFIEDDOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_SZDOCID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_SZCLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSIONINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMP"
+    CaseSensitive: false

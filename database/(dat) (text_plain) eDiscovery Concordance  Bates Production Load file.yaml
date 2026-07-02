@@ -1,0 +1,11 @@
+Name: eDiscovery Concordance / Bates Production Load file
+URL: "https://www.sec.gov/divisions/enforce/datadeliverystandards.pdf"
+FileNameExtensions: ["dat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xC3\xBEBegin Bates\xC3\xBE\x14\xC3\xBEEnd Bates\xC3\xBE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EFTA"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: Seattle FilmWorks / PhotoWorks photo (Uncompressed SFW94)
+Description: PhotoWorks created Uncompressed SFW, a BMP which is encompassed by SFW file structures.
+URL: "http://jonesrh.info/sfw/"
+FileNameExtensions: ["sfw"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SFW94"
+    CaseSensitive: true
+  - Pos: 205
+    AsciiString: "\xDA\a\0\0:$\0\0\0:\0\0\0\0:"
+    CaseSensitive: true
+  - Pos: 252
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 256
+    AsciiString: ":\0\0\0\0:D\0\0\0:\xDA\a\0\0"
+    CaseSensitive: true

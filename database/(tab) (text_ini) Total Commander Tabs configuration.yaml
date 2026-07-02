@@ -1,0 +1,17 @@
+Name: Total Commander Tabs configuration
+URL: "https://en.wikipedia.org/wiki/Total_Commander"
+FileNameExtensions: ["tab"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[activetabs]\r\n0_path="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "0_OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1_OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1_PATH"
+    CaseSensitive: false

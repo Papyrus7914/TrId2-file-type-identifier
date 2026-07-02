@@ -1,0 +1,28 @@
+Name: InstallShield Response File
+URL: "http://www.installshield.com/"
+FileNameExtensions: ["iss"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[InstallS"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: " Silent]\r\nVersion=v"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTALLSHIELD SILENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESPONSE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DLGORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DLG0"
+    CaseSensitive: false

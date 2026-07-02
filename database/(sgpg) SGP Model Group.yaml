@@ -1,0 +1,73 @@
+Name: SGP Model Group
+URL: "http://www.sgpsys.com/"
+FileNameExtensions: ["sgpg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<SGP.XSpace.XScene Version=\"1.1\">\r\n  <Models>\r\n    <Model ModelId=\""
+    CaseSensitive: true
+  - Pos: 111
+    AsciiString: "\" ModelLocation=\"SGP.XSpace.X"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SGP.XSPACE.XSCENE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIVOTLOCALPOSITION X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOROTATION AXISX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL MODELID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELLOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENTATION X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRITE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRITES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXISY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXISZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SGP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

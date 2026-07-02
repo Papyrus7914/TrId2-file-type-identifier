@@ -1,0 +1,16 @@
+Name: LG EPK v2 firmware package
+FileNameExtensions: ["epk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 128
+    AsciiString: "epak"
+    CaseSensitive: true
+  - Pos: 140
+    AsciiString: "EPK2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EPAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPK2"
+    CaseSensitive: false

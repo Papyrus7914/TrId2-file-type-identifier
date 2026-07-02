@@ -1,0 +1,11 @@
+Name: Windows Jump List
+URL: "https://forensicswiki.xyz/wiki/index.php?title=Jump_Lists"
+FileNameExtensions: ["customdestinations-ms"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true

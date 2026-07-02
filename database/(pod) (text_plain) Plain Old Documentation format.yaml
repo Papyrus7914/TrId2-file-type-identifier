@@ -1,0 +1,12 @@
+Name: Plain Old Documentation format
+Description: pod is a lightweight markup language used to document the Perl programming language.
+URL: "http://en.wikipedia.org/wiki/Plain_Old_Documentation"
+FileNameExtensions: ["pod"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "=head1 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEAD1 NAME"
+    CaseSensitive: false

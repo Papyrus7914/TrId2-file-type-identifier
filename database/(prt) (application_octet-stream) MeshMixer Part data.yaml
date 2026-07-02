@@ -1,0 +1,35 @@
+Name: MeshMixer Part data
+URL: "http://fileformats.archiveteam.org/wiki/MeshMixer"
+FileNameExtensions: ["prt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOUNDARYLOOPINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDARYNORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDARYSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDARYTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDARYUV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORDTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBRECORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORDID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUES"
+    CaseSensitive: false

@@ -1,0 +1,37 @@
+Name: QuickCAD Drawing
+URL: "http://www.autodesk.com"
+FileNameExtensions: ["cad"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n\0\0\0\0\v\x03"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\bBuild "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DRAWING VARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR PALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT SOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITY LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false

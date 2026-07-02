@@ -1,0 +1,9 @@
+Name: OpalVision JPEG bitmap
+Description: Contains a custom OVTN chunk.
+URL: "https://amiga.resource.cx/exp/opalvision"
+FileNameExtensions: ["jpg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xD8\xFF\xE0\x10\xF4JFIF\0\x01\x01\0\0\x01\0\x010\x1EOVTN"
+    CaseSensitive: true

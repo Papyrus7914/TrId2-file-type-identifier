@@ -1,0 +1,10 @@
+Name: HCA game Audio
+Description: AKA High Compression Audio
+URL: "https://www.cri-mw.com/"
+FileNameExtensions: ["hca", "bin", "dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xC8, 0xC3, 0xC1, 0x00, 0x02, 0x00, 0x00]
+  - Pos: 8
+    Bytes: [0xE6, 0xED, 0xF4, 0x00]

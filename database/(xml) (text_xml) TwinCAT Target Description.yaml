@@ -1,0 +1,20 @@
+Name: TwinCAT Target Description
+URL: "https://www.beckhoff.com/en-en/products/automation/twincat/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TARGETVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCTARGETDESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBBUILD"
+    CaseSensitive: false

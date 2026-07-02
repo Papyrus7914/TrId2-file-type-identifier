@@ -1,0 +1,13 @@
+Name: Tascam BB-serie firmware
+URL: "https://en.wikipedia.org/wiki/TASCAM"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BB"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "00"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true

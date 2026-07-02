@@ -1,0 +1,29 @@
+Name: BizHawk movie capture (obsolete)
+URL: "http://emulation-general.wikia.com/wiki/BizHawk"
+FileNameExtensions: ["bkm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "emuVersion Version "
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MOVIEVERSION BIZHAWK V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RERECORDCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA1"
+    CaseSensitive: false

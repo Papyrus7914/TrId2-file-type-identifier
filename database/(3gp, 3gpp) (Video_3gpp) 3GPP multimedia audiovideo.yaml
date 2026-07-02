@@ -1,0 +1,42 @@
+Name: 3GPP multimedia audio/video
+Description: 3GPP is a global standards for the creation, delivery and playback of multimedia over 3rd generation, wireless networks, cell phones, etc.
+URL: "https://en.wikipedia.org/wiki/3GP_and_3G2"
+FileNameExtensions: ["3gp", "3gpp"]
+MimeType: Video/3gpp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "ftyp3gp"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MDIA\0\0\0 MDHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOOV\0\0\0LMVHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMHD"
+    CaseSensitive: false

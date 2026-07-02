@@ -1,0 +1,13 @@
+Name: Raima Data Manager Data Base Definition (v3.x)
+URL: "http://web.archive.org/web/20161007093345/http://docs.raima.com/rdme/8_1/Content/GS/RelNotes.htm"
+FileNameExtensions: ["dbd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "V3."
+    CaseSensitive: true
+  - Pos: 5
+    Bytes: [0x1A]
+  - Pos: 34
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0cd"
+    CaseSensitive: true

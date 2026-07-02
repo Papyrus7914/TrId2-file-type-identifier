@@ -1,0 +1,188 @@
+Name: Appearance eXchange Format
+URL: "http://fileformats.archiveteam.org/wiki/Appearance_eXchange_Format"
+FileNameExtensions: ["axf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A\n\x02\b\b\0\0\0\0\0\0\0\0\0\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0\0\0\00\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "OHDR\x02 "
+    CaseSensitive: true
+  - Pos: 70
+    #              \n
+    Bytes: [0xCE, 0x0A, 0x02, 0x00, 0x01, 0x00, 0x00, 0x15, 0x12, 0x00, 0x04, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "COM.XRITE.RESOURCELOOKUPOPERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.LAMBERTDIFFUSEMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.RESOURCECOLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.WARDSPECULARMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.RESOURCEOPERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.REPRESENTATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPRESENTATIONDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.PREVIEWIMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.ENUMERATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.COLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.COLORSPECS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.MATERIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPRESENTATIONCLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.OPERANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEISLERMORODER2010"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.REGULAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCELOCATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.MIPMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.XRITE.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(COLORSPECS)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTUREORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXF.DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANISOTROPIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMALIZED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXF.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHTMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOLEAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRESNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTHMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVBRDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOBES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WOHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTLF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FHDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRHP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCHK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRGB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREE"
+    CaseSensitive: false

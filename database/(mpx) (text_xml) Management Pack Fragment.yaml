@@ -1,0 +1,28 @@
+Name: Management Pack Fragment
+FileNameExtensions: ["mpx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<ManagementPackFragment SchemaVersion=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANAGEMENTPACKFRAGMENT SCHEMAVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

@@ -1,0 +1,18 @@
+Name: Polyphonic Ringtone for Phones
+FileNameExtensions: ["pmd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "cmid\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SORC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

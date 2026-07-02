@@ -1,0 +1,10 @@
+Name: ImageMagick Machine independent File Format bitmap (with rem)
+URL: "http://www.go.dlr.de/pdinfo_dv/ImageMagick.html#miff"
+FileNameExtensions: ["mif", "miff"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMAGEMAGICK"
+    CaseSensitive: false

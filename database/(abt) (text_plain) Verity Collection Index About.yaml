@@ -1,0 +1,11 @@
+Name: Verity Collection Index About
+URL: "http://fileformats.archiveteam.org/wiki/Ext:abt"
+FileNameExtensions: ["abt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$control: 1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLLECTION_ABOUT"
+    CaseSensitive: false

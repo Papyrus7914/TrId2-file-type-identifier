@@ -1,0 +1,29 @@
+Name: Harvard F/X Drawing
+URL: "https://en.wikipedia.org/wiki/Harvard_Graphics"
+FileNameExtensions: ["hdp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "HDRWDRHD"
+    CaseSensitive: true
+  - Pos: 276
+    AsciiString: "LAYRH"
+    CaseSensitive: true
+  - Pos: 356
+    AsciiString: "CHNK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HDRWDRHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYRH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHNK"
+    CaseSensitive: false

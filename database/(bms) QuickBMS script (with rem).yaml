@@ -1,0 +1,16 @@
+Name: QuickBMS script (with rem)
+URL: "http://aluigi.altervista.org/quickbms.htm"
+FileNameExtensions: ["bms"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCRIPT FOR QUICKBMS HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALUIGI.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

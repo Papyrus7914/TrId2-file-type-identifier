@@ -1,0 +1,38 @@
+Name: ProDiscover project
+URL: "https://prodiscover.com/"
+FileNameExtensions: ["dft"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<PDProject> \r\n\t<PDProjectInfo> \r\n\t\t<ProjectName>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTERNETHISTVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSEXPLORER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDPROJECTINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHRESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTNOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTDESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELKEYS"
+    CaseSensitive: false

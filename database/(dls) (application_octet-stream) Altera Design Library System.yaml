@@ -1,0 +1,23 @@
+Name: Altera Design Library System
+URL: "https://en.wikipedia.org/wiki/Altera"
+FileNameExtensions: ["dls"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DLS "
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "EFD"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "DLS_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".VHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VHDL"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Scribe Markup
+URL: "http://fileformats.archiveteam.org/wiki/Scribe"
+FileNameExtensions: ["mss"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKE"
+    CaseSensitive: false

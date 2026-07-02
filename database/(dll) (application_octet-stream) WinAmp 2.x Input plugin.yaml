@@ -1,0 +1,328 @@
+Name: WinAmp 2.x Input plugin
+URL: "http://classic.winamp.com/plugins"
+FileNameExtensions: ["dll"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 67
+    Bytes: [0x0E]
+  - Pos: 69
+    #              \t          !                 L           !
+    Bytes: [0xB4, 0x09, 0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: 96
+    AsciiString: "t be run "
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "n"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 283
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 291
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 299
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 307
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 310
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 315
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 318
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 323
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 326
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 331
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 334
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 339
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 342
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 347
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 350
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 355
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 358
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 363
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 366
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 371
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 374
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 382
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 387
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 390
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 395
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 398
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 403
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 406
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 411
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 414
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 422
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 427
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 431
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 435
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 439
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 443
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 446
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 451
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 454
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 462
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 471
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 479
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 486
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 494
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 502
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 682
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 691
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 694
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 696
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 701
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 704
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 709
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 712
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 765
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 771
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 774
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 779
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 782
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 797
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 805
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 811
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 815
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 818
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 823
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 837
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 844
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 850
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 855
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 858
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 863
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 877
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 886
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 890
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 895
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 898
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 903
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 917
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 926
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 930
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 935
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 938
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 943
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 957
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 965
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 971
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 975
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 979
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 983
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 991
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1011
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1015
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 1019
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINAMPGETINMODULE2"
+    CaseSensitive: false

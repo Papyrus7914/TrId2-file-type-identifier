@@ -1,0 +1,14 @@
+Name: Codecrypt encrypted data
+URL: "http://fileformats.archiveteam.org/wiki/Codecrypt"
+FileNameExtensions: ["ccr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "s"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: ":CCR-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CCR-"
+    CaseSensitive: false

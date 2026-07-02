@@ -1,0 +1,12 @@
+Name: Inno Setup Messages
+Description: Often filename is unins000.msg.
+URL: "https://jrsoftware.org/ishelp/index.php?topic=setup_signeduninstaller"
+FileNameExtensions: ["msg"]
+MimeType: application/x-innosetup-msg
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Inno Setup Messages ("
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "."
+    CaseSensitive: true

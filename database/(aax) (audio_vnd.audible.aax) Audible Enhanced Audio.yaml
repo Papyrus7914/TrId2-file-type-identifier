@@ -1,0 +1,9 @@
+Name: Audible Enhanced Audio
+Description: Used by Audible's audiobooks.
+URL: "https://en.wikipedia.org/wiki/Audible.com"
+FileNameExtensions: ["aax"]
+MimeType: audio/vnd.audible.aax
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0$ftypaax \0\0\0\x01aax "
+    CaseSensitive: true

@@ -1,0 +1,35 @@
+Name: AppleWin controller configuration
+URL: "https://github.com/AppleWin/AppleWin"
+FileNameExtensions: ["yaml"]
+MimeType: application/yaml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "---"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPLEWIN CONTROLLER BUTTON REMAPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION TO BE USED IN APPLEWIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_HDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PID_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VID_"
+    CaseSensitive: false

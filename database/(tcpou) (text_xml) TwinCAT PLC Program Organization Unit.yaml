@@ -1,0 +1,26 @@
+Name: TwinCAT PLC Program Organization Unit
+URL: "https://www.beckhoff.com/en-en/products/automation/twincat/"
+FileNameExtensions: ["tcpou"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TCPLCOBJECT VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPLEMENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECLARATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POU NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_VAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false

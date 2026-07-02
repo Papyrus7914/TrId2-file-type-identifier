@@ -1,0 +1,32 @@
+Name: PxTone Collage module (protected)
+URL: "http://en.wikipedia.org/wiki/PxTone"
+FileNameExtensions: ["pttune"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PTTUNE--200"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PTTUNE--200"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTVOICE-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PXTONEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATEPTV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false

@@ -1,0 +1,158 @@
+Name: Protected iTunes Music Store audio track
+URL: "http://www.apple.com"
+FileNameExtensions: ["m4p"]
+MimeType: audio/mp4
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "ftypM4A \0\0\0\0M4A mp42isom"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MEAN\0\0\0\0COM.APPLE.ITUNES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME\0\0\0\0ITUNNORM\0\0\0JDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDLR\0\0\0\0\0\0\0\0MDIRAPPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMHD\0\0\0\0\0\0\0\0\0\0\0$DINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDLR\0\0\0\0\0\0\0\0SOUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDIA\0\0\0 MDHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOOV\0\0\0LMVHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAT\0\0\0\0AVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHM\0\0\0\0ITUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAY\0\0\0$DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLEMARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XRIGHVEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRMAMP4A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IVIV$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AKID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COVR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IODS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STIK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRKN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UDTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

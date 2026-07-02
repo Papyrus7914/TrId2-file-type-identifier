@@ -1,0 +1,26 @@
+Name: Droid profile
+URL: "http://fileformats.archiveteam.org/wiki/DROID"
+FileNameExtensions: ["droid"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DROID_SIGNATUREFILE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICE.PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGMIRROR.CTRLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGMIRROR.CTRLC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFILE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATPK"
+    CaseSensitive: false

@@ -1,0 +1,15 @@
+Name: Autodesk Design Web Format
+Description: DWF is file format especially suited to distribuite and publish design data.
+URL: "http://fileformats.archiveteam.org/wiki/DWF"
+FileNameExtensions: ["dwf"]
+MimeType: application/dwf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(DWF V"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: ")"
+    CaseSensitive: true

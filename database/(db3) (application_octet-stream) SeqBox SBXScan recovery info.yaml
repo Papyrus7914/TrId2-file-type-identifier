@@ -1,0 +1,41 @@
+Name: SeqBox SBXScan recovery info
+URL: "https://mark0.net/soft-seqbox-e.html"
+FileNameExtensions: ["db3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATE TABLE SBX_BLOCKS (UID INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SBX_SOURCE (ID INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SBX_META (UID INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESBX_BLOCKSSBX_BLOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESBX_SOURCESBX_SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESBX_METASBX_META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEID INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SBXNAME TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POS INTEGER"
+    CaseSensitive: false

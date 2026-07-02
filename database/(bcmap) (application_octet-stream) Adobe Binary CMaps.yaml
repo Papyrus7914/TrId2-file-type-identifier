@@ -1,0 +1,20 @@
+Name: Adobe Binary CMaps
+URL: "https://www.adobe.com/content/dam/acom/en/devnet/font/pdfs/5014.CIDFont_Spec.pdf"
+FileNameExtensions: ["bcmap"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\xE0RCopyright 1990-2009 Adobe Systems Incorporated.\nAll rights reserved.\nSee ./LICENSE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RCOPYRIGHT 1990-2009 ADOBE SYSTEMS INCORPORATED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEE ."
+    CaseSensitive: false

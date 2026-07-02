@@ -1,0 +1,23 @@
+Name: WordPerfect 6 Document
+URL: "https://en.wikipedia.org/wiki/WordPerfect"
+FileNameExtensions: ["wpd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFWPC"
+    CaseSensitive: true
+  - Pos: 7
+    #                    \n
+    Bytes: [0x00, 0x01, 0x0A, 0x02, 0x01]
+  - Pos: 13
+    AsciiString: "\0\0\x02\x05\0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true

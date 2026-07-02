@@ -1,0 +1,23 @@
+Name: Dore Raster bitmap (with rem)
+URL: "http://fileformats.archiveteam.org/wiki/Dor%C3%A9_Raster"
+FileNameExtensions: ["dore", "img"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RASTERTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false

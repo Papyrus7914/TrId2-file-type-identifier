@@ -1,0 +1,17 @@
+Name: SRF map
+FileNameExtensions: ["srf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LS"
+    CaseSensitive: true
+  - Pos: 3
+    Bytes: [0x01]
+  - Pos: any
+    AsciiString: "DL_MAPFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DL_AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DL_PO"
+    CaseSensitive: false

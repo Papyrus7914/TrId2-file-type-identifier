@@ -1,0 +1,43 @@
+Name: LCDStudio configuration Playlist
+URL: "http://www.lcdstudio.com"
+FileNameExtensions: ["xpl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<PlayList>\r\n  <SchedulerItem xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n    <ActiveWhen>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEDULERITEM XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVATIONITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVATIONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVEWHEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNWHEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

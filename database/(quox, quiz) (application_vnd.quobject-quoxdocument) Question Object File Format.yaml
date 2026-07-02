@@ -1,0 +1,110 @@
+Name: Question Object File Format
+URL: "https://en.wikipedia.org/wiki/Question_Object_File_Format"
+FileNameExtensions: ["quox", "quiz"]
+MimeType: application/vnd.quobject-quoxdocument
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "quobject/document.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-PACKAGE.RELATIONSHIPS+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.OPENXMLFORMATS.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTPROPERTIES XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIONSHIPS XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIONSHIP TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUESTION XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUESTIGURATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUOBJECT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPES XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUESTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

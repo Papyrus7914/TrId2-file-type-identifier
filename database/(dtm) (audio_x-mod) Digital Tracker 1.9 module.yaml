@@ -1,0 +1,16 @@
+Name: Digital Tracker 1.9 module
+FileNameExtensions: ["dtm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "D.T."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S.Q."
+    CaseSensitive: false

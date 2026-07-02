@@ -1,0 +1,37 @@
+Name: UTAU Sequence Text
+URL: "https://utau.wikia.com/wiki/UTAU"
+FileNameExtensions: ["ust"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CACHEDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOICEDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTENUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LYRIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODU"
+    CaseSensitive: false

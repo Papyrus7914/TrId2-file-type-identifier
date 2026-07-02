@@ -1,0 +1,16 @@
+Name: Samsung Smart Switch contact backup
+FileNameExtensions: ["spbm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SMARTSWITCHBACKUP.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSMDUMMYVALUE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTACT.BK"
+    CaseSensitive: false

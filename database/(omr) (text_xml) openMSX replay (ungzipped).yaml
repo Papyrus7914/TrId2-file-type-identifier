@@ -1,0 +1,836 @@
+Name: openMSX replay (ungzipped)
+URL: "https://en.wikipedia.org/wiki/OpenMSX"
+FileNameExtensions: ["omr"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" ?>\n<!DOCTYPE openmsx-serialize SYSTEM 'openmsx-serialize.dtd'>\n<serial"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE OPENMSX-SERIALIZE SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSX KANJI DRIVER WITH BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY_GHOSTING_SGC_PROTECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS-A1WSX_BASIC-BIOS2P.ROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS-A1WSX_MATSUSHITA.SRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS-A1WSX_KANJIBASIC.ROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSX BIOS WITH BASIC ROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS-A1WSX_KANJIFONT.ROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS-A1WSX_FIRMWARE.ROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS-A1WSX_MSX2PSUB.ROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENMSX-SERIALIZE.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESET STATUS REGISTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRITECHECKER VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYSTARTSYNCTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS-A1WSX_FMBASIC.ROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTALSCANOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITMAPVISIBLEWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESETSTATUSREGISTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPPERREADBACKBITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANASONIC_FS-A1WSX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERDATASTORED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTORSPERCYLINDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRITEPATTERNTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITMAPCACHEWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS-A1WSX_DISK.ROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY MAPPED FDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSXCODEKANALOCKON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLDCODEKANALOCKON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTEDATASTORED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRITEATTRIBTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTALADJUST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARD VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSXKEYEVENTQUEUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLVEDFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUSCHANGETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TC8566AF VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{{USER_OPENMSX}}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANGER VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE_KANA_LOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPUEXTENDEDVRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL TIME CLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CASSETTEPLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMDWRITEWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYLINDERNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMESTARTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS_YESNO_KEYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADLOADSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADUNLOADTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARDLAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYMATRIXSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSXGRAPHLOCKON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOISEGENERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLDGRAPHLOCKON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPLAY VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TONEGENERATORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YM2413-OKAZAKI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMDREADWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS-A1WSX.CMOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS-A1WSX.SRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADLOADTIMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HSCANSYNCTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IRQHORIZONTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISDISPLAYAREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOYSTICKPORTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOYSTICKPORTB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARD_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSXCAPSLOCKON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLDCAPSLOCKON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERLATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RERECORDCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRAM-MIRRORED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERKEYMATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSCANSYNCTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{{USER_DIRS}}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CASSETTEPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMDKEYMATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPUINTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTTRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICESWITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKKEYSMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANUFACTURER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORYMAPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOTORCONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSXMODIFIERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGGABLE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVSYNCTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARYSLOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAM ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGS VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE_YEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLVEDSHA1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROM8KBBLOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROMPANASONIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTORNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIBRATOCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAR VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOURTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMANDCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETUNECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISKCHANGED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVESELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPH_LOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IRQVERTICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOD VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOTORSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSX SUB ROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTERPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASELAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENSHATURBO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEDULABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIFYDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATECHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSLOTREGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VRAMPOINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANKSELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLINKCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLINKSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLISIONX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLISIONY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILLERBYTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS_KEYPAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERLACED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYTYPECMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTOUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATCHPORTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATCHPORTB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATCHPORTC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPPERTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOTORTIMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOISE_SEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERSISTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUSREG0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUSREG1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUSREG2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNCPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTERNATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMDENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATALATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAYTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYNKEYMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GZ-BASE64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KANJI ROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSX MUSIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSX-MUSIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSXCONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMETABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALTIMING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASESTEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESETTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEPATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEDULER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEEKVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPSHOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TURBORFDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNTITLED1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YM2413 ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AM_PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASEADDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASEMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CASIMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EG_PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVELOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F4DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEEDBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVERTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTTICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEAPYEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN RAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPPERIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX_INTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIN_INTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PM_PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESETREG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROMPLAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRAMNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRAMSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAYWEEK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LARGEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEREG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PENDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUSTAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAPEPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTREG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AY8910"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDLOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HWNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JP_JIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMPTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSXROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERIOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RP5C01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STROBE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AFTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENPJY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENRT2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOURS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I8255"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSX2+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V9958"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADR1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADR2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENR7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HALT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFF1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFF2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QAAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

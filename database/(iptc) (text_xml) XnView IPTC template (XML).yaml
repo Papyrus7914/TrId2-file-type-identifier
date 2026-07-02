@@ -1,0 +1,12 @@
+Name: XnView IPTC template (XML)
+Description: XnView MP can also export/import as XML based templates beside binary 'IPT' format for adding IPTC metainformation to JPEG images.
+URL: "https://www.xnview.com/wiki/index.php/Metadata#IPTC"
+FileNameExtensions: ["iptc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?><!DOCTYPE iptc_template><iptc_template version=\"1.0\">\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TAG_"
+    CaseSensitive: false

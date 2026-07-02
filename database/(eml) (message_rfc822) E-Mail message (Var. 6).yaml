@@ -1,0 +1,35 @@
+Name: E-Mail message (Var. 6)
+URL: "http://fileformats.archiveteam.org/wiki/Internet_e-mail_message_format"
+FileNameExtensions: ["eml"]
+MimeType: message/rfc822
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Content-Type: multipart/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIPART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIL"
+    CaseSensitive: false

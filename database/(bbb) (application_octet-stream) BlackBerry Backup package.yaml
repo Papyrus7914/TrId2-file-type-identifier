@@ -1,0 +1,26 @@
+Name: BlackBerry Backup package
+URL: "https://en.wikipedia.org/wiki/BlackBerry"
+FileNameExtensions: ["bbb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Databases/1.dat"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RIM BLACKBERRY BACKUP (00000222)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKGINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.DAT"
+    CaseSensitive: false

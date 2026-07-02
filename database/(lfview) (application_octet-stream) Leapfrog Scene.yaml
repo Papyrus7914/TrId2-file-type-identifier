@@ -1,0 +1,14 @@
+Name: Leapfrog Scene
+URL: "https://www.seequent.com/"
+FileNameExtensions: ["lfview"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x81\x82\x83\x84LFView-"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LFVIEW-"
+    CaseSensitive: false

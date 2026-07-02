@@ -1,0 +1,47 @@
+Name: AbiWord document
+Description: AbiWord is a free word processing program similar to Microsoft(R) Word.
+URL: "http://www.abisource.com/"
+FileNameExtensions: ["abw"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-- ABIWORD IS A FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- THIS FILE IS AN ABIWORD DOCUMENT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- YOU SHOULD NOT EDIT THIS FILE BY HAND."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN SOURCE WORD PROCESSOR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.ABISOURCE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false

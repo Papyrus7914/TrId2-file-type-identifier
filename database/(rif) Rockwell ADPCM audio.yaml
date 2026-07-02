@@ -1,0 +1,24 @@
+Name: Rockwell ADPCM audio
+FileNameExtensions: ["rif"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0WAVEfmt \x16\0\0\0\0\x03\x01\0 \x1C\0\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0\x04\0\x01\0\0\0fact\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "\0data"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0"
+    CaseSensitive: true

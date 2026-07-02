@@ -1,0 +1,13 @@
+Name: Athena document (v2.x)
+URL: "http://www.athenasoft.org/sub/software.htm"
+FileNameExtensions: ["ath"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 11
+    AsciiString: "\xB4=.\0\0\0\0\0\0\0\0\0\0\0\0\x12\0\0\0athena_application"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ATHENA_APPLICATIONPK"
+    CaseSensitive: false

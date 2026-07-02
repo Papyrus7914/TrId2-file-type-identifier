@@ -1,0 +1,61 @@
+Name: War Thunder replay
+URL: "https://en.wikipedia.org/wiki/War_Thunder"
+FileNameExtensions: ["wrpl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE5, 0xAC, 0x00, 0x10]
+  - Pos: 6
+    AsciiString: "\x01\0levels/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AIRCRAFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUND_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEATHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TANKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BLK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIR_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

@@ -1,0 +1,22 @@
+Name: MidiCo Karaoke
+URL: "http://www.midicokaraoke.com/"
+FileNameExtensions: ["mdc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MDC\0\x01\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

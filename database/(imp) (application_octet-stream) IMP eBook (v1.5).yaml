@@ -1,0 +1,9 @@
+Name: IMP eBook (v1.5)
+Description: Intermediate file format that holds eBook data for various eBook Readers.
+URL: "http://wiki.mobileread.com/wiki/IMP_software"
+FileNameExtensions: ["imp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x02\0BOOKDOUG"
+    CaseSensitive: true

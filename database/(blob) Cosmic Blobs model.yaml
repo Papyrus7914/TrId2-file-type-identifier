@@ -1,0 +1,16 @@
+Name: Cosmic Blobs model
+URL: "http://www.cosmicblobs.com"
+FileNameExtensions: ["blob"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BLOBS "
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: " v"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\r\n\x1A"
+    CaseSensitive: true

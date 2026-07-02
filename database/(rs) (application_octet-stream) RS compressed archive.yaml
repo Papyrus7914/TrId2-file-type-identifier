@@ -1,0 +1,14 @@
+Name: RS compressed archive
+Description: Seems to be related to QuickZip.
+FileNameExtensions: ["rs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RSVKDATA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CFHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECDR"
+    CaseSensitive: false

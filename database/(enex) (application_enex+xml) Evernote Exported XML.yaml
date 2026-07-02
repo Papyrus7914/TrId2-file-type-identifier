@@ -1,0 +1,71 @@
+Name: Evernote Exported XML
+URL: "http://www.evernote.com"
+FileNameExtensions: ["enex"]
+MimeType: application/enex+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE EN-EXPORT SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE EN-NOTE SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EN-EXPORT EXPORT-DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML.EVERNOTE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVERNOTE-EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EN-MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME"
+    CaseSensitive: false

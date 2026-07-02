@@ -1,0 +1,44 @@
+Name: nexarco Class Definition
+URL: "http://www.nexacro.com/"
+FileNameExtensions: ["xcdl"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<CDL version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLASSDEFINITION CLASSNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUT WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDL VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONCHANGED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLETEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXACRO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XSCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false

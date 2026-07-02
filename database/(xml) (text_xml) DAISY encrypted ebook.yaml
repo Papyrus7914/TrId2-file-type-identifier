@@ -1,0 +1,74 @@
+Name: DAISY encrypted ebook
+URL: "http://www.daisy.org/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENCRYPTIONMETHOD ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE DTBOOK SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTEDDATA XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML-STYLESHEET TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAISYTRANSFORM.XSL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTBOOK-2005-3.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTEDDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIPHERVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIPHERDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAISY.CSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLENC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

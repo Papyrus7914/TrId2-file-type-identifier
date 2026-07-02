@@ -1,0 +1,17 @@
+Name: CAD6 Drawing
+URL: "http://www.cad6.com/"
+FileNameExtensions: ["mkd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Malz++Kassner CAD"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: ";\r\n\r\n=DRAWING=;\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false

@@ -1,0 +1,22 @@
+Name: eMachineShop model
+URL: "http://www.emachineshop.com/"
+FileNameExtensions: ["ems"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MLDRW"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "TPF0\x18CMachineDrawingContainer"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CMACHINEDRAWINGCONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMERINFOIDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSTRAIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMS"
+    CaseSensitive: false

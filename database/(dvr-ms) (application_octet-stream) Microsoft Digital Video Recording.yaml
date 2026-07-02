@@ -1,0 +1,28 @@
+Name: Microsoft Digital Video Recording
+FileNameExtensions: ["dvr-ms"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        0     &           u           f                                               b           l
+    Bytes: [0x30, 0x26, 0xB2, 0x75, 0x8E, 0x66, 0xCF, 0x11, 0xA6, 0xD9, 0x00, 0xAA, 0x00, 0x62, 0xCE, 0x6C]
+  - Pos: 19
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0\x01\x02"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "D\0V\0R\0 \0I\0n\0d\0e\0x\0 \0G\0r\0a\0n\0u\0l\0a\0r\0i\0t\0y\0\0\0\x03\0\x04\0\xF4\x01\0\0\"\0D\0V\0R\0 \0F\0i\0l\0e\0 \0V\0e\0r\0s\0i\0o\0n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "W\0M\0F\0S\0D\0K\0V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0M\0F\0S\0D\0K\0N\0E\0E\0D\0E\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0B\0R\0 \0P\0E\0A\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0S\0V\0B\0R"
+    CaseSensitive: false

@@ -1,0 +1,56 @@
+Name: Planner project
+URL: "https://live.gnome.org/Planner"
+FileNameExtensions: ["planner"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OVERRIDDEN-DAY-TYPE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERRIDDEN-DAY-TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MRPROJECT-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT-START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT-WEEK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOCATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALENDAR ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALENDARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: TeamViewer Configuration
+URL: "http://en.wikipedia.org/wiki/TeamViewer"
+FileNameExtensions: ["tvc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[TeamViewer Configuration]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEAMVIEWER CONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION"
+    CaseSensitive: false

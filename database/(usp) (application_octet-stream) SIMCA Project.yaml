@@ -1,0 +1,35 @@
+Name: SIMCA Project
+URL: "https://umetrics.com/products/simca"
+FileNameExtensions: ["usp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0\x01BlockFile"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "datasettings.uxl"
+    CaseSensitive: true
+  - Pos: 279
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 283
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 286
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 289
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 292
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 295
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 300
+    AsciiString: "\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATASETTINGS.UXL"
+    CaseSensitive: false

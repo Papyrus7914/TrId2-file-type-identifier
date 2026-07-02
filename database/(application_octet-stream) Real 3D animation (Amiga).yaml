@@ -1,0 +1,16 @@
+Name: Real 3D animation (Amiga)
+URL: "https://en.wikipedia.org/wiki/Realsoft_3D"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "REALRVRS\0\0\0\fAMIG"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "RANI"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROBJ"
+    CaseSensitive: false

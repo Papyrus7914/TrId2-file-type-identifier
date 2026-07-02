@@ -1,0 +1,59 @@
+Name: RealProducer Profile
+URL: "https://en.wikipedia.org/wiki/RealAudio"
+FileNameExtensions: ["rpad"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRESENTATIONTYPE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAMCONTEXT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODECFLAVOR TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVGBITRATE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXBITRATE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINNAME TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOMODE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODECNAME TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RN-AUDIOCODEC-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOSTREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCODEC-REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIO-ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUSIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UINT"
+    CaseSensitive: false

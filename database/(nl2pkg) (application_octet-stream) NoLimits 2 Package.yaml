@@ -1,0 +1,29 @@
+Name: NoLimits 2 Package
+URL: "https://en.wikipedia.org/wiki/NoLimits"
+FileNameExtensions: ["nl2pkg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 23
+    AsciiString: "\x02\0\0\t\0\0\0index.xmlm\x92"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANAGER.NLVMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT.NLVMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NL2PARKPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX.XMLM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false

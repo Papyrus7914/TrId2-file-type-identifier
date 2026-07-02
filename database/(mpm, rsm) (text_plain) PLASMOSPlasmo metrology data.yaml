@@ -1,0 +1,13 @@
+Name: PLASMOS/Plasmo metrology data
+FileNameExtensions: ["mpm", "rsm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PLASMOS SD "
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\r\nS E Z\r\n"
+    CaseSensitive: true

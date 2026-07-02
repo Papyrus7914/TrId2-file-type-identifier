@@ -1,0 +1,56 @@
+Name: Sean Conran module
+Description: Music format created by Sean Conran.
+URL: "http://www.exotica.org.uk/wiki/Sean_Conran_(format)"
+FileNameExtensions: ["scr"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 2
+    Bytes: [0x0F]
+  - Pos: 4
+    Bytes: [0x0F]
+  - Pos: 18
+    Bytes: [0x0E]
+  - Pos: 20
+    Bytes: [0x0E]
+  - Pos: 22
+    Bytes: [0x0E]
+  - Pos: 24
+    Bytes: [0x0E]
+  - Pos: 26
+    Bytes: [0x0E]
+  - Pos: 28
+    Bytes: [0x0E]
+  - Pos: 30
+    Bytes: [0x0E]
+  - Pos: 32
+    Bytes: [0x0E]
+  - Pos: 34
+    Bytes: [0x0E]
+  - Pos: 36
+    Bytes: [0x0E]
+  - Pos: 44
+    AsciiString: "\r"
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "\r"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\r"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "\r"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\r"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "\r"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "\r"
+    CaseSensitive: true
+  - Pos: 231
+    Bytes: [0xFA]
+  - Pos: any
+    AsciiString: "CONRAN"
+    CaseSensitive: false

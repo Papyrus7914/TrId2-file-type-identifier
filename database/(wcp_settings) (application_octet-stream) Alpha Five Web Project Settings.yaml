@@ -1,0 +1,36 @@
+Name: Alpha Five Web Project Settings
+Description: text/plain
+URL: "https://en.wikipedia.org/wiki/Alpha_Five_(database)"
+FileNameExtensions: ["wcp_settings"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Category=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HASDISPLAYEDSTARTUPPROMPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTQUALIFIEDPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTRELATIVEPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTEDFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTSORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOP LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPREVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJNAME"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Prescription Drug Event format
+URL: "http://fileformats.archiveteam.org/wiki/Prescription_Drug_Event"
+FileNameExtensions: ["pde"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HDR"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                "
+    CaseSensitive: true

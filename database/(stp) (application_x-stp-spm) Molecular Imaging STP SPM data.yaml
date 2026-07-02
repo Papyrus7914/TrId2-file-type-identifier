@@ -1,0 +1,23 @@
+Name: Molecular Imaging STP SPM data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/stpfile.c"
+FileNameExtensions: ["stp"]
+MimeType: application/x-stp-spm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "UK SOFT\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BUFFER_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLES_X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLES_Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH_X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH_Y"
+    CaseSensitive: false

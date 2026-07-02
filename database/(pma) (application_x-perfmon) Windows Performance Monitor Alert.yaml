@@ -1,0 +1,11 @@
+Name: Windows Performance Monitor Alert
+URL: "https://en.wikipedia.org/wiki/Performance_Monitor"
+FileNameExtensions: ["pma"]
+MimeType: application/x-perfmon
+DetectionPatterns:
+  - Pos: 0
+    #                          @
+    Bytes: [0xDC, 0x05, 0x83, 0x40, 0x00]
+  - Pos: any
+    AsciiString: "METRICS."
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: AmiraMesh (binary)
+URL: "https://en.wikipedia.org/wiki/Amira_(software)"
+FileNameExtensions: ["am"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# AmiraMesh "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PARAMETERS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMIRAMESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORD"
+    CaseSensitive: false

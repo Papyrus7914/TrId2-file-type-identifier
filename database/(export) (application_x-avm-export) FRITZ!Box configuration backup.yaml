@@ -1,0 +1,344 @@
+Name: FRITZ!Box configuration backup
+URL: "http://www.mengelke.de/Projekte/FritzBoxTools"
+FileNameExtensions: ["export"]
+MimeType: application/x-avm-export
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "**** FRITZ!Box "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BRIDGE_WITH_SWITCH_SEPARATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROVIDERDISCONNECTPREVENTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACADDR_WHITELIST_ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QOS_CLASSIFIER_APPL_SIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALMARK RTP_INTERNET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALMARK SIP_INTERNET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "**** END OF FILE ****"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG_INSTALL_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "**** END OF EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IP.PROTO IPV6-ICMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAY_ALWAYS_ONLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSLGLOBALCONFIG {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALMARK SIPDNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALMARK WEBDAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QOS_CFG_INTERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE_PROVIDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTRESULT {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSLDMODE_ROUTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWAREVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSLENCAP_PPPOE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALMARK IGMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QOS_CFG_HIDDEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QOS_CFG_SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSIFIERS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IP.PROTO ICMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "**** CFGFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPINGBURST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSLIFACES {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPINGRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "**** FRITZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOW_MORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODETECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DHCPOPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRECEDENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUEUE_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VLANENCAP_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLFY_VOIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSL_ENCAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HREALTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORTANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QOS_LOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUEUE_LLQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UDP.DPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USB_HOST_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VLANCFG {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VLAN_PRIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AR7CFG {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CEILRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLFY_WWW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFACECTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUEUEREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUEUES {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIP-APPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCP.DEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TR069DNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VLANPRIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WITH_SFQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FIXED_P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRIDGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_BRIDG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICMP-V6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QOS_LAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QOS_WAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLE_I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IP.LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NQOS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTPDNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VCCS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VLANID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WITH_P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D_CON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ED_PR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HPRIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGMP_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDSL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_IGMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WLAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CFG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETH_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GD {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LED_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L_DE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSTV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ON_"
+    CaseSensitive: false

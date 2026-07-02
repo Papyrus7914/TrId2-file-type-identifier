@@ -1,0 +1,10 @@
+Name: MIDI Emulator Project SysEx preset command
+URL: "https://www.philscomputerlab.com/roland-midi-emulator-project-20.html"
+FileNameExtensions: ["syx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              f
+    Bytes: [0xF0, 0x66, 0x04]
+  - Pos: 4
+    Bytes: [0xF7]

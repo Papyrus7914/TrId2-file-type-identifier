@@ -1,0 +1,20 @@
+Name: HighMAT contents info
+URL: "http://fileformats.archiveteam.org/wiki/HighMAT"
+FileNameExtensions: ["hmt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "INFO_HMTd"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P\0L\0A\0Y\0L\0I\0S\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0I\0G\0H\0M\0A\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0M\0A\0G\0E\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0H\0M\0T"
+    CaseSensitive: false

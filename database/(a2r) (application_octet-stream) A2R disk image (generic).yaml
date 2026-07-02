@@ -1,0 +1,11 @@
+Name: A2R disk image (generic)
+URL: "https://applesaucefdc.com/a2r/"
+FileNameExtensions: ["a2r"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "A2R"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\xFF\n\r\n"
+    CaseSensitive: true

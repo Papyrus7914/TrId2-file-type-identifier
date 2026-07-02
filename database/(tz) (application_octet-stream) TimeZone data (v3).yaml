@@ -1,0 +1,11 @@
+Name: TimeZone data (v3)
+URL: "https://en.wikipedia.org/wiki/Time_zone"
+FileNameExtensions: ["tz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TZif3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TZIF3"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: Expression Design drawing (v3, ASCII)
+URL: "http://fileformats.archiveteam.org/wiki/Expression_Design"
+FileNameExtensions: ["xpr"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<LCFV:3>\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ORIENTATN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%LNKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%OBJS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%PRLG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

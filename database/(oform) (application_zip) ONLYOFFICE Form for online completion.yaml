@@ -1,0 +1,176 @@
+Name: ONLYOFFICE Form for online completion
+URL: "https://www.onlyoffice.com/blog/2022/01/7-interesting-facts-about-onlyoffice-forms/"
+FileNameExtensions: ["oform"]
+MimeType: application/zip
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "[Content_Types].xml\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><Types xmlns=\"http://schemas.openxmlformats.org/package/2006/content-types\"><Default  Extension=\"wmf\" ContentType=\"image/x-wmf\"/><Default  Extension=\"png\" ContentType=\"image/png\"/><Default  Extension=\"jp"
+    CaseSensitive: true
+  - Pos: 364
+    AsciiString: "\" ContentType=\""
+    CaseSensitive: true
+  - Pos: 390
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.WORDPROCESSINGML.DOCUMENT.MAIN+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.WORDPROCESSINGML.WEBSETTINGS+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.WORDPROCESSINGML.DOCUMENT.OFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.WORDPROCESSINGML.FONTTABLE+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.WORDPROCESSINGML.FOOTNOTES+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.WORDPROCESSINGML.ENDNOTES+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.WORDPROCESSINGML.SETTINGS+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.WORDPROCESSINGML.STYLES+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.EXTENDED-PROPERTIES+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-PACKAGE.CORE-PROPERTIES+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-PACKAGE.RELATIONSHIPS+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.OLEOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.OPENXMLFORMATS-OFFICEDOCUMENT.THEME+XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.OPENXMLFORMATS.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTNOTES.XML.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS.XML.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XML.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDNOTES.XML.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTNOTES.XML.RELSU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS.XML.RELSU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT  EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDNOTES.XML.RELSU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERRIDE  PARTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBSETTINGS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBSETTINGS.XMLU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTTABLE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTNOTES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDNOTES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEME1.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPES XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCPROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOSX TU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-WMF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2006"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5I8Z"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JPEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S*E5"
+    CaseSensitive: false

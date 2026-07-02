@@ -1,0 +1,10 @@
+Name: Microsoft p-code
+Description: Early MS apps used p-code so that they could be quickly ported on multiple platforms.
+URL: "https://en.wikipedia.org/wiki/Multiplan"
+FileNameExtensions: ["cod", "lod", "ovr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xCE, 0x02]
+  - Pos: 8
+    Bytes: [0x01, 0x00]

@@ -1,0 +1,40 @@
+Name: TinyDisk Meta File
+URL: "http://www.msblabs.org/tinydisk/index.php"
+FileNameExtensions: ["tdf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# TinyDiskFile"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPRESSION ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTION ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUM ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTION KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLUSTER HASHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLUSTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRC32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: Jazz Jackrabbit map
+Description: Extension is a 3 digits number.
+URL: "http://www.shikadi.net/moddingwiki/Jazz_Jackrabbit_Map_Format"
+FileNameExtensions: ["000"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DD\x1A"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "gamepackage v "
+    CaseSensitive: true

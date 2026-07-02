@@ -1,0 +1,20 @@
+Name: Telepaint canvas/stamp bitmap
+URL: "https://www.danielsays.com/ssg-dos-tpt30.html"
+FileNameExtensions: ["ss", "st"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "P2"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "M"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "M"
+    CaseSensitive: true

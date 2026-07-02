@@ -1,0 +1,23 @@
+Name: Jenkinsfile
+Description: "Filename is always: jenkinsfile"
+URL: "http://fileformats.archiveteam.org/wiki/Jenkinsfile"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "pipeline {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STAGES {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AGENT {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEPS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAGE("
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: ANSYS Workbench Binary Extension
+URL: "https://en.wikipedia.org/wiki/Ansys"
+FileNameExtensions: ["wbex"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WBEXHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WBEXFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREE"
+    CaseSensitive: false

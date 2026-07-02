@@ -1,0 +1,17 @@
+Name: Sound Description Interchange Format (text)
+URL: "https://preservation.tylerthorsted.com/2024/05/17/sdif/"
+FileNameExtensions: ["sdif"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SDIF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDFC"
+    CaseSensitive: false

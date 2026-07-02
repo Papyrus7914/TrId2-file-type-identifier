@@ -1,0 +1,32 @@
+Name: MP3 Album Maker MP3 container
+URL: "http://fileformats.archiveteam.org/wiki/MP3_Album_Maker"
+FileNameExtensions: ["mp3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ID3\x03\0\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "TIT2\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.MAKEITONE.NET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAME3.9"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MP3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TALB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIT2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPE1"
+    CaseSensitive: false

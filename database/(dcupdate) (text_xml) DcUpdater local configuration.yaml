@@ -1,0 +1,77 @@
+Name: DcUpdater local configuration
+URL: "https://www.donationcoder.com/Software/Mouser/Updater/"
+FileNameExtensions: ["dcupdate"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" ?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-- VERSION INFO OF LOCALLY INSTALLED CURRENT VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- WHERE TO GET MORE INFO ABOUT THE APP REMOTELY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLY QUERIED ONCE AN UPDATE IS DISCOVERED --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DOWNLOAD ZIP AND UNPACK OVER FILES) --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- BASIC INFO TO DISPLAY IN UPDATER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND SIMPLE REMOTE VERSION FILE --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- OK HOW TO CONDUCT UPDATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DOWNLOAD AND RUN PROGRAM)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONFILEREMOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(VISIT WEBSITE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONINFO.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEFORUPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATEMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COULD BE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNZIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

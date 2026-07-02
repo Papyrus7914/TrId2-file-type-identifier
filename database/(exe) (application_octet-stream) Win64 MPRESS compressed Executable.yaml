@@ -1,0 +1,44 @@
+Name: Win64 MPRESS compressed Executable
+URL: "https://www.autohotkey.com/mpress/mpress_web.htm"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ@\0\x01\0\0\0\x02\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0\n\0\0\0\0\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!Win64 .EXE.\r\n$@\0\0\0PE\0\0d\x86"
+    CaseSensitive: true
+  - Pos: 328
+    AsciiString: ".MPRESS1\0"
+    CaseSensitive: true
+  - Pos: 368
+    AsciiString: ".MPRESS2"
+    CaseSensitive: true
+  - Pos: 507
+    AsciiString: "v"
+    CaseSensitive: true
+  - Pos: 509
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GETMODULEHANDLEA\0\0\0GETPROCADDRESS\0KERNEL32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN64 .EXE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUVWATAUAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MPRESS1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MPRESS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WVSQRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false

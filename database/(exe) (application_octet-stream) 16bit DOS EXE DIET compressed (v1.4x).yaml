@@ -1,0 +1,24 @@
+Name: 16bit DOS EXE DIET compressed (v1.4x)
+Description: COM too are converted to EXE.
+URL: "http://fileformats.archiveteam.org/wiki/DIET_(compression)"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "diet\xF9\x9C\xEB\t"
+    CaseSensitive: true
+  - Pos: 42
+    #        U                             W     V     R     Q     S     P
+    Bytes: [0x55, 0xF8, 0x9C, 0x06, 0x1E, 0x57, 0x56, 0x52, 0x51, 0x53, 0x50, 0x0E, 0xFC, 0x8C, 0xC8]
+  - Pos: any
+    AsciiString: "WVRQSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KHJY"
+    CaseSensitive: false

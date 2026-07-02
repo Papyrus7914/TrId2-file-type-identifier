@@ -1,0 +1,80 @@
+Name: Fink Info-file (with InfoN field)
+URL: "https://en.wikipedia.org/wiki/Fink"
+FileNameExtensions: ["info"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Info"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: ": <<\nPackage: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPILESCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLSCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDDEPENDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE-MD5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOMEPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TAR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SH -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOL"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: Diagram-Master Diagram
+URL: "https://winworldpc.com/product/diagram-master/5x"
+FileNameExtensions: ["dia"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "COMMENT "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END"
+    CaseSensitive: false

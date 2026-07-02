@@ -1,0 +1,20 @@
+Name: SunVox Synthesizer
+URL: "http://www.warmplace.ru/soft/sunvox/"
+FileNameExtensions: ["sunsynth"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SSYN\0\0\0\0VERS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SREL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYP"
+    CaseSensitive: false

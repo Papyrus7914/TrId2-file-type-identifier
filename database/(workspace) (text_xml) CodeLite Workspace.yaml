@@ -1,0 +1,35 @@
+Name: CodeLite Workspace
+URL: "https://en.wikipedia.org/wiki/CodeLite"
+FileNameExtensions: ["workspace"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORKSPACECONFIGURATION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODELITE_WORKSPACE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDMATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false

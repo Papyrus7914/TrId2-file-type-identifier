@@ -1,0 +1,11 @@
+Name: YAML serialized data (UTF-8)
+URL: "https://en.wikipedia.org/wiki/YAML"
+FileNameExtensions: ["yaml", "yml"]
+MimeType: application/yaml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF%YAML"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "."
+    CaseSensitive: true

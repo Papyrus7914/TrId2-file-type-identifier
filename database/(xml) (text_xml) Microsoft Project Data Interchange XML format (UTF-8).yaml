@@ -1,0 +1,266 @@
+Name: Microsoft Project Data Interchange XML format (UTF-8)
+URL: "https://en.wikipedia.org/wiki/Microsoft_Project"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: any
+    AsciiString: "AUTOADDNEWRESOURCESANDTASKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSERTEDPROJECTSLIKESUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVEREMAININGSTARTSFORWARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFTPROJECTSERVERURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVECOMPLETEDENDSFORWARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTFIXEDCOSTACCRUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVEREMAININGSTARTSBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTEXTERNALLYEDITED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASELINEFOREARNEDVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENCYSYMBOLPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGNORERESOURCECALENDAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVECOMPLETEDENDSBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIPLECRITICALPATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLITSINPROGRESSTASKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPREADPERCENTCOMPLETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSUBPROJECTREADONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWTASKSEFFORTDRIVEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOVEFILEPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTOVERTIMERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTSTANDARDRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTTASKEVMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITABLEACTUALCOSTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELINGDELAYFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASKUPDATESRESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRITICALSLACKLIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENDEDATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTFINISHTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EARNEDVALUEMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWTASKSESTIMATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMAININGDURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEDULEFROMSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTSTARTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HONORCONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELASSIGNMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELINGCANSPLIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWTASKSTARTDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPREADACTUALCOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTTASKTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FISCALYEARSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTRAINTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENCYDIGITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATIONFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISBASECALENDAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINUTESPERWEEK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTUALSINSYNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINUTESPERDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERALLOCATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMAININGWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADMINPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAYSPERMONTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTERNALTASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTLINELEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEEKSTARTDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKINGTIMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALENDARUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FYSTARTDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESUMEVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAYWORKING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINISHDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTALSLACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALENDARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MILESTONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECURRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROMTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEEKDAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAYTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIDEBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISNULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLLUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEST"
+    CaseSensitive: false

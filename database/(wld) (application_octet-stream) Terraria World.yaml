@@ -1,0 +1,11 @@
+Name: Terraria World
+URL: "https://en.wikipedia.org/wiki/Terraria"
+FileNameExtensions: ["wld"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0relogic\x02"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RELOGIC"
+    CaseSensitive: false

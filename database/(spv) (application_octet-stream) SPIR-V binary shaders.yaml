@@ -1,0 +1,20 @@
+Name: SPIR-V binary shaders
+URL: "https://registry.khronos.org/SPIR-V/"
+FileNameExtensions: ["spv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x03\x02#\a\0\0\x01\0\0\0\x0E\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TYPE.2D.IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLSL.STD.450"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false

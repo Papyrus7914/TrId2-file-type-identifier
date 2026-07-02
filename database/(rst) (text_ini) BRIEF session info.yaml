@@ -1,0 +1,29 @@
+Name: BRIEF session info
+URL: "https://en.wikipedia.org/wiki/Brief_(text_editor)"
+FileNameExtensions: ["rst"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[edit-]\r\nscreen="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SHARED-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOGGLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRIEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRCH"
+    CaseSensitive: false

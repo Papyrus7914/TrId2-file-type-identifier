@@ -1,0 +1,14 @@
+Name: MADE Engine game data archive
+URL: "https://wiki.scummvm.org/index.php/MADE"
+FileNameExtensions: ["blk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0FLEX"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLEX"
+    CaseSensitive: false

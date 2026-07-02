@@ -1,0 +1,50 @@
+Name: Symantec Endpoint Protection Update
+URL: "https://en.wikipedia.org/wiki/Symantec_Endpoint_Protection"
+FileNameExtensions: ["jdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "VIRSCAN1.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATALOG.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZDONE.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V.GRD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V.SIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGS"
+    CaseSensitive: false

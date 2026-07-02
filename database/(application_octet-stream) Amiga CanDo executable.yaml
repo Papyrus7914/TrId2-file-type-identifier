@@ -1,0 +1,19 @@
+Name: Amiga CanDo executable
+URL: "https://randocity.com/2018/03/27/cando-an-amiga-programming-language/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x03\xF3\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTUITION.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANDO.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COULD NOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIND"
+    CaseSensitive: false

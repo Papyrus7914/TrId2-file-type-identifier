@@ -1,0 +1,13 @@
+Name: U3 application Package
+URL: "http://en.wikipedia.org/wiki/U3"
+FileNameExtensions: ["u3p"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MANIFEST.U3IPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ICOPK"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: RIS citation format
+URL: "http://fileformats.archiveteam.org/wiki/RefMan"
+FileNameExtensions: ["ris"]
+MimeType: application/x-research-info-systems
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "  - "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ER  -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TY  -"
+    CaseSensitive: false

@@ -1,0 +1,56 @@
+Name: The Perfect General Map Data
+URL: "https://www.mobygames.com/game/dos/perfect-general"
+FileNameExtensions: ["mdt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GMAP"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "TOC "
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "MAP "
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "TPRT"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "TLBL"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "MLBL"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "MAP "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESTROYED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRATERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERRAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OREST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIDGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOWN"
+    CaseSensitive: false

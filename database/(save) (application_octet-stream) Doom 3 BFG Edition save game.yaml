@@ -1,0 +1,20 @@
+Name: "Doom 3: BFG Edition save game"
+URL: "https://www.mobygames.com/game/58263/doom3-bfg-edition/"
+FileNameExtensions: ["save"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "\x13\0\0\0DOOM 3: BFG Edition"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0\0game/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BFG EDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOOM 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME"
+    CaseSensitive: false

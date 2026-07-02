@@ -1,0 +1,8 @@
+Name: Dzip compressed archive (v2.x)
+Description: A file compressor by Nolan Pflug, Stefan Schwoon and others.
+FileNameExtensions: ["dz"]
+MimeType: application/x-dzip
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DZ\x02"
+    CaseSensitive: true

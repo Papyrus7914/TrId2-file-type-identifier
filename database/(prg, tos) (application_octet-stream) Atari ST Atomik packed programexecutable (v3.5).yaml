@@ -1,0 +1,80 @@
+Name: Atari ST Atomik packed program/executable (v3.5)
+URL: "https://temlib.org/AtariForumWiki/index.php/Atomik_Packer"
+FileNameExtensions: ["prg", "tos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 70
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 76
+    #        A                 B     ␠           a                       &     M     M                       ␠     +                                                                 A           \b          ␠     .           \b    G                       I                       J           g                       r                       B     (                             g                 <                 f           G                       `                       `           G                       P     N     $     ^     ,           ,                       ,           ,                                   ,           ,           C                       p           $     L     (           Q                       G                 X     ␠     /
+    Bytes: [0x41, 0xFA, 0x02, 0x42, 0x20, 0x18, 0x61, 0x00, 0x00, 0x8C, 0x26, 0x4D, 0x4D, 0xFA, 0xFE, 0xC2, 0x20, 0x2B, 0x00, 0x02, 0xD0, 0xAB, 0x00, 0x06, 0xD0, 0xAB, 0x00, 0x0E, 0x41, 0xF3, 0x08, 0x1C, 0x20, 0x2E, 0x00, 0x08, 0x47, 0xEB, 0x00, 0x1C, 0x49, 0xE8, 0x00, 0x10, 0x4A, 0x90, 0x67, 0x1E, 0xD7, 0xD8, 0x72, 0x00, 0xD1, 0x93, 0x42, 0x28, 0xFF, 0xFF, 0x12, 0x18, 0x67, 0x10, 0xB2, 0x3C, 0x00, 0x01, 0x66, 0x06, 0x47, 0xEB, 0x00, 0xFE, 0x60, 0xEC, 0xD6, 0xC1, 0x60, 0xE6, 0x47, 0xED, 0x00, 0x02, 0x50, 0x4E, 0x24, 0x5E, 0x2C, 0xD3, 0x2C, 0x13, 0xD5, 0xDB, 0x2C, 0xCA, 0x2C, 0xD3, 0xDC, 0x93, 0xD5, 0xDB, 0x2C, 0xCA, 0x2C, 0xD3, 0x43, 0xFA, 0x00, 0x1A, 0x70, 0x03, 0x24, 0x4C, 0x28, 0xD9, 0x51, 0xC8, 0xFF, 0xFC, 0x47, 0xFA, 0xFF, 0x58, 0x20, 0x2F, 0x00]
+  - Pos: 202
+    #        K                       N
+    Bytes: [0x4B, 0xED, 0x00, 0x1C, 0x4E, 0xD2]
+  - Pos: 209
+    AsciiString: "K"
+    CaseSensitive: true
+  - Pos: 222
+    AsciiString: "N"
+    CaseSensitive: true
+  - Pos: 224
+    AsciiString: "/\0K\xF0\b\x04 \x18,H\xDD\xC0NR\xFF\xE6K\xED\0\0\x1E&`\0\0"
+    CaseSensitive: true
+  - Pos: 250
+    AsciiString: ":\x03\xDE\aU\xCD\xFF\xFCg\x1Cd\x06\x9ACDE`$|\x03a"
+    CaseSensitive: true
+  - Pos: 272
+    AsciiString: "g\x02`\x1A|\aa"
+    CaseSensitive: true
+  - Pos: 280
+    AsciiString: "g\f\x06E\0\x0F`\x0E\x1E&\xDF\a`\xD8|\ra"
+    CaseSensitive: true
+  - Pos: 298
+    #              E                       C     I
+    Bytes: [0x06, 0x45, 0x01, 0x0E, 0xDA, 0x43, 0x49, 0xFA, 0x01]
+  - Pos: 308
+    AsciiString: "4\x05f"
+    CaseSensitive: true
+  - Pos: 312
+    AsciiString: "\xDE\af\x04\x1E&\xDF\ae\x04|\x01`"
+    CaseSensitive: true
+  - Pos: 326
+    AsciiString: "|\x03a"
+    CaseSensitive: true
+  - Pos: 330
+    AsciiString: "J*\xFF\xE6g\b\x1B2P\xF0`\0\0"
+    CaseSensitive: true
+  - Pos: 344
+    #                    \b                      f           `                                                           `
+    Bytes: [0x10, 0x15, 0x08, 0x05, 0x00, 0x03, 0x66, 0x02, 0x60, 0x04, 0x06, 0x05, 0x00, 0xF0, 0x90, 0x05, 0x1B, 0x00, 0x60]
+  - Pos: 470
+    #              $
+    Bytes: [0x1B, 0x24]
+  - Pos: any
+    AsciiString: "Y %ATOMIK V3.5 BY ALTAIR VMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JENU"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: StuffIt compressed archive (var.2)
+URL: "https://en.wikipedia.org/wiki/StuffIt"
+FileNameExtensions: ["sit"]
+MimeType: application/x-stuffit
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SIT!\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "rLau"
+    CaseSensitive: true

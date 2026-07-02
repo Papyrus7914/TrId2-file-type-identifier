@@ -1,0 +1,10 @@
+Name: ASCII armored RSA Private Key
+FileNameExtensions: ["key"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-----BEGIN RSA PRIVATE KEY-----"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-----END RSA PRIVATE KEY-----"
+    CaseSensitive: false

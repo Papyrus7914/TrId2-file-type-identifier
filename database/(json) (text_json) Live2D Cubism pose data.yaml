@@ -1,0 +1,20 @@
+Name: Live2D Cubism pose data
+URL: "https://www.live2d.com/en/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PARTS_VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIVE2D POSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

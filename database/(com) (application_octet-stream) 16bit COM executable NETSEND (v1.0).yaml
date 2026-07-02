@@ -1,0 +1,23 @@
+Name: 16bit COM executable NETSEND (v1.0)
+URL: "http://fileformats.archiveteam.org/wiki/NETSEND"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XPPPYZIQD[L-f6-g41GDSXu'@,~P^P_O,!(GU(GZ(Gnu5-NETSEND_V1.00_JRT=\r\nCFFFRX,`,`2$F=@!t.rQ0%IuL0%(%(%GERYAARX2%(%t8-"
+    CaseSensitive: true
+  - Pos: 123
+    AsciiString: "__0"
+    CaseSensitive: true
+  - Pos: 130
+    AsciiString: "\r\n1v1v0<0xD\"1<0$G\"P/0A0^F\"12d\"1TP)0B0z0z1^Q+0m1TQ-w\"1+1S1#0B0zd\"0]\r\nQ+0z0Y1_1o0Sh\"0u0XP*d\"0]P,0z0Y1_1uv\"P-q\"e\"e\"0S0.0>1kP-0&E\"001S1.\r\n0S130X1(K\"100(100(100(0T16v\"081/0$M\"070S050T0-v\"0/0C0T0\"v\"081/0$\r\nM\"070X17I\"0XQ+L\"0_N\"0S050T0-v\"0/0C0X1#L\"1S0#1#0F19P*D\"0<Q/1F1C0<\r\n1#D\"1C0i1<0x1Y0<P*D\"0p17!(c)JIM_TUCKER_jtucker@adam.com.au_XXXX<\r\ns'7O!!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(C)JIM_TUCKER_JTUCKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAM.COM.AU_XXXX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETSEND"
+    CaseSensitive: false

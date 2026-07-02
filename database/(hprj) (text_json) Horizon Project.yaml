@@ -1,0 +1,48 @@
+Name: Horizon Project
+Description: Horizon is a free EDA package.
+URL: "https://github.com/carrotIndustries/horizon"
+FileNameExtensions: ["hprj"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMATIC_FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK_FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOARD_FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOP_BLOCK.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIAS_DIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOP_SCH.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOARD.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POOL_UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_TOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

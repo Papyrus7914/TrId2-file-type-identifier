@@ -1,0 +1,10 @@
+Name: Compact Pro compressed archive
+URL: "http://fileformats.archiveteam.org/wiki/Compact_Pro"
+FileNameExtensions: ["cpt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01, 0x01]
+  - Pos: 4
+    AsciiString: "\0"
+    CaseSensitive: true

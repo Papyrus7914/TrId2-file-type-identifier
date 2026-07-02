@@ -1,0 +1,113 @@
+Name: Poste Italiane Email Digital Postmark
+URL: "https://en.wikipedia.org/wiki/Digital_Postmarks"
+FileNameExtensions: ["pie"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<ns2:PostMarkedReceipt><PKCS7SignedReceipt><Receipt><TransactionKey><Locator><CountryCode>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RECEIPTSIGNATURE MIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVOCATIONSTATUSQUALIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMPTOKEN MIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICEPROVIDER XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTMARKIMAGE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKCS7SIGNEDRECEIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSAX509SUBJECTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVIRONMENT XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTMARKEDRECEIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.UPU.HASH-SHA1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKCS7-SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIPTMETADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP-TOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGEIMPRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTE ITALIANE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMPVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSACTIONKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAMIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTRYCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUESTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGESTALGO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUESTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S.P.A."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA-1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

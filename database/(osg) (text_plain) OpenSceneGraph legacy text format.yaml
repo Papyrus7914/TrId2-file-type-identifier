@@ -1,0 +1,17 @@
+Name: OpenSceneGraph legacy text format
+URL: "http://fileformats.archiveteam.org/wiki/OpenSceneGraph"
+FileNameExtensions: ["osg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Group {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CULLINGACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: RetroPlatform Player archive
+URL: "https://www.retroplatform.com/kb/15-122"
+FileNameExtensions: ["rp9"]
+MimeType: application/vnd.cloanto.rp9
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "RP9-MANIFEST.XML"
+    CaseSensitive: false

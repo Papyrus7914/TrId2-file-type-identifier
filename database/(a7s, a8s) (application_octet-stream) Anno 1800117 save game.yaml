@@ -1,0 +1,23 @@
+Name: Anno 1800/117 save game
+URL: "https://www.mobygames.com/group/884/anno-ad-series/"
+FileNameExtensions: ["a7s", "a8s"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Resource File V2.2\0"
+    CaseSensitive: true
+  - Pos: 792
+    #        x
+    Bytes: [0x78, 0xDA]
+  - Pos: any
+    AsciiString: "G\0A\0M\0E\0S\0E\0T\0U\0P\0.\0A\07\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0E\0A\0D\0E\0R\0.\0A\07\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0A\0T\0A\0.\0A\07\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0E\0T\0A\0.\0A\07\0S"
+    CaseSensitive: false

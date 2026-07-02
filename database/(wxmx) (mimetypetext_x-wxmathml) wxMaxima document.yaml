@@ -1,0 +1,26 @@
+Name: wxMaxima document
+URL: "https://en.wikipedia.org/wiki/Maxima_(software)#Interfaces"
+FileNameExtensions: ["wxmx"]
+MimeType: mimetypetext/x-wxmathml
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypetext/x-wxmathmlPK\x03\x04"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPETEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-WXMATHMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false

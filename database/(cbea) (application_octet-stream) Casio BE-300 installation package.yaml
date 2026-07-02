@@ -1,0 +1,88 @@
+Name: Casio BE-300 installation package
+URL: "https://en.wikipedia.org/wiki/Casio_Cassiopeia"
+FileNameExtensions: ["cbea"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x01]
+  - Pos: 3
+    AsciiString: "\0\0\0\0\0C\0a\0s\0i\0o\0 \0J\0x\07\04\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0 \0C\0E\03\0.\00\00"
+    CaseSensitive: true
+  - Pos: 264
+    AsciiString: "Install.inf\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0A\0S\0I\0O\0 \0J\0X\07\04"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYFLG_REPLACEONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETE FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0E\03\0.\00\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COREDLL.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL.INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPY FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RICH"
+    CaseSensitive: false

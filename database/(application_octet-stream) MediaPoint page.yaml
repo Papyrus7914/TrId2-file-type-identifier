@@ -1,0 +1,19 @@
+Name: MediaPoint page
+URL: "https://github.com/evaneykelen/mediapoint-amiga"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PAGETALK "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBJECTSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN"
+    CaseSensitive: false

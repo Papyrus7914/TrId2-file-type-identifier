@@ -1,0 +1,20 @@
+Name: OS/2 Device Driver Profile
+URL: "https://en.wikipedia.org/wiki/OS/2"
+FileNameExtensions: ["ddp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ":TITLE\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

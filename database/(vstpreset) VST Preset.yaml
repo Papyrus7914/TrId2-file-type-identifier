@@ -1,0 +1,55 @@
+Name: VST Preset
+URL: "http://en.wikipedia.org/wiki/Steinberg_Cubase"
+FileNameExtensions: ["vstpreset"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VST3\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PLUGINCATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITEPROTECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINVENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VST3UNIQUEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSTPRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METAINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIDDEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false

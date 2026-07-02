@@ -1,0 +1,10 @@
+Name: 16bit DOS COM2EXE (Tom Torfs) executable (v1.0)
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x02\0\0\0\xFF\xFF\xF0\xFF\xFE\xFF\0\0\0\x01\xF0\xFF \0\0\0C2X\x01"
+    CaseSensitive: true

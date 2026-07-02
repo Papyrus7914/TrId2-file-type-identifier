@@ -1,0 +1,38 @@
+Name: Vizact 2000 Wizard
+URL: "https://en.wikipedia.org/wiki/Microsoft_Vizact"
+FileNameExtensions: ["vzw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<VIZACTWIZARD VERSION=\"1.0\">\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEMPLATE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INNERTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMIT MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DLGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

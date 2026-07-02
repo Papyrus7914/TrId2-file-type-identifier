@@ -1,0 +1,14 @@
+Name: G2O 2D SLAM
+URL: "https://github.com/RainerKuemmerle/g2o"
+FileNameExtensions: ["g2o"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VERTEX_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERTEX_SE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGE_"
+    CaseSensitive: false

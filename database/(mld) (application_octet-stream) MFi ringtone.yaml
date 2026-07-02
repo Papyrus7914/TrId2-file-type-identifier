@@ -1,0 +1,24 @@
+Name: MFi ringtone
+Description: Melody Format for imode.
+URL: "https://lpcwiki.miraheze.org/wiki/Ringtone_file_formats#MFi_(.MLD)"
+FileNameExtensions: ["mld"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "melo\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

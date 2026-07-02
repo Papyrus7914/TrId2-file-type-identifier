@@ -1,0 +1,28 @@
+Name: Epanet data file
+URL: "http://www.epanet.com/downloads.asp"
+FileNameExtensions: ["net"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x06\t<EPANET2>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTINUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONCEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPANET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIXED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN"
+    CaseSensitive: false

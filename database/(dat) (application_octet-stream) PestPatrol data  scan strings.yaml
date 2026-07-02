@@ -1,0 +1,11 @@
+Name: PestPatrol data / scan strings
+URL: "https://en.wikipedia.org/wiki/CA_Anti-Spyware"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PEST"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LXHB"
+    CaseSensitive: false

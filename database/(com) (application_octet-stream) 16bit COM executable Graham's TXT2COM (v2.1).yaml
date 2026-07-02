@@ -1,0 +1,11 @@
+Name: 16bit COM executable Graham's TXT2COM (v2.1)
+Description: Text to COM converter tool by Keith P. Graham.
+URL: "http://fileformats.archiveteam.org/wiki/TXT2COM_(Keith_P._Graham)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE8:\x01\xCD TXT2COM Conversion utility. Vers 1.1\r\nCopyright 1987 by Keith P. Graham\r\nThis file cannot be distributed for SALE without\r\nexpress written permission from Keith P. Graham\r\n238 Germonds Road, W. Nyack, NY 10994, (914) 623-4161\r\nTo view the contents of this file\r\nenter the name of the file from the DOS prompt.\r\n\x1A"
+    CaseSensitive: true
+  - Pos: 319
+    Bytes: [0xB8]

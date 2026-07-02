@@ -1,0 +1,10 @@
+Name: Liquid Tracker module
+URL: "http://fileformats.archiveteam.org/wiki/Liquid_Tracker_module"
+FileNameExtensions: ["liq"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Liquid Module:"
+    CaseSensitive: true
+  - Pos: 64
+    Bytes: [0x1A]

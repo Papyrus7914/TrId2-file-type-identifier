@@ -1,0 +1,11 @@
+Name: KiriKiri TLG5 bitmap
+URL: "http://fileformats.archiveteam.org/wiki/TLG_(KiriKiri)"
+FileNameExtensions: ["tlg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TLG0.0\0sds\x1A"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "TLG5.0\0raw\x1A\x04\0\0\0"
+    CaseSensitive: true

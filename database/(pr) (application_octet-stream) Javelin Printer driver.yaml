@@ -1,0 +1,17 @@
+Name: Javelin Printer driver
+URL: "http://en.wikipedia.org/wiki/Javelin_Software"
+FileNameExtensions: ["pr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FW20I1A"
+    CaseSensitive: true
+  - Pos: 456
+    AsciiString: " !\"#$%&'()*+,-./0123456789:;<=>?"
+    CaseSensitive: true
+  - Pos: 489
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    CaseSensitive: true
+  - Pos: 518
+    AsciiString: "^_`abcdefghijklmnopqrstuvwxyz"
+    CaseSensitive: true

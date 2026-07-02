@@ -1,0 +1,49 @@
+Name: Windows Installer Patch
+URL: "http://www.microsoft.com"
+FileNameExtensions: ["msp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: 1025
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1027
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1029
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1031
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1033
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1035
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1037
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1039
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1041
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION"
+    CaseSensitive: false

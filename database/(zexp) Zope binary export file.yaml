@@ -1,0 +1,14 @@
+Name: Zope binary export file
+Description: Zope is an open source application server for building content management systems, intranets, portals, and custom applications.
+URL: "http://www.zope.org"
+FileNameExtensions: ["zexp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZEXP"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "((U"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "OFS."
+    CaseSensitive: true

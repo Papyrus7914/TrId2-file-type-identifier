@@ -1,0 +1,11 @@
+Name: Facil text document
+Description: MS-DOS word processor from Brazil by Facil Informatica.
+FileNameExtensions: ["fcl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0=\x06PADRAO\x17\xB5\x01\x01A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PADRAO"
+    CaseSensitive: false

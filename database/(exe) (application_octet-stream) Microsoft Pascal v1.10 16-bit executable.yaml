@@ -1,0 +1,232 @@
+Name: Microsoft Pascal v1.10 16-bit executable
+URL: "https://en.wikipedia.org/wiki/Microsoft_Pascal"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "`\0\0\0\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 16
+    Bytes: [0x00, 0x01]
+  - Pos: 20
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1C\0\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 63
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "USER    USER    \0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0WBWBWB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LN OF NON-POSITIVE ARGUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEGATIVE REAL TO REAL POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP ALLOCATOR INTERRUPTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TANGENT ARGUMENT TOO SMALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIN OR COS ARGUMENT RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQRT OF NEGATIVE ARGUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCSIN OR ARCCOS OF REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS \0 LINE  IN  OF PC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WBWB\0\0\0\0\0\0WB\0\0\0\0\0\0\0\0WBWB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSIGNED DIVIDE BY ZERO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSIGNED MATH OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUND ARGUMENT RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL DIVIDE BY ZERO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXP ARGUMENT RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL MATH OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP IS INVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO ROOM IN HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERLINELPT1PRN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA FORMATENE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE FULLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE NAMEILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE OFFLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE IN USEILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NAMEFLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NOT OPENE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE SYSTEMILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARD DATA FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE TOO LONGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOST FILEFLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATIONMEILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTECTED FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACK OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERREQQ     0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAS00000.$$$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILUXM.PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASUXM.PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISHM.PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERRE.PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILF.PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAH.PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISO.PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISY.PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTLX.PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILFQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILUQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAHQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISHQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISOQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISYQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASUQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTLXQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0BBR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0R3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DB+E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TB+U"
+    CaseSensitive: false

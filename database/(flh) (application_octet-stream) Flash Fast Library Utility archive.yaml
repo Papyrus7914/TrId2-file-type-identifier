@@ -1,0 +1,11 @@
+Name: "Flash: Fast Library Utility archive"
+URL: "http://fileformats.archiveteam.org/wiki/Flash_(Micro_TECH_Systems)"
+FileNameExtensions: ["flh"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 9
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\x1A\0\0\0"
+    CaseSensitive: true

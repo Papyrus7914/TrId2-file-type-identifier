@@ -1,0 +1,18 @@
+Name: DirectX Compiled Shader Object
+FileNameExtensions: ["cso"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DXBC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ISGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAT"
+    CaseSensitive: false

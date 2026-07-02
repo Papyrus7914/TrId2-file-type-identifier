@@ -1,0 +1,30 @@
+Name: 16bit DOS COM LHArc SFX archive (v1.x)
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEB]
+  - Pos: 3
+    AsciiString: "\0 $"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: " (c)"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\r\n\n$\x01\x04\f\x180Overwrite "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$MEMORY$WRITE$HEADER$CRC ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0OVERWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-LH0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LHARC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOSHI"
+    CaseSensitive: false

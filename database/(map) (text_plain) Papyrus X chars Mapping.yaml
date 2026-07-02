@@ -1,0 +1,17 @@
+Name: Papyrus X chars Mapping
+URL: "https://exxosforum.co.uk/atari/mirror/myatari/issues/feb2004/papyrusx.htm"
+FileNameExtensions: ["map"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CHARSET-NAME="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CODEPAGE-NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARSET-NAME-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNICODE-MAP"
+    CaseSensitive: false

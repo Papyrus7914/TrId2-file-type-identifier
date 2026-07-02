@@ -1,0 +1,12 @@
+Name: Superbase form
+Description: Possibly for other Superbase data too.
+URL: "https://en.wikipedia.org/wiki/Superbase_(database)"
+FileNameExtensions: ["sbv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FEDF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FEDP"
+    CaseSensitive: false

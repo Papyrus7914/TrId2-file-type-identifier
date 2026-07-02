@@ -1,0 +1,74 @@
+Name: "Unreal II: The Awakening save game"
+URL: "https://www.mobygames.com/game/8377/unreal-ii-the-awakening/"
+FileNameExtensions: ["usa"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    *           n
+    Bytes: [0xC1, 0x83, 0x2A, 0x9E, 0x6E, 0x00]
+  - Pos: 8
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SPECIALSTATE\0NONE\0\0\0\0\0SPECIALPARAM\0NONE\0\0\0\0\0USEIDLES\0FALSE\0\0\0\0\0KNOCKDOWNDIR\0NONE\0\0\0\0\0MOOD\0NORMAL\0\0\0\0\0INDIALOGMODE\0FALSE\0\0\0\0\0DIALOGSTATE\0OFF\0\0\0\0\0RAGDOLLDETAIL\0HIGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTURE\0STAND\0\0\0\0\0HEALTH\0NORMAL\0\0\0\0\0DIRECTION\0NONE\0\0\0\0\0TURNING\0NONE\0\0\0\0\0TURNANGLE\0NONE\0\0\0\0\0SPEED\0RUN\0\0\0\0\0WEAPONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U2PLAYERNETTESTCONTROLLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U2USEMANAGERPLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLLERBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U2PAWNOWNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPATCHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U2AMBIENTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U2PLAYERSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U2WEAPONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUTATOR0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U2DIALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZONEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MYLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCOWNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U2PAWNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U2AI"
+    CaseSensitive: false

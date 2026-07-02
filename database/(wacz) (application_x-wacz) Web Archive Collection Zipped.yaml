@@ -1,0 +1,185 @@
+Name: Web Archive Collection Zipped
+URL: "http://fileformats.archiveteam.org/wiki/WACZ"
+FileNameExtensions: ["wacz"]
+MimeType: application/x-wacz
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "pages/pages.jsonl{\"format\":\"json-pages-1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATAPACKAGE-DIGEST.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAPACKAGE.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA.WARC.GZPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JSON-PAGES-1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES.JSONLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA-PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORDDIGEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WACZ_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX.CDXPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JAVASCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNEDDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA-256"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA256"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

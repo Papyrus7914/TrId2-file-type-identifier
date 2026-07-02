@@ -1,0 +1,32 @@
+Name: Microsoft Object Description Language
+URL: "http://fileformats.archiveteam.org/wiki/ODL_(Microsoft_Object_Description_Language)"
+FileNameExtensions: ["odl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION(1.0)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORTLIB("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COCLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STDOLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID("
+    CaseSensitive: false

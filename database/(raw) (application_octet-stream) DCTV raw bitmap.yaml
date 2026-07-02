@@ -1,0 +1,17 @@
+Name: DCTV raw bitmap
+URL: "http://amiga.resource.cx/exp/dctv"
+FileNameExtensions: ["raw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "DCTVANNO\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "Written by DCTV "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DCTVANNO"
+    CaseSensitive: false

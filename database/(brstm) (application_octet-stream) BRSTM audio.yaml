@@ -1,0 +1,15 @@
+Name: BRSTM audio
+Description: Used on Nintendo Wii and GameCube.
+URL: "http://fileformats.archiveteam.org/wiki/Nintendo_GameCube_/_Wii_BRSTM"
+FileNameExtensions: ["brstm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RSTM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false

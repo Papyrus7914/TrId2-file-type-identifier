@@ -1,0 +1,32 @@
+Name: 16bit DOS EXE NOCLIP protected (v4.1)
+Description: DOS Executables protector by TD TECNOLOGIA DIGITAL.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\xAE\x12TD\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTDTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTIONS COPYRIGHT (C) 1997 - TD  TECNOLOGIA DIGITAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+55 11 280-9962*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+55 11 280-5531"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIKAVIR\041"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRASIL"
+    CaseSensitive: false

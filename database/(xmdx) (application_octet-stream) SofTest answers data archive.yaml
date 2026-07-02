@@ -1,0 +1,20 @@
+Name: SofTest answers data archive
+URL: "https://examsoft.com/"
+FileNameExtensions: ["xmdx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "answers_"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: ".json"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANSWERS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JSONPK"
+    CaseSensitive: false

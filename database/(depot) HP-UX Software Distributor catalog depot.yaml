@@ -1,0 +1,199 @@
+Name: HP-UX Software Distributor catalog depot
+URL: "http://docs.hp.com"
+FileNameExtensions: ["depot"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "catalog/INDEX"
+    CaseSensitive: true
+  - Pos: 257
+    AsciiString: "ustar\000root"
+    CaseSensitive: true
+  - Pos: 512
+    AsciiString: "distribution\nlayout_version "
+    CaseSensitive: true
+  - Pos: 543
+    AsciiString: "\ndata_model_revision "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA_MODEL_REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_LOCATABLE FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL_DIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE AVAILABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCE_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUT_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OS_NAME HP-UX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL_FILESETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTRIBUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OS_RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E PRODUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAG INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAG INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME_MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH_MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "README"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "00ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RE IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USTAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

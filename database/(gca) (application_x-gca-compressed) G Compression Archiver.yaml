@@ -1,0 +1,12 @@
+Name: G Compression Archiver
+Description: DGCA is a freeware compression utility created in 2001 by Shin-ichi Tsuruta.
+URL: "http://www.emit.jp/gca/gca.html"
+FileNameExtensions: ["gca"]
+MimeType: application/x-gca-compressed
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GCAX"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "GCF"
+    CaseSensitive: true

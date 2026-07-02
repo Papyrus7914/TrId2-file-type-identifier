@@ -1,0 +1,47 @@
+Name: Shotcut project
+URL: "https://en.wikipedia.org/wiki/Shotcut"
+FileNameExtensions: ["mlt"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MLT LC_NUMERIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYLIST ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESSIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYLIST0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASPECT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

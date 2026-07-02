@@ -1,0 +1,50 @@
+Name: Mp3Wrap MP3 container
+URL: "http://fileformats.archiveteam.org/wiki/Mp3Wrap"
+FileNameExtensions: ["mp3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ID3\x03\0\0\0\0\x03BTRCK\0\0\0\x03"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "TENC\0\0\0\x11@\0\0Mp3Wrap  v.  "
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "http://mp3wrap.sourceforge.netTCOP\0\0\0\x01\0\0\0TOPE\0\0\0\x01\0\0\0TCOM\0\0\0\x01\0\0\0COMM\0\0\0\xA0\0\0\0\0e \0This file is wrapped with Mp3Wrap. Get mp3splt, the free tool to split original files at http://mp3splt.sourceforge.net. Please do not remove this comment.TCON\0\0\0\x01\0\0\0TYER\0\0\0\x01\0\0\0TALB\0\0\0\x1F\0\0\0http://mp3splt.sourceforge.netTPE1\0\0\0\x1A\0\0\0File wrapped with Mp3WrapTIT2\0\0\0&\0\0\0Use Mp3Splt to obtain original tracks\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0WRAP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MP3SPLT.SOURCEFORGE.NET. PLEASE DO NOT REMOVE THIS COMMENT.TCON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE MP3SPLT TO OBTAIN ORIGINAL TRACKS\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0WRAP05"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS FILE IS WRAPPED WITH MP3WRAP. GET MP3SPLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE FREE TOOL TO SPLIT ORIGINAL FILES AT HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE WRAPPED WITH MP3WRAPTIT2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MP3SPLT.SOURCEFORGE.NETTPE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MP3WRAP.SOURCEFORGE.NETTCOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MP3WRAP  V."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTRCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MP3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUUU"
+    CaseSensitive: false

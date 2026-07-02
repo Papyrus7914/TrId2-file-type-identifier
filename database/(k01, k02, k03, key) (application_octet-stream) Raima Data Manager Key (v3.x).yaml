@@ -1,0 +1,13 @@
+Name: Raima Data Manager Key (v3.x)
+URL: "http://web.archive.org/web/20161007093345/http://docs.raima.com/rdme/8_1/Content/GS/RelNotes.htm"
+FileNameExtensions: ["k01", "k02", "k03", "key"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\0\0\0\0Raima Data Manager Version 3."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RAIMA DATA MANAGER VERSION 3."
+    CaseSensitive: false

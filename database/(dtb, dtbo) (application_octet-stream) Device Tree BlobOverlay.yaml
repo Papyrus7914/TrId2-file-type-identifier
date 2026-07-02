@@ -1,0 +1,8 @@
+Name: Device Tree Blob/Overlay
+URL: "https://en.wikipedia.org/wiki/Device_tree"
+FileNameExtensions: ["dtb", "dtbo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \r
+    Bytes: [0xD0, 0x0D, 0xFE, 0xED]

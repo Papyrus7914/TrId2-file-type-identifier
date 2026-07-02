@@ -1,0 +1,10 @@
+Name: SpchComp encoded speech/audio
+Description: The compressed SpchComp files describe the human speech with parameters extracted out of the original signal, based on the knowledge of the production of human speech. SpchComp uses a technique known as CELP (Code Excited Linear Prediction). The compression is lossy, but very good quality can be achieved.
+FileNameExtensions: ["spc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CELP\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true

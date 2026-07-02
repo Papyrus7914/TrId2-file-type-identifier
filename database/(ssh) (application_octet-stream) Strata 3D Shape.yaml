@@ -1,0 +1,14 @@
+Name: Strata 3D Shape
+URL: "https://en.wikipedia.org/wiki/Strata_3D"
+FileNameExtensions: ["ssh"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SCat\0\0\x01\0\0\0\0\0\x04\0\0\0\x15\0\0\0\0STshShap"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "namenmsp"
+    CaseSensitive: true
+  - Pos: 149
+    AsciiString: "Vis3\0\x05\0\0Cpr1"
+    CaseSensitive: true

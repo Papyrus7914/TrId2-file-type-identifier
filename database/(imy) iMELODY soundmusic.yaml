@@ -1,0 +1,14 @@
+Name: iMELODY sound/music
+Description: iMELODY is a standard file format for melodies, mostly used in cellphones.
+URL: "http://cellphones.about.com/od/cellularfaqs/f/rf_imelody.htm"
+FileNameExtensions: ["imy"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN:IMELODY"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMELODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false

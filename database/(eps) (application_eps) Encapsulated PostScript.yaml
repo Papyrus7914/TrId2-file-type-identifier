@@ -1,0 +1,15 @@
+Name: Encapsulated PostScript
+Description: Encapsulated PostScript without TIFF or WMF preview.
+URL: "http://fileformats.archiveteam.org/wiki/Encapsulated_PostScript"
+FileNameExtensions: ["eps"]
+MimeType: application/eps
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%!PS-Adobe-"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: " EPSF-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EPSF-"
+    CaseSensitive: false

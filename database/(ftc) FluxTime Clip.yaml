@@ -1,0 +1,10 @@
+Name: FluxTime Clip
+URL: "http://www.fluxtime.com"
+FileNameExtensions: ["ftc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FTC\x03\xE8\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "@"
+    CaseSensitive: true

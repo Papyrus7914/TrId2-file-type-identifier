@@ -1,0 +1,10 @@
+Name: Patton-Patton Flow Charting Image
+URL: "http://www.patton-patton.com/"
+FileNameExtensions: ["fci"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0xA1, 0xDB, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x03, 0x00, 0x00, 0x00]
+  - Pos: 23
+    AsciiString: "\0Obj@\xFF\xFF\x02\0\x03\0CXS"
+    CaseSensitive: true

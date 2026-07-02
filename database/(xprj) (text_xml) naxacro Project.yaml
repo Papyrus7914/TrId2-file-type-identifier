@@ -1,0 +1,35 @@
+Name: naxacro Project
+URL: "http://www.nexacro.com/"
+FileNameExtensions: ["xprj"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<Project "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENVIRONMENTDEFINITION URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPEDEFINITION URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPVARIABLES URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPINFO URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPINFOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XADL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML"
+    CaseSensitive: false

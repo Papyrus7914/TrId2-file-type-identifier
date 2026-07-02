@@ -1,0 +1,239 @@
+Name: 16bit DOS Disk eXPress SFX disk image Executable
+URL: "http://justsolve.archiveteam.org/wiki/Disk_Express"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\x01\0 \0\0\0\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\a\0X\x9D\x89\0\0\0\0@\0 \0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 31
+    #                                                              5
+    Bytes: [0x02, 0xFC, 0x06, 0x00, 0x00, 0x8C, 0xC8, 0x01, 0x06, 0x35, 0x01, 0xBA]
+  - Pos: 44
+    Bytes: [0x02, 0x03, 0xC2, 0x8B, 0xD8, 0x05]
+  - Pos: 51
+    #                                      3           3
+    Bytes: [0x01, 0x8E, 0xDB, 0x8E, 0xC0, 0x33, 0xF6, 0x33, 0xFF, 0x00]
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 67
+    AsciiString: "\x02\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xFC\x06\x1E\x0E\x8C\xC8\x01\x065\x01\xBA"
+    CaseSensitive: true
+  - Pos: 524
+    Bytes: [0x02, 0x03, 0xC2, 0x8B, 0xD8, 0x05]
+  - Pos: 531
+    #                                      3           3                 \b                      K     H     J     y                                         R
+    Bytes: [0x01, 0x8E, 0xDB, 0x8E, 0xC0, 0x33, 0xF6, 0x33, 0xFF, 0xB9, 0x08, 0x00, 0xF3, 0xA5, 0x4B, 0x48, 0x4A, 0x79, 0xEE, 0x8E, 0xC3, 0x8E, 0xD8, 0xBE, 0x52, 0x00, 0xAD, 0x8B, 0xE8, 0xB2, 0x10, 0xEA]
+  - Pos: 564
+    Bytes: [0x06]
+  - Pos: 566
+    AsciiString: "\x03dlz "
+    CaseSensitive: true
+  - Pos: 575
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 578
+    #              u                                               U
+    Bytes: [0xC3, 0x75, 0x00, 0x00, 0xFE, 0xFC, 0xF8, 0xF8, 0xFF, 0x55, 0x8B, 0xEC]
+  - Pos: any
+    AsciiString: "160K\0\0180K\0\0320K\0\0360K\0\0720K\0\01.2M\0\01.44M\02.88M\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALLS\0\0*DISK EXPRESS BY ALBERT J. SHAN (C) 1991-9"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A PROPERLY FORMATTED DISKETTE IS REQUIRED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE TARGET DISKETTE MUST BE FORMATTED AND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION HAS BEEN ILLEGALLY MODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- FLOATING-POINT SUPPORT NOT LOADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR ARGUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISKETTE IMAGE HEADER CORRUPTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%S DISKETTE FOUND IN DRIVE %C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISKETTE IS WRITE PROTECTED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISKETTE IMAGE DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NULL POINTER ASSIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK EXPRESS SELF-EXTRACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM REQUIRES OS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE HAS BEEN MODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVE  DRIVE LETTER OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS NOT A FLOPPY DRIVE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- INTEGER DIVIDE BY 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAVE ANY BAD SECTORS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK IMAGE CORRUPTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSUFFICIENT MEMORY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "32-BIT CRC COMPUTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD DISKETTE IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISKETTE IMAGE (OS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%S DISKETTE IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2 %D.%D OR ABOVE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "32-BIT CRC STORED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTOR NOT FOUND."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- STACK OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E INTEGRITY ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN-TIME ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%3D%% WRITTEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "50\0P\0\0\0\0  0PX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T  TEST IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN MEDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_C_FILE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%3D%% READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2 AND DOS)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT READY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD CRC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOSCALLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR %D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUST NOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NULL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO YOU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6002"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6003"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6008"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6009"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0ZS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NMSG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WITH"
+    CaseSensitive: false

@@ -1,0 +1,545 @@
+Name: HPL Engine save game (generic)
+URL: "https://en.wikipedia.org/wiki/Frictional_Games"
+FileNameExtensions: ["sav"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<SaveGame>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CENGINEJOINTCONTROLLER_SAVEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENGINEJOINT_SAVEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENGINELIGHT_SAVEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENGINESOUND_SAVEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFFLICKEROFFMAXLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFFLICKEROFFMINLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENGINEBEAM_SAVEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENGINEBODY_SAVEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFFLICKERONMAXLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFFLICKERONMINLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLSTCOLLIDECALLBACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBENEMYCLOSEPLAYING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENGINEPS_SAVEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBCOLLIDECHARACTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFFLICKEROFFRADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSFLICKEROFFSOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVANGULARVELOCITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMBINECALLBACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFFARATTENUATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFFLICKEROFFFADE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFLICKEROFFCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLCURRENTMAXPRIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSFLICKERONSOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVLINEARVELOCITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBATTACKPLAYING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFFLICKERONFADE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSONMAXCALLBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSONMINCALLBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT_SAVEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS_PTR TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINER TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBSKYBOXACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSFLICKEROFFPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_MTXTRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBFLICKERFADE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDIFFUSECOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSFLICKERONPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUSICHANDLER_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVCONTROLLERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION_SAVEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBFLICKERING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBFOGCULLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLSTENTITIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVESPEEDMUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSKYBOXCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVBILLBOARDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBFOGACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A_SAVEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVENTORY_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFFOGSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFMAXLIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFMINLIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINVENTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLSTLIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLSTSOUNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLSTTIMERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCURRENTM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSFUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CROSSHAIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHTADD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERACTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBSTOPPED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBVISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFOGCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINTERACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEDGAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEGAME_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTVAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTDIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCALLBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CKACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFFOGEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFHEALTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLSTVARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSSKYBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVBODIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVLIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVSOUNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCOMBINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VAR TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORWARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBFLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFPITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYER_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STNOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMEENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AREA_S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDMAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBLOOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBSHOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFDEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFMASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLSTAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLSTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMUSIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUSIC_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TATTAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQUIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INEDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFFLA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFYAW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLSTU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSSUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AT_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBHA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MER_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFLA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVLO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OOKA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RYCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NOT"
+    CaseSensitive: false

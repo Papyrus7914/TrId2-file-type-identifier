@@ -1,0 +1,44 @@
+Name: WinDIG Scale data
+Description: Data digitizer by D. Lovy.
+FileNameExtensions: ["scl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Scale]\r\nFileName="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REFERENCE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XSCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YSCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XWORLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YWORLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGY"
+    CaseSensitive: false

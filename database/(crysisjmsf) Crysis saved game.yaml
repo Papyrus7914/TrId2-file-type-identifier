@@ -1,0 +1,64 @@
+Name: Crysis saved game
+URL: "http://en.wikipedia.org/wiki/Crysis"
+FileNameExtensions: ["crysisjmsf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RGMH\x01\0\0\0( \0\0\0\0\0\0\0\0\0\06"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "S\0i\0n\0g\0l\0e\0P\0l\0a\0y\0e\0r\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "S\0I\0N\0G\0L\0E\0P\0L\0A\0Y\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0C\0R\0Y\0S\0I\0S\0J\0M\0S\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0A\0V\0E\0G\0A\0M\0E\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SP_LEVELPLAYTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SP_GAMEPLAYTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V_ALTITUDELIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKPOINTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SP_DIFFICULTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLEPLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%\0U\0S\0E\0R\0%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMERULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SP_DEATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SP_KILLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGMH"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: Pretty Good Privacy/GNU Privacy Guard (GPG) Public Keyring (v4)
+URL: "https://tools.ietf.org/html/rfc4880#section-5.5.2"
+FileNameExtensions: ["gpg", "pkr"]
+MimeType: application/pgp-keys
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x99]
+  - Pos: 3
+    Bytes: [0x04]
+  - Pos: 10
+    AsciiString: "\0"
+    CaseSensitive: true

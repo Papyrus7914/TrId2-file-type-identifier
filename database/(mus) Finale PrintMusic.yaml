@@ -1,0 +1,16 @@
+Name: Finale PrintMusic
+URL: "http://www.finalemusic.com/printmusic/"
+FileNameExtensions: ["mus"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ENIGMA BINARY FILE\0\0\0\0\0\0\0\0\0\0\0\0\0\0PrintMusic!(R) "
+    CaseSensitive: true
+  - Pos: 110
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "NTR\0WIN"
+    CaseSensitive: true
+  - Pos: 150
+    AsciiString: "NTR\0WIN"
+    CaseSensitive: true

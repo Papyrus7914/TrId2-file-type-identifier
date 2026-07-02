@@ -1,0 +1,52 @@
+Name: LiveNote Portable legal Transcript File
+URL: "http://west.thomson.com/products/services/manage-court-cases.aspx"
+FileNameExtensions: ["ptf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "begin=Head\r\ntype=ptf\r\nversion="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSCRIPTINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETEDISSUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVEISSUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNOTATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRSTPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINENAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CASEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGELEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false

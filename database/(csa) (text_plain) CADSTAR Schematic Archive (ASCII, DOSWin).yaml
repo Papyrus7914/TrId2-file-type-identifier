@@ -1,0 +1,11 @@
+Name: CADSTAR Schematic Archive (ASCII, DOS/Win)
+URL: "https://en.wikipedia.org/wiki/CADSTAR"
+FileNameExtensions: ["csa"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n(CADSTARSCM\r\n (HEADER\r\n  (FORMAT DESIGN "
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: ")\r\n  (JOBFILE \""
+    CaseSensitive: true

@@ -1,0 +1,23 @@
+Name: AIR Music Technology Hybrid 3 preset
+URL: "https://www.airmusictech.com/virtual-instruments/hybrid-3/"
+FileNameExtensions: ["tfx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0\0\x01WzooThunThunelck\0"
+    CaseSensitive: true
+  - Pos: 56
+    #                                d     _
+    Bytes: [0x01, 0x01, 0x01, 0x01, 0x64, 0x5F, 0x00]
+  - Pos: any
+    AsciiString: "N\0O\0N\0A\0M\0E\0S\0E\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WZOOTHUNTHUNELCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WZOOTHUNTHUNWZOO"
+    CaseSensitive: false

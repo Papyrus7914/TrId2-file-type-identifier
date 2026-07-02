@@ -1,0 +1,53 @@
+Name: Floppy Disk Emulator configuration
+Description: Parameters for the IPCAS FDE.
+FileNameExtensions: ["par"]
+MimeType: text/play
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DRV_SEL="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "READY_LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READY_OUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_TRK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOSAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DD_DELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HD_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RD_DELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC_LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC_OUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HD_OUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOT_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RP_LEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATE"
+    CaseSensitive: false

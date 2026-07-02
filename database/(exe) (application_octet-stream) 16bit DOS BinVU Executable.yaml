@@ -1,0 +1,95 @@
+Name: 16bit DOS BinVU Executable
+URL: "http://fileformats.archiveteam.org/wiki/BinVU"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        M     Z     @           \'          .           ␠                                                                                               >                                         P     j     r                                                                                                                                                                                                     [                                               L                                                                                                                                               j                       S                                                                       l                       J                       [                       Q                       F                       z                       l                       `                       Q                       L                       >                       4                       (                       \n                                                                                                                                              v                       h                       ^                       J                       @                       *                                               \f                                  f                       f                       f                       f                 !                 =     +
+    Bytes: [0x4D, 0x5A, 0x40, 0x01, 0x27, 0x00, 0x2E, 0x00, 0x20, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xAC, 0x04, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x3E, 0x00, 0x00, 0x00, 0x01, 0x00, 0xFB, 0x50, 0x6A, 0x72, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00, 0x5B, 0x00, 0x00, 0x00, 0xA0, 0x00, 0x00, 0x00, 0x4C, 0x01, 0x00, 0x00, 0xF1, 0x03, 0xDF, 0x02, 0xD1, 0x03, 0xDF, 0x02, 0xA5, 0x03, 0xDF, 0x02, 0x9F, 0x03, 0xDF, 0x02, 0x8B, 0x03, 0xDF, 0x02, 0x6A, 0x03, 0xDF, 0x02, 0x53, 0x03, 0xDF, 0x02, 0x17, 0x03, 0xDF, 0x02, 0xEB, 0x02, 0xDF, 0x02, 0x6C, 0x00, 0xDF, 0x02, 0x4A, 0x00, 0xDF, 0x02, 0x5B, 0x06, 0xDF, 0x02, 0x51, 0x06, 0xDF, 0x02, 0x46, 0x06, 0xDF, 0x02, 0x7A, 0x05, 0xDF, 0x02, 0x6C, 0x05, 0xDF, 0x02, 0x60, 0x05, 0xDF, 0x02, 0x51, 0x05, 0xDF, 0x02, 0x4C, 0x05, 0xDF, 0x02, 0x3E, 0x05, 0xDF, 0x02, 0x34, 0x05, 0xDF, 0x02, 0x28, 0x05, 0xDF, 0x02, 0x0A, 0x05, 0xDF, 0x02, 0xEE, 0x04, 0xDF, 0x02, 0xB2, 0x04, 0xDF, 0x02, 0xA7, 0x04, 0xDF, 0x02, 0x96, 0x04, 0xDF, 0x02, 0x8C, 0x04, 0xDF, 0x02, 0x76, 0x04, 0xDF, 0x02, 0x68, 0x04, 0xDF, 0x02, 0x5E, 0x04, 0xDF, 0x02, 0x4A, 0x04, 0xDF, 0x02, 0x40, 0x04, 0xDF, 0x02, 0x2A, 0x04, 0xDF, 0x02, 0x1A, 0x04, 0xDF, 0x02, 0x0C, 0x04, 0xDF, 0x02, 0xAE, 0x00, 0x66, 0x04, 0xAA, 0x00, 0x66, 0x04, 0xA6, 0x00, 0x66, 0x04, 0xBE, 0x03, 0x66, 0x04, 0x92, 0x21, 0x00, 0x00, 0x3D, 0x2B, 0x00]
+  - Pos: any
+    AsciiString: "__READ\0__SETUPIO\0_TELL\0_UNLINK\0__VPRINTER\0__VPTR\0__VRAM\0__STPCPY\0_TEXTCOLOR\0_TEXTBACKGROUND\0_TEXTATTR\0_HIGHVIDEO\0_LOWVIDEO\0_NORMVIDEO\0__CPUTN\0_CPRINTF\0__VIDEOINT\0__C0CRTINIT\0__CRTINIT\0_DELAY\0___FIRST\0___LAST\0___ROVER\0_FREE\0_FARFREE\0_MALLOC\0_FARMALLOC\0_REALLOC\0_FARREALLOC\0__BRK\0__SBRK\0_GETCH\0__NGETCHE\0_GETCHE\0__NUNGETCH\0_UNGETCH\0_GOTOXY\0_GETTEXT\0_PUTTEXT\0_INTR\0_IOCTL\0_KBHIT\0_MOVETEXT\0_PUTCH\0__REALCVT\0__SCREENIO\0__VALIDATEXY\0__SCROLL\0_SETBLOCK\0_TEXTMODE\0__WHEREXY\0_WHEREX\0_WHEREY\0__CHMOD\0_CLOSE\0__CLOSE\0_EOF\0_FCLOSE\0_FFLUSH\0_FINDFIRST\0_FINDNEXT\0_FLUSHALL\0__OPENFP\0__GETFP\0_FOPEN\0_FREAD\0_FSEEK\0_FTELL\0__FGETC\0__NFGETC\0_FGETC\0_FGETCHAR\0_MEMCPY\0_OPEN\0__OPEN\0___READ\0_SETVBUF\0_STRCAT\0_STRLEN\0___WRITE\0__WRITE\0__XFCLOSE\0__XFFLUSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__INT0VECTOR\0__INT4VECTOR\0__INT5VECTOR\0__INT6VECTOR\0__C0ARGC\0__C0ARGV\0__C0ENVIRON\0__ENVLNG\0__ENVSEG\0__ENVSIZE\0__PSP\0__OSVERSION\0__OSMAJOR\0__VERSION\0__OSMINOR\0_ERRNO\0__STARTTIME\0___BRKLVL\0__HEAPBASE\0__BRKLVL\0__HEAPTOP\0_BYTE\0_FADE_IN\0_FADE_OUT\0_SIZE\0_TEXT_BUFFER\0__ATEXITCNT\0__EXITBUF\0__EXITFOPEN\0__EXITOPEN\0__STREAMS\0__NFILE\0__OPENFD\0__FMODE\0__NOTUMASK\0__DOSERRNO\0__DOSERRORTOSV\0__STKLEN\0__WSCROLL\0__VIDEO\0_DIRECTVIDEO\0__CFLAG\0__CCHAR\0__ARGC\0__ARGV\0__REALCVTVECTOR\0__SCANTODVECTOR\0__ATEXITTBL\0__SETARGV__\0__TURBOCRT\0__CVTFAK\0__AHSHIFT\0__AHINCR\0BINVU3.CPP\0BINVU3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__MMODEL\0_ATEXIT\0__DOS_GETFILEATTR\0__DOS_SETFILEATTR\0_EXIT\0__EXIT\0__CEXIT\0__C_EXIT\0N_LXLSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__IOERROR\0__DOSERROR\0_ISATTY\0__LONGTOA\0__UTOA\0_LSEEK\0__MKNAME\0__TMPNAM\0N_LXMUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADE_SCREEN$QIN13RGB_COLOR_TYP\0_MAIN\0_FONTD\0_LINE\0_BLOCK\0_DEF\0_FIL\0DATASEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__CLEANUP\0__CHECKNULL\0__TERMINATE\0__RESTOREZERO\0_ABORT\0DGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORLAND C++ - COPYRIGHT 1991 BORLAND INTL.\0DIVIDE ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOATING POINT FORMATS NOT LINKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GET_PALETTE$QIN13RGB_COLOR_TYP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_PALETTE$QI13RGB_COLOR_TYP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABNORMAL PROGRAM TERMINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPAQ\0PRINT SCANF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICE_COLOR$QV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_FONT$QV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET8DOT$QV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMP\0.$$$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F_LXLSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F_SPUSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N_SPUSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NULL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F_PADD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F_PSUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N_PADD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N_PCMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N_PSUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T4OT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U3SQR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R.RP"
+    CaseSensitive: false

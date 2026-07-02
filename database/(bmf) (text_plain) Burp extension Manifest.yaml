@@ -1,0 +1,39 @@
+Name: Burp extension Manifest
+Description: Filename is BappManifest.bmf
+URL: "https://portswigger.net/burp"
+FileNameExtensions: ["bmf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Uuid: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MINPLATFORMVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORTDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSIONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIALVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDCOMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRYPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPONAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false

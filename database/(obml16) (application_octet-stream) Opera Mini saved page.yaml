@@ -1,0 +1,27 @@
+Name: Opera Mini saved page
+URL: "https://en.wikipedia.org/wiki/Opera_Mini"
+FileNameExtensions: ["obml16"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    U
+    Bytes: [0x02, 0xD3, 0x55, 0x10]
+  - Pos: 7
+    Bytes: [0x10]
+  - Pos: 10
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 13
+    Bytes: [0xFF, 0xFF, 0x00]
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false

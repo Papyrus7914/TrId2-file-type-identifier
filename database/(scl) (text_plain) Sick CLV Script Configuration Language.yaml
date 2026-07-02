@@ -1,0 +1,56 @@
+Name: Sick CLV Script Configuration Language
+URL: "https://www.sick.com/"
+FileNameExtensions: ["scl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[SICK AG, Script CLV Language]\r\n\r\n[Created_RO]\r\nDate="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCRIPT CLV LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLV_TYPE_SOURCE_RO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLV_TYPE_TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT TEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_OF_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCL_000.TPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED_BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED_RO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVDESCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SICK AG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false

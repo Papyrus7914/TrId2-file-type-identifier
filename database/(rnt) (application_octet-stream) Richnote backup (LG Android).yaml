@@ -1,0 +1,19 @@
+Name: Richnote backup (LG Android)
+FileNameExtensions: ["rnt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "databases/richnote"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RICHNOTE-JOURNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RICHNOTEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASES"
+    CaseSensitive: false

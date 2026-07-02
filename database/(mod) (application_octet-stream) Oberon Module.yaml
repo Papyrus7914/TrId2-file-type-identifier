@@ -1,0 +1,26 @@
+Name: Oberon Module
+URL: "https://en.wikipedia.org/wiki/Oberon_(operating_system)"
+FileNameExtensions: ["mod"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "oB"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROCEDURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SCN.FNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MOD"
+    CaseSensitive: false

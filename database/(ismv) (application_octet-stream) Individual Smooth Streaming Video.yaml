@@ -1,0 +1,125 @@
+Name: Individual Smooth Streaming Video
+URL: "https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming#Microsoft_Smooth_Streaming"
+FileNameExtensions: ["ismv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0$ftypiso"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "iso"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$FTYPISO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLRNCLX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDLR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISO6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOOV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMHD"
+    CaseSensitive: false

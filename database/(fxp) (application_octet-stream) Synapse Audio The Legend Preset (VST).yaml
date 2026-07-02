@@ -1,0 +1,26 @@
+Name: Synapse Audio The Legend Preset (VST)
+URL: "https://www.synapse-audio.com/"
+FileNameExtensions: ["fxp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CcnK"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FPCh\0\0\0\x01ETRV"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ARAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETRV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERP"
+    CaseSensitive: false

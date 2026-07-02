@@ -1,0 +1,35 @@
+Name: GIMS Graphical Text data
+URL: "https://www.itu.int/en/ITU-R/software/Pages/gims.aspx"
+FileNameExtensions: ["gxt"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[FormatInfo]\r\nformat_ver=1\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORMAT_VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG_NOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAT_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEAM_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N_POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N_CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAIN"
+    CaseSensitive: false

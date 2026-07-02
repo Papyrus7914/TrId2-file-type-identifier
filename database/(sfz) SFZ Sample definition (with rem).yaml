@@ -1,0 +1,22 @@
+Name: SFZ Sample definition (with rem)
+URL: "http://sfzformat.com/"
+FileNameExtensions: ["sfz"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "//"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PITCH_KEYCENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOKEY"
+    CaseSensitive: false

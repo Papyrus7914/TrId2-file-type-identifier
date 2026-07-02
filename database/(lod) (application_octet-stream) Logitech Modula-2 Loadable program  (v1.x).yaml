@@ -1,0 +1,13 @@
+Name: Logitech Modula-2 Loadable program  (v1.x)
+URL: "http://www.edm2.com/index.php/Logitech_Modula-2"
+FileNameExtensions: ["lod"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x01, 0x00, 0x01, 0x00, 0x01]
+  - Pos: any
+    AsciiString: "COMPFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASCII"
+    CaseSensitive: false

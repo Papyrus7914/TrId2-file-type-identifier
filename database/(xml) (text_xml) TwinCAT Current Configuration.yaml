@@ -1,0 +1,137 @@
+Name: TwinCAT Current Configuration
+URL: "https://www.beckhoff.com/en-en/products/automation/twincat/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SET STATE TCOMOBJ SAFEOP OP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET STATE TCOMOBJ PREOP OP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCBOOTPROJECT CREATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TCOMOBJ PREOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK FOR AUTOSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWNLOAD CONFIG ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOLS DOWNLOADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATIONFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWNLOAD SYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START INTERRUPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCOMSRVAFFINITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TICKER STARTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKEDMEMSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET OBJECTS ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AFFINITYMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCRTSOBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") TO SAFEOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLCPROJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITCMDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTCMDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TSPROJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLCTASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCRTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IOFFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2010"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2015"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCIO"
+    CaseSensitive: false

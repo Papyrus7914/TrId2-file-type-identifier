@@ -1,0 +1,18 @@
+Name: Namco Universal Model Binary
+Description: Used in various Namco games, like Super Smash Bros. Ultimate.
+URL: "https://en.wikipedia.org/wiki/Bandai_Namco_Studios"
+FileNameExtensions: ["numdlb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HBSS@\0\0\0\0\0\0\0\0\0\0\0LDOM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODEL\0\0\0MODEL.NUSKTB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL.NUMATB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LDOM"
+    CaseSensitive: false

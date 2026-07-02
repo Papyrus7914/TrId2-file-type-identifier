@@ -1,0 +1,14 @@
+Name: VICE Rom Set
+URL: "https://en.wikipedia.org/wiki/VICE"
+FileNameExtensions: ["vrs"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KernalName=\"kernal"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BASICNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOSNAME"
+    CaseSensitive: false

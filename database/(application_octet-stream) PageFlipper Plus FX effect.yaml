@@ -1,0 +1,37 @@
+Name: PageFlipper Plus F/X effect
+Description: Amiga animation program by Mindware.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFF\xFF\nALGO"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INITGLOCBITP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOVDURA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUMB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCHG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XDIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YDIM"
+    CaseSensitive: false

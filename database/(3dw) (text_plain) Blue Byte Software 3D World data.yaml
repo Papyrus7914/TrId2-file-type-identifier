@@ -1,0 +1,36 @@
+Name: Blue Byte Software 3D World data
+Description: Used in games like Extreme Assault, Incubation serie
+URL: "https://www.mobygames.com/company/389/ubisoft-dusseldorf/"
+FileNameExtensions: ["3dw"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "3DW\n[COORD_SYSTEM] X_RIGHT_Z_INFRONT_Y_DOWN\n\n[GRP] OBJECTE_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EDITORDETAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYP OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOTYP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END3DW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDCLO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDGRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".3DW"
+    CaseSensitive: false

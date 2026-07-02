@@ -1,0 +1,245 @@
+Name: ElectrumSV wallet
+URL: "https://electrumsv.io/"
+FileNameExtensions: ["sqlite"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FOREIGN KEY(ACCOUNT_ID) REFERENCES ACCOUNTS (ACCOUNT_ID)FOREIGN KEY(MASTERKEY_ID) REFERENCES MASTERKEYS (MASTERKEY_ID))"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GVIEWACCOUNTTRANSACTIONSACCOUNTTRANSACTIONSCREATE VIEW ACCOUNTTRANSACTIONS (ACCOUNT_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TD.TX_HASH FROM TRANSACTIONDELTAS TD INNER JOIN KEYINSTANCES KI USING(KEYINSTANCE_ID)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE UNIQUE INDEX IDX_TRANSACTIONDELTAS_UNIQUE ON TRANSACTIONDELTAS(KEYINSTANCE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE UNIQUE INDEX IDX_TRANSACTIONOUTPUTS_UNIQUE ON TRANSACTIONOUTPUTS(TX_HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREIGN KEY(DEFAULT_MASTERKEY_ID) REFERENCES MASTERKEYS (MASTERKEY_ID))"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREIGN KEY (KEYINSTANCE_ID) REFERENCES KEYINSTANCES (KEYINSTANCE_ID))"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREIGN KEY(KEYINSTANCE_ID) REFERENCES KEYINSTANCES (KEYINSTANCE_ID) )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREIGN KEY(PARENT_MASTERKEY_ID) REFERENCES MASTERKEYS (MASTERKEY_ID))"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE PAYMENTREQUESTS (PAYMENTREQUEST_ID INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE UNIQUE INDEX IDX_INVOICES_UNIQUE ON INVOICES(PAYMENT_URI)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE TRANSACTIONDELTAS (KEYINSTANCE_ID INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE KEYINSTANCES (KEYINSTANCE_ID INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE UNIQUE INDEX IDX_WALLETDATA_UNIQUE ON WALLETDATA(KEY)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE MASTERKEYS (MASTERKEY_ID INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREIGN KEY (ACCOUNT_ID) REFERENCES ACCOUNTS (ACCOUNT_ID)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREIGN KEY(ACCOUNT_ID) REFERENCES ACCOUNTS (ACCOUNT_ID))"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREIGN KEY (TX_HASH) REFERENCES TRANSACTIONS (TX_HASH))"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE WALLETEVENTS (EVENT_ID INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE TRANSACTIONOUTPUTS (TX_HASH BLOB NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREIGN KEY(TX_HASH) REFERENCES TRANSACTIONS (TX_HASH)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AINDEXIDX_TRANSACTIONOUTPUTS_UNIQUETRANSACTIONOUTPUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE ACCOUNTS (ACCOUNT_ID INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE INVOICES (INVOICE_ID INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE TRANSACTIONS (TX_HASH BLOB PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IINDEXIDX_TRANSACTIONDELTAS_UNIQUETRANSACTIONDELTAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_TRANSACTIONS_1TRANSACTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE WALLETDATA (KEY TEXT NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT_MASTERKEY_ID INTEGER DEFAULT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLETRANSACTIONOUTPUTSTRANSACTIONOUTPUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TX_HASH) AS SELECT DISTINCT KI.ACCOUNT_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETABLETRANSACTIONDELTASTRANSACTIONDELTAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT_MASTERKEY_ID INTEGER DEFAULT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9TABLEPAYMENTREQUESTSPAYMENTREQUESTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT_SCRIPT_TYPE INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXIDX_WALLETDATA_UNIQUEWALLETDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK_POSITION INTEGER DEFAULT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK_HEIGHT INTEGER DEFAULT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE_EXPIRES INTEGER DEFAULT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DERIVATION_TYPE INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXIDX_INVOICES_UNIQUEINVOICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPIRATION INTEGER DEFAULT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE_UPDATED INTEGER NOT NULL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEE_VALUE INTEGER DEFAULT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS INTEGER NOT NULL DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVOICE_FLAGS INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE_CREATED INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DERIVATION_DATA BLOB NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION TEXT DEFAULT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEKEYINSTANCESKEYINSTANCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLETRANSACTIONSTRANSACTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEWALLETEVENTSWALLETEVENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENT_FLAGS INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROOF_DATA BLOB DEFAULT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE_DELTA INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCOUNT_ID INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENT_TYPE INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCOUNT_NAME TEXT NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVOICE_DATA BLOB NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTABLEMASTERKEYSMASTERKEYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAYMENT_URI TEXT NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEWALLETDATAWALLETDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TX_DATA BLOB DEFAULT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TX_HASH BLOB DEFAULT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TX_INDEX INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT_PAYMENTREQUEST_ID1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STABLEACCOUNTSACCOUNTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE INTEGER NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION TEXT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEINVOICESINVOICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT_KEYINSTANCE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE TEXT NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT_MASTERKEY_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT_ACCOUNT_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQLITE FORMAT 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD-TOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIGRATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TX_INDEX)"
+    CaseSensitive: false

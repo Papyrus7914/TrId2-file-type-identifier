@@ -1,0 +1,10 @@
+Name: iTunes Music Library
+URL: "http://www.apple.com/itunes/"
+FileNameExtensions: ["itl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "hdfm\0\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true

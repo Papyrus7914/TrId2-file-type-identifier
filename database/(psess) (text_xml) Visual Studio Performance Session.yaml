@@ -1,0 +1,131 @@
+Name: Visual Studio Performance Session
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+FileNameExtensions: ["psess"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HARDWARECOUNTERS ENABLEHWCOUNTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCEBASEDANALYSISSELECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSPERFORMANCESESSION VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JSCRIPTPROFILINGENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLINGCOUNTER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTINSTRUMENTEVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDHCOUNTERSENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREINSTRUMENTEVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDESMALLFUNCS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTREVENTEXCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOCATIONMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLECTIONMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELOCATEBINARIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDHCOUNTERSRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEFAULTCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLINGMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSCALLCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUEREPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETWSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDHSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELOADVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYCLECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDREPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(_TOTAL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYCLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAUNCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SLN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

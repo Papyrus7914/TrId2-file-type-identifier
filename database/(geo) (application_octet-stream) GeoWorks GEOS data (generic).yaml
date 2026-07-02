@@ -1,0 +1,11 @@
+Name: GeoWorks GEOS data (generic)
+URL: "https://en.wikipedia.org/wiki/GEOS_(16-bit_operating_system)#PC.2FGEOS"
+FileNameExtensions: ["geo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              E
+    Bytes: [0xC7, 0x45]
+  - Pos: 3
+    AsciiString: "S"
+    CaseSensitive: true

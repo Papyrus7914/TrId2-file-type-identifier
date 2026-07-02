@@ -1,0 +1,15 @@
+Name: FrontPage _VTI_ log/info
+URL: "http://www.microsoft.com"
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "vti_encoding:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VTI_TIMELASTMODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTI_EXTENDERVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTI_ENCODING"
+    CaseSensitive: false

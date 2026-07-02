@@ -1,0 +1,263 @@
+Name: Capture One Enhanced Image Package
+URL: "https://en.wikipedia.org/wiki/Capture_One"
+FileNameExtensions: ["eip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "0.IIQ\0\0\0\0II*\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "IIIICwaR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GEOMETRYKEYSTONEFOCALLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEANLONGEXPOSUREAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURFACESMOOTHNESSAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRYCANVASCLIPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRYKEYSTONEAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRYKEYSTONEASPECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENSOPTICCENTERENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRYKEYSTONETILTX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRYKEYSTONETILTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENSCHROMABRORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENSSHIFTDIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BWLIGHTSATURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIGHLIGHTRECOVERY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE_DATECREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENSTILTDIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BWDARKSATURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORCORRECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CROPOUTSIDEIMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENSLIGHTFALLOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENSFOCALLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETHIGHLIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENSRADIALBLUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PURPLEFRINGING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADOWRECOVERY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLARITYMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORBALANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENSAPERTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINORVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETSHADOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USMTHRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHITEBALANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAINAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRIGHTNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BWLIGHTHUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTUREONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICCPROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENSGEOABR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENSIDGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VAR ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIGNETTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BWDARKHUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BWENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BWMAGENTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNRAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILMCURVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USMAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USMRADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BWYELLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTRAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IIIICWAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IIQ.CO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BWGREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDTONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAWPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASIC_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BWBLUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BWCYAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FCRV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BWRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ICM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

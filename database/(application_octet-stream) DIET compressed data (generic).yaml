@@ -1,0 +1,7 @@
+Name: DIET compressed data (generic)
+URL: "http://fileformats.archiveteam.org/wiki/DIET_(compression)"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              L           !
+    Bytes: [0xB4, 0x4C, 0xCD, 0x21, 0x9D, 0x89]

@@ -1,0 +1,11 @@
+Name: Micrografx Archive (v1.1)
+URL: "http://fileformats.archiveteam.org/wiki/MDA_(Micrografx)"
+FileNameExtensions: ["mda"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MDA  1.1\x1A"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "RSW!"
+    CaseSensitive: true

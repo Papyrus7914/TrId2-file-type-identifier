@@ -1,0 +1,21 @@
+Name: PowerBuilder Dynamic library
+Description: P-code library.
+URL: "http://www.sybase.com/products/developmentintegration/powerbuilder"
+FileNameExtensions: ["pbd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HDR*P"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DAT*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENT*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRE*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOD*"
+    CaseSensitive: false

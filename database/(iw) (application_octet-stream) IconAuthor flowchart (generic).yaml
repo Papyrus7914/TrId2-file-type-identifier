@@ -1,0 +1,18 @@
+Name: IconAuthor flowchart (generic)
+Description: Multimedia authoring tool by Aim Tech Co.
+FileNameExtensions: ["iw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x81]
+  - Pos: 8
+    Bytes: [0x81, 0x00]
+  - Pos: 11
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: " \0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "0\0START"
+    CaseSensitive: false

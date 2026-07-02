@@ -1,0 +1,20 @@
+Name: eCryptfs encrypted file (v3.0)
+URL: "https://launchpad.net/ecryptfs"
+FileNameExtensions: ["ecryptfs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\x03\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0\x10\0\0\x02\x8C-\x04\t\x03\x01\0\0\0\0\0\0\0\0`"
+    CaseSensitive: true
+  - Pos: 73
+    AsciiString: "\xED\x16b\b_CONSOLE\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_CONSOLE"
+    CaseSensitive: false

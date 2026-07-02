@@ -1,0 +1,23 @@
+Name: Cakewalk SONAR project
+URL: "https://en.wikipedia.org/wiki/Cakewalk_%28sequencer%29"
+FileNameExtensions: ["cwp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 24
+    AsciiString: "Cakewalk"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "SONAR\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WINDOWINSTANCEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESTATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAKEWALK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONAR"
+    CaseSensitive: false

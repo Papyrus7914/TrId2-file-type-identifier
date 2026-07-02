@@ -1,0 +1,53 @@
+Name: Ukagaka Ghost
+URL: "https://zichqec.github.io/s-the-skeleton/"
+FileNameExtensions: ["nar"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPT.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURFACE0.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURFACES.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "README.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GHOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ICO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false

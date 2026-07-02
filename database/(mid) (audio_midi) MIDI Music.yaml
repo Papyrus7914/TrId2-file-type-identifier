@@ -1,0 +1,14 @@
+Name: MIDI Music
+URL: "http://en.wikipedia.org/wiki/MIDI"
+FileNameExtensions: ["mid"]
+MimeType: audio/midi
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MThd\0\0\0\x06\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "MTrk"
+    CaseSensitive: true

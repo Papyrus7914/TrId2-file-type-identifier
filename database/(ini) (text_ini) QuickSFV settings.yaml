@@ -1,0 +1,17 @@
+Name: QuickSFV settings
+URL: "https://www.quicksfv.org/"
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[QuickSFV]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LVWINDOWINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATEDB"
+    CaseSensitive: false

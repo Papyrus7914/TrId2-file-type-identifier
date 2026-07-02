@@ -1,0 +1,20 @@
+Name: Virtual TI v2.x emulator skin
+Description: Virtual TI is the ultimate TI calculator emulator
+URL: "http://www.ticalc.org/archives/files/fileinfo/84/8442.html"
+FileNameExtensions: ["skn"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VTIv2."
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: " Default TI-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTIV2."
+    CaseSensitive: false

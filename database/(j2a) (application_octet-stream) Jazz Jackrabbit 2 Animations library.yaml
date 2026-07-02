@@ -1,0 +1,17 @@
+Name: Jazz Jackrabbit 2 Animations library
+URL: "https://www.mobygames.com/game/1348/jazz-jackrabbit-2/"
+FileNameExtensions: ["j2a"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ALIB\0\xBA\xBE\0"
+    CaseSensitive: true
+  - Pos: 464
+    AsciiString: "ANIMS"
+    CaseSensitive: true
+  - Pos: 508
+    #        x
+    Bytes: [0x78, 0xDA]
+  - Pos: any
+    AsciiString: "ANIMS"
+    CaseSensitive: false

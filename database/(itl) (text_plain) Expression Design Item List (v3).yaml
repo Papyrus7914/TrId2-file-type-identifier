@@ -1,0 +1,11 @@
+Name: Expression Design Item List (v3)
+URL: "https://en.wikipedia.org/wiki/Microsoft_Expression_Design"
+FileNameExtensions: ["itl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ItemPalette\nMode: List\n3\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

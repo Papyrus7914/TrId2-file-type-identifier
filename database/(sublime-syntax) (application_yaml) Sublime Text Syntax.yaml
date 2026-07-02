@@ -1,0 +1,20 @@
+Name: Sublime Text Syntax
+URL: "https://en.wikipedia.org/wiki/Sublime_Text"
+FileNameExtensions: ["sublime-syntax"]
+MimeType: application/yaml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%YAML 1.2\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%YAML 1.2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

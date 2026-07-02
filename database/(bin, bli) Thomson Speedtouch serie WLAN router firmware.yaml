@@ -1,0 +1,31 @@
+Name: Thomson Speedtouch serie WLAN router firmware
+URL: "http://wiki.openwrt.org/OpenWrtDocs/Hardware/Thomson/speedtouch"
+FileNameExtensions: ["bin", "bli"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BLI223Q"
+    CaseSensitive: true
+  - Pos: 310
+    AsciiString: "BANT-"
+    CaseSensitive: true
+  - Pos: 324
+    AsciiString: "SpeedTouch "
+    CaseSensitive: true
+  - Pos: 352
+    AsciiString: "MUTE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IPKG2-HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPKG2_SIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEEDTOUCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLI223Q"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANT-"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: Red Faction save game
+URL: "https://www.mobygames.com/game/161907/red-faction/"
+FileNameExtensions: ["svl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XF\x01\0\t\0\x01\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "01_A.TGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RFL"
+    CaseSensitive: false

@@ -1,0 +1,38 @@
+Name: Vivado Design Checkpoint
+URL: "https://en.wikipedia.org/wiki/Vivado"
+FileNameExtensions: ["dcp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "_STUB.VHDLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DCP.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN_1_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STUB.VPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INCRPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EDFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RDAPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WDFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XNPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XLXV"
+    CaseSensitive: false

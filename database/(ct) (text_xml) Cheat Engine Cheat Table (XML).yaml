@@ -1,0 +1,20 @@
+Name: Cheat Engine Cheat Table (XML)
+URL: "http://en.wikipedia.org/wiki/Cheat_Engine"
+FileNameExtensions: ["ct"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHEATTABLE CHEATENGINETABLEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERDEFINEDSYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHEATENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false

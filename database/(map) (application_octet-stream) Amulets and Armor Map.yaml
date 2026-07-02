@@ -1,0 +1,41 @@
+Name: Amulets and Armor Map
+URL: "https://www.mobygames.com/game/dos/amulets-armor"
+FileNameExtensions: ["map"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PWAD\v\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0DEEP is the best"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BLOCKMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEDEFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIDEDEFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSECTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTEXES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGS"
+    CaseSensitive: false

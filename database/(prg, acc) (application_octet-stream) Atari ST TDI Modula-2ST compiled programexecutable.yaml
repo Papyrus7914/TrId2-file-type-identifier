@@ -1,0 +1,26 @@
+Name: Atari ST TDI Modula-2/ST compiled program/executable
+URL: "https://en.wikipedia.org/wiki/Modula-2"
+FileNameExtensions: ["prg", "acc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0N\xF9\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(C) COPYRIGHT TDI SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE LTD. 1985"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ST (C) COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULA-2"
+    CaseSensitive: false

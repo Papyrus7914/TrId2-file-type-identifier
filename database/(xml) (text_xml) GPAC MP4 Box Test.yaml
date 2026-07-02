@@ -1,0 +1,17 @@
+Name: GPAC MP4 Box Test
+URL: "https://github.com/gpac/testsuite"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GPACBOXES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOX PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

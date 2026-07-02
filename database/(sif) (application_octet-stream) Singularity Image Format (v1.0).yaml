@@ -1,0 +1,13 @@
+Name: Singularity Image Format (v1.0)
+FileNameExtensions: ["sif"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#!/usr/bin/env run-singularity\n\0SIF_MAGIC\001\00"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENV RUN-SINGULARITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIF_MAGIC\001\00"
+    CaseSensitive: false

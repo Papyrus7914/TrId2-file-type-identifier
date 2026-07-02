@@ -1,0 +1,76 @@
+Name: SharePoint Portal Server Dashboard Web Part (Unicode)
+URL: "http://en.wikipedia.org/wiki/Microsoft_SharePoint"
+FileNameExtensions: ["dwp"]
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: any
+    AsciiString: "MICROSOFT.SHAREPOINT.WEBPARTPAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "71E9BCE111E9429C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICKEYTOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBPART XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CULTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEUTRAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

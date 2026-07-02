@@ -1,0 +1,11 @@
+Name: TransCopy disk image (2 sides)
+Description: Disk imaging software bundled with CPS Option Board.
+URL: "https://en.wikipedia.org/wiki/Central_Point_Software"
+FileNameExtensions: ["tc", "img"]
+MimeType: application/x-floppy-image-tc
+DetectionPatterns:
+  - Pos: 0
+    #        Z
+    Bytes: [0x5A, 0xA5]
+  - Pos: 259
+    Bytes: [0x02]

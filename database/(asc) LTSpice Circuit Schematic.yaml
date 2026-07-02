@@ -1,0 +1,34 @@
+Name: LTSpice Circuit Schematic
+URL: "http://www.linear.com/designtools/software/"
+FileNameExtensions: ["asc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Version 4\r\nSHEET 1 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYMATTR INSTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMATTR VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIRE"
+    CaseSensitive: false

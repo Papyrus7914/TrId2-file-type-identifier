@@ -1,0 +1,43 @@
+Name: ThunderByte Antivirus Definitions
+URL: "https://en.wikipedia.org/wiki/ThunderByte_Antivirus"
+FileNameExtensions: ["def"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "\0\0\x7F\0"
+    CaseSensitive: true
+  - Pos: 22
+    Bytes: [0xE8, 0x03, 0x00, 0x00]
+  - Pos: 177
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 182
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 194
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 210
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 302
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 305
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 308
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 311
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 316
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0abcdefghijklmnopqrstuvwxyz_. ,\n\0\0\x02\x80\0\0\x18\0\x10"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ_."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false

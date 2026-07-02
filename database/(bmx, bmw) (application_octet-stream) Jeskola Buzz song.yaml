@@ -1,0 +1,33 @@
+Name: Jeskola Buzz song
+Description: Contains a machine layout, patterns, sequence. BMX also contains samples.
+URL: "https://en.wikipedia.org/wiki/Jeskola_Buzz"
+FileNameExtensions: ["bmx", "bmw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Buzz"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLAH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUZZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVT"
+    CaseSensitive: false

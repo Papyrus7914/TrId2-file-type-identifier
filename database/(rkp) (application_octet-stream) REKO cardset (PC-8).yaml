@@ -1,0 +1,11 @@
+Name: REKO cardset (PC-8)
+URL: "http://fileformats.archiveteam.org/wiki/REKO_Cardset"
+FileNameExtensions: ["rkp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PCREKOD "
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\b"
+    CaseSensitive: true

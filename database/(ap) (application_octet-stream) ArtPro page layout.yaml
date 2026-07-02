@@ -1,0 +1,17 @@
+Name: ArtPro page layout
+URL: "https://www.esko.com/en/products/artpro-plus"
+FileNameExtensions: ["ap"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ArtW \xA0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\0.\xE0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ARTC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLEX"
+    CaseSensitive: false

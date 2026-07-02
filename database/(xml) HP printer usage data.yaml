@@ -1,0 +1,48 @@
+Name: HP printer usage data
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "USAGE_DATA_SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL_DROP_VOLUMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL_PAGE_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT_FAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIAL_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_DOT_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_DOT_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K_DOT_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y_DOT_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

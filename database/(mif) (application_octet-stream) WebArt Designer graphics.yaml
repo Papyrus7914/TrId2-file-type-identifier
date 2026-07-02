@@ -1,0 +1,107 @@
+Name: WebArt Designer graphics
+Description: Part of IBM WebSphere.
+FileNameExtensions: ["mif"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MIMG\r\n\x1A"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "MHDR"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "IPNG\x89PNG\r\n\x1A"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "IHDR"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "pHYs"
+    CaseSensitive: true
+  - Pos: 85
+    AsciiString: " tEXtapplication name\0WebArt Designerj=\xED2\0\0\0\x18waDAapplication version"
+    CaseSensitive: true
+  - Pos: 166
+    AsciiString: "waDAbackground page index\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXTAPPLICATION NAME\0WEBART DESIGNERJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADABACKGROUND PAGE INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTOBJECT TYPE\0TEXTUREH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADAAPPLICATION VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADATEXTURE OBJECT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADAIMAGE POSITION1 X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADAIMAGE POSITION1 Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADAIMAGE POSITION2 X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADAIMAGE POSITION2 Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADAIMAGE POSITION3 X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADAIMAGE POSITION3 Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADAIMAGE POSITION4 X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADAIMAGE POSITION4 Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADATEXTURE PATHNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADATEXTURE COLOR1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADATEXTURE COLOR2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADATEXTURE ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADATEXTURE LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WADAIMAGE ALPHA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPD%"
+    CaseSensitive: false

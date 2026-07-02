@@ -1,0 +1,19 @@
+Name: 16bit DOS COM UPX compressed
+URL: "https://en.wikipedia.org/wiki/UPX"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x81, 0xFC]
+  - Pos: 4
+    #        w                 ␠
+    Bytes: [0x77, 0x02, 0xCD, 0x20, 0xB9]
+  - Pos: 11
+    Bytes: [0xBE]
+  - Pos: 14
+    Bytes: [0xBF]
+  - Pos: 17
+    Bytes: [0xBB, 0x00, 0x80, 0xFD, 0xF3, 0xA4, 0xFC, 0x87, 0xF7, 0x83, 0xEE]
+  - Pos: any
+    AsciiString: "UPX"
+    CaseSensitive: false

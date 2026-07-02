@@ -1,0 +1,43 @@
+Name: "The Chronicles of Riddick: Escape from Butcher Bay save game"
+URL: "https://www.mobygames.com/game/13531/the-chronicles-of-riddick-escape-from-butcher-bay/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\x01\x01\x1E\0\0\0"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0\0\0\0\0\0\xDC\0[\0+"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ABCDEFGIJKLMNOPQRSTUVWXYZEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOS DATAFILE2.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARACTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORGOBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRECACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIDDICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEAPON_"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: MiNT Object Library
+Description: Free alternative OS for Atari ST.
+URL: "https://en.wikipedia.org/wiki/MiNT"
+FileNameExtensions: ["olb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Gnu is Not eUnuchs.\n__.SYMDEF       "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_COMPILED.\0_"
+    CaseSensitive: false

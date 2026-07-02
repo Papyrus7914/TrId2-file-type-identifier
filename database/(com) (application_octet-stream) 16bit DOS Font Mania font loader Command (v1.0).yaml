@@ -1,0 +1,20 @@
+Name: 16bit DOS Font Mania font loader Command (v1.0)
+URL: "http://fileformats.archiveteam.org/wiki/Font_Mania_(REXXCOM)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEBM\x01\x01\x10\x10\0 FONT MANIA, VERSION 1.0 \r\n COPYRIGHT (C) REXXCOM SYSTEMS, 1991 \x1A$\x03\x02\0\0\0\0\xB8\0\x05\xCD\x10\xBFJ\x01\x8A\x05\xB4\x12\xB30\xCD\x10\xBBI\x01\x8A\a2\xE4\xCD\x10\xBD\x01\x02\xBE\x05\x01\x8A<\xB9\0\x013\xD22\xDB\xB8\x10\x11\xCD\x102\xED\x8A\x0E\x80\0\n\xC9t\x18\xBE\x80\0F\x80< t\xFA\x80<\tt\xF5\x80<Rt\a\x80<rt\x02\xCD \xB8\x105\xCD!\x89\x1EK\x01\x8C\x06M\x01\xB8\x10%\xBA\xBA\x01\xCD!\xBA\x01\x12\xCD'\n\xE4u\x12<\0t\x0E<\x01t\n<\x02t\x06<\x03t\x02<\a\x9C\x9C.\xFF\x1EK\x01\x9Du&PSQR\x06U\x0E\a\xB8\x10\x11.\x8A>\x05\x012\xDB\xB9\0\x013\xD2\xBD\x01\x02\x9C.\xFF\x1EK\x01]\aZY[X\xCF\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0~\x81\xA5\x81\x81\xBD\x99\x81"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) REXXCOM SYSTEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION 1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT MANIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1991"
+    CaseSensitive: false

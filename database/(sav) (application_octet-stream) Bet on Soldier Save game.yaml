@@ -1,0 +1,29 @@
+Name: Bet on Soldier Save game
+URL: "https://www.mobygames.com/game/19391/bet-on-soldier-blood-sport/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "KTSAVERS\x04\0\0\0\x06\0\0\0LIST"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "GMIFMDNM\x04\0\0\0\x03bosLVNM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GMIFMDNM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KTSAVERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOSLVNM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".KT3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false

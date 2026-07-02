@@ -1,0 +1,17 @@
+Name: Compiled MediaBasic Project
+Description: MediaForge is an authoring system for building Multimedia applications.
+URL: "http://www.mediaforge.com"
+FileNameExtensions: ["ebc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BE\x05\0"
+    CaseSensitive: true
+  - Pos: 116
+    AsciiString: "\0\0\0\0Main\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MEDIA FORGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false

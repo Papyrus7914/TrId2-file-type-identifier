@@ -1,0 +1,79 @@
+Name: WCF Configuration Snapshot
+FileNameExtensions: ["svcinfo"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSTEM.SERVICEMODEL.CONFIGURATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML-WCFCONFIGURATIONSNAPSHOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATIONSNAPSHOT XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPOINT NORMALIZEDDIGEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS-MICROSOFT-COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINDINGCONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINDING DIGEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINDINGELEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICKEYTOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTRACTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINDINGTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEHAVIORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINDINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CULTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEUTRAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-16"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

@@ -1,0 +1,77 @@
+Name: Artweaver Brush
+Description: Artweaver is a simple Freeware program for creative painting.
+URL: "http://www.artweaver.de"
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<!-- Artweaver "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ARTWEAVER-BRUSH-DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACING-CONTINUOUSDRAW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUSH DEFINITION --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACING-PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT-PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL-PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WELL-RESATURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM-PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM-RANDOMRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL-BRUSHTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUSH-PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL-OPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WELL-PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT-OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- ARTWEAVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-CONTROLLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WELL-DRYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WELL-BLEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUSH-SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-INVERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false

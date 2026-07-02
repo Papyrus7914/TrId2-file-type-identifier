@@ -1,0 +1,16 @@
+Name: "Robin Hood: The Legend of Sherwood save game"
+URL: "https://www.mobygames.com/game/7907/robin-hood-the-legend-of-sherwood/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GSHR0\0\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\00\0\0\0B\x8D\x11n\xAA\x94Z\xBAGW\xBD7 \xC1@\x95\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "R\0O\0B\0I\0N\0 \0H\0O\0O\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2EPEN"
+    CaseSensitive: false

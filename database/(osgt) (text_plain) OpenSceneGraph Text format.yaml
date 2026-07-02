@@ -1,0 +1,32 @@
+Name: OpenSceneGraph Text format
+URL: "http://fileformats.archiveteam.org/wiki/OpenSceneGraph"
+FileNameExtensions: ["osgt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#Ascii Scene"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DRAWABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST 1 {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEODE {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

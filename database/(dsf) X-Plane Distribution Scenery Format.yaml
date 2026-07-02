@@ -1,0 +1,55 @@
+Name: X-Plane Distribution Scenery Format
+URL: "http://en.wikipedia.org/wiki/X-Plane_(simulator)"
+FileNameExtensions: ["dsf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XPLNEDSF\x01\0\0\0DAEH"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTERNAL_REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATION_AGENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAMINAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAEH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NFED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NMED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TJBO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WTEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YLOP"
+    CaseSensitive: false

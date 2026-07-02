@@ -1,0 +1,32 @@
+Name: RetCam MLX data format
+URL: "https://natus.com/products-services/eye-imaging"
+FileNameExtensions: ["mlx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[MLX0001]\x02\0\0\0H\0e\0a\0d\0e\0r\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "O\0P\0H\0T\0H\0A\0L\0M\0I\0C\0I\0M\0A\0G\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0E\0A\0D\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLX0001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHRM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRGB"
+    CaseSensitive: false

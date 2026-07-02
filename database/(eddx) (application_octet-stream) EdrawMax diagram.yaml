@@ -1,0 +1,26 @@
+Name: EdrawMax diagram
+URL: "https://www.edrawmax.com/"
+FileNameExtensions: ["eddx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PAGE1_RELS.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.JPEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE1.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEME.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES"
+    CaseSensitive: false

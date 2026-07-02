@@ -1,0 +1,14 @@
+Name: PsyTexx module
+Description: PalmOS tracker.
+FileNameExtensions: ["pdb"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 60
+    AsciiString: "MOD ZULU"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MOD ZULU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END."
+    CaseSensitive: false

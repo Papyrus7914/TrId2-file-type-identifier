@@ -1,0 +1,8 @@
+Name: Redis RDB format (generic)
+URL: "https://rdb.fnordig.de/file_format.html"
+FileNameExtensions: ["rdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "REDIS00"
+    CaseSensitive: true

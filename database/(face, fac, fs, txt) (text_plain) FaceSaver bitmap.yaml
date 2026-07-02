@@ -1,0 +1,38 @@
+Name: FaceSaver bitmap
+URL: "http://fileformats.archiveteam.org/wiki/FaceSaver"
+FileNameExtensions: ["face", "fac", "fs", "txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FirstName:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CITYSTATEZIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TELEPHONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E-MAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: ZOAGZIP game data format
+URL: "http://en.wikipedia.org/wiki/SD_Gundam_Capsule_Fighter"
+FileNameExtensions: ["dat"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZOAGZIP"
+    CaseSensitive: true
+  - Pos: 12
+    #                    \b
+    Bytes: [0x1F, 0x8B, 0x08, 0x00]

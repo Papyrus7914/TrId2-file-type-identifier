@@ -1,0 +1,14 @@
+Name: WaveStar v1.x Driver
+URL: "https://www.tek.com/datasheet/wstro"
+FileNameExtensions: ["dvr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "1."
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "`"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CURV"
+    CaseSensitive: false

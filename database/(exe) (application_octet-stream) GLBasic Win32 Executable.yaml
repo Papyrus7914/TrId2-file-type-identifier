@@ -1,0 +1,608 @@
+Name: GLBasic Win32 Executable
+URL: "https://www.glbasic.com/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0PE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 376
+    AsciiString: ".text"
+    CaseSensitive: true
+  - Pos: 416
+    AsciiString: ".data"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUNHANDLEDEXCEPTIONFILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PURE VIRTUAL METHOD CALLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUERYPERFORMANCEFREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUERYPERFORMANCECOUNTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCURRENTDIRECTORYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERLOCKEDINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETCURRENTDIRECTORYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAITFORSINGLEOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETEXITCODEPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEFILENAMEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__CLASS_TYPE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETOPENFILENAMEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSAVEFILENAMEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "12ASTARPLANNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEPROCESSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDFIRSTFILEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETFILEPOINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__SET_APP_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "11NODEFACTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD_EXCEPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDNEXTFILEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODEHASHTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__GETMAINARGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "10BAD_TYPEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "10FIXEDDEQUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMDLG32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETLASTERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETTEMPPATHA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETLASTERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__P__ENVIRON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEFILEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETEFILEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLSGETVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLSSETVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9BAD_ALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9EXCEPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9TYPE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSVCRT.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8BAD_CAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETCURSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%%D.%DF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7PLANNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATESE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENBUFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTRLENA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLSALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SETMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STRICMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEANUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESKTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETHOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLBASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I_CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMMOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRINTF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__FMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "___\0WWW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "777777"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMCPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P4NODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRCAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRCMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRCPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATAN2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0GLB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLUSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GSTRI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINGW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUTDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLEEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TDOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_GCVT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ITOA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__SI_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHOO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEMO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESSI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IZED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTFA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUTC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P__F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RITI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_IOB"
+    CaseSensitive: false

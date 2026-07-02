@@ -1,0 +1,24 @@
+Name: Autodesk Animator
+URL: "http://www.autodesk.com"
+FileNameExtensions: ["fli"]
+DetectionPatterns:
+  - Pos: 3
+    Bytes: [0x00, 0x11, 0xAF]
+  - Pos: 8
+    AsciiString: "@\x01\xC8\0\b\0\x03\0\x05\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "FL10"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "FL10\x01\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0"
+    CaseSensitive: true
+  - Pos: 86
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 130
+    AsciiString: "\0\0\xFA\xF1\x02\0\0\0\0\0\0\0\0\0\n\x03\0\0\v\0\x01\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 924
+    AsciiString: "\0\0\x0F\0"
+    CaseSensitive: true

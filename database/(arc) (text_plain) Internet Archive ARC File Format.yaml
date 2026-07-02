@@ -1,0 +1,35 @@
+Name: Internet Archive ARC File Format
+URL: "http://archive.org/web/researcher/ArcFileFormat.php"
+FileNameExtensions: ["arc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "filedesc://"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "URL IP-ADDRESS ARCHIVE-DATE CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHIVE-LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEDESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ARC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

@@ -1,0 +1,35 @@
+Name: Develve data
+Description: Develve is a statistical package for fast and easy interpretation of experimental data in science and R and D in a technical environment
+URL: "http://develve.net/"
+FileNameExtensions: ["develve"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<%Input%>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%INTERACTIONS%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%DECIMALS%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%FACTORS%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%RESULTS%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%MANOVA%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%GRAPH%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%INPUT%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%DOE%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%END%"
+    CaseSensitive: false

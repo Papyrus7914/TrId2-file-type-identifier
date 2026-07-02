@@ -1,0 +1,65 @@
+Name: Leica XLEF
+URL: "https://docs.openmicroscopy.org/bio-formats/6.9.0/formats/leica-xlef.html"
+FileNameExtensions: ["xlef"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<LMSDataContainerHeader Version=\"2\" ApplicationDescription=\"LMSIOManager\" ApplicationVersion=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LMSDATACONTAINERHEADER VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP HIGHINTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATIONVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPERIMENT PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORYBLOCKID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LMSIOMANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSAVEDFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYOPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWINTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XLEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XLIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false

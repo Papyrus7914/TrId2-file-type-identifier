@@ -1,0 +1,34 @@
+Name: TomTom Go info
+URL: "http://www.tomtom.com"
+FileNameExtensions: ["bif"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[TomTomGo]\r\nDeviceName=TomTom "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPLICATIONVERSIONVERSIONNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOTLOADERVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICEVERSIONHW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICEUNIQUEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAMDISKVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINUXVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOMTOM GO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOMTOMGO"
+    CaseSensitive: false

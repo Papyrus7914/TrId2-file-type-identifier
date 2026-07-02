@@ -1,0 +1,17 @@
+Name: IES LM-63 Photometric data (UTF-8)
+URL: "https://en.wikipedia.org/wiki/Illuminating_Engineering_Society"
+FileNameExtensions: ["ies"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBFIESNA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILT"
+    CaseSensitive: false

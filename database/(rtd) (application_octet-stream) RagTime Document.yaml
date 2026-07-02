@@ -1,0 +1,51 @@
+Name: RagTime Document
+Description: RagTime is a professional business publishing software.
+URL: "https://en.wikipedia.org/wiki/RagTime"
+FileNameExtensions: ["rtd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "C#+D\xA4CM\xA5Hdr"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LABEL_AT_START_TYPE\0BESOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUVERSION\0BESOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSDATA\0BESOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLEREF\0BESOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODENAME\0BESOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMDATA\0BESOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOTITEM\0BESOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USECOUNT\0BESOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL_AT_START\0BE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACK\0BESOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7BITASCII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLUSTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAGTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNICODE"
+    CaseSensitive: false

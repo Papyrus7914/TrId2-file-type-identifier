@@ -1,0 +1,28 @@
+Name: Lazarus Form
+URL: "http://en.wikipedia.org/wiki/Lazarus_(IDE)"
+FileNameExtensions: ["lfm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "object "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LCLVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false

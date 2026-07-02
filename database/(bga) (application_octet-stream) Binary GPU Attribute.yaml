@@ -1,0 +1,11 @@
+Name: Binary GPU Attribute
+URL: "https://substack.net/bga.html"
+FileNameExtensions: ["bga"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BGA "
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "."
+    CaseSensitive: true

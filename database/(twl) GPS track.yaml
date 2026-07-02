@@ -1,0 +1,9 @@
+Name: GPS track
+FileNameExtensions: ["twl"]
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\xFF\xFF\x01\0\t\0CWayPoint"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CWAYPOINT"
+    CaseSensitive: false

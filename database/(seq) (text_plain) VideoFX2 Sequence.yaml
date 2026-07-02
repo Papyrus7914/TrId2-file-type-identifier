@@ -1,0 +1,14 @@
+Name: VideoFX2 Sequence
+Description: Amiga animation tool.
+FileNameExtensions: ["seq"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EVSQ\0\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "KF01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KF01"
+    CaseSensitive: false

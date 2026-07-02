@@ -1,0 +1,12 @@
+Name: Libery BASIC tokenized source
+Description: Liberty BASIC is a easy to learn programming language for Windows.
+URL: "http://www.libertybasic.com/"
+FileNameExtensions: ["tkn"]
+DetectionPatterns:
+  - Pos: 7
+    Bytes: [0x1B]
+  - Pos: 13
+    Bytes: [0x1B]
+  - Pos: any
+    AsciiString: "VSSX"
+    CaseSensitive: false

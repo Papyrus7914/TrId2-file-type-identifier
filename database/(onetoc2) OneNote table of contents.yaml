@@ -1,0 +1,7 @@
+Name: OneNote table of contents
+URL: "http://en.wikipedia.org/wiki/Microsoft_OneNote"
+FileNameExtensions: ["onetoc2"]
+DetectionPatterns:
+  - Pos: 0
+    #              /           C                 v     L                             W     \"    v     _
+    Bytes: [0xA1, 0x2F, 0xFF, 0x43, 0xD9, 0xEF, 0x76, 0x4C, 0x9E, 0xE2, 0x10, 0xEA, 0x57, 0x22, 0x76, 0x5F]

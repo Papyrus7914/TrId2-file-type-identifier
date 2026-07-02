@@ -1,0 +1,22 @@
+Name: ITI SimulationX Encrypted Model
+URL: "http://www.simulationx.com"
+FileNameExtensions: ["ism"]
+DetectionPatterns:
+  - Pos: 0
+    #                                            $     ~                                   3
+    Bytes: [0x13, 0xE5, 0xCA, 0x16, 0xEC, 0x99, 0x24, 0x7E, 0x8E, 0xB7, 0x1D, 0xF6, 0x92, 0x33, 0x11, 0xE7]
+  - Pos: 18
+    #              B
+    Bytes: [0x83, 0x42]
+  - Pos: any
+    AsciiString: "F.T_D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EP7N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K(QG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R7+X"
+    CaseSensitive: false

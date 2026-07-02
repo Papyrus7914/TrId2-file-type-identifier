@@ -1,0 +1,19 @@
+Name: KryoFlux GUI image profiles
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<image-profiles>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMAGE-PROFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false

@@ -1,0 +1,60 @@
+Name: Stream SubText Player subtitles
+FileNameExtensions: ["sst"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SST 2."
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\r\n;\r\n;This is a subtitles file.\r\n;Get the Stream Subtext Player at\r\n;http://hem.passagen.se/jmorones/Pages/StreamSubText.htm\r\n;\r\n[PROPERTIES]\r\nTitle="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FONTSIZEPERCENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOSCALETEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOSTANDARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELASPECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOXHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVIEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false

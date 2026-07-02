@@ -1,0 +1,57 @@
+Name: WiX Burn Managed Bootstrapper App Config (UTF-8)
+Description: Filename is BootstrapperCore.config
+URL: "https://wixtoolset.org/"
+FileNameExtensions: ["config"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\" ?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MICROSOFT.TOOLS.WINDOWSINSTALLERXML.BOOTSTRAPPER.BOOTSTRAPPERSECTIONGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT.TOOLS.WINDOWSINSTALLERXML.BOOTSTRAPPER.HOSTSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTUP USELEGACYV2RUNTIMEACTIVATIONPOLICY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORTEDRUNTIME VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOST ASSEMBLYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTIONGROUP NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOTSTRAPPERCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIX.BOOTSTRAPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGSECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V4.0"
+    CaseSensitive: false

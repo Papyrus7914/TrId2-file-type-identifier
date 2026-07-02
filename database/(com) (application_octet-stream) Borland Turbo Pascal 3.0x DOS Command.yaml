@@ -1,0 +1,13 @@
+Name: Borland Turbo Pascal 3.0x DOS Command
+URL: "https://en.wikipedia.org/wiki/Turbo_Pascal"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "\x90\x90\xCD\xABCopyright (C) 1985 BORLAND Inc"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0"
+    CaseSensitive: true

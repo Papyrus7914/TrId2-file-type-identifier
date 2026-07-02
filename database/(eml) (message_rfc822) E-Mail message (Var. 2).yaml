@@ -1,0 +1,14 @@
+Name: E-Mail message (Var. 2)
+URL: "http://fileformats.archiveteam.org/wiki/Internet_e-mail_message_format"
+FileNameExtensions: ["eml"]
+MimeType: message/rfc822
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "From"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

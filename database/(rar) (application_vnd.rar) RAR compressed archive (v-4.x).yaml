@@ -1,0 +1,8 @@
+Name: RAR compressed archive (v-4.x)
+URL: "https://en.wikipedia.org/wiki/RAR_(file_format)"
+FileNameExtensions: ["rar"]
+MimeType: application/vnd.rar
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Rar!\x1A\a\0"
+    CaseSensitive: true

@@ -1,0 +1,11 @@
+Name: NexusDB database
+URL: "https://en.wikipedia.org/wiki/NexusDB"
+FileNameExtensions: ["nx1"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NX!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NX1X"
+    CaseSensitive: false

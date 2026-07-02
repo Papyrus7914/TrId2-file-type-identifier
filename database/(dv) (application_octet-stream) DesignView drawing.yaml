@@ -1,0 +1,17 @@
+Name: DesignView drawing
+Description: 2D parametric CAD for Windows by Premise, Inc.
+FileNameExtensions: ["dv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ">BKM<"
+    CaseSensitive: true
+  - Pos: 143
+    AsciiString: "Drawing [ "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWING"
+    CaseSensitive: false

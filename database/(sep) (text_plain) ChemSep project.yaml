@@ -1,0 +1,11 @@
+Name: ChemSep project
+URL: "http://www.chemsep.com/"
+FileNameExtensions: ["sep"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[ChemSep]\r\nVersion="
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "."
+    CaseSensitive: true

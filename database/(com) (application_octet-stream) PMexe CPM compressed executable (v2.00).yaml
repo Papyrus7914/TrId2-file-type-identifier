@@ -1,0 +1,41 @@
+Name: PMexe CP/M compressed executable (v2.00)
+URL: "http://fileformats.archiveteam.org/wiki/PMexe"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "-pms-"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\r\nPMexe Version 2.00 for CP/M\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PMEXE VERSION 2.00 FOR CP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRC ERROR DETECTED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSUPPORTED METHOD."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY YOSHIHIKO MINO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER IS BROKEN."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF MEMORY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ RESTORING $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ DISPLAYING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT(C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-PMS-"
+    CaseSensitive: false

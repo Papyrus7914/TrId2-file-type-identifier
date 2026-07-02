@@ -1,0 +1,23 @@
+Name: Qualitas Help
+Description: Used in some Qualitas MS-DOS programs, like 386MAX.
+FileNameExtensions: ["hlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LN\x02\0\0\0\xFF\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "_h_hlp.hlp"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "H.CONTENTS\0H.DEFAULT\0H.U_HELP\0H.U_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_Q_HLP.HLP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H.INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

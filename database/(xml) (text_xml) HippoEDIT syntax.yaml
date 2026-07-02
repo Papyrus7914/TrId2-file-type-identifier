@@ -1,0 +1,32 @@
+Name: HippoEDIT syntax
+URL: "https://www.hippoedit.com"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XML-STYLESHEET TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLCONFIGSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEINFO AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTAX.XSLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTAX ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

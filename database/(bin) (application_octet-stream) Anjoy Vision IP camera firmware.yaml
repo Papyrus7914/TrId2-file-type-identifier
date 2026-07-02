@@ -1,0 +1,17 @@
+Name: Anjoy Vision IP camera firmware
+URL: "http://www.anjvision.com/"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ANJOY888"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "MSTAR_I"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MSTAR_I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LINUX"
+    CaseSensitive: false

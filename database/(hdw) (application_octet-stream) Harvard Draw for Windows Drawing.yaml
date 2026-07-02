@@ -1,0 +1,38 @@
+Name: Harvard Draw for Windows Drawing
+URL: "https://en.wikipedia.org/wiki/Harvard_Graphics"
+FileNameExtensions: ["hdw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "HDRWDRHD"
+    CaseSensitive: true
+  - Pos: 276
+    AsciiString: "TBNL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HDRWDRHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUDU4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUDV4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYRH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHNK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBNL"
+    CaseSensitive: false

@@ -1,0 +1,58 @@
+Name: Acrobat eBook Reader EBX Transfer Data
+URL: "http://www.adobe.com/products/digitaleditions/"
+FileNameExtensions: ["etd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EBX-TRANSFER-DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-EBX-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKFILEURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOUCHERURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULFILLURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLASSBOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETD-ENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EBX.ETD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASEURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

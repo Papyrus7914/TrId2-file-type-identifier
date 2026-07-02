@@ -1,0 +1,12 @@
+Name: Saxon Publisher document
+Description: Amiga DTP software.
+URL: "https://www.amigafuture.de/asd.php?asd_id=670"
+FileNameExtensions: ["sp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TPAG\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TBOX"
+    CaseSensitive: false

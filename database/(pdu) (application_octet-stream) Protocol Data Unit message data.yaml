@@ -1,0 +1,12 @@
+Name: Protocol Data Unit message data
+FileNameExtensions: ["pdu"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x8C]
+  - Pos: any
+    AsciiString: "PLMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

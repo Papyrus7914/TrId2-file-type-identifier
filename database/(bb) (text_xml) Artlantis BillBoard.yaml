@@ -1,0 +1,50 @@
+Name: Artlantis BillBoard
+URL: "http://www.artlantis.com/"
+FileNameExtensions: ["bb"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Abvent.Billboard>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CUTOUT_COLORS COLOR1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METRIC_SIZE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABVENT.BILLBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEHAVIOR NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITEXTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PRW.TGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EN NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FR NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMES"
+    CaseSensitive: false

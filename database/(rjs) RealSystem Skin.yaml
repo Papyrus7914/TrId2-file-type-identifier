@@ -1,0 +1,46 @@
+Name: RealSystem Skin
+URL: "http://www.real.com"
+FileNameExtensions: ["rjs"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MINIMIZE.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGND.BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKIN.INIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLMODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLTHUMB."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLTRACK."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIOUS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URL."
+    CaseSensitive: false

@@ -1,0 +1,31 @@
+Name: EasyC Project
+URL: "http://www.intelitek.com/"
+FileNameExtensions: ["ecp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[General]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLOWCHART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOM"
+    CaseSensitive: false

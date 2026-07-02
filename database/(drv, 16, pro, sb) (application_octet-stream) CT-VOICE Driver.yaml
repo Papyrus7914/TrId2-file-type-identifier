@@ -1,0 +1,25 @@
+Name: CT-VOICE Driver
+URL: "https://en.wikipedia.org/wiki/Sound_Blaster"
+FileNameExtensions: ["drv", "16", "pro", "sb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "CT-VOICE\0Creative Sound Blaster "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CT-VOICE\0CREATIVE SOUND BLASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".  ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TECHNOLOGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LTD."
+    CaseSensitive: false

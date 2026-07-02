@@ -1,0 +1,17 @@
+Name: Ricevuta Agenzia delle Entrate (generic)
+URL: "https://www.agenziaentrate.gov.it/"
+FileNameExtensions: ["rcc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 5
+    AsciiString: "RICE30\x80\x06\t*\x86H\x86\xF7\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CA AGENZIA DELLE ENTRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AGENZIA DELLE ENTRATE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RICE30"
+    CaseSensitive: false

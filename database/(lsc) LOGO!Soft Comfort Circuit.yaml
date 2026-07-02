@@ -1,0 +1,13 @@
+Name: LOGO!Soft Comfort Circuit
+URL: "http://www.automation.siemens.com/logo/index_76.html"
+FileNameExtensions: ["lsc"]
+DetectionPatterns:
+  - Pos: 0
+    #                                w
+    Bytes: [0xAC, 0xED, 0x00, 0x05, 0x77]
+  - Pos: 22
+    AsciiString: "sr\0'DE.siemens.ad.pdraw.figures.BlockFigure\xFA`\xAD+Yb\x84*\x02\0"
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: "I\0 blockFigureSerializedDataVersionZ\0\x15fBlockNumberIsVisible"
+    CaseSensitive: true

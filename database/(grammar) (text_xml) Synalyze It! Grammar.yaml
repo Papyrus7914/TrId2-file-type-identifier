@@ -1,0 +1,44 @@
+Name: Synalyze It! Grammar
+URL: "http://www.synalysis.net"
+FileNameExtensions: ["grammar"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ufwb version=\""
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STRUCTURE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAMMAR NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UFWB VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

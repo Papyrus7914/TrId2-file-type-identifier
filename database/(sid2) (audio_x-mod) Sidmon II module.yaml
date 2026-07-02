@@ -1,0 +1,17 @@
+Name: Sidmon II module
+URL: "http://www.exotica.org.uk/wiki/Sidmon_II"
+FileNameExtensions: ["sid2"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\x1C\0\0\0\x04\0\0"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "SIDMON II - THE MIDI VERSION"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIDMON II - THE MIDI VERSION"
+    CaseSensitive: false

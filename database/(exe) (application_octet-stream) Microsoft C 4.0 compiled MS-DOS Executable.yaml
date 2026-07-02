@@ -1,0 +1,64 @@
+Name: Microsoft C 4.0 compiled MS-DOS Executable
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B#16-bit_versions"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0 \0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\0\b"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0\0\x1E\0\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "C LIBRARY - (C)COPYRIGHT MICROSOFT CORP 1986"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT ENOUGH SPACE FOR ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS 2.0 OR LATER REQUIRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL POINTER ASSIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER DIVIDE BY 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__VERSION INFO__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACK OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_FILE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR 2000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR 2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR 2003"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR 2004"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR 2009"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NMSG"
+    CaseSensitive: false

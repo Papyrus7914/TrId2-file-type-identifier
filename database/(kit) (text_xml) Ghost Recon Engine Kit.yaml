@@ -1,0 +1,11 @@
+Name: Ghost Recon Engine Kit
+URL: "https://www.mobygames.com/game/5557/tom-clancys-ghost-recon/"
+FileNameExtensions: ["kit"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<KitFile>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSIONNUMBER"
+    CaseSensitive: false

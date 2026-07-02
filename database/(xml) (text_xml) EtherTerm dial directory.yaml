@@ -1,0 +1,38 @@
+Name: EtherTerm dial directory
+URL: "https://github.com/M-griffin/EtherTerm/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" ?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PHONEBOOK VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETHERTERM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBS NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false

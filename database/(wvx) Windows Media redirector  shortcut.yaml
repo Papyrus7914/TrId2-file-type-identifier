@@ -1,0 +1,15 @@
+Name: Windows Media redirector / shortcut
+FileNameExtensions: ["wvx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Reference]\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REF1"
+    CaseSensitive: false

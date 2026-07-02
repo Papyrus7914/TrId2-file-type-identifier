@@ -1,0 +1,80 @@
+Name: 16bit Windows Shrinker compressed Executable (v3.4)
+URL: "http://fileformats.archiveteam.org/wiki/Shrinker"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0\0\0@\0\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNKNOWN RELOCATION TYPE\0WINDEBUG\0WINNOTIFY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM REQUIRES MICROSOFT WINDOWS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN LOADING MODULE\0SHRINKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEGALCOPYRIGHT\0\0COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4\0VS_VERSION_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINALFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$\0\0\0VARFILEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGFILEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNALNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL\0U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHR3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

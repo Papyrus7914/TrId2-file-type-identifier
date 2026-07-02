@@ -1,0 +1,13 @@
+Name: FastTracker 2 eXtended Module
+URL: "http://en.wikipedia.org/wiki/FastTracker_2"
+FileNameExtensions: ["xm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Extended "
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "odule: "
+    CaseSensitive: true
+  - Pos: 37
+    Bytes: [0x1A]

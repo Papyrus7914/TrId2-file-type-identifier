@@ -1,0 +1,41 @@
+Name: SynWrite Session
+URL: "https://cudatext.github.io/synwrite/"
+FileNameExtensions: ["synw-session"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[sess]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLMARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GR_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAB_ACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GR_ACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRAP"
+    CaseSensitive: false

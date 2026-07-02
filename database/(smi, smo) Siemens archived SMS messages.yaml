@@ -1,0 +1,10 @@
+Name: Siemens archived SMS messages
+URL: "http://sisms.sourceforge.net/docs/SMISMOStruct.html"
+FileNameExtensions: ["smi", "smo"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\v\v"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0"
+    CaseSensitive: true

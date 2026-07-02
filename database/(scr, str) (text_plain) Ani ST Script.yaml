@@ -1,0 +1,23 @@
+Name: Ani ST Script
+URL: "http://fileformats.archiveteam.org/wiki/AniST"
+FileNameExtensions: ["scr", "str"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*script "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*GROUND_Z"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*TWEEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*ACT"
+    CaseSensitive: false

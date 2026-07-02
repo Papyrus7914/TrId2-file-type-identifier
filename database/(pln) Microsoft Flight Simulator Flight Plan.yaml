@@ -1,0 +1,79 @@
+Name: Microsoft Flight Simulator Flight Plan
+URL: "http://www.microsoft.com/games/flightsimulator/"
+FileNameExtensions: ["pln"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIMBASE.DOCUMENT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIGHTPLAN.FLIGHTPLAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPARTUREPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPVERSIONBUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATIONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATCWAYPOINTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACEXML DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPVERSIONMAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATCWAYPOINT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATIONLLA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATIONID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPARTURENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLDPOSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPARTURELLA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPARTUREID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRUISINGALT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICAOIDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIRPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCR"
+    CaseSensitive: false

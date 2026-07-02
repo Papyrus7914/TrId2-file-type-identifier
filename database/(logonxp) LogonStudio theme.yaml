@@ -1,0 +1,19 @@
+Name: LogonStudio theme
+URL: "http://www.stardock.com/products/logonstudio/"
+FileNameExtensions: ["logonxp"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "BITMAP_100.BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UIFILE.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEME.INI"
+    CaseSensitive: false

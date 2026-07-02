@@ -1,0 +1,14 @@
+Name: Proximity Technology Lexicon/Thesaurus
+Description: Used in various applications.
+FileNameExtensions: ["lex", "ths"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Copyright (C) "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROXIMITY TECHNOLOGY INC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED"
+    CaseSensitive: false

@@ -1,0 +1,38 @@
+Name: DISCO Discovery Output
+URL: "https://docs.fileformat.com/web/disco/"
+FileNameExtensions: ["discomap", "map"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSTEM.WEB.SERVICES.DISCOVERY.CONTRACTREFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISCOVERYCLIENTRESULT REFERENCETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISCOVERYCLIENTRESULTSFILE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WSDL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

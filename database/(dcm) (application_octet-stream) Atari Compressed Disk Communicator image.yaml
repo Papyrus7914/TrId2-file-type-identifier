@@ -1,0 +1,9 @@
+Name: Atari Compressed Disk Communicator image
+URL: "https://www.atarimax.com/ape/docs/DiskImageFAQ/"
+FileNameExtensions: ["dcm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFA]
+  - Pos: 2
+    Bytes: [0x01, 0x00]

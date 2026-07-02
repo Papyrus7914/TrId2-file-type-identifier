@@ -1,0 +1,10 @@
+Name: Home Designer plan
+URL: "http://www.homedesignersoftware.com"
+FileNameExtensions: ["plan"]
+DetectionPatterns:
+  - Pos: 0
+    #                    P
+    Bytes: [0x01, 0xCA, 0x50, 0x04]
+  - Pos: 238
+    AsciiString: "Home Designer "
+    CaseSensitive: true

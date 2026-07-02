@@ -1,0 +1,11 @@
+Name: 264DV video container
+Description: Used by some video surveillance devices.
+FileNameExtensions: ["h264"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "264DV"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true

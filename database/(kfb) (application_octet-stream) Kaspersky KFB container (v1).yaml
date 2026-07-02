@@ -1,0 +1,80 @@
+Name: Kaspersky KFB container (v1)
+URL: "https://en.wikipedia.org/wiki/Kaspersky_Lab"
+FileNameExtensions: ["kfb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KFB1\0\v\f\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "NcdV"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "NxtC"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "NcrP"
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "zsDD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOWNLOADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KILLFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TROJAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KLAV_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICDV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCDV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NXTC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCDV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZSDD"
+    CaseSensitive: false

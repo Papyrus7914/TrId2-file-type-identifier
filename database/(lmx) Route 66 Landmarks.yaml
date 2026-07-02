@@ -1,0 +1,28 @@
+Name: Route 66 Landmarks
+URL: "http://www.66.com/"
+FileNameExtensions: ["lmx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LANDMARKCOLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORDINATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

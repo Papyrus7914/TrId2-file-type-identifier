@@ -1,0 +1,23 @@
+Name: Gromada Map data
+URL: "http://fileformats.archiveteam.org/wiki/RES_(Gromada)"
+FileNameExtensions: ["map"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RES "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "MAP "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GROU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRD"
+    CaseSensitive: false

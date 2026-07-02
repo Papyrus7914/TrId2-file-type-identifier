@@ -1,0 +1,53 @@
+Name: Open Financial Connectivity
+URL: "http://en.wikipedia.org/wiki/Open_Financial_Connectivity"
+FileNameExtensions: ["ofc"]
+MimeType: text/ofc
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<OFC>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACCTFROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCTSTMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTPOSTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STMTTRN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRNTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANKID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEDGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STMTRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRNAMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FITID"
+    CaseSensitive: false

@@ -1,0 +1,35 @@
+Name: Krita Action collection
+URL: "https://en.wikipedia.org/wiki/Krita"
+FileNameExtensions: ["action"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<ActionCollection version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACTIONCOLLECTION VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIONS CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISCHECKABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUSTIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHATSTHIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORTCUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLTIP"
+    CaseSensitive: false

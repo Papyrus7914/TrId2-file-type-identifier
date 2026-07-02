@@ -1,0 +1,29 @@
+Name: ESP32 firmware binary (Arduino IDE)
+URL: "https://en.wikipedia.org/wiki/ESP32"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          /
+    Bytes: [0xE9, 0x06, 0x02, 0x2F]
+  - Pos: 6
+    AsciiString: "\b@\xEE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ARDUINO-LIB-BUILDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESP32-ARDUINO-LIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESP_PARTITION_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PROCESS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESP_ERR_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UART_"
+    CaseSensitive: false

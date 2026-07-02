@@ -1,0 +1,11 @@
+Name: CTF MEG Magnetic Resonance Imaging data
+URL: "https://www.ctf.com/"
+FileNameExtensions: ["mri"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CTF_MRI_FORMAT VER "
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "."
+    CaseSensitive: true

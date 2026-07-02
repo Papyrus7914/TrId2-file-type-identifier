@@ -1,0 +1,18 @@
+Name: Linux kernel/bootloader/tools x86 bootable (v1)
+Description: "variant used for version before boot protocol 2.0; typical file names are: linux; but also names like: bootsect.b memtest86+.bin"
+URL: "https://tldp.org/HOWTO/Linux-i386-Boot-Code-HOWTO/bootsect.html"
+FileNameExtensions: ["bin", "b"]
+MimeType: application/x-linux-kernel
+DetectionPatterns:
+  - Pos: 0
+    #                    \a
+    Bytes: [0xB8, 0xC0, 0x07, 0x8E, 0xD8]
+  - Pos: 499
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 510
+    #        U
+    Bytes: [0x55, 0xAA]
+  - Pos: any
+    AsciiString: "RQSP"
+    CaseSensitive: false

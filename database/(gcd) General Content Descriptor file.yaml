@@ -1,0 +1,25 @@
+Name: General Content Descriptor file
+URL: "http://sprintdeveloper.com/article16.html"
+FileNameExtensions: ["gcd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Content-Type: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-VENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-URL"
+    CaseSensitive: false

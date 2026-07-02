@@ -1,0 +1,14 @@
+Name: Mayo/SPM Analyze format Header (BE)
+URL: "http://www.grahamwideman.com/gw/brain/analyze/formatdoc.htm"
+FileNameExtensions: ["hdr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x01\\"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0\0@\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "r"
+    CaseSensitive: true

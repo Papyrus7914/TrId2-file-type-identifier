@@ -1,0 +1,29 @@
+Name: Deluxe Print project
+URL: "http://www.amigafuture.de/asd.php?asd_id=333"
+FileNameExtensions: ["bnnr", "labl", "lthd", "sign"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "PDEFPFMT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ILBMBMHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILBMBODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILBMIMAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILBMPROP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false

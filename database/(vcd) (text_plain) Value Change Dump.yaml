@@ -1,0 +1,23 @@
+Name: Value Change Dump
+URL: "https://en.wikipedia.org/wiki/Value_change_dump"
+FileNameExtensions: ["vcd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$ENDDEFINITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$SCOPE MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$UPSCOPE $END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$TIMESCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$VAR"
+    CaseSensitive: false

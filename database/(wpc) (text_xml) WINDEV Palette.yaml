@@ -1,0 +1,15 @@
+Name: WINDEV Palette
+Description: WINDEV is a RAD tool by PC Soft.
+URL: "https://windev.com"
+FileNameExtensions: ["wpc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PALETTE NOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COULEURS"
+    CaseSensitive: false

@@ -1,0 +1,7 @@
+Name: Fugawi route format
+URL: "http://www.fugawi.com/docs/navframe.html"
+FileNameExtensions: ["rte"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x03\0\0\0&\0\0\0FUGRTE\xFF\xFF"
+    CaseSensitive: true

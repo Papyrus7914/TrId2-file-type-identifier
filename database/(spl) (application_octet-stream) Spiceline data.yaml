@@ -1,0 +1,14 @@
+Name: Spiceline data
+Description: Electronic tool for Atari ST by Dirk Lehmann.
+FileNameExtensions: ["spl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SPICELINE-DATAFILE\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANALYSIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAGR("
+    CaseSensitive: false

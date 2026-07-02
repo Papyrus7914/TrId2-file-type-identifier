@@ -1,0 +1,11 @@
+Name: Spectrum Pro Sound Maker chiptune
+URL: "http://zxtunes.com/software.php?id=6"
+FileNameExtensions: ["psm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 8
+    AsciiString: "psm1\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PSM1"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: 16bit DOS COM COMPACK compressed
+URL: "http://fileformats.archiveteam.org/wiki/COMPACK"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xBE]
+  - Pos: 3
+    AsciiString: "\xE8\0\0]\x83\xC5\xFAUPSQ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 199"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W COLLIS"
+    CaseSensitive: false

@@ -1,0 +1,65 @@
+Name: AV1 Image File Format bitmap
+URL: "http://fileformats.archiveteam.org/wiki/AVIF"
+FileNameExtensions: ["avif"]
+MimeType: image/avif
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "ftyp"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AV01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AV1C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTYP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDLR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIAF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIF1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITM"
+    CaseSensitive: false

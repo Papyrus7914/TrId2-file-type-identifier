@@ -1,0 +1,12 @@
+Name: Microsoft Border art
+FileNameExtensions: ["bdr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XT\x01\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true

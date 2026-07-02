@@ -1,0 +1,41 @@
+Name: Recursion Real-Time Stat Tracker Package
+URL: "https://recursiontracker.com/"
+FileNameExtensions: ["rtst_pak"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\x10\x01 \x02BgRecursionTracker.ComponentInformation, RTLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=nullR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RECURSIONTRACKER.COMPONENTDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECURSIONTRACKER.XMLDICTIONARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GQAXWYFVE9PGY4UERAUPEQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XGNST9DBK3FEQZZDPF3DJA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B77A5C561934E089"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENTS+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCORLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEUTRAL"
+    CaseSensitive: false

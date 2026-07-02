@@ -1,0 +1,25 @@
+Name: Packed Digital Signature
+FileNameExtensions: ["p7x"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PKCX0\x82"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPXAXPC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXBM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXCD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false

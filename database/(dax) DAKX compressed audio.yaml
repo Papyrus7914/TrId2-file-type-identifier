@@ -1,0 +1,11 @@
+Name: DAKX compressed audio
+Description: DAKX or dax stands for difference-adaptive compression. It is a patented method for the reversible compression of digital data streams.
+URL: "http://www.dakx.com/"
+FileNameExtensions: ["dax"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "daxACOMM"
+    CaseSensitive: true

@@ -1,0 +1,43 @@
+Name: UC Browser Theme
+URL: "http://en.wikipedia.org/wiki/UC_Browser"
+FileNameExtensions: ["uct"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\xFC\xBC\0\0\0\x01\0\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXTSOFTWARE\0ADOBE IMAGEREADYQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR\0\0\0.\0\0\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALE-1033"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "14345"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "16393"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1049"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1057"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1066"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2052"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLTE"
+    CaseSensitive: false

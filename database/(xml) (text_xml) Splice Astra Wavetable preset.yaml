@@ -1,0 +1,59 @@
+Name: Splice Astra Wavetable preset
+URL: "https://splice.com/tools/astra"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n\r\n<state name=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODITEM SRCID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODMATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM UID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE WT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WT1DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WT2DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAGS"
+    CaseSensitive: false

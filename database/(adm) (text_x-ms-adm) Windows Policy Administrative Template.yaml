@@ -1,0 +1,11 @@
+Name: Windows Policy Administrative Template
+URL: "https://en.wikipedia.org/wiki/Administrative_Template"
+FileNameExtensions: ["adm"]
+MimeType: text/x-ms-adm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CLASS "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLASS MACHINE"
+    CaseSensitive: false

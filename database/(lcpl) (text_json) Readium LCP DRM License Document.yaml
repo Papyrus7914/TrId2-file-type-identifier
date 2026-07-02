@@ -1,0 +1,83 @@
+Name: Readium LCP DRM License Document
+URL: "https://readium.org/lcp-specs/"
+FileNameExtensions: ["lcpl"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"provider\":\"http"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENCRYPTED_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLDSIG-MORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CERTIFICATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFILE-1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READIUM.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AES256-CBC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY_CHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SA-SHA256"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT_HINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER_KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSUED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLENC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

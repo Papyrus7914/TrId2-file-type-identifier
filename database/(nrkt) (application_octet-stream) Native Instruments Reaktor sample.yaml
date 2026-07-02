@@ -1,0 +1,20 @@
+Name: Native Instruments Reaktor sample
+URL: "http://en.wikipedia.org/wiki/Reaktor"
+FileNameExtensions: ["nrkt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0\0\0\0\0\x01\0\0\0hsin\x01\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "\0\0\0\0\0\0DSINv\0\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0\0\0\0\0\0\0DSINj\0\0\0\x01\0\0\0\x18\0\0\0\0\0\0\0DSIN\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".\0R\0K\0P\0L\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E"
+    CaseSensitive: false

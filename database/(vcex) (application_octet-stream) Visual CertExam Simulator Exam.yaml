@@ -1,0 +1,35 @@
+Name: Visual CertExam Simulator Exam
+URL: "https://www.avanset.com/vce-simulator.html"
+FileNameExtensions: ["vcex"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PV11\x14\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\b\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "M\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0_"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 67
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 100
+    AsciiString: "_.bin.d"
+    CaseSensitive: true

@@ -1,0 +1,22 @@
+Name: Legend Style
+Description: Windows DTP/word processor from NBI.
+FileNameExtensions: ["sty"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xEF, 0x02]
+  - Pos: any
+    AsciiString: "GRAPHIC\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\0-\0-\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\0-\0-\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0-\0-\0-\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODYTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGETEXT"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Verity Collection Index Descriptor
+URL: "http://fileformats.archiveteam.org/wiki/Verity"
+FileNameExtensions: ["wld", "ddd", "did", "pdd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "Wb"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STYLE."
+    CaseSensitive: false

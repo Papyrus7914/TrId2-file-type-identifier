@@ -1,0 +1,42 @@
+Name: CHAOS Forge data
+Description: Fractal software for DOS by Autodesk.
+URL: "https://github.com/rudyrucker/chaos"
+FileNameExtensions: ["for"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CHAOS Forge Data\r\nCreated: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEVATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AZIMUTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEASON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEED"
+    CaseSensitive: false

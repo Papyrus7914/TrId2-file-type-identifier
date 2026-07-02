@@ -1,0 +1,20 @@
+Name: Renoise module (with samples)
+URL: "http://en.wikipedia.org/wiki/Renoise"
+FileNameExtensions: ["xrns"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "INSTRUMENT00 ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE00 ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONG.XML"
+    CaseSensitive: false

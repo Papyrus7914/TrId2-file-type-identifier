@@ -1,0 +1,28 @@
+Name: UAR voicebank
+FileNameExtensions: ["uar"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "CHARACTER.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "README.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WAV.FRQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTO.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false

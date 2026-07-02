@@ -1,0 +1,15 @@
+Name: LibGuide configuration
+Description: Amiga tool to check libraries versions.
+URL: "https://aminet.net/package/docs/lists/LibGuide"
+FileNameExtensions: ["dvc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DVC1 (Don't change this line!)\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBS"
+    CaseSensitive: false

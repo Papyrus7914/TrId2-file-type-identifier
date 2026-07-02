@@ -1,0 +1,23 @@
+Name: SID Factory II music
+URL: "https://blog.chordian.net/sf2/"
+FileNameExtensions: ["sf2"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    #        \r    7
+    Bytes: [0x0D, 0x37, 0x13, 0x01]
+  - Pos: 9
+    #        D           \t                      ␠     1
+    Bytes: [0x44, 0x12, 0x09, 0x16, 0x05, 0x12, 0x20, 0x31]
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AEINRW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BHNU"
+    CaseSensitive: false

@@ -1,0 +1,56 @@
+Name: Protege classes
+URL: "http://protege.stanford.edu/"
+FileNameExtensions: ["pont"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "; "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(CREATE-ACCESSOR READ-WRITE)))"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIPS_TOP_LEVEL_SLOT_CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(ALLOWED-CLASSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(ROLE ABSTRACT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(ROLE CONCRETE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TYPE INSTANCE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TYPE STRING)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(CARDINALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(SINGLE-SLOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(IS-A USER)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(MULTISLOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+ (VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DEFCLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+ (BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOT A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATION"
+    CaseSensitive: false

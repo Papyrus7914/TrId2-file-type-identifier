@@ -1,0 +1,17 @@
+Name: PS/2 MicroChannel Adapter Description File (with rem)
+URL: "https://en.wikipedia.org/wiki/Micro_Channel_architecture"
+FileNameExtensions: ["adf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADAPTERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAPTERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBYTES"
+    CaseSensitive: false

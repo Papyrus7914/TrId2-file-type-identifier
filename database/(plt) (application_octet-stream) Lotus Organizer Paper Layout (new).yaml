@@ -1,0 +1,20 @@
+Name: Lotus Organizer Paper Layout (new)
+Description: Observed at least from version 2.0 to 97.
+URL: "https://en.wikipedia.org/wiki/IBM_Lotus_Organizer"
+FileNameExtensions: ["plt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x9A, 0x9F, 0xAA, 0x11]
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true

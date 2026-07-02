@@ -1,0 +1,28 @@
+Name: MIUI Theme
+URL: "http://en.wikipedia.org/wiki/MIUI"
+FileNameExtensions: ["mtz"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DESCRIPTION.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKSCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWWW"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: Kudan AR Model
+URL: "https://www.kudan.eu/"
+FileNameExtensions: ["armodel"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "RootNode"
+    CaseSensitive: true
+  - Pos: 334
+    AsciiString: "\x80?\0\0\x80?\0\0\x80?\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROOTNODE"
+    CaseSensitive: false

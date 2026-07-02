@@ -1,0 +1,14 @@
+Name: JPEG 2000 bitmap
+URL: "https://en.wikipedia.org/wiki/JPEG_2000"
+FileNameExtensions: ["jp2"]
+MimeType: image/jp2
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\fjP  "
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "ftypjp2 "
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "jp2 "
+    CaseSensitive: true

@@ -1,0 +1,34 @@
+Name: MindManager Brainstorm and Process Control Map
+URL: "http://www.mindjet.com/"
+FileNameExtensions: ["mmap"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MINDMANAGERAPPLICATION.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINDMANAGERPRIMITIVE.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINDMANAGERDELTA.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINDMANAGERCORE.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MINDJET.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

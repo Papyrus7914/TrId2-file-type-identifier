@@ -1,0 +1,11 @@
+Name: Dangerous Waters game data archive
+URL: "https://en.wikipedia.org/wiki/Dangerous_Waters"
+FileNameExtensions: ["agg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Aggregate "
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0"
+    CaseSensitive: true

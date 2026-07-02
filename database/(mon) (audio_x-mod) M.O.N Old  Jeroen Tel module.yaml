@@ -1,0 +1,15 @@
+Name: M.O.N Old / Jeroen Tel module
+Description: Music format created by Charles Deenen, used by the Maniacs of Noise.
+URL: "https://www.exotica.org.uk/wiki/Jeroen_Tel_(format)"
+FileNameExtensions: ["mon"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x029\0\x01\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "f\x02Nux\0\x189\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "X\0R\0P\0P\0P\0P"
+    CaseSensitive: false

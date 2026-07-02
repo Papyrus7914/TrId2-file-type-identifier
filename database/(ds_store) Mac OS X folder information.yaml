@@ -1,0 +1,13 @@
+Name: Mac OS X folder information
+URL: "http://www.apple.com/"
+FileNameExtensions: ["ds_store"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\x01Bud1\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BUD1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSDB"
+    CaseSensitive: false

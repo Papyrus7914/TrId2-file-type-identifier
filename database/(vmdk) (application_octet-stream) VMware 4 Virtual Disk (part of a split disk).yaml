@@ -1,0 +1,11 @@
+Name: VMware 4 Virtual Disk (part of a split disk)
+URL: "https://en.wikipedia.org/wiki/VMware"
+FileNameExtensions: ["vmdk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KDM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KDMV"
+    CaseSensitive: false

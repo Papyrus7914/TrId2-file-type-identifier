@@ -1,0 +1,20 @@
+Name: Xilinx Netlist
+URL: "http://www.xilinx.com/"
+FileNameExtensions: ["ngc", "ngd", "ngm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XILINX-XDB "
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: " STUB "
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: " ASCII"
+    CaseSensitive: true

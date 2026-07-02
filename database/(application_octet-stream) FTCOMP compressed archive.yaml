@@ -1,0 +1,9 @@
+Name: FTCOMP compressed archive
+Description: Used in the distribution of some IBM OS/2 versions.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xA5, 0x96, 0xFD, 0xFF]
+  - Pos: 24
+    AsciiString: "FTCOMP"
+    CaseSensitive: true

@@ -1,0 +1,19 @@
+Name: 16bit DOS EXE COMPACK compressed
+URL: "http://fileformats.archiveteam.org/wiki/COMPACK"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 32
+    Bytes: [0xBD]
+  - Pos: 35
+    #        P                                               K
+    Bytes: [0x50, 0x06, 0x8C, 0xCB, 0x03, 0xDD, 0x8C, 0xD2, 0x4B, 0x8E, 0xDB, 0xBE]
+  - Pos: 48
+    AsciiString: "\0\xBF\0\a\x8E\xC2\xB9\b\0\xF3\xA5JMu\xEC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1991 W COLLIS"
+    CaseSensitive: false

@@ -1,0 +1,32 @@
+Name: XPS FixedDocument object (UTF-8)
+URL: "https://en.wikipedia.org/wiki/Open_XML_Paper_Specification"
+FileNameExtensions: ["fdoc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<FixedDocument xmlns=\"http://schemas.microsoft.com/xps/2005/06\">"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIXEDDOCUMENT XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGECONTENT SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIXEDDOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.FPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2005"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

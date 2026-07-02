@@ -1,0 +1,12 @@
+Name: Fossil checkout data base
+Description: SQLite 3.x database with application id 0x0F055112; filename _FOSSIL_ or .fslckout
+URL: "http://fileformats.archiveteam.org/wiki/Fossil_checkout_database"
+FileNameExtensions: ["fslckout"]
+MimeType: application/vnd.sqlite3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: 68
+    #                    Q
+    Bytes: [0x0F, 0x05, 0x51, 0x12]

@@ -1,0 +1,29 @@
+Name: Graphic Workshop self-displaying picture executable (DOS, v7.0)
+URL: "http://fileformats.archiveteam.org/wiki/Graphic_Workshop_self-displaying_picture"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 541
+    AsciiString: "GraphicWorkshop 7.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS IS A SELF EXECUTING PICTURE CREATED BY GRAPHIC WORKSHOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$INAPPROPRIATE VIDEO CARD."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO GRAPHICS CARD AVAILABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHICWORKSHOP 7.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINDWORKS INC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM ALCHEMY"
+    CaseSensitive: false

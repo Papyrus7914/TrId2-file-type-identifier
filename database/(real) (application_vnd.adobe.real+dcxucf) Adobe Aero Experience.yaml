@@ -1,0 +1,20 @@
+Name: Adobe Aero Experience
+URL: "http://fileformats.archiveteam.org/wiki/Adobe_Aero"
+FileNameExtensions: ["real"]
+MimeType: application/vnd.adobe.real+dcxucf
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/vnd.adobe.real+dcxucfPK\x03\x04"
+    CaseSensitive: true
+  - Pos: 101
+    AsciiString: "manifest"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.ADOBE.REAL+DCXUCFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE_JSONPK"
+    CaseSensitive: false

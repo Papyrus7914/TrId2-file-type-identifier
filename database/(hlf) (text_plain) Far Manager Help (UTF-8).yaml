@@ -1,0 +1,17 @@
+Name: Far Manager Help (UTF-8)
+URL: "https://www.farmanager.com/"
+FileNameExtensions: ["hlf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF.Language="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PLUGIN"
+    CaseSensitive: false

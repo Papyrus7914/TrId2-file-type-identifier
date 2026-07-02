@@ -1,0 +1,25 @@
+Name: SYSPACK compressed DOS SYS driver
+Description: SYS compressor by by Vadim V. Vlasov, Moscow, Russia.
+FileNameExtensions: ["sys"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: 6
+    AsciiString: "M\0X\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\x01\0SYSPACK: Copyright by Vadim V. Vlasov, Moscow, Russia. "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT BY VADIM V. VLASOV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUSSIA."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSPACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOSCOW"
+    CaseSensitive: false

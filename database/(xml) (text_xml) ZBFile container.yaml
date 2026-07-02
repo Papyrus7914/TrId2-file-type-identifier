@@ -1,0 +1,73 @@
+Name: ZBFile container
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<ZBFile xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\r\n<ZBGuid"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ZBFILEDIGITALSIGNALHASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZBRENCRYPTPUBLICKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTVERSIONHASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERIDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZBFILECONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIAODUANNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZBFILE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZBRPUBLICKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIAODUANNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISHAVECAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZBGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UESDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

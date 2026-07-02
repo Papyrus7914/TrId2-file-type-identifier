@@ -1,0 +1,26 @@
+Name: "Sky: Children of the Light level data (blob prefabs)"
+URL: "https://en.wikipedia.org/wiki/Sky_(video_game)"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TGCL\x01\0\0\0\x02\0\0\0-\0\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0\0,\0\0\0D\0\0\0\x14\x03\0\0\xF3\x05\0\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "\0\0\xDC\0\0\0\0\0\0\0,\0\0\00\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "A\0MATERIALBOTTOM\0GROUNDSECONDARYNOISETYPE\0SIDENOISEOFFSETXYZ\0PREVIEWDETAIL\0GROUNDNOISESCALE\0SPIRALANGLEBEGIN_END\0BSTGUID\0SHAPE\0CORNERRADIUS\0SIDENOISEDEPTH\0TYPE\0SIDENOISESCALEXZ_Y\0SIDENOISETYPE\0GROUNDNOISEOFFSETX_Z\0DENSITY\0MATERIALANGLEGRADIENT\0SIDEANGLE\0SI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0\0\0\0BSTNODE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TGCL"
+    CaseSensitive: false

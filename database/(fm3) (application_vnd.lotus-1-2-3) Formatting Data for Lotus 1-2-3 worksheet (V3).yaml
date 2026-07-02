@@ -1,0 +1,24 @@
+Name: Formatting Data for Lotus 1-2-3 worksheet (V3)
+Description: style compainion of worksheet "*.wk3". revision number 8007h stored at offset 4.
+URL: "http://www.aboutvb.de/bas/formate/pdf/wk3.pdf"
+FileNameExtensions: ["fm3"]
+MimeType: application/vnd.lotus-1-2-3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x1A\0\a\x80"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0\0\0\0\0\xFF"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\xFF\x1F\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\x96\0\x01\0"
+    CaseSensitive: true
+  - Pos: 35
+    Bytes: [0x99, 0x00, 0x01, 0x00]
+  - Pos: 40
+    Bytes: [0xA3, 0x00, 0x01, 0x00]
+  - Pos: 45
+    Bytes: [0xAE, 0x00]
+  - Pos: 48
+    AsciiString: "\0\0"
+    CaseSensitive: true

@@ -1,0 +1,15 @@
+Name: Monkey Forest spectrum data
+FileNameExtensions: ["spk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01]
+  - Pos: 104
+    AsciiString: "Hz"
+    CaseSensitive: true
+  - Pos: 166
+    AsciiString: " Bit Quantisierung"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BIT QUANTISIERUNG"
+    CaseSensitive: false

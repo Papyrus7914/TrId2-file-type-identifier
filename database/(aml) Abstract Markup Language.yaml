@@ -1,0 +1,12 @@
+Name: Abstract Markup Language
+FileNameExtensions: ["aml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AMLDOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

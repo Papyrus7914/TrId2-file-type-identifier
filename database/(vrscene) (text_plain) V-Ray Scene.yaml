@@ -1,0 +1,662 @@
+Name: V-Ray Scene
+URL: "https://en.wikipedia.org/wiki/V-Ray"
+FileNameExtensions: ["vrscene"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/////////////////////////////////////////\n// Exported by V-Ray Plugins Exporter\n// "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETTINGSDEFAULTDISPLACEMENT VRAYSETTINGSDEFAULTDISPLACEMENT {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSREGIONSGENERATOR VRAYSETTINGSREGIONSGENERATOR {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSRENDERCHANNELS VRAYSETTINGSRENDERCHANNELS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSIRRADIANCEMAP VRAYSETTINGSIRRADIANCEMAP {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSCOLORMAPPING VRAYSETTINGSCOLORMAPPING {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSIMAGESAMPLER VRAYSETTINGSIMAGESAMPLER {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSENVIRONMENT VRAYSETTINGSENVIRONMENT {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSDMCSAMPLER VRAYSETTINGSDMCSAMPLER {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSLIGHTCACHE VRAYSETTINGSLIGHTCACHE {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSMOTIONBLUR VRAYSETTINGSMOTIONBLUR {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSCAMERADOF VRAYSETTINGSCAMERADOF {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSPHOTONMAP VRAYSETTINGSPHOTONMAP {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSRAYCASTER VRAYSETTINGSRAYCASTER {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSUNITSINFO VRAYSETTINGSUNITSINFO {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSCAUSTICS VRAYSETTINGSCAUSTICS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSOPTIONS VRAYSETTINGSOPTIONS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSCAMERA VRAYSETTINGSCAMERA {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSOUTPUT VRAYSETTINGSOUTPUT {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSDMCGI VRAYSETTINGSDMCGI {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSJPEG VRAYSETTINGSJPEG {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSTIFF VRAYSETTINGSTIFF {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSEXR VRAYSETTINGSEXR {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSPNG VRAYSETTINGSPNG {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSSGI VRAYSETTINGSSGI {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSTGA VRAYSETTINGSTGA {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBDIVISION_NORMALS_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGSGI VRAYSETTINGSGI {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNFILTERED_FRAGMENT_METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEMENTS_SEPARATEFOLDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMG_FILE_NEEDFRAMENUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTL_REFLECTIONREFRACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK_SAMPLE_VISIBILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_ENVIRONMENT_OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERVIEW RENDERVIEW {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISC_LOWTHREADPRIORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOW_NEGATIVE_COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT_DODEFAULTLIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBDIVISION_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAPTIVE_MIN_SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIM_REN_FRAME_START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO_SEARCH_DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONVEX_HULL_ESTIMATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT_DOHIDDENLIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDARY_MULTIPLIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIM_RENUMBER_START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALC_INTERP_SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAIL_SUBDIVS_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTL_TRANSPMAXLEVELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBDIVISION_MAXRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBDIVISION_MINRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE_FOR_GLOSSY_RAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAPTIVE_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIM_FRAME_PADDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIM_RENUMBER_STEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAIL_ENHANCEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTANCE_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GI_DONTRENDERIMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERPOLATION_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARY_MULTIPLIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARY_VISIBILITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORE_DIRECT_LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBDIVISION_JITTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AFFECT_BACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMES_PER_SECOND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOM_BACKFACECULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOM_DISPLACEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMG_SEPARATEALPHA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORTHOGRAPHICWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHOTOMETRIC_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFILTER_SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOMIZE_SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEMENTS_DIVIDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETRACE_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW_DIRECT_LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBDIVISION_EDGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIM_RENUMBER_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO_DATA_WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITS_PER_CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRA_ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTL_TRANSPCUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFLECT_CAUSTICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFRACT_CAUSTICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDARY_ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBPIXEL_MAPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAPTATION_ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAPTIVE_AMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMG_PIXELASPECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT_DOSHADOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTL_OVERRIDE_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAY_DISTANCE_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETRACE_BOUNCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETRACE_CORNERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETRACE_ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW_CALC_PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO_SAVE_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMC_MAXSUBDIVS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMC_MINSUBDIVS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMG_RAWFILEVFB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT_DOLIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEARWORKFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTL_FILTERMAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTL_LIMITDEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIPLE_VIEWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARY_ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME_DEPENDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIPPING_NEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTRAST_BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAIL_RADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMC_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACELEVELCOEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIXED_SUBDIVS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME AT TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME_SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOM_DOHIDDEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERP_FRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTLSINGLEBRDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDS_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWDEPENDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLAMP_OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIPPING_FAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAIL_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOM_SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METERS_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTL_MAXDEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW_SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRIGHT_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER_BIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLAMP_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DONT_DELETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYNMEMLIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMG_NOALPHA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOKUP_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOW_SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX_DENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX_PHOTONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINLEAFSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE_UPDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIGHTBOUNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AAFILTER {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIM_START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANISOTROPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AO_SUBDIVS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BMP_HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGELENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOCAL_DIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMSTATIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMG_HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTL_DOMAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTL_GLOSSY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_PASSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGN_HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SATURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AO_AMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AO_RADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BMP_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DARK_MULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMG_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IVE_SAMPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIPASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGN_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIDES_NUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIM_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APERTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO_FIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX_RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIN_RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAY_BIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGN_LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIDES_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACOLOR("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMG_DIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGN_TOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTOR("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XYMEANS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BG_TEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESHAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EAVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_TOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEX("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SHOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUBE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOM"
+    CaseSensitive: false

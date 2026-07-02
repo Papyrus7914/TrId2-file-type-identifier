@@ -1,0 +1,12 @@
+Name: DivIDEo video
+Description: ZX Spectrum streaming video format.
+URL: "https://divideo.zxdemo.org/"
+FileNameExtensions: ["dvo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DivIDEog\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIVIDEOG"
+    CaseSensitive: false

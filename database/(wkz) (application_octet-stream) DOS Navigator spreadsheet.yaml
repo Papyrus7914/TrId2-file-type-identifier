@@ -1,0 +1,11 @@
+Name: DOS Navigator spreadsheet
+URL: "https://en.wikipedia.org/wiki/DOS_Navigator"
+FileNameExtensions: ["wkz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v"
+    CaseSensitive: true
+  - Pos: 256
+    AsciiString: "$"
+    CaseSensitive: true

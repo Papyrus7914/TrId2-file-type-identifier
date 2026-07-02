@@ -1,0 +1,17 @@
+Name: Espanso Package (with rem)
+URL: "https://espanso.org/"
+FileNameExtensions: ["yml"]
+MimeType: text/yaml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "- TRIGGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPLACE"
+    CaseSensitive: false

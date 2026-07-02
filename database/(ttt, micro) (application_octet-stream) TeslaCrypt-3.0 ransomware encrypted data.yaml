@@ -1,0 +1,25 @@
+Name: TeslaCrypt-3.0 ransomware encrypted data
+URL: "https://en.wikipedia.org/wiki/TeslaCrypt"
+FileNameExtensions: ["ttt", "micro"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\0\0\0\0\0\0\x04"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x04"
+    CaseSensitive: true
+  - Pos: 217
+    AsciiString: "\0\0\0\x04"
+    CaseSensitive: true
+  - Pos: 317
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 352
+    AsciiString: "1\x8Di&\x17"
+    CaseSensitive: true
+  - Pos: 358
+    Bytes: [0x97]

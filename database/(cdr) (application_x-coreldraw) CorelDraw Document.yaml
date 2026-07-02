@@ -1,0 +1,15 @@
+Name: CorelDraw Document
+Description: For most versions from 3 'til 15.
+URL: "http://fileformats.archiveteam.org/wiki/CorelDRAW"
+FileNameExtensions: ["cdr"]
+MimeType: application/x-coreldraw
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CD"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "vrsn\x02\0\0\0"
+    CaseSensitive: true

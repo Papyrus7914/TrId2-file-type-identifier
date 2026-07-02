@@ -1,0 +1,10 @@
+Name: Keyhole - Google Earth Placemark
+URL: "http://www.google.com/earth/"
+FileNameExtensions: ["eta"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# This is an Keyhole ETA file. The contents are automatically"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUTOPILOT"
+    CaseSensitive: false

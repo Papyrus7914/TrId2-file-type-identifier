@@ -1,0 +1,11 @@
+Name: HighMAT data (generic)
+URL: "http://en.wikipedia.org/wiki/HighMAT"
+FileNameExtensions: ["hmt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 5
+    AsciiString: "HMTd"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HMTD"
+    CaseSensitive: false

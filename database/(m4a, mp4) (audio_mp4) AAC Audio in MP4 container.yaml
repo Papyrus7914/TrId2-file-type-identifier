@@ -1,0 +1,11 @@
+Name: AAC Audio in MP4 container
+URL: "https://en.wikipedia.org/wiki/Advanced_Audio_Coding"
+FileNameExtensions: ["m4a", "mp4"]
+MimeType: audio/mp4
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "ftypM4A "
+    CaseSensitive: true

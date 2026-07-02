@@ -1,0 +1,20 @@
+Name: Mathematica Notebook
+URL: "https://en.wikipedia.org/wiki/Wolfram_Mathematica"
+FileNameExtensions: ["nb", "nbp"]
+MimeType: application/vnd.wolfram.mathematica
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MATHEMATICA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTEBOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WOLFRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF"
+    CaseSensitive: false

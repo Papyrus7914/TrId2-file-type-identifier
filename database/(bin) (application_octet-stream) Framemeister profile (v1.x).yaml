@@ -1,0 +1,14 @@
+Name: Framemeister profile (v1.x)
+URL: "http://junkerhq.net/xrgb/index.php?title=XRGB-mini_FRAMEMEISTER"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VER 1."
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "      \0\0"
+    CaseSensitive: true
+  - Pos: 147
+    AsciiString: "ddd\0-"
+    CaseSensitive: true

@@ -1,0 +1,29 @@
+Name: Zoo Tycoon 2 Saved game
+URL: "https://en.wikipedia.org/wiki/Zoo_Tycoon_2"
+FileNameExtensions: ["z2s"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Saved/thumbnail.jpg\xFF\xD8\xFF\xE0\0\x10JFIF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THUMBNAIL.JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERRAIN.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD.ZT2PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$3BR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

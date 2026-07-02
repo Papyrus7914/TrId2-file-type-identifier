@@ -1,0 +1,14 @@
+Name: Content Addressable Archive (v1)
+URL: "http://fileformats.archiveteam.org/wiki/Content_Addressable_Archive"
+FileNameExtensions: ["car"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\xA2eroots"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EROOTS"
+    CaseSensitive: false

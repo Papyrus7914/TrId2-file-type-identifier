@@ -1,0 +1,23 @@
+Name: IGC Flight Track
+Description: International Gliding Commission's prescribed format.
+FileNameExtensions: ["igc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GLIDERTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTM100"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HFDTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PILOT"
+    CaseSensitive: false

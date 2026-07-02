@@ -1,0 +1,15 @@
+Name: Gee! Printer Driver
+Description: Used by PrintPartner by Acropolis Software.
+URL: "http://fileformats.archiveteam.org/wiki/PrintPartner"
+FileNameExtensions: ["pdr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Gee! Printer Driver v"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\r\n"
+    CaseSensitive: true

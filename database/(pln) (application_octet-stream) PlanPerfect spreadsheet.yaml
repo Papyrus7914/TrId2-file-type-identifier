@@ -1,0 +1,11 @@
+Name: PlanPerfect spreadsheet
+URL: "http://www.danielsays.com/ss-gallery-dos-planperfect-50.html"
+FileNameExtensions: ["pln"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFWPC"
+    CaseSensitive: true
+  - Pos: 8
+    #        \t    \n
+    Bytes: [0x09, 0x0A, 0x05, 0x01]

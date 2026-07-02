@@ -1,0 +1,11 @@
+Name: Pixel Tales Engine Cold Storage Archive (generic)
+URL: "https://www.pixeltales.com/"
+FileNameExtensions: ["csa"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GEEK\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "Data\\"
+    CaseSensitive: true

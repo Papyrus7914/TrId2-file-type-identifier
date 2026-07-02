@@ -1,0 +1,50 @@
+Name: Microsoft .NET XML Resource template (UTF-8)
+URL: "https://learn.microsoft.com/en-us/dotnet/core/extensions/work-with-resx-files-programmatically"
+FileNameExtensions: ["resx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: 32
+    AsciiString: "\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSTEM.RESOURCES.RESXRESOURCEREADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.RESOURCES.RESXRESOURCEWRITER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT-RESX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICKEYTOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESHEADER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESMIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CULTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEUTRAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

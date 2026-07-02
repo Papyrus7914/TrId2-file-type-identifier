@@ -1,0 +1,661 @@
+Name: Espressif ESP32 IDF application image
+URL: "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/api-reference/system/app_image_format.html"
+FileNameExtensions: ["bin", "app-bin"]
+MimeType: application/x-espressif-bin
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 8
+    AsciiString: "\xEE\0\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 79
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "***ERROR*** A STACK OVERFLOW IN TASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERRUPT WDT TIMEOUT ON CPU0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABORT() WAS CALLED AT PC 0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCEPTION WAS UNHANDLED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GURU MEDITATION ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS BEEN DETECTED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN REASON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT SUPPORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTER DUMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISCONNECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REBOOTING..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTRUCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSUPPORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREAKPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAGIC BYTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESP_TIMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAILED TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RT FAILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOO LARGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIGGERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TIMER_CO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERT FAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISMATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDIRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESPONSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CONNECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAPTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYNAMIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D_ALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILLEGAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESERVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOPPED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_HANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CACHED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D_TASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENOUGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESPNOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTIFY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S_INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_INPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_INTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LOCK_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMPTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESP32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FETCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S_INT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S_STA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIFI_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_OP_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SUPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAUD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTRL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DHCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZERO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ADD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_AUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CHA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_COR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FLA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_INS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_OFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_OUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_QUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_REA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RET"
+    CaseSensitive: false

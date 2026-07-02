@@ -1,0 +1,14 @@
+Name: Procyon Pro MIDI Sequencer Song
+Description: Sequencer by Goldstar/LG for Windows 3.x.
+FileNameExtensions: ["sng"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "song"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "A: "
+    CaseSensitive: true
+  - Pos: 528
+    AsciiString: "\0\0\0\000:00:00:00"
+    CaseSensitive: true

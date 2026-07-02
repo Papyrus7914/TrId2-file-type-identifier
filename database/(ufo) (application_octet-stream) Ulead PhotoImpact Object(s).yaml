@@ -1,0 +1,26 @@
+Name: Ulead PhotoImpact Object(s)
+Description: PhotoImpact is a complete digital image-editing suite from Ulead.
+URL: "https://en.wikipedia.org/wiki/Ulead_PhotoImpact"
+FileNameExtensions: ["ufo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: 1024
+    AsciiString: "R\0o\0o\0t\0 \0E\0n\0t\0r\0y"
+    CaseSensitive: true
+  - Pos: 1152
+    AsciiString: "L\0t\0f\0H\0e\0a\0d\0e\0r"
+    CaseSensitive: true
+  - Pos: 1280
+    AsciiString: "L\0t\0f\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "L\0T\0F\0P\0R\0E\0V\0I\0E\0W\0I\0M\0A\0G\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0T\0F\0H\0E\0A\0D\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0B\0J\0E\0C\0T"
+    CaseSensitive: false

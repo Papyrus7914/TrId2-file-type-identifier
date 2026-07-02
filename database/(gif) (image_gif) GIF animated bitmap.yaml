@@ -1,0 +1,14 @@
+Name: GIF animated bitmap
+URL: "http://en.wikipedia.org/wiki/GIF"
+FileNameExtensions: ["gif"]
+MimeType: image/gif
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GIF89a"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NETSCAPE2.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIF89A"
+    CaseSensitive: false

@@ -1,0 +1,50 @@
+Name: Windows exported WLAN profile
+URL: "https://learn.microsoft.com/en-us/windows/win32/nativewifi/wlan-profileschema-wlanprofile-element"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<WLANProfile xmlns=\"http://www.microsoft.com/networking/WLAN/profile/v1\">\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WLANPROFILE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHENCRYPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHENTICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTIONMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTIONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORKING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSIDCONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECURITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEONEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

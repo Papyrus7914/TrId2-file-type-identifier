@@ -1,0 +1,17 @@
+Name: WiX Localization (ASCII)
+URL: "https://en.wikipedia.org/wiki/WiX"
+FileNameExtensions: ["wxl"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WIXLOCALIZATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

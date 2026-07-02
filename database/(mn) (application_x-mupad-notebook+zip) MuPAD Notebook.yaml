@@ -1,0 +1,26 @@
+Name: MuPAD Notebook
+URL: "https://en.wikipedia.org/wiki/MuPAD"
+FileNameExtensions: ["mn"]
+MimeType: application/x-mupad-notebook+zip
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PK\x03\x04\x14\0\0\0\b\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0_sheet0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_MIMETYPE.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SETTINGS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CONTENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MIMETYPE.TXTK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SHEET0.XMLPK"
+    CaseSensitive: false

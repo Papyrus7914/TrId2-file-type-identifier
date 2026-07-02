@@ -1,0 +1,9 @@
+Name: HP Printer Command Language (ESC+E)
+Description: starts with ESCape+E for reseting printer
+URL: "https://en.wikipedia.org/wiki/Printer_Command_Language"
+FileNameExtensions: ["pcl", "prn"]
+MimeType: application/vnd.hp-PCL
+DetectionPatterns:
+  - Pos: 0
+    #              E
+    Bytes: [0x1B, 0x45]

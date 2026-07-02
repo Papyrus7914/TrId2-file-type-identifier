@@ -1,0 +1,10 @@
+Name: MSX-DOS 2 disk image
+URL: "https://en.wikipedia.org/wiki/MSX"
+FileNameExtensions: ["dsk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEB, 0xFE, 0x90]
+  - Pos: 32
+    AsciiString: "VOL_ID"
+    CaseSensitive: true

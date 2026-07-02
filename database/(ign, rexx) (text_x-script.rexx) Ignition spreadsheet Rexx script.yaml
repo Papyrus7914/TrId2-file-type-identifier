@@ -1,0 +1,11 @@
+Name: Ignition spreadsheet Rexx script
+URL: "https://www.pinc-software.de/"
+FileNameExtensions: ["ign", "rexx"]
+MimeType: text/x-script.rexx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADDRESS IGNITION.1"
+    CaseSensitive: false

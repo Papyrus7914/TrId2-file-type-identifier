@@ -1,0 +1,32 @@
+Name: ArduPilot JSON firmware
+URL: "https://en.wikipedia.org/wiki/ArduPilot"
+FileNameExtensions: ["apj", "px4", "vrx"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n    \"board_id\": "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOARD_REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIT_IDENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOARD_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAGIC"
+    CaseSensitive: false

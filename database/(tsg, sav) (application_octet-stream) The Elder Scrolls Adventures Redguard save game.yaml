@@ -1,0 +1,73 @@
+Name: "The Elder Scrolls Adventures: Redguard save game"
+FileNameExtensions: ["tsg", "sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SVGM\0\0\x01\x101."
+    CaseSensitive: true
+  - Pos: 152
+    AsciiString: "system\\powerup.gxa"
+    CaseSensitive: true
+  - Pos: 280
+    AsciiString: "THMB\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POWERUP.GXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIJAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCR3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMFM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMGR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVCB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVCM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVG2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVGF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVGV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVRG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THMB"
+    CaseSensitive: false

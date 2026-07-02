@@ -1,0 +1,70 @@
+Name: XSetup - plugin
+URL: "http://www.xteq.com/"
+FileNameExtensions: ["xpl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\"FILE\"=\"Xteq Systems X-Setup Plugin "
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: ".0\"\r\n\"TYPE\"=\""
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "\"\r\n\"COUNT\"=\""
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "\"\r\n\""
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: "\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTSUBINDEX)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END SUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUB PLUGIN_APPLY(ELEMENTINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUB PLUGIN_INITIALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUB PLUGIN_TERMINATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UIPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VBSCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XTEQ SYSTEMS X-SETUP PLUGIN"
+    CaseSensitive: false

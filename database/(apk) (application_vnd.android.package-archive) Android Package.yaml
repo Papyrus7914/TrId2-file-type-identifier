@@ -1,0 +1,23 @@
+Name: Android Package
+URL: "https://en.wikipedia.org/wiki/APK_(file_format)"
+FileNameExtensions: ["apk"]
+MimeType: application/vnd.android.package-archive
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "ANDROIDMANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSES.DEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLE"
+    CaseSensitive: false

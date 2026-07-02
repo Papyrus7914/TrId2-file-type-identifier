@@ -1,0 +1,46 @@
+Name: Symantec LiveState recovery image
+URL: "http://www.symantec.com"
+FileNameExtensions: ["sv2i"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<SDO clsid=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OFFSETONMEDIA VT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICENUMBER VT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUMETYPE VT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEFILE VT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISLOGICAL VT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISHIDDEN VT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMENT1 VT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISACTIVE VT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME1 VT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME2 VT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDO CLSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE VT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".V2I"
+    CaseSensitive: false

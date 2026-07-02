@@ -1,0 +1,76 @@
+Name: Media Center Markup Language
+URL: "http://en.wikipedia.org/wiki/Windows_Media_Center"
+FileNameExtensions: ["mcml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Mcml xmlns"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONDITION SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCEVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOWLAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MCML XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCORLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOCUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

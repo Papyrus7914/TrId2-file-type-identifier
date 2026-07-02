@@ -1,0 +1,56 @@
+Name: LG Mobile Gallery protected media container
+URL: "https://github.com/kamicater/LG-Gallery-Decryptor"
+FileNameExtensions: ["dm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\t#lge/flockL1"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "@lge.com\x82"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT-EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-MEDIATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTION-METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-MIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAINTEXTLEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AES128CBC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOCKL1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LGE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PADDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RFC2630"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LGEATT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LGEID2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LGEVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JPEG"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Matlab MAT-File (generic)
+URL: "http://fileformats.archiveteam.org/wiki/MAT"
+FileNameExtensions: ["mat"]
+MimeType: application/x-matlab-data
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MATLAB "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: " MAT-file"
+    CaseSensitive: true

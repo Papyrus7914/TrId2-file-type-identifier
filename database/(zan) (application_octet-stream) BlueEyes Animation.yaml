@@ -1,0 +1,21 @@
+Name: BlueEyes Animation
+Description: A zipped file with a sequence of bitmaps.
+URL: "http://gnese.free.fr/SymbianProjects/BlueEyes/"
+FileNameExtensions: ["zan"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "1.JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2.JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

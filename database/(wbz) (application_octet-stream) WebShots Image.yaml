@@ -1,0 +1,53 @@
+Name: WebShots Image
+URL: "http://fileformats.archiveteam.org/wiki/Webshots_picture"
+FileNameExtensions: ["wbz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        C                 g
+    Bytes: [0x43, 0xAB, 0x91, 0x67]
+  - Pos: any
+    AsciiString: "STR_COLLECTIONTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOO_MAKEWALLPAPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAILYDATEYYYYMMDD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIL_IMAGEFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR_IMAGECREDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR_IMAGETITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR_IMAGEPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALBUMTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO.WBX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALBUMID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false

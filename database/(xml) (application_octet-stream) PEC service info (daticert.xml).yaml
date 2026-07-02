@@ -1,0 +1,59 @@
+Name: PEC service info (daticert.xml)
+URL: "https://it.wikipedia.org/wiki/Posta_elettronica_certificata"
+FileNameExtensions: ["xml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GESTORE-EMITTENTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTA-CERTIFICATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATARI TIPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFICATIVO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RICEVUTA TIPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTESTAZIONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA ZONA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTACERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RISPOSTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OGGETTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERRORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIORNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-"
+    CaseSensitive: false

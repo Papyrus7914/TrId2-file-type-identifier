@@ -1,0 +1,21 @@
+Name: USF Ultra64 Sound Format rip (mini)
+Description: Contains ripped code + audio data.
+URL: "http://fileformats.archiveteam.org/wiki/USF"
+FileNameExtensions: ["miniusf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSF!"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "SR64"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".USFLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SR64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LIB"
+    CaseSensitive: false

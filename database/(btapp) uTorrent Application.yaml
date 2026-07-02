@@ -1,0 +1,16 @@
+Name: uTorrent Application
+URL: "http://www.utorrent.com"
+FileNameExtensions: ["btapp"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 29
+    AsciiString: "\0btapp"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INDEX.HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTAPP"
+    CaseSensitive: false

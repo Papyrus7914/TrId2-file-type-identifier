@@ -1,0 +1,15 @@
+Name: X PixMap bitmap
+Description: 9 byte c-comment /* XPM */ at the beginning is the standard and XPM is the standard suffix
+URL: "http://fileformats.archiveteam.org/wiki/XPM"
+FileNameExtensions: ["xpm", "c", "h"]
+MimeType: image/x-xpixmap
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/* XPM */"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STATIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false

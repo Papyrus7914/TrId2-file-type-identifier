@@ -1,0 +1,28 @@
+Name: MIO compressed audio
+URL: "http://www.entis.gr.jp/eri/"
+FileNameExtensions: ["mio"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Entis\x1A\0\0\0\x01\0\x03\0\0\0\0Music Interleaved and Orthogonal transformed\0\0\0\0Header  \\\0\0\0\0\0\0\0FileHdr \x14\0\0\0\0\0\0\0\0\x01\x02\0\0\x01\0\0\x01\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 115
+    AsciiString: "\0SoundInf(\0\0\0\0\0\0\0\0\x03\x02\0"
+    CaseSensitive: true
+  - Pos: 165
+    AsciiString: "\0\0\0\x10\0\0\0Stream  "
+    CaseSensitive: true
+  - Pos: 184
+    AsciiString: "\0\0\0\0SoundStm"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILEHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUNDINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUNDSTM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAM"
+    CaseSensitive: false

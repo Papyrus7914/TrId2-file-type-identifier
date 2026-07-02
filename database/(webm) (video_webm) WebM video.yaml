@@ -1,0 +1,14 @@
+Name: WebM video
+URL: "http://en.wikipedia.org/wiki/WebM"
+FileNameExtensions: ["webm"]
+MimeType: video/webm
+DetectionPatterns:
+  - Pos: 0
+    #              E
+    Bytes: [0x1A, 0x45, 0xDF, 0xA3]
+  - Pos: any
+    AsciiString: "V_VP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBM"
+    CaseSensitive: false

@@ -1,0 +1,41 @@
+Name: PMsfx CP/M self-extracting archive (v2.00)
+URL: "http://fileformats.archiveteam.org/wiki/PMsfx"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "-pms-"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\r\nPMsfx Version 2.00 for CP/M\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$ UNSUPPORTED METHOD.$ DISPLAYING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ CHECKING $ EXTRACTING $OK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMSFX VERSION 2.00 FOR CP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRC ERROR DETECTED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY YOSHIHIKO MINO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER IS BROKEN."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF MEMORY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT(C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK FULL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y-PMS-S"
+    CaseSensitive: false

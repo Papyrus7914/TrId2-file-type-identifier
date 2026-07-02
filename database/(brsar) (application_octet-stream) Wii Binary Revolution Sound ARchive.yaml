@@ -1,0 +1,11 @@
+Name: Wii Binary Revolution Sound ARchive
+URL: "https://wiki.tockdom.com/wiki/BRSAR_(File_Format)"
+FileNameExtensions: ["brsar"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RSAR"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "SYMB"
+    CaseSensitive: true

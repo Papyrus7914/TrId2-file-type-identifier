@@ -1,0 +1,32 @@
+Name: iTunes CoverFlow data
+URL: "http://en.wikipedia.org/wiki/Coverflow"
+FileNameExtensions: ["itc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x01\x1Citch"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "artw"
+    CaseSensitive: true
+  - Pos: 288
+    AsciiString: "item"
+    CaseSensitive: true
+  - Pos: 332
+    AsciiString: "loclPNGf"
+    CaseSensitive: true
+  - Pos: 492
+    AsciiString: "data"
+    CaseSensitive: true
+  - Pos: 501
+    AsciiString: "PNG"
+    CaseSensitive: true
+  - Pos: 512
+    AsciiString: "IHDR"
+    CaseSensitive: true
+  - Pos: 537
+    AsciiString: "gAMA"
+    CaseSensitive: true
+  - Pos: 553
+    AsciiString: "pHYs"
+    CaseSensitive: true

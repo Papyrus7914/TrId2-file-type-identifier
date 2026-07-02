@@ -1,0 +1,26 @@
+Name: ArtCAM post processor Configuration
+URL: "https://en.wikipedia.org/wiki/Delcam"
+FileNameExtensions: ["con"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FEED_RATE_MOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false

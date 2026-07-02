@@ -1,0 +1,17 @@
+Name: Titanium Backup Easy Backup saved data
+URL: "http://www.titaniumtrack.com/titanium-backup.html"
+FileNameExtensions: ["tibkp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".PROPERTIESPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TAR.GZPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-201"
+    CaseSensitive: false

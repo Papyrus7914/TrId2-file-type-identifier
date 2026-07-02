@@ -1,0 +1,14 @@
+Name: Emeraude Tar archive
+URL: "http://fileformats.archiveteam.org/wiki/Emeraude_Tar"
+FileNameExtensions: ["etar"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "   "
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: " EMERAUDE_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EMERAUDE_"
+    CaseSensitive: false

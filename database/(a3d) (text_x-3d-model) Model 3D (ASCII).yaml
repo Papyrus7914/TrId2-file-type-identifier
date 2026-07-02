@@ -1,0 +1,14 @@
+Name: Model 3D (ASCII)
+URL: "https://gitlab.com/bztsrc/model3d/blob/master/docs/a3d_format.md"
+FileNameExtensions: ["a3d"]
+MimeType: text/x-3d-model
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "3dmodel "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERTEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH"
+    CaseSensitive: false

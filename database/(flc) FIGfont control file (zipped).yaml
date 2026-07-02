@@ -1,0 +1,10 @@
+Name: FIGfont control file (zipped)
+URL: "http://www.jave.de/figlet/fonts.html"
+FileNameExtensions: ["flc"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".FLCPK"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: VirtualBus Map
+URL: "http://virtualbus.info"
+FileNameExtensions: ["ms1"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "3\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCENE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".3DS"
+    CaseSensitive: false

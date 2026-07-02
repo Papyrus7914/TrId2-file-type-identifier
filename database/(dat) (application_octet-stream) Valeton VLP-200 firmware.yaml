@@ -1,0 +1,77 @@
+Name: Valeton VLP-200 firmware
+URL: "https://www.valeton.net/"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0? Part1=446  Part1Bin1pos=1474  RT1062_QSPI_1=265  Position=160 "
+    CaseSensitive: true
+  - Pos: 168
+    AsciiString: "FirmwareInfoCompany=Hotone Audio.,LtdDate=20"
+    CaseSensitive: true
+  - Pos: 218
+    AsciiString: "ProductModel=VLP-200Version=V"
+    CaseSensitive: true
+  - Pos: 252
+    AsciiString: "partNum=1\0\0\0\xB5Bin1Addr=00100000HBin1Checksum=ChecksumType3Bin1Path=Bin/firmwareAPP0x60100000.binBin1Size=600000HBin1Version="
+    CaseSensitive: true
+  - Pos: 380
+    AsciiString: "FlashDevice=W25Q64FlashSize=800000HSecSize=1000HTarget=TargetType1"
+    CaseSensitive: true
+  - Pos: 1489
+    #              U     U     U     U                                                                       ␠
+    Bytes: [0x00, 0x55, 0x55, 0x55, 0x55, 0xAA, 0xAA, 0xAA, 0xAA, 0xA5, 0xA5, 0xA5, 0xA5, 0x00, 0x10, 0x00, 0x20]
+  - Pos: any
+    AsciiString: "FIRMWAREAPP0X60100000.BINBIN1SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUMTYPE3BIN1PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWAREINFOCOMPANY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W25Q64FLASHSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VLP-200VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HBIN1CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOTONE AUDIO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART1BIN1POS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASHDEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETTYPE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIN1ADDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HSECSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LTDDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUUU"
+    CaseSensitive: false

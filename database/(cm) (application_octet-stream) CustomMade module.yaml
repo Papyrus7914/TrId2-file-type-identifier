@@ -1,0 +1,16 @@
+Name: CustomMade module
+FileNameExtensions: ["cm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "N"
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "N\xF9\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUB("
+    CaseSensitive: false

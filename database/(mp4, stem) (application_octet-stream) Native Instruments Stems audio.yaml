@@ -1,0 +1,177 @@
+Name: Native Instruments Stems audio
+Description: The correct extension would be .STEM.MP4
+URL: "https://en.wikipedia.org/wiki/Stem_(audio)"
+FileNameExtensions: ["mp4", "stem"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\x14ftypisom\0\0\0\x01isom\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "moov\0\0\0lmvhd"
+    CaseSensitive: true
+  - Pos: 139
+    AsciiString: "\x15iods"
+    CaseSensitive: true
+  - Pos: 161
+    AsciiString: "trak\0\0\0\\tkhd"
+    CaseSensitive: true
+  - Pos: 261
+    AsciiString: "mdia\0\0\0 mdhd"
+    CaseSensitive: true
+  - Pos: 292
+    AsciiString: "\0U\xC4\0\0\0\0\0!hdlr\0\0\0\0\0\0\0\0soun"
+    CaseSensitive: true
+  - Pos: 334
+    AsciiString: "minf\0\0\0\x10smhd"
+    CaseSensitive: true
+  - Pos: 357
+    AsciiString: "$dinf\0\0\0\x1Cdref\0\0\0\0\0\0\0\x01\0\0\0\furl"
+    CaseSensitive: true
+  - Pos: 394
+    AsciiString: "stbl\0\0\0jstsd"
+    CaseSensitive: true
+  - Pos: 417
+    AsciiString: "Zmp4a"
+    CaseSensitive: true
+  - Pos: 454
+    AsciiString: "esds"
+    CaseSensitive: true
+  - Pos: 493
+    AsciiString: "sbtd"
+    CaseSensitive: true
+  - Pos: 508
+    AsciiString: "stts"
+    CaseSensitive: true
+  - Pos: 532
+    AsciiString: "stsc"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JFREEISOMEDIA FILE PRODUCED WITH GPAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W5M0MPCEHIHZRESZNTCZKC9D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME\0\0\0\0AUDIOTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "22-RDF-SYNTAX-NS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION RDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTERING_DSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMPMETA XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPACKET BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPACKET END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HP_CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDF XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTYPISOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDIRAPPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CEILING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRY_WET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMITER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEM{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMPTK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COVR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IODS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UDTA"
+    CaseSensitive: false

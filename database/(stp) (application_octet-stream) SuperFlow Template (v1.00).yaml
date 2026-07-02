@@ -1,0 +1,32 @@
+Name: SuperFlow Template (v1.00)
+Description: A Windows 3.x flowcharts/diagrams too by Advanced Technology Group, Inc.
+FileNameExtensions: ["stp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Object Definition\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONNECT DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CT LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PBORBTN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANCEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false

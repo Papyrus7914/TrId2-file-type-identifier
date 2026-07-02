@@ -1,0 +1,29 @@
+Name: Altair license
+URL: "https://altair.com/"
+FileNameExtensions: ["dat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#\r\n#          Altair License File\r\n#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAINTENANCE_START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINTENANCE_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSEE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHARE"
+    CaseSensitive: false

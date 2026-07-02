@@ -1,0 +1,17 @@
+Name: Motocross Madness Scene
+URL: "https://www.mobygames.com/game/1235/motocross-madness/"
+FileNameExtensions: ["scn"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[SceneInfo]\r\nSceneName="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERRAINFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TRN"
+    CaseSensitive: false

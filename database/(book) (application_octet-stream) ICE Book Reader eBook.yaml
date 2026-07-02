@@ -1,0 +1,14 @@
+Name: ICE Book Reader eBook
+URL: "http://www.ice-graphics.com/ICEReader/"
+FileNameExtensions: ["book"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ICE Book Reader\0(\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ICE BOOK READER\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0.\0."
+    CaseSensitive: false

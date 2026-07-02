@@ -1,0 +1,9 @@
+Name: Amazon Kindle Page Number index
+URL: "http://john.nachtimwald.com/2011/02/09/amazon-apnx-file-format/"
+FileNameExtensions: ["apnx"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x01, 0x00, 0x01]
+  - Pos: 12
+    AsciiString: "{\"contentGuid\":\""
+    CaseSensitive: true

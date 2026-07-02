@@ -1,0 +1,14 @@
+Name: Gordi's Math Attack data
+URL: "https://compediagames.miraheze.org/wiki/Gordi%27s_Math_Attack"
+FileNameExtensions: ["a", "b", "c"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "F\0\0\0$GENER DATA FILE NOT COMPRESSED 2.01\0\0\0\0k/\x13\0\xCF'@\0-b\xC9\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MATH2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VOC"
+    CaseSensitive: false

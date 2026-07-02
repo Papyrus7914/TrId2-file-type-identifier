@@ -1,0 +1,98 @@
+Name: Borland C++ Builder Makefile (generic)
+URL: "https://en.wikipedia.org/wiki/C%2B%2BBuilder"
+FileNameExtensions: ["mak"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# ---------------------------------------------------------------------------"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$(OBJFILES) $(RESDEPEN)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(CFLAG1) $("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(LIBFILES)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(RESFILES)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".AUTODEPEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(MAKEDIR)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(PROJECT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(LFLAGS)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(LINKER)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(PFLAGS)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(RFLAGS)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") $(CFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CPP.OBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PAS.HPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PAS.OBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RC.RES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(BCB)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".C.OBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRCC32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") -O$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCC32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DCC32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-I$("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-U$("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LIB"
+    CaseSensitive: false

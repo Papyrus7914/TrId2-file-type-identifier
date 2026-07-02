@@ -1,0 +1,17 @@
+Name: Steem BPB disk info
+URL: "http://steem.atari.st/index.htm"
+FileNameExtensions: ["steembpb"]
+MimeType: text/info
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[BPB]\r\nSides="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SECTORSPERTRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTESPERSECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIDES"
+    CaseSensitive: false

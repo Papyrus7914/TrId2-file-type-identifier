@@ -1,0 +1,11 @@
+Name: PCB ASCII Printed Circuit Board
+Description: Used by various PCB CAD tools.
+FileNameExtensions: ["pcb"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PCB FILE "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDPCB"
+    CaseSensitive: false

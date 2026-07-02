@@ -1,0 +1,48 @@
+Name: RCS metadata
+Description: Filename ends with ,v
+URL: "https://en.wikipedia.org/wiki/Revision_Control_System"
+FileNameExtensions: ["v"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "head"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STATE EXP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRANCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

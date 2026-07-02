@@ -1,0 +1,13 @@
+Name: Yamaha RS7000 - All data
+URL: "http://www.yamahasynth.com/products/rs7000/index.html"
+FileNameExtensions: ["r2a"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "A0532 ALL       Ver 0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 25
+    #        ␠     ␠     ␠     ␠     ␠     ␠     ␠                                                                                                     Y     S     F     C
+    Bytes: [0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x59, 0x53, 0x46, 0x43]

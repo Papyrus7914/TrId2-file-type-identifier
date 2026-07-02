@@ -1,0 +1,65 @@
+Name: Adobe InDesign Markup Language
+URL: "http://en.wikipedia.org/wiki/Indesign"
+FileNameExtensions: ["idml"]
+MimeType: application/vnd.adobe.indesign-idml-package
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "VND.ADOBE.INDESIGN-IDML-PACKAGEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKINGSTORY.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKINGSTORY.XMLM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFERENCES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINER.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGNMAP.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTERSPREAD_U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHIC.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTERSPREADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAGS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAGS.XMLU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSP9"
+    CaseSensitive: false

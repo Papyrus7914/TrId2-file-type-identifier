@@ -1,0 +1,20 @@
+Name: Sublime Text Menu
+URL: "https://en.wikipedia.org/wiki/Sublime_Text"
+FileNameExtensions: ["sublime-menu"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTING"
+    CaseSensitive: false

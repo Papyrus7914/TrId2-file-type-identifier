@@ -1,0 +1,29 @@
+Name: Branch Always Program Packer compressed Atari ST program
+Description: Atari ST packer by Branch Always Software.
+FileNameExtensions: ["app"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0`*BRAS\0\x02\0"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "\0\0\0\0\0\0\0\0A\xFA\xFF\xFE\x90\xFC\0,,\bK\xFA\x01l$M\"\r\xDB\xE8\0\b,H\xDD\xE8\0\f\xDC\xE8\0\x14\xDC\xE8\0\x14$\x0E \r\x90\x8A=%U\x80f\xFA*N,H\x92\x88(B8\xDEU\x81f\xFA,H\x94\x88A\xFA\0\x06\xD1\xC2N\xD0A\xFA\xFF\xB4\x90\xFC\0,(H\x98\xE8\0\x16\x98\xE8\0\x16&H\x96\xE8\0\x14\x96\xE8\0\x14.(\0\f8(\0\x10z\0\t\xC5t\x0F2\x1D\xD2AeFSBj\x042\x1Dt\x0Fp\08(\0\x10UDk(\xB8Bn\x14\x94D\xD2A\xD1@Q\xCC\xFF\xFASBj\x162\x1Dt\x0F`\x10\xD2A\xD1@SBj\x042\x1Dt\x0FQ\xCC\xFF\xF2\xD0@<\xF4\0\0U\x87f\xB8gLSBj\x042\x1Dt\x0Fp\08(\0\x12WD\xD2A\xD1@SBj\x042\x1Dt\x0F\xD2A\xD1@SBj\x042\x1Dt\x0F\f@\0\x03f\x04<\xDB`\xC8\xD2A\xD1@SBj\x042\x1Dt\x0FSDf\xF0\xD0@\xD0E<\xF4\0\0`\xAE*FK\xED\xFF\0A\xE8\0\x18 \x18\"\x18$\x18A\xED\0\b\"X(\t&I \xC0\xD3\xC0 \xC9 \xC1\xD3\xC1$I \xC9 \xC2 \x12g B\x9A\xD7\xC0\xD9\x93p\0\x10\x12g\x14B\x1A\f\0\0\x01f\x06G\xEB\0\xFE`\xEC\xD6\xC0\xD9\x93`\xE6\"m\0\bA\xFA\0\f0\n\b\0\0\0g\x02B\x1ABZ\xB1\xCAn\xFAB\x9AB\x9AN\xD1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AEFSBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*BRAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLSBJ"
+    CaseSensitive: false

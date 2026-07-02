@@ -1,0 +1,81 @@
+Name: DrawStudio Drawing
+Description: Amiga vector drawing tool.
+URL: "https://www.haage-partner.de/amiga/products/ds_sup_e.htm"
+FileNameExtensions: ["dsdr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "DSDRPREF"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "MEASURINGUNITS"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "GRID.XSIZE"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "GRID.YSIZE"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "GRID.DRAW"
+    CaseSensitive: true
+  - Pos: 92
+    AsciiString: "GRID.BEHIND"
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "RULERS.HORIZONTAL"
+    CaseSensitive: true
+  - Pos: 126
+    AsciiString: "RULERS.VERTICAL"
+    CaseSensitive: true
+  - Pos: 144
+    AsciiString: "RULERS.UNITS"
+    CaseSensitive: true
+  - Pos: 162
+    AsciiString: "SNAPPING.SNAPTOOBJECTENDS"
+    CaseSensitive: true
+  - Pos: 190
+    AsciiString: "SNAPPING.SNAPTOOBJECTPOINTS"
+    CaseSensitive: true
+  - Pos: 220
+    AsciiString: "SNAPPING.SNAPTOOBJECTLINES"
+    CaseSensitive: true
+  - Pos: 249
+    AsciiString: "SNAPPING.SNAPTOOBJECTCURVES"
+    CaseSensitive: true
+  - Pos: 279
+    AsciiString: "SNAPPING.SNAPTOGRIDX"
+    CaseSensitive: true
+  - Pos: 302
+    AsciiString: "SNAPPING.SNAPTOGRIDY"
+    CaseSensitive: true
+  - Pos: 325
+    AsciiString: "SNAPPING.TOLERANCE"
+    CaseSensitive: true
+  - Pos: 349
+    AsciiString: "SNAPPING.SNAPLINEANGLE"
+    CaseSensitive: true
+  - Pos: 381
+    AsciiString: "TIMEOUT.OBJECTDRAG"
+    CaseSensitive: true
+  - Pos: 405
+    AsciiString: "TIMEOUT.OBJECTRESIZE"
+    CaseSensitive: true
+  - Pos: 431
+    AsciiString: "REDRAWMODE.OBJECTDRAG"
+    CaseSensitive: true
+  - Pos: 458
+    AsciiString: "REDRAWMODE.OBJECTRESIZE"
+    CaseSensitive: true
+  - Pos: 487
+    AsciiString: "RNDRECT.RADIUS"
+    CaseSensitive: true
+  - Pos: 511
+    AsciiString: "FREEHAND.TOLERANCE"
+    CaseSensitive: true
+  - Pos: 539
+    AsciiString: "SHOWHARDWAREMARGINS"
+    CaseSensitive: true

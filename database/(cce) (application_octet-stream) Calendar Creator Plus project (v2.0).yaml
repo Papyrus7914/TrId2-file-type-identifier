@@ -1,0 +1,13 @@
+Name: Calendar Creator Plus project (v2.0)
+Description: Calendar printing tool by Spinnaker Software.
+FileNameExtensions: ["cce"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xCC]
+  - Pos: 133
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".CCE"
+    CaseSensitive: false

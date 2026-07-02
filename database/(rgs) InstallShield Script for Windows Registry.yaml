@@ -1,0 +1,13 @@
+Name: InstallShield Script for Windows Registry
+URL: "http://www.installshield.com/"
+FileNameExtensions: ["rgs"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HKCR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NOREMOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HKCR"
+    CaseSensitive: false

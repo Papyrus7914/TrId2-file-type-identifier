@@ -1,0 +1,16 @@
+Name: "The Last of Us: Part II save game"
+URL: "https://www.mobygames.com/game/146798/the-last-of-us-part-ii/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\xEA\0\0\0\0\0\0\0\0\0\0\0\0\0\0The Last of Us\xE2\x84\xA2 Part II \0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THE LAST OF US"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART II"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false

@@ -1,0 +1,15 @@
+Name: InPage document
+URL: "http://www.inpage.com/inpage.htm"
+FileNameExtensions: ["inp"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: 1664
+    AsciiString: "I\0n\0P\0a\0g\0e\0"
+    CaseSensitive: true
+  - Pos: 1792
+    AsciiString: "D\0o\0c\0u\0m\0e\0n\0t\0I\0n\0f\0o"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: CLA-FSMedit Finite State Machine (v1.x)
+URL: "CLA is a Digital Design System for Atari ST by Craig Graham."
+FileNameExtensions: ["fsm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CLA-FSMedit State Machine File v1\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OUTPUT VARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT VARS"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: 16bit DOS COM ExOM encrypted
+Description: Executable encryptor by Abdelaziz BELBACHiR.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EXOM\xFA\xBD"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\xFF\xE5Aziz B"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AZIZ B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSDOS"
+    CaseSensitive: false

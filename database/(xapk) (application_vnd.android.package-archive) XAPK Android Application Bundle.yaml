@@ -1,0 +1,80 @@
+Name: XAPK Android Application Bundle
+URL: "https://apkpure.com/xapk.html"
+FileNameExtensions: ["xapk"]
+MimeType: application/vnd.android.package-archive
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "ANDROID.PERMISSION.ACCESS_NETWORK_STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANDROID.PERMISSION.INTERNET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANDROID.PERMISSION.W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET_SDK_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIN_SDK_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PERMISSION.RE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APKPURE.COMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION_CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XAPK_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERMISSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ANDROID."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LOCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".APK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEND"
+    CaseSensitive: false

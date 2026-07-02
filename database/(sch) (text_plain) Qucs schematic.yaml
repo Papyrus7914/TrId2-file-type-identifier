@@ -1,0 +1,47 @@
+Name: Qucs schematic
+URL: "https://github.com/Qucs/qucs"
+FileNameExtensions: ["sch"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Qucs Schematic "
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "QUCS SCHEMATIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATADISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENDISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAINTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAGRAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

@@ -1,0 +1,41 @@
+Name: DBeaver Project
+URL: "https://en.wikipedia.org/wiki/DBeaver"
+FileNameExtensions: ["dbp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "projects/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ORG.ECLIPSE.CORE.RESOURCES.PREFSKM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORG.ECLIPSE.CORE.RESOURCES.PREFSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREDENTIALS-CONFIG.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA-SOURCES.JSON.BAKPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT-SETTINGS.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA-SOURCES.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DBEAVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTS"
+    CaseSensitive: false

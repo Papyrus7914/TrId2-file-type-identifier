@@ -1,0 +1,26 @@
+Name: NonoPocket nonogram
+URL: "http://conduits.com/products/apps/nono.asp"
+FileNameExtensions: ["ngb"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NONOGRAM "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLUMNS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONOGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

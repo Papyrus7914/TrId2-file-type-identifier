@@ -1,0 +1,11 @@
+Name: ART baseline binary Profile (Memory)
+URL: "https://developer.android.com/topic/performance/baselineprofiles/overview"
+FileNameExtensions: ["prof"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "prm\00"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRM\00"
+    CaseSensitive: false

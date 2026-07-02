@@ -1,0 +1,11 @@
+Name: Palm Dictionary Reader
+Description: BDicty is a multilanguage dictionary program for PalmOS. It allows the addition of various language and terminology databases.
+URL: "http://www.beiks.com/palmzonebg/Bdicty.htm"
+FileNameExtensions: ["pdb"]
+DetectionPatterns:
+  - Pos: 36
+    AsciiString: "\xB0\x88#\xAD\xB0\x88#\xAD\xB0\x88#\xAD\0\0\0\x01\0\0\0\0\0\0\0\0BVokBDIC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BVOKBDIC"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: MyDraw Template
+URL: "https://www.mydraw.com/"
+FileNameExtensions: ["ndtx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "document.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS.XML"
+    CaseSensitive: false

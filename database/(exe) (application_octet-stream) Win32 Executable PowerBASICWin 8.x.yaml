@@ -1,0 +1,185 @@
+Name: Win32 Executable PowerBASIC/Win 8.x
+URL: "https://en.wikipedia.org/wiki/PowerBASIC"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\n\0\x02\0\0\0\x04\0\x0F\0\xFF\xFF\0\0\xC0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\xB4\t"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "This is a Win32 program.\r\n$\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0PE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 135
+    AsciiString: "\090\0\0\0\0\0\0\0\0\0\0\xE0\0\x0F\x03\v\x01\x024"
+    CaseSensitive: true
+  - Pos: 179
+    AsciiString: "\0\0\0@\0\0\x10\0\0\0\x02\0\0\x01\0\0\0\0\0\0\0\x04\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 211
+    AsciiString: "\0\0\x04\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 295
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0.text\0  "
+    CaseSensitive: true
+  - Pos: 387
+    AsciiString: "\0\0\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 395
+    AsciiString: "\0\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0 \0\0`.data\0  "
+    CaseSensitive: true
+  - Pos: 439
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\xC0.link\0  "
+    CaseSensitive: true
+  - Pos: 479
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\xC0.r"
+    CaseSensitive: true
+  - Pos: 500
+    AsciiString: "c\0  "
+    CaseSensitive: true
+  - Pos: 519
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0"
+    CaseSensitive: true
+  - Pos: 1024
+    #                    w           +           x                       \t                f           U                                               u                 \n          u                                                     x                 P                       ;           X     u                                               u                                               u                             t                       \t                            E                 u                       u                       M                             M           @     Z
+    Bytes: [0xC3, 0xC3, 0x77, 0x05, 0x2B, 0xC2, 0x78, 0x01, 0xC3, 0xB2, 0x09, 0xB6, 0xA0, 0x66, 0x89, 0x55, 0x80, 0xC3, 0xA9, 0x00, 0xFF, 0xFF, 0xFF, 0x75, 0x06, 0xC3, 0x0A, 0xE4, 0x75, 0x01, 0xC3, 0xB2, 0x06, 0xEB, 0xE8, 0x85, 0xC0, 0x78, 0xF8, 0xC3, 0x50, 0x8B, 0xD0, 0x98, 0x3B, 0xC2, 0x58, 0x75, 0xEE, 0xC3, 0xA9, 0x00, 0x80, 0xFF, 0xFF, 0x75, 0xE6, 0xC3, 0xA9, 0x00, 0x00, 0xFF, 0xFF, 0x75, 0xDE, 0xC3, 0x85, 0xDB, 0x74, 0x01, 0xC3, 0xB2, 0x09, 0xEB, 0xC0, 0xC3, 0xF6, 0x45, 0x81, 0x80, 0x75, 0x01, 0xC3, 0x80, 0x75, 0x81, 0x80, 0x8B, 0x4D, 0x84, 0xE3, 0xF6, 0x80, 0x4D, 0x81, 0x40, 0x5A, 0xFF, 0xE1, 0xE8]
+  - Pos: any
+    AsciiString: "$\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS IS A WIN32 PROGRAM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERBASIC\0CONIN$\0TCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSALLOCSTRINGBYTELEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIBYTETOWIDECHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDECHARTOMULTIBYTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COCREATEINSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEHANDLEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSSTRINGBYTELEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLSIDFROMPROGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETACTIVEOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCOMMANDLINEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTARTUPINFOA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGIDFROMCLSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAFEARRAYCREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNINITIALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETFILEPOINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETVERSIONEXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MS SANS SERIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSFREESTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COINITIALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETLASTERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLEAUT32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETERRORMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETLASTERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANTCLEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEFILEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLSGETVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLSSETVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANTCOPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLE32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I0O0T0Z0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLSALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLSFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQVWF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLEEP"
+    CaseSensitive: false

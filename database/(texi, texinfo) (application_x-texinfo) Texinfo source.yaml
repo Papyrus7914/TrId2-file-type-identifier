@@ -1,0 +1,23 @@
+Name: Texinfo source
+URL: "http://en.wikipedia.org/wiki/Texinfo"
+FileNameExtensions: ["texi", "texinfo"]
+MimeType: application/x-texinfo
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\input texinfo"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SETFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLEPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false

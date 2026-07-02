@@ -1,0 +1,22 @@
+Name: Ace Tracker module
+FileNameExtensions: ["am"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AM01"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "ASD1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EMPTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APN1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASG1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSH"
+    CaseSensitive: false

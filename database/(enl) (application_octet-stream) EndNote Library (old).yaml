@@ -1,0 +1,24 @@
+Name: EndNote Library (old)
+Description: EndNote is a bibliographic database and reference management program.
+URL: "http://fileformats.archiveteam.org/wiki/EndNote_Library"
+FileNameExtensions: ["enl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "  @@@ \0\0@@@@"
+    CaseSensitive: true
+  - Pos: 164
+    AsciiString: "\r\nEN\rDB\n\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JOURNALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYWORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHORS"
+    CaseSensitive: false

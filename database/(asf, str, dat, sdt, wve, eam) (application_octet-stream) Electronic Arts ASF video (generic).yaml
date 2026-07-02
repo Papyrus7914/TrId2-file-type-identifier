@@ -1,0 +1,20 @@
+Name: Electronic Arts ASF video (generic)
+URL: "https://wiki.multimedia.cx/index.php?title=Electronic_Arts_Formats_(2)#.ASF.2F.STR_Music_Files"
+FileNameExtensions: ["asf", "str", "dat", "sdt", "wve", "eam"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SCH"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCCL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCDL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHL"
+    CaseSensitive: false

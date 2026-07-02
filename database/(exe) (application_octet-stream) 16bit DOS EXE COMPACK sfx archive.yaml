@@ -1,0 +1,84 @@
+Name: 16bit DOS EXE COMPACK sfx archive
+URL: "http://fileformats.archiveteam.org/wiki/COMPACK"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\0\b"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 31
+    #        ]
+    Bytes: [0x5D, 0xBD]
+  - Pos: 35
+    #        P                                               K
+    Bytes: [0x50, 0x06, 0x8C, 0xCB, 0x03, 0xDD, 0x8C, 0xD2, 0x4B, 0x8E, 0xDB, 0xBE]
+  - Pos: 48
+    AsciiString: "\0\xBF\0\a\x8E\xC2\xB9\b\0\xF3\xA5JMu\xEC"
+    CaseSensitive: true
+  - Pos: 99
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 235
+    AsciiString: "Q"
+    CaseSensitive: true
+  - Pos: 373
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 382
+    AsciiString: "W"
+    CaseSensitive: true
+  - Pos: 392
+    Bytes: [0xAE, 0xA0]
+  - Pos: 404
+    AsciiString: "\x9F Er"
+    CaseSensitive: true
+  - Pos: 409
+    AsciiString: "\xB4- "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1991 W COLLIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1990"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS 2.0 O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ION$CLOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPUTER S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFX CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROMINEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "91 P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LTD."
+    CaseSensitive: false

@@ -1,0 +1,56 @@
+Name: Ardour export Preset
+URL: "https://en.wikipedia.org/wiki/Ardour_(software)"
+FileNameExtensions: ["preset"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXPORTFORMAT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORTPRESET ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDER RELATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORTFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D_NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T_NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

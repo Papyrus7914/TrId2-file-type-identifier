@@ -1,0 +1,292 @@
+Name: Microsoft QuickBASIC 4.0 DOS Executable (with runtime lib)
+URL: "https://en.wikipedia.org/wiki/QuickBASIC"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0 \0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\x80\0\0\0\x10\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1E\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0bl"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RANDOM-NUMBER SEED (-32768 TO 32767)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR DURING RUNTIME INITIALIZATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH SPACE FOR ARGUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMUNICATION-BUFFER OVERFLOW\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIT ANY KEY TO RETURN TO SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADVANCED FEATURE UNAVAILABLE\0J"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- CONTROL-BREAK ENCOUNTERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- FLOATING POINT NOT LOADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH MEMORY ON EXEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- ILLEGAL NEAR POINTER USE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRES DOS 2.10 OR LATER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING FORMULA TOO COMPLEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- BAD ENVIRONMENT ON EXEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- ILLEGAL FAR POINTER USE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD FILE NAME OR NUMBER\05"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD STATEMENT ACTIVE\09"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- UNEXPECTED INTERRUPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS MEMORY-ARENA ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT PAST END OF FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKED FILE IS CORRUPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSCRIPT OUT OF RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- INTEGER DIVIDE BY 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILLEGAL FUNCTION CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENAME ACROSS DISKS\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- BAD FORMAT ON EXEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CASE ELSE EXPECTED\0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE UNAVAILABLE\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUPLICATE DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESUME WITHOUT ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN WITHOUT GOSUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN-TIME ERROR R6005"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN-TIME ERROR R6006"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN-TIME ERROR R6007"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING SPACE CORRUPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE ACCESS ERROR\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE ALREADY EXISTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE ALREADY OPEN\08"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF STRING SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERMISSION DENIED\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLE REQUIRED\02"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK-MEDIA ERROR\0I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF STACK SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD RECORD LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD RECORD NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN EXE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO LINE NUMBER IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNPRINTABLE ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- STACK OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK NOT READY\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIVISION BY ZERO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAR HEAP CORRUPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD OVERFLOW\03"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NOT FOUND\06"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNAL ERROR\04"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOO MANY FILES\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD FILE MODE\07"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD FILE NAME\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDO FROM START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE TIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH NOT FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE MISMATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE FAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF PAPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTAX ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_FILE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AT ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK FULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO RESUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*BREAK*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B0C.D E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B(C)D*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSEM87"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "J$K%L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6002"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6003"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6008"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6009"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6012"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6013"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6014"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R6015"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FMSG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO87"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOP"
+    CaseSensitive: false

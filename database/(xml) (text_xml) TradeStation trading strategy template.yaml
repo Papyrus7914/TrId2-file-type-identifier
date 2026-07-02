@@ -1,0 +1,77 @@
+Name: TradeStation trading strategy template
+URL: "https://en.wikipedia.org/wiki/TradeStation"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<TSXML>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLLECTION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTELLIGENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLATE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERCENTAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADVANCED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUANTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

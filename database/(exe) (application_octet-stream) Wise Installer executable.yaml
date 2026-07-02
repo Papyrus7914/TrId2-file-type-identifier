@@ -1,0 +1,221 @@
+Name: Wise Installer executable
+URL: "https://en.wikipedia.org/wiki/Wise_Solutions"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSTEM DLLS CORRUPT OR MISSING.\0DEMO INSTALLATIONS ONLY RUN ON THE COMPUTER THEY WERE CREATED ON."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLEFTP\0\0\0FILEWRITE\0\0\0DISKPROMPT\0\0DISPLAYGRAPHICS\0UPDATESCREEN\0\0\0\0WISEMAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEPALETTE\0GDI32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STUB32.EXE\0_MAINWNDPROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETWINDOWSDIRECTORYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LWRITE\0KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEFILENAMEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "16\0_STUBFILEWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATESOLIDBRUSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEHANDLEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEWINDOWEXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCOMMANDLINEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTQUITMESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFWINDOWPROCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTOCKOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALIDATERECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REALIZEPALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERCLASSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITWINDOWSEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCLIENTRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETDEVICECAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETVERSIONEXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTPALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETEOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALUNLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADLIBRARYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDMESSAGEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETERRORMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETWINDOWPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATEWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREELIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLBSINSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADCURSORA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGEBOXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINPAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADICONA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASEDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WSPRINTFA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTRCPYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTRLENA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINEXEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LCREAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LLSEEK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATBLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LOPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSSPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RICH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~GLC"
+    CaseSensitive: false

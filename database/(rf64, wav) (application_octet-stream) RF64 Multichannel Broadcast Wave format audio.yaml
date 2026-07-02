@@ -1,0 +1,8 @@
+Name: RF64 Multichannel Broadcast Wave format audio
+URL: "https://en.wikipedia.org/wiki/RF64"
+FileNameExtensions: ["rf64", "wav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RF64\xFF\xFF\xFF\xFFWAVEds64"
+    CaseSensitive: true

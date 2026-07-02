@@ -1,0 +1,17 @@
+Name: BibTeX Generated Bibliography
+URL: "https://en.wikipedia.org/wiki/BibTeX"
+FileNameExtensions: ["bbl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\begin{thebibliography}"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END{THEBIBLIOGRAPHY}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWBLOCK {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIBITEM"
+    CaseSensitive: false

@@ -1,0 +1,92 @@
+Name: OPPO firmware update (encrypted)
+URL: "https://en.wikipedia.org/wiki/Oppo"
+FileNameExtensions: ["ozip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OPPOENCRYPT!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSTEM_MANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR_MANIFEST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM_MATRIX.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR_MATRIX.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTA-PROPERTY-FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTA-REQUIRED-CACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPATIBILITY.ZIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST-TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOOGLE_PATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPPOENCRYPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTA_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PATCH.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCH_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRE-DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGINEER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTA-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANDROID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTA-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OPPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPPO_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIPE"
+    CaseSensitive: false

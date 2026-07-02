@@ -1,0 +1,13 @@
+Name: Hippel module
+FileNameExtensions: ["hip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "X\0Q\0Q\0Q\0Q\0Q\0Q\0Q"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFMX"
+    CaseSensitive: false

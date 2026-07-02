@@ -1,0 +1,30 @@
+Name: IEEE DASC Standard Delay Format
+Description: SDF is an existing OVI standard for the representation and interpretation of timing data for use at any stage of the electronic design process.
+URL: "http://fileformats.archiveteam.org/wiki/Standard_Delay_Format"
+FileNameExtensions: ["sdf", "sdo"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(DELAYFILE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(TIMESCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(CELLTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DIVIDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(PRO"
+    CaseSensitive: false

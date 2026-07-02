@@ -1,0 +1,199 @@
+Name: Trimmed Nintendo Switch Game Cartridge (NX Card Image)
+URL: "https://switchbrew.org/wiki/Gamecard_Format"
+FileNameExtensions: ["xci"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 256
+    AsciiString: "HEAD"
+    CaseSensitive: true
+  - Pos: 263
+    Bytes: [0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0x00]
+  - Pos: 270
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 284
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 304
+    AsciiString: "\0\xF0\0\0\0\0\0\0\0\x02\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 384
+    AsciiString: "\x01\0\0\0\x02\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 399
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 512
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NORMAL\0SECURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\02"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\03"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\04"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\05"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\06"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\07"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\08"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\09"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CNMT.NCA\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0A.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E1.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "6.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F.CNMT.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NCA\0A4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NCA\0A7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NCA\0DD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NCA\0DF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8.NCA\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAFYU{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ")(ON}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "6.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F.NCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HFS0"
+    CaseSensitive: false

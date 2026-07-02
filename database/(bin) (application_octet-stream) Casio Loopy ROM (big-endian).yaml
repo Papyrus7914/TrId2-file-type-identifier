@@ -1,0 +1,16 @@
+Name: Casio Loopy ROM (big-endian)
+URL: "https://en.wikipedia.org/wiki/Casio_Loopy"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x0E, 0x00, 0x00, 0x80, 0x0E]
+  - Pos: 6
+    Bytes: [0xFF, 0xFE]
+  - Pos: 12
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF, 0x02, 0x00, 0x00, 0x00, 0x02, 0x00]
+  - Pos: 23
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF, 0xFE]
+  - Pos: any
+    AsciiString: "C\0G\0K\0P\0U\0Z"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Microsoft Visual C++ Workspace
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B"
+FileNameExtensions: ["vcw"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[MSVC Status File]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROJECTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRKPTCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WATCHCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

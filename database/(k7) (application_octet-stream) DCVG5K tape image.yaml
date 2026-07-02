@@ -1,0 +1,15 @@
+Name: DCVG5K tape image
+URL: "http://dcvg5k.free.fr/download/index.html"
+FileNameExtensions: ["k7"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD3, 0xD3, 0xD3, 0xD3, 0xD3, 0xD3, 0xD3, 0xD3, 0xD3, 0xD3]
+  - Pos: 20
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    Bytes: [0xD6, 0xD6, 0xD6, 0xD6, 0xD6, 0xD6, 0xD6, 0xD6, 0xD6, 0xD6]

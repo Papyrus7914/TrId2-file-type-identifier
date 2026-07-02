@@ -1,0 +1,44 @@
+Name: T-RackS Preset
+URL: "https://www.ikmultimedia.com/"
+FileNameExtensions: ["trp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Application = T-RackS\r\nVersion = "
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PATCH_EQUALIZER_FIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SATURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T-RACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYPASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAP"
+    CaseSensitive: false

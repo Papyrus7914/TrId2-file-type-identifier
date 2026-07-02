@@ -1,0 +1,57 @@
+Name: DTS Compact audio
+URL: "http://en.wikipedia.org/wiki/DTS_(sound_system)"
+FileNameExtensions: ["cpt"]
+DetectionPatterns:
+  - Pos: 0
+    #                                      <     }           w           \r    ;           \t          {                                                           m
+    Bytes: [0x7F, 0xFE, 0x80, 0x01, 0xFC, 0x3C, 0x7D, 0xC2, 0x77, 0x00, 0x0D, 0x3B, 0x80, 0x09, 0xEF, 0x7B, 0xDE, 0xF7, 0xBD, 0xEF, 0x00, 0x00, 0xFF, 0xF6, 0xDB, 0x6D, 0xB6, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: 43
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "\0\0\0\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 169
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 354
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 362
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 364
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 493
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 495
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 533
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 538
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 544
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1071
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 1078
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 2010
+    Bytes: [0xFF]
+  - Pos: 2012
+    #                                            <     }           w           \r    ;           \t          {                                                           m
+    Bytes: [0x00, 0x7F, 0xFE, 0x80, 0x01, 0xFC, 0x3C, 0x7D, 0xC2, 0x77, 0x00, 0x0D, 0x3B, 0x80, 0x09, 0xEF, 0x7B, 0xDE, 0xF7, 0xBD, 0xEF, 0x00, 0x00, 0xFF, 0xF6, 0xDB, 0x6D, 0xB6, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF]

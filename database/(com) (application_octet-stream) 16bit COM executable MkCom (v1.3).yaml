@@ -1,0 +1,11 @@
+Name: 16bit COM executable MkCom (v1.3)
+URL: "http://fileformats.archiveteam.org/wiki/DOCMAKER_(Jack_A._Orman)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE9\xB7\0 MkCom.COM  vom: 01.01.94  08:50 Uhr   Gr\x94\xE1e: 1224x   Zeile: 54xxx von 998xx  Ende: ESC   rollen: \x18\x19 Bild\x18 Bild\x19 Pos1 Ende   F9: Palette  (c) 1994 J.Schultz \x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GHIOPQCC"
+    CaseSensitive: false

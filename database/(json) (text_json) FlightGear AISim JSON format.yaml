@@ -1,0 +1,59 @@
+Name: FlightGear AISim JSON format
+URL: "https://wiki.flightgear.org/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLADOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMADOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DA_MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DE_MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DR_MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASS"
+    CaseSensitive: false

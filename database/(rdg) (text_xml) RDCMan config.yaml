@@ -1,0 +1,107 @@
+Name: RDCMan config
+Description: Remote Desktop Connection Manager configuration.
+FileNameExtensions: ["rdg"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONNECTIONSETTINGS INHERIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD STOREASCLEARTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGONCREDENTIALS INHERIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECURITYSETTINGS INHERIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYSETTINGS INHERIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GATEWAYSETTINGS INHERIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALRESOURCES INHERIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOTEDESKTOP INHERIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDCMAN SCHEMAVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGONCREDENTIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GATEWAYSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREDSHARING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALBYPASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGONMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPANDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXAMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOMAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDCMAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

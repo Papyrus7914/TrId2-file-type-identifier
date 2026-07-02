@@ -1,0 +1,11 @@
+Name: Extended M3U playlist
+URL: "http://en.wikipedia.org/wiki/M3U"
+FileNameExtensions: ["m3u"]
+MimeType: audio/x-mpegurl
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXTM3U"
+    CaseSensitive: false

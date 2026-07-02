@@ -1,0 +1,26 @@
+Name: Helios Device driver
+URL: "https://en.m.wikipedia.org/wiki/HeliOS"
+FileNameExtensions: ["dev"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "xV4\x12\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "4\0\0\0KERNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4\0\0\0SYSLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVOPERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4\0\0\0UTIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVOPEN"
+    CaseSensitive: false

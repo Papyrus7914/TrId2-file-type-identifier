@@ -1,0 +1,11 @@
+Name: Dynamix SSM sound and music data container
+Description: Used in some games from Dynamix.
+FileNameExtensions: ["res"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SSM:"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SNG:"
+    CaseSensitive: true

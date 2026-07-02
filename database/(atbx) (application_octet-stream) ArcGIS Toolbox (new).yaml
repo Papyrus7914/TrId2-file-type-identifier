@@ -1,0 +1,23 @@
+Name: ArcGIS Toolbox (new)
+URL: "https://en.wikipedia.org/wiki/ArcGIS"
+FileNameExtensions: ["atbx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "TOOL.SCRIPT.EXECUTE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLBOX.CONTENT.RC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOL.CONTENT.RC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TE.PY"
+    CaseSensitive: false

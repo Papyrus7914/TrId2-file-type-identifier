@@ -1,0 +1,11 @@
+Name: Amigaguide hypertext document
+URL: "https://en.wikipedia.org/wiki/Amigaguide"
+FileNameExtensions: ["guide"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@database"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDNODE"
+    CaseSensitive: false

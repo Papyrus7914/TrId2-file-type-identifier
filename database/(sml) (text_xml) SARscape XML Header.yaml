@@ -1,0 +1,68 @@
+Name: SARscape XML Header
+URL: "https://www.sarmap.ch/index.php/software/sarscape/"
+FileNameExtensions: ["sml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" ?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SARSCAPEHEADERSCHEMA_VERSION_1.0.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIXSTRING NUMBEROFROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIXROWSTRING ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER_INFO XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFCOLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMALOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUESTRING ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.SARMAP.CH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NROFCHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEMISPHERE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASTERINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHERINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZONE"
+    CaseSensitive: false

@@ -1,0 +1,47 @@
+Name: S-Note document
+URL: "http://www.samsung.com/uk/support/usefulsoftware/snote/"
+FileNameExtensions: ["snb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SNB_THUMBNAILIMAGE_001.JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNOTE.XML.RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTER.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCPROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false

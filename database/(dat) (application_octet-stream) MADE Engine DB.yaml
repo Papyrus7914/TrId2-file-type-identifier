@@ -1,0 +1,13 @@
+Name: MADE Engine DB
+URL: "https://wiki.scummvm.org/index.php/MADE"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0ADVSYS"
+    CaseSensitive: true
+  - Pos: 529
+    Bytes: [0xE2, 0xE2, 0xE2]
+  - Pos: any
+    AsciiString: "ADVSYS"
+    CaseSensitive: false

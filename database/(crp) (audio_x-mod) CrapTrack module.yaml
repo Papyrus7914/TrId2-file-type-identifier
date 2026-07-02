@@ -1,0 +1,26 @@
+Name: CrapTrack module
+Description: Amiga back-to-basics tracker by DAS Software.
+FileNameExtensions: ["crp"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CRPTRK10\n\nauthor "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INST"
+    CaseSensitive: false

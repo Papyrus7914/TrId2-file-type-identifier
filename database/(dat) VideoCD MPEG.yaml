@@ -1,0 +1,11 @@
+Name: VideoCD MPEG
+Description: MPEG stream in a RIFF container used in VideoCDs
+URL: "http://www.videohelp.com/"
+FileNameExtensions: ["dat"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CDXAfmt "
+    CaseSensitive: true

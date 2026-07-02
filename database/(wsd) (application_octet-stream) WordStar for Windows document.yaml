@@ -1,0 +1,14 @@
+Name: WordStar for Windows document
+URL: "https://en.wikipedia.org/wiki/WordStar"
+FileNameExtensions: ["wsd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# VV # "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\r\n"
+    CaseSensitive: true

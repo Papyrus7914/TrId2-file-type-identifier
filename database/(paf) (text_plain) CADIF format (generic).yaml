@@ -1,0 +1,26 @@
+Name: CADIF format (generic)
+URL: "https://en.wikipedia.org/wiki/EDIF"
+FileNameExtensions: ["paf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "("
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\r\n ("
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: " CADIF "
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(FORMAT CADIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(CADIF"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: OpenGPS X3P (ISO 5436-2)
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/opengps.c"
+FileNameExtensions: ["x3p"]
+MimeType: application/x-iso5436-2-spm
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "bindata/data.bin"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MD5CHECKSUM.HEXPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINDATA"
+    CaseSensitive: false

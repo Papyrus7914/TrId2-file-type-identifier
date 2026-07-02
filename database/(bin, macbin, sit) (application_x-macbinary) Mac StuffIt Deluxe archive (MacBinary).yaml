@@ -1,0 +1,30 @@
+Name: Mac StuffIt Deluxe archive (MacBinary)
+Description: MacBinary is a standard for encoding Macintosh files for file transfer. At position 65 apple type SITD is stored.
+URL: "http://www.macdisk.com/macsigen.php"
+FileNameExtensions: ["bin", "macbin", "sit"]
+MimeType: application/x-macbinary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "SITD"
+    CaseSensitive: true
+  - Pos: 74
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 82
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 99
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SITD"
+    CaseSensitive: false

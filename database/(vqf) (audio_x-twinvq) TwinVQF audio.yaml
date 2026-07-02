@@ -1,0 +1,15 @@
+Name: TwinVQF audio
+Description: Transform-domain Weighted INterleave Vector Quantization Format is a proprietary Yamaha audio codec.
+URL: "http://www.yamaha-xg.com/soundvq/"
+FileNameExtensions: ["vqf"]
+MimeType: audio/x-twinvq
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TWIN"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "COMM"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "NAME"
+    CaseSensitive: true

@@ -1,0 +1,20 @@
+Name: Aegis Sonix music
+URL: "https://en.wikipedia.org/wiki/Aegis_Sonix"
+FileNameExtensions: ["snx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\xFF\0x"
+    CaseSensitive: true

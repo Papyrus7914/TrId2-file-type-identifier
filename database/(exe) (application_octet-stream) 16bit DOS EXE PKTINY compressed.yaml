@@ -1,0 +1,38 @@
+Name: 16bit DOS EXE PKTINY compressed
+URL: "http://fileformats.archiveteam.org/wiki/PKTINY"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "PKLITE Copr. "
+    CaseSensitive: true
+  - Pos: 376
+    AsciiString: "This program runs only on i80286 and above.\n"
+    CaseSensitive: true
+  - Pos: 777
+    AsciiString: "Program was modified and will not run.\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM RUNS ONLY ON I80286 AND ABOVE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM WAS MODIFIED AND WILL NOT RUN."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKWARE INC. ALL RIGHTS RESERVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT ENOUGH MEMORY$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKLITE COPR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MCA1PH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MCA2PH"
+    CaseSensitive: false

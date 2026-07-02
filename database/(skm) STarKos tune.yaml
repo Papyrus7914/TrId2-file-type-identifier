@@ -1,0 +1,16 @@
+Name: STarKos tune
+URL: "http://pouet.net/prod.php?which=13618"
+FileNameExtensions: ["skm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "BIN"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "SK10\0@"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SK10"
+    CaseSensitive: false

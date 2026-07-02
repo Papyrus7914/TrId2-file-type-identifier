@@ -1,0 +1,19 @@
+Name: Freelance Metafile (v1)
+FileNameExtensions: ["gmf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FREELANCE METAFILE VERSION 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICTURE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GMF"
+    CaseSensitive: false

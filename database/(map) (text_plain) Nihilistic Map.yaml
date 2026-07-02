@@ -1,0 +1,17 @@
+Name: Nihilistic Map
+URL: "https://www.mobygames.com/company/1424/nstigate-games/"
+FileNameExtensions: ["map"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\r\n\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORLDSPAWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUSH"
+    CaseSensitive: false

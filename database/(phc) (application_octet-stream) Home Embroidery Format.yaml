@@ -1,0 +1,11 @@
+Name: Home Embroidery Format
+Description: Stitches' file used by Brother embroidery machines.
+FileNameExtensions: ["phc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#PHC"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "Copyright by "
+    CaseSensitive: true

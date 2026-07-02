@@ -1,0 +1,10 @@
+Name: Erlang Application Upgrade
+URL: "http://en.wikipedia.org/wiki/Erlang_(programming_language)"
+FileNameExtensions: ["appup"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\""
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "."
+    CaseSensitive: true

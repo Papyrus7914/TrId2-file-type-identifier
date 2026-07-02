@@ -1,0 +1,14 @@
+Name: Microid Animation
+URL: "https://wiki.multimedia.cx/index.php/GRN"
+FileNameExtensions: ["anm", "grn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ANIM"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0@\x01\xC8\0\b\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAL"
+    CaseSensitive: false

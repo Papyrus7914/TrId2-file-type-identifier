@@ -1,0 +1,28 @@
+Name: Viewpoint MetaStream scene
+URL: "http://en.wikipedia.org/wiki/Viewpoint_Corporation"
+FileNameExtensions: ["mtx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<MTSScene Version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MTSSCENE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTSTIMEELEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTSIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

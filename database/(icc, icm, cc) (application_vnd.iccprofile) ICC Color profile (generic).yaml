@@ -1,0 +1,47 @@
+Name: ICC Color profile (generic)
+URL: "http://fileformats.archiveteam.org/wiki/ICC_profile"
+FileNameExtensions: ["icc", "icm", "cc"]
+MimeType: application/vnd.iccprofile
+DetectionPatterns:
+  - Pos: 26
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "acsp"
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 74
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false

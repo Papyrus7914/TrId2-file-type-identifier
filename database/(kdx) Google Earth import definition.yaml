@@ -1,0 +1,25 @@
+Name: Google Earth import definition
+URL: "http://en.wikipedia.org/wiki/Google_earth"
+FileNameExtensions: ["kdx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Layout {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COALESCEDELIMITERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDDEFINITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKIPROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

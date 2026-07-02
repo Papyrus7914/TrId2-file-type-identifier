@@ -1,0 +1,50 @@
+Name: PyTorch serialized model (zipped)
+URL: "https://en.wikipedia.org/wiki/PyTorch"
+FileNameExtensions: ["pth"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "_REBUILD_TENSOR_V2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTORCH._UTILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCOLLECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOATSTORAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDEREDDICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA.PKLFB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA.PKLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONFB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORAGEQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHTQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIASQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIASR"
+    CaseSensitive: false

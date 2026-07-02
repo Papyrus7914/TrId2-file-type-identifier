@@ -1,0 +1,17 @@
+Name: Thails Printer Code
+Description: Part of DOS Thai Language Support.
+FileNameExtensions: ["cod"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TAPIC Code ID "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "()*+"
+    CaseSensitive: false

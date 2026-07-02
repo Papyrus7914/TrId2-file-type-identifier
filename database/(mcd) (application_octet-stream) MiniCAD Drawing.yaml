@@ -1,0 +1,29 @@
+Name: MiniCAD Drawing
+URL: "https://en.wikipedia.org/wiki/MiniCAD"
+FileNameExtensions: ["mcd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0 \0\0\0A"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 92
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DD\0\0\0\0\0\0DD\0\0\0\0\0\0DD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UU\0\0\0\0\0\0UU\0\0\0\0\0\0UU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERACTIVE"
+    CaseSensitive: false

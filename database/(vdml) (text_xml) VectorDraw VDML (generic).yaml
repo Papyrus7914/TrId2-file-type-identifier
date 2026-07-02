@@ -1,0 +1,479 @@
+Name: VectorDraw VDML (generic)
+URL: "https://www.vdraw.com/"
+FileNameExtensions: ["vdml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?><Begin>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VECTORDRAW.DRAWELEMENTS.GRPATTERNLINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTORDRAW.PROFESSIONAL.VDCOLLECTIONS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTORDRAW.PROFESSIONAL.VDPRIMARIES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTORDRAW.PROFESSIONAL.VDFIGURES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTORDRAW.PROFESSIONAL.VDOBJECTS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTORDRAW.RENDER.GRTEXTSTYLEEXTRA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTORDRAW.RENDER.LINETYPESEGMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.DRAWING.RECTANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTORDRAW.GEOMETRY.BOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTDRAWINGCODEPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDOFVECTORDRAWSTREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.DRAWING.COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDFEXPORTPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDHATCHPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDFILEPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTER_CLOCKWISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDGROUNDSURFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDHATCHPATTERNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVELAYOUTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTALEDITINGTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDINFINITYLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDPROXYCLASSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDSECTIONCLIPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVERESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDPROXYFIGURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDPROXYOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDXPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVEPENCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICKEYTOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWHIDENEDGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.BOOLEAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PRINTERSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDPOLYCURVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDSELECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDTEXTSTYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPROXYCLASSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.DOUBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.SINGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.UINT16"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.UINT32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.UINT64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DOUBLEARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".STRINGARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDATTRIBDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDDIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDDIMSTYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDDOCUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDLINETYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDPOLYHATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDXPROPERTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EACTIVELAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFIEDTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARYCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.INT16"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.INT32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.INT64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INT32ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDENTITIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDIMAGEDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDPOLYFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDPOLYLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDVIEWPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DASHDOTDOT0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMIRRORTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.BYTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.ENUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDATTRIBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDELLIPSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDLAYOUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDPALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEBYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVISIBLE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISDPISCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEWEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LU_DECIMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBASEPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTEXLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VD3DFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDBLOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDCIRCLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDCURVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDIMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDINSERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDLAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDLEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDLIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VERTEXES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTEARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_DOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MARGINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDMTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDPRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DASHDOT0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILLMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GQUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSUNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCORLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPEFULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".AUNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LUNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYBLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CULTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEGREES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_DOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAUNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLUNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEUTRAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VDARC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROZEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ITEM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVE"
+    CaseSensitive: false

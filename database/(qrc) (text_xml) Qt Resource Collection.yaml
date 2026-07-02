@@ -1,0 +1,14 @@
+Name: Qt Resource Collection
+URL: "https://en.wikipedia.org/wiki/Qt_(software)"
+FileNameExtensions: ["qrc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "QRESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

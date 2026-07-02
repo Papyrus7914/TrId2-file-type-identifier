@@ -1,0 +1,11 @@
+Name: Speex encoded audio
+URL: "http://www.speex.org/"
+FileNameExtensions: ["spx"]
+MimeType: audio/ogg
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OggS\0\x02\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\x01PSpeex   "
+    CaseSensitive: true

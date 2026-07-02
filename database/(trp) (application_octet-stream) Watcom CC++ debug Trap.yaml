@@ -1,0 +1,8 @@
+Name: Watcom C/C++ debug Trap
+URL: "https://en.wikipedia.org/wiki/Watcom"
+FileNameExtensions: ["trp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    \b                      5           U                                               v
+    Bytes: [0xAF, 0xDE, 0x08, 0x00, 0x1D, 0x00, 0x35, 0x00, 0x55, 0x8B, 0xEC, 0x1E, 0x06, 0x0E, 0x1F, 0xFF, 0x76, 0x06, 0xE8]

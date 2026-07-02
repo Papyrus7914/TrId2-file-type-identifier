@@ -1,0 +1,20 @@
+Name: Winstep Xtreme theme pack
+URL: "http://www.winstep.net/"
+FileNameExtensions: ["xtreme"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        X     T
+    Bytes: [0x58, 0x54, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "WALLPAPER.JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NXBACK.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EP.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NXSPK"
+    CaseSensitive: false

@@ -1,0 +1,32 @@
+Name: Playstation Vita VELF template
+URL: "https://en.wikipedia.org/wiki/PlayStation_Vita"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\n\n<livearea style=\"a1\" format-ver=\"01.00\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LIVEAREA-BACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIVEAREA STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTUP-IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT-VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "01.00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GATE"
+    CaseSensitive: false

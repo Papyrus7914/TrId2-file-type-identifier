@@ -1,0 +1,14 @@
+Name: IRIX software distribution format Installation DB (f)
+URL: "http://fileformats.archiveteam.org/wiki/IRIX_software_distribution_format"
+FileNameExtensions: ["idb"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "f 0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROOT SYS USR"
+    CaseSensitive: false

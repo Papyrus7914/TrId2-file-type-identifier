@@ -1,0 +1,38 @@
+Name: Expression Strokes
+URL: "http://fileformats.archiveteam.org/wiki/Expression_Design"
+FileNameExtensions: ["sks"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%SKS:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%T STRKDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%T GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKSTROKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%ALCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%T PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANCHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%SKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%SUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPTS"
+    CaseSensitive: false

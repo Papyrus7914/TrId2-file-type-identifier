@@ -1,0 +1,23 @@
+Name: Jupiter Tesselation 3D visualization format
+URL: "http://fileformats.archiveteam.org/wiki/JT"
+FileNameExtensions: ["jt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Version "
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "  "
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "                                                 "
+    CaseSensitive: true

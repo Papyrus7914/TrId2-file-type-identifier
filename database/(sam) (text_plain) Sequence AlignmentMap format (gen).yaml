@@ -1,0 +1,11 @@
+Name: Sequence Alignment/Map format (gen)
+URL: "http://samtools.sourceforge.net/"
+FileNameExtensions: ["sam"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "N:"
+    CaseSensitive: true

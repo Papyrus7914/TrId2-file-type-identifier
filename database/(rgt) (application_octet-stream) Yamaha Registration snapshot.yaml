@@ -1,0 +1,17 @@
+Name: Yamaha Registration snapshot
+Description: Saved snapshot of all active keyboard settings.
+FileNameExtensions: ["rgt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SpfF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "RGST"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "BHd\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FEND"
+    CaseSensitive: false

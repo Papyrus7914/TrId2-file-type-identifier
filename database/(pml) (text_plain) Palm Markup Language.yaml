@@ -1,0 +1,12 @@
+Name: Palm Markup Language
+Description: Source language used to create documents for eReader.
+URL: "http://wiki.mobileread.com/wiki/EReader"
+FileNameExtensions: ["pml"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\v"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

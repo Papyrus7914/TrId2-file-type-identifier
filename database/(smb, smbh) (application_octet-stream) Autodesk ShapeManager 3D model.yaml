@@ -1,0 +1,53 @@
+Name: Autodesk ShapeManager 3D model
+URL: "https://en.wikipedia.org/wiki/ShapeManager"
+FileNameExtensions: ["smb", "smbh"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ASM BinaryFile"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUTODESK NEUTRON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIB_CUSTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ATTRIB_DEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASMHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COEDGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LUMP"
+    CaseSensitive: false

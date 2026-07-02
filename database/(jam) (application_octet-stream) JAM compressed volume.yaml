@@ -1,0 +1,11 @@
+Name: JAM compressed volume
+Description: A DOS real time drive compressor.
+FileNameExtensions: ["jam"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xE9,\x01JAM "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "."
+    CaseSensitive: true

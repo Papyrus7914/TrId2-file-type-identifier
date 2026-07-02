@@ -1,0 +1,11 @@
+Name: Bambu Lab digital Signature
+URL: "https://en.wikipedia.org/wiki/Bambu_Lab"
+FileNameExtensions: ["sig", "bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BIMH\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SIG"
+    CaseSensitive: false

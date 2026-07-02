@@ -1,0 +1,147 @@
+Name: FrameMaker Help
+Description: The internal FrameMaker help use FrameMaker document format.
+URL: "http://fileformats.archiveteam.org/wiki/FrameMaker"
+FileNameExtensions: ["hlp"]
+MimeType: application/vnd.framemaker
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<MakerFile "
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: ">\r\n\x1A\0\0\b\t\n\r\x1AAa\x7F\xFF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$TBLSHEETCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FULLFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEFOOTNOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$LASTPAGENUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$PARANUMONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$TBLSHEETNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIOUSLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIOUSPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CURPAGENUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(CONTINUED)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEE HEADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MONTHNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$SHORTYEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MINUTE00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MONTHNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$PARATEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRSTPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELVETICA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKERFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERY THIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MARKER1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MARKER2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$PAGENUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOTOLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXTPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DAYNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGULAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(SHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOUBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$AMPM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$HOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$YEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HLP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false

@@ -1,0 +1,8 @@
+Name: Pacific Nanotechlology Nano-R SPM data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/pnifile.c"
+FileNameExtensions: ["pni"]
+MimeType: application/x-pni-spm
+DetectionPatterns:
+  - Pos: 0
+    #                                1     .     0
+    Bytes: [0xCD, 0xCD, 0xCD, 0xCD, 0x31, 0x2E, 0x30]

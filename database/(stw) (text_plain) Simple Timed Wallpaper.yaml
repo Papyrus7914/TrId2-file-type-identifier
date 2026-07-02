@@ -1,0 +1,11 @@
+Name: Simple Timed Wallpaper
+URL: "https://github.com/xyproto/wallutils/blob/main/pkg/simpletimed/stw-1.0.0.md"
+FileNameExtensions: ["stw"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "stw: 1.0\nname: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false

@@ -1,0 +1,52 @@
+Name: ORTIM Zeit project
+Description: Processing, Evaluation and Management of Time Studies.
+URL: "http://www.ortim.de"
+FileNameExtensions: ["ozv"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FC\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\b\0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0\0\0\0\xFF\xFF\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x06\x01\0"
+    CaseSensitive: true
+  - Pos: 79
+    AsciiString: "\0\x01\0"
+    CaseSensitive: true
+  - Pos: 83
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 89
+    #        D
+    Bytes: [0x44, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x00, 0xFF, 0xFF, 0xFF, 0x00, 0x00]
+  - Pos: 105
+    AsciiString: "\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 117
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 120
+    AsciiString: "\x92\a\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 156
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 160
+    AsciiString: "\0\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\0\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\0\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\0\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF\0\xFF\xFF\xFF\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "A\0\0\0B\0\0\0C\0\0\0D\0\0\0E\0\0\0F\0\0\0G\0\0\0H\0\0\0I\0\0\0J\0\0\0K\0\0\0L\0\0\0M\0\0\0N\0\0\0O\0\0\0P\0\0\0Q\0\0\0R\0\0\0S\0\0\0T\0\0\0U\0\0\0V\0\0\0W\0\0\0X\0\0\0Y\0\0\0Z\0\0\0{"
+    CaseSensitive: false

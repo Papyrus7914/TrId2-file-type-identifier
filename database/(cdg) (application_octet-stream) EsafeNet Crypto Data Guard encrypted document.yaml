@@ -1,0 +1,13 @@
+Name: EsafeNet Crypto Data Guard encrypted document
+URL: "https://www.esafenet.com/"
+FileNameExtensions: ["cdg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE0, 0xA8, 0x91, 0xE7, 0xD8, 0xF2, 0x05, 0xAC, 0x00, 0x02, 0x00, 0x00, 0x00, 0x10, 0x00, 0x00]
+  - Pos: any
+    AsciiString: "ESAFENET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRX0"
+    CaseSensitive: false

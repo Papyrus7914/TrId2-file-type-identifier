@@ -1,0 +1,47 @@
+Name: VirusTotal graph
+URL: "https://www.virustotal.com/gui/graph-overview"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"nodes\":[{\"entityAttributes\":{\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENTITYATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAS_DETECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASEXPANSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__INDEXCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false

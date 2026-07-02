@@ -1,0 +1,15 @@
+Name: ClariSSA Super Smooth Animation
+Description: Amiga animation format.
+URL: "http://fileformats.archiveteam.org/wiki/IFF-SSA"
+FileNameExtensions: ["ssa", "anim"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SSA ANIM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SSA ANIM"
+    CaseSensitive: false

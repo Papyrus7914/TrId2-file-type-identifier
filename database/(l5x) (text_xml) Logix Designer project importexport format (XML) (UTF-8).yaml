@@ -1,0 +1,68 @@
+Name: Logix Designer project import/export format (XML) (UTF-8)
+URL: "http://fileformats.archiveteam.org/wiki/L5X"
+FileNameExtensions: ["l5x"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\r\n<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REFERENCES DECORATEDDATA CONTEXT DEPENDENCIES FORCEPROTECTEDENCODING ALLPROJDOCTRANS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSLOGIX5000CONTENT SCHEMAREVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWAREREVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINSCONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLLER USE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTERNALACCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPES USE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORTOPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMBER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORTDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false

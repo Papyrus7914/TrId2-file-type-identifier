@@ -1,0 +1,14 @@
+Name: Reflections/Monzoom script
+URL: "https://en.wikipedia.org/wiki/Amiga_Reflections"
+FileNameExtensions: ["skr"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "REFSKRIPT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GET_RESULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_"
+    CaseSensitive: false

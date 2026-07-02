@@ -1,0 +1,23 @@
+Name: Flex configuration
+URL: "https://en.wikipedia.org/wiki/Apache_Flex"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TARGET-PLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLEX-CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOBE"
+    CaseSensitive: false

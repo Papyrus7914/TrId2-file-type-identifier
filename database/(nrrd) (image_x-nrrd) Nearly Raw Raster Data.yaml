@@ -1,0 +1,20 @@
+Name: Nearly Raw Raster Data
+URL: "http://fileformats.archiveteam.org/wiki/NRRD"
+FileNameExtensions: ["nrrd"]
+MimeType: image/x-nrrd
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NRRD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

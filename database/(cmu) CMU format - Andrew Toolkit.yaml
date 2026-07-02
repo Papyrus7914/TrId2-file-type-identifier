@@ -1,0 +1,10 @@
+Name: CMU format - Andrew Toolkit
+URL: "http://en.wikipedia.org/wiki/Andrew_Project"
+FileNameExtensions: ["cmu"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\begindata{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDDATA{"
+    CaseSensitive: false

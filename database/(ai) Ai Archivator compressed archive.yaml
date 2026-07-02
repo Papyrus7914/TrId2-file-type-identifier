@@ -1,0 +1,9 @@
+Name: Ai Archivator compressed archive
+FileNameExtensions: ["ai"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Ai\x02"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

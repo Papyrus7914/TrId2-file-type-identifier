@@ -1,0 +1,74 @@
+Name: PersonalBrain document
+URL: "http://www.thebrain.com/"
+FileNameExtensions: ["brainzip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "ATTACHMENTTOENTRY.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRAINSYSTEMINFO.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFICATIONLOG.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THOUGHTALIASES.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRYTOOBJECT.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRAINALIASES.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTOTHOUGHT.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVITYLOG.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTACHMENTS.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKALIASES.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMNOTES.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THOUGHTSETS.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTES.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMINDERS.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHLOG.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASE.SC1PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THOUGHTS.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRIES.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRAINS.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKS.TBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%\0\0\0BRAIN_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BRAINPK"
+    CaseSensitive: false

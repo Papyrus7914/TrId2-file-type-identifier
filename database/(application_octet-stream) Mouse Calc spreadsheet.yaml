@@ -1,0 +1,13 @@
+Name: Mouse Calc spreadsheet
+URL: "http://fileformats.archiveteam.org/wiki/Mouse_Calc"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                8                                                                                                                             0                             `                                   ␠
+    Bytes: [0x8C, 0x95, 0x83, 0x00, 0x38, 0xE9, 0x01, 0xD0, 0xFB, 0x88, 0xD0, 0xF6, 0xBD, 0x8C, 0xC0, 0x10, 0xFB, 0xC9, 0xAA, 0xD0, 0xF7, 0xEA, 0xBD, 0x8C, 0xC0, 0x30, 0x04, 0xBD, 0x88, 0xC0, 0x60, 0xA9, 0x00, 0x8D, 0xF4, 0x03, 0x20, 0x80, 0x00, 0x00]
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789"
+    CaseSensitive: false

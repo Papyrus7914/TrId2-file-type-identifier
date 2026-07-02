@@ -1,0 +1,14 @@
+Name: Dramatica story (generic)
+URL: "http://fileformats.archiveteam.org/wiki/Dramatica"
+FileNameExtensions: ["dsf", "dr5"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "** PFM binary file **\x1A"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "Dram"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "Dram"
+    CaseSensitive: true

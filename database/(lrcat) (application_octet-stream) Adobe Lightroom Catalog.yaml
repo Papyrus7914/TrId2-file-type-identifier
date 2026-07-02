@@ -1,0 +1,41 @@
+Name: Adobe Lightroom Catalog
+URL: "https://en.wikipedia.org/wiki/Adobe_Lightroom"
+FileNameExtensions: ["lrcat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATE INDEX INDEX_AGSEARCHABLEPHOTOPROPERTYARRAYELEMENT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE INDEX INDEX_AGLIBRARYPUBLISHEDCOLLECTIONIMAGE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE AGLIBRARYCOLLECTIONCONTENT ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE ADOBE_ADDITIONALMETADATA ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE AGLIBRARYKEYWORDIMAGE ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE AGLIBRARYROOTFOLDER ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE INDEX INDEX_ADOBE_IMAGES_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE AGFOLDERCONTENT ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE AGLIBRARYFOLDER ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE AGLIBRARYFILE ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOBE_DBVERSION"
+    CaseSensitive: false

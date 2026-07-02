@@ -1,0 +1,71 @@
+Name: Netcad drawing
+URL: "https://en.netcad.com/"
+FileNameExtensions: ["ncz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01x\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NETCADPROJECTPARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCESYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLREFSACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFMANPARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMPROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KADASTRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITDLG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEX.ST2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONMAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F2.NCS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRJPAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NCF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: TheDraw Pascal screen Image
+URL: "https://en.wikipedia.org/wiki/TheDraw"
+FileNameExtensions: ["imm", "pas"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{ TheDraw Pascal Screen Image }\r\nconst\r\n  "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OF CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

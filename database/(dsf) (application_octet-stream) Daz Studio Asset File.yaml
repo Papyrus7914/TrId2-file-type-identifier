@@ -1,0 +1,47 @@
+Name: Daz Studio Asset File
+URL: "https://en.wikipedia.org/wiki/Daz_Studio"
+FileNameExtensions: ["dsf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n\t\"file_version\" : \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTRIBUTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSET_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APRILYSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBSITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DSF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

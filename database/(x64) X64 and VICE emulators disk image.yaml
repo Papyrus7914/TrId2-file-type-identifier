@@ -1,0 +1,10 @@
+Name: X64 and VICE emulators disk image
+URL: "http://viceteam.bei.t-online.de/"
+FileNameExtensions: ["x64"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "C\x15Ad"
+    CaseSensitive: true
+  - Pos: 63
+    AsciiString: "\0"
+    CaseSensitive: true

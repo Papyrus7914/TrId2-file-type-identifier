@@ -1,0 +1,14 @@
+Name: Scream Tracker 2 song/module (SWavePro)
+Description: Written by SoundWave Pro.
+URL: "https://wiki.multimedia.cx/index.php/Scream_Tracker_2_Module"
+FileNameExtensions: ["stm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 20
+    AsciiString: "SWavePro"
+    CaseSensitive: true
+  - Pos: 30
+    Bytes: [0x02]
+  - Pos: any
+    AsciiString: "SWAVEPRO"
+    CaseSensitive: false

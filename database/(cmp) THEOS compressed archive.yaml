@@ -1,0 +1,10 @@
+Name: THEOS compressed archive
+URL: "http://www.theos-software.com"
+FileNameExtensions: ["cmp"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0TCHF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TCHF"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Enigma2 TV list
+URL: "https://en.wikipedia.org/wiki/Enigma_(DVB)"
+FileNameExtensions: ["tv"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#NAME "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SERVICE 1"
+    CaseSensitive: false

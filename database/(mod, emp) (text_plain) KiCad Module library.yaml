@@ -1,0 +1,26 @@
+Name: KiCad Module library
+URL: "http://en.wikipedia.org/wiki/KiCad"
+FileNameExtensions: ["mod", "emp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PCBNEW-LibModule-V"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PCBNEW-LIBMODULE-V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ENDLIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ENDMODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ENDINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$INDEX"
+    CaseSensitive: false

@@ -1,0 +1,51 @@
+Name: 16bit DOS COM RCC II encrypted (v0.51)
+Description: ROSE-s COM-Crypt II for 80386.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFA, 0xBC]
+  - Pos: 4
+    Bytes: [0xFF, 0xE4]
+  - Pos: any
+    AsciiString: "RCC II 0.51"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HBOOT\0ZP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SJ8CWXDV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LBAJE{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OKHIFG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APCQF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSDOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QMAAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TT.*W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DDX5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KMBH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NQQD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQVP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UCQB"
+    CaseSensitive: false

@@ -1,0 +1,48 @@
+Name: Apple iPod Software firmware update
+Description: Used with various iDevices from Apple.
+URL: "https://theapplewiki.com/wiki/IPSW_File_Format"
+FileNameExtensions: ["ipsw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "KERNELCACHE.RE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESTORE.PLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELEASE.IM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICETREE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL_FLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBOOT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AP.IM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBSS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DMG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LLB."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false

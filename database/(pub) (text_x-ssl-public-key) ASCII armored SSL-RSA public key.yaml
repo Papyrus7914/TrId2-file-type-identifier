@@ -1,0 +1,14 @@
+Name: ASCII armored SSL-RSA public key
+URL: "https://github.com/openssl/openssl/blob/master/include/openssl/pem.h"
+FileNameExtensions: ["pub"]
+MimeType: text/x-ssl-public-key
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-----BEGIN RSA PUBLIC KEY-----\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-----BEGIN RSA PUBLIC KEY-----"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-----END RSA PUBLIC KEY-----"
+    CaseSensitive: false

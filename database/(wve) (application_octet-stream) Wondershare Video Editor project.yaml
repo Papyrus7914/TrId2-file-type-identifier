@@ -1,0 +1,17 @@
+Name: Wondershare Video Editor project
+URL: "http://www.wondershare.de/"
+FileNameExtensions: ["wve"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MEDIAFILES.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT.XMLPK"
+    CaseSensitive: false

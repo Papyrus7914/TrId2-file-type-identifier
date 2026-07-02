@@ -1,0 +1,14 @@
+Name: WinMerge directory/file Filter
+URL: "https://en.wikipedia.org/wiki/WinMerge"
+FileNameExtensions: ["flt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "## This is a directory/file filter"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

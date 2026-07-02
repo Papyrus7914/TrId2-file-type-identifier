@@ -1,0 +1,9 @@
+Name: Evozi HTTP Injector configuration
+Description: Configuration file for HTTP Injector VPN/tunneling app.
+URL: "https://httpinjector.com/"
+FileNameExtensions: ["ehi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x03ehi\0\0\0\x01\0\0\0"
+    CaseSensitive: true

@@ -1,0 +1,101 @@
+Name: WAFERMAP oxide thickness XML export
+URL: "https://www.boin-gmbh.com/wafermap.html"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MEASUREMENTTYPE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML-STYLESHEET TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE LOT SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASUREMENTINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OHNE Z GEMESSEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAFERSTYLE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASUREMENT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSTRATEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAFERDIAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEINE EIGENE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSTRATE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTDIAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATOR ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE.XSL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAFER ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOTINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGSTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OXID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false

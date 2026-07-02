@@ -1,0 +1,253 @@
+Name: Easy SFX Installer 16-bit DOS executable
+Description: SFX install creator tool by Easy Software.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0 \0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\x80\0\0\0\x10\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1E\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x18\x19\x1B(2456789:;=>?@CEGHJKL\x02\x03\x04\x05\x06\a\t\n\v\r\x0E\x10\x13\x143DFIP\xFFW\x06=\0\x90\xBB\x10\x80sB\x8B\xD8=\0\x80s;\xBB\x0F\x80\x0E\a\xBF\0\0&\x80=\xFFt-\xAEu\xF72\xE4\xB3\n\xF6\xF3\r00P\xBB\x0E\x80S\x9A\x82\0b\a\x8E\xC2P\x93&\x8A\aC,0<\tw\xF6KYX&\x89\a\x91\xEB\x06S\x9A\x82\0b\a\a_\xC3\0\xE82\x01\xE8"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DECOMPRESSION BY LHARC COPYRIGHT (C) HARUYASU YOSHIZAKI 1988-91"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- INSUFFICIENT DISK SPACE - PLEASE FREE SOME UP AND RE-TRY -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO INSTALL TO A DIFFERENT HARD DRIVE ENTER THE DRIVE LETTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8\0TO INSTALL TO A DIFFERENT DIRECTORY ENTER THE PATH BELOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE SUPPLIED STARTUP COMMAND FAILED TO START YOUR PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ")\0PRESS ESC FOR DOS - THE START COMMAND IS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%\0INSUFFICIENT MEMORY TO UNPACK FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM-NUMBER SEED (-32768 TO 32767)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(\0DIRECTORY DOES NOT EXIST - CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIT ANY KEY TO RETURN TO SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS ANY KEY TO EXIT INSTALL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS RETURN TO INSTALL  TO C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- NOT ENOUGH MEMORY ON EXEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) EASY SOFTWARE LTD 1995"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS RETURN TO INSTALL TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- BAD ENVIRONMENT ON EXEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLEASE FREE UP AT LEAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKED FILE IS CORRUPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- DISK SPACE REQUIRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTORY IS REQUIRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS RETURN TO START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- BAD FORMAT ON EXEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- INSTALLING FILES -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLATION PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN-TIME ERROR R6005"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN-TIME ERROR R6006"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN-TIME ERROR R6007"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVE IS READ ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHIFT  ERASE LINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR 00 OCCURRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEN PRESS RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNPRINTABLE ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-  BAD   DISK  -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-  DISK ERROR  -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-  WRONG DISK  -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- INVALID PATH -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS NOW INSTALLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPT1LPT2LPT3LPT4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDO FROM START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND TRY AGAIN."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNAL ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTING....."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO START TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X1 ~PACK1.LZH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_C_FILE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSERT DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLEASE WAIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AT ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTRL + ALT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P1M1C1A1N2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "README.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~EMPTY.DIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~FILES.LST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BAS\0.EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABCDHKMPR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTRIBUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GFW...GWL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO CHOICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNPACKING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVE  -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESC EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WITH THE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~LHA.EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*BREAK*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY EASY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMSPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TST.FIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSEM87"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO87"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIPE"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Slim! compressed archive
+Description: Slim! is a powerful experimental compression utility, bundled with basic archiving functionality. Its primary purpose is to achieve maximum possible compression level, disregarding compression speed and memory requirements.
+URL: "http://www.bars.lg.ua/slim/#intro"
+FileNameExtensions: ["fb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "\x06\0\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FB"
+    CaseSensitive: true

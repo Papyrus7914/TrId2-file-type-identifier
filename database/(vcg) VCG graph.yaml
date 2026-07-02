@@ -1,0 +1,19 @@
+Name: VCG graph
+URL: "http://www.ida.liu.se/~vaden/cgdi/#xvcg"
+FileNameExtensions: ["vcg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "graph: {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE"
+    CaseSensitive: false

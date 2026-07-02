@@ -1,0 +1,28 @@
+Name: Windows Boot Loarder information
+URL: "http://tinyurl.com/kgvuu"
+FileNameExtensions: ["ini"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[boot loader]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPERATING SYSTEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT LOADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDISK"
+    CaseSensitive: false

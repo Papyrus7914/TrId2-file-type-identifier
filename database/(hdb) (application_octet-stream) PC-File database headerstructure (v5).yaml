@@ -1,0 +1,11 @@
+Name: PC-File database header/structure (v5)
+URL: "https://en.wikipedia.org/wiki/PC-File"
+FileNameExtensions: ["hdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PCF:dB,"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ZEND"
+    CaseSensitive: false

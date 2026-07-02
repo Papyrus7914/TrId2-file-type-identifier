@@ -1,0 +1,23 @@
+Name: Kasparov's Gambit saved Game
+URL: "https://www.mobygames.com/game/dos/kasparovs-gambit"
+FileNameExtensions: ["gam"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n.NEWGAME\r\n.DATE "
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".ENDOFGAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BLACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WHITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATE"
+    CaseSensitive: false

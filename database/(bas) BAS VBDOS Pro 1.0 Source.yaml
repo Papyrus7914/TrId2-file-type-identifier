@@ -1,0 +1,15 @@
+Name: BAS VBDOS Pro 1.0 Source
+FileNameExtensions: ["bas"]
+DetectionPatterns:
+  - Pos: 0
+    #              \b                                                    \t                                              \b    \n
+    Bytes: [0xFC, 0x08, 0x01, 0x00, 0x0E, 0x00, 0xA8, 0x01, 0xD2, 0x01, 0x09, 0x00, 0x01, 0x02, 0x03, 0x04, 0x06, 0x05, 0x08, 0x0A, 0x00, 0x00]
+  - Pos: 24
+    #                    $
+    Bytes: [0xFF, 0xFF, 0x24, 0x00, 0xFF, 0xFF]
+  - Pos: 96
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 116
+    AsciiString: "\0\0"
+    CaseSensitive: true

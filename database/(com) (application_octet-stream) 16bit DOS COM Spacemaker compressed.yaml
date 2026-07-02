@@ -1,0 +1,14 @@
+Name: 16bit DOS COM Spacemaker compressed
+URL: "http://fileformats.archiveteam.org/wiki/Realia_Spacemaker"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              U     V
+    Bytes: [0x9C, 0x55, 0x56, 0x8C, 0xCD, 0x83, 0xC5, 0x10, 0x8D, 0xB6]
+  - Pos: 18
+    AsciiString: "MEMORY$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MEMORY$"
+    CaseSensitive: false

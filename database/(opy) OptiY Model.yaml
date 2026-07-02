@@ -1,0 +1,43 @@
+Name: OptiY Model
+URL: "http://www.optiy.de"
+FileNameExtensions: ["opy"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x1E\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x01\0\0\0\0\0\0\0\nExperiment"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "\0\0\0\x05\0\0\0\x02X1"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "\0\0\0\x02X1"
+    CaseSensitive: true
+  - Pos: 149
+    AsciiString: "\0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\x05\0\0\0\x02X2"
+    CaseSensitive: true
+  - Pos: 189
+    AsciiString: "\0\0\0\x02X2"
+    CaseSensitive: true
+  - Pos: 216
+    AsciiString: "?"
+    CaseSensitive: true
+  - Pos: 232
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTALLATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPERIMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIY"
+    CaseSensitive: false

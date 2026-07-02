@@ -1,0 +1,23 @@
+Name: MusicXML (compressed)
+URL: "https://www.w3.org/2021/06/musicxml40/"
+FileNameExtensions: ["mxl"]
+MimeType: application/vnd.recordare.musicxml
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "VND.RECORDARE.MUSICXMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINER.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false

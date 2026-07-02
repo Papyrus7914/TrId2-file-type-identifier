@@ -1,0 +1,25 @@
+Name: Swift Word Publisher document
+FileNameExtensions: ["pmf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "\0\0\0\x01\0\xFF\xFF\0\0\a"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "CFmPage"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: " \x03\x1A\x04\f\0d\0\x0F\0d\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CFMPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CWPTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DRW"
+    CaseSensitive: false

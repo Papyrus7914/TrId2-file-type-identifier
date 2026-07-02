@@ -1,0 +1,10 @@
+Name: NeXT typedstream serialized data (BE)
+Description: Used in NeXTSTEP/OPENSTEP and later Apple OS X.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "typedstream"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TYPEDSTREAM"
+    CaseSensitive: false

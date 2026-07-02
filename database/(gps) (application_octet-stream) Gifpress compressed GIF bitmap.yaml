@@ -1,0 +1,8 @@
+Name: Gifpress compressed GIF bitmap
+URL: "http://fileformats.archiveteam.org/wiki/Gifpress"
+FileNameExtensions: ["gps"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    #                    \t
+    Bytes: [0xFF, 0xB4, 0x09]

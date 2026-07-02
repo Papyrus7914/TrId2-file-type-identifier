@@ -1,0 +1,17 @@
+Name: Avatar Studio Save
+Description: French game by Canal+ Multimedia.
+FileNameExtensions: ["sav"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[TYPE]\r\nLili-SaveFile\r\n[VERSION]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LILI-SAVEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

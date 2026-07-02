@@ -1,0 +1,21 @@
+Name: Hugin Project
+Description: Hugin is a tool for assembling multiple photos and creating a panorama.
+URL: "http://wiki.panotools.org/Hugin_Main_window"
+FileNameExtensions: ["pto"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTROL POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

@@ -1,0 +1,116 @@
+Name: AV1 Image File Format Sequence bitmap
+URL: "http://fileformats.archiveteam.org/wiki/AVIF"
+FileNameExtensions: ["avifs"]
+MimeType: image/avif-sequence
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "ftypavis"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "META\0\0\0\0\0\0\02HDLR\0\0\0\0\0\0\0\0PICT\0\0\0\0\0\0\0\0\0\0\0\0GPAC PICT HANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVISMSF1MIAFMA1B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDIA\0\0\0 MDHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOOV\0\0\0LMVHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPAC AVIFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTYPAVIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0\0\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-REV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AV01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AV1C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IODS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMHD"
+    CaseSensitive: false

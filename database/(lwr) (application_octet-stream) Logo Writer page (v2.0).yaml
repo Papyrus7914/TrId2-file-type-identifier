@@ -1,0 +1,11 @@
+Name: Logo Writer page (v2.0)
+Description: DOS educational tool by Logo Computer Systems Inc.
+FileNameExtensions: ["lwr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "/\x02\0\0\0\0\0\0\0\0\0\0MS-DOS Logowriter 2.0page"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MS-DOS LOGOWRITER 2.0PAGE"
+    CaseSensitive: false

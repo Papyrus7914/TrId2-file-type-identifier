@@ -1,0 +1,41 @@
+Name: Xilinx Core Generator System Project
+URL: "http://www.xilinx.com/products/design-tools/coregen.html"
+FileNameExtensions: ["cgp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SET "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SET DEVICEFAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET DESIGNENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET FLOWVENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET SPEEDGRADE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET VERILOGSIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET BUSFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET VHDLSIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTRIPPED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

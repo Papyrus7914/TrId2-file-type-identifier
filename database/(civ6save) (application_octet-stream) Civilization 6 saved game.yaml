@@ -1,0 +1,56 @@
+Name: Civilization 6 saved game
+URL: "https://en.wikipedia.org/wiki/Civilization_VI"
+FileNameExtensions: ["civ6save"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CIV6\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "GAMESPEED_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOC_CIVILIZATION_BARBARIAN_DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOC_CIVILIZATION_BARBARIAN_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIVILIZATION_LEVEL_CITY_STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIVILIZATION_LEVEL_FULL_CIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIVILIZATION_LEVEL_TRIBE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEADER_MINOR_CIV_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOC_DIFFICULTY_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOC_GAMESPEED_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOC_MAPSIZE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ADJECTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_VICTORIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEADER_S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOC_ERA_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULESET_"
+    CaseSensitive: false

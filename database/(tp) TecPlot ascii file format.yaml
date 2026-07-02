@@ -1,0 +1,16 @@
+Name: TecPlot ascii file format
+URL: "http://paulbourke.net/dataformats/tp/"
+FileNameExtensions: ["tp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TITLE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZONE"
+    CaseSensitive: false

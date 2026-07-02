@@ -1,0 +1,17 @@
+Name: DIE signature
+URL: "https://github.com/horsicq/DIE-engine"
+FileNameExtensions: ["sg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "in"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FUNCTION DETECT(BSHOWTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN RESULT(BSHOWTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BSHOWOPTIONS)"
+    CaseSensitive: false

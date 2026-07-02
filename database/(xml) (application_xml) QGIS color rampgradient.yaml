@@ -1,0 +1,32 @@
+Name: QGIS color ramp/gradient
+URL: "https://en.wikipedia.org/wiki/QGIS"
+FileNameExtensions: ["xml"]
+MimeType: application/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<selection cadence=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SELECTION CADENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEEALSOCOLLECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLECT DIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME SHORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRADIENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNOPSIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

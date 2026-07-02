@@ -1,0 +1,22 @@
+Name: 16bit DOS Shrinker compressed Executable (v3.4)
+URL: "http://fileformats.archiveteam.org/wiki/Shrinker"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    Bytes: [0x01, 0x00, 0x03, 0x00]
+  - Pos: 12
+    AsciiString: "\xFF\xFF\v\v\0\x04\0\0 \x01\xF0\xFF \0\0\051\0\0(\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0SHR3\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 86
+    AsciiString: "\x81\xC3\a\0\xB8@\xB4\xB1\x04\xD3\xE8\x03\xC3\x8C\xD9I\x8E\xC1&\x03\x0E\x03\0+\xC8r\x17\xFA\x8E\xD3\xBC@\xB4\xFB\x8E\xC3+\xFFSW\xB9\x18\x04\xBEp\x01\xFC\xF3\xA5\xCB\xBAp\x01\x81\xC2g\0\xB4\t\xCD!\xB8\xFFL\xCD!.\x8B\xC0.\x8B\xC0\x8B\xC0\x8C\xD8.\x01\x06\x06\b\x8E\xC0\xE8\xC0\a\x87\xD7\xB0@\x06\x1E\a\x1F\xB4=\xCD!r\f\x0E\x1F\xA3*\b\x89>(\b\xE8\xEA\x01\xBA4\0\xB4\t\x0E\x1F\xCD!\xB8\xFFL\xCD!An error occurred while decompressing the program$\0Not enough memory to load the program$\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AN ERROR OCCURRED WHILE DECOMPRESSING THE PROGRAM$\0NOT ENOUGH MEMORY TO LOAD THE PROGRAM$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHR3"
+    CaseSensitive: false

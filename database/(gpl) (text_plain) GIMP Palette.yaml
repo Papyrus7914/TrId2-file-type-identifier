@@ -1,0 +1,12 @@
+Name: GIMP Palette
+Description: Color line consists of red green blue number values and an optional color name.
+URL: "https://docs.gimp.org/en/gimp-concepts-palettes.html"
+FileNameExtensions: ["gpl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GIMP Palette"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

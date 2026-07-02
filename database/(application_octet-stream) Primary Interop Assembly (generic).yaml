@@ -1,0 +1,10 @@
+Name: Primary Interop Assembly (generic)
+URL: "https://en.wikipedia.org/wiki/AutoCAD"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PIAFILEVERSION_"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "."
+    CaseSensitive: true

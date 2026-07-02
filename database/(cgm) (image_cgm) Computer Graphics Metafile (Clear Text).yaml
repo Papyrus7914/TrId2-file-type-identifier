@@ -1,0 +1,38 @@
+Name: Computer Graphics Metafile (Clear Text)
+URL: "https://en.wikipedia.org/wiki/Computer_Graphics_Metafile"
+FileNameExtensions: ["cgm"]
+MimeType: image/cgm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "B"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "M"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGPIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGMF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDMF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

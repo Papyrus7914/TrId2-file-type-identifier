@@ -1,0 +1,16 @@
+Name: Dr.Web Anti-Virus Database
+URL: "http://www.wilders.org/anti_viruses.htm"
+FileNameExtensions: ["vdb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Dr.Web "
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VIRUS DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDRW"
+    CaseSensitive: false

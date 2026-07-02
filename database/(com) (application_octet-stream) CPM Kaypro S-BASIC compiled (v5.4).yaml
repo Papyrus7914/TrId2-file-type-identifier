@@ -1,0 +1,40 @@
+Name: CP/M Kaypro S-BASIC compiled (v5.4)
+URL: "https://en.wikipedia.org/wiki/S-BASIC"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xC3, 0x13, 0x01, 0x00, 0x00, 0x8C, 0x14, 0x8B, 0x02]
+  - Pos: 13
+    AsciiString: "\0\0\0\0\0\0*\x06\0\xF9\xCD"
+    CaseSensitive: true
+  - Pos: 25
+    #              >
+    Bytes: [0x01, 0x3E, 0x00, 0xCD]
+  - Pos: any
+    AsciiString: "FROM HERE ON PROTECTED BY END USER LICENSE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY TOPAZ PROGRAMMING."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%BAD CHANNEL NUMBE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1979"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT FILE REA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARNING ONL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IN LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERRO"
+    CaseSensitive: false

@@ -1,0 +1,74 @@
+Name: SURFCAM post processor
+Description: A CNC tool.
+FileNameExtensions: ["e", "l", "m"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "name "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SECONDARY TOOL CHANGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START OF THE PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF THE PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST TOOL CHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTAL CHAR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEED RATE CHAR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTRINCREMENTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICAL CHAR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1STTOOLCHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC OR ABS I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEEDCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X OR X U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y OR Y V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AR MOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y OR N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

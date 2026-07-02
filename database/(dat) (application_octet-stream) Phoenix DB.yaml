@@ -1,0 +1,255 @@
+Name: Phoenix DB
+Description: Database for MiNT.
+URL: "https://github.com/freemint/phoenix/"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 1042
+    AsciiString: "SYS_TABLE"
+    CaseSensitive: true
+  - Pos: 1098
+    AsciiString: "SYS_COLUMN"
+    CaseSensitive: true
+  - Pos: 1154
+    AsciiString: "SYS_INDEX"
+    CaseSensitive: true
+  - Pos: 1210
+    AsciiString: "SYS_REL"
+    CaseSensitive: true
+  - Pos: 1258
+    AsciiString: "SYS_USER"
+    CaseSensitive: true
+  - Pos: 1314
+    AsciiString: "SYS_DELETED"
+    CaseSensitive: true
+  - Pos: 1370
+    AsciiString: "SYS_ICON"
+    CaseSensitive: true
+  - Pos: 1426
+    AsciiString: "SYS_TATTR"
+    CaseSensitive: true
+  - Pos: 1482
+    AsciiString: "SYS_FORMAT"
+    CaseSensitive: true
+  - Pos: 1538
+    AsciiString: "SYS_LOOKUP"
+    CaseSensitive: true
+  - Pos: 1594
+    AsciiString: "SYS_CALC"
+    CaseSensitive: true
+  - Pos: 1650
+    AsciiString: "SYS_MASK"
+    CaseSensitive: true
+  - Pos: 1706
+    AsciiString: "SYS_QUERY"
+    CaseSensitive: true
+  - Pos: 1762
+    AsciiString: "SYS_REPORT"
+    CaseSensitive: true
+  - Pos: 1818
+    AsciiString: "SYS_BATCH"
+    CaseSensitive: true
+  - Pos: 1874
+    AsciiString: "SYS_BLOB"
+    CaseSensitive: true
+  - Pos: 1930
+    AsciiString: "SYS_ACCOUNT"
+    CaseSensitive: true
+  - Pos: 1986
+    AsciiString: "SYS_"
+    CaseSensitive: true
+  - Pos: 2042
+    AsciiString: "SYS_DU"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYS_REPORT\0REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_QUERY\0QUERY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_REPORT\0NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_QUERY\0NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENTIELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_ACCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_DELETED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_DUMMY18"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_DUMMY19"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DD.MM.YYYY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_COLUMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_LOOKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALCENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFCOLUMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_BATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_TATTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABFRAGEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALCEXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTUSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_BLOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_CALC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_MASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_USER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELADDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELRULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSRULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INXCOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMKEYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS_REL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDRULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0R\0W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0S\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

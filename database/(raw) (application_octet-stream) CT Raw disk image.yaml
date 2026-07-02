@@ -1,0 +1,14 @@
+Name: CT Raw disk image
+URL: "http://www.softpres.org/glossary:kryoflux"
+FileNameExtensions: ["raw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CAPS"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "DATA"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "PACK"
+    CaseSensitive: true

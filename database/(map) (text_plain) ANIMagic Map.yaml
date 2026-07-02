@@ -1,0 +1,24 @@
+Name: ANIMagic Map
+Description: Amiga animation editor and special effects generator.
+URL: "http://www.amigafuture.de/asd.php?asd_id=32"
+FileNameExtensions: ["map"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MAP1 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESTINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SBITMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: WGT Sprite
+URL: "http://fileformats.archiveteam.org/wiki/WGT_Sprite"
+FileNameExtensions: ["spr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0 Sprite File "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SPRITE FILE"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: RealCADD drawing
+Description: RealCADD is a multiplaform 2D Computer Assisted Drawing program.
+URL: "http://www.realcadd.com/"
+FileNameExtensions: ["rcad"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RCAD\r"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\r"
+    CaseSensitive: true

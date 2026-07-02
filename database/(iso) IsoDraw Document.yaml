@@ -1,0 +1,13 @@
+Name: IsoDraw Document
+URL: "http://www.ptc.com/product/arbortext/isodraw"
+FileNameExtensions: ["iso"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ISOF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false

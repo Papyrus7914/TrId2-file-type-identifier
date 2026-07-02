@@ -1,0 +1,23 @@
+Name: VMware 4 Virtual Disk description (generic)
+URL: "https://en.wikipedia.org/wiki/VMware"
+FileNameExtensions: ["vmdk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Disk DescriptorFile"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DISK DESCRIPTORFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENT DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE DISK DATA BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DDB."
+    CaseSensitive: false

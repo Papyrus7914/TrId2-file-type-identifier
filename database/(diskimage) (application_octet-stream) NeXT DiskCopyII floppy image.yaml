@@ -1,0 +1,43 @@
+Name: NeXT DiskCopyII floppy image
+URL: "https://en.wikipedia.org/wiki/NeXT"
+FileNameExtensions: ["diskimage"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\x02\0\0\0\0P\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0\0\a\0\0\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0\0\x01\0\0\x02\0\x02\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    Bytes: [0x1B]
+  - Pos: 46
+    AsciiString: "dlV3\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "P"
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "\0\0removable_rw_"
+    CaseSensitive: true
+  - Pos: 177
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 179
+    AsciiString: "dmach"
+    CaseSensitive: true
+  - Pos: 233
+    AsciiString: "\0ab"
+    CaseSensitive: true
+  - Pos: 272
+    AsciiString: "\x014.3BSD\0\0\0\xFF"
+    CaseSensitive: true

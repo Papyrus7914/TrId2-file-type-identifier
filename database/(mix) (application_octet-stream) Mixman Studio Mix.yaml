@@ -1,0 +1,10 @@
+Name: Mixman Studio Mix
+URL: "https://en.wikipedia.org/wiki/Mixman"
+FileNameExtensions: ["mix"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x1E, 0x00]
+  - Pos: any
+    AsciiString: ".TRK"
+    CaseSensitive: false

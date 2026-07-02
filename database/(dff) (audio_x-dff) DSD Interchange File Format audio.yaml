@@ -1,0 +1,27 @@
+Name: DSD Interchange File Format audio
+Description: http://en.wikipedia.org/wiki/Direct_Stream_Digital
+URL: "Format used for Super Audio CD (SACD)."
+FileNameExtensions: ["dff"]
+MimeType: audio/x-dff
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FRM8\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "DSD FVER"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "PROP"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "SND FS  "
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "CHNL"
+    CaseSensitive: true
+  - Pos: 79
+    AsciiString: "LFT"
+    CaseSensitive: true
+  - Pos: 83
+    AsciiString: "RGTC"
+    CaseSensitive: true

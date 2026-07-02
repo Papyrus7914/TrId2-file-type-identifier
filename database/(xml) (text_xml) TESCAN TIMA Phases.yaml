@@ -1,0 +1,35 @@
+Name: TESCAN TIMA Phases
+URL: "https://en.wikipedia.org/wiki/TESCAN"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXPORTEDMEASUREMENTPHASES REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARYPHASE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARYPHASES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.TESCAN.CZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMA"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: Scene Release Reconstruction data
+URL: "http://rescene.wikidot.com"
+FileNameExtensions: ["srr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "iii\x01\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "pyReScene "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".NFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SFV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: MACHXL settings
+Description: CPLDs/PAL designing and programming tool by AMD.
+FileNameExtensions: ["mxl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[VERSION]=MACHXL "
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "."
+    CaseSensitive: true

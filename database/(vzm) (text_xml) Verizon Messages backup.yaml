@@ -1,0 +1,73 @@
+Name: Verizon Messages backup
+FileNameExtensions: ["vzm"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMS RECIPIENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGES VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ_REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSG_SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM_ADDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREAD_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTBOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO_ADDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

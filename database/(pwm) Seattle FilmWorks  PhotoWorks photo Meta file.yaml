@@ -1,0 +1,14 @@
+Name: Seattle FilmWorks / PhotoWorks photo Meta file
+Description: Created when adding non-.sfw files to PhotoWorks albums.
+URL: "http://jonesrh.info/sfw/"
+FileNameExtensions: ["pwm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SFW94"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\\\x12\0\0\xCC\0\0\0"
+    CaseSensitive: true
+  - Pos: 205
+    AsciiString: "\\\x12\0\0:"
+    CaseSensitive: true

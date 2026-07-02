@@ -1,0 +1,14 @@
+Name: DeSmuME save game
+URL: "https://emulation.gametechwiki.com/index.php/DeSmuME"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "--SNIP ABOVE HERE TO CREATE A RAW SAV BY EXCLUDING THIS DESMUME SAVEDATA FOOTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-DESMUME SAVE-"
+    CaseSensitive: false

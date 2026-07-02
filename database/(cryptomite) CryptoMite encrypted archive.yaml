@@ -1,0 +1,20 @@
+Name: CryptoMite encrypted archive
+Description: CryptoMite is an easy to use encryption tool.
+URL: "http://www.baxbex.com/cryptomite.html"
+FileNameExtensions: ["cryptomite"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PK\x03\x04\n\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "Z2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".CRYPTOMITEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KRYPTER99"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KRY20X"
+    CaseSensitive: false

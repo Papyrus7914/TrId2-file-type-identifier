@@ -1,0 +1,9 @@
+Name: Lynx archive
+Description: A Commodore 64 format.
+URL: "http://fileformats.archiveteam.org/wiki/Lynx_archive"
+FileNameExtensions: ["lnx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\b[\b\n\0\x9753280,0:\x9753281,0:\x97646,\xC2(162):\x99\"\x93\x11\x11\x11\x11\x11\x11\x11\x11\":\x99\"     USE LYNX TO DISSOLVE THIS FILE\":\x8910\0\0\0"
+    CaseSensitive: true

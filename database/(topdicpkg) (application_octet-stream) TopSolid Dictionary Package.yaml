@@ -1,0 +1,20 @@
+Name: TopSolid Dictionary Package
+URL: "https://www.topsolid.com/"
+FileNameExtensions: ["topdicpkg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x1C$Dictionary package document"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$TOPSOLID.KERNEL.TX.PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DICTIONARY PACKAGE DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

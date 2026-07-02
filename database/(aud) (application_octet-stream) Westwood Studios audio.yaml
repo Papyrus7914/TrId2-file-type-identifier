@@ -1,0 +1,11 @@
+Name: Westwood Studios audio
+URL: "https://en.wikipedia.org/wiki/Westwood_Studios"
+FileNameExtensions: ["aud"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\"V"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\b\xAF\xDE\0\0"
+    CaseSensitive: true

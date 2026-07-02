@@ -1,0 +1,38 @@
+Name: Amiga Datatype
+URL: "https://wiki.amigaos.net/wiki/Datatypes_Library"
+FileNameExtensions: ["datatype"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x03\xF3\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTUITION.LIBRARY\0GRAPHICS.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPES.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTILITY.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$_NU"
+    CaseSensitive: false

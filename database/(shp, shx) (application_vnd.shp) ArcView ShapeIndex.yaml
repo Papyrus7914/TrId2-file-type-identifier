@@ -1,0 +1,10 @@
+Name: ArcView Shape/Index
+URL: "http://fileformats.archiveteam.org/wiki/Shapefile"
+FileNameExtensions: ["shp", "shx"]
+MimeType: application/vnd.shp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0'\n\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    Bytes: [0xE8, 0x03, 0x00, 0x00]

@@ -1,0 +1,10 @@
+Name: CPS Allegro Arrangement Library
+Description: DOS music sequencer.
+FileNameExtensions: ["alf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OJIS\0\x01"
+    CaseSensitive: true
+  - Pos: 28
+    Bytes: [0x1A]

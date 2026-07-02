@@ -1,0 +1,12 @@
+Name: DigiTrax Sound Project
+URL: "http://www.digitrax.com/"
+FileNameExtensions: ["spj"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: 56
+    AsciiString: "DigiTrax Prj File Version "
+    CaseSensitive: true
+  - Pos: 83
+    AsciiString: "."
+    CaseSensitive: true

@@ -1,0 +1,9 @@
+Name: 6pack compressed data
+Description: Sample compressor by Ariya Hidayat, using the FastLZ library.
+URL: "https://code.google.com/archive/p/fastlz/"
+FileNameExtensions: ["6pack", "6pk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x896PK\r\n\x1A\n"
+    CaseSensitive: true

@@ -1,0 +1,31 @@
+Name: Oberon-M Object
+Description: Oberon compiler for MS-DOS by E. R. Videki.
+FileNameExtensions: ["obj"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x80]
+  - Pos: 2
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSABEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSLIDIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSLIMUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSSTGRL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSCALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSINIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSSTOR"
+    CaseSensitive: false

@@ -1,0 +1,74 @@
+Name: Amazon Kindle KF8 eBook
+URL: "http://en.wikipedia.org/wiki/Amazon_Kindle"
+FileNameExtensions: ["azw3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 31
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0BOOKMOBI\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SKEL0000000000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKMOBI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "000005"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KINDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EBOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FCIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAGX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW."
+    CaseSensitive: false

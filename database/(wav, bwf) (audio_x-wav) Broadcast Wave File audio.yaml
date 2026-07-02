@@ -1,0 +1,17 @@
+Name: Broadcast Wave File audio
+URL: "http://fileformats.archiveteam.org/wiki/BWF"
+FileNameExtensions: ["wav", "bwf"]
+MimeType: audio/x-wav
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WAVE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEXTZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

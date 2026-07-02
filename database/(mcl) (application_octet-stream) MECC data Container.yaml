@@ -1,0 +1,14 @@
+Name: MECC data Container
+URL: "https://en.wikipedia.org/wiki/MECC#Activities"
+FileNameExtensions: ["mcl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "X\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "MECC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MECC"
+    CaseSensitive: false

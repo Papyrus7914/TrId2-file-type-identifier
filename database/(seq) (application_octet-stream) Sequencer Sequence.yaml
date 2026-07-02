@@ -1,0 +1,20 @@
+Name: Sequencer Sequence
+Description: Sequencer for Atari ST by Gaston Klares.
+FileNameExtensions: ["seq"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\"SEQUENCER setup version$\","
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQ."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC"
+    CaseSensitive: false

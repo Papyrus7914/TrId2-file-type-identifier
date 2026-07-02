@@ -1,0 +1,38 @@
+Name: Bayesian Networks Interchange Format
+URL: "http://www.cs.cmu.edu/afs/cs/user/fgcozman/www/Research/InterchangeFormat/"
+FileNameExtensions: ["xmlbif", "bifxml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VARIABLE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIF VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTCOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIVEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

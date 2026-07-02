@@ -1,0 +1,13 @@
+Name: Aldus PageMaker document (v4)
+URL: "https://en.wikipedia.org/wiki/Adobe_PageMaker"
+FileNameExtensions: ["pm4"]
+MimeType: https://en.wikipedia.org/wiki/Adobe_PageMaker
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\0\0\xFF\x99"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "MP"
+    CaseSensitive: true
+  - Pos: 111
+    Bytes: [0x04]

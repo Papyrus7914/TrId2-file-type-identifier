@@ -1,0 +1,20 @@
+Name: Oberon Profile
+URL: "https://en.wikipedia.org/wiki/Oberon_(operating_system)"
+FileNameExtensions: ["pro"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "oB"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "Syntax"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYNTAX10.SCN.FNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

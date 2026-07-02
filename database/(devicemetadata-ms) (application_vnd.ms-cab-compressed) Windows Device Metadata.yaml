@@ -1,0 +1,20 @@
+Name: Windows Device Metadata
+URL: "https://docs.microsoft.com/en-us/windows-hardware/drivers/install/building-device-metadata-packages"
+FileNameExtensions: ["devicemetadata-ms"]
+MimeType: application/vnd.ms-cab-compressed
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PACKAGEINFO.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWSINFO.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCF"
+    CaseSensitive: false

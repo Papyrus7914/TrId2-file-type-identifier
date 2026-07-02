@@ -1,0 +1,38 @@
+Name: Open Brush 3D
+URL: "http://fileformats.archiveteam.org/wiki/Tilt_Brush"
+FileNameExtensions: ["tilt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "tilT\x10\0\x01\0\0\0\0\0\0\0\0\0PK\x03\x04"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THUMBNAILCAMERATRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVIRONMENTPRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.JSON{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA.SKETCHPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUSHINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false

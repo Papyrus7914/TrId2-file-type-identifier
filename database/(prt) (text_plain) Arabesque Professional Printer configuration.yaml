@@ -1,0 +1,32 @@
+Name: Arabesque Professional Printer configuration
+Description: Atari ST graphic program.
+FileNameExtensions: ["prt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "******************************"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*  ARABESQUE-DRUCKERTREIBER  *"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* DRUCKBEREICH HORIZONTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTIKAL IN 100STEL ZOLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* NAME DES DRUCKERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUNG HORIZONTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* DRUCKERTYP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTIKAL BEI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* AUFL"
+    CaseSensitive: false

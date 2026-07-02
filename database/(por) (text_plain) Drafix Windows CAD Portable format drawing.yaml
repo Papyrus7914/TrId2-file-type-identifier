@@ -1,0 +1,22 @@
+Name: Drafix Windows CAD Portable format drawing
+FileNameExtensions: ["por"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "header\r\n"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORESIGHT RESOURCES CORPORATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAFIX WINDOWS CAD 2D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE AS..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".POR"
+    CaseSensitive: false

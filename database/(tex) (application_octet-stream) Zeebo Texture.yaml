@@ -1,0 +1,11 @@
+Name: Zeebo Texture
+URL: "https://en.wikipedia.org/wiki/Zeebo"
+FileNameExtensions: ["tex"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZTEX"
+    CaseSensitive: true
+  - Pos: 20
+    #        x
+    Bytes: [0x78, 0xDA]

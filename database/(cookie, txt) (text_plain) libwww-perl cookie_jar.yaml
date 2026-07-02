@@ -1,0 +1,23 @@
+Name: libwww-perl cookie_jar
+URL: "http://fileformats.archiveteam.org/wiki/Libwww-perl_cookie_jar"
+FileNameExtensions: ["cookie", "txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#LWP-Cookies-1.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SET-COOKIE3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH_SPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISCARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOMAIN"
+    CaseSensitive: false

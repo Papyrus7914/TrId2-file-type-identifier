@@ -1,0 +1,71 @@
+Name: OllyDbg plugin
+Description: OllyDbg is a 32-bit assembler level analysing debugger for Microsoft Windows.
+URL: "http://home.t-online.de/home/Ollydbg/"
+FileNameExtensions: ["dll"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 67
+    Bytes: [0x0E]
+  - Pos: 69
+    #              \t          !                 L           !
+    Bytes: [0xB4, 0x09, 0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: 96
+    AsciiString: "t be run "
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "n"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLLYDBG.EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ODBG_PLUGINACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ODBG_PLUGINCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ODBG_PLUGINDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ODBG_PLUGINDESTROY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ODBG_PLUGININIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ODBG_PLUGINMAINLOOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ODBG_PLUGINMENU"
+    CaseSensitive: false

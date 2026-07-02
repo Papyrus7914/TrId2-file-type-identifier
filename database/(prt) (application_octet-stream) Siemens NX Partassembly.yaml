@@ -1,0 +1,272 @@
+Name: Siemens NX Part/assembly
+URL: "https://en.wikipedia.org/wiki/Siemens_NX"
+FileNameExtensions: ["prt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SPLMSSTR\x06"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "HEADER"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "/Root/"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "/Root/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATTRIBUTEDESCRIPTIONDEPOSITORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RM_ONE_COMPLEX_RECORD_AREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RM_CREATION_DISPLAY_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RM_ONE_LINK_RECORD_AREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITYTYPEANDLAYERINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RM_ONE_INT_RECORD_AREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ES_BASE_REFERENCE_SET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RM_DISPLAYABLE_ENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RM_DOUBLE_RECORD_AREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OM_INDEX_FOR_INT_MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCTUREDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEAUDITTRAILENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTERNALREFERENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ES_PART_ATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST_RECORD_AREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RM_COMPLEX_RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OM_INDEX_FOR_MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTDOUBLEVALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTPOINTERVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONEDOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENDEDOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METHODICOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RM_RECORD_AREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORABLEOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTREFSTREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAGGEDOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTIRE PART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTATTVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QAFMETADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RMFASTLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOTOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS NT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASETYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RM_ENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MODELING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLMSSTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OM_INT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OM_MAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RM_PART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UG_PART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMREC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMPTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URES"
+    CaseSensitive: false

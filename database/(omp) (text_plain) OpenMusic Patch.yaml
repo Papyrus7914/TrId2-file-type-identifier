@@ -1,0 +1,41 @@
+Name: OpenMusic Patch
+URL: "https://en.wikipedia.org/wiki/OpenMusic"
+FileNameExtensions: ["omp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "; OM File Header - Saved "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(SETF *OM-CURRENT-PERSISTENT*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(QUOTE INPUT-FUNBOX)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "((OM-LOAD-INPUTFUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(OM-LOAD-BOXCALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OM)(LOAD-LIB-FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END FILE HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(OM-LOAD-PATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(OM-MAKE-POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(IN-PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(QUOTE NIL)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(LIST"
+    CaseSensitive: false

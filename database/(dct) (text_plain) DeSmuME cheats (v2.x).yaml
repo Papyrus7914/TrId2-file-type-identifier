@@ -1,0 +1,20 @@
+Name: DeSmuME cheats (v2.x)
+URL: "https://wiki.desmume.org/index.php?title=Using_Cheats_in_DeSmuMe"
+FileNameExtensions: ["dct"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "; DeSmuME cheats file. VERSION 2."
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\r\nName="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHEATS LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

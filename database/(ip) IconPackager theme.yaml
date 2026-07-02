@@ -1,0 +1,10 @@
+Name: IconPackager theme
+URL: "http://www.stardock.com/products/iconpackager/"
+FileNameExtensions: ["ip"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".ICONPACKAGE"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Garmin Point of Interest
+URL: "http://www.garmin.com"
+FileNameExtensions: ["gpi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\x16\0\0\0GRMREC00"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "my.gpi"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "POI"
+    CaseSensitive: true

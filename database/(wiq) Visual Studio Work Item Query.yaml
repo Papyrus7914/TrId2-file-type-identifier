@@ -1,0 +1,33 @@
+Name: Visual Studio Work Item Query
+FileNameExtensions: ["wiq"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<WorkItemQuery Version=\"1\">\r\n  <Wiql>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORKITEMQUERY VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.WORKITEMTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM WORKITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHERE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIQL"
+    CaseSensitive: false

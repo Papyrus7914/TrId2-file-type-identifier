@@ -1,0 +1,21 @@
+Name: Psion Oval Application
+FileNameExtensions: ["app"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ImageFileType**"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "PIC\xDC00"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OVAL RUNTIME NOT FOUNDCANNOT LOAD TITLE SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT RUN THIS APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVRUN.IMG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLIB.DYL"
+    CaseSensitive: false

@@ -1,0 +1,39 @@
+Name: XCI game engine main project (with rem)
+Description: eXtremely Compact Interpreter.
+URL: "https://github.com/SlithyMatt/x16-xci"
+FileNameExtensions: ["xci"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TITLE_SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INIT_CURSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRITES_HEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILES_HEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU_XCI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XCI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZONE"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: Smp2Mp3 encryption Key
+URL: "https://github.com/ZapDissaster/smp2mp3/"
+FileNameExtensions: ["key"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[ALGORITHM]\r\nNAME="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPERATIONSCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATEDIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATION0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XORKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

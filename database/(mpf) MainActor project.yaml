@@ -1,0 +1,25 @@
+Name: MainActor project
+URL: "http://www.mainconcept.com"
+FileNameExtensions: ["mpf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MAIN"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\x0E\0\0\x9A\x0E\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMPORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: Yaesu radio memory file
+URL: "http://www.n0usr.com/memory.htm"
+FileNameExtensions: ["rdf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RDF\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "Yaesu "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "YAESU"
+    CaseSensitive: false

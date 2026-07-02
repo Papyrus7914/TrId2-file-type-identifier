@@ -1,0 +1,32 @@
+Name: Smart Zoom Image format
+URL: "https://github.com/smartinmedia/SZI-Format"
+FileNameExtensions: ["szi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SCAN-PROPERTIES.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIPS-PROPERTIES.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSOCIATED_IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL.JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACRO.JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DZI"
+    CaseSensitive: false

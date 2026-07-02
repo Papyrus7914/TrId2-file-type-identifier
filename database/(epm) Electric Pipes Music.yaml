@@ -1,0 +1,28 @@
+Name: Electric Pipes Music
+URL: "http://www.bakedbean.co.nz/Electric_Pipes.htm"
+FileNameExtensions: ["epm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xDD\a\x01\0\x01\0\n$\x04\0d\0\0\0d\0\0\0\xC8\0\0\0\xC8\0\0\0\xEA\n\0\0o\b\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\xFF\xFF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EPIPESSYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHILLELAGHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSTAFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CBAR"
+    CaseSensitive: false

@@ -1,0 +1,34 @@
+Name: SuperTux Saved Game
+URL: "http://en.wikipedia.org/wiki/SuperTux"
+FileNameExtensions: ["stsg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(supertux-savegame\n  (version 1)\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(SUPERTUX-SAVEGAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(VERSION 1)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BONUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false

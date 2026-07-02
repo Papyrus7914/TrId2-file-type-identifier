@@ -1,0 +1,362 @@
+Name: Ignition spreadsheet configuration
+URL: "https://www.pinc-software.de/"
+FileNameExtensions: ["prefs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "IGNPVERS\0\0\0\x04\0\0\0\0DISP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NEGPARENTHESES TOGGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD NEW REQ OLDPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE VERT DELETE\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLCOLUMNS TOGGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLSIZE OPTHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERACTIVE TOGGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTTOFRONT MOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT ABOVE BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT BELOW BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT RIGHT BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE HORIZ DELETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLSIZE OPTWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT NEXT SHOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT PREV SHOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTTOBACK MOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS DISPLAY REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT LEFT BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BER DAS PROGRAMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSERTOBJECT REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD REQ OLDPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS COLORS REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS SCREEN REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE REQ TYPEREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEPARATOR TOGGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIEDERHERSTELLEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL SHIFTRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBSEARCH TOGGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE HORIZ REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL INSERTCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL INSERTROW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL REMOVECOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL REMOVEROW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL SHIFTLEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS CMDS REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS FILE REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS ICON REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS KEYS REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS LOAD REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS MENU REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS SAVE REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE VERT REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFORMATIONEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESETUP REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS_DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLNAME REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLSIZE REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASE REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRACTION DEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRACTION INC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS_COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS_SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORT REVERSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORT_REVERSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAGRAM REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCINFO REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPLACE REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIPT-RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSIONLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT DELETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDER REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETEPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJ_BUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS_CMDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS_ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS_KEYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS_MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUPOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EN INTERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTES REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE DOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKBENCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOM PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CKNEHMEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIP REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGNPVERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEGATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NG\0ICONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOM REQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRUCKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ND EDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONFIGUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE UP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEINROT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBNEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUPLI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XFMT"
+    CaseSensitive: false

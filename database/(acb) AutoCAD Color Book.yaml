@@ -1,0 +1,43 @@
+Name: AutoCAD Color Book
+URL: "http://en.wikipedia.org/wiki/Autocad"
+FileNameExtensions: ["acb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORBOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGECOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGB8"
+    CaseSensitive: false

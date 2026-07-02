@@ -1,0 +1,18 @@
+Name: j2 Global Communications eFax
+Description: http://www.j2global.com/jcom/j2/page/homeSplash
+FileNameExtensions: ["efx"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xDC, 0xFE]
+  - Pos: 21
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "Unix eFxTool "
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 90
+    AsciiString: "j2 Global Communications"
+    CaseSensitive: true

@@ -1,0 +1,11 @@
+Name: Gwtar
+URL: "http://fileformats.archiveteam.org/wiki/Gwtar"
+FileNameExtensions: ["html"]
+MimeType: text/html
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<html><!-- Gwtar self-extracting HTML archive,"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-- GWTAR END"
+    CaseSensitive: false

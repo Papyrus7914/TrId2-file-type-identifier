@@ -1,0 +1,14 @@
+Name: Pocket Code/Catroid Catrobat Project
+URL: "https://en.wikipedia.org/wiki/Catrobat#Pocket_Code"
+FileNameExtensions: ["catrobat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "CODE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false

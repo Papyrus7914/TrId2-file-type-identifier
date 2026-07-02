@@ -1,0 +1,50 @@
+Name: TeX Font Metric (0x15)
+Description: Variant with header size 15h words.
+URL: "http://fileformats.archiveteam.org/wiki/TeX_Font_Metrics"
+FileNameExtensions: ["tfm"]
+MimeType: application/x-tex-tfm
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\x15\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\x10\0"
+    CaseSensitive: true
+  - Pos: 14
+    Bytes: [0x00, 0x01]
+  - Pos: 18
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0\0\a"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\xA0\0\0"
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "\tHPAUTOTFM\0\0\0\0\0\0\0\0\0\0\x80\0\0"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "KN"
+    CaseSensitive: true
+  - Pos: 99
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 102
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 104
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 110
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HPAUTOTFM"
+    CaseSensitive: false

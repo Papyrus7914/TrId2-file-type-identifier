@@ -1,0 +1,17 @@
+Name: ULead COOL 3D plugin preset
+URL: "https://en.wikipedia.org/wiki/Ulead_Systems"
+FileNameExtensions: ["ucd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#\xD8:\xF7\x01 \0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0@\0\0\0"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "\0\0\0@\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$3BR"
+    CaseSensitive: false

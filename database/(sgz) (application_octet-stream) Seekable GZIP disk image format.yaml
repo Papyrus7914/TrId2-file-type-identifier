@@ -1,0 +1,8 @@
+Name: Seekable GZIP disk image format
+URL: "http://www.forensicswiki.org/wiki/Sgzip"
+FileNameExtensions: ["sgz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "sgz"
+    CaseSensitive: true

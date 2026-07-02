@@ -1,0 +1,20 @@
+Name: Audio Video Interleave video
+URL: "http://fileformats.archiveteam.org/wiki/AVI"
+FileNameExtensions: ["avi"]
+MimeType: video/avi
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "AVI LIST"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "hdrlavih8\0\0\0"
+    CaseSensitive: true
+  - Pos: 88
+    AsciiString: "LIST"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "strlstrh"
+    CaseSensitive: true

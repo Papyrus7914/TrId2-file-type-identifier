@@ -1,0 +1,9 @@
+Name: AIN compressed archive
+FileNameExtensions: ["ain"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!"
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true

@@ -1,0 +1,9 @@
+Name: Dahua DVR video (alternate)
+Description: A video file format used in many DVR security system.
+URL: "https://www.dahuasecurity.com/"
+FileNameExtensions: ["dav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DHAV"
+    CaseSensitive: true

@@ -1,0 +1,20 @@
+Name: Ardour Lua plugin
+URL: "https://en.wikipedia.org/wiki/Ardour_(software)"
+FileNameExtensions: ["lua"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ardour {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

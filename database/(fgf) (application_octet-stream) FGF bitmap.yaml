@@ -1,0 +1,12 @@
+Name: FGF bitmap
+Description: Experimental deflate GIF variant.
+URL: "http://fileformats.archiveteam.org/wiki/GIF#Versions"
+FileNameExtensions: ["fgf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FGF95a"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FGF95A"
+    CaseSensitive: false

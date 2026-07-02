@@ -1,0 +1,11 @@
+Name: Programmer's Notepad Project Group
+URL: "https://en.wikipedia.org/wiki/Programmer%27s_Notepad"
+FileNameExtensions: ["ppg"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Workspace name=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROJECT"
+    CaseSensitive: false

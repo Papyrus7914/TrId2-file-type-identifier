@@ -1,0 +1,14 @@
+Name: HEIF bitmap (heix)
+URL: "https://en.wikipedia.org/wiki/High_Efficiency_Image_File_Format"
+FileNameExtensions: ["heic"]
+MimeType: image/heic
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "ftypheix\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FTYPHEIX"
+    CaseSensitive: false

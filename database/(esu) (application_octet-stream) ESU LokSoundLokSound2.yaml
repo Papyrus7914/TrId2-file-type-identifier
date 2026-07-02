@@ -1,0 +1,32 @@
+Name: ESU LokSound/LokSound2
+URL: "https://www.esu.eu/"
+FileNameExtensions: ["esu"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "LokProgrammer"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\x0ETWaveFileStart\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TWAVEFILESTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOKPROGRAMMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWAVEFILEEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8 BIT MONO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--CV--"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false

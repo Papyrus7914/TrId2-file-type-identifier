@@ -1,0 +1,96 @@
+Name: 16bit DOS PCX2EXE (Mike Williams) Executable (v1.44)
+URL: "http://fileformats.archiveteam.org/wiki/PCX2EXE_(Mike_Williams)"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0 \0"
+    CaseSensitive: true
+  - Pos: 11
+    Bytes: [0x00, 0xFF, 0xFF]
+  - Pos: 16
+    Bytes: [0x00, 0x04]
+  - Pos: 20
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0\x1E\0\0\0\x01\0\x02\0"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\x01\0\0"
+    CaseSensitive: true
+  - Pos: 63
+    AsciiString: "\x01\0\0"
+    CaseSensitive: true
+  - Pos: 67
+    AsciiString: "\x01\0\0"
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: "\x01\0\0"
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 84
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 88
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 92
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 179
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 512
+    AsciiString: "blSTUB0"
+    CaseSensitive: true
+  - Pos: 521
+    AsciiString: " \0\0"
+    CaseSensitive: true
+  - Pos: 526
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 530
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 547
+    AsciiString: "\0\0\0\0\0\0\0\0\0\xFF\xFF\x84\x10"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BLSTUB0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "65LCK4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQRU"
+    CaseSensitive: false

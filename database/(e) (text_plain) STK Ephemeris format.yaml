@@ -1,0 +1,29 @@
+Name: STK Ephemeris format
+URL: "https://en.wikipedia.org/wiki/Systems_Tool_Kit"
+FileNameExtensions: ["e"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "stk.v."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMBEROFEPHEMERISPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPHEMERISTIMEPOSVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERPOLATIONMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORDINATESYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN EPHEMERIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENARIOEPOCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTRALBODY"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: OpenAL Effects Extension
+URL: "https://en.wikipedia.org/wiki/OpenAL"
+FileNameExtensions: ["efx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "efx "
+    CaseSensitive: true

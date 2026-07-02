@@ -1,0 +1,14 @@
+Name: Autohotkey script (v2.x)
+URL: "https://en.wikipedia.org/wiki/AutoHotkey"
+FileNameExtensions: ["ahk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#Requires Auto"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "otkey v2."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REQUIRES AUTOHOTKEY V2."
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Flash Component distribution archive
+URL: "https://en.wikipedia.org/wiki/Adobe_SWC_file"
+FileNameExtensions: ["swc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "CATALOG.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SWFPK"
+    CaseSensitive: false

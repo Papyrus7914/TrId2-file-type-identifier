@@ -1,0 +1,21 @@
+Name: SIMPSON binary format
+FileNameExtensions: ["spe"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SIMP\nNP="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BINARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

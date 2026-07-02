@@ -1,0 +1,14 @@
+Name: SigmaNEST Shape
+URL: "https://www.sigmanest.com/"
+FileNameExtensions: ["shp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SHAPE  : "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONST"
+    CaseSensitive: false

@@ -1,0 +1,22 @@
+Name: BYOB sprite
+URL: "http://byob.berkeley.edu/"
+FileNameExtensions: ["ysp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ObjS\x01Stch\x01\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".YSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYOB"
+    CaseSensitive: false

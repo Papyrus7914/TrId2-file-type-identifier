@@ -1,0 +1,23 @@
+Name: ASIC compiler debug info
+FileNameExtensions: ["dbg"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFE]
+  - Pos: 2
+    AsciiString: "\0\x01\0\0\xFE"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFSEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENDED"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: Netscape bookmark (v1.0)
+URL: "https://en.wikipedia.org/wiki/Netscape"
+FileNameExtensions: ["htm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE MCOM-Bookmark-file-1>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-- THIS IS AN AUTOMATICALLY GENERATED FILE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IT WILL BE READ AND OVERWRITTEN."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO NOT EDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST_VISIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADD_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A HREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

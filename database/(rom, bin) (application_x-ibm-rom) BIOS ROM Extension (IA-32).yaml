@@ -1,0 +1,9 @@
+Name: BIOS ROM Extension (IA-32)
+Description: BIOS ROM Extensions found in Intel machines and mapped into memory between 0xC0000 and 0xFFFFF
+URL: "https://en.wikipedia.org/wiki/Option_ROM"
+FileNameExtensions: ["rom", "bin"]
+MimeType: application/x-ibm-rom
+DetectionPatterns:
+  - Pos: 0
+    #        U
+    Bytes: [0x55, 0xAA]

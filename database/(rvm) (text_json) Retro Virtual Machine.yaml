@@ -1,0 +1,20 @@
+Name: Retro Virtual Machine
+URL: "https://www.retrovirtualmachine.org/"
+FileNameExtensions: ["rvm"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RVM.MACHINE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false

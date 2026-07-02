@@ -1,0 +1,24 @@
+Name: X11 Server Natural Format font (LSB)
+FileNameExtensions: ["snf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x04, 0x00]
+  - Pos: 3
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WEIGHT\0RESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUAD_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X_HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false

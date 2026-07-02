@@ -1,0 +1,20 @@
+Name: Serial Vector Format (with rem)
+URL: "https://en.wikipedia.org/wiki/Serial_Vector_Format"
+FileNameExtensions: ["svf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "// "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STATE RESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDDR IDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIR IDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRST OFF"
+    CaseSensitive: false

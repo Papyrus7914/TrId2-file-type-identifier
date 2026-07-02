@@ -1,0 +1,23 @@
+Name: Signum!3-4 font (generic)
+Description: Word processor for Atari ST by Application Systems Heidelberg Software GmbH.
+FileNameExtensions: ["s01", "24p", "30l", "9p"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "chset001\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHARS001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHSET001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDESKR01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LGTAB001"
+    CaseSensitive: false

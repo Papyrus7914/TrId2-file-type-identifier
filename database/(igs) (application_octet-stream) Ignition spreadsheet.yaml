@@ -1,0 +1,26 @@
+Name: Ignition spreadsheet
+URL: "http://www.pinc-software.de/"
+FileNameExtensions: ["igs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "TABLMPHD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FNTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLMPHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBPGPGHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: PinPoint Form
+Description: Survey form tool by Longman Logotron.
+FileNameExtensions: ["ppf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PG\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false

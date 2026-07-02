@@ -1,0 +1,13 @@
+Name: RealFlight data
+URL: "http://www.realflight.com"
+FileNameExtensions: ["rfx", "g3x"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "G3X.ENC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPG"
+    CaseSensitive: false

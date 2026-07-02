@@ -1,0 +1,11 @@
+Name: DuneGraph Compressed bitmap
+Description: Atari Falcon graphic format.
+URL: "http://www.atari-wiki.com/index.php/DuneGraph_file_format"
+FileNameExtensions: ["dc1"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DGC"
+    CaseSensitive: true
+  - Pos: 8
+    Bytes: [0x00, 0xFF]

@@ -1,0 +1,35 @@
+Name: Quartus Chain Description File
+URL: "https://en.wikipedia.org/wiki/Quartus_Prime"
+FileNameExtensions: ["cdf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JedecChain;"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILEREVISION(JESD32A)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") MFRSPEC(OPMASK("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE PARTNAME("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P ACTIONCODE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTERABEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTMFR("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAINTYPE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTERAEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAINEND"
+    CaseSensitive: false

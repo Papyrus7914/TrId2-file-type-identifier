@@ -1,0 +1,12 @@
+Name: Varsity Scripsit Document
+Description: PC version of the TRS-80 word processor.
+URL: "http://www.trs-80.org/scripsit/"
+FileNameExtensions: ["doc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 130
+    AsciiString: "TTYCRCR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TTYCRCR"
+    CaseSensitive: false

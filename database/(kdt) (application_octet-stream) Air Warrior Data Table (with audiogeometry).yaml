@@ -1,0 +1,14 @@
+Name: Air Warrior Data Table (with audio/geometry)
+URL: "https://www.mobygames.com/game/43956/air-warrior/"
+FileNameExtensions: ["kdt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KSDT"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KSND"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: RTFGEN Topic data
+Description: Win 3.x tool to create Help files from text, by L. David Baldwin.
+FileNameExtensions: ["tpc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\docstart"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KEYWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPIC"
+    CaseSensitive: false

@@ -1,0 +1,44 @@
+Name: Lsnes movie capture
+URL: "http://tasvideos.org/Lsnes.html"
+FileNameExtensions: ["lsmv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "STARTTIME.SUBSECOND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTTIME.SECOND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COREVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROM.SHA256"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RERECORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RRDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT"
+    CaseSensitive: false

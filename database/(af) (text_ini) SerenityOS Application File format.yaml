@@ -1,0 +1,14 @@
+Name: SerenityOS Application File format
+URL: "https://man.serenityos.org/man5/af.html"
+FileNameExtensions: ["af"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[App]\nName="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXECUTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false

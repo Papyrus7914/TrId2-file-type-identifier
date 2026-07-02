@@ -1,0 +1,32 @@
+Name: OS X Installer GUI script
+Description: File Distribution.xml is contained in a OS X package.
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTALLER-GUI-SCRIPT MINSPECVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS CUSTOMIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHOICES-OUTLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE CHOICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKG-REF ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHOICE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLE"
+    CaseSensitive: false

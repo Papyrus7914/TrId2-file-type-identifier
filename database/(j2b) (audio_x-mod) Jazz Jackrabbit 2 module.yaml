@@ -1,0 +1,12 @@
+Name: Jazz Jackrabbit 2 module
+Description: Mod-like music format.
+URL: "http://en.wikipedia.org/wiki/Jazz_Jackrabbit_2"
+FileNameExtensions: ["j2b"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "AM  INIT"
+    CaseSensitive: true

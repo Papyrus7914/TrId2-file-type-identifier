@@ -1,0 +1,68 @@
+Name: Captivate Project (v5+)
+URL: "http://fileformats.archiveteam.org/wiki/Captivate"
+FileNameExtensions: ["cptx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "info.cpi"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PREVIEWTHUMBNAIL.CPTHPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAILS.CPTHPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNCOMPRESSED_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTS.CPOPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIO.CPADPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT.CPTDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO.CPIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CPDUSMK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CPDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CPDUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CPD}S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMCL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMSZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "J8CF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WTBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YXYT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZM1F"
+    CaseSensitive: false

@@ -1,0 +1,131 @@
+Name: iOS Crash report (old-style)
+URL: "https://en.wikipedia.org/wiki/IOS"
+FileNameExtensions: ["crash"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Incident Identifier: "
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "CrashReporter Key: "
+    CaseSensitive: true
+  - Pos: 120
+    AsciiString: "Hardware Model: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INCIDENT IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRASHREPORTER KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDWARE MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOBILEGESTALT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRINGBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AGGREGATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OS VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCOUNTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKDOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECURITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOBILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SANDBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTIFY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

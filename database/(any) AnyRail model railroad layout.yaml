@@ -1,0 +1,13 @@
+Name: AnyRail model railroad layout
+URL: "http://www.anyrail.com"
+FileNameExtensions: ["any"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x16\0\0\0serialization::archive"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "AnyRail"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TURNOUT"
+    CaseSensitive: false

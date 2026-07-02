@@ -1,0 +1,17 @@
+Name: SynWrite Output Preset
+URL: "https://cudatext.github.io/synwrite/"
+FileNameExtensions: ["synw-outpreset"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Tool]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REGEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

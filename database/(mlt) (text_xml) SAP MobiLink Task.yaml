@@ -1,0 +1,23 @@
+Name: SAP MobiLink Task
+URL: "https://en.wikipedia.org/wiki/SQL_Anywhere"
+FileNameExtensions: ["mlt"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMMAND TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASK"
+    CaseSensitive: false

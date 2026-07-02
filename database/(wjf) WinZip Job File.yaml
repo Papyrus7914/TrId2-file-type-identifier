@@ -1,0 +1,85 @@
+Name: WinZip Job File
+URL: "http://www.winzip.com"
+FileNameExtensions: ["wjf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[version]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOGTOJOBFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDWRITESPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDERAPPEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGOVERWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WJF-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASEAPPEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDFINALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLITUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRYPTMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOBFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATHMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEDULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEVARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PWMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIZARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ZIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0001"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: Excel Microsoft Office Open XML Format document
+URL: "http://en.wikipedia.org/wiki/Microsoft_Excel"
+FileNameExtensions: ["xlsx"]
+MimeType: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSHEETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML.RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKBOOK."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEET1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false

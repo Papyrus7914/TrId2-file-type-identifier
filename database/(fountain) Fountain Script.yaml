@@ -1,0 +1,22 @@
+Name: Fountain Script
+URL: "http://fountain.io/"
+FileNameExtensions: ["fountain"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Title:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDIT"
+    CaseSensitive: false

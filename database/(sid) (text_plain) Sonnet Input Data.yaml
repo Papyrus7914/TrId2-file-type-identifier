@@ -1,0 +1,44 @@
+Name: Sonnet Input Data
+URL: "http://www.sonnetsoftware.com"
+FileNameExtensions: ["sid"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "! "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SONNET APPLICATION PROGRAMS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS FILE IS INTENDED FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNAL USE ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLEASE REFER TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END PARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false

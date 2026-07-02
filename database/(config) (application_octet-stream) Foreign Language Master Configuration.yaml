@@ -1,0 +1,17 @@
+Name: Foreign Language Master Configuration
+Description: Amiga translation software by Denis Unger.
+FileNameExtensions: ["config"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FLMC0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FLM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".URV"
+    CaseSensitive: false

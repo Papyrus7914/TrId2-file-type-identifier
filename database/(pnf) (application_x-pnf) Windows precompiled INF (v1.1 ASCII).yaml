@@ -1,0 +1,40 @@
+Name: Windows precompiled INF (v1.1 ASCII)
+URL: "http://en.verysource.com/code/10350344_1/inf.h.html"
+FileNameExtensions: ["pnf"]
+MimeType: application/x-pnf
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01, 0x01, 0x02, 0x00]
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "X\0\0\0"
+    CaseSensitive: true
+  - Pos: 73
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 89
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIGNATURE\0$CHICAGO$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: Uropa2 operation data
+URL: "https://www.mobygames.com/game/82421/uropa2/"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FLS0\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0\0\0\x19Data/Operations/fs"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: ".dat\0\0\xE6u{\x1D<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPERATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

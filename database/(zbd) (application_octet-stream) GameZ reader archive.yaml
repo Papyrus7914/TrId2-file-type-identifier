@@ -1,0 +1,24 @@
+Name: GameZ reader archive
+Description: Used in MechWarrior 3.
+URL: "https://www.pcgamingwiki.com/wiki/Engine:GameZ"
+FileNameExtensions: ["zbd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x04\0\0\0\x02\0\0\0\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ZRD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZRDR"
+    CaseSensitive: false

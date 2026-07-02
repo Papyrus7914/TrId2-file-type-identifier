@@ -1,0 +1,19 @@
+Name: CMN Phonebook
+FileNameExtensions: ["phb"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[CMN PHONEBOOK #"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VOICE_MAILBOX_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEFORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIM_SPEED_DIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMBCOUNT"
+    CaseSensitive: false

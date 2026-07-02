@@ -1,0 +1,32 @@
+Name: OpenShot effect
+URL: "http://en.wikipedia.org/wiki/OpenShot_Video_Editor"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION TRANSLATABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE OPENSHOT-EFFECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE TRANSLATABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

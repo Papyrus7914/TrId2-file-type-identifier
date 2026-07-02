@@ -1,0 +1,11 @@
+Name: RTPDump format
+URL: "https://wiki.wireshark.org/rtpdump"
+FileNameExtensions: ["rtp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#!rtpplay"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "."
+    CaseSensitive: true

@@ -1,0 +1,35 @@
+Name: STK Attitude format
+URL: "https://en.wikipedia.org/wiki/Systems_Tool_Kit"
+FileNameExtensions: ["a"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "stk.v."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMBEROFATTITUDEPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERPOLATIONORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN ATTITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKINGFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORDINATEAXES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENARIOEPOCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTITUDETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END ATTITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTRALBODY"
+    CaseSensitive: false

@@ -1,0 +1,35 @@
+Name: Corel Clipart
+URL: "https://en.wikipedia.org/wiki/Corel"
+FileNameExtensions: ["ccx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CDRXcont\xB4\0\0\0{Corel Binary Meta File}"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "{COREL BINARY META FILE}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOIKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCMMH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACK"
+    CaseSensitive: false

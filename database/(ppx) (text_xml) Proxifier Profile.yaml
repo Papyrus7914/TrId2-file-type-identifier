@@ -1,0 +1,77 @@
+Name: Proxifier Profile
+URL: "https://www.proxifier.com/"
+FileNameExtensions: ["ppx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONNECTIONLOOPDETECTION ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLEDIRECTCONNECTIONS ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPPROXIESSUPPORT ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOMODEDETECTION ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSOTHERUSERS ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROXIFIERPROFILE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSSERVICES ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIAPROXY ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTION MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT_MINVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUSIONLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULE ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAINLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROXYLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

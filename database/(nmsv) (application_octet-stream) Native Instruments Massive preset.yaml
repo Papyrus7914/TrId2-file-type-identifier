@@ -1,0 +1,20 @@
+Name: Native Instruments Massive preset
+URL: "https://www.native-instruments.com/en/products/komplete/synths/massive/"
+FileNameExtensions: ["nmsv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0\0\0\0\0\x01\0\0\0hsin\x01\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "\0\0\0\0\0\0\0DSIN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "M\0A\0S\0S\0I\0V\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HSIN"
+    CaseSensitive: false

@@ -1,0 +1,18 @@
+Name: Apple Finder Internet Location
+URL: "http://www.apple.com/"
+FileNameExtensions: ["webloc"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x05, 0x16]
+  - Pos: any
+    AsciiString: ".WEBLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

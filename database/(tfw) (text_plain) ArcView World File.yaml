@@ -1,0 +1,68 @@
+Name: ArcView World File
+Description: Contains georeferences for raster maps.
+FileNameExtensions: ["tfw"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "This file contains geo-reference parameters for the map: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GEODETIC REFERENCE SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLATTENING_RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEMI_MAJOR_AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDARY_NORTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDARY_SOUTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELLIPSOID_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD_MAP_LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDARY_EAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDARY_WEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD_MAP_TOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD_X_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD_Y_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATUM_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STD_PAR_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STD_PAR_2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REF_LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REF_LAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPG"
+    CaseSensitive: false

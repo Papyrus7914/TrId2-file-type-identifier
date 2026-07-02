@@ -1,0 +1,31 @@
+Name: 16bit DOS EXE XPACK compressed (v1.67)
+Description: DOS executables compressor by JauMing Tseng.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "jm"
+    CaseSensitive: true
+  - Pos: 21
+    Bytes: [0x03]
+  - Pos: 24
+    AsciiString: "\0\0\0\0xpac"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$OUT OF MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXE CORRUPTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPAC"
+    CaseSensitive: false

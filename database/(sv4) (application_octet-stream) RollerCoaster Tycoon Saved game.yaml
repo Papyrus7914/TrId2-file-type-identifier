@@ -1,0 +1,56 @@
+Name: RollerCoaster Tycoon Saved game
+URL: "https://en.wikipedia.org/wiki/RollerCoaster_Tycoon_(series)"
+FileNameExtensions: ["sv4"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 17
+    Bytes: [0x00, 0x80, 0x04]
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 31
+    Bytes: [0x00, 0x01]
+  - Pos: 113
+    Bytes: [0x01, 0xFF, 0x00, 0x01, 0x80, 0x04]
+  - Pos: any
+    AsciiString: "HAS BROKEN DOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVED GAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVAILABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAUNTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUESTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SV4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOUR"
+    CaseSensitive: false

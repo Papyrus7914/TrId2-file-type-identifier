@@ -1,0 +1,83 @@
+Name: KOMPAS-3D Fragment
+URL: "https://kompas.ru/"
+FileNameExtensions: ["frw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "FileInfo"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_\0A\0D\0D\0P\0R\0O\0P\0_\0T\0U\0N\0I\0N\0G\0_\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0A\0D\0D\0P\0R\0O\0P\0_\0T\0U\0N\0I\0N\0G\0_\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0R\0E\0A\0T\0E\0A\0P\0P\0V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0E\0T\0O\0I\0N\0F\0O\0L\0I\0N\0K\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0P\0P\0P\0L\0A\0T\0F\0O\0R\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0R\0E\0A\0T\0E\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0O\0D\0I\0F\0Y\0D\0A\0T\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0U\0T\0O\0S\0A\0V\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0P\0P\0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0D\0U\0S\0_\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0D\0U\0S\0_\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0P\0W\0_\0D\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0P\0W\0_\0F\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0R\0R\0_\0F\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0S\0A\0_\0D\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8\0CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8\0FILEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8\0METAINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\03\0D\0 \0V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8\0PREVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8\0SYSINFO"
+    CaseSensitive: false

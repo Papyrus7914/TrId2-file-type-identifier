@@ -1,0 +1,14 @@
+Name: Oberon Object
+URL: "https://en.wikipedia.org/wiki/Oberon_(operating_system)"
+FileNameExtensions: ["obj"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "oB"
+    CaseSensitive: true
+  - Pos: 34
+    #              6
+    Bytes: [0xF8, 0x36]
+  - Pos: any
+    AsciiString: ".OBJ"
+    CaseSensitive: false

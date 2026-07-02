@@ -1,0 +1,14 @@
+Name: ZBrush Preset
+URL: "https://en.wikipedia.org/wiki/ZBrush"
+FileNameExtensions: ["zbp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZBrush File.Copyright 1977-20"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: ".PIXOLOGIC INC\0"
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: "PBZ\0"
+    CaseSensitive: true

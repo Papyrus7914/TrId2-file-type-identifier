@@ -1,0 +1,79 @@
+Name: MAGIX music studio Style
+URL: "https://en.wikipedia.org/wiki/Magix"
+FileNameExtensions: ["sty"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "s"
+    CaseSensitive: true
+  - Pos: 4
+    Bytes: [0x02, 0x00]
+  - Pos: 12
+    AsciiString: "A: "
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "B: "
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: "C: "
+    CaseSensitive: true
+  - Pos: 532
+    AsciiString: "00:00:00:00"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "0\01\02\03\04\05\06\07\08\09"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIATION 1 MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIATION 2 MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIATION 3 MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIATION 4 MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDING MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILL 1 MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILL 2 MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILL 3 MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILL 4 MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTRO MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDI MAPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-VARIATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAJOR\0EL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-ENDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-INTRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORDS"
+    CaseSensitive: false

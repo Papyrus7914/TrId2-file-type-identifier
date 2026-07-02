@@ -1,0 +1,11 @@
+Name: Extensible Storage Engine DataBase
+Description: SDB is used for Security DataBase
+URL: "http://fileformats.archiveteam.org/wiki/Extensible_Storage_Engine"
+FileNameExtensions: ["edb", "sdb"]
+MimeType: application/x-ms-ese
+DetectionPatterns:
+  - Pos: 4
+    Bytes: [0xEF, 0xCD, 0xAB, 0x89]
+  - Pos: 12
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true

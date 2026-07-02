@@ -1,0 +1,29 @@
+Name: "Planescape Torment: Enhanced Ed. saved game"
+URL: "https://www.mobygames.com/game/86794/planescape-torment-enhanced-edition/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SAV V1.0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0x\xDA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORLDMAP.WMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS.LUA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAV V1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TOH"
+    CaseSensitive: false

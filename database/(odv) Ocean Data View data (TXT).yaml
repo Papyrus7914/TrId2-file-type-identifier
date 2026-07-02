@@ -1,0 +1,25 @@
+Name: Ocean Data View data (TXT)
+URL: "http://odv.awi.de/"
+FileNameExtensions: ["odv"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Cruise"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "Station"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRUISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

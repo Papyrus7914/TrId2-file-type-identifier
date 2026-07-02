@@ -1,0 +1,20 @@
+Name: Lix gadget trigger area
+URL: "https://www.lixgame.com/"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#TRIGGER_AREA_POSITION_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRIGGER_AREA_POSITION_ABSOLUTE_X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIGGER_AREA_POSITION_ABSOLUTE_Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIGGER_AREA_SIZE_X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIGGER_AREA_SIZE_Y"
+    CaseSensitive: false

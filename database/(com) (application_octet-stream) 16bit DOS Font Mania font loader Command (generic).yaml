@@ -1,0 +1,28 @@
+Name: 16bit DOS Font Mania font loader Command (generic)
+URL: "http://fileformats.archiveteam.org/wiki/Font_Mania_(REXXCOM)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEB]
+  - Pos: 6
+    AsciiString: "\0 FONT MANIA, VERSION "
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: " \r\n COPYRIGHT (C) "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REXXCOM SYSTEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT MANIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

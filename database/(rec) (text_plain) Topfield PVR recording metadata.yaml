@@ -1,0 +1,29 @@
+Name: Topfield PVR recording metadata
+URL: "https://en.wikipedia.org/wiki/Topfield"
+FileNameExtensions: ["rec"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NGStreamRedirector: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROGRAMNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT"
+    CaseSensitive: false

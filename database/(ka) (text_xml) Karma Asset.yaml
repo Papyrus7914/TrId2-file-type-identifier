@@ -1,0 +1,42 @@
+Name: Karma Asset
+Description: Used for 'rag-doll' physics in the UnrealEngine.
+URL: "https://docs.unrealengine.com/udk/Two/rsrc/Two/KarmaReference/KarmaUserGuide.pdf"
+FileNameExtensions: ["ka"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DYNAMICS_AND_GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KARMA KA_FILE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMITIVE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRY ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASS_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASS_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSET ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOINT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PSK"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Vuze link
+URL: "https://en.wikipedia.org/wiki/Vuze"
+FileNameExtensions: ["vuze"]
+MimeType: application/x-bittorrent
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "d4:vuzed10:componentsld7:contentd"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TYPEI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

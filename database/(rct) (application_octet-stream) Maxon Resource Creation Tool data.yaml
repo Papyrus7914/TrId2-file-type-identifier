@@ -1,0 +1,14 @@
+Name: Maxon Resource Creation Tool data
+Description: Amiga C++ compiler.
+FileNameExtensions: ["rct"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-RCT V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* MAX"
+    CaseSensitive: false

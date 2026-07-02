@@ -1,0 +1,21 @@
+Name: DigiBooster module (XPK compressed)
+Description: Amiga tracker.
+URL: "http://www.digibooster.de"
+FileNameExtensions: ["xpk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XPKF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SQSH"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "DIGI Booster mod"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIGI BOOSTER MOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQSH"
+    CaseSensitive: false

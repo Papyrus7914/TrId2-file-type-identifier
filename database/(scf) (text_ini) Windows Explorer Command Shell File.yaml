@@ -1,0 +1,14 @@
+Name: Windows Explorer Command Shell File
+URL: "https://en.wikipedia.org/wiki/File_Explorer"
+FileNameExtensions: ["scf"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Shell]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ICONFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHELL"
+    CaseSensitive: false

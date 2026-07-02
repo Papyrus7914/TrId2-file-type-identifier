@@ -1,0 +1,8 @@
+Name: Fuchsia ARchive
+URL: "https://fuchsia.dev/fuchsia-src/concepts/source_code/archive_format"
+FileNameExtensions: ["far"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    \v    H
+    Bytes: [0xC8, 0xBF, 0x0B, 0x48, 0xAD, 0xAB, 0xC5, 0x11]

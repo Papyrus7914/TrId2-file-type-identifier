@@ -1,0 +1,33 @@
+Name: gfxboot compiled HTML Help (opt)
+Description: verified by command like `gfxboot --help-show en.hlp`
+URL: "https://github.com/openSUSE/gfxboot"
+FileNameExtensions: ["hlp"]
+MimeType: application/x-gfxboot-hlp
+DetectionPatterns:
+  - Pos: 0
+    #                    o     p     t
+    Bytes: [0x04, 0x12, 0x6F, 0x70, 0x74, 0x14]
+  - Pos: any
+    AsciiString: "KEYTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O_SPLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O_ACPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O_APM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O_IDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCSI"
+    CaseSensitive: false

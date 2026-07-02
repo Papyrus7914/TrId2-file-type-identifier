@@ -1,0 +1,83 @@
+Name: Session Manager Firefox Backup
+Description: Session Manager allows you to save the current state of Firefox (history, text data, cookies) and return to that state at any later moment.
+URL: "http://sessionmanager.mozdev.org/index.html"
+FileNameExtensions: ["session"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[SessionManager v2]\r\nname=[ "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SESSIONMANAGER V2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CLOSEDWINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTEDWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FORMDATASAVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CLOSEDTABS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOSAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCROLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_HOSTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1050"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1680"
+    CaseSensitive: false

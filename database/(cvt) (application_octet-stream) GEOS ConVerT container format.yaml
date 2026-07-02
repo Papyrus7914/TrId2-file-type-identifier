@@ -1,0 +1,14 @@
+Name: GEOS ConVerT container format
+URL: "http://unusedino.de/ec64/technical/formats/cvt.html"
+FileNameExtensions: ["cvt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 33
+    AsciiString: " formatted GEOS file V"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORMATTED GEOS FILE V"
+    CaseSensitive: false

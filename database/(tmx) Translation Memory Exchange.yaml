@@ -1,0 +1,34 @@
+Name: Translation Memory Exchange
+URL: "http://en.wikipedia.org/wiki/Translation_Memory_eXchange"
+FileNameExtensions: ["tmx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATIONTOOLVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMX VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADMINLANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRCLANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O-TMF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false

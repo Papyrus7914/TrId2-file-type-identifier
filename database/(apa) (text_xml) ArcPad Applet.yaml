@@ -1,0 +1,44 @@
+Name: ArcPad Applet
+URL: "http://resources.arcgis.com/en/help/arcpad/10.0/sdk/xml/"
+FileNameExtensions: ["apa"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOOLBUTTON NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLBARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONCLICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCPAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false

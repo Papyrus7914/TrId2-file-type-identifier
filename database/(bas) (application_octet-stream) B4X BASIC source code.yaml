@@ -1,0 +1,22 @@
+Name: B4X BASIC source code
+URL: "https://www.b4x.com/"
+FileNameExtensions: ["bas"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEF, 0xBB, 0xBF]
+  - Pos: any
+    AsciiString: "MODULESSTRUCTUREVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDOFDESIGNTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SS_GLOBALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END SUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

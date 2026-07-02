@@ -1,0 +1,35 @@
+Name: NASCAR Racing 2 Car data
+URL: "https://en.wikipedia.org/wiki/NASCAR_Racing_2"
+FileNameExtensions: ["car"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: " RAC\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\x02\0OFNI\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ATAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DHMB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DHPM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JBOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAMB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TELP"
+    CaseSensitive: false

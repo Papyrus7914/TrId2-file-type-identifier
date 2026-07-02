@@ -1,0 +1,26 @@
+Name: LABTECH Realtime VISION design
+Description: A real-time graphic display and control client for Windows.
+FileNameExtensions: ["vis"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0<LABTECH CORPORATION (C) 19"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\x10\"\0\x01\x10YLABTECH NOTEBOOK CGM V"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "YLABTECH NOTEBOOK CGM V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABTECH OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KWINDOW SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPICTURE 1"
+    CaseSensitive: false

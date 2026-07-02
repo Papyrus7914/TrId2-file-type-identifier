@@ -1,0 +1,26 @@
+Name: Road Wars Resource game data
+Description: Russian game by TS Group Entertainment.
+FileNameExtensions: ["res"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SGRS\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "SGRS\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "1.IMG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2.IMG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E.IMG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N.IMG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S.IMG"
+    CaseSensitive: false

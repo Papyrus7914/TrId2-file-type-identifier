@@ -1,0 +1,14 @@
+Name: Binary caFe WAVe audio
+URL: "http://mk8.tockdom.com/wiki/BFWAV_(File_Format)"
+FileNameExtensions: ["bfwav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FWAV"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

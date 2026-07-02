@@ -1,0 +1,34 @@
+Name: Dynamic Env. printer configuration
+Description: Dynamic Environment was a GUI for MS-DOS by Radarsoft.
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DYNAMIC PRINTER\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROPORTIONAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORI UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVE HORI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVE VERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICA DOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERT UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false

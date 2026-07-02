@@ -1,0 +1,11 @@
+Name: NATO Secondary Imagery Format
+URL: "https://www.harrisgeospatial.com/docs/BackgroundNITFNSIFFormat.html"
+FileNameExtensions: ["nsf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NSIF0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "."
+    CaseSensitive: true

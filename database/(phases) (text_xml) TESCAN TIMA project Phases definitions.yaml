@@ -1,0 +1,23 @@
+Name: TESCAN TIMA project Phases definitions
+URL: "https://en.wikipedia.org/wiki/TESCAN"
+FileNameExtensions: ["phases"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PHASEDEFINITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false

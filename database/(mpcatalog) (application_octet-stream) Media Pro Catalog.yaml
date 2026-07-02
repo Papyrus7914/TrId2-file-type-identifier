@@ -1,0 +1,11 @@
+Name: Media Pro Catalog
+URL: "http://fileformats.archiveteam.org/wiki/Media_Pro"
+FileNameExtensions: ["mpcatalog"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "030i"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "030I"
+    CaseSensitive: false

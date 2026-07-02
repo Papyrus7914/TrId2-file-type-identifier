@@ -1,0 +1,39 @@
+Name: CFast Animation (secured)
+Description: Format used by Disney Animation Studio.
+URL: "http://fileformats.archiveteam.org/wiki/CFAST_Disney_Animation_Studio"
+FileNameExtensions: ["cft"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "STDY\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS ANIMATION IS INTENDED FOR YOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIOLATORS WILL BE PROSECUTED TO THE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTERED OR DISTRIBUTED IN ANY WAY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS COPYRIGHTED BY THE WALT DISNEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND THE CHARACTER DEPICTED ON IT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STUDY AND ENJOYMENT.  EACH FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANY AND MAY NOT BE COPIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLEST EXTENT OF THE LAW."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LESSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPOS"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Active WebCam Settings
+URL: "http://www.pysoft.com/ActiveWebCamMainpage.htm"
+FileNameExtensions: ["awses"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Main]\r\nNumberOfCamerasOnDesktop="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CAMERAPARAMS0"
+    CaseSensitive: false

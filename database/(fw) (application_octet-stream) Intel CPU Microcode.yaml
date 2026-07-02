@@ -1,0 +1,20 @@
+Name: Intel CPU Microcode
+URL: "https://gitlab.com/iucode-tool/iucode-tool/blob/master/intel_microcode.c"
+FileNameExtensions: ["fw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true

@@ -1,0 +1,11 @@
+Name: MacStitch/WinStitch design
+URL: "http://www.ursasoftware.com/"
+FileNameExtensions: ["chart"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0An Ursa Software File,\x01\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AN URSA SOFTWARE FILE"
+    CaseSensitive: false

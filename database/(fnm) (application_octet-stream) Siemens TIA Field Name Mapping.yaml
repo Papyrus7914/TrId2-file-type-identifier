@@ -1,0 +1,99 @@
+Name: Siemens TIA Field Name Mapping
+FileNameExtensions: ["fnm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFE, 0xFF, 0xFF, 0xFF, 0x0F]
+  - Pos: 8
+    AsciiString: "##"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "##"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASSOCIATEDTECHNICALFIELDCONTENTVERSIONFIELDID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSOCIATEDTECHNICALFIELDNAMESHASHCODEFIELDID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHABLENONTECHNICALFIELDNAMESOFDOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSOCIATEDINDEXDATAVERSIONFIELDID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISULIZATIONROOTBROWSABLEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSOCIATEDCULTUREFIELDID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSOCIATEDPROJECTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACEMEMBER_DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACEMEMBER_COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACEMEMBER_VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACEMEMBER_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECONSTITUTIONDATAID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMMEDIATEPARENTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCEFIELDIDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATABLEPARENTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHFILTERIDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXATOMSTORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LADFBD CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENTIDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

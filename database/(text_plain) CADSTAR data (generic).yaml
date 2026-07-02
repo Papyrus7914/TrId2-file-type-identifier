@@ -1,0 +1,10 @@
+Name: CADSTAR data (generic)
+URL: "https://en.wikipedia.org/wiki/CADSTAR"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(CADSTAR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(HEADER"
+    CaseSensitive: false

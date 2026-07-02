@@ -1,0 +1,14 @@
+Name: X68000 Floppy Disk image (Human68k formatted)
+URL: "https://en.wikipedia.org/wiki/X68000"
+FileNameExtensions: ["xdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1CHudson soft "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HHUMAN.SYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: Sea Graphics Viewer data
+Description: DOS graphics viewer by H. De Laat and B.Wakkee.
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "C4!\x12TE2#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GUIFONT\0XV4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABOUT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIME."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARROW."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEAL"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: After Effects Project
+URL: "https://en.wikipedia.org/wiki/Adobe_After_Effects"
+FileNameExtensions: ["aep"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFX"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "Egg!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FOLDFDTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTLHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NHED"
+    CaseSensitive: false

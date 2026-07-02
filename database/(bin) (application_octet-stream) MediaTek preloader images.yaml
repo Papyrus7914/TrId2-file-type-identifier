@@ -1,0 +1,59 @@
+Name: MediaTek preloader images
+URL: "https://en.wikipedia.org/wiki/MediaTek"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EMMC_BOOT"
+    CaseSensitive: true
+  - Pos: 512
+    AsciiString: "BRLYT"
+    CaseSensitive: true
+  - Pos: 532
+    AsciiString: "BBBB"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MTK_ARCH_RESET AT PRE-LOADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USB CDC ACM FOR PRELOADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMERGENCY DOWNLOAD MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BR ATE FACTORY BOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USBDL_FLUSH TIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACTORYM\0MYROTCAF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BR ADVMETA BOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BR META BOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIATEK\0MT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AT+UNKONWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AT+NBOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AT+OK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRLYT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBBB"
+    CaseSensitive: false

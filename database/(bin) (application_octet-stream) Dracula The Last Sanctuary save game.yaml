@@ -1,0 +1,38 @@
+Name: "Dracula: The Last Sanctuary save game"
+URL: "https://www.mobygames.com/game/3374/dracula-the-last-sanctuary/"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x17\0\0\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: ":DataM"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\\0M"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "Script.pak"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTERFACE.VR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURSOR1.PCX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURSOR2.PCX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLECHE.PCX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT.PAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: JSON MS/MS
+URL: "https://wiki.thegpm.org/wiki/Jsms"
+FileNameExtensions: ["jsms"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"format\": \"jsms 1.0\", \"source\": \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VALIDATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA256"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false

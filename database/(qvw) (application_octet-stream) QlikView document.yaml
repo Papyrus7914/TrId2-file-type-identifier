@@ -1,0 +1,11 @@
+Name: QlikView document
+URL: "https://www.qlik.com/"
+FileNameExtensions: ["qvw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        p
+    Bytes: [0x70, 0x17, 0x01, 0x00, 0xC1, 0x06, 0x00, 0x00]
+  - Pos: 9
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

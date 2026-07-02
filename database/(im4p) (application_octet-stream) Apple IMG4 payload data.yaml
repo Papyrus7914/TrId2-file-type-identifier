@@ -1,0 +1,11 @@
+Name: Apple IMG4 payload data
+URL: "https://theapplewiki.com/wiki/IMG4_File_Format"
+FileNameExtensions: ["im4p"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IM4P"
+    CaseSensitive: false

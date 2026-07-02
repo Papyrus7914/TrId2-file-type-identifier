@@ -1,0 +1,13 @@
+Name: Adobe Photoshop Color Book
+URL: "http://www.adobe.com/products/photoshop/"
+FileNameExtensions: ["acb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "8BCB\0\x01\v"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0$\0$\0$\0/\0c\0o\0l\0o\0r\0b\0o\0o\0k\0/\0"
+    CaseSensitive: true

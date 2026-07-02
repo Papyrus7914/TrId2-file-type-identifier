@@ -1,0 +1,9 @@
+Name: HDisk disk image (v1.x)
+Description: Used in Hangul Office installer.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HDISK v 1."
+    CaseSensitive: true
+  - Pos: 11
+    Bytes: [0x1A]

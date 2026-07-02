@@ -1,0 +1,11 @@
+Name: Apple Partition Map (APM) disk image
+URL: "http://fileformats.archiveteam.org/wiki/Apple_Partition_Map"
+FileNameExtensions: ["iso", "dmg", "toast"]
+MimeType: application/x-apple-diskimage
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ER"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true

@@ -1,0 +1,19 @@
+Name: Quartus II Archive
+URL: "http://quartushelp.altera.com/9.1/mergedProjects/reference/glossary/def_qar.htm"
+FileNameExtensions: ["qar"]
+DetectionPatterns:
+  - Pos: 0
+    #        q
+    Bytes: [0x71, 0x02]
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASSIGNMENT_DEFAULTS.QDFX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".QPFX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".QSFX"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: FCS Express Layout Link
+URL: "https://www.denovosoftware.com/"
+FileNameExtensions: ["fe_launch"]
+MimeType: application/vnd.denovo.fcselayout-link
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENCRYPTED_DATA_V5 ENCRYPTION_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTED_DATA ENCRYPTION_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FCS_EXPRESS_LAUNCH VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Koei Tecmo Audio
+URL: "https://wiki.xentax.com/index.php/Koei_Tecmo_Audio_SRSA_SRST"
+FileNameExtensions: ["srst"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TSRS"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "KTSR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KTSR"
+    CaseSensitive: false

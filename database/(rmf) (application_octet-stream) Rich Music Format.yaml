@@ -1,0 +1,17 @@
+Name: Rich Music Format
+URL: "http://en.wikipedia.org/wiki/Rich_Music_Format"
+FileNameExtensions: ["rmf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IREZ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IREZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITL"
+    CaseSensitive: false

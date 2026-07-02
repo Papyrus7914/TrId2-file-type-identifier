@@ -1,0 +1,77 @@
+Name: Intermediate Data Text Format (v1.00)
+URL: "https://github.com/ningfei/u3d/blob/master/Docs/IDTF_Format_Description.pdf"
+FileNameExtensions: ["idtf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FILE_FORMAT \"IDTF\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODEL_SHADING_DESCRIPTION_LIST {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL_SPECULAR_COLOR_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL_DIFFUSE_COLOR_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL_TEXTURE_COORD_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL_POSITION_LIST {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL_POSITION_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL_SHADING_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE_LAYER_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT_VERSION 100"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL_NORMAL_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SHADING_LIST {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT_LIST {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE 0 {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT_TM {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADER_ID 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false

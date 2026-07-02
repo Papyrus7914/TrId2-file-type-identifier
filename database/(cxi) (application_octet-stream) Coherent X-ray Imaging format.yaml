@@ -1,0 +1,30 @@
+Name: Coherent X-ray Imaging format
+Description: Common format for all the data in the Coherent X-ray Imaging Data Bank (CXIDB).
+URL: "http://cxidb.org/"
+FileNameExtensions: ["cxi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A\n\0\0\0\0\0\b\b\0\x04\0\x10\0\0\0\0\0\0\0\0\0\0\0\0\0\xFF\xFF\xFF\xFF\xFF\xFF\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 136
+    #        T     R     E     E
+    Bytes: [0x54, 0x52, 0x45, 0x45, 0x00, 0x00, 0x01, 0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: 680
+    AsciiString: "HEAP\0\0\0\0X"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEAP\0\0\0\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREE"
+    CaseSensitive: false

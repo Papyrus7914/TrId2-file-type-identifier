@@ -1,0 +1,10 @@
+Name: BrainSuite Surface File Format
+URL: "http://users.loni.ucla.edu/~shattuck/brainsuite/file-formats/dfs/"
+FileNameExtensions: ["dfs"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DFS_"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "E V2.0\0"
+    CaseSensitive: true

@@ -1,0 +1,11 @@
+Name: Intelligent Image Quality - Phase One RAW image
+URL: "http://en.wikipedia.org/wiki/Phase_One_(company)"
+FileNameExtensions: ["iiq"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II*\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "IIIICwaR"
+    CaseSensitive: true

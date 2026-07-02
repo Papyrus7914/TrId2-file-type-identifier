@@ -1,0 +1,29 @@
+Name: Wavefront Object (exported by Houdini)
+URL: "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
+FileNameExtensions: ["obj"]
+MimeType: model/obj
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# File exported by Houdini "
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILE EXPORTED BY HOUDINI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(WWW.SIDEFX.COM)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMITIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS"
+    CaseSensitive: false

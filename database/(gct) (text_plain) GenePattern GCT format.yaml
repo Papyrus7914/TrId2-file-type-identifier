@@ -1,0 +1,14 @@
+Name: GenePattern GCT format
+URL: "https://genepattern.broadinstitute.org/gp/pages/protocols/GctResFiles.html"
+FileNameExtensions: ["gct"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: EMBL sequence data
+URL: "http://en.wikipedia.org/wiki/European_Nucleotide_Archive"
+FileNameExtensions: ["embl", "emb"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ID   "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SQ   SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false

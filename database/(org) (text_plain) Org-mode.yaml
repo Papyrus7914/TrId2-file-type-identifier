@@ -1,0 +1,11 @@
+Name: Org-mode
+URL: "http://fileformats.archiveteam.org/wiki/Org_mode"
+FileNameExtensions: ["org"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "+TITLE"
+    CaseSensitive: false

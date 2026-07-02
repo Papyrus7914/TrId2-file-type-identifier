@@ -1,0 +1,164 @@
+Name: MSBuild website Project (UTF-8)
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+FileNameExtensions: ["publishproj"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "***********************************************************************************************"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- FOR VS2010 WE NEED TO USE 10.5 BUT FOR VS2012+ WE SHOULD USE VISUALSTUDIOVERSION --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) MICROSOFT CORPORATION. ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IT IS USED FOR THE WEB PUBLISH PROCESS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT.WEBSITE.PUBLISHING.TARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBPUBLISHTARGETSVERSION CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WEBPUBLISHTARGETSPATH CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLYFILEVERSION CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISUALSTUDIOVERSION CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V$(WEBPUBLISHTARGETSVERSION)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(MSBUILDTHISFILEDIRECTORY)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(MSBUILDEXTENSIONSPATH32)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLYATTRIBUTES INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(_WEBPUBLISHTARGETSPATH)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLYVERSION CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO NOT MODIFY THIS FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(ASSEMBLYFILEVERSION)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(VISUALSTUDIOVERSION)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETFRAMEWORKVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCEWEBMETABASEPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCEWEBPHYSICALPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSTOOLSPATH CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT TOOLSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCEWEBVIRTUALPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBSITE.PUBLISHPROJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(ASSEMBLYVERSION)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(CONFIGURATION)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCEWEBPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(VSTOOLSPATH)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORT PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(PLATFORM)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "10.0.30319"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVELOPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.0.0.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANYCPU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2003"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

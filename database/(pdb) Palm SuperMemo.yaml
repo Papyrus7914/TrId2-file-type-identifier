@@ -1,0 +1,14 @@
+Name: Palm SuperMemo
+Description: SuperMemo is a speed-learning software by Mapletop Software.
+URL: "http://www.mapletop.com/"
+FileNameExtensions: ["pdb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "sm_"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "\0\0\0\0SM01SMem"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SM01SMEM"
+    CaseSensitive: false

@@ -1,0 +1,33 @@
+Name: SerialBox serials numbers package
+FileNameExtensions: ["sb2"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[SerialBox]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ISSUENUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CERTIFICATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTUPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIAL BOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZIPLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GREETING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

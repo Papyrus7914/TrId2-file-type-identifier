@@ -1,0 +1,17 @@
+Name: Synology DSM install Package (old, v6)
+URL: "https://en.wikipedia.org/wiki/Synology"
+FileNameExtensions: ["pat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    \b    \b
+    Bytes: [0x1F, 0x8B, 0x08, 0x08]
+  - Pos: 6
+    AsciiString: ")a\x02\xFFsynology_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYNOLOGY_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PAT"
+    CaseSensitive: false

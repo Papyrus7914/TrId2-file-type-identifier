@@ -1,0 +1,17 @@
+Name: PageStream Hyphenation Patterns
+URL: "https://en.wikipedia.org/wiki/PageStream"
+FileNameExtensions: ["hpatterns"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "HYPHCLAS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HYPHCLAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HPAT"
+    CaseSensitive: false

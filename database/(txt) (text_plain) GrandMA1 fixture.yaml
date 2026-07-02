@@ -1,0 +1,53 @@
+Name: GrandMA1 fixture
+URL: "https://www.malighting.com/"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "_FIXTURETYPE\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_FIXTURETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ _ATTRIBUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SHORTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CHANTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CHANSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FEATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MANUFAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{ _NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_EFF"
+    CaseSensitive: false

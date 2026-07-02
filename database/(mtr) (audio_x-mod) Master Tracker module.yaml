@@ -1,0 +1,10 @@
+Name: Master Tracker module
+Description: PC tracker by [PYRO-FYRE]/ARKHAM.
+FileNameExtensions: ["mtr"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MTRAC"
+    CaseSensitive: true
+  - Pos: 49
+    Bytes: [0x1A]

@@ -1,0 +1,19 @@
+Name: Microsoft Vista Saved Search
+URL: "http://en.wikipedia.org/wiki/File:Search-ms.png"
+FileNameExtensions: ["search-ms"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<persistedQuery version=\"1.0\">\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PERSISTEDQUERY VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIND NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KINDLIST"
+    CaseSensitive: false

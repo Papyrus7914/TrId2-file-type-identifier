@@ -1,0 +1,197 @@
+Name: Directory Interchange Format
+URL: "https://earthdata.nasa.gov/standards/directory-interchange-format-dif-standard"
+FileNameExtensions: ["dif"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATASET_RELEASE_PLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET_RELEASE_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIF_REVISION_HISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET_SERIES_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTRIBUTION_FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION_SUBREGION1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTRIBUTION_MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GCMD.GSFC.NASA.GOV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET_PUBLISHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENDED_METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION_CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPORAL_COVERAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPATIAL_COVERAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URL_CONTENT_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLE_LEVEL_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET_CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLINE_RESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMALOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET_TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_CITATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY_TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATED_URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATION_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORT_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIF XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERSONNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CREATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LATITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABSTRACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABOUTUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATIONAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCIENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIF_V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

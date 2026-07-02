@@ -1,0 +1,35 @@
+Name: Manhattan Printer Description
+URL: "https://en.wikipedia.org/wiki/Ready,_Set,_Go!_(software)"
+FileNameExtensions: ["mpd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{COM"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRINTER DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAYDEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LETTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

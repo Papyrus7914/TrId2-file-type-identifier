@@ -1,0 +1,25 @@
+Name: Redline Markup Language
+URL: "http:/www.autodesk.com"
+FileNameExtensions: ["rml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSIONINFO VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDLINEXML XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKUPPLANENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDLINEMARKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDLINEXML_V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKUPPLANES"
+    CaseSensitive: false

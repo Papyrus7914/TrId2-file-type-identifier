@@ -1,0 +1,16 @@
+Name: Poly Tracker Module
+URL: "http://fileformats.archiveteam.org/wiki/Poly_Tracker_module"
+FileNameExtensions: ["ptm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 28
+    Bytes: [0x1A, 0x03, 0x02]
+  - Pos: 44
+    AsciiString: "PTMF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".PTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTMF"
+    CaseSensitive: false

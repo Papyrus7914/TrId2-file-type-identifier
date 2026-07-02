@@ -1,0 +1,14 @@
+Name: VP-Planner Worksheet (v1.0)
+Description: DOS spreadsheet by Paperback Software.
+FileNameExtensions: ["wks"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x02\0\x04\x04\x06\0\b\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\x02\0\x01\0\xFF\x03\0\x01\0\0\x05\0\x01\0\0\a\0\x1F\0"
+    CaseSensitive: true

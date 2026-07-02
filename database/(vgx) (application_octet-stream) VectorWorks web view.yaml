@@ -1,0 +1,38 @@
+Name: VectorWorks web view
+URL: "http://fileformats.archiveteam.org/wiki/VectorWorks"
+FileNameExtensions: ["vgx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: ".version"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".VWSCENEGRAPHVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VWINSTANCESVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VWMATERIALSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VWMETADATAVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VWCAMERASVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VWCUSTOMVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VERSIONVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VWSCENEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T_1.PNGVERSION"
+    CaseSensitive: false

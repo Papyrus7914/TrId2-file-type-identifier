@@ -1,0 +1,14 @@
+Name: Wang Image File Format bitmap (TIFF with WANG tags)
+URL: "http://en.wikipedia.org/wiki/Tagged_Image_File_Format"
+FileNameExtensions: ["wif", "wiff", "tif", "tiff"]
+MimeType: image/tiff
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II*\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WANG TIFF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WANG TIFF"
+    CaseSensitive: false

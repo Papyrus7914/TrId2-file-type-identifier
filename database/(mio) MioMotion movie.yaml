@@ -1,0 +1,40 @@
+Name: MioMotion movie
+URL: "http://www.mioplanet.com/products/miomotion/"
+FileNameExtensions: ["mio"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NCMOBJECT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EVENTSCRIPT.MEM__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER.SECURITY__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES.SECURITY__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_IDENTITY2.LIB__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_IDENTITY.LIB__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTITY.KEXE__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTITY.MEM__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIOLIB.JS__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX.HTM__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KXYOUTX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOC__"
+    CaseSensitive: false

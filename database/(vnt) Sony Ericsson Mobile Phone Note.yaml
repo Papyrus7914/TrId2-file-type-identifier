@@ -1,0 +1,21 @@
+Name: Sony Ericsson Mobile Phone Note
+FileNameExtensions: ["vnt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN:VNOTE\r\nVERSION:"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VNOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false

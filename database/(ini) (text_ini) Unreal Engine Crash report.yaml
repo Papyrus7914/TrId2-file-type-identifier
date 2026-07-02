@@ -1,0 +1,17 @@
+Name: Unreal Engine Crash report
+URL: "https://en.wikipedia.org/wiki/Unreal_Engine"
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[CrashReportClient]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BISALLOWEDTOCLOSEWITHOUTSENDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRASHCONFIGPURGEDAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BHIDELOGFILESOPTION"
+    CaseSensitive: false

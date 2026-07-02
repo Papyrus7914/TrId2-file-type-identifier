@@ -1,0 +1,26 @@
+Name: ApAssist document
+Description: Amiga hypertext documentation system.
+URL: "http://www.datapipe-blackbeltsystems.com/amiga.html#apassist"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\ApAssist\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDNODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREV"
+    CaseSensitive: false

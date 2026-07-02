@@ -1,0 +1,62 @@
+Name: VVVV Patchlet
+URL: "https://en.wikipedia.org/wiki/Vvvv"
+FileNameExtensions: ["v4p"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE PATCH  SYSTEM \"http://vvvv.org/versions/vvvv"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE PATCH  SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENTMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIN PINNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLICECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VVVV.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IOBOX ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INABOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".V4P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false

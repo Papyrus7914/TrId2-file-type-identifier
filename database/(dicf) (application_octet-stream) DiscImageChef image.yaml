@@ -1,0 +1,11 @@
+Name: DiscImageChef image
+URL: "https://github.com/opencollective/DiscImageChef"
+FileNameExtensions: ["dicf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DICMFMT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DICMFMT"
+    CaseSensitive: false

@@ -1,0 +1,22 @@
+Name: Group Policy Language-Specific Administrative Template
+FileNameExtensions: ["adml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<!--  (c) 2006 Microsoft Corporation  -->\r\n<policyDefinitionResources"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "--  (C) 2006 MICROSOFT CORPORATION  --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLICYDEFINITIONRESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Pure Data patch
+URL: "http://fileformats.archiveteam.org/wiki/Pure_Data"
+FileNameExtensions: ["pd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#N "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "N CANVAS"
+    CaseSensitive: false

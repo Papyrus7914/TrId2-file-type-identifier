@@ -1,0 +1,26 @@
+Name: freeCAD assembly
+Description: freeCAD is a basic 3D CAD with advanced Motion Simulation capabilities
+URL: "http://www.askoh.com/freecad/index.html"
+FileNameExtensions: ["asm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BOSS 7 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STCAD."
+    CaseSensitive: false

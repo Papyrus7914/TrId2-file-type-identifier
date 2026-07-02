@@ -1,0 +1,128 @@
+Name: SecurID Soft Token
+URL: "https://en.wikipedia.org/wiki/RSA_SecurID"
+FileNameExtensions: ["sdtid"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFTIMEDERIVEDSEEDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAPPDERIVEDSEEDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICESERIALNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFCOPYPROTECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATCHCERTIFICATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOKENATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATCHSIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFFORMFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERFIRSTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFMEDIUMWIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFPRECISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFPROTLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERLASTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFLARGEWIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFLOCALPIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFREVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFSMALLWIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFPINTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRSTTOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKNTRAILER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFADDPIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFDIGITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFKEYPAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADERMAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTTOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMTOKENS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKNHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERLOGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFBIRTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFDEATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NICKNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKNBATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOKENMAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFALG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECRET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEST"
+    CaseSensitive: false

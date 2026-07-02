@@ -1,0 +1,11 @@
+Name: PCE Raw Image disk image
+URL: "http://www.hampa.ch/pce"
+FileNameExtensions: ["pri"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PRI "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRAK"
+    CaseSensitive: false

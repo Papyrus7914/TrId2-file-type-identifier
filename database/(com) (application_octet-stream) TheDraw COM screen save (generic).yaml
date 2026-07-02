@@ -1,0 +1,13 @@
+Name: TheDraw COM screen save (generic)
+Description: Executable screen image.
+URL: "https://en.wikipedia.org/wiki/TheDraw"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEB]
+  - Pos: 2
+    Bytes: [0x90]
+  - Pos: 9
+    AsciiString: "TheDraw COM file"
+    CaseSensitive: true

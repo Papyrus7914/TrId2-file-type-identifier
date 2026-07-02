@@ -1,0 +1,10 @@
+Name: Nintendo DS Sound Wave ARchive
+URL: "http://dshack.wikia.com/wiki/.swar"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SWAR\xFF\xFE\0\x01"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "DATA"
+    CaseSensitive: true

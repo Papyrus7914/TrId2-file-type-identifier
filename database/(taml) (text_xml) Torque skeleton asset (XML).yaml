@@ -1,0 +1,24 @@
+Name: Torque skeleton asset (XML)
+Description: TAML is an acronym of Torque Application Mark-up Language.
+URL: "https://en.wikipedia.org/wiki/Torque_(game_engine)"
+FileNameExtensions: ["taml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<SkeletonAsset"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SKELETONFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATLASFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ATLAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JSON"
+    CaseSensitive: false

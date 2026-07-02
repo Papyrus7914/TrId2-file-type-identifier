@@ -1,0 +1,9 @@
+Name: SuperStor compressed volume
+Description: DOS drive compression program from Addstor. Name is usually SSPARTSS.SWP.
+URL: "https://en.wikipedia.org/wiki/Disk_compression#SuperStor"
+FileNameExtensions: ["swp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEB-\x90ADDSTOR "
+    CaseSensitive: true

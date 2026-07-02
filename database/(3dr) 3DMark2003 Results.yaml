@@ -1,0 +1,25 @@
+Name: 3DMark2003 Results
+URL: "http://www.futuremark.com/"
+FileNameExtensions: ["3dr"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Handle.txt"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULT.ENCPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESULT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLE.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLE.TXT3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SI.XMLPK"
+    CaseSensitive: false

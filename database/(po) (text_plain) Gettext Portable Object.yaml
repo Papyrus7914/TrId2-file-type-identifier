@@ -1,0 +1,11 @@
+Name: Gettext Portable Object
+URL: "https://en.wikipedia.org/wiki/Gettext"
+FileNameExtensions: ["po"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "msgid \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MSGSTR"
+    CaseSensitive: false

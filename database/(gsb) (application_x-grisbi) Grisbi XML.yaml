@@ -1,0 +1,51 @@
+Name: Grisbi XML
+Description: Grisbi is a personal accounting application for Linux
+URL: "http://www.grisbi.org/"
+FileNameExtensions: ["gsb"]
+MimeType: application/x-grisbi
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CATEGORIE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CREDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ES_PER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRISBI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LOGO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false

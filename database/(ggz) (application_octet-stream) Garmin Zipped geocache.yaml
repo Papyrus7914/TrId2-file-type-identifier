@@ -1,0 +1,26 @@
+Name: Garmin Zipped geocache
+URL: "https://support.garmin.com/faqSearch/en-US/faq/content/VtaaU06nPHAihnOIcMmXyA"
+FileNameExtensions: ["ggz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "data/PK\x03\x04"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INDEX.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_0000.GPXPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOCACHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GARMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

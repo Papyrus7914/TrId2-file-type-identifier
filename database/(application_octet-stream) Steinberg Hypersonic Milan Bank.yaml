@@ -1,0 +1,19 @@
+Name: Steinberg Hypersonic Milan Bank
+URL: "https://www.soundonsound.com/reviews/steinberg-hypersonic"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Milan Bank file "
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: ".0 Copyright (c)"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: " Wizoo\0\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIZOO"
+    CaseSensitive: false

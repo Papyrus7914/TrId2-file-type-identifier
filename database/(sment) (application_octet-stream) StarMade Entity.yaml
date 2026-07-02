@@ -1,0 +1,23 @@
+Name: StarMade Entity
+URL: "https://en.wikipedia.org/wiki/StarMade"
+FileNameExtensions: ["sment"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "HEADER.SMBPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGIC.SMBPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META.SMBPM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SMD2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

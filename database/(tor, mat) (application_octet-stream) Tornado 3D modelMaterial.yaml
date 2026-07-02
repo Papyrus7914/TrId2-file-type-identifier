@@ -1,0 +1,21 @@
+Name: Tornado 3D model/Material
+Description: Amiga 3d modeler by Eyelight.
+URL: "http://cd.textfiles.com/amigama/amigama199803/WWW/haage/www.haage-partner.com/t3_e.htm"
+FileNameExtensions: ["tor", "mat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "TOROOBDT\0\0\0\0AXIS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOROOBDT\0\0\0\0AXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURF"
+    CaseSensitive: false

@@ -1,0 +1,9 @@
+Name: Casio Keyboard File
+URL: "http://music.casio.com/"
+FileNameExtensions: ["ckf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CASIO Music Lib\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    Bytes: [0x11]

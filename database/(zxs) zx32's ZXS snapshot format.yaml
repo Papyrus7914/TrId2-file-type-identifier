@@ -1,0 +1,10 @@
+Name: zx32's ZXS snapshot format
+URL: "http://www.geocities.com/SiliconValley/Bay/9932/"
+FileNameExtensions: ["zxs"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0SNAPfmtz"
+    CaseSensitive: true

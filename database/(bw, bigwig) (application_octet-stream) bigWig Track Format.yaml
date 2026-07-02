@@ -1,0 +1,8 @@
+Name: bigWig Track Format
+URL: "https://genome.ucsc.edu/goldenPath/help/bigWig.html"
+FileNameExtensions: ["bw", "bigwig"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        &
+    Bytes: [0x26, 0xFC, 0x8F, 0x88, 0x04, 0x00]

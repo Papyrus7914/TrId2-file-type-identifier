@@ -1,0 +1,46 @@
+Name: Bentley MicroStation CAD Cell library
+URL: "https://en.wikipedia.org/wiki/DGN"
+FileNameExtensions: ["cel"]
+MimeType: application/x-bentley-cel
+DetectionPatterns:
+  - Pos: 0
+    #        \b
+    Bytes: [0x08, 0x05, 0x17, 0x00]
+  - Pos: 51
+    Bytes: [0x01]
+  - Pos: any
+    AsciiString: "ITATION NO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

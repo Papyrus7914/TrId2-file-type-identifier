@@ -1,0 +1,26 @@
+Name: Code::Blocks wxSmith resource
+URL: "http://wiki.codeblocks.org/index.php/WxSmith_plugin"
+FileNameExtensions: ["wxs"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\" ?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBJECT CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WXSMITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

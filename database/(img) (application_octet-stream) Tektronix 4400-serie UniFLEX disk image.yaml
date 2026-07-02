@@ -1,0 +1,14 @@
+Name: Tektronix 4400-serie UniFLEX disk image
+URL: "https://en.wikipedia.org/wiki/Tektronix"
+FileNameExtensions: ["img"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 538
+    AsciiString: "Tektronix 440"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNIFLEX BACKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEKTRONIX 440"
+    CaseSensitive: false

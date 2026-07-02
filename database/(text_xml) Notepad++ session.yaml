@@ -1,0 +1,16 @@
+Name: Notepad++ session
+URL: "https://en.wikipedia.org/wiki/Notepad%2B%2B"
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<NotepadPlus>\r\n    <Session activeView=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAINVIEW ACTIVEINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBVIEW ACTIVEINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSION ACTIVEVIEW"
+    CaseSensitive: false

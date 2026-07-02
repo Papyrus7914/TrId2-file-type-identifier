@@ -1,0 +1,12 @@
+Name: KGB Archiver compressed archive
+Description: KGB is the archive with unbelievable high compression rate.
+URL: "http://fileformats.archiveteam.org/wiki/KGB_Archiver"
+FileNameExtensions: ["kgb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KGB_arch -"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\r\n"
+    CaseSensitive: true

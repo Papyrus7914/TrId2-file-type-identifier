@@ -1,0 +1,22 @@
+Name: UniHighlighter Highlighter definition
+FileNameExtensions: ["hgl"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<UniHighlighter"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RANGE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELIMITER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false

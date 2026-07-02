@@ -1,0 +1,13 @@
+Name: Eclipse product marker
+URL: "http://wiki.eclipse.org/FAQ_What_is_an_Eclipse_product%3F"
+FileNameExtensions: ["eclipseproduct"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#Eclipse Product File"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

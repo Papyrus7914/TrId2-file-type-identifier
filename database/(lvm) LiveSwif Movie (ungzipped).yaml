@@ -1,0 +1,37 @@
+Name: LiveSwif Movie (ungzipped)
+URL: "http://liveswifers.org/"
+FileNameExtensions: ["lvm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "M,B\x17"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "CLMVScene"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CEFFECTPLACEINTERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELPROXYCONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLMVSPRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLMVSCENE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CKEYFRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G\0U\0I\0D\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0A\0Y\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0C\0E\0N\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLAYER"
+    CaseSensitive: false

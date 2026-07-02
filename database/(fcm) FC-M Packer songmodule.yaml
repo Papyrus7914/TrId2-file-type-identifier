@@ -1,0 +1,19 @@
+Name: FC-M Packer song/module
+URL: "http://membres.lycos.fr/asle/AMPD_src/FC-M_Packer.html"
+FileNameExtensions: ["fcm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FC-M"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "NAME"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "INST"
+    CaseSensitive: true
+  - Pos: 282
+    AsciiString: "LONG"
+    CaseSensitive: true
+  - Pos: 287
+    AsciiString: "\x7FPATT"
+    CaseSensitive: true

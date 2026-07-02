@@ -1,0 +1,16 @@
+Name: MetaQuote / MetaTrader indicator
+URL: "http://www.metaquotes.net/"
+FileNameExtensions: ["mq4"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "//+-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RETURN("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INT I"
+    CaseSensitive: false

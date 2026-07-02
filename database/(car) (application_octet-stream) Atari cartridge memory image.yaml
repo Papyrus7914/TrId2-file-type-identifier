@@ -1,0 +1,11 @@
+Name: Atari cartridge memory image
+URL: "https://github.com/dmlloyd/atari800/blob/master/DOC/cart.txt"
+FileNameExtensions: ["car"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CART"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true

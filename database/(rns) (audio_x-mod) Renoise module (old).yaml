@@ -1,0 +1,47 @@
+Name: Renoise module (old)
+URL: "http://en.wikipedia.org/wiki/Renoise"
+FileNameExtensions: ["rns"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RNS0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: ">>> Chunk Start <<<\0Header V0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRACKENVELOPES V0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATTERNEDITOR V0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTRUMENTS V0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLEDATA V00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCER V00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHUNK START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKDSP V0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKVOLPAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHUNK END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER V0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYER V0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RNS0"
+    CaseSensitive: false

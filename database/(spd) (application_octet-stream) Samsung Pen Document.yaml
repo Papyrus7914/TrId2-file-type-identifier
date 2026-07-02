@@ -1,0 +1,29 @@
+Name: Samsung Pen Document
+URL: "https://www.samsung.com/uk/apps/mobile/snote/"
+FileNameExtensions: ["spd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DOCUMENT FOR SAMSUNG S-PEN SDK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEIDINFO.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIAINFO.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_TAG.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTE.NOTEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PAGEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0O\0T\0E"
+    CaseSensitive: false

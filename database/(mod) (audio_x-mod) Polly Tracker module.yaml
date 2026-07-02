@@ -1,0 +1,46 @@
+Name: Polly Tracker module
+URL: "http://csdb.dk/release/?id=18605"
+FileNameExtensions: ["mod"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xAE]
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$$%%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%$$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(())"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "())("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "))()"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ")**)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ")*++"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "**)("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "**))"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+*)("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "++*)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".-+)"
+    CaseSensitive: false

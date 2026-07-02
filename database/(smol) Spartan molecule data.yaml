@@ -1,0 +1,337 @@
+Name: Spartan molecule data
+Description: A chemistry format.
+FileNameExtensions: ["smol"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "INPUT=256~"
+    CaseSensitive: true
+  - Pos: 256
+    AsciiString: "BEGIN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROP  VALUE ATOMIC_CPK_VOLUME BYATOM BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE ATOMIC_CPK_AREA BYATOM BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE MULCHARGES BYATOM BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE NATCHARGES BYATOM BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP STRING CALCULATION_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE MOMENT_I_CM 3 BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP STRING CALCULATION_TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP STRING INITIAL_KEYWORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPARTAN PROPERTIES PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE TOT_ELECTRONEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF BASIS FUNCTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE OF MOLECULAR SYMMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP VALUE PROP_TIME_MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE TOT_HARDNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE Q_MINUS_NAO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE Q_MINUS_MUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP STRING SYM_STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE Q_PLUS_NAO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE MO_ENERGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUCCESSFUL COMPLETION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE CPKVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMINATED NORMALLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF ELECTRONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP STRING DO_QSAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE OVALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE CPKAREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE E_LUMO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE E_HOMO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE HOMO_N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEGREES OF FREEDOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM WALL TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPIN MULTIPLICITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP  VALUE PROP_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM CPU TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOLECULAR CHARGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF SHELLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REASON FOR EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END-   MOLECULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS SYSTEM HAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDSTRUCTMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINMOLSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~248~VIBSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROP_KEYWORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDATOMLABELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINVIBSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDTRANSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDATOMALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINPROPARC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDLABELTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0~0~MOLSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINRETCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINVOUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINPROPIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDEMPTYVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINOUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY USED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDVIBSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDMOLSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDRETCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~26~OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINCELLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDVOUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGININPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPROPARC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDMOLFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDISOTOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDOUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELATOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDFROZEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPROPIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDLIGAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULLIKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPLANE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~RETCODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVEFUNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~20~ISOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~ARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDCELLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDINPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~PROPARC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HYDROGEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDHESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HESSIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDCART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~PROPIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGP_GC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIPOLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSYMOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~CELLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYCLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAD."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~ISOE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIST."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EIGEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~VOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTI"
+    CaseSensitive: false

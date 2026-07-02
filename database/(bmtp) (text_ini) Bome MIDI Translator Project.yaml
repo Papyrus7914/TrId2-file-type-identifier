@@ -1,0 +1,56 @@
+Name: Bome MIDI Translator Project
+URL: "https://www.bome.com/products/miditranslator"
+FileNameExtensions: ["bmtp"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Preset.0]\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACTV01STOP00OUTO00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESETSWITCHIGNORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTOUTPORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTINPORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCOMING0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTGOING0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESET.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDA000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A0000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAN"
+    CaseSensitive: false

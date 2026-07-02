@@ -1,0 +1,15 @@
+Name: Microsoft HTML Help Project (minimal)
+Description: Variant without index and content.
+URL: "http://www.help-info.de/en/Help_Info_HTMLHelp/hh.htm"
+FileNameExtensions: ["hhp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[OPTIONS]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false

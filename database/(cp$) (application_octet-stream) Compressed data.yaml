@@ -1,0 +1,11 @@
+Name: Compressed data
+Description: Used by some old 16-bit PC setup/installation tools.
+FileNameExtensions: ["cp$"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CP$ FILE "
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\r\n\x1A"
+    CaseSensitive: true

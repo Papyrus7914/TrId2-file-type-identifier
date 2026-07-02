@@ -1,0 +1,32 @@
+Name: OpenToonz Palette
+URL: "https://github.com/opentoonz/opentoonz"
+FileNameExtensions: ["tpl"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<palette "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STYLEPAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORTCUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR_0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

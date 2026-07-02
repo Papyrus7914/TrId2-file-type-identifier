@@ -1,0 +1,17 @@
+Name: Incredimail Letter creator project
+URL: "http://www.incredimail.com"
+FileNameExtensions: ["ltw"]
+MimeType: application/vnd.ms-cab-compressed
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".FLW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCF"
+    CaseSensitive: false

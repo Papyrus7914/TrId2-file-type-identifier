@@ -1,0 +1,8 @@
+Name: InstallShield Z archive
+URL: "http://fileformats.archiveteam.org/wiki/InstallShield_Z"
+FileNameExtensions: ["z"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              ]     e           :
+    Bytes: [0x13, 0x5D, 0x65, 0x8C, 0x3A, 0x01, 0x02, 0x00]

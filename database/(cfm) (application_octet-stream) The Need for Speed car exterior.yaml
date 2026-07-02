@@ -1,0 +1,32 @@
+Name: The Need for Speed car exterior
+URL: "https://en.wikipedia.org/wiki/The_Need_for_Speed"
+FileNameExtensions: ["cfm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "wwww\x04\0\0\0\x18\0\0\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "ORIP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P\0\0\0_TINY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NON-SORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRAP"
+    CaseSensitive: false

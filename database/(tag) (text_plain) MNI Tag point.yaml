@@ -1,0 +1,14 @@
+Name: MNI Tag point
+URL: "https://www.bic.mni.mcgill.ca/software/Display/Display.html"
+FileNameExtensions: ["tag"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MNI Tag Point File"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VOLUMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS"
+    CaseSensitive: false

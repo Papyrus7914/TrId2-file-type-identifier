@@ -1,0 +1,50 @@
+Name: MotionGen project
+URL: "https://motiongen.io/"
+FileNameExtensions: ["motiongen"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"name\":\"motiongen-pro\",\"version\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MEASUREMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGULARUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEARUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTUATORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYLINDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MECHANISM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,47 @@
+Name: Generic Printer Description - Unidrv minidriver
+Description: GPD files are used for creating Unidrv minidrivers. A Unidrv minidriver consists of a text-based generic printer description (GPD), which can be contained in one or more GPD files.
+URL: "http://msdn.microsoft.com"
+FileNameExtensions: ["gpd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*DEFAULTOPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*RESOURCEDLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*RCNAMEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*FEATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*OPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*PRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*CMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GPD"
+    CaseSensitive: false

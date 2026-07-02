@@ -1,0 +1,38 @@
+Name: A-ROBOTS tournament results
+Description: A-ROBOTS is a game for programmers by Nicola Marangon.
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Fighting RObots Tournament ADministrator v1.00 by N.Marangon\r\nCopyright (C) 1994 LED Soft Engineering. All rights reserved\r\n------------------------------------------------------------\r\n\r\nTournament Date & Time : "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "------------------------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1994 LED SOFT ENGINEERING. ALL RIGHTS RESERVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIGHTING ROBOTS TOURNAMENT ADMINISTRATOR V1.00 BY N.MARANGON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POS   ROBOT      POINTS   EFF.   WON  SUR.  AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL TIME ELAPSED SINCE BEGINNING OF TOURNAMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P A R T I A L   R E S U L T S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F I N A L   R E S U L T S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL ROUNDS PLAYED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOURNAMENT DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCHES X"
+    CaseSensitive: false

@@ -1,0 +1,41 @@
+Name: Tiled Tiles Map XML
+URL: "http://fileformats.archiveteam.org/wiki/Tiled_TMX"
+FileNameExtensions: ["tmx"]
+MimeType: application/x-tiled-tmx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TILESET FIRSTGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILEHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILEWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

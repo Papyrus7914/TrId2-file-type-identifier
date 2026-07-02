@@ -1,0 +1,122 @@
+Name: DRAKON Editor diagram
+URL: "https://en.wikipedia.org/wiki/DRAKON"
+FileNameExtensions: ["drn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATE INDEX ITEMS_PER_DIAGRAM ON ITEMS (DIAGRAM_ID)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_DIAGRAM_INFO_1DIAGRAM_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_DIAGRAMS_1DIAGRAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_INFO_1INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTABLEDIAGRAM_INFODIAGRAM_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAGRAM_ID INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UINDEXITEMS_PER_DIAGRAMITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM_ID INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE DIAGRAM_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARY KEY (DIAGRAM_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROW INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE DIAGRAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEDIAGRAMSDIAGRAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY TEXT PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT_DIA INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE ITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUX_VALUE INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME TEXT UNIQUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTED INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQLITE FORMAT 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEITEMSITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESTATESTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_VERSION1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEINFOINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOM DOUBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPEDRAKON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME)"
+    CaseSensitive: false

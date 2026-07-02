@@ -1,0 +1,83 @@
+Name: Leapster cartridge image
+URL: "https://en.wikipedia.org/wiki/Leapster"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 256
+    AsciiString: "Copyright LeapFrog     \0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IS CONTENT THAT EITHER IS CREATED BY LEAPFROG OR HAS RECEIVED FINAL APPROVAL UNDER CONTRACT WITH LEAPFROG.  LEAPFROG GRANTS YOU PERMISSION TO COPY THESE FIVE SENTENCES ONLY IF THIS CARTRIDGE CONTAINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_REGISTERCALLBACK\0DOCALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_FORCEGARBAGECOLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_BUTTON_VOLUME_DOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEAPSTER UNIV CART V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_GETBACKLIGHTLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_SETBACKLIGHTLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_BUTTON_VOLUME_UP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT LEAPFROG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_GETMASTERVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_SETBGMIDIVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_SETMASTERVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_SHOWMEMORYSTATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_INITEXTENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_SETIDLETIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_PLAYAUDIORAW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_SETLFCVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_STOPALLAUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_BUTTON_HINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_BUTTON_HOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_GETGAMETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_SHUTDOWNNOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_PAUSEFLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LF_PLAYBGMIDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT.XML"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: VisualBasic Form (v3.x)
+URL: "https://en.wikipedia.org/wiki/Visual_Basic"
+FileNameExtensions: ["frm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VERSION 2.00\r\nBegin Form "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION 2.00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALEHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALEWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKTOPIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false

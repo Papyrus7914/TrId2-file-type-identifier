@@ -1,0 +1,62 @@
+Name: Novell NetWare Namespace module
+URL: "https://en.wikipedia.org/wiki/NetWare"
+FileNameExtensions: ["nam"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NetWare Loadable Module\x1A\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 131
+    AsciiString: "Net"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NAME SPACE REMOVEFROMHASH FOUND INVALID HASH LIST."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME SPACE NAME...TOO LARGE OR SMALL.\0INVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME SPACE HAS A DUPLICATE NAME.\0ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME SPACE ROOT...HAS A NAME.\0INVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME SPACE NAME...INVALID CHARACTER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME SPACE COULD NOT FIND IT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME SPACE DIRECTORY TABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME SPACE ERROR ALLOCATING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME SPACE SUBDIRECTORY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETDELETEDFILEENTRYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTNAMESPACEADDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMESPACELOADEDVECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKNAMEIGNORELOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME SPACE SUPPORT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME SPACE ENTRY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME SPACE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NAM"
+    CaseSensitive: false

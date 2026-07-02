@@ -1,0 +1,11 @@
+Name: Flexible Image Transport System bitmap (gen)
+URL: "https://en.wikipedia.org/wiki/FITS"
+FileNameExtensions: ["fits", "fit", "fts", "fz"]
+MimeType: image/fits
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SIMPLE  = "
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "BITPIX  = "
+    CaseSensitive: true

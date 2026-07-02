@@ -1,0 +1,32 @@
+Name: Tierra genome (ASCII, v3)
+URL: "https://en.wikipedia.org/wiki/Tierra_(computer_simulation)"
+FileNameExtensions: ["tie"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\nformat: 3  bits:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PARENT GENOTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOP0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOP1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROT"
+    CaseSensitive: false

@@ -1,0 +1,31 @@
+Name: Marcel RTF document (v2.x)
+URL: "https://www.atariuptodate.de/en/282/marcel"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\\rtf1\\ansi {\\*\\marcel Marcel 2."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MARCEL MARCEL 2."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTER }"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER }"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANSI {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MNOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAR }"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTF1"
+    CaseSensitive: false

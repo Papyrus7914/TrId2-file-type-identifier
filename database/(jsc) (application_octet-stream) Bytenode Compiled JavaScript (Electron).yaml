@@ -1,0 +1,14 @@
+Name: Bytenode Compiled JavaScript (Electron)
+URL: "https://github.com/bytenode/bytenode"
+FileNameExtensions: ["jsc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                      m     <
+    Bytes: [0xEC, 0x05, 0xDE, 0xC0, 0x17, 0x6D, 0x3C, 0xA9]
+  - Pos: any
+    AsciiString: "EVALMACHINE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANONYMOUS"
+    CaseSensitive: false

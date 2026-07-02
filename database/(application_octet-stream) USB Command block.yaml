@@ -1,0 +1,10 @@
+Name: USB Command block
+URL: "https://www.disktuna.com/sudden-appearance-of-usbc-named-folder-and-files/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "USBC"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0"
+    CaseSensitive: true

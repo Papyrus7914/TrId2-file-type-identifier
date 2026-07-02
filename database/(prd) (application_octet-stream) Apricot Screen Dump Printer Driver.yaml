@@ -1,0 +1,13 @@
+Name: Apricot Screen Dump Printer Driver
+URL: "https://en.wikipedia.org/wiki/Apricot_Computers"
+FileNameExtensions: ["prd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEB]
+  - Pos: 2
+    AsciiString: "Apricot Writer "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APRICOT WRITER"
+    CaseSensitive: false

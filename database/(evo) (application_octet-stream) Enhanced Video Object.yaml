@@ -1,0 +1,10 @@
+Name: Enhanced Video Object
+URL: "http://en.wikipedia.org/wiki/Enhanced_VOB"
+FileNameExtensions: ["evo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x00, 0x01, 0xBA]
+  - Pos: 10
+    #                    C
+    Bytes: [0x04, 0x9D, 0x43, 0xF8, 0x00, 0x00, 0x01]

@@ -1,0 +1,11 @@
+Name: SafeGuard PrivateCrypto Encrypted
+URL: "http://www.utimaco.com/"
+FileNameExtensions: ["uti"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SafeGuard PrivateCrypto\r\nCopyright (C) 200"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: " Utimaco Safeware AG\r\n\r\nENCRYPTED FILE.\r\n\x1A"
+    CaseSensitive: true

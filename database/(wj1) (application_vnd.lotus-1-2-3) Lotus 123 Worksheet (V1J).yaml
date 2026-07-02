@@ -1,0 +1,9 @@
+Name: Lotus 123 Worksheet (V1J)
+Description: revision number 0600h for japan is stored at offset 4.
+URL: "http://fileformats.archiveteam.org/wiki/Lotus_1-2-3"
+FileNameExtensions: ["wj1"]
+MimeType: application/vnd.lotus-1-2-3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x02\0\0\x06\x06\0\b\0"
+    CaseSensitive: true

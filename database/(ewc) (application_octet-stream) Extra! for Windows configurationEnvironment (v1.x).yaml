@@ -1,0 +1,41 @@
+Name: Extra! for Windows configuration/Environment (v1.x)
+Description: Mainframe terminal client for Windows by Attachmate Corp.
+FileNameExtensions: ["ewc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n[Extra!Environment]\r\nVersion=V1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONNECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDDLAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LULAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADAPTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPUZ"
+    CaseSensitive: false

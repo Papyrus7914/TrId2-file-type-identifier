@@ -1,0 +1,47 @@
+Name: WaveZIP lossless compressed audio
+Description: WaveZIP used audio the MUSICompress(TM) compression technology from Soundspace Audio.
+URL: "http://web.archive.org/web/19990220172029/www.gadgetlabs.com/wavezip_frame.htm"
+FileNameExtensions: ["mcp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GLWZB004\xFF\xFFnameP\0\0\0"
+    CaseSensitive: true
+  - Pos: 19
+    #              1
+    Bytes: [0xA6, 0x31, 0x01]
+  - Pos: 113
+    AsciiString: "\0asis\x04\0\0\0WAVEasis\x18\0\0\0fmt \x10\0\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: 155
+    AsciiString: "\0\x10\0gfmt\f\0\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: 172
+    AsciiString: "\0\0\x10\0\xFF\0size\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 189
+    AsciiString: "\0indx"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GFMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLWZB004"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVEASIS"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: SynWrite Snippet
+URL: "http://www.uvviewsoft.com/synwrite"
+FileNameExtensions: ["synw-snippet"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "name="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

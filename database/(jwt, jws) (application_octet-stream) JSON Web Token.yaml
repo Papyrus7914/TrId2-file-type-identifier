@@ -1,0 +1,17 @@
+Name: JSON Web Token
+URL: "https://en.wikipedia.org/wiki/JSON_Web_Token"
+FileNameExtensions: ["jwt", "jws"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "eyJhbGciOiJ"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "Uz"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "IsInR5cCI6IkpXVC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ISINR5CCI6IKPXVC"
+    CaseSensitive: false

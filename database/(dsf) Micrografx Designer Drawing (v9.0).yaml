@@ -1,0 +1,15 @@
+Name: Micrografx Designer Drawing (v9.0)
+URL: "http://en.wikipedia.org/wiki/Micrografx_Designer"
+FileNameExtensions: ["dsf"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: any
+    AsciiString: "D\0E\0S\0I\0G\0N\0E\0R\0D\0O\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGNERDOC"
+    CaseSensitive: false

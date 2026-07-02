@@ -1,0 +1,52 @@
+Name: Flow Cytometry Standard format
+URL: "http://jcsmr.anu.edu.au/facslab/analysis.html"
+FileNameExtensions: ["fcs"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FCS2.0 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$NEXTDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$BYTEORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FCS2.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$P5R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CYT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$SYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$P5B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$P5N"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: MacBinary 2
+Description: MacBinary is a standard for encoding Macintosh files for file transfer. At position 1 length (1-63) of filename is stored, followed by name.
+URL: "https://en.wikipedia.org/wiki/MacBinary"
+FileNameExtensions: ["bin", "macbin"]
+MimeType: application/x-macbinary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 74
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 82
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 99
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 122
+    Bytes: [0x81]

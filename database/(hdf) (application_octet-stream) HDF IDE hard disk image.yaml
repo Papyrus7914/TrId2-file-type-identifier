@@ -1,0 +1,8 @@
+Name: HDF IDE hard disk image
+Description: A format by Ramsoft, used by the RealSpec and Fuse ZX Spectrum emulators.
+FileNameExtensions: ["hdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RS-IDE\x1A"
+    CaseSensitive: true

@@ -1,0 +1,56 @@
+Name: BSD disklabel
+URL: "https://en.wikipedia.org/wiki/BSD_disklabel"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# /dev/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRACK-TO-TRACK SEEK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8 PARTITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYLINDERSKEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSIZE BSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADSWITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERLEAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKSKEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK"
+    CaseSensitive: false

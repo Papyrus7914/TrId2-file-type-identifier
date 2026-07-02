@@ -1,0 +1,47 @@
+Name: 16bit EXE Bigtext text to Executable (generic, LZEXE)
+URL: "http://fileformats.archiveteam.org/wiki/Bigtext"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\x80\0\0\0\x0E\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1C\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*FAB*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERWRI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCH U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(S5B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4567"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G (P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUSC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RINT"
+    CaseSensitive: false

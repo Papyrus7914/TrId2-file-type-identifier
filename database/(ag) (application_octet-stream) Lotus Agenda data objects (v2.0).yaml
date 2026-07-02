@@ -1,0 +1,58 @@
+Name: Lotus Agenda data objects (v2.0)
+URL: "http://en.wikipedia.org/wiki/Lotus_Agenda"
+FileNameExtensions: ["ag"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "T\0"
+    CaseSensitive: true
+  - Pos: 43
+    Bytes: [0xAB]
+  - Pos: any
+    AsciiString: "CIRCULAR REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT ALARMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAST ALARMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVERAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINIMUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".STF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHEN"
+    CaseSensitive: false

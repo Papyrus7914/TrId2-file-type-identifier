@@ -1,0 +1,9 @@
+Name: Amiga Disk image File (OFS+DIRC)
+Description: Old/Original File System, Directory Cache.
+URL: "https://en.wikipedia.org/wiki/Amiga_Disk_File"
+FileNameExtensions: ["adf"]
+MimeType: application/x-amiga-disk-format
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DOS\x04"
+    CaseSensitive: true

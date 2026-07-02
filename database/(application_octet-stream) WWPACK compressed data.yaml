@@ -1,0 +1,11 @@
+Name: WWPACK compressed data
+Description: DOS compressor by Rafal Wierzbicki and Piotr Warezak.
+URL: "http://fileformats.archiveteam.org/wiki/WWPACK"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WWP\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PACK"
+    CaseSensitive: false

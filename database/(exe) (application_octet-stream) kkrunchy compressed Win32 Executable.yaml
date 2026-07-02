@@ -1,0 +1,24 @@
+Name: kkrunchy compressed Win32 Executable
+Description: Usually their demos come in this 'signed' EXEs!
+URL: "https://github.com/farbrausch/fr_public"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZfarbrauschPE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADLIBRARYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MZFARBRAUSCHPE\0\0L"
+    CaseSensitive: false

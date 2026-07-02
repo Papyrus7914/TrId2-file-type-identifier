@@ -1,0 +1,15 @@
+Name: Zipped Audio Book
+FileNameExtensions: ["zab"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 27
+    AsciiString: "\0\0\0Audiobook - "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUDIOBOOK -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MP3"
+    CaseSensitive: false

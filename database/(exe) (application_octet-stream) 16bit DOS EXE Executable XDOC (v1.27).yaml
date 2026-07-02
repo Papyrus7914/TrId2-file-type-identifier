@@ -1,0 +1,17 @@
+Name: 16bit DOS EXE Executable XDOC (v1.27)
+URL: "http://fileformats.archiveteam.org/wiki/XDOC_(JauMing_Tseng)"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x02\0\xFF\x0F\xFF\xFF\xF0\xFF\x1D\x02\xAE\x01\x04\x01\xF0\xFF\x1C\0\0\0xdoc\xB0\xFE\xE6d.\x8C\x16\x0E\x01\xEB\0\xEA(\x02\xFF\xFF\x01\x01\x01StackBuf->StackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBufStackBuf<-StackBuf\x01\xEB\x05\x90\xB4L\xCD!\xB4\v\xCD!\xE9\xE7\x1B"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STACKBUF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XDOC"
+    CaseSensitive: false

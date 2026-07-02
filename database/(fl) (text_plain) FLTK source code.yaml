@@ -1,0 +1,38 @@
+Name: FLTK source code
+URL: "https://en.wikipedia.org/wiki/FLUID"
+FileNameExtensions: ["fl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# data file for the Fltk User Interface Designer (fluid)"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CODE_NAME {.CXX}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER_NAME {.H}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNCTION {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION 1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FL_WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{} {"
+    CaseSensitive: false

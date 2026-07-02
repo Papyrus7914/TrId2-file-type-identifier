@@ -1,0 +1,10 @@
+Name: Trilo Tracker chiptune
+Description: An MSX tracker.
+URL: "http://trilobyte-msx.com/TriloTracker/index.php/Main_Page"
+FileNameExtensions: ["tmu"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x05]
+  - Pos: 68
+    Bytes: [0x00, 0x01]

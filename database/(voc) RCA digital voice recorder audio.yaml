@@ -1,0 +1,10 @@
+Name: RCA digital voice recorder audio
+URL: "http://www.cybercom.net/~dcoffin/rca/"
+FileNameExtensions: ["voc"]
+DetectionPatterns:
+  - Pos: 6
+    AsciiString: "_VOC_File"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_VOC_FILE"
+    CaseSensitive: false

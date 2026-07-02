@@ -1,0 +1,15 @@
+Name: SNSF Super Nintendo Sound Format rip (mini)
+Description: Contains ripped code + audio data.
+URL: "http://fileformats.archiveteam.org/wiki/SNSF"
+FileNameExtensions: ["minisnsf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSF#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SNSFLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LIB"
+    CaseSensitive: false

@@ -1,0 +1,49 @@
+Name: Windows Dial-Up Networking configuration
+FileNameExtensions: ["dun"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IP_HEADER_COMPRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GATEWAY_ON_REMOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEGOTIATE_TCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIFY_IP_A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SW_COMPRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTRY_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAL_AS_IS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AREA_CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: iOS Application
+URL: "https://en.wikipedia.org/wiki/IOS"
+FileNameExtensions: ["ipa"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "INFO.PLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAYLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKGINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".APP"
+    CaseSensitive: false

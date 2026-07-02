@@ -1,0 +1,53 @@
+Name: Windows Font resource (v2)
+Description: Without device name
+URL: "http://fileformats.archiveteam.org/wiki/FNT_(Windows_Font)"
+FileNameExtensions: ["fnt"]
+MimeType: font/x-ms-fnt
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x02]
+  - Pos: 4
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 67
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 69
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 73
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 75
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 77
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 79
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 87
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 89
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 92
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 94
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 101
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 107
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 115
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

@@ -1,0 +1,23 @@
+Name: Autodesk PowerMill Project index
+URL: "https://en.wikipedia.org/wiki/PowerMILL"
+FileNameExtensions: ["pmlprj"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 104
+    AsciiString: "0000000"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENTITY INDEX (DO NOT EDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PMLENT PMLENTWORKPLANE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PMLENT PMLENTTOOLPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PMLENT PMLENTLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PMLENT PMLENTMODEL"
+    CaseSensitive: false

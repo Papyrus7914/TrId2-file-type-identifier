@@ -1,0 +1,124 @@
+Name: TaxCut Tax Return file
+URL: "http://www.taxcut.com/"
+FileNameExtensions: ["t0*"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\b\0\0\0\x01"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\a"
+    CaseSensitive: true
+  - Pos: 8
+    #                          ;
+    Bytes: [0xFF, 0xC9, 0x9A, 0x3B]
+  - Pos: 14
+    AsciiString: "\0\0\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UI_PROP_LAST_STATE_TAB_RETURN_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_SHOW_HIDE_INTERVIEW_FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_INTERVIEW_STATUS_FORM_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_FILE_EFILE_WARNING_MSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_START_STATE_TAB_SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_INTERVIEW_START_STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_FILE_EFILE_ERROR_MSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_ERROR_CHECK_INVOKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_INTERVIEW_INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_PROP_AUDIT_WARNINGSUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_INTERVIEW_TOPIC_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_ERROR_CHECK_ERRORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_FILE_START_STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_PROP_AUDIT_ERRORSUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_FILE_RETURN_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_PLAN_START_STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_FORMS_WITH_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_LAST_ACTIVE_TAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_FILE_TOPIC_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_PLAN_INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_IMPORT_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_FILE_INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_PLAN_TOPIC_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_XIRA_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPIC_PATH_WELCOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT_TOPIC_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPIC_PATH_FEDERAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_LLY_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_FORM_COPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPIC_PATH_STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPIC_PATH_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPGATEWAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_PROP_GUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "\0STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UI_MEMO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "\0INT"
+    CaseSensitive: false

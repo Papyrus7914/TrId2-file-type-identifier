@@ -1,0 +1,68 @@
+Name: Quick Bible document
+URL: "http://blog.bibleforandroid.com/"
+FileNameExtensions: ["yes"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x98X\r\n\0]"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "versionInfo"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPRESSED_BLOCK_SIZES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION.VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION.INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSION.NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAPTER_OFFSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAPTER_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPPY-BLOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASPERICOPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSE_COUNTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOK_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKSINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALE"
+    CaseSensitive: false

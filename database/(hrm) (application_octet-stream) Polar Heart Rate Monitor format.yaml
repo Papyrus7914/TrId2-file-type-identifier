@@ -1,0 +1,74 @@
+Name: Polar Heart Rate Monitor format
+URL: "http://www.polar.com/"
+FileNameExtensions: ["hrm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Params]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACTIVELIMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTDELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONITOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HRDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWER1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWER2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOWER3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESTHR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMER1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMER2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMER3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPPER1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPPER2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPPER3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXHR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false

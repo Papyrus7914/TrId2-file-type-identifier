@@ -1,0 +1,11 @@
+Name: Somera Sound Format
+URL: "http://fileformats.archiveteam.org/wiki/Somera_Sound_Format"
+FileNameExtensions: ["ssf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "SoMERA SoUnD FORMAT "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOMERA SOUND FORMAT"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: 16bit DOS COM DS-COM Crypt protected (v1.31)
+Description: Encryptor by DaRk sTAlKeR.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xBA]
+  - Pos: any
+    AsciiString: "THIS PROGRAM REQUIRES A 386 OR HIGHER TO RUN."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}{YWUSQOMKIGECA_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSDOS"
+    CaseSensitive: false

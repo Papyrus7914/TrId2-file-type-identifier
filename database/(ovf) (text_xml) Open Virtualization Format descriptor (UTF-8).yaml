@@ -1,0 +1,158 @@
+Name: Open Virtualization Format descriptor (UTF-8)
+URL: "http://en.wikipedia.org/wiki/Open_Virtualization_Format"
+FileNameExtensions: ["ovf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CIM_RESOURCEALLOCATIONSETTINGDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUAL HARDWARE REQUIREMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIM_VIRTUALSYSTEMSETTINGDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUAL HARDWARE FAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF VIRTUAL CPUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATINGSYSTEMSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALHARDWARESECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOMATICALLOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A VIRTUAL MACHINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALSYSTEM OVF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALSYSTEMTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETHERNET ADAPTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGICAL NETWORKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.DMTF.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESSONPARENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOCATIONUNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCESUBTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALQUANTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORKSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MB OF MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUAL DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISKSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK OVF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIM-SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVELOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WSCIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WBEM"
+    CaseSensitive: false

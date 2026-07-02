@@ -1,0 +1,16 @@
+Name: Microsoft Money Backup file
+URL: "http://www.microsoft.com/money"
+FileNameExtensions: ["mbf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: " \0mbf"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".TMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCF"
+    CaseSensitive: false

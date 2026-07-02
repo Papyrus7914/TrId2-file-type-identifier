@@ -1,0 +1,26 @@
+Name: Metalink (v4)
+URL: "https://en.wikipedia.org/wiki/Metalink"
+FileNameExtensions: ["meta4"]
+MimeType: application/metalink4+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "METALINK XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IETF"
+    CaseSensitive: false

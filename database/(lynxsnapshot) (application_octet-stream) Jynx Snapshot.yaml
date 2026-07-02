@@ -1,0 +1,84 @@
+Name: Jynx Snapshot
+Description: Camputers Lynx emulator.
+URL: "http://emulation.gametechwiki.com/index.php/Jynx"
+FileNameExtensions: ["lynxsnapshot"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ">camputers_lynx"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LYNXALTGREENRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z80_INTENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z80_REMAINING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z80_TIMESLICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LYNXGREENRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z80_DEFERINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LYNXBLUERAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LYNXREDRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z80_HALTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANKPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LYNXRAM_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LYNXROM_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z80_AF1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z80_BC1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z80_DE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z80_HL1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MC6845"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z80_IM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z80_IX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z80_IY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z80_PC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z80_SP"
+    CaseSensitive: false

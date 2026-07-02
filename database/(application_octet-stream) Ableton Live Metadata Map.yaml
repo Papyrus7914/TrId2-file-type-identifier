@@ -1,0 +1,13 @@
+Name: Ableton Live Metadata Map
+URL: "https://en.wikipedia.org/wiki/Ableton_Live"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    V     x
+    Bytes: [0xAB, 0x1E, 0x56, 0x78]
+  - Pos: 10
+    AsciiString: "\vMetadataMap"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "METADATAMAP"
+    CaseSensitive: false

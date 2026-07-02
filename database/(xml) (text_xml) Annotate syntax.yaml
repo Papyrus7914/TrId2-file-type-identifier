@@ -1,0 +1,45 @@
+Name: Annotate syntax
+Description: Advanced text editor for AmigaOS 2.0+.
+URL: "https://www.onyxsoft.se/annotate.html"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?>\n<!DOCTYPE Ann-SyntaxHighlighting>\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE ANN-SYNTAXHIGHLIGHTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEPATTERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISO-8859-1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUALIFYING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOKENS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOEOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false

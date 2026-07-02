@@ -1,0 +1,8 @@
+Name: Scream Tracker/Digiplayer sample
+FileNameExtensions: ["s3i", "smp"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01]
+  - Pos: 76
+    AsciiString: "SCRS"
+    CaseSensitive: true

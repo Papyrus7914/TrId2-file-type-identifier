@@ -1,0 +1,23 @@
+Name: Vortex ATonce Configuration
+URL: "https://amiga.resource.cx/exp/atonce"
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Nu"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 496
+    AsciiString: "xt.device\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0scsi.device\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0alf.device"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCSI.DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALF.DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XT.DEVICE"
+    CaseSensitive: false

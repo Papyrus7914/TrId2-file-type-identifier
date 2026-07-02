@@ -1,0 +1,34 @@
+Name: GraphEdit Filter Graph Markup Language
+URL: "http://tinyurl.com/yxsy9p"
+FileNameExtensions: ["xgr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<GRAPH version=\"1.0\">\r\n\t<FILTER ID=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONNECT DIRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPH VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTPIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRCPIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

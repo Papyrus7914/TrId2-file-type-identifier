@@ -1,0 +1,13 @@
+Name: DDP Image Subcode Descriptor
+URL: "https://en.wikipedia.org/wiki/Disc_Description_Protocol"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VVVMS0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "PQ DESCR"
+    CaseSensitive: true
+  - Pos: 202
+    AsciiString: "IMAGE.DAT"
+    CaseSensitive: true

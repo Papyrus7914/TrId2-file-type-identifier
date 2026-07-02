@@ -1,0 +1,15 @@
+Name: MetaStream 3D object
+Description: Multi-res storage format for 3D models and textures.
+URL: "https://en.wikipedia.org/wiki/Viewpoint_Media_Player"
+FileNameExtensions: ["mts"]
+MimeType: application/metastream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "mts"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MTS"
+    CaseSensitive: false

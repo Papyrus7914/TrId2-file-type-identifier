@@ -1,0 +1,17 @@
+Name: ChiWriter high resolution screen font
+Description: ChiWriter is a scientific multifont word processor.
+URL: "http://www.xs4all.nl/~jvde/prof/v4pack.htm"
+FileNameExtensions: ["eft"]
+DetectionPatterns:
+  - Pos: 13
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\b\x10\0\b\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".EFT"
+    CaseSensitive: false

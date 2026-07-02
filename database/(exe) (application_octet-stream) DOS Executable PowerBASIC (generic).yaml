@@ -1,0 +1,112 @@
+Name: DOS Executable PowerBASIC (generic)
+URL: "https://en.wikipedia.org/wiki/PowerBASIC"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 11
+    Bytes: [0x00, 0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\x80\0\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1C\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$NO 8087$PROGRAM TOO BIG$NO 80286"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES FREERANDOM NUMBER SEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "87\0CGASNOWCHK\0HERC\0VGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "333DDKJ5FDG3H3HHH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR AT PGM-CTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XWPMKHDCBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0ZSOMEN8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMSPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HH9333"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PQRVWU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3K5LC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "80386"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BHOQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQWU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQRVW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KYBD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPT2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPT3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPQR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T4R3"
+    CaseSensitive: false

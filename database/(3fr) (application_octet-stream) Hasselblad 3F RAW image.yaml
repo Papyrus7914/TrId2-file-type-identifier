@@ -1,0 +1,17 @@
+Name: Hasselblad 3F RAW image
+URL: "http://fileformats.archiveteam.org/wiki/Hasselblad_3FR"
+FileNameExtensions: ["3fr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II*\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XMPMETA XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASSELBLAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOBE"
+    CaseSensitive: false

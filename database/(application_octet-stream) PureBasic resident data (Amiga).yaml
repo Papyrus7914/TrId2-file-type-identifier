@@ -1,0 +1,13 @@
+Name: PureBasic resident data (Amiga)
+URL: "https://en.wikipedia.org/wiki/PureBasic"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PURE\0\0\0\0RES"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "SRCT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SRCT"
+    CaseSensitive: false

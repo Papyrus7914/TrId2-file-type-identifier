@@ -1,0 +1,16 @@
+Name: UCSC BED Annotation Track
+URL: "http://genome.ucsc.edu/FAQ/FAQformat.html#format1"
+FileNameExtensions: ["bed"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "browser position chr"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: 1dir+ data (generic)
+Description: Extension is usually 1D*
+URL: "https://www.gerritspeek.nl/computer/pc_mp_filemanagers.html#1dir"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "1dir+ "
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 9
+    Bytes: [0x1A]

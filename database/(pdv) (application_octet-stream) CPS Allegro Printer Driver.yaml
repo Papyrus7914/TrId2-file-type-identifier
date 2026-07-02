@@ -1,0 +1,44 @@
+Name: CPS Allegro Printer Driver
+Description: DOS music sequencer.
+FileNameExtensions: ["pdv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PDV Druckertreiber (C) 1992 CPS, Hamburg.\0"
+    CaseSensitive: true
+  - Pos: 69
+    AsciiString: "\x01OLP\0"
+    CaseSensitive: true
+  - Pos: 111
+    AsciiString: "(C) "
+    CaseSensitive: true
+  - Pos: 119
+    AsciiString: " CPS, Hamburg\0"
+    CaseSensitive: true
+  - Pos: 152
+    AsciiString: "Treiber Release "
+    CaseSensitive: true
+  - Pos: 478
+    AsciiString: " DpI\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PDV DRUCKERTREIBER (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREIBER RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DARD-EINZUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INZELBLATT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAMBURG."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDLOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDA"
+    CaseSensitive: false

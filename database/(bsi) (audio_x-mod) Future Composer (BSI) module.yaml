@@ -1,0 +1,11 @@
+Name: Future Composer (BSI) module
+URL: "http://fileformats.archiveteam.org/wiki/Future_Composer_(BSI)_module"
+FileNameExtensions: ["bsi"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FUCO"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIGI"
+    CaseSensitive: false

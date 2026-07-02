@@ -1,0 +1,32 @@
+Name: TSPLIB Hamiltonian Cycle Problem data
+URL: "http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/tsp95.pdf"
+FileNameExtensions: ["hcp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NAME"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HAMILTONIAN CYCLE PROBLEM (ERBACCI)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGE_DATA_SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGE_DATA_FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGE_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EOF"
+    CaseSensitive: false

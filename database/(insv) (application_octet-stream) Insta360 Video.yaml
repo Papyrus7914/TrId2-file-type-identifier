@@ -1,0 +1,11 @@
+Name: Insta360 Video
+URL: "https://en.wikipedia.org/wiki/Insta360"
+FileNameExtensions: ["insv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0 ftypavc1\0\0\0\0avc1isom\0\0\0\0\0\0\0\0\0\0\0\x01mdat\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 52
+    #        e
+    Bytes: [0x65, 0xB8, 0x01, 0x00, 0x01]

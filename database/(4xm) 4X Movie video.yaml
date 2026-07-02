@@ -1,0 +1,11 @@
+Name: 4X Movie video
+Description: 4X Technologies's multimedia file format
+URL: "http://www.pcisys.net/~melanson/codecs/4xm-format.txt"
+FileNameExtensions: ["4xm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "4XMVLIST"
+    CaseSensitive: true

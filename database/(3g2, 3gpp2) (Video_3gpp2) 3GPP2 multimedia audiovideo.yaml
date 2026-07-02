@@ -1,0 +1,78 @@
+Name: 3GPP2 multimedia audio/video
+Description: 3GPP-3GPP2 is a global standards for the creation, delivery and playback of multimedia over 3rd generation, wireless networks, cell phones, etc.
+URL: "https://en.wikipedia.org/wiki/3GP_and_3G2"
+FileNameExtensions: ["3g2", "3gpp2"]
+MimeType: Video/3gpp2
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "ftyp3g2"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "3g2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SMHD\0\0\0\0\0\0\0\0\0\0\0$DINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDLR\0\0\0\0\0\0\0\0SOUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDLR\0\0\0\0\0\0\0\0VIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDIA\0\0\0 MDHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOOV\0\0\0LMVHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTYP3G2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0\0\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STCO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STSZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMHD"
+    CaseSensitive: false

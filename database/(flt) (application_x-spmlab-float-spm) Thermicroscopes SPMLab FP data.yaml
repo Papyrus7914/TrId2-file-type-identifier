@@ -1,0 +1,20 @@
+Name: Thermicroscopes SPMLab FP data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/spmlabf.c"
+FileNameExtensions: ["flt"]
+MimeType: application/x-spmlab-float-spm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Data Version]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPMLAB"
+    CaseSensitive: false

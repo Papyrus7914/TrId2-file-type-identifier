@@ -1,0 +1,65 @@
+Name: DBC Communication Database for CAN (with rem)
+URL: "http://socialledge.com/sjsu/index.php/DBC_Format#DBC_Example"
+FileNameExtensions: ["dbc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CM_ "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIGTYPE_VALTYPE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BA_DEF_SGTYPE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIG_TYPE_REF_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVVAR_DATA_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIG_VALTYPE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BA_DEF_DEF_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SGTYPE_VAL_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BA_SGTYPE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIG_GROUP_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VAL_TABLE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAT_DEF_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EV_DATA_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NS_DESC_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A_RE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G_RE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_REL"
+    CaseSensitive: false

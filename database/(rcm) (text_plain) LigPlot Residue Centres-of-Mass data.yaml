@@ -1,0 +1,20 @@
+Name: LigPlot Residue Centres-of-Mass data
+URL: "https://www.ebi.ac.uk/thornton-srv/software/LIGPLOT/manual/manappb.html"
+FileNameExtensions: ["rcm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "                 Res.  Res       Flattened"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "---- --- -----    ----------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOM NAME  NUM      COORDINATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESDUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COFM"
+    CaseSensitive: false

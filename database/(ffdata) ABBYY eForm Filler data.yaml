@@ -1,0 +1,49 @@
+Name: ABBYY eForm Filler data
+URL: "http://www.abbyy.com/company/"
+FileNameExtensions: ["ffdata"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAGE PAGEDEFNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDBYLOGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM FORMDEFID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFDATA VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDS COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDBYAPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGENUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMFILLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABBYY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

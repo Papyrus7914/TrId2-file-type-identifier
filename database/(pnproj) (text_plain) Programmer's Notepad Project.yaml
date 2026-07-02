@@ -1,0 +1,14 @@
+Name: Programmer's Notepad Project
+URL: "https://en.wikipedia.org/wiki/Programmer%27s_Notepad"
+FileNameExtensions: ["pnproj"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Project name=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAKEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE PATH"
+    CaseSensitive: false

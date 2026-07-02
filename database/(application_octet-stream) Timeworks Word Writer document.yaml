@@ -1,0 +1,17 @@
+Name: Timeworks Word Writer document
+Description: Part of the Timeworks DOS Office suite.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    Bytes: [0xDD]
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\0\0\0\0\0\0DPDN\x01\0\xFENN"
+    CaseSensitive: true
+  - Pos: 44
+    Bytes: [0xFE]
+  - Pos: 52
+    AsciiString: "         "
+    CaseSensitive: true

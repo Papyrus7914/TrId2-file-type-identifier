@@ -1,0 +1,23 @@
+Name: IFF YUVN bitmap
+URL: "http://lclevy.free.fr/amiga/YUVN.txt"
+FileNameExtensions: ["yuvn", "iff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FROM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "YUVN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YCHD"
+    CaseSensitive: false

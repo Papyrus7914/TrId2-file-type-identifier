@@ -1,0 +1,11 @@
+Name: EverQuest Game data
+URL: "https://en.wikipedia.org/wiki/EverQuest"
+FileNameExtensions: ["eqg", "pak", "pfs", "s3d"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "PFS "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STEVE"
+    CaseSensitive: false

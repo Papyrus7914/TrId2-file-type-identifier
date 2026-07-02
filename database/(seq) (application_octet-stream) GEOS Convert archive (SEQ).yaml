@@ -1,0 +1,13 @@
+Name: GEOS Convert archive (SEQ)
+URL: "http://fileformats.archiveteam.org/wiki/GEOS_Convert"
+FileNameExtensions: ["seq"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xC3]
+  - Pos: 29
+    AsciiString: "\0SEQ formatted GEOS file V1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SEQ FORMATTED GEOS FILE V1."
+    CaseSensitive: false

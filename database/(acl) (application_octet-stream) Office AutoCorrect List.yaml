@@ -1,0 +1,10 @@
+Name: Office AutoCorrect List
+URL: "https://en.wikipedia.org/wiki/Microsoft_Office"
+FileNameExtensions: ["acl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x04, 0x00, 0x96, 0x00]
+  - Pos: 17
+    AsciiString: "\0\0\0\x03\0(\0c\0)\0\0\0\x01\0\xA9\0\0\0\x03\0(\0r\0)\0\0\0\x01\0\xAE\0\0\0\x04\0(\0t\0m\0)\0\0\0\x01\0\"!"
+    CaseSensitive: true

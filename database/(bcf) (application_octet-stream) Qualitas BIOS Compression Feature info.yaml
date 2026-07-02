@@ -1,0 +1,20 @@
+Name: Qualitas BIOS Compression Feature info
+URL: "https://en.wikipedia.org/wiki/386MAX"
+FileNameExtensions: ["bcf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "^\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 89
+    AsciiString: "\0"
+    CaseSensitive: true

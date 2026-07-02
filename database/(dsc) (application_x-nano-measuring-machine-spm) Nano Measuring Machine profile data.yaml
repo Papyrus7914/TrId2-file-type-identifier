@@ -1,0 +1,17 @@
+Name: Nano Measuring Machine profile data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/nmmxyz.c"
+FileNameExtensions: ["dsc"]
+MimeType: application/x-nano-measuring-machine-spm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "------------------------------------------"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "Scan procedure description file"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAN PROCEDURE DESCRIPTION FILE"
+    CaseSensitive: false

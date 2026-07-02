@@ -1,0 +1,29 @@
+Name: BootX bootblock Recognition data
+Description: Amiga virus killer by Peter Stuer.
+FileNameExtensions: ["recog"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "BXRCBFHD"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "FVER\0\0\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "$VER: BootX_Recog 1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOOTX_RECOG 1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BXRCBFHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FVER"
+    CaseSensitive: false

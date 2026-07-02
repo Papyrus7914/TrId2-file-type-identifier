@@ -1,0 +1,11 @@
+Name: WordPerfect Document (generic)
+URL: "https://en.wikipedia.org/wiki/WordPerfect"
+FileNameExtensions: ["wpd"]
+MimeType: application/vnd.wordperfect
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFWPC"
+    CaseSensitive: true
+  - Pos: 8
+    #              \n
+    Bytes: [0x01, 0x0A]

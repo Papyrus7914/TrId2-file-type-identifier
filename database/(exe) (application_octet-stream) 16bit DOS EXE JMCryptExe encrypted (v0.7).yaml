@@ -1,0 +1,110 @@
+Name: 16bit DOS EXE JMCryptExe encrypted (v0.7)
+Description: Encrytor by JauMing Tseng.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 16
+    #                    E     x
+    Bytes: [0xFC, 0x01, 0x45, 0x78, 0x00, 0x01]
+  - Pos: 24
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0encr"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MM      .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.       .MMMMMMMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM       MMMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMC      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMMMMMMM.MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MM     MMMMMMMM  MMMMMMMMMMMMMMMMM  MMMMMMMMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M MM      MMMMMM  MMMMMMMMMMMMMMMMM  MMMMMM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMM.                               MMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".M        .MMMMMMMMMMMMMMMMMMMMMMMMMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".M                .MMMMMMMMMMMMMMMM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M          .MMMMMMMMMMMMMMMMMMMMMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMMMMMMMMMMMM.MMMMM.MMMMMMMMMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".J.JJJJ.       .MMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMMM      MMMMMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMMMMMJJJJJJJJJJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMM       MMMMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JJJM   CMMMMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MM.  MM MM .M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMMM..MMMMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JJJJJ JJJJJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MMM   ..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JJJ .MMMMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MM  MM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JJMMMMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M-M-M-M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M MM M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSU7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FSU9"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M.M."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T0Q."
+    CaseSensitive: false

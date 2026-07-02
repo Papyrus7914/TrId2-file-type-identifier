@@ -1,0 +1,49 @@
+Name: Signed Custom Capability Descriptor
+FileNameExtensions: ["sccd"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<CustomCapabilityDescriptor xmlns=\"http://schemas.microsoft.com/appx/2016/sccd\" xmlns:s=\"http://schemas.microsoft.com/appx/2016/sccd\">\r\n\t<CustomCapabilities>\r\n\t\t<CustomCapability Name=\"Microsoft."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUTHORIZEDENTITY APPPACKAGEFAMILYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMCAPABILITYDESCRIPTOR XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CERTIFICATESIGNATUREHASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMCAPABILITY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHORIZEDENTITIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMCAPABILITIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2016"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DWEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCCD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABL"
+    CaseSensitive: false

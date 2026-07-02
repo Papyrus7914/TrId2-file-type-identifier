@@ -1,0 +1,50 @@
+Name: GL Transmission Format (v2.0)
+URL: "https://registry.khronos.org/glTF/specs/2.0/glTF-2.0.html"
+FileNameExtensions: ["gltf"]
+MimeType: model/gltf+json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPONENTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUFFERVIEWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTELENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMITIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCESSORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUFFERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VEC3"
+    CaseSensitive: false

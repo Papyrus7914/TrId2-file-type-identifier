@@ -1,0 +1,17 @@
+Name: AnFX Project
+URL: "http://fileformats.archiveteam.org/wiki/AnFX_Java_Movie"
+FileNameExtensions: ["afd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          Q
+    Bytes: [0xCA, 0xFE, 0xDE, 0x51]
+  - Pos: any
+    AsciiString: "COMMON BACKGROUND LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMON FORGROUND LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN LAYER"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Nintendo Switch Submission Package
+URL: "https://switchbrew.org/wiki/Glossary"
+FileNameExtensions: ["nsp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PFS0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".CNMT.NCA"
+    CaseSensitive: false

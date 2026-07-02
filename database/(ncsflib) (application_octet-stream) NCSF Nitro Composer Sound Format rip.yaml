@@ -1,0 +1,12 @@
+Name: NCSF Nitro Composer Sound Format rip
+Description: Contains ripped code + audio data.
+URL: "http://www.cyberbotx.com/NCSF/"
+FileNameExtensions: ["ncsflib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSF%"
+    CaseSensitive: true
+  - Pos: 16
+    #        x
+    Bytes: [0x78, 0xDA, 0xEC, 0xBD]

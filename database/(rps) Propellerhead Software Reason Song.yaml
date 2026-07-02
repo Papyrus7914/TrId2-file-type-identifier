@@ -1,0 +1,19 @@
+Name: Propellerhead Software Reason Song
+URL: "http://www.propellerheads.se/"
+FileNameExtensions: ["rps"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "R"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "CAT \0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "WWWIFORM\0\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "WWWIWWID\0\0\0\x15\xBC\x01\0\0\0\0\0\0\0\vWINDOWTITLE\0BODY\0\0\0"
+    CaseSensitive: true

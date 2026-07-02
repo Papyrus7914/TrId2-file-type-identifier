@@ -1,0 +1,14 @@
+Name: TAG font
+URL: "http://fileformats.archiveteam.org/wiki/TAG"
+FileNameExtensions: ["24", "40", "9"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0TAG\xC8D"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "czcionka TAG/TIG 2.00"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CZCIONKA TAG"
+    CaseSensitive: false

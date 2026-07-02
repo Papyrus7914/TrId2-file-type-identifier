@@ -1,0 +1,62 @@
+Name: Caddie Catalog
+URL: "https://en.wikipedia.org/wiki/Caddie_(CAD_system)"
+FileNameExtensions: ["atc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Catalog Format=\"1.0\" Version=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TIME CREATEDUNIVERSALDATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATALOGUECREATOR CREATORNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFIEDUNIVERSALDATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSOCIATED COMMANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVEPALETTEINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTE IDVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE ICONSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMID IDVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES OPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOL IDVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLS"
+    CaseSensitive: false

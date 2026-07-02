@@ -1,0 +1,47 @@
+Name: Advanced Renamer method
+URL: "http://www.advancedrenamer.com/"
+FileNameExtensions: ["aren"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[header]\r\ntype="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPLICATION_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADVANCED RENAMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMECOLLISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METHODNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEPARATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLYTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METHOD0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METHODS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATTERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

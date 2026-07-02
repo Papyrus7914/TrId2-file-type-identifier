@@ -1,0 +1,74 @@
+Name: ANTEX Antenna Exchange Format
+URL: "https://kb.igs.org/hc/en-us/articles/216104678-ANTEX-format-description"
+FileNameExtensions: ["atx"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "     1."
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "            "
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "                                       ANTEX VERSION / SYST"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "START OF FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF ANTENNA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OF FREQUENCIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANTEX VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIAL NO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCV TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOAZI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAZI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DZEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZEN1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZEN2"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: Kaspersky Lab application Information
+URL: "https://en.wikipedia.org/wiki/Kaspersky_Lab"
+FileNameExtensions: ["kli"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KLsw0\0\r\nApplication Id: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KASPERSKY LAB APPLICATION INFO FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KASPERSKY ANTI-VIRUS FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0XLSZNPDI71FB300E7UWJ1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE VERSION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KLSW0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IABK"
+    CaseSensitive: false

@@ -1,0 +1,49 @@
+Name: PIM Backup
+FileNameExtensions: ["pib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SPEEDDIALS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTACTS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOM_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PBAPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PBCPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PBDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PBLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PBMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PBTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PBXPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPTS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOGS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASKS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSGS_"
+    CaseSensitive: false

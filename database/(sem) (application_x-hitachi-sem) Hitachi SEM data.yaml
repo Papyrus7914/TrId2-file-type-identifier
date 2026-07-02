@@ -1,0 +1,128 @@
+Name: Hitachi SEM data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/hitachi-sem.c"
+FileNameExtensions: ["sem"]
+MimeType: application/x-hitachi-sem
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[SemImageFile]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CALIBRATIONSCANSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCELERATINGVOLTAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECELERATIONVOLTAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATADISPLAYCOMBINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBMAGNIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMISSIONCURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKINGDISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAGEPOSITIONR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAGEPOSITIONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAGEPOSITIONX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAGEPOSITIONY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAGEPOSITIONZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSIGNALNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORPALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTRUCTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICRONMARKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIALNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIMENBIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATANUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONDENCER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAYSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHOTOSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAGETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYWORD1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VACUUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VACC"
+    CaseSensitive: false

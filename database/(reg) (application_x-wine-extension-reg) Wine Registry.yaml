@@ -1,0 +1,9 @@
+Name: Wine Registry
+Description: Wine use text based registry (system.reg, user.reg, userdef.reg) instead hive structure like Windows.
+URL: "https://wiki.winehq.org/Wine_User%27s_Guide"
+FileNameExtensions: ["reg"]
+MimeType: application/x-wine-extension-reg
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WINE REGISTRY Version "
+    CaseSensitive: true

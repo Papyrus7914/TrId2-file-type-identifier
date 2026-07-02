@@ -1,0 +1,13 @@
+Name: WiNGs OS executable
+URL: "http://wingsos.org"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x02\bJos\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBC"
+    CaseSensitive: false

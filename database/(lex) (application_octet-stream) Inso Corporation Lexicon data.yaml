@@ -1,0 +1,53 @@
+Name: Inso Corporation Lexicon data
+Description: Used for spell-checking, grammar correction, or hyphenation in 1990s software.
+FileNameExtensions: ["lex"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "C"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: " (c) "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS WORK IS PROTECTED BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSO CORPORATION A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSO CORPORATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT LAWS A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISCLOSURE O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFORMATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRADE SECRET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROHIBITED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ED BY THE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSEE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGLISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ICS"
+    CaseSensitive: false

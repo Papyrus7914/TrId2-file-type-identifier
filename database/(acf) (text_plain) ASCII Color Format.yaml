@@ -1,0 +1,48 @@
+Name: ASCII Color Format
+Description: Adobe/Aldus color format.
+URL: "http://www.selapa.net/swatches/colors/fileformats.php#adobe_acf"
+FileNameExtensions: ["acf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ACF 1.0\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LIBRARYVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFERREDMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABOUTMESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUFFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

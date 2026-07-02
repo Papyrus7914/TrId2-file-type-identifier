@@ -1,0 +1,14 @@
+Name: BatMenu configuration
+Description: DOS utility by Warren Small.
+FileNameExtensions: ["mnu"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ":menu\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END_MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION"
+    CaseSensitive: false

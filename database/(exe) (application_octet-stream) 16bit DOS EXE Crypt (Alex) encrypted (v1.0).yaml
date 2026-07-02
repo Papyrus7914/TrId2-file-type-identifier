@@ -1,0 +1,23 @@
+Name: 16bit DOS EXE Crypt (Alex) encrypted (v1.0)
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 14
+    Bytes: [0xF0, 0xFF, 0xFE, 0xFF]
+  - Pos: 22
+    Bytes: [0xF0, 0xFF]
+  - Pos: 25
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CRYPT VERSION 1.0 (C) ALEX 1999"
+    CaseSensitive: false

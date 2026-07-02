@@ -1,0 +1,29 @@
+Name: Cisco IP Phone Image bitmap
+URL: "http://fileformats.archiveteam.org/wiki/Cisco_IP_Phone_image"
+FileNameExtensions: ["cip"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<CiscoIPPhoneImage>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOCATIONX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATIONY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

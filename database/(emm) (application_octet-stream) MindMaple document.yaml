@@ -1,0 +1,41 @@
+Name: MindMaple document
+URL: "https://en.wikipedia.org/wiki/MindMaple"
+FileNameExtensions: ["emm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PRESENTSHAPE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPMASTER1.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT0001."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP1.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP.XMLU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCPROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPS"
+    CaseSensitive: false

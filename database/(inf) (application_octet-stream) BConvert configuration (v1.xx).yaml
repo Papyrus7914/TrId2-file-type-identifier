@@ -1,0 +1,11 @@
+Name: BConvert configuration (v1.xx)
+Description: BConvert, or BIG-Convert, is an Atari ST graphic conversions program by Andreas Bath.
+FileNameExtensions: ["inf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BigConvert 1"
+    CaseSensitive: true
+  - Pos: 213
+    AsciiString: ":\\"
+    CaseSensitive: true

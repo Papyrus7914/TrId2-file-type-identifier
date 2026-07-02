@@ -1,0 +1,32 @@
+Name: DLNA Media Server Index Database (CSV)
+URL: "https://en.wikipedia.org/wiki/DLNA"
+FileNameExtensions: ["csp"]
+MimeType: text/csv
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DLNA INDEXATION DATABASE\n========================\nVersion: 2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATABASE CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DLNA.ORG_OP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISKPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP-GET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEV-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM"
+    CaseSensitive: false

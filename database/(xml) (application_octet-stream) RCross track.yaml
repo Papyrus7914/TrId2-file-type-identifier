@@ -1,0 +1,35 @@
+Name: RCross track
+URL: "https://www.franticware.com/rcross"
+FileNameExtensions: ["xml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RCROSS_TRACK VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GATE COORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIRCUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMULA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURF ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLL"
+    CaseSensitive: false

@@ -1,0 +1,35 @@
+Name: Opticks Surface
+Description: Amiga ray-trace Software.
+FileNameExtensions: ["srf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\nSURFACEATTRIBUTEv1.0\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILTERTRANSMITTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECULARREFLECTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFUSEREFLECTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRESNELREFLECTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECULARPOWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COEFFICIENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVELENGTHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DITHERING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIANT"
+    CaseSensitive: false

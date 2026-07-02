@@ -1,0 +1,32 @@
+Name: SoMachine Basic Project (crypted)
+URL: "https://www.se.com/"
+FileNameExtensions: ["smbp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<CryptedProject xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\n  <ProjectVersion>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CRYPTEDPROJECT XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANYINFORMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTINFORMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERINFORMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

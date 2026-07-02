@@ -1,0 +1,35 @@
+Name: Adobe Apollo Rich Internet Application (obsolete)
+Description: Old version of what become Adobe Integrated Runtime. Deprecated.
+URL: "http://labs.adobe.com/technologies/apollo/"
+FileNameExtensions: ["air"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 5
+    AsciiString: "\0\0\0\0\0\0\0\0\0\xE1\xC0Ib>\0\0\0>\0\0\0\b\0\0\0mimetypeapplication/vnd.adobe.apollo-application-installer-package+zipPK\x03\x04"
+    CaseSensitive: true
+  - Pos: 130
+    AsciiString: "META-INF/AIR/application.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.ADOBE.APOLLO-APPLICATION-INSTALLER-PACKAGE+ZIPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0\0\0META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASHPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNGPK"
+    CaseSensitive: false

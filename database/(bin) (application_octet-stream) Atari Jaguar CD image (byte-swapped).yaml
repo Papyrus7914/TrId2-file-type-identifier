@@ -1,0 +1,14 @@
+Name: Atari Jaguar CD image (byte-swapped)
+URL: "https://en.wikipedia.org/wiki/Atari_Jaguar"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "TAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTARA IPARPVODED TA AEHDAREA RT I"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTARA IPARPVODED TA AEHDAREA RT I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REA RT ITAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIRTAIR"
+    CaseSensitive: false

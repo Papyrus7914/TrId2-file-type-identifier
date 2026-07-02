@@ -1,0 +1,27 @@
+Name: Bagpipe notation
+FileNameExtensions: ["bww"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Bagpipe "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTRUMENTMAPPINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRACENOTEDURATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQUENCYMAPPINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDINOTEMAPPINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUNEFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUNETEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTSIZES"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: RealCADD script
+Description: RealCADD is a multiplaform 2D Computer Assisted Drawing program.
+URL: "http://www.realcadd.com/"
+FileNameExtensions: ["txt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RCAD script\r\n"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\r\n"
+    CaseSensitive: true

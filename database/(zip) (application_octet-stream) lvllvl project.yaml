@@ -1,0 +1,101 @@
+Name: lvllvl project
+URL: "https://lvllvl.com/"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 12
+    #              V
+    Bytes: [0xAB, 0x56]
+  - Pos: 30
+    AsciiString: "color palettes/PK\x03\x04"
+    CaseSensitive: true
+  - Pos: 57
+    #              V
+    Bytes: [0xAB, 0x56]
+  - Pos: 75
+    AsciiString: "color palettes/C64.json"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASSEMBLER.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLER.JSON-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLER.JSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR PALETTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACROS.ASMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACROS.ASM}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN.JSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C64.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN.ASMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3D SCENES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN.ASMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILE SETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C64.JSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRITES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QXCUFR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUSIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W5$TM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XUG+S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "6C Z"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAHK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LZR5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O0S*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VHE3"
+    CaseSensitive: false

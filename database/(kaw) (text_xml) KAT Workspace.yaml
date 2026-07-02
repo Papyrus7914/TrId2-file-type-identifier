@@ -1,0 +1,20 @@
+Name: KAT Workspace
+URL: "https://docs.unrealengine.com/udk/Two/rsrc/Two/KarmaAuthoringTool/KAT_User_Guide_prebeta_0_2.pdf"
+FileNameExtensions: ["kaw"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KAT_WORKSPACE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

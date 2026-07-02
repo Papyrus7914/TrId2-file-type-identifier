@@ -1,0 +1,10 @@
+Name: Nintendo DS Sound Wave
+FileNameExtensions: ["swav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SWAV\xFF\xFE\0\x01"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "DATA"
+    CaseSensitive: true

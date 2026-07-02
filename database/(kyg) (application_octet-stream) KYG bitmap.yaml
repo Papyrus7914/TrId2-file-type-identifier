@@ -1,0 +1,11 @@
+Name: KYG bitmap
+URL: "http://fileformats.archiveteam.org/wiki/KYG"
+FileNameExtensions: ["kyg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KYGformat ver."
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "."
+    CaseSensitive: true

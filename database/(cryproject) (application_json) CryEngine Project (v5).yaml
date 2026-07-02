@@ -1,0 +1,35 @@
+Name: CryEngine Project (v5)
+URL: "https://en.wikipedia.org/wiki/CryEngine"
+FileNameExtensions: ["cryproject"]
+MimeType: application/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CRYENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGINE-5."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

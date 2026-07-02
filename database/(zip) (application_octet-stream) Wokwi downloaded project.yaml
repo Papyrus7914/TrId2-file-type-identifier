@@ -1,0 +1,65 @@
+Name: Wokwi downloaded project
+URL: "https://wokwi.com/"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "wokwi-project.txtDownloaded from https://wokwi.com/projects/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WOKWI-PROJECT.TXTDOWNLOADED FROM HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMULATE THIS PROJECT ON HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WOKWI-PROJECT.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAGRAM.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOID SETUP() {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAGRAM.JSON{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOID LOOP() {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WOKWI.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INOPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

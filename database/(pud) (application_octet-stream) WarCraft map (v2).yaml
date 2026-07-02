@@ -1,0 +1,14 @@
+Name: WarCraft map (v2)
+URL: "https://en.wikipedia.org/wiki/Warcraft"
+FileNameExtensions: ["pud"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TYPE\x10\0\0\0WAR2 MAP"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "VER "
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "DESC"
+    CaseSensitive: true

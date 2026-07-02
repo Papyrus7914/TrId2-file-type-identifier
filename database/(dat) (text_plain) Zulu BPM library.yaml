@@ -1,0 +1,32 @@
+Name: Zulu BPM library
+URL: "https://www.nch.com.au/dj/index.html"
+FileNameExtensions: ["dat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FILEPATH="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "USER_MODIFIED_VOLUMEGAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER_VOLUMEGAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER_MODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUMEGAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER_BPM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false

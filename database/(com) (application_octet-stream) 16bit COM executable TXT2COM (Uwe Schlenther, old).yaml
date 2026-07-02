@@ -1,0 +1,8 @@
+Name: 16bit COM executable TXT2COM (Uwe Schlenther, old)
+URL: "http://fileformats.archiveteam.org/wiki/TXT2COM_(Uwe_Schlenther)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \r                \t          !     2                 L           !
+    Bytes: [0xBA, 0x0D, 0x01, 0xB4, 0x09, 0xCD, 0x21, 0x32, 0xC0, 0xB4, 0x4C, 0xCD, 0x21]

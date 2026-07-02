@@ -1,0 +1,59 @@
+Name: WireNote to-do items (1.x)
+URL: "https://code.google.com/archive/p/wiredplane-wintools/"
+FileNameExtensions: ["todo"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version='1.0' encoding='"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KEEP-FOREVER VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDE-REP VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAVE-NOTE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIORITY VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DONE-AT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP-PINNED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TODO"
+    CaseSensitive: false

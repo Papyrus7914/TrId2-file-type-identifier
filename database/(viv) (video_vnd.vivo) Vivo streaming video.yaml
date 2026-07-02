@@ -1,0 +1,41 @@
+Name: Vivo streaming video
+URL: "http://www.real.com"
+FileNameExtensions: ["viv"]
+MimeType: video/vnd.vivo
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\r\nVersion:Vivo/"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "FPS:"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "Duration:"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "Length:"
+    CaseSensitive: true
+  - Pos: 73
+    AsciiString: "Rate:"
+    CaseSensitive: true
+  - Pos: 89
+    AsciiString: "VidRate:"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "Playtime1:"
+    CaseSensitive: true
+  - Pos: 129
+    AsciiString: "Playtime2:"
+    CaseSensitive: true
+  - Pos: 150
+    AsciiString: "Buffer:"
+    CaseSensitive: true
+  - Pos: 168
+    AsciiString: "Preroll:"
+    CaseSensitive: true
+  - Pos: 187
+    AsciiString: "Title:"
+    CaseSensitive: true

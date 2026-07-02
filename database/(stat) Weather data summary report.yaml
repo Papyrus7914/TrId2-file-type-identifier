@@ -1,0 +1,220 @@
+Name: Weather data summary report
+Description: Weather statistics data in STAT format.
+FileNameExtensions: ["stat"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: " Statistics for "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AVERAGE HOURLY STATISTICS FOR DRY BULB TEMPERATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTHLY STATISTICS FOR DEW POINT TEMPERATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTHLY STATISTICS FOR DRY BULB TEMPERATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTHLY STATISTICS FOR EXTREME TEMPERATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTHLY INDICATORS FOR PRECIPITATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTHLY STATISTICS FOR WIND SPEED M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTHLY STATISTICS FOR WIND CHILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTREME COLD WEEK PERIOD SELECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMUM DEW POINT TEMPERATURE OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINIMUM DEW POINT TEMPERATURE OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTREME HOT WEEK PERIOD SELECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMUM DRY BULB TEMPERATURE OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINIMUM DRY BULB TEMPERATURE OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARD PRESSURE AT ELEVATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPICAL WEEK PERIOD SELECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTREME PERIOD DETERMINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTHLY STATISTICS FOR SOLAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNUAL HEATING DEGREE-DAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USING DESIGN CONDITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAT INDEX TEMPERATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTHLY WIND DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMUM WIND SPEED OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINIMUM WIND SPEED OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LY RELATIVE HUMIDITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPEN CLASSIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUND TEMPERATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COOLING DEGREE DAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTHLY CALCULATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUNDTEMPERATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEATINDEX TEMPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONTHLY HEATING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMUM DIRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOISTURE (KPA)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPRESENTATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINIMUM TEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIMATE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMUM TEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVERAGE TEMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDISTURBED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WMO STATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN STAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFUSE AVG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVERAGE WC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVG DEL WC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINIMUM WC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVERAGE HI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMUM HI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECT MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVG DEL HI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECT AVG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUTHWEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAILY AVG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUTHEAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVIATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORTHEAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEA LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIN HOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDD BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX HOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDH BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASELINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOURS WC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDD BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLAR OF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOURS HI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEEP"
+    CaseSensitive: false

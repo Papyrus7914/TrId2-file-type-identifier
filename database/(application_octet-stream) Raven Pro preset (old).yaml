@@ -1,0 +1,13 @@
+Name: Raven Pro preset (old)
+URL: "https://store.birds.cornell.edu/collections/raven-sound-software"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xAC\xED\0\x05sr\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "clo.brp."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLO.BRP."
+    CaseSensitive: false

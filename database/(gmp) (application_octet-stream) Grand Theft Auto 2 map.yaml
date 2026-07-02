@@ -1,0 +1,29 @@
+Name: Grand Theft Auto 2 map
+URL: "https://en.wikipedia.org/wiki/Grand_Theft_Auto_2"
+FileNameExtensions: ["gmp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GBMP\xF4\x01CMAP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSXM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZONE"
+    CaseSensitive: false

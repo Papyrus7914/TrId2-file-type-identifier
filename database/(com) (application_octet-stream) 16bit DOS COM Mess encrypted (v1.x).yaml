@@ -1,0 +1,23 @@
+Name: 16bit DOS COM Mess encrypted (v1.x)
+Description: COM encryptor by Stonehead^TPiNC.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FUCKYOU\x1A\xFF_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ED TO UNREGISTERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "386+ REQUIRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STONEHEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESS V1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUCKYOU"
+    CaseSensitive: false

@@ -1,0 +1,38 @@
+Name: Allgeier Inovar Document
+URL: "https://www.allgeier-inovar.de/"
+FileNameExtensions: ["aidoc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE DOC SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.AI-AG.DE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOC.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOC ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

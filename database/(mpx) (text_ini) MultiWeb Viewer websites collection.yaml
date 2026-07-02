@@ -1,0 +1,41 @@
+Name: MultiWeb Viewer websites collection
+URL: "https://multiweb-viewer.apponic.com/"
+FileNameExtensions: ["mpx"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Tabsetup]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MULTIROWTABS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPEARANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTBOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABSETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URLLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

@@ -1,0 +1,28 @@
+Name: Citrix Independent Computer Architecture
+URL: "http://www.dabcc.com/nfuse/Docs/ica_file_explained.htm"
+FileNameExtensions: ["ica"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPLICATIONSERVERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSPORTDRIVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WFCLIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINS"
+    CaseSensitive: false

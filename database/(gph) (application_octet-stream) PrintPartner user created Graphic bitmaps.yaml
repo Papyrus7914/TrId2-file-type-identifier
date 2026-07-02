@@ -1,0 +1,15 @@
+Name: PrintPartner user created Graphic bitmaps
+Description: Shareware printing software for MS-DOS by Acropolis Software.
+URL: "http://fileformats.archiveteam.org/wiki/PrintPartner"
+FileNameExtensions: ["gph"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PrintPartner v"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\r\nUser created picture file.\r\n\x1A"
+    CaseSensitive: true

@@ -1,0 +1,10 @@
+Name: Opus compressed audio
+URL: "http://opus-codec.org/"
+FileNameExtensions: ["opus"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OggS"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "OpusHead"
+    CaseSensitive: true

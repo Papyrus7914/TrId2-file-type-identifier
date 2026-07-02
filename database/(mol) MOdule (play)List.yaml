@@ -1,0 +1,16 @@
+Name: MOdule (play)List
+Description: MOL files are more or less a simple playlist of modules/songs.
+FileNameExtensions: ["mol"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[DIRECTORIES]\r\n "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ARCHIVDIRECTORIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false

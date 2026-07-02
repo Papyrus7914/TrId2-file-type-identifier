@@ -1,0 +1,85 @@
+Name: SignalTap II capture
+FileNameExtensions: ["stp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<session jtag_chain=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DISPLAY_TREE GUI_LOGGING_ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE_IP_INFO INSTANCE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSION JTAG_CHAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLD_SIGNALTAP.VHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLE ATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTI ATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_AUTO_NODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITY_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JTAG_DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE TAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MNEMONICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOF_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO_S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFG_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAP_"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: Windows Bitmap (v2-24)
+Description: This variant with 24 byte DIB header instead of the 64 (OS/2 2.x)
+URL: "http://fileformats.archiveteam.org/wiki/BMP"
+FileNameExtensions: ["bmp"]
+MimeType: image/bmp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BM"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\x18\0\0\0"
+    CaseSensitive: true

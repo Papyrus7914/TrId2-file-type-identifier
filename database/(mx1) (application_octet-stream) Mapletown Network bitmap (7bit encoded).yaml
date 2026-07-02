@@ -1,0 +1,14 @@
+Name: Mapletown Network bitmap (7bit encoded)
+URL: "http://fileformats.archiveteam.org/wiki/Mapletown_Network"
+FileNameExtensions: ["mx1"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@@@ "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(END OF DATA)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINES)"
+    CaseSensitive: false

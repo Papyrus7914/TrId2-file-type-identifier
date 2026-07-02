@@ -1,0 +1,41 @@
+Name: Construct 2 UI state (XML)
+URL: "https://www.construct.net/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\" ?>\r\n<c2uistate>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IT IS ENTIRELY OPTIONAL AND THE PROJECT WILL LOAD WITHOUT IT.  IF YOU ARE PLACING THE PROJECT UNDER SOURCE CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--THIS IS A UI STATE FILE - ITS CONTENT DESCRIBES THE USER INTERFACE SETTINGS WHEN THE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOU PROBABLY DO NOT WANT TO ADD ANY .UISTATE.XML FILES TO THE REPOSITORY.--"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY EXPANDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T WAS LAST OPEN."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C2UISTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

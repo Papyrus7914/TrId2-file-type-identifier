@@ -1,0 +1,23 @@
+Name: LaserGRBL ZippedButtons
+URL: "https://lasergrbl.com/"
+FileNameExtensions: ["zbn", "gz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!-- RemotingBase SerializerVersion: v1.0 -->"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-- REMOTINGBASE SERIALIZERVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- OBJECT DATA BEGIN HERE--"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- SERIALIZATION MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- COMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- ENCRIPTION"
+    CaseSensitive: false

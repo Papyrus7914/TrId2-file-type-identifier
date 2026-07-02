@@ -1,0 +1,50 @@
+Name: Fusion 360 3D Design
+URL: "https://en.wikipedia.org/wiki/Autodesk"
+FileNameExtensions: ["f3d"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PROTEINASSETS.BLOBPARTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BULKSTREAM.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES.BLOBPARTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METASTREAM.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREPS.BLOBPARTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTEINASSET."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMALL.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PROTEINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SMBPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREP."
+    CaseSensitive: false

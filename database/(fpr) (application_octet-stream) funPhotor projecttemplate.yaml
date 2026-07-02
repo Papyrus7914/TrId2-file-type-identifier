@@ -1,0 +1,23 @@
+Name: funPhotor project/template
+URL: "https://www.funphotor.com/"
+FileNameExtensions: ["fpr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0\x89PNG\r\n\x1A\n\0\0\0\rIHDR\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHRM\0\0Z"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRGB"
+    CaseSensitive: false

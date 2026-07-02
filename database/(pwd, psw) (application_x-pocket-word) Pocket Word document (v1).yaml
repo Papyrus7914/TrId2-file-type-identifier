@@ -1,0 +1,15 @@
+Name: Pocket Word document (v1)
+Description: PWD is used for Handheld PC and PSW is used for Pocket PC.
+URL: "https://en.wikipedia.org/wiki/Microsoft_Word#Word_for_Mobile"
+FileNameExtensions: ["pwd", "psw"]
+MimeType: application/x-pocket-word
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\\pwd1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFLANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANSICP"
+    CaseSensitive: false

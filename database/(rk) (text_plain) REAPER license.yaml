@@ -1,0 +1,29 @@
+Name: REAPER license
+URL: "https://en.wikipedia.org/wiki/REAPER"
+FileNameExtensions: ["rk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Name: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(VALID THROUGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NON-COMMERCIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAPER LICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

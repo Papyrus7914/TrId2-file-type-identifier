@@ -1,0 +1,11 @@
+Name: Infinity Engine Compiled Script
+Description: Infinity Engine BCS files are scripted actions that are attached to anything other than the player characters.
+URL: "http://iesdp.gibberlings3.net/file_formats/ie_formats/bcs.htm"
+FileNameExtensions: ["bcs"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SC\n"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\n"
+    CaseSensitive: true

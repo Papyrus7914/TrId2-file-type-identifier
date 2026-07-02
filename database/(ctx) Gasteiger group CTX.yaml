@@ -1,0 +1,18 @@
+Name: Gasteiger group CTX
+FileNameExtensions: ["ctx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: " /IDENT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDBLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOLECULS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BONDS"
+    CaseSensitive: false

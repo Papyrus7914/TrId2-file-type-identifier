@@ -1,0 +1,12 @@
+Name: Drazlace bitmap
+Description: Old Commodore C64 format.
+URL: "http://recoil.sourceforge.net/formats.html"
+FileNameExtensions: ["drl", "dlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0XDRAZLACE! "
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true

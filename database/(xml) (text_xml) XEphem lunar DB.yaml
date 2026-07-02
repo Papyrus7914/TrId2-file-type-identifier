@@ -1,0 +1,23 @@
+Name: XEphem lunar DB
+URL: "https://en.wikipedia.org/wiki/XEphem"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<XEphemLunarDB built='"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XEPHEMLUNARDB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEATURE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

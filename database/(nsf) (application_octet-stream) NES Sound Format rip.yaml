@@ -1,0 +1,9 @@
+Name: NES Sound Format rip
+Description: Contains ripped code + audio data.
+URL: "http://fileformats.archiveteam.org/wiki/NSF"
+FileNameExtensions: ["nsf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NESM\x1A\x01"
+    CaseSensitive: true

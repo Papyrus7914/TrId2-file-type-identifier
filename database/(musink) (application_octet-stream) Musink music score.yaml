@@ -1,0 +1,17 @@
+Name: Musink music score
+URL: "http://fileformats.archiveteam.org/wiki/Musink"
+FileNameExtensions: ["musink"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NOTCONNTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0Z\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOICE"
+    CaseSensitive: false

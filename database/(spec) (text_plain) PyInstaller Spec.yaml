@@ -1,0 +1,53 @@
+Name: PyInstaller Spec
+URL: "https://pyinstaller.org/en/stable/spec-files.html"
+FileNameExtensions: ["spec"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# -*- mode: python "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "A.BINARIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PYZ(A.PURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A.SCRIPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSIS("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-*- MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A.DATAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSOLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PYTHON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false

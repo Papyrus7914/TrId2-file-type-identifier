@@ -1,0 +1,21 @@
+Name: DVD Info file
+FileNameExtensions: ["ifo"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DVD"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0"
+    CaseSensitive: true

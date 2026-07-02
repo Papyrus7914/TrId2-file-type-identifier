@@ -1,0 +1,13 @@
+Name: Isis Cube data
+URL: "http://isis.astrogeology.usgs.gov/"
+FileNameExtensions: ["cub"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CCSD3ZF0000100000001NJPL3IF0PDS200000001 = SFDU_LABEL\r\n\r\n/* File Structure */\r\n\r\nRECORD_TYPE = FIXED_LENGTH\r\nRECORD_BYTES = 512\r\nFILE_RECORDS = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ISIS_INSTRUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISIS CUBE FILE"
+    CaseSensitive: false

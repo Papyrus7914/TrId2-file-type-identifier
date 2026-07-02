@@ -1,0 +1,14 @@
+Name: BNSF audio
+URL: "http://fileformats.archiveteam.org/wiki/BNSF"
+FileNameExtensions: ["bnsf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BNSF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "IS14sfmt"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "sdat"
+    CaseSensitive: true

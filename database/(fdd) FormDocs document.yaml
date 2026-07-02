@@ -1,0 +1,82 @@
+Name: FormDocs document
+Description: Formdocs is an electronic form design and form filler application.
+URL: "http://www.formdocs.com/"
+FileNameExtensions: ["fdd"]
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\x04\0\xFC\0\0 \0\0\0\x01\0\0\0\0\0\0\0\0\0\0\0\0\0 \0\0\0\0\x02\0\0E\x1A\r\x82"
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "\0\00\x02\0\0"
+    CaseSensitive: true
+  - Pos: 57
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 69
+    Bytes: [0x01]
+  - Pos: any
+    AsciiString: "NATURAL ORDER UNIQUE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD CREATION DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD MODIFIED TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD MODIFIED DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD CREATION TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD KEYWORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD SUBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD OWNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD TAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FDT"
+    CaseSensitive: false

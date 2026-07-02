@@ -1,0 +1,14 @@
+Name: QuickTime Movie (old)
+URL: "https://en.wikipedia.org/wiki/QuickTime"
+FileNameExtensions: ["mov"]
+MimeType: video/quicktime
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "mdat"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: DOS Executable Borland Turbo C (generic)
+URL: "https://en.wikipedia.org/wiki/Borland_Turbo_C"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORLAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TURBO-C"
+    CaseSensitive: false

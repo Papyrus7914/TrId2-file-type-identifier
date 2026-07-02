@@ -1,0 +1,44 @@
+Name: ArtCAM model (old version)
+URL: "http://www.artcam.com/"
+FileNameExtensions: ["art"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n  ArtCAM "
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IN REAL UNITS THE IMAGE IS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELS HIGH WITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELS WIDE BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE CONTAINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE PIXEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOURS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEGREES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTCAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

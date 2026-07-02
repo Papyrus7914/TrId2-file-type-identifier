@@ -1,0 +1,368 @@
+Name: Advanced Forensic Format 4 disk image
+URL: "https://github.com/aff4"
+FileNameExtensions: ["aff4"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "CONTAINER.DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFORMATION.TURTLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACQUISITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OMPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACROMAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0B\0I\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "000000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHUNKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDEXED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEGMEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADMIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTSTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PENDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y\0C\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AFF4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZERO"
+    CaseSensitive: false

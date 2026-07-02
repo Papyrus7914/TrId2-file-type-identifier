@@ -1,0 +1,20 @@
+Name: Word Microsoft Office Open XML Format document
+URL: "http://en.wikipedia.org/wiki/Microsoft_Word"
+FileNameExtensions: ["docx"]
+MimeType: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DOCUMENT.XML.RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORD"
+    CaseSensitive: false

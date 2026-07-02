@@ -1,0 +1,17 @@
+Name: TopSolid Open Package
+URL: "https://www.topsolid.com/"
+FileNameExtensions: ["topopnpkg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x16$Open Package Document"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$OPEN PACKAGE DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPOPNPKG.XML"
+    CaseSensitive: false

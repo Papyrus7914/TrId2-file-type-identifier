@@ -1,0 +1,32 @@
+Name: Unity Assembly Definition
+URL: "https://docs.unity3d.com/Manual/cus-asmdef.html"
+FileNameExtensions: ["asmdef"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRECOMPILEDREFERENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERRIDEREFERENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINECONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDEPLATFORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDEPLATFORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOWUNSAFECODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOREFERENCED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

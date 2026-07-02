@@ -1,0 +1,12 @@
+Name: Ports of Call assets
+Description: Used in modern versions of Ports of Call by Rolf-Dieter Klein, for ships hulls shapes.
+URL: "https://www.mobygames.com/game/184667/ports-of-call-classic-edition/"
+FileNameExtensions: ["dqx", "xqx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    W
+    Bytes: [0x01, 0x00, 0x57, 0x14]
+  - Pos: 8
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true

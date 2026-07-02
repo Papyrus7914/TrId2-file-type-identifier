@@ -1,0 +1,35 @@
+Name: Roland Saved Data (Fantom)
+URL: "https://www.roland.com/"
+FileNameExtensions: ["svd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0SVD5"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "PRFaKY19"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "PATaKY19"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "RHYaKY19"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "INSaKY19"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSAKY19"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATAKY19"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRFAKY19"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RHYAKY19"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVD5"
+    CaseSensitive: false

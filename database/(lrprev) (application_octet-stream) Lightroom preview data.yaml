@@ -1,0 +1,62 @@
+Name: Lightroom preview data
+URL: "http://en.wikipedia.org/wiki/Adobe_Photoshop_Lightroom"
+FileNameExtensions: ["lrprev"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AgHg\0 \0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "header\0\0"
+    CaseSensitive: true
+  - Pos: 57
+    AsciiString: " = \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOBE\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7GWGW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8HXHX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%C4S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3$4C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AGHG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTU7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FVFV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JZJZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false

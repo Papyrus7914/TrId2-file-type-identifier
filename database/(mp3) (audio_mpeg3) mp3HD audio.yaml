@@ -1,0 +1,42 @@
+Name: mp3HD audio
+Description: A new revision of MP3 with lossless compression.
+URL: "http://www.all4mp3.com/Software1.aspx"
+FileNameExtensions: ["mp3"]
+MimeType: audio/mpeg3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ID3\x03\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-ACGP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MP3HD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KC(RP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8LM6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMH9"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I6W3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUSY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RR19"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TENC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XHD3"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: z-Tree Questionnaire
+URL: "http://www.ztree.uzh.ch"
+FileNameExtensions: ["ztq"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 10
+    AsciiString: "EEXQuester"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EEXQUESTERQUESTIONNAIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EEXQUESTERBUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EEXQUESTERITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPERIMENT"
+    CaseSensitive: false

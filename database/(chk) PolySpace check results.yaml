@@ -1,0 +1,9 @@
+Name: PolySpace check results
+Description: PolySpace (version R2009a) is a comercial source-code analysis tool (C) The MathWorks, Inc.
+FileNameExtensions: ["chk"]
+DetectionPatterns:
+  - Pos: 0
+    #        \a          f                 H     K           ^                                   \r    \v                            \'    ;
+    Bytes: [0x07, 0xA0, 0x66, 0x1D, 0xB3, 0x48, 0x4B, 0x87, 0x5E, 0x1F, 0x93, 0x85, 0xFE, 0x97, 0x0D, 0x0B, 0xFB, 0xA3, 0xF9, 0xE6, 0x27, 0x3B]
+  - Pos: 23
+    Bytes: [0xAC]

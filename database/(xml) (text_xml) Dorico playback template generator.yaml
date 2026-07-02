@@ -1,0 +1,50 @@
+Name: Dorico playback template generator
+URL: "https://en.wikipedia.org/wiki/Dorico"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<PlaybackTemplateGenerator>\r\n\t<fileVersion>1.3</fileVersion>\r\n\t<specID>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUDIOOUTPUTPERMIDICHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYBACKTEMPLATEGENERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINPRESETLIBRARYIDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLEPLUGINDEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINSTATEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOOUTPUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMCHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERBLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

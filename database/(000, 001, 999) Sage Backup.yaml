@@ -1,0 +1,13 @@
+Name: Sage Backup
+URL: "http://www.sagesoftware.com/"
+FileNameExtensions: ["000", "001", "999"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SAGEBACKUP"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\0Backup "
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "Data Files.\r\n"
+    CaseSensitive: true

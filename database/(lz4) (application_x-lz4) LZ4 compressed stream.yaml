@@ -1,0 +1,8 @@
+Name: LZ4 compressed stream
+URL: "https://en.wikipedia.org/wiki/LZ4_(compression_algorithm)"
+FileNameExtensions: ["lz4"]
+MimeType: application/x-lz4
+DetectionPatterns:
+  - Pos: 0
+    #              \"    M
+    Bytes: [0x04, 0x22, 0x4D, 0x18]

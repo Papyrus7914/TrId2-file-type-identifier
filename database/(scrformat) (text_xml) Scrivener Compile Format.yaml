@@ -1,0 +1,434 @@
+Name: Scrivener Compile Format
+URL: "https://en.wikipedia.org/wiki/Scrivener_(software)"
+FileNameExtensions: ["scrformat"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<CompileFormat Name=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCRIPTSETTINGS HASSCRIPTFORMATTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE ISPROJECTMETADATAPLACEHOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREAKDIALOGUEANDACTIONATSENTENCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATELINKSWITHPREFIXANDSUFFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PARENTHETICAL {TEXT-ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USECENTEREDBODYTABLE WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAINTEXTCONVERSION STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDCLOSINGHASHESTOTITLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONVERTTOIMAGES MAXWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TRANSITION {TEXT-ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTSETTINGS PAPERSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CHARACTER {TEXT-ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DIALOGUE {TEXT-ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDEREVISIONCOLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTNOTESANDCOMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTALLYCENTERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTALPAGINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ACTION {TEXT-ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFERENTFIRSTPAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDNOTESARRANGEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATTING OVERRIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADING {TEXT-ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTNOTEFONT SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNOTATIONSRTFTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLANKLINESEPARATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDEFRONTMATTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLPAGEIMAGEWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATEPDFOUTLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATEXDOCUMENTCLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALLYCENTERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALPAGINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SHOT {TEXT-ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AFTEROVERRIDE USE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQUATIONSASMATHML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDEBACKMATTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATTINGOPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADERSANDFOOTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDENTMATCHESTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNALLINKCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KINDLEBULLETSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTIGHTENFACTOR0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEPARATORSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNOTATIONPREFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNOTATIONSUFFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKMATTERFOOTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKMATTERHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPANDEDCOLORTBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRSTPAGESFOOTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRSTPAGESHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRSTREGULARPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDERSEPARATORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWSECTIONFOOTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWSECTIONHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARYFONT SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CF0 ATTRIBUTES}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPUBBULLETSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTERFONT SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADERFONT SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INLINEPLAINTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KINDLELISTSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTESBEFORETEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFIXSEPARATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTIONGROUPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACING+INDENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTNOTEPREFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTNOTESUFFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANDOCSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTIONLAYOUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARDFOOTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARDHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESANDLISTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT-TRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSEPARATORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTMAINTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EBOOKSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDNOTESTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPUBLISTSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTNOTESTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDESTYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGINS UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARDIRNATURAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTFORMATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BETWEEN TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOMMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIVIDERSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDNOTESTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDE TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWIPSBETWEEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEFORE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-FAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESACROSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECTOFOOTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECTOHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHTMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALEFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT-INDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLEPREFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLESUFFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASEFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFOOTNOTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFTMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLELINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATISTICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLELINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FCHARSET0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELVETICA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONOSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEBREAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESDOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAPERTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBTITLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPPERCASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COCOARTF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DINDENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTRAIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTPDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNOPSIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTTBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SCENE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FNIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTF1"
+    CaseSensitive: false

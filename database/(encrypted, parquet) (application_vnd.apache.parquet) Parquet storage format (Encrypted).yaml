@@ -1,0 +1,8 @@
+Name: Parquet storage format (Encrypted)
+URL: "https://parquet.apache.org/docs/file-format/data-pages/encryption/"
+FileNameExtensions: ["encrypted", "parquet"]
+MimeType: application/vnd.apache.parquet
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PARE"
+    CaseSensitive: true

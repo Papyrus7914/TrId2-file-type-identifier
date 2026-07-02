@@ -1,0 +1,38 @@
+Name: Cabrillo Log (v3.0)
+URL: "http://www.cqwpx.com/cabrillo.htm"
+FileNameExtensions: ["log"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "START-OF-LOG: 3.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CATEGORY-TRANSMITTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY-POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY-BAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY-MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START-OF-LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END-OF-LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALLSIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATION"
+    CaseSensitive: false

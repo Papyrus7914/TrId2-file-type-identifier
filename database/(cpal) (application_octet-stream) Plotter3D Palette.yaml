@@ -1,0 +1,14 @@
+Name: Plotter3D Palette
+Description: Amiga 3D data plotter.
+FileNameExtensions: ["cpal"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CHKYRGBA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHKYRGBA"
+    CaseSensitive: false

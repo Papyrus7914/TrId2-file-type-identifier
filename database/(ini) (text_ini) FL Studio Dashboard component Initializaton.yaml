@@ -1,0 +1,17 @@
+Name: FL Studio Dashboard component Initializaton
+URL: "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Dashboard_api.htm"
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[info]\r\n"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "ind="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

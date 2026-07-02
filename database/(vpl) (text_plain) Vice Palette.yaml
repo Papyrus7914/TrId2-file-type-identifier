@@ -1,0 +1,17 @@
+Name: Vice Palette
+URL: "https://vice-emu.sourceforge.io/"
+FileNameExtensions: ["vpl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VICE PALETTE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RED GREEN BLUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTAX"
+    CaseSensitive: false

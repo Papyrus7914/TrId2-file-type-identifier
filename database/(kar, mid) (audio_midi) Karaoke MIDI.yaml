@@ -1,0 +1,17 @@
+Name: Karaoke MIDI
+URL: "http://www.midikaraoke.com/"
+FileNameExtensions: ["kar", "mid"]
+MimeType: audio/midi
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MThd\0\0\0\x06\0\x01\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "MTrk"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MIDI KARAOKE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORDS"
+    CaseSensitive: false

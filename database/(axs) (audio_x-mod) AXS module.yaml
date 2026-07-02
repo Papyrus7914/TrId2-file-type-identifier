@@ -1,0 +1,27 @@
+Name: AXS module
+Description: synth/sample based tracker created by Guido de Haan and Robert Morcus.
+URL: "http://www.resolutionaudio.nl/"
+FileNameExtensions: ["axs"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "AXSFUSER"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BLOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAK"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: ChemWindow Standard Chemistry File
+URL: "http://www.chemwindow.com/"
+FileNameExtensions: ["scf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ScfVersion "
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOND"
+    CaseSensitive: false

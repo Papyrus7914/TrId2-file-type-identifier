@@ -1,0 +1,11 @@
+Name: Trend Micro Virus Pattern
+URL: "http://www.trendmicro.com/"
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x1A, 0xD1, 0xBD, 0x1A, 0x01, 0x00]
+  - Pos: 11
+    AsciiString: "\x02\f\0\x01\0\0\0\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    #                                                  \\    D     f
+    Bytes: [0x00, 0x1A, 0xAC, 0xBD, 0x1A, 0x0F, 0x00, 0x5C, 0x44, 0x66, 0xBA]

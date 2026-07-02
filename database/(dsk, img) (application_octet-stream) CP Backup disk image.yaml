@@ -1,0 +1,12 @@
+Name: CP Backup disk image
+Description: A disk image of a floppy written by the backup utility.
+URL: "https://en.wikipedia.org/wiki/Central_Point_Software"
+FileNameExtensions: ["dsk", "img"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 3
+    AsciiString: "CPBackup"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CPBACKUP"
+    CaseSensitive: false

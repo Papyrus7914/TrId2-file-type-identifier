@@ -1,0 +1,13 @@
+Name: The Music Studio Song (PC)
+Description: Music editor by Audio Light.
+FileNameExtensions: ["mss"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xD0Mstudio\xD0"
+    CaseSensitive: true
+  - Pos: 10
+    Bytes: [0x01]
+  - Pos: 12
+    #                                      M     r
+    Bytes: [0x02, 0x03, 0x02, 0x03, 0x03, 0x4D, 0x72, 0x06]

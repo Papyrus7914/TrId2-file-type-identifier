@@ -1,0 +1,22 @@
+Name: Magellan Raster Map
+URL: "http://en.wikipedia.org/wiki/Magellan_Navigation"
+FileNameExtensions: ["rmp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\t\0\0\0\t\0\0\0rmp\0\0\0\0\0\0ini"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\0tlm\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ICON FILE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAGELLAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T_LAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: AskEnv Requester definition
+Description: Requester construction tool for Amiga.
+FileNameExtensions: ["req"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WINDOW\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

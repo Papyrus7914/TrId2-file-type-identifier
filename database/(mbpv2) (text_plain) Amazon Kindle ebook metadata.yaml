@@ -1,0 +1,29 @@
+Name: Amazon Kindle ebook metadata
+URL: "https://en.wikipedia.org/wiki/Amazon_Kindle"
+FileNameExtensions: ["mbpv2"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"md5\":\""
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\",\"payload\":{\"type\":\"EBOK\",\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KINDLE.MOST_RECENT_READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATIONTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KINDLE.LPR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUID"
+    CaseSensitive: false

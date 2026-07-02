@@ -1,0 +1,11 @@
+Name: TuxGuitar Tablature
+URL: "https://en.wikipedia.org/wiki/TuxGuitar"
+FileNameExtensions: ["tg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0T\0u\0x\0G\0u\0i\0t\0a\0r\0 \0F\0i\0l\0e\0 \0F\0o\0r\0m\0a\0t\0 \0-\0 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "T\0U\0X\0G\0U\0I\0T\0A\0R\0 \0F\0I\0L\0E\0 \0F\0O\0R\0M\0A\0T"
+    CaseSensitive: false

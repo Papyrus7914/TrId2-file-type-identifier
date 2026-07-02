@@ -1,0 +1,11 @@
+Name: Tax Exchange Format (v04x)
+URL: "http://fileformats.archiveteam.org/wiki/TXF"
+FileNameExtensions: ["txf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "V04"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\r\n"
+    CaseSensitive: true

@@ -1,0 +1,11 @@
+Name: KbdEdit Export(ed) layout
+URL: "http://www.kbdedit.com/"
+FileNameExtensions: ["kbe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x13\0KbdEdit export file"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KBDEDIT EXPORT FILE"
+    CaseSensitive: false

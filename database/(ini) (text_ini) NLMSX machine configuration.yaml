@@ -1,0 +1,26 @@
+Name: NLMSX machine configuration
+URL: "http://nlmsx.generation-msx.nl/"
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[CPU]\r\nFrequency="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SLOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R800"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

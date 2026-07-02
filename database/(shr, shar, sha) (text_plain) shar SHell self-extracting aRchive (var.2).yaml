@@ -1,0 +1,9 @@
+Name: shar SHell self-extracting aRchive (var.2)
+Description: The files in a shell archive are concatenated without compression, and the resultant archive is essentially a shell script.
+URL: "http://www.stat.umn.edu/HELP/files.html#11"
+FileNameExtensions: ["shr", "shar", "sha"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# To unbundle, sh this file"
+    CaseSensitive: true

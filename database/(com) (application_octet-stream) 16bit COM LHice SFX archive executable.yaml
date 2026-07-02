@@ -1,0 +1,17 @@
+Name: 16bit COM LHice SFX archive executable
+URL: "http://justsolve.archiveteam.org/wiki/LHA/LHarc_self-extracting_archive"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 6
+    AsciiString: "LHice's SFX"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(C) YOSHI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LHICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S SFX"
+    CaseSensitive: false

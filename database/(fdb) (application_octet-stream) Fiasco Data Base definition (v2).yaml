@@ -1,0 +1,14 @@
+Name: Fiasco Data Base definition (v2)
+Description: Amiga DB by Nils Bandener.
+FileNameExtensions: ["fdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FDBH\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "FMST\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FMST"
+    CaseSensitive: false

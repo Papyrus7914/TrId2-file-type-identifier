@@ -1,0 +1,46 @@
+Name: 16bit DOS Shrinker compressed Executable (v2.1)
+URL: "http://fileformats.archiveteam.org/wiki/Shrinker"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 6
+    Bytes: [0x01, 0x00, 0x03, 0x00]
+  - Pos: 12
+    AsciiString: "\xFF\xFF\0\0\0\0\0\0\n\x01\xF0\xFF \0\0\041\0\0\x11\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\t\0\x04\0"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "\x05\x05\0;\x06\x02\0s\x1F\x8B\xD8\x83\xE8@\xFA\x8E\xD0\xBC\0\x04\xFB-\xBB\0\x8E\xC0+\xFFPW\xB9\xD8\x05\xBEP\x01\xFC\xF3\xA5\xCB\xBAP\x01\x81\xC2\x9E\0\xB4\t\xCD!\xB8\xFFL\xCD!.\x8B\xC0.\x8B\xC0\x8B\xC0\x8C\xD8&\x01\x066\v\x8E\xC0H\x8E\xD8\x03\x06\x03\0+\xC3r_SP\xE8\xD7\n\x87\xD7\xB0@\x06\x1F\xB4=\xCD!rI\x0E\x1F\xA3N\v\x89>L\v\x8C\x1E\xA4\x02+\xFF\x8B.6\v\x8E\xC5\xBE8\v\xE8\xF8\tr1X\x8C\xC1\x8B\xD7\xBF\x88\v\x1E\a\xE8\xC5\x05r\"X*\xED\x8A\x0E\x88\v\xBE\x89\v\xBF\x82\vW\xAB\x8B\xD8\xAD\x03\xC3\xE2\xF8_\xE8\xCF\x06\xE8x\x01\xBA\x81\0\xEB\x03\xBA\x9E\0\xB4\t\x0E\x1F\xCD!\xB8\xFFL\xCD!Error decompressing program$\0Not enough memory to load program$\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ERROR DECOMPRESSING PROGRAM$\0NOT ENOUGH MEMORY TO LOAD PROGRAM$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQRVWU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UWVPSQR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RWUPSQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XUPS+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PQRV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PQVS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R_SP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQVW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WPSR"
+    CaseSensitive: false

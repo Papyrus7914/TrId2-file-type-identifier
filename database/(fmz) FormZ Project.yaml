@@ -1,0 +1,55 @@
+Name: Form*Z Project
+URL: "http://www.formz.com/"
+FileNameExtensions: ["fmz"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF]
+  - Pos: 2
+    Bytes: [0xFF]
+  - Pos: 4
+    Bytes: [0xFF, 0x17, 0xFF]
+  - Pos: 8
+    #              P
+    Bytes: [0xFF, 0x50, 0xFF, 0x1A, 0xFF, 0x19, 0xFE, 0xE9, 0xFE]
+  - Pos: any
+    AsciiString: "LAYER\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0LAYER GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DASHED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTVS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false

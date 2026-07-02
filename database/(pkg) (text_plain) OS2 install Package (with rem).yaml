@@ -1,0 +1,23 @@
+Name: OS/2 install Package (with rem)
+URL: "https://en.wikipedia.org/wiki/OS/2"
+FileNameExtensions: ["pkg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "****"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXITWHEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

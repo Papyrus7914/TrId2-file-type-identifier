@@ -1,0 +1,54 @@
+Name: Novell Netware Virtual Loadable Module (+message file)
+Description: With message file *.msg.
+URL: "https://en.wikipedia.org/wiki/NetWare"
+FileNameExtensions: ["vlm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNABLE TO LOCATE MESSAGE FILE %S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS CLIENT MESSAGE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM LOAD ABORTED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NWLANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKSUP$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NWASMLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSGTACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MSG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VLM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NVLM"
+    CaseSensitive: false

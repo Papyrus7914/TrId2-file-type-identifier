@@ -1,0 +1,14 @@
+Name: Virtual PC Virtual HD image (dynamic)
+URL: "https://en.wikipedia.org/wiki/VHD_(file_format)"
+FileNameExtensions: ["vhd"]
+MimeType: application/x-vhd
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "conectix"
+    CaseSensitive: true
+  - Pos: 512
+    #        c     x     s     p     a     r     s     e
+    Bytes: [0x63, 0x78, 0x73, 0x70, 0x61, 0x72, 0x73, 0x65, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "CXSPARSE"
+    CaseSensitive: false

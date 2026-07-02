@@ -1,0 +1,12 @@
+Name: Hidden Agenda save game
+Description: Old political game simulator for DOS by Trans Fiction Systems Inc.
+URL: "https://www.mobygames.com/game/hidden-agenda"
+FileNameExtensions: ["ha"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\xD7%\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".HA"
+    CaseSensitive: false

@@ -1,0 +1,39 @@
+Name: iMindMap Map (Map App Metadata)
+Description: Part of an IMX package.
+URL: "https://en.wikipedia.org/wiki/Buzan%27s_iMindMap"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<MapApplicationMeta><MapView value=\"map_view\" /><SortOrder value=\"default\" /><ZoomLevel value=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAPAPPLICATIONMETA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORGANICLEVEL VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPCOMMENTS VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPAUTHOR VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORTORDER VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOMLEVEL VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPEMAIL VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPVIEW VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPRESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP_VIEW"
+    CaseSensitive: false

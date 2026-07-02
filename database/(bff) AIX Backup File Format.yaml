@@ -1,0 +1,51 @@
+Name: AIX Backup File Format
+URL: "http://publibn.boulder.ibm.com/doc_link/en_US/a_doc_lib/files/aixfiles/backup.htm"
+FileNameExtensions: ["bff"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\t\0k\xEA"
+    CaseSensitive: true
+  - Pos: 6
+    Bytes: [0x01, 0x00]
+  - Pos: 16
+    AsciiString: "\xFF\xFF\xFF\x7Fby name\0\0\0\0\0\0\0\0\0by name\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0d\0\0\0"
+    CaseSensitive: true
+  - Pos: 73
+    AsciiString: "\vk\xEA"
+    CaseSensitive: true
+  - Pos: 79
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 87
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 90
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 94
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 97
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 113
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 117
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 126
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 130
+    AsciiString: "\0\0\0\0\0\0./"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BY NAME\0\0\0\0\0\0\0\0\0BY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPP_NAME"
+    CaseSensitive: false

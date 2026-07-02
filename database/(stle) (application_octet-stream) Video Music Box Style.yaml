@@ -1,0 +1,28 @@
+Name: Video Music Box Style
+FileNameExtensions: ["stle"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "STLESTHD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NTCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RHYTHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTHD"
+    CaseSensitive: false

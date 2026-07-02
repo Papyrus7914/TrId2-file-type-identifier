@@ -1,0 +1,16 @@
+Name: Shaper LUT (with rem)
+FileNameExtensions: ["3dl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GAMMA 1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3DMESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LUT8"
+    CaseSensitive: false

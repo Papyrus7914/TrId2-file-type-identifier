@@ -1,0 +1,107 @@
+Name: Chaser Savegame
+Description: Chaser is a first person shooter
+URL: "http://www.cauldron.sk/projects/chaser/index.html"
+FileNameExtensions: ["sav"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Cauldron Chunk File>\x01\0\0\0\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: 63
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".ANI\0CHANIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAULDRON CHUNK FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0\0\0\0\0\0\0CHASER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0\0PB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFAU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ER.ANI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GASSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL\0TRACKS\0BRUSHES\0ENTITIES\0ACTORS\0CAMERASHAKE\0AIPATHGRAPH\0CELLS\0PHYSICS\0DYNAMICOBJECTCONTAINER\0PSYSTEMGENERAL\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GHT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD.MTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L.ANI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL.MSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWN."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTS.DEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEMITTERGENERAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDING.ANI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T.ANI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEAPON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y\0\0\0MODELS"
+    CaseSensitive: false

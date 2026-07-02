@@ -1,0 +1,9 @@
+Name: Project64 Memory Pack
+URL: "https://en.wikipedia.org/wiki/Project64"
+FileNameExtensions: ["mpk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x81]
+  - Pos: 32
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF]

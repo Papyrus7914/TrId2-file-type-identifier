@@ -1,0 +1,13 @@
+Name: 3D XML files (zipped)
+URL: "http://www.3ds.com/products-solutions/3d-for-all/"
+FileNameExtensions: ["3dxml"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MANIFEST.XMLP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".3DXMLP"
+    CaseSensitive: false

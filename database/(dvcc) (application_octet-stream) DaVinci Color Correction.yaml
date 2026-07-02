@@ -1,0 +1,32 @@
+Name: DaVinci Color Correction
+URL: "https://www.blackmagicdesign.com/products/davinciresolve"
+FileNameExtensions: ["dvcc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0\x04\0\0\0DVCC"
+    CaseSensitive: true
+  - Pos: 70
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 73
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 76
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 87
+    AsciiString: "apch"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ABM0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DVCC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICPF"
+    CaseSensitive: false

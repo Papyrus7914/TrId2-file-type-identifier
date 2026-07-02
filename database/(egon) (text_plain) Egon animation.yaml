@@ -1,0 +1,30 @@
+Name: Egon animation
+Description: Egon Animator is an X-based animation development tool for Unix.
+URL: "https://en.wikipedia.org/wiki/Siag_Office"
+FileNameExtensions: ["egon"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Creator: Egon Animator "
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DELTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EGON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TICK"
+    CaseSensitive: false

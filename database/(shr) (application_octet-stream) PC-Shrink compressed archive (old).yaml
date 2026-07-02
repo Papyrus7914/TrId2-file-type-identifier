@@ -1,0 +1,11 @@
+Name: PC-Shrink compressed archive (old)
+URL: "http://fileformats.archiveteam.org/wiki/PC-Shrink"
+FileNameExtensions: ["shr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0t"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0t"
+    CaseSensitive: true

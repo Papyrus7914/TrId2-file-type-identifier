@@ -1,0 +1,44 @@
+Name: IBM iSeries Client Access WorkStation profile
+URL: "https://en.wikipedia.org/wiki/IBM_i"
+FileNameExtensions: ["ws"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Profile]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IBMDEFAULTKEYBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMUNICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTCODEPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUAKEYBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TELNET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".KMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

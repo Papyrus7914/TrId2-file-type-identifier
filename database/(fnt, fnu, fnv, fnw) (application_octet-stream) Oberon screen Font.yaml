@@ -1,0 +1,13 @@
+Name: Oberon screen Font
+URL: "https://en.wikipedia.org/wiki/Oberon_(operating_system)"
+FileNameExtensions: ["fnt", "fnu", "fnv", "fnw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "oB"
+    CaseSensitive: true
+  - Pos: 34
+    Bytes: [0xDB, 0x00]
+  - Pos: any
+    AsciiString: ".FNT"
+    CaseSensitive: false

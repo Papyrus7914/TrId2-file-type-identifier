@@ -1,0 +1,35 @@
+Name: Clip Studio Paint illustration
+URL: "https://en.wikipedia.org/wiki/Clip_Studio_Paint"
+FileNameExtensions: ["clip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CSFCHUNK"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "CHNKHead"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "CHNKExta"
+    CaseSensitive: true
+  - Pos: 104
+    AsciiString: "extrnlid"
+    CaseSensitive: true
+  - Pos: 161
+    AsciiString: "B\0l\0o\0c\0k\0D\0a\0t\0a\0B\0e\0g\0i\0n\0C\0h\0u\0n\0k"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "B\0L\0O\0C\0K\0C\0H\0E\0C\0K\0S\0U\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0L\0O\0C\0K\0S\0T\0A\0T\0U\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHNKEXTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHNKHEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRNLID"
+    CaseSensitive: false

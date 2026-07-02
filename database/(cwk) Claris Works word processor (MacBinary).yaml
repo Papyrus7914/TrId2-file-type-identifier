@@ -1,0 +1,20 @@
+Name: Claris Works word processor (MacBinary)
+Description: MacBinary is a standard for encoding Macintosh files for file transfer
+URL: "http://www.macdisk.com/macsigen.php3"
+FileNameExtensions: ["cwk"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "WORDBOBO"
+    CaseSensitive: true
+  - Pos: 74
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 82
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORDBOBO"
+    CaseSensitive: false

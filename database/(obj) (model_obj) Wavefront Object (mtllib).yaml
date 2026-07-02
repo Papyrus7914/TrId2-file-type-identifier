@@ -1,0 +1,14 @@
+Name: Wavefront Object (mtllib)
+URL: "https://en.wikipedia.org/wiki/Wavefront_.obj_file"
+FileNameExtensions: ["obj"]
+MimeType: model/obj
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "mtllib"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "USEMTL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MTL"
+    CaseSensitive: false

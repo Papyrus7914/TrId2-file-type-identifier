@@ -1,0 +1,32 @@
+Name: CUPL PLD Program format
+URL: "https://en.wikipedia.org/wiki/Programmable_Array_Logic#CUPL"
+FileNameExtensions: ["pld"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Name"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASSEMBLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPANY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

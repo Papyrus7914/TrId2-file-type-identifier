@@ -1,0 +1,14 @@
+Name: BREAKTHRU song
+Description: Sequencer/DAW for Atari ST by Gajits Music Software.
+FileNameExtensions: ["btd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Dsng"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PLUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THRU"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: Cosmic Software Linker command File
+URL: "https://www.cosmicsoftware.com/"
+FileNameExtensions: ["lkf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LINK COMMAND FILE FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+SEG .CONST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+SEG .TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

@@ -1,0 +1,41 @@
+Name: QTI document
+Description: The IMS Question and Test Interoperability Specification (QTI) defines an XML language for interchanging questions and assessments between different systems.
+URL: "http://en.wikipedia.org/wiki/QTI"
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "QUESTESTINTEROP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESPONSE_LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUESTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDER_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM"
+    CaseSensitive: false

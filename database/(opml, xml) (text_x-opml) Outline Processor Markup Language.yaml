@@ -1,0 +1,24 @@
+Name: Outline Processor Markup Language
+Description: OPML is an XML format for outlines.
+URL: "http://en.wikipedia.org/wiki/OPML"
+FileNameExtensions: ["opml", "xml"]
+MimeType: text/x-opml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "ml version=\""
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPML"
+    CaseSensitive: false

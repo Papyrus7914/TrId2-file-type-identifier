@@ -1,0 +1,11 @@
+Name: Kremlin Encrypted File
+Description: Strong encryption tool. Widely used for private postings.
+URL: "http://www.kremlinencrypt.com/"
+FileNameExtensions: ["kgb"]
+DetectionPatterns:
+  - Pos: 4
+    #                                \'
+    Bytes: [0x01, 0x01, 0x01, 0x10, 0x27, 0x01, 0x01]
+  - Pos: 20
+    AsciiString: "KRM"
+    CaseSensitive: true

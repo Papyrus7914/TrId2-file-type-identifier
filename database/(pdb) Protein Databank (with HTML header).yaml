@@ -1,0 +1,27 @@
+Name: Protein Databank (with HTML header)
+FileNameExtensions: ["pdb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STRUCTUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false

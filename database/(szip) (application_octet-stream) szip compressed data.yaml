@@ -1,0 +1,12 @@
+Name: szip compressed data
+Description: Szip is a freeware portable general purpose lossless compression program. It has a high speed and compression, but high memory demands (up to 20MB) too.
+URL: "http://www.compressconsult.com/szip/"
+FileNameExtensions: ["szip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SZ\n\x04"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "BH"
+    CaseSensitive: true

@@ -1,0 +1,7 @@
+Name: TRCZip compressed data
+FileNameExtensions: ["trc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          T     R     C     Z     i     p
+    Bytes: [0xB0, 0xB1, 0xB2, 0x54, 0x52, 0x43, 0x5A, 0x69, 0x70, 0xB2, 0xB1, 0xB0]

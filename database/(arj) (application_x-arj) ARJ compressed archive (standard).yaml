@@ -1,0 +1,15 @@
+Name: ARJ compressed archive (standard)
+URL: "http://fileformats.archiveteam.org/wiki/ARJ"
+FileNameExtensions: ["arj"]
+MimeType: application/x-arj
+DetectionPatterns:
+  - Pos: 0
+    #        `
+    Bytes: [0x60, 0xEA]
+  - Pos: 6
+    Bytes: [0x01]
+  - Pos: 10
+    Bytes: [0x02]
+  - Pos: any
+    AsciiString: ".ARJ"
+    CaseSensitive: false

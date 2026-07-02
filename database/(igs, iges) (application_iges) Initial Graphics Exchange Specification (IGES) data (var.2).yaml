@@ -1,0 +1,17 @@
+Name: Initial Graphics Exchange Specification (IGES) data (var.2)
+URL: "http://en.wikipedia.org/wiki/IGES"
+FileNameExtensions: ["igs", "iges"]
+MimeType: application/iges
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "START RECORD GO HERE.                                                   S      1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CATIA VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IGS"
+    CaseSensitive: false

@@ -1,0 +1,50 @@
+Name: Expression Design drawing (v1)
+URL: "http://fileformats.archiveteam.org/wiki/Expression_Design"
+FileNameExtensions: ["xpr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%%SETTING\nOrientation: 0\nSizeType: "
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\nFrameSize: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "%%DEPENDENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%OBJECTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%LOCALDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%T STRKDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%SETTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%T GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+STRKDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKSTROKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%T PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPTS"
+    CaseSensitive: false

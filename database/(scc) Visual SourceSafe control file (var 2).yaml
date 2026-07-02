@@ -1,0 +1,28 @@
+Name: Visual SourceSafe control file (var 2)
+URL: "http://en.wikipedia.org/wiki/Sourcesafe"
+FileNameExtensions: ["scc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[SCC]"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "C"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS IS AN EMPTY STRING FOR THE MSSCCPRJ.SCC FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROJECT IS NOT UNDER SOURCE CODE CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS IS A SOURCE CODE CONTROL FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCC_PROJECT_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCC_AUX_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VBP"
+    CaseSensitive: false

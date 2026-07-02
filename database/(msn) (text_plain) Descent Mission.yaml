@@ -1,0 +1,14 @@
+Name: Descent Mission
+URL: "https://en.wikipedia.org/wiki/Descent_(1995_video_game)"
+FileNameExtensions: ["msn"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "name = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUM_LEVELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RDL"
+    CaseSensitive: false

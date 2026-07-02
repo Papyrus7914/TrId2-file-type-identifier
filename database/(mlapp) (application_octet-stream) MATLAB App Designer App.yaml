@@ -1,0 +1,38 @@
+Name: MATLAB App Designer App
+URL: "https://en.wikipedia.org/wiki/MATLAB"
+FileNameExtensions: ["mlapp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MWCOREPROPERTIESEXTENSION.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MWCOREPROPERTIES.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPMODEL.MAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPDESIGNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATLAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false

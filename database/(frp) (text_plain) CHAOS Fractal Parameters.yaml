@@ -1,0 +1,30 @@
+Name: CHAOS Fractal Parameters
+Description: Fractal software for DOS by Autodesk.
+URL: "https://github.com/rudyrucker/chaos"
+FileNameExtensions: ["frp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CHAOS Fractal Data\r\nCreated: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ITERATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLICETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILLTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false

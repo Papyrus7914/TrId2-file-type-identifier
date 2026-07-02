@@ -1,0 +1,9 @@
+Name: GEDCOM Family History (UTF-16BE without BOM)
+Description: The GEDCOM file format is a standard format for family history files.
+URL: "http://fileformats.archiveteam.org/wiki/GEDCOM"
+FileNameExtensions: ["ged"]
+MimeType: text/vnd.familysearch.gedcom
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\00\0 \0H\0E\0A\0D"
+    CaseSensitive: true

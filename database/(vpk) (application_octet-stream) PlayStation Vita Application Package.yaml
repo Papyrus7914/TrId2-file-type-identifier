@@ -1,0 +1,29 @@
+Name: PlayStation Vita Application Package
+URL: "https://en.wikipedia.org/wiki/PlayStation_Vita"
+FileNameExtensions: ["vpk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "TEMPLATE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EBOOT.BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON0.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM.SFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIVEAREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCE_SYS"
+    CaseSensitive: false

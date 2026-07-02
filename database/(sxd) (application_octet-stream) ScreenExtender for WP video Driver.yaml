@@ -1,0 +1,16 @@
+Name: ScreenExtender for WP video Driver
+FileNameExtensions: ["sxd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 515
+    AsciiString: "SXGRXDR0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SXGRXDR0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false

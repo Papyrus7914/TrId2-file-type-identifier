@@ -1,0 +1,11 @@
+Name: Pillow font
+URL: "https://pillow.readthedocs.io/en/stable/reference/ImageFont.html"
+FileNameExtensions: ["pil"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PILfont\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

@@ -1,0 +1,24 @@
+Name: Signum!3-4 Document
+Description: Word processor for Atari ST by Application Systems Heidelberg Software GmbH.
+URL: "7"
+FileNameExtensions: ["sdk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0sdoc  03"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLPTRS01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOUSED01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KAPIT 01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMS01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAM01"
+    CaseSensitive: false

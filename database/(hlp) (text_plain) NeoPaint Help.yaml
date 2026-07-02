@@ -1,0 +1,17 @@
+Name: NeoPaint Help
+URL: "https://en.wikipedia.org/wiki/NeoPaint"
+FileNameExtensions: ["hlp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{H000 (Table of Contents)\r\n\r\n^RTable of Contents^r\r\n\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RTABLE OF CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEOPAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEOSOFT"
+    CaseSensitive: false

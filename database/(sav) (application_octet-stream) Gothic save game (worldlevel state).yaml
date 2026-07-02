@@ -1,0 +1,30 @@
+Name: Gothic save game (world/level state)
+Description: "Files name: SAVEDAT.SAV"
+URL: "https://www.mobygames.com/game/3785/gothic/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZenGin Archive\nver 1\nzCArchiverBinSafe\nBIN_SAFE\nsaveGame 1\ndate "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MEATBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREEMINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BARRIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWCAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLDCAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLDMINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWAMP"
+    CaseSensitive: false

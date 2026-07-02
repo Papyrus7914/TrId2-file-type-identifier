@@ -1,0 +1,32 @@
+Name: Train Simulator Consist
+URL: "https://en.wikipedia.org/wiki/Microsoft_Train_Simulator"
+FileNameExtensions: ["con"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFES\0I\0M\0I\0S\0A\0@\0@\0@\0@\0@\0@\0@\0@\0@\0@\0J\0I\0N\0X\00\0D\00\0t\0_\0_\0_\0_\0_\0_\0\r\0\n\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "J\0I\0N\0X\00\0D\00\0T\0_\0_\0_\0_\0_\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0E\0X\0T\0W\0A\0G\0O\0N\0U\0I\0D\0 \0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0A\0X\0V\0E\0L\0O\0C\0I\0T\0Y\0 \0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0U\0R\0A\0B\0I\0L\0I\0T\0Y\0 \0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0R\0A\0I\0N\0C\0F\0G\0 \0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0E\0R\0I\0A\0L\0 \0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0R\0A\0I\0N\0 \0("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0A\0T\0A\0 \0("
+    CaseSensitive: false

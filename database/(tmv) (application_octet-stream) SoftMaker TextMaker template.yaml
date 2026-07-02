@@ -1,0 +1,26 @@
+Name: SoftMaker TextMaker template
+URL: "https://en.wikipedia.org/wiki/TextMaker"
+FileNameExtensions: ["tmv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MV\0\xFF\f\0\x0E\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\x03\0-YA1\x03\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOFTMAKER SOFTWARE GMBH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-YA1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: Infinity Ward Image bitmap
+Description: Used in Call of Duty.
+FileNameExtensions: ["iwi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IWi\x06"
+    CaseSensitive: true
+  - Pos: 10
+    Bytes: [0x01, 0x00]

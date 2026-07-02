@@ -1,0 +1,29 @@
+Name: Toon Boom Vector Graphics
+URL: "https://www.toonboom.com/"
+FileNameExtensions: ["tvg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OTVGfull"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TVCI\0\0\0\0CREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUAA"
+    CaseSensitive: false

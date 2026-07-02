@@ -1,0 +1,36 @@
+Name: Karaoke track info
+Description: Used by Dr. T's Sing-A-Long Around the World.
+URL: "https://en.wikipedia.org/wiki/Dr._T%27s_Music_Software"
+FileNameExtensions: ["krk"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Title]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TIME SIGNATURE DENOMINATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME SIGNATURE NUMERATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END NOTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LYRICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEF"
+    CaseSensitive: false

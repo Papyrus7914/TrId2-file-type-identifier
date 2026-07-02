@@ -1,0 +1,11 @@
+Name: Nintendo Message Standard Binary Text
+URL: "https://mk8.tockdom.com/wiki/MSBT_(File_Format)"
+FileNameExtensions: ["msbt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MsgStdBn"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TXT2"
+    CaseSensitive: false

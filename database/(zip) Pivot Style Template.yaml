@@ -1,0 +1,29 @@
+Name: Pivot Style Template
+Description: Pivot is a web-based tool to help maintain dynamic sites, like weblogs or online journals.
+URL: "http://www.pivotstyles.net/"
+FileNameExtensions: ["zip"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "ARCHIVEPAGE_TEMPLATE.HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SUB_ENTRY_STANDARD.HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRONTPAGE_TEMPLATE.HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRYPAGE_TEMPLATE.HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "README.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIVOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CSS"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: Paradox sort definition
+Description: Paradox is an old DOS DBMS from Borland.
+FileNameExtensions: ["sor"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Paradox \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SORT DEFINITION VERSION"
+    CaseSensitive: false

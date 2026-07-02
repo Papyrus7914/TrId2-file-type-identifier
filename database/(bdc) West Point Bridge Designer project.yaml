@@ -1,0 +1,10 @@
+Name: West Point Bridge Designer project
+URL: "http://bridgecontest.usma.edu"
+FileNameExtensions: ["bdc"]
+DetectionPatterns:
+  - Pos: 0
+    #        n
+    Bytes: [0x6E, 0xC6]
+  - Pos: 4
+    AsciiString: "="
+    CaseSensitive: true

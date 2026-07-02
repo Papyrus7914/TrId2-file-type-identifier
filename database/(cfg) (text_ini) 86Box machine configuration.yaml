@@ -1,0 +1,86 @@
+Name: 86Box machine configuration
+URL: "https://86box.net/"
+FileNameExtensions: ["cfg"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF[Machine]\r\nmachine ="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLOPPY AND CD-ROM DRIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHER REMOVABLE DEVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORAGE CONTROLLERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO_FILTER_METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CASSETTE_ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDROM_01_SCSI_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDROM_02_SCSI_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDROM_03_SCSI_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDROM_04_SCSI_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU_USE_DYNAREC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU_ENABLE_FPU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT DEVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDD_01_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU_FAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUSE_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU_MULTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU_SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME_SYNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCE_43"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPU_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEM_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GFXCARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNDCARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND"
+    CaseSensitive: false

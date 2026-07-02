@@ -1,0 +1,23 @@
+Name: eNotebook document (v3)
+URL: "http://www.enotebook-home.com"
+FileNameExtensions: ["enb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x11ENBFILEVERSION:03"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CMAPSTRINGTOOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENBFILEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDOCPROTECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENBDOCINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNOTECATA"
+    CaseSensitive: false

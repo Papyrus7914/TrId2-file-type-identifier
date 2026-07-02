@@ -1,0 +1,439 @@
+Name: DOS Executable PowerBASIC 3.50
+URL: "http://www.powerbasic.com/products/pbdos/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 11
+    Bytes: [0x00, 0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\x80\0\0\0\xD4\0\0\0\x1C\0\0\0\0\0\0\0\0\0\xE9"
+    CaseSensitive: true
+  - Pos: 37
+    Bytes: [0xE9]
+  - Pos: 40
+    Bytes: [0xE9]
+  - Pos: 43
+    Bytes: [0xE9]
+  - Pos: 46
+    Bytes: [0xE9]
+  - Pos: 49
+    Bytes: [0xE9]
+  - Pos: 52
+    Bytes: [0xE9]
+  - Pos: 55
+    Bytes: [0xE9]
+  - Pos: 58
+    Bytes: [0xE9]
+  - Pos: 61
+    Bytes: [0xE9]
+  - Pos: 64
+    Bytes: [0xE9]
+  - Pos: 67
+    AsciiString: "\x90P\x03 \0"
+    CaseSensitive: true
+  - Pos: 75
+    Bytes: [0x00, 0x03, 0x03]
+  - Pos: 82
+    AsciiString: "                  \x02\0\0\0\0\0\0\0\0\xC8\x05@\xFF\xFF\xFF\xFF\x01\0\0\0?\x132\x132\x1B2\x1F2\x17*$,.\xFF\xFF\x01\xC1\0\0\0\0:\0\0\0\0\0\x03\0"
+    CaseSensitive: true
+  - Pos: 153
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 160
+    Bytes: [0x06, 0x00]
+  - Pos: 164
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 169
+    Bytes: [0x02]
+  - Pos: 177
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 179
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 196
+    Bytes: [0xB0, 0x00]
+  - Pos: 200
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0r\x13\0\0@\0\0\0\0\0.\x8C\x1E\x82\0.\xC7\x06\x80\0\0\0\xE8\x06\x01\xE8"
+    CaseSensitive: true
+  - Pos: 261
+    #              %                 .           .
+    Bytes: [0x04, 0x25, 0xDF, 0xFF, 0x2E, 0xA3, 0x2E, 0x00, 0xE8]
+  - Pos: 271
+    #        \f                      .                             @           u           2           P
+    Bytes: [0x0C, 0xB8, 0xFF, 0xFF, 0x2E, 0xF7, 0x06, 0x92, 0x00, 0x40, 0x00, 0x75, 0x02, 0x32, 0xE4, 0x50, 0xE8]
+  - Pos: 289
+    #        \f                      X
+    Bytes: [0x0C, 0xE8, 0x10, 0x00, 0x58, 0xE8]
+  - Pos: 296
+    #        \f    .
+    Bytes: [0x0C, 0x2E, 0x8E, 0x1E]
+  - Pos: 301
+    #        .                             L           !           \"                            s                                   ^                                   &
+    Bytes: [0x2E, 0xA1, 0x02, 0x00, 0xB4, 0x4C, 0xCD, 0x21, 0xE8, 0x22, 0x01, 0xE8, 0x96, 0x01, 0x73, 0x03, 0xE9, 0x95, 0x00, 0xE8, 0x5E, 0x02, 0xE8, 0x90, 0x02, 0x89, 0x26, 0x98, 0x00, 0x8C, 0x16, 0x9A, 0x00, 0xFA, 0x8E, 0x16]
+  - Pos: 338
+    AsciiString: ".\x8B&"
+    CaseSensitive: true
+  - Pos: 342
+    #        -                                         \v    +                       3                 \a
+    Bytes: [0x2D, 0xFB, 0xFC, 0x8B, 0xCC, 0xBF, 0x10, 0x0B, 0x2B, 0xCF, 0xD1, 0xE9, 0x33, 0xC0, 0x16, 0x07, 0xF3, 0xAB, 0x16, 0x1F, 0xE8]
+  - Pos: 364
+    Bytes: [0x03, 0xE8]
+  - Pos: 367
+    #              6                 C                 .
+    Bytes: [0x10, 0x36, 0xC6, 0x06, 0x43, 0x00, 0x00, 0x2E, 0xF7, 0x06]
+  - Pos: 378
+    #        ,                 u           .
+    Bytes: [0x2C, 0x01, 0x00, 0x75, 0x0E, 0x2E, 0x80, 0x0E]
+  - Pos: 387
+    AsciiString: ", .\x8B\x0E"
+    CaseSensitive: true
+  - Pos: 393
+    #        ,
+    Bytes: [0x2C, 0xE8]
+  - Pos: 396
+    Bytes: [0x17, 0xE8]
+  - Pos: 399
+    #                                      -     m                                                                             t     \a    &
+    Bytes: [0x19, 0x8C, 0xC8, 0x8E, 0xD8, 0x2D, 0x6D, 0x01, 0xA3, 0x86, 0x00, 0x8E, 0xC0, 0xF7, 0x06, 0x92, 0x00, 0x00, 0x01, 0x74, 0x07, 0x26, 0xC7, 0x06, 0x02, 0x00, 0x00, 0x00, 0xC7, 0x06, 0xD0, 0x00, 0x00, 0xFF, 0xC6, 0x06]
+  - Pos: 436
+    #        %                                                     .                       t                                   \a
+    Bytes: [0x25, 0x00, 0x8C, 0xC8, 0xBB, 0x8A, 0x00, 0xF7, 0x06, 0x2E, 0x00, 0x02, 0x00, 0x74, 0x03, 0xBB, 0x8C, 0x00, 0x03, 0x07, 0x16, 0x1F, 0xE8]
+  - Pos: 460
+    AsciiString: "\v\xE8\xCE\0.\xFF.\xA4\0.\x83>\x80\0\0t\x13.\xA3\xA8\0.\xC7\x06\xAA\0\0\0.\xC7\x06\xAC\0\0\0\xC3\xE8"
+    CaseSensitive: true
+  - Pos: 498
+    #              X     X
+    Bytes: [0x1E, 0x58, 0x58, 0xE8]
+  - Pos: 504
+    #        .                                                     \a          !           S     2                             .                             .                             .           6                 \v          t     2                 +           +                             j
+    Bytes: [0x2E, 0x8E, 0x1E, 0x82, 0x00, 0xBB, 0x80, 0x00, 0xC7, 0x07, 0xCD, 0x21, 0x1E, 0x53, 0x32, 0xE4, 0xCB, 0x8C, 0xC8, 0x2E, 0x8B, 0x0E, 0x8E, 0x00, 0x2E, 0x8B, 0x16, 0x88, 0x00, 0x2E, 0x8B, 0x36, 0x90, 0x00, 0x0B, 0xF6, 0x74, 0x32, 0x03, 0xC1, 0x2B, 0xCA, 0x2B, 0xC6, 0x8E, 0xD8, 0xA1, 0x6A, 0x00, 0x8B, 0xD0, 0xD1, 0xE0, 0x03, 0xC2, 0xE8]
+  - Pos: 561
+    #        \f                l                                   \b
+    Bytes: [0x0C, 0x03, 0x06, 0x6C, 0x00, 0x03, 0xC8, 0x83, 0xC1, 0x08, 0xB8]
+  - Pos: 573
+    #        #
+    Bytes: [0x23, 0xE8]
+  - Pos: 576
+    #        \f
+    Bytes: [0x0C, 0x8C, 0xCB, 0x03, 0xC3, 0x8E, 0xD8, 0x03, 0xC6, 0x8E, 0xC0, 0x8B, 0xC1, 0xE8]
+  - Pos: 591
+    #        \v    X
+    Bytes: [0x0B, 0x58, 0xFA, 0x0E, 0x17, 0xBC]
+  - Pos: 598
+    #        $                                               .                             3
+    Bytes: [0x24, 0xFB, 0xFF, 0xE0, 0x8C, 0xC8, 0x8B, 0xD0, 0x2E, 0x03, 0x16, 0x8E, 0x00, 0x33, 0xF6, 0x8E, 0xDA, 0xBF]
+  - Pos: 617
+    #        -                       7                                                     \b
+    Bytes: [0x2D, 0x8E, 0xC0, 0xB9, 0x37, 0x00, 0xFC, 0xF3, 0xA5, 0x8E, 0xD8, 0x83, 0xC2, 0x08, 0x01, 0x16]
+  - Pos: 634
+    #        -
+    Bytes: [0x2D, 0x89, 0x16, 0xA6, 0x00, 0xB9, 0x10, 0x00, 0xBF]
+  - Pos: 644
+    #        -                                                                             \f
+    Bytes: [0x2D, 0x01, 0x15, 0x83, 0xC7, 0x02, 0xF7, 0x05, 0xFF, 0xFF, 0xE0, 0xF5, 0xB9, 0x0C, 0x00, 0xBF]
+  - Pos: 662
+    #                                                        .                 .                       t     )                             3                             .
+    Bytes: [0x01, 0x15, 0x83, 0xC7, 0x04, 0xE2, 0xF9, 0xC3, 0x2E, 0xF7, 0x06, 0x2E, 0x00, 0x02, 0x00, 0x74, 0x29, 0x1E, 0xB8, 0x9B, 0xF8, 0x33, 0xDB, 0xB9, 0x10, 0x00, 0x2E, 0x8B, 0x97]
+  - Pos: 692
+    AsciiString: "-\v\xD2t\x16\x8E\xDA8&\0\0u\t\xA2\0\0\xA2\v\0\xA2.\0\x83\xC3\x02\xE2\xE1\x1F\xC3\xE8\xC0\0r\r\xE8x\0r\b\xE8\x06\0r\x03\xE8\x18\0\xC3.\xF7\x06.\0\x02\0u\r.\xF7\x06"
+    CaseSensitive: true
+  - Pos: 753
+    #        -           ␠     t                                         .           ,           .
+    Bytes: [0x2D, 0x00, 0x20, 0x74, 0x04, 0xB8, 0x01, 0x01, 0xF9, 0xC3, 0x2E, 0xA0, 0x2C, 0x00, 0x2E, 0x8B, 0x1E]
+  - Pos: 771
+    #        -     <           s                                   u           <           t     \n                            t                                                                       .                             @           t     %     .     \v                      .                       .                 .                       t     \n                      .           .                                   7                 <           .                             J                       .                                   !           J           !     .                             .
+    Bytes: [0x2D, 0x3C, 0x03, 0x73, 0x14, 0xF7, 0xC3, 0x00, 0x02, 0x75, 0x0F, 0x3C, 0x02, 0x74, 0x0A, 0xF7, 0xC3, 0x00, 0x01, 0x74, 0x04, 0xB8, 0x03, 0x01, 0xF9, 0xC3, 0xB8, 0x04, 0x01, 0xF9, 0xC3, 0x2E, 0xF7, 0x06, 0x92, 0x00, 0x40, 0x00, 0x74, 0x25, 0x2E, 0x0B, 0x06, 0xCE, 0x00, 0x2E, 0xA3, 0xCA, 0x00, 0x2E, 0xF7, 0x06, 0x2E, 0x00, 0x02, 0x00, 0x74, 0x0A, 0xDB, 0xE3, 0x9B, 0x2E, 0xD9, 0x2E, 0xCA, 0x00, 0x9B, 0xC3, 0xCD, 0x37, 0xE3, 0xCD, 0x3C, 0x99, 0x2E, 0xCA, 0x00, 0xC3, 0xB4, 0x4A, 0xBB, 0xFF, 0xFF, 0x2E, 0x8E, 0x06, 0x82, 0x00, 0xCD, 0x21, 0xB4, 0x4A, 0xCD, 0x21, 0x2E, 0x03, 0x1E, 0x82, 0x00, 0x2E, 0x89, 0x1E]
+  - Pos: 874
+    #        .     .
+    Bytes: [0x2E, 0x2E, 0x89, 0x1E]
+  - Pos: 879
+    #        .                 .           &
+    Bytes: [0x2E, 0x8B, 0xC3, 0x2E, 0xF7, 0x26]
+  - Pos: 886
+    AsciiString: "\r-\x01\0s\x01J.\xA3(\0.\x89\x16*\0.\x8C\x0E0\0.;\x1E"
+    CaseSensitive: true
+  - Pos: 911
+    #        -                             .           >     w                 r                                         .           >                       t     ,     .
+    Bytes: [0x2D, 0xB8, 0x02, 0x01, 0xC3, 0x2E, 0x80, 0x3E, 0x77, 0x00, 0x02, 0x72, 0x01, 0xC3, 0xB8, 0x00, 0x01, 0xC3, 0x2E, 0x83, 0x3E, 0x80, 0x00, 0x04, 0x74, 0x2C, 0x2E, 0xA1]
+  - Pos: 941
+    #        2           .
+    Bytes: [0x32, 0xFF, 0x2E, 0xC5, 0x0E]
+  - Pos: 947
+    #        .     3                             |                       .
+    Bytes: [0x2E, 0x33, 0xF6, 0xE3, 0x1D, 0x8B, 0x7C, 0x01, 0x8A, 0x1C, 0x2E, 0x8E, 0x87]
+  - Pos: 961
+    #        -     &                 r                                               &           \r                                        .
+    Bytes: [0x2D, 0x26, 0x01, 0x05, 0x72, 0x06, 0x83, 0xC6, 0x03, 0xE2, 0xEC, 0xC3, 0x26, 0x8C, 0x0D, 0x83, 0xC6, 0x03, 0xE2, 0xE3, 0xC3, 0x2E, 0x8B, 0x16]
+  - Pos: 986
+    #        .
+    Bytes: [0x2E, 0xBE]
+  - Pos: 989
+    #        .
+    Bytes: [0x2E, 0xE8, 0x0E, 0x00, 0xBE]
+  - Pos: 995
+    AsciiString: ".\xE8\b\0\xBE"
+    CaseSensitive: true
+  - Pos: 1001
+    #        .                             \n    .                 +
+    Bytes: [0x2E, 0xE8, 0x02, 0x00, 0xEB, 0x0A, 0x2E, 0xC4, 0x04, 0x2B, 0xD0, 0x8E, 0xDA, 0xE9]
+  - Pos: 1016
+    #        \n          \a    3           .
+    Bytes: [0x0A, 0x0E, 0x07, 0x33, 0xF6, 0x2E, 0x8E, 0x1E]
+  - Pos: 1025
+    #        .
+    Bytes: [0x2E, 0xBF]
+  - Pos: 1028
+    #        .           \b                            3           .
+    Bytes: [0x2E, 0xB9, 0x08, 0x00, 0xFC, 0xF3, 0xA5, 0x33, 0xF6, 0x2E, 0x8E, 0x1E]
+  - Pos: 1041
+    #        .           \b
+    Bytes: [0x2E, 0xB9, 0x08, 0x00, 0xF3, 0xA5, 0x0E, 0x1F, 0x8B, 0x0E]
+  - Pos: 1052
+    AsciiString: ".\x8B6"
+    CaseSensitive: true
+  - Pos: 1056
+    #        .
+    Bytes: [0x2E, 0x8B, 0x16]
+  - Pos: 1060
+    #        .                             &           T           &           L     \r                      p                                         3
+    Bytes: [0x2E, 0x8E, 0xC2, 0xE3, 0x0E, 0x26, 0x01, 0x54, 0x02, 0x26, 0x80, 0x4C, 0x0D, 0x04, 0x83, 0xC6, 0x70, 0xE2, 0xF2, 0xC3, 0x0E, 0x1F, 0xFC, 0x33, 0xC0, 0x8E, 0x06]
+  - Pos: 1088
+    #        .                                   u
+    Bytes: [0x2E, 0xF6, 0x06, 0xD0, 0x00, 0xFF, 0x75, 0x18, 0x8B, 0x0E]
+  - Pos: 1099
+    AsciiString: ".\x8B>"
+    CaseSensitive: true
+  - Pos: 1103
+    #        .
+    Bytes: [0x2E, 0xD1, 0xE9, 0xF3, 0xAB, 0x8B, 0x0E]
+  - Pos: 1111
+    AsciiString: ".\x8B>"
+    CaseSensitive: true
+  - Pos: 1115
+    #        .
+    Bytes: [0x2E, 0xD1, 0xE9, 0xF3, 0xAB, 0x8B, 0x0E]
+  - Pos: 1123
+    AsciiString: ".\x8B>"
+    CaseSensitive: true
+  - Pos: 1127
+    #        .
+    Bytes: [0x2E, 0xD1, 0xE9, 0xF3, 0xAB, 0x8B, 0x0E]
+  - Pos: 1135
+    AsciiString: ".\x8B>"
+    CaseSensitive: true
+  - Pos: 1139
+    #        .                                                           u     \v
+    Bytes: [0x2E, 0xD1, 0xE9, 0xF3, 0xAB, 0xF6, 0x06, 0xD0, 0x00, 0xFF, 0x75, 0x0B, 0x8B, 0x0E]
+  - Pos: 1154
+    AsciiString: ".\x8B>"
+    CaseSensitive: true
+  - Pos: 1158
+    #        .           -
+    Bytes: [0x2E, 0xE8, 0x2D, 0x00, 0x8B, 0x0E]
+  - Pos: 1165
+    AsciiString: ".\x8B>"
+    CaseSensitive: true
+  - Pos: 1169
+    #        .           \"
+    Bytes: [0x2E, 0xE8, 0x22, 0x00, 0xC4, 0x16]
+  - Pos: 1176
+    #        .
+    Bytes: [0x2E, 0xE8]
+  - Pos: 1179
+    #        \n                            \n          u
+    Bytes: [0x0A, 0x86, 0x06, 0xD0, 0x00, 0x0A, 0xC0, 0x75, 0x12, 0xA1]
+  - Pos: 1190
+    #        .
+    Bytes: [0x2E, 0xA3]
+  - Pos: 1193
+    #        .
+    Bytes: [0x2E, 0xA3]
+  - Pos: 1196
+    #        .
+    Bytes: [0x2E, 0xC7, 0x06]
+  - Pos: 1200
+    AsciiString: ".\0\0\xE8"
+    CaseSensitive: true
+  - Pos: 1206
+    #                          &           E           &           e     \r                      p                                         \a    3
+    Bytes: [0xC3, 0xE3, 0x0E, 0x26, 0x89, 0x45, 0x02, 0x26, 0x80, 0x65, 0x0D, 0xFB, 0x83, 0xC7, 0x70, 0xE2, 0xF2, 0xC3, 0x0E, 0x0E, 0x1F, 0x07, 0x33, 0xC0, 0xA3, 0xA8, 0x00, 0xA3, 0xAE, 0x00, 0xA3, 0xBE, 0x00, 0xA3]
+  - Pos: 1241
+    #        &
+    Bytes: [0x26, 0xFC]
+  - Pos: 1270
+    Bytes: [0xBF]
+  - Pos: 1303
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1340
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1389
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1392
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1404
+    Bytes: [0x00, 0xE8]
+  - Pos: 1407
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1417
+    Bytes: [0xE8]
+  - Pos: 1422
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1437
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1465
+    AsciiString: "u"
+    CaseSensitive: true
+  - Pos: 1470
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1553
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1558
+    AsciiString: "X"
+    CaseSensitive: true
+  - Pos: 1571
+    Bytes: [0x9D]
+  - Pos: 1579
+    AsciiString: "t"
+    CaseSensitive: true
+  - Pos: 1594
+    AsciiString: "t"
+    CaseSensitive: true
+  - Pos: 1627
+    Bytes: [0x9B]
+  - Pos: 1630
+    Bytes: [0x9B]
+  - Pos: 1787
+    Bytes: [0x83]
+  - Pos: 1790
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1862
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1991
+    Bytes: [0x06]
+  - Pos: 1993
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NO DOS 2.0+$NO 8087$PROGRAM TOO BIG$NO 80286+$NO 80386+$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "87\0CGASNOWCHK\0HERC\0VGA\0101KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES FREERANDOM NUMBER SEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "333DDKJ5FDG3H3HHH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR AT PGM-CTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XWPMKHDCBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0ZSOMEN8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMMXXXX0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMSPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQRVWU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PQRVWU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HH9333"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPPPQR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3K5LC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9.6\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BHOQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQWU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0TF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FU)."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4\0\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KYBD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%\0\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPT2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPT3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0\0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T4R3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0 T"
+    CaseSensitive: false

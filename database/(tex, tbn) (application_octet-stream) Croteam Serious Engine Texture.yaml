@@ -1,0 +1,14 @@
+Name: Croteam Serious Engine Texture
+URL: "http://fileformats.archiveteam.org/wiki/Serious_Engine_texture_file"
+FileNameExtensions: ["tex", "tbn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TVER"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "TDAT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TDAT"
+    CaseSensitive: false

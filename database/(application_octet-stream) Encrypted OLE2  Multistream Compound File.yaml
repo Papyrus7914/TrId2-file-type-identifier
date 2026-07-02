@@ -1,0 +1,86 @@
+Name: Encrypted OLE2 / Multistream Compound File
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1]
+  - Pos: any
+    AsciiString: "DATAINTEGRITY ENCRYPTEDHMACKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTEDVERIFIERHASHINPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTEDVERIFIERHASHVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTEDKEY SPINCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTEDHMACVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTEDKEYVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTION XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYDATA SALTSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYENCRYPTOR URI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAININGMODECBC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIPHERALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIPHERCHAINING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASHALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYENCRYPTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SALTVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASHSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2006"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

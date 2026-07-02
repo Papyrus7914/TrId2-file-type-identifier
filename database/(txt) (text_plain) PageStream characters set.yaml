@@ -1,0 +1,17 @@
+Name: PageStream characters set
+URL: "https://en.wikipedia.org/wiki/PageStream"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "APP LIBRARY CHARACTER SET v1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NEWLINETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUINAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false

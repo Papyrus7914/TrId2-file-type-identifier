@@ -1,0 +1,40 @@
+Name: Rage Maker workspace
+URL: "http://ragemaker.net/"
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<ragemaker>\n  <panels>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REDDITWATERMARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDLINESARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDABOVEALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAGEMAKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWGRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

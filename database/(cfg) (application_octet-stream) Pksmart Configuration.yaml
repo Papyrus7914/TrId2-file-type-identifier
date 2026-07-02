@@ -1,0 +1,11 @@
+Name: Pksmart Configuration
+Description: DOS Executable compressor by Puchkov Sergey and Alex.
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Pkscfg "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "."
+    CaseSensitive: true

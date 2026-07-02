@@ -1,0 +1,10 @@
+Name: Microsoft Zone Identifier
+FileNameExtensions: ["identifier"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[ZoneTransfer]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ZONEID"
+    CaseSensitive: false

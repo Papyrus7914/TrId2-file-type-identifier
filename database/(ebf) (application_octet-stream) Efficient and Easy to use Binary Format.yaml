@@ -1,0 +1,14 @@
+Name: Efficient and Easy to use Binary Format
+URL: "http://ebfformat.sourceforge.net/"
+FileNameExtensions: ["ebf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x8AEBF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

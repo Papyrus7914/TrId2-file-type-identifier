@@ -1,0 +1,22 @@
+Name: Google Drive Presentation link
+URL: "http://en.wikipedia.org/wiki/Google_Drive"
+FileNameExtensions: ["gslides"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"url\": \"https://docs.google.com/presentation/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCS.GOOGLE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDIT"
+    CaseSensitive: false

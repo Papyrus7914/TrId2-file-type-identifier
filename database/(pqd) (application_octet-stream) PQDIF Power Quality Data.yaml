@@ -1,0 +1,11 @@
+Name: PQDIF Power Quality Data
+URL: "https://www.epri.com/research/products/000000000001015860"
+FileNameExtensions: ["pqd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@\x14\x11J\x9F\xE4\xCF\x11\x99\0PQDIF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".PQD"
+    CaseSensitive: false

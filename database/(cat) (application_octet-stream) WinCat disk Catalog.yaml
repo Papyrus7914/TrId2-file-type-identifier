@@ -1,0 +1,11 @@
+Name: WinCat disk Catalog
+Description: Windows 3.x Disk Catalog and FloppyDisk Manager  by Mart Heubel.
+FileNameExtensions: ["cat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WINCAT     V "
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "."
+    CaseSensitive: true

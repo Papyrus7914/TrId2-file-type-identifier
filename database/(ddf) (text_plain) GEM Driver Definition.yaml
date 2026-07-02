@@ -1,0 +1,32 @@
+Name: GEM Driver Definition
+URL: "https://en.wikipedia.org/wiki/Graphical_Environment_Manager"
+FileNameExtensions: ["ddf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "menulabel="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANUFACTURER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRIVERLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENULABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEMEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDPI"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: Now Contact contacts list (v4, PC)
+URL: "https://preservation.tylerthorsted.com/2026/04/24/be-dead/"
+FileNameExtensions: ["nct"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xBE, 0xDE, 0xAD, 0x01]
+  - Pos: 517
+    AsciiString: "4v400"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WINS"
+    CaseSensitive: false

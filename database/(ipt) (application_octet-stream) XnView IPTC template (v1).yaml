@@ -1,0 +1,12 @@
+Name: XnView IPTC template (v1)
+Description: Used by XnView to export/import as template for adding IPTC metainformation to JPEG images.
+URL: "https://www.xnview.com/wiki/index.php/Metadata#IPTC"
+FileNameExtensions: ["ipt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IPTC"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0\0"
+    CaseSensitive: true

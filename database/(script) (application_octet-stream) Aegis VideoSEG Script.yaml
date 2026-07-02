@@ -1,0 +1,38 @@
+Name: Aegis VideoSEG Script
+URL: "https://archive.org/details/AegisVideoTitler"
+FileNameExtensions: ["script"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORMAT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IFFSCPBKPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFFOPENPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFFSAVEPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOLOOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HRDEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LRDEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false

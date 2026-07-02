@@ -1,0 +1,28 @@
+Name: Entrust Entelligence Profile
+URL: "http://www.entrust.com/entelligence/"
+FileNameExtensions: ["epf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Password Token]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROFILE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER X.500 NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD TOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SALTVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASH"
+    CaseSensitive: false

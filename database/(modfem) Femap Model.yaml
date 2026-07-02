@@ -1,0 +1,49 @@
+Name: Femap Model
+URL: "http://en.wikipedia.org/wiki/Femap"
+FileNameExtensions: ["modfem"]
+DetectionPatterns:
+  - Pos: 0
+    #                                            $     @     _
+    Bytes: [0x9A, 0x99, 0x99, 0x99, 0x99, 0x99, 0x24, 0x40, 0x5F]
+  - Pos: any
+    AsciiString: "N\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0NP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "970-FX-NT-2005\0\0\0\0\0\0\0\0\0\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FFF\0PPP\0ZZZ\0DDD\0NNN\0XXX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTRUCTION LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNTITLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0D\0.\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DBDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DBINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0\0\0\0NP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DBDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0\0HB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X\0D\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMP"
+    CaseSensitive: false

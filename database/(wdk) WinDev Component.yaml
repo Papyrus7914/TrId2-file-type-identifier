@@ -1,0 +1,17 @@
+Name: WinDev Component
+Description: WinDev is a RAD tool by PC Soft.
+URL: "http://www.windev.com"
+FileNameExtensions: ["wdk"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PCS\0\x14\0\0\0\x01\0\r\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\f\x04"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0\0a"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*****WDL"
+    CaseSensitive: false

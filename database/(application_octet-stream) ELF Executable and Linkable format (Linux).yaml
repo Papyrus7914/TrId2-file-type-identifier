@@ -1,0 +1,38 @@
+Name: ELF Executable and Linkable format (Linux)
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x7FELF"
+    CaseSensitive: true
+  - Pos: 6
+    Bytes: [0x01]
+  - Pos: 8
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 77
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 83
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 85
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 102
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 109
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 115
+    AsciiString: "\0"
+    CaseSensitive: true

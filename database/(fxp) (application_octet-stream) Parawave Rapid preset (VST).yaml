@@ -1,0 +1,20 @@
+Name: Parawave Rapid preset (VST)
+URL: "https://parawave-audio.com/"
+FileNameExtensions: ["fxp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CcnK"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FPCh\0\0\0\x01PW_R"
+    CaseSensitive: true
+  - Pos: 64
+    #        x
+    Bytes: [0x78, 0xDA]
+  - Pos: any
+    AsciiString: "FPCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PW_R"
+    CaseSensitive: false

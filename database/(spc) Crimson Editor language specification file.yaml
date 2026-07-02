@@ -1,0 +1,19 @@
+Name: Crimson Editor language specification file
+URL: "http://www.crimsoneditor.com"
+FileNameExtensions: ["spc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SPECIFICATION FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$CASESENSITIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$LINECOMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DELIMITERS"
+    CaseSensitive: false

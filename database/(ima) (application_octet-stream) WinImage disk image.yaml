@@ -1,0 +1,11 @@
+Name: WinImage disk image
+URL: "https://www.winimage.com/"
+FileNameExtensions: ["ima"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 3
+    AsciiString: "WINIMAGE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WINIMAGE"
+    CaseSensitive: false

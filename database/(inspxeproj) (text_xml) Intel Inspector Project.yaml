@@ -1,0 +1,47 @@
+Name: Intel Inspector Project
+URL: "https://en.wikipedia.org/wiki/Intel_Inspector"
+FileNameExtensions: ["inspxeproj"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOGICALCPUCOUNT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPUFREQUENCY TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDNUMBER TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSPECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDMGR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S32_T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S64_T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U64_T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false

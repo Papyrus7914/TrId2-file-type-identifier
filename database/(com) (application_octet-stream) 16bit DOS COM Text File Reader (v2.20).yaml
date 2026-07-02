@@ -1,0 +1,88 @@
+Name: 16bit DOS COM Text File Reader (v2.20)
+Description: DOS tool by Creative Technology.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "\0\x02\nO\f\nREADME."
+    CaseSensitive: true
+  - Pos: 131
+    AsciiString: "QIPHKMGOCD\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXT FILE READER  VERSION 2.20"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- TEXT FILE ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER NOT READY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READING TEXT FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM ABORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-TO CONTINUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-PRINT PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-PRINT ALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QIPHKMGOCD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-TO ABORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-TO QUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-GO END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-GO TOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-SCROLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "README."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PF10"
+    CaseSensitive: false

@@ -1,0 +1,410 @@
+Name: NSIS - Nullsoft Scriptable Install System
+URL: "http://nsis.sourceforge.net/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0S\0C\0T\0L\0S\0_\0P\0R\0O\0G\0R\0E\0S\0S\03\02"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITEPRIVATEPROFILESTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPRIVATEPROFILESTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETFILEVERSIONINFOSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMPARAMETERSINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETWINDOWSDIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIBYTETOWIDECHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETFOREGROUNDWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHGETPATHFROMIDLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAITFORSINGLEOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETEXITCODEPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSYSTEMDIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDIALOGPARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETFILEATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETFILEATTRIBUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHBROWSEFORFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COCREATEINSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETDISKFREESPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEHANDLEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSHORTPATHNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPAREFILETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEDIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPATCHMESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISWINDOWENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLEUNINITIALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGQUERYVALUEEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOVEDIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHFILEOPERATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEWINDOWEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIALOGBOXPARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCOMMANDLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETDLGITEMTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGDELETEVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENTOCLIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETDLGITEMTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETFILEPOINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFWINDOWPROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTROYWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDFIRSTFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCLIENTRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETWINDOWRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLEINITIALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERCLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGSETVALUEEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERQUERYVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADVAPI32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMCTL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATETHREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETEOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDNEXTFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDWINDOWEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETTICKCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADLIBRARYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULLSOFTINST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGCREATEKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGDELETEKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGENUMVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGOPENKEYEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETCLASSLONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTEXTCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETWINDOWPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHELLEXECUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREELIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETFILESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETTEMPPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEEKMESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGCLOSEKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDMESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETFILETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHELL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINPAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADBITMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADCURSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGEBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVEFILEEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGENUMKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETBKCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDDIALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINDCLOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GDI32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLE32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETBKMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WSPRINTFA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDPAINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILLRECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTRLENA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTIMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTRCAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTRCPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLEEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RICH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SORA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEXA"
+    CaseSensitive: false

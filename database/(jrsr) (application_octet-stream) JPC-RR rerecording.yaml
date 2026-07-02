@@ -1,0 +1,83 @@
+Name: JPC-RR rerecording
+URL: "http://tasvideos.org/EmulatorResources/JPC.html"
+FileNameExtensions: ["jrsr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JRSR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ORG.JPC.EMULATOR.PERIPHERAL.KEYBOARD KEYEDGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN INITIALIZATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN DISKINFO-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+COMMENT(ENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+TOTALSECTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+BOOT FLOPPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+IMAGELENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+INITIALTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+TYPE FLOPPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN EVENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+CPUDIVIDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+MEMORYSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+PROJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+RERECORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+TYPE BIOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+DISKNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+IMAGEMD5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+TYPE HDD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+SECTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+VGABIOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+TRACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+SIDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+BIOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+FDA"
+    CaseSensitive: false

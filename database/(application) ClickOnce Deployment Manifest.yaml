@@ -1,0 +1,127 @@
+Name: ClickOnce Deployment Manifest
+URL: "http://en.wikipedia.org/wiki/ClickOnce"
+FileNameExtensions: ["application"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEPENDENTASSEMBLY DEPENDENCYTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASM.V1 ASSEMBLY.ADAPTIVE.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASHTRANSFORMS.IDENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGESTMETHOD ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLYIDENTITY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSORARCHITECTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS-MICROSOFT-COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORM ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPLOYMENT INSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION ASMV2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFESTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICKEYTOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMALOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE.MANIFEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLY XSI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "01-REL-R-NS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGESTVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLISHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODEBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLDSIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASM.V2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPEG21"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASMV1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XRML"
+    CaseSensitive: false

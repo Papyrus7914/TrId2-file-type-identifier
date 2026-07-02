@@ -1,0 +1,20 @@
+Name: WinOLS MapPack
+URL: "https://www.evc.de/en/product/ols/software/"
+FileNameExtensions: ["kp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\v\0\0\0WinOLS File"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WINOLS FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPPACK.KP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEXDUMP"
+    CaseSensitive: false

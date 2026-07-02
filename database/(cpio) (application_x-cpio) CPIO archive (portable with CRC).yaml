@@ -1,0 +1,9 @@
+Name: CPIO archive (portable with CRC)
+Description: called "ASCII cpio archive (SVR4 with CRC)" by file command, "cpio/crc" by GNU cpio and "Cpio/New CRC" by 7-Zip
+URL: "http://fileformats.archiveteam.org/wiki/Cpio"
+FileNameExtensions: ["cpio"]
+MimeType: application/x-cpio
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "070702"
+    CaseSensitive: true

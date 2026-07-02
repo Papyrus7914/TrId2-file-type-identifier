@@ -1,0 +1,19 @@
+Name: SQ Tracker chiptune
+URL: "https://spectrumcomputing.co.uk/alt/21753/ZX-Spectrum/SQ-Tracker"
+FileNameExtensions: ["sqt"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\n\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 19
+    Bytes: [0x01]

@@ -1,0 +1,17 @@
+Name: FreePCB Netlist
+URL: "https://en.wikipedia.org/wiki/FreePCB"
+FileNameExtensions: ["net"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*PADS-PCB*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*SIGNAL*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*END*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*NET*"
+    CaseSensitive: false

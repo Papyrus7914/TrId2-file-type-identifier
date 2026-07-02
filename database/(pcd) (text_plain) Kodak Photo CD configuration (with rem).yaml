@@ -1,0 +1,20 @@
+Name: Kodak Photo CD configuration (with rem)
+URL: "https://en.wikipedia.org/wiki/Photo_CD"
+FileNameExtensions: ["pcd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LAST_SESN_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISC_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XACT_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDR"
+    CaseSensitive: false

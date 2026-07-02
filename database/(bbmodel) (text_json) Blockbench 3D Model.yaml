@@ -1,0 +1,41 @@
+Name: Blockbench 3D Model
+URL: "https://blockbench.net/"
+FileNameExtensions: ["bbmodel"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"meta\":{\"format_version\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODEL_FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTLINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOX_UV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NAME"
+    CaseSensitive: false

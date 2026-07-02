@@ -1,0 +1,11 @@
+Name: IFF document storage
+Description: Used by Amiga's ProWrite.
+URL: "http://wiki.amigaos.net/wiki/WORD_IFF_Document_Storage"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WORD"
+    CaseSensitive: true

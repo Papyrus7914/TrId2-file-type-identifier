@@ -1,0 +1,19 @@
+Name: Canvas Image File
+URL: "http://fileformats.archiveteam.org/wiki/Canvas"
+FileNameExtensions: ["cvi"]
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "DAD5PROX\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DAD5HACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAD5PROX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0\0\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8BIM"
+    CaseSensitive: false

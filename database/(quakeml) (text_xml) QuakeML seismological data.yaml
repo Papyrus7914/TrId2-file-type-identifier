@@ -1,0 +1,74 @@
+Name: QuakeML seismological data
+URL: "http://fileformats.archiveteam.org/wiki/QuakeML"
+FileNameExtensions: ["quakeml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PREFERREDORIGINID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEDSTATIONCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENTPARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVALUATIONMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARDERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AZIMUTHALGAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATIONINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATIONTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUAKEML.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EARTHQUAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAGNITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

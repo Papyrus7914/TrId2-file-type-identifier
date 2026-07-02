@@ -1,0 +1,26 @@
+Name: Help Reader Voice info
+Description: Native Hawaiian text to speech program by Hawaii Education Literacy Project.
+FileNameExtensions: ["voi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "loadcompanionbitmap "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOADCOMPANIONBITMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOICEFONT EN11K8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOICEVOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOICEPITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOICESPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD.GIF"
+    CaseSensitive: false

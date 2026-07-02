@@ -1,0 +1,29 @@
+Name: Qt Help Project
+URL: "https://doc.qt.io/qt-5/qthelp-index.html"
+FileNameExtensions: ["qhp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "QTHELPPROJECT VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTERSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMESPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

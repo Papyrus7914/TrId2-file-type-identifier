@@ -1,0 +1,90 @@
+Name: SnagIt capture
+URL: "http://en.wikipedia.org/wiki/Snagit"
+FileNameExtensions: ["snag"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xCBTSCSNAGN"
+    CaseSensitive: true
+  - Pos: 24
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTCREATION TIME\05"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0O\0C\0U\0M\0E\0N\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTDISCLAIMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTCOPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTCOMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTWARNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0R\0A\0M\0E\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTSOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTAUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0M\0A\0G\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0D\0E\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSCSNAGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false

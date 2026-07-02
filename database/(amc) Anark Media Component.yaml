@@ -1,0 +1,39 @@
+Name: Anark Media Component
+URL: "www.anark.com/"
+FileNameExtensions: ["amc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0\xC3\v\n\0\0\0A\0N\0A\0R\0K\0\xC6\v\x04\0\0\0\0\0\0\0\xC4\v\x04\0\0\0\x01\0\0\0\xC5\v\x04\0\0\0\x06\0\0\0\xD5\t"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 61
+    #                                \v                                                                                                                                  \v
+    Bytes: [0x00, 0x00, 0x00, 0xD1, 0x0B, 0x10, 0x00, 0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xD0, 0x0B, 0x10, 0x00, 0x00, 0x00]
+  - Pos: 108
+    AsciiString: "\xBE\v\x04\0\0\0\x04\0\0\x03\xCB\tp\0\0\0\0\0\0\0\xE0.\x14\0\0\0[\0"
+    CaseSensitive: true
+  - Pos: 152
+    AsciiString: "]\0\xCA\v\x04\0\0\0\0\0\0\0\xCB\v\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 172
+    AsciiString: "\0\0\xCC\v\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 182
+    AsciiString: "\0\0\xE2.\x10\0\0\0\0\0\x80?\0\0\x80?\0\0\x80?\0\0\x80?\xCE\v\x04\0\0\0\x10\0\0\0\xE1.\x04\0\0\0\x01\0\0\0\xD2\v\x04\0\0\0\x01\0\0\0\xC8\t"
+    CaseSensitive: true
+  - Pos: 240
+    Bytes: [0x01, 0x00]
+  - Pos: 243
+    AsciiString: "\0\0\0\xC9\t"
+    CaseSensitive: true
+  - Pos: 250
+    AsciiString: "\0\0\x02\0\0\0\xC1\v\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 278
+    AsciiString: "\xBB\v\x10\0\0\0M\r\xC9{#+\xFEU\xD5T:i/-\x0FE\x94\x11"
+    CaseSensitive: true

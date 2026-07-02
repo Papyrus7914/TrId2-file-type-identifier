@@ -1,0 +1,45 @@
+Name: Tiny Aibo Room Description
+Description: text/ini
+URL: "https://archive.org/details/tiny-aibo-3.1"
+FileNameExtensions: ["ard"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Info]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECTANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKAREA1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPHERE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPE"
+    CaseSensitive: false

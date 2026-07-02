@@ -1,0 +1,14 @@
+Name: Amazfit GTR watchface (var.1)
+URL: "https://amazfitwatchfaces.com/"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "O"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0\0\0\x10\0\0\0\x10`\xD0HMDIAL\0\xFF\xFF\xFF\xFF\x06F\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HMDIAL"
+    CaseSensitive: false

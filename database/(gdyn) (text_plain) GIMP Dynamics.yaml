@@ -1,0 +1,56 @@
+Name: GIMP Dynamics
+URL: "https://en.wikipedia.org/wiki/GIMP"
+FileNameExtensions: ["gdyn"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# GIMP dynamics file"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END OF GIMP DYNAMICS FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(ASPECT-RATIO-OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(USE-DIRECTION NO)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(USE-PRESSURE NO)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(USE-VELOCITY NO)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(HARDNESS-OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(OPACITY-OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(USE-RANDOM NO)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(JITTER-OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(ANGLE-OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(COLOR-OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(USE-FADE NO)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(USE-TILT NO)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(RATE-OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(SIZE-OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NAME"
+    CaseSensitive: false

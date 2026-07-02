@@ -1,0 +1,32 @@
+Name: iCalendar Alarm
+URL: "http://fileformats.archiveteam.org/wiki/ICalendar"
+FileNameExtensions: ["icsalarm"]
+MimeType: text/calendar
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN:VCALENDAR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GREGORIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VCALENDAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIGGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALARM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false

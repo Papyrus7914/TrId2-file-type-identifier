@@ -1,0 +1,17 @@
+Name: Citation File Format
+Description: https://citation-file-format.github.io/
+FileNameExtensions: ["cff"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "cff-version: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

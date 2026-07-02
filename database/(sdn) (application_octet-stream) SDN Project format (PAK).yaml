@@ -1,0 +1,34 @@
+Name: SDN Project format (PAK)
+URL: "http://fileformats.archiveteam.org/wiki/SDN_(SDN_Project)"
+FileNameExtensions: ["sdn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x1A]
+  - Pos: 18
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM WAS DISTRIBUTED BY THE SDN PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IT  IS PROTECTED  BY THE  NOGATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTICIPATING HOBBY  SYSOPS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECURITY  ENVELOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(SM)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORK"
+    CaseSensitive: false

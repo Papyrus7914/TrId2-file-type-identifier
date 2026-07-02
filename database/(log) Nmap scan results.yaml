@@ -1,0 +1,37 @@
+Name: Nmap scan results
+URL: "http://en.wikipedia.org/wiki/Nmap"
+FileNameExtensions: ["log"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# "
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "map "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: " scan initiated "
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: " as: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCAN INITIATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NMAP -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false

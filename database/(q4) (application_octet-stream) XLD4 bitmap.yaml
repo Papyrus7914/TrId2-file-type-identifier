@@ -1,0 +1,13 @@
+Name: XLD4 bitmap
+URL: "http://fileformats.archiveteam.org/wiki/XLD4"
+FileNameExtensions: ["q4"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x1A, 0x00]
+  - Pos: 11
+    AsciiString: "MAJYO"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAJYO"
+    CaseSensitive: false

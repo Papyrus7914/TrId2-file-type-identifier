@@ -1,0 +1,29 @@
+Name: Super Smash Bros. Ultimate UI data
+URL: "https://en.wikipedia.org/wiki/Super_Smash_Bros._Ultimate"
+FileNameExtensions: ["bntx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BNTX\0\0\0\0\0\0\x04\0\xFF\xFE\f@"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "NX  "
+    CaseSensitive: true
+  - Pos: 416
+    AsciiString: "_STR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BRTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STR"
+    CaseSensitive: false

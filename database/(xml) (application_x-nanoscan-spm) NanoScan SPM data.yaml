@@ -1,0 +1,17 @@
+Name: NanoScan SPM data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/nanoscan.c"
+FileNameExtensions: ["xml"]
+MimeType: application/x-nanoscan-spm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WWW.SWISSPROBE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

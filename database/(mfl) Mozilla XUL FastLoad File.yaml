@@ -1,0 +1,8 @@
+Name: Mozilla XUL FastLoad File
+Description: Contains precompiled chrome and JavaScript for quicker loading.
+URL: "http://www.mozilla.org"
+FileNameExtensions: ["mfl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XPCOM\nMozFASL\r\n\x1A"
+    CaseSensitive: true

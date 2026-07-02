@@ -1,0 +1,13 @@
+Name: Microsoft Money data
+URL: "http://www.microsoft.com/money"
+FileNameExtensions: ["mny"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x01\0\0MSISAM Database"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "M\0O\0N\0E\0Y\09\08"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0S\0Y\0S"
+    CaseSensitive: false

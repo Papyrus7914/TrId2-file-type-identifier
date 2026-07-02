@@ -1,0 +1,443 @@
+Name: AutoCAD Data Extraction template
+URL: "http://en.wikipedia.org/wiki/Autodesk"
+FileNameExtensions: ["dxe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x01\0\0\0\xFF\xFF\xFF\xFF\x01\0\0\0\0\0\0\0\f\x02\0\0\0<AcDx, Version="
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SYSTEM.COLLECTIONS.ICOMPARER$SYSTEM.COLLECTIONS.IHASHCODEPROVIDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.DXDRAWINGDATAEXTRACTORSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "6AUTODESK.AUTOCAD.DATAEXTRACTION.DXDRAWINGDATAEXTRACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4AUTODESK.AUTOCAD.DATAEXTRACTION.ADOOUTPUT+OUTPUTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4AUTODESK.AUTOCAD.DATAEXTRACTION.DXEXTRACTIONSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4AUTODESK.AUTOCAD.DATAEXTRACTION.DXPROPERTYDESCRIPTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.IDXPROPERTYDESCRIPTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1AUTODESK.AUTOCAD.DATAEXTRACTION.IDXTYPEDESCRIPTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3AUTODESK.AUTOCAD.DATAEXTRACTION.IDXTYPEDESCRIPTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.COLLECTIONS.GENERIC.GENERICEQUALITYCOMPARER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0AUTODESK.AUTOCAD.DATAEXTRACTION.DXOUTPUTSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.IDXFILEREFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.DXFILEREFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.DISPLAYOPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.DXSUBTOTALMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.WIZARDSETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.DXCOLUMNFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.DXCOMBINEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.DXOUPUTFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.EXTRACTFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KAUTODESK.AUTOCAD.DATABASESERVICES.DBOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATABASESERVICES.DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATABASESERVICES.UNITTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.DXFILELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.FORMATINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.IDXCOLUMN2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.DXCOLUMN2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.IDXFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTODESK.AUTOCAD.DATAEXTRACTION.DXREPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.COLLECTIONS.GENERIC.KEYVALUEPAIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.COLLECTIONS.GENERIC.DICTIONARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~SYSTEM.COLLECTIONS.GENERIC.LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.UNITYSERIALIZATIONHOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEPROPERTYNAMEASCOLUMNHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.COLLECTIONS.HASHTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTEDTYPESANDPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATABLE.REMOTINGVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACDXOBJECTTYPEGLOBALNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS-MICROSOFT-COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTEDOBJECTHANDLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTEDPROPERTYNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.DATA.DATATABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSELECTEDCATEGIRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKNAMETOIMAGEMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRDISPLAYEDFORMULA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBLFORINVALIDGLOBAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACDXOBJECTTYPENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGROUPMATCHINGROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANUALLYSETUPTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINALFORMATINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYNAMEALIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTEDTYPENAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B77A5C561934E089"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINAGGREGATEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHOICE MINOCCURS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MERGESETTINGLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USECURRENTLOCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNDATATYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADERCELLSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETNAMESPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML-DIFFGRAM-V1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACDXHANDLEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFGRAM XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEOUTPUTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICKEYTOKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRDISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESTYLENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLECELLSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZSYSTEM.STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATACELLSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYVALUEPAIRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINDATATABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPVALUETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRGLOBALNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE1 DIFFGR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPENAMEALIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BMULTISORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSYSTEM.DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.INT32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.INT64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPLEXTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENTFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVIRONMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORTTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM.TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLDIFFGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADFACTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRFORMULA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLETITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMPDATASET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML-MSDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACDXCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISDATASET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KMSCORLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXOCCURS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRFILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNBOUNDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITYTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XREFFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABSOLUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLISTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASHSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACDBMGD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CULTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOLDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEUTRAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRSORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE11"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE12"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DWG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

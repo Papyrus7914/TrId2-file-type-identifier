@@ -1,0 +1,14 @@
+Name: CPS Allegro DrumSet
+Description: DOS music sequencer.
+FileNameExtensions: ["drs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ALG-DRUMS\0\0\x01"
+    CaseSensitive: true
+  - Pos: 216
+    AsciiString: "Creative Voice File\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATIVE VOICE FILE"
+    CaseSensitive: false

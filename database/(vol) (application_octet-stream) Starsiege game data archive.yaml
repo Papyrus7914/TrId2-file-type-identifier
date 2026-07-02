@@ -1,0 +1,14 @@
+Name: Starsiege game data archive
+URL: "https://www.mobygames.com/game/windows/starsiege"
+FileNameExtensions: ["vol"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "VOL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VOLI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLS"
+    CaseSensitive: false

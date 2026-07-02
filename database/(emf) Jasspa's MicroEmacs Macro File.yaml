@@ -1,0 +1,16 @@
+Name: Jasspa's MicroEmacs Macro File
+URL: "http://www.jasspa.com/"
+FileNameExtensions: ["emf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "; -!- emf -!-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SET-VARIABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- EMF -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false

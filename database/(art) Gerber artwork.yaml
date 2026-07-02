@@ -1,0 +1,30 @@
+Name: Gerber artwork
+FileNameExtensions: ["art"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "G04 ================== begin FILE IDENTIFICATION RECORD ==================*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN FILE IDENTIFICATION RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END FILE IDENTIFICATION RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G04 FILE FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G04 ORIGIN DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G04 FILE ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G04 LAYOUT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GERBER RS274X*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G04 FILM NAME"
+    CaseSensitive: false

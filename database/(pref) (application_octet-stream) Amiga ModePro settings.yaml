@@ -1,0 +1,14 @@
+Name: Amiga ModePro settings
+URL: "https://aminet.net/util/cdity/ModePro.readme"
+FileNameExtensions: ["pref"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "PREFPRMO"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PREFPRMO"
+    CaseSensitive: false

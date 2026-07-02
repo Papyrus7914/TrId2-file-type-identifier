@@ -1,0 +1,10 @@
+Name: NanoZip compressed archive
+URL: "http://www.nanozip.net"
+FileNameExtensions: ["nz"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xAE\x01NanoZip "
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "."
+    CaseSensitive: true

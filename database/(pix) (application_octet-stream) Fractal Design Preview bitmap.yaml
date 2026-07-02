@@ -1,0 +1,15 @@
+Name: Fractal Design Preview bitmap
+Description: Used by various software by Fractal Design.
+URL: "http://fileformats.archiveteam.org/wiki/Painter_PIX"
+FileNameExtensions: ["pix"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: 270
+    AsciiString: "\0\x11\x02\xFF\f\0\xFF\xFF\xFF\xFF\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PICT"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: Infinite Mac disk image
+URL: "https://infinitemac.org/"
+FileNameExtensions: ["infinitemacdisk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Saved HD.dirtychunks"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SAVED HD.DIRTYCHUNKSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVED HD.DATAPK"
+    CaseSensitive: false

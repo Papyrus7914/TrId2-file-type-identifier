@@ -1,0 +1,11 @@
+Name: Sonic's serie game data archive (big-endian)
+URL: "https://wiki.xentax.com/index.php/Sonic_Games_PAC"
+FileNameExtensions: ["pac"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PACx"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "B"
+    CaseSensitive: true

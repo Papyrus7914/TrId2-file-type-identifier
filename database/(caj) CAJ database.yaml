@@ -1,0 +1,14 @@
+Name: CAJ database
+Description: Format used by China Academic Journals Full-text Database.
+URL: "http://china.eastview.com/kns50/single_index.aspx"
+FileNameExtensions: ["caj"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xC8\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0"
+    CaseSensitive: true

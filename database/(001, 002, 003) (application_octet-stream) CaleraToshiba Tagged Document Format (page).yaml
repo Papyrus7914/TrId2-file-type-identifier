@@ -1,0 +1,8 @@
+Name: Calera/Toshiba Tagged Document Format (page)
+Description: Each document start with a .FAX file, then .nnn for each page.
+FileNameExtensions: ["001", "002", "003"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TDFI\x10\0\x01\0\0\0\0\0\0\0\0\0PAG\xF0"
+    CaseSensitive: true

@@ -1,0 +1,13 @@
+Name: AudioWorks sound sample
+Description: Acord Archimedes sound editor.
+URL: "http://www.cconcepts.co.uk/products/audiow.htm"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xC5, 0xC6, 0xCB, 0xC3]
+  - Pos: 12
+    AsciiString: "SND_HEAD"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "SND_"
+    CaseSensitive: true

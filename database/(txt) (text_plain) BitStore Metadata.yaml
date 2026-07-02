@@ -1,0 +1,41 @@
+Name: BitStore Metadata
+URL: "https://datamuseum.dk/wiki/Bitstore"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BitStore.Metadata_version:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BITSTORE.METADATA_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITSTORE.LAST_EDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITSTORE.FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITSTORE.ACCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITSTORE.DIGEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITSTORE.FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITSTORE.IDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITSTORE.SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DDHF.KEYWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA256"
+    CaseSensitive: false

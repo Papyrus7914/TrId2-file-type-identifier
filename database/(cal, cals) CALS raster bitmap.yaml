@@ -1,0 +1,25 @@
+Name: CALS raster bitmap
+Description: The CALS bitmap format was developed in the mid-1980s to standardize on graphics data interchange for electronic publishing for the federal government.
+FileNameExtensions: ["cal", "cals"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "srcdocid:"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "dstdocid:"
+    CaseSensitive: true
+  - Pos: 768
+    AsciiString: "rtype:"
+    CaseSensitive: true
+  - Pos: 896
+    AsciiString: "rorient:"
+    CaseSensitive: true
+  - Pos: 1024
+    AsciiString: "rpelcnt:"
+    CaseSensitive: true
+  - Pos: 1152
+    AsciiString: "rdens"
+    CaseSensitive: true
+  - Pos: 1280
+    AsciiString: "notes:"
+    CaseSensitive: true

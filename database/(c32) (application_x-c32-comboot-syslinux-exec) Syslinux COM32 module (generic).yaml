@@ -1,0 +1,10 @@
+Name: Syslinux COM32 module (generic)
+URL: "http://en.wikipedia.org/wiki/SYSLINUX"
+FileNameExtensions: ["c32"]
+MimeType: application/x-c32-comboot-syslinux-exec
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xB8]
+  - Pos: 2
+    AsciiString: "L\xCD!"
+    CaseSensitive: true

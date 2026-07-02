@@ -1,0 +1,38 @@
+Name: Binary Format Description
+URL: "http://fileformats.archiveteam.org/wiki/BFD"
+FileNameExtensions: ["xml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE XSIL SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XBFDVALUE-OF SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XBFDSTREAMNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAM ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XBFDIF TEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARRAY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BFD.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

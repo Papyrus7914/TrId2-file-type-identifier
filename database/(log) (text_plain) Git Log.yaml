@@ -1,0 +1,14 @@
+Name: Git Log
+URL: "https://en.wikipedia.org/wiki/Git"
+FileNameExtensions: ["log"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "commit "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

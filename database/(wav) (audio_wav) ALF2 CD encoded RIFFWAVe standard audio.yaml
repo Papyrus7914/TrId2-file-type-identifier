@@ -1,0 +1,26 @@
+Name: ALF2 CD encoded RIFF/WAVe standard audio
+URL: "http://www.rarewares.org/rrw/alf2cd.php"
+FileNameExtensions: ["wav"]
+MimeType: audio/wav
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WAVEfmt"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "fact"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "data"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INFOIGNR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false

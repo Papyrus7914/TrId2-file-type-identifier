@@ -1,0 +1,17 @@
+Name: Ben Daglish game music
+URL: "http://fileformats.archiveteam.org/wiki/Ben_Daglish"
+FileNameExtensions: ["bd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "`\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0`\0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0"
+    CaseSensitive: true

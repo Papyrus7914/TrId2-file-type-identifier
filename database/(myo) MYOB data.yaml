@@ -1,0 +1,16 @@
+Name: MYOB data
+URL: "http://www.myob.com/"
+FileNameExtensions: ["myo"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "BASLINK.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRACT.INFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MYOBAO.TXTPK"
+    CaseSensitive: false

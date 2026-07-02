@@ -1,0 +1,14 @@
+Name: SBStudio module
+URL: "http://fileformats.archiveteam.org/wiki/SBStudio_module"
+FileNameExtensions: ["pac"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PACG"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "PAIN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SONG"
+    CaseSensitive: false

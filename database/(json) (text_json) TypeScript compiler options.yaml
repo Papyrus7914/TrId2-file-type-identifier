@@ -1,0 +1,23 @@
+Name: TypeScript compiler options
+URL: "https://www.typescriptlang.org/docs/handbook/tsconfig-json.html"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPILEROPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE_MODULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCEMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMIT"
+    CaseSensitive: false

@@ -1,0 +1,124 @@
+Name: Find and Run Robot (FARR) plugin
+URL: "http://www.donationcoder.com/Software/Mouser/findrun/index.html"
+FileNameExtensions: ["dll"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 67
+    Bytes: [0x0E]
+  - Pos: 69
+    #              \t          !                 L           !
+    Bytes: [0xB4, 0x09, 0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: any
+    AsciiString: "PLUGINFUNC_ASK_HOWMANYITEMRESULTSAREREADY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINFUNC_REQUEST_ITEMRESULTBYINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINFUNC_ASK_ISANYRESULTAVAILABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINFUNC_INFORM_REGEXSEARCHMATCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINFUNC_INFORM_SEARCHBEGINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINFUNC_REQUEST_LOCKRESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINFUNC_INFORM_SEARCHENDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINFUNC_ASK_SEARCHSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINFUNC_ASK_WANTFEATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINFUNC_SUPPORTCHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINFUNC_DOSHUTDOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINFUNC_GETSTRVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINFUNC_SETSTRVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINFUNC_DOINIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADLIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BE RUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FARR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IFYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NNOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

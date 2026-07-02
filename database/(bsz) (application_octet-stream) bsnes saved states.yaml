@@ -1,0 +1,29 @@
+Name: bsnes saved states
+URL: "https://byuu.org/emulation/bsnes/"
+FileNameExtensions: ["bsz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Quick/Slot "
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: ".bst"
+    CaseSensitive: true
+  - Pos: 67
+    AsciiString: "BST1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".BSTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BST1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOT"
+    CaseSensitive: false

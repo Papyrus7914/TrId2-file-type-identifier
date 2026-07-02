@@ -1,0 +1,29 @@
+Name: sK1 Palette
+URL: "https://en.wikipedia.org/wiki/SK1_(program)"
+FileNameExtensions: ["skp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "##sK1 palette\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SET_COLUMNS(1)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADD_COMMENTS("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTE_END()"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_SOURCE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTE()"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_NAME("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR("
+    CaseSensitive: false

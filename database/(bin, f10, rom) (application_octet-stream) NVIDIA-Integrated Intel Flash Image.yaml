@@ -1,0 +1,243 @@
+Name: NVIDIA-Integrated Intel Flash Image
+Description: Intel System BIOS/UEFI containing embedded NVIDIA GPU firmware modules and Intel ME/TXE regions.
+URL: "https://github.com/LongSoft/UEFITool"
+FileNameExtensions: ["bin", "f10", "rom"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                                                                                        Z
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0x5A, 0xA5, 0xF0, 0x0F]
+  - Pos: any
+    AsciiString: "P\0L\0A\0T\0F\0O\0R\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0A\0R\0I\0A\0B\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MMEHOSTCOMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCOMPATIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MMESESSMGR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSUPPORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MMEKERNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MMEPOLICY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0M\0E\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0E\0T\0U\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIOLATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MMEPAVP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFSOSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOVDKRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEI SERV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESPONSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECURITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DEVICE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MMEBUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MMECLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALREADY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0R\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANGED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORRUPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAILURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0I\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0E\0I\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUCCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALID_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MMEI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLYPH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0P\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O_RES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MMX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MN2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$SKU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FTPR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NFTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NVKR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NVTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FVH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_VER"
+    CaseSensitive: false

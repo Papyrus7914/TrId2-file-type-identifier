@@ -1,0 +1,20 @@
+Name: SPISPOPD Song
+URL: "https://www.mobygames.com/game/6950/smashing-pumpkins-into-small-piles-of-putrid-debris/"
+FileNameExtensions: ["sng"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x04SBI\0\x05KOOBYDefault Voice\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KOOBYDEFAULT VOICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIDGODEFAULT VOICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SBFM DEFAULT VOICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZIMMYDEFAULT VOICE"
+    CaseSensitive: false

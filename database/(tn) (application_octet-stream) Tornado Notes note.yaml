@@ -1,0 +1,14 @@
+Name: Tornado Notes note
+Description: TSR note-taking program for DOS, by Micro Logic Corp.
+FileNameExtensions: ["tn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ARGS: 80\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTES"
+    CaseSensitive: false

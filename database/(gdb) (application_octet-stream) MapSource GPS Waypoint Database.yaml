@@ -1,0 +1,11 @@
+Name: MapSource GPS Waypoint Database
+URL: "https://www.gpsbabel.org/htmldoc-development/fmt_gdb.html"
+FileNameExtensions: ["gdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MsRcf"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAPSOURCE"
+    CaseSensitive: false

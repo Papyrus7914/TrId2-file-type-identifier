@@ -1,0 +1,11 @@
+Name: Super Data Format
+Description: Tabular format related to DIF.
+FileNameExtensions: ["sdf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TABLE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

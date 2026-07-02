@@ -1,0 +1,12 @@
+Name: Acorn Disc Filing System disk image (Map S)
+Description: Used on BBC Micro.
+URL: "https://en.wikipedia.org/wiki/BBC_Micro"
+FileNameExtensions: ["adf", "adfs", "adl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 513
+    AsciiString: "Hugo"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HUGO"
+    CaseSensitive: false

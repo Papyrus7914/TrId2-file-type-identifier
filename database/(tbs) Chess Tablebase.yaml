@@ -1,0 +1,20 @@
+Name: Chess Tablebase
+Description: A tablebase is a database that a computer can use to play 3, 4, 5, and 6 piece endgames to perfection
+URL: "ftp://ftp.cis.uab.edu/pub/hyatt/TB/tbs/"
+FileNameExtensions: ["tbs"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "wtm: "
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "  "
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "      "
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DRAWS"
+    CaseSensitive: false

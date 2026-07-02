@@ -1,0 +1,40 @@
+Name: 16bit DOS EXE MEGALITE compressed
+Description: Executable File Compressor by ThE KiLLeR of MEGATEAM.
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZM"
+    CaseSensitive: true
+  - Pos: 6
+    Bytes: [0x01, 0x00]
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\0\x02\0\0\0\0\0\0\x1C\0\0\0\x01"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 212
+    Bytes: [0xAD, 0x95]
+  - Pos: 215
+    Bytes: [0x10]
+  - Pos: any
+    AsciiString: "NOT ENOUGH MEMORY$-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-SGR"
+    CaseSensitive: false

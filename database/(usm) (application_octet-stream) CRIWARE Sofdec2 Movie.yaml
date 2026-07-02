@@ -1,0 +1,41 @@
+Name: CRIWARE Sofdec2 Movie
+URL: "https://www.criware.com/en/products/CRIWARE_Video_Quick_Start.pdf"
+FileNameExtensions: ["usm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CRID\0\0\a\xF8\0\x18"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "@UTF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILENAME\0FILESIZE\0DATASIZE\0STMID\0CHNO\0MINCHK\0MINBUF\0AVBPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO_HDRINFO\0WIDTH\0HEIGHT\0MAT_WIDTH\0MAT_HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_HEIGHT\0SCRN_WIDTH\0MPEG_DCPREC\0MPEG_CODEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL_FRAMES\0FRAMERATE_N\0FRAMERATE_D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRIUSF_DIR_STREAM\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IXSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".USM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_"
+    CaseSensitive: false

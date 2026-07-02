@@ -1,0 +1,12 @@
+Name: YAFA Animation
+Description: Amiga format used by the Wildfire animation-processor.
+URL: "http://fileformats.archiveteam.org/wiki/YAFA"
+FileNameExtensions: ["yafa"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "YAFA"
+    CaseSensitive: true

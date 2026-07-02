@@ -1,0 +1,23 @@
+Name: RoadEng location Design document
+URL: "https://www.softree.com/"
+FileNameExtensions: ["dsnx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Location1.ds"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOCATION1.DS1PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION1.DS2PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION1.DS3PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION1.DSNPK"
+    CaseSensitive: false

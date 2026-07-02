@@ -1,0 +1,11 @@
+Name: aSc Timetables timetable
+URL: "https://www.asctimetables.com/"
+FileNameExtensions: ["roz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 5
+    AsciiString: "ASCTT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASCTT_END"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Windows Policy Administrative Template (with rem)
+URL: "https://en.wikipedia.org/wiki/Administrative_Template"
+FileNameExtensions: ["adm"]
+MimeType: text/x-ms-adm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END POLICY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false

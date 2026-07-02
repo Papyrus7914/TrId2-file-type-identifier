@@ -1,0 +1,11 @@
+Name: Khronos Texture (generic)
+URL: "https://www.khronos.org/opengles/sdk/tools/KTX/file_format_spec/"
+FileNameExtensions: ["ktx"]
+MimeType: image/ktx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xABKTX "
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\xBB\r\n\x1A\n"
+    CaseSensitive: true

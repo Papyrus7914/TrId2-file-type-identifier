@@ -1,0 +1,9 @@
+Name: 7-Zip compressed archive (v0.4)
+Description: 7-Zip is a freeware file archiver with a very high compression ratio.
+URL: "https://en.wikipedia.org/wiki/7-Zip"
+FileNameExtensions: ["7z"]
+MimeType: application/x-7z-compressed
+DetectionPatterns:
+  - Pos: 0
+    #        7     z                 \'
+    Bytes: [0x37, 0x7A, 0xBC, 0xAF, 0x27, 0x1C, 0x00, 0x04]

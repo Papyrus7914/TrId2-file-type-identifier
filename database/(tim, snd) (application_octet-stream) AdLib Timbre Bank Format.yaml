@@ -1,0 +1,26 @@
+Name: AdLib Timbre Bank Format
+Description: Assumed to have at least 5 instruments to reduce false positives.
+URL: "https://moddingwiki.shikadi.net/wiki/AdLib_Timbre_Bank_Format"
+FileNameExtensions: ["tim", "snd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01, 0x00]
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "\0"
+    CaseSensitive: true

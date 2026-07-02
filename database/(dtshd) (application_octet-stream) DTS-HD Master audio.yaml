@@ -1,0 +1,38 @@
+Name: DTS-HD Master audio
+URL: "https://en.wikipedia.org/wiki/DTS-HD_Master_Audio"
+FileNameExtensions: ["dtshd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DTSHDHDR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LBUILD DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUPR-HDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTSS_MD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRMDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMECODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

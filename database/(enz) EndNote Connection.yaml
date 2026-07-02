@@ -1,0 +1,22 @@
+Name: EndNote Connection
+Description: EndNote is a software tool for publishing and managing bibliographies.
+URL: "http://www.endnote.com/"
+FileNameExtensions: ["enz"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ENDNENZ3\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\0&\0\x05\0"
+    CaseSensitive: true
+  - Pos: 24
+    Bytes: [0x00, 0x00, 0xFF, 0xFF, 0xFF, 0xFF, 0x00]
+  - Pos: any
+    AsciiString: "ENDNENZ3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

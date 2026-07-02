@@ -1,0 +1,30 @@
+Name: Garmin Training Center Database XML (V2)
+Description: Used to transport fitness data between Garmin products.
+URL: "http://developer.garmin.com/schemas/tcx/v2/"
+FileNameExtensions: ["tcx"]
+MimeType: application/vnd.garmin.tcx+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRAININGCENTERDATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.GARMIN.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

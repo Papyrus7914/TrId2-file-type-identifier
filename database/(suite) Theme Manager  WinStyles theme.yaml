@@ -1,0 +1,13 @@
+Name: Theme Manager / WinStyles theme
+URL: "http://www.stardock.com/products/thememanager/"
+FileNameExtensions: ["suite"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "WINSTYLES.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.BMP"
+    CaseSensitive: false

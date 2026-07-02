@@ -1,0 +1,40 @@
+Name: Visual Basic user-defined control file
+URL: "http://www.hitmill.com/programming/vb/filetypes.html"
+FileNameExtensions: ["ctl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VERSION "
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ATTRIBUTE VB_GLOBALNAMESPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTE VB_PREDECLAREDID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERCONTROL_INITIALIZE()"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTE VB_CREATABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTE VB_EXPOSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN VB.USERCONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBUTE VB_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION"
+    CaseSensitive: false

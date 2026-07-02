@@ -1,0 +1,9 @@
+Name: Meridian Lossless Packing audio
+URL: "http://en.wikipedia.org/wiki/Meridian_Lossless_Packing"
+FileNameExtensions: ["mlp"]
+DetectionPatterns:
+  - Pos: 2
+    Bytes: [0xFF]
+  - Pos: 4
+    #              r     o
+    Bytes: [0xF8, 0x72, 0x6F, 0xBB]

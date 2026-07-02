@@ -1,0 +1,7 @@
+Name: NCSA Telnet Interactive Color Raster bitmap
+Description: Interactive Color Raster (ICR) is a protocol for displaying raster graphics on workstation screens.
+FileNameExtensions: ["icr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x1B^W;0;0;"
+    CaseSensitive: true

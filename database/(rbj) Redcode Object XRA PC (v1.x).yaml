@@ -1,0 +1,19 @@
+Name: Redcode Object XRA PC (v1.x)
+URL: "http://mark0.net/soft-xrk.html"
+FileNameExtensions: ["rbj"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\v"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "XRA v1."
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: " - PC                "
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: 70
+    AsciiString: "\0"
+    CaseSensitive: true

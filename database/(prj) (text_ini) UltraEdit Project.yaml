@@ -1,0 +1,41 @@
+Name: UltraEdit Project
+URL: "https://en.wikipedia.org/wiki/UltraEdit"
+FileNameExtensions: ["prj"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Project ID]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RELATIVE TO PROJECT FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE RELATIVE DIRECTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT WORDFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT TAGFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TAGFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UE PROJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false

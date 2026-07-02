@@ -1,0 +1,11 @@
+Name: Nintendo Chord Information Table
+URL: "https://www.lumasworkshop.com/wiki/CIT_(File_Format)"
+FileNameExtensions: ["cit"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "CITS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CITS"
+    CaseSensitive: false

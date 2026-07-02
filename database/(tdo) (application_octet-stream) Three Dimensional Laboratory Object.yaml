@@ -1,0 +1,20 @@
+Name: Three Dimensional Laboratory Object
+Description: A Windows 3.x stereograms tool by Evolving Software Products Inc.
+FileNameExtensions: ["tdo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "     Three Dimensional Laboratory Object (Version "
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

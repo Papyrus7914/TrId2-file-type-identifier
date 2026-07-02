@@ -1,0 +1,9 @@
+Name: Intelligent Games Video/cutscene
+URL: "https://wiki.multimedia.cx/index.php/Intelligent_Games_MOV"
+FileNameExtensions: ["mov"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x90, 0xEF, 0x12, 0xAB]
+  - Pos: 30
+    Bytes: [0xCF, 0x01, 0x99, 0xEE]

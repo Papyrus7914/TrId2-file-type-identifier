@@ -1,0 +1,46 @@
+Name: Microsoft QuickBASIC 2.0 DOS Executable
+URL: "https://en.wikipedia.org/wiki/QuickBASIC"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0 \0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1E\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "USER LIBRARY IS INCOMPATIBLE WITH USER PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER LIBRARY IS INCOMPATIBLE WITH QUICKBASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUST RUN UNDER DOS 2.00 OR LATER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRONG VERSION OF RUNTIME MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT FIND $  ENTER NEW PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR IN EXE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM TOO LARGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE\0PATH"
+    CaseSensitive: false

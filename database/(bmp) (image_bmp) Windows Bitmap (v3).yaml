@@ -1,0 +1,12 @@
+Name: Windows Bitmap (v3)
+Description: This variant with 40 byte DIB header (Windows 3.x)
+URL: "https://en.wikipedia.org/wiki/BMP_file_format"
+FileNameExtensions: ["bmp"]
+MimeType: image/bmp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BM"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "(\0\0\0"
+    CaseSensitive: true

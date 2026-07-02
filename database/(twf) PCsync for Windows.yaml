@@ -1,0 +1,10 @@
+Name: PCsync for Windows
+Description: PCsync is a management tool for Casio Pocket Viewer and Business Navigator
+URL: "http://www.pcsyncpro.de/e_home.asp"
+FileNameExtensions: ["twf"]
+DetectionPatterns:
+  - Pos: 0
+    #        S     W
+    Bytes: [0x53, 0x57, 0xE6, 0xE7, 0xE7, 0xE7]
+  - Pos: 17
+    Bytes: [0xC2, 0xBE, 0x82, 0x8B, 0x8B, 0x88]

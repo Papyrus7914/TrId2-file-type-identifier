@@ -1,0 +1,8 @@
+Name: EnCase Lx01 Logical format
+URL: "https://en.wikipedia.org/wiki/EnCase"
+FileNameExtensions: ["lx01"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LEF2\r\n\x81\0"
+    CaseSensitive: true

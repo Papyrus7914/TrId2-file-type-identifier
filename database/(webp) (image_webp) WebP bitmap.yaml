@@ -1,0 +1,11 @@
+Name: WebP bitmap
+URL: "https://en.wikipedia.org/wiki/WebP"
+FileNameExtensions: ["webp"]
+MimeType: image/webp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WEBP"
+    CaseSensitive: true

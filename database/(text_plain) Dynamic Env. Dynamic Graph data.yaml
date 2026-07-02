@@ -1,0 +1,13 @@
+Name: Dynamic Env. Dynamic Graph data
+Description: Dynamic Environment was a GUI for MS-DOS by Radarsoft.
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DYNAMIC GRAPH FILE\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORMULA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

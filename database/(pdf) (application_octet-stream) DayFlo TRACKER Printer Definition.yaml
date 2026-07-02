@@ -1,0 +1,65 @@
+Name: DayFlo TRACKER Printer Definition
+Description: PIM and database software package for MS-DOS.
+FileNameExtensions: ["pdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 129
+    AsciiString: "\0\0\0N\0\0\0\x06\0"
+    CaseSensitive: true
+  - Pos: 139
+    AsciiString: "\0\n\0"
+    CaseSensitive: true
+  - Pos: 149
+    AsciiString: "\0\x01\0Standard Letter"
+    CaseSensitive: true
+  - Pos: 257
+    AsciiString: "\0\0\0N\0\0\0\f\0"
+    CaseSensitive: true
+  - Pos: 277
+    AsciiString: "\0\x01\0Short Letter"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPRESSED REPORT (130 COLS)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARD REPORT (78 COLS)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRA WIDE REPORT (220 C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDE REPORT (176 C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARD LETTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORT LETTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG LETTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DICTIONARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVELOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false

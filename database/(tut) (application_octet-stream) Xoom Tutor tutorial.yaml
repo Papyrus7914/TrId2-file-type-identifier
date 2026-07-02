@@ -1,0 +1,19 @@
+Name: Xoom Tutor tutorial
+FileNameExtensions: ["tut"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "config inmenu "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONFIG TEXTFONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE XOOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUTOR"
+    CaseSensitive: false

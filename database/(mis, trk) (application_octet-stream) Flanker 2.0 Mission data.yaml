@@ -1,0 +1,22 @@
+Name: Flanker 2.0 Mission data
+URL: "https://www.mobygames.com/game/4563/flanker-20/"
+FileNameExtensions: ["mis", "trk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x98, 0xBA, 0xDC, 0xFE]
+  - Pos: any
+    AsciiString: "NO CONDITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIRGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE"
+    CaseSensitive: false

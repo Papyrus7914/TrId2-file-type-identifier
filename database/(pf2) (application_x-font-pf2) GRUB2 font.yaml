@@ -1,0 +1,38 @@
+Name: GRUB2 font
+URL: "http://grub.gibibit.com/New_font_format"
+FileNameExtensions: ["pf2"]
+MimeType: application/x-font-pf2
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FILE\0\0\0\x04PFF2NAME"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAMI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTSZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIG"
+    CaseSensitive: false

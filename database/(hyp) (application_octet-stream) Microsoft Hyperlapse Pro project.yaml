@@ -1,0 +1,18 @@
+Name: Microsoft Hyperlapse Pro project
+Description: Microsoft Hyperlapse is a new technology that creates smooth and stabilized time lapses from first-person videos.
+URL: "http://tinyurl.com/nbgdn2m"
+FileNameExtensions: ["hyp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "HYPERLAPSEVERSION.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HYPERLAPSEVERSION.DAT3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTINFO.DATPK"
+    CaseSensitive: false

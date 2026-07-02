@@ -1,0 +1,11 @@
+Name: The Player 4.x Music
+Description: A module packer created by Jarno Paananen (Guru/Sahara Surfers), this particular version of The Player (4.1a) was never released publically, yet it was leaked to game development companies and became one of the most widespread module packers in existance.
+URL: "http://exotica.fix.no/tunes/unexotica/formats/The_Player_4x.html"
+FileNameExtensions: ["p4x"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "P4"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

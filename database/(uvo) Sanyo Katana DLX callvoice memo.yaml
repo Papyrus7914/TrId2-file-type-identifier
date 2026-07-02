@@ -1,0 +1,16 @@
+Name: Sanyo Katana DLX call/voice memo
+URL: "http://en.wikipedia.org/wiki/Sanyo_Katana_DLX"
+FileNameExtensions: ["uvo"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CMEM"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "fmt "
+    CaseSensitive: true
+  - Pos: 170
+    AsciiString: "vrat"
+    CaseSensitive: true
+  - Pos: 186
+    AsciiString: "data"
+    CaseSensitive: true

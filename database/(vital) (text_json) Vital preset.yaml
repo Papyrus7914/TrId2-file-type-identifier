@@ -1,0 +1,716 @@
+Name: Vital preset
+URL: "https://vital.audio/"
+FileNameExtensions: ["vital"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"author\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPRESSOR_BAND_LOWER_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_BAND_UPPER_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_HIGH_LOWER_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_HIGH_UPPER_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_LOW_LOWER_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_LOW_UPPER_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_BAND_LOWER_RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_BAND_UPPER_RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_HIGH_LOWER_RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_HIGH_UPPER_RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTORTION_FILTER_RESONANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_FX_FORMANT_RESONANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_FX_FORMANT_TRANSPOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_SPECTRAL_MORPH_AMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_SPECTRAL_MORPH_SPREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM_1_KEYTRACK_TRANSPOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_LOW_LOWER_RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_LOW_UPPER_RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_FORMANT_RESONANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_FORMANT_TRANSPOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_SMOOTH_INTERPOLATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_FX_BLEND_TRANSPOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_SPECTRAL_MORPH_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_TRANSPOSE_QUANTIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_ENABLED_BANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTORTION_FILTER_CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_BLEND_TRANSPOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_FX_FORMANT_SPREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO_1_KEYTRACK_TRANSPOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_TRANSPOSE_QUANTIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERB_HIGH_SHELF_CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTORTION_FILTER_BLEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTORTION_FILTER_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_FORMANT_SPREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_DISTORTION_AMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_DISTORTION_SPREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERB_CHORUS_FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERB_LOW_SHELF_CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_DISTORTION_PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM_1_KEYTRACK_TUNE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERB_HIGH_SHELF_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERB_PRE_HIGH_CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_FILTER_INPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_DISTORTION_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_SPECTRAL_UNISON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERB_LOW_SHELF_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERB_PRE_LOW_CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_BAND_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_HIGH_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLANGER_PHASE_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULATION_1_BIPOLAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERB_CHORUS_AMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_LOW_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY_AUX_FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY_FILTER_CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY_FILTER_SPREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENV_1_RELEASE_POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_FX_FORMANT_X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_FX_FORMANT_Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_FX_RESONANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERPOLATION_STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO_1_KEYTRACK_TUNE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULATION_1_AMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULATION_1_BYPASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULATION_1_STEREO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_STEREO_SPREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_UNISON_DETUNE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_UNISON_VOICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASER_PHASE_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_RANDOM_PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECT_CHAIN_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENV_1_ATTACK_POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_FORMANT_X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_FORMANT_Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_RESONANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_FX_KEYTRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULATION_1_POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_DETUNE_POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_DETUNE_RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_FRAME_SPREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_RANDOM_PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_UNISON_BLEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM_1_FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM_1_SYNC_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_DESTINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_ATTACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENV_1_DECAY_POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ_BAND_RESONANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ_HIGH_RESONANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_KEYTRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLANGER_FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLANGER_MOD_DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO_1_SMOOTH_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO_1_SMOOTH_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_DESTINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_STACK_STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERB_DECAY_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEATS_PER_MINUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORUS_MOD_DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTORTION_DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ_LOW_RESONANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_FX_CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLANGER_FEEDBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO_1_DELAY_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_MIDI_TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_WAVE_FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASER_FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASER_MOD_DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCH_BEND_RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTAMENTO_FORCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTAMENTO_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTAMENTO_SLOPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW_SPECTROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORUS_FEEDBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY_AUX_TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY_FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_FX_DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_FX_MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_FX_STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLANGER_DRY_WET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO_1_FADE_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO_1_FREQUENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO_1_SYNC_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACRO_CONTROL_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASER_FEEDBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTAMENTO_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM_1_STEREO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_KEYTRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOICE_AMPLITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOICE_TRANSPOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORUS_DELAY_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORUS_DRY_WET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_MIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY_AUX_SYNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY_FEEDBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTORTION_MIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ_BAND_CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ_HIGH_CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLANGER_CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULL_NORMALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASER_DRY_WET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM_1_STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM_1_TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERB_DRY_WET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEREO_ROUTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VELOCITY_TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOICE_OVERRIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOICE_PRIORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORUS_CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORUS_SPREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORUS_VOICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY_DRY_WET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTORTION_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENV_1_SUSTAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ_LOW_CUTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_FX_MIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLANGER_TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_VIEW_2D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASER_CENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOVE_ALL_DC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_BOUNCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTH_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORUS_TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ_BAND_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ_BAND_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ_HIGH_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ_HIGH_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_MIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_FX_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLANGER_SYNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO_1_STEREO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERSAMPLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASER_BLEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASER_TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESET_STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERB_DELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORUS_SYNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY_STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY_TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENV_1_DELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ_LOW_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ_LOW_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER_1_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO_1_PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFO_1_TEMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASER_SYNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCH_WHEEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERB_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_LOOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_TUNE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEREO_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY_SYNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENV_1_HOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLANGER_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_POINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_TUNE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_PAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOICE_TUNE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVETABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHORUS_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYFRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOD_WHEEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_PAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASER_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYPHONY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERB_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OSC_1_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEGATO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACRO1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LFOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,38 @@
+Name: Xantippe project
+URL: "http://www.irismedia.com/info/xantinfo.html"
+FileNameExtensions: ["xan"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(ibmpc )\r\n(listcard\r\n\t(id"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(FILEBOX )"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(YEARDAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(ICONPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(MINUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(SECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NAMEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(HOURS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(YEARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DATE"
+    CaseSensitive: false

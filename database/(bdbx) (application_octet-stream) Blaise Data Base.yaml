@@ -1,0 +1,68 @@
+Name: Blaise Data Base
+URL: "https://www.blaise.com/"
+FileNameExtensions: ["bdbx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YTABLESQLITE_SEQUENCESQLITE_SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SQLITE_SEQUENCE(NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NVARCHAR(255) COLLATE NOCASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NVARCHAR(40) NOT NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE UNIQUE INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAENTRYBEHAVIOUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALIDATIONSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARY KEY ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASTREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXPK_FI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVESTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DML_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOB)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQ)"
+    CaseSensitive: false

@@ -1,0 +1,21 @@
+Name: ISO-10303 STEP model data
+Description: Standard for the Exchange of Product model data
+URL: "http://en.wikipedia.org/wiki/ISO_10303"
+FileNameExtensions: ["stp", "step"]
+MimeType: application/x-step
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ISO-10303-"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: ";"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDSEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

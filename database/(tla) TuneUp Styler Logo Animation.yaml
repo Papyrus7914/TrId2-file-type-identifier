@@ -1,0 +1,26 @@
+Name: TuneUp Styler Logo Animation
+Description: Used by TuneUp Utilities Software
+URL: "http://www.tune-up.com/services/styler/"
+FileNameExtensions: ["tla"]
+DetectionPatterns:
+  - Pos: 0
+    #        T     K
+    Bytes: [0x54, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "17000.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "17001.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "17002.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "17003.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "17004.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX.INI"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: Falcon Sequence (v1.0)
+URL: "https://github.com/Cryptkeeper/fseq-file-format"
+FileNameExtensions: ["fseq"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSEQ"
+    CaseSensitive: true
+  - Pos: 6
+    Bytes: [0x00, 0x01]

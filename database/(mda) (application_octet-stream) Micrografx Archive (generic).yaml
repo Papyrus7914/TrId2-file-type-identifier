@@ -1,0 +1,17 @@
+Name: Micrografx Archive (generic)
+Description: Container used by Micrografx installers.
+URL: "https://en.wikipedia.org/wiki/Micrografx"
+FileNameExtensions: ["mda"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MDA  "
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 8
+    Bytes: [0x1A]
+  - Pos: 31
+    AsciiString: "RSW!"
+    CaseSensitive: true

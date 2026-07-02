@@ -1,0 +1,12 @@
+Name: PackIt compressed archive
+Description: Mac compression tool by Harry Chesley.
+URL: "https://macintoshgarden.org/apps/packit"
+FileNameExtensions: ["pit"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PMa"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PEND"
+    CaseSensitive: false

@@ -1,0 +1,35 @@
+Name: StarCraft Single Player Save
+URL: "https://en.wikipedia.org/wiki/StarCraft"
+FileNameExtensions: ["snx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "****************************************************\r\n** Starcraft Version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "** SINGLE PLAYER SAVE FORMAT VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCM TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCM PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SCX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SNX"
+    CaseSensitive: false

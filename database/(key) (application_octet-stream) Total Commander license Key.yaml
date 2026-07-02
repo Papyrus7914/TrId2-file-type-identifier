@@ -1,0 +1,23 @@
+Name: Total Commander license Key
+URL: "https://www.ghisler.com/"
+FileNameExtensions: ["key"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 232
+    #        s                                   x     |     %           \b          A                 #                                   ^
+    Bytes: [0x73, 0x9A, 0x88, 0xB0, 0x9B, 0xF6, 0x78, 0x7C, 0x25, 0x01, 0x08, 0x11, 0x41, 0x16, 0xCC, 0x23, 0x11, 0xAB, 0xDC, 0xC4, 0xD3, 0x5E, 0xF9, 0xF1]
+  - Pos: 896
+    AsciiString: "Copyright \xA9 1999 by Christian Ghisler, C. Ghisler & Co., all rights reserved. Unauthorized copying prohibited!\0\x88\xFEW/\x8D\xB9ec\x9F\xFFG\xDA\x97T\x1F\x9F."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALL RIGHTS RESERVED. UNAUTHORIZED COPYING PROHIBITED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1999 BY CHRISTIAN GHISLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C. GHISLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false

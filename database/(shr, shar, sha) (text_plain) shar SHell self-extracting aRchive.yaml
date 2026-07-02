@@ -1,0 +1,38 @@
+Name: shar SHell self-extracting aRchive
+URL: "https://en.wikipedia.org/wiki/Shar"
+FileNameExtensions: ["shr", "shar", "sha"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS IS A SHELL ARCHIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECHO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WILL"
+    CaseSensitive: false

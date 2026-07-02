@@ -1,0 +1,34 @@
+Name: MathOptFormat
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MATHOPTFORMAT MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

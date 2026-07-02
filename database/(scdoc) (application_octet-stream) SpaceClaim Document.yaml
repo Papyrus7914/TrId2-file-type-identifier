@@ -1,0 +1,68 @@
+Name: SpaceClaim Document
+URL: "http://www.spaceclaim.com/"
+FileNameExtensions: ["scdoc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "CHECKSUMS.BIN.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XML.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERLIST.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUMS.BINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE-PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE.XSDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACECLAIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PSMDCPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCPROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHICS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: Humongous Entertainment music/audio data archive
+URL: "https://www.mobygames.com/company/960/humongous-entertainment-inc/"
+FileNameExtensions: ["he4"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SONG"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SGHD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIGI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HSHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SGEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SGHD"
+    CaseSensitive: false

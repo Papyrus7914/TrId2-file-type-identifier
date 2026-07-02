@@ -1,0 +1,57 @@
+Name: Decision Pad Worksheet (v2.x)
+Description: Old DOS decision matrix tool.
+URL: "http://www.apian.com/software/decisionpad/"
+FileNameExtensions: ["dpw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0DPW REV "
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GOOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "10-TO-0 RATING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCELLENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUST HAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DPW REV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V-GOOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNACC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POOR"
+    CaseSensitive: false

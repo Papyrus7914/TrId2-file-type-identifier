@@ -1,0 +1,26 @@
+Name: Maxon Cinema 4D Coffee shader (with rem)
+URL: "https://en.wikipedia.org/wiki/Cinema_4D"
+FileNameExtensions: ["cof"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "//"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REGISTERCHANNELSHADER("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDITDATA(DATA)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILLDATA(DATA)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETOUTPUT(DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN()"
+    CaseSensitive: false

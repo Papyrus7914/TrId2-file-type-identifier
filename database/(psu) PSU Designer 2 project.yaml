@@ -1,0 +1,10 @@
+Name: PSU Designer 2 project
+URL: "http://www.duncanamps.com/psud2/index.html"
+FileNameExtensions: ["psu"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x06\bPSUD2-"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "TBlockSource"
+    CaseSensitive: true

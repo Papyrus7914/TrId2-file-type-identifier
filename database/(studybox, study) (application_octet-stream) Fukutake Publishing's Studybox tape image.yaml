@@ -1,0 +1,14 @@
+Name: Fukutake Publishing's Studybox tape image
+URL: "https://www.nesdev.org/wiki/StudyBox_file_format"
+FileNameExtensions: ["studybox", "study"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "STBX\x04\0\0\0\0\x01\0\0PAGE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNIT 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDI"
+    CaseSensitive: false

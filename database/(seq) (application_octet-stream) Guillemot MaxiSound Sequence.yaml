@@ -1,0 +1,49 @@
+Name: Guillemot MaxiSound Sequence
+FileNameExtensions: ["seq"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SEQ CUE \x02\0\0\0\0\0ARR \x01\0\0\0\0\0MIDI"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-PISTE MASTER-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT.SET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GMDRUM.SET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PISTE 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQ CUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GS.SET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDRJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DREM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GSXG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIFF"
+    CaseSensitive: false

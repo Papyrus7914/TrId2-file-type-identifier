@@ -1,0 +1,31 @@
+Name: Mozilla XML User interface Language
+URL: "http://www.mozilla.org/projects/xul/"
+FileNameExtensions: ["xul"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THERE.IS.ONLY.XUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.MOZILLA.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GATEKEEPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYMASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHROME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

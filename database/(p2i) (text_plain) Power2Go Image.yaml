@@ -1,0 +1,29 @@
+Name: Power2Go Image
+URL: "http://www.cyberlink.com/products/power2go/"
+FileNameExtensions: ["p2i"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MakeProductionType="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DISCVOLUMELABELNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSIONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRCDISCTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDIMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPLKDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEAHB"
+    CaseSensitive: false

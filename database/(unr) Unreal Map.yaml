@@ -1,0 +1,115 @@
+Name: Unreal Map
+URL: "http://en.wikipedia.org/wiki/Unreal"
+FileNameExtensions: ["unr"]
+DetectionPatterns:
+  - Pos: 0
+    #                    *
+    Bytes: [0xC1, 0x83, 0x2A, 0x9E]
+  - Pos: 5
+    AsciiString: "\0\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INDEX.UNR\0\0\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELSUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTREGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVELINFO0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAVIGATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BHIDDENED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSGOPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMBIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MYLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNREAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false

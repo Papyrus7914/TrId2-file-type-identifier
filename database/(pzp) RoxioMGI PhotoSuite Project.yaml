@@ -1,0 +1,69 @@
+Name: Roxio/MGI PhotoSuite Project
+URL: "http://www.mgisoft.com/"
+FileNameExtensions: ["pzp"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: 1024
+    AsciiString: "R\0o\0o\0t\0 \0E\0n\0t\0r\0y"
+    CaseSensitive: true
+  - Pos: 1152
+    AsciiString: "C\0a\0t\0a\0l\0o\0g\0"
+    CaseSensitive: true
+  - Pos: 1172
+    AsciiString: "m\0s\0c"
+    CaseSensitive: true
+  - Pos: 1180
+    AsciiString: "t\0m\0p"
+    CaseSensitive: true
+  - Pos: 1280
+    AsciiString: "C\0O\0N\0T\0E\0N\0T\0S"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "C\0A\0T\0A\0L\0O\0G\0_\00\0.\0M\0S\0C\0\0\0T\0M\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0M\0A\0G\0E\0_\0F\0L\0A\0T\0.\0J\0P\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0H\0U\0M\0B\0N\0A\0I\0L\0.\0P\0N\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0C\0O\0N\0T\0E\0N\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0O\0C\0U\0M\0E\0N\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0M\0A\0G\0E\0.\0J\0P\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALPHA_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0P\0Z\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0T\0E\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%.DIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false

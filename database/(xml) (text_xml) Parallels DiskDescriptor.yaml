@@ -1,0 +1,56 @@
+Name: Parallels DiskDescriptor
+URL: "https://en.wikipedia.org/wiki/Parallels_(company)"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PARALLELS_DISK_IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK_PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORAGEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENTGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYLINDERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPSHOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HDD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

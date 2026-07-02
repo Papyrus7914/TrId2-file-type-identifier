@@ -1,0 +1,21 @@
+Name: XFIT XDD format data file
+FileNameExtensions: ["xdd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/*\r\nSampleIdent "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MONOCHROMATORUSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVINGSLIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFRTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANODE"
+    CaseSensitive: false

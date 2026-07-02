@@ -1,0 +1,13 @@
+Name: Nintendo Amiibo NFC data dump
+URL: "https://en.wikipedia.org/wiki/Amiibo"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x04]
+  - Pos: 9
+    #        H
+    Bytes: [0x48, 0x0F, 0xE0, 0xF1, 0x10, 0xFF, 0xEE, 0xA5]
+  - Pos: 520
+    AsciiString: "\x01\0\x0F\xBD\0\0\0\x04_\0\0\0"
+    CaseSensitive: true

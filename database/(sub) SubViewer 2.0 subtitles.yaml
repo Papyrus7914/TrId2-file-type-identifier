@@ -1,0 +1,19 @@
+Name: SubViewer 2.0 subtitles
+URL: "http://en.wikipedia.org/wiki/SubViewer"
+FileNameExtensions: ["sub"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[INFORMATION]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false

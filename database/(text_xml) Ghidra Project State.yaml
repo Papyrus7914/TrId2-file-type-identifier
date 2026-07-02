@@ -1,0 +1,46 @@
+Name: Ghidra Project State
+URL: "https://en.wikipedia.org/wiki/Ghidra"
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOOL_MANAGER ACTIVE_WORKSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT_DATA_XML_NAME NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPANDED_PATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSPACE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARRAY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE_STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW_TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOLEAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

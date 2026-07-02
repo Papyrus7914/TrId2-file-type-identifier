@@ -1,0 +1,42 @@
+Name: PokeMini saved State
+Description: Pokemon mini emulator.
+URL: "https://www.pokemon-mini.net/tools/pokemini/"
+FileNameExtensions: ["sta"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PokeMiniStatPMk"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CRAM-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPRC-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUD-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPM-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IRQ-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LCD-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIO-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REG-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMR-"
+    CaseSensitive: false

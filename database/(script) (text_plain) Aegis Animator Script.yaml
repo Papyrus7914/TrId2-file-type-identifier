@@ -1,0 +1,24 @@
+Name: Aegis Animator Script
+Description: Early animation program for Amiga.
+URL: "http://obligement.free.fr/articles/aegis_animator.php"
+FileNameExtensions: ["script"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*script "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*GROUND_Z"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*TWEEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*ACT"
+    CaseSensitive: false

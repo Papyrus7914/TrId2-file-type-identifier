@@ -1,0 +1,10 @@
+Name: WeatherTool weather data
+URL: "http://squ1.org/wiki/WeatherTool"
+FileNameExtensions: ["wea"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ajm_WEA_ver"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "."
+    CaseSensitive: true

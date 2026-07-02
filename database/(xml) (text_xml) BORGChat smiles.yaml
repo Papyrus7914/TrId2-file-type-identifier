@@ -1,0 +1,17 @@
+Name: BORGChat smiles
+URL: "https://en.wikipedia.org/wiki/BORGChat"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<BORGSmile>\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SMILE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND"
+    CaseSensitive: false

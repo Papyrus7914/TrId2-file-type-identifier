@@ -1,0 +1,12 @@
+Name: Lotus 123 Worksheet/format (V3-)
+Description: revision number is stored at offset 4
+URL: "http://www.aboutvb.de/bas/formate/pdf/wk3.pdf"
+FileNameExtensions: ["wk3", "wk4", "wt4", "fm3", "123"]
+MimeType: application/vnd.lotus-1-2-3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x1A\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true

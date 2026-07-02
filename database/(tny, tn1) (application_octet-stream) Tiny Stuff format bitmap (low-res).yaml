@@ -1,0 +1,9 @@
+Name: Tiny Stuff format bitmap (low-res)
+Description: Old Atari ST RLE compressed format.
+URL: "http://fileformats.archiveteam.org/wiki/Tiny_Stuff"
+FileNameExtensions: ["tny", "tn1"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\aw"
+    CaseSensitive: true

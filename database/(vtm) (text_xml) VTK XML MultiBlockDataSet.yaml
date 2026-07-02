@@ -1,0 +1,26 @@
+Name: VTK XML MultiBlockDataSet
+URL: "https://en.wikipedia.org/wiki/VTK"
+FileNameExtensions: ["vtm"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VTKMULTIBLOCKDATASET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTKFILE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIAN"
+    CaseSensitive: false

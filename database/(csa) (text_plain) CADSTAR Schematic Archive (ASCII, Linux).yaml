@@ -1,0 +1,14 @@
+Name: CADSTAR Schematic Archive (ASCII, Linux)
+URL: "https://en.wikipedia.org/wiki/CADSTAR"
+FileNameExtensions: ["csa"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n(CADSTARSCM\n (HEADER\n  (FORMAT DESIGN "
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: ")\n  (JOBFILE \""
+    CaseSensitive: true

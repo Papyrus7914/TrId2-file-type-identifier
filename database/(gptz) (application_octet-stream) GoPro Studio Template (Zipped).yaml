@@ -1,0 +1,19 @@
+Name: GoPro Studio Template (Zipped)
+FileNameExtensions: ["gptz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".GPTUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPGUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MP4"
+    CaseSensitive: false

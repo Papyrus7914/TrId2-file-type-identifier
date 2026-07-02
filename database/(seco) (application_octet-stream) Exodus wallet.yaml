@@ -1,0 +1,14 @@
+Name: Exodus wallet
+URL: "https://www.exodus.com/"
+FileNameExtensions: ["seco"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SECO\0\0\0\0\0\0\0\0\x12seco-v0-scrypt-aes\x06Exodus\a"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXODUS"
+    CaseSensitive: false

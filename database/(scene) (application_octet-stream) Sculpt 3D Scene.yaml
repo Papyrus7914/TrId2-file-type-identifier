@@ -1,0 +1,17 @@
+Name: Sculpt 3D Scene
+URL: "https://en.wikipedia.org/wiki/Sculpt_3D"
+FileNameExtensions: ["scene"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SC3D"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SC3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERT"
+    CaseSensitive: false

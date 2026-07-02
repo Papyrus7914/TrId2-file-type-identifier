@@ -1,0 +1,16 @@
+Name: Orion Sampler sample
+URL: "http://en.wikipedia.org/wiki/Orion_(music_software)"
+FileNameExtensions: ["osp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OPRG"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "LYRS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIFS"
+    CaseSensitive: false

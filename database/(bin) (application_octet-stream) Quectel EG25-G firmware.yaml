@@ -1,0 +1,14 @@
+Name: Quectel EG25-G firmware
+URL: "https://www.quectel.com/product/lte-eg25-g/"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HTFW"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "GP-5"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GP-5"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: Altium Designer Workspace
+URL: "https://en.wikipedia.org/wiki/Altium_Designer"
+FileNameExtensions: ["dsnwrk"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[ProjectGroup]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROJECTPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PRJPCB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: Bethesda Softworks FUZE voice
+URL: "https://en.wikipedia.org/wiki/Bethesda_Softworks"
+FileNameExtensions: ["fuz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FUZE\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XWMAFMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DPDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIFF"
+    CaseSensitive: false

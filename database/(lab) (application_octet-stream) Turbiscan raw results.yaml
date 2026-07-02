@@ -1,0 +1,59 @@
+Name: Turbiscan raw results
+URL: "http://www.formulaction.com/en/products-and-technologies/product-range/turbiscan-lab"
+FileNameExtensions: ["lab"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFF\0\x03\a\0CTSODoc<"
+    CaseSensitive: true
+  - Pos: 77
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: 81
+    AsciiString: "[\xFF\xFF\0\x03\b\0CDescDoc"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EMPTY_TURBISCAN.LAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKSCATTERING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL-POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSMISSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPERATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSETACQUIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET-POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDESCDOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSETPREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTSODOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESKTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO ZOOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSALVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CZONE"
+    CaseSensitive: false

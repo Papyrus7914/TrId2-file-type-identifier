@@ -1,0 +1,71 @@
+Name: OpenRocket project (XML, v1.x)
+URL: "https://openrocket.info/"
+FileNameExtensions: ["ork"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version='1.0' encoding='utf-8'?>\n<openrocket version=\"1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPENROCKET VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBCOMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMULATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THICKNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODYTUBE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BULK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

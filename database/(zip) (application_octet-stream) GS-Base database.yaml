@@ -1,0 +1,23 @@
+Name: GS-Base database
+URL: "http://www.citadel5.com/gs-base.htm"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "THIS-VERSION.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIN-VERSION.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG.DATPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: StuffIt compressed archive (with MacBinary header)
+URL: "https://en.wikipedia.org/wiki/Stuffit"
+FileNameExtensions: ["sit"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "SIT!SIT!"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "SIT!"
+    CaseSensitive: true
+  - Pos: 138
+    AsciiString: "rLau"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLAU"
+    CaseSensitive: false

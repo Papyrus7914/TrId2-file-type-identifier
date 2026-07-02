@@ -1,0 +1,26 @@
+Name: Brick of Values
+URL: "https://ncar.github.io/VaporDocumentationWebsite/dataFormatRequirements/brickOfValues.html"
+FileNameExtensions: ["bov"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TIME: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BRICK_ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRICK_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLE"
+    CaseSensitive: false

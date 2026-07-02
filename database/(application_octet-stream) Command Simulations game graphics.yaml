@@ -1,0 +1,23 @@
+Name: Command Simulations game graphics
+Description: File are IFF/ILBM bitmaps with reversed chunk names.
+URL: "https://www.mobygames.com/company/15050/command-simulations/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MROF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "MBLIDHMB"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MBLIDHMB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GMAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAMC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YDOB"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: TIKI-100 Disk image
+URL: "http://www.djupdal.org/tiki/emulator/"
+FileNameExtensions: ["dsk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        1                                               ␠     1                       ␠     ,     !
+    Bytes: [0x31, 0x80, 0x00, 0x0E, 0x00, 0xCD, 0x1B, 0xF0, 0x20, 0x31, 0xCD, 0x1E, 0xF0, 0x20, 0x2C, 0x21]
+  - Pos: 18
+    Bytes: [0x1E]

@@ -1,0 +1,10 @@
+Name: The Software Toolworks Memory Manager resource data
+Description: Used by DOS software developed by The Software Toolworks, Inc.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Memory Manager Resource File\r\n\tCopyright (c) 1990-"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: " The Software Toolworks, Inc.\r\n\tAll rights reserved.\x1A"
+    CaseSensitive: true

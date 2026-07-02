@@ -1,0 +1,50 @@
+Name: PowerShell Cmdlet Definition XML
+URL: "https://en.wikipedia.org/wiki/PowerShell"
+FileNameExtensions: ["cdxml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"utf-8\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POWERSHELLMETADATA XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMDLETS-OVER-OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMDLETMETADATA VERB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS CLASSNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMDLETPARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTNOUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2009"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false

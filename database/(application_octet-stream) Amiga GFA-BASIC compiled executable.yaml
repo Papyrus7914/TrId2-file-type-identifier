@@ -1,0 +1,19 @@
+Name: Amiga GFA-BASIC compiled executable
+URL: "https://en.wikipedia.org/wiki/GFA_BASIC"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x03\xF3\0\0\0\0\0\0\0\x03\0\0\0\0\0\0\0\x02\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOS.LIBRARY\0INTUITION.LIBRARY\0GRAPHICS.LIBRARY\0LAYERS.LIBRARY\0CONSOLE.DEVICE\0TRANSLATOR.LIBRARY\0ICON.LIBTRARY\0POTGO.LIBRARY\0DISKFONT.LIBRARY\0TIMER.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ")NU\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ERROR +111\0RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GFA-BASIC-SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUSERIAL.DEVICE"
+    CaseSensitive: false

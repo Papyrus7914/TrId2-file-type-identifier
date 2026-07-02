@@ -1,0 +1,18 @@
+Name: Data Interchange Format
+Description: The original DIF standard is an old standard that allows data files to be interchanged between different programs.
+URL: "http://en.wikipedia.org/wiki/Data_Interchange_Format"
+FileNameExtensions: ["dif"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TABLE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VECTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

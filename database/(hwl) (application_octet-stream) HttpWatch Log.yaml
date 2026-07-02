@@ -1,0 +1,11 @@
+Name: HttpWatch Log
+URL: "https://www.httpwatch.com"
+FileNameExtensions: ["hwl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "W"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "HttpWatch Log File (www.httpwatch.com)\r\n"
+    CaseSensitive: true

@@ -1,0 +1,13 @@
+Name: Truevision TGA/TARGA bitmap (image id field, palette)
+URL: "https://en.wikipedia.org/wiki/Truevision_TGA"
+FileNameExtensions: ["tga"]
+MimeType: image/x-tga
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x1A, 0x01]
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRUEVISION-XFILE."
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: Edit Decision List / Xanadoc (with rem)
+URL: "http://fileformats.archiveteam.org/wiki/Xanadoc"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XANALINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPAN"
+    CaseSensitive: false

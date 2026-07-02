@@ -1,0 +1,113 @@
+Name: MINC2 Medical Imaging format
+URL: "http://fileformats.archiveteam.org/wiki/MINC"
+FileNameExtensions: ["mnc"]
+MimeType: application/x-minc2
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "Y INCREASES FROM PATIENT POSTERIOR TO ANTERIOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z INCREASES FROM PATIENT INFERIOR TO SUPERIOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X INCREASES FROM PATIENT LEFT TO RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINC STANDARD VARIABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VAR_ATTRIBUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINC VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE-MAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE-MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPLETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINC-2.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGULAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VFONOV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREE"
+    CaseSensitive: false

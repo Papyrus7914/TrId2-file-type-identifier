@@ -1,0 +1,11 @@
+Name: Code91 encoded data
+URL: "http://fileformats.archiveteam.org/wiki/Code91"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ".Begin CODE91-encoded file: \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".END"
+    CaseSensitive: false

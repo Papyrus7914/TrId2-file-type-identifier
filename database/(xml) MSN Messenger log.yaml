@@ -1,0 +1,48 @@
+Name: MSN Messenger log
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\r\n<?xml-stylesheet type='text/xsl' href='MessageLog.xsl'?>\r\n<Log FirstSessionID=\"1\" LastSessionID=\""
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\"><"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XML-STYLESHEET TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOG FIRSTSESSIONID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER FRIENDLYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGELOG.XSL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTSESSIONID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-FAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HREF"
+    CaseSensitive: false

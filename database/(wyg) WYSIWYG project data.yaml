@@ -1,0 +1,13 @@
+Name: WYSIWYG project data
+URL: "http://www.castlighting.com"
+FileNameExtensions: ["wyg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WYSIWYG Data File\r\nVersion "
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\r\n\x1A"
+    CaseSensitive: true

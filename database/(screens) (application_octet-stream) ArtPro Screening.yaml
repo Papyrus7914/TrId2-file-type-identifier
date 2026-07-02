@@ -1,0 +1,29 @@
+Name: ArtPro Screening
+URL: "https://www.esko.com/en/products/artpro-plus"
+FileNameExtensions: ["screens"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AScr"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "TCyan"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WMAGENTA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANTONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VYELLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UBLACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCYAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASCR"
+    CaseSensitive: false

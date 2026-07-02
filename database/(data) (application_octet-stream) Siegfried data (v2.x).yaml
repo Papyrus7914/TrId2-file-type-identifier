@@ -1,0 +1,17 @@
+Name: Siegfried data (v2.x)
+Description: Used by Amiga applications by Siegfried Soft.
+FileNameExtensions: ["data"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SFBF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "02."
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "$VER: siegfried.data 2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SFBF"
+    CaseSensitive: false

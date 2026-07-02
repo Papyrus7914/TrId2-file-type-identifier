@@ -1,0 +1,9 @@
+Name: MapInfo MapBasic map data
+Description: 1 of 5 dataset linked files, the others are *.DAT *.ID *.IND and *.TAB
+URL: "https://en.wikipedia.org/wiki/MapInfo_Professional"
+FileNameExtensions: ["map"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \n                                                          *     /                                                     #                 +                 #
+    Bytes: [0x00, 0x0A, 0x0E, 0x15, 0x0E, 0x16, 0x1B, 0xA2, 0xA6, 0xAB, 0x1A, 0x2A, 0x2F, 0xA5, 0xA9, 0xB5, 0xA7, 0xB5, 0xD9, 0x0F, 0x17, 0x23, 0x13, 0x1F, 0x2B, 0x0F, 0x17, 0x23]

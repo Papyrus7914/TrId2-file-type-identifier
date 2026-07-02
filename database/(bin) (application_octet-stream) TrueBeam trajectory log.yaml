@@ -1,0 +1,30 @@
+Name: TrueBeam trajectory log
+Description: File format by Varian Medical Systems.
+URL: "https://www.varian.com/"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VOSTL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REMAINING MU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINAL MU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATIENT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAN NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEAMNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAN UID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENERGY"
+    CaseSensitive: false

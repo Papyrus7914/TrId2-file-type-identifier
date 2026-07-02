@@ -1,0 +1,74 @@
+Name: EndNote X+ Compressed Library
+URL: "http://fileformats.archiveteam.org/wiki/EndNote_Library"
+FileNameExtensions: ["enlx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PDF_INDEX.FRMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDF_INDEX.MYDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDF_INDEX.MYIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%%%%%%%%%%%%%%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFS_EXT.FRMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFS_EXT.MYDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFS_EXT.MYIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JTERMS.FRMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JTERMS.MYDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JTERMS.MYIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSORT.FRMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSORT.MYDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSORT.MYIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DB.OPTKIMK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISC.FRMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISC.MYDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISC.MYIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFS.FRMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFS.MYDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFS.MYIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DB.OPTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".KNI"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Nintendo 3DS Binary CTR Wave audio
+URL: "https://www.3dbrew.org/wiki/BCWAV"
+FileNameExtensions: ["cwav", "bcwav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CWAV"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "INFO"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

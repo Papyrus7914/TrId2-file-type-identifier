@@ -1,0 +1,41 @@
+Name: Adobe Encore project media list
+URL: "https://en.wikipedia.org/wiki/Adobe_Encore"
+FileNameExtensions: ["acx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<EncoreProject xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:noNamespaceSchemaLocation=\"EncoreProject.xsd\"  platform=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NONAMESPACESCHEMALOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCOREPROJECT XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCOREPROJECT.XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXT PRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORAGEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOCODEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

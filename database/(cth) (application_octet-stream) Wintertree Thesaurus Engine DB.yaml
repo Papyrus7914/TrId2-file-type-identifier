@@ -1,0 +1,14 @@
+Name: Wintertree Thesaurus Engine DB
+URL: "https://www.wintertree-software.com/dev/thesdb/index.html"
+FileNameExtensions: ["cth"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ThesDB Thesaurus "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WINTERTREE SOFTWARE INC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THESDB THESAURUS"
+    CaseSensitive: false

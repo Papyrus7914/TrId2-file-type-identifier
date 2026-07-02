@@ -1,0 +1,26 @@
+Name: Tiled Tiles Set XML
+URL: "http://fileformats.archiveteam.org/wiki/Tiled_TSX"
+FileNameExtensions: ["tsx"]
+MimeType: application/x-tiled-tsx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TILEHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILEWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TILESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

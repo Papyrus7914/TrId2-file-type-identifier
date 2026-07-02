@@ -1,0 +1,14 @@
+Name: Applix bitmap
+URL: "http://fileformats.archiveteam.org/wiki/Applixware_Bitmap"
+FileNameExtensions: ["im"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: " RASTER"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RASTER"
+    CaseSensitive: false

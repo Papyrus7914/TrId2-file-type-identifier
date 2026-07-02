@@ -1,0 +1,23 @@
+Name: Gollum compressed Atari ST program (v2.81)
+Description: Atari ST packer.
+FileNameExtensions: ["prg", "tos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xFF\xFF\xA0\0\xA0\nHz\0\f?<\0\tNA\\\x8F`f\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 148
+    AsciiString: "*o\0\x04Hz\xFF\x82 m\0\x10/\b :\xFF\xECP\x80\xD1\xC0/\b\xD1\xC0C\xFA\xFF\xDC\"\x88"
+    CaseSensitive: true
+  - Pos: 181
+    AsciiString: "o\0\x04"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "4VX*O"
+    CaseSensitive: false

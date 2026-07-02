@@ -1,0 +1,32 @@
+Name: MAGIX music studio Drum kit
+URL: "https://en.wikipedia.org/wiki/Magix"
+FileNameExtensions: ["drm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "drum\x02\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CYMBAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AGOGO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMB"
+    CaseSensitive: false

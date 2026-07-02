@@ -1,0 +1,12 @@
+Name: Microsoft OutLook Personal Folder (Unicode)
+URL: "http://www.microsoft.com"
+FileNameExtensions: ["pst"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!BDN"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SM"
+    CaseSensitive: true
+  - Pos: 10
+    Bytes: [0x17]

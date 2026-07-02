@@ -1,0 +1,7 @@
+Name: Compress compressed data
+Description: Classic LZW compression tool.
+FileNameExtensions: ["z"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x1F, 0x9D]

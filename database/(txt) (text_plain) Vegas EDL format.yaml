@@ -1,0 +1,59 @@
+Name: Vegas EDL format
+URL: "https://en.wikipedia.org/wiki/Vegas_Pro"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\"ID\";\"Track\";\"StartTime\";\"Length\";\"PlayRate\";\"Locked\";\"Normalized\";\"StretchMetho"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FADETIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAMLENGT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAMSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUSTAINGAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADETIMEIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVEOUTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKPITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYPITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVEINR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONRULER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAININ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAINO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false

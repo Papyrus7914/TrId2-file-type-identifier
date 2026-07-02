@@ -1,0 +1,17 @@
+Name: Functional Mock-up Unit
+URL: "https://fmi-standard.org/"
+FileNameExtensions: ["fmu"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MODELDESCRIPTION.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINARIES"
+    CaseSensitive: false

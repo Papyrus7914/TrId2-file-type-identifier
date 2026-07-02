@@ -1,0 +1,26 @@
+Name: CASTEP Parameters
+URL: "http://fileformats.archiveteam.org/wiki/CASTEP"
+FileNameExtensions: ["param"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "task "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CUT_OFF_ENERGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XC_FUNCTIONAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPT_STRATEGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CYCLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASK"
+    CaseSensitive: false

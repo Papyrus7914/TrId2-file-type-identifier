@@ -1,0 +1,17 @@
+Name: Siemens TIA Portal Data Block
+URL: "https://en.wikipedia.org/wiki/Simatic"
+FileNameExtensions: ["db"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DATA_BLOCK \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END_DATA_BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false

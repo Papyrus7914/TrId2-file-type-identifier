@@ -1,0 +1,13 @@
+Name: KonyvCalc file
+URL: "http://www.konyvcalc.hu/"
+FileNameExtensions: ["kcm"]
+DetectionPatterns:
+  - Pos: 8
+    AsciiString: "K\xF6nyvCalc "
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KCMTITLE"
+    CaseSensitive: false

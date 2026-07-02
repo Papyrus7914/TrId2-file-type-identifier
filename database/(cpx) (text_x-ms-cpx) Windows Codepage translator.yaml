@@ -1,0 +1,11 @@
+Name: Windows Codepage translator
+URL: "https://en.wikipedia.org/wiki/Code_page#Windows_code_pages"
+FileNameExtensions: ["cpx"]
+MimeType: text/x-ms-cpx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Windows "
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "i"
+    CaseSensitive: true

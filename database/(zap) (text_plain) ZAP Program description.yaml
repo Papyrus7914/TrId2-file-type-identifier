@@ -1,0 +1,18 @@
+Name: ZAP Program description
+Description: ZAP is ZCN program launcher.
+URL: "https://www.z80cpu.eu/mirrors/www.ibiblio.org/zcn/"
+FileNameExtensions: ["zap"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "progname "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROGFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BMPHEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false

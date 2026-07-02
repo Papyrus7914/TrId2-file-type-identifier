@@ -1,0 +1,21 @@
+Name: Nethar Ancestry genealogical archive
+Description: Ancestry program by Martin "Nethar" Dolezal.
+URL: "https://ancestry.nethar.cz/"
+FileNameExtensions: ["rodz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "PROJECT.RODXPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHOTOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADS"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Amaze Entertainment Resource data
+Description: Used in Shrek the Third.
+FileNameExtensions: ["res"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "res\n\t\0\x01\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRG"
+    CaseSensitive: false

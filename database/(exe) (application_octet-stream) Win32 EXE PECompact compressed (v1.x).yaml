@@ -1,0 +1,92 @@
+Name: Win32 EXE PECompact compressed (v1.x)
+Description: PECompact is a Win32 Portable Executable compressor by Jeremy Collake
+URL: "http://www.collakesoftware.com/pecompact.htm"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 66
+    Bytes: [0xBA]
+  - Pos: 68
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 71
+    #              !                 L           !
+    Bytes: [0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: 88
+    AsciiString: "a"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 201
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 211
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 214
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 219
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 221
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 227
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 231
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 240
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 245
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 251
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 254
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL\0\0\0LOADLIBRARYA\0\0\0GETPROCADDRESS\0\0\0VIRTUALALLOC\0\0\0VIRTUALFREE\0\0\0EXITPROCESS\0\0\0GETMODULEHANDLEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEC1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PECO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VWWV"
+    CaseSensitive: false

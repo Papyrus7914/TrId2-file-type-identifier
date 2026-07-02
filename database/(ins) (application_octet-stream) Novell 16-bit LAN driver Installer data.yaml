@@ -1,0 +1,11 @@
+Name: Novell 16-bit LAN driver Installer data
+URL: "https://en.wikipedia.org/wiki/Novell"
+FileNameExtensions: ["ins"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "InS_StArT\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INS_END"
+    CaseSensitive: false

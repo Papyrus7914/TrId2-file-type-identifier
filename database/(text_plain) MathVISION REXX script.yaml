@@ -1,0 +1,13 @@
+Name: MathVISION REXX script
+Description: Mathematical visualization tool for Amiga by Doug Houck.
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MATHVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false

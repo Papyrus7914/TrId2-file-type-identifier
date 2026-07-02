@@ -1,0 +1,26 @@
+Name: Sensofar PLUx SPM data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/sensofarx.c"
+FileNameExtensions: ["plux"]
+MimeType: application/x-sensofar-spm
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "LAYER_0.raw"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LAYER_0.STACK.RAWPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER_0.RAWPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECIPE.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSIS"
+    CaseSensitive: false

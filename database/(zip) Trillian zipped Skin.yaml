@@ -1,0 +1,37 @@
+Name: Trillian zipped Skin
+URL: "http://www.trillian.cc"
+FileNameExtensions: ["zip"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".BMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC.TXTPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N.ICOPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRILLIAN.XMLPK"
+    CaseSensitive: false

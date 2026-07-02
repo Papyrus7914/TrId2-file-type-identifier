@@ -1,0 +1,128 @@
+Name: VVV Virtual Volume View database
+URL: "http://vvvapp.sourceforge.net/"
+FileNameExtensions: ["vvv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\090"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IT IS NOT NULL IF THE ROW REPRESENTS A VIRTUAL PATH (FOLDER) AND IT CONTAINS THE PRIMARY KEY OF THE VIRTUAL_PATHS ROW THAT IT IS DESCRIBING."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHERE FILES.PATH_ID IS NULL AND VIRTUAL_FILES.VIRTUAL_PATH_FILE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* READS ALL THE PATHS FOR THE GIVEN VOLUME IN DESCENDING ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXECUTE PROCEDURE SP_ADD_PHYSPATH_TO_VIRTUALPATH( PHYS_PATH_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IF( EXISTS( SELECT PATH_ID FROM VIRTUAL_PATHS WHERE FATHER_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7FK_VIRTUAL_FILES_VIRTUAL_PATHS FOREIGN KEYVIRTUAL_FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7FK_VIRTUAL_FILES_VIRTUAL_PATHS2FOREIGN KEYVIRTUAL_FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7FK_VIRTUAL_PATHS_VIRTUAL_PATHS FOREIGN KEYVIRTUAL_PATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXECUTE PROCEDURE SP_CREATE_VIRTUALPATH( VOLUME_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH OF THE VOLUME WHEN IT WAS CATALOGED OR UPDATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORES THE FOLDERS STRUCTURE FOR THE VIRTUAL VIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- LOOKS FOR THE FATHER ID AND THE VOLUME NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECLARE VARIABLE VOLUME_NAME VARCHAR(500)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE OF THE LAST UPDATE FOR THIS VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%SQL$SP_ADD_VOLUME_TO_VIRTUALPATSYSDBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE IN WHICH THE VOLUME WAS CATALOGED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- RETRIEVES THE NAME OF THE VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETE FROM VOLUMES WHERE VOLUME_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IF (NEW.VOLUME_ID IS NULL) THEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM PATHS INNER JOIN VOLUMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SP_ADD_VOLUME_TO_VIRTUALPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOR SELECT VOLUME_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO NO FK_PATHS_VOLUMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN THE VOLUME NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEN_ID(GEN_VOLUMES_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQL$SP_DELETE_VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUMES.VOLUME_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON PATHS.VOLUME_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARY KEYVOLUMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDB$VIEW_RELATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME_DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTAINT_ON_VIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO NO UNQ_VOLUMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUMES.VOLUME_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO NO PK_VOLUMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDB$VIEW_CONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUMES_BI$D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQL$VOLUMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME_ID)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUMES\0G"
+    CaseSensitive: false

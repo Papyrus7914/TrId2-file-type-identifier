@@ -1,0 +1,9 @@
+Name: VDC BitMap (v2)
+Description: And old Commodore C128 graphics format. Version 2
+URL: "http://fileformats.archiveteam.org/wiki/VBM_(VDC_BitMap)"
+FileNameExtensions: ["vbm", "bm"]
+MimeType: image/x-commodore-vbm
+DetectionPatterns:
+  - Pos: 0
+    #        B     M
+    Bytes: [0x42, 0x4D, 0xCB, 0x02]

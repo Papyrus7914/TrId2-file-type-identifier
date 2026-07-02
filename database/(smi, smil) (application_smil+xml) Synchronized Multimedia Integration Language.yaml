@@ -1,0 +1,18 @@
+Name: Synchronized Multimedia Integration Language
+Description: The Synchronized Multimedia Integration Language (SMIL, pronounced "smile") enables simple authoring of interactive audiovisual presentations.
+URL: "http://www.w3.org/AudioVideo/"
+FileNameExtensions: ["smi", "smil"]
+MimeType: application/smil+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "l"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMIL"
+    CaseSensitive: false

@@ -1,0 +1,8 @@
+Name: STC 8051 firmware
+URL: "https://en.wikipedia.org/wiki/Intel_MCS-51"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        y           U                 <     N           y           U                 <     N
+    Bytes: [0x79, 0x86, 0x55, 0xAA, 0xC3, 0x3C, 0x4E, 0xB1, 0x79, 0x86, 0x55, 0xAA, 0xC3, 0x3C, 0x4E, 0xB1]

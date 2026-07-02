@@ -1,0 +1,51 @@
+Name: XML Metadata Interchange
+Description: XMI is an OMG standard for exchanging metadata information via XML.
+URL: "https://en.wikipedia.org/wiki/XML_Metadata_Interchange"
+FileNameExtensions: ["xmi"]
+MimeType: application/vnd.xmi+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NAMESPACE.OWNEDELEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMI.EXPORTERVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMI.DOCUMENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSPECIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMI.CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMI.VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISABSTRACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL XMI."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMI.HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISLEAF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMI.ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

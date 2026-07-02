@@ -1,0 +1,44 @@
+Name: MIDI patch Name
+URL: "http://archive.digidesign.com/support/tips/xnames.html"
+FileNameExtensions: ["midnam"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MIDI MANUFACTURERS ASSOCIATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE MIDINAMEDOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCHNAMELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICENAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAN"
+    CaseSensitive: false

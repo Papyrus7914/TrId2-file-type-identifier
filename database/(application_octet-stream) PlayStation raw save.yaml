@@ -1,0 +1,15 @@
+Name: PlayStation raw save
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SC"
+    CaseSensitive: true
+  - Pos: 3
+    Bytes: [0x01, 0x82]
+  - Pos: 6
+    Bytes: [0x82]
+  - Pos: 8
+    Bytes: [0x82]
+  - Pos: 68
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true

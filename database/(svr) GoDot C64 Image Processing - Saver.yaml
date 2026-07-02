@@ -1,0 +1,10 @@
+Name: GoDot C64 Image Processing - Saver
+URL: "http://www.godot64.de/"
+FileNameExtensions: ["svr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\xC0L"
+    CaseSensitive: true
+  - Pos: 4
+    #              @
+    Bytes: [0xC0, 0x40, 0x00, 0x01]

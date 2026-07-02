@@ -1,0 +1,59 @@
+Name: EMSA/MAS Spectral Data
+URL: "http://fileformats.archiveteam.org/wiki/EMSA/MAS"
+FileNameExtensions: ["msa"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#FORMAT "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAS SPECTRAL DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDOFDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCOLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECTRUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPERCHAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEAMKV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XUNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YUNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

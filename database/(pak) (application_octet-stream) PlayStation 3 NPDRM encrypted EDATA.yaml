@@ -1,0 +1,11 @@
+Name: PlayStation 3 NPDRM encrypted EDATA
+URL: "https://en.wikipedia.org/wiki/PlayStation_3"
+FileNameExtensions: ["pak"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NPD\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EDATA"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: TPK compressed archive
+URL: "http://fileformats.archiveteam.org/wiki/TPK_(compressed_archive)"
+FileNameExtensions: ["tpk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "-TK"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "-"
+    CaseSensitive: true

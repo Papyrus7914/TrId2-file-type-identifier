@@ -1,0 +1,35 @@
+Name: Serif PagePlus Publication (XML format)
+URL: "http://fileformats.archiveteam.org/wiki/Serif_PagePlus"
+FileNameExtensions: ["ppp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "STYLESHEET.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTERSPREADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPEDSPREADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARY.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORY.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.XML"
+    CaseSensitive: false

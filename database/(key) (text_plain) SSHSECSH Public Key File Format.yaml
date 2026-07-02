@@ -1,0 +1,14 @@
+Name: SSH/SECSH Public Key File Format
+URL: "https://www.openssh.com/txt/draft-ietf-secsh-publickeyfile-02.txt"
+FileNameExtensions: ["key"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "---- BEGIN SSH2 PUBLIC KEY ----"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "---- END SSH2 PUBLIC KEY ----"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false

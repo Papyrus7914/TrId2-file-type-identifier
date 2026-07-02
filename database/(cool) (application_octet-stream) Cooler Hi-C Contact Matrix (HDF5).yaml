@@ -1,0 +1,56 @@
+Name: Cooler Hi-C Contact Matrix (HDF5)
+URL: "https://cooler.readthedocs.io/"
+FileNameExtensions: ["cool"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A"
+    CaseSensitive: true
+  - Pos: 136
+    AsciiString: "TREE"
+    CaseSensitive: true
+  - Pos: 680
+    AsciiString: "HEAP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BIN1_ID\0BIN2_ID\0COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHROM\0\0\0START\0\0\0END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME\0\0\0\0LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHROMS\0\0BINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHROM_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COOLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREE"
+    CaseSensitive: false

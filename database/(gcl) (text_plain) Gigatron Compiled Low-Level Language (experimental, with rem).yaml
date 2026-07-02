@@ -1,0 +1,11 @@
+Name: Gigatron Compiled Low-Level Language (experimental, with rem)
+URL: "https://gigatron.io/"
+FileNameExtensions: ["gcl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GCL0X"
+    CaseSensitive: false

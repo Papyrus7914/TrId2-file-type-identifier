@@ -1,0 +1,130 @@
+Name: Total Commander Lister extension (64-bit)
+URL: "http://www.ghisler.com/plugins.htm#lister"
+FileNameExtensions: ["wlx64"]
+MimeType: application/vnd.microsoft.portable-executable
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 67
+    Bytes: [0x0E]
+  - Pos: 69
+    #              \t          !                 L           !
+    Bytes: [0xB4, 0x09, 0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: 96
+    AsciiString: "t be run "
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "n"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 373
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 462
+    AsciiString: "\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 469
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 477
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GETMODULEFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADLIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DCOMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T BE RUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NNOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPAR"
+    CaseSensitive: false

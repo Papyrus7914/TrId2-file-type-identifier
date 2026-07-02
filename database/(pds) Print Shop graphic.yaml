@@ -1,0 +1,46 @@
+Name: Print Shop graphic
+URL: "http://www.broderbund.com/"
+FileNameExtensions: ["pds"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "y\xA6\0\0IIII8\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "5DSPCODR"
+    CaseSensitive: true
+  - Pos: 208
+    AsciiString: "BM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*CODC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*TDWV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DKBC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LNAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NBMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SREV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XERP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTCD"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: MicroBT Whatsminer ASIC firmware (M3x, M5x, M6x - H616)
+URL: "https://www.whatsminer.com/"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "?\nd\xAE\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\x03\0\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0h"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\x9C\x1A\0\0"
+    CaseSensitive: true
+  - Pos: 138
+    AsciiString: "\0\0\0\0\0\0h6"
+    CaseSensitive: true
+  - Pos: 242
+    AsciiString: "\0\0\0\0\0\0h616"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "H616"
+    CaseSensitive: false

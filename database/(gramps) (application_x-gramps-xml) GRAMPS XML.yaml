@@ -1,0 +1,83 @@
+Name: GRAMPS XML
+URL: "http://en.wikipedia.org/wiki/GRAMPS"
+FileNameExtensions: ["gramps"]
+MimeType: application/x-gramps-xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE database PUBLIC \"-//G"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE DATABASE PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAMPS-PROJECT.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTD GRAMPS XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENTREF HLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAMPSXML.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEVAL VAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESEARCHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEOPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIRTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

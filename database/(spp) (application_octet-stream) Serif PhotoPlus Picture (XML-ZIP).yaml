@@ -1,0 +1,38 @@
+Name: Serif PhotoPlus Picture (XML-ZIP)
+URL: "http://fileformats.archiveteam.org/wiki/Serif_PhotoPlus"
+FileNameExtensions: ["spp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "STYLESHEET.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLATTENED.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORY.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORY.XML{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT.XML{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false

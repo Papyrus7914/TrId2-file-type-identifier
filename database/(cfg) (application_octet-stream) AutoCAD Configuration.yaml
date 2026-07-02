@@ -1,0 +1,32 @@
+Name: AutoCAD Configuration
+URL: "https://en.wikipedia.org/wiki/AutoCAD"
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "/1"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: " 1"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "AC2.10"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GRAPHICS A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPFILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACAD"
+    CaseSensitive: false

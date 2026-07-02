@@ -1,0 +1,29 @@
+Name: TESCAN X-ray Map
+URL: "https://en.wikipedia.org/wiki/TESCAN"
+FileNameExtensions: ["map"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Tescan X-ray mapVERSION  ="
+    CaseSensitive: true
+  - Pos: 95
+    AsciiString: "1WIDTH    ="
+    CaseSensitive: true
+  - Pos: 176
+    AsciiString: "HEIGHT   ="
+    CaseSensitive: true
+  - Pos: 256
+    AsciiString: "NCHANNELS="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NCHANNELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPERCHAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false

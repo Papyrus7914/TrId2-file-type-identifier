@@ -1,0 +1,14 @@
+Name: KDE Games Kubrick puzzle
+URL: "https://apps.kde.org/en/categories/games/"
+FileNameExtensions: ["kbk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[KubrickGame]\na) Options="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "C) DISPLAYSEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F) MOVECOUNTS"
+    CaseSensitive: false

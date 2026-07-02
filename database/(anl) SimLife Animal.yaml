@@ -1,0 +1,43 @@
+Name: SimLife Animal
+URL: "http://en.wikipedia.org/wiki/SimLife"
+FileNameExtensions: ["anl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0SPALSMLS\0\0\0\0\0\0\0\0\0\0\0\0\x01\x96\0\0\0\0\xA6"
+    CaseSensitive: true
+  - Pos: 95
+    Bytes: [0xA6]
+  - Pos: 99
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x81\x81"
+    CaseSensitive: true
+  - Pos: 126
+    AsciiString: "\0\0SPAL\0\0\x01\x80"
+    CaseSensitive: true
+  - Pos: 140
+    Bytes: [0xA6]
+  - Pos: 144
+    Bytes: [0x00, 0x01, 0x00, 0x01, 0x00, 0x01]
+  - Pos: 175
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 178
+    Bytes: [0x01]
+  - Pos: 180
+    Bytes: [0x00, 0x01, 0x01, 0x7F]
+  - Pos: 185
+    Bytes: [0x1F]
+  - Pos: 213
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 409
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 533
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SPALSMLS"
+    CaseSensitive: false

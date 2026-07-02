@@ -1,0 +1,38 @@
+Name: NuGet Package
+URL: "https://en.wikipedia.org/wiki/NuGet"
+FileNameExtensions: ["nupkg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "CORE-PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NUSPEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PSMDCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML"
+    CaseSensitive: false

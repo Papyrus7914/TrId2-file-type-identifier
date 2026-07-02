@@ -1,0 +1,68 @@
+Name: VTK XML Rectilinear grid
+URL: "https://en.wikipedia.org/wiki/VTK"
+FileNameExtensions: ["vtr"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RECTILINEARGRID WHOLEEXTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPENDEDDATA ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLDATA SCALARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAARRAY TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASS FOR BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIECE EXTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTKFILE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORDINATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOSE"
+    CaseSensitive: false

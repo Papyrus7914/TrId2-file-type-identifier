@@ -1,0 +1,11 @@
+Name: Windows Draw drawing
+FileNameExtensions: ["drw"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01, 0xFF]
+  - Pos: 15
+    AsciiString: "Windows Draw Drawing"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WINDOWS DRAW DRAWING"
+    CaseSensitive: false

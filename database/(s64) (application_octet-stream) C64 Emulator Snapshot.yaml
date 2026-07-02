@@ -1,0 +1,29 @@
+Name: C64 Emulator Snapshot
+URL: "https://c64emulator.111mb.de/"
+FileNameExtensions: ["s64"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[CS]\x06"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\x89PNG\r\n\x1A\n\0\0\0\rIHDR"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "PLTE"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "IDATx"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLTE"
+    CaseSensitive: false

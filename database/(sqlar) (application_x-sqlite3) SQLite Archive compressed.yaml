@@ -1,0 +1,44 @@
+Name: SQLite Archive compressed
+URL: "https://www.sqlite.org/sqlar/doc/trunk/README.md"
+FileNameExtensions: ["sqlar"]
+MimeType: application/x-sqlite3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA BLOB               -- COMPRESSED CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_SQLAR_1SQLAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- LAST MODIFICATION TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- ACCESS PERMISSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- ORIGINAL FILE SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME TEXT PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- NAME OF THE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SQLAR("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESQLARSQLAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTIME INT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE INT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SZ INT"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Diablo save game
+URL: "https://www.mobygames.com/game/339/diablo/"
+FileNameExtensions: ["sv", "sv_1", "sv_2", "sv_3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MPQ\x1A \0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\0\0\x03\0h\x80\0\0h\0\0\0\0"
+    CaseSensitive: true

@@ -1,0 +1,11 @@
+Name: Serato DJ License
+URL: "https://serato.com/dj"
+FileNameExtensions: ["lic"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LICENSE serato dj "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HOSTID"
+    CaseSensitive: false

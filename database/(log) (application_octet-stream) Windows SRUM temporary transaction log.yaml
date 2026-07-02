@@ -1,0 +1,29 @@
+Name: Windows SRUM temporary transaction log
+URL: "https://learn.microsoft.com/en-us/windows/privacy/diagnostic-data-viewer-overview"
+FileNameExtensions: ["log"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 7
+    AsciiString: "\0\0\x10\x01\0\x10\0\0\x10"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "x"
+    CaseSensitive: true
+  - Pos: 736
+    AsciiString: "\0:\0\\\0W\0I\0N\0D\0O\0W\0S\0\\\0s\0y\0s\0t\0e\0m\03\02\0\\\0S\0R\0U\0\\\0S\0R\0U\0D\0B\0.\0d\0a\0t\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "S\0R\0U\0D\0B\0.\0D\0A\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0Y\0S\0T\0E\0M\03\02"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0I\0N\0D\0O\0W\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS"
+    CaseSensitive: false

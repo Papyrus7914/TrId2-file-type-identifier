@@ -1,0 +1,56 @@
+Name: MATLAB support package
+URL: "https://en.wikipedia.org/wiki/MATLAB"
+FileNameExtensions: ["mlpkginstall"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!--\nThis file should be opened using MATLAB (http://www.mathworks.com).\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS FILE SHOULD BE OPENED USING MATLAB (HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- LICENSE FOR THIS .MLPKGINSTALL FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGEINFO VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORT PACKAGE FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.MATHWORKS.COM)."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNPOSTDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASEPRODUCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MWSIGNPOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPOSITORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASECODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULLNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

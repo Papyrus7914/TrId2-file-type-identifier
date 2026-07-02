@@ -1,0 +1,80 @@
+Name: FITS Header (xtension)
+URL: "https://en.wikipedia.org/wiki/FITS"
+FileNameExtensions: ["hdr"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XTENSION= 'TABLE   '"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATE FITS TABLE VERIFIED ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF CHARACTERS PER R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMPLE 2-D MATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARACTER DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORTRAN FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLY ONE GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S IN THE TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELDS PER R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START COLUMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBER OF R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFIELDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITPIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAXIS1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAXIS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANDOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBCOL1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFORM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTYPE1"
+    CaseSensitive: false

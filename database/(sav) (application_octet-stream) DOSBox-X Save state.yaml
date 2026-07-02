@@ -1,0 +1,89 @@
+Name: DOSBox-X Save state
+URL: "https://github.com/joncampbell123/dosbox-x/wiki"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DOSBOX-X_VERSIONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOSBOX-X_VERSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM_NAMEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME_STAMP3202"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY_SIZE31"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY_SIZEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTTIMER10PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IO HANDLERPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME_STAMPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOSBOX-XPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOYSTICKPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARDPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORYPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDERPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INT10PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIXERPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUSEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMOSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPUPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMAPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPUPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VGAPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMSPK"
+    CaseSensitive: false

@@ -1,0 +1,101 @@
+Name: Cosmopolitan APE binary loader (Win)
+URL: "https://github.com/jart/cosmopolitan"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZqFpD='\n"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\x10\0\xF8\0\0\0\0\0\0\0\x01\0\b@\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "\0\0' <<'"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JUSTINE ALEXANDRA ROBERTS TUNNEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS APE BINARY LACKS $M SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COSMOPOLITAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R APE LOADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".APE-BLINK-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXECUTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHMOD 755"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXEC APE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE APE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAGIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELF"
+    CaseSensitive: false

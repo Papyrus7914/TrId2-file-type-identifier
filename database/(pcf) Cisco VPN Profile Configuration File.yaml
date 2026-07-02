@@ -1,0 +1,52 @@
+Name: Cisco VPN Profile Configuration File
+URL: "http://www.cisco.com"
+FileNameExtensions: ["pcf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[main]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SAVEUSERPASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEISPCONNECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISPCONNECTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKUPSERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEBACKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEERTIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISPCOMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLENAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPPWD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false

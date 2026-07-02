@@ -1,0 +1,29 @@
+Name: Native Instruments Massive Sound
+URL: "https://en.wikipedia.org/wiki/Native_Instruments"
+FileNameExtensions: ["ksd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-in-\x02\0\0\0#NI#CS#Document##NI#SoundShell#Sound#\0\0\0\0\0\0\0\0\0\0\0A\x01\0\0atad\x02\0\0\0dnssbilz\x16\0\0\0\x10\0\0\0x\xDAcb``\xD0\xF5\xF4\xD35q\xCF\xF4\x032\x19\0\x11\x9D\x02&atad\x02\0\0\0ofnibilz"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SOUNDSHELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DNSSBILZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFNIBILZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSRPBILZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-IN-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATAD"
+    CaseSensitive: false

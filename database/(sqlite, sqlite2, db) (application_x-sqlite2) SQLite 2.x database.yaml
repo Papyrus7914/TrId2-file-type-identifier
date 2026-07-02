@@ -1,0 +1,12 @@
+Name: SQLite 2.x database
+Description: SQLite is a small C library that implements a self-contained, embeddable, zero-configuration SQL database engine.
+URL: "https://en.wikipedia.org/wiki/SQLite"
+FileNameExtensions: ["sqlite", "sqlite2", "db"]
+MimeType: application/x-sqlite2
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "** This file contains an SQLite 2."
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: " database **\0"
+    CaseSensitive: true

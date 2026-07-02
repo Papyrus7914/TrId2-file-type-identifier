@@ -1,0 +1,32 @@
+Name: MPD songs metadata
+URL: "https://en.wikipedia.org/wiki/Music_Player_Daemon"
+FileNameExtensions: ["db", "txt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "info_begin"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MPD_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FS_CHARSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO_END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALBUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

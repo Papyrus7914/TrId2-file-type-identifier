@@ -1,0 +1,30 @@
+Name: DaVinci Resolve Project
+Description: Project details, no media.
+URL: "http://fileformats.archiveteam.org/wiki/DaVinci_Resolve"
+FileNameExtensions: ["drp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "project.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MPFOLDER.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GALLERY.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQCONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIAPOOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTER"
+    CaseSensitive: false

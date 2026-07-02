@@ -1,0 +1,44 @@
+Name: GenCAD layout
+Description: Text based CAD format by Teradyne.
+FileNameExtensions: ["cad"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$HEADER"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$ENDHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERTRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$BOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENCAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

@@ -1,0 +1,65 @@
+Name: Silo scientific data exchange (HDF5)
+URL: "http://fileformats.archiveteam.org/wiki/Silo"
+FileNameExtensions: ["silo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A"
+    CaseSensitive: true
+  - Pos: 140
+    AsciiString: "TREE"
+    CaseSensitive: true
+  - Pos: 684
+    AsciiString: "HEAP"
+    CaseSensitive: true
+  - Pos: 804
+    AsciiString: "SNOD"
+    CaseSensitive: true
+  - Pos: 1172
+    AsciiString: "TREE"
+    CaseSensitive: true
+  - Pos: 1716
+    AsciiString: "HEAP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SILO\0\0\0_FILEINFO\0\0\0\0\0\0\0_HDF5LIBINFO\0\0\0\0_SILOLIBINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX_EXTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIN_EXTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SILO_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP_NO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NLINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYCLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDF5-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDIMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZONES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAN"
+    CaseSensitive: false

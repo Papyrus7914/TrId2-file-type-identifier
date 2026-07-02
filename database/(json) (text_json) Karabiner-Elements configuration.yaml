@@ -1,0 +1,23 @@
+Name: Karabiner-Elements configuration
+URL: "https://karabiner-elements.pqrs.org/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANIPULATORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

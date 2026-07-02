@@ -1,0 +1,34 @@
+Name: Morrowind plugin
+URL: "http://en.wikipedia.org/wiki/The_Elder_Scrolls_III:_Morrowind"
+FileNameExtensions: ["esp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TES3"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\x01\0\0\0\0\0\0\0\0\0\0HEDR,\x01\0\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "?\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 322
+    AsciiString: "\0\0MAST\x0E\0\0\0Morrowind.esm\0DATA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FNAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MORROWIND.ESM\0DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TES3"
+    CaseSensitive: false

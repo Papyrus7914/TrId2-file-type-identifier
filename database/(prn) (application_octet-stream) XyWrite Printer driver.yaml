@@ -1,0 +1,14 @@
+Name: XyWrite Printer driver
+URL: "https://en.wikipedia.org/wiki/XyWrite"
+FileNameExtensions: ["prn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";PR;"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MD BR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD UL"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: Documentum Document (v2.x)
+URL: "Amiga word processor by Markt and Technik."
+FileNameExtensions: ["docu"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "DOCUPAGE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCUPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DFON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KOFU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VZBD"
+    CaseSensitive: false

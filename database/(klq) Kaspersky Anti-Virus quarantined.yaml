@@ -1,0 +1,8 @@
+Name: Kaspersky Anti-Virus quarantined
+Description: Kaspersky Anti-Virus
+URL: "http://www.kaspersky.com/"
+FileNameExtensions: ["klq"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KLQB\x01\0\0\0@\0\0\0\0\0\0\0"
+    CaseSensitive: true

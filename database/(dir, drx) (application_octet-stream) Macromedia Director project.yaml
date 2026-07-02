@@ -1,0 +1,17 @@
+Name: Macromedia Director project
+URL: "http://fileformats.archiveteam.org/wiki/Shockwave_(Director)"
+FileNameExtensions: ["dir", "drx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "XFIR"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "39VMpami"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EERF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAMM"
+    CaseSensitive: false

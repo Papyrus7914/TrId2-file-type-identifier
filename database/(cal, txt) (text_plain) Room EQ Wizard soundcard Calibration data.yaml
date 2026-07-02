@@ -1,0 +1,20 @@
+Name: Room EQ Wizard soundcard Calibration data
+URL: "https://www.roomeqwizard.com/"
+FileNameExtensions: ["cal", "txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Soundcard Calibration data saved by REW V"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SAMPLE RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATED"
+    CaseSensitive: false

@@ -1,0 +1,30 @@
+Name: TopLevel Forms Form
+URL: "http://www.toplev.com/"
+FileNameExtensions: ["ofw"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: 1024
+    AsciiString: "R\0o\0o\0t\0 \0E\0n\0t\0r\0y"
+    CaseSensitive: true
+  - Pos: 1152
+    AsciiString: "I\0m\0a\0g\0e\0s"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS IS A TOPLEVEL FORMS FORM FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DO NOT INTERFERE WITH IT!"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CWFORMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAMP"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: Courgette Binary Diff output
+Description: The Courgette bsdiff variant use a total different file format compared with BSD bsdiff patch (v4) variant from Colin Percival.
+URL: "https://www.chromium.org/developers/design-documents/software-updates-courgette/"
+FileNameExtensions: ["patch", "bsdiff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GBSDIF42"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GBSDIF42"
+    CaseSensitive: false

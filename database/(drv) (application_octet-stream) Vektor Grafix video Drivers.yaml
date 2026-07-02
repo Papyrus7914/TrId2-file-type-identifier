@@ -1,0 +1,17 @@
+Name: Vektor Grafix video Drivers
+Description: Used in MS-DOS games.
+FileNameExtensions: ["drv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Vektor Grafix Ltd - "
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: " DRIVERS\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMAP"
+    CaseSensitive: false

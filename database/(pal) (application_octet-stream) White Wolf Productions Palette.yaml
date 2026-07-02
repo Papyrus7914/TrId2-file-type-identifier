@@ -1,0 +1,17 @@
+Name: White Wolf Productions Palette
+URL: "https://www.mobygames.com/company/184/white-wolf-productions-inc/"
+FileNameExtensions: ["pal"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WPAL"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "TOC "
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "PALD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PALD"
+    CaseSensitive: false

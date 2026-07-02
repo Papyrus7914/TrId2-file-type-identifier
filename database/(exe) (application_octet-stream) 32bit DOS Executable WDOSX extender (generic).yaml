@@ -1,0 +1,58 @@
+Name: 32bit DOS Executable WDOSX extender (generic)
+URL: "https://tippach.hier-im-netz.de/wdosx/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF, 0x00, 0x00]
+  - Pos: 18
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: "\0>TIPPACH$WdX"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "WDOSX "
+    CaseSensitive: true
+  - Pos: 59
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: " DOS extender Copyright (c) 1996-"
+    CaseSensitive: true
+  - Pos: 99
+    AsciiString: " Michael Tippach\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOS EXTENDER COPYRIGHT (C) 1996-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICHAEL TIPPACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIPPACH$WDX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WDOSX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(MAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DPMI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAG"
+    CaseSensitive: false

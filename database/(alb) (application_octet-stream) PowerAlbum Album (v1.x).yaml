@@ -1,0 +1,14 @@
+Name: PowerAlbum Album (v1.x)
+URL: "http://fileformats.archiveteam.org/wiki/PowerAlbum"
+FileNameExtensions: ["alb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PowerUp Album v1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER UP"
+    CaseSensitive: false

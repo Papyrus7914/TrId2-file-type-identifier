@@ -1,0 +1,12 @@
+Name: PowerVR PVR texture format (old)
+Description: A legacy file format from Imagination Technologies.
+URL: "http://cdn.imgtec.com/sdk-documentation/PVR+File+Format.Specification.Legacy.pdf"
+FileNameExtensions: ["pvr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "4\0\0\0\0\x04\0\0\0\x04\0\0\0\0\0\0\x19\x02\0\0\0\0\b\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "PVR!"
+    CaseSensitive: true

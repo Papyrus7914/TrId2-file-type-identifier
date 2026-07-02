@@ -1,0 +1,40 @@
+Name: Garmin PCX5 track file
+URL: "http://www.eagleglobesoftware.com/formatsrd/Garmin-PCX5.htm"
+FileNameExtensions: ["trk"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "H  SOFTWARE NAME & VERSION"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "H  COORDINATE SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H  SOFTWARE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U  LAT LON D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H  LATITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "000000E+00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I  PCX5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

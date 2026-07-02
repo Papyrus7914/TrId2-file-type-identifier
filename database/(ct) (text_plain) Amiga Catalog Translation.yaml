@@ -1,0 +1,17 @@
+Name: Amiga Catalog Translation
+URL: "https://wiki.amigaos.net/wiki/Translation_Guidelines"
+FileNameExtensions: ["ct"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "## version $VER: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".CATALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODESET"
+    CaseSensitive: false

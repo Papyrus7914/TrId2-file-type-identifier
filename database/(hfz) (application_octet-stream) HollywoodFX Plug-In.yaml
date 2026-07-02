@@ -1,0 +1,45 @@
+Name: HollywoodFX Plug-In
+Description: Pinacle Studio HollywoodFX Plug-In
+URL: "https://en.wikipedia.org/wiki/Pinnacle_Studio"
+FileNameExtensions: ["hfz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HFXZHFXZ"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0I\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0\0~Effects:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALBUMORG.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "00 - COMMON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECTS.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HFXZHFXZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~EFFECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~OBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "~ORGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HFX"
+    CaseSensitive: false

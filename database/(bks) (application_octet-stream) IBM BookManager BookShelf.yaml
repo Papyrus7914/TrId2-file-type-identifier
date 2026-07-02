@@ -1,0 +1,35 @@
+Name: IBM BookManager BookShelf
+URL: "http://fileformats.archiveteam.org/wiki/IBM_BookManager_book"
+FileNameExtensions: ["bks"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BKSHELF="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BKIDATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKSDATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKDATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKIBOOKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKSINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKSLEXIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKSTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKNAME"
+    CaseSensitive: false

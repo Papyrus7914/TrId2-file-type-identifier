@@ -1,0 +1,56 @@
+Name: Manhunt save game
+URL: "https://www.mobygames.com/game/11164/manhunt/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\x82\0\0\0A\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0)\0S\0C\0E\0N\0E\0 \0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GAME_SCRIPTS DONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G_FIRST_AID_(CT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME_INT_GLOBAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAG_(CT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIBBLE\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIGGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLE\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEN_S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HUNT"
+    CaseSensitive: false

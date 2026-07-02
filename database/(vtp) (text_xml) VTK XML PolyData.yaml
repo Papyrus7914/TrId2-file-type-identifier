@@ -1,0 +1,56 @@
+Name: VTK XML PolyData
+URL: "https://en.wikipedia.org/wiki/VTK"
+FileNameExtensions: ["vtp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PIECE NUMBEROFPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFCOMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAARRAY TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFSTRIPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFLINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFPOLYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFVERTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTKFILE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTE_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS"
+    CaseSensitive: false

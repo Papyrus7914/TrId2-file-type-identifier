@@ -1,0 +1,32 @@
+Name: Watcom C/C++ Target
+URL: "https://en.wikipedia.org/wiki/Watcom_C/C%2B%2B"
+FileNameExtensions: ["tgt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "40\r\ntargetIdent\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MCOMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WPICKLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MCOMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WVLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MITEM"
+    CaseSensitive: false

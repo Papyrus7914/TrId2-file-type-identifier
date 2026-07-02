@@ -1,0 +1,9 @@
+Name: Dreamload File Archive image
+Description: Specialized container format for Commodore disk images.
+URL: "https://www.lemon64.com/forum/viewtopic.php?t=37415"
+FileNameExtensions: ["dfi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0DREAMLOAD FILE ARCHIVE"
+    CaseSensitive: true

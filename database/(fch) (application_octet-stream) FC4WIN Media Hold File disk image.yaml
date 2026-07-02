@@ -1,0 +1,12 @@
+Name: FC4WIN Media Hold File disk image
+Description: Disk copier for Windows by Barry Pearlman.
+FileNameExtensions: ["fch"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xEB]
+  - Pos: 2
+    Bytes: [0x90]
+  - Pos: any
+    AsciiString: "END FLPYCOPY HOLD FILE"
+    CaseSensitive: false

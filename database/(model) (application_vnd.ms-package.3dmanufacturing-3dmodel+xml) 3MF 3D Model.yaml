@@ -1,0 +1,50 @@
+Name: 3MF 3D Model
+Description: Actual 3D model in a 3MF package.
+FileNameExtensions: ["model"]
+MimeType: application/vnd.ms-package.3dmanufacturing-3dmodel+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3DMANUFACTURING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRIANGLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTEX X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false

@@ -1,0 +1,59 @@
+Name: ClinicalTrials.gov XML trial format
+URL: "https://clinicaltrials.gov/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLINICALTRIALS.GOV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLINICAL_STUDY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERALL_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEAD_SPONSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORG_STUDY_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRIEF_TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STUDY_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPONSORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ID_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AGENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCT_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAST_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: Repeat Signage Presentation
+URL: "http://www.repeatsoftware.com/"
+FileNameExtensions: ["rsp"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "S\0E\0T\0T\0I\0N\0G\0S\0.\0W\0C\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS.WCMNU \0NUCX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*\0SETTINGS.WCMNU"
+    CaseSensitive: false

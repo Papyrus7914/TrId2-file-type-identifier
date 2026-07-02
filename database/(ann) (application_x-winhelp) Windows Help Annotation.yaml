@@ -1,0 +1,29 @@
+Name: Windows Help Annotation
+Description: Typically found inside directory %LOCALAPPDATA%\Help
+URL: "http://fileformats.archiveteam.org/wiki/WinHelp_annotation"
+FileNameExtensions: ["ann"]
+MimeType: application/x-winhelp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "?_\x03\0\x1B\0\0\0\x10\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "\v\0\0\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\xAF\0\0\0\xA6\0\0\0\x04;)\x02\x04\x80\0z4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xFF\xFF\x01\0\x01\0\x03\0\0\0"
+    CaseSensitive: true
+  - Pos: 75
+    Bytes: [0x00, 0x03, 0x00, 0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: 115
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x11\0\0\0\b\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 212
+    AsciiString: "bmf\x01\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK"
+    CaseSensitive: false

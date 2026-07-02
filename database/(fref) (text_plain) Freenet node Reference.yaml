@@ -1,0 +1,38 @@
+Name: Freenet node Reference
+URL: "http://fileformats.archiveteam.org/wiki/Freenet_node_reference"
+FileNameExtensions: ["fref"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "opennet="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LASTGOODVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTH.NEGTYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYSICAL.UDP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSAPUBKEY.Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARK.NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARK.PUBURI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSAGROUP.G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSAGROUP.P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSAGROUP.Q"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTITY"
+    CaseSensitive: false

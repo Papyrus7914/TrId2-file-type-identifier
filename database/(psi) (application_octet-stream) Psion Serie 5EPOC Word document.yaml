@@ -1,0 +1,11 @@
+Name: Psion Serie 5/EPOC Word document
+URL: "http://fileformats.archiveteam.org/wiki/EPOC_Word"
+FileNameExtensions: ["psi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "7\0\0\x10m\0\0\x10\x7F\0\0\x10"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WORD.APP"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: Sega Genesis / Megadrive / 32x ROM image
+FileNameExtensions: ["bin", "md"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 256
+    AsciiString: "SEGA "
+    CaseSensitive: true
+  - Pos: 272
+    AsciiString: "(C)"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SEGA"
+    CaseSensitive: false

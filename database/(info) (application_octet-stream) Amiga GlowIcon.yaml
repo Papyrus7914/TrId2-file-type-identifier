@@ -1,0 +1,16 @@
+Name: Amiga GlowIcon
+URL: "http://fileformats.archiveteam.org/wiki/GlowIcons"
+FileNameExtensions: ["info"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE3, 0x10]
+  - Pos: any
+    AsciiString: "ICONFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAG"
+    CaseSensitive: false

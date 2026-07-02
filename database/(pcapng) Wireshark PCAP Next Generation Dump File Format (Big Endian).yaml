@@ -1,0 +1,10 @@
+Name: Wireshark PCAP Next Generation Dump File Format (Big Endian)
+URL: "http://wiki.wireshark.org/Development/PcapNg"
+FileNameExtensions: ["pcapng"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n\r\r\n"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\x1A+<M"
+    CaseSensitive: true

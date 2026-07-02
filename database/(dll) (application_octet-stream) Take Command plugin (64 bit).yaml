@@ -1,0 +1,98 @@
+Name: Take Command plugin (64 bit)
+URL: "http://jpsoft.com/"
+FileNameExtensions: ["dll"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 122
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 126
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INITIALIZEPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHUTDOWNPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPLUGININFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAKECMD.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WATAUAVAWH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "64.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0N\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0O\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0E\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0A\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0 \0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VWATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L$XL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAGE"
+    CaseSensitive: false

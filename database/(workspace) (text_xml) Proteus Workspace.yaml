@@ -1,0 +1,32 @@
+Name: Proteus Workspace
+URL: "https://www.labcenter.com/"
+FileNameExtensions: ["workspace"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version='1.0' encoding='UTF-8' standalone='yes'?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FRAME ACTIVEWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKSPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSMDEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false

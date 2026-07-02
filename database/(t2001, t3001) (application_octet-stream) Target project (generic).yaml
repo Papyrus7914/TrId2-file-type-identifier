@@ -1,0 +1,17 @@
+Name: Target project (generic)
+URL: "https://en.wikipedia.org/wiki/TARGET_(CAD_software)"
+FileNameExtensions: ["t2001", "t3001"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 232
+    Bytes: [0x18, 0x18, 0x18, 0x18]
+  - Pos: 238
+    Bytes: [0x18, 0x18, 0x18, 0x18]
+  - Pos: 325
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false

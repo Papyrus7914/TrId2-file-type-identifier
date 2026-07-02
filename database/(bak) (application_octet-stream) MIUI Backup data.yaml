@@ -1,0 +1,11 @@
+Name: MIUI Backup data
+URL: "https://en.wikipedia.org/wiki/MIUI"
+FileNameExtensions: ["bak"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MIUI BACKUP\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".ANDROID."
+    CaseSensitive: false

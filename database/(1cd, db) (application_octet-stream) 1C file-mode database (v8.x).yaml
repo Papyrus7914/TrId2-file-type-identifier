@@ -1,0 +1,11 @@
+Name: 1C file-mode database (v8.x)
+URL: "https://en.wikipedia.org/wiki/1C:Enterprise"
+FileNameExtensions: ["1cd", "db"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "d\n\0\b"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DBWINUS0"
+    CaseSensitive: false

@@ -1,0 +1,62 @@
+Name: VideoMach Project
+URL: "https://gromada.com/videomach/"
+FileNameExtensions: ["vmp"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Header>\r\n\t<BlockVersion type=\"int\">"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BLOCKVERSION TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRFORWARD TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTQUANT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMERATE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDQUANT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUEID TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKID TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "20PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOMACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOL"
+    CaseSensitive: false

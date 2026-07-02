@@ -1,0 +1,11 @@
+Name: FlashPrint XG-Code
+Description: A proprietary G-code container by FlashForge.
+FileNameExtensions: ["gx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "xgcode 1.0\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XGCODE 1.0"
+    CaseSensitive: false

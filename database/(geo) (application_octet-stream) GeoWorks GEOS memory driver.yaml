@@ -1,0 +1,14 @@
+Name: GeoWorks GEOS memory driver
+URL: "https://en.wikipedia.org/wiki/GEOS_(16-bit_operating_system)#PC.2FGEOS"
+FileNameExtensions: ["geo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              E           S
+    Bytes: [0xC7, 0x45, 0xC1, 0x53]
+  - Pos: 56
+    AsciiString: "MEMD\0\0GEOS"
+    CaseSensitive: true
+  - Pos: 308
+    AsciiString: "drvrMEMD"
+    CaseSensitive: true

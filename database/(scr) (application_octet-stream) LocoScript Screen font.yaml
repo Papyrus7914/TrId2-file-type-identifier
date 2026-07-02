@@ -1,0 +1,14 @@
+Name: LocoScript Screen font
+URL: "https://en.wikipedia.org/wiki/LocoScript"
+FileNameExtensions: ["scr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SCR\x02\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOCOMOTIVE SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRICES"
+    CaseSensitive: false

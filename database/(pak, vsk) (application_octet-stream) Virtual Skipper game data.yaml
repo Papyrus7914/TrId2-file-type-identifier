@@ -1,0 +1,38 @@
+Name: Virtual Skipper game data
+URL: "https://www.mobygames.com/game/3187/virtual-skipper/"
+FileNameExtensions: ["pak", "vsk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SCEN"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0\x01\0OBGD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RROT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SREPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BHVS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBGD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCHI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RVSK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SBHV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXTU"
+    CaseSensitive: false

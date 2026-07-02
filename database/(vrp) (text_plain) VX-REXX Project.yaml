@@ -1,0 +1,32 @@
+Name: VX-REXX Project
+URL: "https://en.wikipedia.org/wiki/VX-REXX"
+FileNameExtensions: ["vrp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VX-REXX OS/2 V"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "__VRETOOLSWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__VREMAINWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VRXWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VRX"
+    CaseSensitive: false

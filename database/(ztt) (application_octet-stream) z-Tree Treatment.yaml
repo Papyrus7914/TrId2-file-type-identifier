@@ -1,0 +1,50 @@
+Name: z-Tree Treatment
+URL: "http://www.ztree.uzh.ch"
+FileNameExtensions: ["ztt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0\0\bCPGXGame"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EEXCONTRACTBUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPGXSUBJECTPARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPGXPERIODPARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EEXDATABASEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EEXDIALOGWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EEXINFOITEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EEXPROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTRACTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPGXROLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EEXSTAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

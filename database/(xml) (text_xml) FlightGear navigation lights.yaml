@@ -1,0 +1,71 @@
+Name: FlightGear navigation lights
+URL: "https://wiki.flightgear.org/Howto:Add_aircraft_lights"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>\n<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROCEDURAL_LIGHT_BEACON_BOTTOM.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCEDURAL_LIGHT_NAV_RIGHT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCEDURAL_LIGHT_NAV_LEFT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCEDURAL_LIGHT_STROBE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEACON-BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEACONGROUPED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STROBEGROUPED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAV-RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOPREVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAV-LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STROBE-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

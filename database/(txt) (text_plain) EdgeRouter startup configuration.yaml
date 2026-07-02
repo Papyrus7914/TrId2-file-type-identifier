@@ -1,0 +1,282 @@
+Name: EdgeRouter startup configuration
+Description: "File name is: config.boot.txt"
+URL: "https://en.wikipedia.org/wiki/Ubiquiti"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "firewall {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IPV6-RECEIVE-REDIRECTS DISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE-VALIDATION DISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOSTFILE-UPDATE DISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPV6-SRC-ROUTE DISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTBOUND-INTERFACE ETH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHORITATIVE DISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEND-REDIRECTS ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACILITY PROTOCOLS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IP-SRC-ROUTE DISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT-ACTION DROP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHARED-NETWORK-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USE-DNSMASQ DISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESTABLISHED ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT-HOP-INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOL-VERSION V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYN-COOKIES ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL-PING ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETHERNET ETH0 {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACE-ROUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE MASQUERADE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BROADCAST-PING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT-ROUTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLED FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACILITY ALL {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATED ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION ACCEPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION MODIFY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATION {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DHCP-SERVER {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTEN-ON ETH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPBACK LO {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLDER-CIPHERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUTE 0.0.0.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS DHCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACES {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL NOTICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOG-MARTIANS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOL ALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOL TCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOL UDP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUPLEX AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME-SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DNS-SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIREWALL {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORWARDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS-PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOST-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP-PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICE {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME-ZONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFY {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATIC {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSLOG {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAFFIC-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AL-PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGIN {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-LOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOMAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON LAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLICY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUTE-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBNET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUI {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IN-NA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ING {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPSEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTU 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAT {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTP {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSH {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-CON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOP"
+    CaseSensitive: false

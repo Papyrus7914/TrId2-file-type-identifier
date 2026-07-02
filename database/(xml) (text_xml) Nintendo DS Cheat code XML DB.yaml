@@ -1,0 +1,22 @@
+Name: Nintendo DS Cheat code XML DB
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CODELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHEAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

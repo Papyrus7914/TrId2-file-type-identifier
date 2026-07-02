@@ -1,0 +1,32 @@
+Name: KDE desktop Link
+URL: "https://en.wikipedia.org/wiki/KDE"
+FileNameExtensions: ["kdelnk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# KDE Config File\n[KDE Desktop Entry]\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BINARYPATTERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWALLOWTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWALLOWEXEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

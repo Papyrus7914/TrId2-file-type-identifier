@@ -1,0 +1,17 @@
+Name: Desktop Sidebar Panel
+Description: Add-on for Windows.
+FileNameExtensions: ["dspackage"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".DSPLUGINPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LLPK"
+    CaseSensitive: false

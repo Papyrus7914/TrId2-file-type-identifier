@@ -1,0 +1,35 @@
+Name: Magic Set Editor Set
+URL: "http://magicseteditor.sourceforge.net/"
+FileNameExtensions: ["mse-set"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "IMAGE1PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE3PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE4PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE5PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE6PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE7PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE8PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE9PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETPK"
+    CaseSensitive: false

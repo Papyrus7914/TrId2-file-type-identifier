@@ -1,0 +1,23 @@
+Name: LG QuickMemo note
+Description: A note taking app for LG smartphones.
+FileNameExtensions: ["lqm", "jlqm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MEMOINFO.JLQMPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEOS"
+    CaseSensitive: false

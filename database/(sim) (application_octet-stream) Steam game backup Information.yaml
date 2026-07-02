@@ -1,0 +1,23 @@
+Name: Steam game backup Information
+URL: "https://en.wikipedia.org/wiki/Steam_(service)"
+FileNameExtensions: ["sim"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              L           ?
+    Bytes: [0x1F, 0x4C, 0xD0, 0x3F]
+  - Pos: any
+    AsciiString: "STEAM_API.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML"
+    CaseSensitive: false

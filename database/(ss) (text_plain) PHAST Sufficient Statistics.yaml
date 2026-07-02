@@ -1,0 +1,35 @@
+Name: PHAST Sufficient Statistics
+URL: "http://compgen.cshl.edu/phast"
+FileNameExtensions: ["ss"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NSEQS = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TUPLE_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALPHABET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTUPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDX_O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSEQS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACGT"
+    CaseSensitive: false

@@ -1,0 +1,8 @@
+Name: HP-UX nettl capture (v10.x-11.x)
+URL: "https://wiki.wireshark.org/nettl.md"
+FileNameExtensions: ["trc0", "trc1"]
+MimeType: application/x-nettl
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TR\0d\0\0\0\0\0\0\0\x80"
+    CaseSensitive: true

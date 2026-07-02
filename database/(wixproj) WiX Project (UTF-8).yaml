@@ -1,0 +1,73 @@
+Name: WiX Project (UTF-8)
+URL: "http://en.wikipedia.org/wiki/WiX"
+FileNameExtensions: ["wixproj"]
+DetectionPatterns:
+  - Pos: 0
+    #                          <
+    Bytes: [0xEF, 0xBB, 0xBF, 0x3C]
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILE INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTTARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORT PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIX.TARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVELOPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSBUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WXS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2003"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

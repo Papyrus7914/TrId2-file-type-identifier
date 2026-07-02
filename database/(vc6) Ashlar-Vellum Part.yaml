@@ -1,0 +1,42 @@
+Name: Ashlar-Vellum Part
+URL: "http://www.ashlar.com"
+FileNameExtensions: ["vc6"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0xAB, 0xCD]
+  - Pos: 8
+    AsciiString: "\0\0\0@\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FRONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VC6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WPLA"
+    CaseSensitive: false

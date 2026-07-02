@@ -1,0 +1,20 @@
+Name: SuperTux Music
+URL: "https://en.wikipedia.org/wiki/SuperTux"
+FileNameExtensions: ["music"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(supertux-music"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(LOOP-BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(LOOP-AT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OGG"
+    CaseSensitive: false

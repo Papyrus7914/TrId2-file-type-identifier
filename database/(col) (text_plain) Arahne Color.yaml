@@ -1,0 +1,26 @@
+Name: Arahne Color
+URL: "https://www.arahne.si"
+FileNameExtensions: ["col"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#COLORMAP\n#UTF8="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLOR_ROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODE_PR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF8"
+    CaseSensitive: false

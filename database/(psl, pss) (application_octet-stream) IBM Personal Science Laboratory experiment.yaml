@@ -1,0 +1,13 @@
+Name: IBM Personal Science Laboratory experiment
+FileNameExtensions: ["psl", "pss"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TERC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VS TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0Q\0_"
+    CaseSensitive: false

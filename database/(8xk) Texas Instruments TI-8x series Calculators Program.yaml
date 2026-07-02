@@ -1,0 +1,15 @@
+Name: Texas Instruments TI-8x series Calculators Program
+URL: "http://www.ticalc.org/"
+FileNameExtensions: ["8xk"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "**TIFL**"
+    CaseSensitive: true
+  - Pos: 11
+    Bytes: [0x88]
+  - Pos: 48
+    AsciiString: "s$"
+    CaseSensitive: true
+  - Pos: 77
+    AsciiString: "\0:020000020000FC\r"
+    CaseSensitive: true

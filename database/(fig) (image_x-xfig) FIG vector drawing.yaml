@@ -1,0 +1,11 @@
+Name: FIG vector drawing
+URL: "http://fileformats.archiveteam.org/wiki/Fig"
+FileNameExtensions: ["fig"]
+MimeType: image/x-xfig
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#FIG "
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "."
+    CaseSensitive: true

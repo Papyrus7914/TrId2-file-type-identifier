@@ -1,0 +1,14 @@
+Name: HOOPS 3D Metafile Format (v1.x)
+URL: "https://en.wikipedia.org/wiki/HOOPS_Visualize"
+FileNameExtensions: ["hmf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";; HMF V1."
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: " TEXT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

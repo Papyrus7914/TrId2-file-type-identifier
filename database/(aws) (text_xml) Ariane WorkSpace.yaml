@@ -1,0 +1,56 @@
+Name: Ariane WorkSpace
+URL: "https://clouard.users.greyc.fr/Ariane/"
+FileNameExtensions: ["aws"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSLOTPARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARIANE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTIONLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDSLOTINDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-COORDINATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y-COORDINATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDSLOTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDITEMID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NICKNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPH"
+    CaseSensitive: false

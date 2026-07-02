@@ -1,0 +1,14 @@
+Name: HyperWriter document
+URL: "http://fileformats.archiveteam.org/wiki/Hyperwriter"
+FileNameExtensions: ["hw", "hw3", "hw4"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Hyper"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "riter"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HYPERWRITER"
+    CaseSensitive: false

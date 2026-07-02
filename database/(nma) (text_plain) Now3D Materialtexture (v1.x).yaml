@@ -1,0 +1,28 @@
+Name: Now3D Material/texture (v1.x)
+FileNameExtensions: ["nma"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "START MATERIAL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "START NOISEPERMUTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END NOISEPERMUTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START NOISEWAVELET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END NOISEWAVELET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START VARIOUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END MATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END VARIOUS"
+    CaseSensitive: false

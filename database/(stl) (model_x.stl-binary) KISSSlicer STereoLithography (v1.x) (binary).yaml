@@ -1,0 +1,14 @@
+Name: KISSSlicer STereoLithography (v1.x) (binary)
+URL: "https://en.wikipedia.org/wiki/STL_(file_format)"
+FileNameExtensions: ["stl"]
+MimeType: model/x.stl-binary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KISSlicer "
+    CaseSensitive: true
+  - Pos: 79
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false

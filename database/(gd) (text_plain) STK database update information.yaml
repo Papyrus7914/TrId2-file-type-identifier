@@ -1,0 +1,17 @@
+Name: STK database update information
+URL: "https://en.wikipedia.org/wiki/Systems_Tool_Kit"
+FileNameExtensions: ["gd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN DatabaseUpdate"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END DATABASEUPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTUPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

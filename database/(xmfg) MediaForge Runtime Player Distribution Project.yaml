@@ -1,0 +1,32 @@
+Name: MediaForge Runtime Player Distribution Project
+Description: MediaForge is an authoring system for building Multimedia applications.
+URL: "http://www.mediaforge.com"
+FileNameExtensions: ["xmfg"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*PSB\x05\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".\0E\0B\0C\0PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0M\0F\0S\0PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0M\0F\0P\0PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0J\0P\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EBCPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MFPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MFSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

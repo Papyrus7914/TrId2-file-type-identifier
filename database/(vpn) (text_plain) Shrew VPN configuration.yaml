@@ -1,0 +1,104 @@
+Name: Shrew VPN configuration
+URL: "https://www.shrew.net/"
+FileNameExtensions: ["vpn"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "n:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NETWORK-NOTIFY-ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENT-BANNER-ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK-DPD-ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE2-LIFE-KBYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENT-CLIENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENT-SERVER-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK-FRAG-MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK-FRAG-SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK-NATT-MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK-NATT-PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK-NATT-RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENT-AUTO-MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPCOMP-TRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK-IKE-PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK-MTU-SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE1-LIFE-SECS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE2-LIFE-SECS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE2-TRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLICY-LIST-AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENT-DNS-AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENT-DNS-USED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE1-EXCHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE2-PFSGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE1-DHGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE1-CIPHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLICY-NAILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENT-IFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK-HOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTH-METHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE1-HASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE2-HMAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

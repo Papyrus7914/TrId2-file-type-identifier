@@ -1,0 +1,147 @@
+Name: State Transition Diagram model (Prosa)
+URL: "http://www.insoft.fi/eng/index.htm"
+FileNameExtensions: ["stm"]
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 6
+    Bytes: [0x00, 0x80, 0xFA, 0xD5, 0xFA, 0xDE]
+  - Pos: 16
+    AsciiString: "STM2"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "Book\0\0\x01\x01\0C_String\0\0\x02\x01\0Print_Setup\0\0\x03\x01\0TPrint\0\0\x04\x01\0Startup\0\0\x05\x01\0Sound_Tab"
+    CaseSensitive: true
+  - Pos: 203
+    AsciiString: "LIST\0\0\a\x01\0Book_Prefs"
+    CaseSensitive: true
+  - Pos: 227
+    AsciiString: "Act\0\0\t\x01\0List\0\0\n\x02\0Scene\0\0\v\x01\0Drawing_Model\0\0\f\x02\0Draw_Specs\0\0\r\x01\0diagram_struct_array\0\0\x0E\x01\0Dependents\0\0\x0F\x02\0Script\0\0\x10\x01\0Pad_List\0\0\x11\x01\0Manuscript"
+    CaseSensitive: true
+  - Pos: 366
+    AsciiString: "Play\0\0\x13\x01\0Play_Prefs\0\0\x14\x01\0Model\0\0\x15\x02\0Subscript_Set_List\0\0\x16\x01\0Subscript_Set\0\0\x17\x01\0Array"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIAGRAM_STRUCT_ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITY_STRUCT_ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT_STRUCT_ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALLOW_STRUCT_ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSCRIPT_SET_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL_INDEX_ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOKEN_TYPE_ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN_HANDLE_ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMULATION_MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICTURE_ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWING_MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTOR_SPECS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOUBLE_ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVIE_ATTACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL_WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT_ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT_SETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTER_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENSE_SETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INT16_ARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIASRECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICTURE_TAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANUSCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOK_PREFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAW_INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPENDENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY_PREFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAW_SPECS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND_TAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUN_SPECS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C_STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STM2"
+    CaseSensitive: false

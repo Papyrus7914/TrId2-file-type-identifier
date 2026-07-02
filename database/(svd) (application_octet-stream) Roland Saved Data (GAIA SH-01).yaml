@@ -1,0 +1,17 @@
+Name: Roland Saved Data (GAIA SH-01)
+URL: "https://www.roland.com/"
+FileNameExtensions: ["svd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x1ESVD1"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "PATaSH01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PATASH01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVD1"
+    CaseSensitive: false

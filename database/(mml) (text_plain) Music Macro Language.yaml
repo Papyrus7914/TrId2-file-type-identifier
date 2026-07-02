@@ -1,0 +1,14 @@
+Name: Music Macro Language
+URL: "http://en.wikipedia.org/wiki/Music_Macro_Language"
+FileNameExtensions: ["mml"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

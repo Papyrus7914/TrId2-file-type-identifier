@@ -1,0 +1,7 @@
+Name: TCPDUMP's style capture (big-endian)
+URL: "http://fileformats.archiveteam.org/wiki/PCAP"
+FileNameExtensions: ["pcap", "acp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xA1, 0xB2, 0xC3, 0xD4]

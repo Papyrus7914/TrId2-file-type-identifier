@@ -1,0 +1,20 @@
+Name: Xiaomi CPID provisioning dump
+URL: "https://alephgsm.com/2025/06/02/xiaomi-cpid-source-code/"
+FileNameExtensions: ["bin"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "devPubKeyModulus:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NDEVPUBKEYEXPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCRTICALDATASIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDEVPUBKEYSIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCRITICALDATA"
+    CaseSensitive: false

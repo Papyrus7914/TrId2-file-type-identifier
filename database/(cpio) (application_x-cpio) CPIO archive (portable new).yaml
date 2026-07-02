@@ -1,0 +1,9 @@
+Name: CPIO archive (portable new)
+Description: called "ASCII cpio archive (SVR4 with no CRC)" by file command, "cpio/newc" by GNU cpio and "Cpio/New ASCII" by 7-Zip
+URL: "http://fileformats.archiveteam.org/wiki/Cpio"
+FileNameExtensions: ["cpio"]
+MimeType: application/x-cpio
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "070701"
+    CaseSensitive: true

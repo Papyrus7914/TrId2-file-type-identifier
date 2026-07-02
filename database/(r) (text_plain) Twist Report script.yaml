@@ -1,0 +1,24 @@
+Name: Twist Report script
+Description: Old Amiga database software.
+URL: "https://archive.org/details/Twist_2_1994_HiSoft"
+FileNameExtensions: ["r"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "REPORT "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAGE LAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

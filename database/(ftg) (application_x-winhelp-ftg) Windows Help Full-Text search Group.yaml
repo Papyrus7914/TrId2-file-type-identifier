@@ -1,0 +1,11 @@
+Name: Windows Help Full-Text search Group
+URL: "https://en.wikipedia.org/wiki/WinHelp"
+FileNameExtensions: ["ftg"]
+MimeType: application/x-winhelp-ftg
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "gfMR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".FTS"
+    CaseSensitive: false

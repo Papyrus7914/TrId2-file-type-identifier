@@ -1,0 +1,28 @@
+Name: Audition Loop
+URL: "https://en.wikipedia.org/wiki/Adobe_Audition"
+FileNameExtensions: ["cel"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFA]
+  - Pos: any
+    AsciiString: "ADOBE AUDITION LOOPOLOGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOWBPSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOIART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOISFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVEDISP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYLPTAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLMA"
+    CaseSensitive: false

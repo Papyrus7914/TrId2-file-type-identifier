@@ -1,0 +1,33 @@
+Name: Beepola chiptune
+Description: Tracker-style music editor for Windows, capable of compiling songs into a form suitable for playback on Sinclair Spectrum and compatible computers.
+URL: "http://freestuff.grok.co.uk/beepola/"
+FileNameExtensions: ["bbsong"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BBSONG\00001\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PATTERNCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATTERNDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATTERNNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOPSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false

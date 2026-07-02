@@ -1,0 +1,26 @@
+Name: Adobe Type Manager Multiple Master Metrics
+URL: "https://en.wikipedia.org/wiki/Adobe_Type_Manager"
+FileNameExtensions: ["mmm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LSLASH\0ZCARON\0BREVE\0CARON\0DOTACCENT\0DOTLESSI\0FI\0FL\0FRACTION\0HUNGARUMLAUT\0LSLASH\0MINUS\0OGONEK\0RING\0ZCARON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHT\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0WEIGHT\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0 WT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0WIDTH\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0 WD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOBE SYSTEMS INCORPORATED.  ALL R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false

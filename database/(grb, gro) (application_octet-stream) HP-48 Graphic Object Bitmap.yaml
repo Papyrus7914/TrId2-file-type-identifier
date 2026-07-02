@@ -1,0 +1,11 @@
+Name: HP-48 Graphic Object Bitmap
+URL: "http://fileformats.archiveteam.org/wiki/GROB"
+FileNameExtensions: ["grb", "gro"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HPHP48"
+    CaseSensitive: true
+  - Pos: 8
+    #              +
+    Bytes: [0x1E, 0x2B]

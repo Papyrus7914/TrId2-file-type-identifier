@@ -1,0 +1,22 @@
+Name: Forte Agent Charmap
+URL: "http://www.forteinc.com/agent/index.php"
+FileNameExtensions: ["cod"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Name: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHARSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STR_DESC_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

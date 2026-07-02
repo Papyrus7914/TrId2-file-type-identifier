@@ -1,0 +1,11 @@
+Name: Keyence VK3 profilometry data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/keyence.c"
+FileNameExtensions: ["vk3"]
+MimeType: application/x-keyence-vk3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VK3_"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true

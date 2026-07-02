@@ -1,0 +1,10 @@
+Name: Pro/ENGINEER drawing file
+URL: "http://www.ptc.com/"
+FileNameExtensions: ["drw"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#UGC:2 DRAWING "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-END_OF_UGC_HEADER"
+    CaseSensitive: false

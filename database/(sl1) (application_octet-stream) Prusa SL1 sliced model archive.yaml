@@ -1,0 +1,95 @@
+Name: Prusa SL1 sliced model archive
+URL: "https://www.prusa3d.com/"
+FileNameExtensions: ["sl1"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "config.iniaction = print\njobDir = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILECREATIONTIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINAL PRUSA SL1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRUSASLICERVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG.INIACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTERPROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTERVARIANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG.INIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPTIMEFIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIALNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTERMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTPROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRUSASLICER-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USEDMATERIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "00000.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "00001.PNGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMFADE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMFAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMSLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOBDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OIDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false

@@ -1,0 +1,67 @@
+Name: PKZIP mini-self-extracting 16bit DOS executable
+URL: "https://en.wikipedia.org/wiki/PKZIP"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 14
+    Bytes: [0xF0, 0xFF]
+  - Pos: 18
+    AsciiString: "\0\0\0\x01\xF0\xFF\x1E\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PK\0\0ERROR IN ZIP - USE PKZIPFIX\0DO YOU WANT TO EXTRACT THESE FILES NOW (Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOO MANY FILES\0UNKNOWN COMPRESSION METHOD FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINI SELF EXTRACT UTILITY  VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKSFX REG. U.S. PAT. AND TM. OFF."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKWARE INC. ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE FAILS CRC CHECK\0EXTRACTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE HAS A BAD TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKSFX (R)  FAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALREADY EXISTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPR. 1989-199"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHING EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK FULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXE\0PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T OPEN"
+    CaseSensitive: false

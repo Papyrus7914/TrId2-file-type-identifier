@@ -1,0 +1,17 @@
+Name: King Of Fighters XIII game data archive
+URL: "https://en.wikipedia.org/wiki/The_King_of_Fighters_XIII"
+FileNameExtensions: ["pcs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TEXLIST\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMGLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false

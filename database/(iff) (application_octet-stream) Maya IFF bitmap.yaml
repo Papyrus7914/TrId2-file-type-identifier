@@ -1,0 +1,11 @@
+Name: Maya IFF bitmap
+URL: "http://fileformats.archiveteam.org/wiki/Maya_IFF"
+FileNameExtensions: ["iff"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FOR4"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CIMG"
+    CaseSensitive: true

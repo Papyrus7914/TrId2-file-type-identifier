@@ -1,0 +1,68 @@
+Name: VCOM Web Easy album
+Description: Was IXLA Web.
+URL: "http://www.v-com.com"
+FileNameExtensions: ["alb"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PUSH_OBJECT IXLAPHOTOALBUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POP_CURRENT_OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUSH_OBJECT PG14"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE_DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMIZED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUR_PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE BGC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false

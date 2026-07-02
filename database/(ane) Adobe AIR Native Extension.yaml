@@ -1,0 +1,46 @@
+Name: Adobe AIR Native Extension
+URL: "http://en.wikipedia.org/wiki/Adobe_Integrated_Runtime"
+FileNameExtensions: ["ane"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 14
+    AsciiString: "qf\xAF"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "mimetypeUT\t\0\x03"
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "Ux\x04\0\xCB\0\0\0application/vnd.adobe.air-native-extension-package+zipPK\x03\x04"
+    CaseSensitive: true
+  - Pos: 137
+    AsciiString: "\0\0\x1A\0\x15\0META-INF/ANE/extension.xmlUT\t\0\x03"
+    CaseSensitive: true
+  - Pos: 182
+    AsciiString: "Ux\x04\0\xCB\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.ADOBE.AIR-NATIVE-EXTENSION-PACKAGE+ZIPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSION.XMLUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATALOG.XMLUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY.SWFUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UX\0\0PK"
+    CaseSensitive: false

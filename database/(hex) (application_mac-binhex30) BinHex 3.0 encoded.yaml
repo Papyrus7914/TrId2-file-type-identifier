@@ -1,0 +1,17 @@
+Name: BinHex 3.0 encoded
+URL: "https://macgui.com/news/article.php?t=528"
+FileNameExtensions: ["hex"]
+MimeType: application/mac-binhex30
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#TEXTttxt"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "***END OF DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "***DATA FORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "***CHECKSUM"
+    CaseSensitive: false

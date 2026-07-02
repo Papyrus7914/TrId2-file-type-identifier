@@ -1,0 +1,21 @@
+Name: Twist Mailmerge script
+Description: Old Amiga database software.
+URL: "https://archive.org/details/Twist_2_1994_HiSoft"
+FileNameExtensions: ["m"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MAILMERGE "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAGE LAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTERTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

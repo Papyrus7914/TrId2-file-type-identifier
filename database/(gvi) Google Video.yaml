@@ -1,0 +1,13 @@
+Name: Google Video
+URL: "http://video.google.com"
+FileNameExtensions: ["gvi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "AVI LIST"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "googGDAT"
+    CaseSensitive: true

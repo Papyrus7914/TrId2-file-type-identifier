@@ -1,0 +1,37 @@
+Name: Android Manifest
+URL: "http://code.google.com/android"
+FileNameExtensions: ["xml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANDROID.INTENT.ACTION.MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.ANDROID.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION ANDROID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTENT-FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

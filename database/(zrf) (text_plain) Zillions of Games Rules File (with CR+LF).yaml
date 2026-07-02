@@ -1,0 +1,35 @@
+Name: Zillions of Games Rules File (with CR+LF)
+URL: "https://www.zillions-of-games.com/"
+FileNameExtensions: ["zrf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(BOARD-SETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TURN-ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(PLAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(PIECE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BMP"
+    CaseSensitive: false

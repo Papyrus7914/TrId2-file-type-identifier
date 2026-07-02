@@ -1,0 +1,26 @@
+Name: FreePCB Library
+URL: "https://en.wikipedia.org/wiki/FreePCB"
+FileNameExtensions: ["fpl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "name: \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REF_TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEL_RECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOP_PAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N_PINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,15 @@
+Name: EA Localized Strings game data
+Description: Used in some Electronic Arts games.
+URL: "https://wiki.xentax.com/index.php/EA_Games_LOC"
+FileNameExtensions: ["loc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LOCH"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "LOCL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOCL"
+    CaseSensitive: false

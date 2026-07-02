@@ -1,0 +1,13 @@
+Name: Extra! for Windows APL keymap
+Description: Mainframe terminal client for Windows by Attachmate Corp.
+FileNameExtensions: ["apl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "APL Keymap for "
+    CaseSensitive: true
+  - Pos: 63
+    Bytes: [0x1A]
+  - Pos: any
+    AsciiString: "KEYBOARD"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: C64 Archiver archive
+URL: "https://c64os.com/c64os/softwareupdates/"
+FileNameExtensions: ["car"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\xC364\xC1RCHIVE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RCHIVE"
+    CaseSensitive: false

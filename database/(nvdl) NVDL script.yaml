@@ -1,0 +1,38 @@
+Name: NVDL script
+Description: NVDL stand for Namespace-based Validation Dispatching Language.
+URL: "http://en.wikipedia.org/wiki/Namespace-based_Validation_Dispatching_Language"
+FileNameExtensions: ["nvdl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VALIDATE SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PURL.OCLC.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMESPACE NS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSDL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NVDL"
+    CaseSensitive: false

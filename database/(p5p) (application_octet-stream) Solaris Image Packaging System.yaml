@@ -1,0 +1,102 @@
+Name: Solaris Image Packaging System
+Description: Basically a tar archive.
+URL: "https://en.wikipedia.org/wiki/Image_Packaging_System"
+FileNameExtensions: ["p5p"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "././@PaxHeader\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\00000000\00000000\00000000\00000000007"
+    CaseSensitive: true
+  - Pos: 154
+    AsciiString: "\0 x\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ustar\000"
+    CaseSensitive: true
+  - Pos: 301
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\00000000\00000000\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\034 comment=pkg5.archive.version."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "USTAR\000ROOT\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKG5.ARCHIVE.VERSION.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKG.DESCRIPTION VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIANT.ARCH VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKG.SUMMARY VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKG5.INDEX.0.GZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKG5.REPOSITORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKG.FMRI VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPEND FMRI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKG.CSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLISHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKG.SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLARIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

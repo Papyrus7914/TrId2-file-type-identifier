@@ -1,0 +1,14 @@
+Name: NeXus HDF5 data format
+URL: "http://fileformats.archiveteam.org/wiki/NeXus"
+FileNameExtensions: ["nx5", "nxs", "h5", "hdf", "hdf5", "nexus"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NX_CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NXENTRY"
+    CaseSensitive: false

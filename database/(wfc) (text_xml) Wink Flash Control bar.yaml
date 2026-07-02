@@ -1,0 +1,62 @@
+Name: Wink Flash Control bar
+URL: "https://www.debugmode.com/wink.html"
+FileNameExtensions: ["wfc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<FlashControlBar>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROGRESSFILLEDMIDDLE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESSEMPTYMIDDLE VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESSEMPTYMIDDLE.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSEMOUSEOVER VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYMOUSEOVER VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESSRIGHT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESSTHUMB VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSEMOUSEOVER.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSEPRESSED VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESSLEFT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSENORMAL VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYMOUSEOVER.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYPRESSED VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESSRIGHT.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYNORMAL VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESSLEFT.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSENORMAL.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYNORMAL.PNG"
+    CaseSensitive: false

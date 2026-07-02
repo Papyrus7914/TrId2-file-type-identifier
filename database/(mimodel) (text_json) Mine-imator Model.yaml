@@ -1,0 +1,29 @@
+Name: Mine-imator Model
+URL: "https://www.mineimator.com/"
+FileNameExtensions: ["mimodel"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\r\n\t\"name\": \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXTURE_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

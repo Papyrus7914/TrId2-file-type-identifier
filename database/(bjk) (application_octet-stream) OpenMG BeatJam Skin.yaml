@@ -1,0 +1,23 @@
+Name: OpenMG BeatJam Skin
+URL: "https://archive.org/details/jp.justsystem.beatjam"
+FileNameExtensions: ["bjk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SKIN.XMLUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SE.BMPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N.BMPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T.BMPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPEAT"
+    CaseSensitive: false

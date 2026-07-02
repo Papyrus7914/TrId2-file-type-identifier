@@ -1,0 +1,16 @@
+Name: Steam Registry
+URL: "http://www.steampowered.com/"
+FileNameExtensions: ["blob"]
+DetectionPatterns:
+  - Pos: 0
+    #              P
+    Bytes: [0x01, 0x50]
+  - Pos: 5
+    AsciiString: "\0\0\0\0\0\x06\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0TopKey\x01P"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TOPKEY"
+    CaseSensitive: false

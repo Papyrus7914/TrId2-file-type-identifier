@@ -1,0 +1,10 @@
+Name: ZSNES Save State
+URL: "https://en.wikipedia.org/wiki/ZSNES"
+FileNameExtensions: ["zst"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZSNES Save State File V"
+    CaseSensitive: true
+  - Pos: 26
+    Bytes: [0x1A]

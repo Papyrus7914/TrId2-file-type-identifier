@@ -1,0 +1,15 @@
+Name: SONY ILCE camera settings
+Description: ILCE stand for Interchangeable Lens Camera with E-mount. Filename is CAMSETnn.DAT.
+URL: "https://en.wikipedia.org/wiki/Sony_E-mount"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SON"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "ILCE-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ILCE-"
+    CaseSensitive: false

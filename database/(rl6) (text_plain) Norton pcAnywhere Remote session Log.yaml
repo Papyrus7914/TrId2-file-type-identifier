@@ -1,0 +1,11 @@
+Name: Norton pcAnywhere Remote session Log
+URL: "https://en.wikipedia.org/wiki/PcAnywhere"
+FileNameExtensions: ["rl6"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RSESSION "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HOST"
+    CaseSensitive: false

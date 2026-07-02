@@ -1,0 +1,14 @@
+Name: EZ-DOS-IT configuration
+Description: Multitasking program for DOS by Hammer Computer Systems.
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HAS"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "/T="
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\r\nSAS"
+    CaseSensitive: true

@@ -1,0 +1,56 @@
+Name: MAME ListXML format
+Description: Info for MAME Rom Managers.
+FileNameExtensions: ["dat"]
+MimeType: text/XML
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ATTLIST ROM NAME CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTLIST ROM SIZE CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTLIST ROM CRC CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENT DESCRIPTION ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENT ROM EMPTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENT MAME ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE MAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPLIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCDATA)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROM*"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARE"
+    CaseSensitive: false

@@ -1,0 +1,41 @@
+Name: TeamSpeak 3 Addon
+URL: "https://en.wikipedia.org/wiki/TeamSpeak"
+FileNameExtensions: ["ts3_addon"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "CHANNELINFO_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIENTINFO_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVERINFO_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INIM"
+    CaseSensitive: false

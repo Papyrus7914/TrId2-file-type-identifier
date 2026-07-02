@@ -1,0 +1,38 @@
+Name: PDS image bitmap
+URL: "https://en.wikipedia.org/wiki/Planetary_Data_System"
+FileNameExtensions: ["vic", "img"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NJPL1I00PDS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LABEL_RECORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_RECORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIXED_LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE_SAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD_BYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE_BITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFDU_LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINES"
+    CaseSensitive: false

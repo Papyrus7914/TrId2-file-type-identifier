@@ -1,0 +1,14 @@
+Name: Spike2 raw data (old)
+URL: "https://ced.co.uk/products/spkovin"
+FileNameExtensions: ["smr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0(C) CED "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(C) CED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLT"
+    CaseSensitive: false

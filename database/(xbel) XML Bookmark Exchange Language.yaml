@@ -1,0 +1,37 @@
+Name: XML Bookmark Exchange Language
+URL: "http://en.wikipedia.org/wiki/XBEL"
+FileNameExtensions: ["xbel"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKMARKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHARED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XBEL"
+    CaseSensitive: false

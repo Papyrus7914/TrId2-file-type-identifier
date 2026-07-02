@@ -1,0 +1,338 @@
+Name: ModBus Configuration
+URL: "https://en.wikipedia.org/wiki/Modbus"
+FileNameExtensions: ["mbc"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENABLEPROGRAMBEFORETAGWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEPROGRAMAFTERTAGREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXCOUNTHOLDINGSREGISTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEBREAKINGCONNECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXCOUNTBREAKINREGISTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXCOUNTDISCRETEINPUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXCOUNTINPUTREGISTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESSWRITEREGISTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITEHOLDINGSSINGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEMTBREAKTIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XYKHKWI3TYKNJWFYWY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARACTERINTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLDING_REGISTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEMBREAKTIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBERBITFROMDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGCHANGEBYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBREADINGINTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDASAVEAUTOMATIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEMPHONENUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEMWAITCONNECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPEATCONNECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCECODESCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCPTBREAKTIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TREADINGINTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITECOILSSINGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDACOUNTRECORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDASAVEIFCHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISBOUNDREGISTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISWRITEREGISTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEMINITSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREAMBULAENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOLISASCII"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCECODEWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCPBREAKTIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTOFSLAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXSIZEDISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXSIZERECORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READAFTERWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCECODEREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEGCALCULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANSWERTIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATELOGFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDASAVETOFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISBITFROMDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXCOUNTCOILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODBUSOVERTCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNERIPENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CYCLEONTIMER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEGROUPQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLESCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPCUACONFIG1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENFROMTRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPEINDEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPCUAENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPEATCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPARITET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTBYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGWARNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMEINTREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REINITNODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOTENODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOTEPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPEDEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPESTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGSCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPCUAPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNERPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GSMMODEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGTRACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGWRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOTEIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTNOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPENODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITECMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMSTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UINT32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INT16"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISHDA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KOFFA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KOFFB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RZ01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

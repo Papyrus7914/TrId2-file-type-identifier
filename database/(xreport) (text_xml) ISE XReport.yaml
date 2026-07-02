@@ -1,0 +1,785 @@
+Name: ISE XReport
+URL: "https://en.wikipedia.org/wiki/Xilinx_ISE"
+FileNameExtensions: ["xreport"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version='1.0' encoding='UTF-8'?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POST-PLACE AND ROUTE CONSTRAINTS INTERACTION REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST-PLACE AND ROUTE FORMALITY NETLIST REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST-PLACE AND ROUTE SIMULATION MODEL REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASYNCHRONOUS CONTROL SIGNALS INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST-MAP CONSTRAINTS INTERACTION REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST-TRANSLATE FORMALITY NETLIST REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST-SYNTHESIS SIMULATION MODEL REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST-TRANSLATE SIMULATION MODEL REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALL IMPLEMENTATION MESSAGES (CPLD)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AREA GROUP AND PARTITION SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTRAINT CONFLICTS INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST-FIT SIMULATION MODEL REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST-MAP SIMULATION MODEL REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "**  MAPPED RESOURCE SUMMARY  **"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NGDBUILD DESIGN RESULTS SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITION IMPLEMENTATION STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "** GLOBAL CONTROL RESOURCES **"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADVANCED HDL SYNTHESIS REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST-MAP STATIC TIMING REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POST-PAR STATIC TIMING REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMITIVE AND BLACK BOX USAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USAGE_STATISTICS_WEBTALK.HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATION STRING DETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CROSS CLOCK DOMAINS REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN UTILIZATION SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE UTILIZATION SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITION RESOURCE SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERFORMANCE SUMMARY REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASYNCHRONOUS DELAY REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPLD FITTER REPORT (TEXT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPLD TIMING REPORT (TEXT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DERIVED CONSTRAINT REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN HIERARCHY ANALYSIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYSICAL SYNTHESIS REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARY OF BITGEN OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTHESIS OPTIONS SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMING REPORT DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACK-ANNOTATE PIN REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE LEVEL UTILIZATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAR_PINOUT_BY_PIN_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACE AND ROUTE MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMETIME NETLIST REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTILIZATION BY HIERARCHY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL SET INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATING CLOCK REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWLY ADDED CONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPS ERRORS AND WARNINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEMESSAGEFILTERING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFORMATIONAL MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCKED PIN CONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLACE AND ROUTE REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOVED LOGIC SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUIDE RESULTS REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP_MODULE_HIERARCHY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORT-VIEWS VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMARTXPLORER_RESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATION MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "** PIN RESOURCES **"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOCK REGION REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAILING CONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOW LEVEL SYNTHESIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIN2UCF REPORT FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTWXTOTABLEXML.XSLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMARTXPLORER REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISIM SIMULATOR LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE_UTILIZATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUTER INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTHESIS MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMING CONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATION REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOCK INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA SHEET REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEAK MEMORY USAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDARY REPORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWPARTITIONDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ENVSETTINGS.HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITINIT LOG FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITINIT MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTRAINT_TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPLD_MESSAGELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAILED REPORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBAL RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITION REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITION STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATGEN LOG FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATGEN MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRECISION REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDARY_REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMARTXPLORER.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARYTIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WARNING MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBTALK LOG FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITGEN MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTRAINTSDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEINITIALIZED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN OVERVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FITTER MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDL COMPILATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDL ELABORATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBIS MODELS FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARSER MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAR_CLOCK_TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PN_PARSER.XMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMGEN LOG FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMGEN MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTING ROUTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNPLIFY REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM LOG FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THERMAL SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMING MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMING_ANALYZER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNROUTES REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW INPUTSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWGROUP LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESIGN SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IOB PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NGDBUILD.XMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRECISION_ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESYNTHESIZED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMING DETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMING RESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMING SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOC-ITEM TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACE SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBTALK REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SYNTHESIS.NLF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TRANSLATE.NLF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TRAN_FECN.NLF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITGEN REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITINIT.XMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPLDFIT.XMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTERNAL_HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINAL SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IOBPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP_IOB_TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PINOUT REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATGEN.XMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEDFILEPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNPLIFY_ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOP OF REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PAR_FECN.NLF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PREROUTE.TSI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PREROUTE.TWR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SUMMARY.HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITGEN.XMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROL_SETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEMODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRC DETECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINAL REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUIDE REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDL ANALYSIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP LOG FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMGEN.XMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBITEMLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMING SCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRAPMESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TIMESIM.NLF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITINIT.LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXTTAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPGASUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDL PARSING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIDECOLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATGEN.LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION 1 -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBTALK.LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPS REPORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOCKSDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBISWRITER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IF_MISSING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAD_REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PINOUTDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORT.HTM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMGEN.LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRCE.XMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPWR.XMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PREC_LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".UNROUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPLD_ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPGA_ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.XMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAR.XMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHCNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEARCHDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XST.XMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MAP.XRPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PAR.XRPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CLK_RGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XREPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKWARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISIM.LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAENGINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XST_ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MAP.MAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MAP.MRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MAP.NLF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MAP.PSR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PAD.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STA.NLF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*.XMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDK_OFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FITTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORWARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOP.LPC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDK_ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FITTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIDDEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETGEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_XMSGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PTWX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__XPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GRF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PWR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SRR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SYR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TWX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RPMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

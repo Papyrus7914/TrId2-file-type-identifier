@@ -1,0 +1,33 @@
+Name: FastBack Plus Macro
+Description: Backup software for DOS by Fifth Generation Systems Inc.
+URL: "https://en.wikipedia.org/wiki/FastBack"
+FileNameExtensions: ["fbm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Operation(\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MACROERRORACTION("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTOPERATION("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTWINDOW("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISKETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FASTBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESS"
+    CaseSensitive: false

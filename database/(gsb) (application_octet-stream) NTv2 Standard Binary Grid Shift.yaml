@@ -1,0 +1,50 @@
+Name: NTv2 Standard Binary Grid Shift
+URL: "https://en.wikipedia.org/wiki/NTv2"
+FileNameExtensions: ["gsb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NUM_OREC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GS_TYPE SECONDS VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT  NONE    CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TXAMINOR_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG_INC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_SREC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUB_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XAMAJOR_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAT_INC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LAT"
+    CaseSensitive: false

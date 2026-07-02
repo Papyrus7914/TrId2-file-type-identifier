@@ -1,0 +1,73 @@
+Name: Amiga AMOS compiled executable (generic)
+URL: "https://en.wikipedia.org/wiki/AMOS_(programming_language)"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x03\xF3\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "S.LIBRARY\0INTUITION.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHICS.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMOS.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LIBRARY\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LIBRARY\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LIBRARY\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANCEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RITE"
+    CaseSensitive: false

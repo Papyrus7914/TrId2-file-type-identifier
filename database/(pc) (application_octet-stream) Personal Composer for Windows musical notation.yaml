@@ -1,0 +1,29 @@
+Name: Personal Composer for Windows musical notation
+URL: "https://pcomposer.com/about.html"
+FileNameExtensions: ["pc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PersonalComposerForWindows\0"
+    CaseSensitive: true
+  - Pos: 294
+    AsciiString: "Personal Vienna"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PERSONAL VIENNA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STIK"
+    CaseSensitive: false

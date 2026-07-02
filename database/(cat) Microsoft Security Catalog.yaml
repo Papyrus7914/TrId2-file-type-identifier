@@ -1,0 +1,28 @@
+Name: Microsoft Security Catalog
+URL: "http://stackoverflow.com/questions/1598236/microsoft-security-catalog-format-documentation-and-api-samples"
+FileNameExtensions: ["cat"]
+DetectionPatterns:
+  - Pos: 0
+    #        0
+    Bytes: [0x30, 0x83]
+  - Pos: 5
+    #              \t
+    Bytes: [0x06, 0x09]
+  - Pos: 7
+    #        *           H                 \r          \a
+    Bytes: [0x2A, 0x86, 0x48, 0x86, 0xF7, 0x0D, 0x01, 0x07, 0x02, 0xA0]
+  - Pos: 17
+    Bytes: [0x83]
+  - Pos: 21
+    AsciiString: "0"
+    CaseSensitive: true
+  - Pos: 22
+    Bytes: [0x83]
+  - Pos: 26
+    #                          1
+    Bytes: [0x02, 0x01, 0x01, 0x31]
+  - Pos: 31
+    AsciiString: "0"
+    CaseSensitive: true
+  - Pos: 33
+    Bytes: [0x06]

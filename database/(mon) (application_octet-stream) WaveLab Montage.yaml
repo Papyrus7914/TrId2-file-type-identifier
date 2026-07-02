@@ -1,0 +1,14 @@
+Name: WaveLab Montage
+URL: "http://en.wikipedia.org/wiki/WaveLab"
+FileNameExtensions: ["mon"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LE\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "WaveLabAudioMontage"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "Root"
+    CaseSensitive: true

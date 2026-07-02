@@ -1,0 +1,10 @@
+Name: SatHawk data file
+URL: "http://www.sathawk.tv"
+FileNameExtensions: ["sat"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x02\0\0\0\0\0\0\0SatH"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SATHAWK"
+    CaseSensitive: false

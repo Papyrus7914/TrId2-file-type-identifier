@@ -1,0 +1,38 @@
+Name: SOSI map data (UTF8)
+URL: "http://wikinova.info/doku.php/en:np:base:menu:terrain_model:data_formats#sosi_files_.sos"
+FileNameExtensions: ["sos"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF.HODE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "..SOSI-VERSJON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "...KOORDSYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "...ORIGO-N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "..SOSI-NIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "..TRANSPAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "..OBJTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "...ENHET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "...MAX-N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "...MIN-N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "..OMR"
+    CaseSensitive: false

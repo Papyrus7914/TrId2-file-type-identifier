@@ -1,0 +1,42 @@
+Name: Uniform Office Format (generic)
+Description: A Chinese developed open standard for 'office' applications.
+URL: "http://en.wikipedia.org/wiki/Uniform_Office_Format"
+FileNameExtensions: ["uof"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.UOF.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UOF-SPREADSHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UOF-SLIDESHOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UOF-WORDPROC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UOF XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

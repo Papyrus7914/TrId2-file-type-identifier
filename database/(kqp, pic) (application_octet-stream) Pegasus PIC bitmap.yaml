@@ -1,0 +1,14 @@
+Name: Pegasus PIC bitmap
+URL: "http://fileformats.archiveteam.org/wiki/Pegasus_PIC"
+FileNameExtensions: ["kqp", "pic"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BM\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "JPEG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JPEG"
+    CaseSensitive: false

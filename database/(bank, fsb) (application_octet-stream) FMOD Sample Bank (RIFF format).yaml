@@ -1,0 +1,11 @@
+Name: FMOD Sample Bank (RIFF format)
+URL: "https://en.wikipedia.org/wiki/FMOD"
+FileNameExtensions: ["bank", "fsb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FEV FMT "
+    CaseSensitive: true

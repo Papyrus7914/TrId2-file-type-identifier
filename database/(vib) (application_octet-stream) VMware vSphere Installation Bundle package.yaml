@@ -1,0 +1,137 @@
+Name: VMware vSphere Installation Bundle package
+URL: "https://en.wikipedia.org/wiki/VMware"
+FileNameExtensions: ["vib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!<arch>\ndescriptor.xml"
+    CaseSensitive: true
+  - Pos: 67
+    AsciiString: "\n<vib version=\""
+    CaseSensitive: true
+  - Pos: 85
+    AsciiString: "\"><type>bootbank</type><name>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHECKSUM CHECKSUM-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-----BEGIN PKCS7-----"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIVE-INSTALL-ALLOWED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-----END PKCS7-----"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIVE-REMOVE-ALLOWED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCEPTANCE-LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINTENANCE-MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTRAINT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATELESS-READY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM-REQUIRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XFTATBGNVBAOTDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPATIBLEWITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERIFY-PROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CIMOM-RESTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIONSHIPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE-TAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAYLOAD NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE-DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFLICTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE-LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIG.PKCS7"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAWIBAGI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAYLOADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROVIDES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPLACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BQADGGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPENDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA-256"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUNZIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VTAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGNVH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA-1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URLS"
+    CaseSensitive: false

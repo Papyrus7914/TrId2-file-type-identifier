@@ -1,0 +1,12 @@
+Name: Dillo bookmark
+Description: Dillo is a minimalistic multi-platform web browser.
+URL: "https://en.wikipedia.org/wiki/Dillo"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ":s0: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

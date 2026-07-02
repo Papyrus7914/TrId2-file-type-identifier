@@ -1,0 +1,9 @@
+Name: IGS SINEX BIAS GNSS Estimates
+Description: Bias Exchange Format.
+URL: "https://files.igs.org/pub/data/format/sinex_bias_100.pdf"
+FileNameExtensions: ["bia"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%=BIA "
+    CaseSensitive: true

@@ -1,0 +1,17 @@
+Name: NUTS Macro
+URL: "http://www.acornnmr.com/nutshelp/sample_macros/"
+FileNameExtensions: ["mac"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NUTSM"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUTSMACRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

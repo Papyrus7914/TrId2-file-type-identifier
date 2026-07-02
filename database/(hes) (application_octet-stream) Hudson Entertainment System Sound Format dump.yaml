@@ -1,0 +1,12 @@
+Name: Hudson Entertainment System Sound Format dump
+Description: Store music and audio data ripped from PC Engine / TurboGrafx-16 games.
+URL: "http://fileformats.archiveteam.org/wiki/HES"
+FileNameExtensions: ["hes"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HESM"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "DATA"
+    CaseSensitive: true

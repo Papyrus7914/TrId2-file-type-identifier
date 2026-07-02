@@ -1,0 +1,20 @@
+Name: LGLZ compressed DOS command
+Description: LGLZ is a DOS COM/EXE compressor (C) 1994-97 George Lyapko
+URL: "http://www.bookcase.com/library/software/msdos.archive.compress.html"
+FileNameExtensions: ["com"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xBF]
+  - Pos: 3
+    AsciiString: ";\xFCr\x19\xB4\t\xBA\x12\x01\xCD!\xB4L\xCD!Memory fault$"
+    CaseSensitive: true
+  - Pos: 32
+    Bytes: [0xBE]
+  - Pos: 35
+    Bytes: [0xB9]
+  - Pos: 38
+    #                                            F
+    Bytes: [0xFD, 0xF3, 0xA4, 0xFC, 0x8B, 0xF7, 0x46, 0xBF, 0x00, 0x01, 0xE8]
+  - Pos: any
+    AsciiString: "MEMORY FAULT$"
+    CaseSensitive: false

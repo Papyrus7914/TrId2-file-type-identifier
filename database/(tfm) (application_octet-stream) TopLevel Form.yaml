@@ -1,0 +1,24 @@
+Name: TopLevel Form
+Description: Used also by FormTool, Fast Forms.
+URL: "http://tinyurl.com/6fw6gp"
+FileNameExtensions: ["tfm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CWFORMS"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "This is a "
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: " \r\nDo not interfere with it!\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DO NOT INTERFERE WITH IT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM FILE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS IS A"
+    CaseSensitive: false

@@ -1,0 +1,12 @@
+Name: Mike Davies module
+Description: A 1989 music format by Mike Davies mostly used for Tiertex games.
+URL: "http://www.exotica.org.uk/wiki/Mike_Davies_(format)"
+FileNameExtensions: ["md"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 308
+    AsciiString: "-X\0\x18=|\0\x01\0\x14M\xEE\06-X\0\x18=|\0\x01\0\x14M\xEE\06-X\0\x18=|\0\x01\0\x14M\xEE\06"
+    CaseSensitive: true

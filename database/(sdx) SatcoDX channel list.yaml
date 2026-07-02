@@ -1,0 +1,19 @@
+Name: SatcoDX channel list
+URL: "http://www.satcodx.com"
+FileNameExtensions: ["sdx"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "S"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SATCODX1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IRDT"
+    CaseSensitive: false

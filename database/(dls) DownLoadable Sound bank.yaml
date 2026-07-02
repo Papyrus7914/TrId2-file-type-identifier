@@ -1,0 +1,10 @@
+Name: DownLoadable Sound bank
+URL: "http://msdn.microsoft.com/library/en-us/directx9_c/directX/htm/downloadablesounds.asp"
+FileNameExtensions: ["dls"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0DLS"
+    CaseSensitive: true

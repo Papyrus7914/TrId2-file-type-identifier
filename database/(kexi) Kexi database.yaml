@@ -1,0 +1,14 @@
+Name: Kexi database
+Description: Kexi is an Open Source integrated data management application.
+URL: "http://www.kexi-project.org"
+FileNameExtensions: ["kexi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "** This file contains an SQLite "
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 1054
+    AsciiString: "table\0kexi__"
+    CaseSensitive: true

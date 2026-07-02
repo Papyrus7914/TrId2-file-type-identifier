@@ -1,0 +1,55 @@
+Name: Atari executable MSX music
+URL: "http://raster.infos.cz/atari/rmt/rmt.htm"
+FileNameExtensions: ["xex"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFF]
+  - Pos: 3
+    AsciiString: "1"
+    CaseSensitive: true
+  - Pos: 6
+    #                          ␠           @                                                     @                             \v
+    Bytes: [0x80, 0x00, 0x80, 0x20, 0x80, 0x40, 0x00, 0xC0, 0x80, 0x80, 0x80, 0xA0, 0x00, 0xC0, 0x40, 0xC0, 0x00, 0x01, 0x05, 0x0B]
+  - Pos: 29
+    Bytes: [0xFF]
+  - Pos: 31
+    Bytes: [0x01]
+  - Pos: 34
+    Bytes: [0xFF]
+  - Pos: 37
+    Bytes: [0x01, 0x01]
+  - Pos: 41
+    Bytes: [0xFF, 0xFF, 0xFF]
+  - Pos: 46
+    Bytes: [0x01]
+  - Pos: any
+    AsciiString: "PPPPPPPPPPPB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YSPFAZURKHC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9730-*(%$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1)PJJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UQLHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPMGD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZQKE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JJJJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPJD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YRLF"
+    CaseSensitive: false

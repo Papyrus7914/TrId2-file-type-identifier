@@ -1,0 +1,11 @@
+Name: PlayLisT for TSV video
+URL: "http://forum.gleitz.info/archive/index.php/t-46368.html"
+FileNameExtensions: ["plt"]
+MimeType: video/x-plt
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VUUU\x01\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".TSV"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: Maximus installer archive format (old)
+URL: "http://fileformats.archiveteam.org/wiki/FIZ"
+FileNameExtensions: ["fiz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ACOPY"
+    CaseSensitive: true
+  - Pos: 9
+    Bytes: [0x1A]

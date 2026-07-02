@@ -1,0 +1,62 @@
+Name: Adobe Media Cache Database
+URL: "https://en.wikipedia.org/wiki/Adobe_Inc."
+FileNameExtensions: ["mcdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MEDIAACCELERATORDATABASEENTRY OBJECTREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIAACCELERATORDATABASEENTRY OBJECTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM.MODDATE1 ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM.CANBECOPIED1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIA CACHE FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGINALPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAM.COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM.COUNT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM.PATH1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREAM.ID1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM.KEY1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOBE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false

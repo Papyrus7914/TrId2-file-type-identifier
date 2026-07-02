@@ -1,0 +1,9 @@
+Name: ASH compressed data
+Description: A compression program by Eugene D. Shelwien.
+FileNameExtensions: ["ash"]
+DetectionPatterns:
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    Bytes: [0x01, 0x01, 0xFF, 0x03, 0x05, 0x00]

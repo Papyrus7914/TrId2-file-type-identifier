@@ -1,0 +1,38 @@
+Name: Doom 3 MD5 Animation
+URL: "https://en.wikipedia.org/wiki/Doom_3"
+FileNameExtensions: ["md5anim"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MD5Version 10"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMANIMATEDCOMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASEFRAME {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMANDLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIERARCHY {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME 0 {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME 1 {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMFRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMJOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDS {"
+    CaseSensitive: false

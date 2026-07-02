@@ -1,0 +1,11 @@
+Name: EnCase Case Template
+URL: "https://en.wikipedia.org/wiki/EnCase"
+FileNameExtensions: ["casetemplate"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EnF\t\r\n\xFF\0CASE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "T\0E\0M\0P\0L\0A\0T\0E"
+    CaseSensitive: false

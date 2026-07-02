@@ -1,0 +1,14 @@
+Name: Disney Games game data archive (PC)
+URL: "https://wiki.xentax.com/index.php/Disney_Games_POD"
+FileNameExtensions: ["pod"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Pod"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "File"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

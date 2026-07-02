@@ -1,0 +1,32 @@
+Name: OpenToonz vector level (v1.x)
+URL: "https://github.com/opentoonz/opentoonz"
+FileNameExtensions: ["pli"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PLIMG\0\x16\0OpenToonz 1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FRAMES MODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENTOONZ 1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR_1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: TrainController Animation
+URL: "http://www.freiwald.com/pages/traincontroller.htm"
+FileNameExtensions: ["yra"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    #        G
+    Bytes: [0x47, 0xFE, 0xCA]
+  - Pos: any
+    AsciiString: "RREOCLRREOCL"
+    CaseSensitive: false

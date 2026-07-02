@@ -1,0 +1,15 @@
+Name: HXV video (generic)
+Description: Encapsulate an H264/H265 video stream. Used by some surveillance cameras.
+URL: "https://spitzner.org/kkmoon.html"
+FileNameExtensions: ["264", "265", "h264", "h265"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HXV"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "HXVF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HXVF"
+    CaseSensitive: false

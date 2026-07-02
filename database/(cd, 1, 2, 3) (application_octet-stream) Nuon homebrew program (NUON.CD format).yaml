@@ -1,0 +1,8 @@
+Name: Nuon homebrew program (NUON.CD format)
+URL: "https://en.wikipedia.org/wiki/Nuon_(DVD_technology)"
+FileNameExtensions: ["cd", "1", "2", "3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NUONROM-DISK\0\0\0\0\0\0\0\b\0\0\0\x02\0\0\0\0\0\0\0\0nuon."
+    CaseSensitive: true

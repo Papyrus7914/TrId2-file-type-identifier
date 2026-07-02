@@ -1,0 +1,43 @@
+Name: Amiga Blitz Basic 2 executable (generic)
+URL: "https://en.wikipedia.org/wiki/Blitz_BASIC"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x03\xF3\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\0\x03\xE9\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "N\xB9\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INTUITION.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOS.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUP\0NU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLITZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0NU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G\0\08"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NUH"
+    CaseSensitive: false

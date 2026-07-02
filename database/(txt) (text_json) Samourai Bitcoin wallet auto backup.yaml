@@ -1,0 +1,11 @@
+Name: Samourai Bitcoin wallet auto backup
+URL: "https://samouraiwallet.com/"
+FileNameExtensions: ["txt"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"version\":1,\"payload\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXTERNAL"
+    CaseSensitive: false

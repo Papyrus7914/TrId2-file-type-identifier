@@ -1,0 +1,17 @@
+Name: QMK keyboard info
+URL: "https://github.com/qmk/qmk_firmware/blob/master/docs/reference_info_json.md"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KEYBOARD_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAINTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYOUTS"
+    CaseSensitive: false

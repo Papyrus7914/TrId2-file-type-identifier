@@ -1,0 +1,14 @@
+Name: Mizar article
+URL: "http://en.wikipedia.org/wiki/Mizar_system"
+FileNameExtensions: ["miz"]
+MimeType: text/mizar
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "environ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROOF"
+    CaseSensitive: false

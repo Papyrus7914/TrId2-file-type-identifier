@@ -1,0 +1,14 @@
+Name: Comanche Video Data archive
+URL: "https://www.mobygames.com/game-group/comanche-series"
+FileNameExtensions: ["kdv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KRL0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "KDV0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KDV0"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: Atari ST Pure Pascal compiled program/executable
+URL: "https://www.atariuptodate.de/en/1363/pure-pascal"
+FileNameExtensions: ["prg", "app", "acc", "ovl", "ttp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`\x1A\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "----------------   Pure Pascal  for Atari STe/TT  Version 1.0    (c) 1992 Pure   Software GmbH  ----------------3\xC0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TT  VERSION 1.0    (C) 1992 PURE   SOFTWARE GMBH  ----------------3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIME ERROR \0 AT OFFSET $\00123456789ABCDEFHP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "----------------   PURE PASCAL  FOR ATARI STE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARGV"
+    CaseSensitive: false

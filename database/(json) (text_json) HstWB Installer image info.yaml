@@ -1,0 +1,44 @@
+Name: HstWB Installer image info
+URL: "https://hstwb.firstrealize.com/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\r\n    \"name\": \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOOTPRIORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDDRIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARTITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORKBENCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DH0 ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DH1 ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

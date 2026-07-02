@@ -1,0 +1,19 @@
+Name: Ion Storm Resource Data File
+URL: "https://www.mobygames.com/company/1315/ion-storm-lp/"
+FileNameExtensions: ["rdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Resource Data File \xFE Copyright (c) "
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: " Ion Storm, Ltd.\n"
+    CaseSensitive: true
+  - Pos: 192
+    Bytes: [0x1A]
+  - Pos: any
+    AsciiString: "ION STORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LTD."
+    CaseSensitive: false

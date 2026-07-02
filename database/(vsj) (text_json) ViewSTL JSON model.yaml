@@ -1,0 +1,50 @@
+Name: ViewSTL JSON model
+URL: "https://www.viewstl.com/"
+FileNameExtensions: ["vsj"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"canvas_height\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CANVAS_HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTER_MODELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA_STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO_RESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO_ROTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCAL_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUSE_ZOOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BG_COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".STL"
+    CaseSensitive: false

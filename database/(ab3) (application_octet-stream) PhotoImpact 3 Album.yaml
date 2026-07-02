@@ -1,0 +1,23 @@
+Name: PhotoImpact 3 Album
+URL: "https://en.wikipedia.org/wiki/Ulead_PhotoImpact"
+FileNameExtensions: ["ab3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    o
+    Bytes: [0xD6, 0xC5, 0x6F, 0xCD, 0x03, 0x00, 0x00, 0x00]
+  - Pos: any
+    AsciiString: "ULABMOBJ\0ULIACOBJ\0ULRES1\0ULRES2\0ULRES3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U-LEAD SYSTEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ULEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

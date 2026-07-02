@@ -1,0 +1,23 @@
+Name: Binary Document container
+URL: "https://en.wikipedia.org/wiki/DigiDoc"
+FileNameExtensions: ["bdoc", "asice"]
+MimeType: application/x-bdoc
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "VND.ETSI.ASIC-E+ZIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XML"
+    CaseSensitive: false

@@ -1,0 +1,15 @@
+Name: Mac Director 5 project (MacBinary)
+Description: MacBinary is a standard for encoding Macintosh files for file transfer.
+URL: "https://en.wikipedia.org/wiki/Adobe_Director"
+FileNameExtensions: ["bin", "macbin"]
+MimeType: application/x-macbinary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "MV93"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MV93"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: COMit modems configuration
+Description: Communication program for DOS and Windows by Tradewind Software.
+FileNameExtensions: ["dat", "dos"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MODEM="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INIT"
+    CaseSensitive: false

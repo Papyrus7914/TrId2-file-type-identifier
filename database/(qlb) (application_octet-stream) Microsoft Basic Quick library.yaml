@@ -1,0 +1,236 @@
+Name: Microsoft Basic Quick library
+URL: "https://en.wikipedia.org/wiki/QuickBASIC"
+FileNameExtensions: ["qlb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 10
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\x1E\0\0\0\x01\0(\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "0\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "8\0"
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: "@\0"
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "H\0"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "P\0"
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "X\0"
+    CaseSensitive: true
+  - Pos: 58
+    AsciiString: "`\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "h\0"
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "p\0"
+    CaseSensitive: true
+  - Pos: 70
+    AsciiString: "x\0"
+    CaseSensitive: true
+  - Pos: 74
+    Bytes: [0x80, 0x00]
+  - Pos: 78
+    Bytes: [0x88, 0x00]
+  - Pos: 82
+    Bytes: [0x90, 0x00]
+  - Pos: 86
+    Bytes: [0x98, 0x00]
+  - Pos: 90
+    Bytes: [0xA0, 0x00]
+  - Pos: 94
+    Bytes: [0xA8, 0x00]
+  - Pos: 98
+    Bytes: [0xB0, 0x00]
+  - Pos: 102
+    Bytes: [0xB8, 0x00]
+  - Pos: 107
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 111
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 115
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 119
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "__DOSVERMAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__DOSVERMINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACK\0SYMBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__AALTSTKOVR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__AEXIT_RTN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__AMSG_EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__FMSG_TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__NULLCHECK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__OSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B_ULSYMSEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ACRTUSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__AULSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__BPBC_SAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__DOSERRNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__UMASKVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ACFINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ACMDSEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__AENVSEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__AINTDIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__CINTDIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__FPRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__OSMAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__OSMINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B_ULVARS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENMALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAR_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ACMDLN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ASIZDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__ATOPSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__CHKSTK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__FPTRAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__OSFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__OSMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__PGMPTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__PSPADR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAR_BSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__CHILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__NFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__OSERR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "___ARGC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "___ARGV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSQRVW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STKHQQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_EDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_ERRNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__FAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CEXI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_END"
+    CaseSensitive: false

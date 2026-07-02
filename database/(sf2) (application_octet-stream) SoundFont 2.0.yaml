@@ -1,0 +1,44 @@
+Name: SoundFont 2.0
+URL: "http://fileformats.archiveteam.org/wiki/SoundFont_2.0"
+FileNameExtensions: ["sf2"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "sfbkLIST"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "INFOifil"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PDTAPHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDTASMPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IBAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IGEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PBAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMOD"
+    CaseSensitive: false

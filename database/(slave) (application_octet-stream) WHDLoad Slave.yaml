@@ -1,0 +1,17 @@
+Name: WHDLoad Slave
+URL: "https://en.wikipedia.org/wiki/WHDLoad"
+FileNameExtensions: ["slave"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x03\xF3\0\0\0\0\0\0\0\x01\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\0\x03\xE9\0\0"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "p\xFFNuWHDLOADS\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUWHDLOADS"
+    CaseSensitive: false

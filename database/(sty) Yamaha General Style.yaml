@@ -1,0 +1,25 @@
+Name: Yamaha General Style
+URL: "http://www.jososoft.dk/yamaha/software.htm"
+FileNameExtensions: ["sty"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MThd"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "MTrk"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAIN B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTRK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFF1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINT"
+    CaseSensitive: false

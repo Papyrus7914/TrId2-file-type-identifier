@@ -1,0 +1,11 @@
+Name: EditPlus Auto Completion
+URL: "https://en.wikipedia.org/wiki/EditPlus"
+FileNameExtensions: ["acp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#TITLE="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CASE"
+    CaseSensitive: false

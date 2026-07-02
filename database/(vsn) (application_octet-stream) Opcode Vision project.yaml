@@ -1,0 +1,21 @@
+Name: Opcode Vision project
+Description: MIDI sequencer for Windows.
+URL: "https://en.wikipedia.org/wiki/Opcode_Systems"
+FileNameExtensions: ["vsn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x1E\0\x03\0F\0x*\0\0\0("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "METER TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPO TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISN"
+    CaseSensitive: false

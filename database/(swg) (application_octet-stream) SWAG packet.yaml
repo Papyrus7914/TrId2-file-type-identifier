@@ -1,0 +1,23 @@
+Name: SWAG packet
+URL: "http://fileformats.archiveteam.org/wiki/SWG"
+FileNameExtensions: ["swg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "-sw"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 191
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "01.PAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-SW1-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SWG"
+    CaseSensitive: false

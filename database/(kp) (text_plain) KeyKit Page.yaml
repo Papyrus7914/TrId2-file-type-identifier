@@ -1,0 +1,71 @@
+Name: KeyKit Page
+URL: "https://nosuch.com/keykit"
+FileNameExtensions: ["kp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Pageobj=$1\nPagenm=\"Page 1\"\nPagesz=[\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FUNCTION KEYPAGE_CREATE(R) {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECREATE OBJECT $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTORESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASHQUICK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R.ADDTOOL("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTQUANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWEEPQUANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAGQUANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYQUANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WCONSOLE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENUJUMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECSCHED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESTORE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEOBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGENM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MERGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC"
+    CaseSensitive: false

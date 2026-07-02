@@ -1,0 +1,13 @@
+Name: MM Video E-Mail
+URL: "http://www.mmedia.com.tw"
+FileNameExtensions: ["vem"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "High JPEG Data in Memory"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HIGH JPEG DATA IN MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO MAIL FROM"
+    CaseSensitive: false

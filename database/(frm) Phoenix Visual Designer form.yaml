@@ -1,0 +1,122 @@
+Name: Phoenix Visual Designer form
+Description: Phoenix is a complete self-contained Rapid Application Development (RAD) environment featuring an advanced form designer, code generator and editor for the PowerBASIC Windows compiler.
+URL: "http://www.phnxthunder.com/"
+FileNameExtensions: ["frm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VERSION 1.0\r\nUNITS Pixels\r\nBEGIN VPB_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN EXTSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN VPB_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN WINSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CS_DBLCLKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT_GUI_FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRACLSBYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRAWNDBYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDC_ARROW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDD_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDNUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDSYMBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITDIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LARGEICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWGRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMALLICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNAPTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS PIXELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION 1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWCLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWPLACEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWPROCEDURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WS_EX_WINDOWEDGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WS_VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WNDPROC"
+    CaseSensitive: false

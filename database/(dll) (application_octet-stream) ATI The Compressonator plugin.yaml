@@ -1,0 +1,36 @@
+Name: ATI The Compressonator plugin
+Description: The Compressonator is an ATI a tool for compressing textures and creating mip-map levels
+URL: "http://www.ati.com/developer/tools.html"
+FileNameExtensions: ["dll"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TC_PLUGINGETABOUTINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TC_PLUGINGETVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TC_PLUGININITIALISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TC_PLUGINUNLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TC_PLUGINLOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTUREAPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETACP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false

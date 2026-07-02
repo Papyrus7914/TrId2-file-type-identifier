@@ -1,0 +1,189 @@
+Name: LUI mixer setting
+Description: Windows tool by Simmons Interactive to control Yamaha's DSP Factory soundcard.
+URL: "http://www.simmonsinteractive.com/"
+FileNameExtensions: ["lmx"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[CHANNEL 0]\r\nCH_NAME="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CH_DELAY_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_METER_SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_PAN_POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT13_SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_FADER_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_FADER_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT0_SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_DELAY_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_MIX_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUX0_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUX5_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUS0_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUS7_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_PAN_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUX MASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUX0_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUX5_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUS MASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUS0_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUS7_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNEL 23"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_ATTACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ0_BYPASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ3_BYPASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEREO MIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_DECAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_INPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_KEYIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_MGAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX_PARM13"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARISPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_HOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_KNEE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_LINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYN_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECT 0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFFECT 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ0_FREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ0_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ0_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ3_FREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ3_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ3_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX_PARM0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CH_LINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FX_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ0_Q"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQ3_Q"
+    CaseSensitive: false

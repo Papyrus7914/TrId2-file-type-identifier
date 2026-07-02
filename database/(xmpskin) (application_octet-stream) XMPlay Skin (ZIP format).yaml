@@ -1,0 +1,68 @@
+Name: XMPlay Skin (ZIP format)
+URL: "https://en.wikipedia.org/wiki/XMPlay"
+FileNameExtensions: ["xmpskin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MASK_INFO_LIST.BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK_OUTPUT.BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO_HEAD_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKINCONFIG.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK_INFO.BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK_LIST.BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK_MAIN.BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK_MINI.BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON_PAUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANEL_OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TICK_RANDOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO_RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANEL_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANEL_MAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANEL_MINI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TICK_AUTOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTON_IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO_LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TICK_LOOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCROLLER"
+    CaseSensitive: false

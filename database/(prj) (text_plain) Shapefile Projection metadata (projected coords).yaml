@@ -1,0 +1,41 @@
+Name: Shapefile Projection metadata (projected coords)
+URL: "http://en.wikipedia.org/wiki/Shapefile"
+FileNameExtensions: ["prj"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PROJ"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FALSE_NORTHING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE_EASTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPHEROID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEGREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOGCS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJCS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT"
+    CaseSensitive: false

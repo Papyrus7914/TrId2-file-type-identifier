@@ -1,0 +1,56 @@
+Name: FFmpeg Preset
+URL: "https://en.wikipedia.org/wiki/FFmpeg"
+FileNameExtensions: ["ffpreset"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "vcodec=libvpx"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IGNORED UNLESS USING -PASS 2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARNR-MAXFRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARNR-STRENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAG-IN-FRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO-ALT-REF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARNR-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPU-USED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEADLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VPROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINRATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBVPX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QMIN"
+    CaseSensitive: false

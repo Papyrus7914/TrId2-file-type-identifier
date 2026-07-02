@@ -1,0 +1,11 @@
+Name: ANSI Art with SAUCE metadata
+URL: "http://fileformats.archiveteam.org/wiki/ANSI_Art"
+FileNameExtensions: ["ans", "txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    #              [
+    Bytes: [0x1B, 0x5B]
+  - Pos: any
+    AsciiString: "SAUCE00"
+    CaseSensitive: false

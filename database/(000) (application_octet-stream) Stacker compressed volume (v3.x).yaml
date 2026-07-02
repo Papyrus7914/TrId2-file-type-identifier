@@ -1,0 +1,12 @@
+Name: Stacker compressed volume (v3.x)
+Description: Usually the file is named STACVOL.000
+URL: "https://en.wikipedia.org/wiki/Stac_Electronics"
+FileNameExtensions: ["000"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "STACKER  version  3"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: " volume:  "
+    CaseSensitive: true

@@ -1,0 +1,11 @@
+Name: AIFF Audio Interchange File Format
+URL: "http://fileformats.archiveteam.org/wiki/AIFF"
+FileNameExtensions: ["aif", "aiff", "aff"]
+MimeType: audio/x-aiff
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "AIF"
+    CaseSensitive: true

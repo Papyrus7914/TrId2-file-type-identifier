@@ -1,0 +1,11 @@
+Name: BD/Patch driver (v1.0)
+Description: DOS viewer/editor by Breakthrough Designs.
+FileNameExtensions: ["ctl", "fs", "prn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Patch "
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: " 1.0\x1A\0"
+    CaseSensitive: true

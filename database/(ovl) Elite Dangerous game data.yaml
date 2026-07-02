@@ -1,0 +1,10 @@
+Name: "Elite: Dangerous game data"
+URL: "http://en.wikipedia.org/wiki/Elite_Dangerous"
+FileNameExtensions: ["ovl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FRES\0\x12\0\x01\x94 \0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STATIC"
+    CaseSensitive: false

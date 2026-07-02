@@ -1,0 +1,50 @@
+Name: Liberty BASIC Lesson
+URL: "https://www.libertybasic.com/"
+FileNameExtensions: ["lsn"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<lesson>\r\n<lesson-title>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHAPTER-COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXAMPLE-COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LESSON-COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAPTER-TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXAMPLE-TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAPTER-CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXAMPLE-CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LESSON-TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION-CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LESSON-CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAPTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXAMPLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false

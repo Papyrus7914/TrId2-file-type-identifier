@@ -1,0 +1,11 @@
+Name: Domino Sequence
+URL: "https://takabosoft.com/domino"
+FileNameExtensions: ["dms"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PortalSequenceData"
+    CaseSensitive: true
+  - Pos: 22
+    #        x
+    Bytes: [0x78, 0x9C]

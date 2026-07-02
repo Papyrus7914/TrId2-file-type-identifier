@@ -1,0 +1,11 @@
+Name: Broadcom TRX firmware package
+URL: "https://www.kernel.org/doc/Documentation/devicetree/bindings/mtd/partitions/brcm,trx.txt"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HDR0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true

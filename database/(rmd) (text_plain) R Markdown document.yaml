@@ -1,0 +1,14 @@
+Name: R Markdown document
+URL: "https://en.wikipedia.org/wiki/RStudio"
+FileNameExtensions: ["rmd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "---\ntitle: \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTML_"
+    CaseSensitive: false

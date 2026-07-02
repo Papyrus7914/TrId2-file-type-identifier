@@ -1,0 +1,23 @@
+Name: IntelliJ IDEA Module
+URL: "https://www.jetbrains.com/idea/"
+FileNameExtensions: ["iml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NEWMODULEROOTMANAGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDERENTRY TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCEFOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORTESTS"
+    CaseSensitive: false

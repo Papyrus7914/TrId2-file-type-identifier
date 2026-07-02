@@ -1,0 +1,13 @@
+Name: Informative Graphics Markup
+FileNameExtensions: ["mrk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[HDR]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GEN CRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEN REV"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: PADAUK binary
+URL: "http://www.padauk.com.tw/en/technical/"
+FileNameExtensions: ["pdk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              U
+    Bytes: [0x12, 0x55, 0xAA, 0xFF, 0x01, 0x00, 0x00, 0x00]
+  - Pos: 9
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 95
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0P"
+    CaseSensitive: true
+  - Pos: 135
+    AsciiString: "\0\0\0\0\0\0\0\0\0\x05"
+    CaseSensitive: true
+  - Pos: 151
+    AsciiString: "UUUUUUUUU0."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UUUUUUUUU0."
+    CaseSensitive: false

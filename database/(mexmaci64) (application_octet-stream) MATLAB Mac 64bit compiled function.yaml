@@ -1,0 +1,43 @@
+Name: MATLAB Mac 64bit compiled function
+URL: "https://en.wikipedia.org/wiki/MATLAB"
+FileNameExtensions: ["mexmaci64"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xCF, 0xFA, 0xED, 0xFE]
+  - Pos: any
+    AsciiString: "__LA_SYMBOL_PTR\0__DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__STUB_HELPER\0\0\0__TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__TEXT\0\0\0\0\0\0\0\0\0\0__TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBSYSTEM.B.DYLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYLD_STUB_BIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0\0\0__LINKEDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MEXFUNCTION\0_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBMX.DYLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MXGETN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0\0_MX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C++."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false

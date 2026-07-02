@@ -1,0 +1,28 @@
+Name: Dynamic Env. modem configuration
+Description: Dynamic Environment was a GUI for MS-DOS by Radarsoft.
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DYNAMIC MODEM\r\n:Dial="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANSWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESCAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANGUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false

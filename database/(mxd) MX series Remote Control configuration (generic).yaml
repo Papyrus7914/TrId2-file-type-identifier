@@ -1,0 +1,79 @@
+Name: MX series Remote Control configuration (generic)
+URL: "http://www.universalremote.com"
+FileNameExtensions: ["mxd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!\0"
+    CaseSensitive: true
+  - Pos: 451
+    AsciiString: "MX-"
+    CaseSensitive: true
+  - Pos: 457
+    AsciiString: " Editor  Version "
+    CaseSensitive: true
+  - Pos: 475
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EDITOR  VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARD BUTTONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER OFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER ON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRE CH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOL+"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOL-"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: Black Circle save game
+URL: "https://www.mobygames.com/game/48356/black-circle/"
+FileNameExtensions: ["dsv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RGMH"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "B\0l\0a\0c\0k\0 \0C\0i\0r\0c\0l\0e"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "B\0L\0A\0C\0K\0 \0C\0I\0R\0C\0L\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZCMP"
+    CaseSensitive: false

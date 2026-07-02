@@ -1,0 +1,20 @@
+Name: mBlock 5 project
+URL: "https://en.wikipedia.org/wiki/Makeblock#Software"
+FileNameExtensions: ["mblock"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mscratch.json"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MSCRATCH.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT.JSONPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MBLOCK5PK"
+    CaseSensitive: false

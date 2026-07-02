@@ -1,0 +1,12 @@
+Name: Lotus 123/Symphony worksheet/format/configuration (V1-V2)
+Description: WKS/WK1/WR1/WK2/WJ3 extensions are used for Lotus worksheet, FMT/FM2/FJ3 ares used for formatting data, cnf is used for configuration. revision number is stored at offset 4.
+URL: "http://fileformats.archiveteam.org/wiki/Lotus_1-2-3"
+FileNameExtensions: ["cnf"]
+MimeType: application/vnd.lotus-1-2-3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x02\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true

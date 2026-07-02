@@ -1,0 +1,19 @@
+Name: HyperChem molecule format
+URL: "http://wiki.jmol.org/index.php/File_formats/Formats/HIN"
+FileNameExtensions: ["hin"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "forcefield "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORCEFIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDMOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOM"
+    CaseSensitive: false

@@ -1,0 +1,92 @@
+Name: 16bit DOS Mouse Systems Corp. popup menu (v7.00)
+URL: "https://en.wikipedia.org/wiki/Mouse_Systems"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFC\xE8\xD0\0\xC3\0\0\0\0\r\nUnable to locate resident POPUP.$\r\n\r\nUnable to load menus: menu size exceeds current\r\nresident POPUP memory allocation.\r\n$MOUSESET  Version 7.00 \r\nCopyright (C) 1984-1990  Mouse Systems Corporation.\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1984-1990  MOUSE SYSTEMS CORPORATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ BYTES REQUIRED TO USE OPTIONAL VIDEO DRIVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ BYTES REQUIRED TO USE POP-UP MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESIDENT POPUP MEMORY ALLOCATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNABLE TO LOCATE RESIDENT POPUP.$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ BYTES OF MENU SPACE AVAILABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU SIZE EXCEEDS CURRENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MOUSESET  VERSION 7.00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVING THE MOUSE TO THE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDERS CAN BE USED TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT OR RIGHT OF MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNABLE TO LOAD MENUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ MUST BE USED WITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURSOR SENSITIVITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS LEFT BUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIUM (DEFAULT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDDLE BUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUSE BUTTONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUSE CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHT BUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO RETURN TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M OPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIGURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOW"
+    CaseSensitive: false

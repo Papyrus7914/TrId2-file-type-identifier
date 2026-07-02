@@ -1,0 +1,20 @@
+Name: INCITS 381 fingerprints
+URL: "http://justsolve.archiveteam.org/wiki/ANSI_381"
+FileNameExtensions: ["firpiv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x03\r\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\0\x1B\x04\x01\x14\x06\t\x1A\f#\x1DZ\x14\x06\t\x1A\f#\x1DZ\x14\x10\t\x1A\f#\x1DZ\0\0\b "
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "NIST-IAD\0\xFF\x8F\xE5\xC5h\0\x10\x06\x90\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0FIR\0010\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NIST-IAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIR\0010"
+    CaseSensitive: false

@@ -1,0 +1,31 @@
+Name: Allen Communications Quest Released Module (v5)
+URL: "http://www.allencomm.com"
+FileNameExtensions: ["qrm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RM/Quest Module File\0\0\0\0\0\0\0\0\0\0\0\0\0\0\05."
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "Chunk Table\0\0\0\0\0CT"
+    CaseSensitive: true
+  - Pos: 90
+    AsciiString: "Header\0\0\0\0\0\0\0\0\0\0QH"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "QUEST MODULE FILE\0\0\0\0\0\0\0\0\0\0\0\0\0\0\05."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER\0\0\0\0\0\0\0\0\0\0QH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHUNK TABLE\0\0\0\0\0CT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKGD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDIT"
+    CaseSensitive: false

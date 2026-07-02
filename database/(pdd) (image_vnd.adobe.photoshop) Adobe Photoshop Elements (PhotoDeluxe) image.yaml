@@ -1,0 +1,81 @@
+Name: Adobe Photoshop Elements (PhotoDeluxe) image
+URL: "http://fileformats.archiveteam.org/wiki/PhotoDeluxe"
+FileNameExtensions: ["pdd"]
+MimeType: image/vnd.adobe.photoshop
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "8BPS\0\x01\0\0\0\0\0\0\0\x03\0\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0\b\0\x03\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "8BIM\x03"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 66
+    Bytes: [0x03]
+  - Pos: 78
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 98
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 146
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 154
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 160
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 164
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 172
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 200
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 208
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 222
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 228
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 232
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 244
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 329
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 542
+    Bytes: [0x01]
+  - Pos: 551
+    AsciiString: "\t"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PHUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8BIMNORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOBE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8BPS"
+    CaseSensitive: false

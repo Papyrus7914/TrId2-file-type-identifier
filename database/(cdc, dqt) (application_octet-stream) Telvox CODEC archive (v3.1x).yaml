@@ -1,0 +1,11 @@
+Name: Telvox CODEC archive (v3.1x)
+URL: "http://fileformats.archiveteam.org/wiki/CODEC_(Telvox)"
+FileNameExtensions: ["cdc", "dqt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "v\xFF1"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "<_"
+    CaseSensitive: true

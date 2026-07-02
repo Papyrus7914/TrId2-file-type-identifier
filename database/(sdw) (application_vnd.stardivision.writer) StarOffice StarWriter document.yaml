@@ -1,0 +1,43 @@
+Name: StarOffice StarWriter document
+URL: "http://fileformats.archiveteam.org/wiki/StarOffice_binary_formats"
+FileNameExtensions: ["sdw"]
+MimeType: application/vnd.stardivision.writer
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xD0, 0xCF, 0x11, 0xE0, 0xA1, 0xB1, 0x1A, 0xE1, 0x00]
+  - Pos: any
+    AsciiString: "S\0T\0A\0R\0W\0R\0I\0T\0E\0R\0D\0O\0C\0U\0M\0E\0N\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0W\0P\0A\0G\0E\0S\0T\0Y\0L\0E\0S\0H\0E\0E\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0E\0R\0S\0I\0S\0T\0 \0E\0L\0E\0M\0E\0N\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0F\0X\0D\0O\0C\0U\0M\0E\0N\0T\0I\0N\0F\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0F\0X\0S\0T\0Y\0L\0E\0S\0H\0E\0E\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXTFORMATVORLAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SFXDOCUMENTINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0P\0O\0B\0J"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMEFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARWRITER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0L\0E"
+    CaseSensitive: false

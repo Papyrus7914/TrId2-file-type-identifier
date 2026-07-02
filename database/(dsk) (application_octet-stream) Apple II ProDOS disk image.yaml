@@ -1,0 +1,26 @@
+Name: Apple II ProDOS disk image
+URL: "https://en.wikipedia.org/wiki/Apple_ProDOS"
+FileNameExtensions: ["dsk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              8                 L
+    Bytes: [0x01, 0x38, 0xB0, 0x03, 0x4C]
+  - Pos: any
+    AsciiString: "PRODOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRES"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: K Advanced Text Editor swap data
+URL: "https://en.wikipedia.org/wiki/Kate_(text_editor)"
+FileNameExtensions: ["kate-swp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "Kate Swap File "
+    CaseSensitive: true

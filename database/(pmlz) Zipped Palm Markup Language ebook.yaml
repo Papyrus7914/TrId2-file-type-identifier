@@ -1,0 +1,16 @@
+Name: Zipped Palm Markup Language ebook
+URL: "http://www.ereader.com/ereader/help/dropbook/pml.htm"
+FileNameExtensions: ["pmlz"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 25
+    AsciiString: "\0\t\0\0\0index.pml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INDEX.PMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX_IMG"
+    CaseSensitive: false

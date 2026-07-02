@@ -1,0 +1,65 @@
+Name: EDIF Netlist
+URL: "https://en.wikipedia.org/wiki/EDIF"
+FileNameExtensions: ["edn"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(edif "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(EDIFVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(INSTANCEREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYWORDLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(KEYWORDMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TECHNOLOGY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(EDIFLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(CELLREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(PORTREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(WRITTEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOINED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

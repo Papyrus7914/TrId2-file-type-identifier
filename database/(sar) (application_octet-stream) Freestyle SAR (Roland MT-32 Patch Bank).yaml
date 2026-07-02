@@ -1,0 +1,76 @@
+Name: Freestyle SAR (Roland MT-32 Patch Bank)
+FileNameExtensions: ["sar"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "sar styy"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0FReESTYLE ??2\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STYY\0\0\0\0STYY\0\0\0\0STYY\0\0\0\0STYY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREESTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAR STYY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+LEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADWI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEZT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INKN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIN1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIN2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIN3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KINB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KINC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCTT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RPC1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYS1"
+    CaseSensitive: false

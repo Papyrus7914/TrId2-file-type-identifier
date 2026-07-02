@@ -1,0 +1,22 @@
+Name: CleWin CIF layout
+URL: "http://www.phoenixbv.com/"
+FileNameExtensions: ["cif"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(CIF written by CleWin "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MICRON)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(LAYER NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TOP LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(1 UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(CLEWIN"
+    CaseSensitive: false

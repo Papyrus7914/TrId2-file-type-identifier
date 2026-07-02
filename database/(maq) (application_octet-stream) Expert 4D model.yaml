@@ -1,0 +1,32 @@
+Name: Expert 4D model
+Description: Amiga 3D software.
+FileNameExtensions: ["maq"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "VO4DFORM"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "VOHD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VOSCSCEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMRA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTSX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHD"
+    CaseSensitive: false

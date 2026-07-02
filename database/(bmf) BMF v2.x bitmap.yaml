@@ -1,0 +1,13 @@
+Name: BMF v2.x bitmap
+Description: BMF is a lossless/near-lossless compressed image format by Dmitry Shkarin
+FileNameExtensions: ["bmf"]
+DetectionPatterns:
+  - Pos: 0
+    #                    2
+    Bytes: [0x81, 0x8A, 0x32]
+  - Pos: 10
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "\0\0"
+    CaseSensitive: true

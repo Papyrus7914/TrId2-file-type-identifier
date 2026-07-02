@@ -1,0 +1,13 @@
+Name: Samurize package
+URL: "http://en.wikipedia.org/wiki/Samurize"
+FileNameExtensions: ["sam"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SETTINGS.INIPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGS"
+    CaseSensitive: false

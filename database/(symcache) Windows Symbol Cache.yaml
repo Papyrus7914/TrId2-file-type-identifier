@@ -1,0 +1,66 @@
+Name: Windows Symbol Cache
+FileNameExtensions: ["symcache"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x04wIE\x01\0\x01\0\0\0\0\0\0\0\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\08\0\0\0"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 43
+    AsciiString: "\0x\0\0\0"
+    CaseSensitive: true
+  - Pos: 51
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 84
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 87
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 103
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 105
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 110
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 115
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 121
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 123
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 125
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 127
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_\0_\0S\0E\0C\0U\0R\0I\0T\0Y\0_\0C\0O\0O\0K\0I\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_\0I\0M\0P\0_\0_\0M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0R\0I\0N\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0E\0R"
+    CaseSensitive: false

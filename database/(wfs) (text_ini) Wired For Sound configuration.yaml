@@ -1,0 +1,16 @@
+Name: Wired For Sound configuration
+FileNameExtensions: ["wfs"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[WFSound]\r\nVersion=2\r\n\r\n[Status]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EVENTSOUNDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENTFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false

@@ -1,0 +1,81 @@
+Name: Genetec G64x archive metadata
+Description: Contained in a G64x package.
+URL: "https://www.genetec.com/products/video-management"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<G64xArchiveFileHeader>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNIQUESOURCE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLECTIONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE SOURCEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATIONDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATIONUSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCHIVETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEDIATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITYID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".G64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPWM"
+    CaseSensitive: false

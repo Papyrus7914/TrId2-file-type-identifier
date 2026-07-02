@@ -1,0 +1,38 @@
+Name: Saxon Publisher Font
+Description: Amiga DTP software.
+FileNameExtensions: ["sxf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSCF\xFF\xFF\xFF\xFFITSK\0\0\0\x02\0\0BBXI"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".NOTDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BBXI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITSK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSCF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SBDF"
+    CaseSensitive: false

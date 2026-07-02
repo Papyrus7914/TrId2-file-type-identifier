@@ -1,0 +1,32 @@
+Name: Microsoft Developer Studio Database Project
+URL: "https://en.wikipedia.org/wiki/Visual_Studio"
+FileNameExtensions: ["dbp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# Microsoft Developer Studio Project File - Database Project\r\nBegin DataProject = \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN DATAPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN FOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSDTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROVIDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SQL"
+    CaseSensitive: false

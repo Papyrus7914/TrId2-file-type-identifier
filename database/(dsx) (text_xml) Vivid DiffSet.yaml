@@ -1,0 +1,35 @@
+Name: Vivid DiffSet
+URL: "https://github.com/oderby/VVD"
+FileNameExtensions: ["dsx"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NODECHANGE INSTANCEGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORTCHANGE INSTANCEGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGECHANGE DSTGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENTGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRCGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

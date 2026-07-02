@@ -1,0 +1,11 @@
+Name: MEGA data format
+URL: "http://www.megasoftware.net/"
+FileNameExtensions: ["meg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#mega"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

@@ -1,0 +1,164 @@
+Name: DOS Executable Microsoft Business Basic 1.10 (w/runtime)
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 16
+    Bytes: [0x00, 0x02]
+  - Pos: 20
+    AsciiString: ",\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MICROSOFT BUSINESS BASIC COMPILER RUNTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C)COPYRIGHT MICROSOFT CORP. 1982"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING FORMULA TOO COMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSCRIPT OUT OF RANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILLEGAL FUNCTION CAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESUME WITHOUT ERRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN WITHOUT GOSU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING SPACE CORRUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DDEVICE UNAVAILABL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FDISK WRITE PROTEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE ALREADY EXIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF STRING SPAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDIMENSIONED ARRA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7FILE ALREADY OPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO LINE NUMBER IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD RECORD NUMBE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDISK MEDIA ERRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNPRINTABLE ERRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4BAD FILE NUMBE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIVISION BY ZER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2FIELD OVERFLO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3INTERNAL ERRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5FILE NOT FOUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTOO MANY FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GDISK NOT READ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "6BAD FILE MOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT PAST EN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER FAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAD FILE NAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF MEMOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF PAPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE MISMATC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION 1.10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNTAX ERRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*LPT BREAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AT ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURING G.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT OF DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9DEVICE I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISK FUL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO RESUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KYBD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRN"
+    CaseSensitive: false

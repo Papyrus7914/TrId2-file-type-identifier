@@ -1,0 +1,25 @@
+Name: .NET assembly Installation Log
+FileNameExtensions: ["installlog"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBFInstalling assembly '"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AFFECTED PARAMETERS ARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLYPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INSTALLLOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false

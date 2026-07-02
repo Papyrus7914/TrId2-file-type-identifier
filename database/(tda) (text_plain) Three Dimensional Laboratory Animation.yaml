@@ -1,0 +1,23 @@
+Name: Three Dimensional Laboratory Animation
+Description: A Windows 3.x stereograms tool by Evolving Software Products Inc.
+FileNameExtensions: ["tda"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "     Three Dimensional Laboratory Animation (Version "
+    CaseSensitive: true
+  - Pos: 54
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMBER OF FRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false

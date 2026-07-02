@@ -1,0 +1,26 @@
+Name: Mastercam Model
+URL: "https://en.wikipedia.org/wiki/Mastercam"
+FileNameExtensions: ["mcam"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x98\0\0\0\0\x02\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MASTERCAMPLANES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEMPLANES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANEPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANEBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIX33"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANEID"
+    CaseSensitive: false

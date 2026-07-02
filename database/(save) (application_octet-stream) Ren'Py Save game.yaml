@@ -1,0 +1,20 @@
+Name: Ren'Py Save game
+URL: "https://en.wikipedia.org/wiki/Ren%27Py"
+FileNameExtensions: ["save"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SCREENSHOT.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENPY_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRA_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOG"
+    CaseSensitive: false

@@ -1,0 +1,391 @@
+Name: Hierarchical Data Format Release 5
+URL: "http://www.gdal.org/frmt_hdf5.html"
+FileNameExtensions: ["he5"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "HEAP"
+    CaseSensitive: true
+  - Pos: 136
+    AsciiString: "HDFEOS\0\0HDFEOS INFORMATION"
+    CaseSensitive: true
+  - Pos: 384
+    AsciiString: "TREE"
+    CaseSensitive: true
+  - Pos: 976
+    AsciiString: "HEAP"
+    CaseSensitive: true
+  - Pos: 1032
+    AsciiString: "TREE"
+    CaseSensitive: true
+  - Pos: 1624
+    AsciiString: "SNOD"
+    CaseSensitive: true
+  - Pos: 1952
+    AsciiString: "HEAP"
+    CaseSensitive: true
+  - Pos: 1992
+    AsciiString: "FILE_ATTRIBUTES\0TREE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FURTHER UPDATE ANTICIPATED USING ENHANCED PGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATIONALQUALITYFLAGEXPLANATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HORIZONTALSPATIALDOMAINCONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOMATICQUALITYFLAGEXPLANATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALSPATIALDOMAINCONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALSPATIALDOMAINVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASUREDPARAMETERCONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDFEOS\0\0HDFEOS INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLECTIONDESCRIPTIONCLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALSPATIALDOMAINTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QAPERCENTOUTOFBOUNDSDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUTHBOUNDINGCOORDINATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORTHBOUNDINGCOORDINATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EASTBOUNDINGCOORDINATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WESTBOUNDINGCOORDINATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQUEFIELDDEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_ATTRIBUTES\0TREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QAPERCENTMISSINGDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPROCESSINGPLANNED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAI93AT0ZOFGRANULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALCOORDINATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCIENCEQUALITYFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOLOCATION FIELDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGEBEGINNINGTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTIONDATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGEBEGINNINGDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATMOSPHERE PROFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOUNDINGRECTANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXDIMENSIONMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVENTORYMETADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCTMETADATA.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATMOSPHERE LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT INVESTIGATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLARZENITHANGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PGEVERSIONCLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGEENDINGTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRANULELOCALITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGEENDINGDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COREMETADATA.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTSTRUCTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECSDATAGRANULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWATHSTRUCTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALSOLARTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTRUMENTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALVERSIONID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALGRANULEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDSTRUCTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANGEDATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALITYVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDFEOSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSIONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAFIELDNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUTGRANULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISSINGVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFILEFIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOFIELDNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAYNIGHTFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRANULEMONTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MERGEDFIELDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESSLEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUTPOINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRANULEYEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA FIELDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZASTRUCTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AURA-SHARED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LS-SPECIFIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPERATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTERGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HDFEOS_5.1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSION_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FILLVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXDIMLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRANULEDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDITIONAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACECRAFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAFIELD_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOFIELD_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWATHNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONGITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRECISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_GROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMALLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QASTATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUM_VAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NLEVELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIRDLS-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOUNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QAFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTIMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWATH_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORBIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HNO3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HE5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSES"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Chromeleon channel RAW data
+URL: "https://www.thermofisher.com/order/catalog/product/CHROMELEON7"
+FileNameExtensions: ["dad"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "YREC\0\0\x01\0\x03\0\0\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEMP"
+    CaseSensitive: false

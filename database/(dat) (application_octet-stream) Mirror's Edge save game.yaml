@@ -1,0 +1,14 @@
+Name: Mirror's Edge save game
+URL: "https://www.mobygames.com/game/37650/mirrors-edge/"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x03\0\0\0\0\0\0\0\x01\0\0\0\xE0\x93\x04\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCRAPER_P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_GAME"
+    CaseSensitive: false

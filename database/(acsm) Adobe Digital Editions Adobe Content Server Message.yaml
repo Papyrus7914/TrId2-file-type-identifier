@@ -1,0 +1,42 @@
+Name: Adobe Digital Editions Adobe Content Server Message
+FileNameExtensions: ["acsm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FULFILLMENTTOKEN FULFILLMENTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCEITEMINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NS.ADOBE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTRIBUTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATORURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPIRATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADEPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HMAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UUID"
+    CaseSensitive: false

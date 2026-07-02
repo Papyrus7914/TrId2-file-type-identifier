@@ -1,0 +1,14 @@
+Name: Fractint saved bitmap
+URL: "http://fileformats.archiveteam.org/wiki/FRA_(Fractint)"
+FileNameExtensions: ["fra"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GIF87a"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FRACTINT001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRACTAL"
+    CaseSensitive: false

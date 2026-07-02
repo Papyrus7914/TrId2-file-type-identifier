@@ -1,0 +1,16 @@
+Name: RandyTab guitar tablature
+URL: "http://www.geocities.com/randyinc_nz/software/software.html"
+FileNameExtensions: ["rtab"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x052RTFF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CSEPARATORBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGTRSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNOTE"
+    CaseSensitive: false

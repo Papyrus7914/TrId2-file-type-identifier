@@ -1,0 +1,103 @@
+Name: Diablo II Saved Game File
+URL: "http://www.blizzard.com/diablo2/"
+FileNameExtensions: ["d2s"]
+DetectionPatterns:
+  - Pos: 0
+    #        U           U
+    Bytes: [0x55, 0xAA, 0x55, 0xAA]
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 64
+    Bytes: [0xFF, 0xFF]
+  - Pos: 68
+    Bytes: [0xFF, 0xFF]
+  - Pos: 71
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 75
+    Bytes: [0x00, 0xFF]
+  - Pos: 79
+    Bytes: [0x00, 0xFF]
+  - Pos: 83
+    Bytes: [0x00, 0xFF]
+  - Pos: 90
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 94
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 98
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 102
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 106
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 110
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 114
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 118
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 122
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 125
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 135
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 139
+    Bytes: [0x01, 0x01]
+  - Pos: 205
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 340
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 346
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 351
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 354
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 431
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 435
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 441
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 463
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 487
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 511
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 539
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true

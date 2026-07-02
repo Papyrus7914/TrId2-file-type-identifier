@@ -1,0 +1,77 @@
+Name: 16bit DOS Font Mania font loader Command (v6.0)
+URL: "http://fileformats.archiveteam.org/wiki/Font_Mania_(REXXCOM)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              G                 #
+    Bytes: [0xEB, 0x47, 0xA2, 0x05, 0x23]
+  - Pos: 6
+    AsciiString: "\0 FONT MANIA, VERSION 6.0 \r\n COPYRIGHT (C) 1996  REXXCOM SYSTEMS $\x1A\xE9e\x02\r\n CANNOT FIND ANY FONT INSTALLED IN MEMORY!\r\n\a$\r\n\nUSAGE:  <filename> [H|?] [B#] [I|R|U]\r\n\n\t<filename>\tName of your font file\r\n\tH\t\tDisplay this help message\r\n\t?\t\tSame as above\r\n\tB#\t\tSpecify character block\r\n\tI\t\tInstall font in memory (Uninstallable with 'U' option)\r\n\tR\t\tInstall font in memory\r\n\tU\t\tUninstall font from memory (Works only with 'I' option)\r\n\nOnce a font is installed in memory, the following keyboard commands are\r\navailable:\r\n\n\tCTRL+ALT+D\tDisable automatic font loading\r\n\tCTRL+ALT+E\tEnable automatic font loading\r\n\tCTRL+ALT+F\tUser requested unconditional font loading\r\n$\x03\x02\x01\0\0\0\0\0\0FM\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\02\xED\x8A\x0E\x80\0\n\xC9tk\xBE\x80\0F\x80<ar\b\x80<zw\x03\x80, \xE2\xF0\x8A\x0E\x80\0\xBE\x80\0F\x80< t\xFA\x80<\tt\xF5\x80<Ht1\x80<?t,\x80<Ru\x03\xE9,\x01\x80<Uu\x03\xE9\xB2\0\x80<ItZ\x80<Bu\vFI\x8A$\x80\xEC0\x88&\x9A\x03\xE2\xC4\xE8\x12\0\xCD \xBA\a\x01\xB4\t\xCD!\xBA|\x01\xB4\t\xCD!\xCD \x80>\x98\x03\0t\x15\xB8\0\x05\xCD\x10\xA0\x97\x03\xB4\x12\xB30\xCD\x10\xA0\x96\x032\xE4\xCD\x10\xBD\xA2\x06\xBE\x05\x01\x8A<\xB9\0\x013\xD2\x8A\x1E\x9A\x03\xB8\x10\x11\xCD\x10\xC3\xE8\xCA\xFF\x8C\x0E\xA1\x03\xA1,\0\xA3\xA3\x03\xB8\x105\xCD!\x89\x1E\xA5\x03\x8C\x06\xA7\x03\xB8\xFE5\xCD!\x89\x1E\xA9\x03\x8C\x06\xAB\x03\xB8\t5\xCD!\x89\x1E\xAD\x03\x8C\x06\xAF\x03\x0E\x1F\xB8\x10%\xBAR\x05\xCD!\xB8\xFE%\xBA\x9F\x03\xCD!\xB8\t%\xBA\xA4\x05\xCD!\xBA\xA2\x16\xCD'\x0E\x1F\xB8\xFE5\xCD!&\x8B\a;\x06\x9F\x03t\x18\xBAL\x01\xB4\t\xCD!\xB9\x10'\xE8\x98\x01\xB9\x14\0\xE8\xB4\x01\xE8\xA8\x01\xCD \x06&\x8BG\x02\x8E\xC0\xB4I\xCD!\a\x06&\x8BG\x04\x8E\xC0\xB4I\xCD!\a&\x8BW\x06&\x8E_\b\xB8\x10%\xCD!&\x8BW\n&\x8E_\f\xB8\xFE%\xCD!&\x8BW\x0E&\x8E_\x10\xB8\t%\xCD!\x0E\x1F\xA0\x96\x032\xE4\xCD\x10\xCD \xE8\x05\xFF\xB8\x105\xCD!\x89\x1E\xA5\x03\x8C\x06\xA7\x03\xB8\t5\xCD!\x89\x1E\xAD\x03\x8C\x06\xAF\x03\x0E\x1F\xB8\x10%\xBAR\x05\xCD!\xB8\t%\xBA\xA4\x05\xCD!\xBA\xA2\x16\xCD'.\x80>\x99\x03\0u\x16\n\xE4u\x12<\0t\x0E<\x01t\n<\x02t\x06<\x03t\x02<\a\x9C\x9C.\xFF\x1E\xA5\x03\x9Du)PSQR\x06U\x0E\a\xB8\x10\x11.\x8A>\x05\x01.\x8A\x1E\x9A\x03\xB9\0\x013\xD2\xBD\xA2\x06\x9C.\xFF\x1E\xA5\x03]\aZY[X\xCFPSQRU\x06\xFB\x9C.\xFF\x1E\xAD\x03\xB4\x02\xCD\x16$\f<\ft\x03\xE9\x9C\0\xB4\x01\xCD\x16u\x03\xE9\x93\0\x80\xFC u\x17.\xC6\x06\x99\x03\x01\xB9\x10'\xE8\x89\0\xB9\x03\0\xE8\xA5\0\xE8\x99\0\xEBm\x80\xFC\x12u\x17.\xC6\x06\x99\x03\0\xB9\xE8\x03\xE8m\0\xB9\x03\0\xE8\x89\0\xE8}\0\xEBQ\x80\xFC!uV\xB4\x032\xFF\xCD\x10.\x89\x0E\x9B\x03.\x89\x16\x9D\x03\x0E\a\xB8\x10\x11.\x8A>\x05\x01.\x8A\x1E\x9A\x03\xB9\0\x013\xD2\xBD\xA2\x06\xCD\x10\xB4\x01.\x8B\x0E\x9B\x03\xCD\x10\xB4\x022\xFF.\x8B\x16\x9D\x03\xCD\x10\xB9\x88\x13\xE8\x1A\0\xB9\x03\0\xE86\0\xE8*\0\xB4\x01\xCD\x16t\x042\xE4\xCD\x16\a]ZY[X\xCFPSQ\xB0\xB6\xE6C\x8B\xC1\xE6B\x8A\xC4\xE6B\xE4a\f\x03\xE6aY[X\xC3P\xE4a$\xFC\xE6aX\xC3QSP\x06\xB8@\0\x8E\xC0&\xA1l\0&\x8B\x1El\0;\xC3t\xF7\x8B\xC3\xE2\xF3\aX[Y\xC3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNINSTALL FONT FROM MEMORY (WORKS ONLY WITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL FONT IN MEMORY (UNINSTALLABLE WITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER REQUESTED UNCONDITIONAL FONT LOADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT FIND ANY FONT INSTALLED IN MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) 1996  REXXCOM SYSTEMS $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE FOLLOWING KEYBOARD COMMANDS ARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ONCE A FONT IS INSTALLED IN MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLE AUTOMATIC FONT LOADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLE AUTOMATIC FONT LOADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY THIS HELP MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIFY CHARACTER BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME OF YOUR FONT FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAME AS ABOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION 6.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTRL+ALT+D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTRL+ALT+E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTRL+ALT+F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT MANIA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVAILABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USAGE"
+    CaseSensitive: false

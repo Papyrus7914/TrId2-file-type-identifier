@@ -1,0 +1,159 @@
+Name: EAGLE schematic
+Description: EAGLE is a CAD tool for electronic schematic drawing and circuit board manufacturing.
+URL: "http://www.cadsoft.de/"
+FileNameExtensions: ["sch"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x10]
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 24
+    Bytes: [0x11, 0x00]
+  - Pos: 31
+    AsciiString: "G"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 47
+    AsciiString: "\0\x11\0"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "\0\xFC>\x80\xC2\x04F\x88\xCA\f\0\0\x12\0\0"
+    CaseSensitive: true
+  - Pos: 77
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "\x13\0\x0E\x01\x10\x01\x04\0\0\0\0\0\0\0\0Top\0\0\0\0\0\0\x13\0"
+    CaseSensitive: true
+  - Pos: 127
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRESTRICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRESTRICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VRESTRICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORIGINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TORIGINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNROUTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TKEEPOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKEEPOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BFINISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TFINISH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TVALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MILLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BVALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME\01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BCREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUSSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TPLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRILLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCREAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BPLACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TGLUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BSTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGLUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSTOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PADS"
+    CaseSensitive: false

@@ -1,0 +1,8 @@
+Name: Datalink SoundScape
+Description: SoundScapes to be used with a Timex Datalink watch.
+URL: "http://www.pollensoftware.com/datalink/s-scapes.html"
+FileNameExtensions: ["spc"]
+DetectionPatterns:
+  - Pos: 0
+    #        %                 i
+    Bytes: [0x25, 0x04, 0x19, 0x69]

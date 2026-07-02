@@ -1,0 +1,17 @@
+Name: Sound Images Gen. 2 sound driver (v1.11)
+Description: PC sound driver by Tony Williams.
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE8]
+  - Pos: 3
+    Bytes: [0xCB, 0xE8]
+  - Pos: 7
+    Bytes: [0xCF]
+  - Pos: any
+    AsciiString: "$SOUND IMAGES GENERATION 2 SOUND DRIVERS(C) 1992-94 TONY WILLIAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND IMAGES V1.11"
+    CaseSensitive: false

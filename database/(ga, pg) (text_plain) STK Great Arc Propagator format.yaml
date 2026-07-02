@@ -1,0 +1,35 @@
+Name: STK Great Arc Propagator format
+URL: "https://en.wikipedia.org/wiki/Systems_Tool_Kit"
+FileNameExtensions: ["ga", "pg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "stk.v."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TIMEOFFIRSTWAYPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFWAYPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTINTERPMETHOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN WAYPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARCGRANULARITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN GREATARC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END WAYPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END GREATARC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTREF"
+    CaseSensitive: false

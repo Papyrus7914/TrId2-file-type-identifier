@@ -1,0 +1,10 @@
+Name: WeatherLink Binary Weather data
+URL: "http://www.davisnet.com"
+FileNameExtensions: ["wlk"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WDAT"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "."
+    CaseSensitive: true

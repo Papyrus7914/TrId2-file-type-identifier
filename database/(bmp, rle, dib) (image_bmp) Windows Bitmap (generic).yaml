@@ -1,0 +1,15 @@
+Name: Windows Bitmap (generic)
+Description: RLE is sometimes used for run length encoded variants; OS2 is sometimes used for OS/2 system variants; HCP is sometimes used by hardcopy tool; PQG is used for PowerQuest PartitionMagic graphic; SPB is used for some Infineon Logo; SYS is used for Windows 9M boot messages; WBF is used for Epson printer water mark
+URL: "https://en.wikipedia.org/wiki/BMP_file_format"
+FileNameExtensions: ["bmp", "rle", "dib"]
+MimeType: image/bmp
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BM"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

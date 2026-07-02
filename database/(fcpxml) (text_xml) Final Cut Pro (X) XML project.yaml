@@ -1,0 +1,38 @@
+Name: Final Cut Pro (X) XML project
+URL: "http://en.wikipedia.org/wiki/Final_Cut_Pro"
+FileNameExtensions: ["fcpxml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE FCPXML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FCPXML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIORATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

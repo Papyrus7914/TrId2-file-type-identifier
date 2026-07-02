@@ -1,0 +1,12 @@
+Name: UUencoded Base64 text
+Description: variant that uses standard Base64 encoding
+URL: "http://fileformats.archiveteam.org/wiki/Uuencoding"
+FileNameExtensions: ["uu"]
+MimeType: text/x-uuencode
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "begin-base64 "
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: " "
+    CaseSensitive: true

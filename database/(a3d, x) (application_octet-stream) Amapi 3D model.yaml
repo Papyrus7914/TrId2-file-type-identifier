@@ -1,0 +1,35 @@
+Name: Amapi 3D model
+URL: "https://en.wikipedia.org/wiki/Amapi"
+FileNameExtensions: ["a3d", "x"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AMAP"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "BLOK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EOF BLOKUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOKGEOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOKMATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOKNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOKORIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOKSHAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOKVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMAP"
+    CaseSensitive: false

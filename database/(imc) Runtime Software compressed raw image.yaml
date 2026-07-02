@@ -1,0 +1,12 @@
+Name: Runtime Software compressed raw image
+URL: "https://www.runtime.org/"
+FileNameExtensions: ["imc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x1ARTS COMPRESSED IMAGE V"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 26
+    Bytes: [0x1A]

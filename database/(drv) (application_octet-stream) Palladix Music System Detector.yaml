@@ -1,0 +1,10 @@
+Name: Palladix Music System Detector
+FileNameExtensions: ["drv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DTC\0\0\x01\f\0\x04\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "DTC\0"
+    CaseSensitive: true

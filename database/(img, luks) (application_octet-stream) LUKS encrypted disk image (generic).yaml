@@ -1,0 +1,8 @@
+Name: LUKS encrypted disk image (generic)
+URL: "http://fileformats.archiveteam.org/wiki/LUKS"
+FileNameExtensions: ["img", "luks"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LUKS\xBA\xBE"
+    CaseSensitive: true

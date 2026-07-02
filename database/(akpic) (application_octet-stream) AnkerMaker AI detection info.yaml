@@ -1,0 +1,20 @@
+Name: AnkerMaker AI detection info
+URL: "https://www.ankermake.com/"
+FileNameExtensions: ["akpic"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xA1=\xA1=\0\0\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 155
+    AsciiString: "Dmesh_layer1.jpg"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DMESH_LAYER1.JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ACODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

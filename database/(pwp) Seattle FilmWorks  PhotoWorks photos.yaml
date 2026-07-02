@@ -1,0 +1,11 @@
+Name: Seattle FilmWorks / PhotoWorks photos
+Description: Seattle FilmWorks (aka PhotoWorks) multi-image file, previously downloadable using their Photomail service. Contains multiple intact SFW files (except that Huffman tables are sometimes missing).
+URL: "http://jonesrh.info/sfw/"
+FileNameExtensions: ["pwp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SFW95"
+    CaseSensitive: true
+  - Pos: 292
+    AsciiString: "SFW94"
+    CaseSensitive: true

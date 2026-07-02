@@ -1,0 +1,20 @@
+Name: Private Wars 3D Object
+Description: Russian game by TS Group Entertainment.
+FileNameExtensions: ["sco"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[ObjectBegin]\r\nName= "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CENTRALPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECTEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTS"
+    CaseSensitive: false

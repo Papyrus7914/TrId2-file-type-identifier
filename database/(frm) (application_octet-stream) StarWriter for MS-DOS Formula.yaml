@@ -1,0 +1,17 @@
+Name: StarWriter for MS-DOS Formula
+URL: "https://en.wikipedia.org/wiki/StarOffice"
+FileNameExtensions: ["frm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JJ\x01\0\x05\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HSI\0\0\0\0\0\0\0FORMEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SS~FORMEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEN"
+    CaseSensitive: false

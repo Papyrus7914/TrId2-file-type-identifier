@@ -1,0 +1,20 @@
+Name: PointCab LSD binary pointcloud data
+URL: "https://www.pointcab-software.com/"
+FileNameExtensions: ["lsd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LSD "
+    CaseSensitive: true
+  - Pos: 31
+    AsciiString: "LSD "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false

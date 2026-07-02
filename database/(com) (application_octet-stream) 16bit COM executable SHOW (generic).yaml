@@ -1,0 +1,40 @@
+Name: 16bit COM executable SHOW (generic)
+URL: "http://fileformats.archiveteam.org/wiki/SHOW_(Gary_M._Raymond)"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "0\0\x1F\xA0\0\0SHOW"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENTER FILENAME TO SAVE AS   -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOW TEXT UTILITY - BY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(504) 288-6550"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTER READY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "504-288-6550"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPY(C)RIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEW ORLEANS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1992"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFT"
+    CaseSensitive: false

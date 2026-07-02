@@ -1,0 +1,13 @@
+Name: Yahoo Chuzzle Puzzle save game
+URL: "http://get.games.yahoo.com/proddesc?gamekey=chuzzle"
+FileNameExtensions: ["dat"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xAD\xBE\0\0\x05\0\0\01."
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "C\0"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "\0\0\x16\xC4\0\0bC\0\0\0\0\0\0\x80?"
+    CaseSensitive: true

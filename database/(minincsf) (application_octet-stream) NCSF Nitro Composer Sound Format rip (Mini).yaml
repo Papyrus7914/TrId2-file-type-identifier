@@ -1,0 +1,78 @@
+Name: NCSF Nitro Composer Sound Format rip (Mini)
+Description: Contains ripped code + audio data.
+URL: "http://www.cyberbotx.com/NCSF/"
+FileNameExtensions: ["minincsf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PSF%"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "[TAG]_lib="
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: ".ncsflib\nncsfby=NDS to NCSF\norigFilename="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REPLAYGAIN_ALBUM_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPLAYGAIN_ALBUM_PEAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPLAYGAIN_TRACK_GAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPLAYGAIN_TRACK_PEAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDS TO NCSF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NCSFLIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCSFBY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAGGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FADE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTR-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PSF%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LIB"
+    CaseSensitive: false

@@ -1,0 +1,47 @@
+Name: Shapefile Geospatial metadata
+URL: "https://en.wikipedia.org/wiki/Shapefile"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE METADATA SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESRIPROF80.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.ESRI.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREADATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METAID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

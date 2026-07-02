@@ -1,0 +1,11 @@
+Name: Standard Word Printer Definition
+Description: A Thai-Eng word processor for DOS by International Research Corporation.
+FileNameExtensions: ["pdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x06PRTDEF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".COD"
+    CaseSensitive: false

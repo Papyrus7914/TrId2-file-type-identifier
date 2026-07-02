@@ -1,0 +1,14 @@
+Name: Infinity Engine Save game (v1.0)
+Description: Infinity Engine SAV files act as a standalone compressed archive.
+URL: "http://iesdp.gibberlings3.net/file_formats/ie_formats/sav_v1.htm"
+FileNameExtensions: ["sav"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SAV V1.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ARE"
+    CaseSensitive: false

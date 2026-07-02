@@ -1,0 +1,18 @@
+Name: Torque module definition (XML)
+Description: TAML is an acronym of Torque Application Mark-up Language.
+URL: "https://en.wikipedia.org/wiki/Torque_(game_engine)"
+FileNameExtensions: ["taml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<ModuleDefinition"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSIONID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULEID"
+    CaseSensitive: false

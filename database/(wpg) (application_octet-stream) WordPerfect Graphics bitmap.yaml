@@ -1,0 +1,10 @@
+Name: WordPerfect Graphics bitmap
+URL: "https://en.wikipedia.org/wiki/WordPerfect"
+FileNameExtensions: ["wpg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFFWPC"
+    CaseSensitive: true
+  - Pos: 8
+    Bytes: [0x01, 0x16]

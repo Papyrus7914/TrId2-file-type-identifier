@@ -1,0 +1,54 @@
+Name: STuetzerbach Format
+Description: DARC Contest Data Exchange Format.
+URL: "http://www.darc.de/en/referate/dx/contest/log/stf-en/"
+FileNameExtensions: ["stf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "STF1\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CALL SRST SENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLAIMEDSCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLAIMEDMULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLAIMEDPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLAIMEDQSO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDQSOLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDHEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RRST RCVD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QSOORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MYCALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STF1"
+    CaseSensitive: false

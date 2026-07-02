@@ -1,0 +1,26 @@
+Name: Q Light Controller+ Midi template
+URL: "http://www.qlcplus.org/"
+FileNameExtensions: ["qxm"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE MidiTemplate>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE MIDITEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITMESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

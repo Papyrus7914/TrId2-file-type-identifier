@@ -1,0 +1,27 @@
+Name: InfoPath Dynamic Form - Template
+Description: 1st archive member is manifest.xsf
+URL: "https://en.wikipedia.org/wiki/Microsoft_InfoPath"
+FileNameExtensions: ["xsn"]
+MimeType: application/vnd.ms-cab-compressed
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSCF\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEMPLATE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XSF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XSD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XSL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSCF"
+    CaseSensitive: false

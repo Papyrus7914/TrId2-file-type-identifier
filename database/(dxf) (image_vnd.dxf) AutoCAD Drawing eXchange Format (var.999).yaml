@@ -1,0 +1,14 @@
+Name: AutoCAD Drawing eXchange Format (var.999)
+URL: "https://en.wikipedia.org/wiki/AutoCAD_DXF"
+FileNameExtensions: ["dxf"]
+MimeType: image/vnd.dxf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "999"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Gravity Resource/Patch File
+URL: "https://en.wikipedia.org/wiki/Gravity_(Korean_company)"
+FileNameExtensions: ["grf", "gpf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Master of Magic\0\x01\x02\x03\x04\x05\x06\a\b\t\n\v\f\r\x0E"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\0\0\0\x02\0\0x\x9C"
+    CaseSensitive: true

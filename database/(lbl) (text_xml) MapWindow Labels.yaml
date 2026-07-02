@@ -1,0 +1,17 @@
+Name: MapWindow Labels
+URL: "https://en.wikipedia.org/wiki/MapWindow_GIS"
+FileNameExtensions: ["lbl"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<MapWindow "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LABEL X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABELS"
+    CaseSensitive: false

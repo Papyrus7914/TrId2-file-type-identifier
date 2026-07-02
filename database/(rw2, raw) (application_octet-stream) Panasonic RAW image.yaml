@@ -1,0 +1,11 @@
+Name: Panasonic RAW image
+URL: "http://fileformats.archiveteam.org/wiki/Panasonic_RAW/RW2"
+FileNameExtensions: ["rw2", "raw"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IIU\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true

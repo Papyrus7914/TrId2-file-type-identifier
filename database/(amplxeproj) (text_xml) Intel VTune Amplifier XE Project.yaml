@@ -1,0 +1,26 @@
+Name: Intel VTune Amplifier XE Project
+URL: "https://en.wikipedia.org/wiki/VTune"
+FileNameExtensions: ["amplxeproj"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AMPLIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "32_T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

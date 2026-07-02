@@ -1,0 +1,58 @@
+Name: Garmin Voice Processing Module (encrypted)
+Description: Encrypted variant used in voices like DrNightmare, Elfred, Yeti.
+URL: "https://www.garmin.com/vehicles/voices/"
+FileNameExtensions: ["vpm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              A
+    Bytes: [0xA1, 0x41, 0x19, 0x0F, 0xEC, 0xC8, 0xCE, 0xD6]
+  - Pos: 9
+    Bytes: [0xD6]
+  - Pos: 11
+    Bytes: [0xD8]
+  - Pos: 1419
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 1446
+    AsciiString: "@\0"
+    CaseSensitive: true
+  - Pos: 1450
+    AsciiString: "@\0"
+    CaseSensitive: true
+  - Pos: 1454
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: 1458
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: 1462
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: 1466
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: 1470
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: 1474
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: 1478
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: 1482
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: 1486
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: 1490
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: 1494
+    AsciiString: "@"
+    CaseSensitive: true
+  - Pos: 1498
+    AsciiString: "@"
+    CaseSensitive: true

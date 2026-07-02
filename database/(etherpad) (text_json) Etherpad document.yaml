@@ -1,0 +1,50 @@
+Name: Etherpad document
+URL: "https://en.wikipedia.org/wiki/EtherPad"
+FileNameExtensions: ["etherpad"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"pad:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SAVEDREVISIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMTOATTRIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANGESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHATHEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATTRIBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXTNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVS"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Clipper Pre-Linked Library
+URL: "https://en.wikipedia.org/wiki/Clipper_(programming_language)"
+FileNameExtensions: ["pll"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              7     S
+    Bytes: [0xBA, 0x37, 0x53, 0x01]
+  - Pos: any
+    AsciiString: ".RTLINK STARTUP CODE"
+    CaseSensitive: false

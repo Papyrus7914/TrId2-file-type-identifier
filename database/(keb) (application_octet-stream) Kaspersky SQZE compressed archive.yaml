@@ -1,0 +1,8 @@
+Name: Kaspersky SQZE compressed archive
+URL: "https://www.kaspersky.com"
+FileNameExtensions: ["keb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQZE\x01\0\0\0\x18\0\0\0"
+    CaseSensitive: true

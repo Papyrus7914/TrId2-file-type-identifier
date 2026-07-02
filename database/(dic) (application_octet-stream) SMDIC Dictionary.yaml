@@ -1,0 +1,11 @@
+Name: SMDIC Dictionary
+Description: Used in SoftMaker Software Gmbh applications.
+FileNameExtensions: ["dic"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SMDIC\0Copyright (c) 1987-20"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: " by SoftMaker Software GmbH"
+    CaseSensitive: true

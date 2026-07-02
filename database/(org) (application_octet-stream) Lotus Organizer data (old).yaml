@@ -1,0 +1,23 @@
+Name: Lotus Organizer data (old)
+URL: "https://en.wikipedia.org/wiki/IBM_Lotus_Organizer"
+FileNameExtensions: ["org"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    x     %
+    Bytes: [0xFF, 0x9A, 0x78, 0x25]
+  - Pos: any
+    AsciiString: "N\0PHONELOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0OPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0LINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N\0TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTEPAD"
+    CaseSensitive: false

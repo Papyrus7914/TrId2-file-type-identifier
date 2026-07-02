@@ -1,0 +1,38 @@
+Name: MAGIX music studio Definitions
+URL: "https://en.wikipedia.org/wiki/Magix"
+FileNameExtensions: ["def"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "defi\x02\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RECORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DRM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLO"
+    CaseSensitive: false

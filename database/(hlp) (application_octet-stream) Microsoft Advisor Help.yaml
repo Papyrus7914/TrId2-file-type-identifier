@@ -1,0 +1,12 @@
+Name: Microsoft Advisor Help
+Description: An old Help file format from Microsoft, mostly used on their dev tools.
+URL: "http://fileformats.archiveteam.org/wiki/Microsoft_Advisor_Help"
+FileNameExtensions: ["hlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LN\x02\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0:\0"
+    CaseSensitive: true

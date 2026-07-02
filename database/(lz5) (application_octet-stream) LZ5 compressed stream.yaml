@@ -1,0 +1,9 @@
+Name: LZ5 compressed stream
+Description: Compressor by Przemyslaw Skibinski.
+URL: "https://github.com/inikep/lizard"
+FileNameExtensions: ["lz5"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \"    M
+    Bytes: [0x05, 0x22, 0x4D, 0x18]

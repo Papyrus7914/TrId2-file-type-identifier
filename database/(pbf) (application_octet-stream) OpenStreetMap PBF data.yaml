@@ -1,0 +1,8 @@
+Name: OpenStreetMap PBF data
+URL: "https://wiki.openstreetmap.org/wiki/PBF_Format"
+FileNameExtensions: ["pbf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\x0E\n\tOSMHeader\x18"
+    CaseSensitive: true

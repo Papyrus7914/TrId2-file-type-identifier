@@ -1,0 +1,62 @@
+Name: PTC Creo Material (with BOM)
+URL: "https://en.wikipedia.org/wiki/PTC_Creo"
+FileNameExtensions: ["mtl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBFND_RelParSet_K01 = {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PTC_FAILURE_CRITERION_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTC_MATERIAL_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTC_POISSON_RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTC_YOUNG_MODULUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ND_RELPARSET_K01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTC_FATIGUE_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTC_MASS_DENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTC_BEND_TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPERATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL"
+    CaseSensitive: false

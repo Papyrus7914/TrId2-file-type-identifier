@@ -1,0 +1,24 @@
+Name: Microsoft Document Imaging format
+Description: Microsoft Document Imaging Format (MDI) is a high resolution, tag-based graphics format, based on the Tagged Image File Format (TIFF) used for digital graphics. MDI files are usually created with the 'Microsoft Office Document Image Writer' virtual printer that get installed along with Office 2003.
+URL: "http://fileformats.archiveteam.org/wiki/MDI"
+FileNameExtensions: ["mdi"]
+MimeType: image/vnd.ms-modi
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EP"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "S\0U\0M\0M\0A\0R\0Y\0I\0N\0F\0O\0R\0M\0A\0T\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0O\0O\0T\0 \0E\0N\0T\0R\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0N\0T\0E\0N\0T\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DICT"
+    CaseSensitive: false

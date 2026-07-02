@@ -1,0 +1,11 @@
+Name: Student Writing Center document (generic)
+URL: "http://fileformats.archiveteam.org/wiki/Student_Writing_Center"
+FileNameExtensions: ["lt", "jn", "nl", "rp", "sg", "ltt", "nlt", "rpt", "sgt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x1ATLC"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "FF\0"
+    CaseSensitive: true

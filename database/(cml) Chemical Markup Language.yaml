@@ -1,0 +1,82 @@
+Name: Chemical Markup Language
+URL: "http://cml.sourceforge.net/"
+FileNameExtensions: ["cml"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<cml:molecule xmlns:cml=\"http://www.xml-cml.org/schema/cml2/core\"\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "METADATALIST TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.XML-CML.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOLECULE XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTRIBUTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHEMISTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOMARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRUCTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BONDARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOMREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMLM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CML2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

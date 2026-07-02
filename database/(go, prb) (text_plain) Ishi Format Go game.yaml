@@ -1,0 +1,17 @@
+Name: Ishi Format Go game
+URL: "http://senseis.xmp.net/?IshiFormat"
+FileNameExtensions: ["go", "prb"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EVENT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOARDSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDCOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENT"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Universal Data Format (lower case)
+URL: "http://fileformats.archiveteam.org/wiki/Softdisk_Publishing_UDF_files"
+FileNameExtensions: ["udf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$doc"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$ABOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$EOC"
+    CaseSensitive: false

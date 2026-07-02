@@ -1,0 +1,29 @@
+Name: Adobe Integrated Runtime
+URL: "http://en.wikipedia.org/wiki/Adobe_AIR"
+FileNameExtensions: ["air"]
+MimeType: application/vnd.adobe.air-application-installer-package+zip
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetype"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.ADOBE.AIR-APPLICATION-INSTALLER-PACKAGE+ZIPPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURES.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASH"
+    CaseSensitive: false

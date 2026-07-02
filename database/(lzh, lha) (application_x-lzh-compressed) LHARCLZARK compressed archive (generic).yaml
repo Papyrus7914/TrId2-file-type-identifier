@@ -1,0 +1,11 @@
+Name: LHARC/LZARK compressed archive (generic)
+URL: "https://en.wikipedia.org/wiki/LHA_(file_format)"
+FileNameExtensions: ["lzh", "lha"]
+MimeType: application/x-lzh-compressed
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "-lh"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "-"
+    CaseSensitive: true

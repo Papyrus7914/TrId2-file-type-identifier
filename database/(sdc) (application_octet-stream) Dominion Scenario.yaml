@@ -1,0 +1,11 @@
+Name: Dominion Scenario
+URL: "https://www.myabandonware.com/game/dominion-storm-over-gift-3-coq"
+FileNameExtensions: ["sdc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SDC\0\x01\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false

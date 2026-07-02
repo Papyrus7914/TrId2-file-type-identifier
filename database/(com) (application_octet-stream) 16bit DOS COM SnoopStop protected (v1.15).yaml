@@ -1,0 +1,19 @@
+Name: 16bit DOS COM SnoopStop protected (v1.15)
+Description: COM protector by Trills and Technologies.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x90, 0xE9]
+  - Pos: any
+    AsciiString: "SNOOPSTOP V1.15 - (C) TRILLS AND TECHNOLOGIES 1998"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSDOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".KES"
+    CaseSensitive: false

@@ -1,0 +1,53 @@
+Name: Ubiquiti EdgeSwitch firmware
+URL: "https://en.wikipedia.org/wiki/Ubiquiti"
+FileNameExtensions: ["stk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "UBNT\0\0\0\x01"
+    CaseSensitive: true
+  - Pos: 148
+    AsciiString: "System for iproc_"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BE CHANGED (I.E. NEITHER STARTUP CODE NOR OPERATIONAL CODE CHANGE)."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS SCRIPT PERFORMS ANY NECESSARY ACTIONS TO ACTIVATE THIS IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE CODE UPDATE PROCEEDURE COPIES THE IMAGE TO FLASH."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEEP THE SCRIPT QUIET WHEN INVOKED BY THE CLI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS IS THE ONLY FILE WHICH NEEDS TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOR ANY CODE UPDATE CHANGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM FOR IPROC_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON THE SWITCH."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START HERE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FASTPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XESSTTVX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERBOSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UBNT"
+    CaseSensitive: false

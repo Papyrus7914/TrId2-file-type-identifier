@@ -1,0 +1,10 @@
+Name: High Speed Pascal compiled Units Library
+FileNameExtensions: ["lib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Uni1"
+    CaseSensitive: true
+  - Pos: 42
+    #                                U     N     I     2
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF, 0x55, 0x4E, 0x49, 0x32]

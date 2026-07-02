@@ -1,0 +1,32 @@
+Name: Exploring Pascal compiled H-Code (v1.0)
+Description: A book + disk Pascal tutorial by Jeffrey Lill.
+FileNameExtensions: ["exx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              W
+    Bytes: [0xB7, 0x57]
+  - Pos: any
+    AsciiString: "%(C) COPYRIGHT 1984 BY SOFDESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JEFFREY LILL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASE 1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXX~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READ"
+    CaseSensitive: false

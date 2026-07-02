@@ -1,0 +1,14 @@
+Name: EEDraw Library
+Description: DOS Electrical Engineering parametric drawing tool.
+FileNameExtensions: ["lib"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EEDRAW-LIB Version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDDRAW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDDEF"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Cloanto C1-Text document
+Description: An Italian Amiga Word Processor.
+URL: "http://www.cloanto.com/"
+FileNameExtensions: ["ftxt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FTXTCHRS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "C1F0"
+    CaseSensitive: false

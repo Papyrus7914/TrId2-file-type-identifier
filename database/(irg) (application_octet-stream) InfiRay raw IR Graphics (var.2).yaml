@@ -1,0 +1,16 @@
+Name: InfiRay raw IR Graphics (var.2)
+Description: Produced by InfiRay thermal cameras.
+FileNameExtensions: ["irg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \v
+    Bytes: [0xB0, 0x0B]
+  - Pos: 126
+    Bytes: [0xAC, 0xCA]
+  - Pos: any
+    AsciiString: "$3BR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false

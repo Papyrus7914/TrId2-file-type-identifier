@@ -1,0 +1,14 @@
+Name: Initial Graphics Exchange Specification (IGES) data
+URL: "http://en.wikipedia.org/wiki/IGES"
+FileNameExtensions: ["igs", "iges"]
+MimeType: model/iges
+DetectionPatterns:
+  - Pos: 63
+    AsciiString: "         S"
+    CaseSensitive: true
+  - Pos: 79
+    AsciiString: "1"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IGES"
+    CaseSensitive: false

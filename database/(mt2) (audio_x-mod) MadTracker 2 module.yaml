@@ -1,0 +1,12 @@
+Name: MadTracker 2 module
+Description: MadTracker is a music composition tool.
+URL: "http://www.madtracker.org/"
+FileNameExtensions: ["mt2"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MT20"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "MadTracker "
+    CaseSensitive: true

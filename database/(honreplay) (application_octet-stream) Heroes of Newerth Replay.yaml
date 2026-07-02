@@ -1,0 +1,17 @@
+Name: Heroes of Newerth Replay
+URL: "https://en.wikipedia.org/wiki/Heroes_of_Newerth"
+FileNameExtensions: ["honreplay"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 25
+    AsciiString: "\0\n\0\0\0replaydata"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REPLAYDATAPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPLAYINFOPK"
+    CaseSensitive: false

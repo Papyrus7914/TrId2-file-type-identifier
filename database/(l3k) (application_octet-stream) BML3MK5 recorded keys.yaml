@@ -1,0 +1,21 @@
+Name: BML3MK5 recorded keys
+Description: Hitachi Basic Master Level 3 Mark 5 emulator.
+URL: "http://s-sasaji.ddo.jp/bml3mk5/"
+FileNameExtensions: ["l3k"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KEYRECORD_BML3MK5"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EMULATORVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTCLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".L3R"
+    CaseSensitive: false

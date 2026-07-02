@@ -1,0 +1,45 @@
+Name: MSX-DOS2 System kernel
+Description: "Filename: MSXDOS2.SYS"
+URL: "https://en.wikipedia.org/wiki/MSX"
+FileNameExtensions: ["sys"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 6
+    AsciiString: "\0\r\nMSX-DOS  version 2."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRESS ANY KEY TO CONTINUE... \0NOT ENOUGH MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*** \0\0INSERT COMMAND2.COM DISK IN DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM HALTED\0WRONG VERSION OF MSX-DOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READING\0 WRITING\0 DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSXDOS2.SYS VERSION 2."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSX-DOS  VERSION 2."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*** \0\0COMMAND2.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MSX-DOS VERSION 2."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETRY OR IGNORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABORT OR RETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOEXEC.BAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false

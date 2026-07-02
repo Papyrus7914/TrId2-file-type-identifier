@@ -1,0 +1,19 @@
+Name: CrystalMaker Data format (generic)
+URL: "http://www.crystalmaker.co.uk/"
+FileNameExtensions: ["cmd5", "cmdf", "cmmf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CM"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "REND"
+    CaseSensitive: true
+  - Pos: 100
+    AsciiString: "DCUE"
+    CaseSensitive: true
+  - Pos: 117
+    AsciiString: "PRSP"
+    CaseSensitive: true
+  - Pos: 126
+    AsciiString: "MODL"
+    CaseSensitive: true

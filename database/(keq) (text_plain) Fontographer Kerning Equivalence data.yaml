@@ -1,0 +1,17 @@
+Name: Fontographer Kerning Equivalence data
+URL: "https://en.wikipedia.org/wiki/Fontographer"
+FileNameExtensions: ["keq"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KernEquData1\r"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KERNEQUDATA1END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEQUDATA2END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWEQUITEM"
+    CaseSensitive: false

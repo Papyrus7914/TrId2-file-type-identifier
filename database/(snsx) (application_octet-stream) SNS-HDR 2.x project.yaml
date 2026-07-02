@@ -1,0 +1,68 @@
+Name: SNS-HDR 2.x project
+URL: "http://www.sns-hdr.com/"
+FileNameExtensions: ["snsx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0\0\x01\x89PNG\r\n\x1A\n\0\0\0\rIHDR\0\0"
+    CaseSensitive: true
+  - Pos: 41
+    AsciiString: "\0\0\0\tpHYs\0\0\x0E\xC4\0\0\x0E\xC4\x01\x95+\x0E\x1B\0\0 \0IDATx\x9C"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MNTRRGB XYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XYZ \0\0\0\0\0\0$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XYZ \0\0\0\0\0\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XYZ \0\0\0\0\0\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BKPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BXYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GTRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GXYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RXYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WTPT"
+    CaseSensitive: false

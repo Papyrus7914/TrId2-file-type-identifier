@@ -1,0 +1,41 @@
+Name: Programmer's Notepad Scheme (UTF-8)
+URL: "http://www.pnotepad.org/"
+FileNameExtensions: ["scheme"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KEYWORD-CLASS NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYWORD-CLASSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYWORDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DING"
+    CaseSensitive: false

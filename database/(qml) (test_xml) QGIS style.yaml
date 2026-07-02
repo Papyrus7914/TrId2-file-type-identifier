@@ -1,0 +1,38 @@
+Name: QGIS style
+URL: "https://en.wikipedia.org/wiki/QGIS"
+FileNameExtensions: ["qml"]
+MimeType: test/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HASSCALEBASEDVISIBILITYFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE QGIS PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINIMUMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MRCC.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QGIS.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

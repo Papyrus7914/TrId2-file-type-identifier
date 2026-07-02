@@ -1,0 +1,17 @@
+Name: WebAssembly Text
+URL: "https://en.wikipedia.org/wiki/WebAssembly"
+FileNameExtensions: ["wat"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(EXPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(PARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(FUNC"
+    CaseSensitive: false

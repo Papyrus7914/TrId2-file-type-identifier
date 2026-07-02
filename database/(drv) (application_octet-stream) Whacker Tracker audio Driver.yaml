@@ -1,0 +1,14 @@
+Name: Whacker Tracker audio Driver
+Description: DOS tracker by Hot Bits - The CodeBlasters Code Centre.
+FileNameExtensions: ["drv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Driver "
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\r\nDriver for "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESIGNED BY THE CODEBLASTERS"
+    CaseSensitive: false

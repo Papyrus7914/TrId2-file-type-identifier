@@ -1,0 +1,30 @@
+Name: OpenDocument Graphics document
+Description: Standard, open, XML based, document file format for office-like documents. It's derived from the format used by OpenOffice.org's suite.
+URL: "https://en.wikipedia.org/wiki/OpenDocument"
+FileNameExtensions: ["odg"]
+MimeType: application/vnd.oasis.opendocument.graphics
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/vnd.oasis.opendocument.graphicsPK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.OASIS.OPENDOCUMENT.GRAPHICSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURATIONS2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAT"
+    CaseSensitive: false

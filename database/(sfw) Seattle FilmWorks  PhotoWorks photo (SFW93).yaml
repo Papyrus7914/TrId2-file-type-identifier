@@ -1,0 +1,10 @@
+Name: Seattle FilmWorks / PhotoWorks photo (SFW93)
+Description: Seattle FilmWorks (aka PhotoWorks) SFW93 format image with JPEG SOI/APP0 markers. Probably has filename of rrrrrrrr.#nn (where 'rrrrrrrr' is roll number and 'nn' is image number). Please submit examples to e-mail provided.
+URL: "http://jonesrh.info/sfw/"
+FileNameExtensions: ["sfw"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SFW93"
+    CaseSensitive: true
+  - Pos: 30
+    Bytes: [0xFF, 0xD8, 0xFF, 0xE0]

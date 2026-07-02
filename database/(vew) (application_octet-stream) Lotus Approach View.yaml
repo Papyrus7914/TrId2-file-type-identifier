@@ -1,0 +1,14 @@
+Name: Lotus Approach View
+URL: "https://en.wikipedia.org/wiki/IBM_Lotus_Approach"
+FileNameExtensions: ["vew"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n\0\0\0\a\0"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0\0\x80"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".VEW"
+    CaseSensitive: false

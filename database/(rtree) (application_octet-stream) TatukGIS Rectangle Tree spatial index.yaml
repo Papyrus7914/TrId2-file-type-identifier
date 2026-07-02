@@ -1,0 +1,11 @@
+Name: TatukGIS Rectangle Tree spatial index
+URL: "https://www.tatukgis.com/"
+FileNameExtensions: ["rtree"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xADz@\x04\x06\0\0\0\x02\0\0\0TatukGIS DK RTree\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TATUKGIS DK RTREE"
+    CaseSensitive: false

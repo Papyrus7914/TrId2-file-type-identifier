@@ -1,0 +1,32 @@
+Name: IndyCar Racing II drivers info
+URL: "https://www.mobygames.com/game/indycar-racing-ii"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VERSN 1\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMT"
+    CaseSensitive: false

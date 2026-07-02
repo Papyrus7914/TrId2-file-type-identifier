@@ -1,0 +1,59 @@
+Name: Virtual APF settings
+URL: "http://hcvgm.org/APF_Emulators.html"
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[MEMORY]\r\ncarttype="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENABLEROMHACKSFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSAVSTARTISHEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASICFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSAVENDISHEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSAVFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMULATEDFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMEFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOYKEYENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMUKEYBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S19FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSAVSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSAVEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSAVEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".C10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".S19"
+    CaseSensitive: false

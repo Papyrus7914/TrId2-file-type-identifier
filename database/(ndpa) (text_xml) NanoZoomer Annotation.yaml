@@ -1,0 +1,50 @@
+Name: NanoZoomer Annotation
+URL: "http://www.hamamatsu.com/jp/en/community/nanozoomer/index.html"
+FileNameExtensions: ["ndpa"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<ndpviewstate id=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANNOTATION TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDPVIEWSTATE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDPVIEWSTATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASURETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECIALTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNOTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENS"
+    CaseSensitive: false

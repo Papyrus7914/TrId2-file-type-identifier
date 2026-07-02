@@ -1,0 +1,17 @@
+Name: Gromada Video
+URL: "http://fileformats.archiveteam.org/wiki/RES_(Gromada)"
+FileNameExtensions: ["vid"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RES "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "VID HEAD\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VID HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

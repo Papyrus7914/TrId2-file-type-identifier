@@ -1,0 +1,33 @@
+Name: 16bit DOS COM SUN-PROT protected
+Description: COM password protector by Matias Dahl.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xB8]
+  - Pos: 3
+    Bytes: [0xFF, 0xE0]
+  - Pos: any
+    AsciiString: "226.3%OO{AAAAAAAAAAAAAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AKAAAAAAAAAAAAA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4AFIY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}K5I}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5$3A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KA\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}I5H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}K5W"
+    CaseSensitive: false

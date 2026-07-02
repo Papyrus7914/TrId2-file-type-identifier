@@ -1,0 +1,23 @@
+Name: "Nicktoons: Attack of the Toybots game data"
+URL: "https://www.mobygames.com/game/34602/nicktoons-attack-of-the-toybots/"
+FileNameExtensions: ["trb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TSFL"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "TRBFHDRX"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRBFHDRX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMB"
+    CaseSensitive: false

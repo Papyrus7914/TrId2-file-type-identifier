@@ -1,0 +1,12 @@
+Name: Reflections/Monzoom IFF data (generic)
+Description: Later version of Reflections/Monzoom used an IFF format.
+URL: "https://en.wikipedia.org/wiki/Amiga_Reflections"
+FileNameExtensions: ["r3", "r4", "mon"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "REFLINFO"
+    CaseSensitive: true

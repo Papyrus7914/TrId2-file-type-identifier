@@ -1,0 +1,10 @@
+Name: IntroCAD Printer Definition
+Description: Amiga CAD software.
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PrtDef "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DRAFT"
+    CaseSensitive: false

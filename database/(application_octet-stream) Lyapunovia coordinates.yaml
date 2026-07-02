@@ -1,0 +1,13 @@
+Name: Lyapunovia coordinates
+Description: Amiga graphic generator program by Jesper Juul.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TEXT\0\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "Lyapunovia V1.0:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LYAPUNOVIA V1.0"
+    CaseSensitive: false

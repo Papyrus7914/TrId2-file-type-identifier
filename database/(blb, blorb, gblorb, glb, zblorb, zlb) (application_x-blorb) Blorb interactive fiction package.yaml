@@ -1,0 +1,12 @@
+Name: Blorb interactive fiction package
+Description: Blorb is a package format for interactive fiction games.
+URL: "http://en.wikipedia.org/wiki/Blorb"
+FileNameExtensions: ["blb", "blorb", "gblorb", "glb", "zblorb", "zlb"]
+MimeType: application/x-blorb
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "IFRSRIdx"
+    CaseSensitive: true

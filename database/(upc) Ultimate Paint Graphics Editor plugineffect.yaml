@@ -1,0 +1,100 @@
+Name: Ultimate Paint Graphics Editor plugin/effect
+URL: "http://ultimatepaint.j-t-l.com/"
+FileNameExtensions: ["upc"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x80\0\x01\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!this is a Windows NT dynamic link library\r\n$\0\0\0\0\0\0PE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 135
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 140
+    AsciiString: "\0\0\0\0\0\0\0\0\xE0\0\x82\xA1\v\x01\x02\x12\0"
+    CaseSensitive: true
+  - Pos: 158
+    AsciiString: "\0\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 166
+    AsciiString: "\0\0\0\0\0\0\0\0\x01\0\0\0\x02\0\0\0@\0\0\0\x01\0\0\x02\0\0\x01\0\v\0\0\0\0\0\x03\0\n\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 211
+    AsciiString: "\0\0\x04\0\0\0\0\0\0\x02\0\0\0\0\x10\0\0\0\x10\0\0\0 \0\0\0\x10\0\0\0\0\0\0\x10\0\0\0\0\0\x05\0"
+    CaseSensitive: true
+  - Pos: 253
+    AsciiString: "\0\0\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 261
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 267
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 270
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x06\0"
+    CaseSensitive: true
+  - Pos: 294
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0_TEXT\0\0\0\0\0\0\0\0\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: 394
+    AsciiString: "\0\0\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0 \0\0`DGROUP\0\0\0\0\0\0\0\0\x02\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 438
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\xC0.bss\0\0\0\0\0\0\0\0\0\0\x03\0\0"
+    CaseSensitive: true
+  - Pos: 474
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\xC0.idata\0\0\0\0\0\0\0\0\x04\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 518
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\xC0.edata\0\0\0\0\0\0\0\0\x05\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 558
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0@.reloc\0\0\0\0\0\0\0\0\x06\0\0\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 598
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0B"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$\0\0\0\0\0\0PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HLP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".IDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDMESSAGEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS IS A WINDOWS NT DYNAMIC LINK LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPCGETDESC\0UPCPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TEXT"
+    CaseSensitive: false

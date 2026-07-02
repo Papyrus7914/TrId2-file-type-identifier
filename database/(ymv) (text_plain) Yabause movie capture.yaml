@@ -1,0 +1,59 @@
+Name: Yabause movie capture
+URL: "http://tasvideos.org/EmulatorResources/Yabause.html"
+FileNameExtensions: ["ymv"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "version 1\r\nemuVersion 9\r\nrerecordCount "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RERECORDCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDINFO CD-1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDVERSION V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SH2CORETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNDCORETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDCORETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDGAMENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMUVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDITEMNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDROMPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CARTTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDREGION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMULATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISPAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOS"
+    CaseSensitive: false

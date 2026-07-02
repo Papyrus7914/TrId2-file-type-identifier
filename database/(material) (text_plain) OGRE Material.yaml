@@ -1,0 +1,17 @@
+Name: OGRE Material
+URL: "http://www.ogre3d.org/tikiwiki/Materials"
+FileNameExtensions: ["material"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "material "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEXTURE_UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TECHNIQUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASS"
+    CaseSensitive: false

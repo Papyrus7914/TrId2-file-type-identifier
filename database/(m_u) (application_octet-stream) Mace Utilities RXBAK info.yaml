@@ -1,0 +1,14 @@
+Name: Mace Utilities RXBAK info
+Description: Collection of DOS tools by Paul Mace Software.
+FileNameExtensions: ["m_u"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 7
+    AsciiString: " M_U"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "PM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BACK"
+    CaseSensitive: false

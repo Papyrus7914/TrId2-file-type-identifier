@@ -1,0 +1,11 @@
+Name: NuppelVideo (MythTV) video
+URL: "http://mythtv.org/"
+FileNameExtensions: ["nuv"]
+MimeType: video/x-nuv
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MythTVVideo\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true

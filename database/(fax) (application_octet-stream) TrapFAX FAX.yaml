@@ -1,0 +1,17 @@
+Name: TrapFAX FAX
+Description: FAX application for Amiga by TrapDoor Development.
+FileNameExtensions: ["fax"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CAT "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "FAXXFORM"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "FAXXFXHD"
+    CaseSensitive: true
+  - Pos: 67
+    AsciiString: "TrapDoor Development\0PAGE"
+    CaseSensitive: true

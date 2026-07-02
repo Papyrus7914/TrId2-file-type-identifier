@@ -1,0 +1,71 @@
+Name: pbnsolve Paint-by-Number XML puzzle format
+URL: "http://webpbn.com/pbn_fmt.html"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE PBN SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C) COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULTCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PBN-0.3.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUZZLE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLUES TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEBPBN.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUZZLESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WHITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION"
+    CaseSensitive: false

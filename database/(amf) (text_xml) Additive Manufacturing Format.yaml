@@ -1,0 +1,29 @@
+Name: Additive Manufacturing Format
+URL: "https://en.wikipedia.org/wiki/Additive_Manufacturing_File_Format"
+FileNameExtensions: ["amf"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "1.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COORDINATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMF"
+    CaseSensitive: false

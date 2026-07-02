@@ -1,0 +1,13 @@
+Name: RPC III file
+URL: "http://www.mts.com/rpc3/"
+FileNameExtensions: ["tim"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORMAT"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "NUM_HEADER_BLOCKS"
+    CaseSensitive: true
+  - Pos: 256
+    AsciiString: "NUM_PARAMS"
+    CaseSensitive: true

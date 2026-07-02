@@ -1,0 +1,39 @@
+Name: Ransomware encrypted (unknown)
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ENC\r\n"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\0\0\r\nYou used to download illegal files from the internet. Your private files has been locked and encrypted!\r\nTo unblock them visit one of these websites:\r\nhttp://unblockupc.xyz ; http://unblockupc.in ; http://moscovravir.ru ; http://213.167.243.215 ; http://185.45.192.17 ; http://unblockupc.club\r\nYour UID: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "YOU USED TO DOWNLOAD ILLEGAL FILES FROM THE INTERNET. YOUR PRIVATE FILES HAS BEEN LOCKED AND ENCRYPTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TO UNBLOCK THEM VISIT ONE OF THESE WEBSITES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "213.167.243.215"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNBLOCKUPC.CLUB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOSCOVRAVIR.RU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNBLOCKUPC.XYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "185.45.192.17"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNBLOCKUPC.IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOUR UID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

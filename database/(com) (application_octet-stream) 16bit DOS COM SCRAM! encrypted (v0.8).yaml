@@ -1,0 +1,31 @@
+Name: 16bit DOS COM SCRAM! encrypted (v0.8)
+Description: COM encryptor by bushwoelie and ACP.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SCRAM\xB40\xCD!<\x02w\x02\xCD \xBC:\x01\xB9"
+    CaseSensitive: true
+  - Pos: 21
+    Bytes: [0x8B, 0xFC, 0xB2]
+  - Pos: 25
+    #        X     L                 *                                   2                                   s                 \t                            s           G                       I     u
+    Bytes: [0x58, 0x4C, 0xF6, 0xD8, 0x2A, 0xC2, 0xD2, 0xC8, 0xFE, 0xCA, 0x32, 0xD1, 0x81, 0xFF, 0xD1, 0x02, 0x73, 0x02, 0xEB, 0x09, 0x81, 0xFF, 0x9B, 0x03, 0x73, 0x03, 0x47, 0xEB, 0x01, 0xAA, 0x49, 0x75, 0xDF]
+  - Pos: 465
+    AsciiString: "\r\n\r\n\xC9\xCD\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xCD\xBB\r\n\xB3 SCRAM! v0.8a1 by bushwoelie & ACP \xB3\r\n\xB3  Compiled at 17:35:34 / 05/13/97  \xB3\r\n\xB3    Registered to: tHE pUBLIC!     \xB3\r\n\xC8\xCD\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xC4\xCD\xBC\r\n\r\n$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "V0.8A1 BY BUSHWOELIE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILED AT 17"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERED TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRAM"
+    CaseSensitive: false

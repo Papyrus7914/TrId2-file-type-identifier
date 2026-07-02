@@ -1,0 +1,146 @@
+Name: DLL PowerBASIC/Win 7.x
+URL: "http://www.powerbasic.com"
+FileNameExtensions: ["dll"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\n\0\x02\0\0\0\x04\0\x0F\0\xFF\xFF\0\0\xC0\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0\0\xB4\t\xBA\x10\0\x0E\x1F\xCD!\xB8\x01L\xCD!\x90\x90This is a Win32 program.\r\n$\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0PE\0\0L\x01"
+    CaseSensitive: true
+  - Pos: 135
+    AsciiString: "\090\0\0\0\0\0\0\0\0\0\0\xE0\0\x0E#\v\x01\x024"
+    CaseSensitive: true
+  - Pos: 294
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0.text\0  "
+    CaseSensitive: true
+  - Pos: 395
+    AsciiString: "\0\0\x04\0\0\0\0\0\0\0\0\0\0\0\0\0\0 \0\0`.data\0  "
+    CaseSensitive: true
+  - Pos: 439
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0@\0\0\xC0.link\0  "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADVAPI32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXITPROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOATINGPOINTPROCESSOR\0H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLUSHFILEBUFFERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCOMMANDLINEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETENVIRONMENTSTRINGSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETLASTERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEHANDLEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTARTUPINFOA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSYSTEMINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETVERSIONEXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OLEAUT32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWERBASIC\0CONIN$\0TCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGCLOSEKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGOPENKEYEXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETENDOFFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETERRORMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETFILEPOINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETLASTERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLEEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSALLOCSTRINGBYTELEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSFREESTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSSTRINGBYTELEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS IS A WIN32 PROGRAM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITEFILE"
+    CaseSensitive: false

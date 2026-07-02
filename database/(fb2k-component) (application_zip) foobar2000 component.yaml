@@ -1,0 +1,14 @@
+Name: foobar2000 component
+URL: "http://wiki.hydrogenaud.io/index.php?title=Foobar2000"
+FileNameExtensions: ["fb2k-component"]
+MimeType: application/zip
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOO_"
+    CaseSensitive: false

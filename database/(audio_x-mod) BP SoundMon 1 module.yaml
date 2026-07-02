@@ -1,0 +1,17 @@
+Name: BP SoundMon 1 module
+Description: Music editor created by Brian Postma.
+URL: "http://www.exotica.org.uk/wiki/SoundMon"
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 20
+    AsciiString: "\0\0\0\0\0\0BPSM\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "-01:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ST-01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BPSM"
+    CaseSensitive: false

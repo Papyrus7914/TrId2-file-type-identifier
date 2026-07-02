@@ -1,0 +1,31 @@
+Name: Darwinia Shape
+FileNameExtensions: ["shp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Fragment: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PARENTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCENEROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAGMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOURS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRONT"
+    CaseSensitive: false

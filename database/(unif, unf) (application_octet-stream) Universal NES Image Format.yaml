@@ -1,0 +1,15 @@
+Name: Universal NES Image Format
+Description: Container for NES and Famicom ROM images.
+URL: "http://wiki.nesdev.com/w/index.php/UNIF"
+FileNameExtensions: ["unif", "unf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "UNIF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAPR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRG0"
+    CaseSensitive: false

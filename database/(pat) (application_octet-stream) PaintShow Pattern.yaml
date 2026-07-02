@@ -1,0 +1,10 @@
+Name: PaintShow Pattern
+Description: Old DOS painter program by Logitech.
+FileNameExtensions: ["pat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PA\x10"
+    CaseSensitive: true
+  - Pos: 6
+    Bytes: [0x1A]

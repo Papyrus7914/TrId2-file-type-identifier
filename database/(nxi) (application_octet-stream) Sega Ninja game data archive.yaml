@@ -1,0 +1,13 @@
+Name: Sega Ninja game data archive
+FileNameExtensions: ["nxi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NXIF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOF0"
+    CaseSensitive: false

@@ -1,0 +1,65 @@
+Name: Flexi driver configuration
+URL: "https://www.thinksai.com/it-eu/products/flexi"
+FileNameExtensions: ["csm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(MAKER TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4-ENGRAVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2-PRINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENGRAVING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1-CUTTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISINKJET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUTTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSETX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSETY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLOTTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGMARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROUTER)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PPD$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

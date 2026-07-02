@@ -1,0 +1,26 @@
+Name: Datacolor QTX format (batch)
+URL: "http://knowledgebase.datacolor.com/article-609.html"
+FileNameExtensions: ["qtx"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[BATCH_DATA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BAT_REFLINTERVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAT_REFLPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAT_DATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAT_REFLLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BAT_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STD_NAME"
+    CaseSensitive: false

@@ -1,0 +1,212 @@
+Name: Nanosurf EZD SPM data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/ezdfile.c"
+FileNameExtensions: ["ezd", "nid"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[DataSet]\r\nVersion="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTROLLER BOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRMWARE VER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETVIEW-VIEW0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE VER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- GLOBAL --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- MODULE --"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTROLLER S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET-INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOZRANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANTILEVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXCITATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUPCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USB MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMPLITUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET-0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM0RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM1RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM2RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GR0-COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAN HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM0NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM0UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM2NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM2UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GR0-NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OP. MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEBITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETINFOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANNEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM0MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM1MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIM2MIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYNAMIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWTYP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GR0-CH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GR0-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMPL."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWEEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

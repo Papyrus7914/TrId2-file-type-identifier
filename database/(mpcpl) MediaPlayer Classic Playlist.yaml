@@ -1,0 +1,13 @@
+Name: MediaPlayer Classic Playlist
+URL: "http://sourceforge.net/projects/guliverkli/"
+FileNameExtensions: ["mpcpl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MPCPLAYLIST\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

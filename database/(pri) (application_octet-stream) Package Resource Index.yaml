@@ -1,0 +1,23 @@
+Name: Package Resource Index
+URL: "https://msdn.microsoft.com/en-us/library/windows/apps/jj552947.aspx#pri"
+FileNameExtensions: ["pri"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "mrm_pri"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "[mrm_decn_info]"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "[mrm_pridescex]"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "[mrm_hschema"
+    CaseSensitive: true
+  - Pos: 128
+    AsciiString: "[mrm_res_map"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "M\0S\0-\0A\0P\0P\0X"
+    CaseSensitive: false

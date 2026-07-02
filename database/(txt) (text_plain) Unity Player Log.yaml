@@ -1,0 +1,59 @@
+Name: Unity Player Log
+URL: "https://docs.unity3d.com/Manual/log-files.html"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Initialize engine version: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN MONOMANAGER RELOADASSEMBLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALIZE ENGINE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATING DEVICE CLIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- COMPLETED RELOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALIZING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNLOADTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GFXDEVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RENDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORK"
+    CaseSensitive: false

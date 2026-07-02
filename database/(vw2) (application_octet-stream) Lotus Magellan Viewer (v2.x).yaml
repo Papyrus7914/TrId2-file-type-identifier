@@ -1,0 +1,22 @@
+Name: Lotus Magellan Viewer (v2.x)
+URL: "https://en.wikipedia.org/wiki/Lotus_Magellan"
+FileNameExtensions: ["vw2"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xF0, 0x9C]
+  - Pos: 4
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VIEWER FILE NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VW2"
+    CaseSensitive: false

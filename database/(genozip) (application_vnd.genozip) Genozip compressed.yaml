@@ -1,0 +1,9 @@
+Name: Genozip compressed
+Description: Genozip is a lossless compressor for FASTQ, BAM/CRAM, VCF and many other genomic files.
+URL: "https://www.genozip.com/"
+FileNameExtensions: ["genozip"]
+MimeType: application/vnd.genozip
+DetectionPatterns:
+  - Pos: 0
+    #        \'          ␠
+    Bytes: [0x27, 0x05, 0x20, 0x12]

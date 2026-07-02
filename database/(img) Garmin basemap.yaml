@@ -1,0 +1,25 @@
+Name: Garmin basemap
+URL: "http://www.garmin.com"
+FileNameExtensions: ["img"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: "DSKIMG"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "\x02GARMIN\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GARMIN LBL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GARMIN RGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GARMIN TRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DSKIMG"
+    CaseSensitive: false

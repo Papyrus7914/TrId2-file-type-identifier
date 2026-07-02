@@ -1,0 +1,10 @@
+Name: Image for Windows Disk Image
+URL: "http://www.terabyteunlimited.com"
+FileNameExtensions: ["tbi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0\x14\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "IMG2\0\0\0\0"
+    CaseSensitive: true

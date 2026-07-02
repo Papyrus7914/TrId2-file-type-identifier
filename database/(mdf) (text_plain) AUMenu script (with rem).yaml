@@ -1,0 +1,27 @@
+Name: AUMenu script (with rem)
+Description: Multi-platform menu shell by Eugiworks Inc.
+URL: "http://web.archive.org/web/20080512083116/http://members.aol.com/aumenu/index.html"
+FileNameExtensions: ["mdf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MENUBEGIN MAINMENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENUEND MAINMENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENUTITLE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMTITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false

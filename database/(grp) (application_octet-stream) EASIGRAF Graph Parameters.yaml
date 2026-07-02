@@ -1,0 +1,32 @@
+Name: EASIGRAF Graph Parameters
+Description: DOS graphing program by ARC Scientific Limited.
+FileNameExtensions: ["grp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PARMS:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XINC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YINC"
+    CaseSensitive: false

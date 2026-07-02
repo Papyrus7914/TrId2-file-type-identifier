@@ -1,0 +1,41 @@
+Name: Spectre VR Matrix
+URL: "https://en.wikipedia.org/wiki/Spectre_(1991_video_game)"
+FileNameExtensions: ["mat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SSWF"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "bval"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SPECTRE CLASSIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPECTRE VR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATRIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8STR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BVAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSTF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRLD"
+    CaseSensitive: false

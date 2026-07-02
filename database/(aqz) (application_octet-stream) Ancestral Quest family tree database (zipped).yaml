@@ -1,0 +1,11 @@
+Name: Ancestral Quest family tree database (zipped)
+URL: "https://www.ancquest.com/"
+FileNameExtensions: ["aqz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".AQPK"
+    CaseSensitive: false

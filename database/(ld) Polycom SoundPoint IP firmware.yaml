@@ -1,0 +1,51 @@
+Name: Polycom SoundPoint IP firmware
+URL: "http://en.wikipedia.org/wiki/Polycom"
+FileNameExtensions: ["ld"]
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFF, 0xFF, 0xFF]
+  - Pos: 10
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TARGETFLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHONETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILDID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYCOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0X0000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGMAX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIG_"
+    CaseSensitive: false

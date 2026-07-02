@@ -1,0 +1,8 @@
+Name: Extended TCPDUMP's style capture (big-endian)
+URL: "https://en.wikipedia.org/wiki/Tcpdump"
+FileNameExtensions: ["pcap"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          4
+    Bytes: [0xA1, 0xB2, 0xCD, 0x34]

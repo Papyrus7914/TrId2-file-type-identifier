@@ -1,0 +1,20 @@
+Name: MLT XML
+URL: "https://github.com/mltframework/mlt/blob/master/docs/mlt-xml.txt"
+FileNameExtensions: ["xml"]
+MimeType: application/vnd.mlt+xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROPERTY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MLT"
+    CaseSensitive: false

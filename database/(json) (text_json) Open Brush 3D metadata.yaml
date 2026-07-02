@@ -1,0 +1,18 @@
+Name: Open Brush 3D metadata
+Description: Contained in .TILT files.
+URL: "http://fileformats.archiveteam.org/wiki/Tilt_Brush"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THUMBNAILCAMERATRANSFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENVIRONMENTPRESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUSHINDEX"
+    CaseSensitive: false

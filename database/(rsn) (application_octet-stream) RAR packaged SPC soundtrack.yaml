@@ -1,0 +1,14 @@
+Name: RAR packaged SPC soundtrack
+URL: "http://snesmusic.org/v2/players.php"
+FileNameExtensions: ["rsn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Rar!\x1A"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "info.txt"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "01.SPC"
+    CaseSensitive: false

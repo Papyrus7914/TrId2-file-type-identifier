@@ -1,0 +1,15 @@
+Name: TAR - Tape ARchive (POSIX)
+Description: Variant at offset 257 indicator ustar\0 followed by version "00" created for example by GNU tar with "posix" format option.
+URL: "https://en.wikipedia.org/wiki/Tar_(computing)"
+FileNameExtensions: ["tar", "ustar"]
+MimeType: application/x-ustar
+DetectionPatterns:
+  - Pos: 257
+    AsciiString: "ustar\000"
+    CaseSensitive: true
+  - Pos: 500
+    AsciiString: "\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 511
+    AsciiString: "\0"
+    CaseSensitive: true

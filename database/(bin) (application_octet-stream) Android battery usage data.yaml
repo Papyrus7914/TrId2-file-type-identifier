@@ -1,0 +1,85 @@
+Name: Android battery usage data
+Description: File batterystats.bin.
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    Bytes: [0x00, 0x00, 0xFD, 0xFF, 0x03, 0x00]
+  - Pos: 24
+    AsciiString: "\0\0\0\0\x01"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "#\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P\0O\0W\0E\0R\0M\0A\0N\0A\0G\0E\0R\0S\0E\0R\0V\0I\0C\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0E\0L\0E\0T\0E\0D\0_\0W\0A\0K\0E\0_\0L\0O\0C\0K\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0U\0S\0P\0E\0N\0D\0_\0B\0A\0C\0K\0O\0F\0F"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U\0N\0K\0N\0O\0W\0N\0_\0W\0A\0K\0E\0U\0P\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0X\0_\0W\0A\0K\0E\0_\0L\0O\0C\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0O\0W\0E\0R\0-\0S\0U\0P\0P\0L\0Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0M\0C\00\0_\0D\0E\0T\0E\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0M\0C\01\0_\0D\0E\0T\0E\0C\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0L\0A\0R\0M\0_\0R\0T\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0A\0K\0E\0L\0O\0C\0K"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0U\0D\0I\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B\0A\0T\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0A\0I\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M\0M\0A\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0C\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0D\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0R\0Q"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0U\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0L\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U\0S\0B"
+    CaseSensitive: false

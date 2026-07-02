@@ -1,0 +1,14 @@
+Name: Marmalade SDK project
+URL: "https://en.wikipedia.org/wiki/Marmalade_(software)"
+FileNameExtensions: ["mkb"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#!/usr/bin/env mkb\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SUBPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

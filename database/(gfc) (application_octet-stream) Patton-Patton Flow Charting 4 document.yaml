@@ -1,0 +1,10 @@
+Name: Patton-Patton Flow Charting 4 document
+URL: "http://www.patton-patton.com/"
+FileNameExtensions: ["gfc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        \f
+    Bytes: [0x0C, 0xEF, 0xCD, 0xAB]
+  - Pos: 6
+    Bytes: [0xF4, 0xFE, 0xFF, 0xFF]

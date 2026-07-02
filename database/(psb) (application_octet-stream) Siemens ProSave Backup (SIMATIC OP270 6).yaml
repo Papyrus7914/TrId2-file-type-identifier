@@ -1,0 +1,20 @@
+Name: Siemens ProSave Backup (SIMATIC OP270 6")
+URL: "https://www.siemens.com/global/en/products/automation/systems/industrial/plc.html"
+FileNameExtensions: ["psb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OP270 6\"\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PTPRORUN.PWL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OP270 6"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIMATIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH"
+    CaseSensitive: false

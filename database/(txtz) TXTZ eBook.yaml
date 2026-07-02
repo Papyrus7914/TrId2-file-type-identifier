@@ -1,0 +1,13 @@
+Name: TXTZ eBook
+URL: "http://en.wikipedia.org/wiki/Calibre_%28software%29"
+FileNameExtensions: ["txtz"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "METADATA.OPFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX.TXTPK"
+    CaseSensitive: false

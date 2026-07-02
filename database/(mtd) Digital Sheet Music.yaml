@@ -1,0 +1,19 @@
+Name: Digital Sheet Music
+URL: "http://www.musicnotes.com/"
+FileNameExtensions: ["mtd"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "MTDFmtdp"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "pgin"
+    CaseSensitive: true
+  - Pos: 60
+    AsciiString: "LIST"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "INFOI"
+    CaseSensitive: true

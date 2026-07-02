@@ -1,0 +1,22 @@
+Name: eJay Music Director Project
+FileNameExtensions: ["mdx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MUSICDIR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RECORD\0RECFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUSICDIRECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false

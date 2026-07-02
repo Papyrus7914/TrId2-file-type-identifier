@@ -1,0 +1,23 @@
+Name: TriG RDF serialization format
+URL: "https://en.wikipedia.org/wiki/TriG_(syntax)"
+FileNameExtensions: ["trig"]
+MimeType: application/trig
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@prefix "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "22-RDF-SYNTAX-NS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFIX RDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

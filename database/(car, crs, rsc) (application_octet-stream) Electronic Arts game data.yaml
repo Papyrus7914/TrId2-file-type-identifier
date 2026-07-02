@@ -1,0 +1,14 @@
+Name: Electronic Arts game data
+URL: "https://en.wikipedia.org/wiki/Electronic_Arts"
+FileNameExtensions: ["car", "crs", "rsc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CRSR"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "LBTR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LBTR"
+    CaseSensitive: false

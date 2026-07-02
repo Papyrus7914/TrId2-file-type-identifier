@@ -1,0 +1,12 @@
+Name: Starsiege Tribes game data archive
+Description: Used also by Earth Siege 2.
+URL: "https://en.wikipedia.org/wiki/Starsiege:_Tribes"
+FileNameExtensions: ["vol"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PVOL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VBLK"
+    CaseSensitive: false

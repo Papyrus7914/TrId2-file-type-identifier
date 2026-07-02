@@ -1,0 +1,11 @@
+Name: Beam Software SIFF container (generic)
+Description: https://wiki.multimedia.cx/index.php/SIFF
+FileNameExtensions: ["pim", "son", "vb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SIFF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: LabVIEW binary Datalog
+URL: "http://en.wikipedia.org/wiki/Labview"
+FileNameExtensions: ["dat", "log"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DTLG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NI_UNITDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NI_DEVICENUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NI_CHANNELNAME"
+    CaseSensitive: false

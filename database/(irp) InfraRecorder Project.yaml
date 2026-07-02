@@ -1,0 +1,38 @@
+Name: InfraRecorder Project
+Description: A free CD/DVD burning application.
+URL: "http://infrarecorder.sourceforge.net/"
+FileNameExtensions: ["irp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFE<\0?\0x\0m\0l\0 \0v\0e\0r\0s\0i\0o\0n\0=\0\"\01\0.\00\0\"\0 \0e\0n\0c\0o\0d\0i\0n\0g\0=\0\"\0u\0t\0f\0-\01\06\0\"\0 \0s\0t\0a\0n\0d\0a\0l\0o\0n\0e\0=\0\"\0y\0e\0s\0\"\0?\0>\0\r\0\n\0<\0I\0n\0f\0r\0a\0R\0e\0c\0o\0r\0d\0e\0r\0>\0\r\0\n\0\t\0<\0P\0r\0o\0j\0e\0c\0t\0 \0v\0e\0r\0s\0i\0o\0n\0=\0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P\0R\0O\0J\0E\0C\0T\0 \0V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0F\0R\0A\0R\0E\0C\0O\0R\0D\0E\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X\0M\0L\0 \0V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0A\0N\0D\0A\0L\0O\0N\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0N\0C\0O\0D\0I\0N\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U\0T\0F\0-\01\06"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1\0.\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0V\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y\0E\0S"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Novell DOS Client Message
+Description: At offset 25 often file name
+URL: "http://www.antonis.de/dos/dos-tuts/mpdostip/html/nwdostip.htm"
+FileNameExtensions: ["msg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DOS Client Message File: "
+    CaseSensitive: true
+  - Pos: 101
+    Bytes: [0x1A]
+  - Pos: any
+    AsciiString: "TRAN"
+    CaseSensitive: false

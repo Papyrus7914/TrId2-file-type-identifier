@@ -1,0 +1,14 @@
+Name: WildMidi Configuration
+URL: "http://www.mindwerks.net/projects/wildmidi/"
+FileNameExtensions: ["cfg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "dir PROGDIR:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DRUMSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BANK"
+    CaseSensitive: false

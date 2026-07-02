@@ -1,0 +1,14 @@
+Name: Chipcardmaster Phonebook
+URL: "http://www.chipcardmaster.de/"
+FileNameExtensions: ["phn"]
+MimeType: text/x-phn
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[AUTHOR]\r\nAUT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHIPCARDMASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false

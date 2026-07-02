@@ -1,0 +1,110 @@
+Name: TeX Font Metric (0x78)
+Description: variant with header size 78h words; at offset 4 file size in words, at offset 37 encoding name (TEX KANJI TEXT maximal 39), at 77 font family name MINCHO or GOTHIC, at 96 probably seven bit safe 80h
+URL: "http://fileformats.archiveteam.org/wiki/TeX_Font_Metrics"
+FileNameExtensions: ["tfm"]
+MimeType: application/x-tex-tfm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\v\0x\x01"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\x12\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "\0\x05\0\x02\0\x02\0\x01\0"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\x18\0\t"
+    CaseSensitive: true
+  - Pos: 30
+    Bytes: [0xD0]
+  - Pos: 32
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 34
+    AsciiString: "\0\0\x0ETEX KANJI TEXT\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x06"
+    CaseSensitive: true
+  - Pos: 83
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\x80\0\0"
+    CaseSensitive: true
+  - Pos: 100
+    AsciiString: "\0\0\0\0!\"\0"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "!#\0"
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "!$\0"
+    CaseSensitive: true
+  - Pos: 116
+    AsciiString: "!%\0"
+    CaseSensitive: true
+  - Pos: 120
+    AsciiString: "!&\0\x04!'\0\x04!(\0\x04!)\0\x05!*\0\x04!+\0\x02!,\0\x02!-\0\x04!.\0\x04!/\0\x05!0\0\x05!3\0\x05!5\0\x05!6\0\x03!7\0\x03!9\0\x03!>\0\x04!B\0\x04!C\0\x04!F\0\x04!G\0\x04!H\0\x05!I\0\x05!J\0\x06!K\0\x01!L\0\x06!M\0\x01!N\0\x06!O\0\x01!P\0\x06!Q\0\x01!R\0\x06!S\0\x01!T\0\x06!U\0\x01!V\0\x06!W\0\x01!X\0\x06!Y\0\x01!Z\0\x06![\0\x01!h\0\x03!i\0\x03!j\0\x03!k\0\x05!l\0\x05!m\0\x05!p\0\x03!q\0\x03!r\0\x03!x\0\x05$!\0\x03$#\0\x03$%\0\x03$&\0\a$'\0\x03$)\0\x03$/\0\a$0\0\a$1\0\a$2\0\a$9\0\a$:\0\a$C\0\x03$c\0\x03$e\0\x03$g\0\x03$j\0\a$n\0\x03%!\0\x03%\"\0"
+    CaseSensitive: true
+  - Pos: 404
+    AsciiString: "%#\0\x03%$\0"
+    CaseSensitive: true
+  - Pos: 412
+    AsciiString: "%%\0\x03%&\0"
+    CaseSensitive: true
+  - Pos: 420
+    AsciiString: "%'\0\x03%)\0\x03%*\0"
+    CaseSensitive: true
+  - Pos: 432
+    AsciiString: "%/\0"
+    CaseSensitive: true
+  - Pos: 436
+    AsciiString: "%0\0"
+    CaseSensitive: true
+  - Pos: 440
+    AsciiString: "%1\0"
+    CaseSensitive: true
+  - Pos: 444
+    AsciiString: "%2\0"
+    CaseSensitive: true
+  - Pos: 448
+    AsciiString: "%5\0"
+    CaseSensitive: true
+  - Pos: 452
+    AsciiString: "%6\0"
+    CaseSensitive: true
+  - Pos: 456
+    AsciiString: "%=\0"
+    CaseSensitive: true
+  - Pos: 460
+    AsciiString: "%>\0"
+    CaseSensitive: true
+  - Pos: 464
+    AsciiString: "%?\0"
+    CaseSensitive: true
+  - Pos: 468
+    AsciiString: "%@\0"
+    CaseSensitive: true
+  - Pos: 472
+    AsciiString: "%A\0"
+    CaseSensitive: true
+  - Pos: 476
+    AsciiString: "%B\0"
+    CaseSensitive: true
+  - Pos: 480
+    AsciiString: "%C\0\x03%D\0"
+    CaseSensitive: true
+  - Pos: 488
+    AsciiString: "%E\0"
+    CaseSensitive: true
+  - Pos: 492
+    AsciiString: "%F\0\a%G\0\a%H\0"
+    CaseSensitive: true
+  - Pos: 504
+    AsciiString: "%I\0"
+    CaseSensitive: true
+  - Pos: 508
+    AsciiString: "%J\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEX KANJI TEXT"
+    CaseSensitive: false

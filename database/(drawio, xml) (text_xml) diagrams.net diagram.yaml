@@ -1,0 +1,12 @@
+Name: diagrams.net diagram
+Description: Was www.draw.io.
+URL: "https://www.diagrams.net/"
+FileNameExtensions: ["drawio", "xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<mxfile"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIAGRAM"
+    CaseSensitive: false

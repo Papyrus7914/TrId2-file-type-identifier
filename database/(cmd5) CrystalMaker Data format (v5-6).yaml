@@ -1,0 +1,94 @@
+Name: CrystalMaker Data format (v5-6)
+URL: "http://www.crystalmaker.co.uk/"
+FileNameExtensions: ["cmd5"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CMD5(CrystalMaker) "
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "REND"
+    CaseSensitive: true
+  - Pos: 100
+    AsciiString: "DCUE"
+    CaseSensitive: true
+  - Pos: 117
+    AsciiString: "PRSP"
+    CaseSensitive: true
+  - Pos: 126
+    AsciiString: "MODL"
+    CaseSensitive: true
+  - Pos: 131
+    AsciiString: "SCLP"
+    CaseSensitive: true
+  - Pos: 138
+    AsciiString: "BRAD>"
+    CaseSensitive: true
+  - Pos: 150
+    AsciiString: "SURF\0"
+    CaseSensitive: true
+  - Pos: 185
+    AsciiString: "UCEL\x01"
+    CaseSensitive: true
+  - Pos: 204
+    AsciiString: "AXES"
+    CaseSensitive: true
+  - Pos: 210
+    AsciiString: "LABL\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ATOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUNI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DCUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RANG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UCEL"
+    CaseSensitive: false

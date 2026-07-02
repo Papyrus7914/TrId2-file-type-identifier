@@ -1,0 +1,34 @@
+Name: Authorware Module
+URL: "https://en.wikipedia.org/wiki/Adobe_Authorware"
+FileNameExtensions: ["mod"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        W     M     O     D
+    Bytes: [0x57, 0x4D, 0x4F, 0x44, 0xA8, 0xB2, 0xB0, 0xBB]
+  - Pos: 13
+    Bytes: [0xFF, 0xFF, 0xFF]
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT FRAMEWORK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIG\0WIN\0001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT FR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WCLP"
+    CaseSensitive: false

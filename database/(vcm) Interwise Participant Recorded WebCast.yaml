@@ -1,0 +1,28 @@
+Name: Interwise Participant Recorded WebCast
+URL: "http://www.interwise.com/"
+FileNameExtensions: ["vcm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Rar!\x1A"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "Lesson\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RAR_INFO.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LESSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VCS"
+    CaseSensitive: false

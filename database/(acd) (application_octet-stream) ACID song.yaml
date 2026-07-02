@@ -1,0 +1,56 @@
+Name: ACID song
+URL: "http://fileformats.archiveteam.org/wiki/Sonic_Foundry_Acid"
+FileNameExtensions: ["acd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "ACIDfmt "
+    CaseSensitive: true
+  - Pos: 584
+    AsciiString: "LIST"
+    CaseSensitive: true
+  - Pos: 592
+    AsciiString: "tlstLIST"
+    CaseSensitive: true
+  - Pos: 604
+    AsciiString: "traktrkh"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRTSPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RGN RGNH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLSTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TLSTLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRAKTRKH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XLSTGAIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0A\0C\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0W\0A\0V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACIDFMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMAP"
+    CaseSensitive: false

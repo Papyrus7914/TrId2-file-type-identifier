@@ -1,0 +1,11 @@
+Name: Watcom Profiler Sampling data
+URL: "https://en.wikipedia.org/wiki/Watcom"
+FileNameExtensions: ["smp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WATCOM Profiler data file V"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "."
+    CaseSensitive: true

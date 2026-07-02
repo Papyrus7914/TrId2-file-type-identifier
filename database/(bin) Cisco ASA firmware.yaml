@@ -1,0 +1,78 @@
+Name: Cisco ASA firmware
+FileNameExtensions: ["bin"]
+DetectionPatterns:
+  - Pos: 0
+    #              g     .                             }                 f                       f
+    Bytes: [0xFA, 0x67, 0x2E, 0x0F, 0x01, 0x15, 0xBC, 0x7D, 0x00, 0x00, 0x66, 0x0F, 0x01, 0xE0, 0x66, 0x83, 0xC8, 0x01]
+  - Pos: 420
+    AsciiString: "\0\0\0\0\0\0\0\0\xFF\xFF\0\0\0\x9F\xCF\0\xFF\xFF\0\0\0\x93\xCF\0\x17\0\xA4}\0\0\r\nFinesse floppy bootstrap (V2.0)\r\n\0\xE6\0\0\0\0\x02\x12\x1B\xFF\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0U\xAA\v\x01d\0\0"
+    CaseSensitive: true
+  - Pos: 518
+    AsciiString: "\0\0\0\x10\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 530
+    AsciiString: "\0\0\0\xA0\0\0\0\0\0\0\0\0\0\0\x0F\x01\x159\xA0\0\0\x0F \xC0\x83\xC8\x01\x0F\"\xC0\xF8s\x02\x89\xC0\xBC\0\0\n\0\xE8"
+    CaseSensitive: true
+  - Pos: 572
+    AsciiString: "\0\0\0\xEB\xFE\0\0\0\0\0\0\0\0\xFF\xFF\0\0\0\x9F\xCF\0\xFF\xFF\0\0\0\x93\xCF\0\x17\0!\xA0\0\0\x90\r\n%s\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CISCO PIX SECURITY APPLIANCE\0FIREWALL SERVICES MODULE\0ADAPTIVE SECURITY APPLIANCE\0UNEXPECTED PLATFORM TYPE 0X%X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CISCO ADAPTIVE SECURITY APPLIANCE SOFTWARE VERSION\0UNKNOWN PLATFORM 0X%X VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CISCO PIX SECURITY APPLIANCE SOFTWARE VERSION\0FWSM FIREWALL VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHECKSUM VERIFICATION ON INSTALL IMAGE FAILED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECURITY APPLIANCE FLOPPY LOADER (3.0)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECURITY APPLIANCE ADMIN LOADER (3.0)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXFIREWALL\0CISCOASA\0PLATFORM0X%X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINESSE FLOPPY BOOTSTRAP (V2.0)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIX\0ASA\0PLATFORM-TYPE-0X%X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REBOOTING..."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LE VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIX-506E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIX-515E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIX-525"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIX-535"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTED"
+    CaseSensitive: false

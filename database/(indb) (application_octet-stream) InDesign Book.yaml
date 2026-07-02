@@ -1,0 +1,14 @@
+Name: InDesign Book
+Description: InDesign is a professional layout and design software.
+URL: "http://fileformats.archiveteam.org/wiki/InDesign_Book"
+FileNameExtensions: ["indb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x06, 0x06]
+  - Pos: 16
+    AsciiString: "BOOKBOOK"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOOKBOOK"
+    CaseSensitive: false

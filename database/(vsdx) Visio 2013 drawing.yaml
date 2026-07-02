@@ -1,0 +1,49 @@
+Name: Visio 2013 drawing
+URL: "http://en.wikipedia.org/wiki/Microsoft_Visio"
+FileNameExtensions: ["vsdx"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "DOCUMENT.XML.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES.XML.RELSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.EMFPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_TYPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOM.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE1.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP.XMLPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCPROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_RELS"
+    CaseSensitive: false

@@ -1,0 +1,35 @@
+Name: TwinCAT PLC Task Object
+URL: "https://www.beckhoff.com/en-en/products/automation/twincat/"
+FileNameExtensions: ["tctto"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "--CYCLETIME IN MICRO SECONDS.--"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCPLCOBJECT VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSTCYCLEUPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASKFBGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASK NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIORITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FB_EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FB_INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POUCALL"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Lotus 123 Worksheet (V4)
+Description: WT4 is used for Worksheet template V4. revision number 1002h and sub code 0004h stored at offset 4
+URL: "http://www.aboutvb.de/bas/formate/pdf/wk3.pdf"
+FileNameExtensions: ["wk4", "wt4"]
+MimeType: application/vnd.lotus-1-2-3
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x00, 0x1A, 0x00, 0x02, 0x10, 0x04, 0x00]
+  - Pos: 19
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WK3\0WK3 PROPERTY"
+    CaseSensitive: false

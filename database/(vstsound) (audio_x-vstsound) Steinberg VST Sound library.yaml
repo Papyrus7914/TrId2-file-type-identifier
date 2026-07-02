@@ -1,0 +1,11 @@
+Name: Steinberg VST Sound library
+URL: "http://en.wikipedia.org/wiki/Steinberg_Cubase"
+FileNameExtensions: ["vstsound"]
+MimeType: audio/x-vstsound
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Steinberg Resource File\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false

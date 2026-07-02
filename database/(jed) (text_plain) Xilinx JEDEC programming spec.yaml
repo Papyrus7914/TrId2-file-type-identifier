@@ -1,0 +1,14 @@
+Name: Xilinx JEDEC programming spec
+URL: "https://en.wikipedia.org/wiki/JEDEC"
+FileNameExtensions: ["jed"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Programmer Jedec Bit Map"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATE EXTRACTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "N DEVICE"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: 1dir+ Additionals Commands definition
+URL: "https://www.gerritspeek.nl/computer/pc_mp_filemanagers.html#1dir"
+FileNameExtensions: ["cmd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "COMMAND "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWDIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNS"
+    CaseSensitive: false

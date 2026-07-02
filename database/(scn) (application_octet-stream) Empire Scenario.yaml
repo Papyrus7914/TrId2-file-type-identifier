@@ -1,0 +1,23 @@
+Name: Empire Scenario
+URL: "https://www.mobygames.com/game/empire-deluxe"
+FileNameExtensions: ["scn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ESCN"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "TOC "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SDEF"
+    CaseSensitive: false

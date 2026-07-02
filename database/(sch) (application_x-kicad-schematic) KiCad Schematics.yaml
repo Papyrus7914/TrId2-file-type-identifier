@@ -1,0 +1,47 @@
+Name: KiCad Schematics
+URL: "http://en.wikipedia.org/wiki/KiCad"
+FileNameExtensions: ["sch"]
+MimeType: application/x-kicad-schematic
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "EESchema Schematic File Version "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$ENDSCHEMATC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EELAYER END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ENDDESCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DESCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false

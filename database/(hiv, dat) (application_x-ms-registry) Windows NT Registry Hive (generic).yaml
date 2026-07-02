@@ -1,0 +1,8 @@
+Name: Windows NT Registry Hive (generic)
+Description: A Hive file is the Windows Registry's on-disk storage format.
+FileNameExtensions: ["hiv", "dat"]
+MimeType: application/x-ms-registry
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "regf"
+    CaseSensitive: true

@@ -1,0 +1,18 @@
+Name: Memory-Map Navigator Overlay
+URL: "http://www.memory-map.com/"
+FileNameExtensions: ["mmo"]
+DetectionPatterns:
+  - Pos: 2
+    Bytes: [0xFF, 0xFF]
+  - Pos: 8
+    AsciiString: "CObjIcons\x0EUnnamed object"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNNAMED OBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CCATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COBJICONS"
+    CaseSensitive: false

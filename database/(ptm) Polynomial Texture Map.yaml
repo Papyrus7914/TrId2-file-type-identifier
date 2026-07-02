@@ -1,0 +1,13 @@
+Name: Polynomial Texture Map
+URL: "http://www.hpl.hp.com/ptm/"
+FileNameExtensions: ["ptm"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PTM_"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\nPTM_FORMAT_"
+    CaseSensitive: true

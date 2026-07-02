@@ -1,0 +1,33 @@
+Name: Corel Metafile Exchange Image (v6)
+Description: 2 at position 74 indicates version 6 and later.
+URL: "http://fileformats.archiveteam.org/wiki/CorelDRAW"
+FileNameExtensions: ["cmx"]
+MimeType: image/x-cmx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "CMX1cont\xB4\0\0\0{Corel Binary Meta File}\0\0\0\0\0\0\0\0Windows 3.1\0\0\0\0\02\0\0\0"
+    CaseSensitive: true
+  - Pos: 74
+    AsciiString: "2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "{COREL BINARY META FILE}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMX1CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RCLR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RLST"
+    CaseSensitive: false

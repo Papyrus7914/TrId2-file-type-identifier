@@ -1,0 +1,68 @@
+Name: Visual Studio Visual C++ Project
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_Studio"
+FileNameExtensions: ["vcxproj"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PROJECTCONFIGURATION INCLUDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT DEFAULTTARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTCONFIGURATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYGROUP LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORTGROUP LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(CONFIGURATION)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(VCTARGETSPATH)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP CONDITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMGROUP LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORT PROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT.CPP."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYSHEETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOOLSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$(PLATFORM)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTGUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVELOPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PROPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIR)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

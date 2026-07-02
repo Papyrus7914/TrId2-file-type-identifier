@@ -1,0 +1,854 @@
+Name: Pebble firmware
+URL: "https://en.wikipedia.org/wiki/Pebble_(watch)"
+FileNameExtensions: ["pbz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 29
+    AsciiString: "\0tintin_fw.bin"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STM32 PERIPHERAL LIBRARY TRIPPED AN ASSERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0X%X  SUBROUTINE CALL RETURN ADDRESS\0PC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAIRING INSTRUCTIONS\0%U PAIRED PHONE%C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID BIT NUMBER\0INVALID BIT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JANFEBMARAPRMAYJUNJULAUGSEPOCTNOVDEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARD FAULT HANDLER - YOU DUN GOOFED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%02X%02X%02X%02X%02X%02X%02X%02X\0%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERASING SECTORS FROM 0X%LX FOR %UB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO VERSION INFO OR LOOKUP FAILED\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789ABCDEF\00123456789ABCDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THAM_34_LIGHT_SUBSET\0RESOURCE_ID_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WANTED %U GOT %U\0INVALID COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOG LEVEL SET\0LOG LEVEL GET\0LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE_ID_DROID_SERIF_28_BOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOG DUMP CURRENT\0LOG DUMP LAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%02X-%02X-%02X-%02X-%02X-%02X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCORRECT NUMBER OF ARGUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARCH\0APRIL\0JUNE\0JULY\0AUGUST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICK 1 OR 0\0OK BIT ASSIGNED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0X%02X%02X%02X%02X%02X%02X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOTLOADER\0HARDWARE\0UPTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIAL PORT SERVER PORT %U"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0X%X  PROGRAM COUNTER\0PSR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE_ID_FONT_FALLBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH\0RESOURCE BANK INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAN NOT START MAIN TASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PEBBLE TECHNOLOGY CORP."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM_RESOURCES.PBPACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITE FLASH\0ERASE FLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS FACTORY RESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.GETPEBBLE.PRIVATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUNMONTUEWEDTHUFRISAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*** ASSERTION FAILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.GETPEBBLE.PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%S\0SYSTEM RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BT ADDRESS\0FIRMWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEGAL.GETPEBBLE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVAILABLE COMMANDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAILED TO ALLOCATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLASH IMAGING MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID APP NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE_ID_GOTHAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BOLD\0RESOURCE_ID_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABS_START_TIME_MS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS\0ERASING S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLUETOOTH CONNECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COM.GETPEBBLE.IOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECONNECT-TRY-NOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOG LEVEL SET TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFESTVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATUS REGISTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTRL-D TO STOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECODING ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOES NOT EXIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO APP RUNNING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT LAUNCH APP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIRPLANE MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP AVAILABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP_MANAGER.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTIFICATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUNDAY\0MONDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM_TASK.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TINTIN_FW.BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOP TO BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%I\0LOG LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%S {%U ARGS}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT BIT SET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW STACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%02X\0PEBBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%LU\0INVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLUETOOTH P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAILED TO S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMEBUFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATEDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATEDBY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME IS NOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRY\0INVALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CONNECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE APP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANIMATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISCONNECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUMP FLASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ING FAILED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANAGEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUST BE SE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OK %LU %LU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOL.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUEUE FULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESCHEDULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ST UPDATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T ACTIVE A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TW9RQW8AXQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKLIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERY C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIGURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEXDUMP.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALID S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEW ALARM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "READY FOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESETTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U MINUTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WATCHFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DIALOG.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALLBACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARGING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECEMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISCOVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACEBOOK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRIDAY\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM APP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAUNCHER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK 0X%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX_USED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERFLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAIRABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECOVERY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHUTDOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WATCHDOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_LOGGING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TIMER.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_UPDATE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".C\0HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".C\0TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIGNED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP\0APP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLE APP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUFFER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUFFER_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CK CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EUPDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAILURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNELM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LC_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCTOBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGGED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROVIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMEOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U BYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNKNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X\0X\0X\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BUFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALARMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLE TO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVENT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORCED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REBOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_APPLI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_INTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AFTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BER\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMPTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERY S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESTIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ION.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LARGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LED\0%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M_APP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUT.C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PANIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RRUPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TICKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TION_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_GET_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_STAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUSY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JANU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WITH"
+    CaseSensitive: false

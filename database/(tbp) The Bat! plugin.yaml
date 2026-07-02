@@ -1,0 +1,222 @@
+Name: The Bat! plugin
+URL: "http://www.ritlabs.com"
+FileNameExtensions: ["tbp"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\x04\0"
+    CaseSensitive: true
+  - Pos: 67
+    Bytes: [0x0E]
+  - Pos: 69
+    #              \t          !                 L           !
+    Bytes: [0xB4, 0x09, 0xCD, 0x21, 0xB8, 0x01, 0x4C, 0xCD, 0x21]
+  - Pos: 96
+    AsciiString: "t be run "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALIZECRITICALSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELETECRITICALSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTERCRITICALSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEAVECRITICALSECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIBYTETOWIDECHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDECHARTOMULTIBYTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEFILENAMEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGQUERYVALUEEXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBP_GETVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBP_INITIALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBP_GETSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGOPENKEYEXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETVERSIONEXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETTICKCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADVAPI32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS PROGRAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBP_FINALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETLASTERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBP_GETNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGCLOSEKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREELIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUALFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGEBOXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0T\0R\0I\0N\0G"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADLIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBP_NEEDCOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0P\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TBP_SETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERNAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLUSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PE\0\0L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RSRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0A\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

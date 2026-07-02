@@ -1,0 +1,11 @@
+Name: TextMaker Printer Driver
+URL: "https://en.wikipedia.org/wiki/TextMaker"
+FileNameExtensions: ["prd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Druckertreiber f\x81r TextMaker\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*ENDE*"
+    CaseSensitive: false

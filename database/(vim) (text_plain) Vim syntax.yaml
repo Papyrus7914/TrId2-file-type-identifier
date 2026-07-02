@@ -1,0 +1,23 @@
+Name: Vim syntax
+URL: "https://en.wikipedia.org/wiki/Vim_(text_editor)"
+FileNameExtensions: ["vim"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\" Vim syntax "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXISTS("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

@@ -1,0 +1,35 @@
+Name: SAP SQL Anywhere DataBase
+URL: "https://en.wikipedia.org/wiki/SQL_Anywhere"
+FileNameExtensions: ["db"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0^\xBAz\xDA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0123456789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAP SE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GDEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JOIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PVAL"
+    CaseSensitive: false

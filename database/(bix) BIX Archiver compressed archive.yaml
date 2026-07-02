@@ -1,0 +1,6 @@
+Name: BIX Archiver compressed archive
+FileNameExtensions: ["bix"]
+DetectionPatterns:
+  - Pos: 0
+    #        B     I     X     0
+    Bytes: [0x42, 0x49, 0x58, 0x30, 0xC1, 0xB8, 0x03, 0x9A, 0xF1]

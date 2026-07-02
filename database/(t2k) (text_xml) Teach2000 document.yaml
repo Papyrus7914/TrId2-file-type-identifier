@@ -1,0 +1,44 @@
+Name: Teach2000 document
+URL: "https://www.teach2000.org/"
+FileNameExtensions: ["t2k"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MESSAGE_DATA MM_FILES_EMBEDDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.TEACH2000."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT_QUESTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT_ANSWER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTRESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TESTCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERRORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

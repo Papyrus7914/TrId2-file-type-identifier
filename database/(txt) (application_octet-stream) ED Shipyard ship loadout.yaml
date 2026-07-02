@@ -1,0 +1,29 @@
+Name: E:D Shipyard ship loadout
+URL: "http://www.edshipyard.com/"
+FileNameExtensions: ["txt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FUEL TANK (CAPACITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME SHIFT DRIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER DISTRIBUTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIFE SUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POWER PLANT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THRUSTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENSORS"
+    CaseSensitive: false

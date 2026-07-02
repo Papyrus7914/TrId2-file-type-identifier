@@ -1,0 +1,44 @@
+Name: PageStream colors Library
+URL: "https://en.wikipedia.org/wiki/PageStream"
+FileNameExtensions: ["library"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SOFT-LOGIK PUBLISHING COLOR LIBRARY v1."
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\nNAME \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COLORSEP PROCESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORRANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMEPREFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMESUFFIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBID"
+    CaseSensitive: false

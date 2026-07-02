@@ -1,0 +1,12 @@
+Name: HP200LX System Application's Help
+FileNameExtensions: ["hlp"]
+DetectionPatterns:
+  - Pos: 5
+    Bytes: [0x01, 0xFF, 0xFF]
+  - Pos: 9
+    Bytes: [0xFF]
+  - Pos: 13
+    Bytes: [0xFF]
+  - Pos: 325
+    AsciiString: "\0"
+    CaseSensitive: true

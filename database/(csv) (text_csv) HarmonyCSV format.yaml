@@ -1,0 +1,32 @@
+Name: HarmonyCSV format
+URL: "https://github.com/picksco/harmony"
+FileNameExtensions: ["csv"]
+MimeType: text/csv
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HarmonyCSV v"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSACTION ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXPORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VENUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

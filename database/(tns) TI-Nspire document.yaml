@@ -1,0 +1,11 @@
+Name: TI-Nspire document
+Description: application/octet-stream
+URL: "http://en.wikipedia.org/wiki/TI-Nspire"
+FileNameExtensions: ["tns"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*TIMLP"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "Document.xml"
+    CaseSensitive: true

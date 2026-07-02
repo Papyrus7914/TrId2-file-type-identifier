@@ -1,0 +1,96 @@
+Name: N-Gage 2.0 on-device installation
+Description: N-Gage 2.0 was a mobile gaming platform produced by Nokia for its S60 smartphones.
+URL: "https://en.wikipedia.org/wiki/N-Gage_(service)"
+FileNameExtensions: ["n-gage"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Content-Type: multipart/mixed; boundary=\"KBoundary\";\r\nMIME-Version: 1.0\r\nContent-Description: Ngage-Install-File; version=\"1.0\"\r\n--KBoundary\r\nContent-Type: text/xml; charset=\"UTF-8\"\r\nContent-ID: <RetailerInfo>\r\n\r\n<?xml version=\"1.0\" encoding=\"UTF-8\"?><par:RetailerInfo xmlns:par=\"http://www.n-gage.nokia.com/schemas/DPB/RetailerInfo/1.0\"><par:RetailerName>Nokia Shop</par:RetailerName><par:RetailerID>4</par:RetailerID><par:ProtocolType>1</par:ProtocolType><par:NGageAccountSupport>1</par:NGageAccountSupport></par:RetailerInfo>\r\n\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WWW.N-GAGE.NOKIA.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NGAGEACCOUNTSUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NGAGE-INSTALL-FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETAILERINFO XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOCOLTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETAILERNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "--KBOUNDARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOKIA SHOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETAILERID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIPART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIXED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

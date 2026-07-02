@@ -1,0 +1,22 @@
+Name: Google Drive Drawing link
+URL: "http://en.wikipedia.org/wiki/Google_Drive"
+FileNameExtensions: ["gdraw"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"url\": \"https://docs.google.com/drawings/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCS.GOOGLE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCE_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAWINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDIT"
+    CaseSensitive: false

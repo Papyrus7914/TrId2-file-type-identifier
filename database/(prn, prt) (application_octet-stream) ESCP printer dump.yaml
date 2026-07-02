@@ -1,0 +1,8 @@
+Name: ESC/P printer dump
+URL: "https://en.wikipedia.org/wiki/ESC/P"
+FileNameExtensions: ["prn", "prt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              @
+    Bytes: [0x1B, 0x40]

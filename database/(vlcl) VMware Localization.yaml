@@ -1,0 +1,13 @@
+Name: VMware Localization
+URL: "http://en.wikipedia.org/wiki/VMware"
+FileNameExtensions: ["vlcl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "signature = \"sIgNaTuRe\""
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LOCALE"
+    CaseSensitive: false

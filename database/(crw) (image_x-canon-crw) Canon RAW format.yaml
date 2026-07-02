@@ -1,0 +1,9 @@
+Name: Canon RAW format
+Description: AKA Canon Camera Image File Format.
+URL: "http://fileformats.archiveteam.org/wiki/Camera_Image_File_Format"
+FileNameExtensions: ["crw"]
+MimeType: image/x-canon-crw
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II\x1A\0\0\0HEAPCCDR"
+    CaseSensitive: true

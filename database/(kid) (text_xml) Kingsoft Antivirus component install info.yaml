@@ -1,0 +1,56 @@
+Name: Kingsoft Antivirus component install info
+URL: "https://en.wikipedia.org/wiki/Kingsoft"
+FileNameExtensions: ["kid"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\r\n<component name=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPONENT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTALL.LOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KISUPCO KID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILELISTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITEM FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METHOD ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNINSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PID.KID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "0X000"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOP"
+    CaseSensitive: false

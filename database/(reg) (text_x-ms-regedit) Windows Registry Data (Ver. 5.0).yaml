@@ -1,0 +1,9 @@
+Name: Windows Registry Data (Ver. 5.0)
+Description: "Contains a list of key-value couples. WARNING: running the REG file will apply modification to the Windows registry!"
+URL: "https://en.wikipedia.org/wiki/Windows_Registry#.REG_files"
+FileNameExtensions: ["reg"]
+MimeType: text/x-ms-regedit
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Windows Registry Editor Version 5.00"
+    CaseSensitive: true

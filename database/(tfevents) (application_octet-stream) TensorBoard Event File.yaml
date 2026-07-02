@@ -1,0 +1,29 @@
+Name: TensorBoard Event File
+URL: "https://www.tensorflow.org/tensorboard"
+FileNameExtensions: ["tfevents"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x18\0\0\0\0\0\0\0\xA3\x7FK\"\t"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "A\x1A\rbrain.Event:2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BRAIN.EVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_OUTPUT_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TENSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false

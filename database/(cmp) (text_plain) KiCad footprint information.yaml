@@ -1,0 +1,32 @@
+Name: KiCad footprint information
+URL: "http://en.wikipedia.org/wiki/KiCad"
+FileNameExtensions: ["cmp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Cmp-Mod V01 Created by "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALEURCMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGINCMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDLISTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDMODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDCMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false

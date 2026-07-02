@@ -1,0 +1,35 @@
+Name: WinFBE Project
+URL: "https://github.com/PaulSquires/WinFBE"
+FileNameExtensions: ["wfbe"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\xFE'\0 \0W\0I\0N\0F\0B\0E\0 \0P\0R\0O\0J\0E\0C\0T\0 \0F\0I\0L\0E"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "P\0R\0O\0J\0E\0C\0T\0O\0T\0H\0E\0R\03\02"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0O\0J\0E\0C\0T\0O\0T\0H\0E\0R\06\04"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0O\0M\0M\0A\0N\0D\0L\0I\0N\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0C\0T\0I\0V\0E\0T\0A\0B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0T\0Y\0P\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T\0A\0B\0I\0N\0D\0E\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "F\0I\0L\0E\0E\0N\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".\0R\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0S"
+    CaseSensitive: false

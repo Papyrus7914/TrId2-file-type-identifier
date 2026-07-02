@@ -1,0 +1,14 @@
+Name: GoGo encoded MP3 audio (ID3 v2.x tag)
+URL: "http://www.id3.org/intro.html"
+FileNameExtensions: ["mp3"]
+MimeType: audio/mpeg3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ID3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GOGO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XING"
+    CaseSensitive: false

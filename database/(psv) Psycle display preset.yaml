@@ -1,0 +1,11 @@
+Name: Psycle display preset
+Description: A PSV file is part of a Psycle skin
+URL: "http://psycle.pastnotecut.org/portal.php"
+FileNameExtensions: ["psv"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Psycle Display Presets v"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "."
+    CaseSensitive: true

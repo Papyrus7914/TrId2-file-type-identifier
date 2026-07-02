@@ -1,0 +1,41 @@
+Name: Dexie IndexedDB export
+URL: "https://dexie.org/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  \"formatName\": \"dexie\",\n  \"formatVersion\": 1,\n  \"data\": {\n    \"databaseName\": \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATABASEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INBOUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEXIE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWS"
+    CaseSensitive: false

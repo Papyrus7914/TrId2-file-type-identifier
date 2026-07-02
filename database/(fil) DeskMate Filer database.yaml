@@ -1,0 +1,31 @@
+Name: DeskMate Filer database
+URL: "http://en.wikipedia.org/wiki/Deskmate"
+FileNameExtensions: ["fil"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x03FIL"
+    CaseSensitive: true
+  - Pos: 1026
+    AsciiString: "DBCOLS"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DBCOLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIQ"
+    CaseSensitive: false

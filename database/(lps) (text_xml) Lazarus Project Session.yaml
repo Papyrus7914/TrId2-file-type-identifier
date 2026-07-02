@@ -1,0 +1,38 @@
+Name: Lazarus Project Session
+URL: "https://en.wikipedia.org/wiki/Lazarus_(IDE)"
+FileNameExtensions: ["lps"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ISPARTOFPROJECT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISVISIBLETAB VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USAGECOUNT VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECTSESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

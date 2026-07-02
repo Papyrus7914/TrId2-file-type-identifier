@@ -1,0 +1,35 @@
+Name: Corel DESIGNER graphics (generic RIFF)
+URL: "http://fileformats.archiveteam.org/wiki/Corel_Designer"
+FileNameExtensions: ["des"]
+MimeType: application/x-corel-des
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "DES"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "vrsn\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\x04DISP"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INFOIKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMPR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICMT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMI"
+    CaseSensitive: false

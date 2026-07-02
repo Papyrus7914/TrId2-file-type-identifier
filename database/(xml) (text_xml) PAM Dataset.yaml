@@ -1,0 +1,13 @@
+Name: PAM Dataset
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<PAMDataset>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PAMDATASET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false

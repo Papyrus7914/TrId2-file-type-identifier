@@ -1,0 +1,19 @@
+Name: Adventure Game Toolkit game package
+URL: "http://en.wikipedia.org/wiki/Adventure_Game_Toolkit"
+FileNameExtensions: ["zip"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: ".D$$PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DA1PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DA2PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DA3PK"
+    CaseSensitive: false

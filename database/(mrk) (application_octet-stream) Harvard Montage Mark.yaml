@@ -1,0 +1,10 @@
+Name: Harvard Montage Mark
+FileNameExtensions: ["mrk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    o     X
+    Bytes: [0xD6, 0xC5, 0x6F, 0x58, 0x02, 0x00]
+  - Pos: any
+    AsciiString: ".ABM"
+    CaseSensitive: false

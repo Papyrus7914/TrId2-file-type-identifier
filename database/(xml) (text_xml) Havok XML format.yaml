@@ -1,0 +1,32 @@
+Name: Havok XML format
+URL: "https://en.wikipedia.org/wiki/Havok_(software)"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HKPACKFILE CLASSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTSVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HKSECTION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HKOBJECT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HKPARAM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "__DATA__"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false

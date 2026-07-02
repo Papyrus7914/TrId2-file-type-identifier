@@ -1,0 +1,43 @@
+Name: MS-DOS PMODE extender executable
+URL: "https://en.wikipedia.org/wiki/PMODE"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xFF]
+  - Pos: 16
+    AsciiString: "\0\x01\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOS EXTENDER - COPYRIGHT 199"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DAREDEVIL AND TRAN."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PQRSTUVW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W V1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RVWU"
+    CaseSensitive: false

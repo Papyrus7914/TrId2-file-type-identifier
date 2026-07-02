@@ -1,0 +1,14 @@
+Name: Atlantis Word Processor Sound Scheme
+URL: "http://www.atlantiswordprocessor.com/"
+FileNameExtensions: ["asn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x04L\xE5\xAF9\0\0\0\0\vDESCRIPTION\r\nSound Scheme for Atlantis Word Processor\r\n"
+    CaseSensitive: true
+  - Pos: 71
+    AsciiString: "SOUND"
+    CaseSensitive: true
+  - Pos: 82
+    AsciiString: "EVENT"
+    CaseSensitive: true

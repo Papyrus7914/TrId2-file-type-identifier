@@ -1,0 +1,71 @@
+Name: Autel EVO drone firmware
+URL: "https://auteldrones.com/"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\"<filetransfer>\"\"<fileinfo>\"\0\0\0\v\xFD\xCEiHheader.json\"<filecontent>\"\0\0\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FWIMAGE.UPGUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHHEADER.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RC_PLAYER_MOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILETRANSFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILECONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILEPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CAMERA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MD5SUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPB2RF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PXPDPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QGELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FW_V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$ALN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*HWC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*PPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HWC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RZXJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMZG"
+    CaseSensitive: false

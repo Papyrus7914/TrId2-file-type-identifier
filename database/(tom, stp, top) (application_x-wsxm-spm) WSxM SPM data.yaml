@@ -1,0 +1,11 @@
+Name: WSxM SPM data
+URL: "https://github.com/christian-sahlmann/gwyddion/blob/master/modules/file/wsxmfile.c"
+FileNameExtensions: ["tom", "stp", "top"]
+MimeType: application/x-wsxm-spm
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WSxM file copyright "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SXM IMAGE FILE"
+    CaseSensitive: false

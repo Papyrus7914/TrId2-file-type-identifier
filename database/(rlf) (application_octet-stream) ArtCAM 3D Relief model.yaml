@@ -1,0 +1,11 @@
+Name: ArtCAM 3D Relief model
+URL: "http://www.artcam.com/"
+FileNameExtensions: ["rlf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\n  "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RELIEF FILE"
+    CaseSensitive: false

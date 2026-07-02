@@ -1,0 +1,9 @@
+Name: Squash compressed archive
+Description: DOS compression program by D.Murk.
+URL: "http://fileformats.archiveteam.org/wiki/Squash_ARH"
+FileNameExtensions: ["arh"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n\x01\tOctSqu\t\x01yvery\0mr"
+    CaseSensitive: true

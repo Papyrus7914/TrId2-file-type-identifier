@@ -1,0 +1,11 @@
+Name: Instant Invoice invoice (v1.x)
+Description: Amiga invoicing software.
+FileNameExtensions: ["iinv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "## Instant Invoice Version 1."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA FILE"
+    CaseSensitive: false

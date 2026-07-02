@@ -1,0 +1,14 @@
+Name: Digital Terrain Elevation Data
+URL: "http://fileformats.archiveteam.org/wiki/DTED"
+FileNameExtensions: ["dted", "dt0", "dt1", "dt2"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "UHL"
+    CaseSensitive: true
+  - Pos: 139
+    AsciiString: "DTED"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DTED"
+    CaseSensitive: false

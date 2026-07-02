@@ -1,0 +1,26 @@
+Name: Microsoft Security Catalog (DER encoded)
+URL: "http://en.wikipedia.org/wiki/X.509"
+FileNameExtensions: ["cat"]
+DetectionPatterns:
+  - Pos: 0
+    #        0
+    Bytes: [0x30, 0x82]
+  - Pos: 4
+    #              \t
+    Bytes: [0x06, 0x09]
+  - Pos: 6
+    #        *           H                 \r          \a
+    Bytes: [0x2A, 0x86, 0x48, 0x86, 0xF7, 0x0D, 0x01, 0x07, 0x02, 0xA0]
+  - Pos: 16
+    Bytes: [0x82]
+  - Pos: 19
+    AsciiString: "0"
+    CaseSensitive: true
+  - Pos: 20
+    Bytes: [0x82]
+  - Pos: 23
+    #                          1
+    Bytes: [0x02, 0x01, 0x01, 0x31]
+  - Pos: 28
+    AsciiString: "0"
+    CaseSensitive: true

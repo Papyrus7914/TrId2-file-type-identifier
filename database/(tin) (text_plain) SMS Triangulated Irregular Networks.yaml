@@ -1,0 +1,21 @@
+Name: SMS Triangulated Irregular Networks
+Description: Surface-water Modeling System.
+URL: "https://www.xmswiki.com/wiki/SMS:SMS"
+FileNameExtensions: ["tin"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TIN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TNAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERT"
+    CaseSensitive: false

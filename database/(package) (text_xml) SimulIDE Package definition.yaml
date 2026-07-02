@@ -1,0 +1,20 @@
+Name: SimulIDE Package definition
+URL: "https://simulide.com/"
+FileNameExtensions: ["package"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE SimulIDE>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PACKAGEB NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false

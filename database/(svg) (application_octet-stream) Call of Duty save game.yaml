@@ -1,0 +1,19 @@
+Name: Call of Duty save game
+URL: "https://www.mobygames.com/game/10826/call-of-duty/"
+FileNameExtensions: ["svg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x1A, 0x01, 0x00, 0x00]
+  - Pos: any
+    AsciiString: "GAME_DIFFICULTY_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME_LEVELTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME_HEALTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE"
+    CaseSensitive: false

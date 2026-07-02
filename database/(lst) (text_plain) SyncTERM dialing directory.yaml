@@ -1,0 +1,47 @@
+Name: SyncTERM dialing directory
+URL: "https://en.wikipedia.org/wiki/Synchronet"
+FileNameExtensions: ["lst"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\t"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONNECTIONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWNLOADPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPLOADPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANSIMUSIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERNA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false

@@ -1,0 +1,15 @@
+Name: Beyond Words Composer Document
+Description: Word processor for DOS.
+URL: "https://preservation.tylerthorsted.com/2025/08/22/page-perfect/"
+FileNameExtensions: ["doc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[BWDB]\0\0\0\0\01.00"
+    CaseSensitive: true
+  - Pos: 94
+    AsciiString: "[BWDOC]"
+    CaseSensitive: true
+  - Pos: 105
+    AsciiString: "3.01"
+    CaseSensitive: true

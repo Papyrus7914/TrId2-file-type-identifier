@@ -1,0 +1,41 @@
+Name: JCM WBA firmware
+URL: "https://jcmglobal.com/"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DWLD01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WBA SERIAL PORT TEST 123456789"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLLING\0ENQALL1\0INTMOD2\0DWLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JAPAN CASH MACHINE CO."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "123456789012345678"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VER1.00 DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEP-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPF0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPFB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WBA-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROM"
+    CaseSensitive: false

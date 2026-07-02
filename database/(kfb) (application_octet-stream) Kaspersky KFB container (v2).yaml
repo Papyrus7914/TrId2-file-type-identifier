@@ -1,0 +1,50 @@
+Name: Kaspersky KFB container (v2)
+URL: "https://en.wikipedia.org/wiki/Kaspersky_Lab"
+FileNameExtensions: ["kfb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KFB2\x02\v\0\a\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "NcdV"
+    CaseSensitive: true
+  - Pos: 56
+    AsciiString: "NxtC"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "NcrP"
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "zsDD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CORP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICDV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCDV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCRP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTCA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NXTC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCDV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TNGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZSDD"
+    CaseSensitive: false

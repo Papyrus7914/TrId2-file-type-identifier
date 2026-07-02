@@ -1,0 +1,31 @@
+Name: Recipe Exchange Format
+URL: "http://www.resortsoftware.com"
+FileNameExtensions: ["rxf"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "d\0\0\0\0\x02\0\0"
+    CaseSensitive: true
+  - Pos: 9
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 29
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MILLILITRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAM"
+    CaseSensitive: false

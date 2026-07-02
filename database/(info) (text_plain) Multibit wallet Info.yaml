@@ -1,0 +1,29 @@
+Name: Multibit wallet Info
+URL: "https://github.com/Multibit-Legacy/multibit"
+FileNameExtensions: ["info"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "multiBit.info,"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WALLETDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WALLETBACKUPFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVEADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIBIT.INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WALLETVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECEIVELABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY"
+    CaseSensitive: false

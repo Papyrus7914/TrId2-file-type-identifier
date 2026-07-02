@@ -1,0 +1,17 @@
+Name: MindSpace diagram
+Description: Amiga drawing and diagramming program.
+FileNameExtensions: ["mso"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MindSpace "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RELEASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FONT"
+    CaseSensitive: false

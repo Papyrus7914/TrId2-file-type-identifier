@@ -1,0 +1,35 @@
+Name: NeXus XML data format
+URL: "http://fileformats.archiveteam.org/wiki/NeXus"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NXENTRY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NXDATA NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NX_FLOAT32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NX_INT32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

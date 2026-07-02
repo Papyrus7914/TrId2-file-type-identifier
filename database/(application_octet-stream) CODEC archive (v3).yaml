@@ -1,0 +1,10 @@
+Name: CODEC archive (v3)
+Description: DOS COmpressor DECompressor by TELVOX TELEINFORMATICA.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "v\xFF2"
+    CaseSensitive: true
+  - Pos: 5
+    #              ]
+    Bytes: [0xAC, 0x5D]

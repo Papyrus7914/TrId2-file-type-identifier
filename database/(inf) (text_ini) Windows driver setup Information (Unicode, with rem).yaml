@@ -1,0 +1,26 @@
+Name: Windows driver setup Information (Unicode, with rem)
+URL: "https://learn.microsoft.com/en-us/windows-hardware/drivers/install/overview-of-inf-files"
+FileNameExtensions: ["inf"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    #                    ;
+    Bytes: [0xFF, 0xFE, 0x3B, 0x00]
+  - Pos: any
+    AsciiString: "$\0C\0H\0I\0C\0A\0G\0O\0$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0I\0G\0N\0A\0T\0U\0R\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0E\0V\0I\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U\0N\0I\0C\0O\0D\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V\0E\0R\0S\0I\0O\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y\0E\0S"
+    CaseSensitive: false

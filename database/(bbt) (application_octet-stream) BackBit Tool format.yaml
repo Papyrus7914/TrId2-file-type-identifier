@@ -1,0 +1,11 @@
+Name: BackBit Tool format
+URL: "https://github.com/evietron/BackBit-Tool"
+FileNameExtensions: ["bbt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BACKBIT "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BACKBITSBACK"
+    CaseSensitive: false

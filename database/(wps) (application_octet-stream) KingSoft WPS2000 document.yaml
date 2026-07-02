@@ -1,0 +1,26 @@
+Name: KingSoft WPS2000 document
+URL: "https://en.wikipedia.org/wiki/Kingsoft"
+FileNameExtensions: ["wps"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x82\xFFWPS2000\xAE for WindowsKingsoft\xA9 1999"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CCTRLCODE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLESHEET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WPSPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WPSTEXT"
+    CaseSensitive: false

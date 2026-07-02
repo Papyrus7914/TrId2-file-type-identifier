@@ -1,0 +1,26 @@
+Name: X Bitmap
+URL: "http://fileformats.archiveteam.org/wiki/XBM"
+FileNameExtensions: ["xbm"]
+MimeType: image/x-xbitmap
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#define "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false

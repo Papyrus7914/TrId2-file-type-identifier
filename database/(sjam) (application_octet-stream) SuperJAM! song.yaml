@@ -1,0 +1,27 @@
+Name: SuperJAM! song
+Description: Amiga music composition software by The Blue Ribbon SoundWorks.
+URL: "https://archive.org/details/amiga-superjam-manual"
+FileNameExtensions: ["sjam"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SZAM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "TFIL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHRD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KBRD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KSIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCTN"
+    CaseSensitive: false

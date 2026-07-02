@@ -1,0 +1,11 @@
+Name: PGP symmetric key encrypted message
+Description: cipher algorithm (1~IDEA-13~Camellia256) is stored at offset 3 and digest algorithm (1~MD5-11~SHA224) is stored at offset 5.
+URL: "http://www.gnupg.org/documentation/faqs.html"
+FileNameExtensions: ["pgp", "gpg"]
+MimeType: application/pgp-encrypted
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x8C, 0x04, 0x04]
+  - Pos: 4
+    AsciiString: "\0"
+    CaseSensitive: true

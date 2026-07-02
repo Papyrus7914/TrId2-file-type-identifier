@@ -1,0 +1,35 @@
+Name: Pro Tools WaveForm cache
+URL: "https://en.wikipedia.org/wiki/Pro_Tools"
+FileNameExtensions: ["wfm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DDZCHX"
+    CaseSensitive: true
+  - Pos: 92
+    AsciiString: "AnalysisSetsHdr"
+    CaseSensitive: true
+  - Pos: 117
+    AsciiString: "AnalysisSet"
+    CaseSensitive: true
+  - Pos: 136
+    AsciiString: "PacketStreamSetHdr"
+    CaseSensitive: true
+  - Pos: 168
+    AsciiString: "PacketStreamIndxHdr"
+    CaseSensitive: true
+  - Pos: 245
+    AsciiString: "PacketStreamIndxHdr"
+    CaseSensitive: true
+  - Pos: 322
+    AsciiString: "PacketStreamIndx"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PACKETSTREAMINDXHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKETSTREAMSETHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSISSETSHDR"
+    CaseSensitive: false

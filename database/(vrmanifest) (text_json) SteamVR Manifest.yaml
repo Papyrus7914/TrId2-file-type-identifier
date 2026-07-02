@@ -1,0 +1,29 @@
+Name: SteamVR Manifest
+URL: "https://en.wikipedia.org/wiki/Steam_(service)#SteamVR"
+FileNameExtensions: ["vrmanifest"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APPLICATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAUNCH_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP_KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,9 @@
+Name: Pro/ENGINEER file (generic)
+URL: "http://www.ptc.com/"
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#UGC:2 "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-END_OF_UGC_HEADER"
+    CaseSensitive: false

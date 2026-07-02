@@ -1,0 +1,29 @@
+Name: NPS Image Editor Document
+URL: "http://nps.nookkin.com/"
+FileNameExtensions: ["npsd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "document.ini"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER.INI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS"
+    CaseSensitive: false

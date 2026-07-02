@@ -1,0 +1,75 @@
+Name: Remote Desktop Connection Settings
+Description: An .rdp file contains all of the information for a connection to a terminal server, including the Options settings that were configured when the file was saved.
+URL: "http://www.microsoft.com/windowsxp/using/mobility/default.mspx"
+FileNameExtensions: ["rdp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "screen mode id:i:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUTORECONNECTION ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITMAPCACHEPERSISTENABL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLE FULL WINDOW DRA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHELL WORKING DIRECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLE CURSOR SETTIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYCONNECTIONBA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLE MENU ANIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDIRECTSMARTCARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLE WALLPAPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDIRECTCOMPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REDIRECTPRINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTERNATE SHEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREEN MODE ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLE THEME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESKTOPHEIGH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESKTOPWIDT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULL ADDRES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYBOARDHOO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPRESSIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SESSION BP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOMOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINPOSST"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: JetFighter 2015 savegame
+URL: "http://www.globalstarsoftware.com/jetfighter2015/"
+FileNameExtensions: ["bin"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "ala\xF32\vvgb"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALAPK"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Telegram animated sticker (ungzipped)
+URL: "https://core.telegram.org/animated_stickers"
+FileNameExtensions: ["tgs"]
+MimeType: test/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"tgs\":1,\"v\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

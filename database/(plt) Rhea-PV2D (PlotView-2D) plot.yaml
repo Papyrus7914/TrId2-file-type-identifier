@@ -1,0 +1,25 @@
+Name: Rhea-PV2D (PlotView-2D) plot
+URL: "http://www.titanalgorithms.com/rhea_pv2d"
+FileNameExtensions: ["plt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[SECTION HEADER]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SECTION VISIBILITY CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END VISIBILITY CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION AXIS CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END AXIS CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTION HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END HEADER"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Motic Images Plus Single File Capture
+URL: "https://www.motic.com/"
+FileNameExtensions: ["sfc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JUN-G"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\0Copyright "
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "-20"
+    CaseSensitive: true

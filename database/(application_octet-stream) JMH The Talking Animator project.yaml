@@ -1,0 +1,25 @@
+Name: JMH The Talking Animator project
+Description: Amiga animation software.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LIST"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "ILBMPROP\0\0\0 ILBMBMHD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ILBMPROP\0\0\0 ILBMBMHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ILBMCMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

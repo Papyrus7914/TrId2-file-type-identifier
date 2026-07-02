@@ -1,0 +1,23 @@
+Name: The Great Escape save game
+URL: "https://www.mobygames.com/game/12766/the-great-escape/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 4
+    AsciiString: "\x1B\0\0\0"
+    CaseSensitive: true
+  - Pos: 86
+    AsciiString: "@?\0\0@?\0\0HC\0\0HC"
+    CaseSensitive: true
+  - Pos: 177
+    AsciiString: "Level"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HC\0\0HC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false

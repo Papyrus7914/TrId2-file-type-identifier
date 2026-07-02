@@ -1,0 +1,9 @@
+Name: GoDot C64 Image Processing - Loader
+URL: "http://www.godot64.de/"
+FileNameExtensions: ["ldr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\xC0L"
+    CaseSensitive: true
+  - Pos: 4
+    Bytes: [0xC0, 0x80]

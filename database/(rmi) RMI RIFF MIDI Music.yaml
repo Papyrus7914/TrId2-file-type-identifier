@@ -1,0 +1,10 @@
+Name: RMI RIFF MIDI Music
+URL: "Sort of MIDI file wrapped inside a RIFF container."
+FileNameExtensions: ["rmi"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "RMIDdata"
+    CaseSensitive: true

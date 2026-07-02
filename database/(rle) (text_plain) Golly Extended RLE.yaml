@@ -1,0 +1,11 @@
+Name: Golly Extended RLE
+URL: "http://golly.sourceforge.net/Help/file.html"
+FileNameExtensions: ["rle"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#CXRLE Pos="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RULE"
+    CaseSensitive: false

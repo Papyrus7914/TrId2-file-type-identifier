@@ -1,0 +1,16 @@
+Name: PowerBASIC resource
+URL: "http://www.powerbasic.com"
+FileNameExtensions: ["pbr"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x05CR"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\0\0"
+    CaseSensitive: true

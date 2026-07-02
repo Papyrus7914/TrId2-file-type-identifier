@@ -1,0 +1,30 @@
+Name: FinalCalc spreadsheet
+Description: Amiga spreadsheet software.
+URL: "https://archive.org/details/final-calc-amiga"
+FileNameExtensions: ["sheet"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DASHTYPE"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "SIZE"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "SHMAPREF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CLMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYS"
+    CaseSensitive: false

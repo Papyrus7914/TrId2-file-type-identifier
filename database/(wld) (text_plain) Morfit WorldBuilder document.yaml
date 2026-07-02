@@ -1,0 +1,23 @@
+Name: Morfit WorldBuilder document
+URL: "http://paulbourke.net/dataformats/wld/"
+FileNameExtensions: ["wld"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BEGIN_DESIGN:\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN_DESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN_MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_DESIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END_MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false

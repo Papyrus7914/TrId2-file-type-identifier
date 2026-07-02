@@ -1,0 +1,14 @@
+Name: LaTeX 2e document (with rem)
+URL: "https://en.wikipedia.org/wiki/LaTeX"
+FileNameExtensions: ["tex"]
+MimeType: application/x-tex
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGIN{DOCUMENT}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END{DOCUMENT}"
+    CaseSensitive: false

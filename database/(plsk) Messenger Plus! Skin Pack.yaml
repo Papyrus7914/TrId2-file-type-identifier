@@ -1,0 +1,17 @@
+Name: Messenger Plus! Skin Pack
+Description: Skins change the way your Messenger 2009 and Messenger 2011 windows look.
+URL: "http://www.msgplus.net/Downloads/Skins"
+FileNameExtensions: ["plsk"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SKININFO.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false

@@ -1,0 +1,10 @@
+Name: 16bit DOS COM CryptCOM encrypted
+Description: Encryptor by Grgic Arminio.
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 6
+    AsciiString: "\x17\rCryptCOM\n\r(c)m&g GrGa\x1A"
+    CaseSensitive: true

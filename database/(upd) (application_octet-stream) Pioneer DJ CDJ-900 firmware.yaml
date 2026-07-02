@@ -1,0 +1,14 @@
+Name: Pioneer DJ CDJ-900 firmware
+URL: "https://www.pioneerdj.com/en/support/software/archive/cdj-900/"
+FileNameExtensions: ["upd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CDJ-900 "
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "    Ver"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "."
+    CaseSensitive: true

@@ -1,0 +1,26 @@
+Name: Open Publication Structure eBook
+URL: "https://en.wikipedia.org/wiki/EPUB"
+FileNameExtensions: ["epub"]
+MimeType: application/epub+zip
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINER.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPUB+ZIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OPF"
+    CaseSensitive: false

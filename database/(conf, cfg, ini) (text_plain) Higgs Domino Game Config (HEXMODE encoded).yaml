@@ -1,0 +1,14 @@
+Name: Higgs Domino Game Config (HEXMODE encoded)
+URL: "https://www.dominops.com/"
+FileNameExtensions: ["conf", "cfg", "ini"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HEXMODE|"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "56455253494F4E3D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5B4D41494E5D"
+    CaseSensitive: false

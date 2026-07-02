@@ -1,0 +1,18 @@
+Name: File-Type Image
+FileNameExtensions: ["fti"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BGNOUTLINEPOLYGON("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDOUTLINEPOLYGON("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTEX("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR("
+    CaseSensitive: false

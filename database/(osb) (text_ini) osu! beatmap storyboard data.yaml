@@ -1,0 +1,11 @@
+Name: osu! beatmap storyboard data
+URL: "https://en.wikipedia.org/wiki/Osu!"
+FileNameExtensions: ["osb"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Events]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STORYBOARD LAYER 0 (BACKGROUND)"
+    CaseSensitive: false

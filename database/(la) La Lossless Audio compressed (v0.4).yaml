@@ -1,0 +1,10 @@
+Name: La Lossless Audio compressed (v0.4)
+URL: "http://www.lossless-audio.com/"
+FileNameExtensions: ["la"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LA04"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WAVE\x18\0\0\0fmt \x10\0\0\0\x01\0"
+    CaseSensitive: true

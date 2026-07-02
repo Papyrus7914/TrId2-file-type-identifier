@@ -1,0 +1,322 @@
+Name: SNS-HDR project
+URL: "http://www.sns-hdr.com/"
+FileNameExtensions: ["sns"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 12
+    AsciiString: "k@"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIG \0\0\0\0CRT DESC\0\0\0\0\0\0\0-REFERENCE VIEWING CONDITION IN IEC 61966-2-1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC\0\0\0\0\0\0\0.IEC 61966-2-1 DEFAULT RGB COLOUR SPACE - SRGB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-TEXT\0\0\0\0COPYRIGHT INTERNATIONAL COLOR CONSORTIUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SRGB IEC61966-2-1 BLACK SCALED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOISEREDUCTIONCHROMINANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTSMICRODETAILSPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W5M0MPCEHIHZRESZNTCZKC9D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOISEREDUCTIONLUMINANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTSBRIGHTNESSPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTSSATURATIONPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORLIGHTSSATURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAUSSIANBLURINTENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSHARPMASKINTENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIGHLIGHTPROTECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTSWHITEBALANCEB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTSWHITEBALANCEG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTSWHITEBALANCER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROCONTRASTPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAUSSIANBLURRADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA-INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORLIGHTSWARMTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSHARPMASKRADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "22-RDF-SYNTAX-NS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORLIGHTSGREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIGHLIGHTDETAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADOWPROTECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIGNETTEMIDPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YCBCRSUBSAMPLING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORLIGHTSBLUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORSATURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION RDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHTSHUEPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIDTONECONTRAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORLIGHTSHUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORLIGHTSRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOLUTIONUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIGNETTEAMOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITSPERSAMPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIFTOOL 8.68"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMPMETA XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPACKET BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVEPOINTSB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVEPOINTSG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVEPOINTSR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NS.ADOBE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERSPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORWARMTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE.EX1PK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGELENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASKNUMBERV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MNTRRGB XYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPACKET END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XRESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YRESOLUTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORGREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIGHLIGHTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCALMASKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATAPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHARPENING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C\0H\0M\0R\0W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORBLUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RDF XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORHUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPGPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINTC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$BKPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "B0BRB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAMMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICCPK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMPTK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$3BR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1999"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BTRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMDD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GTRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GXYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JFIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RXYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TECH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VUED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WTPT"
+    CaseSensitive: false

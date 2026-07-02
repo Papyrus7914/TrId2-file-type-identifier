@@ -1,0 +1,42 @@
+Name: A-Sound AutoSound File (v2.01)
+Description: Audio file linked to an Amiga player executable.
+URL: "http://www.amigafuture.de/asd.php?asd_id=1160"
+FileNameExtensions: ["asf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x03\xF3\0\0\0\0\0\0\0\x02\0\0\0\0\0\0\0\x01\0\0\x01\xCA\0\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "*ASF102/20/90"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ASF AUTOSOUND                         \0\0\0\0\0\0DOS.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIO.DEVICE\0\0ASF_AUDIOPORT\0CON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOUND CHANNEL UNAVAILABLE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDELTAWARE PRODUCTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT ENOUGH MEMORY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "C TO STOP)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASF V1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYING ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*ASF102"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DONE."
+    CaseSensitive: false

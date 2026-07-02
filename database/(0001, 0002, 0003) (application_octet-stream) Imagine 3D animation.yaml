@@ -1,0 +1,26 @@
+Name: Imagine 3D animation
+Description: Animation format used by the Imagine 3D rendered, on Amiga.
+FileNameExtensions: ["0001", "0002", "0003"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "IANDBPCT"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "CMAP"
+    CaseSensitive: true
+  - Pos: 80
+    AsciiString: "BODY"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IANDBPCT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMAP"
+    CaseSensitive: false

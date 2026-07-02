@@ -1,0 +1,29 @@
+Name: Raster-Vector Hybrid Drawing
+URL: "http://www.softelec.com/?vphybridcad"
+FileNameExtensions: ["rvd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VP-RVD\0\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RASTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VP-RVD"
+    CaseSensitive: false

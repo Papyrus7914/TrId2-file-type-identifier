@@ -1,0 +1,85 @@
+Name: Wireshark traffic log
+URL: "http://en.wikipedia.org/wiki/Wireshark"
+FileNameExtensions: ["out", "txt"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Frame "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TIME DELTA FROM PREVIOUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERNET PROTOCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESTINATION PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAGMENT OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MORE FRAGMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTURE LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME TO LIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARRIVAL TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IP (0X0800)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE PORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPTURED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT SET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON WIRE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECT)"
+    CaseSensitive: false

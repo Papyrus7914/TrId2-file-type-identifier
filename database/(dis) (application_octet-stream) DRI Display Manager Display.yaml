@@ -1,0 +1,16 @@
+Name: DRI Display Manager Display
+URL: "http://archive.is/dtm1R"
+FileNameExtensions: ["dis"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Display Manager (tm). "
+    CaseSensitive: true
+  - Pos: 127
+    Bytes: [0x1A]
+  - Pos: 130
+    AsciiString: "DM80 V. "
+    CaseSensitive: true
+  - Pos: 139
+    AsciiString: "."
+    CaseSensitive: true

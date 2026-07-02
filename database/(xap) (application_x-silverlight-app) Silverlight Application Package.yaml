@@ -1,0 +1,14 @@
+Name: Silverlight Application Package
+URL: "http://fileformats.archiveteam.org/wiki/Silverlight"
+FileNameExtensions: ["xap"]
+MimeType: application/x-silverlight-app
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "APPMANIFEST.XAML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DLL"
+    CaseSensitive: false

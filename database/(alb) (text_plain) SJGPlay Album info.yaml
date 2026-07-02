@@ -1,0 +1,14 @@
+Name: SJGPlay Album info
+URL: "http://www.6502.org/users/sjgray/software/sjgplay/sjgplay_dos.html"
+FileNameExtensions: ["alb"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@ALBUM:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDTRACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SONG"
+    CaseSensitive: false

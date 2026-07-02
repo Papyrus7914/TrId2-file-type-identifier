@@ -1,0 +1,68 @@
+Name: TOSEC DAT XML format (UTF-8)
+URL: "https://www.tosecdev.org/"
+FileNameExtensions: ["dat"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DTD ROM MANAGEMENT DATAFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE DATAFILE PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.TOSECDEV.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.LOGIQX.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAFILE.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(TOSEC-V2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GAME NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOMEPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROM NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHA1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

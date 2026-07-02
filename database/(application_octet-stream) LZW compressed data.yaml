@@ -1,0 +1,7 @@
+Name: LZW compressed data
+Description: Often used to compress long text based configuration files.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<compressed alg=lzw len="
+    CaseSensitive: true

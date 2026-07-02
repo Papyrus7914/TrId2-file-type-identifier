@@ -1,0 +1,25 @@
+Name: Avast! Soundpack
+URL: "http://www.avast.com"
+FileNameExtensions: ["avastsounds"]
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "SUSPICIOUS_DETECTED.WAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRUS_DB_UPDATED.WAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THREAT_DETECTED.WAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAN_COMPLETED.WAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUP_DETECTED.WAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WELCOME.WAV"
+    CaseSensitive: false

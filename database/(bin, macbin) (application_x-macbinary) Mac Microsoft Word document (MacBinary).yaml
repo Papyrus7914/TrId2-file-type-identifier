@@ -1,0 +1,15 @@
+Name: Mac Microsoft Word document (MacBinary)
+Description: MacBinary is a standard for encoding Macintosh files for file transfer.
+URL: "https://en.wikipedia.org/wiki/Microsoft_Word"
+FileNameExtensions: ["bin", "macbin"]
+MimeType: application/x-macbinary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "W4BN"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "W4BN"
+    CaseSensitive: false

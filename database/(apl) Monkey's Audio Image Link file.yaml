@@ -1,0 +1,16 @@
+Name: Monkey's Audio Image Link file
+URL: "http://www.monkeysaudio.com/"
+FileNameExtensions: ["apl"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Monkey's Audio Image Link File]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FINISH BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START BLOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE FILE"
+    CaseSensitive: false

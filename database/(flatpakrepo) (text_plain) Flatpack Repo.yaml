@@ -1,0 +1,17 @@
+Name: Flatpack Repo
+URL: "https://en.wikipedia.org/wiki/Flatpak"
+FileNameExtensions: ["flatpakrepo"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Flatpak Repo]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GPGKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

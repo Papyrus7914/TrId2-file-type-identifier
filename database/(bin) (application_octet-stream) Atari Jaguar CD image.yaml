@@ -1,0 +1,11 @@
+Name: Atari Jaguar CD image
+URL: "https://en.wikipedia.org/wiki/Atari_Jaguar"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ATRIATRIATRIATRIATRIATRIATRIATRIATRIATRIATRIATRIATRIATRIATRIATRIATARI APPROVED DATA HEADER ATRI"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ATRIATRIATRIATRIATRIATRIATRIATRIATRIATRIATRIATRIATRIATRIATRIATRIATARI APPROVED DATA HEADER ATRI"
+    CaseSensitive: false

@@ -1,0 +1,18 @@
+Name: AutoRun Info (with rem)
+Description: Placed in CDs/DVDs to make autorun or set the disk's logo/label. This variant starts with a comment ";".
+URL: "https://en.wikipedia.org/wiki/AutoRun"
+FileNameExtensions: ["inf"]
+MimeType: text/inf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUTORUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false

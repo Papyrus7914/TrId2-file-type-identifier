@@ -1,0 +1,37 @@
+Name: 16bit COM executable THE _RUDEBOY_ patcher
+Description: Patcher/ckacker by THE _RUDEBOY_
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 2
+    AsciiString: "\0\0\0Only lamers hex other people's patches!!$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ONLY LAMERS HEX OTHER PEOPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATCH BY THE _RUDEBOY_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCORRECT FILE SIZE.$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "- RUDER THAN YOU -"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T WRITE TO FILE.$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANNOT LOCATE $"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S PATCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false

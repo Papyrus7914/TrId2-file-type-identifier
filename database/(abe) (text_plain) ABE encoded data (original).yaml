@@ -1,0 +1,23 @@
+Name: ABE encoded data (original)
+URL: "http://fileformats.archiveteam.org/wiki/ABE"
+FileNameExtensions: ["abe"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";ABE ASCII-Binary-Encoding (by Brad Templeton)"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END OF ABE ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$$END_FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$$UNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$$SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$$OS"
+    CaseSensitive: false

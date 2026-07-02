@@ -1,0 +1,19 @@
+Name: FastTracker 2 eXtended Module (Ogg compressed)
+URL: "http://en.wikipedia.org/wiki/FastTracker_2"
+FileNameExtensions: ["oxm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Extended "
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "odule:"
+    CaseSensitive: true
+  - Pos: 37
+    Bytes: [0x1A]
+  - Pos: any
+    AsciiString: "XIPH.ORG LIBVORBIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OGGS"
+    CaseSensitive: false

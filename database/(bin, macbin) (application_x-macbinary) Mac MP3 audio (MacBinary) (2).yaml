@@ -1,0 +1,15 @@
+Name: Mac MP3 audio (MacBinary)
+Description: MacBinary is a standard for encoding Macintosh files for file transfer.
+URL: "https://en.wikipedia.org/wiki/MP3"
+FileNameExtensions: ["bin", "macbin"]
+MimeType: application/x-macbinary
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 65
+    AsciiString: "MPG3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MPG3"
+    CaseSensitive: false

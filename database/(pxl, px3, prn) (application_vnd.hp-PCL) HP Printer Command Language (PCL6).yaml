@@ -1,0 +1,18 @@
+Name: HP Printer Command Language (PCL6)
+Description: starts with "ESCape %-12345X" for "Universal Exit Language" command and and contains command like @PJL ENTER LANGUAGE = PCLXL
+URL: "https://en.wikipedia.org/wiki/Printer_Command_Language"
+FileNameExtensions: ["pxl", "px3", "prn"]
+MimeType: application/vnd.hp-PCL
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x1B%-12345X@PJL "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PJL ENTER LANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%-12345X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCLXL"
+    CaseSensitive: false

@@ -1,0 +1,63 @@
+Name: Cyberlink WaVeEditor project
+Description: XML based project file created+used by Cyberlink WaveEditor to reference an audio file and includes audio effects.
+URL: "https://en.wikipedia.org/wiki/CyberLink"
+FileNameExtensions: ["wve"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<Project Application=\"WaveEditor\" Version=\""
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUDIOCD BURNPROOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIONORMALIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIOGAPTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKMARKLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIXTRACK ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIXCONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVEEDITOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BURNSPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE SRC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BALANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VOLUME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

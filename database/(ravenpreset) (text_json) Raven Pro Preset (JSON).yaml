@@ -1,0 +1,17 @@
+Name: Raven Pro Preset (JSON)
+URL: "https://store.birds.cornell.edu/collections/raven-sound-software"
+FileNameExtensions: ["ravenpreset"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EDU.CORNELL.ORNITH.RAVEN.PRESET."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESETTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASSNAME"
+    CaseSensitive: false

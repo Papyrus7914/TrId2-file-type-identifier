@@ -1,0 +1,20 @@
+Name: 303tracker module
+Description: Amiga tracker by Jeroen Schellekens.
+FileNameExtensions: ["3tr"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "3TR0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "3TR0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: Triforce Header
+URL: "https://en.wikipedia.org/wiki/List_of_Sega_arcade_system_boards"
+FileNameExtensions: ["id"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BTID\0\0\x01\xE0\0\0\0\x01\0\0\0\x01"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "GCAM\0\0\x01\xC0\a"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "S"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GCAM"
+    CaseSensitive: false

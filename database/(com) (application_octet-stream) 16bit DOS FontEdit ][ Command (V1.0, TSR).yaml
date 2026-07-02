@@ -1,0 +1,16 @@
+Name: 16bit DOS FontEdit ][ Command (V1.0, TSR)
+URL: "http://fileformats.archiveteam.org/wiki/FontEdit_II_COM_file"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 7
+    AsciiString: "FontEdit ][ v1.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FONTEDIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V1.0"
+    CaseSensitive: false

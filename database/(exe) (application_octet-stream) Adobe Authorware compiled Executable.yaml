@@ -1,0 +1,38 @@
+Name: Adobe Authorware compiled Executable
+URL: "https://en.wikipedia.org/wiki/Adobe_Authorware"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: "\0\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CALLED FROM THIS FILE. THE FILE MAY NOT RUN CORRECTLY.\0INTERNAL ERROR IN AUTHORWARE.  UNABLE TO STORE INFORMATION ABOUT SCRIPTING XTRA FUNCTION CALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUE\0\0\0%M\0THE LAST OLE OPERATION FAILED OUTSIDE OF AUTHORWARE.\0THE OLE OBJECT CANNOT BE DEACTIVATED IN ITS CURRENT STATE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%S.\0THE FILENAME CANNOT BE OPENED BECAUSE THE 16 BIT VERSION OF AUTHORWARE DOES NOT SUPPORT LONG FILENAMES.\0FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A5L\0A4L\0A3L\0APL\0PIF\0EXE\0COM\0BAT\0RTF\0TXT\0DLL\0U32\0UCD\0MVE\0MPG\0MOV\0MMM\0FLI\0FLC\0DIR\0CEL\0AVI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUE\0\0\0%M\0THE DLL %LS CANNOT BE LOADED BY THE %LU BIT VERSION OF AUTHORWARE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUE\0\0\0UNABLE TO CLOSE AUTHORWARE. PLEASE CLOSE ALL DIALOG BOXES FIRST."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTINUE\0\0\0THE FILE %LS IS NOT AN AUTHORWARE FILE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OR ALLOCATE MORE MEMORY TO AUTHORWARE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "32.DLL"
+    CaseSensitive: false

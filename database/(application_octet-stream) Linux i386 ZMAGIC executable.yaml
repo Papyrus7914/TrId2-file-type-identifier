@@ -1,0 +1,8 @@
+Name: Linux i/386 ZMAGIC executable
+Description: Old Linux executable format.
+URL: "http://www.linux.org/threads/types-of-executables.4792/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\v\x01d\0"
+    CaseSensitive: true

@@ -1,0 +1,17 @@
+Name: Seattle FilmWorks / PhotoWorks photo (SFW98)
+Description: PhotoWorks created SFW98 format JPEG-like image which is compressed with a non-standard arithmetic mechanism and has ultra-mangled JPEG markers.
+URL: "http://jonesrh.info/sfw/"
+FileNameExtensions: ["sfw"]
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SFW98"
+    CaseSensitive: true
+  - Pos: 252
+    Bytes: [0x04, 0x00]
+  - Pos: 304
+    Bytes: [0xFF]
+  - Pos: 306
+    Bytes: [0xFF]
+  - Pos: 310
+    AsciiString: "SFWF\0"
+    CaseSensitive: true

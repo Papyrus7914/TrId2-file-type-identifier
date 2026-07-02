@@ -1,0 +1,17 @@
+Name: TurboCalc Library
+Description: Amiga spreadsheet program.
+URL: "http://web.archive.org/web/19990117080345/http://www.uni-karlsruhe.de/~ukrc/TurboCalc.html"
+FileNameExtensions: ["tclib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x00, 0x03, 0xF3]
+  - Pos: any
+    AsciiString: "NUTCLB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1.0 ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$VER"
+    CaseSensitive: false

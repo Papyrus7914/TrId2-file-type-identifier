@@ -1,0 +1,9 @@
+Name: JPEG XR bitmap
+Description: AKA HD Photo, Windows Media Photo.
+URL: "http://en.wikipedia.org/wiki/HD_Photo"
+FileNameExtensions: ["hdp", "jxr", "wdp", "wmp"]
+MimeType: image/vnd.ms-photo
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "II\xBC"
+    CaseSensitive: true

@@ -1,0 +1,17 @@
+Name: Reaction Data file
+URL: "https://scifinder-n.cas.org/help/Terminology/reaction_data_file.htm"
+FileNameExtensions: ["rd", "rdf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$RDFILE "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$DATUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$DTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M  END"
+    CaseSensitive: false

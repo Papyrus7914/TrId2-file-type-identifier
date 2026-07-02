@@ -1,0 +1,50 @@
+Name: Hydrogen Pattern
+URL: "https://en.wikipedia.org/wiki/Hydrogen_(software)"
+FileNameExtensions: ["h2pattern"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PATTERN_FOR_DRUMKIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRUMKIT_PATTERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATTERN_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTRUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOTELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VELOCITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEADLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAN_L"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAN_R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

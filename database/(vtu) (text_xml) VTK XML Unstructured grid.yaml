@@ -1,0 +1,35 @@
+Name: VTK XML Unstructured grid
+URL: "http://en.wikipedia.org/wiki/VTK"
+FileNameExtensions: ["vtu"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNSTRUCTUREDGRID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFPOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMBEROFCELLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTKFILE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAARRAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIECE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

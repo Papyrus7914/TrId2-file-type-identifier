@@ -1,0 +1,20 @@
+Name: Pattern Space Layout format
+URL: "http://genome.ucsc.edu/FAQ/FAQformat#format2"
+FileNameExtensions: ["psl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "browser position "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACK NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USESCORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLAT"
+    CaseSensitive: false
