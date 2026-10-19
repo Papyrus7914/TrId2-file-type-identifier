@@ -1,0 +1,41 @@
+Name: ImageFlow liquify mesh
+URL: "https://imageflow.dev/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n\t\"format\": \"imageflow-liquify-mesh\",\n\t\"version\": 1,\n\t\"width\": "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORWARDWARP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESSURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STROKES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DXMOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYMOVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false

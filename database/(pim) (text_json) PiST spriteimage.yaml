@@ -1,0 +1,53 @@
+Name: PiST sprite/image
+URL: "https://github.com/idontwantyourspamthanks/PiST"
+FileNameExtensions: ["pim"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"active\":["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BACKGROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIST.IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHEETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELLW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

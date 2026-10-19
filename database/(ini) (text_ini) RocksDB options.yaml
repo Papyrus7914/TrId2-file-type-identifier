@@ -1,0 +1,26 @@
+Name: RocksDB options
+URL: "https://en.wikipedia.org/wiki/RocksDB"
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# This is a RocksDB option file.\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPTIONS_FILE_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKBASEDTABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROCKSDB_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEOPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFOPTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBOPTIONS"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: AmigaDisk Menu
+URL: "https://aminet.net/package/util/dir/AmiDisk_2.02"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Menu]\nEntry="
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "\nTitle="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

@@ -1,0 +1,13 @@
+Name: os8088 executable
+URL: "https://github.com/jggonz/os8088"
+FileNameExtensions: ["o88"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "O8\x03"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xFF, 0xD5, 0xCB, 0x00]

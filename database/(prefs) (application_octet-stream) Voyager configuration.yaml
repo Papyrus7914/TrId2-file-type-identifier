@@ -1,0 +1,14 @@
+Name: Voyager configuration
+URL: "https://en.wikipedia.org/wiki/Voyager_(web_browser)"
+FileNameExtensions: ["prefs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VY\xB2\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VOYAGER_PREFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$VER"
+    CaseSensitive: false

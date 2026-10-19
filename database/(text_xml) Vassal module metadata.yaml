@@ -1,0 +1,26 @@
+Name: Vassal module metadata
+Description: Filename is moduledata, inside a .vmod zipped file.
+URL: "https://vassalengine.org/"
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VASSALVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATESAVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

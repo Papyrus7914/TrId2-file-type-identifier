@@ -1,0 +1,14 @@
+Name: KVIrc tips
+URL: "https://www.kvirc.net/"
+FileNameExtensions: ["kvc"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[KVIrc]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UNEXTTIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNUMTIPS"
+    CaseSensitive: false

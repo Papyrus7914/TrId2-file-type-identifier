@@ -1,0 +1,18 @@
+Name: Kylotonn game data container
+Description: Used in Speedball 2 Tournament, Bet On Soldier.
+URL: "https://www.mobygames.com/company/6920/kylotonn-sarl/"
+FileNameExtensions: ["kt3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "SCEN4X.v(\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCEN4X.V("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIFF"
+    CaseSensitive: false

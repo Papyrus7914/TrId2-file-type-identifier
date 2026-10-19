@@ -1,0 +1,10 @@
+Name: Novatek firmware
+FileNameExtensions: ["img"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x7FNVTSC_IMG"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NOVATEK"
+    CaseSensitive: false

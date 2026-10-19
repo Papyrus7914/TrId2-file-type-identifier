@@ -1,0 +1,11 @@
+Name: Kuvio diagram
+Description: Output from Kuvio LaTeX package.
+FileNameExtensions: ["kuv"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{kuvio}{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "{$REVISION"
+    CaseSensitive: false

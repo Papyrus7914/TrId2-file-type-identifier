@@ -1,0 +1,11 @@
+Name: IDA Pro Import Signature (v8.0)
+URL: "https://hex-rays.com/ida-pro"
+FileNameExtensions: ["ids"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IDAIDS\b\0"
+    CaseSensitive: true
+  - Pos: 16
+    #        x
+    Bytes: [0x78, 0x9C]

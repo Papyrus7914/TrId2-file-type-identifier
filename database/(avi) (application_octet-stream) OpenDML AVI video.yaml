@@ -1,0 +1,15 @@
+Name: OpenDML AVI video
+Description: AKA AVI 2.0.
+URL: "http://fileformats.archiveteam.org/wiki/AVI"
+FileNameExtensions: ["avi"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "AVI LIST"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AVIXLIST"
+    CaseSensitive: false

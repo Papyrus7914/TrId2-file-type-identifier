@@ -1,0 +1,17 @@
+Name: Character Studio Motion Flow Export
+URL: "https://en.wikipedia.org/wiki/Autodesk_3ds_Max#Features"
+FileNameExtensions: ["mfe"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MOFLOW_VERSION\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRANSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BIP"
+    CaseSensitive: false

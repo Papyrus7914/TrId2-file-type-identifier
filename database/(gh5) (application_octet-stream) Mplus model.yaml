@@ -1,0 +1,71 @@
+Name: Mplus model
+URL: "https://www.statmodel.com/"
+FileNameExtensions: ["gh5"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A"
+    CaseSensitive: true
+  - Pos: 136
+    AsciiString: "TREE"
+    CaseSensitive: true
+  - Pos: 680
+    AsciiString: "HEAP"
+    CaseSensitive: true
+  - Pos: 840
+    AsciiString: "version_number"
+    CaseSensitive: true
+  - Pos: 928
+    AsciiString: "graph_list"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MODEL_GROUP_LABELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_GROUP_LABELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORICAL_DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA_GROUP_NOBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCATTERPLOTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPH_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUNCATED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VAR_NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBSERVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNOD"
+    CaseSensitive: false

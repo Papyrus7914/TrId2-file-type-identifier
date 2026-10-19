@@ -1,0 +1,20 @@
+Name: HSQLDB configuration
+URL: "https://en.wikipedia.org/wiki/HSQLDB"
+FileNameExtensions: ["properties"]
+MimeType: test/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#HSQL "
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "atabase"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HSQL DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

@@ -1,0 +1,11 @@
+Name: Copperline saved state
+URL: "https://copperline.dev/"
+FileNameExtensions: ["clstate"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CLSSTATE"
+    CaseSensitive: true
+  - Pos: 94
+    #        x
+    Bytes: [0x78, 0x01, 0xEC]

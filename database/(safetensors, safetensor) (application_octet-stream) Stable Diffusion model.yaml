@@ -1,0 +1,20 @@
+Name: Stable Diffusion model
+URL: "https://en.wikipedia.org/wiki/Stable_Diffusion"
+FileNameExtensions: ["safetensors", "safetensor"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 3
+    AsciiString: "\0\0\0\0\0{\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA_OFFSETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAPE"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: Nintendulator save state
+URL: "https://www.qmtpro.com/~nes/nintendulator/"
+FileNameExtensions: ["ns0", "nst"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NSS\x1A"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "NSAV"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "APUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PPUS"
+    CaseSensitive: false

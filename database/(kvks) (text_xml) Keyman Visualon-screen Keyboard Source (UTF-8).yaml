@@ -1,0 +1,20 @@
+Name: Keyman Visual/on-screen Keyboard Source (UTF-8)
+URL: "https://keyman.com/"
+FileNameExtensions: ["kvks"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VISUALKEYBOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KBDNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false

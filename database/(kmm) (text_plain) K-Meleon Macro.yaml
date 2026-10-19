@@ -1,0 +1,35 @@
+Name: K-Meleon Macro
+URL: "http://kmeleonbrowser.org/"
+FileNameExtensions: ["kmm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KMELEON.SOURCEFORGE.NET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K-MELEON MACROS (HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACROLANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPENDENCIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX.PHP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MACRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIKI"
+    CaseSensitive: false

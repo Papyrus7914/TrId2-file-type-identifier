@@ -1,0 +1,41 @@
+Name: Petmate graphic (JSON)
+URL: "https://nurpax.github.io/petmate/"
+FileNameExtensions: ["petmate"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BACKGROUNDCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDERCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCREENCODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMEBUFS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPPER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

@@ -1,0 +1,17 @@
+Name: "Lara Croft Tomb Raider: The Angel of Darkness save game"
+URL: "https://www.mobygames.com/game/9482/lara-croft-tomb-raider-the-angel-of-darkness/"
+FileNameExtensions: ["traodsg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TOMB\x03\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\a"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 287
+    AsciiString: "\0\0\0\0\0\x1F\x9D\x8C"
+    CaseSensitive: true

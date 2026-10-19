@@ -1,0 +1,11 @@
+Name: MeshCore OTA firmware container
+URL: "https://github.com/vk496/MeshCore/blob/feature%2Fota-lora/docs/ota_protocol.md"
+FileNameExtensions: ["mota"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "mOTA"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VK496"
+    CaseSensitive: false

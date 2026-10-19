@@ -1,0 +1,50 @@
+Name: NetCDF Network Common Data Form (v4)
+URL: "https://en.wikipedia.org/wiki/NetCDF"
+FileNameExtensions: ["cdf", "nc"]
+MimeType: application/x-netcdf
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x89HDF\r\n\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "A NETCDF VARIABLE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSION_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIMENSION_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REFERENCE_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARD_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATASET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GCOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LONG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCHK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: Vehicle Block Format (v2.x)
+Description: Firmwares for automotive MCUs.
+FileNameExtensions: ["vbf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "vbf_version = 2."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SW_PART_NUMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE_CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SW_PART_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECU_ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false

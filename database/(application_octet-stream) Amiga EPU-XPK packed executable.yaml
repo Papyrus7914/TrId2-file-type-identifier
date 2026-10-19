@@ -1,0 +1,10 @@
+Name: Amiga EPU-XPK packed executable
+Description: https://www.dstoecker.eu/xpkmaster.html
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    c     h           a
+    Bytes: [0x01, 0x80, 0x63, 0x68, 0x05, 0x61]
+  - Pos: 16
+    AsciiString: "xpk"
+    CaseSensitive: true

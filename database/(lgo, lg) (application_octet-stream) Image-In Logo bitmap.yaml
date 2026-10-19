@@ -1,0 +1,8 @@
+Name: Image-In Logo bitmap
+Description: A BMP file with a custome 16 bytes header.
+FileNameExtensions: ["lgo", "lg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IMAGE-IN LOGO\0\0\0BM"
+    CaseSensitive: true

@@ -1,0 +1,35 @@
+Name: ArKaos Synth
+URL: "https://vj.arkaos.com/"
+FileNameExtensions: ["kos"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BLOB\0\0\0\0\0\0\0D\0\0\0Dblob"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EMPTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "3DXX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MVXX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PTCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RKRD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WPOS"
+    CaseSensitive: false

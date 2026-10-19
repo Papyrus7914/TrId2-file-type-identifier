@@ -1,14 +1,11 @@
 Name: Nokia phone BackUp
-URL: "http://en.wikipedia.org/wiki/.nbu"
+URL: "https://en.wikipedia.org/wiki/.nbu"
 FileNameExtensions: ["nbu"]
 MimeType: application/octet-stream
 DetectionPatterns:
   - Pos: 0
-    AsciiString: "\xCCR3\xFC\xE9,\x18H\xAF\xE360\x1A9@\x06\x04\0\0\0"
-    CaseSensitive: true
-  - Pos: any
-    AsciiString: ".NOKIA.COM"
-    CaseSensitive: false
+    #              R     3                 ,           H                 6     0           9     @
+    Bytes: [0xCC, 0x52, 0x33, 0xFC, 0xE9, 0x2C, 0x18, 0x48, 0xAF, 0xE3, 0x36, 0x30, 0x1A, 0x39, 0x40, 0x06]
   - Pos: any
     AsciiString: "N\0O\0K\0I\0A"
     CaseSensitive: false
@@ -17,9 +14,6 @@ DetectionPatterns:
     CaseSensitive: false
   - Pos: any
     AsciiString: "INTERNET"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "A\0P\0P\0L"
     CaseSensitive: false
   - Pos: any
     AsciiString: "CHARSET"
@@ -31,13 +25,7 @@ DetectionPatterns:
     AsciiString: "A\0G\0E"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "A\0T\0I"
-    CaseSensitive: false
-  - Pos: any
     AsciiString: "BEGIN"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "I\0C\0A"
     CaseSensitive: false
   - Pos: any
     AsciiString: "I\0D\0E"
@@ -46,10 +34,7 @@ DetectionPatterns:
     AsciiString: "I\0N\0S"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "I\0O\0N"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "P\0L\0I"
+    AsciiString: "NOKIA"
     CaseSensitive: false
   - Pos: any
     AsciiString: "R\0M\0-"
@@ -67,13 +52,13 @@ DetectionPatterns:
     AsciiString: "VCARD"
     CaseSensitive: false
   - Pos: any
+    AsciiString: ".COM"
+    CaseSensitive: false
+  - Pos: any
     AsciiString: "CELL"
     CaseSensitive: false
   - Pos: any
     AsciiString: "HTTP"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "IVAT"
     CaseSensitive: false
   - Pos: any
     AsciiString: "MAIL"

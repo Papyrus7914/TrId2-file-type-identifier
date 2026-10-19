@@ -1,0 +1,17 @@
+Name: CAN Data Base
+URL: "DB of CAN bus signal definitions."
+FileNameExtensions: ["dbc", "dbcx"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VERSION \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VAL_"
+    CaseSensitive: false

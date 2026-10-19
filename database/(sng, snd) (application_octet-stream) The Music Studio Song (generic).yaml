@@ -1,0 +1,12 @@
+Name: The Music Studio Song (generic)
+Description: Music editor by Audio Light / Activision
+URL: "http://justsolve.archiveteam.org/wiki/The_Music_Studio"
+FileNameExtensions: ["sng", "snd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 1
+    AsciiString: "Mstudio"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MSTUDIO"
+    CaseSensitive: false

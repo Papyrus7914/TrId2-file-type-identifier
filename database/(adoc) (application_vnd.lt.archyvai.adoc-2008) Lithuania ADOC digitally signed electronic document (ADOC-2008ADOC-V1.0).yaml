@@ -1,0 +1,35 @@
+Name: Lithuania ADOC digitally signed electronic document (ADOC-2008/ADOC-V1.0)
+URL: "https://www.archyvai.lt/lt/lvat/adoc.html"
+FileNameExtensions: ["adoc"]
+MimeType: application/vnd.lt.archyvai.adoc-2008
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetype"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "VND.LT.ARCHYVAI.ADOC-2008"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSIGNABLEMETADATA0.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURES0.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIONS.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE"
+    CaseSensitive: false

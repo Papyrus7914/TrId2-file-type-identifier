@@ -1,0 +1,10 @@
+Name: xBase DataBase File (generic)
+URL: "https://en.wikipedia.org/wiki/.dbf"
+FileNameExtensions: ["dbf"]
+MimeType: application/dbf
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x03]
+  - Pos: 7
+    AsciiString: "\0"
+    CaseSensitive: true

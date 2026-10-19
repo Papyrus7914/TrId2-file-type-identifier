@@ -1,0 +1,32 @@
+Name: Project IGI mesh/geometry
+URL: "https://www.mobygames.com/game/3193/project-igi-im-going-in/"
+FileNameExtensions: ["mef"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NewObject(\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MATERIALSHININESS("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREAKSCRIPT()"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFUSETMAP("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTEX("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TGA"
+    CaseSensitive: false

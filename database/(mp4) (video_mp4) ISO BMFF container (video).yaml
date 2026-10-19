@@ -1,0 +1,17 @@
+Name: ISO BMFF container (video)
+URL: "https://en.wikipedia.org/wiki/ISO_base_media_file_format"
+FileNameExtensions: ["mp4"]
+MimeType: video/mp4
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "ftyp"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SMHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMHD"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: Nintendo Nitro 3D Model
+FileNameExtensions: ["nmdp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BMD0\xFF\xFE\x02\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "MDL0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "POLYGON0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDL0"
+    CaseSensitive: false

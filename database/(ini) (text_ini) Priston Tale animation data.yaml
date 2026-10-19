@@ -1,0 +1,23 @@
+Name: Priston Tale animation data
+URL: "https://www.mobygames.com/game/146889/priston-tale/"
+FileNameExtensions: ["ini"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[ANIMATION]\r\nBlendType       = "
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "\r\nDataFile        = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STARTBLENDVALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGENUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INI"
+    CaseSensitive: false

@@ -1,0 +1,38 @@
+Name: JasperReports report template
+URL: "http://en.wikipedia.org/wiki/JasperReports"
+FileNameExtensions: ["jrxml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BOTTOMMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JASPERREPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHTMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFTMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

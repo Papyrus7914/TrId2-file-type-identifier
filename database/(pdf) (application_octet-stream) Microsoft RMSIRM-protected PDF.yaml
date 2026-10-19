@@ -1,0 +1,206 @@
+Name: Microsoft RMS/IRM-protected PDF
+URL: "https://support.microsoft.com/en-US/Security/view-protected-files-with-microsoft-purview-information-protection-viewer"
+FileNameExtensions: ["pdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ".pfile"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\x01\0\0\r\n\r\n"
+    CaseSensitive: true
+  - Pos: 496
+    AsciiString: " version=\""
+    CaseSensitive: true
+  - Pos: 507
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DO NOT CHANGE THIS FILE IN ANY WAY -- DOING SO WILL RESULT IN DATA LOSS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPEN IT USING AN APPLICATION THAT SUPPORTS PROTECTED FILES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THIS FILE USES MICROSOFT INFORMATION PROTECTION SOLUTIONS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEARN MORE ABOUT INFORMATION PROTECTION SOLUTIONS AT HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{0F45FD50-383B-43EE-90A4-ED013CD0CFE5}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTECTED FILE VIEWER FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOU CAN DOWNLOAD MICROSOFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE-ACQUISITION-URL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICROSOFT RIGHTS LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCRYPTED-RIGHTS-DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINCIPAL INTERNAL-ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHENTICATEDDATA ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRM SERVER CLUSTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECURITYLEVEL NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTRIBUTIONPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLINGBITS TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GO.MICROSOFT.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSUEDPRINCIPALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLIC-EXPONENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETER NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER-VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SURFACE-CODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MS-DRM-SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBJECT TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSPECIFIED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODINGTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSUEDTIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEALED-KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER-SKU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XRML XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTEGER32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T-LICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RSA PKCS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DENTIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ID TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MS-GUID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RMS 2.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE64"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGEST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FWLINK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSUER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_WMCS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADRM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false

@@ -4,8 +4,11 @@ FileNameExtensions: ["4v"]
 MimeType: application/octet-stream
 DetectionPatterns:
   - Pos: 0
-    AsciiString: "\0\x10\0"
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "\0"
     CaseSensitive: true
   - Pos: 7
-    AsciiString: "\x04\0\0\0\0\0\0\0\0\0V\aw"
+    AsciiString: "\x04\0\0\0\0\0\0\0\0\0V"
     CaseSensitive: true

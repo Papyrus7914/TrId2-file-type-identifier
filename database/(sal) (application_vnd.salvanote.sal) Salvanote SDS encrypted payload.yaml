@@ -1,0 +1,9 @@
+Name: Salvanote SDS encrypted payload
+Description: Vendor submission (Salvanote Pty Ltd)
+URL: "https://www.salvanote.com/security/salvanote-sds-encrypted-file-formats/"
+FileNameExtensions: ["sal"]
+MimeType: application/vnd.salvanote.sal
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SPEP\x01\x01"
+    CaseSensitive: true

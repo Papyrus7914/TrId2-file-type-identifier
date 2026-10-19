@@ -1,0 +1,50 @@
+Name: ESRI ArcView ND Resource Database
+URL: "https://en.wikipedia.org/wiki/ArcView"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ND\0\0Resource Database\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXEFILELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QAFILELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFILELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HFILELIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NDRES.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RMODFLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIXMAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACMAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VMSMAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PCMAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

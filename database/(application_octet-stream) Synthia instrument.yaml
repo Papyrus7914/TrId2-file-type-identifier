@@ -1,0 +1,49 @@
+Name: Synthia instrument
+Description: Amiga soft-synth.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LIST\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "AIFFFORM\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "AIFFCOMM\0"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "MARK\0"
+    CaseSensitive: true
+  - Pos: 66
+    AsciiString: "\bbeg loop"
+    CaseSensitive: true
+  - Pos: 82
+    AsciiString: "\bend loop\0INST\0\0\0\x14"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END LOOP\0INST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIFFCOMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AIFFFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEG LOOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANNO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SSND"
+    CaseSensitive: false

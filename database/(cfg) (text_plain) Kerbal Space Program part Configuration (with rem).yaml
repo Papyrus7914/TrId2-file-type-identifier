@@ -1,0 +1,26 @@
+Name: Kerbal Space Program part Configuration (with rem)
+URL: "https://en.wikipedia.org/wiki/Kerbal_Space_Program"
+FileNameExtensions: ["cfg"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "//"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANUFACTURER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PART"
+    CaseSensitive: false

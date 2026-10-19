@@ -1,0 +1,13 @@
+Name: OWL Guide document (v1.0)
+Description: Hypertext authoring system for Windows 1.x by OWL International, Inc.
+FileNameExtensions: ["gui"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x05, 0x00]
+  - Pos: 4
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0W\xFE:\x01"
+    CaseSensitive: true
+  - Pos: 35
+    AsciiString: "\0@\0\0\0"
+    CaseSensitive: true

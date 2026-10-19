@@ -1,0 +1,8 @@
+Name: NetGuard connection log
+Description: Android firewall.
+FileNameExtensions: ["csv"]
+MimeType: text/csv
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IPProto,SrcIP,SrcPort,DstIp,DstPort,UID,App,PackageName,Proto,Status,Info,BytesSent,BytesRcvd,PktsSent,PktsRcvd,FirstSeen,LastSeen"
+    CaseSensitive: true

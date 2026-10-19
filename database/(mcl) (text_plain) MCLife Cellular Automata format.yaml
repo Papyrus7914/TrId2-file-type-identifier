@@ -1,0 +1,11 @@
+Name: MCLife Cellular Automata format
+URL: "https://mcell.ca/pages/mcell.html"
+FileNameExtensions: ["mcl"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#MCLife 1.0\r\n#GAME "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RULE"
+    CaseSensitive: false

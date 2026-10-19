@@ -1,0 +1,38 @@
+Name: Keyman Keyboard metadata
+URL: "https://keyman.com/"
+FileNameExtensions: ["keyboard_info"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "LASTMODIFIEDDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINKEYMANVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLATFORMSUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCEPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LANGUAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEGACY"
+    CaseSensitive: false

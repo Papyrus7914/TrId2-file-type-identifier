@@ -1,0 +1,169 @@
+Name: macOS CodeResources (code signature resource seal)
+URL: "https://developer.apple.com/documentation/technotes/tn3126-inside-code-signing-hashes"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">\n<plist version=\"1.0\">\n<dict>\n\t<key>files</key>\n\t<dict>\n\t\t<key>Resources/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FIELD.1.2.840.113635.100.6.2."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANCHOR APPLE GENERIC AND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AND CERTIFICATE LEAF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE PLIST PUBLIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYLIST-1.0.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PROVISIONPROFILE$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCVERSION.PLIST$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHAREDFRAMEWORKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CERTIFICATE 1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTD PLIST 1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLIST VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.APPLE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOGINITEMS))"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(FRAMEWORKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REQUIREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XPCSERVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(AUTOMATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* EXISTS *"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DS_STORE$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPOTLIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMBEDDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PKGINFO$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUG-INS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROJECT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBJECT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DSYM($"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELPERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLUGINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LPROJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDHASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILES2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NESTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RULES2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ICNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASH2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DICT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DTDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OMIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORG."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REAL"
+    CaseSensitive: false

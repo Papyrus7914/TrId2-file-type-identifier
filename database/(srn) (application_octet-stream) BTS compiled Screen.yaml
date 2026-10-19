@@ -1,0 +1,14 @@
+Name: BTS compiled Screen
+Description: Used by HQ-FAQ / FAXHAVEN.
+FileNameExtensions: ["srn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BTS "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false

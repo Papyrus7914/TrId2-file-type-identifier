@@ -1,0 +1,11 @@
+Name: MFA-Simulator program code
+Description: Intel 8085 simulator for Amiga by Robert Niederhausen.
+FileNameExtensions: ["mfa"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!MFA"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0"
+    CaseSensitive: true

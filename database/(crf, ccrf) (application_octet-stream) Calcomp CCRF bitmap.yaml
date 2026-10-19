@@ -1,0 +1,8 @@
+Name: Calcomp CCRF bitmap
+Description: Used by Calcomp thermal transfer/electrostatic/ink-jet printers/plotters.
+FileNameExtensions: ["crf", "ccrf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "&&&&CALCOMP DEVICE CONTROL\nCCRF()\n^^^^END OF FILE"
+    CaseSensitive: true

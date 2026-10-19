@@ -1,0 +1,50 @@
+Name: PyInstaller frozen Python modules archive
+URL: "https://pyinstaller.org/"
+FileNameExtensions: ["pyz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PYZ\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: 17
+    #        x
+    Bytes: [0x78, 0x9C]
+  - Pos: any
+    AsciiString: "IMPORTLIB._BOOTSTRAP)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORTLIB.MACHINERY)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_COMPAT_PICKLE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PY_COMPILE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPORTLIB)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HASHLIB)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZIPFILE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE64)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPCODE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPY)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA)"
+    CaseSensitive: false

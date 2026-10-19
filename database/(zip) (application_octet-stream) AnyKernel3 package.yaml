@@ -1,0 +1,53 @@
+Name: AnyKernel3 package
+URL: "https://github.com/osm0sis/AnyKernel3"
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Image"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HTTOOLS_STATIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LPTOOLS_STATIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATER-SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPDATE-BINARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANYKERNEL.SH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAGISKPOLICY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AK3-CORE.SH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAGISKBOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANDROID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUSYBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOOGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGE"
+    CaseSensitive: false

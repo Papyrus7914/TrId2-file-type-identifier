@@ -1,0 +1,17 @@
+Name: UEFA Challenge stadium data
+URL: "https://www.mobygames.com/game/14231/uefa-challenge/"
+FileNameExtensions: ["mdz"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        M     D     Z     ␠     V     1     .     0     ␠     S     R     R
+    Bytes: [0x4D, 0x44, 0x5A, 0x20, 0x56, 0x31, 0x2E, 0x30, 0x20, 0x53, 0x52, 0x52, 0x00, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD, 0xCD]
+  - Pos: 49
+    AsciiString: "MDPC0200\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MDPC0200"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L\0N\0M"
+    CaseSensitive: false

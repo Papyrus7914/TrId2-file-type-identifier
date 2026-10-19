@@ -1,0 +1,20 @@
+Name: JasperReports Data Adapter
+URL: "https://en.wikipedia.org/wiki/JasperReports"
+FileNameExtensions: ["jrdax"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NET.SF.JASPERREPORTS.DATA."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAADAPTER CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAADAPTERIMPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

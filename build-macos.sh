@@ -27,6 +27,6 @@ tar --create \
     --gzip \
     --file "${buildDir}/TrId2Console-macos-arm64.tar.gz" \
     --directory "${currentScriptDir}/build/macos-arm64-Release" \
-    TrId2Console
+    TrId2Console TrId2Database.json
 
 echo "Success"

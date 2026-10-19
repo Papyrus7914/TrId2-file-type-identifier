@@ -1,0 +1,13 @@
+Name: Nintendo Nitro 3D Texture
+FileNameExtensions: ["ntxp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "BTX0\xFF\xFE\x01\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "TEX0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEX0"
+    CaseSensitive: false

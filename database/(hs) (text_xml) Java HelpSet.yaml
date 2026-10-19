@@ -1,0 +1,56 @@
+Name: Java HelpSet
+URL: "http://fileformats.archiveteam.org/wiki/JavaHelp"
+FileNameExtensions: ["hs"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JAVAX.HELP.TOCVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELPSET VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPREF LOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JAVAHELP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOC.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOMEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SUN."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JAVA."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

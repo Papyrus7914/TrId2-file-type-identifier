@@ -1,0 +1,21 @@
+Name: Visual C++ Project Workspace
+Description: About '90s era.
+URL: "https://en.wikipedia.org/wiki/Microsoft_Visual_C%2B%2B"
+FileNameExtensions: ["vcp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "JSG0\x03\0\x04\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CPROJECTDOCTEMPLATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIN32"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MAK"
+    CaseSensitive: false

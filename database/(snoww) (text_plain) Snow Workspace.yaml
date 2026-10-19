@@ -1,0 +1,224 @@
+Name: Snow Workspace
+URL: "https://snowemu.com/"
+FileNameExtensions: ["snoww"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  \"log_open\": "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INSTRUCTION_HISTORY_OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAY_CARD_ROM_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_OVERSCAN_PERCENT_X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_OVERSCAN_PERCENT_Y"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PERIPHERAL_DEBUG_OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTRAP_HISTORY_OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUSE_ON_STATE_LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISASSEMBLY_LABELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETHERNET_LINK_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENSION_ROM_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERRIDE_FDD_TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCALING_ALGORITHM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCANLINE_THINNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_FASTFORWARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREAKPOINTS_OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISASSEMBLY_OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMEBUFFER_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_MONITOR_GAMMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WATCHPOINTS_OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOM_DATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_BRIGHT_BOOST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_TARGET_GAMMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMAGEADJUSTMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRINITRON_CURVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDIO_DISABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_BLACK_LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASK_INTENSITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTERS_OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADER_CONFIGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADER_ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEWPORT_SCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOPPY_IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_SATURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMINAL_OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GDVSCANLINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_FLIP_HORZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_FLIP_VERT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_GRAIN_STR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_LUMINANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PMMU_ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCSI_TARGETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_CONTRAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY_OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_BOTMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_SHARPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_TOPMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUSE_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHARED_DIR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO_CARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRTLOTTES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRT_GAMMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INIT_ARGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRAM_PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCAN_BLUR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_LMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_RMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOG_OPEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAM_SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_XPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_YPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IA_ZOOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE"
+    CaseSensitive: false

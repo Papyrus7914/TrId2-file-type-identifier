@@ -1,0 +1,14 @@
+Name: KanjiWORD document
+Description: Japanese word processo by PSP Inc.
+FileNameExtensions: ["kww"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WINK2\x01\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CPF I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINK2"
+    CaseSensitive: false

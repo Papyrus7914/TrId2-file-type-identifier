@@ -1,0 +1,12 @@
+Name: SimpleWare Help
+FileNameExtensions: ["hlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Simply Help! Copyright 199"
+    CaseSensitive: true
+  - Pos: 43
+    Bytes: [0x1A]
+  - Pos: any
+    AsciiString: "SIMPLEWARE"
+    CaseSensitive: false

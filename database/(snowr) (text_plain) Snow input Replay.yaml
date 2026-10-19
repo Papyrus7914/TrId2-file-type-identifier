@@ -1,0 +1,38 @@
+Name: Snow input Replay
+URL: "https://snowemu.com/"
+FileNameExtensions: ["snowr"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MOUSEUPDATEABSOLUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOUSEUPDATERELATIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIVERSAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYEVENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FALSE}}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYDOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRUE}}"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEYUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELY"
+    CaseSensitive: false

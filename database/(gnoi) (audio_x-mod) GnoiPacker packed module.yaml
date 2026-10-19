@@ -1,0 +1,11 @@
+Name: GnoiPacker packed module
+URL: "https://nostalgicplayer.dk/modules/format/gnoipacker/1?pageRef=7"
+FileNameExtensions: ["gnoi"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 24
+    AsciiString: "-GD-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-GD-"
+    CaseSensitive: false

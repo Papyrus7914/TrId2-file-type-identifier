@@ -1,0 +1,26 @@
+Name: KVIrc Messages Colors
+URL: "https://www.kvirc.net/"
+FileNameExtensions: ["msgclr"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# KVIrc configuration file"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON"
+    CaseSensitive: false

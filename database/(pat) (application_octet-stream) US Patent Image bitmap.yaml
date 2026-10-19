@@ -1,0 +1,8 @@
+Name: US Patent Image bitmap
+Description: Used by the US Patent and Trademark Office to store/distribute patents data.
+FileNameExtensions: ["pat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "US PTO \0"
+    CaseSensitive: true

@@ -1,0 +1,35 @@
+Name: Improv Model (text, alt.)
+URL: "https://en.wikipedia.org/wiki/Lotus_Improv"
+FileNameExtensions: ["imx"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Model\r\n\tTable \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CATEGORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMULAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLUMNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIEW"
+    CaseSensitive: false

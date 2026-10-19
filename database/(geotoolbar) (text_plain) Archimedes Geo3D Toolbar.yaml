@@ -1,0 +1,53 @@
+Name: Archimedes Geo3D Toolbar
+URL: "https://en.wikipedia.org/wiki/Archimedes_Geo3D"
+FileNameExtensions: ["geotoolbar"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<CustomTBName>\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAKDEFUSEPRESELECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMTBPRESELECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMTBVERZEICHNIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMTBDATEINAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUSTOMTBKOMMANDOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KOMDEFHELPTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KOMDEFMAKROS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKDEFDATEI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KOMDEFICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KOMDEFNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKDEFICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKDEFNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GEOSAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUNKTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false

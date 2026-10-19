@@ -1,0 +1,14 @@
+Name: BWSB General Digital Music module
+URL: "https://github.com/Poikilos/bwsb"
+FileNameExtensions: ["gdm"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GDM\xFE"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "\r\n\x1AGMFS\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GMFS"
+    CaseSensitive: false

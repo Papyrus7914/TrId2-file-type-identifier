@@ -1,0 +1,26 @@
+Name: Sound Chip Synth Bank
+URL: "https://www.exxosforum.co.uk/atari/mirror/COW/Cow-net%20%20Sound%20Chip%20Synth.htm"
+FileNameExtensions: ["bnk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SCS BANK"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "schs"
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "data"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SYN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHS"
+    CaseSensitive: false

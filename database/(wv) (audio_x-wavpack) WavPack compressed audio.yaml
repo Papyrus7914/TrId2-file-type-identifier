@@ -1,0 +1,17 @@
+Name: WavPack compressed audio
+URL: "https://en.wikipedia.org/wiki/WavPack"
+FileNameExtensions: ["wv"]
+MimeType: audio/x-wavpack
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "wvpk"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVE"
+    CaseSensitive: false

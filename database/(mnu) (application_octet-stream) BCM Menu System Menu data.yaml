@@ -1,0 +1,14 @@
+Name: BCM Menu System Menu data
+Description: DOS menu / file manager by BCM Software.
+FileNameExtensions: ["mnu"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\bMenuData"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "<MAIN>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false

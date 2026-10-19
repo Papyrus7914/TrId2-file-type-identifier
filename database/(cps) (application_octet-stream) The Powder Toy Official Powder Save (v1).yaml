@@ -1,0 +1,17 @@
+Name: The Powder Toy Official Powder Save (v1)
+URL: "https://powdertoy.co.uk/"
+FileNameExtensions: ["cps"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "OPS1"
+    CaseSensitive: true
+  - Pos: 5
+    #                    `
+    Bytes: [0x04, 0x99, 0x60]
+  - Pos: 12
+    AsciiString: "BZh91AY&SY"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BZH91AY"
+    CaseSensitive: false

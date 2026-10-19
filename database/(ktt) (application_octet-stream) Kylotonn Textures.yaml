@@ -1,0 +1,36 @@
+Name: Kylotonn Textures
+Description: Used in Bet On Soldier.
+URL: "https://www.mobygames.com/company/6920/kylotonn-sarl/"
+FileNameExtensions: ["ktt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "IMAG4X.v(\0\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "$fnx.ver\0"
+    CaseSensitive: true
+  - Pos: 38
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IMAG4X.V("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$FNX.VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BFSZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUFR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIP_"
+    CaseSensitive: false

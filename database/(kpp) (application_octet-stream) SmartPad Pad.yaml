@@ -1,0 +1,13 @@
+Name: SmartPad Pad
+URL: "https://wiki.preterhuman.net/SoftBlox_SmartPad"
+FileNameExtensions: ["kpp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xDA, 0xDA]
+  - Pos: 3
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WWWWWWWWW"
+    CaseSensitive: false

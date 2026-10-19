@@ -1,0 +1,11 @@
+Name: EDI Install archive
+URL: "http://fileformats.archiveteam.org/wiki/EDI_Install_archive"
+FileNameExtensions: ["$00", "$01", "$02", "bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ARCV\x10\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CHNK"
+    CaseSensitive: false

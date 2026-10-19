@@ -1,0 +1,49 @@
+Name: Apple notarization ticket (stapled / s8ch)
+URL: "https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "s8ch\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 216
+    AsciiString: "Software Ticket Signing1\x130\x11\x06\x03U\x04\n\f\nApple Inc.1\v0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KTHIS CERTIFICATE IS TO BE USED EXCLUSIVELY FOR FUNCTIONS INTERNAL TO APPLE PRODUCTS AND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLE CERTIFICATION AUTHORITY1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLE SYSTEM INTEGRATION CA 41"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE TICKET SIGNING1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCSP03-APPLEROOTCAG307"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OR APPLE PROCESSES.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLE ROOT CA - G31"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLEROOTCAG3.CRL0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCSP03-ASICA4020"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCSP.APPLE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CRL.APPLE.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLE INC.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

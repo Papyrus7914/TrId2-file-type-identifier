@@ -1,0 +1,14 @@
+Name: Piece Hash File
+Description: Used by the Microsoft AppX/MSIX Installer, Windows Update Delivery Optimization (WUDO) system.
+FileNameExtensions: ["phf"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"MajorVersion\":1,\"MinorVersion\":0,\"HashOfHashes\":\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENTLENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIECESIZE"
+    CaseSensitive: false

@@ -1,0 +1,35 @@
+Name: Unified Robot Description Format
+URL: "https://en.wikipedia.org/wiki/URDF"
+FileNameExtensions: ["urdf"]
+MimeType: application/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INERTIA IXX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASS VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIGIN XYZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GEOMETRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INERTIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VISUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROBOT"
+    CaseSensitive: false

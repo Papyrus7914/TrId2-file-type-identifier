@@ -1,0 +1,11 @@
+Name: SuperSonic Wiring
+Description: DOS CD player by Robert Morton Software Development.
+FileNameExtensions: ["wir"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\nNAME = "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GUTTER"
+    CaseSensitive: false

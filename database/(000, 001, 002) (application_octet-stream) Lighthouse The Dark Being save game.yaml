@@ -1,0 +1,10 @@
+Name: "Lighthouse: The Dark Being save game"
+URL: "https://www.mobygames.com/game/266/lighthouse-the-dark-being/"
+FileNameExtensions: ["000", "001", "002"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n\x800!\xE0\xF0.<\xE0Aq\xEB\x02\0\0"
+    CaseSensitive: true
+  - Pos: 16
+    Bytes: [0xF4, 0x00, 0x10, 0xC2]

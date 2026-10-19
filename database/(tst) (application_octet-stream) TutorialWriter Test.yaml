@@ -1,0 +1,11 @@
+Name: TutorialWriter Test
+Description: DOS authoring tool by Intelligent Educational Software.
+FileNameExtensions: ["tst"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x03TST"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEST"
+    CaseSensitive: false

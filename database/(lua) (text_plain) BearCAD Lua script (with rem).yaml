@@ -1,0 +1,11 @@
+Name: BearCAD Lua script (with rem)
+URL: "https://bearcad.com/"
+FileNameExtensions: ["lua"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "-- "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEARCAD.NEW()"
+    CaseSensitive: false

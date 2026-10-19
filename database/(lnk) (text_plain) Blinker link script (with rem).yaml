@@ -1,0 +1,17 @@
+Name: Blinker link script (with rem)
+Description: DOS overlay linker by Blinker Software (then Polaris Software).
+FileNameExtensions: ["lnk"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BEGINAREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDAREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LNK"
+    CaseSensitive: false

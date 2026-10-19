@@ -1,0 +1,19 @@
+Name: Synthia effect/synth
+Description: Amiga soft-synth.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "@@#Q\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "sp01pr01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SP01PR01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OP01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WS01"
+    CaseSensitive: false

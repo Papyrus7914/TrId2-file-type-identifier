@@ -1,0 +1,11 @@
+Name: copyx86 disk image (v2.x)
+Description: DOS disk copying tool by ingral Software.
+FileNameExtensions: ["img", "dsk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "copyx86 v2."
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: " backup file\r\n"
+    CaseSensitive: true

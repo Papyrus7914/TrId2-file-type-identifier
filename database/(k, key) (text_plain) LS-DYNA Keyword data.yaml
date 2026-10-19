@@ -1,0 +1,23 @@
+Name: LS-DYNA Keyword data
+URL: "https://www.dynaexamples.com/"
+FileNameExtensions: ["k", "key"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "$"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*KEYWORD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELEMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DYNA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODE"
+    CaseSensitive: false

@@ -1,0 +1,15 @@
+Name: Westwood Studios Talk audio data
+Description: "Used for example in Lands of Lore: The Throne of Chaos."
+URL: "https://www.mobygames.com/game/846/lands-of-lore-the-throne-of-chaos/"
+FileNameExtensions: ["tlk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\000000.VOC\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATIVE VOICE FILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "00000.VOC"
+    CaseSensitive: false

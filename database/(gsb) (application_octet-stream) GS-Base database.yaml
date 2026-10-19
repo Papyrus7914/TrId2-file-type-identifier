@@ -1,0 +1,41 @@
+Name: GS-Base database
+URL: "https://citadel5.com/gs-base.html"
+FileNameExtensions: ["gsb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "this-version.txt"
+    CaseSensitive: true
+  - Pos: 78
+    AsciiString: "2025PK\x03\x04"
+    CaseSensitive: true
+  - Pos: 112
+    AsciiString: "min-version.txt"
+    CaseSensitive: true
+  - Pos: 159
+    AsciiString: "2025PK\x03\x04"
+    CaseSensitive: true
+  - Pos: 193
+    AsciiString: "config.dat"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS-VERSION.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIN-VERSION.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANIFEST.TXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG.DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2025PK"
+    CaseSensitive: false

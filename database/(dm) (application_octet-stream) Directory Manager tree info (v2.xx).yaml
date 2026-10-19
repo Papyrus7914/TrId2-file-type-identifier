@@ -1,0 +1,17 @@
+Name: Directory Manager tree info (v2.xx)
+Description: DOS file manager by Frank Kintrup.
+FileNameExtensions: ["dm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\nDirectory Manager 2."
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\r\nCopyright (C) 19"
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "-19"
+    CaseSensitive: true
+  - Pos: 49
+    AsciiString: " by Frank Kintrup, M\x81nster  \r\n\x1A"
+    CaseSensitive: true

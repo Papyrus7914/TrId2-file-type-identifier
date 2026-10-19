@@ -1,0 +1,22 @@
+Name: AmigaDisk Button
+URL: "https://aminet.net/package/util/dir/AmiDisk_2.02"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Button]\nCommand="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDBUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOGGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WBRUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HELP"
+    CaseSensitive: false

@@ -1,0 +1,41 @@
+Name: Portacle FASt Load Common Lisp compiled code for Win x64 (v2.0.x)
+URL: "https://portacle.github.io/"
+FileNameExtensions: ["fasl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(GENCGC SB-DYNAMIC-CORE SB-PACKAGE-LOCKS SB-SAFEPOINT SB-SAFEPOINT-STRICTLY SB-THREAD SB-UNICODE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USING SBCL VERSION 2.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SBCL.EXE --SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPILED FROM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SB-IMPLO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X86-64N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LISP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%DEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2.0."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FASL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

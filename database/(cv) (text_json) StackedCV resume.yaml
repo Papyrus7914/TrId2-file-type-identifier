@@ -1,0 +1,11 @@
+Name: StackedCV resume
+URL: "https://stacked.cv/"
+FileNameExtensions: ["cv"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"appName\":\"stackedcv\",\"formatVersion\":"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: ",\"exportedAt\":\""
+    CaseSensitive: true

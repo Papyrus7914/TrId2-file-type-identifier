@@ -1,0 +1,11 @@
+Name: Texinfo index
+URL: "https://en.wikipedia.org/wiki/Texinfo"
+FileNameExtensions: ["cps", "fns", "kys", "pgs", "tps", "vrs"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\initial {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENTRY {"
+    CaseSensitive: false

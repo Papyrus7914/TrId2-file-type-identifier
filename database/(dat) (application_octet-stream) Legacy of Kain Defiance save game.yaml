@@ -1,0 +1,11 @@
+Name: "Legacy of Kain: Defiance save game"
+URL: "https://www.mobygames.com/game/11488/legacy-of-kain-defiance/"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Chapter "
+    CaseSensitive: true
+  - Pos: 256
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true

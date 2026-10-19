@@ -1,0 +1,44 @@
+Name: Quake 4 Collision Model (v2)
+URL: "https://www.mobygames.com/game/19650/quake-4/"
+FileNameExtensions: ["cm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CM \"2\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "* POLYGONMEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLLISIONMODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* BRUSHMEMORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* NUMVERTICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* NUMEDGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICES {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYGONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRUSHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGES {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NODES {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* 0 *"
+    CaseSensitive: false

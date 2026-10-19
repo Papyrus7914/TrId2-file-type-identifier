@@ -1,0 +1,35 @@
+Name: Hedgewars Demo
+URL: "https://hedgewars.org/"
+FileNameExtensions: ["hwd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x02TD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "EVOICEPACK DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPROTO 5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ESEED {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EGRAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EFORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EADD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EHAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEAM"
+    CaseSensitive: false

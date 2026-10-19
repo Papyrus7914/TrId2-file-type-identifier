@@ -1,0 +1,92 @@
+Name: Box Notes Note
+URL: "https://www.box.com/"
+FileNameExtensions: ["boxnote"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\"head\":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SHOULDCREATESAVEPOINTBEFOREAPPLYINGNEXTREVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHORCUSTOMAVATARURL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVALIDDIFFCHANGESET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXATTRIBSONSINGLEOP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLIEDATTRIBSCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEPOINTDATAFILEID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEPOINTLISTOBJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LASTEDITTIMESTAMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRSTKEYREVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-SIZE-MEDIUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIFFAUTHORLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVEDREVISIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PASSWORDHASH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBLICSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT-COLOR-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSERTORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMTOATTRIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHORNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHATHEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXTNUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPCOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REMOVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIGN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LMKR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POOL"
+    CaseSensitive: false

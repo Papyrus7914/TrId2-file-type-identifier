@@ -1,0 +1,32 @@
+Name: Baby Driver Printer Definition Table
+Description: DOS era print engine by Autumn Hill Software, used by various software companies.
+FileNameExtensions: ["pdt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PDT2"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HP LASERJET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HP PAINTJET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPATIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HP DESKJET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPRINTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPSON"
+    CaseSensitive: false

@@ -1,0 +1,8 @@
+Name: CDView encrypted GIF bitmap
+Description: Simple XOR 0xA5.
+URL: "http://fileformats.archiveteam.org/wiki/CDView_encrypted_image"
+FileNameExtensions: ["gif", "jpg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE2, 0xEC, 0xE3, 0x9D]

@@ -1,0 +1,11 @@
+Name: KmTermX Macro Binary Code
+Description: KmTermX AKA KTX is a '90s japanese terminal communication software.
+FileNameExtensions: ["mbc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 3
+    AsciiString: "\0\x82jmTermX Macro Binary Code\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "JMTERMX MACRO BINARY CODE"
+    CaseSensitive: false

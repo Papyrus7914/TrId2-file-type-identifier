@@ -1,0 +1,27 @@
+Name: ADVSYS Adventure source (with rem)
+Description: ADVenture SYStem, by David Betz.
+URL: "http://www.catb.org/retro"
+FileNameExtensions: ["adv"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(ADVENTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(PROPERTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(PRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(NOUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(ACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false

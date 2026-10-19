@@ -1,4 +1,4 @@
-Name: Farandole Composer sample
+Name: Farandole Composer Sample
 URL: "http://justsolve.archiveteam.org/wiki/Farandole_Composer_module"
 FileNameExtensions: ["fsm"]
 MimeType: application/octet-stream
@@ -6,6 +6,5 @@ DetectionPatterns:
   - Pos: 0
     AsciiString: "FSM\xFE"
     CaseSensitive: true
-  - Pos: 36
-    AsciiString: "\r\n\x1A"
-    CaseSensitive: true
+  - Pos: 38
+    Bytes: [0x1A]

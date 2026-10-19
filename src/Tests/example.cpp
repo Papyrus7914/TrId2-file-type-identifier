@@ -6,10 +6,9 @@
 #include <vector>
 
 void exampleMethod() {
-  // Detect possible file types.
-  // `TrId2Lib::detectFileType` uses the file type database from the `TrId2Database.h` header.
-  // The database is compiled into your binary. Thus there is no need to configure anything. You can use `TrId2Lib::detectFileType` right away.
-  const std::vector<TrId2Lib::FileType> candidates = TrId2Lib::detectFileType(/* filePath */ "C:/file/some.png", /* maxNumberOfCandidates */ 5U);
+  // Load the database once and reuse this detector to inspect multiple files.
+  const TrId2Lib::FileTypeDetector detector{"C:/database/TrId2Database.json"};
+  const std::vector<TrId2Lib::FileType> candidates = detector.detectFileType(/* filePath */ "C:/file/some.png", /* maxNumberOfCandidates */ 5U);
 
   // If library didn't manage to guess a file type, it returns an empty vector.
   if (candidates.empty())

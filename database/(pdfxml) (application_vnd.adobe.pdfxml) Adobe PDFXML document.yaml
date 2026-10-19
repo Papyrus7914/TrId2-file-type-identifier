@@ -1,0 +1,53 @@
+Name: Adobe PDFXML document
+URL: "http://fileformats.archiveteam.org/wiki/PDFXML"
+FileNameExtensions: ["pdfxml"]
+MimeType: application/vnd.adobe.pdfxml
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/vnd.adobe.pdfxml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPATIBILITY.PDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JAVASCRIPTS.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKMARKS.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTAINER.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKBONE.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CS-0.ICC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PG.CAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PG.SVG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

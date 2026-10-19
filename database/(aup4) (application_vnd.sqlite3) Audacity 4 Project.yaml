@@ -1,0 +1,125 @@
+Name: Audacity 4 Project
+URL: "https://en.wikipedia.org/wiki/Audacity_(audio_editor)"
+FileNameExtensions: ["aup4"]
+MimeType: application/vnd.sqlite3
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3\0"
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\0@  "
+    CaseSensitive: true
+  - Pos: 44
+    AsciiString: "\0\0\0\x04\0\0\0\0\0\0\0\0\0\0\0\x01\x04"
+    CaseSensitive: true
+  - Pos: 64
+    AsciiString: "\0\0\0\0AUDY"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "A\0\0\0U\0\0\0D\0\0\0A\0\0\0C\0\0\0I\0\0\0T\0\0\0Y\0\0\0P\0\0\0R\0\0\0O\0\0\0J\0\0\0E\0\0\0C\0\0\0T\0\0\0-\0\0\01\0\0\0.\0\0\03\0\0\0.\0\0\00\0\0\0.\0\0\0D\0\0\0T\0\0\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0\0\0U\0\0\0D\0\0\0A\0\0\0C\0\0\0I\0\0\0T\0\0\0Y\0\0\0.\0\0\0S\0\0\0O\0\0\0U\0\0\0R\0\0\0C\0\0\0E\0\0\0F\0\0\0O\0\0\0R\0\0\0G\0\0\0E\0\0\0.\0\0\0N\0\0\0E\0\0\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SAMPLEBLOCKS(  BLOCKID              INTEGER PRIMARY KEY AUTOINCREMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0T\0\0\0I\0\0\0M\0\0\0E\0\0\0_\0\0\0S\0\0\0I\0\0\0G\0\0\0N\0\0\0A\0\0\0T\0\0\0U\0\0\0R\0\0\0E\0\0\0_\0\0\0L\0\0\0O\0\0\0W\0\0\0E\0\0\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0T\0\0\0I\0\0\0M\0\0\0E\0\0\0_\0\0\0S\0\0\0I\0\0\0G\0\0\0N\0\0\0A\0\0\0T\0\0\0U\0\0\0R\0\0\0E\0\0\0_\0\0\0T\0\0\0E\0\0\0M\0\0\0P\0\0\0O"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0T\0\0\0I\0\0\0M\0\0\0E\0\0\0_\0\0\0S\0\0\0I\0\0\0G\0\0\0N\0\0\0A\0\0\0T\0\0\0U\0\0\0R\0\0\0E\0\0\0_\0\0\0U\0\0\0P\0\0\0P\0\0\0E\0\0\0R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE AUTOSAVE(  ID                   INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE PROJECT(  ID                   INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0\0\0U\0\0\0D\0\0\0A\0\0\0C\0\0\0I\0\0\0T\0\0\0Y\0\0\0V\0\0\0E\0\0\0R\0\0\0S\0\0\0I\0\0\0O\0\0\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0\0\0T\0\0\0A\0\0\0N\0\0\0D\0\0\0A\0\0\0L\0\0\0O\0\0\0N\0\0\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YTABLESQLITE_SEQUENCESQLITE_SEQUENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SQLITE_SEQUENCE(NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATABLESAMPLEBLOCKSSAMPLEBLOCKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8\0\0\0V\0\0\0E\0\0\0R\0\0\0S\0\0\0I\0\0\0O\0\0\0N"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLEFORMAT         INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOC                  BLOB)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAMPLES              BLOB)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0\0\0O\0\0\0C\0\0\0T\0\0\0Y\0\0\0P\0\0\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DICT                 BLOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0\0\0F\0\0\0F\0\0\0E\0\0\0C\0\0\0T\0\0\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARY256           BLOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARY64K           BLOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMAX               REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMIN               REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMRMS               REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "A\0\0\0C\0\0\0T\0\0\0I\0\0\0V\0\0\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0\0\0U\0\0\0B\0\0\0L\0\0\0I\0\0\0C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEAUTOSAVEAUTOSAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "}TABLEPROJECTPROJECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X\0\0\0M\0\0\0L\0\0\0N\0\0\0S"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQLITE FORMAT 3"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "H\0\0\0T\0\0\0T\0\0\0P"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R\0\0\0A\0\0\0T\0\0\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1\0\0\0.\0\0\00"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQ)"
+    CaseSensitive: false

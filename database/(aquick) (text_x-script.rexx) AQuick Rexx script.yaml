@@ -1,0 +1,14 @@
+Name: AQuick Rexx script
+Description: Amiga Offline Mail Reader by Andrew Westacott.
+FileNameExtensions: ["aquick"]
+MimeType: text/x-script.rexx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/* "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AQUICK_"
+    CaseSensitive: false

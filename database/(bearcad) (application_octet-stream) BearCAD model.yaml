@@ -1,0 +1,728 @@
+Name: BearCAD model
+URL: "https://bearcad.com/"
+FileNameExtensions: ["bearcad"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: 68
+    AsciiString: "\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "5TABLESKETCH_REPEAT_OPSSKETCH_REPEAT_OPS CREATE TABLE SKETCH_REPEAT_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7TABLECOMPONENT_MEMBERSCOMPONENT_MEMBERS-CREATE TABLE COMPONENT_MEMBERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATABLESKETCH_SLICE_OPSSKETCH_SLICE_OPS$CREATE TABLE SKETCH_SLICE_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEGEOMETRY_CACHEGEOMETRY_CACHE1CREATE TABLE GEOMETRY_CACHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEUNIT_INSTANCESUNIT_INSTANCES+CREATE TABLE UNIT_INSTANCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WTABLESKETCH_VERTEX_TREATMENT_OPSSKETCH_VERTEX_TREATMENT_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_COMPONENT_MEMBERS_1COMPONENT_MEMBERS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YTABLESKETCH_TEXTSSKETCH_TEXTS%CREATE TABLE SKETCH_TEXTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CTABLEUNDO_GROUPSUNDO_GROUPS0CREATE TABLE UNDO_GROUPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TABLECONSTRUCTION_PLANESCONSTRUCTION_PLANES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+TABLEEDGE_TREATMENT_OPSEDGE_TREATMENT_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "+TABLESKETCH_OFFSET_OPSSKETCH_OFFSET_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SKETCH_VERTEX_TREATMENT_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTABLESCHEMA_MIGRATIONSSCHEMA_MIGRATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESKETCH_MIRROR_OPSSKETCH_MIRROR_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTABLEJOINTSJOINTS(CREATE TABLE JOINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QTABLEIMPORTED_MESHESIMPORTED_MESHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KTABLEUNITSUNITS)CREATE TABLE UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_BLOBS_1BLOBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLECROSS_SECTIONSCROSS_SECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLETRACING_IMAGESTRACING_IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE CONSTRUCTION_PLANES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX_META_1META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE EDGE_TREATMENT_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SCHEMA_MIGRATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SKETCH_MIRROR_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SKETCH_OFFSET_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ID         INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7TABLEBOOLEAN_OPSBOOLEAN_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATABLEREVOLUTIONSREVOLUTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE IMPORTED_MESHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY_ID INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE CROSS_SECTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE TRACING_IMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLECONSTRAINTSCONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESHAPE_ORDERSHAPE_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WTABLEMIRROR_OPSMIRROR_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{TABLECOMPONENTSCOMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- EXPRESSIONS DRIVING OX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEEXTRUSIONSEXTRUSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPARAMETERSPARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPRIMITIVESPRIMITIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEREPEAT_OPSREPEAT_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE BOOLEAN_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE CONSTRAINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE REVOLUTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SHAPE_ORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAMETER_DIM_OFFSET REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TABLESHELL_OPSSHELL_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE COMPONENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE EXTRUSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE MIRROR_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE PRIMITIVES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE REPEAT_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAMETER_DIM_ANGLE REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAMETER_LOCKED INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTEND_INFINITE INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQ INTEGER PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEMATERIALSMATERIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESLICE_OPSSLICE_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE MATERIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SHELL_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SLICE_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETABLEMOVE_OPSMOVE_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEY   TEXT PRIMARY KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH_DIM_OFFSET REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "33TYPED_ENTITY_TABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASELINE_LINE INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALIBRATION_JSON TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE DRAWINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE MOVE_OPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SKETCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH_LOCKED INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEDRAWINGSDRAWINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLESKETCHESSKETCHES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAPER_EXPRESSION TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPONENT_ID INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONSTRUCTION INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE CIRCLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINITION_JSON TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE_MTIME INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STABLECIRCLESCIRCLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AROUND_AXIS INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE BODIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE SWEEPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT_LENGTH_UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINGERPRINT INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEEP_INPUTS INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATERIAL_ID INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERRIDES_JSON TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE_HEIGHT_MM REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE_HASH INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSLATE_MODE TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "9TABLEBODIESBODIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE_ORIGIN_U REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE_ORIGIN_V REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE_ROTATION REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTOURS_JSON TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE BLOBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE LINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE LOFTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT_ANGLE_UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAMETER_EXPR TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS A PLAIN NUMBER."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IS_PRIMARY INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTABLESWEEPSSWEEPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE_WIDTH_MM REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE META"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACE_FLIP INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMBER_ID INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCCT_VERSION TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET_EXPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT_ID INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAYLOAD_JSON TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKETCH_ID INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE_ID INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMMETRIC INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDERLINE INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1TABLELINESLINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGLE_EXPRESSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACE_OFFSET TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT_FAMILY TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH_EXPR TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH_UNIT TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMBER_KIND TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOT NULL DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARENT_KIND TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLANE_ID INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPEAT_JSON TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE_JSON TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE_KIND TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE_NAME TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGLE_UNIT TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APPLIED_AT TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE_ID INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME       TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRIMARY KEY (ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLL_ANGLE TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCHEMA_VERSION2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEBLOBSBLOBS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLELOFTSLOFTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAPER_MODE TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT_ID INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRAP_WIDTH REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANGLE_DEG REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACE_JSON TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FACE_SPIN TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITALIC INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KEEP_B INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARGIN_MM REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTABLEMETAMETA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION2 TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION3 TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHADOW INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE_EXPR TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THICKNESS TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTANCE REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISTANCE TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT BLOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ID    INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCH_MM REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POSITION TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOLD INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAXIMUM TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINIMUM TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPACITY REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OX_EXPR TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OY_EXPR TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OZ_EXPR TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPACING TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMOUNT REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APP_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXIS_X REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXIS_Y REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AXIS_Z REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LENGTH TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RADIUS TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNOBTAINIUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BYTES BLOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEPTH TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIR_U REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIR_V REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIND  TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMBER_ID)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REST2 TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REST3 TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAPER REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U_MAX REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "U_MIN REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V_MAX REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "V_MIN REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREP BLOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "G INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINK TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESH BLOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET_MM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R INTEGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REST TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEP TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "O\0XYROOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CX REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CY REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NX REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NY REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NZ REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OX REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OY REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OZ REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RX TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RY TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RZ TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TX TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TY TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TZ TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UX REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UY REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UZ REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VX REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VY REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VZ REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X0 REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X1 REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y0 REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Y1 REAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANCHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORMAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIND)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OZ ("
+    CaseSensitive: false

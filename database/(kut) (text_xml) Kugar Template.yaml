@@ -1,0 +1,101 @@
+Name: Kugar Template
+Description: Part of the Kugar reporting engine, used by FacturaScripts / Eneboo / Sistemas Abaco.
+FileNameExtensions: ["kut"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DOCTYPE KUGARTEMPLATE SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KUGARTEMPLATE.DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUNDCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOREGROUNDCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEORIENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMASEPARATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETAIL HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEGVALUECOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOTTOMMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDERCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDERSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDERWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RIGHTMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATEFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTFAMILY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTITALIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTWEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HALIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFTMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALIGNMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRECISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPMARGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURRENCY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATATYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORDWRAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FOOTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LABEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

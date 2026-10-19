@@ -1,0 +1,32 @@
+Name: UAE/WinUAE configuration
+URL: "https://www.winuae.net/"
+FileNameExtensions: ["uae"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "config_description="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GFX_FULLSCREEN_AMIGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFIG_DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONE"
+    CaseSensitive: false

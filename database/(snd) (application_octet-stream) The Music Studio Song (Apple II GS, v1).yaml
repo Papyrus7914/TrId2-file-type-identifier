@@ -1,0 +1,11 @@
+Name: The Music Studio Song (Apple II GS, v1)
+URL: "http://justsolve.archiveteam.org/wiki/The_Music_Studio"
+FileNameExtensions: ["snd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xCFMstudio\xCF\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".WBNK"
+    CaseSensitive: false

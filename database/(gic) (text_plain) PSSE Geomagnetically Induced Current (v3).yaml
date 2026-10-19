@@ -1,0 +1,41 @@
+Name: PSS/E Geomagnetically Induced Current (v3)
+URL: "https://electricgrids.engr.tamu.edu/file-formats/"
+FileNameExtensions: ["gic"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GICFILEVRSN=3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END OF USER EARTH MODEL DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN USER EARTH MODEL DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF BUS FIXED SHUNT DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN BUS FIXED SHUNT DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF BUS SUBSTATION DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN BUS SUBSTATION DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF TRANSFORMER DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN TRANSFORMER DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF SUBSTATION DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END OF BRANCH DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN BRANCH DATA"
+    CaseSensitive: false

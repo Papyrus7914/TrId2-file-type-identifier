@@ -1,0 +1,14 @@
+Name: TutorialWriter Hypertext
+Description: DOS authoring tool by Intelligent Educational Software.
+FileNameExtensions: ["hyp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x03HYP"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "\xE1$\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BUTTON"
+    CaseSensitive: false

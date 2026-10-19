@@ -5,5 +5,7 @@ FileNameExtensions: ["mef"]
 MimeType: application/octet-stream
 DetectionPatterns:
   - Pos: 0
-    AsciiString: "MR\0\0\0\0\0\0\0\0\x1C\x0E"
+    AsciiString: "MR\0\0\0\0\0\0\0\0"
     CaseSensitive: true
+  - Pos: 11
+    Bytes: [0x0E]
