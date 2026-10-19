@@ -1,0 +1,23 @@
+Name: Elgato Stream Deck Plugin
+URL: "https://www.elgato.com/ww/en/p/stream-deck"
+FileNameExtensions: ["streamdeckplugin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "MANIFEST.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SDPLUGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2X.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false

@@ -1,0 +1,44 @@
+Name: PullDown menu Definition (with rem)
+Description: DOS Menu system by MicroDynamics Development.
+FileNameExtensions: ["def"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "`"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "+ECHO TYPE PULLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MENU DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%EXIT TO DOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARE YOU SURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PULLDOWN V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RETURN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DEF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YORN"
+    CaseSensitive: false

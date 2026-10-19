@@ -1,0 +1,83 @@
+Name: Microsoft Site Server Analysis report definition
+URL: "https://en.wikipedia.org/wiki/Microsoft_Commerce_Server"
+FileNameExtensions: ["mfa"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Report]\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRESENTATION1NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENTATION1TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVERAGEACCURATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMPRESENTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENTATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASURE1NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALCULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOGRIDLINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMCHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMMEASURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENTDESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWDIM1NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILD1NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILD1TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILD2NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILD2TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMCOLDIMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMROWDIMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEASURE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWDIM."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false

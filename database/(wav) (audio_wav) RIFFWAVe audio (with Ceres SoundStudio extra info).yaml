@@ -1,0 +1,26 @@
+Name: RIFF/WAVe audio (with Ceres SoundStudio extra info)
+Description: Contains some additional chunks of data, like Title, Copyright, etc.
+FileNameExtensions: ["wav"]
+MimeType: audio/wav
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "WAVEchni"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "titl"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WAVECHNI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITL"
+    CaseSensitive: false

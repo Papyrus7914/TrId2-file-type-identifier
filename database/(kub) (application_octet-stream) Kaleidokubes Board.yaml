@@ -1,0 +1,29 @@
+Name: Kaleidokubes Board
+Description: DOS game by Artworx Software Co. Inc.
+FileNameExtensions: ["kub"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 4
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 249
+    AsciiString: "Player          Seconds   Left"
+    CaseSensitive: true
+  - Pos: 454
+    AsciiString: "Player             Score"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PLAYER          SECONDS   LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYER             SCORE"
+    CaseSensitive: false

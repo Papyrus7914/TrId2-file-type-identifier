@@ -65,8 +65,4 @@ BuildAndTest -buildType Debug -arch x86
 BuildAndTest -buildType Release -arch x86
 
 Info "Create Windows x64 zip archive"
-Compress-Archive -Path "$buildDir/win-Release-amd64/TrId2Console.exe" -DestinationPath "$buildDir/TrId2Console-windows-x64.zip" -Force
-New-Item $buildDir/TrId2Lib -Force -ItemType "directory" > $null
-Copy-Item -Path $root/src/TrId2Lib/TrId2FileTypeDetector.h -Destination $buildDir/TrId2Lib -Force
-Copy-Item -Path $buildDir/win-Release-amd64/Gen/TrId2Database.h -Destination $buildDir/TrId2Lib -Force
-Compress-Archive -Path $buildDir/TrId2Lib -DestinationPath $buildDir/TrId2Lib.zip -Force
+Compress-Archive -Path "$buildDir/win-Release-amd64/TrId2Console.exe", "$buildDir/win-Release-amd64/TrId2Database.json" -DestinationPath "$buildDir/TrId2Console-windows-x64.zip" -Force

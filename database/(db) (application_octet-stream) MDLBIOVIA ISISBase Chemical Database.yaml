@@ -1,0 +1,44 @@
+Name: MDL/BIOVIA ISIS/Base Chemical Database
+URL: "https://en.wikipedia.org/wiki/ISIS/Draw"
+FileNameExtensions: ["db"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                            0
+    Bytes: [0xE8, 0x03, 0x04, 0x80, 0x7F, 0x00, 0x30, 0x00]
+  - Pos: any
+    AsciiString: "*STRUCTURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLDNAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SALTDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WSFIELDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFFORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOLSTRU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*CTAB_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*FMLA_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*KEYS_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DBOBJS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROOT"
+    CaseSensitive: false

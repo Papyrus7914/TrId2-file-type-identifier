@@ -1,0 +1,15 @@
+Name: CodeWarrior Project (big endian)
+Description: CodeWarrior is an integrated, multiplatform development environment that is developed and marketed by Freescale Semiconductor.
+URL: "https://en.wikipedia.org/wiki/Codewarrior"
+FileNameExtensions: ["mcp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "cool"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "CodeWarrior Project"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CODEWARRIOR PROJECT"
+    CaseSensitive: false

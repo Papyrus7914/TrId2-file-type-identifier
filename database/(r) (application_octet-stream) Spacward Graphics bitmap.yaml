@@ -1,0 +1,19 @@
+Name: Spacward Graphics bitmap
+FileNameExtensions: ["r"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 78
+    AsciiString: "Copyright Spacward Graphics Ltd (c)                                           "
+    CaseSensitive: true
+  - Pos: 1671
+    AsciiString: "vers-"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COPYRIGHT SPACWARD GRAPHICS LTD (C)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS-"
+    CaseSensitive: false

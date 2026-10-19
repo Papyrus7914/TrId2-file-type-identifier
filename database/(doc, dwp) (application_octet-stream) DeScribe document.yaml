@@ -1,0 +1,41 @@
+Name: DeScribe document
+Description: Frame ordiented word processor for OS/2 and later Windows.
+FileNameExtensions: ["doc", "dwp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x04\0DeScribe  Copyright DeScribe, Inc., "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIBE GLOSSARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVISIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INFO"
+    CaseSensitive: false

@@ -1,0 +1,23 @@
+Name: PDFx document
+URL: "https://github.com/AlexandrosGounis/pdfx"
+FileNameExtensions: ["pdfx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "%PDF-1.7"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PDFX-MANIFEST.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

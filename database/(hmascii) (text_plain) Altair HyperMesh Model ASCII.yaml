@@ -1,0 +1,59 @@
+Name: Altair HyperMesh Model ASCII
+URL: "https://www.siemens.com/en-us/products/simcenter/simulation-modeling-visualization/hypermesh/"
+FileNameExtensions: ["hmascii"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*filetype(ASCII)\n*version("
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "*FILETYPE(ASCII)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*LOADCOLLECTOR("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPLOADSURFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*TEMPERATURE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END ELEMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN LOADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*PRESSURE("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*VERSION("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END LOADS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END NODES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*QUAD4("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*TRIA3("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENDDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "*NODE("
+    CaseSensitive: false

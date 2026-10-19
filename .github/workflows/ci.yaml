@@ -3,28 +3,32 @@ on: push
 jobs:
   build-windows:
     name: Build Windows
-    runs-on: windows-2025-vs2026
+    runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
-          python-version: "3.14"
+          python-version: '3.x'
+          check-latest: true
       - run: python -m pip install --upgrade pip
       - run: python -m pip install PyYAML
-      - run: ./build-win.ps1
+      - run: New-Item -ItemType Junction -Path C:\r -Target "${{ github.workspace }}"
+      - run: git config --global core.longpaths true
+      - shell: pwsh
+        working-directory: C:\r
+        run: ./build-win.ps1
       - uses: actions/upload-artifact@v7
         with:
           name: build-windows
           if-no-files-found: error
           path: |
-            build/TrId2Lib.zip
             build/TrId2Console-windows-x64.zip
   build-linux:
     name: Build Linux
     runs-on: ubuntu-26.04
     steps:
-      - uses: actions/checkout@v6
-      - run: sudo apt-get update && sudo apt-get install -y clang
+      - uses: actions/checkout@v7
+      - run: sudo apt-get update && sudo apt-get dist-upgrade -y && sudo apt-get install -y clang
       - run: ./build-linux.sh
       - uses: actions/upload-artifact@v7
         with:
@@ -35,10 +39,11 @@ jobs:
     name: Build macOS
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-python@v6
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
-          python-version: "3.14"
+          python-version: '3.x'
+          check-latest: true
       - run: python -m pip install --upgrade pip
       - run: python -m pip install PyYAML
       - run: ./build-macos.sh
@@ -65,7 +70,6 @@ jobs:
         with:
           draft: true
           files: |
-            build/TrId2Lib.zip
             build/TrId2Console-windows-x64.zip
             build/TrId2Console-linux-x64.tar.gz
             build/TrId2Console-macos-arm64.tar.gz
@@ -74,7 +78,6 @@ jobs:
           name: Build artifacts
           if-no-files-found: error
           path: |
-            build/TrId2Lib.zip
             build/TrId2Console-windows-x64.zip
             build/TrId2Console-linux-x64.tar.gz
             build/TrId2Console-macos-arm64.tar.gz

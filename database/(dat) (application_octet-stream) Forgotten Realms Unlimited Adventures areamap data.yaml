@@ -1,0 +1,17 @@
+Name: "Forgotten Realms: Unlimited Adventures area/map data"
+URL: "https://www.mobygames.com/game/710/unlimited-adventures/"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORM\0\02\x9AAMOD\0\02\x92HDR \0\0\x01\"\0j"
+    CaseSensitive: true
+  - Pos: 314
+    AsciiString: "MAP \0\0\r\x80"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENCR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRG"
+    CaseSensitive: false

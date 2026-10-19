@@ -1,0 +1,37 @@
+Name: Novell/Netware Message Handling Service Modem Definition
+FileNameExtensions: ["mdf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "; Release 1.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MDF DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADJUST SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOW CONTROL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEM SPEEDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX COMMAND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDF VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDF TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HAYES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INIT"
+    CaseSensitive: false

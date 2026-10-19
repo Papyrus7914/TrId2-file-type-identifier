@@ -1,0 +1,17 @@
+Name: UpWord document (v1.x)
+Description: Windows 3.x word processor by Wang Laboratories.
+FileNameExtensions: ["wld"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xFF\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: "\0\x04\0\x05\0"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true

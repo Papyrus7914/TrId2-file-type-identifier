@@ -1,0 +1,47 @@
+Name: Morphit binder
+URL: "https://www.instem.com/solutions/study-management/morphit/"
+FileNameExtensions: ["mor"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "binder.bin"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BINDER PDF PREVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE MORPHIT BINDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE DEFINITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUDITTRAIL.S3DB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINDER CONTENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINDER DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINDER PREVIEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEDEFS.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.BMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVIEW.PDF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BINDER.BIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX.XML"
+    CaseSensitive: false

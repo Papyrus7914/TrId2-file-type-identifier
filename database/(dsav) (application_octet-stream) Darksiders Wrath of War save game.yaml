@@ -1,0 +1,14 @@
+Name: "Darksiders: Wrath of War save game"
+URL: "https://www.mobygames.com/game/45562/darksiders/"
+FileNameExtensions: ["dsav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DSAV"
+    CaseSensitive: true
+  - Pos: 37
+    AsciiString: "BOD\xFD"
+    CaseSensitive: true
+  - Pos: 57
+    #        x
+    Bytes: [0x78, 0xDA]

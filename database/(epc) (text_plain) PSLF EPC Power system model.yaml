@@ -1,0 +1,146 @@
+Name: PSLF EPC Power system model
+URL: "https://electricgrids.engr.tamu.edu/file-formats/"
+FileNameExtensions: ["epc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "title\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ID                                 CK  SE  ------------LONG_ID_------------     ST AR  ZONE    PU_MW  PU_MVAR  DATE_IN DATE_OUT PID N OWN PART1 OWN PART2 OWN PART3 OWN PART4 --NUM-- ----NAME----  --KV-- M --NUM--  ----NAME----  --KV--  ID  ST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ID   ------------LONG_ID_------------    ST TY --NO---     REG_NAME           AR ZONE      G      B  MIN_C  MAX_C  VBAND   BMIN   BMAX  DATE_IN DATE_OUT PID N OWN PART1 OWN PART2 OWN PART3 OWN PART4 M ST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TY  VSCHED   VOLT     ANGLE    AR ZONE  VMAX   VMIN   DATE_IN DATE_OUT PID L OWN ST  LATITUDE  LONGITUDE ISLAND    SDMON   VMAX1      VMIN1      DVMAX SUBST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-TAP2 FACT2 -TAP3 FACT3 -TAP4 FACT4 -TAP5 FACT5 -TAP6 FACT6 -TAP7 FACT7 -TAP8 FACT8 -TAP9 FACT9 TAP10 FAC10 TAP11 FAC11"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PNET     QNET   -RATE1- -RATE2- -RATE3- -RATE4- -RATE5- -RATE6- -RATE7- -RATE8-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNER NAME           S NAME       NET_MW   NET_MVAR     SCH_MW   SCH_MVAR  AR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ST    SCH_MW   SCH_MVAR  FLAG STN PID         TRANSACTION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CK   ------------LONG_ID_------------     ST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VSCHED     DC_VOLT  DATE_IN DATE_OUT PID OWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SWING  DESIRED    TOL      PNET     QNET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REG   AR ZONE  DATE_IN DATE_OUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATE1  RATE2  RATE3  RATE4"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CK      -I_NO-  PART_FAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ST TY MD NB FG  --NO---"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACE BRANCH DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLUTION PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC CONVERTER DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JUMPER THRESHOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEWTON TOLERANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSACTION DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSTATION DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM MVA BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACE DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESIST   REACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "Z TABLE DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DC BUS DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QTABLE DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNER DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHUNT DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AREA DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZONE DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GCD DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NO  NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SVD DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BA DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALOSS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DCTAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SBASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TCUL"
+    CaseSensitive: false

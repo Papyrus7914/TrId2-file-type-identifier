@@ -1,0 +1,7 @@
+Name: MPEG-4 Fragmented Media Segment (ISO/IEC 14496-12, styp box)
+FileNameExtensions: ["m4s"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\0\x1Cstypmsdh\0\0\0\0"
+    CaseSensitive: true

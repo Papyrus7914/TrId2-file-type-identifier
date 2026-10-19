@@ -1,0 +1,11 @@
+Name: MS Visual C++ Precompiled Header
+URL: "http://msdn.microsoft.com/visualc/"
+FileNameExtensions: ["pch"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "VCPCH0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "_MSC_"
+    CaseSensitive: false

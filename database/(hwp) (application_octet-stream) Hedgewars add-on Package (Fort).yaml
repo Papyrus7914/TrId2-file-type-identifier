@@ -1,0 +1,29 @@
+Name: Hedgewars add-on Package (Fort)
+URL: "https://www.hedgewars.org/kb/HWPFormat"
+FileNameExtensions: ["hwp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Forts/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "R.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false

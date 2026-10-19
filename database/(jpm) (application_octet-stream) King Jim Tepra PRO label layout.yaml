@@ -1,0 +1,16 @@
+Name: King Jim Tepra PRO label layout
+FileNameExtensions: ["jpm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "jpm\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\x01\0\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-LH5-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".JPL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JSPL"
+    CaseSensitive: false

@@ -1,0 +1,34 @@
+Name: NCG encrypted DRM container
+URL: "https://github.com/openlgtv/ncgDump"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NCGFILE_HEADER"
+    CaseSensitive: true
+  - Pos: 512
+    AsciiString: "<?xml version=\"1.0\"?>\n<ncgxmlhdr>\n\t<content>\n\t\t<source>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENCRYPTION RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCGXMLHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKDATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

@@ -1,0 +1,9 @@
+Name: SEA compressed audio
+Description: AKA Simple Embedded Audio codec.
+URL: "https://github.com/Daninet/sea-codec"
+FileNameExtensions: ["sea"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SEAC\x01"
+    CaseSensitive: true

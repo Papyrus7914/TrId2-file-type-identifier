@@ -1,0 +1,525 @@
+Name: Vassal core module definition
+Description: Filename is buildfile.xml, inside a .vmod zipped file.
+URL: "https://vassalengine.org/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MARK ALL PIECES ON THIS MAP AS NOT MOVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VASSAL.BUILD.WIDGET.PIECESLOT ENTRYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORELEADINGZEROINTEGERSASSTRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.BOARDPICKER ADDCOLUMNTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.HIGHLIGHTLASTMOVED COLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.BOARDPICKER.BOARD IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES.GLOBALPROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.COUNTERDETAILVIEWER B"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.IMAGESAVER BUTTONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.SELECTIONHIGHLIGHTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FROM TOP-MOST LAYER ONLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOBALOPTIONS AUTOREPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENDTOLOCATIONMOVETRAILS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.STACKMETRICS BOTTOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.ZOOMER INBUTTONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VASSAL.BUILD.GAMEMODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTERPIECESVERTICALLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOTKEYSONCLOSEDWINDOWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.FORWARDTOKEYBUFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMBINECOUNTERSUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE MAP AS PNG IMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDERINNERTHICKNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.FORWARDTOCHATTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPPONENTS CAN UNMASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASICCOMMANDENCODER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNTERREPORTFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMPTYHEXREPORTFORMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERROSTER BUTTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOTYPEDEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROTOTYPESCONTAINER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRETCHWIDTHSUMMARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUMMARYREPORTFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VASSAL.BUILD.MODULE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHATTERHTMLSUPPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKUNMOVEDTOOLTIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NONOWNERUNMASKABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWTERRAINBENEATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP ALLOWMULTIPLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.MENUDISPLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.STACKEXPANDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKUNMOVEDHOTKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKUNMOVEDREPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWTERRAINHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWTERRAINSNAPPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRATEXTPADDING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINDISPLAYPIECES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVEWITHINFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWMOVESELECTDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWTERRAINWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STOPAFTERSHOWING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BACKGROUNDCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDERTHICKNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTONKEYSTROKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVENTORYFORALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.KEYBUFFERER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.MAPCENTERER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKUNMOVEDICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKUNMOVEDTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXTPIECESLOTID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWGRAPHSINGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWTERRAINTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWTERRAINZOOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALTOPTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$LOCATIONNAME$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENTATION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAP.PIECEMOVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICKBUTTONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAYERIDFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYFILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWDECKMASKED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWNONMOVABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWTEXTSINGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNROTATEPIECES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERTICALOFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTONTOOLTIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHOOSE BOARDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTBUTTONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWDECKDEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VASSALVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHANGEFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHICSZOOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRIDLOCATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULEOTHER1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULEOTHER2"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVETOFORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICKICONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROMPTSTRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTYGATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT BOARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOARDPROMPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDERCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BORDERWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTICONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PICKTOOLTIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT ZOOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWNOSTACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWOVERLAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOMPICKKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADD COLUMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDROWTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUTTONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANDISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTERTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGEHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLEHTML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INICONNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTTOOLTIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIECENAME$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REVERSIBLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOTHEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDALONE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDOHOTKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOMLEVELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOMOUTKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$MESSAGE$"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CENTERALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDGEWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTOOLTIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYERLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARKMOVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOTSCALE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLOTWIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOMINKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOMSTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTSIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MESSAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODULE M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNDOICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNEXSEPX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNEXSEPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOM OUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "$PLAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADD ROW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BGCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FGCOLOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIDEKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOVEKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZOOM IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALWAYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HIDDEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAUNCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHOWFI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEVER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ULTWI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".GIF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DRAW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIDE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAKE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TURN"
+    CaseSensitive: false

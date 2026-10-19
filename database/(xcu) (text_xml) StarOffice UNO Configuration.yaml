@@ -1,0 +1,62 @@
+Name: StarOffice UNO Configuration
+URL: "https://en.wikipedia.org/wiki/StarOffice"
+FileNameExtensions: ["xcu"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "1.0"
+    CaseSensitive: true
+  - Pos: 19
+    AsciiString: " encoding="
+    CaseSensitive: true
+  - Pos: 30
+    AsciiString: "UTF-8"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMPONENT-DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPENOFFICE.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORG.OPENOFFICE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.W3.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLSCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REGISTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACKAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTF-8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2001"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

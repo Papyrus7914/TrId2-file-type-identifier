@@ -1,0 +1,8 @@
+Name: Amiga 4GetIt! packed executable
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x00, 0x00, 0x03, 0xF3]
+  - Pos: any
+    AsciiString: "4GET IT"
+    CaseSensitive: false

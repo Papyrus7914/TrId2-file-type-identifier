@@ -1,0 +1,56 @@
+Name: Hiebook eBook
+URL: "https://wiki.mobileread.com/wiki/KML"
+FileNameExtensions: ["kml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KOREAEBOOKDOCUMENT1."
+    CaseSensitive: true
+  - Pos: 543
+    AsciiString: "para.xml"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KOREAEBOOKSTYLEFILE_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOKDESIGNER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HR_FILE_0 ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XML VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGEBREAK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLEPARA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIG.CONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTPARA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARA.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EUC-KR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIGGR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".STY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT"
+    CaseSensitive: false

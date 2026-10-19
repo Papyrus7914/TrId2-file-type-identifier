@@ -1,0 +1,41 @@
+Name: Character Studio Motion Mixer
+URL: "https://en.wikipedia.org/wiki/Autodesk_3ds_Max#Features"
+FileNameExtensions: ["mix"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MOFLOW_VERSION\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "11 WEIGHTCURVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOFLOW_VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "10 TRACKGROUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOTION_MIXER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "8 TIMEWARP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "7 CLIPROW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUTORIALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "5 TRACK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CSTUDIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4 CLIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BIP"
+    CaseSensitive: false

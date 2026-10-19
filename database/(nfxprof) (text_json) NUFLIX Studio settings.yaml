@@ -1,0 +1,25 @@
+Name: NUFLIX Studio settings
+FileNameExtensions: ["nfxprof"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n    \"Mode\": "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TARGETINDICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCECOLORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BRIGHTNESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SATURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTRAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODE"
+    CaseSensitive: false

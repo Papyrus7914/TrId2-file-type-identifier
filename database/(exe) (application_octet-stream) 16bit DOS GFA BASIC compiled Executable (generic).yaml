@@ -1,0 +1,40 @@
+Name: 16bit DOS GFA BASIC compiled Executable (generic)
+URL: "https://en.wikipedia.org/wiki/GFA_BASIC"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "\0\x01\0\0\0\x03\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0\xFF\xFF\0\0\0\0\0\0\0\0\0\0>\0\0\0\x01\0\xFB0jr\0\0\0\0\0\0\0\0\0\0\0\0\0\0\xE9"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "\0\xCD!\xB8\0K\xBA"
+    CaseSensitive: true
+  - Pos: 58
+    Bytes: [0x00, 0xBB]
+  - Pos: 61
+    #                    !
+    Bytes: [0x01, 0xCD, 0x21, 0xB4]
+  - Pos: 460
+    AsciiString: "PR"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CANNOT FIND GFABA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEED DOS 3.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IC.OVL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAUV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUN"
+    CaseSensitive: false

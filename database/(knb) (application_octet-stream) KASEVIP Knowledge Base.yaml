@@ -1,0 +1,26 @@
+Name: KASE:VIP Knowledge Base
+URL: "https://www.edm2.com/index.php/KASE:VIP"
+FileNameExtensions: ["knb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "`m"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "z"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "\t"
+    CaseSensitive: true
+  - Pos: 27
+    AsciiString: "Uixi"
+    CaseSensitive: true
+  - Pos: 32
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "UIXI"
+    CaseSensitive: false

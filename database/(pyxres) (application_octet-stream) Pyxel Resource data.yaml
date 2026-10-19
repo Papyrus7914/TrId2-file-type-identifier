@@ -1,0 +1,14 @@
+Name: Pyxel Resource data
+URL: "https://github.com/kitao/pyxel"
+FileNameExtensions: ["pyxres"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "pyxel_resource"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PYXEL_RESOURCE"
+    CaseSensitive: false

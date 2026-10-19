@@ -14,19 +14,17 @@
 #include <system_error>
 #include <vector>
 
+[[nodiscard]] static const TrId2Lib::FileTypeDetector& databaseDetector() {
+  static const TrId2Lib::FileTypeDetector detector{TRID2_DATABASE_PATH};
+  return detector;
+}
+
 [[nodiscard]] static bool containsCandidate(const std::vector<TrId2Lib::FileType>& candidates, const std::string_view name) {
   return std::ranges::any_of(candidates, [name](const auto& candidate) { return candidate.Name == name; });
 }
 
-[[nodiscard]] static std::string_view byteView(const std::span<const std::byte> bytes) {
-  if (bytes.empty()) {
-    return {};
-  }
-  return std::string_view{reinterpret_cast<const char*>(bytes.data()), bytes.size()};
-}
-
 TEST_CASE("detectFileType returns empty vector for empty input") {
-  const auto candidates = TrId2Lib::Impl::detectFileTypeImpl({}, 5U);
+  const auto candidates = databaseDetector().detectFileType(std::span<const std::byte>{}, 5U);
   CHECK(candidates.empty());
 }
 
@@ -35,7 +33,7 @@ TEST_CASE("detectFileType throws when file cannot be opened") {
   std::error_code ec;
   std::filesystem::remove(path, ec);
 
-  CHECK_THROWS_AS(static_cast<void>(TrId2Lib::detectFileType(path, 5U)), std::runtime_error);
+  CHECK_THROWS_AS(static_cast<void>(databaseDetector().detectFileType(path, 5U)), std::runtime_error);
 }
 
 TEST_CASE("detectFileType recognizes stable in-memory signatures") {
@@ -43,7 +41,7 @@ TEST_CASE("detectFileType recognizes stable in-memory signatures") {
     constexpr auto bytes = std::to_array<unsigned char>(
         {0x89U, 'P', 'N', 'G', '\r', '\n', 0x1AU, '\n', 0x00U, 0x00U, 0x00U, '\r', 'I', 'H', 'D', 'R', 0x00U, 0x00U, 0x00U, 0x01U, 0x00U, 0x00U, 0x00U, 0x01U});
 
-    const auto result = TrId2Lib::Impl::detectFileTypeImpl(byteView(std::as_bytes(std::span{bytes})), 5U);
+    const auto result = databaseDetector().detectFileType(std::as_bytes(std::span{bytes}), 5U);
 
     const auto& candidates = result;
     REQUIRE_FALSE(candidates.empty());
@@ -54,7 +52,7 @@ TEST_CASE("detectFileType recognizes stable in-memory signatures") {
   SUBCASE("ZIP") {
     constexpr auto bytes = std::to_array<unsigned char>({'P', 'K', 0x05U, 0x06U, 0x00U, 0x00U, 0x00U, 0x00U});
 
-    const auto result = TrId2Lib::Impl::detectFileTypeImpl(byteView(std::as_bytes(std::span{bytes})), 5U);
+    const auto result = databaseDetector().detectFileType(std::as_bytes(std::span{bytes}), 5U);
 
     const auto& candidates = result;
     REQUIRE_FALSE(candidates.empty());
@@ -62,7 +60,8 @@ TEST_CASE("detectFileType recognizes stable in-memory signatures") {
   }
 
   SUBCASE("RTF") {
-    const auto result = TrId2Lib::Impl::detectFileTypeImpl("{\\rtf", 5U);
+    constexpr std::string_view bytes = "{\\rtf";
+    const auto result = databaseDetector().detectFileType(std::as_bytes(std::span{bytes}), 5U);
 
     const auto& candidates = result;
     REQUIRE_FALSE(candidates.empty());
@@ -72,7 +71,7 @@ TEST_CASE("detectFileType recognizes stable in-memory signatures") {
   SUBCASE("CHM") {
     constexpr auto bytes = std::to_array<unsigned char>({'I', 'T', 'S', 'F', 0x03U, 0x00U, 0x00U, 0x00U});
 
-    const auto result = TrId2Lib::Impl::detectFileTypeImpl(byteView(std::as_bytes(std::span{bytes})), 5U);
+    const auto result = databaseDetector().detectFileType(std::as_bytes(std::span{bytes}), 5U);
 
     const auto& candidates = result;
     REQUIRE_FALSE(candidates.empty());
@@ -86,7 +85,7 @@ TEST_CASE("case-insensitive patterns match lowercase input") {
   constexpr std::string_view tableNames = "cmap glyf head loca maxp name post $hmtx 6hhea";
   std::ranges::copy(tableNames, bytes.begin() + 64);
 
-  const auto result = TrId2Lib::Impl::detectFileTypeImpl(byteView(std::as_bytes(std::span{bytes})), 20U);
+  const auto result = databaseDetector().detectFileType(std::as_bytes(std::span{bytes}), 20U);
 
   CHECK(containsCandidate(result, "TrueType Font"));
 }
@@ -98,7 +97,7 @@ TEST_CASE("any-position patterns require every positional pattern to match") {
   constexpr std::string_view tableNames = "CMAP GLYF HEAD HHEA HMTX LOCA MAXP NAME POST";
   std::copy(tableNames.begin(), tableNames.end(), bytes.begin() + 16);
 
-  const auto candidates = TrId2Lib::Impl::detectFileTypeImpl(byteView(std::as_bytes(std::span{bytes})), 20U);
+  const auto candidates = databaseDetector().detectFileType(std::as_bytes(std::span{bytes}), 20U);
 
   const auto matchedTrueType = containsCandidate(candidates, "TrueType Font");
   CHECK_FALSE(matchedTrueType);
@@ -108,7 +107,7 @@ TEST_CASE("candidate count limits returned results") {
   constexpr auto bytes = std::to_array<unsigned char>(
       {0x89U, 'P', 'N', 'G', '\r', '\n', 0x1AU, '\n', 0x00U, 0x00U, 0x00U, '\r', 'I', 'H', 'D', 'R', 0x00U, 0x00U, 0x00U, 0x01U, 0x00U, 0x00U, 0x00U, 0x01U});
 
-  const auto result = TrId2Lib::Impl::detectFileTypeImpl(byteView(std::as_bytes(std::span{bytes})), 2U);
+  const auto result = databaseDetector().detectFileType(std::as_bytes(std::span{bytes}), 2U);
 
   const auto& candidates = result;
   REQUIRE(candidates.size() <= 2U);
@@ -130,7 +129,7 @@ TEST_CASE("detectFileType samples both ends of oversized files") {
     REQUIRE(file);
   }
 
-  const auto result = TrId2Lib::detectFileType(path, 5U);
+  const auto result = databaseDetector().detectFileType(path, 5U);
   std::filesystem::remove(path, ec);
 
   CHECK(containsCandidate(result, "MP3 audio (ID3 v1.x tag)"));
@@ -201,7 +200,7 @@ TEST_CASE("test data sample files produce strict candidates") {
     const auto path = std::filesystem::path{TEST_DATA_FOLDER} / std::string{relativePath};
     INFO("test data sample: " << path.string());
 
-    const auto result = TrId2Lib::detectFileType(path, 5U);
+    const auto result = databaseDetector().detectFileType(path, 5U);
     const auto& candidates = result;
     REQUIRE(expectedCandidates.size() == candidates.size());
     for (std::size_t index = 0U; index < candidates.size(); ++index) {

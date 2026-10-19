@@ -1,0 +1,23 @@
+Name: KyPlot Function
+Description: https://www.kyenslab.com/
+FileNameExtensions: ["fun"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[KyPlot Function Formula File]\r\nNoteLength="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NOTELENGTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQUATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPTIONS"
+    CaseSensitive: false

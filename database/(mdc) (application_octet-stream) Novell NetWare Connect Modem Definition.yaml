@@ -1,0 +1,14 @@
+Name: Novell NetWare Connect Modem Definition
+URL: "https://en.wikipedia.org/wiki/NetWare"
+FileNameExtensions: ["mdc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MDMF\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDMD"
+    CaseSensitive: false

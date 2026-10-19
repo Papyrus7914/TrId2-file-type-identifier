@@ -1,0 +1,72 @@
+Name: NBI Legacy document (v1-2.x)
+Description: Windows 3.x DTP/word processor from NBI.
+URL: "https://winworldpc.com/product/nbi-legend/legacy-20"
+FileNameExtensions: ["chp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "# VE # "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: ".0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\r\n\xF1\x01H\0\n\0\x10\0"
+    CaseSensitive: true
+  - Pos: 299
+    AsciiString: "BodyText"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FOOTNOTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGETEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GRAPHIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINESTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYKEYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUFMAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STYLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYMBOL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORK10"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIPB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MISC"
+    CaseSensitive: false

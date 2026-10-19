@@ -1,0 +1,19 @@
+Name: Dungeon Keeper 2 Mesh
+URL: "https://www.mobygames.com/game/533/dungeon-keeper-2/"
+FileNameExtensions: ["kmf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x10, 0xFB]
+  - Pos: 6
+    AsciiString: "KMSH"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "HEAD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KMSH"
+    CaseSensitive: false

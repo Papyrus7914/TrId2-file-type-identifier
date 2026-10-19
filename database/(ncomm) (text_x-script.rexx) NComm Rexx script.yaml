@@ -1,0 +1,17 @@
+Name: NComm Rexx script
+URL: "https://en.wikipedia.org/wiki/NComm"
+FileNameExtensions: ["ncomm"]
+MimeType: text/x-script.rexx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/* "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OPTIONS RESULTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCOMM"
+    CaseSensitive: false

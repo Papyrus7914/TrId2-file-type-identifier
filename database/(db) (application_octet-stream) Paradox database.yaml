@@ -1,0 +1,11 @@
+Name: Paradox database
+URL: "https://en.wikipedia.org/wiki/Paradox_(database)"
+FileNameExtensions: ["db"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    AsciiString: "\0\b"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DBWINUS0"
+    CaseSensitive: false

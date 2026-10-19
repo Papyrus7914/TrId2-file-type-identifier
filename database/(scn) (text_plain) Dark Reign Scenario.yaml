@@ -1,13 +1,10 @@
 Name: Dark Reign Scenario
-URL: "https://www.mobygames.com/game/windows/dark-reign-expansion"
+URL: "https://www.mobygames.com/game/1535/dark-reign-the-future-of-war/"
 FileNameExtensions: ["scn"]
 MimeType: text/plain
 DetectionPatterns:
   - Pos: 0
     AsciiString: "; SCENARIO "
-    CaseSensitive: true
-  - Pos: 12
-    AsciiString: ":\\"
     CaseSensitive: true
   - Pos: any
     AsciiString: "*** THING (OVERLAY) DECLARATIONS"
@@ -26,9 +23,6 @@ DetectionPatterns:
     CaseSensitive: false
   - Pos: any
     AsciiString: "BUILDINGS FOR TEAM"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "FGCONSTRUCTIONCREW"
     CaseSensitive: false
   - Pos: any
     AsciiString: "SETDEFAULTTERRAIN("
@@ -70,9 +64,6 @@ DetectionPatterns:
     AsciiString: "DUMMY_MSC)"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "PUTUNITAT("
-    CaseSensitive: false
-  - Pos: any
     AsciiString: "SETCREDIT("
     CaseSensitive: false
   - Pos: any
@@ -92,12 +83,6 @@ DetectionPatterns:
     CaseSensitive: false
   - Pos: any
     AsciiString: "TOGRAN)"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "IMPMN"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "IMPWW"
     CaseSensitive: false
   - Pos: any
     AsciiString: ".SCN"

@@ -1,0 +1,14 @@
+Name: SoftQuad Author/Editor SGML document binary
+URL: "https://en.wikipedia.org/wiki/SoftQuad_Software"
+FileNameExtensions: ["ae"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!SQ A/E>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".DTD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RLS"
+    CaseSensitive: false

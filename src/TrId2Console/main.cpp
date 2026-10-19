@@ -1,5 +1,6 @@
 #include "TrId2Lib/TrId2FileTypeDetector.h"
 #include <CLI/CLI.hpp>
+#include <boost/dll/runtime_symbol_info.hpp>
 #include <cstdlib>
 #include <exception>
 #include <filesystem>
@@ -44,10 +45,12 @@ int main(const int argc, char** argv) {
   CLI::App app{std::format("Detect file type based on its content. Version {}", CONSOLE_APP_VERSION)};
 
   std::string filePathString;
+  std::string databasePath;
   bool jsonOutput = false;
   int numberOfCandidates = 5;
 
   app.add_flag("--json", jsonOutput, "Print results as JSON.");
+  app.add_option("--database-file-path", databasePath, "Database path. Default: 'TrId2Database.json' file next to the executable.");
   app.add_option("--number-of-candidates", numberOfCandidates, "Maximum number of candidates to output.")->capture_default_str();
   app.add_option("file", filePathString, "File to inspect.")->required();
 
@@ -62,18 +65,20 @@ int main(const int argc, char** argv) {
       throw std::runtime_error{"'number-of-candidates' must be greater than 0."};
     }
 
-    const auto candidates = TrId2Lib::detectFileType(std::filesystem::path{filePathString}, static_cast<std::size_t>(numberOfCandidates));
+    const auto databaseFile = databasePath.empty() ? std::filesystem::path{boost::dll::program_location().native()}.parent_path() / "TrId2Database.json"
+                                                   : std::filesystem::path{databasePath};
+    const TrId2Lib::FileTypeDetector detector{databaseFile};
+    const auto candidates = detector.detectFileType(std::filesystem::path{filePathString}, static_cast<std::size_t>(numberOfCandidates));
 
     if (jsonOutput) {
-      const auto jsonResults =
-          candidates | std::views::transform([](const TrId2Lib::FileType& fileType) {
-            return nlohmann::json{
-                {"Name", fileType.Name},         {"Description", fileType.Description},
-                {"Url", fileType.Url},           {"FileNameExtensions", fileType.FileNameExtensions | std::ranges::to<std::vector<std::string>>()},
-                {"MimeType", fileType.MimeType}, {"Probability", fileType.Probability},
-            };
-          }) |
-          std::ranges::to<nlohmann::json>();
+      const auto jsonResults = candidates | std::views::transform([](const TrId2Lib::FileType& fileType) {
+                                 return nlohmann::json{
+                                     {"Name", fileType.Name},         {"Description", fileType.Description},
+                                     {"Url", fileType.Url},           {"FileNameExtensions", fileType.FileNameExtensions},
+                                     {"MimeType", fileType.MimeType}, {"Probability", fileType.Probability},
+                                 };
+                               }) |
+                               std::ranges::to<nlohmann::json>();
       std::cout << jsonResults.dump(2) << '\n';
     } else {
       printHumanReadableResults(candidates);

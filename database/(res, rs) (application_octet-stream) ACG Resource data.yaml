@@ -1,0 +1,10 @@
+Name: ACG Resource data
+FileNameExtensions: ["res", "rs"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ACG Resource File\x1A"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".LIB"
+    CaseSensitive: false

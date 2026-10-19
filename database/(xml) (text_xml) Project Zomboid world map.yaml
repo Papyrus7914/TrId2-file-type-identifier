@@ -1,0 +1,38 @@
+Name: Project Zomboid world map
+URL: "https://www.mobygames.com/game/66026/project-zomboid/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<world version=\"1.0\">\n <cell x=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GEOMETRY TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTY NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COORDINATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPERTIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POINT X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLYGON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false

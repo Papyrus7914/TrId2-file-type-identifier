@@ -1,0 +1,26 @@
+Name: Keyman Touch Layout
+URL: "https://keyman.com/"
+FileNameExtensions: ["keyman-touch-layout"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K_ENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K_BKSP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "K_LOPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEXT"
+    CaseSensitive: false

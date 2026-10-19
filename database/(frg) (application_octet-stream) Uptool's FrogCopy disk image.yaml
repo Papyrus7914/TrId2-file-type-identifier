@@ -1,0 +1,14 @@
+Name: Uptool's FrogCopy disk image
+Description: DOS disk copier from Germany.
+FileNameExtensions: ["frg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 493
+    AsciiString: "FrogCopy - V"
+    CaseSensitive: true
+  - Pos: 506
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FROGCOPY - V"
+    CaseSensitive: false

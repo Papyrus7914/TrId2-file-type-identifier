@@ -1,0 +1,17 @@
+Name: "I.G.I-2: Covert Strike compiled script/game data"
+URL: "https://www.mobygames.com/game/9210/igi-2-covert-strike/"
+FileNameExtensions: ["qvm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "LOOP\b\0\0\0\a\0\0\0@\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DEFINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TASK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false

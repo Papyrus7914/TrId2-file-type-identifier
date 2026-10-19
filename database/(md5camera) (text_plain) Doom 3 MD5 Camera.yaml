@@ -1,0 +1,26 @@
+Name: Doom 3 MD5 Camera
+URL: "https://en.wikipedia.org/wiki/Doom_3"
+FileNameExtensions: ["md5camera"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MD5Version 10"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COMMANDLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAMERATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMFRAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAMERA {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NUMCUTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUTS {"
+    CaseSensitive: false

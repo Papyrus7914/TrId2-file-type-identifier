@@ -1,0 +1,50 @@
+Name: Doomsday Engine (jDoom) addon manifest
+URL: "https://dengine.net/"
+FileNameExtensions: ["ksa"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Addon]\r\nName="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DO_NOT_USE_STANDARD_DEFINITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINITIONS_FOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROFILES_TO_APPLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNTIME_FOLDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND_LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONFLICTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DED_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOOMSDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAD_LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLASS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JDOOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFS"
+    CaseSensitive: false

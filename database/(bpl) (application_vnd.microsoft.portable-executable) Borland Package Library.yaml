@@ -4,7 +4,7 @@ FileNameExtensions: ["bpl"]
 MimeType: application/vnd.microsoft.portable-executable
 DetectionPatterns:
   - Pos: 0
-    AsciiString: "MZP\0\x02\0\0\0\x04\0\x0F\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\x1A\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    AsciiString: "MZP\0\x02\0\0\0\x04\0\x0F\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\x1A\0\0\0"
     CaseSensitive: true
   - Pos: 62
     AsciiString: "\0\0\xBA\x10\0\x0E\x1F\xB4\t\xCD!\xB8\x01L\xCD!\x90\x90This program must be run under Win32\r\n$7\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
@@ -25,9 +25,6 @@ DetectionPatterns:
     AsciiString: "P\0A\0C\0K\0A\0G\0E\0I\0N\0F\0O"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "FINALIZE\0INITIALIZE"
-    CaseSensitive: false
-  - Pos: any
     AsciiString: "INITIALIZATION$QQRV"
     CaseSensitive: false
   - Pos: any
@@ -46,16 +43,19 @@ DetectionPatterns:
     AsciiString: "PACKAGELOAD$QQR"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "KERNEL32.DLL"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "FREELIBRARY"
+    AsciiString: "INITIALIZE"
     CaseSensitive: false
   - Pos: any
     AsciiString: "TLIBMODULE"
     CaseSensitive: false
   - Pos: any
     AsciiString: "23SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ELIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINALIZE"
     CaseSensitive: false
   - Pos: any
     AsciiString: "GETVALUE"
@@ -79,16 +79,13 @@ DetectionPatterns:
     AsciiString: ".RELOC"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "D$QQRV"
-    CaseSensitive: false
-  - Pos: any
     AsciiString: "E$QQRV"
     CaseSensitive: false
   - Pos: any
-    AsciiString: ".RSRC"
+    AsciiString: "KERNEL"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "0.BPL"
+    AsciiString: ".RSRC"
     CaseSensitive: false
   - Pos: any
     AsciiString: "ALLOC"
@@ -103,22 +100,22 @@ DetectionPatterns:
     AsciiString: "R$QQR"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "TYPES"
+    AsciiString: ".BPL"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "ASSE"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "BLE$"
+    AsciiString: "FREE"
     CaseSensitive: false
   - Pos: any
     AsciiString: "GETP"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "LOCA"
+    AsciiString: "PROC"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "PROC"
+    AsciiString: "REEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
     CaseSensitive: false
   - Pos: any
     AsciiString: "WIND"

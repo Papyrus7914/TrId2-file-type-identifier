@@ -1,0 +1,8 @@
+Name: MikroTik RouterOS backup (RC4-SHA1 encrypted, old)
+URL: "https://en.wikipedia.org/wiki/MikroTik"
+FileNameExtensions: ["backup"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          r
+    Bytes: [0xEF, 0xA8, 0x91, 0x72]

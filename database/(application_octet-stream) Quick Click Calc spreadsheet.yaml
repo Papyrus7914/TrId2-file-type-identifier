@@ -1,0 +1,28 @@
+Name: Quick Click Calc spreadsheet
+Description: Spreadsheet for Apple IIGS by The Byte Works.
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CALC\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "VERS\0\0\0\x02\0\0CELL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CELL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GBLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIND"
+    CaseSensitive: false

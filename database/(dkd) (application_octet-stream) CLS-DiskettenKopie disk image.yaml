@@ -1,0 +1,16 @@
+Name: CLS-DiskettenKopie disk image
+Description: PC DOS disk copy/imaging tool by Claude Schmidhuber.
+FileNameExtensions: ["dkd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DiskettenKopie-Datei V1."
+    CaseSensitive: true
+  - Pos: 25
+    AsciiString: " by Claude Schmidhuber, "
+    CaseSensitive: true
+  - Pos: 54
+    Bytes: [0x1A]
+  - Pos: any
+    AsciiString: "BY CLAUDE SCHMIDHUBER"
+    CaseSensitive: false

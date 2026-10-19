@@ -1,0 +1,14 @@
+Name: Kaspersky Anti-Virus update module
+URL: "https://en.wikipedia.org/wiki/Kaspersky_Lab"
+FileNameExtensions: ["krg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "KLrg\x01"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "KLsw\0\0\xAD\xAD\x01\0\0\0\xFC\x03\0\0\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "KLSW"
+    CaseSensitive: false

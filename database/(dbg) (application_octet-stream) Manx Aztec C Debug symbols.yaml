@@ -1,0 +1,11 @@
+Name: Manx Aztec C Debug symbols
+URL: "https://en.wikipedia.org/wiki/Aztec_C"
+FileNameExtensions: ["dbg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        5
+    Bytes: [0x35, 0xD2]
+  - Pos: any
+    AsciiString: ".BEGIN\0_"
+    CaseSensitive: false

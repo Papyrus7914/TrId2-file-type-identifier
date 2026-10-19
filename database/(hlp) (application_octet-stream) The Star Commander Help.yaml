@@ -1,0 +1,14 @@
+Name: The Star Commander Help
+Description: DOS file manager by Joe Forster.
+FileNameExtensions: ["hlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "The Star Commander "
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 23
+    AsciiString: " help file\r\n\x1A"
+    CaseSensitive: true

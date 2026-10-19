@@ -1,0 +1,29 @@
+Name: freedesktop.org shared-mime-info
+URL: "https://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec/"
+FileNameExtensions: ["xml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WWW.FREEDESKTOP.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHARED-MIME-INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME-INFO XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIME-TYPE TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOB PATTERN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

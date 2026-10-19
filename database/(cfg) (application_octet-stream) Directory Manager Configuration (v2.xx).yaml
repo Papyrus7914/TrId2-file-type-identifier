@@ -1,0 +1,11 @@
+Name: Directory Manager Configuration (v2.xx)
+Description: DOS file manager by Frank Kintrup.
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\r\nKonfigurationsdatei f\x81r den Directory Manager 2."
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "\r\n\x1A"
+    CaseSensitive: true

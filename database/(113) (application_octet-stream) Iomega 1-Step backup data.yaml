@@ -1,0 +1,11 @@
+Name: Iomega 1-Step backup data
+URL: "http://fileformats.archiveteam.org/wiki/113"
+FileNameExtensions: ["113"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        U           U
+    Bytes: [0x55, 0xAA, 0x55, 0xAA]
+  - Pos: any
+    AsciiString: "OIMG"
+    CaseSensitive: false

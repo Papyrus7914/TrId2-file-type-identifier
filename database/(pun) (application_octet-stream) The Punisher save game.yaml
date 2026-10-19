@@ -1,0 +1,17 @@
+Name: The Punisher save game
+URL: "https://www.mobygames.com/game/16630/the-punisher/"
+FileNameExtensions: ["pun"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0\xF0t\0\0 \0\x02\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SLAUGHTERED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BROKEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEVEL"
+    CaseSensitive: false

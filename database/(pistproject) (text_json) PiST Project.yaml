@@ -1,0 +1,59 @@
+Name: PiST Project
+URL: "https://github.com/idontwantyourspamthanks/PiST"
+FileNameExtensions: ["pistproject"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n    \"build\": {\n        \"additionalSources\": [\n        ],\n        \"assemblerPath\": \"\",\n        \"cpu\":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ADDITIONALSOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASSEMBLERPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDDISKIMAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUGBACKEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOPPYIMAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCLUDEPATHS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FASTFORWARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HATARIPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINKERPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMSIZEMIB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTRAARGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMULATOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFINES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONITOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOSPATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false

@@ -1,0 +1,26 @@
+Name: XPress Tags (v1.60)
+Description: QuarkXPress exported document info.
+FileNameExtensions: ["qxd", "qxp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<v1.60><e0>\r@"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "COOL BLENDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUARKXPRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XTENSIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "100%"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EDIT"
+    CaseSensitive: false

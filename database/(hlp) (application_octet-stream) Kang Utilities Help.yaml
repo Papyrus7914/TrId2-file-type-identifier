@@ -1,0 +1,14 @@
+Name: Kang Utilities Help
+Description: DOS utilities by Kang Yonghee, inspired by Norton utilities.
+FileNameExtensions: ["hlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HELP TOPIC: About "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HELP END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KANG"
+    CaseSensitive: false

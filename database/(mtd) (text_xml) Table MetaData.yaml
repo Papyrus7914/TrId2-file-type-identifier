@@ -1,0 +1,32 @@
+Name: Table MetaData
+Description: Used by FacturaScripts / Eneboo / Sistemas Abaco.
+FileNameExtensions: ["mtd"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<!DOCTYPE TMD>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "QT_TRANSLATE_NOOP("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCTYPE TMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALIAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NULL"
+    CaseSensitive: false

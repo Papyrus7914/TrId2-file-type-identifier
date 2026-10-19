@@ -1,0 +1,9 @@
+Name: OS-9 Relocatable object modules
+Description: Modules or Library of modules.
+URL: "https://en.wikipedia.org/wiki/OS-9"
+FileNameExtensions: ["r", "l"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        b           #
+    Bytes: [0x62, 0xCD, 0x23, 0x87]

@@ -1,0 +1,23 @@
+Name: Kazaa Playlist
+URL: "https://en.wikipedia.org/wiki/Kazaa"
+FileNameExtensions: ["kpl"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "["
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARTIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALBUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY"
+    CaseSensitive: false

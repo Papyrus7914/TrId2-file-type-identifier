@@ -1,0 +1,16 @@
+Name: Mini-SoundMachine ST song
+FileNameExtensions: ["msg"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0Ey"
+    CaseSensitive: true
+  - Pos: 6
+    AsciiString: "\0\0\x124"
+    CaseSensitive: true
+  - Pos: 12
+    Bytes: [0xE4]
+  - Pos: 52
+    Bytes: [0xFF]
+  - Pos: 59
+    Bytes: [0xFF]

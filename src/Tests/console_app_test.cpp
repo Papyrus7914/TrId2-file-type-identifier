@@ -2,6 +2,8 @@
 #include <cpp-subprocess/subprocess.hpp>
 #include <doctest.h>
 #include <filesystem>
+#include <format>
+#include <fstream>
 #include <nlohmann/json.hpp>
 #include <string>
 #include <system_error>
@@ -61,6 +63,28 @@ TEST_CASE("console app prints JSON file type candidates") {
   CHECK(json[0]["FileNameExtensions"] == nlohmann::json::array({"png"}));
   CHECK(json[0]["MimeType"] == "image/png");
   CHECK(json[0]["Probability"].is_number());
+}
+
+TEST_CASE("console app uses the database specified by --database-file-path") {
+  const auto [exitCode, output, error] =
+      runConsoleApp({"--json", "--database-file-path", (std::filesystem::path(TRID2_CONSOLE_APP_PATH).parent_path() / "TrId2Database.json").string(),
+                     testDataPath("app-image/icon.png").string()});
+  CHECK(exitCode == 0);
+  CHECK(error.empty());
+  const auto json = nlohmann::json::parse(output);
+  REQUIRE(json.is_array());
+  CHECK(json[0]["Name"] == "Portable Network Graphics");
+}
+
+TEST_CASE("--database-file-path prints error if the file does not exist") {
+  const auto databasePath = std::filesystem::path(TRID2_CONSOLE_APP_PATH).parent_path() / "NonExistentDatabase.json";
+
+  const auto [exitCode, output, error] = runConsoleApp({"--json", "--database-file-path", databasePath.string(), testDataPath("app-image/icon.png").string()});
+
+  CHECK(exitCode != 0);
+  CHECK(output.empty());
+  CHECK(error.contains("Unable to open the database JSON file"));
+  CHECK(error.contains(databasePath.string()));
 }
 
 TEST_CASE("console app limits the number of candidates") {

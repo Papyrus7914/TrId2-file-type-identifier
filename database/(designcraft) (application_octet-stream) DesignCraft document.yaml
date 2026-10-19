@@ -1,0 +1,23 @@
+Name: DesignCraft document
+URL: "https://getartcraft.com/apps/designcraft"
+FileNameExtensions: ["designcraft"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/vnd.designcraft+zip"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VND.DESIGNCRAFT+ZIP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOCUMENT.JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META.JSON"
+    CaseSensitive: false

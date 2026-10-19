@@ -1,0 +1,47 @@
+Name: Morphit curve definition
+URL: "https://www.instem.com/solutions/study-management/morphit/"
+FileNameExtensions: ["xml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?><CurveDefinitions><CurveDefinition Name=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INITIALVALUECALCULATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVEDEFINITION NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVERSEEQUATIONID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CURVEDEFINITIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INVERSEEQUATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESULTEQUATIONID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETER ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YDESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EQUATION ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(VALUE)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMULA"
+    CaseSensitive: false

@@ -1,0 +1,29 @@
+Name: Darksiders III save game
+URL: "https://www.mobygames.com/game/117727/darksiders-iii/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 7
+    AsciiString: "\0\x05\0\0\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0\x04\x02\0\0<\0\0\0/Game/_Core/Blueprints/Base/BP_DS3SaveSlot.BP_DS3SaveSlot_C\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DARKSIDERS3.DARKSIDERSMELEEWEAPONINSTANCEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BP_DS3SAVESLOT.BP_DS3SAVESLOT_C"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BREQUIRESFULLGAMEINSTALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLUEPRINTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_CORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false

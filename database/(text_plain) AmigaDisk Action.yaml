@@ -1,0 +1,13 @@
+Name: AmigaDisk Action
+URL: "https://aminet.net/package/util/dir/AmiDisk_2.02"
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[Action]\nName="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WBRUN"
+    CaseSensitive: false

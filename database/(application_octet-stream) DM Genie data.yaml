@@ -1,0 +1,10 @@
+Name: DM Genie data
+URL: "https://www.dmgenie.com/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DMGZ\x02\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "\0x\x9C"
+    CaseSensitive: true

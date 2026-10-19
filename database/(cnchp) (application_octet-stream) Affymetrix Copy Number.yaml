@@ -1,0 +1,17 @@
+Name: Affymetrix Copy Number
+URL: "https://www.affymetrix.com"
+FileNameExtensions: ["cnchp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ";\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "affymetrix-multi-data-type-analysis"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "A\0F\0F\0Y\0M\0E\0T\0R\0I\0X\0-\0A\0L\0G\0O\0R\0I\0T\0H\0M\0-\0N\0A\0M\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AFFYMETRIX-MULTI-DATA-TYPE-ANALYSIS"
+    CaseSensitive: false

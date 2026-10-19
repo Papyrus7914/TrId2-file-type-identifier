@@ -1,0 +1,10 @@
+Name: FOCUS Diskcopy disk image (v3.0)
+Description: DOS floppy disk copying program by Matthias Eckert.
+FileNameExtensions: ["foc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x14FOCUS 3.0"
+    CaseSensitive: true
+  - Pos: 31
+    Bytes: [0x1A]

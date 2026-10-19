@@ -3,9 +3,21 @@ URL: "https://en.wikipedia.org/wiki/CADSTAR"
 FileNameExtensions: ["cpa"]
 MimeType: text/plain
 DetectionPatterns:
-  - Pos: 0
-    AsciiString: "\r(CADSTARPCB\r (HEADER\r  (FORMAT LAYOUT "
+  - Pos: 1
+    AsciiString: "(CADSTARPCB"
     CaseSensitive: true
-  - Pos: 43
-    AsciiString: ")\r  (JOBFILE \""
+  - Pos: 13
+    AsciiString: " (HEADER"
     CaseSensitive: true
+  - Pos: 22
+    AsciiString: "  (FORMAT "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "(CADSTARPCB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(HEADER"
+    CaseSensitive: false

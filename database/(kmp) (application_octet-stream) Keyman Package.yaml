@@ -1,0 +1,14 @@
+Name: Keyman Package
+URL: "https://keyman.com/"
+FileNameExtensions: ["kmp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "KMP.INF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".KMX"
+    CaseSensitive: false

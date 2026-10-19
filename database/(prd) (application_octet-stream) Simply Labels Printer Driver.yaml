@@ -1,0 +1,30 @@
+Name: Simply Labels Printer Driver
+FileNameExtensions: ["prd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 40
+    Bytes: [0x1A]
+  - Pos: 42
+    AsciiString: "\0Author: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "6LPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPAC"
+    CaseSensitive: false

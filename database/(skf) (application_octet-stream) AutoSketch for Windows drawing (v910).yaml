@@ -1,0 +1,35 @@
+Name: AutoSketch for Windows drawing (v9/10)
+URL: "https://en.wikipedia.org/wiki/AutoSketch"
+FileNameExtensions: ["skf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\n\0\0\0\0\v\x03413"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DRAWING VARIABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR PALETTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT SOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITY LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "REPORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUILD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAYER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOLID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAIN"
+    CaseSensitive: false

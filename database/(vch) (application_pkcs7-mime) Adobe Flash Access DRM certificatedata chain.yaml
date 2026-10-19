@@ -1,0 +1,29 @@
+Name: Adobe Flash Access DRM certificate/data chain
+URL: "https://en.wikipedia.org/wiki/Adobe_AIR"
+FileNameExtensions: ["vch"]
+MimeType: application/pkcs7-mime
+DetectionPatterns:
+  - Pos: 0
+    #        0
+    Bytes: [0x30, 0x83]
+  - Pos: 5
+    #              \t    *           H                 \r          \a
+    Bytes: [0x06, 0x09, 0x2A, 0x86, 0x48, 0x86, 0xF7, 0x0D, 0x01, 0x07, 0x02, 0xA0, 0x83]
+  - Pos: 21
+    #        0
+    Bytes: [0x30, 0x83]
+  - Pos: 26
+    #                          1           0     \r          \t    `           H           e                                         0
+    Bytes: [0x02, 0x01, 0x01, 0x31, 0x0F, 0x30, 0x0D, 0x06, 0x09, 0x60, 0x86, 0x48, 0x01, 0x65, 0x03, 0x04, 0x02, 0x01, 0x05, 0x00, 0x30, 0x83]
+  - Pos: 51
+    #              \t    *           H                 \r          \a
+    Bytes: [0x06, 0x09, 0x2A, 0x86, 0x48, 0x86, 0xF7, 0x0D, 0x01, 0x07, 0x01, 0xA0, 0x83]
+  - Pos: any
+    AsciiString: "FLASH ACCESS RUNTIME AND DRM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOBE SYSTEMS INCORPORATED1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADOBE FLASH ACCESS"
+    CaseSensitive: false

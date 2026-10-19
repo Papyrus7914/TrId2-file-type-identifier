@@ -1,0 +1,9 @@
+Name: WavPack compressed audio Corrections data
+Description: This data are used along a WavPack lossy hybrid file to reconstruct the original audio data.
+URL: "https://en.wikipedia.org/wiki/WavPack"
+FileNameExtensions: ["wvc"]
+MimeType: audio/x-wavpack-correction
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "wvpk"
+    CaseSensitive: true

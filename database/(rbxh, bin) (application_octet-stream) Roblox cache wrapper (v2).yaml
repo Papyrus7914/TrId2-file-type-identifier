@@ -1,0 +1,17 @@
+Name: Roblox cache wrapper (v2)
+URL: "https://en.wikipedia.org/wiki/Roblox"
+FileNameExtensions: ["rbxh", "bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RBXH\x02\0\0\0"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "http"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

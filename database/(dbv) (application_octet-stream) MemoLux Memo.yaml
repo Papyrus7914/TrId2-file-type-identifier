@@ -1,0 +1,26 @@
+Name: MemoLux Memo
+Description: A xBase memo format variation.
+FileNameExtensions: ["dbv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xDC\xFA\0\0\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 15
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "\x01\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "V\0\0\0"
+    CaseSensitive: true
+  - Pos: 86
+    AsciiString: "\0\0\0\0\x01\vV\0\0\0"
+    CaseSensitive: true

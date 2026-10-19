@@ -1,0 +1,18 @@
+Name: Hitman serie save game
+URL: "https://www.mobygames.com/group/820/hitman-series/"
+FileNameExtensions: ["blap"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "Header\0"
+    CaseSensitive: true
+  - Pos: 143
+    Bytes: [0x01]
+  - Pos: 173
+    Bytes: [0xAE]
+  - Pos: any
+    AsciiString: "HEADER"
+    CaseSensitive: false

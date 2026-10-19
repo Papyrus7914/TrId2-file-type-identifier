@@ -4,20 +4,20 @@ C++ library and Console utility to detect a file type based on its content.<br>
 This tool is similar to [TrID](https://mark0.net/soft-trid-e.html) and [UNIX File](https://en.wikipedia.org/wiki/File_(command)).
 
 ## Features
-* Database of ~21500 file types
+* Database of ~22000 file types
 * Very fast
 * Supports Windows, Linux, macOS
-* The C++ library is header only and has no dependencies
+* The C++ library is header only. Depends only on [simdjson](https://github.com/simdjson/simdjson)
 
 ## How it works
 The tool reads up to 10MB of the file, goes through its database, and finds the most likely file-type candidates.
 
 ## How to use the console tool
-* Download the executable from the latest [release](https://github.com/Papyrus7914/TrId2-file-type-identifier/releases)
+* Download and extract the archive from the latest [release](https://github.com/Papyrus7914/TrId2-file-type-identifier/releases)
   * `TrId2Console-windows-x64` - portable Windows x64 executable (requires Windows 10 or higher)
   * `TrId2Console-linux-x64` - portable Linux x64 executable
   * `TrId2Console-macos-arm64` - portable macOS arm64 executable
-* The file identification database is compiled into the executable. Thus, the executable is completely portable.
+* Keep the included `TrId2Database.json` next to the executable or use `--database-file-path /path/to/TrId2Database.json` to specify the database.
 * Usage examples (use `--help` parameter to get the usage information):
 ```
 > TrId2Console C:\Windows\System32\ntdll.dll
@@ -53,8 +53,8 @@ The tool reads up to 10MB of the file, goes through its database, and finds the 
 ```
 
 ## How to use the C++ library
-* Download `TrId2Lib.zip` from the latest release and add the extracted folder to your project
-* The file type database is included in the library. It is located in `TrId2Database.h` header
+* Copy [TrId2FileTypeDetector.h](https://github.com/Papyrus7914/TrId2-file-type-identifier/blob/main/src/TrId2Lib/TrId2FileTypeDetector.h) to your project
+* Get `TrId2Database.json` file from the `TrId2Console-windows-x64` archive from the [Releases](https://github.com/Papyrus7914/TrId2-file-type-identifier/releases) page
 * Look at [example.cpp](https://github.com/Papyrus7914/TrId2-file-type-identifier/blob/main/src/Tests/example.cpp) for how to use the library
 
 ## How to work with the codebase

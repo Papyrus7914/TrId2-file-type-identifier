@@ -1,0 +1,44 @@
+Name: Magix BeatBox Kit
+URL: "https://en.wikipedia.org/wiki/Magix"
+FileNameExtensions: ["mbb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RIFF\xDC7\0\0MAKEPROJ\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "LIST\xC47\0\0STUPSPLT"
+    CaseSensitive: true
+  - Pos: 349
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: 696
+    AsciiString: "WAVID"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ABCDEFGHIJKLMNOPQRSTUVWXYZ{"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEATBOX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STNF8"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAVID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRCK"
+    CaseSensitive: false

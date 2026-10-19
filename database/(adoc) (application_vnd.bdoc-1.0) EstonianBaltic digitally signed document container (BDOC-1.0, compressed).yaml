@@ -1,0 +1,23 @@
+Name: Estonian/Baltic digitally signed document container (BDOC-1.0, compressed)
+URL: "https://www.id.ee/en/article/bdoc-a-container-format-for-digital-signatures/"
+FileNameExtensions: ["adoc"]
+MimeType: application/vnd.bdoc-1.0
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeK,(\xC8\xC9LN,\xC9\xCC\xCF\xD3/\xCBK\xD1KJ\xC9O\xD65\xD43\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MANIFEST.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIMETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META-INF"
+    CaseSensitive: false

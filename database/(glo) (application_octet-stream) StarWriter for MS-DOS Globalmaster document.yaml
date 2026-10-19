@@ -1,0 +1,14 @@
+Name: StarWriter for MS-DOS Global/master document
+URL: "https://en.wikipedia.org/wiki/StarOffice"
+FileNameExtensions: ["glo"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: ".\\\\\\ GLOBAL "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GLOBALDOKUMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TXT"
+    CaseSensitive: false

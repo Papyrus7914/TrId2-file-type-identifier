@@ -1,0 +1,17 @@
+Name: Replicator compressed disk image
+Description: DOS Disk images catalog system by Stevenson Technical Services.
+FileNameExtensions: ["zip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "REPLICAT/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "REPLICAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RIF"
+    CaseSensitive: false

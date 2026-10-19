@@ -1,0 +1,19 @@
+Name: CA-Cricket Presents slideshow/presentation
+FileNameExtensions: ["cpp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CPxx\x04\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SERIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CPP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false

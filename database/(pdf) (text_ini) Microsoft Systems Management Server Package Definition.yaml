@@ -1,0 +1,29 @@
+Name: Microsoft Systems Management Server Package Definition
+URL: "https://en.wikipedia.org/wiki/Microsoft_Configuration_Manager"
+FileNameExtensions: ["pdf"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[PDF]"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PACKAGE DEFINITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "USERINPUTREQUIRED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMANDLINE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUPPORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

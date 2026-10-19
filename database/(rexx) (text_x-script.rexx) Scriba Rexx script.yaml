@@ -1,0 +1,17 @@
+Name: Scriba Rexx script
+Description: Amiga word processor by Carsten Siegner.
+FileNameExtensions: ["rexx"]
+MimeType: text/x-script.rexx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SCRIBARX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false

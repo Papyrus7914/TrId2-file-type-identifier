@@ -1,0 +1,20 @@
+Name: MusicEase Music notation
+URL: "https://www.musicease.com/"
+FileNameExtensions: ["mez"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(((W . "
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ") (DIVIDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ") (LAYOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "(C T)"
+    CaseSensitive: false

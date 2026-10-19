@@ -1,0 +1,16 @@
+Name: 16bit COM executable MAKEREAD (Ronald Gans) (v1.8) / DOC2COM (Dan K. Nelson)
+URL: "http://fileformats.archiveteam.org/wiki/MAKEREAD"
+FileNameExtensions: ["com"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xE9]
+  - Pos: 3
+    AsciiString: "\0\r\n            "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PRESS  HOME  PGDN  PGUP  DOWN ARROW  END"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT"
+    CaseSensitive: false

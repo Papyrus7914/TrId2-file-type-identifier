@@ -1,0 +1,62 @@
+Name: OpenTimelineIO
+URL: "https://github.com/AcademySoftwareFoundation/OpenTimelineIO/wiki"
+FileNameExtensions: ["otio"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MEDIA_REFERENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATIONALTIME.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE_RANGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OTIO_SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMERANGE.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START_TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMELINE.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHILDREN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DURATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "METADATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STACK.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIP."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RATE"
+    CaseSensitive: false

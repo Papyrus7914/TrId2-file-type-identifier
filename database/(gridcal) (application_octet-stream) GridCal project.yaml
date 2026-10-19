@@ -1,0 +1,39 @@
+Name: GridCal project
+Description: Now VeraGrid.
+URL: "https://github.com/SanPen/GridCal"
+FileNameExtensions: ["gridcal"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: any
+    AsciiString: "UNDERGROUND_CABLE_TYPES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OVERHEAD_LINE_TYPES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEQUENCE_LINE_TYPES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRANSFORMER_TYPES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STATIC_GENERATOR."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERY."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SHUNT."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIRES."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUS."
+    CaseSensitive: false

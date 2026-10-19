@@ -1,0 +1,44 @@
+Name: GUIX frame capture test
+URL: "https://github.com/eclipse-threadx/guix"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Total Frames: "
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\nFile Format Version: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILE FORMAT VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUIX VERSION MAJOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GUIX VERSION MINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLOR DEPTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDTH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

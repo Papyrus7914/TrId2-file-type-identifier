@@ -1,0 +1,20 @@
+Name: LosslessCut project (v2)
+URL: "https://losslesscut.app/"
+FileNameExtensions: ["llc"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  version: 2,\n  mediaFileName: '"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MEDIAFILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CUTSEGMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false

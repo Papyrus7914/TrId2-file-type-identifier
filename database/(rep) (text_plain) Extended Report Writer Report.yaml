@@ -1,0 +1,41 @@
+Name: Extended Report Writer Report
+Description: Reporting package for DOS by Microrim.
+FileNameExtensions: ["rep"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "REPORT "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FOR EACH ROW IN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{REPORT NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{FOR EACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGESIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "END {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{END"
+    CaseSensitive: false

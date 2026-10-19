@@ -1,0 +1,8 @@
+Name: MikroTik RouterOS backup (AES128-CTR encrypted)
+URL: "https://en.wikipedia.org/wiki/MikroTik"
+FileNameExtensions: ["backup"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                          s
+    Bytes: [0xEF, 0xA8, 0x91, 0x73]

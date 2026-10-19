@@ -1,0 +1,41 @@
+Name: Mplus Output (with rem)
+URL: "https://www.statmodel.com/"
+FileNameExtensions: ["out"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "!"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "INPUT INSTRUCTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MPLUS VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALYSIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VARIABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUTHEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILE"
+    CaseSensitive: false

@@ -1,0 +1,8 @@
+Name: VMware Snapshot State
+URL: "https://en.wikipedia.org/wiki/VMware"
+FileNameExtensions: ["vmss"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                    C
+    Bytes: [0x9E, 0xDD, 0x43, 0x89, 0x01, 0x00, 0x00, 0x00]

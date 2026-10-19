@@ -1,0 +1,19 @@
+Name: Symantec/Brightmail AntiSpam Bayesian Word Bucket
+FileNameExtensions: ["mbk"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SYMCMBKT\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 28
+    AsciiString: "SPAM\0SYMCWBKT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STOPWORDS\0SYMCWBKT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLEAN\0SYMCWBKT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPAM\0SYMCWBKT"
+    CaseSensitive: false

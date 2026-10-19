@@ -1,0 +1,61 @@
+Name: CalendarMaker Calendar
+Description: Simple Windows 3.x calendar creator.
+FileNameExtensions: ["cln"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x1F, 0x00, 0x1F, 0x00]
+  - Pos: 101
+    AsciiString: "Sunday\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Monday\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Tuesday\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Wednesday\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Thursday\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Friday\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Saturday\0"
+    CaseSensitive: true
+  - Pos: 522
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SUNDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0MONDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0TUESDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0WEDNESDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0THURSDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0FRIDAY\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0SATURDAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATED WITH CALENDARMAKER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BY CE SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SEPTEMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECEMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEBRUARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOVEMBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JANUARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OCTOBER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUGUST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APRIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MARCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ICN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INC."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JULY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JUNE"
+    CaseSensitive: false

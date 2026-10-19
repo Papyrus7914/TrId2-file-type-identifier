@@ -1,5 +1,5 @@
 Name: BIF bitmap ASCII info
-Description: Part of the Binary Information Files format. Point to a corresponding .raw file with the actual image data.
+Description: Part of the Binary Information Files format. Point to the raw file(s) with the actual image data.
 FileNameExtensions: ["bif"]
 MimeType: text/plain
 DetectionPatterns:
@@ -29,7 +29,4 @@ DetectionPatterns:
     CaseSensitive: false
   - Pos: any
     AsciiString: "WIDTH"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: ".RAW"
     CaseSensitive: false

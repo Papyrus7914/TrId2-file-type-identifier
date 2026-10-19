@@ -1,0 +1,11 @@
+Name: Akzent IV document (v4.0x)
+Description: German shareware word processor by Harald Czech and Axel Peter Winkler.
+FileNameExtensions: ["txt"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: " AKZENT\r\n"
+    CaseSensitive: true
+  - Pos: 21
+    AsciiString: "\bV 4.0"
+    CaseSensitive: true

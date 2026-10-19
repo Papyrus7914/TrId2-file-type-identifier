@@ -1,0 +1,17 @@
+Name: "KKND: Krush Kill 'N Destroy Level data"
+URL: "https://www.mobygames.com/game/520/kknd-krush-kill-n-destroy/"
+FileNameExtensions: ["lvl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DATA\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MOBD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RRLC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRPS"
+    CaseSensitive: false

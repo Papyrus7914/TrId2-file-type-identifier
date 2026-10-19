@@ -1,0 +1,13 @@
+Name: Visual Essentials Layout (v1.0)
+Description: Used in CDs with collection of photos and layouts by Silver Lining Multimedia.
+FileNameExtensions: ["lat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x90, 0x01, 0x00, 0x00, 0xBB, 0xBB, 0xFE, 0xCA, 0x00, 0x00, 0x01, 0x00, 0x00, 0x00]
+  - Pos: 49
+    AsciiString: ":\\"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "+\0PLEASE INSERT THE VISUAL ESSENTIALS 1.0 CD."
+    CaseSensitive: false

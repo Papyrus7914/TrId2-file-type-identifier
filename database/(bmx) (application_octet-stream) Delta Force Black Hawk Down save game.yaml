@@ -1,0 +1,35 @@
+Name: "Delta Force: Black Hawk Down save game"
+URL: "https://www.mobygames.com/game/8742/delta-force-black-hawk-down/"
+FileNameExtensions: ["bmx"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "(\x04\0\0701BSPBHD_"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: ".bms\0\0\0\0\0\0\0\0\0\0\0\0Saved Game"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "WPN_GRENADEFB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WPN_GRENADEHE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WPN_GRENADESM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVED GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WPN_KNIFE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STAR.3DI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PCX"
+    CaseSensitive: false

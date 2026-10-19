@@ -1,0 +1,44 @@
+Name: Final Fantasy VII save game
+URL: "https://www.mobygames.com/game/858/final-fantasy-vii/"
+FileNameExtensions: ["ff7"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "qs'\x06"
+    CaseSensitive: true
+  - Pos: 109
+    AsciiString: "#LOUD\xFF\xFF\0\0\xFF\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 241
+    AsciiString: "\"ARRET\xFF\xFF\0\xFF\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 373
+    AsciiString: "4IFA\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 505
+    AsciiString: "!ERI"
+    CaseSensitive: true
+  - Pos: 637
+    AsciiString: "2ED"
+    CaseSensitive: true
+  - Pos: 769
+    AsciiString: "9UFFIE\xFF\xFF"
+    CaseSensitive: true
+  - Pos: 1165
+    AsciiString: "#ID\xFF\xFF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "9UFFIE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARRET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "4IFA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERIS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOUD"
+    CaseSensitive: false

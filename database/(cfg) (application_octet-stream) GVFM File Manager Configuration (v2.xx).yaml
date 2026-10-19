@@ -1,0 +1,14 @@
+Name: GVFM File Manager Configuration (v2.xx)
+Description: DOS graphic file manager by Unicorn Software.
+FileNameExtensions: ["cfg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: " GVFM 2."
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: " Configuration File\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONFIGURATION FILE"
+    CaseSensitive: false

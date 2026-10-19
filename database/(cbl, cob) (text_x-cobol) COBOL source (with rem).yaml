@@ -1,0 +1,17 @@
+Name: COBOL source (with rem)
+URL: "https://en.wikipedia.org/wiki/COBOL"
+FileNameExtensions: ["cbl", "cob"]
+MimeType: text/x-cobol
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "      *"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "IDENTIFICATION DIVISION."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROCEDURE DIVISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROGRAM-ID."
+    CaseSensitive: false

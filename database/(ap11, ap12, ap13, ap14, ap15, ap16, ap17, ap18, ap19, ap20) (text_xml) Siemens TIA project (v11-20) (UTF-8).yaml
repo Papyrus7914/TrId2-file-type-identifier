@@ -1,0 +1,44 @@
+Name: Siemens TIA project (v11-20) (UTF-8)
+URL: "https://www.siemens.com/en-us/products/tia-portal/"
+FileNameExtensions: ["ap11", "ap12", "ap13", "ap14", "ap15", "ap16", "ap17", "ap18", "ap19", "ap20"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEF\xBB\xBF<?xml version=\"1.0\" encoding=\"utf-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SIEMENS.AUTOMATION.DOMAINSERVICES.SIEMENS.AUTOMATION.DOMAINMODEL.PROJECTDATA.$THIS.ICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIEMENS.AUTOMATION.OBJECTFRAME.ICOREATTRIBUTES.NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATAINFOVALUEDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WWW.SIEMENS.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMONSERVICES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BROWSABLETYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAMEOFNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATA TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ICON KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XMLNS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "2007"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTP"
+    CaseSensitive: false

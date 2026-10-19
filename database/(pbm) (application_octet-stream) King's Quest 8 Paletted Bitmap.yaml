@@ -1,0 +1,23 @@
+Name: King's Quest 8 Paletted Bitmap
+URL: "https://www.mobygames.com/game/136/kings-quest-mask-of-eternity/"
+FileNameExtensions: ["pbm"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PBMP"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "head"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "data"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DETL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAD"
+    CaseSensitive: false

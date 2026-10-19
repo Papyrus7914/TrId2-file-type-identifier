@@ -40,7 +40,7 @@ docker run --rm \
            --env CONSOLE_APP_VERSION="$version" \
            alpine:latest \
            sh -o xtrace -o errexit -o nounset -o pipefail -c '
-             apk add --no-cache build-base cmake ninja python3 py3-yaml git
+             apk add --no-cache build-base linux-headers cmake ninja python3 py3-yaml git
              cmake -S /repo \
                    -B /repo/build/alpine-linux-release \
                    -G Ninja \
@@ -56,6 +56,6 @@ tar --create \
     --gzip \
     --file "${buildDir}/TrId2Console-linux-x64.tar.gz" \
     --directory "${currentScriptDir}/build/alpine-linux-release" \
-    TrId2Console
+    TrId2Console TrId2Database.json
 
 echo "Success"

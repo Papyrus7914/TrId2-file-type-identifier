@@ -1,0 +1,11 @@
+Name: UpWord Macro (with rem)
+URL: "Windows 3.x word processor by Wang Laboratories."
+FileNameExtensions: ["wlm"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "END.DEFINE"
+    CaseSensitive: false

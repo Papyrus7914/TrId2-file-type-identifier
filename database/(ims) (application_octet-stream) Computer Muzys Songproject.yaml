@@ -1,0 +1,56 @@
+Name: Computer Muzys Song/project
+Description: MIDI sequencer by muon-software / Computer Music Magazine.
+FileNameExtensions: ["ims"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "IMS!SONG\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "()*+EOF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AMIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CGRV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KMAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MMIX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PACH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLYR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SQNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TMPO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TSGN"
+    CaseSensitive: false

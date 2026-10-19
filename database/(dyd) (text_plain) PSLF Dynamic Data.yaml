@@ -1,0 +1,44 @@
+Name: PSLF Dynamic Data
+URL: "https://electricgrids.engr.tamu.edu/file-formats/"
+FileNameExtensions: ["dyd"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#-----------------------------------------------------------------------------------------\r\n# Header Section From EPC\r\n#-----------------------------------------------------------------------------------------\r\n# title\r\n#"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-----------------------------------------------------------------------------------------"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD CHARACTERISTIC MODELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADER SECTION FROM EPC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENERATOR MODELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GENROU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LODREP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WLWSCC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GOV1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEEE"
+    CaseSensitive: false

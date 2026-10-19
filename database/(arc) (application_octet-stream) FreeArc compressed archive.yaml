@@ -1,0 +1,9 @@
+Name: FreeArc compressed archive
+Description: A compression tool written in Haskell by Bulat Ziganshin.
+URL: "http://fileformats.archiveteam.org/wiki/ARC_(FreeArc)"
+FileNameExtensions: ["arc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ArC\x01"
+    CaseSensitive: true

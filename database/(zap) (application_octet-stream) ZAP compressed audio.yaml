@@ -1,0 +1,14 @@
+Name: ZAP compressed audio
+URL: "https://www.hdspace.eu/zap/"
+FileNameExtensions: ["zap"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZAP"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 13
+    AsciiString: "."
+    CaseSensitive: true

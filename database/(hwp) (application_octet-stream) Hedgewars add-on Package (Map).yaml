@@ -1,0 +1,17 @@
+Name: Hedgewars add-on Package (Map)
+URL: "https://www.hedgewars.org/kb/HWPFormat"
+FileNameExtensions: ["hwp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "Maps/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAPS"
+    CaseSensitive: false

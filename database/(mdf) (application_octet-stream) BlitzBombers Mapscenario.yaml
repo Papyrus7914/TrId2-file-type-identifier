@@ -1,0 +1,29 @@
+Name: BlitzBombers Map/scenario
+URL: "https://www.mobygames.com/game/23069/blitzbombers/"
+FileNameExtensions: ["mdf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0"
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "FORM\0\0\x01"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "BMAPVERS\0\0\0\x02\0\x01NAME\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BMAPVERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MFRM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

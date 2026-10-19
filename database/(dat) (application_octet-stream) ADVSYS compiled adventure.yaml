@@ -1,0 +1,30 @@
+Name: ADVSYS compiled adventure
+Description: ADVenture SYStem, by David Betz.
+URL: "http://www.catb.org/retro"
+FileNameExtensions: ["dat"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 2
+    #                                            {
+    Bytes: [0xA0, 0x9D, 0x8B, 0x8E, 0x88, 0x8E, 0x7B, 0xE1]
+  - Pos: any
+    AsciiString: "6JGTG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UOCNN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VJKPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLXM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TQQO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "URRV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VJCV"
+    CaseSensitive: false

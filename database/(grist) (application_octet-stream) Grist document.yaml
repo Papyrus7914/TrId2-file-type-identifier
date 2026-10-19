@@ -1,0 +1,185 @@
+Name: Grist document
+URL: "https://www.getgrist.com/"
+FileNameExtensions: ["grist"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SQLite format 3"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATE UNIQUE INDEX _GRISTSYS_PLUGINDATA_UNIQUE_KEY ON _GRISTSYS_PLUGINDATA(PLUGINID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX__GRISTSYS_ACTIONHISTORYBRANCH_1_GRISTSYS_ACTIONHISTORYBRANCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE INDEX _GRIST_ATTACHMENTS_FILEIDENT ON _GRIST_ATTACHMENTS(FILEIDENT)"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX__GRISTSYS_ACTIONHISTORY_1_GRISTSYS_ACTIONHISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WTABLE_GRISTSYS_ACTIONHISTORYBRANCH_GRISTSYS_ACTIONHISTORYBRANCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AINDEX_GRISTSYS_PLUGINDATA_UNIQUE_KEY_GRISTSYS_PLUGINDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_VIEWS_SECTION_FIELD_GRIST_VIEWS_SECTION_FIELD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEXSQLITE_AUTOINDEX__GRISTSYS_FILES_1_GRISTSYS_FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_EXTERNAL_DATABASE_GRIST_EXTERNAL_DATABASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX_GRIST_ATTACHMENTS_FILEIDENT_GRIST_ATTACHMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRISTSYS_ACTIONHISTORY_GRISTSYS_ACTIONHISTORY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRISTSYS_ACTION_STEP_GRISTSYS_ACTION_STEP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_ACLMEMBERSHIPS_GRIST_ACLMEMBERSHIPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_EXTERNAL_TABLE_GRIST_EXTERNAL_TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ITABLE_GRISTSYS_PLUGINDATA_GRISTSYS_PLUGINDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_ACLPRINCIPALS_GRIST_ACLPRINCIPALS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_TABLES_COLUMN_GRIST_TABLES_COLUMN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_VIEWS_SECTION_GRIST_VIEWS_SECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE _GRISTSYS_ACTIONHISTORYBRANCH ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTABLE_GRIST_ACLRESOURCES_GRIST_ACLRESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KTABLE_GRISTSYS_FILEINFO_GRISTSYS_FILEINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_ATTACHMENTS_GRIST_ATTACHMENTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_VALIDATIONS_GRIST_VALIDATIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- DISTANCE FROM ROOT OF TREE IN ACTIONS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_TABLEVIEWS_GRIST_TABLEVIEWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE _GRISTSYS_ACTIONHISTORY ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETABLE_GRISTSYS_ACTION_GRISTSYS_ACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_REPL_HIST_GRIST_REPL_HIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- THE VALUE ASSOCIATED WITH THE KEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE _GRISTSYS_ACTION_STEP ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MTABLE_GRIST_TRIGGERS_GRIST_TRIGGERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE _GRISTSYS_PLUGINDATA ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRISTSYS_FILES_GRISTSYS_FILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_ACLRULES_GRIST_ACLRULES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_TABITEMS_GRIST_TABITEMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ETABLE_GRIST_FILTERS_GRIST_FILTERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE _GRISTSYS_FILEINFO ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MANUALSORTMANUALSORTPOSMANUALSORT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_DOCINFO_GRIST_DOCINFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_IMPORTS_GRIST_IMPORTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QTABLE_GRIST_SHARES_GRIST_SHARES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- PLAIN INTEGER PLUGIN DATA ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE _GRISTSYS_ACTION ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_TABBAR_GRIST_TABBAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_TABLES_GRIST_TABLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- ID OF PARENT OF THIS ACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATE TABLE _GRISTSYS_FILES ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_CELLS_GRIST_CELLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_PAGES_GRIST_PAGES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_GRIST_VIEWS_GRIST_VIEWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- PLAIN INTEGER ACTION ID ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- LATEST ACTION ON BRANCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- CONTENT OF ACTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- NUMERIC BRANCH ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- ACTION CHECKSUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- BRANCH NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UTABLE_GRIST_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- PLUGIN ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-- THE KEY"
+    CaseSensitive: false

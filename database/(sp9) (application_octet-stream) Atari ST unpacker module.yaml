@@ -1,0 +1,19 @@
+Name: Atari ST unpacker module
+FileNameExtensions: ["sp9"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SPup"
+    CaseSensitive: true
+  - Pos: 16
+    AsciiString: ".EXE"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: ".DAT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EXE"
+    CaseSensitive: false

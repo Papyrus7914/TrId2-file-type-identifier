@@ -1,0 +1,23 @@
+Name: HyperDOS GUI screen/mini app/Help
+Description: Menu shell bundled with Leading Technology's PCs.
+FileNameExtensions: ["pad", "hlp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "HPAD\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CREATE NEW PAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEGIN"
+    CaseSensitive: false

@@ -1,0 +1,16 @@
+Name: SuperCalc worksheet (v1.xx)
+URL: "https://en.wikipedia.org/wiki/SuperCalc"
+FileNameExtensions: ["cal"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SuperCalc "
+    CaseSensitive: true
+  - Pos: 11
+    AsciiString: "er.  1."
+    CaseSensitive: true
+  - Pos: 20
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: 102
+    Bytes: [0x1A]

@@ -1,0 +1,32 @@
+Name: Scriba document
+Description: Amiga word processor by Carsten Siegner.
+FileNameExtensions: ["sct"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        P     K
+    Bytes: [0x50, 0x4B, 0x03, 0x04]
+  - Pos: 30
+    AsciiString: "mimetypeapplication/scriba.text"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "MIMETYPEAPPLICATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_CHAR.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT_ROW.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THUMBNAIL.PNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIBA.TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "META.XML"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIC.XML"
+    CaseSensitive: false

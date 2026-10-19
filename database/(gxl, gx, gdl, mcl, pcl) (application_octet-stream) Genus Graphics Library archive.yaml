@@ -1,0 +1,11 @@
+Name: Genus Graphics Library archive
+URL: "http://fileformats.archiveteam.org/wiki/Genus_Graphics_Library"
+FileNameExtensions: ["gxl", "gx", "gdl", "mcl", "pcl"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x01\xCACopyright (c)"
+    CaseSensitive: true
+  - Pos: 52
+    AsciiString: "d\0"
+    CaseSensitive: true

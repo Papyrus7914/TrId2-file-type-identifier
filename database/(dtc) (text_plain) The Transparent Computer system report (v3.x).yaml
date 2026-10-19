@@ -1,0 +1,53 @@
+Name: The Transparent Computer system report (v3.x)
+Description: Comprehensive PC/DOS diagnostic by Eaglesoft.
+FileNameExtensions: ["dtc"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "            \xFA \xFA\xFA \xFA\xFA\xFA - -=\xF0 DTC REPORT FILE "
+    CaseSensitive: true
+  - Pos: 45
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BENCHMARK INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HARDDISK INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWARE INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MACHINE INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NETWORK INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MEMORY INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BIOS INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PORT INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CD INFORMATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLOPPY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODEM"
+    CaseSensitive: false

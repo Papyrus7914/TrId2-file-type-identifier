@@ -1,0 +1,17 @@
+Name: Dark Reign Briefing
+URL: "https://www.mobygames.com/game/1535/dark-reign-the-future-of-war/"
+FileNameExtensions: ["brf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\\"
+    CaseSensitive: true
+  - Pos: 2
+    AsciiString: "\r\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THE FREEDOM GUARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMPERIUM"
+    CaseSensitive: false
