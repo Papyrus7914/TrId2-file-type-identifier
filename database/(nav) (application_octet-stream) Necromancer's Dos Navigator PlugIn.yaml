@@ -1,0 +1,14 @@
+Name: Necromancer's Dos Navigator PlugIn
+URL: "https://ndn.sourceforge.net/"
+FileNameExtensions: ["nav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "NAV$"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "Plugin"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PLUGIN"
+    CaseSensitive: false

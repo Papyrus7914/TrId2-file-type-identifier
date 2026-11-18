@@ -1,0 +1,26 @@
+Name: Ultimate Ride Model Animation
+URL: "https://en.wikipedia.org/wiki/Ultimate_Ride"
+FileNameExtensions: ["mha"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GWFB\x80\0\0\0ANIH"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "ANLV"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANIH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANLV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "APKY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARKY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ASKY"
+    CaseSensitive: false

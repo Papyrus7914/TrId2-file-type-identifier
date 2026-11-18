@@ -1,0 +1,17 @@
+Name: Delta Controls ORCAview configuration db
+URL: "https://deltacontrols.com/"
+FileNameExtensions: ["dbr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x17\0d\0ObjStore\0\x01\0\x04\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBJSTORE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STARTUP"
+    CaseSensitive: false

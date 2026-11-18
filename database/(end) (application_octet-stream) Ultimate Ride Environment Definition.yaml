@@ -1,0 +1,29 @@
+Name: Ultimate Ride Environment Definition
+URL: "https://en.wikipedia.org/wiki/Ultimate_Ride"
+FileNameExtensions: ["end"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CENV"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "EPOL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "1\0.\0M\0X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E\0N\0V"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EAMB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ECST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EPOL"
+    CaseSensitive: false

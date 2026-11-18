@@ -1,0 +1,83 @@
+Name: "Sam and Max: Hit the Road save game"
+URL: "https://www.mobygames.com/game/745/sam-max-hit-the-road/"
+FileNameExtensions: ["001", "002", "003"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SAVE\0\0"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "VARS\0\0[\x89\x03\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GAME PAUSED.  PRESS SPACE TO CONTINUE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARE YOU SURE YOU WANT TO RESTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARE YOU SURE YOU WANT TO QUIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE GAME WAS NOT LOADED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THE GAME WAS NOT SAVED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SELECT A GAME TO LOAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YOU MUST ENTER A NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME YOUR SAVE GAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAX HIT THE ROAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOAD GAME DISK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSERT SAVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANCEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EOBNA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CDHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GLOB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IM01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IMHD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBCD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OBIM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SNDD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERB"
+    CaseSensitive: false

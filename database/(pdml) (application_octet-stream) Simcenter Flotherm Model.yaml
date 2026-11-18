@@ -1,0 +1,13 @@
+Name: Simcenter Flotherm Model
+FileNameExtensions: ["pdml"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#FFFB V"
+    CaseSensitive: true
+  - Pos: 8
+    AsciiString: "."
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "GEOMETRY"
+    CaseSensitive: false

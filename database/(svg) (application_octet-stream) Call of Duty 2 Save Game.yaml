@@ -1,0 +1,29 @@
+Name: Call of Duty 2 Save Game
+URL: "https://www.mobygames.com/game/20150/call-of-duty-2/"
+FileNameExtensions: ["svg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\x99\0\0\0"
+    CaseSensitive: true
+  - Pos: 1120
+    AsciiString: "players/"
+    CaseSensitive: true
+  - Pos: 1240
+    #        x
+    Bytes: [0x78, 0x01, 0xEC]
+  - Pos: any
+    AsciiString: "PLAYERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1 THU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SVG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "42PM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE"
+    CaseSensitive: false

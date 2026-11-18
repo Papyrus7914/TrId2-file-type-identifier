@@ -1,0 +1,25 @@
+Name: Amiga HISoft BASIC compiled executable
+URL: "https://www.computinghistory.org.uk/det/27048/HISoft-BASIC-Software-Manual/"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\0\x03\xF3\0\0\0\0\0\0\0\x02\0\0\0\0\0\0\0\x01\0"
+    CaseSensitive: true
+  - Pos: 24
+    AsciiString: "\0\0\0\0\0\0\x03\xE9\0"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "&|\0\0\x80\0`\0"
+    CaseSensitive: true
+  - Pos: 46
+    AsciiString: "Nq"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUINTUITION.LIBRARY\0CANCEL\0NO HISOFTBASIC.LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HISOFTBASIC.LIBRARY\0SOME CODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT (C) HISOFT 1988"
+    CaseSensitive: false

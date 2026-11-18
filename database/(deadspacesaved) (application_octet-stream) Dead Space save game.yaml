@@ -1,0 +1,17 @@
+Name: Dead Space save game
+URL: "https://www.mobygames.com/game/37332/dead-space/"
+FileNameExtensions: ["deadspacesaved"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "RGMH"
+    CaseSensitive: true
+  - Pos: 40
+    AsciiString: "D\0e\0a\0d\0 \0S\0p\0a\0c\0e\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "D\0E\0A\0D\0 \0S\0P\0A\0C\0E"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".STR"
+    CaseSensitive: false

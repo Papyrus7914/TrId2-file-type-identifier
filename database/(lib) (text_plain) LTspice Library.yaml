@@ -1,0 +1,14 @@
+Name: LTspice Library
+URL: "https://en.wikipedia.org/wiki/LTspice"
+FileNameExtensions: ["lib"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".SUBCKT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ENDS"
+    CaseSensitive: false

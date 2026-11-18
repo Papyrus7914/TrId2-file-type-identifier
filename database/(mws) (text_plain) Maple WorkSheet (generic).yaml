@@ -1,0 +1,20 @@
+Name: Maple WorkSheet (generic)
+URL: "https://en.wikipedia.org/wiki/Maple_(software)"
+FileNameExtensions: ["mws"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{VERSION "
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "{USTYLETAB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{CSTYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "{PSTYLE"
+    CaseSensitive: false

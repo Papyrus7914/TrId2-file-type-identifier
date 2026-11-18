@@ -1,0 +1,110 @@
+Name: PubChem compound record (ASN.1 binary)
+URL: "https://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/asn_spec/pcsubstance.asn.html"
+FileNameExtensions: ["asn"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #        0           0                       0
+    Bytes: [0x30, 0x80, 0x30, 0x80, 0xA0, 0x80, 0x30, 0x80, 0xA1, 0x80, 0xA0, 0x80, 0x02]
+  - Pos: any
+    AsciiString: "OPENEYE SCIENTIFIC SOFTWARE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HYDROGEN BOND ACCEPTOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPOUND COMPLEXITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HYDROGEN BOND DONOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POLAR SURFACE AREA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOLECULAR FORMULA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SUBSTRUCTURE KEYS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MOLECULAR WEIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NCBI.NLM.NIH.GOV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROTATABLE BOND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CANONICALIZED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_NHACCEPTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONNECTIVITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_COMPLEXITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MONOISOTOPIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_NROTBONDS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINGERPRINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOPOLOGICAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_NHDONORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IUPAC.ORG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ABSOLUTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXTENDED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_SCREEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INCHIKEY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STANDARD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XEMISTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUBCHEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CACTVS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "E_TPSA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OECHEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SMILES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXACT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MASS"
+    CaseSensitive: false

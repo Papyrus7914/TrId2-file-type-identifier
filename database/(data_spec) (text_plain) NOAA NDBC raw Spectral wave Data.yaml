@@ -1,0 +1,8 @@
+Name: NOAA NDBC raw Spectral wave Data
+URL: "https://www.ndbc.noaa.gov/faq/rt_data_access.shtml"
+FileNameExtensions: ["data_spec"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#YY  MM DD hh mm Sep_Freq  < spec_1 (freq_1) spec_2 (freq_2) spec_3 (freq_3) "
+    CaseSensitive: true

@@ -11,13 +11,16 @@ set(CMAKE_CXX_STANDARD 23)
 set(CONSOLE_APP_VERSION "0.0" CACHE STRING "Console App version")
 find_package(Python3 REQUIRED COMPONENTS Interpreter)
 
-FetchContent_Declare(boost
-                     GIT_REPOSITORY https://github.com/boostorg/boost.git
-                     GIT_TAG boost-1.92.0
-                     GIT_SHALLOW TRUE
-                     EXCLUDE_FROM_ALL
-                     SYSTEM)
-FetchContent_MakeAvailable(boost)
+set(BOOST_DLL_USE_STD_FS ON)
+foreach(boost_library IN ITEMS dll assert compat config container_hash core describe mp11 predef system throw_exception type_index variant2 winapi)
+  FetchContent_Declare(boost-${boost_library}
+                       GIT_REPOSITORY https://github.com/boostorg/${boost_library}.git
+                       GIT_TAG boost-1.92.0
+                       GIT_SHALLOW TRUE
+                       EXCLUDE_FROM_ALL
+                       SYSTEM)
+  FetchContent_MakeAvailable(boost-${boost_library})
+endforeach()
 
 FetchContent_Declare(doctest
                      GIT_REPOSITORY https://github.com/doctest/doctest
@@ -46,7 +49,7 @@ FetchContent_MakeAvailable(json)
 
 FetchContent_Declare(simdjson
                      GIT_REPOSITORY https://github.com/simdjson/simdjson.git
-                     GIT_TAG v5.0.4
+                     GIT_TAG v5.2.0
                      GIT_SHALLOW TRUE
                      EXCLUDE_FROM_ALL
                      SYSTEM)

@@ -1,0 +1,14 @@
+Name: NOAA NDBC Solar Radiation data
+URL: "https://www.ndbc.noaa.gov/faq/rt_data_access.shtml"
+FileNameExtensions: ["srad"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#YY  MM DD hh mm  SRAD1  SWRAD  LWRAD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "YR  MO DY HR MN   W"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "M2   W"
+    CaseSensitive: false

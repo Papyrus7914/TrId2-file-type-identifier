@@ -1,0 +1,14 @@
+Name: MIME message (MIME-Version header first, generic)
+URL: "https://www.rfc-editor.org/info/rfc2045/"
+FileNameExtensions: ["mht", "msg", "txt"]
+MimeType: message/rfc822
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MIME-Version:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CONTENT-TRANSFER-ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CONTENT-TYPE"
+    CaseSensitive: false

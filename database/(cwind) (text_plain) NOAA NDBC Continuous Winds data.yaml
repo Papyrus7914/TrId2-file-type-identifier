@@ -1,0 +1,17 @@
+Name: NOAA NDBC Continuous Winds data
+URL: "https://www.ndbc.noaa.gov/faq/rt_data_access.shtml"
+FileNameExtensions: ["cwind"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#YY  MM DD hh mm WDIR WSPD GDR GST GTIME"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "YR  MO DY HR MN DEGT M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S DEGT M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S HHMM"
+    CaseSensitive: false

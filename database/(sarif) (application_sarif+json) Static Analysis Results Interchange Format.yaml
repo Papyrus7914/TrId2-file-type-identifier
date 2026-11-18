@@ -1,0 +1,29 @@
+Name: Static Analysis Results Interchange Format
+URL: "https://sarif.info/"
+FileNameExtensions: ["sarif"]
+MimeType: application/sarif+json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "$SCHEMA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-2.1.0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SARIF-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "JSON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUNS"
+    CaseSensitive: false

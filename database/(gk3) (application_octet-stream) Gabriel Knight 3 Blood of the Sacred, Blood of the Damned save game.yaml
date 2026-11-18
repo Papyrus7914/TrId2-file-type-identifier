@@ -1,0 +1,29 @@
+Name: "Gabriel Knight 3: Blood of the Sacred, Blood of the Damned save game"
+URL: "https://www.mobygames.com/game/484/gabriel-knight-3-blood-of-the-sacred-blood-of-the-damned/"
+FileNameExtensions: ["gk3"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "GK3!Save\x04\0\0\0\xE8\0\0\0\0\0\x01\0\x8F\0\0\0\n\0\0\0Production\0"
+    CaseSensitive: true
+  - Pos: 75
+    AsciiString: "PC1200\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0Jens-Christian Huus\0\0\0\0\0\0\0\0\0\0\0\0\0Copyright \xA9 1999 Sierra Studios. All rights reserved.\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "PC1200\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0JENS-CHRISTIAN HUUS\0\0\0\0\0\0\0\0\0\0\0\0\0COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1999 SIERRA STUDIOS. ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDATX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IHDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SAVE"
+    CaseSensitive: false

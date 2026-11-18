@@ -1,0 +1,38 @@
+Name: DREM drive Configuration
+URL: "https://www.drem.info/"
+FileNameExtensions: ["cfg"]
+MimeType: text/ini
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "[DSK]\r\nName="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SNAPSHOT ENABLED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FIRST SECTOR ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTOR SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEP RATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENCODING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SECTORS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIDES"
+    CaseSensitive: false

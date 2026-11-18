@@ -1,0 +1,32 @@
+Name: Girder configuration
+Description: Windows automation software by Proximis.
+FileNameExtensions: ["gml"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ACTIONSUBTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIONTYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GROUP NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDENTIFIER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GIRDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MATCH"
+    CaseSensitive: false

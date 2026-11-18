@@ -1,0 +1,47 @@
+Name: Evolva Save game
+URL: "https://www.mobygames.com/game/2463/evolva/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ARTWORKS\0\x01\0\0\0\0\0\0\0\xED\xC8N\xB1"
+    CaseSensitive: true
+  - Pos: 22
+    AsciiString: "\0\0\0Stream v1.0 (\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STREAM V1.0 ("
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GID_TAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EVOLVA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LVL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".MSH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PRO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SAV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SGH"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: AmiArcadia Rexx script
+URL: "http://amigan.1emu.net/releases/#amiarcadia"
+FileNameExtensions: ["rexx"]
+MimeType: text/x-script.rexx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/* "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "AMIARCADIA.1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false

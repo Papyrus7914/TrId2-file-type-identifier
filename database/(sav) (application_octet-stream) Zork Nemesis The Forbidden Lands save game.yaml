@@ -1,0 +1,14 @@
+Name: "Zork Nemesis: The Forbidden Lands save game"
+URL: "https://www.mobygames.com/game/560/zork-nemesis-the-forbidden-lands/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ZNSG\x04\0\0\0\0L\x02\0LOC"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PUZZ"
+    CaseSensitive: false

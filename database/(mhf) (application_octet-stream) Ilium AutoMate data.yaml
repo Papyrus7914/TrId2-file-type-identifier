@@ -1,0 +1,10 @@
+Name: Ilium AutoMate data
+Description: A WinCE app to keep track of activities.
+FileNameExtensions: ["mhf"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFF, 0xFF, 0xEC, 0xDA]
+  - Pos: 6
+    AsciiString: "\0\x02\x01\0\0\0A\0u\0t\0o\0M\0a\0t\0e\0"
+    CaseSensitive: true

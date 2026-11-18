@@ -1,0 +1,14 @@
+Name: NOAA NDBC standard meteorological data
+URL: "https://www.ndbc.noaa.gov/faq/rt_data_access.shtml"
+FileNameExtensions: ["txt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#YY  MM DD hh mm WDIR WSPD GST  WVHT   DPD   APD MWD   PRES  ATMP  WTMP  DEWP  VIS PTDY  TIDE"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "S     M   SEC   SEC DEGT   HPA  DEGC  DEGC  DEGC  NMI  HPA    FT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YR  MO DY HR MN DEGT M"
+    CaseSensitive: false

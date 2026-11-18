@@ -1,0 +1,17 @@
+Name: LTspice encrypted Library
+URL: "https://en.wikipedia.org/wiki/LTspice"
+FileNameExtensions: ["lib"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "* LTspice Encrypted File"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "* CONTENTS."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* BEGIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* END"
+    CaseSensitive: false

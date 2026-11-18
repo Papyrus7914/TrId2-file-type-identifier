@@ -1,0 +1,14 @@
+Name: Mesen Saved State (format 4)
+URL: "https://www.mesen.ca/"
+FileNameExtensions: ["mss"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MSS"
+    CaseSensitive: true
+  - Pos: 7
+    AsciiString: "\x04\0\0\0"
+    CaseSensitive: true
+  - Pos: 35
+    #        x
+    Bytes: [0x78, 0x01, 0xED]

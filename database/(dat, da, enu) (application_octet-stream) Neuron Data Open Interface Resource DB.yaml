@@ -1,0 +1,23 @@
+Name: Neuron Data Open Interface Resource DB
+URL: "https://en.wikipedia.org/wiki/Open_Interface"
+FileNameExtensions: ["dat", "da", "enu"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ND\0\0Resource Database\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRIPT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKE"
+    CaseSensitive: false

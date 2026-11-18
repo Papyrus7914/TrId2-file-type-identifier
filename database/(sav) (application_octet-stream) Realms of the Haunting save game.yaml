@@ -1,0 +1,19 @@
+Name: Realms of the Haunting save game
+URL: "https://www.mobygames.com/game/1418/realms-of-the-haunting/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x01, 0x00]
+  - Pos: 3
+    AsciiString: "\0\n\00\0"
+    CaseSensitive: true
+  - Pos: 55
+    AsciiString: "\0\v\00\x11\x02\0\0\0N\08\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "STUDY1.TMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIXE"
+    CaseSensitive: false

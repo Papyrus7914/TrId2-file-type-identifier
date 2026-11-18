@@ -1,0 +1,14 @@
+Name: PerfectPaint MagicSpray Album
+URL: "https://intuitionbase.com/software/graphics-photography/perfectpaint"
+FileNameExtensions: ["mgc"]
+MimeType: tapplication/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MGICALBM\0"
+    CaseSensitive: true
+  - Pos: 14
+    AsciiString: "XPKF"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "XPKF"
+    CaseSensitive: false

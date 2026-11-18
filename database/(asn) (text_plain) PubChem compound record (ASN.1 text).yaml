@@ -1,0 +1,38 @@
+Name: PubChem compound record (ASN.1 text)
+URL: "https://www.ncbi.nlm.nih.gov/IEB/ToolBox/CPP_DOC/asn_spec/pcsubstance.asn.html"
+FileNameExtensions: ["asn"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "PC-Compounds ::= {"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ELEMENT {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATOMS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BONDS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORDER {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PROPS {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AID1 {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHARGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SINGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AID {"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false

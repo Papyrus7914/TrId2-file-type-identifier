@@ -1,0 +1,317 @@
+Name: Rust Windows 64bit Executable
+URL: "https://rust-lang.org/"
+FileNameExtensions: ["exe"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MZ\x90\0\x03\0\0\0\x04\0\0\0\xFF\xFF\0\0\xB8\0\0\0\0\0\0\0@\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 62
+    AsciiString: "\0\0\x0E\x1F\xBA\x0E\0\xB4\t\xCD!\xB8\x01L\xCD!This program cannot be run in DOS mode.\r\r\n$\0\0\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "THIS PROGRAM CANNOT BE RUN IN DOS MODE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "API-MS-WIN-CORE-SYNCH-L1-2-0.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDVECTOREDEXCEPTIONHANDLER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETUNHANDLEDEXCEPTIONFILTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETENVIRONMENTVARIABLEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSYSTEMTIMEASFILETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "QUERYPERFORMANCECOUNTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETTHREADSTACKGUARANTEE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTLNTSTATUSTODOSERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAITFORSINGLEOBJECTEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCURRENTDIRECTORYW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCURRENTPROCESSID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INITIALIZESLISTHEAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MULTIBYTETOWIDECHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAKEBYADDRESSSINGLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WIDECHARTOMULTIBYTE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCONSOLEOUTPUTCP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCURRENTTHREADID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RTLCAPTURECONTEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEHANDLEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMODULEHANDLEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAKEBYADDRESSALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORMATMESSAGEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCONSOLEMODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPROCESSHEAP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WAITONADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WRITECONSOLEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CREATEMUTEXA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETLASTERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETSTDHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KERNEL32.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOADLIBRARYA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELEASEMUTEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETLASTERROR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVTYPE_INFO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLOSEHANDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAPREALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTWRITEFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RUST_PANIC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_EXCEPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CODEPOINT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAPALLOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NTDLL.DLL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OPERATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TERMINATE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FILENAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FUNCTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HANDLEIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEAPFREE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INSTANCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LSTRLENW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMETE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UPPORTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRESENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STRINGS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIRTUAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".RELOC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BUFFER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOOKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNWIND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WINDOW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEXT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ACTIV"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEBUG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DFILE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EADDR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMPTY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTRY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FRAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KNOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PDATA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VALUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CRT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EXIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FULL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LOCK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PATH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RICH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SETS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T$XI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "T$XL"
+    CaseSensitive: false

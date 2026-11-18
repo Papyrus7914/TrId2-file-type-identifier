@@ -241,12 +241,6 @@ DetectionPatterns:
     AsciiString: "TIMESYSTEM"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "ARMS_DATA"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "CHARACTER"
-    CaseSensitive: false
-  - Pos: any
     AsciiString: "DPAD_DOWN"
     CaseSensitive: false
   - Pos: any
@@ -256,9 +250,6 @@ DetectionPatterns:
     AsciiString: "GPSSYSTEM"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "INTERRUPT"
-    CaseSensitive: false
-  - Pos: any
     AsciiString: "INVENTORY"
     CaseSensitive: false
   - Pos: any
@@ -266,6 +257,9 @@ DetectionPatterns:
     CaseSensitive: false
   - Pos: any
     AsciiString: "GAMESTAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERRUP"
     CaseSensitive: false
   - Pos: any
     AsciiString: "ITEMDATA"
@@ -280,7 +274,7 @@ DetectionPatterns:
     AsciiString: "TERMINAL"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "_COMPUTE"
+    AsciiString: "CHARACT"
     CaseSensitive: false
   - Pos: any
     AsciiString: "CHOICES"
@@ -289,13 +283,13 @@ DetectionPatterns:
     AsciiString: "COMMAND"
     CaseSensitive: false
   - Pos: any
+    AsciiString: "COMPUTE"
+    CaseSensitive: false
+  - Pos: any
     AsciiString: "DEFAULT"
     CaseSensitive: false
   - Pos: any
     AsciiString: "LOADOUT"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "MINIMAP"
     CaseSensitive: false
   - Pos: any
     AsciiString: "MISSION"
@@ -307,13 +301,7 @@ DetectionPatterns:
     AsciiString: "STEALTH"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "STREET_"
-    CaseSensitive: false
-  - Pos: any
     AsciiString: "STRETCH"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "VISITED"
     CaseSensitive: false
   - Pos: any
     AsciiString: "WAITING"
@@ -337,9 +325,6 @@ DetectionPatterns:
     AsciiString: "HOTKEY"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "QUEST_"
-    CaseSensitive: false
-  - Pos: any
     AsciiString: "RECORD"
     CaseSensitive: false
   - Pos: any
@@ -350,6 +335,9 @@ DetectionPatterns:
     CaseSensitive: false
   - Pos: any
     AsciiString: "SOURCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STREET"
     CaseSensitive: false
   - Pos: any
     AsciiString: "TARGET"
@@ -364,7 +352,7 @@ DetectionPatterns:
     AsciiString: "_SCENE"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "BLOOD"
+    AsciiString: "ARMS_"
     CaseSensitive: false
   - Pos: any
     AsciiString: "CLASS"
@@ -382,10 +370,10 @@ DetectionPatterns:
     AsciiString: "PATCH"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "PAUSE"
+    AsciiString: "POWER"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "POWER"
+    AsciiString: "RACTE"
     CaseSensitive: false
   - Pos: any
     AsciiString: "RANGE"
@@ -394,19 +382,25 @@ DetectionPatterns:
     AsciiString: "ROOM_"
     CaseSensitive: false
   - Pos: any
+    AsciiString: "RRUPT"
+    CaseSensitive: false
+  - Pos: any
     AsciiString: "SETUP"
     CaseSensitive: false
   - Pos: any
     AsciiString: "VALUE"
     CaseSensitive: false
   - Pos: any
+    AsciiString: "VISIT"
+    CaseSensitive: false
+  - Pos: any
     AsciiString: "WATCH"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "_BASE"
+    AsciiString: "_COMP"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "_BODY"
+    AsciiString: "_DATA"
     CaseSensitive: false
   - Pos: any
     AsciiString: "_PACK"
@@ -415,13 +409,19 @@ DetectionPatterns:
     AsciiString: "_ROOM"
     CaseSensitive: false
   - Pos: any
-    AsciiString: "_SITE"
-    CaseSensitive: false
-  - Pos: any
     AsciiString: ".ZBF"
     CaseSensitive: false
   - Pos: any
     AsciiString: ".ZGF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BODY"
     CaseSensitive: false
   - Pos: any
     AsciiString: "BOOL"
@@ -433,6 +433,9 @@ DetectionPatterns:
     AsciiString: "HACK"
     CaseSensitive: false
   - Pos: any
+    AsciiString: "ITED"
+    CaseSensitive: false
+  - Pos: any
     AsciiString: "KILL"
     CaseSensitive: false
   - Pos: any
@@ -440,6 +443,9 @@ DetectionPatterns:
     CaseSensitive: false
   - Pos: any
     AsciiString: "LIVE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MINI"
     CaseSensitive: false
   - Pos: any
     AsciiString: "NANO"
@@ -457,6 +463,9 @@ DetectionPatterns:
     AsciiString: "RIDE"
     CaseSensitive: false
   - Pos: any
+    AsciiString: "SITE"
+    CaseSensitive: false
+  - Pos: any
     AsciiString: "SKIN"
     CaseSensitive: false
   - Pos: any
@@ -467,4 +476,13 @@ DetectionPatterns:
     CaseSensitive: false
   - Pos: any
     AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BAS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BOD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SIT"
     CaseSensitive: false

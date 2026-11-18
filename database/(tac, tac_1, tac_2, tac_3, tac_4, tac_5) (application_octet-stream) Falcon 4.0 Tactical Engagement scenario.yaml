@@ -1,0 +1,44 @@
+Name: Falcon 4.0 Tactical Engagement scenario
+URL: "https://www.mobygames.com/game/1670/falcon-40/"
+FileNameExtensions: ["tac", "tac_1", "tac_2", "tac_3", "tac_4", "tac_5"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 3
+    AsciiString: "\0:"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TEAMFLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEAMNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CMP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".EVT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".OBD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PLT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".PST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".TEA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".UNI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".WTH"
+    CaseSensitive: false

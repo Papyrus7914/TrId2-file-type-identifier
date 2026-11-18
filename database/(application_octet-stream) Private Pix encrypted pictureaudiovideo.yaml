@@ -1,0 +1,14 @@
+Name: Private Pix encrypted picture/audio/video
+Description: "Note: file extension is a number."
+URL: "https://web.archive.org/web/20140725203952/http://www.tropsoft.com/privpix/index.htm"
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Private Pix picture "
+    CaseSensitive: true
+  - Pos: 72
+    AsciiString: "U\xAA\0\0"
+    CaseSensitive: true
+  - Pos: 372
+    AsciiString: "U\xAA\0\0"
+    CaseSensitive: true

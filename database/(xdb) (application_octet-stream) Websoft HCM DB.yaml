@@ -1,0 +1,27 @@
+Name: Websoft HCM DB
+Description: Formerly WebTutor.
+URL: "https://websoft.ru/hcm"
+FileNameExtensions: ["xdb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FORMAT: XMDB\nVERSION: "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RECORDS-NUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCK-SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLOCKS-NUM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "X-LOCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XMD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FORM"
+    CaseSensitive: false

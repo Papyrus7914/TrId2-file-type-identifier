@@ -1,0 +1,18 @@
+Name: American Laser Games game data Library
+URL: "https://www.mobygames.com/company/442/american-laser-games-inc/"
+FileNameExtensions: ["lib"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0xFC, 0x03]
+  - Pos: 9
+    AsciiString: "\0\0\0\x18\0\0\0"
+    CaseSensitive: true
+  - Pos: 17
+    AsciiString: "\0\n\0\x13\0"
+    CaseSensitive: true
+  - Pos: 23
+    Bytes: [0x01]
+  - Pos: 25
+    AsciiString: "\0\x02\0\x05\0\f\0\r\0\x0E\0\x0F\0\x15\0\x15\0\0\x04\0\0"
+    CaseSensitive: true

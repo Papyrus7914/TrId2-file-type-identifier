@@ -1,0 +1,14 @@
+Name: MuCom MSX Packed module
+URL: "https://toughkiddev.github.io/MUCOMSX/"
+FileNameExtensions: ["mub"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "msPb010"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DRIVER MUCOM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false

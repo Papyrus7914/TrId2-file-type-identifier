@@ -1,0 +1,38 @@
+Name: MakeHuman Pose
+URL: "https://static.makehumancommunity.org/"
+FileNameExtensions: ["mhpose"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n    \"license\": \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DESCRIPTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNIT_POSES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAKEHUMAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HOMEPAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTHOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LEFT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TAGS"
+    CaseSensitive: false

@@ -1,0 +1,20 @@
+Name: BODC AXF oceanographic exchange data (historical)
+URL: "https://bodc.ac.uk/resources/delivery_formats/axf_format"
+FileNameExtensions: ["axf"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "0,0,'AXF',"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NUMBER OF CYCLES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AADY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FLAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false

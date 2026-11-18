@@ -1,0 +1,23 @@
+Name: LTspice Subcircuit library (text)
+Description: https://en.wikipedia.org/wiki/LTspice
+FileNameExtensions: ["sub"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "* Copyright "
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".  ALL RIGHTS RESERVED."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "* COPYRIGHT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SUBCKT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LINEAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ENDS"
+    CaseSensitive: false

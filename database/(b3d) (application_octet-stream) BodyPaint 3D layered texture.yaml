@@ -1,0 +1,26 @@
+Name: BodyPaint 3D layered texture
+URL: "https://www.maxon.net/en/cinema-4d/features/bodypaint-3d"
+FileNameExtensions: ["b3d"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "AC4DBody\x01\0\0\x01\xF6\0\0\0\0\x01BdTx"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "B\0A\0C\0K\0G\0R\0O\0U\0N\0D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BDLY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BDTX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BDVX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HGAU"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OIQI"
+    CaseSensitive: false

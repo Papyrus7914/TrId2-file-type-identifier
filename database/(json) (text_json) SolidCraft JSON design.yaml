@@ -1,0 +1,26 @@
+Name: SolidCraft JSON design
+URL: "https://solidcraft.io/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n  \"format\": \"solidcraft/"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "NEXT_COMPONENT_COLOR_INDEX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FEATURES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEXT_ID"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PARAMS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNITS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NAME"
+    CaseSensitive: false

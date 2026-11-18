@@ -1,0 +1,14 @@
+Name: NOAA NDBC Spectral wave summaries
+URL: "https://www.ndbc.noaa.gov/faq/rt_data_access.shtml"
+FileNameExtensions: ["spec"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#YY  MM DD hh mm WVHT  SwH  SwP  WWH  WWP SwD WWD  STEEPNESS  APD MWD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "YR  MO DY HR MN    M    M  SEC    M  SEC  -  DEGT     -      SEC DEGT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "STEEP"
+    CaseSensitive: false

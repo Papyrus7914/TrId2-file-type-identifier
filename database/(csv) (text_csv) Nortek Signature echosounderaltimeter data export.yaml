@@ -1,0 +1,50 @@
+Name: Nortek Signature echosounder/altimeter data export
+URL: "https://support.nortekgroup.com/hc/en-us/articles/27060689928348-Data-files"
+FileNameExtensions: ["csv"]
+MimeType: text/csv
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "DateTime,EnsembleCount,Battery,Heading,Pitch,Roll,Pressure,Temperature,"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ALTIMETERTIMEOFFSETAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTIMETERDISTANCEAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTIMETERDISTANCELE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTIMETERQUALITYAST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTIMETERQUALITYLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTIMETERPRESSURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTIMETERSTATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENSEMBLECOUNT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TEMPERATURE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DATETIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BATTERY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEADING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PITCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROLL"
+    CaseSensitive: false

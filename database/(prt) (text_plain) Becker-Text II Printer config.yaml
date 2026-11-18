@@ -1,0 +1,74 @@
+Name: Becker-Text II Printer config
+Description: Amiga word processor and DTP program by Data Becker.
+FileNameExtensions: ["prt"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "*"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "BESCHREIBUNG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ITALICOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".UNDERLOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ITALICON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".UNDERLON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BOLDOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FONTOFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".BOLDON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".FONTON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZEICHEN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".AMIGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".HUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VPARA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VUNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CHAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".INIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".NAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".SIZE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".VPOS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".XDPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".CPI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BT-S"
+    CaseSensitive: false

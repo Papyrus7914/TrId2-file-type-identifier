@@ -1,0 +1,13 @@
+Name: Announcements Letterhead (v2.0)
+Description: Printed graphics designer for Windows 3.x by Parsons Technology.
+FileNameExtensions: ["ltr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    Bytes: [0x02]
+  - Pos: 2
+    AsciiString: "Announcements V2.0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ANNOUNCEMENTS V2.0"
+    CaseSensitive: false

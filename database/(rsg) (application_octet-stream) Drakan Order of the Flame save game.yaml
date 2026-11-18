@@ -1,0 +1,33 @@
+Name: "Drakan: Order of the Flame save game"
+Description: Riot Save Game.
+URL: "https://www.mobygames.com/game/337/drakan-order-of-the-flame/"
+FileNameExtensions: ["rsg"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SRSC\0\x01"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "RESOURCES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMON"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MCF_AC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SYSTEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "WORLD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".LVL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAGE"
+    CaseSensitive: false

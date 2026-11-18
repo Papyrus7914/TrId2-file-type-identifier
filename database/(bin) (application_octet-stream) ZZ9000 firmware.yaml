@@ -1,0 +1,123 @@
+Name: ZZ9000 firmware
+Description: Amiga videocard.
+URL: "https://shop.mntre.com/products/zz9000-for-amiga-preorder"
+FileNameExtensions: ["bin"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                                                                                                                                                                                        f     U                 X     N     L     X                                                                             \b                                                                      \b                                              0     E
+    Bytes: [0xFE, 0xFF, 0xFF, 0xEA, 0xFE, 0xFF, 0xFF, 0xEA, 0xFE, 0xFF, 0xFF, 0xEA, 0xFE, 0xFF, 0xFF, 0xEA, 0xFE, 0xFF, 0xFF, 0xEA, 0xFE, 0xFF, 0xFF, 0xEA, 0xFE, 0xFF, 0xFF, 0xEA, 0xFE, 0xFF, 0xFF, 0xEA, 0x66, 0x55, 0x99, 0xAA, 0x58, 0x4E, 0x4C, 0x58, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x01, 0x00, 0x17, 0x00, 0x00, 0x08, 0x80, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x08, 0x80, 0x01, 0x00, 0x01, 0x00, 0x00, 0x00, 0x30, 0x45, 0x16, 0xFC, 0x00]
+  - Pos: any
+    AsciiString: "TIMEOUT IN ETHERNET_SEND_FRAME WAITING FOR TX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NEW MAC ADDRESS %X %X %X %X %X %X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_______________   ___   ___   ___"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SIGNALING SECOND CORE.\0\0\0\0AR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UNSUPPORTED PHY WITH ID 0X%X"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MICREL KSZ9031 PHY DETECTED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERRW ILLEGAL ADDRESS %08LX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ERROR SETTING MAC ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT.BIN\0\0\0\0SD_INIT_FAIL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDMA NOT FOUND FOR ID %D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "09ZZP_00RW_SEPPAIB.R"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHY AUTO NEGOTIATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "09ZZSF00E.LB\0\0FL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INIT_ETHERNET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "09ZZSO00FLE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NOW IDLING."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VDMA STATUS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEVICE I"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ARM_RUN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISABLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RESET D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LAUNCH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OFFSET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BLE D"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DONE."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PHASE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PIXEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SPEED"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "START"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "VIDEO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%D H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "%D M"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "EMAC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GPIO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCLK"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SET_"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "XNLX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_SET"
+    CaseSensitive: false

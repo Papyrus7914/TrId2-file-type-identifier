@@ -1,0 +1,29 @@
+Name: Ultimate Ride Prop Definition
+URL: "https://en.wikipedia.org/wiki/Ultimate_Ride"
+FileNameExtensions: ["prd"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "CPRP"
+    CaseSensitive: true
+  - Pos: 10
+    AsciiString: "MODL"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "1\00\00\0.\0M\0H\0X\0\0\0TRIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "1\00\00\0.\0M\0H\0A"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0P\01"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HEIG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "IDLE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODL"
+    CaseSensitive: false

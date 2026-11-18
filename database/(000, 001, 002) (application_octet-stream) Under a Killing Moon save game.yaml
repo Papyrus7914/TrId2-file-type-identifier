@@ -1,0 +1,11 @@
+Name: Under a Killing Moon save game
+URL: "https://www.mobygames.com/game/850/under-a-killing-moon/"
+FileNameExtensions: ["000", "001", "002"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\0\x01JENS                    "
+    CaseSensitive: true
+  - Pos: 57
+    #              \a
+    Bytes: [0xD2, 0x07, 0x04]

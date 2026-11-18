@@ -1,0 +1,8 @@
+Name: MFM Hard Disk Reader/Emulator image
+URL: "https://github.com/dgesswein/mfm"
+FileNameExtensions: ["emu"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "\xEEMFM\r\n\x1A\0"
+    CaseSensitive: true

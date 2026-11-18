@@ -1,0 +1,11 @@
+Name: Magma UI menu (Binary/compiled)
+Description: Used in Ubisoft Rainbow Six Vegas.
+FileNameExtensions: ["mgb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MAGMA\xAB\0\0\xCD\0\0\0\x15\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".MGB"
+    CaseSensitive: false

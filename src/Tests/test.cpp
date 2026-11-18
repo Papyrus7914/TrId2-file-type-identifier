@@ -147,7 +147,7 @@ TEST_CASE("test data sample files produce strict candidates") {
   };
 
   const std::vector<ExpectedSample> expectedSamples{
-      {"images/background.jpg", {{"JFIF JPEG bitmap", 50.018743}, {"JPEG bitmap", 37.485943}, {"MP3 audio", 12.495314}}},
+      {"images/background.jpg", {{"JFIF JPEG bitmap", 57.161217}, {"JPEG bitmap", 42.838783}}},
       {"app-image/icon.png", {{"Portable Network Graphics", 100.0}}},
       {"images/atop.gif", {{"GIF89a bitmap", 66.666667}, {"GIF bitmap (generic)", 33.333333}}},
       {"images/ImageMagick.ico", {{"Windows Icon", 50.006245}, {"Windows Icon (even big)", 49.993755}}},
@@ -177,7 +177,7 @@ TEST_CASE("test data sample files produce strict candidates") {
         {"PostScript document (minimal)", 2.234487}}},
       {"PerlMagick/t/input.xpm", {{"X PixMap bitmap (rem)", 50.877193}, {"X PixMap bitmap", 49.122807}}},
       {"PerlMagick/t/input.xbm", {{"X Bitmap", 100.0}}},
-      {"PerlMagick/t/openjp2/input.jp2", {{"JPEG-2000 Code Stream bitmap", 80.0}, {"MP3 audio", 20.0}}},
+      {"PerlMagick/t/openjp2/input.jp2", {{"JPEG-2000 Code Stream bitmap", 100.0}}},
       {"PerlMagick/t/bzlib/input.miff.bz2", {{"bzip2 compressed archive", 100.0}}},
       {"PerlMagick/t/zlib/input.miff.gz", {{"GZipped data", 100.0}}},
       {"config/cmyk.icm", {{"ICC Color profile (generic)", 100.0}}},
@@ -188,7 +188,7 @@ TEST_CASE("test data sample files produce strict candidates") {
       {"PerlMagick/t/input.sgi", {{"Silicon Graphics RGB bitmap", 74.93453}, {"Silicon Graphics bitmap", 25.06547}}},
       {"PerlMagick/t/input.rle", {{"Utah Raster Toolkit bitmap", 100.0}}},
       {"PerlMagick/t/input.viff", {{"Khoros Visualization Image File Format bitmap (v1.0)", 99.05894}, {"Sybase iAnywhere database files", 0.94106}}},
-      {"PerlMagick/t/input.wpg", {{"WordPerfect Graphics bitmap", 44.456787}, {"WordPerfect (generic)", 44.43457}, {"MP3 audio", 11.108643}}},
+      {"PerlMagick/t/input.wpg", {{"WordPerfect Graphics bitmap", 50.012497}, {"WordPerfect (generic)", 49.987503}}},
       {"PerlMagick/t/input.tim", {{"PSX TIM 4bpp bitmap", 88.879013}, {"LTAC compressed audio (v1.61)", 11.120987}}},
       {"PerlMagick/t/input.dcx", {{"Graphics Multipage PCX bitmap", 98.814229}, {"VXD Driver", 0.716403}, {"Sybase iAnywhere database files", 0.469368}}},
       {"PerlMagick/t/jbig/input.jbig", {{"JBIG raster bitmap", 100.0}}},

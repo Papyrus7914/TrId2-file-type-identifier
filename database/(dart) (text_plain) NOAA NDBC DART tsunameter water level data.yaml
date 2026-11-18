@@ -1,0 +1,11 @@
+Name: NOAA NDBC DART tsunameter water level data
+URL: "https://www.ndbc.noaa.gov/faq/dataindex.shtml"
+FileNameExtensions: ["dart"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#YY  MM DD hh mm ss T   HEIGHT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "YR  MO DY HR MN  S -        M"
+    CaseSensitive: false

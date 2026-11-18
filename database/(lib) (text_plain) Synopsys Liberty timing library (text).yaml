@@ -1,0 +1,62 @@
+Name: Synopsys Liberty timing library (text)
+URL: "https://vorasaumil.wixsite.com/pdinsight/post/liberty-file-format"
+FileNameExtensions: ["lib"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "library"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SLEW_LOWER_THRESHOLD_PCT_FALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLEW_LOWER_THRESHOLD_PCT_RISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLEW_UPPER_THRESHOLD_PCT_FALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SLEW_UPPER_THRESHOLD_PCT_RISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT_THRESHOLD_PCT_FALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OUTPUT_THRESHOLD_PCT_RISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT_THRESHOLD_PCT_FALL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INPUT_THRESHOLD_PCT_RISE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CAPACITIVE_LOAD_UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TABLE_LOOKUP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DELAY_MODEL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RELATED_PIN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_TRANSITION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIRECTION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME_UNIT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIBRARY"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIMING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CELL_"
+    CaseSensitive: false

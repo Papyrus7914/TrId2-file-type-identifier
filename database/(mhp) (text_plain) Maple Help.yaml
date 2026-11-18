@@ -1,0 +1,11 @@
+Name: Maple Help
+URL: "https://en.wikipedia.org/wiki/Maple_(software)"
+FileNameExtensions: ["mhp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<PACKAGE="
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "HELP NAME"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: NOAA NDBC Acoustic Doppler Current Profiler data
+URL: "https://www.ndbc.noaa.gov/faq/rt_data_access.shtml"
+FileNameExtensions: ["adcp"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#YY  MM DD hh mm DEP01 DIR01 SPD01 DEP02 DIR02 SPD02 DEP03 DIR03 SPD03 DEP04 DIR04 SPD04 DEP05 DIR05 SPD05 DEP06 DIR06 SPD06 DEP07 DIR07 SPD07 DEP08 DIR08 SPD08 DEP09 DIR09 SPD09 DEP10 DIR10 SPD10 DEP11 DIR11 SPD11 DEP12 DIR12 SPD12 DEP13 DIR13 SPD13 DEP14 DIR14 SPD14 DEP15 DIR15 SPD15 DEP16 DIR16 SPD16 DEP17 DIR17 SPD17 DEP18 DIR18 SPD18 DEP19 DIR19 SPD19 DEP20 DIR20 SPD20"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "YR  MO DY HR MN     M  DEGT  CM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S     M  DEGT  CM"
+    CaseSensitive: false

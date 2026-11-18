@@ -1,0 +1,20 @@
+Name: Zuma Curtain Call Script
+Description: Win 3.x multimedia presentation tool by Zuma Group.
+FileNameExtensions: ["zsc"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "FRAM"
+    CaseSensitive: true
+  - Pos: 5
+    AsciiString: "\0\0\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "OBJTC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SCRNC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CLIP"
+    CaseSensitive: false

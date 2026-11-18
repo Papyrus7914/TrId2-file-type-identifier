@@ -1,0 +1,17 @@
+Name: NOAA NDBC Oceanographic data
+URL: "https://www.ndbc.noaa.gov/faq/rt_data_access.shtml"
+FileNameExtensions: ["ocean"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#YY  MM DD hh mm   DEPTH  OTMP   COND   SAL   O2% O2PPM  CLCON  TURB    PH    EH"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "YR  MO DY HR MN       M  DEGC  MS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CM   PSU     %   PPM   UG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "L   FTU     -    MV"
+    CaseSensitive: false

@@ -1,0 +1,260 @@
+Name: Nortek Signature AD2CP raw data
+URL: "https://support.nortekgroup.com/hc/en-us/articles/27060689928348-Data-files"
+FileNameExtensions: ["ad2cp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #              \n
+    Bytes: [0xA5, 0x0A, 0xA0, 0x10]
+  - Pos: 11
+    AsciiString: "GETCLOCKSTR,TIME=\""
+    CaseSensitive: true
+  - Pos: 33
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 36
+    AsciiString: "-"
+    CaseSensitive: true
+  - Pos: 39
+    AsciiString: " "
+    CaseSensitive: true
+  - Pos: 42
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 45
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "\"\r\nID,STR=\""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CALPRESSCOEFFGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVERAGING MODE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALROTACCLGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCOMPASSCAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOARDSENSGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPRECISION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AUTOZUPDOWN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEAMCFGLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEAMIMPLIST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALPRESSGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GB RECORDER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETCLOCKSTR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LISTLICENSE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALACCLGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALCOMPGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALECHOGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALTEMPGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CALTILTGET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTISTART"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BURSTBEAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BURSTHORZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "INTERFACE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETXFAVG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TTRB5AUX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ALTIEND"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVGBEAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVGHORZ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CFMTOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIBURST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIGITAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FWMINOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETINST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPLAN"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETUSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIBURST"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RAWALTI"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RECSTAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".AD2CP"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ANALOG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BURST1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CMTOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DMTOUT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETAVG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETMEM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETPWR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETXFB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HWBEAM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ORIENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SENSOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BEAM5"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DIAVG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETHW"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MIAVG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NPING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ON24H"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PLAN1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "THETA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TOTAL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "AVG1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "BOOT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHA0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHB0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CHC0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COLS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DECL"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DESC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FPGA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FREQ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GETB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MAGG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NSTT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "POFF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROWS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "RREF"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TIME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TYPE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ZNOM"
+    CaseSensitive: false

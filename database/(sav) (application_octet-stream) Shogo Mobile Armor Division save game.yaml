@@ -1,0 +1,29 @@
+Name: "Shogo: Mobile Armor Division save game"
+URL: "https://www.mobygames.com/game/1141/shogo-mobile-armor-division/"
+FileNameExtensions: ["sav"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "Y\x04\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "CSTORYTRIGGER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CPLAYEROBJ"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SANJURO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MODELS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".DTXO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SKINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: ".ABC"
+    CaseSensitive: false

@@ -1,0 +1,41 @@
+Name: Grand Prix Legends multi-frame 2D sprite container
+URL: "https://www.mobygames.com/game/2561/grand-prix-legends/"
+FileNameExtensions: ["srb"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: " BRS"
+    CaseSensitive: true
+  - Pos: 12
+    AsciiString: "DHRS"
+    CaseSensitive: true
+  - Pos: 48
+    AsciiString: "2HRS\0\0\0\0$"
+    CaseSensitive: true
+  - Pos: 96
+    AsciiString: "PIM \0\0\0\0"
+    CaseSensitive: true
+  - Pos: 108
+    AsciiString: "DHPM"
+    CaseSensitive: true
+  - Pos: 140
+    AsciiString: "PAM"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "2HRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ATAD"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DHMB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DHPM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DHRS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAMB"
+    CaseSensitive: false

@@ -5,25 +5,22 @@ FileNameExtensions: ["hlp"]
 MimeType: application/x-symantec-hlp
 DetectionPatterns:
   - Pos: 0
-    AsciiString: "Copyright 199"
+    AsciiString: "Copyright "
     CaseSensitive: true
   - Pos: 44
     AsciiString: "\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"
     CaseSensitive: true
   - Pos: any
-    AsciiString: "SYMANTEC CORPORATION"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "NORTON UTILITIES"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "E HYPERLINK"
-    CaseSensitive: false
-  - Pos: any
-    AsciiString: "HHYPERLINK"
+    AsciiString: "SYMANTEC CORP"
     CaseSensitive: false
   - Pos: any
     AsciiString: "HYPERLINKS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CORPORAT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "NORTON"
     CaseSensitive: false
   - Pos: any
     AsciiString: "INDEX"

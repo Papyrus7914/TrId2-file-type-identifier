@@ -1,0 +1,14 @@
+Name: NOAA NDBC Drifting buoys meteorological data
+URL: "https://www.ndbc.noaa.gov/faq/rt_data_access.shtml"
+FileNameExtensions: ["drift"]
+MimeType: text/plain
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "#YY  MM DD hhmm     LAT      LON WDIR WSPD GST   PRES  PTDY  ATMP  WTMP  DEWP  WVHT  DPD"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "S    HPA   HPA  DEGC  DEGC  DEGC     M  SEC"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "YR  MO DY HRMN     DEG      DEG DEGT M"
+    CaseSensitive: false

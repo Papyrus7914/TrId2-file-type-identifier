@@ -1,0 +1,23 @@
+Name: Planix Photo Descriptor
+Description: Used in Planix Photo Lanscape, Home Design Suite.
+FileNameExtensions: ["idp"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "ID"
+    CaseSensitive: true
+  - Pos: 3
+    AsciiString: "WD\0\0\0\0"
+    CaseSensitive: true
+  - Pos: 50
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 53
+    AsciiString: "/"
+    CaseSensitive: true
+  - Pos: 61
+    AsciiString: ":"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".BMP"
+    CaseSensitive: false

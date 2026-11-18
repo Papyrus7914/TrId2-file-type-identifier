@@ -1,0 +1,23 @@
+Name: OASE Advanced Layouter project
+Description: German Amiga DTP software.
+FileNameExtensions: ["lay"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "SXF-SL00"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: ".FONT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FONT1"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUST0"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "KOMM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PAGE"
+    CaseSensitive: false

@@ -1,0 +1,14 @@
+Name: Simon the Sorcerer 3D save game
+URL: "https://www.mobygames.com/game/6401/simon-the-sorcerer-3d/"
+FileNameExtensions: ["sim"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    #                                ␠                       ␠           ␠
+    Bytes: [0xB9, 0x93, 0x9E, 0x98, 0x20, 0xCE, 0xC6, 0xC7, 0x20, 0xC2, 0x20]
+  - Pos: any
+    AsciiString: "SIMONROTATION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "LIGHT"
+    CaseSensitive: false

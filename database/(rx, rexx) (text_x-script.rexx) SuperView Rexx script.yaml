@@ -1,0 +1,17 @@
+Name: SuperView Rexx script
+URL: "https://aminet.net/package/gfx/misc/SvIV-1"
+FileNameExtensions: ["rx", "rexx"]
+MimeType: text/x-script.rexx
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "/*\n"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "SUPERVIEW.RX"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ADDRESS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMAND"
+    CaseSensitive: false

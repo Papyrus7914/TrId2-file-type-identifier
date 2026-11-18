@@ -1,0 +1,71 @@
+Name: Wacom driver diagnostic log bundle
+URL: "https://en.wikipedia.org/wiki/Wacom"
+FileNameExtensions: ["waczip"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "WACZ\x01\0\0\0"
+    CaseSensitive: true
+  - Pos: 26
+    AsciiString: ":\0\\\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "-\0P\0R\0O\0-\0T\0O\0U\0C\0H\0S\0E\0R\0V\0I\0C\0E\0-\0P\0I\0D\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0P\0R\0O\0-\0U\0P\0D\0A\0T\0E\0U\0T\0I\0L\0-\0P\0I\0D\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "S\0E\0T\0U\0P\0A\0P\0I\0.\0D\0E\0V\0.\0L\0O\0G\0.\0T\0X\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0A\0C\0O\0M\0_\0T\0A\0B\0L\0E\0T\0.\0B\0A\0K\0.\0T\0X\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0A\0C\0O\0M\0_\0T\0A\0B\0L\0E\0T\0.\0D\0A\0T\0.\0T\0X\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0P\0R\0O\0-\0C\0V\0C\0B\0R\0I\0D\0G\0E\0-\0P\0I\0D\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0P\0R\0O\0-\0T\0O\0U\0C\0H\0U\0S\0E\0R\0-\0P\0I\0D\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0P\0R\0O\0-\0P\0R\0E\0F\0U\0T\0I\0L\0-\0P\0I\0D\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0A\0C\0O\0M\0T\0O\0U\0C\0H\0.\0X\0M\0L\0.\0T\0X\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0P\0R\0O\0-\0C\0D\0A\0G\0O\0L\0D\0-\0P\0I\0D\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0P\0R\0O\0-\0W\0E\0P\0A\0P\0P\0-\0P\0I\0D\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "D\0E\0V\0I\0C\0E\0L\0I\0S\0T\0.\0T\0X\0T\0~"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "I\0N\0S\0T\0A\0L\0L\0.\0L\0O\0G\0.\0T\0X\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "P\0R\0O\0C\0E\0S\0S\0L\0I\0S\0T\0.\0T\0X\0T"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0P\0R\0O\0-\0I\0S\0A\0-\0P\0I\0D\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0P\0R\0O\0-\0U\0D\0A\0-\0P\0I\0D\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0W\0C\0T\0R\0L\0I\0B\0-\0P\0I\0D\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0W\0C\0T\0R\0U\0I\0-\0P\0I\0D\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W\0A\0C\0O\0M\0-"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "-\0A\0T\0-"
+    CaseSensitive: false

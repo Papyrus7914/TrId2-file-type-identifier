@@ -1,0 +1,29 @@
+Name: Canada ROE Web payroll extract (XML)
+URL: "https://www.canada.ca/en/employment-social-development/programs/ei/ei-list/ei-roe/user-requirements/appendix-d.html"
+FileNameExtensions: ["blk"]
+MimeType: text/xml
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ROEHEADER FILEVERSION"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ROE PRINTINGLANGUAGE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "SOFTWAREVENDOR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PRODUCTNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PP NBR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ISSUE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "W-2.0"
+    CaseSensitive: false

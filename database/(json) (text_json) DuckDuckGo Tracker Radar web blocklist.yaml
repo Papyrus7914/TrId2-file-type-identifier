@@ -1,0 +1,62 @@
+Name: DuckDuckGo Tracker Radar web blocklist
+URL: "https://github.com/duckduckgo/tracker-blocklists/"
+FileNameExtensions: ["json"]
+MimeType: text/json
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "{\n    \"_builtWith\": {\n        \"tracker-radar\": \""
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "TRACKER-BLOCKLISTS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKER-SURROGATES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "FINGERPRINTING"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKER-RADAR"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DISPLAYNAME"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "CATEGORIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DUCKDUCKGO"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "GITHUB.COM"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "PREVALENCE"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "_BUILTWITH"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "ENTITIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TRACKERS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COOKIES"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DEFAULT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "DOMAINS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "README"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "HTTPS"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "OWNER"
+    CaseSensitive: false

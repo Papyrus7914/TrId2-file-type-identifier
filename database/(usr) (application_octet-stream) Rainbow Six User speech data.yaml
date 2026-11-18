@@ -1,0 +1,10 @@
+Name: Rainbow Six User speech data
+FileNameExtensions: ["usr"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "USRI"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "ENDV"
+    CaseSensitive: false

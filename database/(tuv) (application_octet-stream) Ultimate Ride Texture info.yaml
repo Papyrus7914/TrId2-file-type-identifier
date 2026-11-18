@@ -1,0 +1,23 @@
+Name: Ultimate Ride Texture info
+URL: "https://en.wikipedia.org/wiki/Ultimate_Ride"
+FileNameExtensions: ["tuv"]
+MimeType: application/octet-stream
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "TWFB\x02\0\0\x01TUVA"
+    CaseSensitive: true
+  - Pos: 18
+    AsciiString: "UDAT"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "1.PNG\0TPAG"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TUVA"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TWFB"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "UDAT"
+    CaseSensitive: false

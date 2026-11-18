@@ -1,0 +1,23 @@
+Name: MUCOM88 module
+URL: "https://toughkiddev.github.io/MUCOMSX/"
+FileNameExtensions: ["mub"]
+MimeType: audio/x-mod
+DetectionPatterns:
+  - Pos: 0
+    AsciiString: "MUB8P\0\0\0"
+    CaseSensitive: true
+  - Pos: any
+    AsciiString: "DRIVER MUCOMDOTNET"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "MUCOM88 1."
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMPOSER"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "COMMENT"
+    CaseSensitive: false
+  - Pos: any
+    AsciiString: "TITLE"
+    CaseSensitive: false
